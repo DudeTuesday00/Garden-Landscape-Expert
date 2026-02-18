@@ -12,11 +12,31 @@ const STAGES = {
   RESULTS: 'results',
 }
 
+/**
+ * Compute which questions are active based on current answers.
+ * - skipIfHydro questions are removed when growingMethod === 'hydroponic'
+ * - hydroOnly questions are removed when growingMethod !== 'hydroponic'
+ * - Before growingMethod is answered, hydro-conditional questions stay hidden
+ */
+function getActiveQuestions(answers) {
+  const isHydro = answers.growingMethod === 'hydroponic'
+  const methodChosen = answers.growingMethod !== undefined
+
+  return questions.filter((q) => {
+    if (q.skipIfHydro && methodChosen && isHydro) return false
+    if (q.hydroOnly && (!methodChosen || !isHydro)) return false
+    return true
+  })
+}
+
 export default function Wizard() {
   const [stage, setStage] = useState(STAGES.WELCOME)
   const [stepIndex, setStepIndex] = useState(0)
   const [answers, setAnswers] = useState({})
   const [results, setResults] = useState([])
+
+  const activeQuestions = getActiveQuestions(answers)
+  const currentQuestion = activeQuestions[stepIndex]
 
   function handleStart() {
     setStage(STAGES.QUESTIONS)
@@ -25,14 +45,32 @@ export default function Wizard() {
   }
 
   function handleAnswer(id, value) {
-    setAnswers((prev) => ({ ...prev, [id]: value }))
+    setAnswers((prev) => {
+      const next = { ...prev, [id]: value }
+
+      // When growing method changes, clear answers that may no longer be relevant
+      if (id === 'growingMethod') {
+        const wasHydro = prev.growingMethod === 'hydroponic'
+        const nowHydro = value === 'hydroponic'
+        if (wasHydro !== nowHydro) {
+          // Clear skipped/swapped question answers to avoid stale data
+          delete next.zone
+          delete next.soil
+          delete next.season
+          delete next.hydroSystem
+        }
+      }
+
+      return next
+    })
   }
 
   function handleNext() {
-    if (stepIndex < questions.length - 1) {
+    // Recompute active questions with the latest answers to get correct length
+    const active = getActiveQuestions(answers)
+    if (stepIndex < active.length - 1) {
       setStepIndex((i) => i + 1)
     } else {
-      // Final step — run matching
       const matched = matchPlants(answers)
       setResults(matched)
       setStage(STAGES.RESULTS)
@@ -69,12 +107,12 @@ export default function Wizard() {
             <WelcomeScreen onStart={handleStart} />
           )}
 
-          {stage === STAGES.QUESTIONS && (
+          {stage === STAGES.QUESTIONS && currentQuestion && (
             <div className="flex flex-col gap-6">
-              <ProgressBar current={stepIndex + 1} total={questions.length} />
+              <ProgressBar current={stepIndex + 1} total={activeQuestions.length} />
               <QuestionStep
-                question={questions[stepIndex]}
-                answer={answers[questions[stepIndex].id]}
+                question={currentQuestion}
+                answer={answers[currentQuestion.id]}
                 onAnswer={handleAnswer}
                 onBack={handleBack}
                 onNext={handleNext}
@@ -84,7 +122,11 @@ export default function Wizard() {
           )}
 
           {stage === STAGES.RESULTS && (
-            <Results plants={results} answers={answers} onRestart={handleRestart} />
+            <Results
+              plants={results}
+              answers={answers}
+              onRestart={handleRestart}
+            />
           )}
         </div>
 
