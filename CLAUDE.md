@@ -8,7 +8,11 @@ This file provides guidance for AI assistants working in this repository.
 
 **Garden Landscape Expert** is a React web application that helps users with garden and landscape planning, design, and expertise.
 
-The app is built section by section. The first feature is the **Plant Selection Wizard** — a step-by-step questionnaire that recommends plants based on the user's climate zone, soil type, sunlight, space, watering habits, and experience level.
+The app is built section by section. The first feature is the **Plant Selection Wizard** — a step-by-step questionnaire that recommends plants based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
+
+The wizard supports two paths:
+- **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
+- **Hydroponic path**: skips zone/soil/season (irrelevant indoors), asks hydroponic system type instead, and filters to hydro-compatible plants only
 
 ---
 
@@ -34,8 +38,8 @@ Garden-Landscape-Expert/
     │       ├── ProgressBar.jsx      # Step progress indicator
     │       └── Results.jsx          # Plant recommendation cards
     ├── data/
-    │   ├── plants.js                # Static plant database (~30 plants)
-    │   └── questions.js             # Wizard question definitions
+    │   ├── plants.js                # Static plant database (32 plants across 6 types)
+    │   └── questions.js             # Wizard question definitions (with hydro routing flags)
     └── logic/
         └── matchPlants.js           # Scoring + filtering algorithm
 ```
@@ -96,22 +100,53 @@ npm run preview
 
 Each plant in `plants.js` has:
 
-| Field           | Type              | Description                                      |
-|-----------------|-------------------|--------------------------------------------------|
-| `id`            | string            | Unique slug                                      |
-| `name`          | string            | Display name                                     |
-| `emoji`         | string            | Single emoji for visual identity                 |
-| `type`          | string            | `flower` `vegetable` `fruit` `herb` `tree` `shrub` |
-| `zones`         | number[]          | Compatible USDA hardiness zones (3–11)           |
-| `sunlight`      | string[]          | `full-sun` `partial-shade` `full-shade`          |
-| `soil`          | string[]          | `loam` `clay` `sandy` `silty` `chalky` `peaty`  |
-| `water`         | string            | `low` `moderate` `high`                         |
-| `space`         | string[]          | `container` `small` `large`                     |
-| `seasons`       | string[]          | `spring` `summer` `fall` `winter`               |
-| `experience`    | string            | `beginner` `intermediate` `advanced`            |
-| `description`   | string            | Short user-facing description                    |
-| `careNotes`     | string            | Quick care tip                                   |
-| `daysToHarvest` | string (optional) | Edible plants only                               |
+| Field                | Type              | Description                                         |
+|----------------------|-------------------|-----------------------------------------------------|
+| `id`                 | string            | Unique slug                                         |
+| `name`               | string            | Display name                                        |
+| `emoji`              | string            | Single emoji for visual identity                    |
+| `type`               | string            | `flower` `vegetable` `fruit` `herb` `tree` `shrub`  |
+| `zones`              | number[]          | Compatible USDA hardiness zones (3–11)              |
+| `sunlight`           | string[]          | `full-sun` `partial-shade` `full-shade`             |
+| `soil`               | string[]          | `loam` `clay` `sandy` `silty` `chalky` `peaty`      |
+| `water`              | string            | `low` `moderate` `high`                             |
+| `space`              | string[]          | `container` `small` `large`                         |
+| `seasons`            | string[]          | `spring` `summer` `fall` `winter`                   |
+| `experience`         | string            | `beginner` `intermediate` `advanced`                |
+| `description`        | string            | Short user-facing description                       |
+| `careNotes`          | string            | Quick care tip (shown for traditional growers)      |
+| `hydroponic`         | boolean           | Whether plant grows well in hydroponic systems      |
+| `hydroponicsNotes`   | string (optional) | Hydroponic-specific care tip (shown on hydro path)  |
+| `daysToHarvest`      | string (optional) | Edible plants only                                  |
+
+### Question Schema
+
+Each question in `questions.js` has:
+
+| Field         | Type              | Description                                                         |
+|---------------|-------------------|---------------------------------------------------------------------|
+| `id`          | string            | Key used to store answer and map to matchPlants logic               |
+| `title`       | string            | Question text shown to the user                                     |
+| `subtitle`    | string (optional) | Help text shown below the title                                     |
+| `multi`       | boolean           | Whether multiple options can be selected                            |
+| `options`     | array             | `{ value, label, emoji, description }` per choice                  |
+| `skipIfHydro` | boolean (optional)| If true, question is hidden when `growingMethod === 'hydroponic'`   |
+| `hydroOnly`   | boolean (optional)| If true, question is only shown when `growingMethod === 'hydroponic'`|
+
+### Wizard Question Flow
+
+| Question        | Traditional path | Hydroponic path |
+|-----------------|:---:|:---:|
+| Plant type      | ✅  | ✅  |
+| Growing method  | ✅  | ✅  |
+| USDA Zone       | ✅  | ⛔ skipped |
+| Sunlight        | ✅  | ✅  |
+| Soil type       | ✅  | ⛔ skipped |
+| Hydro system    | ⛔ skipped | ✅  |
+| Watering        | ✅  | ✅  |
+| Space           | ✅  | ✅  |
+| Season          | ✅  | ⛔ skipped |
+| Experience      | ✅  | ✅  |
 
 ---
 
@@ -131,4 +166,7 @@ Each plant in `plants.js` has:
 - Avoid over-engineering; keep solutions minimal and focused
 - Do not push to branches other than the designated `claude/` branch without explicit permission
 - When adding plants, follow the schema table above exactly
-- The matching algorithm in `matchPlants.js` uses hard filters (type, zone, sunlight, season) and soft scoring (soil, water, space, experience) — understand this before modifying
+- The matching algorithm in `matchPlants.js` has two paths — understand both before modifying:
+  - **Traditional path:** hard filters on type, zone, sunlight, season; soft scoring on soil, water, space, experience
+  - **Hydroponic path:** hard filters on `plant.hydroponic === true` and type; skips zone/soil/season; soft scores hydro system compatibility, water, space, experience
+- The wizard question list is computed dynamically in `Wizard.jsx` via `getActiveQuestions(answers)` — adding a question with `skipIfHydro` or `hydroOnly` is all that's needed to route it correctly
