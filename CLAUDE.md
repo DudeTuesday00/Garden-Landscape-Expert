@@ -6,9 +6,9 @@ This file provides guidance for AI assistants working in this repository.
 
 ## Project Overview
 
-> _To be filled in as the project takes shape._
+**Garden Landscape Expert** is a React web application that helps users with garden and landscape planning, design, and expertise.
 
-**Garden Landscape Expert** is a [brief description of the project — e.g., web app / API / CLI tool] that helps users with garden and landscape planning, design, and expertise.
+The app is built section by section. The first feature is the **Plant Selection Wizard** — a step-by-step questionnaire that recommends plants based on the user's climate zone, soil type, sunlight, space, watering habits, and experience level.
 
 ---
 
@@ -16,21 +16,39 @@ This file provides guidance for AI assistants working in this repository.
 
 ```
 Garden-Landscape-Expert/
-├── CLAUDE.md          # This file
-└── ...                # More directories and files to be added
+├── CLAUDE.md                        # This file
+├── index.html                       # Vite entry point
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+└── src/
+    ├── main.jsx                     # React root
+    ├── App.jsx                      # Top-level component
+    ├── index.css                    # Tailwind base styles
+    ├── components/
+    │   └── wizard/
+    │       ├── Wizard.jsx           # Main wizard shell + state
+    │       ├── WelcomeScreen.jsx    # Intro screen
+    │       ├── QuestionStep.jsx     # Per-question UI (single + multi-select)
+    │       ├── ProgressBar.jsx      # Step progress indicator
+    │       └── Results.jsx          # Plant recommendation cards
+    ├── data/
+    │   ├── plants.js                # Static plant database (~30 plants)
+    │   └── questions.js             # Wizard question definitions
+    └── logic/
+        └── matchPlants.js           # Scoring + filtering algorithm
 ```
 
 ---
 
 ## Tech Stack
 
-> _To be confirmed during planning._
-
-- **Language:**
-- **Framework:**
-- **Database:**
-- **Testing:**
-- **Styling / UI:**
+- **Language:** JavaScript (JSX)
+- **Framework:** React 18 + Vite 6
+- **Styling:** Tailwind CSS 3 with custom `garden` and `earth` color palettes
+- **Database:** Static JS files (no backend)
+- **Testing:** Not yet configured
 
 ---
 
@@ -49,35 +67,68 @@ Garden-Landscape-Expert/
 
 ### Running the Project
 
-> _Commands to be added once the stack is decided._
-
 ```bash
 # Install dependencies
-# e.g., npm install / pip install -r requirements.txt
+npm install
 
-# Run development server
-# e.g., npm run dev / python manage.py runserver
+# Run development server (http://localhost:5173)
+npm run dev
 
-# Run tests
-# e.g., npm test / pytest
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
 ---
 
 ## Key Conventions
 
-> _To be defined as the project develops._
+- **Component naming:** PascalCase JSX files in `src/components/`
+- **Data files:** Plain JS exports in `src/data/`
+- **Logic files:** Pure functions in `src/logic/`
+- **Styling:** Tailwind utility classes only — no separate CSS files except `index.css`
+- **Plant data:** Add new plants to `src/data/plants.js` following the existing schema
+- **Questions:** Add/edit wizard questions in `src/data/questions.js`
 
-- **Code style:** follow the formatter/linter configured for the chosen stack
-- **File naming:** to be determined
-- **API design:** to be determined
+### Plant Schema
+
+Each plant in `plants.js` has:
+
+| Field           | Type              | Description                                      |
+|-----------------|-------------------|--------------------------------------------------|
+| `id`            | string            | Unique slug                                      |
+| `name`          | string            | Display name                                     |
+| `emoji`         | string            | Single emoji for visual identity                 |
+| `type`          | string            | `flower` `vegetable` `fruit` `herb` `tree` `shrub` |
+| `zones`         | number[]          | Compatible USDA hardiness zones (3–11)           |
+| `sunlight`      | string[]          | `full-sun` `partial-shade` `full-shade`          |
+| `soil`          | string[]          | `loam` `clay` `sandy` `silty` `chalky` `peaty`  |
+| `water`         | string            | `low` `moderate` `high`                         |
+| `space`         | string[]          | `container` `small` `large`                     |
+| `seasons`       | string[]          | `spring` `summer` `fall` `winter`               |
+| `experience`    | string            | `beginner` `intermediate` `advanced`            |
+| `description`   | string            | Short user-facing description                    |
+| `careNotes`     | string            | Quick care tip                                   |
+| `daysToHarvest` | string (optional) | Edible plants only                               |
+
+---
+
+## Planned Sections (Future)
+
+- Plant care calendar / seasonal reminders
+- Landscape design planner
+- Companion planting guide
+- Soil amendment advisor
+- Pest & disease identifier
 
 ---
 
 ## Notes for AI Assistants
 
-- This repository is in early planning — no source files exist yet
-- Update this file as architectural decisions are made
 - Prefer editing existing files over creating new ones unless strictly necessary
 - Avoid over-engineering; keep solutions minimal and focused
 - Do not push to branches other than the designated `claude/` branch without explicit permission
+- When adding plants, follow the schema table above exactly
+- The matching algorithm in `matchPlants.js` uses hard filters (type, zone, sunlight, season) and soft scoring (soil, water, space, experience) — understand this before modifying
