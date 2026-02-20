@@ -95,12 +95,6 @@ export default function Wizard() {
   return (
     <div className="min-h-screen flex items-start justify-center px-4 py-10">
       <div className="w-full max-w-2xl">
-        {/* Brand strip */}
-        <div className="flex items-center gap-2 mb-6 text-garden-700">
-          <span className="text-2xl">🌿</span>
-          <span className="font-bold text-sm tracking-wide uppercase">Garden Landscape Expert</span>
-        </div>
-
         {/* Card */}
         <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-6 sm:p-8">
           {stage === STAGES.WELCOME && (

@@ -1,12 +1,18 @@
 const waterLabel = { low: '💧 Low', moderate: '💧💧 Moderate', high: '💧💧💧 High' }
 const spaceLabel  = { container: '🪴 Container', small: '🌱 Small Bed', large: '🏡 Large Garden' }
 const typeColors  = {
-  flower:    'bg-pink-100 text-pink-700',
-  vegetable: 'bg-green-100 text-green-700',
-  fruit:     'bg-red-100 text-red-700',
-  herb:      'bg-lime-100 text-lime-700',
-  tree:      'bg-emerald-100 text-emerald-700',
-  shrub:     'bg-teal-100 text-teal-700',
+  flower:      'bg-pink-100 text-pink-700',
+  vegetable:   'bg-green-100 text-green-700',
+  fruit:       'bg-red-100 text-red-700',
+  herb:        'bg-lime-100 text-lime-700',
+  tree:        'bg-emerald-100 text-emerald-700',
+  shrub:       'bg-teal-100 text-teal-700',
+  vine:        'bg-green-100 text-green-800',
+  bulb:        'bg-purple-100 text-purple-700',
+  grass:       'bg-yellow-100 text-yellow-700',
+  succulent:   'bg-orange-100 text-orange-700',
+  fern:        'bg-cyan-100 text-cyan-700',
+  groundcover: 'bg-lime-100 text-lime-800',
 }
 
 const hydroSystemLabel = {
