@@ -105,7 +105,7 @@ Each plant in `plants.js` has:
 | `id`                 | string            | Unique slug                                         |
 | `name`               | string            | Display name                                        |
 | `emoji`              | string            | Single emoji for visual identity                    |
-| `type`               | string            | `flower` `vegetable` `fruit` `herb` `tree` `shrub`  |
+| `type`               | string            | `flower` `vegetable` `fruit` `herb` `tree` `shrub` `vine` `bulb` `grass` `succulent` `fern` `groundcover` |
 | `zones`              | number[]          | Compatible USDA hardiness zones (3–11)              |
 | `sunlight`           | string[]          | `full-sun` `partial-shade` `full-shade`             |
 | `soil`               | string[]          | `loam` `clay` `sandy` `silty` `chalky` `peaty`      |
@@ -157,6 +157,81 @@ Each question in `questions.js` has:
 - Companion planting guide
 - Soil amendment advisor
 - Pest & disease identifier
+
+---
+
+## Current Implementation Plan
+
+### Task 1: Expand Plant Database (~110 new plants, 6 new types)
+
+**New plant types to add:** vine, bulb, grass (ornamental), succulent, fern, groundcover
+
+**Files to modify:**
+
+- **`src/data/plants.js`** — Add ~110 new plants (target ~145 total). Schema unchanged.
+  - Flowers (~15 new): Petunia, Zinnia, Geranium, Daylily, Salvia, Peony, Bleeding Heart, Bee Balm, Yarrow, Coreopsis, Columbine, Foxglove, Dianthus, Astilbe, Snapdragon
+  - Vegetables (~12 new): Eggplant, Sugar Snap Pea, Garlic, Radish, Beet, Cabbage, Pumpkin, Arugula, Onion, Corn, Bok Choy, Collard Greens
+  - Fruits (~8 new): Peach Tree, Pear Tree, Cherry Tree, Grape, Blackberry, Watermelon, Fig Tree, Lemon Tree (dwarf)
+  - Herbs (~9 new): Thyme, Oregano, Dill, Cilantro, Sage, Lemon Balm, Chamomile, Fennel, Stevia
+  - Trees (~9 new): Red Maple, Dogwood, Magnolia, Crape Myrtle, Redbud, River Birch, Weeping Willow, Red Oak, Arborvitae
+  - Shrubs (~10 new): Boxwood, Lilac, Forsythia, Azalea, Rhododendron, Spirea, Holly, Nandina, Viburnum, Smokebush
+  - Vines (~10 new): Clematis, Morning Glory, Wisteria, Trumpet Vine, Virginia Creeper, Climbing Hydrangea, Sweet Pea, Passionflower, Bougainvillea, Honeysuckle
+  - Bulbs (~10 new): Tulip, Daffodil, Dahlia, Gladiolus, Allium, Bearded Iris, Hyacinth, Caladium, Canna Lily, Crocus
+  - Ornamental Grasses (~8 new): Blue Fescue, Feather Reed Grass, Fountain Grass, Maiden Grass, Muhly Grass, Japanese Forest Grass, Switchgrass, Liriope
+  - Succulents (~8 new): Aloe Vera, Jade Plant, Echeveria, Sedum, Agave, Haworthia, Hens and Chicks, Prickly Pear Cactus
+  - Ferns (~6 new): Boston Fern, Japanese Painted Fern, Ostrich Fern, Autumn Fern, Maidenhair Fern, Lady Fern
+  - Ground Covers (~8 new): Creeping Phlox, Pachysandra, Ajuga, Vinca, Creeping Jenny, Ice Plant, Creeping Thyme, Sweet Woodruff
+
+- **`src/data/questions.js`** — Add 6 new options to the `type` question:
+  - `vine` (Vines), `bulb` (Bulbs), `grass` (Ornamental Grasses), `succulent` (Succulents & Cacti), `fern` (Ferns), `groundcover` (Ground Covers)
+
+- **`src/components/wizard/Results.jsx`** — Add typeColor entries for new types:
+  - vine: `bg-green-100 text-green-700`
+  - bulb: `bg-purple-100 text-purple-700`
+  - grass: `bg-yellow-100 text-yellow-700`
+  - succulent: `bg-orange-100 text-orange-700`
+  - fern: `bg-cyan-100 text-cyan-700`
+  - groundcover: `bg-lime-100 text-lime-700`
+
+### Task 2: Planting Guides Section (placeholders only)
+
+**New files to create:**
+
+- **`src/data/guides.js`** — 10 categories, ~60 placeholder guides:
+  1. Trees & Large Plants — Shade Trees, Fruit Trees, Ornamental Trees, Dwarf Trees, Evergreen Trees, Fast-Growing Privacy Trees, Street Trees
+  2. Flowers & Color Gardens — Plants for Color, Moon Garden, Cottage Garden, Pollinator Garden, Cut Flower Garden, Wildflower Meadow, Long-Blooming Perennials
+  3. Edible Gardens — Salad Garden, Herb Garden Design, Pizza Garden, Tea Garden, Children's Vegetable Garden, Edible Flowers, Square Foot Gardening, Three Sisters Garden
+  4. Herbs & Fragrance — Plants for Smell, Culinary Herb Garden, Medicinal Herb Garden, Fragrant Garden Path, Aromatherapy Garden
+  5. Landscape Design — Front Yard Curb Appeal, Backyard Privacy Screening, Low-Maintenance Landscape, Four-Season Garden Design, Japanese Garden Elements, Zen Garden, Xeriscape Design
+  6. Seasonal Guides — Winter Garden Prep, Spring Garden Startup, Summer Maintenance, Fall Planting Guide, Post-Harvest Actions, Year-Round Calendar, Overwintering Tender Plants
+  7. Pest & Problem Solving — Pest-Eliminating Plants, Organic Pest Control, Common Garden Diseases, Deer-Resistant Plants, Rabbit-Proof Garden, Weed Management
+  8. Specialty Gardens — Pet-Friendly Plants, Rain Garden, Butterfly Garden, Hummingbird Garden, Native Plants, Sensory Garden, Water Feature Plants, Fire-Safe Landscaping
+  9. Container & Small Spaces — Porch Plants, Sunroom Plants, Balcony Garden, Window Box Gardening, Hanging Basket Guide, Indoor Houseplants 101
+  10. Eco & Sustainability — Composting Basics, Mulching Guide, Water-Wise Gardening, Companion Planting, Starting a Rain Barrel, Soil Health & Amendment
+
+- **`src/components/guides/GuidesHome.jsx`** — Grid of guide cards with "Coming Soon" badges, grouped by category. Same Tailwind aesthetic as the wizard.
+
+**Files to modify:**
+
+- **`src/App.jsx`** — Add `section` state (`'wizard'` | `'guides'`), render top nav with two tabs, conditionally render Wizard or GuidesHome
+- **`src/components/wizard/Wizard.jsx`** — Remove internal brand strip (moved to App.jsx nav)
+
+### Updated Repository Structure (after implementation)
+
+```
+src/
+├── App.jsx                          # Nav + section routing
+├── components/
+│   ├── wizard/                      # (unchanged except brand strip removal)
+│   └── guides/
+│       └── GuidesHome.jsx           # Guides landing page
+├── data/
+│   ├── plants.js                    # ~145 plants across 12 types
+│   ├── questions.js                 # Updated with 6 new type options
+│   └── guides.js                    # 10 categories, ~60 placeholder guides
+└── logic/
+    └── matchPlants.js               # (unchanged — handles new types automatically)
+```
 
 ---
 
