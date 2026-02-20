@@ -3,7 +3,7 @@
  *
  * Each plant entry contains:
  *  - id, name, emoji, description
- *  - type: flower | vegetable | fruit | herb | tree | shrub
+ *  - type: flower | vegetable | fruit | herb | tree | shrub | vine | bulb | grass | succulent | fern | groundcover
  *  - zones: array of compatible USDA hardiness zones (3–11)
  *  - sunlight: full-sun | partial-shade | full-shade (accepts multiple)
  *  - soil: loam | clay | sandy | silty | chalky | peaty (accepts multiple)
