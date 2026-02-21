@@ -1,15 +1,32 @@
+import { useState } from 'react'
 import { guideCategories } from '../../data/guides.js'
+import GuideDetail from './GuideDetail.jsx'
 
-function GuideCard({ guide }) {
+function GuideCard({ guide, onSelect }) {
+  const isLive = !guide.comingSoon
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-4 flex gap-3 items-start hover:shadow-md transition-shadow opacity-90">
+    <div
+      className={`bg-white rounded-2xl border shadow-sm p-4 flex gap-3 items-start transition-shadow ${
+        isLive
+          ? 'border-garden-200 hover:shadow-md cursor-pointer hover:border-garden-400'
+          : 'border-gray-200 opacity-80 cursor-default'
+      }`}
+      onClick={() => isLive && onSelect(guide.id)}
+      role={isLive ? 'button' : undefined}
+      tabIndex={isLive ? 0 : undefined}
+      onKeyDown={(e) => isLive && e.key === 'Enter' && onSelect(guide.id)}
+    >
       <span className="text-2xl flex-shrink-0">{guide.emoji}</span>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 flex-wrap">
           <h4 className="font-semibold text-sm text-garden-900 leading-tight">{guide.title}</h4>
-          {guide.comingSoon && (
+          {guide.comingSoon ? (
             <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 flex-shrink-0">
               Coming Soon
+            </span>
+          ) : (
+            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-garden-100 text-garden-700 flex-shrink-0">
+              Read Guide →
             </span>
           )}
         </div>
@@ -19,7 +36,7 @@ function GuideCard({ guide }) {
   )
 }
 
-function CategorySection({ category }) {
+function CategorySection({ category, onSelect }) {
   return (
     <section>
       <div className="flex items-center gap-2 mb-4">
@@ -31,7 +48,7 @@ function CategorySection({ category }) {
       </div>
       <div className="grid gap-3 sm:grid-cols-2">
         {category.guides.map((guide) => (
-          <GuideCard key={guide.id} guide={guide} />
+          <GuideCard key={guide.id} guide={guide} onSelect={onSelect} />
         ))}
       </div>
     </section>
@@ -39,7 +56,17 @@ function CategorySection({ category }) {
 }
 
 export default function GuidesHome() {
+  const [selectedGuideId, setSelectedGuideId] = useState(null)
+
   const totalGuides = guideCategories.reduce((sum, cat) => sum + cat.guides.length, 0)
+  const liveGuides = guideCategories.reduce(
+    (sum, cat) => sum + cat.guides.filter((g) => !g.comingSoon).length,
+    0
+  )
+
+  if (selectedGuideId) {
+    return <GuideDetail guideId={selectedGuideId} onBack={() => setSelectedGuideId(null)} />
+  }
 
   return (
     <div className="min-h-screen px-4 py-10">
@@ -54,9 +81,15 @@ export default function GuidesHome() {
               In-depth guides and tutorials for every gardening topic — from shade trees to post-harvest prep.
               We're building these one at a time.
             </p>
-            <div className="mt-4 inline-flex items-center gap-2 text-xs font-medium bg-amber-50 text-amber-700 border border-amber-200 px-4 py-2 rounded-full">
-              <span>🚧</span>
-              <span>{totalGuides} guides in development — check back as we publish each one</span>
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+              <div className="inline-flex items-center gap-2 text-xs font-medium bg-garden-50 text-garden-700 border border-garden-200 px-4 py-2 rounded-full">
+                <span>✅</span>
+                <span>{liveGuides} guides available now</span>
+              </div>
+              <div className="inline-flex items-center gap-2 text-xs font-medium bg-amber-50 text-amber-700 border border-amber-200 px-4 py-2 rounded-full">
+                <span>🚧</span>
+                <span>{totalGuides - liveGuides} guides in development</span>
+              </div>
             </div>
           </div>
         </div>
@@ -64,7 +97,7 @@ export default function GuidesHome() {
         {/* Guide Categories */}
         {guideCategories.map((category) => (
           <div key={category.id} className="bg-white rounded-3xl shadow-lg border border-gray-100 p-6 sm:p-8">
-            <CategorySection category={category} />
+            <CategorySection category={category} onSelect={setSelectedGuideId} />
           </div>
         ))}
 
