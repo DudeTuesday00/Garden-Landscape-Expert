@@ -184,13 +184,13 @@ Each question in `questions.js` has:
 
 ### Planting Guides Section (scaffold) ✅
 
-- `src/data/guides.js` — 10 categories, ~75 placeholder guides (all `comingSoon: true`)
-- `src/components/guides/GuidesHome.jsx` — guide cards with "Coming Soon" badges
+- `src/data/guides.js` — 10 categories, ~75 guides (3 live, remainder `comingSoon: true`)
+- `src/components/guides/GuidesHome.jsx` — guide cards with "Coming Soon" badges; live guides are clickable and route to full guide detail view
 - `src/App.jsx` — sticky top nav with two tabs: Plant Wizard and Planting Guides
 - `src/components/wizard/Wizard.jsx` — brand strip removed (now in App nav)
 
 **Guide categories:**
-1. Trees & Large Plants (8 guides)
+1. Trees & Large Plants (8 guides — 3 live ✅)
 2. Flowers & Color Gardens (9 guides)
 3. Edible Gardens (9 guides)
 4. Herbs & Fragrance (6 guides)
@@ -200,6 +200,50 @@ Each question in `questions.js` has:
 8. Specialty Gardens (10 guides)
 9. Container & Small Spaces (8 guides)
 10. Eco & Sustainability (9 guides)
+
+### Planting Guides — Live Content ✅
+
+Three full guides built out from source `.docx` files and integrated into the app:
+
+- `src/data/guide-content/shade-trees.js` — Shade Trees guide (`id: 'shade-trees'`)
+- `src/data/guide-content/fruit-trees.js` — Fruit Trees guide (`id: 'fruit-trees'`)
+- `src/data/guide-content/ornamental-trees.js` — Ornamental Trees guide (`id: 'ornamental-trees'`)
+- `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, and tables
+
+**Guide content data structure** (`src/data/guide-content/*.js`):
+
+Each guide exports a named constant with:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | string | Matches the guide `id` in `guides.js` |
+| `hero` | `{ emoji, title, subtitle }` | Displayed in the guide detail header |
+| `intro` | string | Lead paragraph below the hero |
+| `sections` | array | Ordered list of content sections |
+
+Each section has:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | string | Unique slug for the section |
+| `title` | string | Section heading |
+| `blocks` | array | Ordered list of content blocks |
+
+Block types supported by `GuideDetail.jsx`:
+
+| `type` | Fields | Renders As |
+|--------|--------|------------|
+| `p` | `text` | Paragraph |
+| `h3` | `text` | Sub-section heading |
+| `tip` | `emoji`, `text` | Green callout box |
+| `warning` | `emoji`, `text` | Red callout box |
+| `list` | `items[]` | Bulleted list |
+| `table` | `headers[]`, `rows[][]` | Scrollable table |
+
+**To add a new guide:**
+1. Create `src/data/guide-content/<guide-id>.js` following the structure above
+2. Import and add it to the `contentMap` in `GuideDetail.jsx`
+3. Set `comingSoon: false` on the matching entry in `guides.js`
 
 ---
 
