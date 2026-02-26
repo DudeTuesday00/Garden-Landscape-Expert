@@ -184,14 +184,14 @@ Each question in `questions.js` has:
 
 ### Planting Guides Section (scaffold) ✅
 
-- `src/data/guides.js` — 10 categories, ~75 guides (3 live, remainder `comingSoon: true`)
+- `src/data/guides.js` — 10 categories, ~75 guides (10 live, remainder `comingSoon: true`)
 - `src/components/guides/GuidesHome.jsx` — guide cards with "Coming Soon" badges; live guides are clickable and route to full guide detail view
 - `src/App.jsx` — sticky top nav with two tabs: Plant Wizard and Planting Guides
 - `src/components/wizard/Wizard.jsx` — brand strip removed (now in App nav)
 
 **Guide categories:**
-1. Trees & Large Plants (8 guides — 3 live ✅)
-2. Flowers & Color Gardens (9 guides)
+1. Trees & Large Plants (8 guides — 8 live ✅)
+2. Flowers & Color Gardens (9 guides — 2 live ✅)
 3. Edible Gardens (9 guides)
 4. Herbs & Fragrance (6 guides)
 5. Landscape Design (10 guides)
@@ -203,11 +203,18 @@ Each question in `questions.js` has:
 
 ### Planting Guides — Live Content ✅
 
-Three full guides built out from source `.docx` files and integrated into the app:
+Ten full guides built out from source `.docx` files and integrated into the app:
 
-- `src/data/guide-content/shade-trees.js` — Shade Trees guide (`id: 'shade-trees'`)
-- `src/data/guide-content/fruit-trees.js` — Fruit Trees guide (`id: 'fruit-trees'`)
-- `src/data/guide-content/ornamental-trees.js` — Ornamental Trees guide (`id: 'ornamental-trees'`)
+- `src/data/guide-content/shade-trees.js` — Shade Trees (`id: 'shade-trees'`)
+- `src/data/guide-content/fruit-trees.js` — Fruit Trees (`id: 'fruit-trees'`)
+- `src/data/guide-content/ornamental-trees.js` — Ornamental Trees (`id: 'ornamental-trees'`)
+- `src/data/guide-content/dwarf-trees.js` — Dwarf Trees for Small Spaces (`id: 'dwarf-trees'`)
+- `src/data/guide-content/evergreen-trees.js` — Evergreen Trees (`id: 'evergreen-trees'`)
+- `src/data/guide-content/privacy-trees.js` — Fast-Growing Privacy Trees (`id: 'privacy-trees'`)
+- `src/data/guide-content/street-trees.js` — Street Trees & Urban Planting (`id: 'street-trees'`)
+- `src/data/guide-content/fall-color-trees.js` — Trees for Fall Color (`id: 'fall-color-trees'`)
+- `src/data/guide-content/plants-for-color.js` — Plants for Color (`id: 'plants-for-color'`)
+- `src/data/guide-content/moon-garden.js` — Moon Garden (`id: 'moon-garden'`)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, and tables
 
 **Guide content data structure** (`src/data/guide-content/*.js`):

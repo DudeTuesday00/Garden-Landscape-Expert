@@ -1,11 +1,25 @@
 import { shadeTreeContent } from '../../data/guide-content/shade-trees.js'
 import { fruitTreeContent } from '../../data/guide-content/fruit-trees.js'
 import { ornamentalTreeContent } from '../../data/guide-content/ornamental-trees.js'
+import { dwarfTreeContent } from '../../data/guide-content/dwarf-trees.js'
+import { evergreenTreeContent } from '../../data/guide-content/evergreen-trees.js'
+import { privacyTreeContent } from '../../data/guide-content/privacy-trees.js'
+import { streetTreeContent } from '../../data/guide-content/street-trees.js'
+import { fallColorTreeContent } from '../../data/guide-content/fall-color-trees.js'
+import { plantsForColorContent } from '../../data/guide-content/plants-for-color.js'
+import { moonGardenContent } from '../../data/guide-content/moon-garden.js'
 
 const contentMap = {
   'shade-trees': shadeTreeContent,
   'fruit-trees': fruitTreeContent,
   'ornamental-trees': ornamentalTreeContent,
+  'dwarf-trees': dwarfTreeContent,
+  'evergreen-trees': evergreenTreeContent,
+  'privacy-trees': privacyTreeContent,
+  'street-trees': streetTreeContent,
+  'fall-color-trees': fallColorTreeContent,
+  'plants-for-color': plantsForColorContent,
+  'moon-garden': moonGardenContent,
 }
 
 function Block({ block }) {
