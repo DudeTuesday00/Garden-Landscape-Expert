@@ -14,6 +14,7 @@ import { cutFlowerGardenContent } from '../../data/guide-content/cut-flower-gard
 import { wildflowerMeadowContent } from '../../data/guide-content/wildflower-meadow.js'
 import { springBulbGardenContent } from '../../data/guide-content/spring-bulb-garden.js'
 import { longBloomingPerennialsContent } from '../../data/guide-content/long-blooming-perennials.js'
+import { annualFlowersContent } from '../../data/guide-content/annual-flowers.js'
 
 const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -32,6 +33,7 @@ const contentMap = {
   'wildflower-meadow': wildflowerMeadowContent,
   'spring-bulb-garden': springBulbGardenContent,
   'long-blooming-perennials': longBloomingPerennialsContent,
+  'annual-flowers': annualFlowersContent,
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -292,6 +294,22 @@ const themes = {
     tableHeadText: 'text-sky-800',
     tableHeadBorder: 'border-sky-200',
     bullet: 'text-sky-500',
+  },
+  'annual-flowers': {
+    heroBg: 'bg-gradient-to-br from-red-50 to-orange-100',
+    heroBorder: 'border-red-200',
+    heroTitle: 'text-red-800',
+    backBtn: 'text-red-700 hover:text-red-900',
+    sectionTitle: 'text-red-800',
+    sectionBorder: 'border-red-100',
+    h3: 'text-red-800',
+    tipBg: 'bg-red-50',
+    tipBorder: 'border-red-200',
+    tipText: 'text-red-900',
+    tableHead: 'bg-red-100',
+    tableHeadText: 'text-red-800',
+    tableHeadBorder: 'border-red-200',
+    bullet: 'text-red-500',
   },
 }
 
