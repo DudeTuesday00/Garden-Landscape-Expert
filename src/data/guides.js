@@ -147,7 +147,7 @@ export const guideCategories = [
         title: 'Annual Flowers: Best Picks',
         emoji: '🌻',
         description: 'The best annual flowers for non-stop summer color from first frost to last.',
-        comingSoon: true,
+        comingSoon: false,
       },
     ],
   },

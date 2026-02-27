@@ -184,14 +184,14 @@ Each question in `questions.js` has:
 
 ### Planting Guides Section (scaffold) ✅
 
-- `src/data/guides.js` — 10 categories, ~75 guides (16 live, remainder `comingSoon: true`)
+- `src/data/guides.js` — 10 categories, ~75 guides (17 live, remainder `comingSoon: true`)
 - `src/components/guides/GuidesHome.jsx` — guide cards with "Coming Soon" badges; live guides are clickable and route to full guide detail view
 - `src/App.jsx` — sticky top nav with two tabs: Plant Wizard and Planting Guides
 - `src/components/wizard/Wizard.jsx` — brand strip removed (now in App nav)
 
 **Guide categories:**
 1. Trees & Large Plants (8 guides — 8 live ✅)
-2. Flowers & Color Gardens (9 guides — 8 live ✅)
+2. Flowers & Color Gardens (9 guides — 9 live ✅)
 3. Edible Gardens (9 guides)
 4. Herbs & Fragrance (6 guides)
 5. Landscape Design (10 guides)
@@ -203,7 +203,7 @@ Each question in `questions.js` has:
 
 ### Planting Guides — Live Content ✅
 
-Sixteen full guides built out from source `.docx` files and integrated into the app:
+Seventeen full guides built out from source `.docx` files and integrated into the app:
 
 - `src/data/guide-content/shade-trees.js` — Shade Trees (`id: 'shade-trees'`)
 - `src/data/guide-content/fruit-trees.js` — Fruit Trees (`id: 'fruit-trees'`)
@@ -221,6 +221,7 @@ Sixteen full guides built out from source `.docx` files and integrated into the 
 - `src/data/guide-content/wildflower-meadow.js` — Wildflower Meadow (`id: 'wildflower-meadow'`)
 - `src/data/guide-content/spring-bulb-garden.js` — Spring Bulb Garden (`id: 'spring-bulb-garden'`)
 - `src/data/guide-content/long-blooming-perennials.js` — Long-Blooming Perennials (`id: 'long-blooming-perennials'`)
+- `src/data/guide-content/annual-flowers.js` — Annual Flowers: Best Picks (`id: 'annual-flowers'`)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, and tables
 
 **Guide content data structure** (`src/data/guide-content/*.js`):
