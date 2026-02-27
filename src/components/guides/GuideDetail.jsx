@@ -10,6 +10,7 @@ import { plantsForColorContent } from '../../data/guide-content/plants-for-color
 import { moonGardenContent } from '../../data/guide-content/moon-garden.js'
 import { cottageGardenContent } from '../../data/guide-content/cottage-garden.js'
 import { pollinatorGardenContent } from '../../data/guide-content/pollinator-garden.js'
+import { cutFlowerGardenContent } from '../../data/guide-content/cut-flower-garden.js'
 
 const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -24,6 +25,7 @@ const contentMap = {
   'moon-garden': moonGardenContent,
   'cottage-garden': cottageGardenContent,
   'pollinator-garden': pollinatorGardenContent,
+  'cut-flower-garden': cutFlowerGardenContent,
 }
 
 function Block({ block }) {

@@ -119,7 +119,7 @@ export const guideCategories = [
         title: 'Cut Flower Garden',
         emoji: '💐',
         description: 'Grow your own bouquets with the best flowers for cutting and arranging.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'wildflower-meadow',
