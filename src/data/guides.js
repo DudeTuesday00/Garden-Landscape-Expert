@@ -133,14 +133,14 @@ export const guideCategories = [
         title: 'Long-Blooming Perennials',
         emoji: '🌼',
         description: 'The best perennials that bloom for months, not just weeks.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'spring-bulb-garden',
         title: 'Spring Bulb Garden',
         emoji: '🌷',
         description: 'Plan and plant tulips, daffodils, and alliums for a spectacular spring.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'annual-flowers',
