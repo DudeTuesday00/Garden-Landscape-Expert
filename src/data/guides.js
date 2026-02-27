@@ -105,14 +105,14 @@ export const guideCategories = [
         title: 'Cottage Garden Style',
         emoji: '🏡',
         description: 'Romantic, overflowing abundance with old-fashioned favorites.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'pollinator-garden',
         title: 'Pollinator Garden',
         emoji: '🐝',
         description: 'Support bees, butterflies, and hummingbirds with the right plant mix.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'cut-flower-garden',

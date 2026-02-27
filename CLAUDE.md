@@ -184,14 +184,14 @@ Each question in `questions.js` has:
 
 ### Planting Guides Section (scaffold) ✅
 
-- `src/data/guides.js` — 10 categories, ~75 guides (10 live, remainder `comingSoon: true`)
+- `src/data/guides.js` — 10 categories, ~75 guides (12 live, remainder `comingSoon: true`)
 - `src/components/guides/GuidesHome.jsx` — guide cards with "Coming Soon" badges; live guides are clickable and route to full guide detail view
 - `src/App.jsx` — sticky top nav with two tabs: Plant Wizard and Planting Guides
 - `src/components/wizard/Wizard.jsx` — brand strip removed (now in App nav)
 
 **Guide categories:**
 1. Trees & Large Plants (8 guides — 8 live ✅)
-2. Flowers & Color Gardens (9 guides — 2 live ✅)
+2. Flowers & Color Gardens (9 guides — 4 live ✅)
 3. Edible Gardens (9 guides)
 4. Herbs & Fragrance (6 guides)
 5. Landscape Design (10 guides)
@@ -203,7 +203,7 @@ Each question in `questions.js` has:
 
 ### Planting Guides — Live Content ✅
 
-Ten full guides built out from source `.docx` files and integrated into the app:
+Twelve full guides built out from source `.docx` files and integrated into the app:
 
 - `src/data/guide-content/shade-trees.js` — Shade Trees (`id: 'shade-trees'`)
 - `src/data/guide-content/fruit-trees.js` — Fruit Trees (`id: 'fruit-trees'`)
@@ -215,6 +215,8 @@ Ten full guides built out from source `.docx` files and integrated into the app:
 - `src/data/guide-content/fall-color-trees.js` — Trees for Fall Color (`id: 'fall-color-trees'`)
 - `src/data/guide-content/plants-for-color.js` — Plants for Color (`id: 'plants-for-color'`)
 - `src/data/guide-content/moon-garden.js` — Moon Garden (`id: 'moon-garden'`)
+- `src/data/guide-content/cottage-garden.js` — Cottage Garden Style (`id: 'cottage-garden'`)
+- `src/data/guide-content/pollinator-garden.js` — Pollinator Garden (`id: 'pollinator-garden'`)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, and tables
 
 **Guide content data structure** (`src/data/guide-content/*.js`):

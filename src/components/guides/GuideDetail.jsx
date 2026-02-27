@@ -8,6 +8,8 @@ import { streetTreeContent } from '../../data/guide-content/street-trees.js'
 import { fallColorTreeContent } from '../../data/guide-content/fall-color-trees.js'
 import { plantsForColorContent } from '../../data/guide-content/plants-for-color.js'
 import { moonGardenContent } from '../../data/guide-content/moon-garden.js'
+import { cottageGardenContent } from '../../data/guide-content/cottage-garden.js'
+import { pollinatorGardenContent } from '../../data/guide-content/pollinator-garden.js'
 
 const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -20,6 +22,8 @@ const contentMap = {
   'fall-color-trees': fallColorTreeContent,
   'plants-for-color': plantsForColorContent,
   'moon-garden': moonGardenContent,
+  'cottage-garden': cottageGardenContent,
+  'pollinator-garden': pollinatorGardenContent,
 }
 
 function Block({ block }) {
