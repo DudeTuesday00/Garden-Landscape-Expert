@@ -126,7 +126,7 @@ export const guideCategories = [
         title: 'Wildflower Meadow',
         emoji: '🌾',
         description: 'Turn a patch of lawn into a low-maintenance, wildlife-rich meadow.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'long-blooming-perennials',

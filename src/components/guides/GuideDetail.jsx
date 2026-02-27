@@ -11,6 +11,7 @@ import { moonGardenContent } from '../../data/guide-content/moon-garden.js'
 import { cottageGardenContent } from '../../data/guide-content/cottage-garden.js'
 import { pollinatorGardenContent } from '../../data/guide-content/pollinator-garden.js'
 import { cutFlowerGardenContent } from '../../data/guide-content/cut-flower-garden.js'
+import { wildflowerMeadowContent } from '../../data/guide-content/wildflower-meadow.js'
 
 const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -26,6 +27,7 @@ const contentMap = {
   'cottage-garden': cottageGardenContent,
   'pollinator-garden': pollinatorGardenContent,
   'cut-flower-garden': cutFlowerGardenContent,
+  'wildflower-meadow': wildflowerMeadowContent,
 }
 
 function Block({ block }) {
