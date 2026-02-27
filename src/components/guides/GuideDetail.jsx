@@ -12,6 +12,8 @@ import { cottageGardenContent } from '../../data/guide-content/cottage-garden.js
 import { pollinatorGardenContent } from '../../data/guide-content/pollinator-garden.js'
 import { cutFlowerGardenContent } from '../../data/guide-content/cut-flower-garden.js'
 import { wildflowerMeadowContent } from '../../data/guide-content/wildflower-meadow.js'
+import { springBulbGardenContent } from '../../data/guide-content/spring-bulb-garden.js'
+import { longBloomingPerennialsContent } from '../../data/guide-content/long-blooming-perennials.js'
 
 const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -28,6 +30,8 @@ const contentMap = {
   'pollinator-garden': pollinatorGardenContent,
   'cut-flower-garden': cutFlowerGardenContent,
   'wildflower-meadow': wildflowerMeadowContent,
+  'spring-bulb-garden': springBulbGardenContent,
+  'long-blooming-perennials': longBloomingPerennialsContent,
 }
 
 function Block({ block }) {
