@@ -164,7 +164,7 @@ export const guideCategories = [
         title: 'Salad Garden',
         emoji: '🥗',
         description: 'Grow a complete salad bar — lettuce, greens, radishes, cucumbers, and more.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'herb-garden-design',
@@ -178,7 +178,7 @@ export const guideCategories = [
         title: 'Pizza Garden',
         emoji: '🍕',
         description: 'Grow everything you need for homemade pizza — tomatoes, basil, peppers, oregano.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'tea-garden',
