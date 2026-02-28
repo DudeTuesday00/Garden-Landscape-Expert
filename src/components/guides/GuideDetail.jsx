@@ -17,6 +17,7 @@ import { longBloomingPerennialsContent } from '../../data/guide-content/long-blo
 import { annualFlowersContent } from '../../data/guide-content/annual-flowers.js'
 import { pizzaGardenContent } from '../../data/guide-content/pizza-garden.js'
 import { saladGardenContent } from '../../data/guide-content/salad-garden.js'
+import { herbGardenDesignContent } from '../../data/guide-content/herb-garden-design.js'
 
 const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -38,6 +39,7 @@ const contentMap = {
   'annual-flowers': annualFlowersContent,
   'pizza-garden': pizzaGardenContent,
   'salad-garden': saladGardenContent,
+  'herb-garden-design': herbGardenDesignContent,
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -346,6 +348,22 @@ const themes = {
     tableHeadText: 'text-green-800',
     tableHeadBorder: 'border-green-200',
     bullet: 'text-green-500',
+  },
+  'herb-garden-design': {
+    heroBg: 'bg-gradient-to-br from-stone-50 to-green-100',
+    heroBorder: 'border-stone-200',
+    heroTitle: 'text-stone-800',
+    backBtn: 'text-stone-600 hover:text-stone-900',
+    sectionTitle: 'text-stone-700',
+    sectionBorder: 'border-stone-100',
+    h3: 'text-stone-700',
+    tipBg: 'bg-stone-50',
+    tipBorder: 'border-stone-200',
+    tipText: 'text-stone-900',
+    tableHead: 'bg-stone-100',
+    tableHeadText: 'text-stone-700',
+    tableHeadBorder: 'border-stone-200',
+    bullet: 'text-stone-400',
   },
 }
 

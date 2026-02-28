@@ -171,7 +171,7 @@ export const guideCategories = [
         title: 'Herb Garden Design',
         emoji: '🌿',
         description: 'Plan a beautiful, functional herb garden for cooking and fragrance.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'pizza-garden',

@@ -12,7 +12,7 @@ The app has two sections, switchable via a sticky top nav:
 
 1. **Plant Selection Wizard** — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Planting Guides** — a placeholder scaffold of 10 guide categories (~75 guides total) with "Coming Soon" badges. Guides are not yet built.
+2. **Planting Guides** — 10 guide categories (~75 guides total). 20 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, and callouts.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -42,11 +42,33 @@ Garden-Landscape-Expert/
     │   │   ├── ProgressBar.jsx      # Step progress indicator
     │   │   └── Results.jsx          # Plant recommendation cards
     │   └── guides/
-    │       └── GuidesHome.jsx       # Guides landing page (Coming Soon placeholders)
+    │       ├── GuidesHome.jsx       # Guides landing page (card grid, Coming Soon badges)
+    │       └── GuideDetail.jsx      # Full guide renderer — imports contentMap + per-guide color themes
     ├── data/
     │   ├── plants.js                # Static plant database (148 plants across 12 types)
     │   ├── questions.js             # Wizard question definitions (with hydro routing flags)
-    │   └── guides.js                # 10 guide categories, ~75 placeholder guides
+    │   ├── guides.js                # 10 guide categories, ~75 guides (comingSoon flag per guide)
+    │   └── guide-content/           # One JS file per live guide (20 files currently)
+    │       ├── shade-trees.js
+    │       ├── fruit-trees.js
+    │       ├── ornamental-trees.js
+    │       ├── dwarf-trees.js
+    │       ├── evergreen-trees.js
+    │       ├── privacy-trees.js
+    │       ├── street-trees.js
+    │       ├── fall-color-trees.js
+    │       ├── plants-for-color.js
+    │       ├── moon-garden.js
+    │       ├── cottage-garden.js
+    │       ├── pollinator-garden.js
+    │       ├── cut-flower-garden.js
+    │       ├── wildflower-meadow.js
+    │       ├── spring-bulb-garden.js
+    │       ├── long-blooming-perennials.js
+    │       ├── annual-flowers.js
+    │       ├── pizza-garden.js
+    │       ├── salad-garden.js
+    │       └── herb-garden-design.js
     └── logic/
         └── matchPlants.js           # Scoring + filtering algorithm
 ```
@@ -159,7 +181,7 @@ Each question in `questions.js` has:
 
 ## Planned Sections (Future)
 
-- **Planting Guides** — build out the ~75 placeholder guides (scaffold already exists in `guides.js` / `GuidesHome.jsx`)
+- **Planting Guides (ongoing)** — 20 of ~75 guides are live; continue adding guides from source `.docx` files using the established pattern in `guide-content/`
 - Plant care calendar / seasonal reminders
 - Landscape design planner
 - Soil amendment advisor
@@ -184,7 +206,7 @@ Each question in `questions.js` has:
 
 ### Planting Guides Section (scaffold) ✅
 
-- `src/data/guides.js` — 10 categories, ~75 guides (19 live, remainder `comingSoon: true`)
+- `src/data/guides.js` — 10 categories, ~75 guides (20 live, remainder `comingSoon: true`)
 - `src/components/guides/GuidesHome.jsx` — guide cards with "Coming Soon" badges; live guides are clickable and route to full guide detail view
 - `src/App.jsx` — sticky top nav with two tabs: Plant Wizard and Planting Guides
 - `src/components/wizard/Wizard.jsx` — brand strip removed (now in App nav)
@@ -192,7 +214,7 @@ Each question in `questions.js` has:
 **Guide categories:**
 1. Trees & Large Plants (8 guides — 8 live ✅)
 2. Flowers & Color Gardens (9 guides — 9 live ✅)
-3. Edible Gardens (9 guides — 2 live)
+3. Edible Gardens (9 guides — 3 live)
 4. Herbs & Fragrance (6 guides)
 5. Landscape Design (10 guides)
 6. Seasonal Guides (8 guides)
@@ -203,7 +225,7 @@ Each question in `questions.js` has:
 
 ### Planting Guides — Live Content ✅
 
-Nineteen full guides built out from source `.docx` files and integrated into the app:
+Twenty full guides built out from source `.docx` files and integrated into the app:
 
 - `src/data/guide-content/shade-trees.js` — Shade Trees (`id: 'shade-trees'`)
 - `src/data/guide-content/fruit-trees.js` — Fruit Trees (`id: 'fruit-trees'`)
@@ -224,6 +246,7 @@ Nineteen full guides built out from source `.docx` files and integrated into the
 - `src/data/guide-content/annual-flowers.js` — Annual Flowers: Best Picks (`id: 'annual-flowers'`)
 - `src/data/guide-content/pizza-garden.js` — Pizza Garden (`id: 'pizza-garden'`)
 - `src/data/guide-content/salad-garden.js` — Salad Garden (`id: 'salad-garden'`)
+- `src/data/guide-content/herb-garden-design.js` — Herb Garden Design (`id: 'herb-garden-design'`)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, and tables
 
 **Guide content data structure** (`src/data/guide-content/*.js`):
@@ -251,15 +274,16 @@ Block types supported by `GuideDetail.jsx`:
 |--------|--------|------------|
 | `p` | `text` | Paragraph |
 | `h3` | `text` | Sub-section heading |
-| `tip` | `emoji`, `text` | Green callout box |
-| `warning` | `emoji`, `text` | Red callout box |
+| `tip` | `emoji`, `text` | Themed callout box (positive/informational) |
+| `warning` | `emoji`, `text` | Themed callout box (caution/alert) |
 | `list` | `items[]` | Bulleted list |
 | `table` | `headers[]`, `rows[][]` | Scrollable table |
 
 **To add a new guide:**
 1. Create `src/data/guide-content/<guide-id>.js` following the structure above
 2. Import and add it to the `contentMap` in `GuideDetail.jsx`
-3. Set `comingSoon: false` on the matching entry in `guides.js`
+3. Add a color theme for the guide to the `themes` object in `GuideDetail.jsx` (all class strings must be complete for Tailwind JIT)
+4. Set `comingSoon: false` on the matching entry in `guides.js`
 
 ---
 
