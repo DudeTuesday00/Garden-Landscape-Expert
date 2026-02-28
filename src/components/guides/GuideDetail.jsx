@@ -15,6 +15,8 @@ import { wildflowerMeadowContent } from '../../data/guide-content/wildflower-mea
 import { springBulbGardenContent } from '../../data/guide-content/spring-bulb-garden.js'
 import { longBloomingPerennialsContent } from '../../data/guide-content/long-blooming-perennials.js'
 import { annualFlowersContent } from '../../data/guide-content/annual-flowers.js'
+import { pizzaGardenContent } from '../../data/guide-content/pizza-garden.js'
+import { saladGardenContent } from '../../data/guide-content/salad-garden.js'
 
 const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -34,6 +36,8 @@ const contentMap = {
   'spring-bulb-garden': springBulbGardenContent,
   'long-blooming-perennials': longBloomingPerennialsContent,
   'annual-flowers': annualFlowersContent,
+  'pizza-garden': pizzaGardenContent,
+  'salad-garden': saladGardenContent,
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -310,6 +314,38 @@ const themes = {
     tableHeadText: 'text-red-800',
     tableHeadBorder: 'border-red-200',
     bullet: 'text-red-500',
+  },
+  'pizza-garden': {
+    heroBg: 'bg-gradient-to-br from-orange-50 to-red-100',
+    heroBorder: 'border-orange-200',
+    heroTitle: 'text-orange-900',
+    backBtn: 'text-orange-700 hover:text-orange-900',
+    sectionTitle: 'text-orange-800',
+    sectionBorder: 'border-orange-100',
+    h3: 'text-orange-800',
+    tipBg: 'bg-orange-50',
+    tipBorder: 'border-orange-200',
+    tipText: 'text-orange-900',
+    tableHead: 'bg-orange-100',
+    tableHeadText: 'text-orange-800',
+    tableHeadBorder: 'border-orange-200',
+    bullet: 'text-orange-500',
+  },
+  'salad-garden': {
+    heroBg: 'bg-gradient-to-br from-green-50 to-lime-100',
+    heroBorder: 'border-green-200',
+    heroTitle: 'text-green-900',
+    backBtn: 'text-green-700 hover:text-green-900',
+    sectionTitle: 'text-green-800',
+    sectionBorder: 'border-green-100',
+    h3: 'text-green-800',
+    tipBg: 'bg-green-50',
+    tipBorder: 'border-green-200',
+    tipText: 'text-green-900',
+    tableHead: 'bg-green-100',
+    tableHeadText: 'text-green-800',
+    tableHeadBorder: 'border-green-200',
+    bullet: 'text-green-500',
   },
 }
 
