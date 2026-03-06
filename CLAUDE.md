@@ -225,7 +225,7 @@ Each question in `questions.js` has:
 5. Landscape Design (10 guides)
 6. Seasonal Guides (8 guides)
 7. Pest & Problem Solving (8 guides)
-8. Specialty Gardens (10 guides)
+8. Specialty Gardens (11 guides)
 9. Container & Small Spaces (8 guides)
 10. Eco & Sustainability (9 guides)
 
