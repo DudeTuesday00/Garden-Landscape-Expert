@@ -85,7 +85,7 @@ Garden-Landscape-Expert/
 
 - **Language:** JavaScript (JSX)
 - **Framework:** React 18 + Vite 6
-- **Styling:** Tailwind CSS 3 with custom `garden` and `earth` color palettes
+- **Styling:** Tailwind CSS 3 with custom `garden` and `earth` color palettes (see brand colors below)
 - **Database:** Static JS files (no backend)
 - **Testing:** Not yet configured
 
@@ -128,6 +128,18 @@ npm run preview
 - **Data files:** Plain JS exports in `src/data/`
 - **Logic files:** Pure functions in `src/logic/`
 - **Styling:** Tailwind utility classes only — no separate CSS files except `index.css`
+- **Brand colors:** Do not substitute standard Tailwind greens/ambers for brand colors — always use `garden-*` and `earth-*` tokens
+
+### Brand Color Palette
+
+| Token | Hex | Role |
+|-------|-----|------|
+| `garden-50` | `#F5F5F0` | Page background |
+| `garden-600` | `#6FBF4B` | Primary buttons (Garden Green) |
+| `garden-700` | `#5eae3d` | Button hover state |
+| `garden-800` | `#2F6B3F` | Headers, brand text (Deep Green) |
+| `earth-500` | `#E5B24A` | Highlights, accents (Sunlight Gold) |
+| body text | `#2E2E2E` | Dark Slate — set directly in `index.css` |
 - **Plant data:** Add new plants to `src/data/plants.js` following the existing schema
 - **Questions:** Add/edit wizard questions in `src/data/questions.js`
 
@@ -309,3 +321,7 @@ Block types supported by `GuideDetail.jsx`:
   - **Traditional path:** hard filters on type, zone, sunlight, season; soft scoring on soil, water, space, experience
   - **Hydroponic path:** hard filters on `plant.hydroponic === true` and type; skips zone/soil/season; soft scores hydro system compatibility, water, space, experience
 - The wizard question list is computed dynamically in `Wizard.jsx` via `getActiveQuestions(answers)` — adding a question with `skipIfHydro` or `hydroOnly` is all that's needed to route it correctly
+
+### Color Scheme ✅
+
+Brand color scheme applied via `tailwind.config.js` (custom `garden`/`earth` palettes) and `src/index.css` (body text). All components use `garden-*` / `earth-*` tokens — no inline hex values in JSX.
