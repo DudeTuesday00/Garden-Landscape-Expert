@@ -5,9 +5,9 @@ export default function WelcomeScreen({ onStart }) {
 
       <div>
         <h1 className="text-4xl font-bold text-garden-800 dark:text-garden-300 leading-tight">
-          Garden Landscape Expert
+          Planting Atlas
         </h1>
-        <p className="mt-2 text-lg text-garden-600 dark:text-garden-400">Plant Selection Wizard</p>
+        <p className="mt-2 text-lg text-garden-600 dark:text-garden-400">Research it. Plant it. Grow it.</p>
       </div>
 
       <p className="max-w-md text-gray-600 dark:text-gray-300 text-base leading-relaxed">

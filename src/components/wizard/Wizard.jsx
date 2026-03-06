@@ -125,7 +125,7 @@ export default function Wizard() {
         </div>
 
         <p className="text-center text-xs text-gray-400 dark:text-gray-500 mt-4">
-          Garden Landscape Expert · Plant Selection Wizard v1.0
+          Planting Atlas · Plant Selection Wizard v1.0
         </p>
       </div>
     </div>
