@@ -4,6 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-garden-50 text-gray-800 font-sans;
+    @apply bg-garden-50 font-sans;
+    color: #2E2E2E;
   }
 }
