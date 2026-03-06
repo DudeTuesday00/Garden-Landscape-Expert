@@ -1,4 +1,4 @@
-# Garden Landscape Expert — CLAUDE.md
+# Planting Atlas — CLAUDE.md
 
 This file provides guidance for AI assistants working in this repository.
 
@@ -6,7 +6,7 @@ This file provides guidance for AI assistants working in this repository.
 
 ## Project Overview
 
-**Garden Landscape Expert** is a React web application that helps users with garden and landscape planning, design, and expertise.
+**Planting Atlas** ("Research it. Plant it. Grow it.") is a React web application that helps users with garden and landscape planning, design, and expertise.
 
 The app has two sections, switchable via a sticky top nav:
 
@@ -273,6 +273,13 @@ Twenty-six full guides built out from source `.docx` files and integrated into t
 - `src/data/guide-content/edible-flowers.js` — Edible Flowers (`id: 'edible-flowers'`)
 - `src/data/guide-content/salsa-garden.js` — Salsa Garden (`id: 'salsa-garden'`)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, and tables
+
+### Rebrand to Planting Atlas ✅
+
+- Site renamed from "Garden Landscape Expert" to **Planting Atlas** across all UI surfaces
+- New slogan: **"Research it. Plant it. Grow it."** (replaces "Plant Selection Wizard" subtitle on the welcome screen)
+- Nav abbreviation updated from `GLE` → `PA` (mobile)
+- Domain: `plantingatlas.com` (hosted on Cloudflare Pages)
 
 ### Color Scheme ✅
 
