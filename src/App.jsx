@@ -23,8 +23,8 @@ export default function App() {
           {/* Brand */}
           <div className="flex items-center gap-2 text-garden-700 dark:text-garden-400">
             <span className="text-xl">🌿</span>
-            <span className="font-bold text-sm tracking-wide uppercase hidden sm:block">Garden Landscape Expert</span>
-            <span className="font-bold text-sm tracking-wide uppercase sm:hidden">GLE</span>
+            <span className="font-bold text-sm tracking-wide uppercase hidden sm:block">Planting Atlas</span>
+            <span className="font-bold text-sm tracking-wide uppercase sm:hidden">PA</span>
           </div>
 
           {/* Nav tabs + dark toggle */}

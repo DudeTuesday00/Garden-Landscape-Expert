@@ -102,7 +102,7 @@ export default function GuidesHome() {
         ))}
 
         <p className="text-center text-xs text-gray-400 dark:text-gray-500 pb-4">
-          Garden Landscape Expert · Planting Guides — more added regularly
+          Planting Atlas · Planting Guides — more added regularly
         </p>
       </div>
     </div>
