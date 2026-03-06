@@ -18,6 +18,10 @@ import { annualFlowersContent } from '../../data/guide-content/annual-flowers.js
 import { pizzaGardenContent } from '../../data/guide-content/pizza-garden.js'
 import { saladGardenContent } from '../../data/guide-content/salad-garden.js'
 import { herbGardenDesignContent } from '../../data/guide-content/herb-garden-design.js'
+import { teaGardenContent } from '../../data/guide-content/tea-garden.js'
+import { childrensGardenContent } from '../../data/guide-content/childrens-vegetable-garden.js'
+import { squareFootGardeningContent } from '../../data/guide-content/square-foot-gardening.js'
+import { threeSistersContent } from '../../data/guide-content/three-sisters.js'
 
 const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -40,6 +44,10 @@ const contentMap = {
   'pizza-garden': pizzaGardenContent,
   'salad-garden': saladGardenContent,
   'herb-garden-design': herbGardenDesignContent,
+  'tea-garden': teaGardenContent,
+  'childrens-garden': childrensGardenContent,
+  'square-foot-gardening': squareFootGardeningContent,
+  'three-sisters': threeSistersContent,
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -364,6 +372,70 @@ const themes = {
     tableHeadText: 'text-stone-700',
     tableHeadBorder: 'border-stone-200',
     bullet: 'text-stone-400',
+  },
+  'tea-garden': {
+    heroBg: 'bg-gradient-to-br from-teal-50 to-green-100',
+    heroBorder: 'border-teal-200',
+    heroTitle: 'text-teal-900',
+    backBtn: 'text-teal-700 hover:text-teal-900',
+    sectionTitle: 'text-teal-800',
+    sectionBorder: 'border-teal-100',
+    h3: 'text-teal-800',
+    tipBg: 'bg-teal-50',
+    tipBorder: 'border-teal-200',
+    tipText: 'text-teal-900',
+    tableHead: 'bg-teal-100',
+    tableHeadText: 'text-teal-800',
+    tableHeadBorder: 'border-teal-200',
+    bullet: 'text-teal-500',
+  },
+  'childrens-garden': {
+    heroBg: 'bg-gradient-to-br from-yellow-50 to-lime-100',
+    heroBorder: 'border-yellow-300',
+    heroTitle: 'text-yellow-900',
+    backBtn: 'text-yellow-700 hover:text-yellow-900',
+    sectionTitle: 'text-yellow-800',
+    sectionBorder: 'border-yellow-200',
+    h3: 'text-yellow-800',
+    tipBg: 'bg-yellow-50',
+    tipBorder: 'border-yellow-300',
+    tipText: 'text-yellow-900',
+    tableHead: 'bg-yellow-100',
+    tableHeadText: 'text-yellow-800',
+    tableHeadBorder: 'border-yellow-300',
+    bullet: 'text-yellow-600',
+  },
+  'square-foot-gardening': {
+    heroBg: 'bg-gradient-to-br from-blue-50 to-indigo-100',
+    heroBorder: 'border-blue-200',
+    heroTitle: 'text-blue-900',
+    backBtn: 'text-blue-700 hover:text-blue-900',
+    sectionTitle: 'text-blue-800',
+    sectionBorder: 'border-blue-100',
+    h3: 'text-blue-800',
+    tipBg: 'bg-blue-50',
+    tipBorder: 'border-blue-200',
+    tipText: 'text-blue-900',
+    tableHead: 'bg-blue-100',
+    tableHeadText: 'text-blue-800',
+    tableHeadBorder: 'border-blue-200',
+    bullet: 'text-blue-500',
+  },
+  'three-sisters': {
+    heroBg: 'bg-gradient-to-br from-amber-50 to-yellow-100',
+    heroBorder: 'border-amber-300',
+    heroTitle: 'text-amber-900',
+    backBtn: 'text-amber-700 hover:text-amber-900',
+    sectionTitle: 'text-amber-800',
+    sectionBorder: 'border-amber-200',
+    h3: 'text-amber-800',
+    tipBg: 'bg-amber-50',
+    tipBorder: 'border-amber-300',
+    tipText: 'text-amber-900',
+    tableHead: 'bg-amber-100',
+    tableHeadText: 'text-amber-800',
+    tableHeadBorder: 'border-amber-300',
+    bullet: 'text-amber-600',
   },
 }
 

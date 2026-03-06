@@ -185,14 +185,14 @@ export const guideCategories = [
         title: 'Tea Garden',
         emoji: '🫖',
         description: 'Grow mint, chamomile, lemon balm, and more for a personal tea collection.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'childrens-garden',
         title: "Children's Vegetable Garden",
         emoji: '👧',
         description: 'Easy, fast-growing plants that get kids excited about growing food.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'edible-flowers',
@@ -206,14 +206,14 @@ export const guideCategories = [
         title: 'Square Foot Gardening',
         emoji: '📐',
         description: 'Maximum food production in minimum space with this proven system.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'three-sisters',
         title: 'Three Sisters Garden',
         emoji: '🌽',
         description: 'The ancient Native American companion planting trio: corn, beans, and squash.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'salsa-garden',

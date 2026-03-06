@@ -12,7 +12,7 @@ The app has two sections, switchable via a sticky top nav:
 
 1. **Plant Selection Wizard** — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Planting Guides** — 10 guide categories (~75 guides total). 20 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, and callouts.
+2. **Planting Guides** — 10 guide categories (~75 guides total). 24 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, and callouts.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -48,7 +48,7 @@ Garden-Landscape-Expert/
     │   ├── plants.js                # Static plant database (148 plants across 12 types)
     │   ├── questions.js             # Wizard question definitions (with hydro routing flags)
     │   ├── guides.js                # 10 guide categories, ~75 guides (comingSoon flag per guide)
-    │   └── guide-content/           # One JS file per live guide (20 files currently)
+    │   └── guide-content/           # One JS file per live guide (24 files currently)
     │       ├── shade-trees.js
     │       ├── fruit-trees.js
     │       ├── ornamental-trees.js
@@ -68,7 +68,11 @@ Garden-Landscape-Expert/
     │       ├── annual-flowers.js
     │       ├── pizza-garden.js
     │       ├── salad-garden.js
-    │       └── herb-garden-design.js
+    │       ├── herb-garden-design.js
+    │       ├── tea-garden.js
+    │       ├── childrens-vegetable-garden.js
+    │       ├── square-foot-gardening.js
+    │       └── three-sisters.js
     └── logic/
         └── matchPlants.js           # Scoring + filtering algorithm
 ```
@@ -181,7 +185,7 @@ Each question in `questions.js` has:
 
 ## Planned Sections (Future)
 
-- **Planting Guides (ongoing)** — 20 of ~75 guides are live; continue adding guides from source `.docx` files using the established pattern in `guide-content/`
+- **Planting Guides (ongoing)** — 24 of ~75 guides are live; continue adding guides from source `.docx` files using the established pattern in `guide-content/`
 - Plant care calendar / seasonal reminders
 - Landscape design planner
 - Soil amendment advisor
@@ -206,7 +210,7 @@ Each question in `questions.js` has:
 
 ### Planting Guides Section (scaffold) ✅
 
-- `src/data/guides.js` — 10 categories, ~75 guides (20 live, remainder `comingSoon: true`)
+- `src/data/guides.js` — 10 categories, ~75 guides (24 live, remainder `comingSoon: true`)
 - `src/components/guides/GuidesHome.jsx` — guide cards with "Coming Soon" badges; live guides are clickable and route to full guide detail view
 - `src/App.jsx` — sticky top nav with two tabs: Plant Wizard and Planting Guides
 - `src/components/wizard/Wizard.jsx` — brand strip removed (now in App nav)
@@ -214,7 +218,7 @@ Each question in `questions.js` has:
 **Guide categories:**
 1. Trees & Large Plants (8 guides — 8 live ✅)
 2. Flowers & Color Gardens (9 guides — 9 live ✅)
-3. Edible Gardens (9 guides — 3 live)
+3. Edible Gardens (9 guides — 7 live)
 4. Herbs & Fragrance (6 guides)
 5. Landscape Design (10 guides)
 6. Seasonal Guides (8 guides)
@@ -225,7 +229,7 @@ Each question in `questions.js` has:
 
 ### Planting Guides — Live Content ✅
 
-Twenty full guides built out from source `.docx` files and integrated into the app:
+Twenty-four full guides built out from source `.docx` files and integrated into the app:
 
 - `src/data/guide-content/shade-trees.js` — Shade Trees (`id: 'shade-trees'`)
 - `src/data/guide-content/fruit-trees.js` — Fruit Trees (`id: 'fruit-trees'`)
@@ -247,6 +251,10 @@ Twenty full guides built out from source `.docx` files and integrated into the a
 - `src/data/guide-content/pizza-garden.js` — Pizza Garden (`id: 'pizza-garden'`)
 - `src/data/guide-content/salad-garden.js` — Salad Garden (`id: 'salad-garden'`)
 - `src/data/guide-content/herb-garden-design.js` — Herb Garden Design (`id: 'herb-garden-design'`)
+- `src/data/guide-content/tea-garden.js` — Tea Garden (`id: 'tea-garden'`)
+- `src/data/guide-content/childrens-vegetable-garden.js` — Children's Vegetable Garden (`id: 'childrens-garden'`)
+- `src/data/guide-content/square-foot-gardening.js` — Square Foot Gardening (`id: 'square-foot-gardening'`)
+- `src/data/guide-content/three-sisters.js` — Three Sisters Garden (`id: 'three-sisters'`)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, and tables
 
 **Guide content data structure** (`src/data/guide-content/*.js`):
