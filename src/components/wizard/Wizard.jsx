@@ -96,7 +96,7 @@ export default function Wizard() {
     <div className="min-h-screen flex items-start justify-center px-4 py-10">
       <div className="w-full max-w-2xl">
         {/* Card */}
-        <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-6 sm:p-8">
+        <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8">
           {stage === STAGES.WELCOME && (
             <WelcomeScreen onStart={handleStart} />
           )}
@@ -124,7 +124,7 @@ export default function Wizard() {
           )}
         </div>
 
-        <p className="text-center text-xs text-gray-400 mt-4">
+        <p className="text-center text-xs text-gray-400 dark:text-gray-500 mt-4">
           Garden Landscape Expert · Plant Selection Wizard v1.0
         </p>
       </div>

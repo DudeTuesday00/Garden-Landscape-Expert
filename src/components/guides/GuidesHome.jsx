@@ -6,10 +6,10 @@ function GuideCard({ guide, onSelect }) {
   const isLive = !guide.comingSoon
   return (
     <div
-      className={`bg-white rounded-2xl border shadow-sm p-4 flex gap-3 items-start transition-shadow ${
+      className={`bg-white dark:bg-gray-800 rounded-2xl border shadow-sm p-4 flex gap-3 items-start transition-shadow ${
         isLive
-          ? 'border-garden-200 hover:shadow-md cursor-pointer hover:border-garden-400'
-          : 'border-gray-200 opacity-80 cursor-default'
+          ? 'border-garden-200 dark:border-garden-700 hover:shadow-md cursor-pointer hover:border-garden-400 dark:hover:border-garden-500'
+          : 'border-gray-200 dark:border-gray-700 opacity-80 cursor-default'
       }`}
       onClick={() => isLive && onSelect(guide.id)}
       role={isLive ? 'button' : undefined}
@@ -19,18 +19,18 @@ function GuideCard({ guide, onSelect }) {
       <span className="text-2xl flex-shrink-0">{guide.emoji}</span>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 flex-wrap">
-          <h4 className="font-semibold text-sm text-garden-900 leading-tight">{guide.title}</h4>
+          <h4 className="font-semibold text-sm text-garden-900 dark:text-garden-300 leading-tight">{guide.title}</h4>
           {guide.comingSoon ? (
-            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 flex-shrink-0">
+            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 flex-shrink-0">
               Coming Soon
             </span>
           ) : (
-            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-garden-100 text-garden-700 flex-shrink-0">
+            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-garden-100 dark:bg-garden-900/30 text-garden-700 dark:text-garden-300 flex-shrink-0">
               Read Guide →
             </span>
           )}
         </div>
-        <p className="text-xs text-gray-500 mt-1 leading-relaxed">{guide.description}</p>
+        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">{guide.description}</p>
       </div>
     </div>
   )
@@ -42,8 +42,8 @@ function CategorySection({ category, onSelect }) {
       <div className="flex items-center gap-2 mb-4">
         <span className="text-2xl">{category.emoji}</span>
         <div>
-          <h2 className="text-lg font-bold text-garden-800">{category.title}</h2>
-          <p className="text-sm text-gray-500">{category.description}</p>
+          <h2 className="text-lg font-bold text-garden-800 dark:text-garden-300">{category.title}</h2>
+          <p className="text-sm text-gray-500 dark:text-gray-400">{category.description}</p>
         </div>
       </div>
       <div className="grid gap-3 sm:grid-cols-2">
@@ -73,20 +73,20 @@ export default function GuidesHome() {
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-10">
 
         {/* Header */}
-        <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-6 sm:p-8">
+        <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8">
           <div className="text-center">
             <div className="text-5xl mb-3">📖</div>
-            <h1 className="text-3xl font-bold text-garden-800">Planting Guides</h1>
-            <p className="mt-2 text-gray-500 text-sm max-w-lg mx-auto">
+            <h1 className="text-3xl font-bold text-garden-800 dark:text-garden-300">Planting Guides</h1>
+            <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm max-w-lg mx-auto">
               In-depth guides and tutorials for every gardening topic — from shade trees to post-harvest prep.
               We're building these one at a time.
             </p>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
-              <div className="inline-flex items-center gap-2 text-xs font-medium bg-garden-50 text-garden-700 border border-garden-200 px-4 py-2 rounded-full">
+              <div className="inline-flex items-center gap-2 text-xs font-medium bg-garden-50 dark:bg-gray-700 text-garden-700 dark:text-garden-400 border border-garden-200 dark:border-garden-700 px-4 py-2 rounded-full">
                 <span>✅</span>
                 <span>{liveGuides} guides available now</span>
               </div>
-              <div className="inline-flex items-center gap-2 text-xs font-medium bg-amber-50 text-amber-700 border border-amber-200 px-4 py-2 rounded-full">
+              <div className="inline-flex items-center gap-2 text-xs font-medium bg-amber-50 dark:bg-gray-700 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-700 px-4 py-2 rounded-full">
                 <span>🚧</span>
                 <span>{totalGuides - liveGuides} guides in development</span>
               </div>
@@ -96,12 +96,12 @@ export default function GuidesHome() {
 
         {/* Guide Categories */}
         {guideCategories.map((category) => (
-          <div key={category.id} className="bg-white rounded-3xl shadow-lg border border-gray-100 p-6 sm:p-8">
+          <div key={category.id} className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8">
             <CategorySection category={category} onSelect={setSelectedGuideId} />
           </div>
         ))}
 
-        <p className="text-center text-xs text-gray-400 pb-4">
+        <p className="text-center text-xs text-gray-400 dark:text-gray-500 pb-4">
           Garden Landscape Expert · Planting Guides — more added regularly
         </p>
       </div>

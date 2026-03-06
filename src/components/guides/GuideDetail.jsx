@@ -479,24 +479,24 @@ const themes = {
 function Block({ block, theme }) {
   switch (block.type) {
     case 'p':
-      return <p className="text-sm text-gray-700 leading-relaxed">{block.text}</p>
+      return <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{block.text}</p>
 
     case 'h3':
-      return <h3 className={`text-base font-bold ${theme.h3} mt-2`}>{block.text}</h3>
+      return <h3 className={`text-base font-bold ${theme.h3} dark:text-gray-200 mt-2`}>{block.text}</h3>
 
     case 'tip':
       return (
-        <div className={`flex gap-3 ${theme.tipBg} border ${theme.tipBorder} rounded-xl p-3`}>
+        <div className={`flex gap-3 ${theme.tipBg} dark:bg-gray-700 border ${theme.tipBorder} dark:border-gray-600 rounded-xl p-3`}>
           <span className="text-lg flex-shrink-0 leading-snug">{block.emoji}</span>
-          <p className={`text-sm ${theme.tipText} leading-relaxed`}>{block.text}</p>
+          <p className={`text-sm ${theme.tipText} dark:text-gray-200 leading-relaxed`}>{block.text}</p>
         </div>
       )
 
     case 'warning':
       return (
-        <div className="flex gap-3 bg-red-50 border border-red-200 rounded-xl p-3">
+        <div className="flex gap-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-3">
           <span className="text-lg flex-shrink-0 leading-snug">{block.emoji}</span>
-          <p className="text-sm text-red-900 leading-relaxed">{block.text}</p>
+          <p className="text-sm text-red-900 dark:text-red-300 leading-relaxed">{block.text}</p>
         </div>
       )
 
@@ -504,8 +504,8 @@ function Block({ block, theme }) {
       return (
         <ul className="space-y-1.5 pl-2">
           {block.items.map((item, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 leading-relaxed">
-              <span className={`${theme.bullet} flex-shrink-0 mt-0.5`}>•</span>
+            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+              <span className={`${theme.bullet} dark:text-gray-400 flex-shrink-0 mt-0.5`}>•</span>
               <span>{item}</span>
             </li>
           ))}
@@ -514,14 +514,14 @@ function Block({ block, theme }) {
 
     case 'table':
       return (
-        <div className="overflow-x-auto rounded-xl border border-gray-200">
+        <div className="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700">
           <table className="w-full text-xs border-collapse min-w-full">
             <thead>
-              <tr className={theme.tableHead}>
+              <tr className={`${theme.tableHead} dark:bg-gray-700`}>
                 {block.headers.map((h, i) => (
                   <th
                     key={i}
-                    className={`text-left px-3 py-2 font-semibold ${theme.tableHeadText} border-b ${theme.tableHeadBorder} whitespace-nowrap`}
+                    className={`text-left px-3 py-2 font-semibold ${theme.tableHeadText} dark:text-gray-200 border-b ${theme.tableHeadBorder} dark:border-gray-600 whitespace-nowrap`}
                   >
                     {h}
                   </th>
@@ -530,11 +530,11 @@ function Block({ block, theme }) {
             </thead>
             <tbody>
               {block.rows.map((row, ri) => (
-                <tr key={ri} className={ri % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                <tr key={ri} className={ri % 2 === 0 ? 'bg-white dark:bg-gray-800' : 'bg-gray-50 dark:bg-gray-700'}>
                   {row.map((cell, ci) => (
                     <td
                       key={ci}
-                      className="px-3 py-2 text-gray-700 border-b border-gray-100 align-top"
+                      className="px-3 py-2 text-gray-700 dark:text-gray-300 border-b border-gray-100 dark:border-gray-600 align-top"
                     >
                       {cell}
                     </td>
@@ -553,8 +553,8 @@ function Block({ block, theme }) {
 
 function Section({ section, theme }) {
   return (
-    <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-6 sm:p-8 flex flex-col gap-4">
-      <h2 className={`text-lg font-bold ${theme.sectionTitle} pb-2 border-b ${theme.sectionBorder}`}>
+    <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8 flex flex-col gap-4">
+      <h2 className={`text-lg font-bold ${theme.sectionTitle} dark:text-gray-100 pb-2 border-b ${theme.sectionBorder} dark:border-gray-600`}>
         {section.title}
       </h2>
       {section.blocks.map((block, i) => (
@@ -573,7 +573,7 @@ export default function GuideDetail({ guideId, onBack }) {
   if (!content) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <p className="text-gray-500">Guide content not found.</p>
+        <p className="text-gray-500 dark:text-gray-400">Guide content not found.</p>
       </div>
     )
   }
@@ -585,22 +585,22 @@ export default function GuideDetail({ guideId, onBack }) {
         {/* Back button */}
         <button
           onClick={onBack}
-          className={`flex items-center gap-1.5 text-sm ${theme.backBtn} font-medium transition-colors self-start`}
+          className={`flex items-center gap-1.5 text-sm ${theme.backBtn} dark:text-gray-300 dark:hover:text-white font-medium transition-colors self-start`}
         >
           <span>←</span>
           <span>Back to Planting Guides</span>
         </button>
 
         {/* Hero */}
-        <div className={`${theme.heroBg} rounded-3xl shadow-lg border ${theme.heroBorder} p-6 sm:p-8 text-center`}>
+        <div className={`${theme.heroBg} dark:from-gray-800 dark:to-gray-700 rounded-3xl shadow-lg border ${theme.heroBorder} dark:border-gray-600 p-6 sm:p-8 text-center`}>
           <div className="text-5xl mb-3">{content.hero.emoji}</div>
-          <h1 className={`text-2xl font-bold ${theme.heroTitle}`}>{content.hero.title}</h1>
-          <p className="mt-2 text-sm text-gray-500 max-w-lg mx-auto">{content.hero.subtitle}</p>
+          <h1 className={`text-2xl font-bold ${theme.heroTitle} dark:text-white`}>{content.hero.title}</h1>
+          <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-lg mx-auto">{content.hero.subtitle}</p>
         </div>
 
         {/* Intro */}
-        <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-6 sm:p-8">
-          <p className="text-sm text-gray-700 leading-relaxed">{content.intro}</p>
+        <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8">
+          <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{content.intro}</p>
         </div>
 
         {/* Sections */}
@@ -612,7 +612,7 @@ export default function GuideDetail({ guideId, onBack }) {
         <div className="text-center pb-4">
           <button
             onClick={onBack}
-            className={`text-sm ${theme.backBtn} font-medium transition-colors`}
+            className={`text-sm ${theme.backBtn} dark:text-gray-300 dark:hover:text-white font-medium transition-colors`}
           >
             ← Back to All Planting Guides
           </button>
