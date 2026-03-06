@@ -1,18 +1,18 @@
 const waterLabel = { low: '💧 Low', moderate: '💧💧 Moderate', high: '💧💧💧 High' }
 const spaceLabel  = { container: '🪴 Container', small: '🌱 Small Bed', large: '🏡 Large Garden' }
 const typeColors  = {
-  flower:      'bg-pink-100 text-pink-700',
-  vegetable:   'bg-green-100 text-green-700',
-  fruit:       'bg-red-100 text-red-700',
-  herb:        'bg-lime-100 text-lime-700',
-  tree:        'bg-emerald-100 text-emerald-700',
-  shrub:       'bg-teal-100 text-teal-700',
-  vine:        'bg-green-100 text-green-800',
-  bulb:        'bg-purple-100 text-purple-700',
-  grass:       'bg-yellow-100 text-yellow-700',
-  succulent:   'bg-orange-100 text-orange-700',
-  fern:        'bg-cyan-100 text-cyan-700',
-  groundcover: 'bg-lime-100 text-lime-800',
+  flower:      'bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300',
+  vegetable:   'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
+  fruit:       'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300',
+  herb:        'bg-lime-100 text-lime-700 dark:bg-lime-900/30 dark:text-lime-300',
+  tree:        'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300',
+  shrub:       'bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300',
+  vine:        'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300',
+  bulb:        'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
+  grass:       'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300',
+  succulent:   'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300',
+  fern:        'bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300',
+  groundcover: 'bg-lime-100 text-lime-800 dark:bg-lime-900/30 dark:text-lime-300',
 }
 
 const hydroSystemLabel = {
@@ -24,18 +24,18 @@ const hydroSystemLabel = {
 
 function PlantCard({ plant, isHydro }) {
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+    <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
       {/* Card header */}
-      <div className="bg-garden-50 px-5 py-4 border-b border-gray-100 flex items-center gap-3">
+      <div className="bg-garden-50 dark:bg-gray-700 px-5 py-4 border-b border-gray-100 dark:border-gray-600 flex items-center gap-3">
         <span className="text-4xl">{plant.emoji}</span>
         <div className="flex-1 min-w-0">
-          <h3 className="font-bold text-lg text-garden-900 leading-tight">{plant.name}</h3>
+          <h3 className="font-bold text-lg text-garden-900 dark:text-garden-200 leading-tight">{plant.name}</h3>
           <div className="flex flex-wrap gap-1.5 mt-1">
-            <span className={`text-xs font-medium px-2 py-0.5 rounded-full capitalize ${typeColors[plant.type] || 'bg-gray-100 text-gray-600'}`}>
+            <span className={`text-xs font-medium px-2 py-0.5 rounded-full capitalize ${typeColors[plant.type] || 'bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300'}`}>
               {plant.type}
             </span>
             {plant.hydroponic && (
-              <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">
+              <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
                 💧 Hydroponic
               </span>
             )}
@@ -45,10 +45,10 @@ function PlantCard({ plant, isHydro }) {
 
       {/* Body */}
       <div className="px-5 py-4 flex flex-col gap-3">
-        <p className="text-sm text-gray-600 leading-relaxed">{plant.description}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">{plant.description}</p>
 
         {/* Quick stats */}
-        <div className="grid grid-cols-2 gap-2 text-xs text-gray-500">
+        <div className="grid grid-cols-2 gap-2 text-xs text-gray-500 dark:text-gray-400">
           {!isHydro && (
             <div className="flex items-center gap-1.5">
               <span>🗺️</span>
@@ -77,7 +77,7 @@ function PlantCard({ plant, isHydro }) {
 
         {/* Days to harvest */}
         {plant.daysToHarvest && (
-          <div className="flex items-center gap-1.5 text-xs text-earth-700 font-medium bg-earth-50 rounded-lg px-3 py-1.5">
+          <div className="flex items-center gap-1.5 text-xs text-earth-700 dark:text-earth-300 font-medium bg-earth-50 dark:bg-gray-700 rounded-lg px-3 py-1.5">
             <span>⏱️</span>
             <span>Harvest: {plant.daysToHarvest}</span>
           </div>
@@ -85,14 +85,14 @@ function PlantCard({ plant, isHydro }) {
 
         {/* Hydroponic-specific notes */}
         {isHydro && plant.hydroponicsNotes && (
-          <div className="bg-blue-50 rounded-lg px-3 py-2 text-xs text-blue-800 leading-relaxed">
+          <div className="bg-blue-50 dark:bg-blue-900/30 rounded-lg px-3 py-2 text-xs text-blue-800 dark:text-blue-300 leading-relaxed">
             <span className="font-semibold">💧 Hydro tip: </span>{plant.hydroponicsNotes}
           </div>
         )}
 
         {/* Standard care tip (shown for soil growers, or as secondary for hydro) */}
         {(!isHydro || !plant.hydroponicsNotes) && (
-          <div className="bg-garden-50 rounded-lg px-3 py-2 text-xs text-garden-800 leading-relaxed">
+          <div className="bg-garden-50 dark:bg-gray-700 rounded-lg px-3 py-2 text-xs text-garden-800 dark:text-garden-300 leading-relaxed">
             <span className="font-semibold">Care tip: </span>{plant.careNotes}
           </div>
         )}
@@ -110,8 +110,8 @@ export default function Results({ plants, answers, onRestart }) {
       <div className="flex flex-col items-center text-center gap-6 py-8">
         <div className="text-6xl">🔍</div>
         <div>
-          <h2 className="text-2xl font-bold text-garden-800">No exact matches found</h2>
-          <p className="mt-2 text-gray-500 max-w-sm">
+          <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300">No exact matches found</h2>
+          <p className="mt-2 text-gray-500 dark:text-gray-400 max-w-sm">
             {isHydro
               ? 'Try selecting different plant types — not all plants are well-suited for hydroponics.'
               : 'Try adjusting a few of your answers — for example, broadening your sunlight or soil type preferences.'}
@@ -137,12 +137,12 @@ export default function Results({ plants, answers, onRestart }) {
       {/* Header */}
       <div className="text-center">
         <div className="text-5xl mb-3">{isHydro ? '💧' : '🌿'}</div>
-        <h2 className="text-3xl font-bold text-garden-800">Your Plant Recommendations</h2>
-        <p className="mt-1 text-gray-500 text-sm">
+        <h2 className="text-3xl font-bold text-garden-800 dark:text-garden-300">Your Plant Recommendations</h2>
+        <p className="mt-1 text-gray-500 dark:text-gray-400 text-sm">
           {plants.length} plant{plants.length !== 1 ? 's' : ''} matched your garden profile
         </p>
         {isHydro && hydroSystem && (
-          <p className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">
+          <p className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full">
             <span>💧</span> Optimized for {hydroSystem} system
           </p>
         )}
@@ -151,7 +151,7 @@ export default function Results({ plants, answers, onRestart }) {
       {/* Top picks */}
       {topPicks.length > 0 && (
         <section>
-          <h3 className="text-lg font-semibold text-garden-700 mb-3 flex items-center gap-2">
+          <h3 className="text-lg font-semibold text-garden-700 dark:text-garden-400 mb-3 flex items-center gap-2">
             <span>⭐</span> Top Picks for You
           </h3>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -165,7 +165,7 @@ export default function Results({ plants, answers, onRestart }) {
       {/* Also consider */}
       {others.length > 0 && (
         <section>
-          <h3 className="text-lg font-semibold text-gray-500 mb-3 flex items-center gap-2">
+          <h3 className="text-lg font-semibold text-gray-500 dark:text-gray-400 mb-3 flex items-center gap-2">
             <span>🌱</span> Also Consider
           </h3>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -180,7 +180,7 @@ export default function Results({ plants, answers, onRestart }) {
       <div className="flex justify-center pt-2">
         <button
           onClick={onRestart}
-          className="border-2 border-garden-500 text-garden-700 hover:bg-garden-50 font-semibold px-8 py-2.5 rounded-xl transition-colors"
+          className="border-2 border-garden-500 text-garden-700 dark:text-garden-400 hover:bg-garden-50 dark:hover:bg-gray-700 font-semibold px-8 py-2.5 rounded-xl transition-colors"
         >
           ↩ Start Over
         </button>

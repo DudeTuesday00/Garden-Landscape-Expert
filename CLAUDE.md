@@ -325,3 +325,12 @@ Block types supported by `GuideDetail.jsx`:
 ### Color Scheme ✅
 
 Brand color scheme applied via `tailwind.config.js` (custom `garden`/`earth` palettes) and `src/index.css` (body text). All components use `garden-*` / `earth-*` tokens — no inline hex values in JSX.
+
+### Dark Mode ✅
+
+Dark mode is implemented using Tailwind's `class` strategy (`darkMode: 'class'` in `tailwind.config.js`).
+
+- **Toggle:** `🌙 / ☀️` button in the sticky nav (right side), persists preference to `localStorage` key `gle-dark-mode`, falls back to `prefers-color-scheme` on first visit.
+- **Activation:** `App.jsx` toggles the `dark` class on `document.documentElement` via `useEffect`.
+- **Styles:** All components use `dark:` Tailwind variants. Structural elements (card backgrounds, borders, body text) switch to a gray-900 / gray-800 / gray-700 layered dark palette. Brand accent colors (`garden-*`, `earth-*`) remain but shift to lighter shades (e.g., `dark:text-garden-300`) for legibility on dark backgrounds.
+- **Guide themes:** In `GuideDetail.jsx`, per-guide accent colors continue to apply in light mode. In dark mode, card backgrounds and text override to consistent dark-gray values so every guide remains readable regardless of its theme.

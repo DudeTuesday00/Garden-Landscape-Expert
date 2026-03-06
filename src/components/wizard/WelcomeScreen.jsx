@@ -4,18 +4,18 @@ export default function WelcomeScreen({ onStart }) {
       <div className="text-7xl select-none">🌱</div>
 
       <div>
-        <h1 className="text-4xl font-bold text-garden-800 leading-tight">
+        <h1 className="text-4xl font-bold text-garden-800 dark:text-garden-300 leading-tight">
           Garden Landscape Expert
         </h1>
-        <p className="mt-2 text-lg text-garden-600">Plant Selection Wizard</p>
+        <p className="mt-2 text-lg text-garden-600 dark:text-garden-400">Plant Selection Wizard</p>
       </div>
 
-      <p className="max-w-md text-gray-600 text-base leading-relaxed">
+      <p className="max-w-md text-gray-600 dark:text-gray-300 text-base leading-relaxed">
         Answer a few simple questions about your garden conditions and goals —
         we'll recommend the perfect plants for you to grow and thrive.
       </p>
 
-      <div className="flex flex-wrap justify-center gap-3 text-sm text-gray-500">
+      <div className="flex flex-wrap justify-center gap-3 text-sm text-gray-500 dark:text-gray-400">
         {[
           { emoji: '🌸', text: 'Flowers' },
           { emoji: '🥦', text: 'Vegetables' },
@@ -23,7 +23,7 @@ export default function WelcomeScreen({ onStart }) {
           { emoji: '🌿', text: 'Herbs' },
           { emoji: '🌳', text: 'Trees & Shrubs' },
         ].map(({ emoji, text }) => (
-          <span key={text} className="flex items-center gap-1 bg-white border border-garden-200 rounded-full px-3 py-1">
+          <span key={text} className="flex items-center gap-1 bg-white dark:bg-gray-700 border border-garden-200 dark:border-garden-700 rounded-full px-3 py-1">
             {emoji} {text}
           </span>
         ))}
@@ -36,7 +36,7 @@ export default function WelcomeScreen({ onStart }) {
         Get Started →
       </button>
 
-      <p className="text-xs text-gray-400">8 quick questions · no account required</p>
+      <p className="text-xs text-gray-400 dark:text-gray-500">8 quick questions · no account required</p>
     </div>
   )
 }
