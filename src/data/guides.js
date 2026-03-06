@@ -566,6 +566,13 @@ export const guideCategories = [
         description: 'Grow flowers specifically for fresh-cut bouquets and dried arrangements.',
         comingSoon: true,
       },
+      {
+        id: 'medicinal-garden',
+        title: 'Medicinal Garden',
+        emoji: '🌿',
+        description: 'Grow medicinal herbs and plants at home — from echinacea and elderberry to cannabis — for tinctures, teas, and remedies.',
+        comingSoon: true,
+      },
     ],
   },
 
