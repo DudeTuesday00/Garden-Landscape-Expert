@@ -23,6 +23,8 @@ import { teaGardenContent } from '../../data/guide-content/tea-garden.js'
 import { childrensGardenContent } from '../../data/guide-content/childrens-vegetable-garden.js'
 import { squareFootGardeningContent } from '../../data/guide-content/square-foot-gardening.js'
 import { threeSistersContent } from '../../data/guide-content/three-sisters.js'
+import { edibleFlowersContent } from '../../data/guide-content/edible-flowers.js'
+import { salsaGardenContent } from '../../data/guide-content/salsa-garden.js'
 
 const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -49,6 +51,8 @@ const contentMap = {
   'childrens-garden': childrensGardenContent,
   'square-foot-gardening': squareFootGardeningContent,
   'three-sisters': threeSistersContent,
+  'edible-flowers': edibleFlowersContent,
+  'salsa-garden': salsaGardenContent,
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -437,6 +441,38 @@ const themes = {
     tableHeadText: 'text-amber-800',
     tableHeadBorder: 'border-amber-300',
     bullet: 'text-amber-600',
+  },
+  'edible-flowers': {
+    heroBg: 'bg-gradient-to-br from-pink-50 to-fuchsia-100',
+    heroBorder: 'border-pink-300',
+    heroTitle: 'text-pink-900',
+    backBtn: 'text-pink-700 hover:text-pink-900',
+    sectionTitle: 'text-pink-800',
+    sectionBorder: 'border-pink-200',
+    h3: 'text-pink-800',
+    tipBg: 'bg-pink-50',
+    tipBorder: 'border-pink-300',
+    tipText: 'text-pink-900',
+    tableHead: 'bg-pink-100',
+    tableHeadText: 'text-pink-800',
+    tableHeadBorder: 'border-pink-300',
+    bullet: 'text-pink-500',
+  },
+  'salsa-garden': {
+    heroBg: 'bg-gradient-to-br from-red-50 to-orange-100',
+    heroBorder: 'border-red-300',
+    heroTitle: 'text-red-900',
+    backBtn: 'text-red-700 hover:text-red-900',
+    sectionTitle: 'text-red-800',
+    sectionBorder: 'border-red-200',
+    h3: 'text-red-800',
+    tipBg: 'bg-red-50',
+    tipBorder: 'border-red-300',
+    tipText: 'text-red-900',
+    tableHead: 'bg-red-100',
+    tableHeadText: 'text-red-800',
+    tableHeadBorder: 'border-red-300',
+    bullet: 'text-red-500',
   },
 }
 
