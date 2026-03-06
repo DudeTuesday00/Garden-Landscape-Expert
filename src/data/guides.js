@@ -199,7 +199,7 @@ export const guideCategories = [
         title: 'Edible Flowers',
         emoji: '🌸',
         description: 'Beautiful blooms you can eat — in salads, desserts, and drinks.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'square-foot-gardening',
@@ -220,7 +220,7 @@ export const guideCategories = [
         title: 'Salsa Garden',
         emoji: '🌶️',
         description: 'Everything for fresh salsa: tomatoes, peppers, cilantro, onions, and garlic.',
-        comingSoon: true,
+        comingSoon: false,
       },
     ],
   },
