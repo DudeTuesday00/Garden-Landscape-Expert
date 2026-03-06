@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { shadeTreeContent } from '../../data/guide-content/shade-trees.js'
 import { fruitTreeContent } from '../../data/guide-content/fruit-trees.js'
 import { ornamentalTreeContent } from '../../data/guide-content/ornamental-trees.js'
@@ -528,6 +529,8 @@ function Section({ section, theme }) {
 }
 
 export default function GuideDetail({ guideId, onBack }) {
+  useEffect(() => { window.scrollTo(0, 0) }, [guideId])
+
   const content = contentMap[guideId]
   const theme = themes[guideId] || themes['shade-trees']
 
