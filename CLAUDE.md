@@ -8,11 +8,11 @@ This file provides guidance for AI assistants working in this repository.
 
 **Planting Atlas** ("Research it. Plant it. Grow it.") is a React web application that helps users with garden and landscape planning, design, and expertise.
 
-The app has two sections, switchable via a sticky top nav:
+The app has a **home page** with two prominent path cards, each leading to one of the two sections:
 
-1. **Plant Selection Wizard** — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
+1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Planting Guides** — 10 guide categories (~75 guides total). 26 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, and callouts.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 26 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, and callouts.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -227,7 +227,7 @@ Each question in `questions.js` has:
 
 - `src/data/guides.js` — 10 categories, ~75 guides (26 live, remainder `comingSoon: true`)
 - `src/components/guides/GuidesHome.jsx` — guide cards with "Coming Soon" badges; live guides are clickable and route to full guide detail view
-- `src/App.jsx` — sticky top nav with two tabs: Plant Wizard and Planting Guides
+- `src/App.jsx` — home page with two path cards; sticky nav with tabs: Garden Architect and Plantopedia
 - `src/components/wizard/Wizard.jsx` — brand strip removed (now in App nav)
 
 **Guide categories:**

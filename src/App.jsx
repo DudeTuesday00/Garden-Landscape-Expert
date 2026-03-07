@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
+import HomePage from './components/HomePage.jsx'
 import Wizard from './components/wizard/Wizard.jsx'
 import GuidesHome from './components/guides/GuidesHome.jsx'
 
 export default function App() {
-  const [section, setSection] = useState('wizard')
+  const [section, setSection] = useState('home')
   const [dark, setDark] = useState(() => {
     const stored = localStorage.getItem('gle-dark-mode')
     if (stored !== null) return stored === 'true'
@@ -20,12 +21,15 @@ export default function App() {
       {/* Top Nav */}
       <header className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-700 shadow-sm sticky top-0 z-10">
         <div className="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between">
-          {/* Brand */}
-          <div className="flex items-center gap-2 text-garden-700 dark:text-garden-400">
+          {/* Brand — clicking goes home */}
+          <button
+            onClick={() => setSection('home')}
+            className="flex items-center gap-2 text-garden-700 dark:text-garden-400 hover:opacity-80 transition-opacity"
+          >
             <span className="text-xl">🌿</span>
             <span className="font-bold text-sm tracking-wide uppercase hidden sm:block">Planting Atlas</span>
             <span className="font-bold text-sm tracking-wide uppercase sm:hidden">PA</span>
-          </div>
+          </button>
 
           {/* Nav tabs + dark toggle */}
           <nav className="flex items-center gap-1">
@@ -37,7 +41,7 @@ export default function App() {
                   : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
               }`}
             >
-              🌱 Plant Wizard
+              🌱 Garden Architect
             </button>
             <button
               onClick={() => setSection('guides')}
@@ -47,7 +51,7 @@ export default function App() {
                   : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
               }`}
             >
-              📖 Planting Guides
+              📖 Plantopedia
             </button>
 
             {/* Dark mode toggle */}
@@ -64,8 +68,9 @@ export default function App() {
       </header>
 
       {/* Content */}
-      {section === 'wizard' && <Wizard />}
-      {section === 'guides' && <GuidesHome />}
+      {section === 'home'   && <HomePage onNavigate={setSection} />}
+      {section === 'wizard' && <Wizard onHome={() => setSection('home')} />}
+      {section === 'guides' && <GuidesHome onHome={() => setSection('home')} />}
     </div>
   )
 }
