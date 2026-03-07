@@ -27,7 +27,7 @@ export default function HomePage({ onNavigate }) {
             <img
               src={gardenArchitectImg}
               alt="Garden Architect"
-              className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
             />
             <div className="p-6 flex flex-col gap-3">
               <div>
@@ -52,7 +52,7 @@ export default function HomePage({ onNavigate }) {
             <img
               src={plantopediaImg}
               alt="Plantopedia"
-              className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
             />
             <div className="p-6 flex flex-col gap-3">
               <div>

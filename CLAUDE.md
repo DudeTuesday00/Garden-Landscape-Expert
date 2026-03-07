@@ -35,14 +35,17 @@ Garden-Landscape-Expert/
     ├── App.jsx                      # Top-level component — sticky nav + section routing
     ├── index.css                    # Tailwind base styles
     ├── components/
+    │   ├── HomePage.jsx             # Landing page — two image-backed path cards
     │   ├── wizard/
+    │   │   ├── Garden Architect.png # Hero image for the Garden Architect homepage card
     │   │   ├── Wizard.jsx           # Main wizard shell + state
-    │   │   ├── WelcomeScreen.jsx    # Intro screen
+    │   │   ├── WelcomeScreen.jsx    # Intro screen (titled "Garden Architect")
     │   │   ├── QuestionStep.jsx     # Per-question UI (single + multi-select)
     │   │   ├── ProgressBar.jsx      # Step progress indicator
     │   │   └── Results.jsx          # Plant recommendation cards
     │   └── guides/
-    │       ├── GuidesHome.jsx       # Guides landing page (card grid, Coming Soon badges)
+    │       ├── Plantopedia.png      # Hero image for the Plantopedia homepage card
+    │       ├── GuidesHome.jsx       # Plantopedia landing page (card grid, Coming Soon badges)
     │       └── GuideDetail.jsx      # Full guide renderer — imports contentMap + per-guide color themes
     ├── data/
     │   ├── plants.js                # Static plant database (148 plants across 12 types)
@@ -273,6 +276,17 @@ Twenty-six full guides built out from source `.docx` files and integrated into t
 - `src/data/guide-content/edible-flowers.js` — Edible Flowers (`id: 'edible-flowers'`)
 - `src/data/guide-content/salsa-garden.js` — Salsa Garden (`id: 'salsa-garden'`)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, and tables
+
+### Homepage Redesign & Section Renaming ✅
+
+- New `src/components/HomePage.jsx` — default landing page with two large image-backed path cards
+- **Garden Architect card** — uses `src/components/wizard/Garden Architect.png` as a full-width hero image; routes to the wizard; green (`garden-*`) border and button
+- **Plantopedia card** — uses `src/components/guides/Plantopedia.png` as a full-width hero image; routes to guides; gold (`earth-*`) border and button
+- Cards use `overflow-hidden` + `object-cover` for clean image cropping; subtle `scale-105` zoom on hover
+- `App.jsx` default section changed from `'wizard'` to `'home'`; brand logo in nav links back to homepage
+- Nav tabs renamed: **Garden Architect** (was "Plant Wizard") and **Plantopedia** (was "Planting Guides")
+- `WelcomeScreen.jsx` title updated to "Garden Architect" with slogan "The Smartest Way to Plan Your Garden"
+- `GuidesHome.jsx` header updated to "Plantopedia" with slogan "Your Green Thumb Repository"
 
 ### Rebrand to Planting Atlas ✅
 
