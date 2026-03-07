@@ -76,10 +76,10 @@ export default function GuidesHome() {
         <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8">
           <div className="text-center">
             <div className="text-5xl mb-3">📖</div>
-            <h1 className="text-3xl font-bold text-garden-800 dark:text-garden-300">Planting Guides</h1>
+            <h1 className="text-3xl font-bold text-garden-800 dark:text-garden-300">Plantopedia</h1>
             <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm max-w-lg mx-auto">
-              In-depth guides and tutorials for every gardening topic — from shade trees to post-harvest prep.
-              We're building these one at a time.
+              Your Green Thumb Repository — in-depth guides and tutorials for every gardening topic,
+              from shade trees to post-harvest prep.
             </p>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
               <div className="inline-flex items-center gap-2 text-xs font-medium bg-garden-50 dark:bg-gray-700 text-garden-700 dark:text-garden-400 border border-garden-200 dark:border-garden-700 px-4 py-2 rounded-full">
@@ -102,7 +102,7 @@ export default function GuidesHome() {
         ))}
 
         <p className="text-center text-xs text-gray-400 dark:text-gray-500 pb-4">
-          Planting Atlas · Planting Guides — more added regularly
+          Planting Atlas · Plantopedia — more guides added regularly
         </p>
       </div>
     </div>
