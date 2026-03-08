@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import HomePage from './components/HomePage.jsx'
 import Wizard from './components/wizard/Wizard.jsx'
 import GuidesHome from './components/guides/GuidesHome.jsx'
+import PrivacyPolicy from './components/PrivacyPolicy.jsx'
 
 export default function App() {
   const [section, setSection] = useState('home')
@@ -68,9 +69,23 @@ export default function App() {
       </header>
 
       {/* Content */}
-      {section === 'home'   && <HomePage onNavigate={setSection} />}
-      {section === 'wizard' && <Wizard onHome={() => setSection('home')} />}
-      {section === 'guides' && <GuidesHome onHome={() => setSection('home')} />}
+      {section === 'home'    && <HomePage onNavigate={setSection} />}
+      {section === 'wizard'  && <Wizard onHome={() => setSection('home')} />}
+      {section === 'guides'  && <GuidesHome onHome={() => setSection('home')} />}
+      {section === 'privacy' && <PrivacyPolicy />}
+
+      {/* Footer */}
+      <footer className="mt-16 py-6 border-t border-gray-200 dark:border-gray-700 text-center text-sm text-gray-400 dark:text-gray-500">
+        <p>
+          © {new Date().getFullYear()} Planting Atlas &nbsp;·&nbsp;
+          <button
+            onClick={() => setSection('privacy')}
+            className="underline hover:text-garden-600 dark:hover:text-garden-400 transition-colors"
+          >
+            Privacy Policy
+          </button>
+        </p>
+      </footer>
     </div>
   )
 }
