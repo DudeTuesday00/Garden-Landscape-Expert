@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { guideCategories } from '../../data/guides.js'
 import GuideDetail from './GuideDetail.jsx'
+import plantopediaImg from './Plantopedia2.png'
 
 function GuideCard({ guide, onSelect }) {
   const isLive = !guide.comingSoon
@@ -73,9 +74,13 @@ export default function GuidesHome() {
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-10">
 
         {/* Header */}
-        <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8">
-          <div className="text-center">
-            <div className="text-5xl mb-3">📖</div>
+        <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 overflow-hidden">
+          <img
+            src={plantopediaImg}
+            alt="Plantopedia"
+            className="w-full h-auto"
+          />
+          <div className="text-center p-6 sm:p-8">
             <h1 className="text-3xl font-bold text-garden-800 dark:text-garden-300">Plantopedia</h1>
             <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm max-w-lg mx-auto">
               Your Green Thumb Repository — in-depth guides and tutorials for every gardening topic,
