@@ -6,7 +6,7 @@ export const medicinalGardenContent = {
     subtitle: 'Grow Your Own Apothecary — Healing Plants from Garden to Remedy',
   },
   intro:
-    'Humans have grown medicinal herbs for thousands of years, and the tradition continues today for good reason: a well-chosen collection of healing plants provides teas, tinctures, salves, and remedies that are genuinely effective, inexpensive, and deeply satisfying to produce yourself. This guide covers 15 of the most reliable and useful medicinal herbs — how to grow them, how to harvest and process them, and how to make basic preparations at home. All plants in this guide are legal throughout the United States and appropriate for home gardens in most USDA zones.',
+    'Humans have grown medicinal herbs for thousands of years, and the tradition continues today for good reason: a well-chosen collection of healing plants provides teas, tinctures, salves, and remedies that are genuinely effective, inexpensive, and deeply satisfying to produce yourself. This guide covers 16 medicinal herbs and plants — how to grow them, how to harvest and process them, and how to make basic preparations at home. Note: cannabis is included as a medicinal plant because it is legally grown in many US states for medical and/or personal use. Check your state and local laws before growing it.',
 
   sections: [
     {
@@ -69,6 +69,7 @@ export const medicinalGardenContent = {
             ['Skullcap', '5–8', 'Perennial', 'Anxiety, nerve calming, muscle tension', 'Aerial parts', 'Moderate'],
             ['Ashwagandha', '8–10 (or annual)', 'Perennial/Annual', 'Stress adaptogen, energy, sleep', 'Roots', 'Moderate'],
             ['Motherwort', '4–8', 'Perennial', 'Heart palpitations, menstrual support, anxiety', 'Aerial parts', 'Easy'],
+            ['Cannabis (hemp/CBD varieties)', 'Annual (all zones)', 'Annual', 'Pain, anxiety, sleep, inflammation', 'Flowers, leaves', 'Moderate — legal status varies by state'],
           ],
         },
         {
@@ -192,6 +193,85 @@ export const medicinalGardenContent = {
             'Harvest: Cut large leaves throughout the growing season. Use fresh for poultices or infuse in oil for salves.',
             'Medicinal use: Comfrey contains allantoin, which stimulates cell proliferation and speeds healing of bruises, sprains, fractures, and muscle soreness. Applied as a salve or poultice to an unbroken injury site, it is genuinely effective — clinical trials confirm it outperforms conventional anti-inflammatory creams for blunt-force injuries.',
           ],
+        },
+        { type: 'h3', text: '😴 Valerian (Valeriana officinalis)' },
+        {
+          type: 'list',
+          items: [
+            'Zones: 4–9. Tall perennial (4–5 feet) with clusters of small white to pale pink flowers in early summer. Very ornamental — fits well in the back of a border.',
+            'Sun and soil: Full sun to part shade; moist, fertile soil. Tolerates average garden conditions once established.',
+            'Growing: Start from seed (sow indoors 6–8 weeks before last frost) or plant divisions. Takes two years to develop roots worth harvesting. Do not disturb established plants unnecessarily — the root system takes time to mature.',
+            'Harvest: Dig roots in fall of the plant\'s second or third year, after aerial parts begin to die back. Wash thoroughly, slice into 1/4-inch pieces, and dry at 95–105°F. Note: fresh valerian root has little odor; dried root develops its characteristic strong, earthy smell as iridoid compounds break down.',
+            'Medicinal use: Valerian root is among the most studied herbal sleep aids. It reduces the time to fall asleep and improves sleep quality without causing morning grogginess (unlike pharmaceutical sedatives). Also used for anxiety and muscle tension. Best taken as a tea (1 tsp dried root per cup, decocted 20 minutes) or tincture 30–60 minutes before bed.',
+          ],
+        },
+        { type: 'h3', text: '☀️ St. John\'s Wort (Hypericum perforatum)' },
+        {
+          type: 'list',
+          items: [
+            'Zones: 3–8. Sprawling perennial, 1–3 feet tall, with bright yellow flowers. Spreads readily by seed and rhizome — give it space or confine it.',
+            'Sun and soil: Full sun; average to poor, well-drained soil. Tolerates dry, rocky, or infertile ground. Thrives in disturbed areas and roadsides in the wild.',
+            'Growing: Direct sow in fall (seeds need cold stratification) or start indoors 6–8 weeks before last frost with a 4–6 week cold period. Transplants establish easily. The plant self-seeds prolifically once established.',
+            'Identification tip: Hold a leaf up to light — the translucent oil glands appear as tiny clear dots perforating the leaf (hence "perforatum"). Crush a bud between your fingers — it should release a red-purple stain from the hypericin pigment.',
+            'Harvest: Collect flower buds and flowers together when buds are just beginning to open (not fully open flowers). This is when hypericin content is highest. Use fresh for tincturing immediately — the fresh plant makes a superior preparation to dried.',
+            'Medicinal use: Clinical evidence supports St. John\'s Wort for mild to moderate depression, comparable in effect to low-dose SSRIs with fewer side effects. Also effective topically as an infused oil for nerve pain, sciatica, and bruising. Critical drug interactions — see the Safety section before use.',
+          ],
+        },
+        { type: 'h3', text: '🫙 Skullcap (Scutellaria lateriflora)' },
+        {
+          type: 'list',
+          items: [
+            'Zones: 5–8. Native North American perennial, 1–2 feet tall, with small blue-purple tubular flowers along the stems in summer.',
+            'Sun and soil: Part shade to full sun; moist, rich, well-drained soil. Prefers woodland edge conditions — consistent moisture with good drainage.',
+            'Growing: Start from seed indoors 6–8 weeks before last frost (surface sow; needs light). Transplant after last frost. Establish slowly the first year; more productive by year 2–3. Divide clumps every 3–4 years to maintain vigor.',
+            'Harvest: Cut the entire aerial portion (stems, leaves, and flowers) when in full bloom. Use fresh for tincturing — skullcap loses significant potency when dried. If drying, dry quickly at low heat and use within 6 months.',
+            'Medicinal use: Skullcap is a nervine tonic — it calms nervous tension, anxiety, and muscle spasms without sedating. Effective for racing thoughts that interfere with sleep, nervous exhaustion, and tension headaches. Works best as a fresh plant tincture rather than tea. One of the most reliable herbs for anxiety that can be used during the day without impairing function.',
+          ],
+        },
+        { type: 'h3', text: '🌿 Ashwagandha (Withania somnifera)' },
+        {
+          type: 'list',
+          items: [
+            'Zones: 8–10 as a perennial; grown as an annual in Zones 5–7. A shrubby plant from the nightshade family, growing 2–4 feet tall.',
+            'Sun and soil: Full sun; light, well-drained, sandy or loamy soil. Adapted to hot, dry conditions — does not tolerate wet or heavy clay soils.',
+            'Growing: Start seeds indoors 6–8 weeks before last frost in warm climates, or direct sow after soil reaches 70°F. Germinates in 7–14 days with warmth. In colder zones, treat as an annual and harvest roots at the end of the first season (roots will be smaller but still medicinally useful).',
+            'Harvest: Dig roots in fall after the first frost blackens the foliage (or at the end of the growing season in annual plantings). Roots should be pencil-thick or larger. Wash, chop into 1/2-inch pieces, and dry at 105–115°F.',
+            'Medicinal use: Ashwagandha is the premier adaptogen in Ayurvedic medicine — it helps the body adapt to stress, supports adrenal function, improves sleep quality, and sustains energy over time. Clinical trials show significant reduction in cortisol levels and self-reported stress with 300–600 mg of root extract daily. Traditionally taken as a warm milk decoction (golden milk base) or as a tincture. Effects build over 4–8 weeks of consistent use.',
+          ],
+        },
+        { type: 'h3', text: '💜 Motherwort (Leonurus cardiaca)' },
+        {
+          type: 'list',
+          items: [
+            'Zones: 4–8. Tall, upright perennial (3–5 feet) in the mint family, with whorls of small pink-purple flowers along the stem in summer. Self-seeds freely — deadhead after bloom to prevent spreading.',
+            'Sun and soil: Full sun to part shade; average, well-drained soil. Tolerates poor soil, drought, and urban conditions. Very adaptable.',
+            'Growing: Direct sow in early spring or fall (seeds need cold stratification for best germination). Transplants establish easily. Once established, it will self-seed and spread — manage the seedlings or it will naturalize throughout the garden.',
+            'Harvest: Cut the aerial parts (stems with leaves and flowers) when in full bloom. Use fresh for tincturing or dry quickly at low heat.',
+            'Medicinal use: Motherwort is the herb for the heart — used traditionally and in modern herbalism for heart palpitations related to anxiety, rapid heartbeat triggered by stress or menopause, and nervous tension that presents as cardiac symptoms. It also has a long history of use for menstrual irregularity and cramps, and as a uterine tonic. Do not use during pregnancy — it stimulates uterine contractions. Requires medical supervision for anyone on heart medications.',
+          ],
+        },
+        { type: 'h3', text: '🌿 Cannabis (Cannabis sativa / C. indica — Hemp & CBD Varieties)' },
+        {
+          type: 'warning',
+          emoji: '⚖️',
+          text: 'Legal Status Varies: Cannabis is federally legal to grow as hemp if plants contain less than 0.3% THC (dry weight). Medical cannabis is legal in most states; recreational/adult-use cannabis is legal in many states but remains illegal in others. Before growing any cannabis — including hemp — verify your state and local regulations. Possession and cultivation laws differ significantly by jurisdiction.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Varieties for the medicinal garden: Hemp varieties bred for high CBD and low THC (under 0.3%) are legal federally and widely available. Look for certified hemp seed varieties such as Cherry Wine, Wife, Suver Haze, or Elektra. Medical and recreational cannabis varieties (higher THC) are available through licensed dispensaries in legal states.',
+            'Zones: Annual in all zones; thrives in Zones 5–10. Frost-sensitive — start indoors or direct sow after last frost when soil has warmed to at least 60°F.',
+            'Sun and soil: Full sun (8+ hours); rich, well-drained, loamy soil with a pH of 6.0–7.0. Cannabis is a heavy feeder and responds well to organic compost-amended soil. Avoid waterlogged or compacted ground.',
+            'Growing: Start seeds indoors 3–4 weeks before last frost in 4-inch pots. Transplant after frost danger passes. Space plants 3–5 feet apart — cannabis grows rapidly and can reach 4–8 feet tall in a single season depending on variety. Feminized seeds (available from licensed hemp seed suppliers) prevent male plants, which do not produce medicinal flowers.',
+            'Watering: Cannabis needs consistent moisture during vegetative growth. Reduce watering slightly during flowering to encourage resin production. Overwatering causes root rot — always allow the top inch of soil to dry between waterings.',
+            'Harvest for CBD hemp: Harvest when trichomes (the tiny crystal-like glands on flowers) turn from clear to milky white — before they amber. Use a jeweler\'s loupe or handheld microscope. Cut whole branches; hang upside down in a cool (60–70°F), dark, well-ventilated space for 7–14 days until stems snap cleanly.',
+            'Processing: Dried hemp flowers can be used to make CBD-infused oil (same method as other herbal oil infusions, using a carrier oil at low heat), tinctures (using high-proof alcohol), or topical salves. Decarboxylation (heating at 220–245°F for 30–45 minutes before infusing) activates cannabinoids for maximum effect in edible or tincture preparations.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🔬',
+          text: 'CBD vs. THC — Understanding the Difference: CBD (cannabidiol) is non-psychoactive and is the primary medicinal compound in hemp. It has evidence for reducing anxiety, improving sleep, reducing inflammation, and managing certain seizure disorders. THC (tetrahydrocannabinol) is psychoactive and is the primary compound in medical/recreational cannabis. Most medicinal garden growers focus on high-CBD hemp varieties, which are federally legal and straightforward to grow without licensing in most states.',
         },
       ],
     },
@@ -344,6 +424,7 @@ export const medicinalGardenContent = {
             ['Comfrey', 'Contains liver-toxic pyrrolizidine alkaloids', 'Not applicable — topical use only', 'Never ingest; do not apply to broken skin or open wounds'],
             ['Motherwort', 'Uterine stimulant — stimulates contractions', 'May interact with heart medications (digoxin)', 'Pregnancy (contraindicated); heart arrhythmia patients on medication'],
             ['Ashwagandha', 'Thyroid-stimulating effect; sedating in large doses', 'May interact with thyroid medications, immunosuppressants', 'Pregnancy; thyroid disorders without medical supervision'],
+            ['Cannabis / CBD hemp', 'May cause drowsiness; THC is psychoactive; legal status varies', 'CBD inhibits CYP450 enzymes — can affect blood thinners, seizure medications, and other drugs metabolized by the liver', 'Pregnancy and nursing; children (except prescribed medical CBD); operating heavy machinery when using THC-containing products'],
           ],
         },
         {

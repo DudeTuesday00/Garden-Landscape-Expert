@@ -280,8 +280,9 @@ Twenty-seven full guides integrated into the app:
 
 ### Medicinal Garden Guide ✅
 
-- `src/data/guide-content/medicinal-garden.js` — 27th live guide; covers 15 medicinal herbs (echinacea, elderberry, chamomile, calendula, lemon balm, mint, lavender, valerian, St. John's Wort, tulsi, yarrow, comfrey, skullcap, ashwagandha, motherwort)
-- Six sections: planning & design, herb profiles table + detailed growing notes, harvesting & drying, remedy-making (teas, tinctures, salves, elderberry syrup), zone-neutral seasonal calendar, safety & drug interaction reference
+- `src/data/guide-content/medicinal-garden.js` — 27th live guide; covers 16 medicinal herbs and plants (echinacea, elderberry, chamomile, calendula, lemon balm, mint, lavender, valerian, St. John's Wort, tulsi, yarrow, comfrey, skullcap, ashwagandha, motherwort, cannabis/hemp)
+- Six sections: planning & design, herb profiles overview table + detailed growing notes for all 16 plants, harvesting & drying, remedy-making (teas, tinctures, salves, elderberry syrup), zone-neutral seasonal calendar, safety & drug interaction reference table
+- Cannabis section includes: federal hemp vs. state cannabis legal notice, variety selection (Cherry Wine, Suver Haze, etc.), full growing guide, trichome harvest timing, decarboxylation and processing notes, CBD vs. THC explainer, and drug interaction row in the safety table
 - Theme: emerald/purple gradient (`from-emerald-50 to-purple-100`) in `GuideDetail.jsx`
 - Set `comingSoon: false` under Specialty Gardens in `guides.js`
 
