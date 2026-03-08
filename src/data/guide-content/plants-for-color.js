@@ -467,5 +467,30 @@ export const plantsForColorContent = {
         { type: 'p', text: 'Go paint your garden. 🎨🌿🌺' },
       ],
     },
+    {
+      id: 'tools-we-recommend',
+      title: 'Tools We Recommend',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Having the right tools makes planting and maintaining a color garden a pleasure rather than a chore. This 23-piece floral set covers everything you need for planting bulbs, deadheading, weeding between perennials, and keeping your beds tidy all season long.',
+        },
+        {
+          type: 'affiliate',
+          image: 'https://m.media-amazon.com/images/I/71a11DJ-hJL._AC_SL1500_.jpg',
+          title: 'Heavy Duty Garden Tools 23-Piece Floral Set',
+          description: 'A complete ergonomic gardening kit built around a beautiful floral tote bag — everything you need to plant, tend, and enjoy a colorful garden, all in one place.',
+          benefits: [
+            'Lightweight aluminum alloy tools — strong, rust-proof, and easy on your hands',
+            'Ergonomic non-slip handles reduce fatigue during long planting sessions',
+            'Complete 23-piece set: trowel, hand rake, weeder, crack weeder, pruner, spray bottle, claw gloves, 15 plant tags, and more',
+            'Floral heavy-duty tote bag with multiple pockets keeps every tool organized and portable',
+            'Eco-friendly, non-toxic materials — safe for edible and ornamental gardens alike',
+          ],
+          link: 'https://amzn.to/40gxLlp',
+          linkText: 'View on Amazon',
+        },
+      ],
+    },
   ],
 };

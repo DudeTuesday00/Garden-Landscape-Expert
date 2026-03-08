@@ -519,6 +519,51 @@ function Block({ block, theme }) {
         </div>
       )
 
+    case 'affiliate':
+      return (
+        <div className="rounded-2xl border-2 border-earth-500 bg-amber-50 dark:bg-gray-700 dark:border-yellow-600 overflow-hidden shadow-sm">
+          {block.image && (
+            <div className="flex justify-center bg-white dark:bg-gray-800 px-6 pt-5 pb-3">
+              <img
+                src={block.image}
+                alt={block.title}
+                className="h-52 w-auto object-contain"
+              />
+            </div>
+          )}
+          <div className="p-5 flex flex-col gap-3">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wide text-earth-500 dark:text-yellow-400 mb-1">Recommended Product</p>
+              <h3 className="text-base font-bold text-garden-800 dark:text-white leading-snug">{block.title}</h3>
+            </div>
+            {block.description && (
+              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{block.description}</p>
+            )}
+            {block.benefits && (
+              <ul className="space-y-1.5">
+                {block.benefits.map((b, i) => (
+                  <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-earth-500 dark:text-yellow-400 flex-shrink-0">✓</span>
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <a
+              href={block.link}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="inline-block text-center bg-garden-600 hover:bg-garden-700 text-white font-semibold text-sm rounded-xl px-5 py-2.5 transition-colors self-start mt-1"
+            >
+              {block.linkText || 'View on Amazon'} →
+            </a>
+            <p className="text-xs text-gray-400 dark:text-gray-500 italic">
+              Affiliate link — we may earn a small commission at no extra cost to you.
+            </p>
+          </div>
+        </div>
+      )
+
     case 'list':
       return (
         <ul className="space-y-1.5 pl-2">
