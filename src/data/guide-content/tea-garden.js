@@ -203,7 +203,7 @@ export const teaGardenContent = {
           items: [
             'English Lavender (L. angustifolia): The preferred species for culinary and tea use. Varieties like \'Hidcote,\' \'Munstead,\' and \'Vera\' have the sweetest, least camphor-forward flavor. Hardy to Zone 5.',
             'French Lavender (L. dentata): More camphor-forward. Beautiful garden plant but less suitable for tea. Zone 7+.',
-            'Growing: Full sun, excellent drainage, average to poor soil. Lavender is a Mediterranean plant that hates wet feet — raised beds or slopes with gritty, well-drained soil are ideal. Oklahoma clay is not suitable without heavy amendment with grit and compost.',
+            'Growing: Full sun, excellent drainage, average to poor soil. Lavender is a Mediterranean plant that hates wet feet — raised beds or slopes with gritty, well-drained soil are ideal. Heavy clay soils are not suitable without significant amendment with coarse grit and compost to improve drainage.',
             'Harvest for tea: Cut flower spikes when buds are 50% open. Dry upside down in bundles. Use the dried buds, not the stems or leaves — 1 teaspoon per cup maximum. Blend with chamomile or lemon balm to avoid overwhelming the cup.',
           ],
         },
@@ -607,7 +607,7 @@ export const teaGardenContent = {
       blocks: [
         {
           type: 'p',
-          text: 'A tea garden follows its own seasonal rhythm. Understanding what to do — and harvest — in each season keeps your garden productive and your tea cupboard stocked year-round. The calendar below reflects gardening in the Southern Plains climate (Zone 7a), but the principles adapt easily to any zone.',
+          text: 'A tea garden follows its own seasonal rhythm. Understanding what to do — and harvest — in each season keeps your garden productive and your tea cupboard stocked year-round. The calendar below uses Zone 7 as a reference point. Shift dates 2–4 weeks later for colder zones (5–6) or 2–4 weeks earlier for warmer zones (8–9). The harvest sequence and principles apply across all climates.',
         },
         {
           type: 'table',

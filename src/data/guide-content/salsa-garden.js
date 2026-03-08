@@ -31,7 +31,7 @@ export const salsaGardenContent = {
         {
           type: 'tip',
           emoji: '📅',
-          text: 'Oklahoma Salsa Garden Timing at a Glance (Zone 7a): Last frost mid-April. First fall frost mid-October. Tomatoes and peppers transplanted mid-April. Onion sets planted early March. Garlic planted October-November for the following July harvest. Cilantro succession-sown from March through October. Peak salsa season: mid-July through mid-August.',
+          text: 'Salsa Garden Timing by Zone: Zone 5–6: last frost late April–mid-May; transplant tomatoes and peppers after last frost; plant onion sets in March–April. Zone 7: last frost mid-April; transplant mid-April; plant onion sets early March. Zone 8–9: last frost late February–March; transplant March–April; plant onion sets January–February. All zones: plant garlic in fall (October–November) for summer harvest; succession-sow cilantro in early spring and again in early fall. Peak salsa season is whenever tomatoes and peppers are both producing heavily — typically midsummer.',
         },
       ],
     },
@@ -75,7 +75,7 @@ export const salsaGardenContent = {
         {
           type: 'list',
           items: [
-            'Starting 6-8 weeks before last frost (early March in Zone 7): Use cell trays or 4-inch pots with quality seed-starting mix.',
+            'Starting 6-8 weeks before last frost: Use cell trays or 4-inch pots with quality seed-starting mix.',
             'Sowing depth: Plant tomato seeds 1/4 inch deep. Tamp gently to ensure good contact with the medium.',
             'Germination warmth: Tomatoes germinate best at 75-85°F soil temperature. Use a heat mat beneath trays for best results.',
             'Light after germination: As soon as the first sprout appears, move to the brightest available light. Grow lights positioned 2-3 inches above seedlings prevent leggy growth.',
@@ -87,7 +87,7 @@ export const salsaGardenContent = {
         {
           type: 'list',
           items: [
-            'Transplant after last frost: In Zone 7a, transplant after mid-April when soil temperature reaches at least 60°F.',
+            'Transplant after last frost: Once nighttime temperatures stay above 50°F and soil temperature reaches at least 60°F. Timing varies from late March (Zone 8–9) to mid-May (Zone 5–6).',
             'Planting depth: Bury tomatoes deeply — up to 2/3 of the stem underground. Roots will develop along the buried stem.',
             'Spacing: Indeterminate varieties: 24-36 inches apart. Determinate (Celebrity): 18-24 inches apart.',
             'Support systems: Install supports at planting time, before the plant needs them. Heavy-gauge tomato cages, sturdy stakes with tying, or Florida weave trellis systems all work well.',
@@ -229,7 +229,7 @@ export const salsaGardenContent = {
         {
           type: 'tip',
           emoji: '🧅',
-          text: 'Day-Length Requirements: For Zone 7 (Oklahoma), plant short-day or intermediate varieties. Long-day onions will not form proper bulbs at southern latitudes. Short-day varieties begin bulbing at 10-12 hours of daylight; intermediate (day-neutral) at 12-14 hours.',
+          text: 'Day-Length Requirements: Choose your onion type based on your latitude, not your zone. Short-day varieties (Zones 7–9, southern US): bulb at 10–12 hours of daylight — Texas 1015, Red Burgundy, White Granex. Intermediate/day-neutral (Zones 5–7, mid-US): bulb at 12–14 hours — Candy, Super Star. Long-day varieties (Zones 3–6, northern US): bulb at 14–16 hours — Walla Walla, Copra, Patterson. Using the wrong type for your latitude results in poor or no bulbing.',
         },
         {
           type: 'table',
@@ -354,7 +354,7 @@ export const salsaGardenContent = {
         {
           type: 'tip',
           emoji: '📅',
-          text: 'Oklahoma Salsa Calendar — Convergence Window: Mid-July through mid-August is the prime salsa-making window in Zone 7. Tomatoes are producing heavily, peppers are loaded with ripe fruit, onions and garlic are cured and ready from spring harvests, and cilantro succession plantings are producing. Make the most of this window for both fresh salsa and large-batch preservation.',
+          text: 'Salsa Harvest Convergence Window: The prime salsa-making window is when tomatoes and peppers are both producing heavily — typically midsummer. In Zone 5–6 this falls in August; Zone 7 in mid-July to mid-August; Zone 8–9 from late June onward. Onions and garlic harvested and cured earlier in the season are ready and waiting. Cilantro succession plantings keep fresh leaves available. Make the most of this convergence window for both fresh salsa and large-batch preservation.',
         },
       ],
     },

@@ -233,7 +233,7 @@ export const threeSistersContent = {
             'Hand-pollination: with fewer corn plants, hand-pollinate by collecting pollen from the tassel with a small brush and applying it to the silk.',
           ],
         },
-        { type: 'h3', text: 'Planting Timeline (Zone 7a — Oklahoma)' },
+        { type: 'h3', text: 'Planting Timeline by Zone (Adjust Dates for Your Region)' },
         {
           type: 'table',
           headers: ['Date / Stage', 'What to Do', 'What to Watch For'],
@@ -261,7 +261,7 @@ export const threeSistersContent = {
             'Germination to establishment: keep soil consistently moist (not wet) until all three sisters have emerged and established first true leaves.',
             'Establishment to tasseling: deep watering 2–3 times per week (1–1.5 inches total per week). Water at the base of plants, not overhead.',
             'Tasseling through ear fill: the most critical period for corn moisture. Do not allow the planting to dry out significantly during the 3–4 weeks of ear development.',
-            'Oklahoma and Southern Plains: July and August temperatures above 100°F can stress all three crops. Deep mulching (3–4 inches of straw) is critical. Water in early morning to reduce evaporation.',
+            'Hot summer climates (Zones 7–9): Midsummer temperatures above 95–100°F can stress all three crops. Deep mulching (3–4 inches of straw) is critical for moisture retention and root cooling. Water in early morning to reduce evaporation and fungal pressure.',
           ],
         },
         { type: 'h3', text: 'Pest Management' },
