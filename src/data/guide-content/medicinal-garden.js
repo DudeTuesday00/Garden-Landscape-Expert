@@ -6,7 +6,7 @@ export const medicinalGardenContent = {
     subtitle: 'Grow Your Own Apothecary — Healing Plants from Garden to Remedy',
   },
   intro:
-    'Humans have grown medicinal herbs for thousands of years, and the tradition continues today for good reason: a well-chosen collection of healing plants provides teas, tinctures, salves, and remedies that are genuinely effective, inexpensive, and deeply satisfying to produce yourself. This guide covers 15 of the most reliable and useful medicinal herbs — how to grow them, how to harvest and process them, and how to make basic preparations at home. All plants in this guide are legal throughout the United States and appropriate for home gardens in most USDA zones.',
+    'Humans have grown medicinal herbs for thousands of years, and the tradition continues today for good reason: a well-chosen collection of healing plants provides teas, tinctures, salves, and remedies that are genuinely effective, inexpensive, and deeply satisfying to produce yourself. This guide covers 16 medicinal herbs and plants — how to grow them, how to harvest and process them, and how to make basic preparations at home. Note: cannabis is included as a medicinal plant because it is legally grown in many US states for medical and/or personal use. Check your state and local laws before growing it.',
 
   sections: [
     {
@@ -69,6 +69,7 @@ export const medicinalGardenContent = {
             ['Skullcap', '5–8', 'Perennial', 'Anxiety, nerve calming, muscle tension', 'Aerial parts', 'Moderate'],
             ['Ashwagandha', '8–10 (or annual)', 'Perennial/Annual', 'Stress adaptogen, energy, sleep', 'Roots', 'Moderate'],
             ['Motherwort', '4–8', 'Perennial', 'Heart palpitations, menstrual support, anxiety', 'Aerial parts', 'Easy'],
+            ['Cannabis (hemp/CBD varieties)', 'Annual (all zones)', 'Annual', 'Pain, anxiety, sleep, inflammation', 'Flowers, leaves', 'Moderate — legal status varies by state'],
           ],
         },
         {
@@ -249,6 +250,29 @@ export const medicinalGardenContent = {
             'Medicinal use: Motherwort is the herb for the heart — used traditionally and in modern herbalism for heart palpitations related to anxiety, rapid heartbeat triggered by stress or menopause, and nervous tension that presents as cardiac symptoms. It also has a long history of use for menstrual irregularity and cramps, and as a uterine tonic. Do not use during pregnancy — it stimulates uterine contractions. Requires medical supervision for anyone on heart medications.',
           ],
         },
+        { type: 'h3', text: '🌿 Cannabis (Cannabis sativa / C. indica — Hemp & CBD Varieties)' },
+        {
+          type: 'warning',
+          emoji: '⚖️',
+          text: 'Legal Status Varies: Cannabis is federally legal to grow as hemp if plants contain less than 0.3% THC (dry weight). Medical cannabis is legal in most states; recreational/adult-use cannabis is legal in many states but remains illegal in others. Before growing any cannabis — including hemp — verify your state and local regulations. Possession and cultivation laws differ significantly by jurisdiction.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Varieties for the medicinal garden: Hemp varieties bred for high CBD and low THC (under 0.3%) are legal federally and widely available. Look for certified hemp seed varieties such as Cherry Wine, Wife, Suver Haze, or Elektra. Medical and recreational cannabis varieties (higher THC) are available through licensed dispensaries in legal states.',
+            'Zones: Annual in all zones; thrives in Zones 5–10. Frost-sensitive — start indoors or direct sow after last frost when soil has warmed to at least 60°F.',
+            'Sun and soil: Full sun (8+ hours); rich, well-drained, loamy soil with a pH of 6.0–7.0. Cannabis is a heavy feeder and responds well to organic compost-amended soil. Avoid waterlogged or compacted ground.',
+            'Growing: Start seeds indoors 3–4 weeks before last frost in 4-inch pots. Transplant after frost danger passes. Space plants 3–5 feet apart — cannabis grows rapidly and can reach 4–8 feet tall in a single season depending on variety. Feminized seeds (available from licensed hemp seed suppliers) prevent male plants, which do not produce medicinal flowers.',
+            'Watering: Cannabis needs consistent moisture during vegetative growth. Reduce watering slightly during flowering to encourage resin production. Overwatering causes root rot — always allow the top inch of soil to dry between waterings.',
+            'Harvest for CBD hemp: Harvest when trichomes (the tiny crystal-like glands on flowers) turn from clear to milky white — before they amber. Use a jeweler\'s loupe or handheld microscope. Cut whole branches; hang upside down in a cool (60–70°F), dark, well-ventilated space for 7–14 days until stems snap cleanly.',
+            'Processing: Dried hemp flowers can be used to make CBD-infused oil (same method as other herbal oil infusions, using a carrier oil at low heat), tinctures (using high-proof alcohol), or topical salves. Decarboxylation (heating at 220–245°F for 30–45 minutes before infusing) activates cannabinoids for maximum effect in edible or tincture preparations.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🔬',
+          text: 'CBD vs. THC — Understanding the Difference: CBD (cannabidiol) is non-psychoactive and is the primary medicinal compound in hemp. It has evidence for reducing anxiety, improving sleep, reducing inflammation, and managing certain seizure disorders. THC (tetrahydrocannabinol) is psychoactive and is the primary compound in medical/recreational cannabis. Most medicinal garden growers focus on high-CBD hemp varieties, which are federally legal and straightforward to grow without licensing in most states.',
+        },
       ],
     },
 
@@ -400,6 +424,7 @@ export const medicinalGardenContent = {
             ['Comfrey', 'Contains liver-toxic pyrrolizidine alkaloids', 'Not applicable — topical use only', 'Never ingest; do not apply to broken skin or open wounds'],
             ['Motherwort', 'Uterine stimulant — stimulates contractions', 'May interact with heart medications (digoxin)', 'Pregnancy (contraindicated); heart arrhythmia patients on medication'],
             ['Ashwagandha', 'Thyroid-stimulating effect; sedating in large doses', 'May interact with thyroid medications, immunosuppressants', 'Pregnancy; thyroid disorders without medical supervision'],
+            ['Cannabis / CBD hemp', 'May cause drowsiness; THC is psychoactive; legal status varies', 'CBD inhibits CYP450 enzymes — can affect blood thinners, seizure medications, and other drugs metabolized by the liver', 'Pregnancy and nursing; children (except prescribed medical CBD); operating heavy machinery when using THC-containing products'],
           ],
         },
         {
