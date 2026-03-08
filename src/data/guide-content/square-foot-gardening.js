@@ -320,7 +320,7 @@ export const squareFootGardeningContent = {
       blocks: [
         {
           type: 'p',
-          text: 'A Square Foot Garden managed through all four seasons in a temperate climate produces food for 9–12 months of the year. This is the schedule for Zone 7a (Oklahoma); adjust by 2–4 weeks for colder or warmer zones.',
+          text: 'A Square Foot Garden managed through all four seasons in a temperate climate produces food for 9–12 months of the year. The schedule below uses Zone 7 as a reference point — shift dates 2–4 weeks later for each zone colder (Zone 6, 5, 4) or 2–4 weeks earlier for each zone warmer (Zone 8, 9).',
         },
         {
           type: 'table',
@@ -341,7 +341,7 @@ export const squareFootGardeningContent = {
           items: [
             'The finger test: Push a finger 2 inches into the mix. If moist, skip watering. If dry, water thoroughly.',
             'Deep watering: When you water, wet the full 12 inches of mix. Shallow sprinkling promotes shallow roots.',
-            'Frequency: In spring and fall, most SFG beds need watering every 3–4 days. In Oklahoma summers, every 1–2 days. Containers every 1–2 days in heat.',
+            'Frequency: In spring and fall, most SFG beds need watering every 3–4 days. In hot summer weather (consistently above 90°F), water every 1–2 days. Containers every 1–2 days in heat regardless of zone.',
             'Drip irrigation: A soaker hose or drip line through the bed reduces watering labor to turning a valve. The most efficient approach for large systems.',
           ],
         },

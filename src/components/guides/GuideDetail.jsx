@@ -25,6 +25,7 @@ import { squareFootGardeningContent } from '../../data/guide-content/square-foot
 import { threeSistersContent } from '../../data/guide-content/three-sisters.js'
 import { edibleFlowersContent } from '../../data/guide-content/edible-flowers.js'
 import { salsaGardenContent } from '../../data/guide-content/salsa-garden.js'
+import { medicinalGardenContent } from '../../data/guide-content/medicinal-garden.js'
 
 const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -53,6 +54,7 @@ const contentMap = {
   'three-sisters': threeSistersContent,
   'edible-flowers': edibleFlowersContent,
   'salsa-garden': salsaGardenContent,
+  'medicinal-garden': medicinalGardenContent,
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -457,6 +459,22 @@ const themes = {
     tableHeadText: 'text-pink-800',
     tableHeadBorder: 'border-pink-300',
     bullet: 'text-pink-500',
+  },
+  'medicinal-garden': {
+    heroBg: 'bg-gradient-to-br from-emerald-50 to-purple-100',
+    heroBorder: 'border-emerald-300',
+    heroTitle: 'text-emerald-900',
+    backBtn: 'text-emerald-700 hover:text-emerald-900',
+    sectionTitle: 'text-emerald-800',
+    sectionBorder: 'border-emerald-200',
+    h3: 'text-emerald-700',
+    tipBg: 'bg-emerald-50',
+    tipBorder: 'border-emerald-300',
+    tipText: 'text-emerald-900',
+    tableHead: 'bg-emerald-100',
+    tableHeadText: 'text-emerald-800',
+    tableHeadBorder: 'border-emerald-300',
+    bullet: 'text-emerald-600',
   },
   'salsa-garden': {
     heroBg: 'bg-gradient-to-br from-red-50 to-orange-100',

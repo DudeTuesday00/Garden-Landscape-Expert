@@ -358,7 +358,7 @@ export const childrensGardenContent = {
       blocks: [
         {
           type: 'p',
-          text: "The calendar below reflects growing in Zone 7a (Oklahoma), where last frost is mid-April and first fall frost is mid-October. Adjust timing by 2–4 weeks for colder or warmer zones.",
+          text: "The calendar below uses Zone 7 as a reference (last frost mid-April, first fall frost mid-October). Adjust timing by 2–4 weeks per zone — later for colder zones (5–6), earlier for warmer zones (8–9). Check your local extension service or The Old Farmer's Almanac for frost dates specific to your ZIP code.",
         },
         {
           type: 'table',

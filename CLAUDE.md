@@ -228,7 +228,7 @@ Each question in `questions.js` has:
 
 ### Planting Guides Section (scaffold) ✅
 
-- `src/data/guides.js` — 10 categories, ~75 guides (26 live, remainder `comingSoon: true`)
+- `src/data/guides.js` — 10 categories, ~75 guides (27 live, remainder `comingSoon: true`)
 - `src/components/guides/GuidesHome.jsx` — guide cards with "Coming Soon" badges; live guides are clickable and route to full guide detail view
 - `src/App.jsx` — home page with two path cards; sticky nav with tabs: Garden Architect and Plantopedia
 - `src/components/wizard/Wizard.jsx` — brand strip removed (now in App nav)
@@ -241,13 +241,13 @@ Each question in `questions.js` has:
 5. Landscape Design (10 guides)
 6. Seasonal Guides (8 guides)
 7. Pest & Problem Solving (8 guides)
-8. Specialty Gardens (11 guides)
+8. Specialty Gardens (11 guides — 1 live ✅)
 9. Container & Small Spaces (8 guides)
 10. Eco & Sustainability (9 guides)
 
 ### Planting Guides — Live Content ✅
 
-Twenty-six full guides built out from source `.docx` files and integrated into the app:
+Twenty-seven full guides integrated into the app:
 
 - `src/data/guide-content/shade-trees.js` — Shade Trees (`id: 'shade-trees'`)
 - `src/data/guide-content/fruit-trees.js` — Fruit Trees (`id: 'fruit-trees'`)
@@ -275,14 +275,36 @@ Twenty-six full guides built out from source `.docx` files and integrated into t
 - `src/data/guide-content/three-sisters.js` — Three Sisters Garden (`id: 'three-sisters'`)
 - `src/data/guide-content/edible-flowers.js` — Edible Flowers (`id: 'edible-flowers'`)
 - `src/data/guide-content/salsa-garden.js` — Salsa Garden (`id: 'salsa-garden'`)
+- `src/data/guide-content/medicinal-garden.js` — Medicinal Garden (`id: 'medicinal-garden'`)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, and tables
+
+### Medicinal Garden Guide ✅
+
+- `src/data/guide-content/medicinal-garden.js` — 27th live guide; covers 15 medicinal herbs (echinacea, elderberry, chamomile, calendula, lemon balm, mint, lavender, valerian, St. John's Wort, tulsi, yarrow, comfrey, skullcap, ashwagandha, motherwort)
+- Six sections: planning & design, herb profiles table + detailed growing notes, harvesting & drying, remedy-making (teas, tinctures, salves, elderberry syrup), zone-neutral seasonal calendar, safety & drug interaction reference
+- Theme: emerald/purple gradient (`from-emerald-50 to-purple-100`) in `GuideDetail.jsx`
+- Set `comingSoon: false` under Specialty Gardens in `guides.js`
+
+### National Audience — Oklahoma References Removed ✅
+
+All guide content is now written for a national US audience (Zones 3–11). Oklahoma-specific references have been replaced with zone-neutral language across five guides:
+
+| File | Changes |
+|------|---------|
+| `salsa-garden.js` | 4 fixes: timing tip now shows Zone 5–6 / 7 / 8–9 comparisons; seed-start note is zone-agnostic; transplant timing references soil temp + zone range; onion day-length tip explains short/intermediate/long-day by latitude; convergence window covers all zones |
+| `three-sisters.js` | Section heading changed from "Zone 7a — Oklahoma" to "by Zone"; hot-summer watering note now says "Zones 7–9" not "Oklahoma and Southern Plains" |
+| `square-foot-gardening.js` | Seasonal calendar intro now uses Zone 7 as a reference point with explicit shift guidance; watering tip replaced "Oklahoma summers" with ">90°F heat" |
+| `childrens-vegetable-garden.js` | Calendar intro uses Zone 7 as a generic reference with a note to check local frost dates |
+| `tea-garden.js` | "Oklahoma clay" replaced with "heavy clay soils"; calendar intro now uses Zone 7 as a reference with zone-shift guidance |
+
+**Principle going forward:** Planting calendars should use a named zone as an *example reference point* (e.g., "Zone 7 reference — shift 2–4 weeks per zone") rather than naming a specific state or city. Onion day-length guidance should reference latitude bands, not specific states.
 
 ### Homepage Redesign & Section Renaming ✅
 
 - New `src/components/HomePage.jsx` — default landing page with two large image-backed path cards
 - **Garden Architect card** — uses `src/components/wizard/Garden Architect.png` as a full-width hero image; routes to the wizard; green (`garden-*`) border and button
 - **Plantopedia card** — uses `src/components/guides/Plantopedia.png` as a full-width hero image; routes to guides; gold (`earth-*`) border and button
-- Cards use `overflow-hidden` + `object-cover` for clean image cropping; subtle `scale-105` zoom on hover
+- Cards use `w-full h-auto` so images render at their natural aspect ratio (no cropping); subtle `scale-105` zoom on hover
 - `App.jsx` default section changed from `'wizard'` to `'home'`; brand logo in nav links back to homepage
 - Nav tabs renamed: **Garden Architect** (was "Plant Wizard") and **Plantopedia** (was "Planting Guides")
 - `WelcomeScreen.jsx` title updated to "Garden Architect" with slogan "The Smartest Way to Plan Your Garden"
