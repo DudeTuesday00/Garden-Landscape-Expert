@@ -1,8 +1,15 @@
 import gardenArchitectImg from './wizard/Garden Architect.png'
 import plantopediaImg from './guides/Plantopedia.png'
+import SEO from './SEO.jsx'
 
 export default function HomePage({ onNavigate }) {
   return (
+    <>
+    <SEO
+      description="Your complete planting atlas for gardens and landscapes. Get personalized plant recommendations from 148 plants across 12 types, or browse 75+ expert growing guides by USDA zone."
+      keywords="planting guide, landscape design, garden planning, USDA zones, plant database, gardening expert, hydroponic gardening, Plantopedia, Garden Architect"
+      path="/"
+    />
     <div className="px-4 py-8">
       <div className="w-full max-w-2xl mx-auto flex flex-col items-center gap-6">
 
@@ -76,5 +83,6 @@ export default function HomePage({ onNavigate }) {
         </p>
       </div>
     </div>
+    </>
   )
 }

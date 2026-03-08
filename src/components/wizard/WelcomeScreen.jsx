@@ -1,7 +1,15 @@
 import gardenArchitectImg from './Garden Architect 2.png'
+import SEO from '../SEO.jsx'
 
 export default function WelcomeScreen({ onStart }) {
   return (
+    <>
+    <SEO
+      title="Garden Architect — Personalized Plant Recommendations"
+      description="Answer a few questions about your garden conditions and get personalized plant recommendations from 148 plants. Supports traditional and hydroponic growing across all USDA zones."
+      keywords="plant recommendations, garden planner, USDA zones, hydroponic plants, garden wizard, personalized gardening"
+      path="/#wizard"
+    />
     <div className="flex flex-col items-center text-center gap-6 py-8">
       <img
         src={gardenArchitectImg}
@@ -44,5 +52,6 @@ export default function WelcomeScreen({ onStart }) {
 
       <p className="text-xs text-gray-400 dark:text-gray-500">8 quick questions · no account required</p>
     </div>
+    </>
   )
 }

@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import SEO from '../SEO.jsx'
 import { shadeTreeContent } from '../../data/guide-content/shade-trees.js'
 import { fruitTreeContent } from '../../data/guide-content/fruit-trees.js'
 import { ornamentalTreeContent } from '../../data/guide-content/ornamental-trees.js'
@@ -596,7 +597,17 @@ export default function GuideDetail({ guideId, onBack }) {
     )
   }
 
+  const metaDescription = content.intro.length > 160
+    ? content.intro.slice(0, 157) + '...'
+    : content.intro
+
   return (
+    <>
+    <SEO
+      title={content.hero.title}
+      description={metaDescription}
+      path={`/#guide/${guideId}`}
+    />
     <div className="min-h-screen px-4 py-8">
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-6">
 
@@ -638,5 +649,6 @@ export default function GuideDetail({ guideId, onBack }) {
 
       </div>
     </div>
+    </>
   )
 }
