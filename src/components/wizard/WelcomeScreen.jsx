@@ -1,7 +1,13 @@
+import gardenArchitectImg from './Garden Architect 2.png'
+
 export default function WelcomeScreen({ onStart }) {
   return (
     <div className="flex flex-col items-center text-center gap-6 py-8">
-      <div className="text-7xl select-none">🌱</div>
+      <img
+        src={gardenArchitectImg}
+        alt="Garden Architect"
+        className="w-full max-w-2xl rounded-2xl shadow-md"
+      />
 
       <div>
         <h1 className="text-4xl font-bold text-garden-800 dark:text-garden-300 leading-tight">

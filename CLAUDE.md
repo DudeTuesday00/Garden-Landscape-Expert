@@ -37,16 +37,18 @@ Garden-Landscape-Expert/
     ├── components/
     │   ├── HomePage.jsx             # Landing page — two image-backed path cards
     │   ├── wizard/
-    │   │   ├── Garden Architect.png # Hero image for the Garden Architect homepage card
-    │   │   ├── Wizard.jsx           # Main wizard shell + state
-    │   │   ├── WelcomeScreen.jsx    # Intro screen (titled "Garden Architect")
-    │   │   ├── QuestionStep.jsx     # Per-question UI (single + multi-select)
-    │   │   ├── ProgressBar.jsx      # Step progress indicator
-    │   │   └── Results.jsx          # Plant recommendation cards
+    │   │   ├── Garden Architect.png   # Hero image for the Garden Architect homepage card
+    │   │   ├── Garden Architect 2.png # Hero image shown on the WelcomeScreen (Garden Architect landing)
+    │   │   ├── Wizard.jsx             # Main wizard shell + state
+    │   │   ├── WelcomeScreen.jsx      # Intro screen (titled "Garden Architect") — shows Garden Architect 2.png at top
+    │   │   ├── QuestionStep.jsx       # Per-question UI (single + multi-select)
+    │   │   ├── ProgressBar.jsx        # Step progress indicator
+    │   │   └── Results.jsx            # Plant recommendation cards
     │   └── guides/
-    │       ├── Plantopedia.png      # Hero image for the Plantopedia homepage card
-    │       ├── GuidesHome.jsx       # Plantopedia landing page (card grid, Coming Soon badges)
-    │       └── GuideDetail.jsx      # Full guide renderer — imports contentMap + per-guide color themes
+    │       ├── Plantopedia.png        # Hero image for the Plantopedia homepage card
+    │       ├── Plantopedia2.png       # Hero image shown on the GuidesHome (Plantopedia landing)
+    │       ├── GuidesHome.jsx         # Plantopedia landing page — shows Plantopedia2.png at top; card grid + Coming Soon badges
+    │       └── GuideDetail.jsx        # Full guide renderer — imports contentMap + per-guide color themes
     ├── data/
     │   ├── plants.js                # Static plant database (148 plants across 12 types)
     │   ├── questions.js             # Wizard question definitions (with hydro routing flags)
@@ -310,6 +312,14 @@ All guide content is now written for a national US audience (Zones 3–11). Okla
 - Nav tabs renamed: **Garden Architect** (was "Plant Wizard") and **Plantopedia** (was "Planting Guides")
 - `WelcomeScreen.jsx` title updated to "Garden Architect" with slogan "The Smartest Way to Plan Your Garden"
 - `GuidesHome.jsx` header updated to "Plantopedia" with slogan "Your Green Thumb Repository"
+
+### Section Landing Page Hero Images ✅
+
+Each section now has a distinct hero image on its own landing page (separate from the homepage card images):
+
+- **Garden Architect landing** (`WelcomeScreen.jsx`) — `src/components/wizard/Garden Architect 2.png` renders as a full-width image at the top of the welcome screen, above the title and "Get Started" button
+- **Plantopedia landing** (`GuidesHome.jsx`) — `src/components/Plantopedia2.png` renders as a full-width image at the top of the header card, above the title, description, and guide-count badges
+- Homepage cards (`HomePage.jsx`) continue to use the original `Garden Architect.png` and `Plantopedia.png` images — unchanged
 
 ### Rebrand to Planting Atlas ✅
 
