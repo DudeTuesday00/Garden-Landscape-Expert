@@ -12,7 +12,7 @@ export default function HomePage({ onNavigate }) {
             Planting Atlas
           </h1>
           <p className="mt-2 text-lg text-garden-600 dark:text-garden-400 font-medium">
-            Research it. Plant it. Grow it.
+            Plan it. Plant it. Grow it.
           </p>
         </div>
 

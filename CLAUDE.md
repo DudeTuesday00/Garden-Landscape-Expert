@@ -6,7 +6,7 @@ This file provides guidance for AI assistants working in this repository.
 
 ## Project Overview
 
-**Planting Atlas** ("Research it. Plant it. Grow it.") is a React web application that helps users with garden and landscape planning, design, and expertise.
+**Planting Atlas** ("Plan it. Plant it. Grow it.") is a React web application that helps users with garden and landscape planning, design, and expertise.
 
 The app has a **home page** with two prominent path cards, each leading to one of the two sections:
 
@@ -324,7 +324,7 @@ Each section now has a distinct hero image on its own landing page (separate fro
 ### Rebrand to Planting Atlas ✅
 
 - Site renamed from "Garden Landscape Expert" to **Planting Atlas** across all UI surfaces
-- New slogan: **"Research it. Plant it. Grow it."** (replaces "Plant Selection Wizard" subtitle on the welcome screen)
+- New slogan: **"Plan it. Plant it. Grow it."** (replaces "Plant Selection Wizard" subtitle on the welcome screen)
 - Nav abbreviation updated from `GLE` → `PA` (mobile)
 - Domain: `plantingatlas.com` (hosted on Cloudflare Pages)
 
