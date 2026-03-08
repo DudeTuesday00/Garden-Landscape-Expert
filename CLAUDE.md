@@ -25,7 +25,7 @@ The wizard supports two paths:
 ```
 Garden-Landscape-Expert/
 ├── CLAUDE.md                        # This file
-├── index.html                       # Vite entry point — GTM head script + noscript fallback
+├── index.html                       # Vite entry point — GTM, GA4, and AdSense scripts in <head>; GTM noscript after <body>
 ├── package.json
 ├── vite.config.js
 ├── tailwind.config.js
@@ -93,7 +93,8 @@ Garden-Landscape-Expert/
 - **Framework:** React 18 + Vite 6
 - **Styling:** Tailwind CSS 3 with custom `garden` and `earth` color palettes (see brand colors below)
 - **SEO:** `react-helmet-async` — dynamic per-page `<title>`, description, OG, and Twitter Card tags
-- **Analytics:** Google Tag Manager (`GTM-TT46476S`) — head script + noscript fallback in `index.html`
+- **Analytics:** Google Tag Manager (`GTM-TT46476S`) + Google Analytics 4 (`G-7S7248T634`) — both scripts in `index.html` `<head>`
+- **Ads:** Google AdSense (`ca-pub-2083020536499662`) auto-ads script in `index.html` `<head>`
 - **Database:** Static JS files (no backend)
 - **Testing:** Not yet configured
 
@@ -288,6 +289,8 @@ Twenty-seven full guides integrated into the app:
 - **`react-helmet-async`** installed; `src/main.jsx` wrapped in `<HelmetProvider>`
 - **`src/components/SEO.jsx`** — reusable component; accepts `title`, `description`, `keywords`, `image`, `path`; auto-appends `| Planting Atlas` to every title; writes `<title>`, `<meta name="description">`, `<link rel="canonical">`, OG, and Twitter Card tags
 - **GTM container `GTM-TT46476S`** embedded in `index.html` — head `<script>` at the very top of `<head>` (before any other tags, per Google's official guidance) and `<noscript>` fallback immediately after `<body>`
+- **Google Analytics 4 `G-7S7248T634`** — `gtag.js` snippet added immediately after the GTM block in `<head>`
+- **Google AdSense `ca-pub-2083020536499662`** — auto-ads script added in `<head>`; single placement covers all pages of the SPA
 
 **Per-page SEO tags:**
 
