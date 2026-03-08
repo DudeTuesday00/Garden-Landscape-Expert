@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { guideCategories } from '../../data/guides.js'
 import GuideDetail from './GuideDetail.jsx'
 import plantopediaImg from './Plantopedia2.png'
+import SEO from '../SEO.jsx'
 
 function GuideCard({ guide, onSelect }) {
   const isLive = !guide.comingSoon
@@ -70,6 +71,13 @@ export default function GuidesHome() {
   }
 
   return (
+    <>
+    <SEO
+      title="Plantopedia — Gardening Guides & Growing Tutorials"
+      description="Browse 75+ expert gardening guides covering trees, flowers, vegetables, herbs, specialty gardens, and more. In-depth growing tutorials for every climate and experience level."
+      keywords="gardening guides, planting tutorials, tree guide, flower garden, vegetable garden, herb garden, landscape design, growing tips"
+      path="/#guides"
+    />
     <div className="min-h-screen px-4 py-10">
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-10">
 
@@ -111,5 +119,6 @@ export default function GuidesHome() {
         </p>
       </div>
     </div>
+    </>
   )
 }
