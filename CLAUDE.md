@@ -25,16 +25,17 @@ The wizard supports two paths:
 ```
 Garden-Landscape-Expert/
 ├── CLAUDE.md                        # This file
-├── index.html                       # Vite entry point
+├── index.html                       # Vite entry point — GTM head script + noscript fallback
 ├── package.json
 ├── vite.config.js
 ├── tailwind.config.js
 ├── postcss.config.js
 └── src/
-    ├── main.jsx                     # React root
+    ├── main.jsx                     # React root — wrapped in <HelmetProvider>
     ├── App.jsx                      # Top-level component — sticky nav + section routing
     ├── index.css                    # Tailwind base styles
     ├── components/
+    │   ├── SEO.jsx                  # Reusable <Helmet> wrapper — title, description, OG, Twitter Card, canonical
     │   ├── HomePage.jsx             # Landing page — two image-backed path cards
     │   ├── wizard/
     │   │   ├── Garden Architect.png   # Hero image for the Garden Architect homepage card
@@ -47,8 +48,8 @@ Garden-Landscape-Expert/
     │   └── guides/
     │       ├── Plantopedia.png        # Hero image for the Plantopedia homepage card
     │       ├── Plantopedia2.png       # Hero image shown on the GuidesHome (Plantopedia landing)
-    │       ├── GuidesHome.jsx         # Plantopedia landing page — shows Plantopedia2.png at top; card grid + Coming Soon badges
-    │       └── GuideDetail.jsx        # Full guide renderer — imports contentMap + per-guide color themes
+    │       ├── GuidesHome.jsx         # Plantopedia landing page — shows Plantopedia2.png at top; card grid + Coming Soon badges; includes <SEO>
+    │       └── GuideDetail.jsx        # Full guide renderer — imports contentMap + per-guide color themes; includes per-guide <SEO>
     ├── data/
     │   ├── plants.js                # Static plant database (148 plants across 12 types)
     │   ├── questions.js             # Wizard question definitions (with hydro routing flags)
@@ -91,6 +92,8 @@ Garden-Landscape-Expert/
 - **Language:** JavaScript (JSX)
 - **Framework:** React 18 + Vite 6
 - **Styling:** Tailwind CSS 3 with custom `garden` and `earth` color palettes (see brand colors below)
+- **SEO:** `react-helmet-async` — dynamic per-page `<title>`, description, OG, and Twitter Card tags
+- **Analytics:** Google Tag Manager (`GTM-TT46476S`) — head script + noscript fallback in `index.html`
 - **Database:** Static JS files (no backend)
 - **Testing:** Not yet configured
 
@@ -279,6 +282,33 @@ Twenty-seven full guides integrated into the app:
 - `src/data/guide-content/salsa-garden.js` — Salsa Garden (`id: 'salsa-garden'`)
 - `src/data/guide-content/medicinal-garden.js` — Medicinal Garden (`id: 'medicinal-garden'`)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, and tables
+
+### Dynamic SEO + Google Tag Manager ✅
+
+- **`react-helmet-async`** installed; `src/main.jsx` wrapped in `<HelmetProvider>`
+- **`src/components/SEO.jsx`** — reusable component; accepts `title`, `description`, `keywords`, `image`, `path`; auto-appends `| Planting Atlas` to every title; writes `<title>`, `<meta name="description">`, `<link rel="canonical">`, OG, and Twitter Card tags
+- **GTM container `GTM-TT46476S`** embedded in `index.html` — head `<script>` at the very top of `<head>` (before any other tags, per Google's official guidance) and `<noscript>` fallback immediately after `<body>`
+
+**Per-page SEO tags:**
+
+| Page | Title | Path |
+|------|-------|------|
+| Home | *(default — uses `index.html` static title)* | `/` |
+| Garden Architect | `Garden Architect — Personalized Plant Recommendations` | `/#wizard` |
+| Plantopedia | `Plantopedia — Gardening Guides & Growing Tutorials` | `/#guides` |
+| Each guide | `{guide hero.title}` — description from `content.intro` (truncated to 160 chars) | `/#guide/{guideId}` |
+
+**SEO component usage:**
+```jsx
+import SEO from '../SEO.jsx'
+
+<SEO
+  title="Page Title"           // auto-suffixed with "| Planting Atlas"
+  description="..."
+  keywords="..."               // optional
+  path="/#section"             // used for canonical URL
+/>
+```
 
 ### Medicinal Garden Guide ✅
 
