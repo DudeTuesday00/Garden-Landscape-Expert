@@ -335,6 +335,82 @@ export const fruitTreeContent = {
           ],
         },
         { type: 'tip', emoji: '🧊', text: 'Freezing is the easiest way to preserve surplus fruit. Most fruit freezes beautifully: slice or halve, freeze on a single layer on a baking sheet, then transfer to bags. Stone fruits (peaches, plums, cherries) are outstanding frozen for smoothies, pies, and cobblers all winter long.' },
+      ],
+    },
+    {
+      id: 'special-topics',
+      title: 'Special Topics for the Ambitious Grower',
+      blocks: [
+        { type: 'h3', text: 'Espalier — When Space Is Limited' },
+        {
+          type: 'p',
+          text: 'Espalier (pronounced "ess-PAL-ee-ay") is the ancient art of training fruit trees flat against a wall, fence, or trellis. It\'s not just a space-saver — espalier trees against a south or west-facing masonry wall benefit from the reflected and stored heat, allowing you to grow fruit that might otherwise be marginal for your zone.',
+        },
+        {
+          type: 'p',
+          text: 'Apples and pears are the classic choices for espalier because they fruit on long-lived spurs (permanent fruiting structures) that work beautifully with the flat-plane training. Common forms include the horizontal T (Palmette), Belgian fence, candelabra, and fan. Espalier requires consistent, careful annual pruning.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Best trees for espalier: Apple, pear. Also peach and fig fans against south-facing walls.',
+            'Support needed: Wire horizontal supports (12–14 gauge galvanized wire) strung 18–24 inches apart along a fence, wall, or freestanding post system.',
+          ],
+        },
+        { type: 'h3', text: 'Multi-Grafted Trees — Maximum Variety, Minimum Space' },
+        {
+          type: 'p',
+          text: 'Can\'t decide between Honeycrisp, Fuji, and Gala? Can\'t plant three trees but need cross-pollination? Multi-grafted trees — sometimes called "4-in-1" or "5-in-1" trees — have multiple varieties grafted onto a single rootstock. They look like one tree but produce 3–5 different fruits.',
+        },
+        {
+          type: 'p',
+          text: 'The benefits are real: you get built-in cross-pollination, multiple harvest windows, and variety without the footprint. The trade-off is that management is trickier — each grafted variety grows at a different rate, so you must be careful not to let one variety dominate and shade out the others through pruning.',
+        },
+        { type: 'h3', text: 'Container Growing' },
+        {
+          type: 'p',
+          text: 'Dwarf fruit trees grow reasonably well in large containers (25–30 gallon minimum), making orchard growing possible on patios, balconies, and small urban spaces. Container growing offers one huge advantage: you can move trees into frost protection during cold snaps, allowing marginally tender varieties to survive in colder zones.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Very large container (bigger is better); excellent drainage (drainage hole is mandatory).',
+            'Consistent watering (containers dry out fast); regular fertilizing (nutrients leach from containers with frequent watering).',
+            'Repot every 3–5 years; choose dwarf rootstock varieties specifically.',
+          ],
+        },
+        { type: 'h3', text: 'Companion Planting in the Orchard' },
+        {
+          type: 'p',
+          text: 'Strategic companion planting can improve your orchard\'s health and productivity:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Clover and other nitrogen-fixing plants: Planted between trees as living ground cover, they fix atmospheric nitrogen and feed the soil naturally. Bees love it too.',
+            'Comfrey: Deep-rooted perennial that mines minerals from subsoil and makes them available as mulch when leaves are cut. Excellent "orchard fertilizer" plant.',
+            'Nasturtiums: Attract aphids away from trees (use as a trap crop). Also attract beneficial predatory insects.',
+            'Dill, fennel, yarrow: Attract parasitic wasps and other beneficial insects that prey on orchard pests.',
+            'What to avoid: Grass growing right up to the trunk (competes aggressively for water and nutrients). Keep a bare mulched zone at least 3–4 feet in diameter around each tree.',
+          ],
+        },
+        { type: 'h3', text: 'Buying the Right Trees — Nursery Shopping Checklist' },
+        {
+          type: 'p',
+          text: 'Not all nursery trees are created equal. Before buying, look for:',
+        },
+        {
+          type: 'list',
+          items: [
+            'A visible, healthy graft union (slightly knobby, not buried or cracked)',
+            'Root flare visible at or near soil level — not buried deep in the pot',
+            'No circling or girdling roots (check by looking at the soil surface and root edges)',
+            'Healthy, plump buds (or good foliage in-season)',
+            'No cracks, wounds, or signs of canker on the trunk',
+            'A tag confirming variety, rootstock, and zone suitability',
+            'Caliper (trunk diameter) proportional to overall tree size — not a skinny stick in a big pot',
+          ],
+        },
         { type: 'h3', text: 'Quick Reference: Fruit Tree Essentials' },
         {
           type: 'table',

@@ -37,7 +37,7 @@ export const ornamentalTreeContent = {
             'Urban/compacted soil: Honeylocust, zelkova, ginkgo, and some crabapple varieties tolerate urban conditions, pollution, and road salt.',
           ],
         },
-        { type: 'tip', emoji: '☀️', text: 'Sun Exception in Hot Climates: In zones 7 and warmer, afternoon shade is often beneficial for shade-tolerant ornamentals like dogwood and Japanese maple. A Japanese maple in full sun in Oklahoma or Georgia is a recipe for sunscald and stress. "Part shade" means different things in different climates.' },
+        { type: 'tip', emoji: '☀️', text: 'Sun Exception in Hot Climates: In zones 7 and warmer, afternoon shade is often beneficial for shade-tolerant ornamentals like dogwood and Japanese maple. A Japanese maple in full sun in Zone 7+ is a recipe for sunscald and stress. "Part shade" means different things in different climates.' },
         { type: 'h3', text: 'Step 3: Match Mature Size to Available Space' },
         {
           type: 'table',
@@ -349,6 +349,24 @@ export const ornamentalTreeContent = {
             'Siting for night interest: Place important specimen trees where they can be lit from below. Uplighting a Japanese maple\'s branching structure or a paperbark maple\'s peeling bark at night extends the aesthetic investment into the evening hours.',
             'Common mistake: Planting a specimen tree too close to the house so it\'s never seen from an angle. A specimen needs distance — generally at least 1.5 times its mature height between it and the primary viewpoint.',
           ],
+        },
+        { type: 'h3', text: 'Layering: Creating Depth with Trees' },
+        {
+          type: 'p',
+          text: 'The most visually rich landscapes have multiple layers of height, from ground level through short plants, taller shrubs, small ornamental trees, and then the canopy. Ornamental trees typically occupy the small-to-medium tree layer (10–30 feet), creating an intermediate height zone that connects the human-scale planting below with the larger tree canopy above.',
+        },
+        {
+          type: 'p',
+          text: 'In practical terms, this means: plant taller shade trees at the back or perimeter of a property, ornamental trees in the middle zone, then shrubs and perennials at the front and near the house. This creates depth, screens sightlines naturally, and ensures that small flowering plants aren\'t lost in the visual noise of too-dense planting.',
+        },
+        { type: 'h3', text: 'Repetition and Unity' },
+        {
+          type: 'p',
+          text: 'One of the most common landscape design mistakes is planting a different ornamental tree in every available spot — "collector syndrome." The result looks spotty, restless, and lacks visual coherence. A far more powerful approach is to repeat the same tree (or the same species in different cultivars) in multiple locations throughout the property.',
+        },
+        {
+          type: 'p',
+          text: 'A single weeping cherry is a nice accent. Three weeping cherries flanking a path or placed at three corners of a garden creates a unified, intentional composition. Two Japanese maples flanking an entryway create formal symmetry. A repeated dogwood threading through a planting bed creates a cohesive seasonal rhythm.',
         },
         { type: 'h3', text: 'Using Form and Shape' },
         {

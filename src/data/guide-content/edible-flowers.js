@@ -204,6 +204,15 @@ export const edibleFlowersContent = {
             'Growing: Large shrubs or small trees, 10-20 feet tall at maturity. Full sun to part shade. Moist, well-drained soil.',
           ],
         },
+        { type: 'h3', text: 'Jasmine (Jasminum sambac — Arabian Jasmine only)' },
+        {
+          type: 'list',
+          items: [
+            'Flavor: Intensely floral, sweet, almost overwhelming in large quantities. Use sparingly as flavoring rather than as a garnish eaten in volume.',
+            'Culinary applications: Jasmine tea (place fresh flowers with dry tea leaves overnight to absorb the fragrance), jasmine rice (cook rice with a few flowers), jasmine simple syrup, jasmine-infused cream or milk for desserts, jasmine sugar.',
+            'Growing: Tender tropical or subtropical plant. Grow outdoors in Zone 9+; in pots that overwinter indoors in Zone 8 and colder. Full sun. Blooms best in heat.',
+          ],
+        },
         { type: 'h3', text: '🌿 Mild, Delicate & Vegetable-Forward Flowers' },
         { type: 'h3', text: 'Borage (Borago officinalis)' },
         {
