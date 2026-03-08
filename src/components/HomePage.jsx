@@ -1,5 +1,5 @@
-import gardenArchitectImg from './wizard/Garden Architect.png'
-import plantopediaImg from './guides/Plantopedia.png'
+import gardenArchitectImg from './wizard/Garden Architect 2.png'
+import plantopediaImg from './guides/Plantopedia2.png'
 
 export default function HomePage({ onNavigate }) {
   return (
