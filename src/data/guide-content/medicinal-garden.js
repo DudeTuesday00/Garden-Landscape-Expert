@@ -193,6 +193,62 @@ export const medicinalGardenContent = {
             'Medicinal use: Comfrey contains allantoin, which stimulates cell proliferation and speeds healing of bruises, sprains, fractures, and muscle soreness. Applied as a salve or poultice to an unbroken injury site, it is genuinely effective — clinical trials confirm it outperforms conventional anti-inflammatory creams for blunt-force injuries.',
           ],
         },
+        { type: 'h3', text: '😴 Valerian (Valeriana officinalis)' },
+        {
+          type: 'list',
+          items: [
+            'Zones: 4–9. Tall perennial (4–5 feet) with clusters of small white to pale pink flowers in early summer. Very ornamental — fits well in the back of a border.',
+            'Sun and soil: Full sun to part shade; moist, fertile soil. Tolerates average garden conditions once established.',
+            'Growing: Start from seed (sow indoors 6–8 weeks before last frost) or plant divisions. Takes two years to develop roots worth harvesting. Do not disturb established plants unnecessarily — the root system takes time to mature.',
+            'Harvest: Dig roots in fall of the plant\'s second or third year, after aerial parts begin to die back. Wash thoroughly, slice into 1/4-inch pieces, and dry at 95–105°F. Note: fresh valerian root has little odor; dried root develops its characteristic strong, earthy smell as iridoid compounds break down.',
+            'Medicinal use: Valerian root is among the most studied herbal sleep aids. It reduces the time to fall asleep and improves sleep quality without causing morning grogginess (unlike pharmaceutical sedatives). Also used for anxiety and muscle tension. Best taken as a tea (1 tsp dried root per cup, decocted 20 minutes) or tincture 30–60 minutes before bed.',
+          ],
+        },
+        { type: 'h3', text: '☀️ St. John\'s Wort (Hypericum perforatum)' },
+        {
+          type: 'list',
+          items: [
+            'Zones: 3–8. Sprawling perennial, 1–3 feet tall, with bright yellow flowers. Spreads readily by seed and rhizome — give it space or confine it.',
+            'Sun and soil: Full sun; average to poor, well-drained soil. Tolerates dry, rocky, or infertile ground. Thrives in disturbed areas and roadsides in the wild.',
+            'Growing: Direct sow in fall (seeds need cold stratification) or start indoors 6–8 weeks before last frost with a 4–6 week cold period. Transplants establish easily. The plant self-seeds prolifically once established.',
+            'Identification tip: Hold a leaf up to light — the translucent oil glands appear as tiny clear dots perforating the leaf (hence "perforatum"). Crush a bud between your fingers — it should release a red-purple stain from the hypericin pigment.',
+            'Harvest: Collect flower buds and flowers together when buds are just beginning to open (not fully open flowers). This is when hypericin content is highest. Use fresh for tincturing immediately — the fresh plant makes a superior preparation to dried.',
+            'Medicinal use: Clinical evidence supports St. John\'s Wort for mild to moderate depression, comparable in effect to low-dose SSRIs with fewer side effects. Also effective topically as an infused oil for nerve pain, sciatica, and bruising. Critical drug interactions — see the Safety section before use.',
+          ],
+        },
+        { type: 'h3', text: '🫙 Skullcap (Scutellaria lateriflora)' },
+        {
+          type: 'list',
+          items: [
+            'Zones: 5–8. Native North American perennial, 1–2 feet tall, with small blue-purple tubular flowers along the stems in summer.',
+            'Sun and soil: Part shade to full sun; moist, rich, well-drained soil. Prefers woodland edge conditions — consistent moisture with good drainage.',
+            'Growing: Start from seed indoors 6–8 weeks before last frost (surface sow; needs light). Transplant after last frost. Establish slowly the first year; more productive by year 2–3. Divide clumps every 3–4 years to maintain vigor.',
+            'Harvest: Cut the entire aerial portion (stems, leaves, and flowers) when in full bloom. Use fresh for tincturing — skullcap loses significant potency when dried. If drying, dry quickly at low heat and use within 6 months.',
+            'Medicinal use: Skullcap is a nervine tonic — it calms nervous tension, anxiety, and muscle spasms without sedating. Effective for racing thoughts that interfere with sleep, nervous exhaustion, and tension headaches. Works best as a fresh plant tincture rather than tea. One of the most reliable herbs for anxiety that can be used during the day without impairing function.',
+          ],
+        },
+        { type: 'h3', text: '🌿 Ashwagandha (Withania somnifera)' },
+        {
+          type: 'list',
+          items: [
+            'Zones: 8–10 as a perennial; grown as an annual in Zones 5–7. A shrubby plant from the nightshade family, growing 2–4 feet tall.',
+            'Sun and soil: Full sun; light, well-drained, sandy or loamy soil. Adapted to hot, dry conditions — does not tolerate wet or heavy clay soils.',
+            'Growing: Start seeds indoors 6–8 weeks before last frost in warm climates, or direct sow after soil reaches 70°F. Germinates in 7–14 days with warmth. In colder zones, treat as an annual and harvest roots at the end of the first season (roots will be smaller but still medicinally useful).',
+            'Harvest: Dig roots in fall after the first frost blackens the foliage (or at the end of the growing season in annual plantings). Roots should be pencil-thick or larger. Wash, chop into 1/2-inch pieces, and dry at 105–115°F.',
+            'Medicinal use: Ashwagandha is the premier adaptogen in Ayurvedic medicine — it helps the body adapt to stress, supports adrenal function, improves sleep quality, and sustains energy over time. Clinical trials show significant reduction in cortisol levels and self-reported stress with 300–600 mg of root extract daily. Traditionally taken as a warm milk decoction (golden milk base) or as a tincture. Effects build over 4–8 weeks of consistent use.',
+          ],
+        },
+        { type: 'h3', text: '💜 Motherwort (Leonurus cardiaca)' },
+        {
+          type: 'list',
+          items: [
+            'Zones: 4–8. Tall, upright perennial (3–5 feet) in the mint family, with whorls of small pink-purple flowers along the stem in summer. Self-seeds freely — deadhead after bloom to prevent spreading.',
+            'Sun and soil: Full sun to part shade; average, well-drained soil. Tolerates poor soil, drought, and urban conditions. Very adaptable.',
+            'Growing: Direct sow in early spring or fall (seeds need cold stratification for best germination). Transplants establish easily. Once established, it will self-seed and spread — manage the seedlings or it will naturalize throughout the garden.',
+            'Harvest: Cut the aerial parts (stems with leaves and flowers) when in full bloom. Use fresh for tincturing or dry quickly at low heat.',
+            'Medicinal use: Motherwort is the herb for the heart — used traditionally and in modern herbalism for heart palpitations related to anxiety, rapid heartbeat triggered by stress or menopause, and nervous tension that presents as cardiac symptoms. It also has a long history of use for menstrual irregularity and cramps, and as a uterine tonic. Do not use during pregnancy — it stimulates uterine contractions. Requires medical supervision for anyone on heart medications.',
+          ],
+        },
       ],
     },
 
