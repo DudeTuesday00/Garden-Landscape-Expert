@@ -37,6 +37,8 @@ Garden-Landscape-Expert/
     ├── components/
     │   ├── SEO.jsx                  # Reusable <Helmet> wrapper — title, description, OG, Twitter Card, canonical
     │   ├── HomePage.jsx             # Landing page — two image-backed path cards
+    │   ├── ContactUs.jsx            # Contact form — Formspree (mlgpgdny); name, email, subject dropdown, message; success state
+    │   ├── PrivacyPolicy.jsx        # Static privacy policy page
     │   ├── wizard/
     │   │   ├── Garden Architect.png   # Hero image for the Garden Architect homepage card
     │   │   ├── Garden Architect 2.png # Hero image shown on the WelcomeScreen (Garden Architect landing)
@@ -443,6 +445,17 @@ Three `<div>` placeholders are injected automatically between guide sections in 
 | `adsense-placeholder-3` | Index 5 (6th section) | Long guides (shade-trees, pollinator-garden, etc.) |
 
 Each placeholder has `minHeight: 280px` to reserve layout space before Google fills the slot. All future guides added to the app automatically inherit these placements.
+
+### Contact Us Page ✅
+
+- `src/components/ContactUs.jsx` — contact form powered by `@formspree/react`; posts to `https://formspree.io/f/mlgpgdny`
+- Fields: **Name**, **Email Address**, **Subject** (dropdown: General Question / Plant Recommendation / Guide Feedback / Bug Report / Partnership & Advertising / Other), **Message**
+- All inputs carry `name` attributes and the `<form>` has `action="https://formspree.io/f/mlgpgdny"` + `method="POST"`
+- Uses `useForm("mlgpgdny")` + `<ValidationError>` from `@formspree/react` for inline field-level error display
+- On successful submit, replaces the form with a branded success message (🌱 "Message sent!")
+- Submit button shows "Sending…" and disables while in-flight to prevent double-submission
+- Full dark mode support; brand colors (`garden-600` button, `garden-800` heading)
+- `App.jsx`: imported, routed as `section === 'contact'`, and linked in the footer alongside Privacy Policy
 
 ---
 
