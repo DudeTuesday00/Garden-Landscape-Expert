@@ -20,10 +20,18 @@ export const metadata = {
   openGraph: {
     siteName: 'Planting Atlas',
     type: 'website',
-    images: [{ url: '/og-image.png' }],
+    locale: 'en_US',
+    title: 'Planting Atlas — Plan it. Plant it. Grow it.',
+    description:
+      'Your complete planting atlas for gardens and landscapes. Get personalized plant recommendations from 148 plants across 12 types, or browse 75+ expert growing guides by USDA zone.',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Planting Atlas' }],
   },
   twitter: {
     card: 'summary_large_image',
+    title: 'Planting Atlas — Plan it. Plant it. Grow it.',
+    description:
+      'Your complete planting atlas for gardens and landscapes. Zone-specific plant recommendations, garden design tools, and expert guides for every climate.',
+    images: ['/og-image.png'],
   },
 }
 
