@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 26 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, and callouts.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 27 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -37,6 +37,8 @@ Garden-Landscape-Expert/
     ├── components/
     │   ├── SEO.jsx                  # Reusable <Helmet> wrapper — title, description, OG, Twitter Card, canonical
     │   ├── HomePage.jsx             # Landing page — two image-backed path cards
+    │   ├── ContactUs.jsx            # Contact form — Formspree (mlgpgdny); name, email, subject dropdown, message; success state
+    │   ├── PrivacyPolicy.jsx        # Static privacy policy page
     │   ├── wizard/
     │   │   ├── Garden Architect.png   # Hero image for the Garden Architect homepage card
     │   │   ├── Garden Architect 2.png # Hero image shown on the WelcomeScreen (Garden Architect landing)
@@ -282,7 +284,7 @@ Twenty-seven full guides integrated into the app:
 - `src/data/guide-content/edible-flowers.js` — Edible Flowers (`id: 'edible-flowers'`)
 - `src/data/guide-content/salsa-garden.js` — Salsa Garden (`id: 'salsa-garden'`)
 - `src/data/guide-content/medicinal-garden.js` — Medicinal Garden (`id: 'medicinal-garden'`)
-- `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, and tables
+- `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
 
@@ -403,12 +405,57 @@ Block types supported by `GuideDetail.jsx`:
 | `warning` | `emoji`, `text` | Themed callout box (caution/alert) |
 | `list` | `items[]` | Bulleted list |
 | `table` | `headers[]`, `rows[][]` | Scrollable table |
+| `affiliate` | `image`, `title`, `description`, `benefits[]`, `link`, `linkText` | Affiliate product card (earth-500 border, green CTA, FTC disclosure, `rel="noopener noreferrer sponsored"`) |
 
 **To add a new guide:**
 1. Create `src/data/guide-content/<guide-id>.js` following the structure above
 2. Import and add it to the `contentMap` in `GuideDetail.jsx`
 3. Add a color theme for the guide to the `themes` object in `GuideDetail.jsx` (all class strings must be complete for Tailwind JIT)
 4. Set `comingSoon: false` on the matching entry in `guides.js`
+
+### Affiliate Product Cards ✅
+
+A reusable `affiliate` block type has been added to `GuideDetail.jsx`. It renders a styled product card with an optional image, title, description, benefit checklist, a green CTA button, and an FTC disclosure line.
+
+- First affiliate block: 23-piece Heavy Duty Floral Garden Tool Set (Amazon) added to the "Tools We Recommend" section at the end of `plants-for-color.js`
+- Link uses `rel="noopener noreferrer sponsored"` per Google's guidelines
+- Card uses `earth-500` gold border and `garden-600` CTA button; full dark mode support
+
+**Affiliate block example:**
+```js
+{
+  type: 'affiliate',
+  image: 'https://m.media-amazon.com/images/I/...',
+  title: 'Product Name',
+  description: 'Short description.',
+  benefits: ['Benefit one', 'Benefit two'],
+  link: 'https://amzn.to/...',
+  linkText: 'View on Amazon',
+}
+```
+
+### AdSense In-Content Ad Placeholders ✅
+
+Three `<div>` placeholders are injected automatically between guide sections in `GuideDetail.jsx` — no per-guide content edits required.
+
+| Placeholder ID | Injected after section index | Appears in |
+|---|---|---|
+| `adsense-placeholder-1` | Index 1 (2nd section) | All guides with ≥2 sections |
+| `adsense-placeholder-2` | Index 3 (4th section) | Guides with ≥4 sections |
+| `adsense-placeholder-3` | Index 5 (6th section) | Long guides (shade-trees, pollinator-garden, etc.) |
+
+Each placeholder has `minHeight: 280px` to reserve layout space before Google fills the slot. All future guides added to the app automatically inherit these placements.
+
+### Contact Us Page ✅
+
+- `src/components/ContactUs.jsx` — contact form powered by `@formspree/react`; posts to `https://formspree.io/f/mlgpgdny`
+- Fields: **Name**, **Email Address**, **Subject** (dropdown: General Question / Plant Recommendation / Guide Feedback / Bug Report / Partnership & Advertising / Other), **Message**
+- All inputs carry `name` attributes and the `<form>` has `action="https://formspree.io/f/mlgpgdny"` + `method="POST"`
+- Uses `useForm("mlgpgdny")` + `<ValidationError>` from `@formspree/react` for inline field-level error display
+- On successful submit, replaces the form with a branded success message (🌱 "Message sent!")
+- Submit button shows "Sending…" and disables while in-flight to prevent double-submission
+- Full dark mode support; brand colors (`garden-600` button, `garden-800` heading)
+- `App.jsx`: imported, routed as `section === 'contact'`, and linked in the footer alongside Privacy Policy
 
 ---
 

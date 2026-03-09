@@ -3,6 +3,7 @@ import HomePage from './components/HomePage.jsx'
 import Wizard from './components/wizard/Wizard.jsx'
 import GuidesHome from './components/guides/GuidesHome.jsx'
 import PrivacyPolicy from './components/PrivacyPolicy.jsx'
+import ContactUs from './components/ContactUs.jsx'
 
 export default function App() {
   const [section, setSection] = useState('home')
@@ -73,6 +74,7 @@ export default function App() {
       {section === 'wizard'  && <Wizard onHome={() => setSection('home')} />}
       {section === 'guides'  && <GuidesHome onHome={() => setSection('home')} />}
       {section === 'privacy' && <PrivacyPolicy />}
+      {section === 'contact' && <ContactUs />}
 
       {/* Footer */}
       <footer className="mt-16 py-6 border-t border-gray-200 dark:border-gray-700 text-center text-sm text-gray-400 dark:text-gray-500">
@@ -83,6 +85,13 @@ export default function App() {
             className="underline hover:text-garden-600 dark:hover:text-garden-400 transition-colors"
           >
             Privacy Policy
+          </button>
+          &nbsp;·&nbsp;
+          <button
+            onClick={() => setSection('contact')}
+            className="underline hover:text-garden-600 dark:hover:text-garden-400 transition-colors"
+          >
+            Contact Us
           </button>
         </p>
       </footer>
