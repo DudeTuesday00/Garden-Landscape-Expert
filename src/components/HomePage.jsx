@@ -1,15 +1,9 @@
+import Link from 'next/link'
 import gardenArchitectImg from './wizard/Garden Architect.png'
 import plantopediaImg from './guides/Plantopedia.png'
-import SEO from './SEO.jsx'
 
-export default function HomePage({ onNavigate }) {
+export default function HomePage() {
   return (
-    <>
-    <SEO
-      description="Your complete planting atlas for gardens and landscapes. Get personalized plant recommendations from 148 plants across 12 types, or browse 75+ expert growing guides by USDA zone."
-      keywords="planting guide, landscape design, garden planning, USDA zones, plant database, gardening expert, hydroponic gardening, Plantopedia, Garden Architect"
-      path="/"
-    />
     <div className="px-4 py-8">
       <div className="w-full max-w-2xl mx-auto flex flex-col items-center gap-6">
 
@@ -27,12 +21,12 @@ export default function HomePage({ onNavigate }) {
         <div className="w-full grid sm:grid-cols-2 gap-6">
 
           {/* Garden Architect */}
-          <button
-            onClick={() => onNavigate('wizard')}
-            className="group bg-white dark:bg-gray-800 border-2 border-garden-200 dark:border-garden-700 hover:border-garden-500 dark:hover:border-garden-400 rounded-3xl shadow-md hover:shadow-xl transition-all duration-200 overflow-hidden flex flex-col text-left"
+          <Link
+            href="/wizard"
+            className="group bg-white dark:bg-gray-800 border-2 border-garden-200 dark:border-garden-700 hover:border-garden-500 dark:hover:border-garden-400 rounded-3xl shadow-md hover:shadow-xl transition-all duration-200 overflow-hidden flex flex-col"
           >
             <img
-              src={gardenArchitectImg}
+              src={gardenArchitectImg.src}
               alt="Garden Architect"
               className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
             />
@@ -49,15 +43,15 @@ export default function HomePage({ onNavigate }) {
                 Start Planning →
               </span>
             </div>
-          </button>
+          </Link>
 
           {/* Plantopedia */}
-          <button
-            onClick={() => onNavigate('guides')}
-            className="group bg-white dark:bg-gray-800 border-2 border-earth-400 dark:border-earth-600 hover:border-earth-500 dark:hover:border-earth-400 rounded-3xl shadow-md hover:shadow-xl transition-all duration-200 overflow-hidden flex flex-col text-left"
+          <Link
+            href="/guides"
+            className="group bg-white dark:bg-gray-800 border-2 border-earth-400 dark:border-earth-600 hover:border-earth-500 dark:hover:border-earth-400 rounded-3xl shadow-md hover:shadow-xl transition-all duration-200 overflow-hidden flex flex-col"
           >
             <img
-              src={plantopediaImg}
+              src={plantopediaImg.src}
               alt="Plantopedia"
               className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
             />
@@ -74,15 +68,14 @@ export default function HomePage({ onNavigate }) {
                 Explore Guides →
               </span>
             </div>
-          </button>
+          </Link>
 
         </div>
 
         <p className="text-xs text-gray-400 dark:text-gray-500">
-          148 plants · 26 live guides · no account required
+          148 plants · 27 live guides · no account required
         </p>
       </div>
     </div>
-    </>
   )
 }

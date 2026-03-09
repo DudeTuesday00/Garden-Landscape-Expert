@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import questions from '../../data/questions.js'
 import { matchPlants } from '../../logic/matchPlants.js'
@@ -12,12 +14,6 @@ const STAGES = {
   RESULTS: 'results',
 }
 
-/**
- * Compute which questions are active based on current answers.
- * - skipIfHydro questions are removed when growingMethod === 'hydroponic'
- * - hydroOnly questions are removed when growingMethod !== 'hydroponic'
- * - Before growingMethod is answered, hydro-conditional questions stay hidden
- */
 function getActiveQuestions(answers) {
   const isHydro = answers.growingMethod === 'hydroponic'
   const methodChosen = answers.growingMethod !== undefined
@@ -47,26 +43,21 @@ export default function Wizard() {
   function handleAnswer(id, value) {
     setAnswers((prev) => {
       const next = { ...prev, [id]: value }
-
-      // When growing method changes, clear answers that may no longer be relevant
       if (id === 'growingMethod') {
         const wasHydro = prev.growingMethod === 'hydroponic'
         const nowHydro = value === 'hydroponic'
         if (wasHydro !== nowHydro) {
-          // Clear skipped/swapped question answers to avoid stale data
           delete next.zone
           delete next.soil
           delete next.season
           delete next.hydroSystem
         }
       }
-
       return next
     })
   }
 
   function handleNext() {
-    // Recompute active questions with the latest answers to get correct length
     const active = getActiveQuestions(answers)
     if (stepIndex < active.length - 1) {
       setStepIndex((i) => i + 1)
@@ -95,7 +86,6 @@ export default function Wizard() {
   return (
     <div className="min-h-screen flex items-start justify-center px-4 py-10">
       <div className="w-full max-w-2xl">
-        {/* Card */}
         <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8">
           {stage === STAGES.WELCOME && (
             <WelcomeScreen onStart={handleStart} />
