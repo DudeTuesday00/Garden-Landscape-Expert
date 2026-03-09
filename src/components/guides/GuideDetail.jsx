@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, Fragment } from 'react'
 import SEO from '../SEO.jsx'
 import { shadeTreeContent } from '../../data/guide-content/shade-trees.js'
 import { fruitTreeContent } from '../../data/guide-content/fruit-trees.js'
@@ -677,9 +677,19 @@ export default function GuideDetail({ guideId, onBack }) {
           <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{content.intro}</p>
         </div>
 
-        {/* Sections */}
-        {content.sections.map((section) => (
-          <Section key={section.id} section={section} theme={theme} />
+        {/* Sections — ad placeholders injected after the 2nd, 4th, and 6th sections */}
+        {content.sections.map((section, i) => (
+          <Fragment key={section.id}>
+            <Section section={section} theme={theme} />
+            {(i === 1 || i === 3 || i === 5) && (
+              <div
+                id={`adsense-placeholder-${i === 1 ? 1 : i === 3 ? 2 : 3}`}
+                style={{ minHeight: '280px', margin: '0' }}
+              >
+                {/* AdSense will automatically fill this when approved */}
+              </div>
+            )}
+          </Fragment>
         ))}
 
         {/* Footer nav */}
