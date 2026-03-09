@@ -31,7 +31,7 @@ Garden-Landscape-Expert/
 ├── tailwind.config.js
 ├── postcss.config.js
 ├── public/
-│   ├── ads.txt                      # AdSense ads.txt — publisher verification (pub-XXXXXXXXXXXXXXXX placeholder; update when approved)
+│   ├── ads.txt                      # AdSense ads.txt — google.com, pub-2083020536499662, DIRECT, f08c47fec0942fa0
 │   ├── robots.txt
 │   └── sitemap.xml
 └── src/
@@ -470,9 +470,9 @@ Each placeholder has `minHeight: 280px` to reserve layout space before Google fi
 
 ### AdSense ads.txt ✅
 
-- `public/ads.txt` created with placeholder line: `google.com, pub-XXXXXXXXXXXXXXXX`
+- `public/ads.txt` — `google.com, pub-2083020536499662, DIRECT, f08c47fec0942fa0` (live, no further changes needed)
 - Served at `plantingatlas.com/ads.txt` by Vite/Cloudflare Pages (static files in `public/` are served at root)
-- **To activate:** replace `pub-XXXXXXXXXXXXXXXX` with the real Publisher ID (e.g., `pub-2083020536499662`) once AdSense account is approved and redeploy
+- `index.html` — AdSense account meta tag (`<meta name="google-adsense-account" content="ca-pub-2083020536499662">`) placed directly above the AdSense script in `<head>`
 
 ---
 
