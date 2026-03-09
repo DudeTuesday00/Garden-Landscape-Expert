@@ -1,23 +1,18 @@
-import { useState } from 'react'
+import Link from 'next/link'
 import { guideCategories } from '../../data/guides.js'
-import GuideDetail from './GuideDetail.jsx'
 import plantopediaImg from './Plantopedia2.png'
-import SEO from '../SEO.jsx'
 
-function GuideCard({ guide, onSelect }) {
+function GuideCard({ guide }) {
   const isLive = !guide.comingSoon
-  return (
-    <div
-      className={`bg-white dark:bg-gray-800 rounded-2xl border shadow-sm p-4 flex gap-3 items-start transition-shadow ${
-        isLive
-          ? 'border-garden-200 dark:border-garden-700 hover:shadow-md cursor-pointer hover:border-garden-400 dark:hover:border-garden-500'
-          : 'border-gray-200 dark:border-gray-700 opacity-80 cursor-default'
-      }`}
-      onClick={() => isLive && onSelect(guide.id)}
-      role={isLive ? 'button' : undefined}
-      tabIndex={isLive ? 0 : undefined}
-      onKeyDown={(e) => isLive && e.key === 'Enter' && onSelect(guide.id)}
-    >
+
+  const cardCls = `bg-white dark:bg-gray-800 rounded-2xl border shadow-sm p-4 flex gap-3 items-start transition-shadow ${
+    isLive
+      ? 'border-garden-200 dark:border-garden-700 hover:shadow-md hover:border-garden-400 dark:hover:border-garden-500'
+      : 'border-gray-200 dark:border-gray-700 opacity-80'
+  }`
+
+  const inner = (
+    <>
       <span className="text-2xl flex-shrink-0">{guide.emoji}</span>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 flex-wrap">
@@ -34,11 +29,21 @@ function GuideCard({ guide, onSelect }) {
         </div>
         <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">{guide.description}</p>
       </div>
-    </div>
+    </>
   )
+
+  if (isLive) {
+    return (
+      <Link href={`/guides/${guide.id}`} className={cardCls}>
+        {inner}
+      </Link>
+    )
+  }
+
+  return <div className={cardCls}>{inner}</div>
 }
 
-function CategorySection({ category, onSelect }) {
+function CategorySection({ category }) {
   return (
     <section>
       <div className="flex items-center gap-2 mb-4">
@@ -50,7 +55,7 @@ function CategorySection({ category, onSelect }) {
       </div>
       <div className="grid gap-3 sm:grid-cols-2">
         {category.guides.map((guide) => (
-          <GuideCard key={guide.id} guide={guide} onSelect={onSelect} />
+          <GuideCard key={guide.id} guide={guide} />
         ))}
       </div>
     </section>
@@ -58,33 +63,20 @@ function CategorySection({ category, onSelect }) {
 }
 
 export default function GuidesHome() {
-  const [selectedGuideId, setSelectedGuideId] = useState(null)
-
   const totalGuides = guideCategories.reduce((sum, cat) => sum + cat.guides.length, 0)
   const liveGuides = guideCategories.reduce(
     (sum, cat) => sum + cat.guides.filter((g) => !g.comingSoon).length,
     0
   )
 
-  if (selectedGuideId) {
-    return <GuideDetail guideId={selectedGuideId} onBack={() => setSelectedGuideId(null)} />
-  }
-
   return (
-    <>
-    <SEO
-      title="Plantopedia — Gardening Guides & Growing Tutorials"
-      description="Browse 75+ expert gardening guides covering trees, flowers, vegetables, herbs, specialty gardens, and more. In-depth growing tutorials for every climate and experience level."
-      keywords="gardening guides, planting tutorials, tree guide, flower garden, vegetable garden, herb garden, landscape design, growing tips"
-      path="/#guides"
-    />
     <div className="min-h-screen px-4 py-10">
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-10">
 
         {/* Header */}
         <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 overflow-hidden">
           <img
-            src={plantopediaImg}
+            src={plantopediaImg.src}
             alt="Plantopedia"
             className="w-full h-auto"
           />
@@ -110,7 +102,7 @@ export default function GuidesHome() {
         {/* Guide Categories */}
         {guideCategories.map((category) => (
           <div key={category.id} className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8">
-            <CategorySection category={category} onSelect={setSelectedGuideId} />
+            <CategorySection category={category} />
           </div>
         ))}
 
@@ -119,6 +111,5 @@ export default function GuidesHome() {
         </p>
       </div>
     </div>
-    </>
   )
 }

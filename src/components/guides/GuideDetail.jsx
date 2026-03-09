@@ -1,62 +1,6 @@
-import { useEffect, Fragment } from 'react'
-import SEO from '../SEO.jsx'
-import { shadeTreeContent } from '../../data/guide-content/shade-trees.js'
-import { fruitTreeContent } from '../../data/guide-content/fruit-trees.js'
-import { ornamentalTreeContent } from '../../data/guide-content/ornamental-trees.js'
-import { dwarfTreeContent } from '../../data/guide-content/dwarf-trees.js'
-import { evergreenTreeContent } from '../../data/guide-content/evergreen-trees.js'
-import { privacyTreeContent } from '../../data/guide-content/privacy-trees.js'
-import { streetTreeContent } from '../../data/guide-content/street-trees.js'
-import { fallColorTreeContent } from '../../data/guide-content/fall-color-trees.js'
-import { plantsForColorContent } from '../../data/guide-content/plants-for-color.js'
-import { moonGardenContent } from '../../data/guide-content/moon-garden.js'
-import { cottageGardenContent } from '../../data/guide-content/cottage-garden.js'
-import { pollinatorGardenContent } from '../../data/guide-content/pollinator-garden.js'
-import { cutFlowerGardenContent } from '../../data/guide-content/cut-flower-garden.js'
-import { wildflowerMeadowContent } from '../../data/guide-content/wildflower-meadow.js'
-import { springBulbGardenContent } from '../../data/guide-content/spring-bulb-garden.js'
-import { longBloomingPerennialsContent } from '../../data/guide-content/long-blooming-perennials.js'
-import { annualFlowersContent } from '../../data/guide-content/annual-flowers.js'
-import { pizzaGardenContent } from '../../data/guide-content/pizza-garden.js'
-import { saladGardenContent } from '../../data/guide-content/salad-garden.js'
-import { herbGardenDesignContent } from '../../data/guide-content/herb-garden-design.js'
-import { teaGardenContent } from '../../data/guide-content/tea-garden.js'
-import { childrensGardenContent } from '../../data/guide-content/childrens-vegetable-garden.js'
-import { squareFootGardeningContent } from '../../data/guide-content/square-foot-gardening.js'
-import { threeSistersContent } from '../../data/guide-content/three-sisters.js'
-import { edibleFlowersContent } from '../../data/guide-content/edible-flowers.js'
-import { salsaGardenContent } from '../../data/guide-content/salsa-garden.js'
-import { medicinalGardenContent } from '../../data/guide-content/medicinal-garden.js'
-
-const contentMap = {
-  'shade-trees': shadeTreeContent,
-  'fruit-trees': fruitTreeContent,
-  'ornamental-trees': ornamentalTreeContent,
-  'dwarf-trees': dwarfTreeContent,
-  'evergreen-trees': evergreenTreeContent,
-  'privacy-trees': privacyTreeContent,
-  'street-trees': streetTreeContent,
-  'fall-color-trees': fallColorTreeContent,
-  'plants-for-color': plantsForColorContent,
-  'moon-garden': moonGardenContent,
-  'cottage-garden': cottageGardenContent,
-  'pollinator-garden': pollinatorGardenContent,
-  'cut-flower-garden': cutFlowerGardenContent,
-  'wildflower-meadow': wildflowerMeadowContent,
-  'spring-bulb-garden': springBulbGardenContent,
-  'long-blooming-perennials': longBloomingPerennialsContent,
-  'annual-flowers': annualFlowersContent,
-  'pizza-garden': pizzaGardenContent,
-  'salad-garden': saladGardenContent,
-  'herb-garden-design': herbGardenDesignContent,
-  'tea-garden': teaGardenContent,
-  'childrens-garden': childrensGardenContent,
-  'square-foot-gardening': squareFootGardeningContent,
-  'three-sisters': threeSistersContent,
-  'edible-flowers': edibleFlowersContent,
-  'salsa-garden': salsaGardenContent,
-  'medicinal-garden': medicinalGardenContent,
-}
+import { Fragment } from 'react'
+import Link from 'next/link'
+import { contentMap } from '../../data/guide-content/index.js'
 
 // Per-guide color themes using standard Tailwind palettes.
 // All class name strings must be complete so Tailwind JIT can detect them.
@@ -524,11 +468,7 @@ function Block({ block, theme }) {
         <div className="rounded-2xl border-2 border-earth-500 bg-amber-50 dark:bg-gray-700 dark:border-yellow-600 overflow-hidden shadow-sm">
           {block.image && (
             <div className="flex justify-center bg-white dark:bg-gray-800 px-6 pt-5 pb-3">
-              <img
-                src={block.image}
-                alt={block.title}
-                className="h-52 w-auto object-contain"
-              />
+              <img src={block.image} alt={block.title} className="h-52 w-auto object-contain" />
             </div>
           )}
           <div className="p-5 flex flex-col gap-3">
@@ -583,10 +523,7 @@ function Block({ block, theme }) {
             <thead>
               <tr className={`${theme.tableHead} dark:bg-gray-700`}>
                 {block.headers.map((h, i) => (
-                  <th
-                    key={i}
-                    className={`text-left px-3 py-2 font-semibold ${theme.tableHeadText} dark:text-gray-200 border-b ${theme.tableHeadBorder} dark:border-gray-600 whitespace-nowrap`}
-                  >
+                  <th key={i} className={`text-left px-3 py-2 font-semibold ${theme.tableHeadText} dark:text-gray-200 border-b ${theme.tableHeadBorder} dark:border-gray-600 whitespace-nowrap`}>
                     {h}
                   </th>
                 ))}
@@ -596,10 +533,7 @@ function Block({ block, theme }) {
               {block.rows.map((row, ri) => (
                 <tr key={ri} className={ri % 2 === 0 ? 'bg-white dark:bg-gray-800' : 'bg-gray-50 dark:bg-gray-700'}>
                   {row.map((cell, ci) => (
-                    <td
-                      key={ci}
-                      className="px-3 py-2 text-gray-700 dark:text-gray-300 border-b border-gray-100 dark:border-gray-600 align-top"
-                    >
+                    <td key={ci} className="px-3 py-2 text-gray-700 dark:text-gray-300 border-b border-gray-100 dark:border-gray-600 align-top">
                       {cell}
                     </td>
                   ))}
@@ -628,9 +562,7 @@ function Section({ section, theme }) {
   )
 }
 
-export default function GuideDetail({ guideId, onBack }) {
-  useEffect(() => { window.scrollTo(0, 0) }, [guideId])
-
+export default function GuideDetail({ guideId }) {
   const content = contentMap[guideId]
   const theme = themes[guideId] || themes['shade-trees']
 
@@ -642,28 +574,18 @@ export default function GuideDetail({ guideId, onBack }) {
     )
   }
 
-  const metaDescription = content.intro.length > 160
-    ? content.intro.slice(0, 157) + '...'
-    : content.intro
-
   return (
-    <>
-    <SEO
-      title={content.hero.title}
-      description={metaDescription}
-      path={`/#guide/${guideId}`}
-    />
     <div className="min-h-screen px-4 py-8">
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-6">
 
         {/* Back button */}
-        <button
-          onClick={onBack}
+        <Link
+          href="/guides"
           className={`flex items-center gap-1.5 text-sm ${theme.backBtn} dark:text-gray-300 dark:hover:text-white font-medium transition-colors self-start`}
         >
           <span>←</span>
           <span>Back to Planting Guides</span>
-        </button>
+        </Link>
 
         {/* Hero */}
         <div className={`${theme.heroBg} dark:from-gray-800 dark:to-gray-700 rounded-3xl shadow-lg border ${theme.heroBorder} dark:border-gray-600 p-6 sm:p-8 text-center`}>
@@ -694,16 +616,15 @@ export default function GuideDetail({ guideId, onBack }) {
 
         {/* Footer nav */}
         <div className="text-center pb-4">
-          <button
-            onClick={onBack}
+          <Link
+            href="/guides"
             className={`text-sm ${theme.backBtn} dark:text-gray-300 dark:hover:text-white font-medium transition-colors`}
           >
             ← Back to All Planting Guides
-          </button>
+          </Link>
         </div>
 
       </div>
     </div>
-    </>
   )
 }

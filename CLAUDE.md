@@ -25,43 +25,54 @@ The wizard supports two paths:
 ```
 Garden-Landscape-Expert/
 ├── CLAUDE.md                        # This file
-├── index.html                       # Vite entry point — GTM, GA4, and AdSense scripts in <head>; GTM noscript after <body>
+├── next.config.mjs                  # Next.js config — output: 'export', trailingSlash: true (static export for Cloudflare Pages)
 ├── package.json
-├── vite.config.js
 ├── tailwind.config.js
 ├── postcss.config.js
 ├── public/
 │   ├── ads.txt                      # AdSense ads.txt — google.com, pub-2083020536499662, DIRECT, f08c47fec0942fa0
 │   ├── favicon.png                  # Site favicon — Planting Atlas brand icon
 │   ├── robots.txt
-│   └── sitemap.xml
+│   └── sitemap.xml                  # Full sitemap including all 27 live guide URLs
 └── src/
-    ├── main.jsx                     # React root — wrapped in <HelmetProvider>
-    ├── App.jsx                      # Top-level component — sticky nav (Garden Architect, Plantopedia, Contact, dark toggle) + section routing
-    ├── index.css                    # Tailwind base styles
+    ├── app/                         # Next.js App Router — one folder per route
+    │   ├── layout.jsx               # Root layout — dark mode script, GTM, Nav, footer, GA4/AdSense via next/script
+    │   ├── globals.css              # Tailwind base styles (body color, dark mode body)
+    │   ├── page.jsx                 # / — Home page (server component)
+    │   ├── wizard/
+    │   │   └── page.jsx             # /wizard/ — Garden Architect (metadata export)
+    │   ├── guides/
+    │   │   ├── page.jsx             # /guides/ — Plantopedia landing (metadata export)
+    │   │   └── [guideId]/
+    │   │       └── page.jsx         # /guides/[id]/ — SSG guide pages (generateStaticParams + generateMetadata)
+    │   ├── contact/
+    │   │   └── page.jsx             # /contact/ — Contact page (metadata export)
+    │   └── privacy/
+    │       └── page.jsx             # /privacy/ — Privacy Policy (metadata export)
     ├── components/
-    │   ├── SEO.jsx                  # Reusable <Helmet> wrapper — title, description, OG, Twitter Card, canonical
-    │   ├── HomePage.jsx             # Landing page — two image-backed path cards
-    │   ├── ContactUs.jsx            # Contact form — Formspree (mlgpgdny); name, email, subject dropdown, message; success state
+    │   ├── Nav.jsx                  # 'use client' — sticky nav with usePathname active state + dark mode toggle
+    │   ├── HomePage.jsx             # Landing page — two image-backed path cards (Link to /wizard and /guides)
+    │   ├── ContactUs.jsx            # 'use client' — contact form (Formspree mlgpgdny); success state
     │   ├── PrivacyPolicy.jsx        # Static privacy policy page
     │   ├── wizard/
     │   │   ├── Garden Architect.png   # Hero image for the Garden Architect homepage card
     │   │   ├── Garden Architect 2.png # Hero image shown on the WelcomeScreen (Garden Architect landing)
-    │   │   ├── Wizard.jsx             # Main wizard shell + state
-    │   │   ├── WelcomeScreen.jsx      # Intro screen (titled "Garden Architect") — shows Garden Architect 2.png at top
+    │   │   ├── Wizard.jsx             # 'use client' — main wizard shell + state machine
+    │   │   ├── WelcomeScreen.jsx      # Intro screen — shows Garden Architect 2.png at top
     │   │   ├── QuestionStep.jsx       # Per-question UI (single + multi-select)
     │   │   ├── ProgressBar.jsx        # Step progress indicator
     │   │   └── Results.jsx            # Plant recommendation cards
     │   └── guides/
     │       ├── Plantopedia.png        # Hero image for the Plantopedia homepage card
     │       ├── Plantopedia2.png       # Hero image shown on the GuidesHome (Plantopedia landing)
-    │       ├── GuidesHome.jsx         # Plantopedia landing page — shows Plantopedia2.png at top; card grid + Coming Soon badges; includes <SEO>
-    │       └── GuideDetail.jsx        # Full guide renderer — imports contentMap + per-guide color themes; includes per-guide <SEO>
+    │       ├── GuidesHome.jsx         # Plantopedia landing — card grid + Coming Soon badges; live guides Link to /guides/[id]
+    │       └── GuideDetail.jsx        # Server component — renders guide content from contentMap; Link back to /guides
     ├── data/
     │   ├── plants.js                # Static plant database (148 plants across 12 types)
     │   ├── questions.js             # Wizard question definitions (with hydro routing flags)
     │   ├── guides.js                # 10 guide categories, ~75 guides (comingSoon flag per guide)
-    │   └── guide-content/           # One JS file per live guide (26 files currently)
+    │   └── guide-content/           # One JS file per live guide + shared index
+    │       ├── index.js             # contentMap export — used by GuideDetail and [guideId]/page.jsx
     │       ├── shade-trees.js
     │       ├── fruit-trees.js
     │       ├── ornamental-trees.js
@@ -97,11 +108,14 @@ Garden-Landscape-Expert/
 ## Tech Stack
 
 - **Language:** JavaScript (JSX)
-- **Framework:** React 18 + Vite 6
+- **Framework:** Next.js 15 (App Router) + React 18 — static export (`output: 'export'`) for Cloudflare Pages
+- **Routing:** File-based App Router (`src/app/`) — real URLs, no hash routing
+- **SSG:** Guide pages pre-rendered at build time via `generateStaticParams` — one HTML file per guide
 - **Styling:** Tailwind CSS 3 with custom `garden` and `earth` color palettes (see brand colors below)
-- **SEO:** `react-helmet-async` — dynamic per-page `<title>`, description, OG, and Twitter Card tags
-- **Analytics:** Google Tag Manager (`GTM-TT46476S`) + Google Analytics 4 (`G-7S7248T634`) — both scripts in `index.html` `<head>`
-- **Ads:** Google AdSense (`ca-pub-2083020536499662`) auto-ads script in `index.html` `<head>`
+- **SEO:** Next.js built-in `metadata` exports and `generateMetadata` — no third-party library needed
+- **Scripts:** GTM/dark-mode inline in layout `<head>`; GA4 + AdSense via `next/script` `afterInteractive`
+- **Analytics:** Google Tag Manager (`GTM-TT46476S`) + Google Analytics 4 (`G-7S7248T634`)
+- **Ads:** Google AdSense (`ca-pub-2083020536499662`) auto-ads via `next/script`
 - **Database:** Static JS files (no backend)
 - **Testing:** Not yet configured
 
@@ -126,14 +140,14 @@ Garden-Landscape-Expert/
 # Install dependencies
 npm install
 
-# Run development server (http://localhost:5173)
+# Run development server (http://localhost:3000)
 npm run dev
 
-# Build for production
+# Build for production (outputs static files to /out)
 npm run build
 
-# Preview production build
-npm run preview
+# Serve production build locally
+npm run start
 ```
 
 ---
@@ -293,31 +307,38 @@ Twenty-seven full guides integrated into the app:
 
 ### Dynamic SEO + Google Tag Manager ✅
 
-- **`react-helmet-async`** installed; `src/main.jsx` wrapped in `<HelmetProvider>`
-- **`src/components/SEO.jsx`** — reusable component; accepts `title`, `description`, `keywords`, `image`, `path`; auto-appends `| Planting Atlas` to every title; writes `<title>`, `<meta name="description">`, `<link rel="canonical">`, OG, and Twitter Card tags
-- **GTM container `GTM-TT46476S`** embedded in `index.html` — head `<script>` at the very top of `<head>` (before any other tags, per Google's official guidance) and `<noscript>` fallback immediately after `<body>`
-- **Google Analytics 4 `G-7S7248T634`** — `gtag.js` snippet added immediately after the GTM block in `<head>`
-- **Google AdSense `ca-pub-2083020536499662`** — auto-ads script added in `<head>`; single placement covers all pages of the SPA
+- **Next.js `metadata` exports** — no third-party library; each `app/*/page.jsx` exports a `metadata` object or `generateMetadata` async function
+- **Layout-level metadata** in `src/app/layout.jsx` — sets `title.template: '%s | Planting Atlas'`, site-wide description, OG image, and Twitter Card defaults
+- **`generateMetadata`** in `src/app/guides/[guideId]/page.jsx` — per-guide title from `content.hero.title`, description from `content.intro` (truncated to 160 chars), canonical URL, and OG overrides
+- **GTM container `GTM-TT46476S`** — inline `<script dangerouslySetInnerHTML>` in `<head>` of `src/app/layout.jsx` (synchronous, first in head); noscript fallback in `<body>`
+- **Google Analytics 4 `G-7S7248T634`** — `<Script strategy="afterInteractive">` in `layout.jsx` via `next/script`
+- **Google AdSense `ca-pub-2083020536499662`** — `<Script strategy="afterInteractive">` in `layout.jsx` via `next/script`
 
-**Per-page SEO tags:**
+**Per-page SEO:**
 
-| Page | Title | Path |
-|------|-------|------|
-| Home | *(default — uses `index.html` static title)* | `/` |
-| Garden Architect | `Garden Architect — Personalized Plant Recommendations` | `/#wizard` |
-| Plantopedia | `Plantopedia — Gardening Guides & Growing Tutorials` | `/#guides` |
-| Each guide | `{guide hero.title}` — description from `content.intro` (truncated to 160 chars) | `/#guide/{guideId}` |
+| Page | URL | Title |
+|------|-----|-------|
+| Home | `/` | `Planting Atlas — Plan it. Plant it. Grow it.` |
+| Garden Architect | `/wizard/` | `Garden Architect — Personalized Plant Recommendations \| Planting Atlas` |
+| Plantopedia | `/guides/` | `Plantopedia — Gardening Guides & Growing Tutorials \| Planting Atlas` |
+| Each guide | `/guides/{guideId}/` | `{content.hero.title} \| Planting Atlas` (from `generateMetadata`) |
+| Contact | `/contact/` | `Contact Us \| Planting Atlas` |
+| Privacy | `/privacy/` | `Privacy Policy \| Planting Atlas` |
 
-**SEO component usage:**
+**Per-page metadata pattern:**
 ```jsx
-import SEO from '../SEO.jsx'
+// Static page
+export const metadata = {
+  title: 'Page Title',   // template appends "| Planting Atlas"
+  description: '...',
+}
 
-<SEO
-  title="Page Title"           // auto-suffixed with "| Planting Atlas"
-  description="..."
-  keywords="..."               // optional
-  path="/#section"             // used for canonical URL
-/>
+// Dynamic SSG page
+export async function generateMetadata({ params }) {
+  const { guideId } = await params
+  const content = contentMap[guideId]
+  return { title: content.hero.title, description: '...', openGraph: { ... } }
+}
 ```
 
 ### Medicinal Garden Guide ✅
@@ -414,9 +435,10 @@ Block types supported by `GuideDetail.jsx`:
 
 **To add a new guide:**
 1. Create `src/data/guide-content/<guide-id>.js` following the structure above
-2. Import and add it to the `contentMap` in `GuideDetail.jsx`
+2. Import and re-export it in `src/data/guide-content/index.js` and add it to `contentMap` there
 3. Add a color theme for the guide to the `themes` object in `GuideDetail.jsx` (all class strings must be complete for Tailwind JIT)
 4. Set `comingSoon: false` on the matching entry in `guides.js`
+5. The new guide URL (`/guides/<guide-id>/`) is automatically pre-rendered at build time via `generateStaticParams` — no additional routing config needed
 
 ### Affiliate Product Cards ✅
 
@@ -477,13 +499,46 @@ Each placeholder has `minHeight: 280px` to reserve layout space before Google fi
 
 ### Favicon ✅
 
-- `public/favicon.png` — Planting Atlas brand icon; served at `/favicon.png` by Vite/Cloudflare Pages
-- `index.html` — default Vite SVG favicon replaced with:
-  ```html
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <link rel="apple-touch-icon" href="/favicon.png" />
-  ```
-- `apple-touch-icon` added for iOS home screen support
+- `public/favicon.png` — Planting Atlas brand icon; served at `/favicon.png` by Cloudflare Pages
+- `src/app/layout.jsx` — favicon set via Next.js `metadata.icons`: `{ icon: '/favicon.png', apple: '/favicon.png' }`
+- `apple` entry covers iOS home screen support
+
+### Next.js Migration ✅
+
+The site was fully migrated from a Vite SPA to **Next.js 15 App Router** with static export for Cloudflare Pages.
+
+**What changed:**
+
+| Before (Vite SPA) | After (Next.js SSG) |
+|---|---|
+| Single HTML file, hash routing (`/#wizard`) | Real URLs (`/wizard/`, `/guides/shade-trees/`) |
+| `react-helmet-async` + `SEO.jsx` | Native `metadata` exports + `generateMetadata` |
+| All pages rendered client-side | Guide pages pre-rendered as static HTML at build time |
+| `index.html` + Vite scripts | `src/app/layout.jsx` root layout |
+| `src/App.jsx` section state | `src/app/` file-based routing |
+| GTM/GA4/AdSense in `index.html` | GTM inline in layout `<head>`; GA4 + AdSense via `next/script` |
+
+**Key files created/updated:**
+
+| File | Role |
+|---|---|
+| `next.config.mjs` | `output: 'export'`, `trailingSlash: true`, `images.unoptimized: true` |
+| `src/app/layout.jsx` | Root layout — dark mode script, GTM, Nav, footer, scripts |
+| `src/app/guides/[guideId]/page.jsx` | SSG — `generateStaticParams` + `generateMetadata` per guide |
+| `src/data/guide-content/index.js` | Shared `contentMap` used by both `GuideDetail` and `[guideId]/page.jsx` |
+| `src/components/Nav.jsx` | `'use client'` — `usePathname` active state + dark mode toggle |
+| `src/components/wizard/Wizard.jsx` | Added `'use client'` directive |
+| `src/components/ContactUs.jsx` | Added `'use client'` directive; removed `SEO` |
+
+**Client vs server components:**
+- Server (default): `HomePage`, `GuidesHome`, `GuideDetail`, `PrivacyPolicy`, all page files
+- Client (`'use client'`): `Nav`, `Wizard` (and its sub-components), `ContactUs`
+
+**Build output:** `next build` generates `out/` — a fully static directory deployable to Cloudflare Pages with zero server required.
+
+**Cloudflare Pages build settings:**
+- Build command: `npm run build`
+- Output directory: `out`
 
 ---
 
