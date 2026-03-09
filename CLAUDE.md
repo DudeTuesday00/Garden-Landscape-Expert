@@ -32,6 +32,7 @@ Garden-Landscape-Expert/
 ├── postcss.config.js
 ├── public/
 │   ├── ads.txt                      # AdSense ads.txt — google.com, pub-2083020536499662, DIRECT, f08c47fec0942fa0
+│   ├── favicon.png                  # Site favicon — Planting Atlas brand icon
 │   ├── robots.txt
 │   └── sitemap.xml
 └── src/
@@ -473,6 +474,16 @@ Each placeholder has `minHeight: 280px` to reserve layout space before Google fi
 - `public/ads.txt` — `google.com, pub-2083020536499662, DIRECT, f08c47fec0942fa0` (live, no further changes needed)
 - Served at `plantingatlas.com/ads.txt` by Vite/Cloudflare Pages (static files in `public/` are served at root)
 - `index.html` — AdSense account meta tag (`<meta name="google-adsense-account" content="ca-pub-2083020536499662">`) placed directly above the AdSense script in `<head>`
+
+### Favicon ✅
+
+- `public/favicon.png` — Planting Atlas brand icon; served at `/favicon.png` by Vite/Cloudflare Pages
+- `index.html` — default Vite SVG favicon replaced with:
+  ```html
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
+  ```
+- `apple-touch-icon` added for iOS home screen support
 
 ---
 
