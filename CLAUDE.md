@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 26 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, and callouts.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 27 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -282,7 +282,7 @@ Twenty-seven full guides integrated into the app:
 - `src/data/guide-content/edible-flowers.js` — Edible Flowers (`id: 'edible-flowers'`)
 - `src/data/guide-content/salsa-garden.js` — Salsa Garden (`id: 'salsa-garden'`)
 - `src/data/guide-content/medicinal-garden.js` — Medicinal Garden (`id: 'medicinal-garden'`)
-- `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, and tables
+- `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
 
@@ -403,12 +403,46 @@ Block types supported by `GuideDetail.jsx`:
 | `warning` | `emoji`, `text` | Themed callout box (caution/alert) |
 | `list` | `items[]` | Bulleted list |
 | `table` | `headers[]`, `rows[][]` | Scrollable table |
+| `affiliate` | `image`, `title`, `description`, `benefits[]`, `link`, `linkText` | Affiliate product card (earth-500 border, green CTA, FTC disclosure, `rel="noopener noreferrer sponsored"`) |
 
 **To add a new guide:**
 1. Create `src/data/guide-content/<guide-id>.js` following the structure above
 2. Import and add it to the `contentMap` in `GuideDetail.jsx`
 3. Add a color theme for the guide to the `themes` object in `GuideDetail.jsx` (all class strings must be complete for Tailwind JIT)
 4. Set `comingSoon: false` on the matching entry in `guides.js`
+
+### Affiliate Product Cards ✅
+
+A reusable `affiliate` block type has been added to `GuideDetail.jsx`. It renders a styled product card with an optional image, title, description, benefit checklist, a green CTA button, and an FTC disclosure line.
+
+- First affiliate block: 23-piece Heavy Duty Floral Garden Tool Set (Amazon) added to the "Tools We Recommend" section at the end of `plants-for-color.js`
+- Link uses `rel="noopener noreferrer sponsored"` per Google's guidelines
+- Card uses `earth-500` gold border and `garden-600` CTA button; full dark mode support
+
+**Affiliate block example:**
+```js
+{
+  type: 'affiliate',
+  image: 'https://m.media-amazon.com/images/I/...',
+  title: 'Product Name',
+  description: 'Short description.',
+  benefits: ['Benefit one', 'Benefit two'],
+  link: 'https://amzn.to/...',
+  linkText: 'View on Amazon',
+}
+```
+
+### AdSense In-Content Ad Placeholders ✅
+
+Three `<div>` placeholders are injected automatically between guide sections in `GuideDetail.jsx` — no per-guide content edits required.
+
+| Placeholder ID | Injected after section index | Appears in |
+|---|---|---|
+| `adsense-placeholder-1` | Index 1 (2nd section) | All guides with ≥2 sections |
+| `adsense-placeholder-2` | Index 3 (4th section) | Guides with ≥4 sections |
+| `adsense-placeholder-3` | Index 5 (6th section) | Long guides (shade-trees, pollinator-garden, etc.) |
+
+Each placeholder has `minHeight: 280px` to reserve layout space before Google fills the slot. All future guides added to the app automatically inherit these placements.
 
 ---
 
