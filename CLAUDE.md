@@ -30,9 +30,13 @@ Garden-Landscape-Expert/
 ├── vite.config.js
 ├── tailwind.config.js
 ├── postcss.config.js
+├── public/
+│   ├── ads.txt                      # AdSense ads.txt — publisher verification (pub-XXXXXXXXXXXXXXXX placeholder; update when approved)
+│   ├── robots.txt
+│   └── sitemap.xml
 └── src/
     ├── main.jsx                     # React root — wrapped in <HelmetProvider>
-    ├── App.jsx                      # Top-level component — sticky nav + section routing
+    ├── App.jsx                      # Top-level component — sticky nav (Garden Architect, Plantopedia, Contact, dark toggle) + section routing
     ├── index.css                    # Tailwind base styles
     ├── components/
     │   ├── SEO.jsx                  # Reusable <Helmet> wrapper — title, description, OG, Twitter Card, canonical
@@ -456,6 +460,19 @@ Each placeholder has `minHeight: 280px` to reserve layout space before Google fi
 - Submit button shows "Sending…" and disables while in-flight to prevent double-submission
 - Full dark mode support; brand colors (`garden-600` button, `garden-800` heading)
 - `App.jsx`: imported, routed as `section === 'contact'`, and linked in the footer alongside Privacy Policy
+
+### Contact Nav Button ✅
+
+- A `✉️ Contact` button added to the sticky header nav in `App.jsx`, sitting between the Plantopedia button and the dark mode toggle
+- Uses the same `px-4 py-1.5 rounded-lg text-sm font-medium` style as the other nav tabs
+- Active state: `bg-garden-600 text-white`; inactive: `text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700`
+- Calls `setSection('contact')` on click — consistent with how Garden Architect and Plantopedia nav works
+
+### AdSense ads.txt ✅
+
+- `public/ads.txt` created with placeholder line: `google.com, pub-XXXXXXXXXXXXXXXX`
+- Served at `plantingatlas.com/ads.txt` by Vite/Cloudflare Pages (static files in `public/` are served at root)
+- **To activate:** replace `pub-XXXXXXXXXXXXXXXX` with the real Publisher ID (e.g., `pub-2083020536499662`) once AdSense account is approved and redeploy
 
 ---
 
