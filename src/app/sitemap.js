@@ -1,3 +1,5 @@
+export const dynamic = 'force-static'
+
 import { guideCategories } from '../data/guides.js'
 
 const SITE_URL = 'https://plantingatlas.com'
