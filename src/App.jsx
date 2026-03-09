@@ -55,6 +55,16 @@ export default function App() {
             >
               📖 Plantopedia
             </button>
+            <button
+              onClick={() => setSection('contact')}
+              className={`px-4 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                section === 'contact'
+                  ? 'bg-garden-600 text-white'
+                  : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+              }`}
+            >
+              ✉️ Contact
+            </button>
 
             {/* Dark mode toggle */}
             <button
