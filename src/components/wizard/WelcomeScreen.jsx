@@ -3,11 +3,12 @@ import gardenArchitectImg from './Garden Architect 2.png'
 export default function WelcomeScreen({ onStart }) {
   return (
     <div className="flex flex-col items-center gap-6 py-8">
-      <div className="flex flex-row items-center gap-6 w-full max-w-2xl">
+      <div className="flex flex-row items-stretch gap-6 w-full max-w-2xl">
         <img
           src={gardenArchitectImg.src}
           alt="Garden Architect"
-          className="w-40 sm:w-48 flex-shrink-0 rounded-2xl shadow-md object-cover"
+          className="flex-shrink-0 w-40 sm:w-48 rounded-2xl shadow-md object-cover self-stretch"
+          style={{ height: '100%' }}
         />
 
         <div className="flex flex-col gap-3 text-left">
