@@ -237,7 +237,7 @@ export const guideCategories = [
         title: 'Plants for Fragrance',
         emoji: '👃',
         description: 'The most fragrant plants for every garden style and season.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'culinary-herb-garden',
@@ -289,7 +289,7 @@ export const guideCategories = [
         title: 'Front Yard Curb Appeal',
         emoji: '🏠',
         description: 'Transform your front yard into a welcoming, beautiful first impression.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'privacy-screening',
@@ -588,7 +588,7 @@ export const guideCategories = [
         title: 'Porch Plants',
         emoji: '🏡',
         description: 'The best plants for front porches — seasonal color, fragrance, and style.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'sunroom-plants',

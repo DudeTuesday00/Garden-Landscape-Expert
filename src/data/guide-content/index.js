@@ -31,6 +31,9 @@ import { threeSistersContent } from './three-sisters.js'
 import { edibleFlowersContent } from './edible-flowers.js'
 import { salsaGardenContent } from './salsa-garden.js'
 import { medicinalGardenContent } from './medicinal-garden.js'
+import { plantsForFragranceContent } from './plants-for-fragrance.js'
+import { curbAppealContent } from './curb-appeal.js'
+import { porchPlantsContent } from './porch-plants.js'
 
 export const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -60,4 +63,7 @@ export const contentMap = {
   'edible-flowers': edibleFlowersContent,
   'salsa-garden': salsaGardenContent,
   'medicinal-garden': medicinalGardenContent,
+  'plants-for-smell': plantsForFragranceContent,
+  'curb-appeal': curbAppealContent,
+  'porch-plants': porchPlantsContent,
 }
