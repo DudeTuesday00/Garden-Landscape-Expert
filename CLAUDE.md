@@ -545,8 +545,10 @@ The site was fully migrated from a Vite SPA to **Next.js 15 App Router** with st
 ### Auto-Generated Sitemap & robots.txt ✅
 
 - `src/app/sitemap.js` — generates `sitemap.xml` at build time by reading `guideCategories` from `guides.js`; adding a new live guide (setting `comingSoon: false`) automatically adds its URL — no manual XML editing required
-- `src/app/robots.js` — generates `robots.txt` at build time (`Allow: *`, points to sitemap URL)
+- `src/app/robots.js` — generates `robots.txt` at build time (`Allow: *`, points to sitemap URL); requires `export const dynamic = 'force-static'` at the top of the file (Next.js `output: 'export'` requirement)
 - `public/sitemap.xml` and `public/robots.txt` — kept as minimal placeholders only; they do not contain live data and must not be edited (the generated files overwrite them during `next build`)
+
+> **Note:** Both `robots.js` and `sitemap.js` must include `export const dynamic = 'force-static'` — without it, `next build` will fail with: `export const dynamic = "force-static"/export const revalidate not configured on route "/robots.txt" with "output: export"`
 
 ### Complete Meta Tag Coverage ✅
 
