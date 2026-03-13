@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 27 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 30 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -100,7 +100,10 @@ Garden-Landscape-Expert/
     │       ├── square-foot-gardening.js
     │       ├── three-sisters.js
     │       ├── edible-flowers.js
-    │       └── salsa-garden.js
+    │       ├── salsa-garden.js
+    │       ├── plants-for-fragrance.js
+    │       ├── curb-appeal.js
+    │       └── porch-plants.js
     └── logic/
         └── matchPlants.js           # Scoring + filtering algorithm
 ```
@@ -257,7 +260,7 @@ Each question in `questions.js` has:
 
 ### Planting Guides Section (scaffold) ✅
 
-- `src/data/guides.js` — 10 categories, ~75 guides (27 live, remainder `comingSoon: true`)
+- `src/data/guides.js` — 10 categories, ~75 guides (30 live, remainder `comingSoon: true`)
 - `src/components/guides/GuidesHome.jsx` — guide cards with "Coming Soon" badges; live guides are clickable and route to full guide detail view
 - `src/App.jsx` — home page with two path cards; sticky nav with tabs: Garden Architect and Plantopedia
 - `src/components/wizard/Wizard.jsx` — brand strip removed (now in App nav)
@@ -266,17 +269,17 @@ Each question in `questions.js` has:
 1. Trees & Large Plants (8 guides — 8 live ✅)
 2. Flowers & Color Gardens (9 guides — 9 live ✅)
 3. Edible Gardens (9 guides — 9 live ✅)
-4. Herbs & Fragrance (6 guides)
-5. Landscape Design (10 guides)
+4. Herbs & Fragrance (6 guides — 1 live ✅)
+5. Landscape Design (10 guides — 1 live ✅)
 6. Seasonal Guides (8 guides)
 7. Pest & Problem Solving (8 guides)
-8. Specialty Gardens (11 guides — 1 live ✅)
-9. Container & Small Spaces (8 guides)
+8. Specialty Gardens (11 guides — 2 live ✅)
+9. Container & Small Spaces (8 guides — 1 live ✅)
 10. Eco & Sustainability (9 guides)
 
 ### Planting Guides — Live Content ✅
 
-Twenty-seven full guides integrated into the app:
+Thirty full guides integrated into the app:
 
 - `src/data/guide-content/shade-trees.js` — Shade Trees (`id: 'shade-trees'`)
 - `src/data/guide-content/fruit-trees.js` — Fruit Trees (`id: 'fruit-trees'`)
@@ -305,6 +308,9 @@ Twenty-seven full guides integrated into the app:
 - `src/data/guide-content/edible-flowers.js` — Edible Flowers (`id: 'edible-flowers'`)
 - `src/data/guide-content/salsa-garden.js` — Salsa Garden (`id: 'salsa-garden'`)
 - `src/data/guide-content/medicinal-garden.js` — Medicinal Garden (`id: 'medicinal-garden'`)
+- `src/data/guide-content/plants-for-fragrance.js` — Plants for Fragrance (`id: 'plants-for-smell'`)
+- `src/data/guide-content/curb-appeal.js` — Front Yard Curb Appeal (`id: 'curb-appeal'`)
+- `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -350,6 +356,12 @@ export async function generateMetadata({ params }) {
 - Cannabis section includes: federal hemp vs. state cannabis legal notice, variety selection (Cherry Wine, Suver Haze, etc.), full growing guide, trichome harvest timing, decarboxylation and processing notes, CBD vs. THC explainer, and drug interaction row in the safety table
 - Theme: emerald/purple gradient (`from-emerald-50 to-purple-100`) in `GuideDetail.jsx`
 - Set `comingSoon: false` under Specialty Gardens in `guides.js`
+
+### Three New Live Guides (28th–30th) ✅
+
+- `src/data/guide-content/plants-for-fragrance.js` — Plants for Fragrance (`id: 'plants-for-smell'`); 7 sections: fragrance types by season, fragrant shrubs & trees, roses, perennials & groundcovers, annuals & climbers, design/placement rules, challenging conditions, and a full seasonal calendar; theme: purple/pink gradient in `GuideDetail.jsx`; set `comingSoon: false` under Herbs & Fragrance in `guides.js`
+- `src/data/guide-content/curb-appeal.js` — Front Yard Curb Appeal (`id: 'curb-appeal'`); 7 sections: five elements of curb appeal, three-zone layout, foundation planting rules, best plants by season, seasonal color strategy, hardscape & lighting, low-maintenance approach, and zone-by-zone picks; theme: sky/blue gradient in `GuideDetail.jsx`; set `comingSoon: false` under Landscape Design in `guides.js`
+- `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`); 8 sections: porch microclimate assessment, sunny porch plants, shady porch plants, container selection & soil, fragrant porch plants, seasonal calendar, care & troubleshooting, and overwintering; theme: amber/yellow gradient in `GuideDetail.jsx`; set `comingSoon: false` under Container & Small Spaces in `guides.js`
 
 ### National Audience — Oklahoma References Removed ✅
 
