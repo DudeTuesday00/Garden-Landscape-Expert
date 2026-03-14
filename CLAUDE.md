@@ -368,7 +368,7 @@ export async function generateMetadata({ params }) {
 | Section 4: Adaptogens | ✅ Done | Ashwagandha (cortisol RCT, moon milk, zone growing), Tulsi (3 varieties, daily-tea approach), Rhodiola (new — sertraline trial, Zones 3-6 cool-climate), Eleuthero (new — Soviet research, 6-8 week tonic cycle); selection tip |
 | Section 5: Topical & Respiratory | ✅ Done | Calendula (saponins/carotenoids, infused oil, zone-split growing), Plantain (new — aucubin/allantoin, lawn weed first aid), Yarrow (achilleine hemostatic, sitz bath, pregnancy caution), Mullein (new — leaf straining warning, ear oil), Thyme (new — ambroxol RCT, thyme honey), Elecampane (new — inulin 50%, chronic respiratory use) |
 | Section 6: Growing the Medicinal Garden | ✅ Done | USDA zone chart (5-row), garden design principles, LFD-relative 10-row seasonal calendar, 6-row harvest quality table, drying methods, storage guidelines |
-| Section 7: Cannabis | 🔲 Pending | Endocannabinoid system, CBD/THC table, US climate growing, preparations |
+| Section 7: Cannabis | ✅ Done | Legal status warning (federal + 50-state patchwork), ECS explanation (CB1/CB2/CBD mechanism), 8-row CBD vs THC properties table, growing hemp across US climates (regional notes), infused oil + tincture preparations, entourage effect tip; cannabis removed from growing-guide |
 | Section 8: Preparations & Recipes | 🔲 Pending | Add calendula salve, thyme honey, sleep tea blend, oxymel |
 | Section 9: Safety & Drug Interactions | 🔲 Pending | Expand drug interaction table; add conditions table |
 | Section 10: Additional Herb Profiles | 🔲 Pending | Milk Thistle, Marshmallow, Hops, Black Cohosh, Ginger, Turmeric, Hawthorn, etc. |
