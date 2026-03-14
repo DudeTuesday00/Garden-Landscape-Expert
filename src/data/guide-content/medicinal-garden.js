@@ -239,20 +239,103 @@ export const medicinalGardenContent = {
     },
 
     {
-      id: 'growing-guide',
-      title: 'Growing Guide — Detailed Herb Profiles',
+      id: 'nervines',
+      title: 'Nervines, Anxiety & Sleep Herbs',
       blocks: [
-        { type: 'h3', text: '🌼 Chamomile (Matricaria chamomilla — German Chamomile)' },
+        {
+          type: 'p',
+          text: 'Nervines are herbs that act on the nervous system, producing calming, sedating, or tonifying effects on nervous tissue. They range from gentle relaxing herbs (lemon balm, chamomile) appropriate for daily use and for children, to more potent hypnotics (valerian, passionflower) best used situationally, to tonic nervines (skullcap) that build nervous system resilience over time.',
+        },
+        { type: 'h3', text: '🌼 Chamomile (Matricaria chamomilla / Anthemis nobilis)' },
+        {
+          type: 'p',
+          text: 'Chamomile is the most widely consumed medicinal herb globally — gentle, effective, pleasant-tasting, broadly applicable, and extremely safe for most people including children. German chamomile (Matricaria chamomilla) is the standard medicinal species; Roman chamomile (Anthemis nobilis) has a similar but slightly different profile.',
+        },
         {
           type: 'list',
           items: [
-            'Annual — grows in all zones. Self-seeds prolifically once established; a planting can perpetuate indefinitely.',
-            'Sun and soil: Full sun; average to poor, well-drained soil. Tolerates lean conditions. Does not compete well with aggressive weeds.',
-            'Growing: Direct sow on the soil surface in early spring (chamomile needs light to germinate — do not cover). Thin to 6–9 inches apart. In mild climates, sow again in fall for early spring blooms.',
-            'Harvest: Pick flowers when petals are fully reflexed (swept backward from the central cone) and the cone is firm. This is peak essential oil content. Harvest every 2–3 days at peak bloom.',
-            'Medicinal use: Chamomile tea promotes relaxation, reduces anxiety, and soothes an irritated digestive tract. Applied topically (as a strong tea or infused oil), it calms inflamed or sensitive skin. One of the safest herbs for children.',
+            'Active constituents: Apigenin (flavonoid — binds GABA receptors, produces calming, mild sedative effect), bisabolol (anti-inflammatory, anti-spasmodic, wound-healing), chamazulene (anti-inflammatory, formed during steam distillation), flavonoids broadly.',
+            'Clinical evidence: Several trials show chamomile extract superior to placebo for generalized anxiety disorder. Studies show improved sleep quality. Anti-inflammatory and wound-healing activity well-documented.',
+            'Preparations: Tea (1–2 tablespoons dried flowers per cup; steep covered 10–15 minutes — the cover retains volatile essential oils), tincture (stronger effect for anxiety), salve (wound healing, eczema, skin inflammation), bath (add strong chamomile tea for skin and relaxation effects).',
+            'Growing across US climates: German chamomile is an adaptable annual grown in every US climate zone. Direct sow on soil surface — seeds need light to germinate. In Zones 3–7: sow in early spring as soon as soil is workable. In Zones 8–10: sow in fall for winter-spring bloom; summer heat causes rapid bolting. Roman chamomile is a low perennial hardy to Zone 4, especially well-suited to the Pacific Northwest and cool-summer regions. Both self-seed prolifically once established. Harvest flowers when petals are fully reflexed (bent back) from the yellow disk center.',
+            'Caution: Individuals with known ragweed or daisy-family (Asteraceae) allergies should introduce chamomile cautiously — oral allergy syndrome is possible.',
           ],
         },
+        { type: 'h3', text: '🍋 Lemon Balm (Melissa officinalis)' },
+        {
+          type: 'p',
+          text: 'Lemon balm is a remarkably versatile, gentle nervine with particular value for the anxiety-with-digestive-symptoms pattern. It is also well-studied as an antiviral herb specific to the herpes simplex virus (HSV), applied topically or taken internally to reduce outbreak frequency and severity.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Rosmarinic acid (anti-inflammatory, antiviral, antioxidant), flavonoids (luteolin and apigenin — GABA modulators), essential oils (citral, linalool, geraniol — calming, antimicrobial).',
+            'Clinical evidence: Multiple trials show lemon balm extract reduces anxiety and improves mood. Studies demonstrate topical lemon balm cream reduces herpes simplex healing time. Shown to reduce agitation in dementia patients.',
+            'Preparations: Tea (fresh or dried; use generous amounts — lemon balm is gentle), tincture, glycerite (good for children), topical cream or salve (antiviral, wound healing). Fresh lemon balm is more potently aromatic than dried; use larger quantities when fresh.',
+            'Growing across US climates: Hardy perennial in Zones 4–9. In Zones 3–4, provide winter mulch for root protection. In Zones 9–10, grow in afternoon shade and treat as a cool-season crop; severe summer heat causes die-back that regrows in fall. Spreads vigorously by seed and division — harvest frequently or contain. Self-seeds prolifically in favorable climates.',
+            'Caution: High doses over extended periods may inhibit thyroid function. Individuals with hypothyroidism should use moderate amounts and consult their practitioner.',
+          ],
+        },
+        { type: 'h3', text: '😴 Valerian (Valeriana officinalis)' },
+        {
+          type: 'p',
+          text: 'Valerian is the most studied herbal sleep aid in Western research, with multiple randomized trials demonstrating improved sleep latency and sleep quality. It is a potent herb working through multiple mechanisms including GABA modulation. Fresh valerian root has a much more pleasant scent than dried — the characteristic strong, earthy smell develops as iridoid compounds break down during drying.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Valerenic acid (GABA-A receptor modulation, sedative), isovaleric acid (sedative), valepotriates (iridoids — unstable, captured best in fresh plant tinctures), antioxidants.',
+            'Clinical evidence: Multiple controlled trials show reduced sleep latency and improved sleep quality. Evidence is stronger for short-term insomnia. Some studies show effects equivalent to small benzodiazepine doses.',
+            'Preparations: Tincture (fresh root in 50–60% alcohol captures valepotriates better than dried — preferred preparation), capsule of powdered root, tea (unpalatable for many due to odor). Take 30–60 minutes before bed. Allow 2–4 weeks of consistent use before evaluating effectiveness.',
+            'Growing across US climates: Hardy perennial in Zones 4–9. Moist, fertile soil; full sun to part shade. Well-suited to the Pacific Northwest, Great Lakes region, Appalachian mountains, and New England. In Zones 8–9, afternoon shade moderates summer stress. Plants reach 4–6 feet tall and attract cats, which respond to valerian similarly to catnip. Harvest roots in fall of year 2.',
+            'Cautions: Do not combine with sedative medications, benzodiazepines, alcohol, or other CNS depressants without medical supervision. Disclose to anesthesiologist before procedures.',
+          ],
+        },
+        { type: 'h3', text: '🌺 Passionflower (Passiflora incarnata)' },
+        {
+          type: 'p',
+          text: 'Passionflower is a North American native vine with extraordinary flowers and well-documented anxiolytic and hypnotic effects. It is one of the most effective herbs for anxiety involving racing thoughts, an overactive mind at bedtime, and muscle tension. It is the state wildflower of Tennessee and native across the entire southeastern and south-central US.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Flavonoids (chrysin — studied for anxiolytic effects; apigenin; luteolin), beta-carboline alkaloids (harmane, harmine — possible MAOI-like activity at high doses), maltol (sedative).',
+            'Clinical evidence: Multiple small trials show passionflower equivalent or superior to benzodiazepines for preoperative anxiety with fewer side effects. Shown to improve subjective sleep quality in a randomized trial.',
+            'Preparations: Tincture (aerial parts including leaves, stems, and flowers; 60% alcohol), tea (milder but pleasant; combine with valerian and lemon balm for a synergistic sleep blend), glycerite.',
+            'Growing across US climates: Vigorous deciduous vine native to Zones 6–9 across the Southeast, Mid-Atlantic, and South-Central US; hardy to Zone 5 with root mulching. In Zones 7–9, it spreads enthusiastically by underground runners. In Zones 3–5, grow from seed as a vigorous annual or overwinter roots under deep mulch. In the arid West, supplemental irrigation is needed. Produces edible maypop fruits where summers are long enough.',
+            'Cautions: Avoid combining with MAOIs, sedative medications, or during pregnancy. Beta-carboline alkaloids have possible MAOI-like activity — the MAOI interaction is the most clinically important. May cause drowsiness.',
+          ],
+        },
+        { type: 'h3', text: '🫙 Skullcap (Scutellaria lateriflora)' },
+        {
+          type: 'p',
+          text: 'American skullcap is a North American native with a long history as a nervine for anxiety, nervous tension, muscle spasm, and insomnia. It is one of the most respected herbs in traditional North American herbalism — and also one of the most frequently adulterated herbs on the market, making growing your own essential.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Baicalin and baicalein (flavonoids with GABA-A modulating activity, anti-inflammatory, antioxidant), scutellarein, lateriflorin, wogonin.',
+            'Preparations: Tincture of fresh herb in 50–60% alcohol (considered most effective — fresh plant captures volatile constituents that dry poorly), dried herb tincture (good but less potent than fresh), tea. Works best as a fresh plant tincture rather than tea.',
+            'Growing across US climates: Native perennial wildflower, hardy in Zones 4–8. Native habitat is moist, rich woodland edges and streambanks across the eastern and central US. Grows best in the mid-Atlantic, New England, Great Lakes region, Midwest, and mountain South. In the arid West, provide consistent moisture and afternoon shade. Does not transplant well; direct sow or start in deep pots. Harvest aerial parts in summer when in flower.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Skullcap Adulteration: Commercial skullcap is frequently adulterated with germander (Teucrium spp.), which contains pyrrolizidine-like alkaloids associated with hepatotoxicity. Liver damage from "skullcap" products has almost certainly been germander contamination in many documented cases. Grow your own from properly identified seed (Scutellaria lateriflora), or purchase only from suppliers who provide certificates of analysis confirming species identity.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌙',
+          text: 'Sleep Tea Blend: Combine 2 parts chamomile flowers + 2 parts lemon balm leaf + 1 part passionflower aerial parts + 1 part lavender flowers. Add 1 part valerian root for deeper sleep effect (the aroma is challenging but effectiveness increases substantially). Use 1–2 tablespoons of blend per cup, steep covered 15–20 minutes, drink 30–60 minutes before bed. Consistent use over several weeks produces the most reliable effects.',
+        },
+      ],
+    },
+
+    {
+      id: 'growing-guide',
+      title: 'Growing Guide — Detailed Herb Profiles',
+      blocks: [
         { type: 'h3', text: '🧡 Calendula (Calendula officinalis)' },
         {
           type: 'list',
@@ -262,17 +345,6 @@ export const medicinalGardenContent = {
             'Growing: The more you harvest, the more it blooms. A single plant cut regularly will produce 50–100 flowers over a season. Stop producing in extreme summer heat; cut back and it rebounds in fall.',
             'Harvest: Pick flowers when fully open. Use fresh in infused oil or dry on screens in a warm location with airflow.',
             'Medicinal use: Calendula is the premier herb for skin: wound healing, soothing burns and rashes, treating eczema and dry skin, and promoting cell repair. It works primarily as an infused oil or salve applied topically. Calendula tea soothes the digestive tract lining and has mild antifungal properties.',
-          ],
-        },
-        { type: 'h3', text: '🍋 Lemon Balm (Melissa officinalis)' },
-        {
-          type: 'list',
-          items: [
-            'Zones: 3–7 as a perennial; grown as an annual in warmer climates.',
-            'Sun and soil: Full sun to part shade; moist, fertile soil. Grows vigorously and spreads — plant in a contained area or sunken pot.',
-            'Growing: Direct sow or transplant after last frost. Cut back to 6 inches two or three times per season to prevent flowering and extend leaf production.',
-            'Harvest: Cut stems before the plant flowers for highest essential oil content. Use fresh or dry immediately — lemon balm loses much of its aroma when dried slowly. Dry in a single layer at low heat.',
-            'Medicinal use: Lemon balm is calming without causing drowsiness — ideal for daytime anxiety, nervous tension, and digestive upset triggered by stress. Topically, a strong lemon balm tea applied to cold sores (oral herpes) has clinical evidence for reducing healing time.',
           ],
         },
         { type: 'h3', text: '🌿 Peppermint & Spearmint (Mentha × piperita, M. spicata)' },
@@ -329,17 +401,6 @@ export const medicinalGardenContent = {
             'Medicinal use: Comfrey contains allantoin, which stimulates cell proliferation and speeds healing of bruises, sprains, fractures, and muscle soreness. Applied as a salve or poultice to an unbroken injury site, it is genuinely effective — clinical trials confirm it outperforms conventional anti-inflammatory creams for blunt-force injuries.',
           ],
         },
-        { type: 'h3', text: '😴 Valerian (Valeriana officinalis)' },
-        {
-          type: 'list',
-          items: [
-            'Zones: 4–9. Tall perennial (4–5 feet) with clusters of small white to pale pink flowers in early summer. Very ornamental — fits well in the back of a border.',
-            'Sun and soil: Full sun to part shade; moist, fertile soil. Tolerates average garden conditions once established.',
-            'Growing: Start from seed (sow indoors 6–8 weeks before last frost) or plant divisions. Takes two years to develop roots worth harvesting. Do not disturb established plants unnecessarily — the root system takes time to mature.',
-            'Harvest: Dig roots in fall of the plant\'s second or third year, after aerial parts begin to die back. Wash thoroughly, slice into 1/4-inch pieces, and dry at 95–105°F. Note: fresh valerian root has little odor; dried root develops its characteristic strong, earthy smell as iridoid compounds break down.',
-            'Medicinal use: Valerian root is among the most studied herbal sleep aids. It reduces the time to fall asleep and improves sleep quality without causing morning grogginess (unlike pharmaceutical sedatives). Also used for anxiety and muscle tension. Best taken as a tea (1 tsp dried root per cup, decocted 20 minutes) or tincture 30–60 minutes before bed.',
-          ],
-        },
         { type: 'h3', text: '☀️ St. John\'s Wort (Hypericum perforatum)' },
         {
           type: 'list',
@@ -350,17 +411,6 @@ export const medicinalGardenContent = {
             'Identification tip: Hold a leaf up to light — the translucent oil glands appear as tiny clear dots perforating the leaf (hence "perforatum"). Crush a bud between your fingers — it should release a red-purple stain from the hypericin pigment.',
             'Harvest: Collect flower buds and flowers together when buds are just beginning to open (not fully open flowers). This is when hypericin content is highest. Use fresh for tincturing immediately — the fresh plant makes a superior preparation to dried.',
             'Medicinal use: Clinical evidence supports St. John\'s Wort for mild to moderate depression, comparable in effect to low-dose SSRIs with fewer side effects. Also effective topically as an infused oil for nerve pain, sciatica, and bruising. Critical drug interactions — see the Safety section before use.',
-          ],
-        },
-        { type: 'h3', text: '🫙 Skullcap (Scutellaria lateriflora)' },
-        {
-          type: 'list',
-          items: [
-            'Zones: 5–8. Native North American perennial, 1–2 feet tall, with small blue-purple tubular flowers along the stems in summer.',
-            'Sun and soil: Part shade to full sun; moist, rich, well-drained soil. Prefers woodland edge conditions — consistent moisture with good drainage.',
-            'Growing: Start from seed indoors 6–8 weeks before last frost (surface sow; needs light). Transplant after last frost. Establish slowly the first year; more productive by year 2–3. Divide clumps every 3–4 years to maintain vigor.',
-            'Harvest: Cut the entire aerial portion (stems, leaves, and flowers) when in full bloom. Use fresh for tincturing — skullcap loses significant potency when dried. If drying, dry quickly at low heat and use within 6 months.',
-            'Medicinal use: Skullcap is a nervine tonic — it calms nervous tension, anxiety, and muscle spasms without sedating. Effective for racing thoughts that interfere with sleep, nervous exhaustion, and tension headaches. Works best as a fresh plant tincture rather than tea. One of the most reliable herbs for anxiety that can be used during the day without impairing function.',
           ],
         },
         { type: 'h3', text: '🌿 Ashwagandha (Withania somnifera)' },
