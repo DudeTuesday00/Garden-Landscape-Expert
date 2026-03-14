@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 30 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 31 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -103,7 +103,8 @@ Garden-Landscape-Expert/
     │       ├── salsa-garden.js
     │       ├── plants-for-fragrance.js
     │       ├── curb-appeal.js
-    │       └── porch-plants.js
+    │       ├── porch-plants.js
+    │       └── culinary-herb-garden.js
     └── logic/
         └── matchPlants.js           # Scoring + filtering algorithm
 ```
@@ -269,7 +270,7 @@ Each question in `questions.js` has:
 1. Trees & Large Plants (8 guides — 8 live ✅)
 2. Flowers & Color Gardens (9 guides — 9 live ✅)
 3. Edible Gardens (9 guides — 9 live ✅)
-4. Herbs & Fragrance (6 guides — 1 live ✅)
+4. Herbs & Fragrance (6 guides — 2 live ✅)
 5. Landscape Design (10 guides — 1 live ✅)
 6. Seasonal Guides (8 guides)
 7. Pest & Problem Solving (8 guides)
@@ -311,6 +312,7 @@ Thirty full guides integrated into the app:
 - `src/data/guide-content/plants-for-fragrance.js` — Plants for Fragrance (`id: 'plants-for-smell'`)
 - `src/data/guide-content/curb-appeal.js` — Front Yard Curb Appeal (`id: 'curb-appeal'`)
 - `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`)
+- `src/data/guide-content/culinary-herb-garden.js` — Culinary Herb Garden (`id: 'culinary-herb-garden'`)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -398,11 +400,13 @@ export async function generateMetadata({ params }) {
 | Section | Status | Notes |
 |---|---|---|
 | `garden-design` — Age-specific subsections | ✅ Done | Expanded from 3 brief paragraphs → full Toddler/Preschool, Elementary, and Tween subsections with plants, activities, adult role, and tips |
-| `growing-through-season` — Soil & Planting subsection | 🔲 Pending | Missing: best soil mix (1/3 topsoil / 1/3 compost / 1/3 perlite), what to avoid |
-| `growing-through-season` — Pests table: yellowing leaves row | 🔲 Pending | One missing row |
-| `harvest` — Snap peas + sunflower seeds rows | 🔲 Pending | Two harvest-readiness rows missing |
-| `recipes` — Stovetop Popcorn from Garden-Grown Corn | 🔲 Pending | Entire recipe missing |
-| `troubleshooting` — Weeds row | 🔲 Pending | One missing troubleshooting row |
+| `growing-through-season` — Soil & Planting subsection | ✅ Done | Best soil mix (1/3 topsoil / 1/3 compost / 1/3 perlite), what to avoid, earthworm tip |
+| `growing-through-season` — Pests table: yellowing leaves row | ✅ Done | Added yellowing leaves row: senescence vs. nitrogen deficiency, child-manageable response, learning opportunity |
+| `harvest` — Snap peas + sunflower seeds rows | ✅ Done | Added snap peas (taste test, starchy-if-late) and sunflower seeds (thumb test, bird-race tip) rows |
+| `recipes` — Stovetop Popcorn from Garden-Grown Corn | ✅ Done | Full recipe added: variety selection, drying (4–6 weeks), shelling, stovetop + microwave methods, seasoning options, tip callout |
+| `troubleshooting` — Weeds row | ✅ Done | Added weeds row: causes (bare soil, infrequent weeding), mulch + short-session solution, learning moment (what is a weed, edible weeds, plant competition) |
+| `best-plants` — Cucumbers subsection | ✅ Done | Added 🥒 Cucumbers — The Munching Machine: intro paragraph, variety table (Straight Eight, Marketmore 76, Lemon Cucumber, Spacemaster), kid activities (pickle project, Lemon Cucumber reveal), critical harvest tip; preceded by Bean Teepee tip callout |
+| `best-plants` — Lettuce & Salad Greens subsection | ✅ Done | Added 🥬 Lettuce & Salad Greens — The Cut-and-Come-Again Garden: intro paragraph, variety list (Black Seeded Simpson, Oakleaf, mesclun, Tyee spinach), harvest technique, salad bowl project activity, leaf rubbings activity |
 
 ---
 
@@ -626,6 +630,7 @@ Every page in the app exports full metadata including:
 
 ## Notes for AI Assistants
 
+- **A guide must not be built unless a `.docx` source file exists for that subject.** The `.docx` file is the authoritative source of truth for guide content; do not create or populate a guide JS file from scratch without one.
 - Prefer editing existing files over creating new ones unless strictly necessary
 - Avoid over-engineering; keep solutions minimal and focused
 - Do not push to branches other than the designated `claude/` branch without explicit permission

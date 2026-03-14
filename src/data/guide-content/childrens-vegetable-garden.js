@@ -99,6 +99,35 @@ export const childrensGardenContent = {
             ['Scarlet Runner Bean', 'Climbing vine, 10–15 ft', '60–70 days', 'Vivid red flowers attract hummingbirds. Giant seeds children plant themselves.', 'Ages 5+. The \'magic beanstalk\' bean.'],
           ],
         },
+        {
+          type: 'tip',
+          emoji: '🏡',
+          text: "The Bean Teepee: Push 6–8 bamboo poles (6–8 feet long) into the ground in a circle 4–5 feet in diameter, tilting them inward and tying them at the top. Plant 3–4 Scarlet Runner beans or pole beans at the base of each pole. Within 8 weeks, the structure is covered in leaves and flowers with a shaded interior — a secret garden room. Leave one side open as a door. The teepee is one of the most magical structures a children's garden can offer: a living playhouse they grew themselves.",
+        },
+        { type: 'h3', text: '🥒 Cucumbers — The Munching Machine' },
+        {
+          type: 'p',
+          text: "Cucumbers are one of the most satisfying vegetables for children to grow: fast, prolific, and delivering a crisp, mild harvest that most children eat enthusiastically. At peak production, a cucumber vine produces faster than a family can eat — an abundance that teaches something important about garden generosity.",
+        },
+        {
+          type: 'table',
+          headers: ['Variety', 'Form', 'Days to Harvest', 'Kid Appeal', 'Best For'],
+          rows: [
+            ["'Straight Eight'", 'Classic green, straight, 8 inches', '55–65 days', 'Reliable, easy, the textbook cucumber — exactly what children expect a cucumber to look like.', 'All beginners.'],
+            ["'Marketmore 76'", 'Dark green, disease-resistant', '70 days', 'Very dependable in hot summers; will not fail on a beginner.', 'Humid regions and first-time growers.'],
+            ["'Lemon Cucumber'", 'Round, yellow, golf-ball to baseball size', '60 days', 'Looks nothing like a cucumber — children are fascinated by it. Milder flavor, almost never bitter.', 'All ages. The most surprising cucumber in the garden.'],
+            ["'Spacemaster'", 'Compact bush habit, shorter vines', '60 days', 'Bush form works in small beds and large containers.', 'Small gardens and raised beds.'],
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            "The Lemon Cucumber advantage: Round, yellow, and small — it looks nothing like a cucumber. Children are fascinated by it. Milder than standard cucumbers and almost never bitter. Let it turn fully yellow for maximum sweetness.",
+            "Kid activity — pickle project: Make simple refrigerator pickles together on harvest day. Slice cucumbers with a child-safe crinkle cutter, add vinegar, salt, dill, and garlic, and refrigerate for 48 hours. Children are remarkably proud of food they preserved themselves.",
+            "Critical harvest tip: Teach children to harvest before cucumbers get too large — overripe cucumbers signal the plant to stop producing. Check every other day at peak season. When in doubt, pick it.",
+            "Support: Train cucumbers up a trellis or cage to save ground space and make the harvest easy to find.",
+          ],
+        },
         { type: 'h3', text: '🌻 Sunflowers — The Trophy Plant' },
         {
           type: 'p',
@@ -123,6 +152,21 @@ export const childrensGardenContent = {
             'Season: Peas are a cool-season crop — plant 6–8 weeks before last frost. They do not survive summer heat.',
             'Kid activity — the pod pop: Teach children to open a shelling pea pod using a thumbnail on the seam. The pop is satisfying.',
             'Kid activity — tendril observation: Pea tendrils actively curl around anything they touch within hours — a visible, fast movement children can watch.',
+          ],
+        },
+        { type: 'h3', text: '🥬 Lettuce & Salad Greens — The Cut-and-Come-Again Garden' },
+        {
+          type: 'p',
+          text: "Loose-leaf lettuce varieties offer children something that excites them more than it perhaps should: the ability to harvest their own salad and eat it immediately. Cut-and-come-again varieties regrow after harvesting, giving children a continuous, renewable harvest from the same plants for weeks.",
+        },
+        {
+          type: 'list',
+          items: [
+            "Best varieties for children: 'Black Seeded Simpson' (pale green, frilly, very mild flavor, germinates in days — the fastest lettuce), 'Oakleaf' (tender, deeply lobed leaves, elegant shape), mesclun mix (blend of varieties with varied texture, color, and flavor — sow thickly and scissors-harvest), spinach 'Tyee' (smooth leaves, excellent flavor, bolt-resistant — grows alongside lettuce in spring and fall).",
+            "Season: Lettuce is a cool-season crop. Plant 4–6 weeks before last frost in spring; replant in early fall for a second harvest. Lettuce bolts (turns bitter and goes to seed) in summer heat — let children observe a bolting plant as a teachable moment about plant reproduction.",
+            "How to harvest: Teach children to use scissors to cut outer leaves, leaving the center to regrow. A single pot of lettuce can produce three or four successive harvests over several weeks.",
+            "Kid activity — the salad bowl project: Let each child grow a 12-inch container planted with a mesclun mix. They are responsible for all watering. When ready, let them harvest, wash, spin dry, and dress their own personal salad. The salad spinner is enormously satisfying to operate.",
+            "Kid activity — leaf rubbings: Press interesting lettuce and herb leaves between paper and rub a crayon or pencil over them to capture the texture and shape. A simple botanical art project that connects observation with art.",
           ],
         },
         { type: 'h3', text: '🎃 Pumpkins — The Long Game' },
@@ -259,6 +303,26 @@ export const childrensGardenContent = {
           type: 'p',
           text: "The most valuable part of a children\'s garden is not the harvest — it is the daily and weekly tasks that build the relationship between the child and the living system she is tending.",
         },
+        { type: 'h3', text: 'Soil & Planting' },
+        {
+          type: 'p',
+          text: "Soil quality is the single most important factor in a children's garden — and it is the one factor most beginner gardeners underestimate. Native garden soil almost always performs poorly in raised beds and containers: it compacts under watering, drains slowly, and becomes hard enough that small hands cannot work it easily. Starting with the right mix makes every other part of the garden easier.",
+        },
+        {
+          type: 'list',
+          items: [
+            'Best soil mix for raised beds and containers: 1/3 quality topsoil, 1/3 compost (well-aged), 1/3 coarse perlite or coarse horticultural vermiculite. This blend drains freely, stays loose enough for children to dig with their hands, and holds moisture without waterlogging roots.',
+            'Why compost matters: Compost feeds the soil biology that makes nutrients available to plants. A bed filled with quality compost is forgiving of beginner mistakes — including overwatering and irregular fertilizing.',
+            'Why perlite matters: Coarse perlite keeps the mix light and aerated as it settles over the season. It prevents the compaction that makes digging frustrating for small hands.',
+            'What to avoid: Do not use pure native garden soil in raised beds or containers — it compacts into a near-brick consistency under repeated watering. Do not use fine sand (it makes compaction worse, not better). Avoid potting mixes that are primarily peat: they repel water when dry and are difficult to re-wet.',
+            'Planting activity: Let children help fill the raised bed by scooping and dumping each ingredient. Mixing the three components together by hand — or with child-sized trowels — is a satisfying, sensory-rich activity that builds ownership of the growing space before a single seed goes in.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🪱',
+          text: "When filling or refreshing a raised bed, earthworms are a sign of healthy, biologically active soil. If children find earthworms while digging, teach them to move them to a shaded area rather than leaving them on hot soil. Worms process organic matter and create pathways for air and water — a children's garden is a natural entry point into soil science and the living ecosystem beneath the surface.",
+        },
         { type: 'h3', text: 'Age-Appropriate Garden Tasks' },
         {
           type: 'table',
@@ -308,6 +372,7 @@ export const childrensGardenContent = {
             ['Slugs / Snails', 'Moisture-loving mollusks; active at night', 'Trap with shallow dish of beer; hand-pick at night with flashlight.', 'Nocturnal behavior; the nighttime garden observation is memorable.'],
             ['Wilting in heat', 'Temporary drought stress or afternoon heat', 'Water in morning; check soil moisture; mulch around plants.', 'Plant physiology; stomata and transpiration.'],
             ['Blossom drop', 'Heat stress; pollination failure', 'Shake plants gently to aid pollination; plant in morning sun.', 'Pollination biology; the connection between flowers and food.'],
+            ['Yellowing leaves (lower)', 'Often normal leaf senescence as the plant matures; can also indicate nitrogen deficiency or overwatering', 'Remove yellow leaves cleanly at the stem. Apply a balanced liquid fertilizer if widespread. Check that the bed drains freely after watering.', 'Plant nutrition and the nitrogen cycle. Observation and diagnosis — not every yellow leaf is a crisis; learning to assess overall plant health is a foundational gardening skill.'],
           ],
         },
       ],
@@ -331,6 +396,8 @@ export const childrensGardenContent = {
             ['Cucumbers', '8–12 inches, firm, dark green', 'Pick before yellowing begins at blossom end. When in doubt, pick it.', 'Turns yellow, seeds harden, flesh becomes bitter.'],
             ['Zucchini', '6–8 inches, firm, glossy skin', 'Check daily — measure against a hand; 6–8 inches is perfect', 'Becomes enormous, seedy, tough overnight.'],
             ['Pumpkins', 'Skin hardened, stem corky and dried, full color', 'Knock test — a ripe pumpkin sounds hollow. Stem dried and tan.', 'Falls from vine; skin may crack in rain.'],
+            ['Snap Peas', 'Pod plump and round, bright green, seeds visible through the pod wall', 'Taste test — a ripe snap pea is sweet and crisp. If it tastes starchy, it has gone too far.', 'Seeds swell and harden inside the pod; pod becomes tough and stringy; plant slows flower production.'],
+            ['Sunflower Seeds', 'Back of seed head turns from green to yellow-brown; seeds feel firm and loosely seated in the head', 'Rub a few seeds with your thumb — ripe seeds release easily. The petals have dropped and the face is fully brown.', 'Birds will harvest them first. Cut the head with 12 inches of stem and hang upside down indoors to finish drying if needed.'],
           ],
         },
         { type: 'h3', text: 'Making Harvest Special' },
@@ -400,6 +467,27 @@ export const childrensGardenContent = {
             'Toss with 1 tablespoon olive oil and your choice of seasoning: salt and garlic powder, or cinnamon and brown sugar.',
             'Roast at 325°F for 25–30 minutes, stirring once halfway. Cool completely before eating — they crisp as they cool.',
           ],
+        },
+        { type: 'h3', text: '🍿 Stovetop Popcorn from Garden-Grown Corn' },
+        {
+          type: 'p',
+          text: "Popcorn you grew, dried, shelled, and popped yourself is one of the most extraordinary experiences a children's garden can deliver. The full process — from harvest to the moment the lid starts rattling on the pot — takes weeks and requires patience, which makes the final result genuinely earned.",
+        },
+        {
+          type: 'list',
+          items: [
+            'Grow popcorn varieties only — standard sweet corn will not pop. Best varieties for children: \'Strawberry\' popcorn (small burgundy-red ears, fits in a child\'s hand), \'Baby Blue Jade\' (compact plants, blue kernels), \'Japanese Hulless\' (tender hull, easier for children to eat).',
+            'Drying: Leave ears on the stalk until the husks are fully dry and papery — usually 4–6 weeks after the silks brown. Bring inside and hang in a warm, dry location for another 2–4 weeks until the kernels feel completely hard.',
+            'Shelling: Hold the ear over a bowl and rub the kernels off with both thumbs in a twisting motion. The first few kernels take effort; once started, the rest slide off easily. Let children shell their own ear — it is deeply satisfying work.',
+            'Stovetop popping: Add 2 tablespoons of vegetable oil or coconut oil to a heavy-bottomed pot with a lid. Add 3–4 test kernels and heat over medium-high. When the test kernels pop, add a single layer of popcorn kernels (about 1/3 cup). Cover, reduce heat slightly, and shake the pot gently every 30 seconds. Remove from heat when popping slows to one pop every 2–3 seconds.',
+            'Microwave method: Place 1/4 cup shelled kernels in a brown paper lunch bag. Fold the top over twice. Microwave on high 2–3 minutes, stopping when popping slows. Every microwave differs — watch carefully the first time.',
+            'Seasoning options: Classic butter and salt; nutritional yeast (savory, cheesy flavor); cinnamon sugar; garlic powder and parmesan. Let children choose and add their own seasoning — a small bowl of options they can mix themselves makes it feel like a science experiment.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌽',
+          text: "The moment the lid starts lifting and kernels begin flying is one of the most joyful moments in a children's kitchen. Grow at least 16 plants in a block for good pollination — a 4×4 planting is the minimum. Harvest in fall, dry through winter, and pop in January: the garden that ended months ago is suddenly producing again. That continuity is the lesson.",
         },
       ],
     },
@@ -494,6 +582,7 @@ export const childrensGardenContent = {
             ['Tomatoes cracking and splitting', 'Irregular watering — drought followed by heavy rain', 'Mulch heavily. Water consistently. Choose crack-resistant varieties (Juliet) next season.', 'Water science — what happens when plants get too much water too fast.'],
             ['Child wants to pick everything before it\'s ripe', 'Excitement; impatience; confusion about ripeness', 'Make a \'ripeness chart\' with color swatches from the seed packet. Practice the squeeze test together.', '\'What happens if we wait two more days?\' Let them test the hypothesis.'],
             ['Animal damage (rabbits, deer, squirrels)', 'Attractive food source without protection', 'Install physical barriers. Involve children in designing the protection system.', 'Food web and ecology. \'Why do animals want to eat what we grew?\' What do these animals eat in the wild?'],
+            ['Weeds taking over the garden', 'Infrequent weeding; bare soil between plants; seeds blown in from surrounding areas', 'Mulch bare soil with 2–3 inches of straw or wood chips immediately after planting. Weed together in short sessions (10–15 minutes) before weeds set seed — teach children the \'pull before they flower\' rule.', 'What is a weed? (A plant growing where we didn\'t put it.) Are all weeds bad? Some weeds are edible — identify common ones like lamb\'s quarters and dandelion. Discuss how plants compete for light, water, and nutrients — the same resources we give our vegetables.'],
           ],
         },
         {
