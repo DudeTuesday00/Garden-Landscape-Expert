@@ -371,8 +371,8 @@ export async function generateMetadata({ params }) {
 | Section 7: Cannabis | ✅ Done | Legal status warning (federal + 50-state patchwork), ECS explanation (CB1/CB2/CBD mechanism), 8-row CBD vs THC properties table, growing hemp across US climates (regional notes), infused oil + tincture preparations, entourage effect tip; cannabis removed from growing-guide |
 | Section 8: Preparations & Recipes | ✅ Done | Tinctures (folk method + weight-to-volume with menstruum selection guide), elderberry syrup (updated), calendula salve (2-step: infused oil then beeswax), thyme honey, nervine sleep tea blend, oxymel |
 | Section 9: Safety & Drug Interactions | ✅ Done | "Tell your providers" warning; 9-row drug interaction table (Herb / Interacts With / Mechanism / Clinical Significance) adding Ginkgo, Garlic, Hawthorn, Passionflower, Licorice, CBD; 8-row "Herbs to Avoid in Specific Conditions" table (Pregnancy, Breastfeeding, Autoimmune, Epilepsy, Hypothyroidism, Liver disease, Hormone-sensitive cancers, Before surgery) |
-| Section 10: Additional Herb Profiles | 🔲 Pending | Milk Thistle, Marshmallow, Hops, Black Cohosh, Ginger, Turmeric, Hawthorn, etc. |
-| Closing reflection | 🔲 Pending | Final paragraph from docx |
+| Section 10: Additional Herb Profiles | ✅ Done | 9 herb profiles: St. John's Wort, Milk Thistle, Marshmallow Root, Lemon Verbena, Hops, Black Cohosh, Ginger, Turmeric, Hawthorn Berry; each with uses, constituents, evidence, prep, growing notes, and caution callouts where applicable |
+| Closing reflection | ✅ Done | "Medicinal Garden as Relationship" section — 2 closing paragraphs + tip callout from docx |
 
 ### Three New Live Guides (28th–30th) ✅
 

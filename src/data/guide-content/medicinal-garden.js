@@ -898,5 +898,160 @@ export const medicinalGardenContent = {
         },
       ],
     },
+    {
+      id: 'additional-herb-profiles',
+      title: 'Additional Herb Profiles',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The following profiles cover additional medicinal herbs of significant value beyond the main sections. These are plants you may encounter in herbal traditions, see in seed catalogs, or find growing wild across different regions of the United States.',
+        },
+
+        { type: 'h3', text: 'St. John\'s Wort (Hypericum perforatum) — Zones 3–8' },
+        {
+          type: 'list',
+          items: [
+            'Uses: Mild-to-moderate depression; nerve pain (topically); wound healing; antiviral.',
+            'Constituents: Hypericin, hyperforin, flavonoids.',
+            'Preparation: Tincture of fresh flowers; infused oil in olive oil (turns blood-red — for topical nerve pain); tea; capsule.',
+            'ID: Leaves have translucent dots when held to light; petals have black dots at margins.',
+            'Growing: Perennial across most of the US (Zones 3–8); naturalized along roadsides from California to Maine. Thrives in sunny, well-drained disturbed ground. Harvest flowering tops when just opening.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'St. John\'s Wort has the most significant herb-drug interactions in Western herbalism — it can reduce blood levels of many medications by 30–70%. See Section 9 (Safety) before using if you take any prescription medication.',
+        },
+
+        { type: 'h3', text: 'Milk Thistle (Silybum marianum) — Annual/Biennial' },
+        {
+          type: 'list',
+          items: [
+            'Uses: Liver protection; liver support in toxin exposure; antioxidant.',
+            'Constituents: Silymarin complex (silibinin, silydianin, silychristin) — found in seeds only.',
+            'Evidence: Good evidence for hepatoprotection in toxic hepatitis, cirrhosis, and alcohol-related liver disease.',
+            'Preparation: Ground seeds in smoothies; tincture of seeds; capsule.',
+            'Growing: Large biennial adaptable across all US zones as an annual or biennial; self-seeds readily, especially in Zones 7+. Harvest seed heads when they turn fluffy white.',
+          ],
+        },
+
+        { type: 'h3', text: 'Marshmallow Root (Althaea officinalis) — Zones 3–9' },
+        {
+          type: 'list',
+          items: [
+            'Uses: Soothing irritated mucous membranes; dry cough; heartburn/GERD; IBS; UTI soothing.',
+            'Constituents: 25–35% mucilage polysaccharides; flavonoids.',
+            'Preparation: Cold infusion ONLY — heat degrades mucilage. Soak 1 tbsp root in 2 cups cold water for 4–8 hours, then strain and drink. Do not simmer.',
+            'Drug interaction: Delays absorption of medications — take 2 hours away from any prescription or OTC drugs.',
+            'Growing: Tall perennial (up to 6 ft). Hardy across most of the US in Zones 3–9. Prefers moist, rich soil. Harvest roots in fall of year 2 or later.',
+          ],
+        },
+
+        { type: 'h3', text: 'Lemon Verbena (Aloysia citrodora) — Zones 9–11 / Annual elsewhere' },
+        {
+          type: 'list',
+          items: [
+            'Uses: Digestive support; relaxing nervine; anti-inflammatory; antioxidant.',
+            'Constituents: Verbenalin (iridoid), citral, limonene (essential oils).',
+            'Preparation: One of the most pleasant-tasting medicinal herbs — delicious as fresh or dried tea.',
+            'Growing: Tender perennial; grows as an annual in Zones 3–8. In Zones 9–11 (Southern California, Gulf Coast, Hawaii) it is a hardy perennial. Can overwinter as a container plant indoors anywhere in the US. Full sun and heat-loving — thrives in the South and Southwest.',
+          ],
+        },
+
+        { type: 'h3', text: 'Hops (Humulus lupulus) — Zones 4–8' },
+        {
+          type: 'list',
+          items: [
+            'Uses: Insomnia; anxiety; menopausal hot flashes (phytoestrogen activity); bitter digestive.',
+            'Constituents: 2-methylbutenol (sedative), lupulone and humulone (bitter acids, sedative), phytoestrogens.',
+            'Preparation: Tincture; hops pillow (dried hop cones — the aroma has a direct sedative effect); tea (very bitter).',
+            'Growing: Vigorous climbing vine, 15–25 ft per season. Hardy in Zones 4–8; excellent in the Pacific Northwest (WA, OR), upper Midwest, and Mountain West where commercial hops are grown. Dies back to roots in winter. Harvest female cones (strobiles) in late summer.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Avoid hops in depression — it may have a depressogenic effect at high or long-term doses.',
+        },
+
+        { type: 'h3', text: 'Black Cohosh (Actaea racemosa) — Zones 3–8' },
+        {
+          type: 'list',
+          items: [
+            'Uses: Menopausal symptoms (hot flashes, night sweats); dysmenorrhea; muscular pain; nervine.',
+            'Constituents: Triterpene glycosides (actein, cimifugoside); flavonoids; isoferulic acid.',
+            'Evidence: Multiple RCTs demonstrate reduction in menopausal symptom scores.',
+            'Growing: Native eastern North American woodland perennial requiring deep, moist, rich, acidic soil in part to full shade. Native from Maine to Georgia and west to the Great Plains; thrives in Appalachia, the mid-Atlantic, and the Great Lakes woodlands. Slow to establish from seed — purchase divisions. Not well-suited to the arid West without significant shade and irrigation.',
+            'Cautions: Rare hepatotoxicity reports. Avoid in hormone-sensitive cancers and pregnancy. Not for long-term use (>6 months).',
+          ],
+        },
+
+        { type: 'h3', text: 'Ginger (Zingiber officinale) — Tropical' },
+        {
+          type: 'list',
+          items: [
+            'Uses: Nausea (including chemotherapy nausea and morning sickness — one of the safest options in pregnancy); digestion; anti-inflammatory; circulation; pain.',
+            'Constituents: Gingerols (fresh), shogaols (dried/heated), paradols; anti-inflammatory sesquiterpenes.',
+            'Evidence: Multiple trials confirm efficacy for nausea; several trials support use for osteoarthritis pain.',
+            'Preparation: Fresh grated in tea; decoction; tincture (60% alcohol); crystallized ginger; capsule.',
+            'Growing: Tropical rhizome. In Zones 9–11 (Hawaii, South Florida, Gulf Coast, Southern California): outdoor perennial. Everywhere else: grow in a container using grocery store ginger rhizomes — pot up in spring, harvest by fall. Excellent patio plant.',
+          ],
+        },
+
+        { type: 'h3', text: 'Turmeric (Curcuma longa) — Tropical' },
+        {
+          type: 'list',
+          items: [
+            'Uses: Anti-inflammatory; antioxidant; liver support; gut inflammation.',
+            'Constituents: Curcumin (primary polyphenol, poor bioavailability alone); essential oil (tumerone, ar-tumerone).',
+            'Bioavailability: Combine with piperine (black pepper — 20× absorption increase) or dietary fat for meaningful systemic levels.',
+            'Preparation: Golden milk (turmeric + black pepper + fat in warm milk); tincture (60–70% alcohol); cook with fat and pepper.',
+            'Growing: Same conditions as ginger — a tropical container plant in all but the warmest US zones (9–11). Beautiful ornamental with spectacular flowers when grown as a landscape plant.',
+          ],
+        },
+
+        { type: 'h3', text: 'Hawthorn Berry (Crataegus spp.) — Zones 4–8' },
+        {
+          type: 'list',
+          items: [
+            'Uses: Cardiovascular tonic; mild heart failure (NYHA Class I–II); anxiety; antioxidant.',
+            'Constituents: Oligomeric proanthocyanidins (OPCs), vitexin-rhamnoside, quercetin, tannins.',
+            'Evidence: Multiple trials show improved exercise tolerance in heart failure. The long-term SPICE trial confirmed safety.',
+            'Preparation: Tincture (berries + leaves + flowers), decoction, jam, syrup.',
+            'Growing: Spiny shrub/small tree native across all regions of the US in various species. Crataegus monogyna (English hawthorn) is widely naturalized; many native North American hawthorn species were used similarly by Indigenous peoples. Harvest red or black berries in fall, ideally after the first frost.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Hawthorn has real cardiovascular activity. Combining it with digoxin, antihypertensives, nitrates, or PDE-5 inhibitors requires provider supervision. See Section 9.',
+        },
+      ],
+    },
+
+    {
+      id: 'closing-reflection',
+      title: 'The Medicinal Garden as Relationship with the Living World',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Growing a medicinal garden is different from other kinds of gardening in a specific way: the plants you grow will, at some point, become something you take into your body to affect your health. This creates a relationship of attention and care that goes beyond the ordinary. You will know exactly where your elderberry grew, what soil it grew in, that no prohibited chemicals touched it, when you harvested it, how carefully you dried it. You will have a relationship with your medicine that no supplement aisle can provide.',
+        },
+        {
+          type: 'p',
+          text: 'This relationship is also one of humility. Plants are complex biological systems containing hundreds of active compounds whose full interactions with each other and with human physiology remain incompletely understood. Modern research validates much of what traditional herbalists observed over centuries. It also revises traditional understanding, identifies unexpected interactions, and occasionally reveals that a plant\'s reputation was inflated. Engaging with that complexity — growing plants, reading their research, making preparations with care, using them thoughtfully — is a genuine education in both botany and biology.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌱',
+          text: 'Start with one or two plants you feel a connection to. Grow chamomile and lemon balm because they are beautiful and easy and the tea is genuinely soothing. Grow echinacea because it is magnificent in the garden and useful in winter. Plant an elderberry because a mature elder in full flower is one of the most beautiful sights in a spring garden anywhere from Maine to Oregon — and the syrup you make from its berries in September will be something you reach for every winter for years. The garden will teach you what it has to teach.',
+        },
+        {
+          type: 'p',
+          text: 'Grow it. Harvest it with care. Understand what you are making. The garden has been medicine since the first human noticed which plants helped.',
+        },
+      ],
+    },
   ],
 }
