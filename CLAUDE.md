@@ -405,6 +405,8 @@ export async function generateMetadata({ params }) {
 | `harvest` — Snap peas + sunflower seeds rows | ✅ Done | Added snap peas (taste test, starchy-if-late) and sunflower seeds (thumb test, bird-race tip) rows |
 | `recipes` — Stovetop Popcorn from Garden-Grown Corn | ✅ Done | Full recipe added: variety selection, drying (4–6 weeks), shelling, stovetop + microwave methods, seasoning options, tip callout |
 | `troubleshooting` — Weeds row | ✅ Done | Added weeds row: causes (bare soil, infrequent weeding), mulch + short-session solution, learning moment (what is a weed, edible weeds, plant competition) |
+| `best-plants` — Cucumbers subsection | ✅ Done | Added 🥒 Cucumbers — The Munching Machine: intro paragraph, variety table (Straight Eight, Marketmore 76, Lemon Cucumber, Spacemaster), kid activities (pickle project, Lemon Cucumber reveal), critical harvest tip; preceded by Bean Teepee tip callout |
+| `best-plants` — Lettuce & Salad Greens subsection | ✅ Done | Added 🥬 Lettuce & Salad Greens — The Cut-and-Come-Again Garden: intro paragraph, variety list (Black Seeded Simpson, Oakleaf, mesclun, Tyee spinach), harvest technique, salad bowl project activity, leaf rubbings activity |
 
 ---
 
