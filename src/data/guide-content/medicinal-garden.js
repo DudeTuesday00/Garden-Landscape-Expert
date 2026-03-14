@@ -99,6 +99,67 @@ export const medicinalGardenContent = {
     },
 
     {
+      id: 'science',
+      title: 'The Science of Plant Medicine',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Understanding how medicinal plants work — what they contain, how those constituents interact with the body, and why different preparation methods extract different compounds — transforms herb growing from passive gardening into informed practice. You do not need a chemistry degree to use this knowledge effectively, but having a basic framework for thinking about plant constituents and preparations makes you a significantly more effective medicinal gardener.',
+        },
+        { type: 'h3', text: 'Major Classes of Medicinal Plant Constituents' },
+        {
+          type: 'list',
+          items: [
+            'Flavonoids & Polyphenols: The largest class of plant polyphenols, with over 6,000 identified compounds. Responsible for much of the antioxidant, anti-inflammatory, and cardiovascular-protective activity attributed to medicinal plants. Quercetin (elderberry, echinacea, calendula), rutin (elderflower), and hypericin (St. John\'s Wort) are well-studied examples. Generally water-soluble and extracted efficiently into teas and water-alcohol tinctures.',
+            'Essential Oils (Terpenoids): The aromatic compounds in lavender, peppermint, thyme, and rosemary. Volatile terpenoid compounds that give plants their characteristic scents and have direct antimicrobial, antifungal, and anti-inflammatory activity. Menthol (peppermint), linalool (lavender), thymol (thyme), and carvacrol (oregano) are among the most studied. They evaporate with heat — teas using aromatic herbs should be covered while steeping. Extract most efficiently into alcohol or fixed oils.',
+            'Alkaloids: Nitrogen-containing compounds that often have powerful physiological effects. Morphine, caffeine, and berberine are all alkaloids. In the medicinal garden, berberine (goldenseal, barberry) has documented antimicrobial activity; pyrrolizidine alkaloids (comfrey, coltsfoot) have hepatotoxic effects — the reason comfrey is not recommended for internal use despite its traditional reputation.',
+            'Tannins: Astringent polyphenolic compounds — the \'drying\' sensation in strong tea or unripe fruit is tannin activity. In herbal medicine, tannins provide wound-healing, tissue-tightening, and antimicrobial effects. Yarrow, witch hazel, and raspberry leaf are high-tannin plants. Water-soluble and extract well into teas. Also bind to some minerals and may interfere with iron absorption when consumed in large quantities.',
+            'Mucilaginous Compounds (Polysaccharides): Mucilaginous herbs contain polysaccharides that swell in water to produce a slippery, coating consistency. Marshmallow root, slippery elm, and plantain all contain mucilage that physically soothes and protects irritated mucous membranes in the throat, esophagus, stomach, and intestines. Mucilage extracts best in cold or room-temperature water — hot water can break down the polysaccharides. Cold infusion is the recommended preparation method.',
+            'Immune-Modulating Polysaccharides: Distinct from mucilage, certain plant polysaccharides directly interact with the immune system. Echinacea\'s alkylamides and polysaccharides, astragalus polysaccharides, and elderberry\'s anthocyanin-containing compounds have documented immune-modulating effects. Generally water-soluble and extract into both teas and alcohol-water tinctures, though optimal extraction solvent varies by compound.',
+          ],
+        },
+        { type: 'h3', text: 'Why Preparation Method Matters' },
+        {
+          type: 'p',
+          text: 'Different constituents extract into different solvents. Understanding this principle allows you to choose the right preparation for the plant and the desired effect. The same plant prepared differently will have a meaningfully different chemical profile.',
+        },
+        {
+          type: 'table',
+          headers: ['Preparation', 'Solvent', 'Best Extracts', 'Poor At Extracting', 'Use For'],
+          rows: [
+            ['Hot water infusion (tea)', 'Water', 'Flavonoids, tannins, some volatile oils (if covered), water-soluble polysaccharides', 'Resins, fat-soluble compounds, some alkaloids', 'Flowers, leaves, most aromatic herbs; best for everyday use'],
+            ['Decoction (simmered tea)', 'Water (heated)', 'Roots, bark, seeds; hard plant materials; minerals', 'Volatile compounds (lost to steam)', 'Echinacea root, valerian root, elderberry, ashwagandha, hard seeds'],
+            ['Cold infusion', 'Water (cold)', 'Mucilaginous polysaccharides; delicate volatile oils', 'Most resins and deep constituents', 'Marshmallow root, rose petals — anything where heat degrades the desired compound'],
+            ['Alcohol tincture (1:5)', 'Ethanol (alcohol) 25–60%', 'Alkaloids, resins, glycosides, essential oils, most plant constituents broadly', 'Some large polysaccharides (mucilage)', 'Standard extraction for most roots and leaves; long shelf life (3–5 years)'],
+            ['Glycerite (glycerin extract)', 'Vegetable glycerin', 'Similar to water; sweet taste; no alcohol', 'Resins, many alkaloids, fat-soluble compounds', 'Children\'s preparations; alcohol-free adults; milder extraction than tincture'],
+            ['Infused oil (cold or warm)', 'Fixed oil (olive, coconut, jojoba)', 'Fat-soluble compounds, essential oils (partially), resins', 'Water-soluble flavonoids, tannins, most polysaccharides', 'Topical use: salves, balms, massage oils'],
+            ['Vinegar extract (oxymel)', 'Apple cider vinegar + honey', 'Alkaloids (best in acidic medium), some flavonoids, minerals', 'Fat-soluble compounds', 'Mineral-rich herbs (nettles), some alkaloids; pleasant taste; shorter shelf life'],
+            ['Syrup', 'Water + sugar or honey', 'Water-soluble constituents of the initial infusion/decoction', 'Fat-soluble, resinous', 'Elderberry syrup, thyme cough syrup; preservative sugar extends shelf life'],
+          ],
+        },
+        { type: 'h3', text: 'The Evidence Spectrum — Evaluating Herbal Research' },
+        {
+          type: 'p',
+          text: 'Medicinal herbs occupy a wide spectrum of evidence quality. Understanding this spectrum helps calibrate realistic expectations.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Strong clinical evidence (randomized controlled trials): Elderberry (antiviral activity, reduced flu duration), St. John\'s Wort (mild-moderate depression, equivalent to SSRIs in multiple trials), Peppermint oil (IBS, tension headache), Echinacea (immune support, modest reduction in cold duration), Valerian (sleep quality), Hawthorn (cardiovascular support), Ginger (nausea).',
+            'Good traditional use with emerging evidence: Ashwagandha, Tulsi/Holy Basil, Calendula (wound healing), Marshmallow root, Yarrow, Lemon Balm, Skullcap, Passionflower, Milk Thistle (liver protection — good evidence), Astragalus.',
+            'Long traditional use with limited modern research: Many minor herbs and garden plants with deep cultural history but few or no clinical trials. Their value lies in centuries of documented use rather than controlled studies.',
+            'Mechanistic evidence only (weakest form): Studies showing in vitro (laboratory) activity. Many compounds that kill bacteria in a petri dish are not useful as medicines. Always look for in vivo (animal or human) research before attributing clinical significance to in vitro findings.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🔬',
+          text: 'The Best Herbs Have Both: The most reliable medicinal herbs in this guide have a combination of long traditional use across multiple cultures AND modern clinical evidence. When an herb has centuries of consistent cross-cultural use and modern trials confirming its effects, that convergence is meaningful. Elderberry, chamomile, valerian, peppermint, and echinacea all have this dual validation.',
+        },
+      ],
+    },
+
+    {
       id: 'growing-guide',
       title: 'Growing Guide — Detailed Herb Profiles',
       blocks: [
