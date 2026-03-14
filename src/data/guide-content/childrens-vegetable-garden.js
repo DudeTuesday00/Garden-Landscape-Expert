@@ -328,6 +328,7 @@ export const childrensGardenContent = {
             ['Slugs / Snails', 'Moisture-loving mollusks; active at night', 'Trap with shallow dish of beer; hand-pick at night with flashlight.', 'Nocturnal behavior; the nighttime garden observation is memorable.'],
             ['Wilting in heat', 'Temporary drought stress or afternoon heat', 'Water in morning; check soil moisture; mulch around plants.', 'Plant physiology; stomata and transpiration.'],
             ['Blossom drop', 'Heat stress; pollination failure', 'Shake plants gently to aid pollination; plant in morning sun.', 'Pollination biology; the connection between flowers and food.'],
+            ['Yellowing leaves (lower)', 'Often normal leaf senescence as the plant matures; can also indicate nitrogen deficiency or overwatering', 'Remove yellow leaves cleanly at the stem. Apply a balanced liquid fertilizer if widespread. Check that the bed drains freely after watering.', 'Plant nutrition and the nitrogen cycle. Observation and diagnosis — not every yellow leaf is a crisis; learning to assess overall plant health is a foundational gardening skill.'],
           ],
         },
       ],
