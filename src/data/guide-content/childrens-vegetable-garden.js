@@ -352,6 +352,8 @@ export const childrensGardenContent = {
             ['Cucumbers', '8–12 inches, firm, dark green', 'Pick before yellowing begins at blossom end. When in doubt, pick it.', 'Turns yellow, seeds harden, flesh becomes bitter.'],
             ['Zucchini', '6–8 inches, firm, glossy skin', 'Check daily — measure against a hand; 6–8 inches is perfect', 'Becomes enormous, seedy, tough overnight.'],
             ['Pumpkins', 'Skin hardened, stem corky and dried, full color', 'Knock test — a ripe pumpkin sounds hollow. Stem dried and tan.', 'Falls from vine; skin may crack in rain.'],
+            ['Snap Peas', 'Pod plump and round, bright green, seeds visible through the pod wall', 'Taste test — a ripe snap pea is sweet and crisp. If it tastes starchy, it has gone too far.', 'Seeds swell and harden inside the pod; pod becomes tough and stringy; plant slows flower production.'],
+            ['Sunflower Seeds', 'Back of seed head turns from green to yellow-brown; seeds feel firm and loosely seated in the head', 'Rub a few seeds with your thumb — ripe seeds release easily. The petals have dropped and the face is fully brown.', 'Birds will harvest them first. Cut the head with 12 inches of stem and hang upside down indoors to finish drying if needed.'],
           ],
         },
         { type: 'h3', text: 'Making Harvest Special' },
