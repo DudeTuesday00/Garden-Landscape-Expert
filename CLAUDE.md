@@ -365,7 +365,7 @@ export async function generateMetadata({ params }) {
 | Section 1: Science of Plant Medicine | ✅ Done | 6 constituent classes, 8-row extraction method table, 4-tier evidence spectrum, tip callout |
 | Section 2: Immune & Antiviral Plants | ✅ Done | Echinacea (3 species), Elderberry+Elderflower (toxicity warning), Astragalus (new), Garlic (new); stacking tip; dupes removed from growing-guide |
 | Section 3: Nervines & Sleep | ✅ Done | Chamomile (GAD evidence, zone growing), Lemon Balm (HSV evidence, thyroid caution), Valerian (fresh tincture preference, GABA mechanism), Passionflower (new — benzo-equivalent evidence, MAOI warning), Skullcap (adulteration warning block); sleep tea blend tip |
-| Section 4: Adaptogens | 🔲 Pending | Add Rhodiola, Eleuthero; expand Ashwagandha, Tulsi |
+| Section 4: Adaptogens | ✅ Done | Ashwagandha (cortisol RCT, moon milk, zone growing), Tulsi (3 varieties, daily-tea approach), Rhodiola (new — sertraline trial, Zones 3-6 cool-climate), Eleuthero (new — Soviet research, 6-8 week tonic cycle); selection tip |
 | Section 5: Topical & Respiratory | 🔲 Pending | Add Plantain, Mullein, Thyme, Elecampane; expand Calendula, Yarrow |
 | Section 6: Growing the Medicinal Garden | 🔲 Pending | Zone chart, garden design, LFD-relative calendar, harvesting table |
 | Section 7: Cannabis | 🔲 Pending | Endocannabinoid system, CBD/THC table, US climate growing, preparations |
