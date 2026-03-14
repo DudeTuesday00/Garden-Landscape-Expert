@@ -401,7 +401,7 @@ export async function generateMetadata({ params }) {
 | `growing-through-season` — Soil & Planting subsection | ✅ Done | Best soil mix (1/3 topsoil / 1/3 compost / 1/3 perlite), what to avoid, earthworm tip |
 | `growing-through-season` — Pests table: yellowing leaves row | ✅ Done | Added yellowing leaves row: senescence vs. nitrogen deficiency, child-manageable response, learning opportunity |
 | `harvest` — Snap peas + sunflower seeds rows | ✅ Done | Added snap peas (taste test, starchy-if-late) and sunflower seeds (thumb test, bird-race tip) rows |
-| `recipes` — Stovetop Popcorn from Garden-Grown Corn | 🔲 Pending | Entire recipe missing |
+| `recipes` — Stovetop Popcorn from Garden-Grown Corn | ✅ Done | Full recipe added: variety selection, drying (4–6 weeks), shelling, stovetop + microwave methods, seasoning options, tip callout |
 | `troubleshooting` — Weeds row | 🔲 Pending | One missing troubleshooting row |
 
 ---

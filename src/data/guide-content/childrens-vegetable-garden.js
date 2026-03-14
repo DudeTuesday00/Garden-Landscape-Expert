@@ -424,6 +424,27 @@ export const childrensGardenContent = {
             'Roast at 325°F for 25–30 minutes, stirring once halfway. Cool completely before eating — they crisp as they cool.',
           ],
         },
+        { type: 'h3', text: '🍿 Stovetop Popcorn from Garden-Grown Corn' },
+        {
+          type: 'p',
+          text: "Popcorn you grew, dried, shelled, and popped yourself is one of the most extraordinary experiences a children's garden can deliver. The full process — from harvest to the moment the lid starts rattling on the pot — takes weeks and requires patience, which makes the final result genuinely earned.",
+        },
+        {
+          type: 'list',
+          items: [
+            'Grow popcorn varieties only — standard sweet corn will not pop. Best varieties for children: \'Strawberry\' popcorn (small burgundy-red ears, fits in a child\'s hand), \'Baby Blue Jade\' (compact plants, blue kernels), \'Japanese Hulless\' (tender hull, easier for children to eat).',
+            'Drying: Leave ears on the stalk until the husks are fully dry and papery — usually 4–6 weeks after the silks brown. Bring inside and hang in a warm, dry location for another 2–4 weeks until the kernels feel completely hard.',
+            'Shelling: Hold the ear over a bowl and rub the kernels off with both thumbs in a twisting motion. The first few kernels take effort; once started, the rest slide off easily. Let children shell their own ear — it is deeply satisfying work.',
+            'Stovetop popping: Add 2 tablespoons of vegetable oil or coconut oil to a heavy-bottomed pot with a lid. Add 3–4 test kernels and heat over medium-high. When the test kernels pop, add a single layer of popcorn kernels (about 1/3 cup). Cover, reduce heat slightly, and shake the pot gently every 30 seconds. Remove from heat when popping slows to one pop every 2–3 seconds.',
+            'Microwave method: Place 1/4 cup shelled kernels in a brown paper lunch bag. Fold the top over twice. Microwave on high 2–3 minutes, stopping when popping slows. Every microwave differs — watch carefully the first time.',
+            'Seasoning options: Classic butter and salt; nutritional yeast (savory, cheesy flavor); cinnamon sugar; garlic powder and parmesan. Let children choose and add their own seasoning — a small bowl of options they can mix themselves makes it feel like a science experiment.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌽',
+          text: "The moment the lid starts lifting and kernels begin flying is one of the most joyful moments in a children's kitchen. Grow at least 16 plants in a block for good pollination — a 4×4 planting is the minimum. Harvest in fall, dry through winter, and pop in January: the garden that ended months ago is suddenly producing again. That continuity is the lesson.",
+        },
       ],
     },
     {
