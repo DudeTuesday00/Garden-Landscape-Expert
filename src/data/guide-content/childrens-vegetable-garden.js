@@ -538,6 +538,7 @@ export const childrensGardenContent = {
             ['Tomatoes cracking and splitting', 'Irregular watering — drought followed by heavy rain', 'Mulch heavily. Water consistently. Choose crack-resistant varieties (Juliet) next season.', 'Water science — what happens when plants get too much water too fast.'],
             ['Child wants to pick everything before it\'s ripe', 'Excitement; impatience; confusion about ripeness', 'Make a \'ripeness chart\' with color swatches from the seed packet. Practice the squeeze test together.', '\'What happens if we wait two more days?\' Let them test the hypothesis.'],
             ['Animal damage (rabbits, deer, squirrels)', 'Attractive food source without protection', 'Install physical barriers. Involve children in designing the protection system.', 'Food web and ecology. \'Why do animals want to eat what we grew?\' What do these animals eat in the wild?'],
+            ['Weeds taking over the garden', 'Infrequent weeding; bare soil between plants; seeds blown in from surrounding areas', 'Mulch bare soil with 2–3 inches of straw or wood chips immediately after planting. Weed together in short sessions (10–15 minutes) before weeds set seed — teach children the \'pull before they flower\' rule.', 'What is a weed? (A plant growing where we didn\'t put it.) Are all weeds bad? Some weeds are edible — identify common ones like lamb\'s quarters and dandelion. Discuss how plants compete for light, water, and nutrients — the same resources we give our vegetables.'],
           ],
         },
         {

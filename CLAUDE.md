@@ -402,7 +402,7 @@ export async function generateMetadata({ params }) {
 | `growing-through-season` — Pests table: yellowing leaves row | ✅ Done | Added yellowing leaves row: senescence vs. nitrogen deficiency, child-manageable response, learning opportunity |
 | `harvest` — Snap peas + sunflower seeds rows | ✅ Done | Added snap peas (taste test, starchy-if-late) and sunflower seeds (thumb test, bird-race tip) rows |
 | `recipes` — Stovetop Popcorn from Garden-Grown Corn | ✅ Done | Full recipe added: variety selection, drying (4–6 weeks), shelling, stovetop + microwave methods, seasoning options, tip callout |
-| `troubleshooting` — Weeds row | 🔲 Pending | One missing troubleshooting row |
+| `troubleshooting` — Weeds row | ✅ Done | Added weeds row: causes (bare soil, infrequent weeding), mulch + short-session solution, learning moment (what is a weed, edible weeds, plant competition) |
 
 ---
 
