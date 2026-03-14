@@ -369,7 +369,7 @@ export async function generateMetadata({ params }) {
 | Section 5: Topical & Respiratory | ✅ Done | Calendula (saponins/carotenoids, infused oil, zone-split growing), Plantain (new — aucubin/allantoin, lawn weed first aid), Yarrow (achilleine hemostatic, sitz bath, pregnancy caution), Mullein (new — leaf straining warning, ear oil), Thyme (new — ambroxol RCT, thyme honey), Elecampane (new — inulin 50%, chronic respiratory use) |
 | Section 6: Growing the Medicinal Garden | ✅ Done | USDA zone chart (5-row), garden design principles, LFD-relative 10-row seasonal calendar, 6-row harvest quality table, drying methods, storage guidelines |
 | Section 7: Cannabis | ✅ Done | Legal status warning (federal + 50-state patchwork), ECS explanation (CB1/CB2/CBD mechanism), 8-row CBD vs THC properties table, growing hemp across US climates (regional notes), infused oil + tincture preparations, entourage effect tip; cannabis removed from growing-guide |
-| Section 8: Preparations & Recipes | 🔲 Pending | Add calendula salve, thyme honey, sleep tea blend, oxymel |
+| Section 8: Preparations & Recipes | ✅ Done | Tinctures (folk method + weight-to-volume with menstruum selection guide), elderberry syrup (updated), calendula salve (2-step: infused oil then beeswax), thyme honey, nervine sleep tea blend, oxymel |
 | Section 9: Safety & Drug Interactions | 🔲 Pending | Expand drug interaction table; add conditions table |
 | Section 10: Additional Herb Profiles | 🔲 Pending | Milk Thistle, Marshmallow, Hops, Black Cohosh, Ginger, Turmeric, Hawthorn, etc. |
 | Closing reflection | 🔲 Pending | Final paragraph from docx |
