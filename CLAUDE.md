@@ -630,6 +630,7 @@ Every page in the app exports full metadata including:
 
 ## Notes for AI Assistants
 
+- **A guide must not be built unless a `.docx` source file exists for that subject.** The `.docx` file is the authoritative source of truth for guide content; do not create or populate a guide JS file from scratch without one.
 - Prefer editing existing files over creating new ones unless strictly necessary
 - Avoid over-engineering; keep solutions minimal and focused
 - Do not push to branches other than the designated `claude/` branch without explicit permission
