@@ -333,6 +333,79 @@ export const medicinalGardenContent = {
     },
 
     {
+      id: 'adaptogens',
+      title: 'Adaptogens — Stress Resilience & Vitality',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Adaptogens are a pharmacological category of plants defined by three criteria: they must be non-toxic at normal doses, they must produce a non-specific response that increases resistance to multiple stressors (physical, chemical, biological), and they must normalize physiological function in either direction — bringing high cortisol down and low energy up rather than simply sedating or stimulating. The concept was formalized by Soviet pharmacologist Nikolai Lazarev in 1947, though the plants themselves have been used in Ayurvedic and Chinese medicine for centuries.',
+        },
+        { type: 'h3', text: '🌿 Ashwagandha (Withania somnifera)' },
+        {
+          type: 'p',
+          text: 'Ashwagandha is the most studied adaptogen in Ayurvedic medicine and one of the most comprehensively researched adaptogens globally, with substantial clinical trial evidence for stress reduction, cortisol normalization, athletic performance, thyroid support, and male fertility.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Withanolides (steroidal lactones — primary active compounds; anti-inflammatory, neuroprotective, immunomodulatory), withaferin A (specific withanolide with anticancer research), alkaloids (isopelletierine, anaferine), iron.',
+            'Clinical evidence: Multiple RCTs demonstrate significant reductions in stress and anxiety scores — one study showed a 27.9% reduction in serum cortisol vs. placebo. Studies also show improvements in thyroid hormone levels in subclinical hypothyroidism, improved exercise performance, and male fertility markers.',
+            'Preparations: Powder in warm milk (traditional Ayurvedic "moon milk" — some withanolides are fat-soluble and extract better into fat-containing milk than plain water), tincture, capsule. Effects build over 4–8 weeks of consistent use.',
+            'Growing across US climates: Zones 8–11 as a perennial (harvest roots in the dormant season). Zones 5–7: grow as a warm-season annual — start indoors 6–8 weeks before last frost, transplant after soil warms above 60°F. Full sun, very well-drained sandy or loamy soil; does not tolerate wet roots or heavy clay. Harvest roots in fall when plant begins to die back.',
+            'Cautions: Pregnancy (contraindicated — uterine-stimulating). Thyroid conditions (withanolides stimulate thyroid function — monitor if on thyroid medication). Nightshade family sensitivity possible. Autoimmune conditions. Take with food to reduce GI upset.',
+          ],
+        },
+        { type: 'h3', text: '🌱 Tulsi / Holy Basil (Ocimum tenuiflorum)' },
+        {
+          type: 'p',
+          text: 'Tulsi is the most sacred plant in Hinduism — traditionally kept in every home and revered as a direct manifestation of Vishnu. Its medicinal profile is extensive: adaptogen, immune modulator, antibacterial, antiviral, anti-inflammatory, antioxidant, and blood sugar regulator. It is also one of the most pleasant-tasting medicinal herbs.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Eugenol (primary active compound — antimicrobial, anti-inflammatory, analgesic), ursolic acid (anti-inflammatory, antitumor, hepatoprotective), rosmarinic acid, flavonoids (orientin, vicenin — antioxidant), essential oils broadly.',
+            'Three varieties: Vana tulsi (wild tulsi — lighter flavor, most adaptogenic), Rama tulsi (common green-leaved tulsi — mild flavor), Krishna/Shyama tulsi (dark-purple-leaved — strong clove-pepper flavor, considered most potent medicinally). All are effective; mixing varieties produces a complex blend.',
+            'Preparations: Tea (both fresh and dried — one of the most delicious medicinal herb teas; drink daily for adaptogenic effect), tincture, fresh in food, oxymel. Regular daily consumption over weeks to months is significantly more effective than occasional use.',
+            'Growing across US climates: Tropical perennial grown as a warm-season annual in Zones 3–9. In Zones 10–11 (South Florida, Hawaii, Southern California), it grows as a true perennial. Start indoors 6–8 weeks before last frost. Transplant after all frost risk passes and soil is warm. Full sun. Self-seeds prolifically in warm climates (Zones 8+).',
+          ],
+        },
+        { type: 'h3', text: '🏔️ Rhodiola (Rhodiola rosea)' },
+        {
+          type: 'p',
+          text: 'Rhodiola is a high-altitude Arctic and alpine succulent with one of the strongest evidence bases among adaptogens. It is stimulating rather than sedating — an important distinction from ashwagandha and tulsi. Rhodiola reduces fatigue, improves cognitive function under stress, and has demonstrated antidepressant effects in clinical trials. Take it in the morning, not the evening.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Rosavins (rosavin, rosin, rosarin — primary markers for standardization), salidroside (tyrosol glucoside — neuroprotective, adaptogenic), p-tyrosol.',
+            'Clinical evidence: Studies demonstrate reduction in mental fatigue and improved cognitive performance under stress. A 2015 trial comparing rhodiola to sertraline (Zoloft) for mild-moderate depression found rhodiola less effective overall but with significantly fewer adverse effects.',
+            'Preparations: Tincture, capsule, powder. Commercial extracts are standardized to 3% rosavins and 1% salidroside — look for this on labels when purchasing.',
+            'Growing across US climates: Rhodiola\'s natural habitat is Arctic tundra and alpine rockfields. It performs well in Zones 3–6 (northern tier: New England, upper Midwest, Rocky Mountains, Pacific Northwest at altitude) and poorly in warm climates. It is the right plant for Vermont, Montana, the Cascades, and Colorado highlands — and the wrong plant for Texas or Florida. Requires cool to cold temperatures, excellent drainage, and gritty alkaline soil. In Zones 7+, success is marginal without a cool microclimate. Harvest roots after year 4–5.',
+            'Cautions: Bipolar disorder (stimulating effect may trigger mania). Avoid use in the evening. Not recommended during pregnancy.',
+          ],
+        },
+        { type: 'h3', text: '🌿 Eleuthero / Siberian Ginseng (Eleutherococcus senticosus)' },
+        {
+          type: 'p',
+          text: 'Eleuthero is the original "adaptogen" — the plant on which Lazarev\'s classification was first based. A shrubby plant from Siberia and northeast Asia with decades of research from the Soviet Union (given to cosmonauts, athletes, and soldiers). It is an energy tonic without stimulant effects — building vitality over time rather than providing an immediate boost.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Eleutherosides (phenylpropanoids and lignans — eleutherosides E and B are primary standardization markers), polysaccharides (immune-modulating), syringin.',
+            'Preparations: Decoction (roots — simmer 20–30 minutes), tincture, powder. Used as a tonic over 6–8 week cycles with breaks rather than continuous use.',
+            'Growing across US climates: Shrub, Zones 3–8. Exceptionally cold-hardy and well-suited to the northern US: New England, upper Midwest, Pacific Northwest, and mountain states. Full sun to part shade; moist, well-drained soil. Grows poorly in hot, humid southern climates. Harvest roots in fall of year 3+.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '⚡',
+          text: 'Choosing Your Adaptogen: Ashwagandha is the best choice for stress with fatigue, poor sleep, and anxiety — it is calming as well as restorative. Tulsi is the best daily-use adaptogen for most people — mild enough to drink as tea every day, broadly beneficial. Rhodiola is best for mental fatigue, brain fog, and performance under acute stress — but is stimulating, so avoid if anxiety is the primary concern. Eleuthero is the classic choice for physical endurance and long-term resilience building.',
+        },
+      ],
+    },
+
+    {
       id: 'growing-guide',
       title: 'Growing Guide — Detailed Herb Profiles',
       blocks: [
@@ -379,17 +452,6 @@ export const medicinalGardenContent = {
             'Medicinal use: Yarrow is one of the oldest wound herbs — pressed against a cut, it acts as a styptic (stops bleeding). Strong yarrow tea induces diaphoresis (sweating), which can help break a fever. Internally, yarrow tea supports digestion and reduces cramping.',
           ],
         },
-        { type: 'h3', text: '🌱 Tulsi / Holy Basil (Ocimum tenuiflorum)' },
-        {
-          type: 'list',
-          items: [
-            'Annual in all zones (perennial in Zone 10+). Tropical herb that thrives in summer heat.',
-            'Sun and soil: Full sun; well-drained, moderately fertile soil. Start from seed indoors 6–8 weeks before last frost, or direct sow after soil warms above 65°F.',
-            'Growing: Pinch flower buds continuously to extend leaf production. Frost-sensitive — protect or harvest before the first fall frost.',
-            'Harvest: Cut stems regularly, leaving 2–3 pairs of leaves on the plant for regrowth. Dry at low heat or use fresh.',
-            'Medicinal use: Tulsi is an adaptogen — it helps the body regulate stress and supports immune function without stimulating or sedating. Daily tulsi tea reduces stress markers in clinical studies. It also has antimicrobial and anti-inflammatory properties. The flavor (clove-like, slightly sweet) is appealing enough for daily use.',
-          ],
-        },
         { type: 'h3', text: '🌿 Comfrey (Symphytum officinale)' },
         {
           type: 'list',
@@ -411,17 +473,6 @@ export const medicinalGardenContent = {
             'Identification tip: Hold a leaf up to light — the translucent oil glands appear as tiny clear dots perforating the leaf (hence "perforatum"). Crush a bud between your fingers — it should release a red-purple stain from the hypericin pigment.',
             'Harvest: Collect flower buds and flowers together when buds are just beginning to open (not fully open flowers). This is when hypericin content is highest. Use fresh for tincturing immediately — the fresh plant makes a superior preparation to dried.',
             'Medicinal use: Clinical evidence supports St. John\'s Wort for mild to moderate depression, comparable in effect to low-dose SSRIs with fewer side effects. Also effective topically as an infused oil for nerve pain, sciatica, and bruising. Critical drug interactions — see the Safety section before use.',
-          ],
-        },
-        { type: 'h3', text: '🌿 Ashwagandha (Withania somnifera)' },
-        {
-          type: 'list',
-          items: [
-            'Zones: 8–10 as a perennial; grown as an annual in Zones 5–7. A shrubby plant from the nightshade family, growing 2–4 feet tall.',
-            'Sun and soil: Full sun; light, well-drained, sandy or loamy soil. Adapted to hot, dry conditions — does not tolerate wet or heavy clay soils.',
-            'Growing: Start seeds indoors 6–8 weeks before last frost in warm climates, or direct sow after soil reaches 70°F. Germinates in 7–14 days with warmth. In colder zones, treat as an annual and harvest roots at the end of the first season (roots will be smaller but still medicinally useful).',
-            'Harvest: Dig roots in fall after the first frost blackens the foliage (or at the end of the growing season in annual plantings). Roots should be pencil-thick or larger. Wash, chop into 1/2-inch pieces, and dry at 105–115°F.',
-            'Medicinal use: Ashwagandha is the premier adaptogen in Ayurvedic medicine — it helps the body adapt to stress, supports adrenal function, improves sleep quality, and sustains energy over time. Clinical trials show significant reduction in cortisol levels and self-reported stress with 300–600 mg of root extract daily. Traditionally taken as a warm milk decoction (golden milk base) or as a tincture. Effects build over 4–8 weeks of consistent use.',
           ],
         },
         { type: 'h3', text: '💜 Motherwort (Leonurus cardiaca)' },
