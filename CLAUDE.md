@@ -367,12 +367,44 @@ export async function generateMetadata({ params }) {
 | Section 3: Nervines & Sleep | ✅ Done | Chamomile (GAD evidence, zone growing), Lemon Balm (HSV evidence, thyroid caution), Valerian (fresh tincture preference, GABA mechanism), Passionflower (new — benzo-equivalent evidence, MAOI warning), Skullcap (adulteration warning block); sleep tea blend tip |
 | Section 4: Adaptogens | ✅ Done | Ashwagandha (cortisol RCT, moon milk, zone growing), Tulsi (3 varieties, daily-tea approach), Rhodiola (new — sertraline trial, Zones 3-6 cool-climate), Eleuthero (new — Soviet research, 6-8 week tonic cycle); selection tip |
 | Section 5: Topical & Respiratory | ✅ Done | Calendula (saponins/carotenoids, infused oil, zone-split growing), Plantain (new — aucubin/allantoin, lawn weed first aid), Yarrow (achilleine hemostatic, sitz bath, pregnancy caution), Mullein (new — leaf straining warning, ear oil), Thyme (new — ambroxol RCT, thyme honey), Elecampane (new — inulin 50%, chronic respiratory use) |
-| Section 6: Growing the Medicinal Garden | 🔲 Pending | Zone chart, garden design, LFD-relative calendar, harvesting table |
-| Section 7: Cannabis | 🔲 Pending | Endocannabinoid system, CBD/THC table, US climate growing, preparations |
-| Section 8: Preparations & Recipes | 🔲 Pending | Add calendula salve, thyme honey, sleep tea blend, oxymel |
-| Section 9: Safety & Drug Interactions | 🔲 Pending | Expand drug interaction table; add conditions table |
-| Section 10: Additional Herb Profiles | 🔲 Pending | Milk Thistle, Marshmallow, Hops, Black Cohosh, Ginger, Turmeric, Hawthorn, etc. |
-| Closing reflection | 🔲 Pending | Final paragraph from docx |
+| Section 6: Growing the Medicinal Garden | ✅ Done | USDA zone chart (5-row), garden design principles, LFD-relative 10-row seasonal calendar, 6-row harvest quality table, drying methods, storage guidelines |
+| Section 7: Cannabis | ✅ Done | Legal status warning (federal + 50-state patchwork), ECS explanation (CB1/CB2/CBD mechanism), 8-row CBD vs THC properties table, growing hemp across US climates (regional notes), infused oil + tincture preparations, entourage effect tip; cannabis removed from growing-guide |
+| Section 8: Preparations & Recipes | ✅ Done | Tinctures (folk method + weight-to-volume with menstruum selection guide), elderberry syrup (updated), calendula salve (2-step: infused oil then beeswax), thyme honey, nervine sleep tea blend, oxymel |
+| Section 9: Safety & Drug Interactions | ✅ Done | "Tell your providers" warning; 9-row drug interaction table (Herb / Interacts With / Mechanism / Clinical Significance) adding Ginkgo, Garlic, Hawthorn, Passionflower, Licorice, CBD; 8-row "Herbs to Avoid in Specific Conditions" table (Pregnancy, Breastfeeding, Autoimmune, Epilepsy, Hypothyroidism, Liver disease, Hormone-sensitive cancers, Before surgery) |
+| Section 10: Additional Herb Profiles | ✅ Done | 9 herb profiles: St. John's Wort, Milk Thistle, Marshmallow Root, Lemon Verbena, Hops, Black Cohosh, Ginger, Turmeric, Hawthorn Berry; each with uses, constituents, evidence, prep, growing notes, and caution callouts where applicable |
+| Closing reflection | ✅ Done | "Medicinal Garden as Relationship" section — 2 closing paragraphs + tip callout from docx |
+
+### Ornamental Trees Guide — Docx Sync ✅
+
+`src/data/guide-content/ornamental-trees.js` expanded to fully match `ornamental-tree-guide.docx`:
+
+| Addition | Details |
+|---|---|
+| Step 4: Deciduous vs Evergreen | 4-row table (Deciduous / Broadleaf Evergreen / Needled Evergreen / Semi-Evergreen) inserted into `choosing` section |
+| Native vs Non-Native discussion | Full 2-paragraph discussion added to `avoid` section before existing tip |
+| Sweetgum profile | Added to `fall-color` section; 'Rotundiloba' seedless cultivar highlighted |
+| Pest & Disease table | 8-row table (Dogwood Anthracnose, Dogwood Borer, Japanese Beetle, Fire Blight, Apple Scab, Powdery Mildew, Cherry Leaf Curl, Girdling Roots) added to `planting-care` section |
+| Crape murder tip (Section 4) | Added after universal pruning principles |
+| Woodland Garden Approach tip | Added to `design` section |
+| Sweetgum row | Added to Quick Reference table |
+| `final-thoughts` section | New closing section — 2 paragraphs + tip callout from docx |
+
+---
+
+### Children's Vegetable Garden Guide — Docx Sync Progress
+
+`src/data/guide-content/childrens-vegetable-garden.js` being expanded section-by-section to fully match `Childrens_Vegetable_Garden_Guide.docx`.
+
+| Section | Status | Notes |
+|---|---|---|
+| `garden-design` — Age-specific subsections | ✅ Done | Expanded from 3 brief paragraphs → full Toddler/Preschool, Elementary, and Tween subsections with plants, activities, adult role, and tips |
+| `growing-through-season` — Soil & Planting subsection | 🔲 Pending | Missing: best soil mix (1/3 topsoil / 1/3 compost / 1/3 perlite), what to avoid |
+| `growing-through-season` — Pests table: yellowing leaves row | 🔲 Pending | One missing row |
+| `harvest` — Snap peas + sunflower seeds rows | 🔲 Pending | Two harvest-readiness rows missing |
+| `recipes` — Stovetop Popcorn from Garden-Grown Corn | 🔲 Pending | Entire recipe missing |
+| `troubleshooting` — Weeds row | 🔲 Pending | One missing troubleshooting row |
+
+---
 
 ### Three New Live Guides (28th–30th) ✅
 

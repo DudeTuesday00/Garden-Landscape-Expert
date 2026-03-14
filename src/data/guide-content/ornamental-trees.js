@@ -50,7 +50,19 @@ export const ornamentalTreeContent = {
           ],
         },
         { type: 'warning', emoji: '📏', text: 'Foundation Rule: Small ornamentals (mature under 15 feet) should be planted at least 6–8 feet from foundations. Medium ornamentals (15–25 feet) need 12–15 feet of clearance. Never plant any tree under overhead utility lines unless its mature height stays well below the lines.' },
-        { type: 'h3', text: 'Step 4: Think in Seasons — The Four-Season Audit' },
+        { type: 'h3', text: 'Step 4: Decide Between Deciduous and Evergreen' },
+        { type: 'p', text: 'This is one of the most fundamental choices in ornamental tree selection — it comes down to what you need the tree to do through the year.' },
+        {
+          type: 'table',
+          headers: ['Type', 'Characteristics', 'Best Season Appeal', 'Examples', 'Trade-offs'],
+          rows: [
+            ['Deciduous', 'Loses leaves in fall, bare in winter', 'Spring flowers (often spectacular), fall color, interesting winter branching — allows winter light into garden and home', 'Most spring-flowering ornamentals: dogwood, redbud, magnolia, cherry, serviceberry, crabapple, Japanese maple', 'No winter screening; bare branches can be beautiful or stark depending on species'],
+            ['Broadleaf Evergreen', 'Keeps leaves year-round; leaves are broad and often glossy', 'Year-round green structure, winter screening, some produce flowers and berries', 'Southern magnolia, American holly, sweetbay magnolia (semi-evergreen), wax myrtle', 'Less dramatic seasonal change; can look heavy if poorly sited'],
+            ['Needled Evergreen (Ornamental)', 'Retains needles year-round in most cultivars', 'Year-round color and form; exceptional winter structure; some produce ornamental cones', 'Blue Atlas cedar, Japanese black pine, weeping Norway spruce, dwarf Alberta spruce', 'Rarely produce showy flowers; brown if stressed or poorly sited'],
+            ['Semi-Evergreen', 'Retains most leaves in mild winters; drops them in cold winters', 'Flexible — provides screening where winters are mild, seasonal interest where colder', 'Sweetbay magnolia, some hollies, some crape myrtle cultivars in zone 6', 'Behavior varies by climate — research your specific zone'],
+          ],
+        },
+        { type: 'h3', text: 'Step 5: Think in Seasons — The Four-Season Audit' },
         { type: 'p', text: 'The most sophisticated approach to ornamental tree selection is to evaluate candidates across all four seasons before committing. A tree that dazzles in April but contributes nothing in July, October, and January is a missed opportunity when better choices exist.' },
         {
           type: 'table',
@@ -83,7 +95,15 @@ export const ornamentalTreeContent = {
             ['White Mulberry / Fruitless Mulberry', 'Invasive across much of the US; even "fruitless" cultivars can revert and produce fruit. Seeds spread by birds into natural areas.', 'Native red mulberry (if wildlife food is the goal) or any flowering ornamental in this guide'],
           ],
         },
-        { type: 'tip', emoji: '🌿', text: 'The Native Priority Principle: When choosing between a native and non-native ornamental with similar visual impact, choose the native. It will support more wildlife, require less long-term care, and contribute to the broader health of the regional ecosystem.' },
+        {
+          type: 'p',
+          text: 'The native plant movement has rightly emphasized that native trees support far more wildlife — particularly insects — than non-native species. A native white oak supports over 500 caterpillar species; a non-native ginkgo supports essentially none. Native dogwoods, serviceberries, and redbuds provide not only beauty but ecological infrastructure that non-native alternatives simply cannot replicate.',
+        },
+        {
+          type: 'p',
+          text: 'That said, this guide celebrates excellent ornamental trees from both categories. Non-native trees like Japanese maple, paperbark maple, Kousa dogwood, and Japanese tree lilac are extraordinary ornamental plants that perform beautifully in American landscapes, cause no ecological harm, and provide beauty and some wildlife value through flowers and fruit. The goal isn\'t to exclude them — it\'s to always prefer a native option when the performance is equal or better, and to never plant known invasive species.',
+        },
+        { type: 'tip', emoji: '🌿', text: 'The Native Priority Principle: When choosing between a native and non-native ornamental with similar visual impact and cultural requirements, choose the native. It will support more wildlife, require less long-term care (it evolved with your local conditions), and contribute to the broader health of the regional ecosystem. But the goal is not horticultural purity — it\'s making the best choices available with what your site, climate, and aesthetic needs demand.' },
       ],
     },
     {
@@ -244,6 +264,15 @@ export const ornamentalTreeContent = {
             'Wildlife: Outstanding — flowers support native bees and butterflies; berries eaten by birds.',
           ],
         },
+        { type: 'h3', text: 'Sweetgum (Liquidambar styraciflua) — Fall Color Machine' },
+        { type: 'p', text: 'For sheer autumn color impact, few trees match the sweetgum. Foliage transitions through purple, red, orange, and yellow — often all at once on the same tree — creating one of the most spectacular fall displays in the American landscape. A large native tree well-suited to moist soils.' },
+        {
+          type: 'list',
+          items: [
+            'Zones: 5–9. Mature Size: 60–75 feet — plan accordingly for large lots or back-of-property use.',
+            'Best Cultivar: \'Rotundiloba\' (seedless — eliminates the spiky gum ball litter problem, brilliant fall color, Zones 5–9) is the one to plant if you want the color without the mess.',
+          ],
+        },
         { type: 'h3', text: 'Katsura Tree (Cercidiphyllum japonicum) — Autumn Fragrance' },
         { type: 'p', text: 'The katsura tree is one of the most distinctive ornamentals in the landscape. Its fall feature is unique in the tree world: the falling leaves emit a fragrance of burnt caramel or cotton candy as they dry — a delightful scent that drifts across the garden on cool autumn days. Heart-shaped leaves emerge reddish-purple in spring, mature to blue-green in summer, and turn brilliant apricot-gold to orange in fall. Zones 4–8. Mature size: 25–40 feet in most landscapes.' },
       ],
@@ -316,9 +345,26 @@ export const ornamentalTreeContent = {
           items: [
             'Remove the 3 Ds first, always: Dead, Diseased, Damaged wood — any season, immediately.',
             'Remove crossing or rubbing branches — where they contact, bark wounds develop and let disease in.',
-            'Remove suckers from the base.',
-            'Never top an ornamental tree — it destroys form, creates weak regrowth, and is almost impossible to recover from aesthetically.',
-            'Cut to the branch collar — the slightly swollen ring where a branch meets the trunk.',
+            'Remove suckers from the base (water sprouts arising from roots or the base of the trunk).',
+            'Raise the crown ("limb up") by removing the lowest branches if needed for clearance — do this gradually over several years, not all at once.',
+            'Never top an ornamental tree — it destroys form, creates weak regrowth, exposes large wounds to decay, and is almost impossible to recover from aesthetically.',
+            'Cut to the branch collar — the slightly swollen ring where a branch meets the trunk. Never cut flush, never cut into the collar.',
+          ],
+        },
+        { type: 'tip', emoji: '✂️', text: 'The Crape Myrtle Rule Worth Repeating: Crape myrtles do NOT need to be topped, stubbed back, or drastically cut each year. They bloom on new wood that grows naturally from the existing framework. The correct annual maintenance is: remove basal suckers, remove crossing or crowded interior branches, and enjoy the show. If your crape myrtle is too large for its space, replace it with a smaller cultivar — not commit crape murder year after year.' },
+        { type: 'h3', text: 'Common Pests & Diseases' },
+        {
+          type: 'table',
+          headers: ['Problem', 'Affects', 'Signs', 'Management'],
+          rows: [
+            ['Dogwood Anthracnose', 'Dogwood (C. florida primarily)', 'Brown leaf spots with purple borders; twig dieback; cankers on lower trunk in severe cases.', 'Plant disease-resistant cultivars or C. kousa; avoid shaded, wet sites; good air circulation; remove infected plant material.'],
+            ['Dogwood Borer', 'Dogwood, birch, ornamental cherries', 'Sawdust-like frass at base of trunk; bark damage; tree decline. Attacks stressed or wounded trees.', 'Keep trees healthy; use trunk guards; avoid lawn mower and string trimmer wounds; targeted pesticide applications if needed.'],
+            ['Japanese Beetle', 'Crabapple, redbud, serviceberry, rose family trees', 'Skeletonized leaves (lacy appearance) in June–August. Adults feed communally.', 'Hand-pick or knock beetles into soapy water; neem oil sprays; milky spore for soil treatment; avoid beetle traps — they attract more beetles from the neighborhood.'],
+            ['Fire Blight', 'Crabapple, ornamental pear, hawthorn, serviceberry', 'Branch tips turn brown and bend into a "shepherd\'s crook." Looks like fire damage. Bacterial.', 'Plant resistant cultivars; avoid excess nitrogen; prune 12 inches below infected tissue with sterilized tools during dry weather; copper sprays during bloom.'],
+            ['Apple Scab', 'Crabapple (older varieties especially)', 'Olive-green to dark spots on leaves and fruit; early defoliation; weakens tree over time.', 'Plant modern disease-resistant crabapple cultivars — this largely eliminates the problem. Rake and dispose of fallen leaves.'],
+            ['Powdery Mildew', 'Crabapple, dogwood, crape myrtle, serviceberry', 'White powdery coating on new leaves and shoots; leaves may distort.', 'Plant resistant cultivars; improve air circulation; avoid overhead watering; sulfur or potassium bicarbonate sprays if severe.'],
+            ['Cherry Leaf Curl', 'Ornamental cherry', 'Leaves thicken, curl, and turn reddish. Fungal. Appears in cool wet springs.', 'Copper or lime-sulfur spray in fall after leaf drop and again in late winter before bud break. Timing is critical.'],
+            ['Girdling Roots', 'Any tree', 'Slow decline, reduced vigor, dieback from top down; roots crossing the root flare constrict the vascular system and eventually kill the tree.', 'Prevent at planting by removing circling roots. Monitor root flare annually — roots growing across the base should be corrected by a certified arborist.'],
           ],
         },
         { type: 'h3', text: 'Seasonal Care Calendar' },
@@ -391,6 +437,7 @@ export const ornamentalTreeContent = {
             'Grass growing right up to the base of ornamental trees is almost universally detrimental — it competes aggressively for water and nutrients, and mowing risks trunk damage.',
           ],
         },
+        { type: 'tip', emoji: '🌿', text: 'The Woodland Garden Approach: For naturalistic landscapes, consider creating woodland garden layers: large canopy trees at the back, ornamental understory trees in the middle, then shrubs, perennials, and groundcovers at the front. This mirrors natural forest structure, requires minimal maintenance once established, and supports remarkable biodiversity.' },
         { type: 'h3', text: 'Quick Reference: Ornamental Trees at a Glance' },
         {
           type: 'table',
@@ -409,10 +456,35 @@ export const ornamentalTreeContent = {
             ['Golden Rain Tree', '5–9', '25–40\'', 'Yellow summer flowers + interesting seed pods', 'Low', 'Low'],
             ['Japanese Maple', '5–8', '5–25\'', 'Year-round foliage color + fall color + winter form', 'Low', 'Moderate (site carefully)'],
             ['Paperbark Maple', '4–8', '20–30\'', 'Exceptional exfoliating bark + fall color', 'Moderate', 'Very low'],
+            ['Sweetgum (\'Rotundiloba\')', '5–9', '60–75\'', 'Outstanding multi-color fall foliage', 'Good (native)', 'Low (seedless cultivar)'],
             ['River Birch', '4–9', '20–70\'', 'Exfoliating bark + yellow fall color', 'Moderate (native)', 'Low'],
             ['Smoke Tree', '4–8', '10–30\'', 'Summer plumes + fall color', 'Low', 'Very low'],
             ['Fringe Tree', '3–9', '12–20\'', 'Fragrant white spring flowers + blue berries', 'Excellent (native)', 'Very low'],
           ],
+        },
+      ],
+    },
+
+    {
+      id: 'final-thoughts',
+      title: 'Final Thoughts — Planting for Beauty That Lasts',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Ornamental trees are the most personal investments in a landscape. They are chosen not for productivity or function but for pure delight — the way a redbud in full bloom stops you in your tracks on an April morning, the way a Japanese maple glows like fire in late October sun, the way a paperbark maple\'s cinnamon bark catches the low winter light and makes a gray January day feel less gray.',
+        },
+        {
+          type: 'p',
+          text: 'The principles here will guide you to better choices and better outcomes: know your site, choose the right tree, plant it with care, prune it at the right time, and then mostly leave it alone. The most important work happens in the first three years of establishment. After that, the tree largely takes care of itself — and the landscape takes care of you.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌸',
+          text: 'A few last thoughts worth carrying with you: Always choose native ornamentals when they offer equal or better beauty to non-native alternatives. Never plant invasive trees regardless of their flowers. Buy the best tree you can afford — quality nursery stock from a reputable source starts with a structural advantage that cheaper trees never fully overcome. And finally: plant small and let the tree grow, rather than planting a large balled-and-burlapped tree and waiting years for it to recover from transplant shock. A 2-inch caliper tree planted well will often surpass a 4-inch caliper tree poorly planted within just three years.',
+        },
+        {
+          type: 'p',
+          text: 'Ornamental trees give beauty in every season. Find the ones that speak to you, match them to your site, and plant them with confidence. The best time to plant a great ornamental tree is today.',
         },
       ],
     },
