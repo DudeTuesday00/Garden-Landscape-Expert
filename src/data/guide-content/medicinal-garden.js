@@ -406,20 +406,108 @@ export const medicinalGardenContent = {
     },
 
     {
-      id: 'growing-guide',
-      title: 'Growing Guide — Detailed Herb Profiles',
+      id: 'topical-respiratory',
+      title: 'Topical, Wound Healing & Respiratory Plants',
       blocks: [
+        {
+          type: 'p',
+          text: 'This section covers the herbs most valued for wound healing and topical use, followed by the plants most effective for respiratory conditions. Many of these plants cross categories — calendula is both a wound herb and an anti-inflammatory internally; yarrow acts as both a topical hemostatic and an internal fever herb.',
+        },
+        { type: 'h3', text: 'Wound Healing & Topical Herbs' },
         { type: 'h3', text: '🧡 Calendula (Calendula officinalis)' },
+        {
+          type: 'p',
+          text: 'Calendula is the premier wound-healing herb of Western herbalism, with documented anti-inflammatory, antifungal, antiseptic, and vulnerary (wound-healing) activity. It is also one of the most beautiful garden plants — bright orange and gold daisy flowers that bloom from spring through frost.',
+        },
         {
           type: 'list',
           items: [
-            'Annual — grows in all zones. Prefers cool weather; blooms best in spring and fall.',
-            'Sun and soil: Full sun; average well-drained soil. Direct sow in early spring 2–3 weeks before last frost (seeds tolerate light frost).',
-            'Growing: The more you harvest, the more it blooms. A single plant cut regularly will produce 50–100 flowers over a season. Stop producing in extreme summer heat; cut back and it rebounds in fall.',
-            'Harvest: Pick flowers when fully open. Use fresh in infused oil or dry on screens in a warm location with airflow.',
-            'Medicinal use: Calendula is the premier herb for skin: wound healing, soothing burns and rashes, treating eczema and dry skin, and promoting cell repair. It works primarily as an infused oil or salve applied topically. Calendula tea soothes the digestive tract lining and has mild antifungal properties.',
+            'Active constituents: Triterpenoid saponins (oleanolic acid, faradiol — the most anti-inflammatory constituents), flavonoids (isorhamnetin, quercetin, narcissin), carotenoids (the orange pigments — tissue-healing), polysaccharides, essential oils.',
+            'Preparations: Calendula-infused oil (pack dried flowers in olive oil; solar infusion 4–6 weeks or warm oil method at low heat; strain through cheesecloth; use as-is or melt with beeswax for salve), tincture (internal anti-inflammatory; topical), tea (internal use for gut inflammation, lymphatic support).',
+            'Uses: Burns, cuts, abrasions, eczema, psoriasis, diaper rash, fungal infections, chapped lips, post-radiation skin care, inflamed mucous membranes, gastric ulcers (internal use).',
+            'Growing across US climates: Annual grown in all US climate zones. In Zones 3–7: direct sow outdoors in early spring — calendula tolerates light frost. It blooms spring through summer and again after fall temperatures drop. In Zones 8–10: sow in fall for winter-spring bloom; summer heat causes poor performance — grow as a cool-season crop. Deadhead regularly to extend bloom. Harvest flowers when fully open in the morning.',
           ],
         },
+        { type: 'h3', text: '🌿 Plantain (Plantago major / P. lanceolata)' },
+        {
+          type: 'p',
+          text: 'Plantain is quite literally a weed in most American lawns — the broad-leaved or lance-leaved rosette that grows in compacted soil and path edges. It is also one of the most useful first-aid herbs available, requiring no cultivation and no preparation: a leaf chewed briefly and applied to an insect sting or bee sting provides near-immediate relief.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Aucubin (iridoid glycoside — anti-inflammatory), allantoin (promotes cell proliferation and wound healing — the same constituent that makes comfrey effective), mucilage (soothing), tannins (astringent, antimicrobial).',
+            'Preparations: Fresh leaf poultice (chew briefly or mash; apply directly to insect stings, bee stings, minor cuts — the fastest topical first aid available in any American garden), tea (respiratory soothing, cough, gut healing), syrup (respiratory support), salve (wound healing, skin inflammation), tincture.',
+            'Growing: Both Plantago major (broad-leaf) and P. lanceolata (narrow-leaf, ribwort) are already naturalized throughout North America — check your lawn before planting. If growing intentionally: direct sow, any soil, sun or shade, any zone. Harvest from chemical-free areas only.',
+          ],
+        },
+        { type: 'h3', text: '🌻 Yarrow (Achillea millefolium)' },
+        {
+          type: 'p',
+          text: 'Yarrow takes its botanical name from the myth that Achilles used it to staunch the wounds of his soldiers at Troy — and its hemostatic property is genuinely one of the most well-documented first-aid effects of any plant. Applied directly to a wound as a fresh poultice, yarrow reduces bleeding faster than pressure alone in most minor wounds.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Achilleine (alkaloid — specific hemostatic activity), flavonoids (anti-inflammatory, antispasmodic), sesquiterpene lactones (anti-inflammatory), essential oils (anti-inflammatory, antimicrobial), tannins.',
+            'Preparations: Fresh leaf poultice (hemostasis — press directly to bleeding wound), tea (fever — strong yarrow tea is diaphoretic, promoting sweating to break fever; digestive bitter; anti-inflammatory), tincture (bitter digestive tonic, anti-inflammatory, menstrual regulation), sitz bath (perineal wound healing postpartum).',
+            'Growing across US climates: Hardy perennial wildflower native across North America, Zones 3–9. Full sun, well-drained soil. Drought-tolerant once established — an excellent choice for the dry West, Great Plains, and Southwest. In the humid South and Southeast, provide good air circulation to prevent fungal issues. Spreads aggressively by rhizome — site accordingly. White-flowered A. millefolium is the standard medicinal form; colored ornamental varieties have less potent medicinal activity.',
+            'Cautions: Pregnancy (uterine stimulant — avoid). Asteraceae allergy. Theoretical anticoagulant interaction. Contact dermatitis in sensitive individuals.',
+          ],
+        },
+        { type: 'h3', text: 'Respiratory Herbs' },
+        { type: 'h3', text: '🕯️ Mullein (Verbascum thapsus)' },
+        {
+          type: 'p',
+          text: 'Mullein is the classic respiratory herb of American folk medicine, deeply embedded in Appalachian, Native American, and early settler traditions. A biennial weed with enormous flannel-soft leaves in a first-year rosette and a dramatic 6-foot flower spike in year two. The leaves address respiratory congestion and chronic cough; the flowers infused in olive oil are a traditional ear pain remedy.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Mucilage (soothing, expectorant), saponins (expectorant, anti-inflammatory), iridoid glycosides, flavonoids.',
+            'Preparations: Leaf tea (use generous amounts; strain well through fine cloth — the leaf hairs are irritating to mucous membranes; add honey for cough syrup effect), mullein flower ear oil (infuse fresh yellow flowers in warm olive oil; apply with dropper to ear canal for ear pain — do NOT use if eardrum may be perforated), tincture.',
+            'Growing across US climates: Biennial naturalized across the entire continental US — it is likely already growing on roadsides, disturbed ground, or meadow edges near you, from Maine to California. If growing intentionally: direct sow in fall or early spring on poor, dry, disturbed soil. Full sun. Self-seeds prolifically. Year one: rosette of large woolly leaves. Year two: tall flower spike up to 6 feet.',
+          ],
+        },
+        { type: 'h3', text: '🌿 Thyme (Thymus vulgaris)' },
+        {
+          type: 'p',
+          text: 'Thyme is simultaneously one of the most useful culinary herbs and one of the most effective respiratory herbs in the garden. Thymol and carvacrol, its primary essential oil components, have strong antimicrobial activity against the bacteria that cause respiratory tract infections, as well as bronchodilating and expectorant effects.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Thymol (antimicrobial, expectorant, bronchodilating), carvacrol (antimicrobial), rosmarinic acid (anti-inflammatory), flavonoids.',
+            'Clinical evidence: A well-designed German clinical trial demonstrated that thyme-ivy syrup was equivalent to the prescription bronchodilator ambroxol for acute bronchitis.',
+            'Preparations: Thyme honey (pack fresh thyme sprigs into a jar; cover completely with raw honey; infuse 2–4 weeks at room temperature; take by the spoonful for cough or sore throat), thyme syrup (strong decoction with honey), steam inhalation (steep thyme in just-boiled water; breathe steam with a towel over the head for bronchial congestion), tea, tincture.',
+            'Growing across US climates: Hardy perennial in Zones 4–9; marginally hardy in Zone 3 with mulching. Full sun, well-drained soil. Drought-tolerant — a reliable performer in the arid West, Southwest, and Mediterranean-climate California. In cold-winter Zones 3–4, treat as a tender perennial or bring containers indoors.',
+          ],
+        },
+        { type: 'h3', text: '🌾 Elecampane (Inula helenium)' },
+        {
+          type: 'p',
+          text: 'Elecampane is a magnificent large perennial — 4–6 feet tall with enormous leaves and golden daisy-like flowers — and one of the most important herbs in Western herbal medicine for deep, chronic respiratory conditions. While thyme and mullein address acute respiratory symptoms, elecampane is indicated for established chronic bronchitis, lingering respiratory infections, and wet, productive coughs with thick mucus.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Inulin (prebiotic polysaccharide — approximately 50% of root by weight), sesquiterpene lactones (alantolactone, isoalantolactone — antimicrobial, anti-inflammatory, expectorant), essential oil.',
+            'Preparations: Decoction (root: simmer 20–30 minutes; combine the strained liquid with honey and lemon for a cough syrup decoction), tincture, syrup.',
+            'Growing across US climates: Hardy perennial in Zones 3–9 — one of the most cold-tolerant large medicinal herbs. Naturalized widely across the eastern US and adaptable throughout the country. Moist, rich soil; part shade to full sun. Thrives in the humid East, Great Lakes region, and Pacific Northwest. In dry western climates, provide supplemental irrigation and rich mulch. Reaches 5–6 feet in good conditions; plant at the back of borders. Harvest roots in fall of year 2–3.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🫁',
+          text: 'Respiratory Herb Matching: Use mullein or thyme for acute respiratory infections and coughs — both work quickly. Use elecampane for chronic or lingering respiratory conditions where the infection has cleared but congestion and cough persist. Thyme honey is the simplest and most palatable preparation for children\'s coughs. Plantain tea soothes dry, irritated respiratory membranes and is safe for all ages.',
+        },
+      ],
+    },
+
+    {
+      id: 'growing-guide',
+      title: 'Growing Guide — Detailed Herb Profiles',
+      blocks: [
         { type: 'h3', text: '🌿 Peppermint & Spearmint (Mentha × piperita, M. spicata)' },
         {
           type: 'list',
@@ -440,16 +528,6 @@ export const medicinalGardenContent = {
             'Growing: Plant transplants in spring. Space 18–24 inches apart. Prune after flowering — cut back by 1/3 but never into old wood, which does not regenerate.',
             'Harvest: Cut flower spikes when buds are 50% open for maximum essential oil. Bundle and hang upside down to dry in a warm, ventilated location.',
             'Medicinal use: Lavender aromatherapy reduces anxiety and promotes sleep — clinical trials support this. Lavender tea (1 tsp dried buds per cup, steeped 5 minutes) is calming and mildly analgesic. Diluted lavender essential oil applied topically soothes minor burns and insect stings.',
-          ],
-        },
-        { type: 'h3', text: '🌻 Yarrow (Achillea millefolium)' },
-        {
-          type: 'list',
-          items: [
-            'Zones: 3–9. Tough, drought-tolerant native perennial. Spreads by rhizome — site accordingly.',
-            'Sun and soil: Full sun; poor to average, very well-drained soil. Tolerates drought and neglect. Performs poorly in rich, moist soil.',
-            'Harvest: Cut flower clusters with leaves when fully open. Dry in bundles or on screens.',
-            'Medicinal use: Yarrow is one of the oldest wound herbs — pressed against a cut, it acts as a styptic (stops bleeding). Strong yarrow tea induces diaphoresis (sweating), which can help break a fever. Internally, yarrow tea supports digestion and reduces cramping.',
           ],
         },
         { type: 'h3', text: '🌿 Comfrey (Symphytum officinale)' },
