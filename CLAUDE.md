@@ -370,7 +370,7 @@ export async function generateMetadata({ params }) {
 | Section 6: Growing the Medicinal Garden | ✅ Done | USDA zone chart (5-row), garden design principles, LFD-relative 10-row seasonal calendar, 6-row harvest quality table, drying methods, storage guidelines |
 | Section 7: Cannabis | ✅ Done | Legal status warning (federal + 50-state patchwork), ECS explanation (CB1/CB2/CBD mechanism), 8-row CBD vs THC properties table, growing hemp across US climates (regional notes), infused oil + tincture preparations, entourage effect tip; cannabis removed from growing-guide |
 | Section 8: Preparations & Recipes | ✅ Done | Tinctures (folk method + weight-to-volume with menstruum selection guide), elderberry syrup (updated), calendula salve (2-step: infused oil then beeswax), thyme honey, nervine sleep tea blend, oxymel |
-| Section 9: Safety & Drug Interactions | 🔲 Pending | Expand drug interaction table; add conditions table |
+| Section 9: Safety & Drug Interactions | ✅ Done | "Tell your providers" warning; 9-row drug interaction table (Herb / Interacts With / Mechanism / Clinical Significance) adding Ginkgo, Garlic, Hawthorn, Passionflower, Licorice, CBD; 8-row "Herbs to Avoid in Specific Conditions" table (Pregnancy, Breastfeeding, Autoimmune, Epilepsy, Hypothyroidism, Liver disease, Hormone-sensitive cancers, Before surgery) |
 | Section 10: Additional Herb Profiles | 🔲 Pending | Milk Thistle, Marshmallow, Hops, Black Cohosh, Ginger, Turmeric, Hawthorn, etc. |
 | Closing reflection | 🔲 Pending | Final paragraph from docx |
 

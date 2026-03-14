@@ -839,39 +839,56 @@ export const medicinalGardenContent = {
 
     {
       id: 'safety-responsible-use',
-      title: 'Safety & Responsible Use',
+      title: 'Safety, Drug Interactions & Contraindications',
       blocks: [
         {
           type: 'p',
-          text: 'Medicinal herbs are effective because they contain biologically active compounds. This is their value — and the source of their risks. Responsible use means understanding not just what an herb does, but when not to use it.',
-        },
-        {
-          type: 'table',
-          headers: ['Herb', 'Key Cautions', 'Drug Interactions', 'Avoid If'],
-          rows: [
-            ['Echinacea', 'Not for daily long-term use; use for acute illness periods', 'May reduce effectiveness of immunosuppressants', 'Autoimmune conditions (lupus, MS, rheumatoid arthritis); organ transplant recipients'],
-            ['Elderberry (cooked)', 'Raw berries toxic — always cook; red elderberry is always toxic', 'None well-documented', 'Autoimmune conditions (stimulates immune activity)'],
-            ['St. John\'s Wort', 'Major drug interactions — do not use casually', 'Reduces effectiveness of: birth control pills, antiretrovirals, cyclosporine, digoxin, warfarin, many antidepressants. Can cause serotonin syndrome with SSRIs.', 'Anyone on prescription medications without medical supervision'],
-            ['Valerian', 'Can cause vivid dreams; rarely causes paradoxical stimulation', 'Additive effect with sedatives, benzodiazepines, alcohol', 'Do not combine with prescription sleep aids or anti-anxiety medications without guidance'],
-            ['Comfrey', 'Contains liver-toxic pyrrolizidine alkaloids', 'Not applicable — topical use only', 'Never ingest; do not apply to broken skin or open wounds'],
-            ['Motherwort', 'Uterine stimulant — stimulates contractions', 'May interact with heart medications (digoxin)', 'Pregnancy (contraindicated); heart arrhythmia patients on medication'],
-            ['Ashwagandha', 'Thyroid-stimulating effect; sedating in large doses', 'May interact with thyroid medications, immunosuppressants', 'Pregnancy; thyroid disorders without medical supervision'],
-            ['Cannabis / CBD hemp', 'May cause drowsiness; THC is psychoactive; legal status varies', 'CBD inhibits CYP450 enzymes — can affect blood thinners, seizure medications, and other drugs metabolized by the liver', 'Pregnancy and nursing; children (except prescribed medical CBD); operating heavy machinery when using THC-containing products'],
-          ],
+          text: 'This section is among the most important in the guide. Herbs are real medicines with real effects on human physiology, and they interact with prescription medications in ways that can be clinically significant. The following tables cover the most important interactions and contraindications for the herbs in this guide.',
         },
         {
           type: 'warning',
           emoji: '⚠️',
-          text: 'St. John\'s Wort Drug Interactions: This herb is included in this guide because it is a genuinely effective treatment for mild depression and nerve pain — but it has more documented drug interactions than almost any other herb. If you take any prescription medication, research St. John\'s Wort interactions thoroughly before use. The interactions include birth control failure, transplant rejection, and antidepressant toxicity. Use only with informed awareness.',
+          text: 'Most Important Safety Rule — Tell Your Healthcare Providers: The most important single action you can take to use herbal medicine safely is to tell your physician, pharmacist, and other healthcare providers exactly which herbs you are taking, in what amounts, and how regularly. Many drug-herb interactions are predictable and avoidable once providers know what you are taking. This conversation is particularly important if you take: anticoagulants (warfarin, heparin, newer blood thinners), antidepressants or psychiatric medications, HIV medications, immunosuppressants (post-transplant), chemotherapy agents, anticonvulsants, cardiovascular medications, or diabetes medications.',
         },
-        { type: 'h3', text: 'Growing for Children' },
+        { type: 'h3', text: 'Major Drug Interactions by Herb' },
+        {
+          type: 'table',
+          headers: ['Herb', 'Interacts With', 'Mechanism', 'Clinical Significance'],
+          rows: [
+            ['St. John\'s Wort', 'SSRIs, SNRIs, MAOIs, triptans (serotonin syndrome risk); warfarin, birth control pills, HIV antiretrovirals, cyclosporine, digoxin, anticonvulsants', 'Potent inducer of CYP3A4, CYP2C9 enzymes and P-glycoprotein efflux; also has serotonergic activity', 'MAJOR — Can reduce blood levels of many medications by 30–70%, causing therapeutic failure. Serotonin syndrome with serotonergic drugs is potentially life-threatening. ALWAYS disclose to providers.'],
+            ['Ginkgo', 'Anticoagulants (warfarin, aspirin, clopidogrel), NSAIDs, antidiabetics, MAOIs, trazodone', 'Antiplatelet activity (PAF inhibition); possible CYP interactions', 'SIGNIFICANT — Increased bleeding risk with anticoagulants and antiplatelet drugs. Case reports of serious bleeding events. Monitor INR if on warfarin.'],
+            ['Garlic (high dose)', 'Warfarin, saquinavir (HIV), antiplatelet drugs', 'Antiplatelet activity; possible CYP3A4 and CYP2C9 interaction at high doses', 'MODERATE — Culinary amounts (1–2 cloves) are generally not clinically significant. Supplement doses or concentrated preparations may increase bleeding risk.'],
+            ['Hawthorn', 'Digoxin, antihypertensives, nitrates, PDE-5 inhibitors (sildenafil)', 'Positive inotropic effects; vasodilation; may potentiate cardiac medications', 'SIGNIFICANT — Hawthorn has real cardiovascular activity. Combination with cardiac medications requires medical supervision.'],
+            ['Valerian', 'CNS depressants (benzodiazepines, barbiturates, alcohol, opioids, sedating antihistamines), anesthesia', 'Additive/synergistic sedation via GABA modulation', 'MODERATE to SIGNIFICANT — Enhanced CNS depression. Avoid combining without medical guidance. Disclose to anesthesiologist before any procedure.'],
+            ['Passionflower', 'MAOIs, CNS depressants, sedatives', 'Beta-carboline alkaloids have possible MAOI-like activity; additive sedation with depressants', 'MODERATE — Do not combine with MAOIs. Additive effect with other sedatives.'],
+            ['Licorice root (high/long-term dose)', 'Antihypertensives, diuretics, digoxin, corticosteroids, warfarin', 'Mineralocorticoid effect causes sodium retention and potassium loss; hypokalemia potentiates digoxin toxicity', 'SIGNIFICANT at high doses — Can cause serious hypertension, edema, and electrolyte disturbances. Use deglycyrrhizinated licorice (DGL) for gut applications.'],
+            ['Echinacea', 'Immunosuppressants (cyclosporine, tacrolimus), potentially hepatotoxic drugs (long-term use)', 'Immune stimulation may oppose immunosuppression; theoretical hepatotoxicity concern', 'LOW to MODERATE — Theoretical concern; avoid in organ transplant patients on immunosuppressants.'],
+            ['CBD (Cannabis)', 'Warfarin, clobazam and other anticonvulsants, tacrolimus, SSRIs, many others', 'CYP2C9 and CYP3A4 inhibition; elevated levels of co-administered drugs', 'SIGNIFICANT — CBD\'s CYP450 inhibition is clinically significant, particularly for narrow-therapeutic-index drugs. Warfarin INR can increase substantially. Disclose to all providers.'],
+          ],
+        },
+        { type: 'h3', text: 'Herbs to Avoid in Specific Conditions' },
+        {
+          type: 'table',
+          headers: ['Condition', 'Herbs to Avoid or Use with Caution', 'Reason'],
+          rows: [
+            ['Pregnancy', 'Sage (large doses), yarrow, passionflower, blue cohosh, pennyroyal, tansy, wormwood, high-dose tulsi, ashwagandha, licorice (high dose)', 'Uterine stimulant effects, potential teratogenicity, or insufficient safety data. Use only gentle food-grade herbs (ginger for nausea has good evidence of safety) in pregnancy; consult provider for anything else.'],
+            ['Breastfeeding', 'High-dose sage (suppresses lactation — sometimes used intentionally for weaning), any uterine stimulant, herbs with insufficient safety data', 'Risk of transfer to infant in milk; some herbs affect milk production.'],
+            ['Autoimmune conditions (lupus, MS, RA, IBD)', 'Echinacea, astragalus, cat\'s claw, andrographis (immune stimulants generally)', 'Theoretical risk of exacerbating autoimmune activity. Adaptogens may be used but with provider awareness.'],
+            ['Epilepsy / seizure disorders', 'Sage (large doses), rosemary (large doses), wormwood, hyssop (large doses)', 'Pro-convulsant activity at high doses due to thujone (sage) or camphor (rosemary) content. Culinary amounts are safe.'],
+            ['Hypothyroidism', 'High-dose lemon balm, high-dose bugleweed', 'Thyrotropin inhibition; may reduce thyroid hormone levels.'],
+            ['Liver disease', 'Kava, high-dose comfrey, germander, pennyroyal, high-dose licorice, chaparral', 'Direct or indirect hepatotoxic potential. Even herbs with low hepatotoxicity risk should be used with caution in compromised liver function.'],
+            ['Hormone-sensitive cancers (breast, uterine, ovarian)', 'Phytoestrogen-rich herbs (red clover, dong quai, black cohosh, high-dose flaxseed); possibly sage', 'Potential estrogen-receptor stimulating activity. Consult oncologist before using any herbal product.'],
+            ['Before surgery / procedures', 'Blood-thinning herbs (garlic, ginger, ginkgo, turmeric, dong quai, feverfew) within 2 weeks of surgery', 'Increased bleeding risk intraoperatively and postoperatively. Disclose ALL supplements to your surgical team.'],
+          ],
+        },
+        { type: 'h3', text: 'Using Herbs Safely with Children' },
         {
           type: 'list',
           items: [
             'Safe herbs for children\'s teas: Chamomile, lemon balm, spearmint, and elderflower are gentle and well-tolerated by most children. Doses are proportional to body weight — approximately half the adult dose for school-age children.',
             'Avoid for children: Echinacea, St. John\'s Wort, valerian, motherwort, ashwagandha, and comfrey should not be used for children without guidance from a pediatric herbalist or integrative physician.',
-            'Elderberry syrup for children: Well-tolerated by children over age 1 (do not give honey to children under 12 months). The pleasant flavor makes it easy to administer.',
-            'Garden safety: Mark comfrey with clear signage and explain its topical-only status to household members. Ensure children understand that touching plants is fine, but eating unknown plants is not.',
+            'Elderberry syrup for children: Well-tolerated by children over age 1. Do not give honey to children under 12 months.',
+            'Garden safety: Mark comfrey with clear signage. Ensure children understand that touching plants is fine, but eating unknown plants is not.',
           ],
         },
         {
