@@ -363,7 +363,7 @@ export async function generateMetadata({ params }) {
 | Overview table (`essential-herbs`) | ✅ Done | Expanded from 16 → 30 herbs; columns updated to Herb / Primary Uses / Part Used / Preparation / Ease / Cautions |
 | Safety First warning | ✅ Done | Expanded to all 5 docx principles |
 | Section 1: Science of Plant Medicine | ✅ Done | 6 constituent classes, 8-row extraction method table, 4-tier evidence spectrum, tip callout |
-| Section 2: Immune & Antiviral Plants | 🔲 Pending | Echinacea, Elderberry, Astragalus, Garlic |
+| Section 2: Immune & Antiviral Plants | ✅ Done | Echinacea (3 species), Elderberry+Elderflower (toxicity warning), Astragalus (new), Garlic (new); stacking tip; dupes removed from growing-guide |
 | Section 3: Nervines & Sleep | 🔲 Pending | Add Passionflower; expand Chamomile, Lemon Balm, Valerian, Skullcap |
 | Section 4: Adaptogens | 🔲 Pending | Add Rhodiola, Eleuthero; expand Ashwagandha, Tulsi |
 | Section 5: Topical & Respiratory | 🔲 Pending | Add Plantain, Mullein, Thyme, Elecampane; expand Calendula, Yarrow |

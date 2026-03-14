@@ -160,32 +160,88 @@ export const medicinalGardenContent = {
     },
 
     {
+      id: 'immune-antiviral',
+      title: 'Immune & Antiviral Plants',
+      blocks: [
+        {
+          type: 'p',
+          text: 'These are the most important medicinal plants for immune support and antiviral activity. They are among the most evidence-supported and most practical plants for the home medicinal garden, with applications that most people will find immediately relevant and preparations that are straightforward to make.',
+        },
+        { type: 'h3', text: '🌸 Echinacea (Echinacea purpurea, E. angustifolia, E. pallida)' },
+        {
+          type: 'p',
+          text: 'Echinacea is the most widely studied immune herb in Western herbal medicine and one of the best-selling herbal supplements globally. Three species are used medicinally, each with somewhat different constituent profiles. Echinacea purpurea is the easiest to grow and the most clinically researched; E. angustifolia has the strongest traditional reputation in North American herbalism; E. pallida is primarily used in European phytomedicine.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Alkylamides (immunomodulatory — produce the characteristic tingling on the tongue), caffeic acid derivatives (echinacoside, cichoric acid — antioxidant, antiviral), polysaccharides (immune-stimulating), essential oils.',
+            'Evidence: Meta-analyses show modest but statistically significant reductions in cold incidence (approximately 10–58%) and duration (approximately 1.4 days). Effects are more consistent for prevention than treatment. E. purpurea aerial parts and E. angustifolia root show the strongest results.',
+            'Parts used: E. purpurea — aerial parts (leaves, stems, flowers) during bloom; roots in fall. E. angustifolia — roots. E. pallida — roots.',
+            'Preparations: Tincture (1:5 in 60% alcohol) is the most effective preparation for alkylamides — it should produce a noticeable tingling-numbing sensation on the tongue. Tea (less effective for alkylamides but still contains polysaccharides and caffeic acids). Glycerite (alcohol-free option, some loss of alkylamide extraction).',
+            'Contraindications: Autoimmune conditions (lupus, MS, rheumatoid arthritis) — theoretical contraindication based on immune-stimulating activity. Avoid in organ transplant recipients on immunosuppressants. Limit continuous use to 8–12 weeks; use seasonally or intermittently.',
+            'Growing across US climates: All three species are prairie perennials hardy in Zones 3–9. E. purpurea tolerates more humidity and heavier soil — the better choice for the South and East. E. angustifolia prefers lean, well-drained soils of the Great Plains and West. Direct sow in fall for spring germination, or cold-stratify seeds 4–6 weeks before spring sowing. Harvest roots in fall of year 3+ for medicinal quality.',
+          ],
+        },
+        { type: 'h3', text: '🫐 Elder (Sambucus nigra) — Elderberry & Elderflower' },
+        {
+          type: 'p',
+          text: 'Elder is one of the most medicinally versatile plants in temperate gardens, providing two distinct medicines from the same plant at different times of year: elderflowers in late spring (anti-inflammatory, diaphoretic, decongestant) and elderberries in late summer and fall (antiviral, immune-modulating, extraordinarily high in anthocyanins and flavonoids). Both have strong evidence bases and excellent safety profiles when properly prepared.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents (berries): Anthocyanins (cyanidin-3-glucoside and cyanidin-3-sambubioside — antiviral activity, inhibit viral hemagglutinin), flavonoids (quercetin, kaempferol), sambunigrin (cyanogenic glycoside — denatured by heat or 40%+ alcohol).',
+            'Evidence: Multiple clinical trials show elderberry extract significantly reduces duration and severity of influenza and cold symptoms. A 2016 randomized trial showed elderberry supplementation reduced cold duration by an average of 2 days.',
+            'Elderflower preparations: Tea (diaphoretic — promotes sweating during fever; decongestant; anti-inflammatory), tincture, cordial. Elderflowers can be used fresh or dried.',
+            'Growing across US climates: Sambucus nigra is extremely widely adapted in Zones 3–9. Native American Sambucus canadensis (American black elder) is an excellent choice for eastern gardeners and is native across the entire eastern US. In the arid Southwest and high Plains, provide supplemental irrigation and mulch. Plant 2 varieties for cross-pollination and maximum berry set. Expect first significant harvest in year 2–3.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '🚫',
+          text: 'Raw Elderberries Are Toxic: Fresh or dried elderberries contain sambunigrin, which hydrolyzes to hydrogen cyanide. Raw elderberries cause nausea, vomiting, and in large quantities, serious toxicity. All elderberry preparations for internal use must use heat or alcohol to denature the cyanogenic compounds. Cooked elderberry syrup, tinctures in 40%+ alcohol, and fully cooked preparations are all safe. Red elderberry (Sambucus racemosa) is always toxic and must never be used.',
+        },
+        { type: 'h3', text: '🌱 Astragalus (Astragalus membranaceus)' },
+        {
+          type: 'p',
+          text: 'Astragalus is a foundational herb in Traditional Chinese Medicine, used for over 2,000 years as a deep immune tonic and restorative herb. This distinction is important: astragalus is best used as a long-term immune tonic (weeks to months), not as an acute treatment during active infection — it complements echinacea rather than replacing it.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Astragalosides (saponins — including astragaloside IV with documented telomere research), polysaccharides (astragalans — immune-modulating), flavonoids.',
+            'Preparations: Decoction (simmer root slices 30–45 minutes and drink as tea), tincture, powder added to soups and broths. Traditional Chinese use often involves simmering whole root slices in broth for immune tonic benefit.',
+            'Contraindications: Active autoimmune conditions; immunosuppressant medications. Not a substitute for echinacea during acute illness.',
+            'Growing across US climates: Hardy perennial legume across Zones 5–9. Full sun, excellent drainage, lean soil. Grows well across the Midwest, Plains, South, and West. In the humid Southeast, ensure very good drainage to prevent root rot. In Zones 3–4, grow as a self-seeding annual or mulch roots heavily before winter. Inoculate seeds with rhizobium legume inoculant for best establishment. Harvest roots in fall of year 3–4.',
+          ],
+        },
+        { type: 'h3', text: '🧄 Garlic (Allium sativum) — The Kitchen Medicine' },
+        {
+          type: 'p',
+          text: 'Garlic is the most evidence-supported antimicrobial plant in any kitchen garden. Allicin — the compound formed when garlic is crushed, releasing alliinase enzyme to convert alliin — has potent broad-spectrum antimicrobial activity. It is unstable, volatile, and destroyed by heat, which is why raw garlic has stronger medicinal activity than cooked.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Active constituents: Allicin (unstable, antimicrobial, formed on crushing), S-allyl cysteine (more stable, cardiovascular effects, present in aged garlic), sulfur compounds broadly.',
+            'Preparations: Raw crushed garlic in honey (1–2 raw crushed cloves in honey for immune support during illness), oxymel (garlic in apple cider vinegar and honey), Fire Cider (apple cider vinegar infused with garlic, horseradish, ginger, onion, and cayenne for 4–6 weeks; strain; add honey).',
+            'Cautions: At culinary amounts (1–2 cloves), drug interactions are not clinically significant. Supplement doses or concentrated preparations may increase bleeding risk with anticoagulants such as warfarin.',
+            'Growing across US climates: Garlic is grown across all 50 states. In most of the continental US (Zones 3–8), plant hardneck or softneck cloves in fall (October–November) after first frost but before hard freeze. In mild-winter areas (Zones 9–10 — Southern California, Gulf Coast, Florida, Hawaii), plant October–December and choose softneck varieties that require less cold vernalization.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🛡️',
+          text: 'Stacking Immune Herbs: Echinacea, elderberry, astragalus, and garlic work through different mechanisms and complement each other well. A practical protocol: astragalus as a daily long-term tonic (in tea or soups), elderberry syrup daily through cold and flu season, echinacea at the first sign of illness for 7–10 days, and raw garlic or fire cider during active infection.',
+        },
+      ],
+    },
+
+    {
       id: 'growing-guide',
       title: 'Growing Guide — Detailed Herb Profiles',
       blocks: [
-        { type: 'h3', text: '🌸 Echinacea (Echinacea purpurea, E. angustifolia)' },
-        {
-          type: 'list',
-          items: [
-            'Zones: 3–9. Hardy perennial that establishes slowly but lives for decades.',
-            'Sun and soil: Full sun; well-drained average soil. Tolerates clay and drought once established. Excellent native prairie plant.',
-            'Growing: Start from seed (stratify 4–6 weeks in moist medium in the refrigerator before sowing) or plant transplants. Expect modest growth the first year; full production by year 2–3.',
-            'Harvest: Flowers and leaves throughout the growing season. Roots are harvested in fall of year 3 or later — dig the entire root, wash, and dry or tincture immediately.',
-            'Medicinal use: E. purpurea flower/leaf preparations support immune function. E. angustifolia root is the most potent form. Best used at the onset of illness for 7–10 days, not as a daily supplement.',
-          ],
-        },
-        { type: 'h3', text: '🫐 Elderberry (Sambucus nigra)' },
-        {
-          type: 'list',
-          items: [
-            'Zones: 3–9. Large deciduous shrub, 8–12 feet tall and wide. Plant at least two for cross-pollination.',
-            'Sun and soil: Full sun to part shade; moist, fertile soil. Elderberry grows wild along stream banks and woodland edges — it loves moisture.',
-            'Growing: Plant bare-root plants or rooted cuttings in spring. Prune in late winter — remove old canes after 3 years, keep the most vigorous newer canes.',
-            'Caution: Only ripe black/dark purple berries of Sambucus nigra are used medicinally. Raw berries contain sambunigrin, which can cause nausea — always cook berries before making syrup or preparations. Red elderberry (S. racemosa) is toxic and must not be used.',
-            'Harvest: Flowers (elderflower) in late spring/early summer — cut whole flower clusters. Berries in late summer when fully ripe and dark purple-black.',
-            'Medicinal use: Elderberry syrup is among the most well-studied herbal preparations for reducing flu duration and severity. Elderflower makes a gentle tea for fever, sinus congestion, and mild upper respiratory infection.',
-          ],
-        },
         { type: 'h3', text: '🌼 Chamomile (Matricaria chamomilla — German Chamomile)' },
         {
           type: 'list',
