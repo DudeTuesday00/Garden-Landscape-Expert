@@ -178,15 +178,66 @@ export const childrensGardenContent = {
         { type: 'h3', text: 'Garden Layouts by Age' },
         {
           type: 'p',
-          text: "The Toddler & Preschool Garden (Ages 2–5): A single 4×4 raised bed or large containers. Cherry tomatoes, sunflowers, radishes. High adult supervision; the adult does most of the gardening while narrating and involving the child.",
+          text: "The right garden structure depends entirely on the age of the child. Very young children need a sensory experience, not a production garden. Elementary-age children can handle real ownership. Tweens can manage full project-scale gardens with a budget. Each stage has its own design principles, best plants, and adult role.",
         },
+        { type: 'h3', text: '🌱 The Toddler & Preschool Garden (Ages 2–5): The Sensory Bed' },
         {
           type: 'p',
-          text: "The Elementary Garden (Ages 6–10): A 4×8 raised bed or dedicated 4×4 within a larger family garden. Children plan on graph paper, read seed packets, keep a journal, and take real ownership of harvest decisions.",
+          text: "Very young children cannot manage a full vegetable garden — and they do not need to. What they need is a garden that engages every sense: the smell of basil, the texture of soil between their fingers, the color of a sunflower, the taste of a warm cherry tomato. Success at this stage is not measured in harvests — it is measured in curiosity, delight, and a growing sense that the garden is a safe, interesting place to spend time.",
         },
         {
+          type: 'list',
+          items: [
+            'Scale: A single 4×4 raised bed or two to three large containers placed at a height the child can reach while standing — no bending required.',
+            'Best plants: Cherry tomatoes (Sun Gold or Juliet), sunflowers (Mammoth or Teddy Bear), radishes (Cherry Belle), nasturtiums (edible flowers children can eat right off the plant), and strawberries.',
+            'Adult role: High supervision. The adult does most of the actual gardening while narrating every action — "I am pushing the seed into the soil, about this deep." The child participates in specific moments: watering with a small can, poking seeds into prepared holes, picking ripe fruit.',
+            'Activities: Watering with a small, light watering can they can manage when full. Poking large seeds (beans, sunflowers) into pre-prepared holes. Picking ripe tomatoes by color. Smelling basil and mint leaves.',
+            'What to avoid: Beds wider than 3 feet (cannot reach center). Tools too heavy to use effectively. Gardens that require patience for more than two weeks without visible change — radishes and nasturtiums solve this.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌻',
+          text: "At this age the garden is not about the harvest — it is about the experience of being in a growing space. A 3-year-old who smells basil every time she passes the bed, who pokes beans into the soil each spring, and who eats a cherry tomato warm from the vine is building a relationship with growing things that will inform the rest of her life.",
+        },
+        { type: 'h3', text: '🥕 The Elementary Garden (Ages 6–10): The Learning Garden' },
+        {
           type: 'p',
-          text: "The Tween Garden (Ages 11–14): Full garden project with planning, budgeting, and management. Older children can grow for a market stall, grow ingredients for a specific cuisine, or attempt record-breaking plants. Adult is consultant, not director.",
+          text: "Children in this age range can take real ownership of a garden. They can read seed packets, follow planting instructions, keep a journal, and make meaningful decisions about what to grow and where. The elementary garden should feel genuinely theirs — a space they planned, planted, and manage — not an adult project they help with.",
+        },
+        {
+          type: 'list',
+          items: [
+            'Scale: A 4×8 raised bed is ideal. Alternatively, a dedicated 4×4 section within a larger family garden with clear borders that define ownership.',
+            'Best plants: Cherry tomatoes, cucumbers, bush beans, radishes, lettuce, pumpkins (Jack-Be-Little for their own mini pumpkin), sunflowers, and one herb (basil or mint) they choose.',
+            'Planning: Let children draw the garden layout on graph paper to scale before planting. They choose which plants go where, subject to sun and spacing requirements. This is their design decision.',
+            'Activities: Reading seed packets and following planting depth instructions. Building the bean teepee structure. Keeping a garden journal with weekly entries and drawings. Harvesting and cooking what they grew — the full farm-to-table cycle.',
+            'Adult role: Guide and resource, not director. Answer questions. Point out problems before they become crises. Let the child make the decisions about harvest timing, plant placement, and what to cook. Step in for safety and technique, not preference.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🫘',
+          text: "The bean teepee is the signature structure of the elementary garden. Six bamboo poles or tall stakes (8 feet) tied at the top, planted with Scarlet Runner beans at the base of each pole. By midsummer, it becomes a leafy, flower-covered hideout children can sit inside. It teaches structure, vining plant behavior, and — most importantly — it is a magical place that is entirely theirs.",
+        },
+        { type: 'h3', text: '🌿 The Tween Garden (Ages 11–14): The Project Garden' },
+        {
+          type: 'p',
+          text: "Older children can manage a full garden project with planning, budgeting, and long-term management. At this stage, the garden becomes an opportunity for genuine entrepreneurship, culinary exploration, or scientific challenge. The adult becomes a consultant and co-investor, not a supervisor — stepping back on decisions while remaining available as a resource.",
+        },
+        {
+          type: 'list',
+          items: [
+            'Scale: A full raised bed system, an in-ground garden, or a container garden large enough to grow meaningful quantities for a chosen project.',
+            'Project-based approaches: Grow-for-a-market-stall (plan what sells, price it, tend the business); grow-for-a-cuisine (Italian garden with tomatoes, basil, peppers; Mexican garden with peppers, tomatillos, cilantro); record-breaking vegetables (Mammoth sunflower height, Atlantic Giant pumpkin weight); grow-and-sell seedlings (start extras indoors, sell at spring plant sales).',
+            'Planning: A tween can manage a full season plan — what to start indoors and when, succession sowing schedules, budget for seeds and supplies, harvest projections.',
+            'Adult role: Consultant and co-investor. Provide the budget and the space. Review the plan and offer feedback if asked. Let the outcomes — including failures — be real. A tween whose pumpkin gets powdery mildew and fails to produce a giant pumpkin has learned more than one whose adult intervened to prevent every problem.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🏷️',
+          text: "For a tween with a market-stall project: cherry tomatoes, herbs (basil, cilantro, dill), edible flowers (nasturtiums, borage), and specialty radishes sell reliably at farmers markets and neighborhood stands. A hand-lettered sign that says 'Grown by [name], age 13' is more compelling than any marketing copy.",
         },
         {
           type: 'table',

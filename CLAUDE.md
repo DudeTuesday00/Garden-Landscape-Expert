@@ -391,6 +391,21 @@ export async function generateMetadata({ params }) {
 
 ---
 
+### Children's Vegetable Garden Guide — Docx Sync Progress
+
+`src/data/guide-content/childrens-vegetable-garden.js` being expanded section-by-section to fully match `Childrens_Vegetable_Garden_Guide.docx`.
+
+| Section | Status | Notes |
+|---|---|---|
+| `garden-design` — Age-specific subsections | ✅ Done | Expanded from 3 brief paragraphs → full Toddler/Preschool, Elementary, and Tween subsections with plants, activities, adult role, and tips |
+| `growing-through-season` — Soil & Planting subsection | 🔲 Pending | Missing: best soil mix (1/3 topsoil / 1/3 compost / 1/3 perlite), what to avoid |
+| `growing-through-season` — Pests table: yellowing leaves row | 🔲 Pending | One missing row |
+| `harvest` — Snap peas + sunflower seeds rows | 🔲 Pending | Two harvest-readiness rows missing |
+| `recipes` — Stovetop Popcorn from Garden-Grown Corn | 🔲 Pending | Entire recipe missing |
+| `troubleshooting` — Weeds row | 🔲 Pending | One missing troubleshooting row |
+
+---
+
 ### Three New Live Guides (28th–30th) ✅
 
 - `src/data/guide-content/plants-for-fragrance.js` — Plants for Fragrance (`id: 'plants-for-smell'`); 7 sections: fragrance types by season, fragrant shrubs & trees, roses, perennials & groundcovers, annuals & climbers, design/placement rules, challenging conditions, and a full seasonal calendar; theme: purple/pink gradient in `GuideDetail.jsx`; set `comingSoon: false` under Herbs & Fragrance in `guides.js`
