@@ -351,11 +351,28 @@ export async function generateMetadata({ params }) {
 
 ### Medicinal Garden Guide ✅
 
-- `src/data/guide-content/medicinal-garden.js` — 27th live guide; covers 16 medicinal herbs and plants (echinacea, elderberry, chamomile, calendula, lemon balm, mint, lavender, valerian, St. John's Wort, tulsi, yarrow, comfrey, skullcap, ashwagandha, motherwort, cannabis/hemp)
-- Six sections: planning & design, herb profiles overview table + detailed growing notes for all 16 plants, harvesting & drying, remedy-making (teas, tinctures, salves, elderberry syrup), zone-neutral seasonal calendar, safety & drug interaction reference table
-- Cannabis section includes: federal hemp vs. state cannabis legal notice, variety selection (Cherry Wine, Suver Haze, etc.), full growing guide, trichome harvest timing, decarboxylation and processing notes, CBD vs. THC explainer, and drug interaction row in the safety table
+- `src/data/guide-content/medicinal-garden.js` — 27th live guide; being expanded section-by-section to match `src/components/guides/Medicinal_Garden_Guide_US.docx` (source of truth)
 - Theme: emerald/purple gradient (`from-emerald-50 to-purple-100`) in `GuideDetail.jsx`
 - Set `comingSoon: false` under Specialty Gardens in `guides.js`
+
+**Medicinal Garden Guide — Docx Sync Progress:**
+
+| Section | Status | Notes |
+|---|---|---|
+| Hero subtitle + intro paragraph | ✅ Done | Updated to match docx opening text |
+| Overview table (`essential-herbs`) | ✅ Done | Expanded from 16 → 30 herbs; columns updated to Herb / Primary Uses / Part Used / Preparation / Ease / Cautions |
+| Safety First warning | ✅ Done | Expanded to all 5 docx principles |
+| Section 1: Science of Plant Medicine | 🔲 Pending | Constituents, preparation methods table, evidence spectrum |
+| Section 2: Immune & Antiviral Plants | 🔲 Pending | Echinacea, Elderberry, Astragalus, Garlic |
+| Section 3: Nervines & Sleep | 🔲 Pending | Add Passionflower; expand Chamomile, Lemon Balm, Valerian, Skullcap |
+| Section 4: Adaptogens | 🔲 Pending | Add Rhodiola, Eleuthero; expand Ashwagandha, Tulsi |
+| Section 5: Topical & Respiratory | 🔲 Pending | Add Plantain, Mullein, Thyme, Elecampane; expand Calendula, Yarrow |
+| Section 6: Growing the Medicinal Garden | 🔲 Pending | Zone chart, garden design, LFD-relative calendar, harvesting table |
+| Section 7: Cannabis | 🔲 Pending | Endocannabinoid system, CBD/THC table, US climate growing, preparations |
+| Section 8: Preparations & Recipes | 🔲 Pending | Add calendula salve, thyme honey, sleep tea blend, oxymel |
+| Section 9: Safety & Drug Interactions | 🔲 Pending | Expand drug interaction table; add conditions table |
+| Section 10: Additional Herb Profiles | 🔲 Pending | Milk Thistle, Marshmallow, Hops, Black Cohosh, Ginger, Turmeric, Hawthorn, etc. |
+| Closing reflection | 🔲 Pending | Final paragraph from docx |
 
 ### Three New Live Guides (28th–30th) ✅
 
