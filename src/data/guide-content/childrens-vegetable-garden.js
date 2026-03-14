@@ -259,6 +259,26 @@ export const childrensGardenContent = {
           type: 'p',
           text: "The most valuable part of a children\'s garden is not the harvest — it is the daily and weekly tasks that build the relationship between the child and the living system she is tending.",
         },
+        { type: 'h3', text: 'Soil & Planting' },
+        {
+          type: 'p',
+          text: "Soil quality is the single most important factor in a children's garden — and it is the one factor most beginner gardeners underestimate. Native garden soil almost always performs poorly in raised beds and containers: it compacts under watering, drains slowly, and becomes hard enough that small hands cannot work it easily. Starting with the right mix makes every other part of the garden easier.",
+        },
+        {
+          type: 'list',
+          items: [
+            'Best soil mix for raised beds and containers: 1/3 quality topsoil, 1/3 compost (well-aged), 1/3 coarse perlite or coarse horticultural vermiculite. This blend drains freely, stays loose enough for children to dig with their hands, and holds moisture without waterlogging roots.',
+            'Why compost matters: Compost feeds the soil biology that makes nutrients available to plants. A bed filled with quality compost is forgiving of beginner mistakes — including overwatering and irregular fertilizing.',
+            'Why perlite matters: Coarse perlite keeps the mix light and aerated as it settles over the season. It prevents the compaction that makes digging frustrating for small hands.',
+            'What to avoid: Do not use pure native garden soil in raised beds or containers — it compacts into a near-brick consistency under repeated watering. Do not use fine sand (it makes compaction worse, not better). Avoid potting mixes that are primarily peat: they repel water when dry and are difficult to re-wet.',
+            'Planting activity: Let children help fill the raised bed by scooping and dumping each ingredient. Mixing the three components together by hand — or with child-sized trowels — is a satisfying, sensory-rich activity that builds ownership of the growing space before a single seed goes in.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🪱',
+          text: "When filling or refreshing a raised bed, earthworms are a sign of healthy, biologically active soil. If children find earthworms while digging, teach them to move them to a shaded area rather than leaving them on hot soil. Worms process organic matter and create pathways for air and water — a children's garden is a natural entry point into soil science and the living ecosystem beneath the surface.",
+        },
         { type: 'h3', text: 'Age-Appropriate Garden Tasks' },
         {
           type: 'table',

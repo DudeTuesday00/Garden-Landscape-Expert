@@ -398,7 +398,7 @@ export async function generateMetadata({ params }) {
 | Section | Status | Notes |
 |---|---|---|
 | `garden-design` — Age-specific subsections | ✅ Done | Expanded from 3 brief paragraphs → full Toddler/Preschool, Elementary, and Tween subsections with plants, activities, adult role, and tips |
-| `growing-through-season` — Soil & Planting subsection | 🔲 Pending | Missing: best soil mix (1/3 topsoil / 1/3 compost / 1/3 perlite), what to avoid |
+| `growing-through-season` — Soil & Planting subsection | ✅ Done | Best soil mix (1/3 topsoil / 1/3 compost / 1/3 perlite), what to avoid, earthworm tip |
 | `growing-through-season` — Pests table: yellowing leaves row | 🔲 Pending | One missing row |
 | `harvest` — Snap peas + sunflower seeds rows | 🔲 Pending | Two harvest-readiness rows missing |
 | `recipes` — Stovetop Popcorn from Garden-Grown Corn | 🔲 Pending | Entire recipe missing |
