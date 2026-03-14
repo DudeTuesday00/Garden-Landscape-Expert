@@ -244,7 +244,7 @@ export const guideCategories = [
         title: 'Culinary Herb Garden',
         emoji: '🍽️',
         description: 'The essential kitchen herbs — how to grow, harvest, and preserve them.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'medicinal-herb-garden',

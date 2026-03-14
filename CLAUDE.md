@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 30 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 31 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -103,7 +103,8 @@ Garden-Landscape-Expert/
     │       ├── salsa-garden.js
     │       ├── plants-for-fragrance.js
     │       ├── curb-appeal.js
-    │       └── porch-plants.js
+    │       ├── porch-plants.js
+    │       └── culinary-herb-garden.js
     └── logic/
         └── matchPlants.js           # Scoring + filtering algorithm
 ```
@@ -269,7 +270,7 @@ Each question in `questions.js` has:
 1. Trees & Large Plants (8 guides — 8 live ✅)
 2. Flowers & Color Gardens (9 guides — 9 live ✅)
 3. Edible Gardens (9 guides — 9 live ✅)
-4. Herbs & Fragrance (6 guides — 1 live ✅)
+4. Herbs & Fragrance (6 guides — 2 live ✅)
 5. Landscape Design (10 guides — 1 live ✅)
 6. Seasonal Guides (8 guides)
 7. Pest & Problem Solving (8 guides)
@@ -311,6 +312,7 @@ Thirty full guides integrated into the app:
 - `src/data/guide-content/plants-for-fragrance.js` — Plants for Fragrance (`id: 'plants-for-smell'`)
 - `src/data/guide-content/curb-appeal.js` — Front Yard Curb Appeal (`id: 'curb-appeal'`)
 - `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`)
+- `src/data/guide-content/culinary-herb-garden.js` — Culinary Herb Garden (`id: 'culinary-herb-garden'`)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
