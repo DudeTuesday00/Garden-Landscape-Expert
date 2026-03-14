@@ -374,6 +374,23 @@ export async function generateMetadata({ params }) {
 | Section 10: Additional Herb Profiles | ✅ Done | 9 herb profiles: St. John's Wort, Milk Thistle, Marshmallow Root, Lemon Verbena, Hops, Black Cohosh, Ginger, Turmeric, Hawthorn Berry; each with uses, constituents, evidence, prep, growing notes, and caution callouts where applicable |
 | Closing reflection | ✅ Done | "Medicinal Garden as Relationship" section — 2 closing paragraphs + tip callout from docx |
 
+### Ornamental Trees Guide — Docx Sync ✅
+
+`src/data/guide-content/ornamental-trees.js` expanded to fully match `ornamental-tree-guide.docx`:
+
+| Addition | Details |
+|---|---|
+| Step 4: Deciduous vs Evergreen | 4-row table (Deciduous / Broadleaf Evergreen / Needled Evergreen / Semi-Evergreen) inserted into `choosing` section |
+| Native vs Non-Native discussion | Full 2-paragraph discussion added to `avoid` section before existing tip |
+| Sweetgum profile | Added to `fall-color` section; 'Rotundiloba' seedless cultivar highlighted |
+| Pest & Disease table | 8-row table (Dogwood Anthracnose, Dogwood Borer, Japanese Beetle, Fire Blight, Apple Scab, Powdery Mildew, Cherry Leaf Curl, Girdling Roots) added to `planting-care` section |
+| Crape murder tip (Section 4) | Added after universal pruning principles |
+| Woodland Garden Approach tip | Added to `design` section |
+| Sweetgum row | Added to Quick Reference table |
+| `final-thoughts` section | New closing section — 2 paragraphs + tip callout from docx |
+
+---
+
 ### Three New Live Guides (28th–30th) ✅
 
 - `src/data/guide-content/plants-for-fragrance.js` — Plants for Fragrance (`id: 'plants-for-smell'`); 7 sections: fragrance types by season, fragrant shrubs & trees, roses, perennials & groundcovers, annuals & climbers, design/placement rules, challenging conditions, and a full seasonal calendar; theme: purple/pink gradient in `GuideDetail.jsx`; set `comingSoon: false` under Herbs & Fragrance in `guides.js`
