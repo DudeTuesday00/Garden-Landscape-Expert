@@ -99,6 +99,35 @@ export const childrensGardenContent = {
             ['Scarlet Runner Bean', 'Climbing vine, 10–15 ft', '60–70 days', 'Vivid red flowers attract hummingbirds. Giant seeds children plant themselves.', 'Ages 5+. The \'magic beanstalk\' bean.'],
           ],
         },
+        {
+          type: 'tip',
+          emoji: '🏡',
+          text: "The Bean Teepee: Push 6–8 bamboo poles (6–8 feet long) into the ground in a circle 4–5 feet in diameter, tilting them inward and tying them at the top. Plant 3–4 Scarlet Runner beans or pole beans at the base of each pole. Within 8 weeks, the structure is covered in leaves and flowers with a shaded interior — a secret garden room. Leave one side open as a door. The teepee is one of the most magical structures a children's garden can offer: a living playhouse they grew themselves.",
+        },
+        { type: 'h3', text: '🥒 Cucumbers — The Munching Machine' },
+        {
+          type: 'p',
+          text: "Cucumbers are one of the most satisfying vegetables for children to grow: fast, prolific, and delivering a crisp, mild harvest that most children eat enthusiastically. At peak production, a cucumber vine produces faster than a family can eat — an abundance that teaches something important about garden generosity.",
+        },
+        {
+          type: 'table',
+          headers: ['Variety', 'Form', 'Days to Harvest', 'Kid Appeal', 'Best For'],
+          rows: [
+            ["'Straight Eight'", 'Classic green, straight, 8 inches', '55–65 days', 'Reliable, easy, the textbook cucumber — exactly what children expect a cucumber to look like.', 'All beginners.'],
+            ["'Marketmore 76'", 'Dark green, disease-resistant', '70 days', 'Very dependable in hot summers; will not fail on a beginner.', 'Humid regions and first-time growers.'],
+            ["'Lemon Cucumber'", 'Round, yellow, golf-ball to baseball size', '60 days', 'Looks nothing like a cucumber — children are fascinated by it. Milder flavor, almost never bitter.', 'All ages. The most surprising cucumber in the garden.'],
+            ["'Spacemaster'", 'Compact bush habit, shorter vines', '60 days', 'Bush form works in small beds and large containers.', 'Small gardens and raised beds.'],
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            "The Lemon Cucumber advantage: Round, yellow, and small — it looks nothing like a cucumber. Children are fascinated by it. Milder than standard cucumbers and almost never bitter. Let it turn fully yellow for maximum sweetness.",
+            "Kid activity — pickle project: Make simple refrigerator pickles together on harvest day. Slice cucumbers with a child-safe crinkle cutter, add vinegar, salt, dill, and garlic, and refrigerate for 48 hours. Children are remarkably proud of food they preserved themselves.",
+            "Critical harvest tip: Teach children to harvest before cucumbers get too large — overripe cucumbers signal the plant to stop producing. Check every other day at peak season. When in doubt, pick it.",
+            "Support: Train cucumbers up a trellis or cage to save ground space and make the harvest easy to find.",
+          ],
+        },
         { type: 'h3', text: '🌻 Sunflowers — The Trophy Plant' },
         {
           type: 'p',
@@ -123,6 +152,21 @@ export const childrensGardenContent = {
             'Season: Peas are a cool-season crop — plant 6–8 weeks before last frost. They do not survive summer heat.',
             'Kid activity — the pod pop: Teach children to open a shelling pea pod using a thumbnail on the seam. The pop is satisfying.',
             'Kid activity — tendril observation: Pea tendrils actively curl around anything they touch within hours — a visible, fast movement children can watch.',
+          ],
+        },
+        { type: 'h3', text: '🥬 Lettuce & Salad Greens — The Cut-and-Come-Again Garden' },
+        {
+          type: 'p',
+          text: "Loose-leaf lettuce varieties offer children something that excites them more than it perhaps should: the ability to harvest their own salad and eat it immediately. Cut-and-come-again varieties regrow after harvesting, giving children a continuous, renewable harvest from the same plants for weeks.",
+        },
+        {
+          type: 'list',
+          items: [
+            "Best varieties for children: 'Black Seeded Simpson' (pale green, frilly, very mild flavor, germinates in days — the fastest lettuce), 'Oakleaf' (tender, deeply lobed leaves, elegant shape), mesclun mix (blend of varieties with varied texture, color, and flavor — sow thickly and scissors-harvest), spinach 'Tyee' (smooth leaves, excellent flavor, bolt-resistant — grows alongside lettuce in spring and fall).",
+            "Season: Lettuce is a cool-season crop. Plant 4–6 weeks before last frost in spring; replant in early fall for a second harvest. Lettuce bolts (turns bitter and goes to seed) in summer heat — let children observe a bolting plant as a teachable moment about plant reproduction.",
+            "How to harvest: Teach children to use scissors to cut outer leaves, leaving the center to regrow. A single pot of lettuce can produce three or four successive harvests over several weeks.",
+            "Kid activity — the salad bowl project: Let each child grow a 12-inch container planted with a mesclun mix. They are responsible for all watering. When ready, let them harvest, wash, spin dry, and dress their own personal salad. The salad spinner is enormously satisfying to operate.",
+            "Kid activity — leaf rubbings: Press interesting lettuce and herb leaves between paper and rub a crayon or pencil over them to capture the texture and shape. A simple botanical art project that connects observation with art.",
           ],
         },
         { type: 'h3', text: '🎃 Pumpkins — The Long Game' },
