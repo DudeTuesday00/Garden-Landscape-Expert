@@ -342,7 +342,7 @@ Thirty-one full guides integrated into the app:
 - `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`)
 - `src/data/guide-content/culinary-herb-garden.js` — Culinary Herb Garden (`id: 'culinary-herb-garden'`)
 - `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **complete** (all 10 sections built)
-- `src/data/guide-content/winter-garden-prep.js` — Winter Garden Prep (`id: 'winter-garden-prep'`) — **in progress** (Intro + Sections 1–6 of 10 built)
+- `src/data/guide-content/winter-garden-prep.js` — Winter Garden Prep (`id: 'winter-garden-prep'`) — **in progress** (Intro + Sections 1–7 of 10 built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -481,7 +481,7 @@ export async function generateMetadata({ params }) {
 | Section 4: Soil Health — The Fall Amendment Window | ✅ Done | 5-item amendment strategies list (compost, cover crops, leaf mulch, lime/sulfur, bone meal); no-dig principle paragraph + 2-item list; composting paragraph + 3-item list |
 | Section 5: Overwintering Tender Plants Indoors | ✅ Done | Overwintering spectrum paragraph; 8-row indoor care table (geranium, fuchsia, coleus, gardenia, jasmine, lemon verbena, hibiscus, brugmansia); pest inspection paragraph + 4-item list |
 | Section 6: The Kitchen Garden in Fall & Winter | ✅ Done | 4-item season extension list (row cover, cold frames, hoop houses, what to grow); 4-item fall cleanup list; 8-row fall planting table |
-| Section 7: Tools, Equipment & Garden Structures | 🔜 Pending | Annual tool maintenance, irrigation winterization, structures |
+| Section 7: Tools, Equipment & Garden Structures | ✅ Done | 6-item tool maintenance list (clean, sand, sharpen, oil, inspect, store); 4-item irrigation winterization list (drip, sprinkler, hose bibs, hoses); 4-item structures inspection list (fences, cold frames, raised beds, paths) |
 | Section 8: Regional Winter Prep Timelines | 🔜 Pending | 6-row regional timeline table |
 | Section 9: Supporting Wildlife Through Winter | 🔜 Pending | Wildlife habitat list, bird feeding |
 | Section 10: Planning for Spring | 🔜 Pending | Year-end assessment, seed-starting calendar, master checklist, closing |

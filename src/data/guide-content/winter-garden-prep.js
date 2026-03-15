@@ -724,5 +724,58 @@ export const winterGardenPrepContent = {
         },
       ],
     },
+
+    // ─── SECTION 7: TOOLS, EQUIPMENT & GARDEN STRUCTURES ─────────────────────
+    {
+      id: 'tools-and-structures',
+      title: 'Section 7: Tools, Equipment & Garden Structures',
+      blocks: [
+        {
+          type: 'p',
+          text: "A tool well-maintained at the end of the season is a tool ready for the beginning of the next one. The fall tool and equipment routine takes less than an afternoon and prevents the frustration of rusted, dull, or broken tools at the moment in spring when you need them most. It is also, for many gardeners, one of the most satisfying quiet-season rituals — the physical objects of the gardening year cleaned, sharpened, and put away with intention.",
+        },
+        {
+          type: 'h3',
+          text: 'The Annual Tool Maintenance Routine',
+        },
+        {
+          type: 'list',
+          items: [
+            'Clean all tools: Remove all soil from metal surfaces using a stiff brush or a putty knife for caked material. Soil left on metal through winter accelerates rusting. For stubborn deposits, spray with water and scrub with a wire brush, then dry completely before the next step.',
+            'Sand handles: Wooden tool handles benefit from light sanding with 80–120 grit sandpaper to remove any roughness or splinters, followed by a wipe-down with linseed oil. This prevents cracking and splitting through winter\'s dry indoor air and extends handle life significantly. Fiberglass handles need no sanding.',
+            'Sharpen cutting tools: Hoes, spades, shovels, and edgers should be sharpened with a flat mill file to restore the cutting edge. Pruners, loppers, and pruning saws should be sharpened with a whetstone or sent to a professional sharpening service. Sharp tools require dramatically less effort and do less plant damage than dull ones.',
+            'Oil metal surfaces: After cleaning and sharpening, wipe all metal surfaces with a light coat of vegetable oil, WD-40, or mineral oil to prevent rust. A simple method for maintaining a collection of digging tools: keep a bucket of builder\'s sand mixed with motor oil in the garden shed; plunge tools into it after each use through the season and at the end of the season for storage.',
+            'Inspect and repair: Check handles for cracks or looseness (a loose handle on a heavy tool is a safety hazard), examine pruner springs and pivots, check the cutting edge of pruners for nicks that require professional sharpening. Replace rather than repair tools with cracked handles or irreparable pivot damage.',
+            'Store properly: Hang long-handled tools on wall hooks or in a tool rack rather than leaning them in a corner where they will fall and bend. Store hand tools in a box or drawer rather than loose in a bucket where they will jostle against each other. Keep pruners, knives, and scissors in a dedicated holder, blades protected.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Irrigation System Winterization',
+        },
+        {
+          type: 'list',
+          items: [
+            'Drip irrigation: Drain all drip lines by opening the end caps and allowing lines to empty. Disconnect emitters if desired and store indoors. Disconnect from the water supply. Flexible polyethylene drip lines can survive freezing better than rigid pipe but should still be drained. Remove and store any timer-controllers in a frost-free location.',
+            'In-ground sprinkler systems: Winterization requires blowing out all water with compressed air — a process best done by an irrigation professional with a commercial compressor on the first attempt so you learn the correct procedure. Each zone must be blown independently. Shut off the water supply and drain the backflow preventer. In Zone 5 and colder, this is a non-negotiable task before the first hard freeze.',
+            'Hose bib and outdoor faucets: Turn off the interior shutoff valve for each outdoor faucet and open the outdoor faucet to drain the line between the shutoff and the outdoor opening. Frost-free sillcocks (the most common modern outdoor faucet type) drain automatically when turned off, but only if the hose is disconnected — a hose left attached traps water in the sillcock and it will freeze regardless of type.',
+            'Garden hoses: Drain completely, coil, and store indoors or in an insulated space. Hoses left outdoors through hard freezes crack and split at the connections. A stored hose lasts 10–15+ years; one left outdoors through several winters may last 3–4.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Garden Structures: Fall Inspection and Repair',
+        },
+        {
+          type: 'list',
+          items: [
+            'Fences and trellises: Inspect for winter damage from the previous year: loose posts, split wood, broken wires, damaged hardware. Repair structural issues in fall when the ground is workable, not in spring when you need the structure functional immediately. Apply a fresh coat of exterior paint or wood preservative to any bare wood.',
+            'Cold frames and greenhouses: Clean glazing (glass or polycarbonate) with soapy water to maximize light transmission. Inspect seals and gaskets. Replace cracked glass panes before winter. Apply a fresh bead of silicone sealant to any gaps around the perimeter. Clean out all plant debris that could harbor disease or pests.',
+            'Raised beds: Inspect wooden raised beds for rot at the soil line — this is where wood deteriorates first. Treat with an appropriate wood preservative (avoid creosote or chromated copper arsenate, which leach into food garden soil; use linseed oil or a cedar-appropriate preservative). In climates where the ground freezes hard, expect some movement in raised bed corners each year; re-drive any loosened stakes in spring.',
+            'Garden paths: Inspect stepping stones and path materials for heaving, wobbling, or settling that creates trip hazards. Reset heaved stepping stones before winter makes the problem worse. Fill any gaps or low spots that collect water, which will further heave adjacent materials.',
+          ],
+        },
+      ],
+    },
   ],
 }
