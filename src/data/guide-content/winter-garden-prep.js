@@ -170,4 +170,136 @@ export const winterGardenPrepContent = {
       ],
     },
   ],
+
+    // ─── SECTION 2: TREES & SHRUBS ────────────────────────────────────────────
+    {
+      id: 'trees-and-shrubs',
+      title: 'Section 2: Preparing Trees & Shrubs for Winter',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Trees and shrubs represent the largest investment in most gardens — in both money and time — and winter is the season when the most serious damage can occur. Anti-desiccant sprays, burlap wraps, proper pruning timing, rodent guards, and thoughtful mulching are all tools for protecting these investments through the cold season.',
+        },
+        {
+          type: 'h3',
+          text: 'Pruning: What to Do and What to Wait On',
+        },
+        {
+          type: 'p',
+          text: "Fall pruning is one of the most consequential and most commonly mismanaged winter prep tasks. Pruning at the wrong time can stimulate tender new growth that winter will kill, remove next year's flower buds already set on the wood, or open wounds that will not heal before cold arrives. Understanding the pruning timing for each category of plant is essential.",
+        },
+        {
+          type: 'table',
+          headers: ['Plant Category', 'Pruning Timing', 'What to Do', 'What NOT to Do'],
+          rows: [
+            [
+              'Deciduous shade and flowering trees',
+              'Late winter / early spring (while dormant; before buds swell)',
+              'Remove dead, damaged, crossing, and structurally problematic branches while the tree is fully dormant and leafless. The structure is clearest then, wounds callus faster as growth begins.',
+              'Do not prune in fall when wounds cannot close before winter. Do not prune spring-flowering trees (magnolia, redbud, serviceberry) in late winter — you will remove flower buds. Prune those immediately after bloom.',
+            ],
+            [
+              'Summer-flowering shrubs (rose of Sharon, butterfly bush, crape myrtle, potentilla)',
+              'Late winter / early spring before growth begins',
+              'Cut back to the desired size and structure. These bloom on current season\'s growth so even hard pruning does not sacrifice flowers.',
+              'Do not prune in fall. Stems left standing protect the crown from cold; removing them in fall exposes the crown and removes winter interest.',
+            ],
+            [
+              'Spring-flowering shrubs (lilac, forsythia, azalea, mock orange, viburnum, spirea)',
+              'Immediately after bloom (spring)',
+              'Prune after flowers fade — this is the only window before next year\'s flower buds set on the wood. Remove up to one-third of old canes to rejuvenate. NOT in fall.',
+              "Pruning in fall removes next year's flower buds entirely. This is the most common reason spring-flowering shrubs fail to bloom.",
+            ],
+            [
+              'Broad-leaved evergreens (rhododendron, mountain laurel, holly, boxwood)',
+              'Minimal fall pruning only; major pruning in early spring',
+              'Remove only dead or broken branches in fall. Light shaping is acceptable in Zone 7+ where wounds close quickly. Major structural pruning in spring.',
+              'Hard fall pruning in cold climates stimulates growth that winter will kill. Avoid pruning after August in Zones 5–6.',
+            ],
+            [
+              'Needled evergreens (pine, spruce, fir, arborvitae)',
+              'Spring for most; early summer for pines (candle pruning)',
+              "Remove dead or broken branches in fall. Do not do major shaping — save for spring. Pines are pruned by removing or pinching new 'candles' in late spring/early summer.",
+              'Do not prune healthy needled evergreens in fall. Pruning stimulates growth that will be killed by winter in cold climates. Arborvitae pruned in fall browns at the cuts.',
+            ],
+            [
+              'Roses',
+              'Zone-dependent: see rose section below',
+              'Zone 6+: light cleanup in fall, major pruning in early spring. Zone 7+: can do more structural pruning in fall as plants enter dormancy.',
+              'Avoid heavy fall pruning in cold climates — it removes insulating cane mass and stimulates vulnerable new growth.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Protecting Marginally Hardy Shrubs',
+        },
+        {
+          type: 'list',
+          items: [
+            'Anti-desiccant sprays: Broad-leaved evergreens (rhododendron, boxwood, holly, mountain laurel) and needled evergreens (arborvitae, false cypress) lose significant moisture through their foliage during winter — particularly on sunny, windy days when the ground is frozen and roots cannot replace the lost water. Anti-desiccant sprays (Wilt-Pruf, Vapor Gard) coat foliage with a protective waxy film that reduces moisture loss by 30–50%. Apply in late fall after temperatures drop consistently below 40°F but before hard freeze. Reapply in late January or February in cold climates.',
+            'Burlap wraps: Burlap wrapping protects shrubs from three specific threats: desiccating wind, sun scald (the burning of bark on the south and west sides of young trees and shrubs from winter sun), and physical damage from ice and snow loads. Wrap arborvitae, boxwood, and upright evergreens with burlap loosely tied with twine — the burlap should not press tightly against the foliage but should create a barrier around it. A three-stake burlap screen (burlap stapled to three stakes creating a windbreak) is more effective than wrapping for broadleaf evergreens and allows air circulation.',
+            'Snow and ice management: The greatest physical threat to needled evergreen shrubs in heavy-snow climates is snow and ice accumulation that bends or breaks branches. Upright arborvitae, columnar junipers, and similar shrubs can be loosely tied with soft twine in a spiral from the base to the top to prevent branches from splaying under snow weight. Gently brush snow off shrubs with a broom immediately after snowfall — do not shake frozen-ice-laden branches, which will break.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Roses: Winter Protection by Zone',
+        },
+        {
+          type: 'p',
+          text: 'Roses are among the most zone-dependent plants for winter care — the same rose that requires no protection in Zone 8 needs serious mulching, cane burial, or even Styrofoam cone protection in Zone 4. Understanding your zone and your specific rose type is essential before choosing a protection strategy.',
+        },
+        {
+          type: 'table',
+          headers: ['Rose Type', 'Zones Needing Protection', 'Protection Method', 'When to Apply / Remove'],
+          rows: [
+            [
+              'Hardy shrub roses (Knock Out, Canadian series, rugosa types)',
+              'Zones 3–4: mound mulch over crown; Zones 5–6: minimal or no protection needed',
+              'After FFD: mound 10–12 inches of shredded leaves or compost over the crown, not the canes. Zones 3–4: also wrap canes loosely with burlap.',
+              'Apply after several hard frosts; remove in spring when overnight temps stay above 25°F consistently.',
+            ],
+            [
+              'Hybrid tea and grandiflora roses',
+              'Zones 3–6 (Zone 7 borderline)',
+              'Mound 10–12 inches of compost or soil (not the garden soil removed from beside the plant — buy bagged compost to avoid heaving that soil) over the crown. In Zones 3–5, also wrap canes in burlap or use Styrofoam cone protection.',
+              'Apply after several hard frosts. Remove mound gradually as temps warm in spring — do not uncover all at once.',
+            ],
+            [
+              'Climbing roses',
+              'Zones 3–5: significant protection; Zones 6–7: light protection',
+              'Remove canes from their support, bundle loosely, and either lay them on the ground and cover with soil or wrap them in burlap and tie back to the support. The key is insulating the bud union (the graft point, usually at or below the soil surface).',
+              'Apply after hard frosts. Uncover and retrain canes in spring after last frost risk.',
+            ],
+            [
+              'Tree roses (standards)',
+              'Zones 4–7',
+              'The most vulnerable rose form. Options: dig and pot for indoor storage; wrap the entire head in burlap after stripping leaves; bury the entire plant by digging alongside it, tipping it over, and mounding soil over it.',
+              'Apply before first hard freeze. Unbury in spring after last frost risk.',
+            ],
+            [
+              'Own-root roses (many modern shrub types)',
+              'Zones 3–5: moderate protection; Zones 6+: minimal',
+              'Mound compost over the crown. Own-root roses, unlike grafted types, will regrow from the roots even if top growth is killed — the regrowth is the same variety, not rootstock. Less critical to protect than grafted roses.',
+              'Same timing as shrub roses above.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Young Trees: Protecting New Plantings',
+        },
+        {
+          type: 'list',
+          items: [
+            'Trunk wrap: Young deciduous trees with thin, smooth bark (maples, apples, cherries, lindens) are vulnerable to sun scald and frost crack — conditions where the bark alternately expands in daytime sun and contracts in nighttime cold, causing splits in the bark. Wrap the trunk from the ground to the first scaffold branch with a commercial tree wrap (light-colored crepe paper tree wrap or commercial plastic tree guards) each fall for the first 3–5 years. Remove wrapping in spring to prevent it from becoming a habitat for insects and disease.',
+            'Rodent guards: Mice, voles, and rabbits can girdle young trees under snow cover by chewing bark in a ring around the trunk — a wound that kills the tree even if it survives winter otherwise. Hardware cloth cylinders (1/4 inch mesh) installed around the base of young trees before the first snow are the most effective protection. Extend at least 18 inches above the expected snow depth in your area (snow compacts rodents\' effective reach considerably). Bury the bottom edge 2–3 inches in the ground to prevent tunneling.',
+            'Staking young trees: Trees planted within the last 1–2 years may need staking to prevent wind rock during winter storms. Use two stakes (one on each side of the tree, outside the root ball) with a flexible tie that allows some movement — movement in the wind builds trunk taper and strength. Remove stakes in spring after the first full growing season.',
+            'Watering before freeze: One of the most valuable and most overlooked fall tasks for trees and shrubs is a deep watering before the ground freezes. Plants enter winter better able to resist desiccation if their root zones are fully hydrated. Water deeply in late fall during any dry period, especially for newly planted trees and broadleaf evergreens.',
+          ],
+        },
+      ],
+    },
+  ],
 }
