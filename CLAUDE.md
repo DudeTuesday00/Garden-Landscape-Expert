@@ -340,7 +340,7 @@ Thirty-one full guides integrated into the app:
 - `src/data/guide-content/curb-appeal.js` — Front Yard Curb Appeal (`id: 'curb-appeal'`)
 - `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`)
 - `src/data/guide-content/culinary-herb-garden.js` — Culinary Herb Garden (`id: 'culinary-herb-garden'`)
-- `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **in progress** (Sections 1–6 of ~10 built)
+- `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **in progress** (Sections 1–7 of ~10 built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -457,7 +457,7 @@ export async function generateMetadata({ params }) {
 | Section 3: Water | ✅ Done | Ponds (shape/depth/edges/islands/koi), streams (sound design, construction, kakei), dry stream (kare-nagare), tsukubai composition + tip |
 | Section 4: Plants | ✅ Done | 7-row trees table, 7-row shrubs table, ground layer list, 4-row moss types table + establishment methods, bamboo warning |
 | Section 5: Dry Garden — Karesansui | ✅ Done | 6-step construction guide, 5-row raking patterns table, meditation tip + small-space tip |
-| Section 6: Structures, Paths & Hardscape | 🔜 Pending | Gates, fences, bridges, paths, pavilion |
+| Section 6: Structures, Paths & Hardscape | ✅ Done | Gates, 5 fence types, bridges, 5-row paths table, tea house/pavilion, lantern placement tip |
 | Section 7: Niwaki — Cloud Pruning | 🔜 Pending | Plants table, 6-step technique |
 | Section 8: Regional Adaptation | 🔜 Pending | 7-row table by US region |
 | Section 9: Small-Space Japanese Gardens | 🔜 Pending | 6-row compositions table |

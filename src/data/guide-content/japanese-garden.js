@@ -407,5 +407,107 @@ export const japaneseGardenContent = {
         },
       ],
     },
+    // ─── SECTION 7: STRUCTURES, PATHS & HARDSCAPE ────────────────────────────
+    {
+      id: 'structures-paths-hardscape',
+      title: 'Structures, Paths & Hardscape',
+      blocks: [
+        {
+          type: 'p',
+          text: 'In a Japanese garden, structures are not amenities — they are compositional elements. A gate defines the threshold between the ordinary world and the garden world. A fence controls sightlines and creates mystery. A bridge draws the eye and the foot across water or the suggestion of water. A pavilion provides a fixed viewpoint from which the garden reveals its intentions. Each of these elements must be considered not as an object placed in the garden, but as a relationship between spaces — the space before and the space after, the visible and the concealed, the destination and the journey toward it.',
+        },
+        {
+          type: 'h3',
+          text: 'Gates — The Threshold Experience',
+        },
+        {
+          type: 'p',
+          text: 'The most important structural element of a Japanese garden is often the gate — not because of its visual presence but because of what it does to the visitor\'s psychological state. Passing through a gate is a ritual transition. It marks the moment when the outside world is left behind and the garden world begins.',
+        },
+        {
+          type: 'p',
+          text: 'The traditional roofed gate, or mon, is a substantial structure associated with temple and estate gardens. For residential and small-scale garden use, the appropriate gate is more modest: a simple timber frame with a low, slightly curved or flat roof of cedar shingles or copper. The gate need not be tall — 6 to 7 feet is typical — and it should be narrower than feels comfortable, designed to require a slight pause and a change of posture (a slight bow or duck) to pass through. This compression and release is intentional. The garden should feel larger after the constraint of the gateway.',
+        },
+        {
+          type: 'tip',
+          emoji: '🚪',
+          text: 'A gate does not require a wall to be effective. A freestanding gate frame in a hedge opening, or between two planted screening shrubs, creates the necessary threshold experience without the expense of a full wall. What matters is the psychological moment of transition, not the physical barrier. Even a simple change in path material — from gravel to stepping stone — at the garden entrance can function as a threshold.',
+        },
+        {
+          type: 'h3',
+          text: 'Fences — Privacy, Screening & Borrowed Scenery',
+        },
+        {
+          type: 'p',
+          text: 'Traditional Japanese fences (gaki or kakine) are made from natural materials — bamboo, wood, woven brush, or combinations of these — and are designed to be beautiful in themselves, not merely functional. The two most important types for American residential gardens are the sleeve fence (sodegaki), a short freestanding screen used to block a specific view or create a sense of enclosure around a feature, and the bamboo fence, which comes in many woven patterns (teppo-gaki, yotsume-gaki, kenninji-gaki) ranging from nearly transparent to fully opaque.',
+        },
+        {
+          type: 'p',
+          text: 'The sleeve fence — typically 3 to 5 feet tall and 4 to 8 feet long — is one of the most useful tools in Japanese garden design. Placed strategically, it conceals an unattractive element, forces a change of direction in a path, or frames a view through a deliberate opening. Because it is short and freestanding, it can be installed without posts or foundations in most soils.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Kenninji-gaki (solid woven bamboo): The densest pattern; provides full privacy and a clean, flat surface. Traditional in tea gardens as a backdrop for key plantings.',
+            'Yotsume-gaki (square grid bamboo): An open lattice pattern that allows filtered views while defining space. Good for boundaries that should feel present but not oppressive.',
+            'Teppo-gaki (gun barrel bamboo): Vertical round culms with spacing; a relaxed, rustic style appropriate for naturalistic gardens.',
+            'Zig-zag (kinkakuji-style): Angled horizontal timbers on posts; used to create visual movement along a fence line.',
+            'Sleeve fence (sodegaki): Short, freestanding screen — the most versatile single element in the Japanese garden design toolkit.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Bridges — Crossing Points',
+        },
+        {
+          type: 'p',
+          text: 'A bridge in a Japanese garden is never just a way to cross water. It is a pause point — a moment in the journey where the visitor stops, looks, and sees the garden from a new angle. The most common Japanese garden bridges are the flat stone slab bridge (a single large stone or two parallel stones laid across a narrow water feature), the arched wooden bridge (most familiar to Western eyes from the iconic red-painted bridge over a koi pond), and the stepping-stone crossing (flat stones placed in water at intervals, requiring the visitor to watch their feet and slow their pace).',
+        },
+        {
+          type: 'p',
+          text: 'For American residential gardens, the flat stone slab bridge is the most appropriate and most achievable. A single large flagstone or two bluestone slabs placed across a dry stream or a narrow water feature, set on stone abutments at each bank, creates an authentic and durable crossing with no hardware, no railing, and no maintenance. The stone should be wide enough to feel secure (18–24 inches minimum) and should extend 6–8 inches past the bank on each side.',
+        },
+        {
+          type: 'h3',
+          text: 'Paths — The Journey as Design',
+        },
+        {
+          type: 'p',
+          text: 'Japanese garden paths are among the most deliberate and carefully designed elements of the tradition. They do not simply connect Point A to Point B. They control the pace of movement, direct the gaze, and reveal the garden in sequence — concealing some features until the right moment, offering a view of another feature before you arrive at it, and creating the sense that the garden is larger and more complex than it physically is.',
+        },
+        {
+          type: 'p',
+          text: 'The two fundamental path types are the tobi-ishi (stepping stone path) and the noren-ishi (a more continuous paved surface of fitted stones). The stepping stone path is the defining element of the tea garden roji — the dewy path — and its function is to slow the visitor to a pace where they must look at each stone before stepping, releasing the mind from thought and bringing attention entirely to the present moment. Stones should be irregular in shape, set flush with the ground or slightly raised, and placed to require a comfortable but slightly deliberate stride — typically 18 to 22 inches center to center for adult steps.',
+        },
+        {
+          type: 'table',
+          headers: ['Path Element', 'Material', 'Purpose', 'Placement Notes'],
+          rows: [
+            ['Tobi-ishi (stepping stones)', 'Irregular flat fieldstone, slate, bluestone, granite', 'Slows movement; forces attention to each step; rhythmic progression through garden', 'Set 18–22 in. center to center; embed 1–2 in. above grade; vary sizes for rhythm'],
+            ['Noren-ishi (fitted stone paving)', 'Cut or fitted irregular stone; decomposed granite surround', 'Allows normal walking pace; used near structures, on arrival courts, around pavilions', 'Set in compacted base; fill joints with DG, moss, or creeping thyme'],
+            ['Gravel path', 'Decomposed granite, pea gravel, crushed granite', 'Suggests movement; audible crunch underfoot; low cost; easily reshaped', 'Edge with timber, steel, or stone border; rake regularly; suppress weeds with fabric base'],
+            ['Zig-zag path (yatsuhashi)', 'Flat wooden planks on posts over water or bog; or stepping stones in angular arrangement', 'Creates a pause and a shift in direction; traditional over iris plantings in water', 'Boards should be 10–12 in. wide; posts pressure-treated or black locust for durability'],
+            ['Threshold stone (kutsunugi-ishi)', 'Single large flat stone at building or gate entrance', 'Marks transition point; where shoes are removed before entering a structure', 'Should be the largest single stone in the path sequence; set level and stable'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Tea House & Garden Pavilion',
+        },
+        {
+          type: 'p',
+          text: 'The ideal endpoint of the roji — the dewy path — in a traditional tea garden is the tea house (chashitsu): a small, humble structure designed for the practice of the tea ceremony. Its defining characteristics are deliberate simplicity, modest scale (a true chashitsu may be only a few tatami mats in size), natural materials (rough plaster walls, unfinished wood, clay roof tiles), and a small low entrance (nijiriguchi) that requires all who enter to bow, regardless of rank or status.',
+        },
+        {
+          type: 'p',
+          text: 'For American residential gardens, a full tea house is rarely practical, but the design principles of the tea house translate directly into garden pavilion design. A simple open-sided structure — 8 by 10 feet, with a post-and-beam frame, a low overhanging roof, and a wooden floor raised slightly off the ground — provides the fixed viewpoint and the sheltered contemplative space that the chashitsu provides in traditional gardens. It should be sited to face the best composition in the garden, not the house. The garden exists, in part, to be seen from this structure.',
+        },
+        {
+          type: 'tip',
+          emoji: '🏯',
+          text: 'The lantern (toro) is the most commonly misused Japanese garden element in Western gardens. Authentic Japanese stone lanterns — yukimi-dori (snow-viewing), kasuga, oribe — are specific compositional elements placed with great care: at the edge of a water feature where they appear to reflect, at a path junction to mark a turning point, or at a tsukubai to provide light for evening ceremonies. A lantern placed in the center of a bed or used as a general accent defeats its purpose. If you use a lantern, place one, use it to mark a specific threshold or water edge, and set it where moss can establish at its base over time.',
+        },
+      ],
+    },
   ],
 }
