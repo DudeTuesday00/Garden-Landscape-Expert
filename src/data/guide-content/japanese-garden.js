@@ -509,5 +509,64 @@ export const japaneseGardenContent = {
         },
       ],
     },
+
+    // ─── SECTION 8: NIWAKI — CLOUD PRUNING ───────────────────────────────────
+    {
+      id: 'niwaki-cloud-pruning',
+      title: 'Niwaki — Cloud Pruning & Trained Trees',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Niwaki — literally "garden tree" — refers to the Japanese practice of training and pruning trees and large shrubs into deliberate, sculptural forms. The most recognizable of these is the cloud-pruned form (tamazukuri): distinct rounded pads of foliage separated by clear space, suggesting clouds resting on branches. In Japan, niwaki is a specialized craft practiced by professional gardeners (niwashi) who may spend decades training a single specimen. In the American garden, the principles of niwaki are accessible to any patient gardener with sharp tools and a willingness to work slowly.',
+        },
+        {
+          type: 'p',
+          text: 'The goal of niwaki is not to make a tree look artificial. It is to reveal the tree\'s essential structure — the character of its branching — by removing what obscures that structure and training what remains into a form that amplifies it. A well-pruned niwaki specimen looks more like itself, not less: the branching pattern, the quality of the bark, the movement of the trunk are all made more visible and more expressive by the pruning.',
+        },
+        {
+          type: 'h3',
+          text: 'Best Plants for Niwaki Training',
+        },
+        {
+          type: 'table',
+          headers: ['Plant', 'USDA Zones', 'Growth Rate', 'Ideal Form', 'Notes'],
+          rows: [
+            ['Japanese black pine (Pinus thunbergii)', '5–8', 'Moderate', 'Cloud-pruned pads; dramatic windswept forms', 'The classic niwaki subject; responds beautifully to candle pruning in spring; tolerates coastal exposure'],
+            ['Japanese white pine (Pinus parviflora)', '4–8', 'Slow', 'Layered horizontal cloud pads; compact silhouette', 'Finer needles than black pine; more refined appearance; excellent in containers as well as in-ground'],
+            ['Japanese garden juniper (Juniperus chinensis)', '4–9', 'Moderate', 'Cloud pads; irregular windswept; cascading forms', 'Very forgiving; recovers well from aggressive pruning; Shimpaku cultivar particularly valued'],
+            ['Japanese holly (Ilex crenata)', '5–9', 'Slow–moderate', 'Cloud pads; topiary balls; layered hedges', 'One of the most responsive shrubs for cloud pruning; tolerates heavy shearing; Sky Pencil and Helleri both good candidates'],
+            ['Boxwood (Buxus sempervirens)', '5–8', 'Slow', 'Rounded cloud pads; multi-ball forms', 'Classic Western topiary subject adapted perfectly to niwaki technique; watch for boxwood blight in humid climates'],
+            ['Podocarpus (Podocarpus macrophyllus)', '8–11', 'Slow–moderate', 'Layered pads; columnar cloud forms', 'Excellent niwaki subject for warm climates (Southeast, California, Gulf Coast); responds well to selective pruning'],
+            ['Japanese maple (Acer palmatum)', '5–9', 'Slow–moderate', 'Exposed branching; selective thinning (not hard cloud forms)', 'Not a classic cloud-pruning subject; niwaki technique here focuses on revealing elegant branching structure by removing crossing and inward-facing branches'],
+            ['Azalea (Rhododendron spp.)', '5–9', 'Slow–moderate', 'Rounded boulder forms; irregular cloud pads', 'Traditional karikomi subject (clipped mound forms); responds well to shearing immediately after bloom; Kurume hybrids most commonly used in Japan'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Six Steps of Cloud Pruning',
+        },
+        {
+          type: 'list',
+          items: [
+            'Step 1 — Choose the right subject and commit time: Niwaki training works best on young specimens (3–7 years old) with a clear central leader and visible branching structure. Older, dense specimens can be converted but require more initial work. Accept from the beginning that the first three years are primarily about removing — stripping away growth that obscures structure — and that the trained form you envision will take five to ten years to fully emerge. Patience is not optional; it is the practice.',
+            'Step 2 — Strip the trunk and lower branches: Identify the trunk line clearly. Remove all branches from the lower third of the tree entirely. Remove any branches that cross the trunk or cross each other. What remains should be 3 to 7 branches (or branch clusters) arranged on different planes around the trunk, each with clear space between it and its neighbors. This single step — stripping to reveal the trunk — often transforms the appearance of the tree more dramatically than any subsequent pruning.',
+            'Step 3 — Select the pads: Each remaining branch will become a "pad" — a horizontal platform of foliage. Choose branches that already trend horizontal (or can be guided there with wire); remove branches that trend strongly upward unless they will become the apex. Each pad should occupy a different position around the trunk and a different height along the trunk. Avoid two pads directly facing each other at the same height.',
+            'Step 4 — Wire and train (for conifers): For pines and junipers, use anodized aluminum bonsai wire to guide branches into a more horizontal plane. Wrap the wire at a 45-degree angle from branch base to tip, then gently bend the branch to the desired position. Check wire monthly; remove before it bites into the bark (typically within 6–18 months). For hollies, boxwood, and shrubs that tolerate shearing, wiring is unnecessary — shearing to shape is sufficient.',
+            'Step 5 — Shear and define the pads: Once branches are in position, shear the foliage of each pad into a rounded, slightly domed cloud shape using sharp hand shears or bonsai scissors — not power trimmers. Remove all foliage from the underside of each pad so the space beneath is clear. Remove all foliage between pads. The clarity of the empty space between pads is as important as the form of the pads themselves.',
+            'Step 6 — Maintain annually: For pines, the primary maintenance is candle pruning in late spring: new growth candles are pinched or cut by one-half to two-thirds before needles fully elongate, controlling extension and maintaining pad density. For junipers and shrubs, shear pads once in early summer after the flush of new growth, and lightly again in early fall if needed. Every 3–5 years, step back and reconsider the overall structure — remove any branches that have grown to compete with the composition.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '✂️',
+          text: 'The most common mistake in beginning niwaki is insufficient removal. Gardeners accustomed to shaping hedges often trim the outside surface of the plant without removing interior branches and foliage mass — the result is a plant that looks clipped but not composed. True cloud pruning requires removing whole branches, creating real empty space, and trusting that what remains — clearly seen against sky or wall — is more beautiful than the dense mass it came from. When in doubt, remove more.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'Karikomi — the massed clipped mound planting seen in many Japanese gardens — is a related but distinct technique from cloud pruning. Multiple shrubs (most often azaleas, but also box, holly, and pittosporum) are clipped into smooth, rounded boulder-like forms and arranged in groups to suggest mountains or hills. Karikomi is simpler to achieve than cloud pruning — any shrub tolerant of shearing is a candidate — and is highly effective as a ground-level compositional element, particularly around stone features and water edges.',
+        },
+      ],
+    },
   ],
 }
