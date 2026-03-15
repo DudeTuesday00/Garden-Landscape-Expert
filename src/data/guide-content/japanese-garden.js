@@ -352,5 +352,60 @@ export const japaneseGardenContent = {
         },
       ],
     },
+    // ─── SECTION 6: DRY GARDEN — KARESANSUI ──────────────────────────────────
+    {
+      id: 'dry-garden-karesansui',
+      title: 'The Dry Garden — Karesansui',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The karesansui — dry landscape garden — is the most philosophical and the most architecturally pure form of Japanese garden design. It uses no actual water; instead, gravel or sand is raked into patterns that suggest water — streams, ocean waves, the stillness of a mountain lake. Stones rise from this raked surface as islands, mountains, or simply as themselves. Planting is minimal or absent. The garden is typically designed to be viewed from a fixed position, often from inside a building or from a veranda, rather than walked through.',
+        },
+        {
+          type: 'p',
+          text: 'The most famous karesansui gardens — Ryoanji in Kyoto, with its fifteen stones in raked gravel visible only as fourteen from any single viewpoint; Daisen-in, with its narrative dry waterfall and river — are among the most visited gardens on earth. Their power comes entirely from stone, gravel, and empty space.',
+        },
+        {
+          type: 'h3',
+          text: 'Building a Karesansui: Step by Step',
+        },
+        {
+          type: 'list',
+          items: [
+            'Define the garden boundary: The karesansui must have clear edges — traditionally a low wall, a wooden border, a change in level, or a precise boundary of edging stones. The contained quality of the garden is essential to its power; without definition, the raked gravel looks like an unfinished path, not a composed space.',
+            'Prepare the base: Excavate to a depth of 4–6 inches. Lay compacted gravel base (2–3 inches of crushed gravel for drainage). Cover with landscape fabric rated for long-term use — this prevents weeds from penetrating the raked surface. Top with 2–3 inches of the chosen gravel or decomposed granite.',
+            'Choose and place the stones first: Before raking, place the stones. The stones determine where the raking patterns will go — they are islands around which water flows. Set each stone deeply, at least one-third buried. Compose in groups of odd numbers. Step back repeatedly to evaluate from the primary viewpoint — the viewpoint from which the garden will be experienced.',
+            'Choose the raking medium: Traditional Japanese gardens use white or pale gray decomposed granite or crushed granite. The color should contrast with the stone. Pea gravel can be raked but does not hold patterns as crisply as angular decomposed granite. For an American regional variation, choose a locally available stone material — white marble chips, gray decomposed granite, or tan crushed limestone.',
+            'Rake the patterns: Straight parallel lines suggest open water. Concentric circles or ovals around a stone suggest water flowing around an island. Diagonal lines suggest waves. The raking is done with a specialized wooden rake (available from Japanese garden suppliers); a handmade rake with widely spaced wooden tines works equally well. Re-rake after rain and wind, weekly in active seasons, or whenever the pattern is disturbed.',
+            'Add minimal planting: Traditional karesansui gardens may include no planting at all, or a single moss-covered stone, a pruned pine, or a clipped azalea or Japanese holly. A Japanese maple at one end of the garden (outside the raked area, casting shadow into it) or a single accent plant within the raked area is appropriate in an American adaptation.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Raking Patterns and Their Meanings',
+        },
+        {
+          type: 'table',
+          headers: ['Pattern', 'Japanese Term', 'Visual Effect', 'Best Use'],
+          rows: [
+            ['Parallel straight lines', 'Nami (waves) in long view', 'Open water; a lake surface; the sea in calm conditions', 'Large flat areas of the garden; the primary field of the karesansui'],
+            ['Concentric circles around a stone', 'Sazanami (ripples)', 'Water flowing around an island; the ring pattern left when a stone drops into still water', 'Around each stone group; creates the illusion that stones are emerging from water'],
+            ['Diagonal crossing lines', 'Arare (hailstorm) or wave patterns', 'Turbulent water; ocean waves; energy and movement', 'Used sparingly to suggest dynamic areas of the composition; effective near a dry waterfall stone arrangement'],
+            ['Curved parallel lines', 'River flow', 'A flowing stream; water moving through a channel', 'Dry stream sections; areas where the garden suggests a river moving between stone banks'],
+            ['Whirlpool / spiral', 'Uzu (whirlpool)', 'Water turning around an obstacle; energy concentrated', 'Very sparingly; at a single stone of great presence; can overwhelm if used too broadly'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'In Zen Buddhist temple contexts, the act of raking the karesansui was itself a meditation practice — a form of moving meditation requiring complete attention and physical presence. The raked garden was not a permanent artwork but a daily practice. For the home gardener, the weekly act of raking — removing the effects of wind and weather, restoring the pattern, moving around the garden with attention to its composition — is a contemplative practice as much as a maintenance task. Consider the raking not as chore but as the primary activity for which the garden was designed.',
+        },
+        {
+          type: 'tip',
+          emoji: '🪨',
+          text: 'The karesansui is the ideal Japanese garden form for dry climates, small spaces, and low-maintenance priorities. It requires no water, no pump, no pond liner, and no irrigation — only stone, gravel, a rake, and a clear boundary. It is also one of the most adaptable forms: a strip 4 feet wide and 12 feet long between a path and a wall can become a fully resolved karesansui with three stones and a raked field.',
+        },
+      ],
+    },
   ],
 }
