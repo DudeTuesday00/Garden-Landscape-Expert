@@ -292,5 +292,66 @@ export const commonGardenDiseasesContent = {
         },
       ],
     },
+    {
+      id: 'downy-mildew-oomycetes',
+      title: 'Section 3: Downy Mildews & Oomycete Diseases',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Oomycetes — often called water molds — are not true fungi despite their fungus-like appearance. They have a fundamentally different cell biology (cellulose cell walls vs. chitin in true fungi) that makes them resistant to many standard fungicides. Late blight, downy mildew, Pythium root rot, and Phytophthora diseases are all caused by oomycetes and require specific oomycete-active products when chemical management is warranted.',
+        },
+
+        {
+          type: 'h3',
+          text: 'Downy Mildew Diseases',
+        },
+        {
+          type: 'p',
+          text: 'Downy mildew diseases are caused by multiple oomycete genera (Peronospora, Plasmopara, Bremia, Pseudoperonospora) that are host-specific — basil downy mildew cannot infect cucumbers and vice versa. All require high humidity and cool temperatures and produce their characteristic sporulation on the undersides of leaves.',
+        },
+        {
+          type: 'table',
+          headers: ['Downy Mildew', 'Host(s)', 'Identification', 'Management Notes'],
+          rows: [
+            ['Basil Downy Mildew (Peronospora belbahrii)', 'Basil (Ocimum spp.)', 'Yellow blotches on upper leaf surface with gray-purple fuzzy sporulation directly below on the leaf underside; leaves eventually turn brown and fall; spreads rapidly in cool, humid conditions', "This pathogen arrived in the US around 2007 and has devastated commercial and home basil production in humid regions. Choose resistant varieties ('Eleonora,' 'Dolce Fresca,' 'Amazel'). Grow in full sun with maximum air circulation; avoid overhead watering. Mandipropamid is most effective; copper products have some efficacy."],
+            ['Cucumber Downy Mildew (Pseudoperonospora cubensis)', 'Cucurbits (cucumber, squash, cantaloupe)', 'Angular yellow spots bounded by leaf veins on the upper leaf surface; gray-purple sporulation on the underside; rapid defoliation and plant decline', "One of the most destructive summer vegetable diseases in humid eastern states. Resistant cucumber varieties ('Diva,' 'Marketmore 76'). Apply chlorothalonil, mandipropamid, or copper preventively in high-risk conditions."],
+            ['Lettuce Downy Mildew (Bremia lactucae)', 'Lettuce', 'Pale yellow angular spots on upper leaf surface; white sporulation on underside in cool, moist conditions; older leaves affected first', 'Highly variable in strains; resistance in lettuce varieties can be overcome by new pathogen races. Use resistant varieties where available; avoid overhead watering; ensure good air circulation in dense plantings.'],
+            ['Impatiens Downy Mildew (Plasmopara obducens)', 'Impatiens (common bedding impatiens)', 'Plants yellow and collapse catastrophically; white sporulation visible on stem and leaf undersides just before plant collapse; entire plantings can die within days', 'This disease devastated common impatiens (I. walleriana) production in much of the US starting around 2004. Do not plant common impatiens in soil that has had this disease. New Guinea impatiens and SunPatiens are not susceptible. Once in soil, persists for years as oospores.'],
+            ['Grapevine Downy Mildew (Plasmopara viticola)', 'Grapes', 'Oil-spot lesions on upper leaf surface; white cottony sporulation on leaf underside; infected berries turn brown and shriveled', 'A major disease of grapes in humid eastern regions. Native American grape species have more resistance than European Vitis vinifera. Copper-based fungicides applied preventively; mandipropamid or dimethomorph for systemic protection.'],
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Standard fungicides labeled for powdery mildew and other true fungal diseases will NOT effectively control downy mildew or any other oomycete disease. Oomycetes lack the chitin cell walls that most fungicides target. Look specifically for mandipropamid (Revus), dimethomorph, phosphonate products (fosetyl-aluminum), or mefenoxam (Ridomil Gold) when treating oomycete diseases.',
+        },
+
+        {
+          type: 'h3',
+          text: 'Phytophthora Root and Crown Rot',
+        },
+        {
+          type: 'p',
+          text: 'Phytophthora species (oomycetes, not true fungi) cause some of the most devastating root and crown rots in horticulture. Phytophthora cinnamomi is responsible for the death of millions of native plants in southwestern landscapes and is a significant pathogen in poorly drained nursery and landscape situations across the US.',
+        },
+        {
+          type: 'p',
+          text: 'Identification: Plants wilt and decline despite adequate soil moisture; lower leaves turn yellow; the stem or crown at the soil line may be dark and water-soaked; roots are brown and mushy rather than white and firm; the transition between healthy and diseased root tissue is abrupt. Phytophthora crown rot typically produces a distinct dark canker at the base of the stem.',
+        },
+        {
+          type: 'p',
+          text: 'Conditions: Overwet soil; poor drainage; saturated conditions after heavy rain. Phytophthora produces motile zoospores that swim through free water in soil to reach roots — any condition creating waterlogged soil creates ideal infection conditions.',
+        },
+        {
+          type: 'p',
+          text: 'Most susceptible plants: Avocado, rhododendron, azalea, ornamental cherries, many conifers, pepper (P. capsici), tomato, cucumber, and many others. Phytophthora species are highly host-specific.',
+        },
+        {
+          type: 'tip',
+          emoji: '💧',
+          text: 'Prevention through drainage is the primary tool against Phytophthora — there is no cure for a plant with systemic infection. Improve drainage in affected areas; do not replant susceptible species in the same location without soil treatment or raised bed installation. Phosphonate products (fosetyl-aluminum, phosphoric acid) applied to foliage are translocated to roots and have suppressive activity; mefenoxam (Ridomil Gold) applied to soil is the most effective chemical treatment for high-value plants.',
+        },
+      ],
+    },
   ],
 }
