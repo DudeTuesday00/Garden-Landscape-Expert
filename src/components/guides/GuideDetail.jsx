@@ -2,6 +2,38 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import { contentMap } from '../../data/guide-content/index.js'
 
+// Hero images for guides that have a corresponding photo
+const heroImages = {
+  'shade-trees': '/guides/shade-tree-guide.png',
+  'fruit-trees': '/guides/fruit-tree-guide.png',
+  'ornamental-trees': '/guides/ornamental-tree-guide.png',
+  'dwarf-trees': '/guides/dwarf-tree-guide.png',
+  'privacy-trees': '/guides/privacy-trees-guide.png',
+  'street-trees': '/guides/street-trees-guide.png',
+  'fall-color-trees': '/guides/fall-color-trees-guide.png',
+  'plants-for-color': '/guides/plants-for-color-guide.png',
+  'moon-garden': '/guides/moon-garden-guide.png',
+  'cottage-garden': '/guides/cottage-garden-guide.png',
+  'pollinator-garden': '/guides/pollinator-garden-guide.png',
+  'cut-flower-garden': '/guides/cut-flower-garden-guide.png',
+  'wildflower-meadow': '/guides/wildflower-meadow-guide.png',
+  'spring-bulb-garden': '/guides/spring-bulb-garden-guide.png',
+  'long-blooming-perennials': '/guides/long-blooming-perennials-guide.png',
+  'annual-flowers': '/guides/annual-flowers-guide.png',
+  'pizza-garden': '/guides/pizza-garden-guide.png',
+  'herb-garden-design': '/guides/herb-garden-design-guide.png',
+  'tea-garden': '/guides/tea-garden-guide.png',
+  'childrens-garden': '/guides/childrens-garden-guide.png',
+  'square-foot-gardening': '/guides/square-foot-gardening-guide.png',
+  'three-sisters': '/guides/three-sisters-guide.png',
+  'edible-flowers': '/guides/edible-flowers-guide.png',
+  'medicinal-garden': '/guides/medicinal-garden-guide.png',
+  'plants-for-smell': '/guides/plants-for-smell-guide.png',
+  'curb-appeal': '/guides/curb-appeal-guide.png',
+  'porch-plants': '/guides/porch-plants-guide.png',
+  'salsa-garden': '/guides/salsa-garden-guide.png',
+}
+
 // Per-guide color themes using standard Tailwind palettes.
 // All class name strings must be complete so Tailwind JIT can detect them.
 const themes = {
@@ -652,10 +684,19 @@ export default function GuideDetail({ guideId }) {
         </Link>
 
         {/* Hero */}
-        <div className={`${theme.heroBg} dark:from-gray-800 dark:to-gray-700 rounded-3xl shadow-lg border ${theme.heroBorder} dark:border-gray-600 p-6 sm:p-8 text-center`}>
-          <div className="text-5xl mb-3">{content.hero.emoji}</div>
-          <h1 className={`text-2xl font-bold ${theme.heroTitle} dark:text-white`}>{content.hero.title}</h1>
-          <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-lg mx-auto">{content.hero.subtitle}</p>
+        <div className={`${theme.heroBg} dark:from-gray-800 dark:to-gray-700 rounded-3xl shadow-lg border ${theme.heroBorder} dark:border-gray-600 overflow-hidden text-center`}>
+          {heroImages[guideId] && (
+            <img
+              src={heroImages[guideId]}
+              alt={content.hero.title}
+              className="w-full h-56 sm:h-72 object-cover"
+            />
+          )}
+          <div className="p-6 sm:p-8">
+            <div className="text-5xl mb-3">{content.hero.emoji}</div>
+            <h1 className={`text-2xl font-bold ${theme.heroTitle} dark:text-white`}>{content.hero.title}</h1>
+            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-lg mx-auto">{content.hero.subtitle}</p>
+          </div>
         </div>
 
         {/* Intro */}
