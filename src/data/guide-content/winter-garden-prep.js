@@ -302,4 +302,171 @@ export const winterGardenPrepContent = {
       ],
     },
   ],
+
+    // ─── SECTION 3: BULBS ────────────────────────────────────────────────────
+    {
+      id: 'bulbs',
+      title: 'Section 3: Bulbs — Planting, Lifting & Storing',
+      blocks: [
+        {
+          type: 'p',
+          text: "Bulbs are the most time-sensitive element of fall garden work: spring-blooming bulbs must be planted in fall, during a specific window, or the opportunity is lost for the year. At the same time, tender summer-blooming bulbs must be lifted before the ground freezes or they will rot or die. Managing both in the right sequence is a central task of fall garden preparation.",
+        },
+        {
+          type: 'h3',
+          text: 'Spring-Blooming Bulbs: Planting in Fall',
+        },
+        {
+          type: 'p',
+          text: 'Spring-blooming bulbs — tulips, daffodils, hyacinths, crocus, alliums, muscari, and dozens of minor bulbs — require a period of cold dormancy (chilling) to trigger spring flowering. They must be planted in fall so the cold soil of winter provides the chilling hours they need. Bulbs planted in winter after the ground freezes hard, or in spring, will not bloom normally that first year.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Planting window: The ideal planting window is when soil temperatures have dropped below 60°F (usually 4–6 weeks before your FFD in most zones) but before the ground freezes. This window is typically September–October in Zones 4–5, October–November in Zones 6–7, and November–December in Zones 8–9. A soil thermometer is the most reliable tool; 50–55°F soil temperature is the sweet spot for bulb planting.',
+            'Depth and spacing: The general rule is to plant bulbs at a depth of 2–3 times the diameter of the bulb. Large bulbs (tulips, daffodils, alliums): 6–8 inches deep. Medium bulbs (hyacinths, large crocus): 4–6 inches deep. Small bulbs (minor crocus, muscari, scilla): 2–3 inches deep. Space bulbs so they nearly touch for a full, naturalistic look; give them breathing room for longer-term naturalization.',
+            'Tulips in warm climates: Tulips require chilling hours that natural winters do not provide in Zones 7+. In Zone 7: tulips often perform for 1–2 seasons but do not naturalize reliably; treat as annuals or chill for 6–8 weeks in a refrigerator (away from ripening fruit, which emits ethylene gas that destroys the bulb). In Zones 8+: pre-chilling (8–12 weeks in the refrigerator) is essential for any tulip bloom.',
+            'Daffodils and rodent resistance: Daffodils, alliums, and most minor bulbs are unpalatable to rodents and will naturalize and multiply freely. Plant daffodils as the backbone of the spring bulb display, with tulips as the accent. A garden of primarily daffodils will improve every year; a garden of primarily tulips will decline as rodents and heat take a toll.',
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['Bulb', 'Planting Depth', 'Spacing', 'Zones for Naturalization', 'Notes'],
+          rows: [
+            [
+              'Tulip (Tulipa spp.)',
+              '6–8 inches',
+              '4–6 inches',
+              '3–7 (unreliable in Z7; treat as annual Z8+)',
+              'Plant 5–10 per square foot for impact. Species tulips naturalize better than hybrids. Pre-chill in Z7+.',
+            ],
+            [
+              'Daffodil (Narcissus spp.)',
+              '6–8 inches',
+              '4–6 inches',
+              '3–8 (naturalizes freely)',
+              'The most reliable spring bulb in America. Deer and rodent resistant. Plant by the dozen for best effect.',
+            ],
+            [
+              'Hyacinth (Hyacinthus orientalis)',
+              '4–6 inches',
+              '4–6 inches',
+              '4–7 (Z3–4 with mulch; Z8 pre-chill)',
+              'The most intensely fragrant spring bulb. Loose in the garden after 2–3 years — flowers become less formal, still beautiful.',
+            ],
+            [
+              'Allium (Allium spp.)',
+              '4–8 inches (by size)',
+              '4–8 inches',
+              '3–8',
+              "Deer and rodent resistant. Excellent for late spring — bridging between tulips and summer perennials. A. giganteum and A. 'Gladiator' are the boldest.",
+            ],
+            [
+              'Crocus (Crocus spp.)',
+              '3–4 inches',
+              '2–3 inches',
+              '3–8',
+              'Among the earliest spring flowers — often emerge through snow. Plant in masses (50+) for impact; individual crocus look lost. Squirrels dig these; plant with chicken wire or bone meal to deter.',
+            ],
+            [
+              'Muscari / Grape Hyacinth (M. armeniacum)',
+              '3–4 inches',
+              '2–3 inches',
+              '3–9',
+              'Extremely easy and reliable. Naturalizes aggressively — plant where spreading is welcome. Brilliant blue-purple impossible to replicate with other early bulbs.',
+            ],
+            [
+              'Scilla / Siberian Squill (Scilla siberica)',
+              '3–4 inches',
+              '2–3 inches',
+              '2–8',
+              'Intense true blue; one of the earliest spring flowers. Naturalizes readily and can spread widely through lawns. Beautiful in combination with early daffodils.',
+            ],
+            [
+              'Fritillaria (Fritillaria spp.)',
+              '4–6 inches',
+              '4–6 inches',
+              '4–8 (varies by species)',
+              'F. imperialis (Crown Imperial) is dramatic and deer resistant; F. meleagris (checkered lily) is delicate and charming. Both unusual and valuable.',
+            ],
+            [
+              'Camassia (Camassia spp.)',
+              '4–6 inches',
+              '4–6 inches',
+              '3–8',
+              'Tall spikes of blue-purple in late spring. Native North American. Tolerates wet spring soil where other bulbs would rot. Excellent for rain garden edges.',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '💡',
+          text: "The Bulb Lasagna Technique: Layer multiple bulb species at different depths in a single container or planting area to maximize bloom from a single space. Plant the deepest-planted bulbs first (daffodils at the bottom), then a layer of soil, then medium bulbs (tulips or hyacinths), then another soil layer, then small bulbs (crocus or muscari) nearest the surface. The result is a sequence of bloom from the same spot across 6–8 weeks of spring — crocus first, then hyacinths, then tulips, then daffodils — rather than a single two-week window. This technique is particularly valuable for containers that will be brought onto a porch or into view in spring. Prepare the container in fall, store it in a cold (but not freezing) garage or porch through winter, and bring it into view when the first green shoots appear.",
+        },
+        {
+          type: 'h3',
+          text: 'Tender Bulbs: Lifting and Storing',
+        },
+        {
+          type: 'p',
+          text: 'Tender summer-blooming bulbs — dahlias, cannas, gladiolus, caladiums, elephant ears, tuberose — are native to tropical or subtropical climates and will be killed by freezing temperatures. In Zones 7 and colder (and some borderline Zone 8 areas), they must be dug after the first frost kills their foliage and stored indoors through winter.',
+        },
+        {
+          type: 'table',
+          headers: ['Tender Bulb', 'Lift After:', 'Storage Conditions', 'Storage Container', 'Zones for In-Ground Overwintering'],
+          rows: [
+            [
+              'Dahlia',
+              'First frost kills foliage; let cure in ground 1–2 weeks then dig',
+              '40–50°F; dark; dry but not desiccating; 40–60% humidity',
+              'Cardboard boxes or milk crates with peat moss, vermiculite, or shredded newspaper',
+              'Zone 8+ (with heavy mulch); Zones 7 and colder: must lift',
+            ],
+            [
+              'Canna',
+              'After frost blackens foliage',
+              '50–60°F; dry; dark',
+              'Paper bags, cardboard boxes, or open milk crates; do not seal in plastic',
+              'Zone 7+ with 4–6 inches of mulch; Zones 6 and colder: must lift',
+            ],
+            [
+              'Gladiolus',
+              'After foliage yellows, 4–6 weeks after bloom',
+              '35–45°F; dark; dry; excellent air circulation',
+              'Mesh bags or open cardboard trays; do not seal — corms rot without airflow',
+              'Zone 7+ with heavy mulch (marginally hardy); Zones 6 and colder: lift annually',
+            ],
+            [
+              'Caladium',
+              'Before first frost; or at first frost (not cold-tolerant)',
+              '65–70°F; dry; warm — these are tropical; cold damages them as much as freezing',
+              'Paper bags or open boxes with dry peat moss',
+              'Zone 9+ only; most gardeners treat as annuals or store',
+            ],
+            [
+              'Elephant Ear (Colocasia / Alocasia)',
+              'After first frost blackens foliage',
+              '50–60°F; slightly moist peat; avoid completely drying out',
+              'Paper bags or boxes with slightly moist peat; check monthly',
+              'Colocasia Z7+ with deep mulch; Alocasia less hardy — lift Z8 and colder',
+            ],
+            [
+              'Tuberose (Polianthes tuberosa)',
+              'After first frost',
+              '55–65°F; dry; dark',
+              'Paper bags or cardboard; good airflow essential',
+              'Zone 8+ with mulch; Zones 7 and colder: lift annually',
+            ],
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Digging and curing: After the first frost kills the foliage, cut stems back to 4–6 inches. Dig carefully with a garden fork, working a foot away from the stem to avoid spearing the bulb. Shake off soil (do not wash — wet bulbs rot in storage). Allow the dug bulbs to cure (dry) in a single layer in a cool, dry, well-ventilated space for 1–2 weeks before packing for storage. Curing hardens the outer skin and dramatically reduces storage rot.',
+            'Storage check: Inspect stored bulbs monthly. Remove any showing rot immediately — one rotting bulb will rapidly spread to neighbors. If bulbs are shriveling, add a small amount of barely-moist vermiculite to the storage container. If they are soft or moldy, the storage conditions are too warm or humid.',
+          ],
+        },
+      ],
+    },
+  ],
 }

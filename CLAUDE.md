@@ -342,7 +342,7 @@ Thirty-one full guides integrated into the app:
 - `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`)
 - `src/data/guide-content/culinary-herb-garden.js` — Culinary Herb Garden (`id: 'culinary-herb-garden'`)
 - `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **complete** (all 10 sections built)
-- `src/data/guide-content/winter-garden-prep.js` — Winter Garden Prep (`id: 'winter-garden-prep'`) — **in progress** (Intro + Sections 1–2 of 10 built)
+- `src/data/guide-content/winter-garden-prep.js` — Winter Garden Prep (`id: 'winter-garden-prep'`) — **in progress** (Intro + Sections 1–3 of 10 built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -477,7 +477,7 @@ export async function generateMetadata({ params }) {
 | Overview: Know Your Numbers | ✅ Done | "Why Winter Prep Matters" tip callout; 4-row regional zone/frost date table; USDA zone vs frost date tip |
 | Section 1: Preparing Perennials & Ornamental Grasses | ✅ Done | 7-row cut-back decision table; dividing perennials (4 list items); mulching (4 list items) |
 | Section 2: Preparing Trees & Shrubs for Winter | ✅ Done | 6-row pruning timing table; anti-desiccant/burlap/snow list; 5-row rose protection table; young trees list (trunk wrap, rodent guards, staking, deep watering) |
-| Section 3: Bulbs — Planting, Lifting & Storing | 🔜 Pending | Spring bulb table, lasagna technique tip, tender bulb lifting table |
+| Section 3: Bulbs — Planting, Lifting & Storing | ✅ Done | Intro + 4-item planting list; 9-row spring bulb table; bulb lasagna tip; 6-row tender bulb lifting/storage table; digging/curing list |
 | Section 4: Soil Health — The Fall Amendment Window | 🔜 Pending | Amendment strategies, no-dig principle, composting |
 | Section 5: Overwintering Tender Plants Indoors | 🔜 Pending | Overwintering spectrum, pest inspection, indoor care table |
 | Section 6: The Kitchen Garden in Fall & Winter | 🔜 Pending | Season extension, fall cleanup, fall planting table |
