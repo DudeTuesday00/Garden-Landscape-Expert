@@ -624,5 +624,105 @@ export const winterGardenPrepContent = {
         },
       ],
     },
+
+    // ─── SECTION 6: THE KITCHEN GARDEN IN FALL & WINTER ──────────────────────
+    {
+      id: 'kitchen-garden',
+      title: 'Section 6: The Kitchen Garden in Fall & Winter',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The vegetable garden requires its own set of fall and winter preparations, distinct from the ornamental garden, and offers its own set of opportunities. Fall is the best planting season for many crops in mild climates; in cold climates, it is the time to close down the season properly and set the stage for a productive spring. The difference between a kitchen garden properly put to bed and one abandoned in October is significant: the properly prepared bed is ready to plant 2–3 weeks earlier in spring, is dramatically less weedy, and has had its soil improved by months of biological activity.',
+        },
+        {
+          type: 'h3',
+          text: 'Extending the Harvest: Cold Frames, Row Cover & Hoop Houses',
+        },
+        {
+          type: 'list',
+          items: [
+            'Row cover (floating row cover / Agribon): A lightweight spunbonded fabric laid directly over crops or over hoops provides 2–4°F of frost protection (light-weight covers) to 6–8°F (heavy-weight covers). Allows light and water through. Can be used as a tent over hoops or draped loosely over plants. Excellent for extending lettuce, spinach, kale, and root crops several weeks past FFD in all zones. Inexpensive and widely available.',
+            'Cold frames: A low box with a transparent lid (glass or polycarbonate) that creates a protected microclimate 10–20°F warmer than outside. A cold frame in Zone 6 can effectively extend the growing zone to Zone 7 or 8 for the crops inside it. Ideal for starting seedlings in late winter and growing hardy greens through winter in Zones 6+. Vent on sunny days to prevent overheating.',
+            'Hoop houses and low tunnels: PVC or metal hoops with row cover or plastic film draped over them create a protected tunnel over a bed. Low tunnels (12–18 inches tall) are inexpensive and effective for extending root crops, greens, and brassicas. Full-height hoop houses (6–8 feet) allow gardeners to work inside and can extend the season by an entire month at either end in most US climates.',
+            'What to grow under cover: Hardy greens that tolerate and even improve with frost: kale, arugula, spinach, mache (corn salad), claytonia (miner\'s lettuce), Asian greens (tatsoi, mizuna), Swiss chard (in mild cold), parsley. Root crops that stay sweet in cold soil: carrots, parsnips, leeks, turnips, rutabaga. In Zone 7+, these can be harvested throughout winter under minimal cover.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Fall Garden Cleanup',
+        },
+        {
+          type: 'list',
+          items: [
+            'Remove diseased material: Any plants showing signs of disease — tomato blight, powdery mildew, black spot on roses, fungal leaf spots — should be removed and disposed of in the trash, not composted. Diseased plant debris left in the garden overwinters the pathogen and reinfects the garden in spring from the same location.',
+            'Pull spent annuals and summer crops: Remove frost-killed annuals and spent vegetable plants promptly. Leaving them in place through winter provides habitat for disease, slugs, and pests. The exception is plants whose stems provide wildlife value (see Section 1).',
+            'Manage alliums: Garlic is planted in fall (October–November in most zones) for harvest the following summer. Plant individual cloves 2–4 inches deep, 6 inches apart, pointed end up. Mulch after planting in cold climates. This is one of the most satisfying fall planting tasks and the most economical way to grow high-quality garlic.',
+            'Sow overwintering cover crops: After removing summer crops from empty beds, sow cover crops immediately rather than leaving soil bare. Crimson clover, hairy vetch, winter rye, and winter wheat are all effective choices depending on your zone. Sow at least 4–6 weeks before FFD for establishment.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Fall Planting — What Goes In Now',
+        },
+        {
+          type: 'p',
+          text: 'In mild climates, fall is the most productive planting season for a wide range of crops. Even in cold climates, certain crops go in the ground in fall to overwinter and produce early spring harvests.',
+        },
+        {
+          type: 'table',
+          headers: ['Crop', 'When to Plant in Fall', 'Zones for Fall Success', 'Notes'],
+          rows: [
+            [
+              'Garlic',
+              '6–8 weeks before ground freeze; typically Oct–Nov in most zones',
+              'All zones with mulch',
+              'Plant after first light frost in cold zones. Hardneck types for Zone 6 and colder; softneck types for Zone 8+. Mulch 4–6 inches after planting in cold climates.',
+            ],
+            [
+              'Spinach',
+              '6–8 weeks before FFD',
+              'Zones 3–9',
+              'Germinates in cool soil. Sow seeds directly; small plants survive winter in Zone 5+ and produce early spring harvest. Under row cover, extends dramatically.',
+            ],
+            [
+              'Kale',
+              '8–10 weeks before FFD',
+              'Zones 3–9',
+              'Established plants can survive to 10°F or below without protection. Flavor improves significantly after frost. One of the most cold-hardy vegetables.',
+            ],
+            [
+              'Mache (Corn Salad)',
+              '6–8 weeks before FFD',
+              'Zones 4–9',
+              'Overwinters as small rosettes in Zone 5+ and produces luxuriant spring growth. Extremely cold-hardy and underused. Nutty, mild flavor.',
+            ],
+            [
+              'Arugula',
+              '4–6 weeks before FFD',
+              'Zones 5–9',
+              'Sow in September for fall harvest; small plants survive to 15°F or below under row cover. Excellent cold frame crop.',
+            ],
+            [
+              'Carrots',
+              '10–12 weeks before FFD',
+              'All zones with mulch',
+              'Carrots left in the ground through winter sweeten dramatically with cold. Mulch heavily after ground freeze to extend harvest through winter. Dig as needed.',
+            ],
+            [
+              'Asian Greens (tatsoi, mizuna, bok choy)',
+              '4–8 weeks before FFD',
+              'Zones 5–9',
+              'Among the most productive fall and winter crops. Tatsoi is the most cold-hardy. All are excellent under row cover and in cold frames.',
+            ],
+            [
+              'Overwintering onion sets',
+              'September–October',
+              'Zones 5–9',
+              'Planted in fall, overwintered as small plants, harvested as spring scallions or allowed to mature for full-size onions. Produces earlier than spring-planted onions.',
+            ],
+          ],
+        },
+      ],
+    },
   ],
 }
