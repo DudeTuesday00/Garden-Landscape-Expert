@@ -843,5 +843,131 @@ export const winterGardenPrepContent = {
         },
       ],
     },
+
+    // ─── SECTION 9: SUPPORTING WILDLIFE THROUGH WINTER ───────────────────────
+    {
+      id: 'wildlife',
+      title: 'Section 9: Supporting Wildlife Through Winter',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The winter garden is not empty — it is full of life that is invisible in summer: insects in hollow stems, overwintering pupae in the leaf litter, birds moving through the garden daily in search of the seedheads left standing, small mammals sheltering in the brush pile at the garden\'s edge. The decisions made in fall about what to leave standing, what to cut, and what to clean up have direct and significant consequences for the wildlife that depends on the garden as habitat in its most vulnerable season.',
+        },
+        {
+          type: 'h3',
+          text: 'What to Leave: The Winter Wildlife Habitat List',
+        },
+        {
+          type: 'list',
+          items: [
+            'Standing perennial seedheads: Coneflower, rudbeckia, black-eyed Susan, ironweed, Joe-Pye weed, native asters, and ornamental grasses are primary winter food sources for goldfinches, pine siskins, dark-eyed juncos, chickadees, and other seed-eating birds. Studies by the Cornell Lab of Ornithology show that winter bird diversity and abundance in residential gardens correlates directly with the amount of standing seed-bearing structure left through winter.',
+            'Hollow and pithy stems: Stems of bee balm, Joe-Pye weed, sambucus, and similar pithy-stemmed perennials are nesting sites for native stem-nesting bees. Leave stem stubs 12–18 inches tall through winter and into the following summer (late-emerging bees may not vacate stems until August). Cut these stubs late in the second summer, not in fall.',
+            'Leaf litter: The leaf layer beneath trees and shrubs is one of the most valuable wildlife habitats in any American garden. Luna moth pupae, firefly larvae, Eastern tent caterpillar egg masses, and dozens of other beneficial and charismatic insects overwinter in or just below the leaf layer. Raking all leaves from every bed removes this habitat entirely. Leave a 2–3 inch layer of leaves under trees and in naturalistic areas; rake only the paths and lawn.',
+            'Brush piles: A brush pile — dead branches, stems, and woody debris arranged loosely at the garden\'s edge — provides essential winter cover for cottontail rabbits, wrens, sparrows, and many small mammals. Place brush piles away from structures to reduce rodent pressure near the house but close enough to the garden to be usable by garden-dwelling wildlife.',
+            'Water: Fresh water is more difficult for birds and small mammals to find in winter than food. A heated birdbath or a birdbath with a simple immersion heater provides water that does not freeze. Place it in a visible location and clean it weekly.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Feeding Birds Through Winter',
+        },
+        {
+          type: 'p',
+          text: 'Supplemental bird feeding is one of the most direct and rewarding ways to engage with the winter garden. It is also well-studied: research consistently shows that supplemental feeding during winter cold snaps and ice events can be the difference between survival and starvation for individual birds.',
+        },
+        {
+          type: 'list',
+          items: [
+            'What to offer: Black oil sunflower seed is the highest-value single food for the widest variety of feeder birds. Suet (rendered animal fat, available in cakes at any hardware or feed store) is essential for woodpeckers, nuthatches, and kinglets in cold weather. Safflower seed deters squirrels and starlings while feeding cardinals, chickadees, and nuthatches. Niger (thistle) seed in a tube feeder attracts goldfinches and siskins.',
+            'Feeder placement: Place feeders within 3 feet of a window (so birds that strike the glass are not killed by the impact speed) or more than 10 feet away (far enough that most birds have time to avoid the glass). Position near cover — a shrub or brush pile where birds can retreat quickly from hawks — but not so close that cats can use the cover for ambush.',
+            'Feeder hygiene: Clean feeders every 2 weeks with a 10% bleach solution to prevent the spread of avian disease. Remove and discard wet or moldy seed immediately. A sick bird at a dirty feeder can infect every other bird that visits that feeder within days.',
+          ],
+        },
+      ],
+    },
+
+    // ─── SECTION 10: PLANNING FOR SPRING ─────────────────────────────────────
+    {
+      id: 'planning-for-spring',
+      title: 'Section 10: Planning for Spring — The Gift You Give Yourself Now',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The quiet months of winter are the finest time for garden planning — when the garden\'s bones are visible, when the year\'s successes and failures are fresh in memory, and when the seed catalogs arrive with their annual invitation to dream. Planning done in winter becomes execution in spring; every decision made now in a warm kitchen with a cup of tea is one fewer urgent decision on a cold April morning with muddy boots.',
+        },
+        {
+          type: 'h3',
+          text: 'The Year-End Garden Assessment',
+        },
+        {
+          type: 'p',
+          text: 'Before the snow covers everything and memory fades, walk the garden with a notebook and record what you see — not just what failed, but what exceeded expectations, what looked beautiful in unexpected combinations, and what you want more of.',
+        },
+        {
+          type: 'list',
+          items: [
+            'What worked: Which plants thrived without intervention? Which combinations were especially beautiful? Which areas required the least maintenance while delivering the most impact? These are the elements to expand next year.',
+            'What didn\'t: Which plants struggled in their location? Which required more water, care, or intervention than they delivered? Which combinations clashed or competed poorly? Honest assessment now prevents repeating expensive mistakes.',
+            'Gaps in the design: Are there periods where the garden looks thin or uninteresting? Note the months and plan plants to fill those gaps. A garden with something beautiful in every month is achieved by deliberately filling gaps, not by accident.',
+            'Infrastructure needs: What garden structures need replacement or improvement? A cold frame that would extend the kitchen garden season by 6 weeks; a new compost bin; a raised bed in a better location; a path through the garden\'s wet area. These are projects for a winter weekend, not a spring morning when planting is urgent.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Seed Starting Calendar — Planning Backwards from Last Frost Date',
+        },
+        {
+          type: 'p',
+          text: 'The most common seed-starting mistake is starting too early. Plants started too many weeks before the last frost date become root-bound, leggy, and stressed by the time they can be transplanted. The correct approach is to calculate backwards from your Last Frost Date (LFD), using each crop\'s recommended weeks-to-transplant as the guide.',
+        },
+        {
+          type: 'table',
+          headers: ['Crop', 'Weeks Before LFD to Start Indoors', 'Start Date Example (LFD = May 1)', 'Notes'],
+          rows: [
+            ['Onions and leeks', '10–12 weeks', 'February 11–25', 'Longest lead time of any common vegetable. Slow-growing; need the full 12 weeks for transplant-ready size.'],
+            ['Celery / celeriac', '10–12 weeks', 'February 11–25', 'Slow-growing; surface sow; needs consistent moisture and warmth to germinate.'],
+            ['Petunias, snapdragons, stocks', '10–12 weeks', 'February 11–25', 'Slow-growing annuals that benefit from an early start; petunias in particular.'],
+            ['Peppers', '8–10 weeks', 'February 25 – March 11', 'Slower germination than tomatoes; need warmth (75–85°F) for best germination rates. Start before tomatoes.'],
+            ['Tomatoes', '6–8 weeks', 'March 6–20', 'One of the most commonly started too early. 6–7 weeks is ideal for most varieties; 8 weeks maximum.'],
+            ['Eggplant', '8–10 weeks', 'February 25 – March 11', 'Similar to peppers; needs warmth and patience. Don\'t rush outdoors — eggplant hates cold soil.'],
+            ['Broccoli, cabbage, cauliflower', '4–6 weeks', 'March 20 – April 3', 'Can be started earlier for an April transplant into a cold frame or hoop house.'],
+            ['Squash and cucumbers', '2–3 weeks', 'April 10–18', 'Fast-growing; starting too early produces plants that outgrow their cells. Direct seeding after LFD is often just as effective.'],
+            ['Basil', '4–6 weeks', 'March 20 – April 3', 'Needs warmth (70°F+) to germinate well. Hates cold; do not harden off too aggressively.'],
+            ['Marigolds, zinnias, cosmos', '4–6 weeks', 'March 20 – April 3', 'Fast-growing annuals that do not benefit from early starting. Direct seeding after LFD is a viable alternative.'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '📅',
+          text: 'Zone 7 reference (LFD ≈ April 15): shift the example dates 2–3 weeks earlier per zone northward, 2–3 weeks later per zone southward. Search "[your city] last frost date" for a precise local LFD.',
+        },
+        {
+          type: 'h3',
+          text: 'The Master Winter Garden Checklist',
+        },
+        {
+          type: 'list',
+          items: [
+            'PERENNIALS & GRASSES — Selective perennial cutback (leave seedheads and hollow stems) | Divide overcrowded perennials (4–6 weeks before FFD) | Apply winter mulch after ground firms (not before) | Mark locations of dormant plants before they disappear',
+            'TREES & SHRUBS — Deep watering before ground freezes | Anti-desiccant spray on broad-leaved evergreens | Trunk wrap on young trees | Rodent guards on young trees | Rose winter protection (zone-appropriate method) | Wrap or screen arborvitae and upright evergreens | Remove and dispose of any diseased plant material',
+            'BULBS — Plant all spring bulbs before ground freezes | Lift tender bulbs (dahlias, cannas, gladiolus) after first frost | Cure and pack tender bulbs for storage | Verify storage conditions (temp, humidity, ventilation) | Monthly storage checks through winter',
+            'SOIL & BEDS — Apply 2–3 in compost to emptied beds (no-dig, surface only) | Sow cover crops in emptied vegetable beds | Sheet mulch any areas planned for new beds in spring | Apply lime or sulfur if soil test indicates pH adjustment needed',
+            'TENDER PLANTS INDOORS — Inspect all plants for pests before bringing indoors | Treat pest problems outdoors | Quarantine new arrivals from existing houseplants | Adjust watering and fertilizing for indoor conditions',
+            'KITCHEN GARDEN — Plant garlic (6–8 weeks before ground freeze) | Install cold frames or row cover for extending greens | Plant overwintering greens (kale, spinach, mâche) under cover | Remove all diseased plant debris from vegetable beds',
+            'TOOLS & EQUIPMENT — Clean all tools | Sharpen cutting tools | Oil metal surfaces | Condition wooden handles | Drain and store hoses indoors | Winterize drip irrigation and sprinkler systems | Turn off and drain outdoor faucets | Store fertilizers, pesticides, and chemicals in frost-free location',
+            'PLANNING — Year-end garden walk and notes | Order seed catalogs | Calculate seed-starting dates from LFD | Place seed orders by February (before best varieties sell out) | Plan any design changes for spring implementation',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌱',
+          text: 'There is a particular satisfaction in standing in the late fall garden with the work done — the bulbs underground, the beds mulched, the tools cleaned and hung, the dahlias packed in their boxes in the basement — and knowing that everything is in place. The garden is not dormant; it is gathering. The bulbs are forming their root systems in the cold soil. The compost is breaking down. The cover crops are holding the soil and feeding its organisms. Winter preparation is not the end of the garden year. It is the beginning of the next one. The work you do now — each bulb planted, each bed mulched, each tool cleaned — is an act of confidence in spring\'s return and a gift to the gardener you will be when it arrives.',
+        },
+        {
+          type: 'p',
+          text: '"Every bulb planted in fall is a promise spring will keep."',
+        },
+      ],
+    },
   ],
 }
