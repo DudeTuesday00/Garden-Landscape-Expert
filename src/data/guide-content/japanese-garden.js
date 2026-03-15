@@ -661,5 +661,119 @@ export const japaneseGardenContent = {
         },
       ],
     },
+
+    // ─── SECTION 10: THROUGH THE SEASONS + TROUBLESHOOTING ───────────────────
+    {
+      id: 'seasons-and-troubleshooting',
+      title: 'Through the Seasons & Troubleshooting',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A Japanese garden is never finished — it changes with every season, and the care it receives across the year shapes its quality as much as any initial design decision. The seasonal calendar below uses Zone 6–7 as a reference point; shift tasks 4–6 weeks earlier in warmer climates (Zone 8+) and 4–6 weeks later in colder climates (Zones 3–5). In regions with mild winters and no hard frost, some tasks compress or overlap.',
+        },
+        {
+          type: 'h3',
+          text: 'Seasonal Maintenance Calendar',
+        },
+        {
+          type: 'table',
+          headers: ['Season', 'Timing (Zone 6–7 ref.)', 'Key Tasks'],
+          rows: [
+            [
+              'Early Spring',
+              'March – early April',
+              'Remove winter protection (burlap, anti-desiccant) from Japanese maples and camellias once hard frost risk passes. Rake and refresh karesansui gravel after winter debris. Divide ornamental grasses before new growth emerges. Begin moss establishment projects — spring moisture and cool temps are ideal. Prune dead wood from all plants before new growth flushes.',
+            ],
+            [
+              'Late Spring',
+              'Late April – May',
+              'Pinch pine candles by one-half to two-thirds before needles extend fully — the single most important conifer maintenance task of the year. Shear azalea and camellia karikomi forms immediately after bloom; do not shear after mid-June or you risk cutting next year\'s buds. Begin shaping new growth on cloud-pruned hollies and boxwood. Lay moss sheets in new areas; keep consistently moist for 6–8 weeks.',
+            ],
+            [
+              'Early Summer',
+              'June',
+              'Complete first shearing of all niwaki pads and clipped mound forms before summer heat sets in. Check bamboo for runners escaping containment barriers; sever immediately. Establish water feature filtration and algae management routines before peak heat. Apply a thin layer of fine gravel top-dressing to karesansui areas that have compacted or lost crispness. Deadhead accent plants as needed.',
+            ],
+            [
+              'Midsummer',
+              'July – August',
+              'Irrigate deeply and infrequently — shallow frequent watering promotes shallow roots. Japanese maples and mosses are most vulnerable to drought stress at this time. Keep moss consistently moist through heat waves; a single severe dry spell can set back a moss garden by a full season. Avoid pruning in peak heat; stressed plants do not heal well. Monitor for pests (Japanese beetle on roses, scale on hollies and boxwood).',
+            ],
+            [
+              'Fall',
+              'September – November',
+              'The most beautiful season in most Japanese gardens — peak color from Japanese maples, stewartia, and katsura. Rake fallen leaves off moss immediately; smothered moss browns and dies within days under a wet leaf layer. Divide and replant ferns and hostas. Plant new trees and shrubs through October — fall planting allows root establishment before freeze. Apply anti-desiccant spray to evergreen hollies and Hinoki cypress in Zones 5–6 before freeze. Complete all heavy pruning before hard frost.',
+            ],
+            [
+              'Winter',
+              'December – February',
+              'The structural season — stone, form, branching, and hardscape become the primary visual elements. Japanese black pines and junipers are at their most sculptural against snow or dormant background. Protect marginally hardy plants (Japanese maple in Zone 5, camellia in Zone 6) with burlap windbreak or frost cloth during extended below-zero events. Re-rake karesansui after snowmelt. Prune deciduous trees when fully dormant — the leafless structure reveals branch architecture clearly.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Troubleshooting Common Problems',
+        },
+        {
+          type: 'table',
+          headers: ['Problem', 'Likely Cause', 'Solution'],
+          rows: [
+            [
+              'Moss turning brown and dying in patches',
+              'Drying out between waterings; smothered by fallen leaves; too much foot traffic; compacted soil; excessive sun',
+              'Water moss daily in hot or dry weather — it should feel damp to the touch at all times in summer. Rake leaves off immediately after they fall. Redirect foot traffic with stepping stones. For sunny areas, accept that moss will struggle and substitute Sagina subulata (Irish moss) or Dymondia (warm climates). Aerate compacted soil with a chopstick or thin rod before re-establishing moss.',
+            ],
+            [
+              'Karesansui gravel losing pattern definition; weeds emerging through surface',
+              'Inadequate landscape fabric base; fabric has degraded; raking medium too coarse',
+              'Remove gravel, inspect fabric, and replace if degraded. Use a quality woven landscape fabric rated for 15–20 years, not the thin non-woven type. Angular decomposed granite holds pattern better than round pea gravel. Hand-weed any breakthroughs immediately — weeds in karesansui are disproportionately distracting.',
+            ],
+            [
+              'Japanese maple leaves scorching (brown crispy margins in summer)',
+              'Afternoon sun in hot climates; reflected heat from paving or walls; drought stress; late frost burn on new foliage in spring',
+              'Relocate if possible to a site with afternoon shade. Mulch the root zone deeply (3–4 in.) to retain soil moisture. Protect from late frost with frost cloth in spring. In Zones 8–9, choose heat-tolerant cultivars (Sango Kaku, Bloodgood) rather than the more delicate laceleaf types for exposed sites.',
+            ],
+            [
+              'Koi pond water turning green (algae bloom)',
+              'Too much sunlight on water; excess nutrients from fish waste or decaying plant matter; insufficient filtration or circulation',
+              'Shade 50–60% of the water surface with aquatic plants (lotus, water lily, water iris). Increase filtration capacity. Reduce fish stocking density. Remove decaying plant material promptly. UV clarifier units are effective for persistent algae problems. Do not use algaecides in koi ponds — they harm fish.',
+            ],
+            [
+              'Bamboo runners escaping containment',
+              'Barrier too shallow or degraded; runners went over the top of barrier; missed seasonal inspection',
+              'Running bamboo barriers must be at least 24–30 in. deep and project 2 in. above grade so runners cannot escape over the top. Inspect the perimeter in late spring (when runners are most active) and sever any that have crossed the barrier immediately with a spade. If bamboo has already escaped significantly, consider transitioning to a clumping bamboo species entirely.',
+            ],
+            [
+              'Stepping stones settling unevenly or becoming unstable',
+              'Inadequate base preparation; frost heave in cold climates; soil subsidence under heavy stones',
+              'Reset stones on a stable base of compacted crushed gravel (2–3 in.) topped with coarse sand. In Zones 3–6 where frost heave is significant, use a deeper gravel base (4–6 in.) to minimize movement. Stones should be stable under foot pressure before finishing — rock any stone that moves and reset it before completing the path.',
+            ],
+            [
+              'Garden feeling cluttered and restless despite following design principles',
+              'Too many species, colors, or elements competing for attention; insufficient open space; ornaments overused',
+              'Return to the core principle of ma — negative space. Walk the garden and identify the three elements that most demand attention. Remove or relocate everything else. A Japanese garden should have a clear primary focal point visible from the main viewing position, secondary points that reveal themselves as you move, and large areas of restful simplicity (gravel, moss, clipped mound) that give the eye somewhere to rest.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Garden as Ongoing Practice',
+        },
+        {
+          type: 'p',
+          text: 'The great Japanese garden masters understood something that Western garden culture often misses: a garden is not a project with a completion date. It is a practice — a daily and seasonal engagement with living material, weather, and the slow accumulation of time. The Japanese maple you plant this year will be more beautiful in ten years, and more beautiful still in twenty. The moss you establish this fall will form a continuous carpet in three years. The cloud-pruned juniper you begin shaping today will reach its full sculptural power in a decade of patient annual attention.',
+        },
+        {
+          type: 'p',
+          text: 'This long view is one of the most valuable things a Japanese garden can offer the gardener. In a culture that prizes speed and instant results, the Japanese garden asks for patience, attention, and the willingness to let a thing become what it is meant to become on its own schedule. The garden will teach you what it needs. What you bring to it, season after season, is the practice of paying attention.',
+        },
+        {
+          type: 'tip',
+          emoji: '🍂',
+          text: 'One of the most celebrated acts in traditional Japanese garden culture is momijigari — maple viewing — the deliberate practice of sitting with the autumn color of maples as the leaves reach their peak and begin to fall. Not photographing, not posting, not sharing — simply sitting, watching, and being present with something beautiful and temporary. Build a place in your garden where you can sit still, face the best composition, and do nothing else. The garden will reward you for it.',
+        },
+      ],
+    },
   ],
 }
