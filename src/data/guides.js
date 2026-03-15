@@ -317,7 +317,7 @@ export const guideCategories = [
         title: 'Japanese Garden Elements',
         emoji: '⛩️',
         description: 'Bring tranquility and harmony to your space with Japanese garden principles.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'zen-garden',

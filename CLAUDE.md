@@ -340,6 +340,7 @@ Thirty-one full guides integrated into the app:
 - `src/data/guide-content/curb-appeal.js` — Front Yard Curb Appeal (`id: 'curb-appeal'`)
 - `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`)
 - `src/data/guide-content/culinary-herb-garden.js` — Culinary Herb Garden (`id: 'culinary-herb-garden'`)
+- `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **in progress** (Sections 1–2 of ~10 built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -442,6 +443,27 @@ export async function generateMetadata({ params }) {
 - `src/data/guide-content/plants-for-fragrance.js` — Plants for Fragrance (`id: 'plants-for-smell'`); 7 sections: fragrance types by season, fragrant shrubs & trees, roses, perennials & groundcovers, annuals & climbers, design/placement rules, challenging conditions, and a full seasonal calendar; theme: purple/pink gradient in `GuideDetail.jsx`; set `comingSoon: false` under Herbs & Fragrance in `guides.js`
 - `src/data/guide-content/curb-appeal.js` — Front Yard Curb Appeal (`id: 'curb-appeal'`); 7 sections: five elements of curb appeal, three-zone layout, foundation planting rules, best plants by season, seasonal color strategy, hardscape & lighting, low-maintenance approach, and zone-by-zone picks; theme: sky/blue gradient in `GuideDetail.jsx`; set `comingSoon: false` under Landscape Design in `guides.js`
 - `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`); 8 sections: porch microclimate assessment, sunny porch plants, shady porch plants, container selection & soil, fragrant porch plants, seasonal calendar, care & troubleshooting, and overwintering; theme: amber/yellow gradient in `GuideDetail.jsx`; set `comingSoon: false` under Container & Small Spaces in `guides.js`
+
+### Japanese Garden Elements Guide — Docx Sync Progress
+
+`src/data/guide-content/japanese-garden.js` being built section-by-section to match `Japanese_Garden_Elements_Guide.docx`.
+
+| Section | Status | Notes |
+|---|---|---|
+| Hero + intro paragraph | ✅ Done | Subtitle and intro from docx opening |
+| Core Aesthetic Principles (Ma + 7 principles table) | ✅ Done | 7-row table: Fukinsei, Kanso, Koko, Shizen, Yugen, Datsuzoku, Seijaku; wabi-sabi tip |
+| Major Japanese Garden Types | ✅ Done | 6-row table: Strolling, Dry/Rock, Tea, Courtyard, Borrowed Scenery, Paradise; blend tip |
+| Section 2: Stone — The Bones of the Japanese Garden | 🔜 Pending | Stone selection, placement rules, types table (8 rows), lanterns |
+| Section 3: Water | 🔜 Pending | Ponds, streams, dry water, tsukubai |
+| Section 4: Plants | 🔜 Pending | Trees table, shrubs table, ground layer, moss establishment, bamboo |
+| Section 5: Dry Garden — Karesansui | 🔜 Pending | Step-by-step construction, raking patterns table, meditation tip |
+| Section 6: Structures, Paths & Hardscape | 🔜 Pending | Gates, fences, bridges, paths, pavilion |
+| Section 7: Niwaki — Cloud Pruning | 🔜 Pending | Plants table, 6-step technique |
+| Section 8: Regional Adaptation | 🔜 Pending | 7-row table by US region |
+| Section 9: Small-Space Japanese Gardens | 🔜 Pending | 6-row compositions table |
+| Section 10: Through the Seasons + Troubleshooting | 🔜 Pending | Seasonal calendar table, 7-row troubleshooting table, closing reflection |
+
+---
 
 ### National Audience — Oklahoma References Removed ✅
 
