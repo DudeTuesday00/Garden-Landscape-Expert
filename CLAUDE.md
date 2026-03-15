@@ -85,14 +85,15 @@ Garden-Landscape-Expert/
     │   ├── ContactUs.jsx            # 'use client' — contact form (Formspree mlgpgdny); success state
     │   ├── PrivacyPolicy.jsx        # Static privacy policy page
     │   ├── wizard/
-    │   │   ├── garden-architect-2.png # Hero image used on both HomePage card and WelcomeScreen landing
+    │   │   ├── Garden-Architect.png   # Hero image used on HomePage card (Garden Architect)
+    │   │   ├── garden-architect-2.png # Hero image used on WelcomeScreen landing
     │   │   ├── Wizard.jsx             # 'use client' — main wizard shell + state machine
     │   │   ├── WelcomeScreen.jsx      # Intro screen — shows garden-architect-2.png at top
     │   │   ├── QuestionStep.jsx       # Per-question UI (single + multi-select)
     │   │   ├── ProgressBar.jsx        # Step progress indicator
     │   │   └── Results.jsx            # Plant recommendation cards
     │   └── guides/
-    │       ├── Plantopedia2.png       # Hero image used on both HomePage card and GuidesHome landing
+    │       ├── Plantopedia.png        # Hero image used on both HomePage card and GuidesHome landing
     │       ├── GuidesHome.jsx         # Plantopedia landing — card grid + Coming Soon badges; live guides Link to /guides/[id]
     │       └── GuideDetail.jsx        # Server component — renders guide content from contentMap; Link back to /guides
     ├── data/
@@ -459,8 +460,8 @@ All guide content is now written for a national US audience (Zones 3–11). Okla
 ### Homepage Redesign & Section Renaming ✅
 
 - New `src/components/HomePage.jsx` — default landing page with two large image-backed path cards
-- **Garden Architect card** — uses `src/components/wizard/garden-architect-2.png` as a full-width hero image; routes to the wizard; green (`garden-*`) border and button
-- **Plantopedia card** — uses `src/components/guides/Plantopedia2.png` as a full-width hero image; routes to guides; gold (`earth-*`) border and button
+- **Garden Architect card** — uses `src/components/wizard/Garden-Architect.png` as a full-width hero image; routes to the wizard; green (`garden-*`) border and button
+- **Plantopedia card** — uses `src/components/guides/Plantopedia.png` as a full-width hero image; routes to guides; gold (`earth-*`) border and button
 - Cards use `w-full h-auto` so images render at their natural aspect ratio (no cropping); subtle `scale-105` zoom on hover
 - Nav tabs renamed: **Garden Architect** (was "Plant Wizard") and **Plantopedia** (was "Planting Guides")
 - `WelcomeScreen.jsx` title updated to "Garden Architect" with slogan "The Smartest Way to Plan Your Garden"
@@ -469,8 +470,8 @@ All guide content is now written for a national US audience (Zones 3–11). Okla
 ### Section Landing Page Hero Images ✅
 
 - **Garden Architect landing** (`WelcomeScreen.jsx`) — `src/components/wizard/garden-architect-2.png` renders as a full-width image at the top of the welcome screen, above the title and "Get Started" button
-- **Plantopedia landing** (`GuidesHome.jsx`) — `src/components/guides/Plantopedia2.png` renders as a full-width image at the top of the header card, above the title, description, and guide-count badges
-- **HomePage cards** (`HomePage.jsx`) share the same images: `garden-architect-2.png` (Garden Architect card) and `Plantopedia2.png` (Plantopedia card)
+- **Plantopedia landing** (`GuidesHome.jsx`) — `src/components/guides/Plantopedia.png` renders as a full-width image at the top of the header card, above the title, description, and guide-count badges
+- **HomePage cards** (`HomePage.jsx`) use separate images: `Garden-Architect.png` (Garden Architect card) and `Plantopedia.png` (Plantopedia card)
 
 ### Rebrand to Planting Atlas ✅
 
