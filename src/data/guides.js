@@ -369,7 +369,7 @@ export const guideCategories = [
         title: 'Winter Garden Prep',
         emoji: '❄️',
         description: 'Protect your plants, prepare your soil, and set the stage for spring.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'spring-startup',

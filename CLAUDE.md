@@ -131,7 +131,8 @@ Garden-Landscape-Expert/
     │       ├── plants-for-fragrance.js
     │       ├── curb-appeal.js
     │       ├── porch-plants.js
-    │       └── culinary-herb-garden.js
+    │       ├── culinary-herb-garden.js
+    │       └── winter-garden-prep.js
     └── logic/
         └── matchPlants.js           # Scoring + filtering algorithm
 ```
@@ -341,6 +342,7 @@ Thirty-one full guides integrated into the app:
 - `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`)
 - `src/data/guide-content/culinary-herb-garden.js` — Culinary Herb Garden (`id: 'culinary-herb-garden'`)
 - `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/winter-garden-prep.js` — Winter Garden Prep (`id: 'winter-garden-prep'`) — **complete** (all 10 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -462,6 +464,27 @@ export async function generateMetadata({ params }) {
 | Section 8: Regional Adaptation | ✅ Done | 7-row regional table (PNW, CA, Desert SW, Midwest, Southeast, Mid-Atlantic/NE, Mountain West), 5 universal principles, Japan climate context tip |
 | Section 9: Small-Space Japanese Gardens | *(merged into Regional Adaptation and closing sections)* | |
 | Section 10: Through the Seasons + Troubleshooting | ✅ Done | 6-row seasonal calendar, 7-row troubleshooting table, 2-paragraph closing reflection, momijigari tip |
+
+---
+
+### Winter Garden Prep Guide — Docx Sync Progress
+
+`src/data/guide-content/winter-garden-prep.js` being built section-by-section to match `Winter_Garden_Prep_Guide.docx`.
+
+| Section | Status | Notes |
+|---|---|---|
+| Hero + intro paragraph | ✅ Done | Subtitle and intro from docx opening |
+| Overview: Know Your Numbers | ✅ Done | "Why Winter Prep Matters" tip callout; 4-row regional zone/frost date table; USDA zone vs frost date tip |
+| Section 1: Preparing Perennials & Ornamental Grasses | ✅ Done | 7-row cut-back decision table; dividing perennials (4 list items); mulching (4 list items) |
+| Section 2: Preparing Trees & Shrubs for Winter | ✅ Done | 6-row pruning timing table; anti-desiccant/burlap/snow list; 5-row rose protection table; young trees list (trunk wrap, rodent guards, staking, deep watering) |
+| Section 3: Bulbs — Planting, Lifting & Storing | ✅ Done | Intro + 4-item planting list; 9-row spring bulb table; bulb lasagna tip; 6-row tender bulb lifting/storage table; digging/curing list |
+| Section 4: Soil Health — The Fall Amendment Window | ✅ Done | 5-item amendment strategies list (compost, cover crops, leaf mulch, lime/sulfur, bone meal); no-dig principle paragraph + 2-item list; composting paragraph + 3-item list |
+| Section 5: Overwintering Tender Plants Indoors | ✅ Done | Overwintering spectrum paragraph; 8-row indoor care table (geranium, fuchsia, coleus, gardenia, jasmine, lemon verbena, hibiscus, brugmansia); pest inspection paragraph + 4-item list |
+| Section 6: The Kitchen Garden in Fall & Winter | ✅ Done | 4-item season extension list (row cover, cold frames, hoop houses, what to grow); 4-item fall cleanup list; 8-row fall planting table |
+| Section 7: Tools, Equipment & Garden Structures | ✅ Done | 6-item tool maintenance list (clean, sand, sharpen, oil, inspect, store); 4-item irrigation winterization list (drip, sprinkler, hose bibs, hoses); 4-item structures inspection list (fences, cold frames, raised beds, paths) |
+| Section 8: Regional Winter Prep Timelines | ✅ Done | Intro paragraph; 6-row regional timeline table (Northern/Northeast/Mid-Atlantic/Southeast/Southwest/Pacific Coast) with key dates, Aug–Sept, Oct–Nov, Dec–Feb, and special considerations columns |
+| Section 9: Supporting Wildlife Through Winter | ✅ Done | Intro paragraph; "What to Leave" 5-item habitat list (seedheads, hollow stems, leaf litter, brush piles, water); "Feeding Birds" intro + 3-item list (food types, feeder placement, feeder hygiene) |
+| Section 10: Planning for Spring | ✅ Done | Intro paragraph; year-end assessment 4-item list; 10-row seed starting calendar table (crop / weeks before LFD / example date / notes); zone-shift tip callout; master checklist (8 categories: perennials, trees/shrubs, bulbs, soil, tender plants, kitchen garden, tools, planning); closing tip callout + closing quote |
 
 ---
 
