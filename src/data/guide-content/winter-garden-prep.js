@@ -169,7 +169,6 @@ export const winterGardenPrepContent = {
         },
       ],
     },
-  ],
 
     // ─── SECTION 2: TREES & SHRUBS ────────────────────────────────────────────
     {
@@ -301,7 +300,6 @@ export const winterGardenPrepContent = {
         },
       ],
     },
-  ],
 
     // ─── SECTION 3: BULBS ────────────────────────────────────────────────────
     {
