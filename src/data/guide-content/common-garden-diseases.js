@@ -562,5 +562,125 @@ export const commonGardenDiseasesContent = {
         },
       ],
     },
+
+    {
+      id: 'viral-diseases',
+      title: 'Section 6: Viral Diseases',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Viruses are among the most frustrating plant pathogens because there is no cure once a plant is infected. Unlike fungal or bacterial diseases where treatment can stop progression, a virus integrates into the plant\'s cells and cannot be removed. Management is entirely preventive: stopping the vectors that spread viruses, using certified virus-free plant material, and removing infected plants before the virus spreads.',
+        },
+        {
+          type: 'h3',
+          text: 'How Viruses Are Spread',
+        },
+        {
+          type: 'p',
+          text: 'Most plant viruses are spread by insect vectors — organisms that carry viral particles from infected to healthy plants during feeding. Aphids are the most important viral vectors in the vegetable and ornamental garden, transmitting hundreds of different viruses. Thrips, whiteflies, leafhoppers, cucumber beetles, and mites also transmit specific viruses. Some viruses spread through infected seed, vegetative propagation (tubers, cuttings, grafting), mechanical transmission via tools or hands, or soil nematodes. Understanding the vector for a specific virus is essential for choosing the right control strategy — insecticides that kill aphids, for example, may not prevent non-persistent viruses transmitted during brief probe-feeding.',
+        },
+        {
+          type: 'h3',
+          text: 'Symptom Types',
+        },
+        {
+          type: 'list',
+          items: [
+            'Mosaic: Irregular light green, yellow, and dark green patches on leaves — the most common viral symptom pattern. The mosaic pattern results from the virus disrupting chlorophyll production unevenly across the leaf.',
+            'Mottle: Similar to mosaic but with less distinct boundaries between light and dark areas; often seen in cucurbit and tomato viruses.',
+            'Chlorosis / yellowing: Diffuse or patterned yellowing of leaves; can mimic nutrient deficiency but does not respond to fertilization.',
+            'Ringspot: Concentric rings of necrotic (dead) or chlorotic tissue on leaves, fruit, or stems. Characteristic of Tomato Spotted Wilt Virus (TSWV) and several other tospoviruses.',
+            'Leaf distortion and curling: Leaves may cup upward or downward, pucker, crinkle, or become elongated and strap-like. New growth is often most severely distorted.',
+            'Stunting: Viral infection frequently slows or stops normal growth; infected plants may be noticeably smaller than healthy neighbors of the same age.',
+            'Vein clearing or vein banding: Veins appear lighter than surrounding tissue (vein clearing) or darker with a distinct band of discoloration along the vein (vein banding).',
+            'Fruit symptoms: Many viruses cause fruit discoloration, distortion, uneven ripening, or internal browning. Cucumber mosaic virus causes cucumber fruits to turn pale and bitter; TSWV causes bronze discoloration and ringspots on tomato fruit.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'There is no cure for viral plant diseases. No spray, fertilizer, or treatment can eliminate a virus from an infected plant. Once a plant tests positive or shows reliable viral symptoms, the only action that protects the rest of your garden is removal. Pull the entire plant — including roots — and dispose of it in the trash (not the compost pile). Composting infected material can spread the virus if it survives breakdown.',
+        },
+        {
+          type: 'h3',
+          text: 'Common Plant Viruses',
+        },
+        {
+          type: 'table',
+          headers: ['Virus', 'Host Plants', 'Vector', 'Key Symptoms', 'Management'],
+          rows: [
+            [
+              'Cucumber Mosaic Virus (CMV)',
+              'Cucumbers, squash, melons, peppers, tomatoes, beans, many ornamentals',
+              'Aphids (60+ species); non-persistent transmission',
+              'Mosaic patterning, leaf distortion, fruit discoloration; cucumber fruits become pale and bitter',
+              'Aphid control (reflective mulch, insecticidal soap); resistant varieties; remove infected plants promptly; CMV has the widest host range of any known plant virus',
+            ],
+            [
+              'Tomato Spotted Wilt Virus (TSWV)',
+              'Tomatoes, peppers, lettuce, dahlias, impatiens, 1,000+ species',
+              'Thrips (western flower thrips primary vector)',
+              'Bronze or purplish discoloration of young leaves; ringspots on leaves and fruit; stem streaking; severe stunting',
+              'Thrips control (spinosad, reflective mulches); resistant tomato varieties ("T" code); remove infected plants; avoid over-fertilizing with nitrogen (lush growth attracts thrips)',
+            ],
+            [
+              'Tomato Mosaic Virus (ToMV) / Tobacco Mosaic Virus (TMV)',
+              'Tomatoes, peppers, tobacco, eggplant',
+              'Mechanical — tools, hands, clothing; highly stable; no insect vector required',
+              'Light and dark green mosaic; leaf distortion and "fern-leaf" growth on new shoots; fruit may show internal browning',
+              'Wash hands and sanitize tools between plants; avoid handling plants after smoking; use resistant varieties (TMV resistance "T" in tomato codes); remove infected plants',
+            ],
+            [
+              'Zucchini Yellow Mosaic Virus (ZYMV)',
+              'Cucurbits: zucchini, squash, cucumbers, melons, pumpkins',
+              'Aphids; non-persistent transmission',
+              'Severe mosaic and yellowing; extreme leaf distortion; misshapen, warty, or stunted fruit; can cause near-total crop failure in squash',
+              'Reflective mulch to deter aphids; resistant varieties where available; remove infected plants; early detection and roguing is critical as spread can be rapid',
+            ],
+            [
+              'Bean Common Mosaic Virus (BCMV)',
+              'Beans (snap, pole, dry), cowpeas',
+              'Aphids (non-persistent); seed-borne',
+              'Mosaic, leaf curling, stunting, reduced pod set; seed transmission means the disease can appear before vectors arrive',
+              'Use certified virus-free seed; resistant bean varieties (most modern snap bean varieties carry resistance); aphid control; remove infected plants',
+            ],
+            [
+              'Potato Virus Y (PVY)',
+              'Potatoes, tomatoes, peppers',
+              'Aphids (non-persistent); also tuber-borne',
+              'Mosaic, vein necrosis, leaf drop in potatoes; can cause PVYNTN strain — necrotic ringspot on tubers that makes them unmarketable',
+              'Plant certified disease-free seed potatoes; aphid control; reflective mulch; remove infected plants; do not save tubers from infected plants for replanting',
+            ],
+            [
+              'Impatiens Necrotic Spot Virus (INSV)',
+              'Impatiens, dahlias, chrysanthemums, lettuce, peppers, many ornamentals',
+              'Western flower thrips',
+              'Ring spots, stem lesions, wilting, necrotic patches; can mimic Botrytis but follows thrips activity',
+              'Thrips control (spinosad, azadirachtin); remove infected plants immediately; sticky yellow traps for early thrips detection; closely related to TSWV — use same management',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Preventing Viral Spread',
+        },
+        {
+          type: 'list',
+          items: [
+            'Start with clean plant material: Buy certified virus-free transplants and seed potatoes. Disease-tested seed is available from reputable seed companies for high-risk crops (tomatoes, peppers, cucumbers).',
+            'Control vectors proactively: Aphids, thrips, and whiteflies are the primary viral vectors. Reflective silver mulch is one of the most effective non-chemical tools — the reflected light disorients flying aphids and thrips before they land. Row covers on young transplants provide a physical barrier until plants are established.',
+            'Sanitize tools: TMV and other mechanically transmitted viruses can be spread on pruning shears, stakes, and hands. Dip tools in a 10% bleach solution or commercial disinfectant between plants when working in an area with suspected viral infection.',
+            'Rogue early: At the first reliable sign of viral infection — mosaic patterning that does not match any nutrient deficiency, ring spots, severe distortion of new growth — pull the plant immediately. Every day an infected plant remains in the garden is an additional opportunity for vector insects to acquire and spread the virus.',
+            'Manage weeds: Many weeds serve as reservoir hosts for plant viruses, harboring large aphid populations and viral inoculum near the garden. Purslane, nightshades, and wild cucurbits are common reservoirs.',
+            'Use resistant varieties: Virus resistance is bred into many modern vegetable varieties. Look for resistance codes on seed packets — "V" (Verticillium), "F" (Fusarium), "T" (TMV/ToMV), "TSWV" (Tomato Spotted Wilt) in tomatoes; "CMV" and "WMV" in cucumbers; "BCMV" in beans. These are among the most practical disease management tools available.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'Aphids transmitting CMV and other non-persistent viruses can spread the virus even when killed by insecticides — because they transmit during the initial probe-feeding, before a contact insecticide takes effect. For non-persistent viruses, reflective mulch and row covers are more effective than insecticide sprays. Mineral oil sprays (applied to leaf surfaces) can reduce non-persistent virus transmission by interfering with aphid feeding, though they must be reapplied frequently.',
+        },
+      ],
+    },
   ],
 }
