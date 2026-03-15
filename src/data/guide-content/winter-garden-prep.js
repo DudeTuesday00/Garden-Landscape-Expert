@@ -777,5 +777,71 @@ export const winterGardenPrepContent = {
         },
       ],
     },
+
+    // ─── SECTION 8: REGIONAL WINTER PREP TIMELINES ───────────────────────────
+    {
+      id: 'regional-timelines',
+      title: 'Section 8: Regional Winter Prep Timelines',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The timing and priority of winter preparation tasks varies significantly across the United States. A gardener in Maine faces a compressed, urgent fall window with hard deadlines imposed by ground freeze; a gardener in coastal Southern California is still actively gardening in December. The regional timelines below translate the principles of this guide into region-specific seasonal sequences.',
+        },
+        {
+          type: 'table',
+          headers: ['Region', 'Key Dates', 'August–September', 'October–November', 'December–February', 'Special Considerations'],
+          rows: [
+            [
+              'Northern US / Zone 3–4 (MN, ND, SD, MT, northern WI/MI, northern New England)',
+              'FFD: Sept 15 – Oct 15 / Ground freeze: Nov – Dec / LFD: May 1 – June 15',
+              'Urgent: Lift tender bulbs immediately after first frost. Plant spring bulbs by late September. Take overwintering plant cuttings. Final deep watering of trees and shrubs.',
+              'Plant garlic (October). Apply deep mulch (4–6 in) to all perennial beds after ground firms. Wrap young trees. Protect roses. Store all tender plants indoors. Drain irrigation. Store hoses.',
+              'Garden fully dormant. Monitor stored bulbs monthly. Check rodent guards. Plan spring garden. Order seeds (January). Sharpen tools on quiet days.',
+              'The shortest and most unforgiving prep window in America. Missing the bulb-lifting window by one hard freeze means losing dahlias and cannas. Plan the entire fall season in August.',
+            ],
+            [
+              'Northeast / Zone 5–6 (NY, PA, OH, southern New England, Pacific NW)',
+              'FFD: Oct 1 – Nov 1 / Ground freeze: Dec – Jan / LFD: April 1 – May 15',
+              'Take cuttings of tender plants. Begin transitioning containers indoors. Plant early spring bulbs (crocus, muscari) in September.',
+              'Peak prep season. All bulb planting (through November). Lift tender bulbs. Perennial cutback (selective). Mulch after ground firms. Tool maintenance. Drain irrigation. Cover crops.',
+              'Cold frames active for greens. Garlic established and dormant under mulch. Order seeds in January. Plan design changes. Tool maintenance if not done in fall.',
+              'The broadest prep window in America. Gardeners have 2+ months of comfortable working weather. Prioritize bulb planting and rose protection in October before temperatures become less predictable.',
+            ],
+            [
+              'Mid-Atlantic / Zone 6–7 (VA, MD, NC, TN, KY, southern transition zones)',
+              'FFD: Nov 1 – Dec 1 / Ground freeze: Jan (variable) / LFD: March 15 – April 15',
+              'Fall crops going in: spinach, kale, arugula, Asian greens. Cool-season annuals (pansies, snapdragons) replacing summer annuals.',
+              'Active planting month: all spring bulbs, garlic, overwintering greens, cover crops. Roses: light cleanup but not major pruning. Bring in frost-tender plants. Plant trees and shrubs.',
+              'The most active winter gardening season: cold frames producing greens through December. Pansies and violas surviving mild winters. Winter vegetable harvest. Monitor cold frames on warm days.',
+              'The most versatile winter region. Many cool-season crops grow through December–January in mild winters. Build cold frames to extend the productive kitchen garden season year-round.',
+            ],
+            [
+              'Southeast / Zone 7–8 (GA, AL, MS, AR, SC, parts of TX and NC)',
+              'FFD: Nov 15 – Dec 15 / Ground freeze: Rare / LFD: Feb 15 – March 15',
+              'Summer heat breaking: plant fall vegetable garden (September–October is prime). Perennial cleanup. Continue watering in drought conditions.',
+              'Peak cool-season gardening: lettuce, greens, brassicas, root vegetables all productive. Plant spring bulbs (pre-chill tulips). Bring in frost-sensitive tropicals.',
+              'Cool-season kitchen garden at peak production. Camellias and pansies blooming. Light frosts occur but rarely damage established hardy plants. Monitor for late frosts in January–February.',
+              'The most productive cool-season kitchen garden region in the US. October through March is growing season for an extraordinary range of vegetables. The focus of winter prep is shifting from summer to cool-season production rather than protection.',
+            ],
+            [
+              'Southwest & West Texas / Zone 7–9 (NM, AZ, west TX, NV, parts of CO)',
+              'FFD: Oct 15 – Dec 1 (highly variable by elevation) / Ground freeze: Variable / LFD: March 1 – April 15',
+              'Plant fall vegetable garden and wildflowers. Begin transitioning away from summer irrigation. Assess xeriscape plant performance.',
+              'Plant spring bulbs (pre-chill tulips). Overseed Bermuda lawns with ryegrass (if lawn maintained). Protect borderline-hardy specimens from early cold snaps.',
+              'Cold-season irrigation for established plants if winter is dry (common). Monitor for late freezes that threaten early-blooming plants. Protect citrus in frost-prone locations.',
+              'Elevation variation is dramatic: Albuquerque (5,300 ft) behaves like Zone 7 while Phoenix (Zone 10) rarely frosts. Consult local frost records, not just zone maps.',
+            ],
+            [
+              'Pacific Coast / Zone 8–10 (coastal CA, western OR, western WA)',
+              'FFD: Nov – Dec (coastal CA rarely frosts) / Ground freeze: Rare / LFD: Variable by latitude',
+              'Plant fall vegetables and cool-season annuals. Divide summer perennials. Plant California natives and Mediterranean plants (best planting season is fall–winter).',
+              'Bulb planting (daffodils and minor bulbs naturalize well; pre-chill tulips). Plant cool-season vegetables. Divide ornamental grasses. Winterize irrigation if applicable.',
+              'Active planting season for natives and adapted plants. Cool-season vegetables at peak. Hellebores, witch hazel, and early bulbs beginning. Rare frost events require quick cover for tender plants.',
+              "The most forgiving winter in the continental US. The primary 'prep' work is planting for winter and spring — the Pacific Coast garden grows nearly year-round for those willing to work with the season.",
+            ],
+          ],
+        },
+      ],
+    },
   ],
 }
