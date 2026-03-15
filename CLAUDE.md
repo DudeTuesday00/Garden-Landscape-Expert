@@ -750,7 +750,7 @@ Every page in the app exports full metadata including:
 | Hero + intro paragraph | ✅ Done | Guide id: `common-diseases`; theme: slate/indigo gradient; hero image: `Common_Garden_Diseases_Guide.png` |
 | Rapid Symptom Key | ✅ Done | 15-row diagnosis quick-reference table (symptom / location / likely cause / section) |
 | Section 1: Understanding Plant Disease | ✅ Done | 5-row pathogen categories table (Fungi, Oomycetes, Bacteria, Viruses, Nematodes); disease triangle explanation; 4-item environmental conditions list; 6-item prevention practices list |
-| Section 2: Fungal Diseases | 🔲 Pending | Powdery mildew, early blight, late blight, rust, anthracnose, Botrytis, Septoria, Sclerotinia |
+| Section 2: Fungal Diseases | ✅ Done | 9 disease profiles: Powdery Mildew (resistant varieties tip), Early Blight (target spot ID, spray program), Late Blight (catastrophic-spread warning callout, oomycete-specific products, resistant varieties), Rust (5-row species table: bean/cedar-apple/asparagus/rose/hollyhock rusts), Anthracnose (cucurbit/tomato/tree hosts; dogwood highlighted), Botrytis/Gray Mold (spent flower removal tip), Septoria Leaf Spot (pycnidia diagnostic feature), White Mold/Sclerotinia (sclerotia ID; Coniothyrium minitans biocontrol), Sooty mold tip |
 | Section 3: Downy Mildews & Oomycete Diseases | 🔲 Pending | Downy mildew host table, Phytophthora root rot |
 | Section 4: Bacterial Diseases | 🔲 Pending | Fire blight, bacterial leaf spot/canker table (5 diseases), crown gall, bacterial wilt |
 | Section 5: Soilborne Diseases | 🔲 Pending | Fusarium wilt, Verticillium wilt, Pythium/damping off, soil solarization |
