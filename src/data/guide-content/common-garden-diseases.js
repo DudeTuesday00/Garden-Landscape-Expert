@@ -682,5 +682,183 @@ export const commonGardenDiseasesContent = {
         },
       ],
     },
+
+    {
+      id: 'disease-reference-by-crop',
+      title: 'Section 7: Disease Reference by Crop',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Use this section as a quick lookup when you know what crop is affected but are not sure which disease you are dealing with. Each table lists the most common and damaging diseases for that crop group, with key symptoms and the section of this guide covering that disease in depth.',
+        },
+        {
+          type: 'h3',
+          text: 'Vegetable Crops',
+        },
+        {
+          type: 'table',
+          headers: ['Crop', 'Common Diseases', 'Key Symptoms', 'Section'],
+          rows: [
+            [
+              'Tomatoes',
+              'Early blight, late blight, Septoria leaf spot, Fusarium wilt, Verticillium wilt, TSWV, ToMV/TMV, bacterial speck, bacterial spot',
+              'Target-ring leaf spots (early blight); water-soaked lesions spreading rapidly (late blight); small spots with pycnidia dots (Septoria); one-sided wilting with vascular browning (Fusarium/Verticillium); ringspots and bronze leaves (TSWV); mosaic and fern-leaf growth (TMV)',
+              'Sections 2, 4, 5, 6',
+            ],
+            [
+              'Peppers',
+              'Phytophthora root rot, bacterial spot (Xanthomonas), CMV, PVY, TSWV, Botrytis (in humid conditions)',
+              'Sudden collapse and root browning (Phytophthora); raised scabby lesions on leaves and fruit (bacterial spot); mosaic and distortion (CMV/PVY); ring spots on leaves and fruit (TSWV)',
+              'Sections 3, 4, 5, 6',
+            ],
+            [
+              'Cucumbers / Squash / Melons',
+              'Powdery mildew, downy mildew, angular leaf spot, CMV, ZYMV, anthracnose, gummy stem blight, Phytophthora crown rot',
+              'White powder on upper leaves (powdery mildew); yellow-brown angular patches limited by veins (downy mildew); pale, bitter fruit (CMV); severe yellow mosaic and misshapen fruit (ZYMV); water-soaked girdling stem lesions (gummy stem blight)',
+              'Sections 2, 3, 4, 6',
+            ],
+            [
+              'Beans',
+              'Bean Common Mosaic Virus (BCMV), rust, anthracnose, bacterial brown spot, white mold (Sclerotinia), root rots',
+              'Mosaic and stunting (BCMV); orange-brown pustules on leaf undersides (rust); dark sunken pod lesions (anthracnose); water-soaked crown and stem rot with white mycelium (white mold)',
+              'Sections 2, 5, 6',
+            ],
+            [
+              'Potatoes',
+              'Late blight, early blight, Verticillium wilt, PVY, black scurf (Rhizoctonia), silver scurf, common scab',
+              'Rapidly spreading water-soaked lesions (late blight); target-ring leaf spots (early blight); yellowing and wilting from base (Verticillium); mosaic and leaf roll (PVY); black crusty patches on tubers (Rhizoctonia)',
+              'Sections 2, 5, 6',
+            ],
+            [
+              'Lettuce & Salad Greens',
+              'Downy mildew, bottom rot (Rhizoctonia), tip burn (physiological), INSV, lettuce mosaic virus, Botrytis',
+              'Yellow angular patches above with gray sporulation below (downy mildew); brown slimy outer leaves (bottom rot); brown leaf margins from calcium/heat stress (tip burn); ringspots and wilting (INSV)',
+              'Sections 3, 5, 6',
+            ],
+            [
+              'Brassicas (cabbage, broccoli, kale)',
+              'Clubroot, black rot, downy mildew, Alternaria leaf spot, white mold',
+              'Swollen distorted roots and severe wilting (clubroot); V-shaped yellow lesions tracking veins (black rot); gray-purple leaf patches with downy underside (downy mildew); dark concentric-ring spots (Alternaria)',
+              'Sections 3, 4',
+            ],
+            [
+              'Onions & Garlic',
+              'Botrytis leaf blight, neck rot, downy mildew, white rot (Sclerotinia cepivorum), purple blotch (Alternaria)',
+              'Bleached streaks dying back from leaf tips (Botrytis leaf blight); soft neck rot at harvest (Botrytis neck rot); white fluffy fungal growth at bulb base (white rot); oval purple lesions (purple blotch)',
+              'Sections 2, 3',
+            ],
+            [
+              'Corn',
+              'Gray leaf spot, northern corn leaf blight, common smut, Stewart\'s wilt (bacterial)',
+              'Long rectangular gray-tan lesions (gray leaf spot); large elliptical tan lesions (NCLB); silvery-gray galls turning black (smut); yellow streaking and wilting of seedlings (Stewart\'s wilt)',
+              'Section 4',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Fruit Crops',
+        },
+        {
+          type: 'table',
+          headers: ['Crop', 'Common Diseases', 'Key Symptoms', 'Section'],
+          rows: [
+            [
+              'Apples & Pears',
+              'Fire blight, apple scab, powdery mildew, cedar-apple rust, bitter rot, brown rot',
+              'Shepherd\'s crook branch dieback (fire blight); olive-green velvety leaf and fruit spots (apple scab); orange-yellow leaf spots with tube-like projections below (cedar-apple rust); white powder on new growth (powdery mildew)',
+              'Sections 2, 4',
+            ],
+            [
+              'Peaches, Cherries & Stone Fruits',
+              'Brown rot, leaf curl, bacterial canker (Pseudomonas), cherry leaf spot (Blumeriella), powdery mildew',
+              'Rapidly rotting fruit with gray sporulation (brown rot); red-blistered curled leaves falling early (leaf curl); bird\'s-eye lesions with gum oozing from cankers (bacterial canker)',
+              'Sections 2, 4',
+            ],
+            [
+              'Strawberries',
+              'Gray mold (Botrytis), leather rot (Phytophthora), anthracnose, powdery mildew, angular leaf spot',
+              'Fuzzy gray rot on ripe berries (Botrytis); water-soaked firm rot at base of fruit (leather rot); orange to black sunken fruit lesions (anthracnose)',
+              'Sections 2, 3, 4',
+            ],
+            [
+              'Blueberries',
+              'Mummyberry (Monilinia), botrytis blossom blight, Phomopsis stem blight, stunt virus (transmitted by leafhopper)',
+              'Salmon-colored shoot blight in spring followed by shriveled fruit remaining on plant (mummyberry); grayish-brown blossom death (Botrytis); reddish-brown stem dieback (Phomopsis)',
+              'Sections 2, 3',
+            ],
+            [
+              'Grapes',
+              'Downy mildew, powdery mildew, Botrytis bunch rot, black rot (Guignardia), Pierce\'s disease (bacterial)',
+              'Oily green patches above with white downy sporulation below (downy mildew); white powder on shoots and clusters (powdery mildew); shriveled berries with black-bordered lesions (black rot)',
+              'Sections 2, 3',
+            ],
+            [
+              'Raspberries & Blackberries',
+              'Cane blight (Leptosphaeria), spur blight (Didymella), orange rust, gray mold, verticillium wilt',
+              'Large brown cane lesions causing wilting of laterals (cane blight); purple-brown lesions at nodes (spur blight); bright orange powder on cane underside (orange rust)',
+              'Sections 2, 5',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Ornamental Plants',
+        },
+        {
+          type: 'table',
+          headers: ['Crop / Plant', 'Common Diseases', 'Key Symptoms', 'Section'],
+          rows: [
+            [
+              'Roses',
+              'Black spot (Diplocarpon), powdery mildew, downy mildew, rose rust, botrytis, rose mosaic virus',
+              'Round black spots with fringed margins causing early defoliation (black spot); white powder on young leaves (powdery mildew); rapid blossom and cane death in wet conditions (downy mildew)',
+              'Sections 2, 3',
+            ],
+            [
+              'Dogwoods',
+              'Dogwood anthracnose (Discula destructiva), powdery mildew, spot anthracnose (Elsinoe), septoria leaf spot',
+              'Tan-brown leaf spots with purple halos; infected shoots die back; lower crown leaves affected first (Discula anthracnose); white powder mainly on shaded growth (powdery mildew)',
+              'Section 2',
+            ],
+            [
+              'Ornamental Cherries, Crabapples & Flowering Trees',
+              'Fire blight, apple scab, cedar-apple rust, brown rot, powdery mildew',
+              'Same as fruit tree counterparts; fire blight especially destructive on ornamental pears (Bradford/Callery)',
+              'Sections 2, 4',
+            ],
+            [
+              'Perennials (hostas, phlox, bee balm)',
+              'Powdery mildew, hosta virus X, Botrytis, foliar nematodes (hosta)',
+              'White powder on phlox and bee balm (powdery mildew, highly susceptible); mosaic and color breaks on hostas (Hosta Virus X — no cure, remove plant); brown interveinal streaking progressing upward (foliar nematodes)',
+              'Sections 2, 6',
+            ],
+            [
+              'Impatiens & Begonias',
+              'Impatiens downy mildew (Plasmopara obducens), INSV, Botrytis, Pythium root rot',
+              'Pale stippled leaves curling downward then rapid complete defoliation (impatiens downy mildew — entire planting can collapse in days); ringspots and necrotic patches (INSV)',
+              'Sections 3, 5, 6',
+            ],
+            [
+              'Lawns & Turf',
+              'Brown patch (Rhizoctonia), dollar spot (Clarireedia), pythium blight, summer patch, red thread (Laetisaria)',
+              'Large circular tan-brown patches with dark border (brown patch); small straw-colored patches 2–6 inches (dollar spot); greasy, collapsed grass (pythium blight); pink-red mycelial threads on grass blades (red thread)',
+              'Sections 2, 5',
+            ],
+            [
+              'Dahlias & Bulbs',
+              'Botrytis, powdery mildew, TSWV, viral mosaic diseases, tuber rots (storage)',
+              'Gray mold on blooms and stems in humid weather (Botrytis); white powder on foliage (powdery mildew); bronze leaf coloration and ringspots (TSWV)',
+              'Sections 2, 5, 6',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '📋',
+          text: 'If you grow a crop not listed here, search your state\'s cooperative extension service website for "common diseases of [crop name]." Extension plant pathologists maintain crop-specific disease guides written for your local climate and the varieties common to your region — far more targeted than any national guide can be.',
+        },
+      ],
+    },
   ],
 }
