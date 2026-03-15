@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import gardenArchitectImg from './wizard/Garden Architect 2.png'
-import plantopediaImg from './guides/Plantopedia2.png'
+import gardenArchitectImg from './wizard/Garden Wizard.png'
+import plantopediaImg from './guides/Plantopedia.png'
 
 export default function HomePage() {
   return (
