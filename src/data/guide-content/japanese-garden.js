@@ -156,5 +156,87 @@ export const japaneseGardenContent = {
         },
       ],
     },
+    // ─── SECTION 4: WATER ─────────────────────────────────────────────────────
+    {
+      id: 'water',
+      title: 'Water — Stillness, Movement, and the Suggestion of Both',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Water in the Japanese garden is never merely decorative — it is philosophical. Still water represents the mind in meditation: reflective, calm, and containing the sky. Moving water represents the continuous change of nature: the stream that is never the same water twice, the waterfall that appears permanent but is in constant flux. Even in the dry garden (karesansui), where no actual water exists, gravel is raked to suggest the movement of water across stone — because the absence of water, thoughtfully composed, can evoke water more powerfully than water itself.',
+        },
+        {
+          type: 'h3',
+          text: 'Ponds and Still Water',
+        },
+        {
+          type: 'p',
+          text: 'A Japanese garden pond is not a swimming pool, a koi pond of the Western commercial variety, or a reflecting pool with geometric edges. It is an asymmetric, naturalistic water body whose edges blend into planting, stone, and moss in a way that suggests a natural lake or mountain tarn.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Shape: Irregular and asymmetric. The shoreline should be varied — bays and peninsulas rather than a uniform oval or rectangle. Draw the pond shape by laying a garden hose loosely and stepping back to evaluate it from the primary viewpoint before excavating.',
+            'Depth: A minimum of 18–24 inches in most climates to maintain water clarity and temperature stability. Where koi are intended, 3–4 feet is preferred. In Zone 5 and colder, depth below the frost line allows fish to overwinter; a pond heater may also be needed.',
+            'Edges: The most important part of a Japanese garden pond is where the water meets the land. Lay flat stones partially into the water at the waterline. Let planting — iris, rush, sedge — extend into the water at the shallow margins. In one or two places, allow the bank to drop steeply to deep water with no intermediate stone, creating visual depth and mystery.',
+            'Islands: Even a very small island — a single stone rising from the water, or a small planted mound — dramatically increases the complexity and interest of a garden pond. The island is the point around which the water turns; it creates foreground and background in a way that a simple pond without an island cannot.',
+            'Koi: Koi are optional but traditional in many Japanese garden styles. They add movement and color — the flash of orange and white beneath the water surface is part of the designed experience. Koi require filtration, minimum pond depth, and feeding. Native goldfish are a lower-maintenance alternative.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Streams and Moving Water',
+        },
+        {
+          type: 'p',
+          text: 'A Japanese garden stream suggests a mountain stream — clear water moving over stone, perhaps audible but not dramatically loud, with naturalistic banks and occasional pools where the water slows and deepens. The movement of water in the garden is experienced by ear as much as by eye.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Sound design: The sound of water is a primary sensory element in the Japanese garden. A narrow channel over rounded stones creates a gentle, continuous sound. Water falling a greater distance over a stone creates a more pronounced sound. In the American garden, this is a powerful tool for masking urban noise — the sound of a small stream can effectively mask traffic when positioned between the noise source and the seating area.',
+            'Stream construction: Lay a flexible EPDM liner in the stream channel before placing stones. Position stones to direct water flow and create natural-looking movement. Vary the channel width — narrow passages where water speeds up, wider pools where it slows. Plant the margins immediately with moisture-loving plants: iris, primrose, astilbe, ferns.',
+            'Bamboo spouts (kakei): A bamboo spout — a section of bamboo through which water is directed into a basin, pool, or stream — is one of the most elegant Japanese water elements. The water flows continuously (recirculated by a small pump) and makes a distinctive quiet sound as it strikes the basin or stone below. Extremely effective in small garden spaces.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Dry Water — The Karesansui Stream',
+        },
+        {
+          type: 'p',
+          text: 'The dry stream (kare-nagare) represents a stream or river using carefully raked gravel or small stones. It is one of the most useful Japanese garden techniques for American climates, particularly in drought-prone regions where actual water features are impractical or water use is restricted. Done well, a dry stream is as compelling as a real one.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Construction: Excavate a naturalistic channel 6–12 inches deeper than surrounding grade. Line with landscape fabric. Fill with small rounded river stones (1–3 inch diameter) or decomposed granite in a contrasting color from surrounding ground material. Place larger stones at the margins and at bends in the channel where a real stream would deposit them.',
+            'Bridges: A flat stone bridge over a dry stream — a single large slab spanning the channel — is one of the most effective small-scale Japanese garden features and requires no water or pump. The bridge implies the stream; the stream implies water; the whole composition implies a landscape in miniature.',
+            'Planting: Plant the margins of the dry stream with plants that would naturally be found at a stream bank — ferns, hostas, irises, sedges — even though no water is present. The planting confirms the stream\'s identity to the imagination.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Water Basin (Tsukubai)',
+        },
+        {
+          type: 'p',
+          text: 'The tsukubai — a low stone basin filled with water — is one of the most achievable and beautiful Japanese garden elements for small American gardens. In the tea garden tradition, it was used for ritual handwashing before the tea ceremony; in the contemporary garden, it is a miniature water feature, bird bath, and compositional anchor simultaneously.',
+        },
+        {
+          type: 'list',
+          items: [
+            'The composition: The tsukubai is never placed alone. The surrounding stones (yakuishi) are part of the composition: a tall stone to one side (the candle stone, where a lantern was placed), a flat stone in front (the stepping stone from which one crouches to use the basin), and a lower stone to the opposite side of the candle stone. A bamboo spout typically supplies water. Small rounded stones at the base (the umi, or sea) complete the scene.',
+            'Scale: The basin itself can be as small as 12 inches in diameter and 6–8 inches deep. Prefabricated cast stone and natural stone basins are widely available at garden centers. A natural boulder with a depression drilled by a mason is the most authentic and beautiful option.',
+            'Planting: Surround the tsukubai with moss, ferns, and low shade plants. The water basin is almost always sited in shade or dappled light, which supports the moss and planting that makes the composition feel ancient and settled.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '💧',
+          text: 'For small gardens with no room for a pond or stream, a single tsukubai with a recirculating bamboo spout delivers the sound, movement, and focal presence of a water feature in as little as 10–25 square feet. It is the single highest-impact Japanese garden element for compact spaces.',
+        },
+      ],
+    },
   ],
 }
