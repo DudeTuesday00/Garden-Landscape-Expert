@@ -37,6 +37,7 @@ import { porchPlantsContent } from './porch-plants.js'
 import { culinaryHerbGardenContent } from './culinary-herb-garden.js'
 import { japaneseGardenContent } from './japanese-garden.js'
 import { winterGardenPrepContent } from './winter-garden-prep.js'
+import { xeriscapeContent } from './xeriscape.js'
 
 export const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -72,4 +73,5 @@ export const contentMap = {
   'culinary-herb-garden': culinaryHerbGardenContent,
   'japanese-garden': japaneseGardenContent,
   'winter-garden-prep': winterGardenPrepContent,
+  'xeriscape': xeriscapeContent,
 }

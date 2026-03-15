@@ -343,6 +343,7 @@ Thirty-one full guides integrated into the app:
 - `src/data/guide-content/culinary-herb-garden.js` — Culinary Herb Garden (`id: 'culinary-herb-garden'`)
 - `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/winter-garden-prep.js` — Winter Garden Prep (`id: 'winter-garden-prep'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/xeriscape.js` — Xeriscape Design (`id: 'xeriscape'`) — **complete** (all 10 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -437,6 +438,28 @@ export async function generateMetadata({ params }) {
 | `troubleshooting` — Weeds row | ✅ Done | Added weeds row: causes (bare soil, infrequent weeding), mulch + short-session solution, learning moment (what is a weed, edible weeds, plant competition) |
 | `best-plants` — Cucumbers subsection | ✅ Done | Added 🥒 Cucumbers — The Munching Machine: intro paragraph, variety table (Straight Eight, Marketmore 76, Lemon Cucumber, Spacemaster), kid activities (pickle project, Lemon Cucumber reveal), critical harvest tip; preceded by Bean Teepee tip callout |
 | `best-plants` — Lettuce & Salad Greens subsection | ✅ Done | Added 🥬 Lettuce & Salad Greens — The Cut-and-Come-Again Garden: intro paragraph, variety list (Black Seeded Simpson, Oakleaf, mesclun, Tyee spinach), harvest technique, salad bowl project activity, leaf rubbings activity |
+
+---
+
+### Xeriscape Design Guide ✅
+
+`src/data/guide-content/xeriscape.js` — Xeriscape Design (`id: 'xeriscape'`) — full guide built from `Xeriscape_Design_Guide.docx`.
+
+| Section | Content |
+|---|---|
+| Intro overview | Xeriscape word/myth/reality; 4-row water-use comparison table (conventional → full xeriscape); water rebates tip |
+| Section 1: Seven Principles | 7-row principles table (Planning, Soil, Turf, Plant Selection, Irrigation, Mulch, Maintenance) |
+| Section 2: Site Analysis & Design | Essential assessment 5-item list (sun, slope, wind, existing plants, soil); hydrozoning 3-row table (Oasis/Transitional/Xeric); 10-60-30 rule tip; turf removal 4-item methods list |
+| Section 3: Soil Preparation | 5-row soil type table (sandy, clay, caliche, compacted urban, loam); soil test + pH tip |
+| Section 4: Plant Selection | Establishment deep-watering intro; 10-row perennials table; 7-row ornamental grasses table; 9-row shrubs table; 7-row trees table; 5-row groundcovers table |
+| Section 5: Efficient Irrigation | Drip components/placement/zoning list; smart controllers + ET paragraph; soak-and-cycle tip; 4-item rainwater harvesting list |
+| Section 6: Mulch | 6-row mulch type table; mulch volcano warning callout |
+| Section 7: Hardscape | 6-row permeable surfaces table; dry creek beds 3-item list; retaining walls paragraph |
+| Section 8: Regional Plant Guides | 7-row regional table (Desert SW, California, Intermountain West, Southern Plains, Great Plains, Southeast, Mid-Atlantic/NE) |
+| Section 9: Lawn Alternatives | 7-row alternatives table (buffalo grass, blue grama, PA sedge, fescue, native meadow, creeping thyme, DG); HOA tip |
+| Section 10: Seasonal Care & Troubleshooting | 5-row seasonal calendar table; 7-row troubleshooting table; xeriscape mindset tip + closing quote |
+
+Theme: stone/amber gradient in `GuideDetail.jsx`; set `comingSoon: false` under Landscape Design in `guides.js`; hero image: `public/guides/xeriscape-guide.png`
 
 ---
 

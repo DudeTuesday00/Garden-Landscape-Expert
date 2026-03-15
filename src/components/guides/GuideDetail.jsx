@@ -33,6 +33,7 @@ const heroImages = {
   'porch-plants': '/guides/porch-plants-guide.png',
   'salsa-garden': '/guides/salsa-garden-guide.png',
   'winter-garden-prep': '/guides/winter-garden-prep-guide.png',
+  'xeriscape': '/guides/xeriscape-guide.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -549,6 +550,22 @@ const themes = {
     tableHeadText: 'text-blue-800',
     tableHeadBorder: 'border-blue-200',
     bullet: 'text-blue-500',
+  },
+  'xeriscape': {
+    heroBg: 'bg-gradient-to-br from-stone-50 to-amber-100',
+    heroBorder: 'border-stone-300',
+    heroTitle: 'text-stone-900',
+    backBtn: 'text-stone-700 hover:text-stone-900',
+    sectionTitle: 'text-stone-900',
+    sectionBorder: 'border-stone-200',
+    h3: 'text-stone-800',
+    tipBg: 'bg-stone-50',
+    tipBorder: 'border-stone-300',
+    tipText: 'text-stone-900',
+    tableHead: 'bg-stone-100',
+    tableHeadText: 'text-stone-800',
+    tableHeadBorder: 'border-stone-200',
+    bullet: 'text-amber-600',
   },
   'salsa-garden': {
     heroBg: 'bg-gradient-to-br from-red-50 to-orange-100',

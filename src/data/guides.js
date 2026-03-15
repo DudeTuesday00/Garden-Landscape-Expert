@@ -331,7 +331,7 @@ export const guideCategories = [
         title: 'Xeriscape Design',
         emoji: '🌵',
         description: 'Beautiful, water-wise landscaping for dry climates and drought-prone regions.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'cottage-landscape',
