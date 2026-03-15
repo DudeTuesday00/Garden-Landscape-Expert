@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { guideCategories } from '../../data/guides.js'
-import plantopediaImg from './Plantopedia2.png'
+import plantopediaImg from './Plantopedia.png'
 
 function GuideCard({ guide }) {
   const isLive = !guide.comingSoon
