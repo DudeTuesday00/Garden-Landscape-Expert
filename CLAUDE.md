@@ -65,7 +65,9 @@ Garden-Landscape-Expert/
 │       ├── winter-garden-prep-guide.png
 │       ├── xeriscape-guide.png
 │       ├── evergreen-trees-guide.png
-│       └── japanese-garden-guide.png  # 32 images total; salad-garden, culinary-herb-garden have no image yet
+│       ├── japanese-garden-guide.png
+│       ├── salad-garden-guide.png
+│       └── culinary-herb-garden-guide.png  # 34 images total — all live guides have a hero image
 └── src/
     ├── app/                         # Next.js App Router — one folder per route
     │   ├── layout.jsx               # Root layout — dark mode script, GTM, Nav, footer, GA4/AdSense via next/script
@@ -672,9 +674,7 @@ Each live guide detail page displays a full-width hero photo below the nav, abov
 - **Naming convention:** `<guide-id>-guide.png` (e.g., `shade-tree-guide.png` for `id: 'shade-trees'`)
 - **Wired via** the `heroImages` map in `src/components/guides/GuideDetail.jsx` — keys are guide IDs, values are root-relative paths
 - **Conditional render:** `{heroImages[guideId] && <img .../>}` — guides without an entry simply render no photo; no broken images
-- **32 of 34 live guides** have hero images; the following 2 do not yet have image files and are intentionally absent from `heroImages`:
-  - `salad-garden`
-  - `culinary-herb-garden`
+- **All 34 of 34 live guides** have hero images — `heroImages` map is complete
 
 ### Favicon ✅
 
