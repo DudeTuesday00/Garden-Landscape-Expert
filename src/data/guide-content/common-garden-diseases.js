@@ -353,5 +353,67 @@ export const commonGardenDiseasesContent = {
         },
       ],
     },
+    {
+      id: 'bacterial-diseases',
+      title: 'Section 4: Bacterial Diseases',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Bacterial plant diseases are caused by single-celled prokaryotes that enter plant tissue through natural openings or wounds and multiply in the intercellular spaces or vascular tissue. Unlike fungal diseases, there are no systemic bactericides — no product that moves through the plant to kill bacteria already inside. Management relies on prevention, sanitation, and copper-based products that have surface-protective activity. Once a systemic bacterial disease has colonized the vascular tissue, the plant usually cannot be saved.',
+        },
+
+        {
+          type: 'h3',
+          text: 'Fire Blight (Erwinia amylovora)',
+        },
+        {
+          type: 'p',
+          text: "Fire blight is the most economically significant bacterial disease of apples and pears in North America. The characteristic shepherd's crook at the tip of infected branches and the scorched appearance of blossoms and shoot tips give the disease its name. It can kill individual branches, entire trees, and in severe outbreaks can devastate orchards.",
+        },
+        {
+          type: 'p',
+          text: "Identification: Blossoms turn brown and die in early spring (blossom blight, the first sign); new shoot tips wilt and bend into a characteristic shepherd's crook and turn brown-black as if burned; infected bark may show dark discoloration with a water-soaked appearance at the margins; in humid conditions, a bacterial ooze (amber-colored droplets) may be visible on infected tissue; cankers on main branches and trunk may girdle and kill the branch.",
+        },
+        {
+          type: 'p',
+          text: 'Infection mechanism: The bacteria overwinter in cankers on infected wood. In spring, rain and insects (especially pollinating bees and flies) spread bacteria from cankers to blossoms during the bloom period. Infection is most severe when temperatures are 65–86°F during bloom with rain or dew. After bloom, bacteria can continue spreading through succulent shoot growth.',
+        },
+        {
+          type: 'p',
+          text: 'Management: Pruning out infected tissue is the primary management tool. Cut well below the visible canker margin — at least 8–12 inches into healthy wood. Sterilize tools between each cut with 70% isopropyl alcohol or 10% bleach. Do not prune during wet, humid conditions when infection can spread. Preventive copper sprays at bloom and during shoot growth have suppressive activity; antibiotics (streptomycin, oxytetracycline) are labeled for fire blight in some states and are effective when applied at bloom in high-risk weather.',
+        },
+        {
+          type: 'tip',
+          emoji: '🍎',
+          text: "Resistant varieties are the most important long-term management tool for fire blight. Pear varieties 'Harrow Sweet,' 'Harrow Delight,' 'Seckel'; apple varieties 'Liberty,' 'Priscilla,' 'Enterprise,' and most disease-resistant rootstocks perform well in high-pressure regions. Avoid highly susceptible varieties ('Gala,' 'Fuji,' 'Bartlett' pear) where fire blight has a history.",
+        },
+
+        {
+          type: 'h3',
+          text: 'Bacterial Leaf Spot & Canker Diseases',
+        },
+        {
+          type: 'p',
+          text: 'Bacterial leaf spot diseases are caused by several bacterial genera, primarily Xanthomonas and Pseudomonas, and affect a wide range of vegetables, ornamentals, and fruit crops. They produce spots, lesions, and cankers that are often difficult to distinguish from fungal leaf spots without laboratory diagnosis.',
+        },
+        {
+          type: 'table',
+          headers: ['Disease', 'Pathogen', 'Host(s)', 'Symptoms', 'Management'],
+          rows: [
+            ['Bacterial Speck (Pseudomonas syringae pv. tomato)', 'Pseudomonas syringae pv. tomato', 'Tomato', 'Small, dark brown-black spots surrounded by yellow halo; very small (1–2 mm); may coalesce; also affects fruit surface, producing small, dark raised spots', 'Copper spray preventively in cool, wet conditions; avoid overhead irrigation; crop rotation; resistant varieties available (most modern hybrids).'],
+            ['Bacterial Spot (Xanthomonas spp.)', 'Xanthomonas campestris pv. vesicatoria and related spp.', 'Tomato and pepper', 'Water-soaked spots that turn brown with raised margins; irregular shape; on fruit: raised, scabby lesions; fruit quality severely reduced', 'Copper-based bactericide with mancozeb tank-mixed; copper resistance is common in some populations — rotate with other products. Seed treatment; transplant sanitation; no cure for infected plants.'],
+            ['Angular Leaf Spot (Pseudomonas syringae pv. lachrymans)', 'Pseudomonas syringae pv. lachrymans', 'Cucumber and cucurbits', 'Angular, water-soaked spots bounded by leaf veins; spots turn brown with a white papery center; bacterial ooze may dry to a white crust on the lesion', 'Copper fungicide; avoid overhead irrigation; remove infected plant material; crop rotation.'],
+            ['Bacterial Canker (Clavibacter michiganensis subsp. michiganensis)', 'Clavibacter michiganensis subsp. michiganensis', 'Tomato', "Systemic: wilting of leaves on one side of the stem (bird's eye lesions on fruit are diagnostic — raised white spots with dark center); stem shows vascular browning; plants may die", 'No cure. Remove and destroy infected plants immediately. Do not save seed from infected fruit. Purchase certified disease-free seed and transplants. 3-year rotation away from Solanaceae.'],
+            ['Crown Gall (Agrobacterium tumefaciens)', 'Agrobacterium tumefaciens', 'Roses, fruit trees, grapes, many woody plants; very wide host range', 'Rough, tumor-like galls at the crown (soil line) or on roots; galls are initially soft and spongy, later become woody and irregular; plants may decline or be stunted but are often not killed', 'No cure for infected plants. Remove heavily galled plants; do not replant susceptible species in the same location for several years. Purchase plants from reputable nurseries; inspect root systems before planting. Biocontrol with K-84 (Agrobacterium radiobacter strain K-84) applied to roots at transplanting is effective as a preventive.'],
+            ['Bacterial Wilt (Erwinia tracheiphila)', 'Erwinia tracheiphila', 'Cucurbits (cucumber most susceptible; squash and melon less so)', "Sudden wilting of entire plant or individual branches; characteristic 'thread test': cut wilted stem near the base, press cut ends together and pull apart slowly — if fine bacterial strands string between the cut surfaces, bacterial wilt is confirmed", 'Vectored exclusively by cucumber beetles. Control cucumber beetles (row cover during seedling stage; pesticides). Once a plant shows wilt, remove and destroy it. No cure; no effective bactericide. Cucumber varieties vary in susceptibility.'],
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '🚫',
+          text: 'There are no systemic bactericides for garden use — once bacteria colonize the vascular tissue of a plant, no spray or drench will eliminate the infection. Remove and destroy systemically infected plants (bacterial wilt, bacterial canker) promptly to prevent spread to neighboring plants.',
+        },
+      ],
+    },
   ],
 }
