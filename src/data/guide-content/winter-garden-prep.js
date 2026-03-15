@@ -468,5 +468,62 @@ export const winterGardenPrepContent = {
         },
       ],
     },
+
+    // ─── SECTION 4: SOIL HEALTH ───────────────────────────────────────────────
+    {
+      id: 'soil-health',
+      title: 'Section 4: Soil Health — The Fall Amendment Window',
+      blocks: [
+        {
+          type: 'p',
+          text: "Fall is the finest time to improve garden soil, and the most underutilized season for doing so. In spring, the urgency to plant crowds out the methodical work of soil improvement; beds are occupied and time is short. In fall, beds are emptied of spent annuals, summer crops are finished, and the gardener has the entire winter — three to five months of freeze-thaw cycles, earthworm activity, and microbial decomposition — to incorporate amendments before spring planting begins.",
+        },
+        {
+          type: 'h3',
+          text: 'Fall Amendment Strategies',
+        },
+        {
+          type: 'list',
+          items: [
+            'Compost application: Apply 2–3 inches of finished compost to all emptied beds in fall. Do not dig or till it in — lay it on the surface and allow winter weather, earthworms, and freeze-thaw action to incorporate it. This no-till approach preserves soil structure and fungal networks that tilling destroys. By spring, the compost will be partially incorporated and ready for planting.',
+            'Cover cropping: Cover crops (also called green manures) are planted in fall to protect bare soil through winter, suppress weeds, and — in the case of leguminous cover crops — fix atmospheric nitrogen into the soil. Annual rye, winter rye, crimson clover, hairy vetch, and winter peas are the most widely used. Plant 4–6 weeks before FFD for establishment. Terminate (by cutting or tilling) 2–3 weeks before spring planting.',
+            'Leaf mulch: Fallen leaves are the most abundant and valuable free soil amendment available in most American gardens. Run leaves through a mower or leaf shredder to prevent matting, then use as mulch on beds or add to compost. Whole leaves matted into a sheet over beds can become an impermeable barrier that sheds water; shredded leaves are excellent mulch and improve soil structure as they break down.',
+            'Lime or sulfur application: Fall is the ideal time to adjust soil pH because amendments need time to react with the soil — lime applied in fall is fully incorporated by spring. A soil test (from your cooperative extension service) will tell you exactly how much lime (to raise pH) or sulfur (to lower pH) to apply. Applying without a test risks over-correction.',
+            'Bone meal and bulb fertilizer: Apply bone meal or granular bulb fertilizer to bulb planting areas at the time of planting. These slow-release amendments are in place for roots to access in spring.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The No-Dig Garden Principle',
+        },
+        {
+          type: 'p',
+          text: "One of the most significant shifts in horticultural best practice over the past two decades is the move away from fall tilling and toward no-dig or no-till soil management. Traditional fall tilling — turning the soil with a rototiller or digging fork — was believed to improve drainage, incorporate amendments, and expose pest larvae to killing frosts. Research has since shown that tilling also destroys the fungal networks (mycorrhizae) that trees and plants depend on, disrupts earthworm populations, brings buried weed seeds to the surface where they germinate, and accelerates the oxidation of soil organic matter.",
+        },
+        {
+          type: 'list',
+          items: [
+            'The no-dig alternative: Apply amendments on the surface. Allow biological processes — earthworms, freeze-thaw, microbial activity — to incorporate them. This approach builds soil structure continuously rather than disrupting and rebuilding it each year.',
+            'Sheet mulching for new beds: To convert turf or weedy areas to garden beds without tilling, use the sheet mulch method: mow turf short, cover with overlapping cardboard (removing tape and staples), wet thoroughly, and cover with 4–6 inches of wood chip mulch or compost. By spring, the cardboard will have killed the turf and begun decomposing, and the mulch layer will be partially incorporated. This is the most effective no-dig bed conversion method and the most soil-preserving.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Composting in Fall and Winter',
+        },
+        {
+          type: 'p',
+          text: 'Fall is the most productive season for building compost because the garden generates enormous quantities of compostable material — spent annuals, vegetable plant debris, fallen leaves, green trimmings. Incorporating this material into the compost pile rather than sending it to a landfill is one of the most impactful sustainable gardening practices available.',
+        },
+        {
+          type: 'list',
+          items: [
+            "The ideal fall compost pile: Alternate 'brown' carbon-rich materials (dried leaves, straw, cardboard) with 'green' nitrogen-rich materials (spent vegetable plants, grass clippings, kitchen scraps) in roughly 3:1 brown-to-green ratio by volume. Water each layer. The pile will heat up and then cool as winter progresses; active decomposition slows in cold weather but does not stop entirely.",
+            "What not to compost: Diseased plant material (powdery mildew, black spot, fire blight — these diseases can survive a home compost pile and reinfect the garden), aggressive weed seeds (especially weeds that set seed before you compost them), and any plant material treated with persistent herbicides. When in doubt, bag diseased material and dispose of it rather than composting.",
+            'Cold-weather composting: In Zones 4 and colder, the compost pile will freeze solid through winter. This is not a problem — freeze-thaw action actually breaks down material and the pile will resume active decomposition as soon as temperatures rise in spring. Insulate the pile with a thick layer of straw or leaves over winter to reduce the depth of freeze penetration.',
+          ],
+        },
+      ],
+    },
   ],
 }
