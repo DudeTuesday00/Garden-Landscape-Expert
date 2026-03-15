@@ -415,5 +415,152 @@ export const commonGardenDiseasesContent = {
         },
       ],
     },
+    {
+      id: 'soilborne-diseases',
+      title: 'Section 5: Soilborne Diseases',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Soilborne diseases are among the most frustrating problems in the garden because the pathogens persist in soil for years — sometimes decades — independent of any host plant, making rotation and removal ineffective on their own. Fusarium, Verticillium, Pythium, Rhizoctonia, and Sclerotinia all live in soil and attack roots, crowns, and stems from below. The common thread: by the time visible above-ground symptoms appear (wilting, yellowing, collapse), the pathogen has already caused extensive root or vascular damage, and treatment options are severely limited.',
+        },
+
+        {
+          type: 'h3',
+          text: 'Fusarium Wilt (Fusarium oxysporum)',
+        },
+        {
+          type: 'p',
+          text: 'Fusarium oxysporum is a soilborne fungal pathogen with many host-specific formae speciales — each adapted to a particular host genus. Fusarium oxysporum f. sp. lycopersici infects tomatoes; f. sp. cubense infects bananas; f. sp. vasinfectum infects cotton; and so on. A strain that devastates tomatoes cannot infect cucumbers, and vice versa. This host specificity is important when planning rotations.',
+        },
+        {
+          type: 'p',
+          text: 'Identification: Fusarium wilt typically causes wilting of leaves on one side of the stem or on one branch before progressing to the whole plant — asymmetric wilting is a key early clue. Cross-sectioning the stem at the base reveals characteristic brown or orange-brown discoloration of the vascular tissue (xylem). On tomatoes, this discoloration may extend up into the main stem and even into petioles. Plants may wilt during the heat of the day but recover at night early in the infection; as disease progresses, wilting becomes permanent.',
+        },
+        {
+          type: 'p',
+          text: 'Conditions: Warm soil temperatures (75–85°F) strongly favor Fusarium infection — it is notably more severe in hot summers and hot growing regions. Acidic soil (pH below 6.0) increases susceptibility; raising soil pH to 6.5–7.0 reduces disease severity. The pathogen persists in soil for 5–10 years or longer as chlamydospores (thick-walled resting spores). It is easily spread via soil on tools, boots, transplant material, and irrigation water.',
+        },
+        {
+          type: 'p',
+          text: 'Management: There is no chemical cure for established Fusarium wilt. Remove and destroy infected plants; do not compost. The primary management strategies are: (1) resistant varieties — the most effective tool (look for "F" and "FF" resistance codes on tomato variety labels; "F" = Fusarium Race 1 resistance; "FF" = Races 1 and 2; "FFF" = Races 1, 2, and 3); (2) crop rotation — rotate to non-host crops for at least 3 years, though persistence means rotation alone is insufficient for high-inoculum soils; (3) soil pH adjustment to 6.5–7.0; (4) soil solarization (see below) in high-inoculum beds. Grafting tomatoes onto Fusarium-resistant rootstocks is increasingly practical for gardeners using specialty grafted transplants.',
+        },
+        {
+          type: 'tip',
+          emoji: '🍅',
+          text: 'If you have had Fusarium wilt in a tomato bed, switch entirely to varieties with confirmed resistance for several seasons. Modern hybrid varieties like \'Celebrity,\' \'Mountain Merit,\' \'Defiant,\' and \'Big Beef\' carry resistance to multiple Fusarium races. Heirloom varieties are generally not resistant. The resistance code \'F\' on a plant label indicates the variety will not develop wilt even in infested soil.',
+        },
+
+        {
+          type: 'h3',
+          text: 'Verticillium Wilt (Verticillium dahliae and V. albo-atrum)',
+        },
+        {
+          type: 'p',
+          text: 'Verticillium wilt is caused by two closely related soilborne fungi with an exceptionally broad host range — over 400 plant species including tomatoes, potatoes, eggplant, peppers, strawberries, raspberries, roses, maples, elms, and many herbaceous ornamentals. Unlike Fusarium, which favors hot soil, Verticillium is most severe when soil temperatures are cooler (60–75°F), making it a common problem in the Pacific Northwest, coastal regions, and early in the growing season before soils warm.',
+        },
+        {
+          type: 'p',
+          text: 'Identification: The symptoms closely resemble Fusarium wilt: one-sided or asymmetric wilting and yellowing of leaves, beginning on lower and outer leaves and progressing inward and upward; brown vascular discoloration in cross-sectioned stem tissue. On tomato, Verticillium discoloration tends to be a lighter tan-brown and is usually confined to the lower portion of the main stem (vs. Fusarium, which can extend higher). On strawberries, outer leaves wilt and collapse to the ground while the crown may show reddish-brown discoloration. On trees (especially maples), Verticillium produces a distinctive streaking in the sapwood visible in cross-section.',
+        },
+        {
+          type: 'p',
+          text: 'Conditions: Cool soil temperatures (60–75°F); Verticillium dahliae forms microsclerotia that survive in soil for 10–15 years or longer. The wide host range makes rotation impractical as a standalone solution. Like Fusarium, Verticillium is spread by infested soil, tools, and irrigation water.',
+        },
+        {
+          type: 'p',
+          text: 'Management: Identical principles to Fusarium: resistant varieties (look for "V" resistance code on tomato labels); avoid replanting susceptible species in known infested soil; soil solarization; improving soil health. There is no chemical cure. On strawberries, fumigation or solarization before replanting is standard practice in commercial settings and is practical for serious home gardeners. Maple trees infected with Verticillium may recover if the infection is limited — maintain tree vigor with deep watering and appropriate fertilization; remove and dispose of infected wood.',
+        },
+        {
+          type: 'table',
+          headers: ['Feature', 'Fusarium Wilt', 'Verticillium Wilt'],
+          rows: [
+            ['Causal organism', 'Fusarium oxysporum (host-specific formae speciales)', 'Verticillium dahliae or V. albo-atrum (very broad host range)'],
+            ['Optimal soil temp', '75–85°F (hot conditions)', '60–75°F (cool conditions)'],
+            ['Host range', 'Narrow — each strain attacks one host genus', 'Very wide — 400+ plant species'],
+            ['Vascular discoloration', 'Orange-brown; extends high into stem and petioles', 'Tan-brown; usually limited to lower stem'],
+            ['Persistence in soil', '5–10+ years as chlamydospores', '10–15+ years as microsclerotia'],
+            ['Rotation effectiveness', 'Moderate (host-specific — rotate to non-host)', 'Limited (broad host range limits rotation options)'],
+            ['Key management', 'Resistant varieties ("F" code on tomato), pH 6.5–7.0', 'Resistant varieties ("V" code on tomato), solarization'],
+          ],
+        },
+
+        {
+          type: 'h3',
+          text: 'Pythium Root Rot and Damping Off',
+        },
+        {
+          type: 'p',
+          text: 'Pythium species are oomycetes (water molds, not true fungi) that cause two distinct but related problems: damping off in seedlings and root rot in established plants. Pythium is essentially omnipresent in most soils and potting mixes — it only becomes pathogenic when conditions favor it, primarily excessive soil moisture and oxygen deprivation at the root zone.',
+        },
+        {
+          type: 'p',
+          text: 'Damping off is the collapse of seedlings at or just below the soil line. The stem pinches to a thread-like point and the seedling topples over, looking almost as if it was cut. Pre-emergence damping off (seeds rot before they emerge) is also caused by Pythium and Rhizoctonia. Post-emergence damping off is most common in cool, wet conditions with dense plantings; seeds started in non-sterile media, wet media, or media with poor drainage are at highest risk. Once seedlings have their first true leaves and the stem begins to lignify (harden), susceptibility drops sharply.',
+        },
+        {
+          type: 'p',
+          text: 'Root rot in established plants presents as gradual or sudden wilting and decline despite adequate soil moisture; brown, mushy, or absent root systems (roots are soft and easily pulled apart rather than firm and white); poor growth, yellowing lower leaves. Pythium root rot is most severe in poorly drained soils, overwatered container plants, and during cool, wet periods.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Prevention for damping off: Use sterile, well-draining seed-starting mix — never reuse old mix or garden soil for seed starting. Water carefully to keep mix moist but not wet; provide bottom heat (68–75°F soil temperature discourages Pythium). Ensure good air circulation over seedling trays; thin seedlings promptly if they are crowded. A thin layer of perlite or coarse sand on the surface of the mix improves surface drainage and reduces damping off.',
+            'Prevention for root rot: Improve soil drainage; do not overwater; ensure container drainage holes are functioning. In raised beds and containers, a quality well-draining mix is the most important investment.',
+            'Biological control: Trichoderma-based products (such as Rootshield) colonize roots and actively suppress Pythium, Rhizoctonia, and Fusarium — an excellent preventive treatment for seedlings and transplants in high-risk situations. Apply as a soil drench at transplanting.',
+            'Chemical options: Mefenoxam (Ridomil Gold) or fosetyl-aluminum (Aliette) are effective against Pythium — both are oomycete-specific products; standard fungicides do not work. These are generally warranted only for high-value plants, serious outbreaks, or commercial seed-starting operations.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌱',
+          text: 'The single most effective investment against damping off is a quality seed-starting mix: sterile, fine-textured, moisture-retentive but free-draining. Products labeled "seed-starting mix" differ from potting soil in their particle size and drainage properties. Garden soil, outdoor compost, and reused potting mix are not appropriate for starting seeds indoors.',
+        },
+
+        {
+          type: 'h3',
+          text: 'Rhizoctonia Crown and Root Rot',
+        },
+        {
+          type: 'p',
+          text: 'Rhizoctonia solani is a true fungus (unlike Pythium) with an extremely broad host range and nearly worldwide distribution in garden soils. It causes damping off (often in partnership with Pythium), stem cankers at the soil line (collar rot), and root rot on a wide range of vegetables, ornamentals, and turf. On beans, it causes "sore shin" — a reddish-brown canker at the base of the stem. On potatoes, Rhizoctonia produces dark, irregular sclerotia on tuber surfaces ("black scurf") and stem cankers that can girdle the stem and cause aerial tubers to form.',
+        },
+        {
+          type: 'p',
+          text: 'Identification: Reddish-brown to dark brown lesions on stems at or near the soil line; affected stems may have a dry, sunken appearance. Rhizoctonia-caused damping off tends to produce a dry, brown rot at the stem base, compared to the watery, pinched appearance of Pythium damping off. On turf, Rhizoctonia causes brown patch (circular patches of tan-brown grass) and large patch (Zoysia, St. Augustine).',
+        },
+        {
+          type: 'p',
+          text: 'Management: Improve drainage; reduce soil moisture; avoid burying transplant stems too deeply; ensure air circulation at the soil surface. Trichoderma-based biocontrols are effective against Rhizoctonia. For potatoes: plant certified seed potato; rotate to non-host crops for 3+ years; deep watering (rather than frequent shallow watering) discourages surface-level Rhizoctonia activity. There is no in-season chemical cure for established crown rot.',
+        },
+
+        {
+          type: 'h3',
+          text: 'Soil Solarization: A Practical Soilborne Disease Suppression Tool',
+        },
+        {
+          type: 'p',
+          text: 'Soil solarization uses solar energy to heat soil to temperatures lethal to many soilborne pathogens. It is the most practical and broadly effective treatment available to home gardeners for suppressing Fusarium, Verticillium, Pythium, Rhizoctonia, Sclerotinia, nematodes, weed seeds, and some soil-dwelling insects simultaneously — with no chemicals required.',
+        },
+        {
+          type: 'p',
+          text: 'How it works: In mid-summer (when solar intensity is highest), clear plastic sheeting (1–2 mil) is laid tightly over moist soil. Solar radiation heats the soil beneath the plastic to 120–140°F at the surface and 90–100°F+ at 6-inch depth. Temperatures above 100°F sustained over 4–6 weeks kill most soilborne pathogens in the top 6–12 inches of soil. The soil must be moist (to conduct heat effectively), the plastic must be clear (not black, which reflects heat rather than transmitting it), and conditions must be sunny and warm — solarization does not work effectively in cool or overcast climates.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Step 1 — Prepare the bed: Remove all plant debris, till or turn the soil to break up clods, irrigate thoroughly to field capacity, and smooth the surface. Pathogen-kill temperatures depend on moisture conducting heat downward.',
+            'Step 2 — Apply clear plastic: Lay 1–2 mil clear polyethylene plastic over the bed. Seal edges tightly by burying them in a trench around the bed perimeter or weighting them with soil. The goal is to trap maximum heat — any gap reduces effectiveness.',
+            'Step 3 — Leave in place: For best results in areas with full sun and summer temperatures above 85°F, leave the plastic in place for 4–6 weeks. 6–8 weeks provides deeper treatment and is recommended for severe infestations.',
+            'Step 4 — Plant without tilling: After removing the plastic, plant into the treated soil with minimum disturbance. Deep tilling after solarization brings untreated soil and surviving propagules from below the treatment zone to the surface, reducing the benefit.',
+            'Best results: Hot-summer climates (USDA Zones 7–10); mid-summer (July–August in most of the US); full sun exposure; soil temperatures consistently above 85°F ambient. Solarization is significantly less effective in cool-summer regions (Pacific Northwest, New England during cool summers, high-elevation gardens).',
+            'Limitations: Solarization kills beneficial organisms along with pathogens; beneficial populations typically recover faster than pathogens after treatment. It does not provide lasting suppression — reintroduction from surrounding soil or new plant material will re-establish pathogen populations over time.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '☀️',
+          text: 'Solarization is most effective in years when you have had significant soilborne disease problems — Fusarium wilt, Verticillium wilt, nematode pressure, or persistent damping-off issues. Use it in mid-summer on the beds where problems occurred, then follow up with disease-resistant varieties and improved drainage the following season.',
+        },
+      ],
+    },
   ],
 }
