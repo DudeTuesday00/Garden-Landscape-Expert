@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 31 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 34 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -61,7 +61,9 @@ Garden-Landscape-Expert/
 │       ├── plants-for-smell-guide.png
 │       ├── curb-appeal-guide.png
 │       ├── porch-plants-guide.png
-│       └── salsa-garden-guide.png   # 28 images total; evergreen-trees, salad-garden, culinary-herb-garden have no image yet
+│       ├── salsa-garden-guide.png
+│       ├── winter-garden-prep-guide.png
+│       └── xeriscape-guide.png      # 30 images total; evergreen-trees, salad-garden, culinary-herb-garden, japanese-garden have no image yet
 └── src/
     ├── app/                         # Next.js App Router — one folder per route
     │   ├── layout.jsx               # Root layout — dark mode script, GTM, Nav, footer, GA4/AdSense via next/script
@@ -132,7 +134,10 @@ Garden-Landscape-Expert/
     │       ├── curb-appeal.js
     │       ├── porch-plants.js
     │       ├── culinary-herb-garden.js
-    │       └── winter-garden-prep.js
+    │       ├── medicinal-garden.js
+    │       ├── japanese-garden.js
+    │       ├── winter-garden-prep.js
+    │       └── xeriscape.js
     └── logic/
         └── matchPlants.js           # Scoring + filtering algorithm
 ```
@@ -264,7 +269,7 @@ Each question in `questions.js` has:
 
 ## Planned Sections (Future)
 
-- **Planting Guides (ongoing)** — 31 of ~75 guides are live; continue adding guides from source `.docx` files using the established pattern in `guide-content/`
+- **Planting Guides (ongoing)** — 34 of ~75 guides are live; continue adding guides from source `.docx` files using the established pattern in `guide-content/`
 - Plant care calendar / seasonal reminders
 - Landscape design planner
 - Soil amendment advisor
@@ -289,7 +294,7 @@ Each question in `questions.js` has:
 
 ### Planting Guides Section (scaffold) ✅
 
-- `src/data/guides.js` — 10 categories, ~75 guides (31 live, remainder `comingSoon: true`)
+- `src/data/guides.js` — 10 categories, ~75 guides (34 live, remainder `comingSoon: true`)
 - `src/components/guides/GuidesHome.jsx` — guide cards with "Coming Soon" badges; live guides are clickable and route to full guide detail view
 - `src/app/page.jsx` — home page server component rendering `HomePage.jsx`
 - `src/components/wizard/Wizard.jsx` — brand strip removed (now in Nav)
@@ -299,16 +304,16 @@ Each question in `questions.js` has:
 2. Flowers & Color Gardens (9 guides — 9 live ✅)
 3. Edible Gardens (9 guides — 9 live ✅)
 4. Herbs & Fragrance (6 guides — 2 live ✅)
-5. Landscape Design (10 guides — 1 live ✅)
-6. Seasonal Guides (8 guides)
+5. Landscape Design (10 guides — 3 live ✅)
+6. Seasonal Guides (8 guides — 1 live ✅)
 7. Pest & Problem Solving (8 guides)
-8. Specialty Gardens (11 guides — 2 live ✅)
+8. Specialty Gardens (11 guides — 1 live ✅)
 9. Container & Small Spaces (8 guides — 1 live ✅)
 10. Eco & Sustainability (9 guides)
 
 ### Planting Guides — Live Content ✅
 
-Thirty-one full guides integrated into the app:
+Thirty-four full guides integrated into the app:
 
 - `src/data/guide-content/shade-trees.js` — Shade Trees (`id: 'shade-trees'`)
 - `src/data/guide-content/fruit-trees.js` — Fruit Trees (`id: 'fruit-trees'`)
@@ -343,6 +348,7 @@ Thirty-one full guides integrated into the app:
 - `src/data/guide-content/culinary-herb-garden.js` — Culinary Herb Garden (`id: 'culinary-herb-garden'`)
 - `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/winter-garden-prep.js` — Winter Garden Prep (`id: 'winter-garden-prep'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/xeriscape.js` — Xeriscape Design (`id: 'xeriscape'`) — **complete** (all 10 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -437,6 +443,28 @@ export async function generateMetadata({ params }) {
 | `troubleshooting` — Weeds row | ✅ Done | Added weeds row: causes (bare soil, infrequent weeding), mulch + short-session solution, learning moment (what is a weed, edible weeds, plant competition) |
 | `best-plants` — Cucumbers subsection | ✅ Done | Added 🥒 Cucumbers — The Munching Machine: intro paragraph, variety table (Straight Eight, Marketmore 76, Lemon Cucumber, Spacemaster), kid activities (pickle project, Lemon Cucumber reveal), critical harvest tip; preceded by Bean Teepee tip callout |
 | `best-plants` — Lettuce & Salad Greens subsection | ✅ Done | Added 🥬 Lettuce & Salad Greens — The Cut-and-Come-Again Garden: intro paragraph, variety list (Black Seeded Simpson, Oakleaf, mesclun, Tyee spinach), harvest technique, salad bowl project activity, leaf rubbings activity |
+
+---
+
+### Xeriscape Design Guide ✅
+
+`src/data/guide-content/xeriscape.js` — Xeriscape Design (`id: 'xeriscape'`) — full guide built from `Xeriscape_Design_Guide.docx`.
+
+| Section | Content |
+|---|---|
+| Intro overview | Xeriscape word/myth/reality; 4-row water-use comparison table (conventional → full xeriscape); water rebates tip |
+| Section 1: Seven Principles | 7-row principles table (Planning, Soil, Turf, Plant Selection, Irrigation, Mulch, Maintenance) |
+| Section 2: Site Analysis & Design | Essential assessment 5-item list (sun, slope, wind, existing plants, soil); hydrozoning 3-row table (Oasis/Transitional/Xeric); 10-60-30 rule tip; turf removal 4-item methods list |
+| Section 3: Soil Preparation | 5-row soil type table (sandy, clay, caliche, compacted urban, loam); soil test + pH tip |
+| Section 4: Plant Selection | Establishment deep-watering intro; 10-row perennials table; 7-row ornamental grasses table; 9-row shrubs table; 7-row trees table; 5-row groundcovers table |
+| Section 5: Efficient Irrigation | Drip components/placement/zoning list; smart controllers + ET paragraph; soak-and-cycle tip; 4-item rainwater harvesting list |
+| Section 6: Mulch | 6-row mulch type table; mulch volcano warning callout |
+| Section 7: Hardscape | 6-row permeable surfaces table; dry creek beds 3-item list; retaining walls paragraph |
+| Section 8: Regional Plant Guides | 7-row regional table (Desert SW, California, Intermountain West, Southern Plains, Great Plains, Southeast, Mid-Atlantic/NE) |
+| Section 9: Lawn Alternatives | 7-row alternatives table (buffalo grass, blue grama, PA sedge, fescue, native meadow, creeping thyme, DG); HOA tip |
+| Section 10: Seasonal Care & Troubleshooting | 5-row seasonal calendar table; 7-row troubleshooting table; xeriscape mindset tip + closing quote |
+
+Theme: stone/amber gradient in `GuideDetail.jsx`; set `comingSoon: false` under Landscape Design in `guides.js`; hero image: `public/guides/xeriscape-guide.png`
 
 ---
 
@@ -642,10 +670,11 @@ Each live guide detail page displays a full-width hero photo below the nav, abov
 - **Naming convention:** `<guide-id>-guide.png` (e.g., `shade-tree-guide.png` for `id: 'shade-trees'`)
 - **Wired via** the `heroImages` map in `src/components/guides/GuideDetail.jsx` — keys are guide IDs, values are root-relative paths
 - **Conditional render:** `{heroImages[guideId] && <img .../>}` — guides without an entry simply render no photo; no broken images
-- **28 of 31 live guides** have hero images; the following 3 do not yet have image files and are intentionally absent from `heroImages`:
+- **30 of 34 live guides** have hero images; the following 4 do not yet have image files and are intentionally absent from `heroImages`:
   - `evergreen-trees`
   - `salad-garden`
   - `culinary-herb-garden`
+  - `japanese-garden`
 
 ### Favicon ✅
 
