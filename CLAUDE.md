@@ -131,7 +131,8 @@ Garden-Landscape-Expert/
     │       ├── plants-for-fragrance.js
     │       ├── curb-appeal.js
     │       ├── porch-plants.js
-    │       └── culinary-herb-garden.js
+    │       ├── culinary-herb-garden.js
+    │       └── winter-garden-prep.js
     └── logic/
         └── matchPlants.js           # Scoring + filtering algorithm
 ```
@@ -341,6 +342,7 @@ Thirty-one full guides integrated into the app:
 - `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`)
 - `src/data/guide-content/culinary-herb-garden.js` — Culinary Herb Garden (`id: 'culinary-herb-garden'`)
 - `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/winter-garden-prep.js` — Winter Garden Prep (`id: 'winter-garden-prep'`) — **in progress** (Intro + Section 1 of 10 built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -462,6 +464,27 @@ export async function generateMetadata({ params }) {
 | Section 8: Regional Adaptation | ✅ Done | 7-row regional table (PNW, CA, Desert SW, Midwest, Southeast, Mid-Atlantic/NE, Mountain West), 5 universal principles, Japan climate context tip |
 | Section 9: Small-Space Japanese Gardens | *(merged into Regional Adaptation and closing sections)* | |
 | Section 10: Through the Seasons + Troubleshooting | ✅ Done | 6-row seasonal calendar, 7-row troubleshooting table, 2-paragraph closing reflection, momijigari tip |
+
+---
+
+### Winter Garden Prep Guide — Docx Sync Progress
+
+`src/data/guide-content/winter-garden-prep.js` being built section-by-section to match `Winter_Garden_Prep_Guide.docx`.
+
+| Section | Status | Notes |
+|---|---|---|
+| Hero + intro paragraph | ✅ Done | Subtitle and intro from docx opening |
+| Overview: Know Your Numbers | ✅ Done | "Why Winter Prep Matters" tip callout; 4-row regional zone/frost date table; USDA zone vs frost date tip |
+| Section 1: Preparing Perennials & Ornamental Grasses | ✅ Done | 7-row cut-back decision table; dividing perennials (4 list items); mulching (4 list items) |
+| Section 2: Preparing Trees & Shrubs for Winter | 🔜 Pending | Pruning table, marginally hardy shrubs, rose protection table, young trees |
+| Section 3: Bulbs — Planting, Lifting & Storing | 🔜 Pending | Spring bulb table, lasagna technique tip, tender bulb lifting table |
+| Section 4: Soil Health — The Fall Amendment Window | 🔜 Pending | Amendment strategies, no-dig principle, composting |
+| Section 5: Overwintering Tender Plants Indoors | 🔜 Pending | Overwintering spectrum, pest inspection, indoor care table |
+| Section 6: The Kitchen Garden in Fall & Winter | 🔜 Pending | Season extension, fall cleanup, fall planting table |
+| Section 7: Tools, Equipment & Garden Structures | 🔜 Pending | Annual tool maintenance, irrigation winterization, structures |
+| Section 8: Regional Winter Prep Timelines | 🔜 Pending | 6-row regional timeline table |
+| Section 9: Supporting Wildlife Through Winter | 🔜 Pending | Wildlife habitat list, bird feeding |
+| Section 10: Planning for Spring | 🔜 Pending | Year-end assessment, seed-starting calendar, master checklist, closing |
 
 ---
 
