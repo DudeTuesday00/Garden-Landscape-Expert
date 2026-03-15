@@ -238,5 +238,119 @@ export const japaneseGardenContent = {
         },
       ],
     },
+    // ─── SECTION 5: PLANTS ────────────────────────────────────────────────────
+    {
+      id: 'plants',
+      title: 'Plants for the Japanese Garden',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Japanese garden planting is not about Japanese plants — it is about plants that embody Japanese aesthetic principles. Restraint, seasonality, structural clarity, and the ability to age gracefully matter more than geographic origin. Many of the most effective Japanese garden plants are native to North America, Europe, or China rather than Japan. What makes them appropriate is not their passport but their character.',
+        },
+        {
+          type: 'p',
+          text: 'The palette is intentionally limited. A Japanese garden typically uses far fewer species than a Western garden of equivalent size — perhaps 8–15 species where a cottage garden might use 40 or 50. This restraint is not poverty of imagination; it is compositional discipline. Each species is chosen to perform a specific role and is given enough space to perform that role with full presence.',
+        },
+        {
+          type: 'h3',
+          text: 'Trees: The Primary Structure',
+        },
+        {
+          type: 'table',
+          headers: ['Tree', 'Zones', 'Japanese Garden Role', 'Key Qualities', 'Notes'],
+          rows: [
+            ['Japanese Maple (Acer palmatum)', '5–9', 'The signature Japanese garden tree. Specimen, focal point, seasonal drama.', 'Extraordinary fall color; refined leaf shape; sculptural winter branch structure; varieties for sun and shade', 'The most versatile Japanese garden tree for American gardens. Choose variety by size, sun exposure, and desired foliage color. Weeping varieties (\'Crimson Queen,\' \'Tamukeyama\') for water\'s edge and container planting.'],
+            ['Japanese Black Pine (Pinus thunbergii)', '5–8', 'Coastal pine aesthetic; structural evergreen anchor; trained in the niwaki (cloud pruning) tradition', 'Irregular, wind-shaped natural form; dramatic winter silhouette; excellent for niwaki training', 'The most dramatic Japanese garden evergreen. Requires annual candle pruning to develop the characteristic layered cloud form. Full sun, excellent drainage.'],
+            ['Japanese Red Pine (Pinus densiflora)', '3–7', 'Similar to black pine; more cold-hardy; the preferred pine for northern gardens', 'Orange-red bark beautiful in winter; looser, more informal habit than black pine', '\'Umbraculifera\' (Tanyosho pine) is a multi-stemmed form with a flat-topped parasol shape — one of the finest pines for small Japanese gardens.'],
+            ['Cherry (Prunus serrulata and relatives)', '4–8 (varies)', 'Seasonal accent of extraordinary beauty. The symbol of mono no aware — the bittersweet beauty of transience.', 'Brief but spectacular spring bloom; attractive bark year-round; good fall color in some varieties', '\'Kwanzan\' and \'Yoshino\' are the most widely available. For small gardens: \'Autumnalis\' (reblooms in fall), \'Okame\' (small, early pink). Native cherries (P. serotina) also appropriate.'],
+            ['Japanese Snowbell (Styrax japonicus)', '5–8', 'Understory tree; graceful habit; elegant spring flowers', 'Pendulous white bell flowers in late spring; clean foliage; good fall color; refined branching', 'One of the finest small trees for part-shade Japanese garden positions. Underused in American gardens relative to its beauty.'],
+            ['Serviceberry (Amelanchier spp.)', '3–9 (varies)', 'Native substitute for cherry; spring flower, summer berry, fall color; multi-season interest', 'White spring flowers, edible blue-black berries, outstanding fall color in red-orange', 'One of the finest native alternatives to Japanese cherry. A. canadensis and A. arborea are the most widely adapted. Supports birds and native pollinators.'],
+            ['Ginkgo (Ginkgo biloba)', '3–9', 'Ancient, deeply symbolic tree. Dramatic fan-shaped leaves. Extraordinary yellow fall color.', 'Fan-shaped leaves unique in the plant world; brilliant yellow fall color; pest and disease-free; extremely long-lived', 'Plant male trees only (females produce malodorous fruit). \'Autumn Gold\' and \'Princeton Sentry\' (narrow upright) are reliable male selections. Grows slowly; a patient investment.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Shrubs: The Middle Layer',
+        },
+        {
+          type: 'table',
+          headers: ['Shrub', 'Zones', 'Role', 'Season of Interest', 'Notes'],
+          rows: [
+            ['Azalea (Rhododendron spp.)', '4–9 (varies)', 'Mass color accent in spring; evergreen structure year-round; the most traditional Japanese garden flowering shrub', 'Spring bloom; evergreen foliage year-round', 'Clip azaleas into rounded or cloud-pruned (niwaki) forms. Satsuki and Kurume types are most traditional. Acid soil essential. Best in part shade.'],
+            ['Japanese Pieris (Pieris japonica)', '4–8', 'Evergreen structure; early spring flower; refined and elegant', 'Year-round evergreen; cascading white flowers in early spring; attractive red new growth', 'One of the finest Japanese garden shrubs for year-round interest. Shade-tolerant. \'Mountain Fire\' has brilliant red new growth. Acid soil required.'],
+            ['Camellia (C. japonica / C. sasanqua)', '6–9 (japonica); 6–10 (sasanqua)', 'Evergreen structure; winter and spring bloom; the most important flowering shrub of the Japanese garden', 'C. sasanqua: fall–winter; C. japonica: winter–spring', 'In the South and Pacific Coast, camellias are garden anchors of the first order. The flowers — which fall whole from the shrub — are one of the signature seasonal events of the Japanese garden. Zone 7+ for reliable performance.'],
+            ['Japanese Kerria (Kerria japonica)', '4–9', 'Bright spring flowers on arching stems; graceful habit; shade-tolerant', 'Spring: bright golden-yellow flowers; attractive green stems year-round', 'One of the most shade-tolerant flowering shrubs for Japanese garden use. Arching stems provide movement in winter. Single-flowered form more traditional than double (\'Pleniflora\').'],
+            ['Mugo Pine (Pinus mugo)', '2–8', 'Low evergreen structure; rock garden and stone composition anchor', 'Year-round evergreen; slow growth ideal for long-term compositions with stone', 'One of the best low evergreen shrubs for formal stone compositions and the edges of karesansui gardens.'],
+            ['Leucothoe (L. fontanesiana)', '4–6', 'Arching foliage; shade ground layer; native alternative to nandina', 'Year-round; fall-winter color shift to bronze-red', 'Native to eastern North America. Arching habit and layered foliage texture are well-suited to the Japanese garden aesthetic.'],
+            ['Heavenly Bamboo (Nandina domestica)', '6–9', 'Seasonal color through foliage; winter berries; vertical accent', 'Year-round: spring–summer green, fall-winter red; persistent red berries', 'Note: Nandina is invasive in the Southeast — check your state\'s invasive plant list. Where invasive, substitute Itea virginica or Aronia arbutifolia.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Ground Layer: Moss, Ferns, and Low Planting',
+        },
+        {
+          type: 'p',
+          text: 'The ground layer of a Japanese garden is where the aesthetic difference from Western garden design is most immediately visible. Where a Western garden might use mulch or a uniform ground cover, the Japanese garden uses moss, ferns, and carefully chosen low plants that vary in texture, value, and seasonal behavior — creating a ground plane that is as compositionally considered as everything above it.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Ferns: Among the finest Japanese garden plants for any light condition. Japanese painted fern (Athyrium niponicum \'Pictum\') — silver-painted fronds of extraordinary beauty, Zones 3–8. Ostrich fern (Matteuccia struthiopteris) — bold vase form, Zones 2–8. Autumn fern (Dryopteris erythrosora) — bronze new fronds, evergreen in mild climates, Zones 5–9. Christmas fern (Polystichum acrostichoides) — evergreen, native, extremely adaptable, Zones 3–9.',
+            'Mondo grass (Ophiopogon japonicus): One of the most useful Japanese garden ground covers — a fine-textured grass-like plant that forms a dense low mat. Black mondo grass (O. planiscapus \'Nigrescens\') is extraordinary in composition with pale gravel or light stone. Hardy Zones 6–10.',
+            'Epimedium: Among the finest shade ground covers for a Japanese garden context. Delicate heart-shaped leaves; small spring flowers; tolerates dry shade. Hardy Zones 4–8.',
+            'Sedges (Carex spp.): Grass-like plants for moist to average shade conditions. C. morrowii \'Ice Dance\' (variegated, Zone 5–9) and C. oshimensis \'Evergold\' (golden, Zone 5–9) bridge the aesthetic between moss, fern, and grass in a way that feels intrinsically Japanese.',
+            'Liriope: Tolerates more sun and dry conditions than mondo grass. Hardy Zones 4–9. Use in mass rather than as a border edging, which reads as a Western design approach.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Growing Moss: The Essential Japanese Garden Skill',
+        },
+        {
+          type: 'p',
+          text: 'Moss is so central to the Japanese garden aesthetic that an entire gardening tradition — koke-niwa, the moss garden — is devoted to it. Establishing moss requires patience and specific conditions, but once established, a healthy moss lawn is one of the most beautiful and low-maintenance surfaces a garden can have.',
+        },
+        {
+          type: 'table',
+          headers: ['Moss Type', 'Best For', 'Light', 'Moisture', 'Climate Notes'],
+          rows: [
+            ['Sheet Moss (Hypnum spp.)', 'Ground cover in large areas; stepping stone surrounds; the most commonly available moss', 'Part shade to full shade', 'Consistently moist but not waterlogged', 'Adaptable across most of the US in shade conditions. The standard moss for Japanese garden establishment.'],
+            ['Cushion Moss (Leucobryum glaucum)', 'Stone compositions; the mounded cushion form is particularly beautiful with stone and lanterns', 'Part shade to full shade', 'Moist; tolerates brief drying better than sheet moss', 'Eastern and Pacific Northwest US. The distinctive mounded form is uniquely beautiful.'],
+            ['Haircap Moss (Polytrichum spp.)', 'Taller, more textured moss for transitional zones; effective between moss lawn and larger plantings', 'Part shade', 'Moist to average', 'Very widely adaptable; tolerates more sun than other mosses. Found across most of the US.'],
+            ['Fern Moss (Thuidium spp.)', 'The finest texture of any common moss; feathery appearance; excellent for detailed compositions near stone and water', 'Full shade to part shade', 'Consistently moist', 'Best in humid climates: Pacific Northwest, Southeast, New England. Dries and browns in dry conditions.'],
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Establishment — transplant method: Collect or purchase living moss. Remove existing ground cover and loosen soil. Lower soil pH to 5.5–6.0 if needed. Press moss firmly onto moist soil, ensuring good contact. Water gently twice daily for 4–6 weeks. Avoid foot traffic for the first full season.',
+            'Establishment — slurry method: Blend moss, buttermilk, and water into a slurry. Paint onto stone, bare soil, or a prepared surface. Keep moist. Moss will establish within weeks in humid, shaded conditions. Best in climates with consistent summer rainfall.',
+            'Maintenance: Remove leaves and debris by hand or with a soft broom — never blow, as a leaf blower destroys moss. Do not fertilize. Keep shaded and moist. Replenish patches that die out by transplanting from healthy areas.',
+            'Climate challenge: Moss establishes most easily in the Pacific Northwest, New England, upper Midwest, and humid Southeast. In hot, dry climates, fine-textured decomposed granite, pea gravel, or low ground covers (Mazus, Pratia) may substitute visually.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Bamboo: Use with Caution and Intention',
+        },
+        {
+          type: 'p',
+          text: 'Bamboo is perhaps the most immediately recognizable Japanese garden plant in the American imagination, and one of the most frequently misused. Running bamboo (Phyllostachys and Pleioblastus genera) spreads aggressively by underground rhizomes and has become invasive in many states, particularly in the South and mid-Atlantic. Clumping bamboo (Fargesia genera) does not spread by running rhizomes and is the ecologically responsible choice for most American gardens.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Running bamboo in containers: If you want the aesthetic of running bamboo (P. aurea, P. nigra — black bamboo), grow it in a container sunk into the ground with a physical rhizome barrier (18–24 inch depth), or in a large above-ground container.',
+            'Clumping bamboo: Fargesia rufa, F. murielae, and F. nitida are the most widely available clumping bamboos in the US. They are cold-hardy (Zones 4–6 depending on species), shade-tolerant, and non-invasive. Ideal for corner accents, screening, and container specimens.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Before planting any running bamboo (Phyllostachys), check your state\'s invasive plant list. Once established without a rhizome barrier, running bamboo is extremely difficult to remove and can spread into neighboring properties. When in doubt, choose Fargesia (clumping) bamboo instead.',
+        },
+      ],
+    },
   ],
 }

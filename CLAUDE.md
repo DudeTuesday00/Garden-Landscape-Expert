@@ -340,7 +340,7 @@ Thirty-one full guides integrated into the app:
 - `src/data/guide-content/curb-appeal.js` — Front Yard Curb Appeal (`id: 'curb-appeal'`)
 - `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`)
 - `src/data/guide-content/culinary-herb-garden.js` — Culinary Herb Garden (`id: 'culinary-herb-garden'`)
-- `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **in progress** (Sections 1–4 of ~10 built)
+- `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **in progress** (Sections 1–5 of ~10 built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -455,7 +455,7 @@ export async function generateMetadata({ params }) {
 | Major Japanese Garden Types | ✅ Done | 6-row table: Strolling, Dry/Rock, Tea, Courtyard, Borrowed Scenery, Paradise; blend tip |
 | Section 2: Stone — The Bones of the Japanese Garden | ✅ Done | Stone selection, placement rules, 8-row feature types table, lantern types + placement |
 | Section 3: Water | ✅ Done | Ponds (shape/depth/edges/islands/koi), streams (sound design, construction, kakei), dry stream (kare-nagare), tsukubai composition + tip |
-| Section 4: Plants | 🔜 Pending | Trees table, shrubs table, ground layer, moss establishment, bamboo |
+| Section 4: Plants | ✅ Done | 7-row trees table, 7-row shrubs table, ground layer list, 4-row moss types table + establishment methods, bamboo warning |
 | Section 5: Dry Garden — Karesansui | 🔜 Pending | Step-by-step construction, raking patterns table, meditation tip |
 | Section 6: Structures, Paths & Hardscape | 🔜 Pending | Gates, fences, bridges, paths, pavilion |
 | Section 7: Niwaki — Cloud Pruning | 🔜 Pending | Plants table, 6-step technique |
