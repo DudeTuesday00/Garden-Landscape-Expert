@@ -118,5 +118,179 @@ export const commonGardenDiseasesContent = {
         },
       ],
     },
+
+    {
+      id: 'fungal-diseases',
+      title: 'Section 2: Fungal Diseases — The Most Common Plant Pathogens',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Fungi cause more plant diseases than any other pathogen category — an estimated 80% of all plant diseases have a fungal cause. They range from the nearly ubiquitous and relatively mild (powdery mildew on ornamentals) to the economically devastating (late blight, which destroyed the Irish potato crop in 1845 and continues to cause significant losses in American tomato and potato production annually).',
+        },
+
+        {
+          type: 'h3',
+          text: 'Powdery Mildew',
+        },
+        {
+          type: 'p',
+          text: 'Powdery mildew produces a white or gray powdery fungal growth on the upper surface of leaves (occasionally stems and flowers). It starts as circular patches and expands to cover the entire leaf; severely affected leaves may yellow and drop. Unlike downy mildew (Section 3), powdery mildew is almost always on the upper leaf surface and develops in conditions of warm days and cool nights, not cool wet conditions.',
+        },
+        {
+          type: 'p',
+          text: 'Multiple distinct fungal species in the order Erysiphales cause powdery mildew on different hosts — the powdery mildew on cucumbers (Podosphaera xanthii) is a different organism from the powdery mildew on roses (Podosphaera pannosa) or squash (Golovinomyces cichoracearum). Powdery mildew fungi are largely host-specific — cucumber powdery mildew cannot infect roses, and vice versa.',
+        },
+        {
+          type: 'p',
+          text: 'Conditions that favor powdery mildew: warm days (70–85°F), cool nights, dry conditions with moderate humidity. Unlike most fungal diseases, powdery mildew does NOT require free water on the leaf surface to germinate; it can germinate in relative humidity as low as 50%. Dense plantings with poor air circulation create ideal conditions. Most susceptible plants include cucurbits (squash, cucumber, melon), roses, phlox, bee balm (Monarda), zinnia, lilac, grape, strawberry, apple, and many ornamental trees and shrubs.',
+        },
+        {
+          type: 'p',
+          text: 'Treatment: Remove heavily infected leaves (bag and dispose; do not compost). Improve air circulation by pruning. Apply potassium bicarbonate spray (most effective organic treatment; temporarily changes leaf pH to inhibit germination); neem oil; horticultural oil; or sulfur fungicide (very effective but do not apply when temperatures exceed 90°F or within 2 weeks of an oil application). For severe cases: synthetic fungicides myclobutanil, trifloxystrobin, or tebuconazole. Apply before or at first sign of disease — treatments are preventive/suppressive rather than curative.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'Many vegetable and ornamental varieties have been bred for powdery mildew resistance. For squash: \'Dunja,\' \'Astia\' zucchini types; for cucumbers: \'Diva,\' \'Salad Bush\'; for phlox: \'David\' (P. paniculata); for roses: any AARS-rated shrub rose. Choosing resistant varieties is more effective than any spray program.',
+        },
+
+        {
+          type: 'h3',
+          text: 'Early Blight (Alternaria solani)',
+        },
+        {
+          type: 'p',
+          text: 'Early blight produces dark brown to black spots on older, lower leaves with a distinctive concentric ring pattern (the "target spot" or "bulls-eye" appearance), usually surrounded by a yellow halo. It begins on the oldest, lowest leaves and progresses upward; lesions eventually merge and affected leaves turn yellow and drop.',
+        },
+        {
+          type: 'p',
+          text: 'Conditions: warm temperatures (75–85°F), high humidity, and alternating wet and dry periods. Most severe in hot, humid regions (Southeast, mid-Atlantic, Midwest). Spreads by wind and water splash; overwinters in infected plant debris in the soil. Host range: primarily tomatoes, potatoes, and other Solanaceae (eggplant, peppers less severely).',
+        },
+        {
+          type: 'p',
+          text: 'Treatment: Begin at first symptoms. Remove and dispose of infected leaves (do not compost). Apply chlorothalonil (the most effective and widely available fungicide for early blight); copper-based fungicide (less effective but OMRI-listed for organic use); mancozeb; or azoxystrobin. Repeat applications every 7–14 days through the season. Heavy mulching to prevent soil splash reduces infection significantly.',
+        },
+        {
+          type: 'p',
+          text: 'Cultural practices: 3-year crop rotation (Alternaria survives in soil debris for 1–2 years); avoid overhead irrigation; mulch heavily; maintain good plant nutrition (nitrogen-stressed plants are more susceptible). Resistant tomato varieties: \'Mountain Supreme,\' \'Defiant,\' \'Jasper\' cherry tomato.',
+        },
+
+        {
+          type: 'h3',
+          text: 'Late Blight (Phytophthora infestans)',
+        },
+        {
+          type: 'p',
+          text: 'Late blight produces water-soaked, pale green to brown lesions on leaves with a greasy or water-soaked appearance at the margins; white fuzzy sporulation appears on the underside of lesions in humid conditions; lesions spread rapidly and turn brown-black; stems develop dark brown lesions; entire plants can collapse within days in favorable conditions.',
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Late blight spreads catastrophically in cool, humid conditions (50–70°F with extended leaf wetness) and affects the entire plant including newer growth — it can destroy an entire planting within a week or two. Early blight, by contrast, is a slow, steady progression from the bottom up with the characteristic "target spot" concentric rings. Late blight lesions are larger, less defined, and lack the ring pattern. Distinguish between them before choosing a management response.',
+        },
+        {
+          type: 'p',
+          text: 'Conditions: cool temperatures (50–70°F), high humidity (>90% RH), extended periods of leaf wetness. Most severe in the Pacific Northwest, New England, and other cool-summer regions; less severe in hot, dry climates. Summer outbreaks can occur in humid eastern regions during cool spells.',
+        },
+        {
+          type: 'p',
+          text: 'Treatment: There is no cure for established late blight. Remove and destroy all infected plant tissue immediately (bag and dispose or bury deeply — do not compost). For prevention or at first sign: chlorothalonil; fixed copper; mancozeb. Oomycete-specific products: mandipropamid (Revus), dimethomorph, or phosphonate products. Resistant varieties for late-blight-prone regions: \'Defiant PHR,\' \'Mountain Magic,\' \'Legend,\' \'Jasper,\' \'Plum Regal\' (tomato); \'Elba,\' \'Kennebec\' (potato).',
+        },
+
+        {
+          type: 'h3',
+          text: 'Rust Diseases',
+        },
+        {
+          type: 'p',
+          text: 'Rust fungi are among the most visually striking plant diseases — the bright orange, rust-brown, or yellow-orange pustules on leaf surfaces are unmistakable. Rusts are obligate parasites (they can only survive on living host tissue) and many have complex life cycles involving two unrelated host plant species. Over 8,000 rust species exist, many highly host-specific. Rust pustules appear as raised, powdery spots on leaf surfaces (usually the lower surface); pustule color varies by species — orange-red (bean rust, cedar-apple rust), yellow-orange (asparagus rust), or brown-black (late-stage rusts). Affected tissue may yellow; severe infections cause premature leaf drop and plant decline.',
+        },
+        {
+          type: 'table',
+          headers: ['Rust Disease', 'Host Plants', 'Identification', 'Notable Feature'],
+          rows: [
+            ['Bean Rust (Uromyces appendiculatus)', 'Green beans, snap beans, dry beans', 'Chocolate-brown powdery pustules on lower leaf surface; yellow spots above the pustules on the upper surface', 'One of the most common late-season diseases on bean crops across humid regions of the US'],
+            ['Cedar-Apple Rust (Gymnosporangium juniperi-virginianae)', 'Eastern red cedar (alternate host); apples and crabapples (primary host)', 'On apples: bright orange spots with tube-like aecia on upper leaf surface; on cedar: orange gelatinous galls in spring', 'Requires both hosts to complete its life cycle — do not plant susceptible apple varieties near eastern red cedar'],
+            ['Asparagus Rust (Puccinia asparagi)', 'Asparagus', 'Reddish-orange pustules on asparagus stems and ferns in midsummer through fall', 'Weakens asparagus crowns over years; more severe in humid climates; resistant varieties available'],
+            ['Rose Rust (Phragmidium spp.)', 'Roses', 'Bright orange pustules on stems, petioles, and leaf undersides; distinct from black spot', 'More common in Pacific Coast states than the East; resistant varieties available'],
+            ['Hollyhock Rust (Puccinia malvacearum)', 'Hollyhock, mallow family plants', 'Brown to orange pustules covering leaves and stems; entire plant can become covered by midsummer', 'One of the most severe ornamental rusts; difficult to control; choose rust-resistant hollyhock varieties'],
+          ],
+        },
+        {
+          type: 'p',
+          text: 'Treatment: Rusts cannot be cured but can be suppressed. Remove and dispose of infected plant material. Apply sulfur fungicide (the most effective organic treatment for most rusts); myclobutanil; tebuconazole; propiconazole; or trifloxystrobin. Apply preventively before infection or at very first sign of pustule formation — treatments are far more effective as preventives than as curative sprays. Remove and destroy fallen infected leaves, which can harbor spores.',
+        },
+
+        {
+          type: 'h3',
+          text: 'Anthracnose',
+        },
+        {
+          type: 'p',
+          text: 'Anthracnose produces water-soaked or tan lesions that develop dark borders. On fruit, lesions are sunken and may produce salmon-pink to orange spore masses (acervuli) in humid conditions. On leaves, lesions may have dark margins. On trees, it produces dead areas along leaf veins and may cause twig dieback.',
+        },
+        {
+          type: 'p',
+          text: 'Common anthracnose diseases: cucumber/squash anthracnose (Colletotrichum orbiculare); bean anthracnose (C. lindemuthianum); tomato anthracnose (primarily on fruit; C. coccodes); dogwood anthracnose (Discula destructiva — a serious disease of flowering dogwood in eastern forests and gardens); sycamore and maple anthracnose (primarily a leaf disease; rarely fatal to established trees).',
+        },
+        {
+          type: 'p',
+          text: 'Conditions: warm temperatures (65–85°F) and wet conditions; spreads by rain splash; most severe during cool, wet springs. Treatment: remove and dispose of infected plant material and fallen leaves. Apply chlorothalonil; copper-based fungicide; or mancozeb. For tree anthracnose, a single infection season rarely causes significant long-term damage — maintain tree vigor with proper fertility, watering, and mulching.',
+        },
+
+        {
+          type: 'h3',
+          text: 'Botrytis / Gray Mold (Botrytis cinerea)',
+        },
+        {
+          type: 'p',
+          text: 'Botrytis produces dense, gray, velvety fungal growth on affected tissue (the characteristic "gray mold"); affected tissue beneath the mold is soft, water-soaked, and brown. Most commonly affects flowers, soft fruits, and tender young stems. Petals and leaves may develop water-soaked spots before the gray mold appears. In onion and garlic, Botrytis causes neck rot after harvest.',
+        },
+        {
+          type: 'p',
+          text: 'Conditions: cool temperatures (60–75°F), high humidity (>90% RH), and still air. Particularly severe in greenhouses, cold frames, and dense plantings during cool, wet periods. The fungus is always present as a saprophyte — it becomes pathogenic when conditions are right and on tissue that is already damaged, dying, or stressed.',
+        },
+        {
+          type: 'p',
+          text: 'Treatment: Improve air circulation immediately (thin plantings, remove overcrowding). Remove and dispose of affected tissue and dead flowers — Botrytis readily infects through dying floral tissue. Apply iprodione; captan; fenhexamid; or copper-based products. Botrytis develops fungicide resistance rapidly; rotate fungicide classes if repeated applications are needed.',
+        },
+        {
+          type: 'tip',
+          emoji: '✂️',
+          text: 'Removing spent flowers — which are the primary infection site in strawberries, peonies, and roses — is one of the most effective Botrytis prevention strategies. Spacing, air circulation, and avoiding wet foliage overnight complete the picture. No spray program compensates for overcrowded, wet, poorly ventilated conditions.',
+        },
+
+        {
+          type: 'h3',
+          text: 'Septoria Leaf Spot (Septoria lycopersici)',
+        },
+        {
+          type: 'p',
+          text: 'Septoria leaf spot produces small, circular spots (¼ inch diameter or less) with dark brown borders and gray-white centers. Dark spots within the gray center (pycnidia — fungal fruiting bodies, visible with a hand lens) are diagnostic and distinguish Septoria from other leaf spots. Disease begins on the oldest, lowest leaves and progresses upward; lesions do NOT have the concentric ring pattern characteristic of early blight.',
+        },
+        {
+          type: 'p',
+          text: 'Conditions: warm temperatures (60–80°F) and wet conditions; spreads by rain and irrigation splash from infested soil and plant debris; survives in soil and on plant debris for 1–2 years. Treatment is the same as early blight: remove infected leaves; apply chlorothalonil, copper, or mancozeb; mulch heavily to prevent soil splash; use crop rotation; avoid overhead irrigation. Septoria and early blight often coexist on the same plants and are managed with the same spray program.',
+        },
+
+        {
+          type: 'h3',
+          text: 'White Mold / Sclerotinia (Sclerotinia sclerotiorum)',
+        },
+        {
+          type: 'p',
+          text: 'White mold produces white, cottony mycelial growth on stems and at the soil line; infected tissue beneath the mold is soft and watery. Hard, black, seed-like sclerotia (¼–½ inch) embedded in or on the white mold are diagnostic — they allow the fungus to survive in soil for years. Entire plants collapse in severe cases. Wide host range includes beans, lettuce, carrots, celery, basil, and many ornamentals.',
+        },
+        {
+          type: 'p',
+          text: 'No effective in-season treatment exists; prevention is the primary strategy. Crop rotation has limited effectiveness due to the very wide host range. Deep tillage buries sclerotia below 4 inches (buried sclerotia do not germinate effectively). Biocontrol with Coniothyrium minitans — a fungal parasite of Sclerotinia sclerotia — can be applied to soil before the infection period to reduce sclerotia populations. Thiophanate-methyl or iprodione may reduce spread where labeled.',
+        },
+        {
+          type: 'tip',
+          emoji: '🔬',
+          text: 'Sooty mold is another fungal condition you may encounter: a black coating on leaf surfaces that wipes off easily and follows insect infestations (aphids, whiteflies, scale). The mold grows on the sugary "honeydew" secreted by piercing-sucking insects — treat the insect infestation and the sooty mold resolves on its own. It does not directly infect the plant.',
+        },
+      ],
+    },
   ],
 }
