@@ -1,4 +1,4 @@
-import gardenArchitectImg from './Garden Architect 2.png'
+import gardenArchitectImg from './garden-architect-2.png'
 
 export default function WelcomeScreen({ onStart }) {
   return (
