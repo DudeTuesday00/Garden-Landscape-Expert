@@ -36,6 +36,8 @@ const heroImages = {
   'xeriscape': '/guides/xeriscape-guide.png',
   'evergreen-trees': '/guides/evergreen-trees-guide.png',
   'japanese-garden': '/guides/japanese-garden-guide.png',
+  'salad-garden': '/guides/salad-garden-guide.png',
+  'culinary-herb-garden': '/guides/culinary-herb-garden-guide.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
