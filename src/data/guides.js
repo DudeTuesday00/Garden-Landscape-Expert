@@ -449,7 +449,7 @@ export const guideCategories = [
         title: 'Common Garden Diseases',
         emoji: '🔬',
         description: 'Identify and treat powdery mildew, blight, rust, and other plant diseases.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'deer-resistant',

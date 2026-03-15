@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 34 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 35 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -67,7 +67,8 @@ Garden-Landscape-Expert/
 │       ├── evergreen-trees-guide.png
 │       ├── japanese-garden-guide.png
 │       ├── salad-garden-guide.png
-│       └── culinary-herb-garden-guide.png  # 34 images total — all live guides have a hero image
+│       ├── culinary-herb-garden-guide.png
+│       └── Common_Garden_Diseases_Guide.png  # 35 images total — all live guides have a hero image
 └── src/
     ├── app/                         # Next.js App Router — one folder per route
     │   ├── layout.jsx               # Root layout — dark mode script, GTM, Nav, footer, GA4/AdSense via next/script
@@ -273,7 +274,7 @@ Each question in `questions.js` has:
 
 ## Planned Sections (Future)
 
-- **Planting Guides (ongoing)** — 34 of ~75 guides are live; continue adding guides from source `.docx` files using the established pattern in `guide-content/`
+- **Planting Guides (ongoing)** — 35 of ~75 guides are live; continue adding guides from source `.docx` files using the established pattern in `guide-content/`
 - Plant care calendar / seasonal reminders
 - Landscape design planner
 - Soil amendment advisor
@@ -310,7 +311,7 @@ Each question in `questions.js` has:
 4. Herbs & Fragrance (6 guides — 2 live ✅)
 5. Landscape Design (10 guides — 3 live ✅)
 6. Seasonal Guides (8 guides — 1 live ✅)
-7. Pest & Problem Solving (8 guides)
+7. Pest & Problem Solving (8 guides — 1 live ✅)
 8. Specialty Gardens (11 guides — 1 live ✅)
 9. Container & Small Spaces (8 guides — 1 live ✅)
 10. Eco & Sustainability (9 guides)
@@ -737,6 +738,27 @@ Every page in the app exports full metadata including:
 - `twitter.title`, `twitter.description` — explicit per-page Twitter Card tags
 - Layout defaults: `og:site_name`, `og:type`, `og:locale`, `og:image` (1200×630), `twitter:card: summary_large_image`
 - Guide pages: `generateMetadata` dynamically produces all of the above from `content.hero.title` and `content.intro`
+
+---
+
+### Common Garden Diseases Guide — Docx Sync Progress
+
+`src/data/guide-content/common-garden-diseases.js` being built section-by-section to match `Common_Garden_Diseases_Guide.docx`.
+
+| Section | Status | Notes |
+|---|---|---|
+| Hero + intro paragraph | ✅ Done | Guide id: `common-diseases`; theme: slate/indigo gradient; hero image: `Common_Garden_Diseases_Guide.png` |
+| Rapid Symptom Key | ✅ Done | 15-row diagnosis quick-reference table (symptom / location / likely cause / section) |
+| Section 1: Understanding Plant Disease | ✅ Done | 5-row pathogen categories table (Fungi, Oomycetes, Bacteria, Viruses, Nematodes); disease triangle explanation; 4-item environmental conditions list; 6-item prevention practices list |
+| Section 2: Fungal Diseases | 🔲 Pending | Powdery mildew, early blight, late blight, rust, anthracnose, Botrytis, Septoria, Sclerotinia |
+| Section 3: Downy Mildews & Oomycete Diseases | 🔲 Pending | Downy mildew host table, Phytophthora root rot |
+| Section 4: Bacterial Diseases | 🔲 Pending | Fire blight, bacterial leaf spot/canker table (5 diseases), crown gall, bacterial wilt |
+| Section 5: Soilborne Diseases | 🔲 Pending | Fusarium wilt, Verticillium wilt, Pythium/damping off, soil solarization |
+| Section 6: Viral Diseases | 🔲 Pending | Symptom types, 7-row virus table, no-cure warning callout |
+| Section 7: Disease Reference by Crop | 🔲 Pending | Vegetable table, fruit crops table, ornamentals table |
+| Section 8: Treatment Options | 🔲 Pending | 7-row organic products table, 9-row synthetic fungicide table, resistance management warning |
+| Section 9: Regional Disease Pressure | 🔲 Pending | 6-row regional table (NE, Mid-Atlantic/SE, Midwest, PNW, SW, CA) |
+| Section 10: Quick Reference | 🔲 Pending | 5-step diagnosis process, 8-row treatment decision framework, sanitation protocols, 5-row seasonal calendar, closing principle callout |
 
 ---
 
