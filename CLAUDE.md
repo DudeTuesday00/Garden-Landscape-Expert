@@ -340,7 +340,7 @@ Thirty-one full guides integrated into the app:
 - `src/data/guide-content/curb-appeal.js` — Front Yard Curb Appeal (`id: 'curb-appeal'`)
 - `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`)
 - `src/data/guide-content/culinary-herb-garden.js` — Culinary Herb Garden (`id: 'culinary-herb-garden'`)
-- `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **in progress** (Sections 1–2 of ~10 built)
+- `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **in progress** (Sections 1–3 of ~10 built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -453,7 +453,7 @@ export async function generateMetadata({ params }) {
 | Hero + intro paragraph | ✅ Done | Subtitle and intro from docx opening |
 | Core Aesthetic Principles (Ma + 7 principles table) | ✅ Done | 7-row table: Fukinsei, Kanso, Koko, Shizen, Yugen, Datsuzoku, Seijaku; wabi-sabi tip |
 | Major Japanese Garden Types | ✅ Done | 6-row table: Strolling, Dry/Rock, Tea, Courtyard, Borrowed Scenery, Paradise; blend tip |
-| Section 2: Stone — The Bones of the Japanese Garden | 🔜 Pending | Stone selection, placement rules, types table (8 rows), lanterns |
+| Section 2: Stone — The Bones of the Japanese Garden | ✅ Done | Stone selection, placement rules, 8-row feature types table, lantern types + placement |
 | Section 3: Water | 🔜 Pending | Ponds, streams, dry water, tsukubai |
 | Section 4: Plants | 🔜 Pending | Trees table, shrubs table, ground layer, moss establishment, bamboo |
 | Section 5: Dry Garden — Karesansui | 🔜 Pending | Step-by-step construction, raking patterns table, meditation tip |

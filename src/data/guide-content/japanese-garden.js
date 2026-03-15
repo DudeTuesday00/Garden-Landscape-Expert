@@ -73,5 +73,88 @@ export const japaneseGardenContent = {
         },
       ],
     },
+
+    // ─── SECTION 3: STONE ─────────────────────────────────────────────────────
+    {
+      id: 'stone',
+      title: 'Stone — The Bones of the Japanese Garden',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Stone is the most essential material in Japanese garden design — more fundamental even than plants or water. In the Japanese garden tradition, stones are chosen, positioned, and regarded with the same care and reverence that a sculptor gives to their primary material. Stones are not decoration; they are the structural and spiritual skeleton of the garden, and every other element is arranged in relation to them.',
+        },
+        {
+          type: 'h3',
+          text: 'How to See and Select Stones',
+        },
+        {
+          type: 'p',
+          text: 'The Japanese tradition of suiseki — the appreciation of naturally formed stones — is the foundation of stone selection for the garden. A stone is chosen for its character: its shape, texture, color, the way it holds moss, the way it casts shadow, and what it suggests to the imagination.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Stone character: Seek stones with inherent visual interest — unusual shapes, surface texture that catches light, evidence of weathering or geological history. Avoid stones that are perfectly round, uniformly gray, or without distinguishing features. The stone with a crack, a vein of quartz, a hollow where water collects, or an asymmetric profile is more valuable in Japanese garden terms than a perfect, featureless specimen.',
+            'Scale and proportion: The most common error in stone placement is choosing stones that are too small for the space. A stone that looks impressive at the garden center often looks diminished once set into the ground. If in doubt, choose the larger stone. Partially bury stones — a stone that sits entirely above the ground surface looks placed; a stone whose lower third is buried looks as if it has always been there.',
+            'Odd numbers: Place stones in groups of three, five, or seven — never two or four. The classic three-stone arrangement is the fundamental unit of Japanese stone composition: one tall vertical stone (shin, the primary), one lower diagonal stone (soe, the secondary), and one horizontal flat stone (tai, the tertiary). These three represent heaven, humanity, and earth.',
+            'Source locally: Use the stone that belongs to your landscape — granite in New England, limestone in the Midwest, sandstone in the Southwest, basalt in the Pacific Northwest. Local stone grounds the garden in its place, supports the principle of naturalness (shizen), and acquires moss and patina appropriate to your climate.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Stone Placement: The Primary Rules',
+        },
+        {
+          type: 'list',
+          items: [
+            'Bury at least one-third: The portion of the stone below grade anchors it visually to the earth. A stone sitting fully on the surface looks artificial regardless of its intrinsic beauty.',
+            'Lean slightly into the earth: Stones that lean slightly — not straight vertical or perfectly horizontal — look natural and settled. Perfect perpendiculars feel engineered.',
+            'Let the stone\'s strongest face forward: Every stone has a face — the side with the most character, the most interesting texture or profile. Find it before placing and orient it toward the primary viewpoint.',
+            'Consider shadow: How will this stone look at different times of day as light and shadow shift across its surface? A stone without shadow at midday may reveal extraordinary texture at early morning or late afternoon.',
+            'Never move an important stone casually: Once a key stone is placed well, its position becomes part of the garden\'s character. Moving it is a significant decision, not a casual adjustment.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Types of Stone Features',
+        },
+        {
+          type: 'table',
+          headers: ['Stone Feature', 'Japanese Term', 'Function & Character', 'Placement Notes'],
+          rows: [
+            ['Garden Rock / Specimen Stone', 'Ishi', 'The fundamental unit. A single stone of character placed as a focal point, anchor to a composition, or as part of a stone group.', 'Place partially buried, face toward primary viewpoint, with at least two supporting smaller stones in the composition.'],
+            ['Stepping Stones', 'Tobi-ishi', 'The path through the garden. Flat-topped stones placed for walking — but also composing the rhythm and experience of the garden journey.', 'Space irregularly (not evenly) at a natural walking stride. Vary stone sizes. Sink flush with or slightly above grade. Set in moss, gravel, or planting — not concrete.'],
+            ['Stone Path', 'Nobiishi', 'A more continuous stone surface than stepping stones — slabs set close together. More formal than tobi-ishi; used in tea gardens near the tea house.', 'Set tightly with minimal gaps; fill gaps with moss or fine gravel. Maintain the irregular outline of each stone rather than cutting to uniform shapes.'],
+            ['Stone Lantern', 'Ishidoro', 'Perhaps the most iconic Japanese garden element in Western interpretation. Originally functional; now primarily compositional and symbolic.', 'Never place in the center of a composition; always offset to the side. Site near water or a path intersection. Allow moss to develop on its surface over time.'],
+            ['Water Basin', 'Tsukubai', 'A stone basin for water — originally for ritual handwashing in the tea garden; now a water feature and composition element. Accompanied by a bamboo spout, surrounding stones, and a drain.', 'Positioned low (the name means \'to crouch\') near a path or entry. The surrounding stones — the yakuishi — are as important as the basin itself.'],
+            ['Dry Waterfall', 'Kare-taki', 'Stones arranged to suggest a waterfall without water — the central stone feature of a dry garden. Creates the visual dynamic of falling water through vertical stone arrangement.', 'Three primary stones: a tall central stone (the fall), flanking stones suggesting the water\'s spread, and flat stones at the base suggesting a pool. Orient so primary light falls across the composition.'],
+            ['Bridge Stone', 'Ishi-bashi', 'A single large flat stone laid across a dry stream, small water feature, or path depression to suggest a bridge — one of the most elegant Japanese garden elements.', 'Must span the gap fully, with both ends resting on stable ground or supporting stones. Choose a stone with natural horizontal character.'],
+            ['Stone Steps', 'Nobiishi / Kutsunugi-ishi', 'Steps that rise through a grade change, or a single flat stone at the entry where one removes shoes. Part of the path\'s choreography and transition sequence.', 'Set each step stone deeply and stably. Vary the stone shapes slightly — uniform cut stone looks Western. Allow plants to soften the edges over time.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Stone Lanterns: Selection and Placement',
+        },
+        {
+          type: 'p',
+          text: 'The stone lantern (ishidoro) is the element most frequently imported into Western garden contexts, often placed with more enthusiasm than understanding. A lantern placed correctly is a powerful compositional anchor; placed incorrectly, it looks like an afterthought from a garden center.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Classic lantern types: The yukimi-doro (snow-viewing lantern) sits low on short legs and was designed to be reflected in water — place near ponds, streams, or water basins. The kasuga-doro stands tall on a single column and was originally used in temple and shrine gardens — place beside a path or at the intersection of paths. The oribe-doro has a distinctive carved face panel and typically stands in a tea garden beside the path.',
+            'Material: Natural granite that has begun to weather and acquire moss is ideal. Cast concrete lanterns often look cheap and lightweight; if budget requires concrete, choose a dense, well-cast version and allow it several years to weather before judging. Never use plastic or resin lanterns.',
+            'Placement: Never place a lantern in the center of a garden. Always offset it — beside a path, at the edge of water, partially obscured by a plant or stone. A lantern half-hidden behind a maple branch is more interesting than one standing in open view. Site it where it will eventually acquire moss — north-facing and near water are ideal.',
+            'Number: One lantern per garden in most contexts. Two lanterns positioned symmetrically flanking an entry is a formal arrangement appropriate for temple-style gates; elsewhere, a single lantern is more powerful.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🪨',
+          text: 'A lantern that looks new and too prominent needs two things: time and partial concealment. Allow moss to develop on it by painting with diluted buttermilk in a shaded, moist location. Plant a low shrub or fern partially in front of it. Relocate it from the center of the composition to an edge or path intersection. The goal is a lantern that looks as if it has always been there.',
+        },
+      ],
+    },
   ],
 }
