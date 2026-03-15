@@ -342,7 +342,7 @@ Thirty-one full guides integrated into the app:
 - `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`)
 - `src/data/guide-content/culinary-herb-garden.js` — Culinary Herb Garden (`id: 'culinary-herb-garden'`)
 - `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **complete** (all 10 sections built)
-- `src/data/guide-content/winter-garden-prep.js` — Winter Garden Prep (`id: 'winter-garden-prep'`) — **in progress** (Intro + Sections 1–4 of 10 built)
+- `src/data/guide-content/winter-garden-prep.js` — Winter Garden Prep (`id: 'winter-garden-prep'`) — **in progress** (Intro + Sections 1–5 of 10 built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -479,7 +479,7 @@ export async function generateMetadata({ params }) {
 | Section 2: Preparing Trees & Shrubs for Winter | ✅ Done | 6-row pruning timing table; anti-desiccant/burlap/snow list; 5-row rose protection table; young trees list (trunk wrap, rodent guards, staking, deep watering) |
 | Section 3: Bulbs — Planting, Lifting & Storing | ✅ Done | Intro + 4-item planting list; 9-row spring bulb table; bulb lasagna tip; 6-row tender bulb lifting/storage table; digging/curing list |
 | Section 4: Soil Health — The Fall Amendment Window | ✅ Done | 5-item amendment strategies list (compost, cover crops, leaf mulch, lime/sulfur, bone meal); no-dig principle paragraph + 2-item list; composting paragraph + 3-item list |
-| Section 5: Overwintering Tender Plants Indoors | 🔜 Pending | Overwintering spectrum, pest inspection, indoor care table |
+| Section 5: Overwintering Tender Plants Indoors | ✅ Done | Overwintering spectrum paragraph; 8-row indoor care table (geranium, fuchsia, coleus, gardenia, jasmine, lemon verbena, hibiscus, brugmansia); pest inspection paragraph + 4-item list |
 | Section 6: The Kitchen Garden in Fall & Winter | 🔜 Pending | Season extension, fall cleanup, fall planting table |
 | Section 7: Tools, Equipment & Garden Structures | 🔜 Pending | Annual tool maintenance, irrigation winterization, structures |
 | Section 8: Regional Winter Prep Timelines | 🔜 Pending | 6-row regional timeline table |

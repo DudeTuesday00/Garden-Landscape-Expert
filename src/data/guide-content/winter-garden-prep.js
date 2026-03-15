@@ -525,5 +525,104 @@ export const winterGardenPrepContent = {
         },
       ],
     },
+
+    // ─── SECTION 5: OVERWINTERING TENDER PLANTS INDOORS ──────────────────────
+    {
+      id: 'overwintering-indoors',
+      title: 'Section 5: Overwintering Tender Plants Indoors',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Tender tropical and subtropical plants — the large container specimens, the spectacular houseplants moved outdoors for summer, the beloved geraniums and fuchsias and coleus that anchor the porch display — require either a move indoors before frost or acceptance that they will not survive the winter. For plants of significant size, beauty, or monetary value, indoor overwintering is the investment that preserves them year over year.',
+        },
+        {
+          type: 'h3',
+          text: 'The Indoor Overwintering Spectrum',
+        },
+        {
+          type: 'p',
+          text: "Not all tender plants overwinter the same way. The approach depends on the plant's dormancy requirements: some need active light and warmth to survive (tropical plants that never go dormant), some need cool darkness and minimal water (geraniums, some bulbs), and some can be stored almost as bare-root material in dry conditions.",
+        },
+        {
+          type: 'table',
+          headers: ['Plant', 'Overwintering Method', 'Conditions Needed', 'Care Through Winter', 'Spring Prep'],
+          rows: [
+            [
+              'Geranium (Pelargonium)',
+              'Pot up or bag whole plant bare-root; or take cuttings in August for rooted plants',
+              'Cool (40–50°F), dark or dim; OR bright windowsill with minimal water',
+              'Water once per month if stored dark; water weekly if in light. Watch for whitefly indoors.',
+              'Repot, cut back, move to bright light 6–8 weeks before last frost date. Growth resumes quickly.',
+            ],
+            [
+              'Fuchsia',
+              'Bring in as container plant; or overwinter as dormant plant in cool space',
+              'Cool (40–50°F), dark or dim; allow to go semi-dormant with minimal water',
+              'Water every 3–4 weeks. Allow to drop leaves. Do not allow to completely desiccate.',
+              'Bring to bright light in late winter; cut back by half; resume regular watering. New growth emerges within 2–3 weeks.',
+            ],
+            [
+              'Coleus',
+              'Take cuttings in late summer; root in water or moist mix indoors',
+              'Bright windowsill or grow lights; warm (65–72°F)',
+              'Water and fertilize lightly. Pinch to maintain bushy form through winter.',
+              'Harden off and plant out after last frost. Cuttings taken from overwintered plants in spring root quickly for new season supply.',
+            ],
+            [
+              'Gardenias',
+              'Keep as container plant indoors',
+              'Bright indirect light; 60–68°F; high humidity; away from heating vents',
+              'Water when top inch dries; mist or use pebble tray for humidity. Watch for scale insects. Fertilize monthly with acid fertilizer.',
+              'Move outside after temps consistently stay above 55°F at night.',
+            ],
+            [
+              'Night-Blooming Jasmine (Cestrum nocturnum)',
+              'Container plant — move indoors',
+              'Bright window; 55–65°F; allow to reduce growth',
+              'Water when top inch dries. Reduce fertilizer. May drop some leaves — normal.',
+              'Cut back by one-third, begin fertilizing, move outdoors after frost risk ends.',
+            ],
+            [
+              'Lemon Verbena',
+              'Cut back by two-thirds; bring potted plant indoors; or take cuttings',
+              'Cool (45–55°F) and somewhat bright; goes partially dormant',
+              'Water sparingly — every 2–3 weeks. Will drop most leaves — normal. New growth resumes in late winter.',
+              'Move to brighter, warmer location in late winter; resume regular watering; harden off before moving outdoors.',
+            ],
+            [
+              'Tropical hibiscus',
+              'Container plant — move indoors',
+              'Brightest available window; 60–68°F minimum; reduce watering and stop fertilizing',
+              'Water when soil is nearly dry. Watch for spider mites (low-humidity indoor air is ideal for mites). Treat with insecticidal soap if needed.',
+              'Repot if root-bound, begin fertilizing, gradually move to more light, then outdoors after frost risk.',
+            ],
+            [
+              'Brugmansia (Angel\'s Trumpet)',
+              'Container or stored bare-root',
+              "Can be stored dormant (stripped of leaves, kept in cool dark space at 35–45°F with roots barely moist) or kept growing (bright light, cool, reduced water)",
+              'Dormant storage: water just enough to prevent roots from desiccating entirely. Check monthly.',
+              'Bring to light, repot if needed, resume watering. New growth emerges in 2–4 weeks.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Pest Inspection Before Bringing Plants Indoors',
+        },
+        {
+          type: 'p',
+          text: 'Every plant moved from outdoors to indoors in fall is a potential vector for introducing pests — aphids, spider mites, whitefly, mealybug, scale — into the indoor environment, where they can spread to houseplants and are much harder to control than outdoors. A thorough inspection and treatment before any plant crosses the threshold is essential.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Inspect thoroughly: Check both sides of every leaf, all stem joints, the soil surface, and the drainage holes. Use a hand lens if possible. Look for the insects themselves, their eggs, webbing (mites), sticky residue (aphids, scale), and white cottony masses (mealybug).',
+            'Treat before bringing in: If pests are found, treat outdoors. Apply insecticidal soap to all leaf surfaces (both sides), allow to dry, and repeat in 5 days before bringing the plant indoors. For scale, use a cotton swab dipped in rubbing alcohol to remove individual scales, then follow with insecticidal soap.',
+            'Quarantine new arrivals: Isolate any plant moved indoors from existing houseplants for 2–3 weeks. Inspect again at the end of the quarantine period before placing near other plants. Pests that were missed in the initial inspection often become visible within 2 weeks as eggs hatch or populations increase.',
+            'Shower the plant: A thorough shower with lukewarm water before bringing any plant indoors physically removes a large proportion of pest populations, soil debris, and any spider mite eggs present. This is particularly effective for plants with dense foliage.',
+          ],
+        },
+      ],
+    },
   ],
 }
