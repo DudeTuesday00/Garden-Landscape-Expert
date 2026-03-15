@@ -568,5 +568,98 @@ export const japaneseGardenContent = {
         },
       ],
     },
+
+    // ─── SECTION 9: REGIONAL ADAPTATION ─────────────────────────────────────
+    {
+      id: 'regional-adaptation',
+      title: 'Regional Adaptation Across the United States',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Japanese garden principles are universal — restraint, asymmetry, the suggestion of nature, the composition of empty space — but the plants, materials, and maintenance rhythms must respond to local climate. The seven regional profiles below identify the key challenges and opportunities for each American climate zone, with substitutions and strategies that preserve authentic Japanese aesthetic intent while working with the conditions you actually have.',
+        },
+        {
+          type: 'table',
+          headers: ['Region', 'USDA Zones', 'Key Challenges', 'Best Japanese Garden Type', 'Recommended Plants', 'Regional Notes'],
+          rows: [
+            [
+              'Pacific Northwest (WA, OR, coastal CA)',
+              '7–9',
+              'Heavy winter rainfall; mild summers; moss thrives; shade abundant',
+              'Strolling garden; tea garden; moss garden',
+              'Japanese maple, Hinoki cypress, Japanese forest grass, Kirengeshoma, mosses (thrive naturally), ferns, kalmia',
+              'The closest US climate to central Japan. Moss establishes without intervention; azaleas and rhododendrons excel. Avoid overplanting — the natural lushness of the PNW can overwhelm Japanese restraint. Let moss and fern do the work at the ground layer.',
+            ],
+            [
+              'California (inland valleys, Southern CA)',
+              '9–11',
+              'Summer drought; fire risk; alkaline soils; limited chill hours',
+              'Dry garden (karesansui); courtyard garden; borrowed scenery',
+              'Podocarpus, Japanese black pine (coastal), Agapanthus as accent, Dymondia margaretae as moss substitute, ornamental grasses, Ceanothus as wild backdrop',
+              'The dry garden is the most authentic Japanese form for California — it uses no water and thrives in sun. Moss substitutes (Dymondia, Irish moss, Sagina subulata) work in coastal fog belts but struggle inland. Use decomposed granite in warm tan or gray tones. Avoid Japanese maple in the hottest inland valleys (Zones 10–11).',
+            ],
+            [
+              'Desert Southwest (AZ, NM, inland NV)',
+              '7–11',
+              'Extreme summer heat; low humidity; alkaline soil; intense UV; water restrictions',
+              'Dry garden (karesansui); zen rock garden; courtyard garden with shade',
+              'Palo verde (as structural tree), desert willow, Apache plume, Agave as stone accent substitute, Dasylirion, ornamental boulders, decomposed granite in warm tones',
+              'Abandon the conventional Japanese plant palette almost entirely and work with the desert\'s own materials — extraordinary stone, dramatic succulents, sculptural agaves, and the clean geometry of raked gravel. The karesansui translates more naturally to the Arizona desert than it does to the Pacific Northwest; the dry aesthetic is already native to the landscape. Shade structure (ramada, shade sail, or dense palo verde canopy) is essential for any garden use in summer.',
+            ],
+            [
+              'Upper Midwest & Great Plains (MN, WI, IA, ND, SD, KS)',
+              '3–6',
+              'Extreme cold winters (to -30°F in Zone 3); late spring; hot dry summers; wind',
+              'Strolling garden with cold-hardy plants; simplified dry garden',
+              'Korean lilac (Syringa meyeri), Siberian iris, ornamental grasses (Karl Foerster, Prairie Dropseed), Paper birch as multi-stem accent, Fothergilla, cold-hardy azaleas (Northern Lights series), Hakone grass in sheltered spots',
+              'Japanese maples are marginal or zone-push here — site in sheltered microclimates or use the hardier Acer japonicum species. Most Japanese hollies and Hinoki cypress are not reliably cold-hardy in Zones 3–4; substitute native viburnums for screening shrubs. The open, wind-swept plains aesthetic can actually reinforce Japanese principles of simplicity and sky-awareness — use the landscape\'s natural drama rather than fighting it.',
+            ],
+            [
+              'Southeast (NC, SC, GA, AL, MS, FL, LA)',
+              '7–10',
+              'Humid summers; pest pressure; invasive plant risk; mild winters; heavy rainfall',
+              'Strolling garden; water garden; woodland garden',
+              'Camellia, Loropetalum, Japanese cryptomeria, native ferns (Osmunda, Athyrium), Oakleaf hydrangea, Sweetbay magnolia, river birch as structural tree',
+              'The Southeast has the richest palette of plants that perform well in Japanese garden compositions — camellias, cryptomeria, loropetalum, and native azaleas all excel. The primary challenge is invasive species: avoid Nandina domestica (invasive in SE), Ligustrum, and Japanese honeysuckle. Boxwood is stressed by boxwood blight — substitute Japanese holly or compact inkberry. Heat and humidity accelerate organic material decay; use stone and gravel rather than wood for long-lived hardscape.',
+            ],
+            [
+              'Mid-Atlantic & New England (VA, MD, DC, PA, NJ, NY, CT, MA)',
+              '5–7',
+              'Four true seasons; variable humidity; occasional drought; deer pressure',
+              'Strolling garden; tea garden; borrowed scenery',
+              'Japanese maple (thrives here), katsura tree, stewartia, Hinoki cypress, Hakone grass, ferns (abundant native options), Virginia bluebells as seasonal accent, witch hazel',
+              'The Mid-Atlantic and New England climate is arguably the best in the US for the full Japanese garden plant palette — four seasons, adequate rainfall, excellent fall color. Stewartia pseudocamellia (Zones 5–7) is among the finest trees in any garden tradition: flaking bark, camellia-like summer flowers, brilliant fall color. Deer browsing is the dominant maintenance challenge; Japanese hollies and ornamental grasses are reliably deer-resistant.',
+            ],
+            [
+              'Mountain West (CO, UT, ID, MT, WY)',
+              '3–7',
+              'High altitude UV; dry air; cold nights year-round; late frosts; alkaline soils',
+              'Dry garden; simplified rock garden; small courtyard with wind shelter',
+              'Rocky Mountain juniper (Juniperus scopulorum) for niwaki, Gambel oak as structural mass, Idaho fescue and blue grama as ground layer, native boulders (granite, sandstone), ornamental alliums as seasonal accent',
+              'The mountain West offers spectacular native stone — granite, sandstone, basalt — that outclasses imported Japanese stone for authenticity in this landscape. Work with the region\'s own geology rather than importing. Native junipers (Rocky Mountain juniper, Utah juniper) are superb cloud pruning subjects in their own right. The dry, high-altitude atmosphere preserves wood structures extremely well — timber gates, fences, and pavilions can last decades without the rot pressure of humid climates.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Universal Adaptation Principles',
+        },
+        {
+          type: 'list',
+          items: [
+            'Work with regional geology: Use locally quarried or naturally occurring stone wherever possible. Stone that belongs to the local landscape creates more authentic-feeling compositions than imported stone, which can look incongruous regardless of how carefully it is placed.',
+            'Accept regional plant substitutions: The aesthetic goal is restraint, asymmetry, and the suggestion of nature — not a specific list of Japanese species. A cloud-pruned Rocky Mountain juniper is more Japanese in spirit than a poorly sited Japanese black pine struggling in the wrong climate.',
+            'Let climate define garden type: A karesansui is the right choice for arid climates not because it is trendy but because it uses no water, requires no irrigation, and its spare aesthetic fits the landscape. Match garden type to climate honestly.',
+            'Protect investment plants from climate extremes: In cold climates, site Japanese maples and camellias in sheltered microclimates (north or east side of structures, sheltered from prevailing winds). In hot climates, provide afternoon shade for moisture-loving plants. A plant stressed by the wrong microsite will never achieve the composed, deliberate look that Japanese garden design requires.',
+            'Adjust maintenance timing to your climate: The seasonal maintenance calendar assumes a temperate four-season climate (Zone 6–7 reference). Shift timing by 4–6 weeks forward in warm-climate gardens, 4–6 weeks back in cold-climate gardens. In the Southeast, moss establishment works best in fall; in the Pacific Northwest, any cool season works.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🗾',
+          text: 'Japan itself spans a remarkable range of climates — from the subtropical warmth of Okinawa (Zone 10) to the subarctic winters of Hokkaido (Zone 5) — and traditional Japanese garden style developed differently across these regions. The spare, stony gardens of Kyoto\'s Zen temples grew from a very different climate culture than the lush, snow-country gardens of Kanazawa or the tropical coastal gardens of southern Kyushu. This regional diversity within Japan is itself an argument for authentic regional adaptation in American gardens: the tradition has always been a dialogue between aesthetic principle and local condition.',
+        },
+      ],
+    },
   ],
 }
