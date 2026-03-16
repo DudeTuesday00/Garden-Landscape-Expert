@@ -757,8 +757,8 @@ Every page in the app exports full metadata including:
 | Section 6: Viral Diseases | ✅ Done | Symptom types (8 types listed), 7-row virus table (CMV, TSWV, ToMV/TMV, ZYMV, BCMV, PVY, INSV), no-cure warning callout, prevention strategies, reflective mulch tip |
 | Section 7: Disease Reference by Crop | ✅ Done | 9-row vegetables table (tomatoes, peppers, cucurbits, beans, potatoes, lettuce, brassicas, onions/garlic, corn); 6-row fruit crops table (apples/pears, stone fruits, strawberries, blueberries, grapes, cane fruits); 7-row ornamentals table (roses, dogwoods, flowering trees, perennials, impatiens, turf, dahlias); extension tip callout |
 | Section 8: Treatment Options | ✅ Done | 7-row organic products table (copper, sulfur, neem, potassium bicarbonate, B. subtilis, Trichoderma, Reynoutria); 9-row synthetic fungicide table by FRAC group (DMI, SDHI, strobilurins, phenylpyrroles, hydroxyanilide, oxazolidinediones, mandipropamid, phosphonates, multi-site); resistance management warning callout; timing tip callout |
-| Section 9: Regional Disease Pressure | 🔲 Pending | 6-row regional table (NE, Mid-Atlantic/SE, Midwest, PNW, SW, CA) |
-| Section 10: Quick Reference | 🔲 Pending | 5-step diagnosis process, 8-row treatment decision framework, sanitation protocols, 5-row seasonal calendar, closing principle callout |
+| Section 9: Regional Disease Pressure | ✅ Done | 6-row regional table (NE, Mid-Atlantic/SE, Midwest, PNW, SW, CA); climate profile, highest-priority diseases, and key management notes per region; extension tip callout |
+| Section 10: Quick Reference | ✅ Done | 5-step diagnosis process, 8-row treatment decision framework, sanitation protocols (5 items), 5-row seasonal calendar, master 8-item checklist, closing tip callout |
 
 ---
 

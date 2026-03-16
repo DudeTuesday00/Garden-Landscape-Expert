@@ -1017,5 +1017,176 @@ export const commonGardenDiseasesContent = {
         },
       ],
     },
+    {
+      id: 'regional-disease-pressure',
+      title: 'Section 9: Regional Disease Pressure',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Disease pressure varies enormously across the United States. Climate — primarily temperature, humidity, and rainfall patterns — determines which pathogens thrive in a given region. Understanding your regional disease landscape helps you anticipate problems before they appear, focus your preventive efforts on the highest-priority threats, and select resistant varieties suited to your local pressure. Use this section alongside the crop-specific tables in Section 7.',
+        },
+        {
+          type: 'table',
+          headers: ['Region', 'Climate Profile', 'Highest-Priority Diseases', 'Key Management Notes'],
+          rows: [
+            [
+              'Northeast (Zones 4–6: New England, NY, PA, OH)',
+              'Cold winters, warm-humid summers; 30–50 in. rain/year; high humidity late summer; spring rains coincide with early planting',
+              'Late blight (tomato/potato) — devastating in wet years; early blight; downy mildew on cucumbers and basil; apple scab and cedar-apple rust; fire blight; botrytis on strawberries and cut flowers; Septoria leaf spot on tomatoes; powdery mildew on squash and cucumbers',
+              'Late blight is the defining threat — use resistant tomato varieties (Mountain Magic, Defiant) and begin copper sprays preventively. Apple scab requires a full-season spray program timed to Mills infection periods. Rotate nightshade family crops on 3–4 year cycles. Fall cover crops and compost build soil health to suppress soilborne diseases. Extension alerts (e.g., USAblight.org) track late blight pressure in real time.',
+            ],
+            [
+              'Mid-Atlantic & Southeast (Zones 6–9: VA, NC, SC, GA, FL, AL, MS, TN)',
+              'Long, hot, humid summers; mild winters; 45–65 in. rain/year; afternoon thunderstorms June–September; high overnight humidity promotes foliar disease',
+              'Southern blight (Sclerotium rolfsii) — major soilborne threat; bacterial leaf spot and speck on tomatoes; target spot (Corynespora) on tomatoes; cercospora leaf spot on beets and chard; downy mildew on cucumbers and impatiens; black spot on roses; root-knot nematodes throughout; anthracnose on peppers and fruit trees; Phytophthora on peppers',
+              'Southern blight thrives where soil temperatures exceed 85°F — use deep tillage to bury sclerotia, apply Trichoderma biocontrols, and maintain wide spacing. Root-knot nematodes are endemic in sandy Southeast soils — resistant varieties and marigold cover crops are the primary tools (no soil fumigants for home use). Drip irrigation vs. overhead watering dramatically reduces foliar bacterial disease. Fungicide programs for tomatoes should begin at transplanting in high-pressure years.',
+            ],
+            [
+              'Midwest (Zones 4–6: MI, WI, MN, IA, IL, IN, MO, KS, NE)',
+              'Continental climate; cold winters, warm summers; variable spring moisture; tornado corridor brings rapid humidity swings; 25–45 in. rain/year',
+              'Gray leaf spot and northern corn leaf blight on corn; soybean sudden death syndrome; white mold (Sclerotinia) on beans; Alternaria leaf blight; clubroot on brassicas in heavier soils; powdery mildew on cucurbits; verticillium wilt on potatoes and strawberries; fire blight on apples and pears; wheat rust complex in southern zones',
+              'White mold (Sclerotinia) in beans and soybeans peaks when plants canopy and humidity is trapped at the soil surface — avoid dense plantings and ensure airflow. Clubroot persists indefinitely in acid soils; lime to pH 7.2+ in affected beds. Verticillium on strawberries makes 3-year rotation before replanting in the same site essential. Plan apple spray programs around petal fall timing and scab infection periods.',
+            ],
+            [
+              'Pacific Northwest (Zones 7–9: WA, OR, ID)',
+              'Cool, wet winters and springs; dry summers west of Cascades; maritime influence moderates temperature extremes; east of Cascades is semi-arid; 15–55 in. rain/year depending on location',
+              'Late blight (tomato/potato — west of Cascades); downy mildew on hops, onions, lettuce, and spinach; angular leaf spot on beans; fire blight on apples and pears; cherry leaf curl; botrytis on strawberries, blueberries, and grapes; powdery mildew on apples and grapes; club root in brassicas; Phytophthora root rot in wet soils',
+              'West of the Cascades, the cool-wet spring is the highest-risk window for late blight and downy mildew — use resistant varieties and time planting to avoid setting tomatoes into persistently cool conditions. Fire blight pressure peaks during apple and pear bloom when temperatures are 60–75°F and rain is present — antibiotic (streptomycin) or copper sprays at bloom are standard in commercial orchards. East of the Cascades, irrigation management drives disease risk — drip systems and morning-only overhead irrigation reduce foliar disease in the dry summer climate.',
+            ],
+            [
+              'Southwest (Zones 7–11: AZ, NM, NV, UT, CO mountains)',
+              'Hot, dry summers; monsoon season (July–September in southern AZ/NM); alkaline soils; intense UV; wide day-to-night temperature swings; 8–20 in. rain/year',
+              'Powdery mildew on cucurbits, squash, roses, and grapes — thrives in dry heat with cool nights; Phytophthora root and crown rot during monsoon season; Fusarium crown rot and wilt on peppers and tomatoes; verticillium on cotton and vegetables; bacterial blight on beans; Alternaria diseases on tomatoes; Texas root rot (Phymatotrichum omnivorum) in desert southwest soils',
+              'Texas root rot (Phymatotrichum) is endemic to alkaline desert soils and has no chemical control — selection of resistant plants and soil organic matter improvement are the only management tools. Powdery mildew occurs despite low humidity because dry air suppresses the plant\'s natural defenses — apply potassium bicarbonate or neem at first signs. Monsoon season brings explosive Phytophthora pressure on poorly drained soils; raised beds with amended drainage are essential for peppers and tomatoes in monsoon zones.',
+            ],
+            [
+              'California (Zones 8–11: coastal and inland valley)',
+              'Mediterranean climate — wet winters, dry summers; coastal fog and marine layer west; inland valleys experience 100°F+ summers; 10–40 in. rain/year; minimal summer rain',
+              'Sudden oak death (Phytophthora ramorum) — forests and nursery stock; powdery mildew on grapes, roses, cucurbits; downy mildew on lettuce, grapes (Plasmopara viticola), and basil; Fusarium crown rot; Phytophthora root rot during winter rain season; fire blight on apples and pears (Central Valley); Botrytis on strawberries and grapes; crown gall on roses and stone fruits; fanleaf virus on grapes',
+              'Sudden oak death is a regulated pathogen — if you observe ramorum blight symptoms on oaks, tanoaks, or nursery plants (rhododendron, viburnum, camellia), contact the California Department of Food and Agriculture (CDFA) or county agricultural commissioner immediately. Grapevine disease management is critical to California agriculture — powdery mildew requires 7–10 day spray intervals during the growing season, and downy mildew programs should be in place for coastal regions. Phytophthora root rot peaks December–March when soils are wet and cold; do not plant susceptible crops into wet, cold soils.',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '📍',
+          text: 'Your state\'s Cooperative Extension Service publishes region-specific disease guides, variety trials with local disease resistance data, and real-time disease alerts during high-pressure seasons. Search "[your state] Cooperative Extension plant disease" for resources from land-grant universities (e.g., Cornell, University of Florida IFAS, UC ANR, Washington State University Extension) that are calibrated to your exact climate and pest complex.',
+        },
+      ],
+    },
+
+    {
+      id: 'quick-reference',
+      title: 'Section 10: Quick Reference — Diagnosis, Treatment & Seasonal Checklists',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Use this section as a field-ready summary. Diagnosis and treatment decisions made calmly at the beginning of the season — through variety selection, site prep, and monitoring habits — are far more effective than emergency responses once disease has spread. These checklists and frameworks distill the core principles of the entire guide into actionable steps.',
+        },
+        {
+          type: 'h3',
+          text: '5-Step Diagnosis Process',
+        },
+        {
+          type: 'list',
+          items: [
+            'Step 1 — Observe without touching: Note the distribution of symptoms (entire planting, one plant, one side of a plant, only lower leaves), pattern on individual leaves or stems (spots, powdery coating, lesions, wilting), and color changes (yellowing, browning, blackening, bleaching). Environmental pattern clues: does damage follow a drainage line, a shaded zone, or a heavily watered area?',
+            'Step 2 — Rule out non-disease causes first: Confirm that symptoms are not caused by nutrient deficiency (usually uniform yellowing patterns based on leaf age), pest damage (chewed edges, stippling, honeydew residue), herbicide drift (cupping, distortion, yellowing), or abiotic stress (sunscald, cold damage, drought stress). Disease symptoms are often irregular and spreading over time; abiotic symptoms often affect all plants in a uniform area or follow a distinct pattern.',
+            'Step 3 — Use the Rapid Symptom Key (front of guide) to narrow your diagnosis to the most likely category: fungal, oomycete, bacterial, viral, or soilborne. Look specifically at leaf surface (upper vs. lower), lesion texture (powdery, wet/water-soaked, dry/papery), and whether symptoms are on foliage only vs. stem + crown.',
+            'Step 4 — Check risk factors: Has it been unusually wet or humid? Did you plant susceptible varieties in the same bed as last year? Are plants crowded with poor airflow? Did symptoms appear first on older (lower) leaves or newer growth? Soilborne diseases favor reused soil and short rotations. Foliar diseases favor prolonged leaf wetness and warm nights.',
+            'Step 5 — Decide on a management response using the decision framework below. For persistent or severe problems, submit a sample to your state extension plant disease diagnostic lab for a definitive identification before applying any treatment.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Treatment Decision Framework',
+        },
+        {
+          type: 'table',
+          headers: ['Situation', 'Recommended Action', 'Priority Level'],
+          rows: [
+            ['Early symptoms on a few leaves; plant otherwise healthy', 'Remove and destroy affected tissue. Improve airflow if possible. Monitor closely for 7–10 days. No spray required unless high-pressure disease is suspected.', 'Low — monitor only'],
+            ['Spreading foliar disease confirmed (e.g., powdery mildew, early blight)', 'Apply appropriate organic product (sulfur, copper, neem, or potassium bicarbonate per disease type). Repeat on label interval (usually 7–14 days). Remove worst-affected leaves. Check irrigation practices.', 'Moderate — organic intervention'],
+            ['Late blight confirmed or suspected', 'Act immediately. Remove and bag affected plant material (do not compost). Apply copper or FRAC 40 (mandipropamid) fungicide to unaffected plants. Alert neighboring gardeners. Consider removing entire planting if infection is advanced.', 'High — urgent response'],
+            ['Soilborne wilt disease confirmed (Fusarium or Verticillium)', 'No chemical treatment is effective once the plant is infected. Remove and dispose of affected plants. Do not replant susceptible species in that site for 3–5 years. Plant resistant varieties. Amend soil with compost and Trichoderma biocontrols before replanting.', 'High — rotation required'],
+            ['Viral disease confirmed', 'No chemical treatment available. Remove and bag infected plants promptly to reduce virus reservoir. Control insect vectors (aphids, thrips, whiteflies). Sanitize tools. Purchase certified virus-free transplants in future seasons.', 'High — remove infected plants'],
+            ['Bacterial disease confirmed', 'Apply copper-based bactericide preventively to surrounding plants. Remove and destroy infected tissue. Sterilize pruning tools between cuts (70% isopropyl alcohol or 10% bleach). Avoid overhead irrigation.', 'Moderate to high — depends on disease'],
+            ['Root or crown rot confirmed', 'Improve drainage immediately if possible (raised bed, amended soil). Remove severely affected plants. Apply phosphonate or Trichoderma drench to remaining plants. Do not replant susceptible crops until drainage issue is resolved.', 'High — site improvement required'],
+            ['Repeat disease problem in same bed year after year', 'This indicates a soilborne inoculum reservoir or persistent vector population. Implement a formal 3–4 year rotation. Consider solarization (Section 5). Switch to resistant varieties. Have soil tested for nematodes if root problems are suspected.', 'High — systems change required'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Sanitation Protocols — The Non-Negotiables',
+        },
+        {
+          type: 'list',
+          items: [
+            'Tool sterilization: Dip or wipe pruning shears, knives, and grafting tools between plants using 70% isopropyl alcohol (rubbing alcohol) or a 1:9 bleach/water solution. This is essential when working with fire blight, bacterial canker, or any systemic pathogen. Bleach corrodes metal — rinse and dry tools after use.',
+            'Compost discipline: Never compost plant tissue showing signs of disease. Diseased material should be bagged for municipal yard waste collection or disposed of in the trash. Home compost piles rarely reach the sustained temperatures (131–149°F) required to kill most plant pathogens, weed seeds, and fungal structures. Exceptions: healthy plant matter showing only drought stress, mechanical damage, or nutrient symptoms is safe to compost.',
+            'End-of-season cleanup: Remove and dispose of all dead plant debris from vegetable and annual flower beds at season end. Many fungal, bacterial, and viral pathogens overwinter in crop debris and re-infect the following season. This single practice prevents a large fraction of the early-season disease seen in repeat-planted beds.',
+            'Seed and transplant sourcing: Start with certified disease-free seed for high-risk crops (tomatoes, peppers, brassicas, onions). Inspect transplants carefully before purchase — discard any with mosaic patterning, stem lesions, or suspicious spots. Bring only clean planting material into your garden.',
+            'Soil contamination awareness: Soilborne pathogens (Fusarium, Verticillium, Sclerotium, Phytophthora) spread on contaminated soil, water, and equipment. Avoid moving soil from a diseased bed to a clean area on tools or footwear. Raised beds can become contaminated if filled with garden soil — use bagged potting mix or certified clean compost in contained growing areas.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Seasonal Prevention Calendar',
+        },
+        {
+          type: 'table',
+          headers: ['Season', 'Key Actions', 'What You\'re Preventing'],
+          rows: [
+            [
+              'Late Winter / Early Spring (4–6 weeks before last frost)',
+              'Order resistant varieties; review previous season\'s disease records; apply dormant oil sprays to fruit trees before bud break; solarize beds in warm regions; test soil pH and amend if targeting clubroot or soilborne suppression',
+              'Overwintering fungal spores on fruit tree bark; soilborne pathogen populations; replanting into pH-wrong soil',
+            ],
+            [
+              'Spring (planting time)',
+              'Harden off transplants to reduce stress-induced susceptibility; use drip irrigation rather than overhead watering; plant at correct spacing for airflow; inoculate with Trichoderma or mycorrhizal amendments in disease-history beds; begin preventive copper/sulfur on high-risk crops (apples, tomatoes) at labeled timing',
+              'Damping off; early foliar disease; soilborne root rot; fire blight at bloom; apple scab at bud break',
+            ],
+            [
+              'Early Summer (growing season)',
+              'Scout weekly — check both upper and lower leaf surfaces; remove lower tomato leaves that touch soil; stake and trellis to improve airflow; maintain spray programs on schedule; remove spent flowers on susceptible ornamentals to reduce Botrytis entry points',
+              'Powdery mildew, early blight, Septoria, bacterial diseases, Botrytis spreading from senescing tissue',
+            ],
+            [
+              'Midsummer (peak disease pressure)',
+              'Monitor for late blight alerts in your region; check cucurbits for downy mildew (gray underside fuzz); scout for rust on beans, roses, and ornamentals; ensure fungicide rotation is active; check irrigation timing (water in morning, not evening)',
+              'Late blight explosion; downy mildew outbreaks; rust spread; Botrytis in dense plantings',
+            ],
+            [
+              'Fall (end of season)',
+              'Remove all crop debris before frost; till or turn beds to bury surface inoculum; plant cover crops; collect and properly dispose of diseased wood prunings; apply fall compost to build soil biology over winter',
+              'Overwintering inoculum for following season; soilborne pathogen build-up; repeat disease cycles',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Master Quick-Reference Checklist',
+        },
+        {
+          type: 'list',
+          items: [
+            'Variety selection: Always check disease resistance codes on seed packets (F = Fusarium, V = Verticillium, N = nematodes, T = tobacco mosaic virus, A = Alternaria, L = septoria leaf spot). Resistant varieties are the single highest-return investment in disease management.',
+            'Rotation: Maintain 3-year minimum rotation for solanaceous crops (tomatoes, peppers, eggplant, potatoes), cucurbits, and brassicas. 4–5 years for beds with confirmed Fusarium wilt, Verticillium, or Sclerotium history.',
+            'Airflow: Final plant spacing should allow you to see light through the canopy. Dense plantings trap humidity and create the ideal environment for nearly every foliar disease. Stake and trellis proactively, not after plants collapse.',
+            'Irrigation: Drip irrigation eliminates most foliar disease risk from water. If using overhead irrigation, water in the morning so foliage dries before nightfall. Leaf wetness duration is the single most important environmental factor for fungal and bacterial infection.',
+            'Organic fungicide arsenal: Keep on hand — copper hydroxide (bacteria + downy mildew + blight), wettable sulfur (powdery mildew + rust), potassium bicarbonate (powdery mildew — curative), neem oil (broad-spectrum protectant), Bacillus subtilis (Botrytis + early blight — systemic plant defense stimulator).',
+            'Resistance rotation: If applying synthetic fungicides, track FRAC group and rotate with every application. Never apply the same FRAC group twice in a row. Keep a spray log.',
+            'Extension resources: Bookmark your state extension plant pathology website and sign up for any disease alert networks (USAblight.org for late blight; local IPM programs for other crops). Professional scouts and extension advisors track regional disease pressure and can trigger spray programs based on actual risk, not calendar.',
+            'When to stop fighting: Some plants cannot be saved once soilborne or systemic disease is established. Removing an infected plant promptly prevents spread to neighbors and redirects your effort to healthy plants. Knowing when removal is the right decision is as important as knowing when to spray.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌱',
+          text: 'The best disease management program is one you can actually sustain through a full season. A consistent weekly scout, clean seed sourcing, proper spacing, and morning irrigation will prevent more disease than any spray program. Build good habits first — reach for the spray bottle only when prevention falls short.',
+        },
+      ],
+    },
   ],
 }
