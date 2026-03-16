@@ -765,6 +765,19 @@ Every page in the app exports full metadata including:
 
 ---
 
+### Edible Flowers Guide — Docx Sync Progress
+
+`src/data/guide-content/edible-flowers.js` expanded to fully match `Edible_Flowers_Guide.docx`.
+
+| Section | Status | Notes |
+|---|---|---|
+| Culinary techniques — Hibiscus Agua Fresca | ✅ Done | Full recipe added to `culinary-techniques` section: simmer, steep, dilute, lime garnish, hibiscus iced tea variation |
+| Culinary techniques — Lavender Lemonade | ✅ Done | Full recipe added: lavender syrup method + fresh lemon juice assembly |
+| Culinary techniques — Crystallized Violet Cake | ✅ Done | Added under Desserts: cake, frosting, and crystallized violet decoration steps |
+| Closing reflection | ✅ Done | New `the-edible-flower-garden-as-a-way-of-seeing` section — 3 paragraphs + tip callout from docx |
+
+---
+
 ## Notes for AI Assistants
 
 - **A guide must not be built unless a `.docx` source file exists for that subject.** The `.docx` file is the authoritative source of truth for guide content; do not create or populate a guide JS file from scratch without one.
