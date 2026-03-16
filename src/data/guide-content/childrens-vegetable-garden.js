@@ -12,6 +12,10 @@ export const childrensGardenContent = {
       title: "The Children's Garden at a Glance",
       blocks: [
         {
+          type: 'p',
+          text: "This guide walks you through every stage of creating a children's vegetable garden that actually works: choosing plants that match different ages and attention spans, designing a space that children feel ownership of, growing through the season with age-appropriate tasks at every stage, making harvest into a celebration, and turning garden produce into simple recipes children can make themselves. Whether you have a backyard, a raised bed, a collection of containers on a patio, or a single sunny window, everything here applies.",
+        },
+        {
           type: 'tip',
           emoji: '🌱',
           text: "Children who grow their own food eat more vegetables. That is not a theory — it is one of the most consistently replicated findings in childhood nutrition research. A child who plants a seed, waters it, watches it grow, and picks it herself is far more likely to eat what it produces. The garden also gives children patience, scientific thinking, ownership and responsibility, and the profound satisfaction of making something living grow.",
