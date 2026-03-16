@@ -303,6 +303,17 @@ export const shadeTreeContent = {
             'Shaded pavement: Shaded driveways, parking areas, and patios radiate dramatically less heat into your home\'s environment.',
           ],
         },
+        { type: 'h3', text: 'Trees and Lawn — The Age-Old Conflict' },
+        { type: 'p', text: 'Let\'s be honest: grass and trees are in competition. Turfgrass is one of the most aggressive competitors for water, nutrients, and space that a tree faces. Under a dense tree canopy, grass is also fighting a losing battle for sunlight.' },
+        {
+          type: 'list',
+          items: [
+            'Expand your mulch ring as the tree grows — this is better for the tree than fighting to maintain grass under it',
+            'Replace struggling turf under trees with shade-tolerant ground covers like hostas, ferns, pachysandra, wild ginger, or native wildflowers',
+            'Never fertilize turfgrass immediately against a tree\'s root zone with high-nitrogen products — this feeds the grass at the tree\'s expense',
+            'Avoid using string trimmers near the trunk — mow in circles and let the mulch ring do the work',
+          ],
+        },
         { type: 'h3', text: 'Companions to Plant Under Your Shade Tree' },
         { type: 'p', text: 'Several beautiful plants thrive in the dry shade created by a mature canopy:' },
         {
@@ -351,6 +362,15 @@ export const shadeTreeContent = {
           ],
         },
         { type: 'tip', emoji: '✅', text: 'If you can answer yes to all five questions above, plant with confidence. Getting one or two wrong is manageable — getting three or more wrong is a recipe for a tree that struggles its entire life and eventually must be removed.' },
+      ],
+    },
+    {
+      id: 'final-thoughts',
+      title: 'Final Thoughts — Plant Your Legacy',
+      blocks: [
+        { type: 'p', text: 'Planting a shade tree is one of the most genuinely meaningful things you can do on a piece of land. You\'re not just improving your yard for this weekend\'s BBQ — you\'re shaping the landscape of your property for decades, contributing to the local ecosystem, reducing your carbon footprint, and leaving something extraordinary behind for whoever comes after you.' },
+        { type: 'p', text: 'Trees don\'t need you to be perfect. They need you to choose well, plant right, water faithfully in the early years, and get out of the way. Nature is extraordinarily good at the rest.' },
+        { type: 'p', text: 'Pick your tree. Dig your hole wide. Keep the root flare visible. Water deeply. Mulch in a donut, not a volcano. Wait. Watch. And someday, you\'ll be sitting in the shade of something you made happen — and that\'s a pretty incredible feeling.' },
       ],
     },
   ],
