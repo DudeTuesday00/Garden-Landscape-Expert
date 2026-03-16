@@ -38,6 +38,7 @@ const heroImages = {
   'japanese-garden': '/guides/japanese-garden-guide.png',
   'salad-garden': '/guides/salad-garden-guide.png',
   'culinary-herb-garden': '/guides/culinary-herb-garden-guide.png',
+  'common-diseases': '/guides/Common_Garden_Diseases_Guide.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -586,6 +587,22 @@ const themes = {
     tableHeadText: 'text-red-800',
     tableHeadBorder: 'border-red-300',
     bullet: 'text-red-500',
+  },
+  'common-diseases': {
+    heroBg: 'bg-gradient-to-br from-slate-50 to-indigo-100',
+    heroBorder: 'border-slate-300',
+    heroTitle: 'text-slate-900',
+    backBtn: 'text-slate-700 hover:text-slate-900',
+    sectionTitle: 'text-slate-800',
+    sectionBorder: 'border-slate-200',
+    h3: 'text-indigo-800',
+    tipBg: 'bg-indigo-50',
+    tipBorder: 'border-indigo-200',
+    tipText: 'text-indigo-900',
+    tableHead: 'bg-slate-100',
+    tableHeadText: 'text-slate-800',
+    tableHeadBorder: 'border-slate-200',
+    bullet: 'text-indigo-500',
   },
 }
 

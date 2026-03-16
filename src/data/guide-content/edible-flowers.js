@@ -541,6 +541,48 @@ export const edibleFlowersContent = {
             'Use: Add to gin and tonics, sparkling water, lemonade, or any clear cold drink. As the ice melts, the flower is revealed.',
           ],
         },
+        { type: 'h3', text: 'Hibiscus Agua Fresca (Agua de Jamaica)' },
+        {
+          type: 'p',
+          text: 'The Mexican agua de jamaica is one of the most beautiful and refreshing cold drinks made from an edible flower, and one of the simplest: dried hibiscus calyces simmered with sugar, cooled, diluted with water, and served over ice. The color is an extraordinary vivid crimson.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Simmer: Bring 4 cups water to a boil. Add 1 cup dried hibiscus calyces and 1/2 cup sugar (adjust to taste). Simmer 10 minutes.',
+            'Cool and dilute: Remove from heat; steep a further 30 minutes. Strain; discard calyces. Add juice of 1–2 limes. Dilute with 4–6 cups cold water to desired strength.',
+            'Serve: Pour over ice. Garnish with a lime slice. Serves 6.',
+            'Variation — hibiscus iced tea: Steep dried hibiscus calyces with black tea leaves for a tart, tannic, brilliantly colored iced tea.',
+          ],
+        },
+        { type: 'h3', text: 'Lavender Lemonade' },
+        {
+          type: 'p',
+          text: 'Lavender and lemon are one of the great flavor marriages — the perfumed sweetness of lavender against the clean bright acidity of lemon. Lavender lemonade has become widely known for good reason: it is exceptionally good.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Make lavender syrup: Combine 1 cup sugar, 1 cup water, and 2 tbsp fresh culinary lavender (or 1 tbsp dried) in a saucepan. Bring to a simmer, stirring until sugar dissolves. Remove from heat. Steep 30–45 minutes. Strain.',
+            'Make lemonade: Juice 6–8 large lemons to yield 1 cup fresh lemon juice. Combine with lavender syrup and 4 cups cold water in a large pitcher. Stir well.',
+            'Taste and adjust: Add more lemon for tartness, more syrup for sweetness, more water for dilution.',
+            'Serve: Pour over ice. Garnish with a sprig of fresh lavender and a lemon slice. The color is a beautiful pale lavender-gold.',
+          ],
+        },
+        { type: 'h3', text: '🍰 Crystallized Violet Cake' },
+        {
+          type: 'p',
+          text: 'A simple white butter cake decorated with crystallized violet flowers is one of the most striking and genuinely impressive desserts an edible flower garden can produce. The crystallized violets do all the visual work; the cake itself needs only to be well-made.',
+        },
+        {
+          type: 'list',
+          items: [
+            'The cake: Use any well-tested white or vanilla butter cake recipe. Bake in two 8-inch layers. Cool completely before decorating.',
+            'The frosting: Italian meringue buttercream tinted the palest lavender-purple works beautifully with violets. Alternatively, barely-sweetened whipped cream or mascarpone lets the violets be the only color.',
+            'The decoration: Arrange crystallized violets (prepared using the method in Section 4) across the top and sides of the frosted cake. They adhere to buttercream without any additional adhesive.',
+            'Finishing touch: Add a few fresh (uncrystallized) violas for color contrast and to signal that the decoration is edible.',
+          ],
+        },
       ],
     },
 
@@ -569,5 +611,29 @@ export const edibleFlowersContent = {
         },
       ],
     },
+
+    {
+      id: 'the-edible-flower-garden-as-a-way-of-seeing',
+      title: 'The Edible Flower Garden as a Way of Seeing',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Growing and eating edible flowers changes how you see the garden. Once you know that the violet is edible, the nasturtium is peppery and delicious, the borage flower tastes of cucumber, and the rose petal can be made into jam, the garden stops being a collection of beautiful objects and becomes a larder of extraordinary things.',
+        },
+        {
+          type: 'p',
+          text: 'This is a genuinely old way of seeing the world — the way every gardener saw their garden before the modern separation between ornamental and edible, between the flower bed and the kitchen garden, became the norm. To grow edible flowers is to collapse that separation: to have a garden that is beautiful to look at, alive with insects and birds, and also full of things to cook and drink and eat with joy.',
+        },
+        {
+          type: 'p',
+          text: 'Start with one plant. Nasturtium from seed, or a potted chive on the windowsill. Taste it. Notice how different a flower eaten fresh from the plant is from anything that comes from a market. Then plant more.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌸',
+          text: 'The garden is full of things to eat. Some of them are flowers. Grow them. Harvest them. Taste them.',
+        },
+      ],
+    },
   ],
-}
+};

@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 34 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 35 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -67,7 +67,8 @@ Garden-Landscape-Expert/
 │       ├── evergreen-trees-guide.png
 │       ├── japanese-garden-guide.png
 │       ├── salad-garden-guide.png
-│       └── culinary-herb-garden-guide.png  # 34 images total — all live guides have a hero image
+│       ├── culinary-herb-garden-guide.png
+│       └── Common_Garden_Diseases_Guide.png  # 35 images total — all live guides have a hero image
 └── src/
     ├── app/                         # Next.js App Router — one folder per route
     │   ├── layout.jsx               # Root layout — dark mode script, GTM, Nav, footer, GA4/AdSense via next/script
@@ -273,7 +274,7 @@ Each question in `questions.js` has:
 
 ## Planned Sections (Future)
 
-- **Planting Guides (ongoing)** — 34 of ~75 guides are live; continue adding guides from source `.docx` files using the established pattern in `guide-content/`
+- **Planting Guides (ongoing)** — 35 of ~75 guides are live; continue adding guides from source `.docx` files using the established pattern in `guide-content/`
 - Plant care calendar / seasonal reminders
 - Landscape design planner
 - Soil amendment advisor
@@ -310,7 +311,7 @@ Each question in `questions.js` has:
 4. Herbs & Fragrance (6 guides — 2 live ✅)
 5. Landscape Design (10 guides — 3 live ✅)
 6. Seasonal Guides (8 guides — 1 live ✅)
-7. Pest & Problem Solving (8 guides)
+7. Pest & Problem Solving (8 guides — 1 live ✅)
 8. Specialty Gardens (11 guides — 1 live ✅)
 9. Container & Small Spaces (8 guides — 1 live ✅)
 10. Eco & Sustainability (9 guides)
@@ -447,6 +448,9 @@ export async function generateMetadata({ params }) {
 | `troubleshooting` — Weeds row | ✅ Done | Added weeds row: causes (bare soil, infrequent weeding), mulch + short-session solution, learning moment (what is a weed, edible weeds, plant competition) |
 | `best-plants` — Cucumbers subsection | ✅ Done | Added 🥒 Cucumbers — The Munching Machine: intro paragraph, variety table (Straight Eight, Marketmore 76, Lemon Cucumber, Spacemaster), kid activities (pickle project, Lemon Cucumber reveal), critical harvest tip; preceded by Bean Teepee tip callout |
 | `best-plants` — Lettuce & Salad Greens subsection | ✅ Done | Added 🥬 Lettuce & Salad Greens — The Cut-and-Come-Again Garden: intro paragraph, variety list (Black Seeded Simpson, Oakleaf, mesclun, Tyee spinach), harvest technique, salad bowl project activity, leaf rubbings activity |
+| `at-a-glance` — Intro paragraph 2 | ✅ Done | Added "This guide walks you through…" orientation paragraph as first `p` block before the tip callout |
+| `at-a-glance` — Garden types table completion | ✅ Done | Added missing "School / Community Bed" 6th row (Shared space / All ages / Varies / Group projects) to the garden types table |
+| `best-plants` — Full docx sync | ✅ Done | Added Sweet Million to cherry tomatoes table; "Best starting point" and "Common mistake" list items; French Breakfast to radishes table; 5 new radish list items (excitement rating, succession sow, 2 kid activities, troubleshooting); Purple Hyacinth Bean to beans table; 4 new bean list items (excitement rating, direct sow, 2 kid activities); Strawberry Blonde to sunflowers table; 4 new sunflower list items (excitement rating, height chart, seed roasting, bird feeder); "Support" and "Excitement rating" items to peas; "Space", "Excitement rating" and expanded kid activity details to pumpkins; Kale/Rainbow Chard and Gourds (Ornamental) rows to More Great Plants table; updated section heading to match docx; Growing + Excitement rating items added to lettuce |
 
 ---
 
@@ -737,6 +741,40 @@ Every page in the app exports full metadata including:
 - `twitter.title`, `twitter.description` — explicit per-page Twitter Card tags
 - Layout defaults: `og:site_name`, `og:type`, `og:locale`, `og:image` (1200×630), `twitter:card: summary_large_image`
 - Guide pages: `generateMetadata` dynamically produces all of the above from `content.hero.title` and `content.intro`
+
+---
+
+### Common Garden Diseases Guide — Docx Sync Progress
+
+`src/data/guide-content/common-garden-diseases.js` being built section-by-section to match `Common_Garden_Diseases_Guide.docx`.
+
+| Section | Status | Notes |
+|---|---|---|
+| Hero + intro paragraph | ✅ Done | Guide id: `common-diseases`; theme: slate/indigo gradient; hero image: `Common_Garden_Diseases_Guide.png` |
+| Rapid Symptom Key | ✅ Done | 15-row diagnosis quick-reference table (symptom / location / likely cause / section) |
+| Section 1: Understanding Plant Disease | ✅ Done | 5-row pathogen categories table (Fungi, Oomycetes, Bacteria, Viruses, Nematodes); disease triangle explanation; 4-item environmental conditions list; 6-item prevention practices list |
+| Section 2: Fungal Diseases | ✅ Done | 9 disease profiles: Powdery Mildew (resistant varieties tip), Early Blight (target spot ID, spray program), Late Blight (catastrophic-spread warning callout, oomycete-specific products, resistant varieties), Rust (5-row species table: bean/cedar-apple/asparagus/rose/hollyhock rusts), Anthracnose (cucurbit/tomato/tree hosts; dogwood highlighted), Botrytis/Gray Mold (spent flower removal tip), Septoria Leaf Spot (pycnidia diagnostic feature), White Mold/Sclerotinia (sclerotia ID; Coniothyrium minitans biocontrol), Sooty mold tip |
+| Section 3: Downy Mildews & Oomycete Diseases | ✅ Done | Oomycete biology intro; 5-row downy mildew table (basil/cucumber/lettuce/impatiens/grapevine); warning callout (standard fungicides ineffective — mandipropamid/phosphonates required); Phytophthora root & crown rot (zoospore biology, wilting-despite-water ID, drainage-as-prevention tip, mefenoxam/phosphonate treatment) |
+| Section 4: Bacterial Diseases | ✅ Done | Fire blight (Erwinia amylovora — shepherd's crook ID, bloom-period infection, pruning + tool sterilization, antibiotic use, resistant varieties tip); 6-row bacterial leaf spot/canker table (Bacterial Speck, Bacterial Spot/Xanthomonas, Angular Leaf Spot, Bacterial Canker/Clavibacter — bird's eye diagnostic, Crown Gall — K-84 biocontrol, Bacterial Wilt — thread test + cucumber beetle vector); no-systemic-bactericide warning callout |
+| Section 5: Soilborne Diseases | ✅ Done | Fusarium wilt (vascular brown discoloration, asymmetric wilting, resistant varieties "F" code, pH 6.5–7.0, chlamydospore persistence tip); Verticillium wilt (cool-soil conditions, 400+ host range, "V" code, Fusarium vs Verticillium comparison table); Pythium root rot & damping off (damping off ID, prevention list — sterile mix/bottom heat/air circulation, Trichoderma biocontrol, mefenoxam for oomycetes); Rhizoctonia crown & root rot (collar rot ID, black scurf on potatoes, Trichoderma biocontrol); Soil Solarization — 6-step process, best-results and limitations notes, hot-climate tip callout |
+| Section 6: Viral Diseases | ✅ Done | Symptom types (8 types listed), 7-row virus table (CMV, TSWV, ToMV/TMV, ZYMV, BCMV, PVY, INSV), no-cure warning callout, prevention strategies, reflective mulch tip |
+| Section 7: Disease Reference by Crop | ✅ Done | 9-row vegetables table (tomatoes, peppers, cucurbits, beans, potatoes, lettuce, brassicas, onions/garlic, corn); 6-row fruit crops table (apples/pears, stone fruits, strawberries, blueberries, grapes, cane fruits); 7-row ornamentals table (roses, dogwoods, flowering trees, perennials, impatiens, turf, dahlias); extension tip callout |
+| Section 8: Treatment Options | ✅ Done | 7-row organic products table (copper, sulfur, neem, potassium bicarbonate, B. subtilis, Trichoderma, Reynoutria); 9-row synthetic fungicide table by FRAC group (DMI, SDHI, strobilurins, phenylpyrroles, hydroxyanilide, oxazolidinediones, mandipropamid, phosphonates, multi-site); resistance management warning callout; timing tip callout |
+| Section 9: Regional Disease Pressure | ✅ Done | 6-row regional table (NE, Mid-Atlantic/SE, Midwest, PNW, SW, CA); climate profile, highest-priority diseases, and key management notes per region; extension tip callout |
+| Section 10: Quick Reference | ✅ Done | 5-step diagnosis process, 8-row treatment decision framework, sanitation protocols (5 items), 5-row seasonal calendar, master 8-item checklist, closing tip callout |
+
+---
+
+### Edible Flowers Guide — Docx Sync Progress
+
+`src/data/guide-content/edible-flowers.js` expanded to fully match `Edible_Flowers_Guide.docx`.
+
+| Section | Status | Notes |
+|---|---|---|
+| Culinary techniques — Hibiscus Agua Fresca | ✅ Done | Full recipe added to `culinary-techniques` section: simmer, steep, dilute, lime garnish, hibiscus iced tea variation |
+| Culinary techniques — Lavender Lemonade | ✅ Done | Full recipe added: lavender syrup method + fresh lemon juice assembly |
+| Culinary techniques — Crystallized Violet Cake | ✅ Done | Added under Desserts: cake, frosting, and crystallized violet decoration steps |
+| Closing reflection | ✅ Done | New `the-edible-flower-garden-as-a-way-of-seeing` section — 3 paragraphs + tip callout from docx |
 
 ---
 
