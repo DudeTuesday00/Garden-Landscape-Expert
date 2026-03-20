@@ -455,5 +455,27 @@ export const plantsForFragranceContent = {
         },
       ],
     },
+    {
+      id: 'container-fragrance-gardens',
+      title: 'Container Fragrance Gardens',
+      blocks: [
+        { type: 'p', text: 'Containers are the great equalizer in fragrant gardening: they bring extraordinary fragrance plants to any space — apartment balconies, small patios, rooftop gardens, suburban entries. They allow gardeners in cold climates to grow frost-tender fragrant plants by moving them indoors for winter. And they concentrate fragrance exactly where it is most appreciated: where people sit, eat, and gather.' },
+        {
+          type: 'table',
+          headers: ['Plant', 'Container Size', 'Care Notes', 'Fragrance Peak', 'Best Placement'],
+          rows: [
+            ['Gardenia', '12–18" minimum; larger is better', 'Acid soil, consistent moisture, high humidity, bright indirect or morning sun. Sensitive to temperature swings and drafts.', 'May–September', 'Patio or deck near seating. Move indoors before first frost in Zone 6 and colder.'],
+            ['Night-Blooming Jasmine (Cestrum nocturnum)', '12–16"', 'Full sun outdoors; keep well-watered; cut back in late summer to encourage new growth; bring in before frost.', 'Dusk to midnight in summer', 'Near outdoor seating or open windows — one plant fills a large patio area with fragrance.'],
+            ['Heliotrope', '10–12"', 'Full sun, consistent water; pinch to encourage bushy growth; bring indoors before frost.', 'Warm afternoon sun', 'Front door containers, patio edges near seating. A classic Victorian container plant.'],
+            ['Scented Geraniums', '8–12"', 'Full sun to part shade; allow to dry slightly between waterings; bring indoors in winter as houseplants.', 'Any time foliage is touched or disturbed', 'Along a path edge or patio border where people brush against them with hands or clothing.'],
+            ['Tuberose', '10–14"', 'Full sun; consistent water once growing; dig bulbs before frost in Zone 6 and colder; store dry and cool.', 'Evening in late summer', 'Patio centerpiece or mixed summer fragrance container. One of the most rewarding evening container plants.'],
+            ['Lemon Verbena', '14–20"', 'Full sun; drought-tolerant; cut back hard in late summer to promote fresh growth; bring indoors before frost.', 'When foliage is touched; especially intense in warm afternoon sun', 'Near an outdoor kitchen or dining table. The most intensely lemon-scented foliage plant available.'],
+            ['Sweet Alyssum (Lobularia maritima)', '6–10" (or as edging)', 'Easy annual; full sun to part shade; self-seeds into containers; minimal care needed.', 'Honey fragrance from spring to frost; intensifies on warm, sunny days', 'Edge of any container combination. One of the highest-fragrance-per-dollar container plants.'],
+            ['Arabian Jasmine (J. sambac)', '12–16"', 'Full sun to part shade; consistent moisture; bring indoors before frost (or grow as a houseplant year-round).', 'Evening; heaviest in warm, humid weather', 'The most fragrant jasmine for containers. Classic jasmine tea fragrance; outstanding on a covered porch or patio.'],
+          ],
+        },
+        { type: 'tip', emoji: '🪴', text: 'For a single container designed to maximize fragrance impact at a patio entrance, combine: one gardenia or night-blooming jasmine as the centerpiece thriller; sweet alyssum as the spillover edge (continuous honey fragrance); and a scented geranium (rose or lemon type) as a mid-height filler. Brush against the geranium as you walk past, and the container delivers three completely different fragrance experiences in succession.' },
+      ],
+    },
   ],
 }
