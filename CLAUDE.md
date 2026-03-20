@@ -789,6 +789,23 @@ Every page in the app exports full metadata including:
 
 ---
 
+### Plants for Fragrance Guide — Docx Sync Progress
+
+`src/data/guide-content/plants-for-fragrance.js` being expanded section-by-section to fully match `Plants_for_Fragrance_Guide.docx`.
+
+| Section | Status | Notes |
+|---|---|---|
+| Section 3: Fragrant Vines | ✅ Done | Wisteria (species + invasiveness notes), Honeysuckle (native vs invasive), Jasmine (5-row species table), Climbing Roses, Sweet Autumn Clematis; fragrance threshold tip |
+| Section 4: Fragrant Trees | ⬜ Pending | 9-tree table (magnolias, black locust, linden, fringe tree, Japanese tree lilac, crabapple) + placement tip |
+| Section 5: The Evening Garden | ⬜ Pending | 9-plant nocturnal table (night jasmine, moonflower, four o'clocks, evening primrose, nicotiana, night phlox, angel's trumpet, tuberose, datura) + design tip |
+| Section 6: Fragrance Through Every Season | ⬜ Pending | Late Winter / Spring / Summer / Fall subsections with plant lists |
+| Section 7: Regional Fragrance Plant Guide | ⬜ Pending | 8-row regional table (NE, Mid-Atlantic, SE, Midwest, Rocky Mtn, PNW, CA, Desert SW) |
+| Section 8: Container Fragrance Gardens | ⬜ Pending | 8-plant container table + container formula tip |
+| Section 9: The Fragrant Garden Seasonal Calendar | ⬜ Pending | 7-row LFD/FFD-anchored calendar + regional timing tip |
+| Section 10: Troubleshooting | ⬜ Pending | 8-row problem/solution table + closing reflection |
+
+---
+
 ## Notes for AI Assistants
 
 - **A guide must not be built unless a `.docx` source file exists for that subject.** The `.docx` file is the authoritative source of truth for guide content; do not create or populate a guide JS file from scratch without one.

@@ -281,5 +281,51 @@ export const plantsForFragranceContent = {
         { type: 'tip', emoji: '✂️', text: 'Cutting fragrant flowers at their peak — before they\'ve been fully pollinated and begin to decline — is the single best way to bring garden fragrance indoors and extend flowering on the plant simultaneously. Roses, peonies, phlox, sweet peas, and lavender all benefit from regular cutting. Keep a small vase on the kitchen counter through the season and your indoor spaces will share the garden\'s fragrance.' },
       ],
     },
+    {
+      id: 'fragrant-vines',
+      title: 'Fragrant Vines — Fragrance at Eye and Nose Level',
+      blocks: [
+        { type: 'p', text: 'Fragrant vines are among the most effective tools in the scented garden because they place fragrance exactly where people are — at face height on a fence, around a doorway, over an arbor or pergola where people sit and gather. A fragrant vine over a garden gate or porch creates an arrival experience that no other plant category can match.' },
+        { type: 'h3', text: '🌼 Wisteria (Wisteria spp.)' },
+        { type: 'p', text: 'Wisteria in full bloom is perhaps the single most dramatic fragrant plant in temperate horticulture. The cascading purple-blue racemes on a mature plant, combined with a sweet, penetrating, grapey-vanilla fragrance that carries across an entire property, create an experience that stops people in their tracks.' },
+        {
+          type: 'list',
+          items: [
+            'Best fragrant species: W. sinensis (Chinese wisteria) and W. floribunda (Japanese wisteria) are the most fragrant and the most vigorous. American wisteria (W. frutescens \'Amethyst Falls,\' \'Nivea\') and Kentucky wisteria (W. macrostachya \'Blue Moon,\' \'Clara Mack\') are less aggressive, more reliably fragrant in cold climates (to Zone 3), and recommended for gardeners in northern states or with limited space.',
+            'Invasiveness note: W. sinensis and W. floribunda are invasive in the Southeast and mid-Atlantic. Check your state\'s invasive plant list. In these regions, native wisteria (W. frutescens, W. macrostachya) is the ecologically responsible and still beautifully fragrant choice.',
+            'Growing: Full sun (essential for flowering). Average to lean soil — rich soil promotes leaf growth over flowers. Established plants are extremely drought-tolerant. Hardy: W. sinensis/floribunda Zones 5–9; native species Zones 3–9. Wisteria requires a very strong support structure — a mature plant can weigh hundreds of pounds and will damage weak trellises.',
+            'The patience note: Wisteria is famously slow to begin flowering, sometimes taking 3–5 years after planting. Buy a grafted plant (not seed-grown) and plant in full sun in lean soil to accelerate first bloom.',
+          ],
+        },
+        { type: 'h3', text: '🌼 Honeysuckle (Lonicera spp.)' },
+        { type: 'p', text: 'Honeysuckle fragrance — sweet, rich, and slightly tropical — is one of the essential scents of the American summer. A honeysuckle-covered fence in full bloom on a warm evening is one of the most elemental summer garden experiences. Like wisteria, attention to species is important: some honeysuckles are invasive.' },
+        {
+          type: 'list',
+          items: [
+            'Fragrant native / non-invasive species: Trumpet honeysuckle (L. sempervirens) — native, excellent hummingbird plant, light fragrance, outstanding display; coral-scarlet flowers. Zones 4–9. \'Major Wheeler\' is the most floriferous selection. Goldflame Honeysuckle (L. × heckrottii) — hybrid, strongly fragrant, pink-gold flowers, repeat-blooming, non-invasive. Zones 5–9.',
+            'Invasive species to avoid: Japanese honeysuckle (L. japonica) — the most fragrant species is also the most aggressively invasive across the eastern US. Do not plant. Its fragrance can be replicated with non-invasive alternatives.',
+            'Growing: Full sun to part shade. Adapts to most soils. Moderate water. Provide a trellis, fence, or arbor for support.',
+          ],
+        },
+        { type: 'h3', text: '🌼 Jasmine (Jasminum & Trachelospermum spp.)' },
+        { type: 'p', text: 'Jasmine fragrance is the reference standard for white floral scent in the perfume world — sweet, rich, slightly indolic (that quality that gives jasmine its depth and intensity), and utterly intoxicating. Several jasmines are suitable for American gardens, depending on climate.' },
+        {
+          type: 'table',
+          headers: ['Jasmine Species', 'Zones', 'Fragrance Intensity', 'Bloom Season', 'Notes'],
+          rows: [
+            ['Star Jasmine (Trachelospermum jasminoides)', '7–10', 'Very strong; true jasmine character, sweet and rich', 'Late spring–early summer', 'Not a true jasmine but the same fragrance profile. Excellent evergreen climber for walls and trellises in warm climates.'],
+            ['Common Jasmine (J. officinale)', '6–9', 'Very strong classic jasmine, sweet and penetrating', 'Summer (June–September)', 'Semi-hardy; reliably perennial in Zone 7+. Grow as a container plant and bring indoors in colder zones.'],
+            ['Arabian Jasmine (J. sambac)', '9–11 (or container)', 'The most intensely fragrant jasmine; warm, rich, sweet — the source of jasmine tea', 'Almost year-round in tropical climates', 'The source of jasmine absolute in perfumery. Excellent in large containers; bring indoors in winter (Zone 8 and colder).'],
+            ['Italian Jasmine (J. humile)', '7–10', 'Light, sweet; less intense than J. officinale', 'Summer', 'Shrubby habit (6–10 ft). More drought-tolerant than other jasmines.'],
+            ['Winter Jasmine (J. nudiflorum)', '5–9', 'Mild to none — primarily ornamental', 'Late winter (January–March)', 'Not fragrant but worth noting for its cheerful yellow bare-stem bloom that heralds spring.'],
+          ],
+        },
+        { type: 'h3', text: '🌼 Climbing Roses' },
+        { type: 'p', text: 'A fragrant climbing rose trained over an arbor, gate, or pergola creates one of the most memorable fragrant garden experiences possible. \'New Dawn,\' \'Don Juan,\' \'Fourth of July,\' and the David Austin climber \'A Shropshire Lad\' all combine visual drama with genuine fragrance. See the Fragrant Roses table in the Fragrant Shrubs section for variety details.' },
+        { type: 'h3', text: '🌼 Sweet Autumn Clematis (Clematis terniflora) — with Caution' },
+        { type: 'p', text: 'Sweet autumn clematis covers its host structure with thousands of small white flowers in August–September, releasing a sweet vanilla-almond fragrance that carries well. However, it self-seeds aggressively and is considered invasive in many eastern and midwestern states. In states where it is a concern, the fragrant virgin\'s bower (Clematis virginiana), a native species, provides similar fall white bloom with better ecological value.' },
+        { type: 'tip', emoji: '🌿', text: 'Train a fragrant climbing rose or wisteria over the main entry to your garden — an arch, pergola, or substantial fence post. This creates a "fragrance threshold" that every visitor passes through, with scent positioned at face height where it is most immediately perceived. It is one of the most memorable garden features you can create.' },
+      ],
+    },
   ],
 }
