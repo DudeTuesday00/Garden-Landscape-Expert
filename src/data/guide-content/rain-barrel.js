@@ -464,5 +464,60 @@ export const rainBarrelContent = {
       ],
     },
 
+
+    // ─── SECTION 7: WINTERIZING & SEASONAL CARE ──────────────────────────────
+    {
+      id: 'winterizing',
+      title: 'Section 7: Winterizing & Seasonal Care',
+      blocks: [
+        {
+          type: 'p',
+          text: 'In climates where temperatures drop below freezing, a rain barrel left full or partially full through winter will freeze, expand, and crack the barrel, split fittings, and damage the entire installation. Winterization is mandatory for any climate in Zones 6 and colder (where freezing temperatures are reliably present for extended periods), and advisable in Zone 7 where hard freezes occur occasionally.',
+        },
+        {
+          type: 'h3',
+          text: 'When to Winterize',
+        },
+        {
+          type: 'table',
+          headers: ['Climate Zone', 'Action Needed', 'When to Winterize', 'When to Reactivate'],
+          rows: [
+            ['Zones 3–4 (MN, ND, MT, northern NE)', 'Full winterization essential; extended sub-zero periods can damage even drained barrels left outside if water is trapped in fittings', 'By October 1 – October 15 (before first hard freeze)', 'May 1 – May 15 (after frost risk passes and collection season begins)'],
+            ['Zones 5–6 (Midwest, mid-Atlantic, Pacific NW)', 'Full winterization required; winter freezes are certain and extended', 'By October 15 – November 1', 'March 15 – April 15 (after extended freeze risk)'],
+            ['Zone 7 (VA, NC, TN, parts of Pacific NW, TX Hill Country)', 'Winterization recommended; hard freezes occur irregularly but can be severe', 'November 1 – December 1; OR drain when freeze warnings are issued', 'February 15 – March 15 in most years'],
+            ['Zones 8–10 (Gulf Coast, Southern CA, AZ, FL)', 'No winterization needed in most years; monitor for unusual cold snaps', 'Drain and protect if temperatures below 28°F are forecast for more than one night', 'No reactivation needed; typically year-round operation'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Winterization Procedure',
+        },
+        {
+          type: 'list',
+          items: [
+            'Use the water: In the weeks before winterizing, use down your stored water on the garden, compost, or lawn. It is better irrigation than tap water and costs nothing to use.',
+            'Disconnect the downspout: Reconnect the original downspout section (or close the diverter) so winter rain and snow melt flows through the original drainage path rather than into your barrel. This prevents the barrel from filling during freeze/thaw cycles.',
+            'Drain the barrel completely: Open the spigot fully and drain all water. Tip the barrel slightly if needed to drain the last few inches. Turn the barrel upside down if possible to ensure complete drainage.',
+            'Remove and store fittings (optional but recommended): The spigot, overflow fitting, and any flexible hose connections are the most vulnerable to freeze damage. Remove them and store indoors for winter. Plug the holes with a rubber stopper or rag to prevent insects from nesting in the empty barrel.',
+            'Store the barrel: If possible, store the barrel upside down in a garage, shed, or under an overhang. Stored upside down, it cannot collect rain or snow melt and will not freeze-crack. If the barrel must remain outside in place, leave the spigot open (so any water that enters can drain) and secure the inverted or unsealed lid so it cannot blow away.',
+            'Inspect in spring: Before reactivation, inspect the barrel for cracks, loose fittings, and screen integrity. Replace any damaged components before the first use of the season.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Spring Reactivation',
+        },
+        {
+          type: 'list',
+          items: [
+            'Clean the barrel: Before the first use of the season, rinse the interior with clean water and a mild soap solution; rinse thoroughly. Check the screen for tears or gaps; repair or replace.',
+            'Inspect and reinstall fittings: Apply fresh Teflon tape to spigot threads; reinstall fittings snugly. Check all gaskets and seals; replace if the rubber has hardened or cracked.',
+            'Check the overflow path: Make sure the overflow hose is intact and positioned to direct water away from the foundation. Check that the downspout diverter is properly reconnected.',
+            'Reconnect to the downspout: Open the diverter or reconnect the downspout to the barrel inlet. The system is ready to collect the first spring rain.',
+          ],
+        },
+      ],
+    },
+
   ],
 }
