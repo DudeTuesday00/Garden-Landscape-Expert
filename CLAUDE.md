@@ -806,23 +806,23 @@ Every page in the app exports full metadata including:
 
 ---
 
-### Rain Barrel Guide — Docx Sync Progress
+### Rain Barrel Guide ✅
 
-`src/data/guide-content/rain-barrel.js` being built section-by-section to match `Rain_Barrel_Guide.docx`.
+`src/data/guide-content/rain-barrel.js` — Starting a Rain Barrel (`id: 'rain-barrel'`); fully synced with `Rain_Barrel_Guide.docx` — 10 sections covering the full guide from collection math through ecological context.
 
 | Section | Status | Notes |
 |---|---|---|
 | Intro overview + At a Glance table | ✅ Done | Why collect rainwater intro paragraphs; 8-row At a Glance component table (Barrel, Diverter, Spigot, Overflow, First-flush diverter, Platform, Linking hardware, Mosquito screen); rebate tip callout |
 | Section 1: The Legal Landscape | ✅ Done | East vs. West water law explanation; ⚠️ laws-change warning callout; 50-row state-by-state table (Legal Status / Volume Limits / Permitted Uses / Incentives & Notes); rebates/incentives section (cash rebates, subsidized programs, tax incentives, HOA protections); tip callout for finding local programs |
 | Section 2: How Much Water Can You Collect? | ✅ Done | Collection formula tip callout (gallons = rainfall × area × 0.623 × efficiency); roof area calculation guidance + 3-item typical downspout drainage list; 8-row annual rainfall by region table (PNW, N. CA, SW desert, Great Plains, Midwest, Southeast, Mid-Atlantic/NE, Texas); 5-row garden size/storage matching table |
-| Section 3: Choosing Your Rain Barrel | 🔜 Pending | Commercial vs DIY table, key features, single vs linked systems |
-| Section 4: Installation — Step by Step | 🔜 Pending | Tools, step-by-step guide, downspout diverter options table |
-| Section 5: First Flush Diverters & Water Quality | 🔜 Pending | What's in roof runoff, first flush diverter, water quality table, mosquito prevention |
-| Section 6: Using Your Stored Water | 🔜 Pending | Gravity pressure table, delivery methods, keeping water healthy |
-| Section 7: Winterizing & Seasonal Care | 🔜 Pending | When to winterize table, winterization procedure, spring reactivation |
-| Section 8: Troubleshooting Common Problems | 🔜 Pending | Problem/cause/solution table |
-| Section 9: Scaling Up — Cisterns & Advanced Systems | 🔜 Pending | Storage tank options table, multi-barrel design, permits/HOA |
-| Section 10: The Ecological Context — Beyond the Barrel | 🔜 Pending | Stormwater problem, complementary practices, impact calculation, closing tip + quick reference checklist |
+| Section 3: Choosing Your Rain Barrel | ✅ Done | 5-row commercial vs. DIY table (commercial, DIY drum, decorative, IBC tote, store-bought poly); 5-item key features list (screened lid, overflow port, spigot positioning, UV resistance, food-grade material); single vs. linked barrel systems |
+| Section 4: Installation — Step by Step | ✅ Done | Tools and materials list; 8-step installation guide (location, platform, downspout prep, diverter install, spigot install, overflow fitting, lid/screen, system test); 4-row downspout diverter options table |
+| Section 5: First Flush Diverters & Water Quality | ✅ Done | 4-item roof runoff contaminants list (atmospheric deposition, roof materials, biological contamination, lead); first-flush diverter sizing formula + DIY PVC design; 6-row water quality by use table; 🦟 mosquito prevention warning callout |
+| Section 6: Using Your Stored Water | ✅ Done | 5-row gravity pressure table (0–60 inch elevation vs PSI); platform building tip; 5 delivery methods (watering can, garden hose, soaker hose, drip, pump-assisted); 4 practices for keeping stored water healthy |
+| Section 7: Winterizing & Seasonal Care | ✅ Done | 4-row zone-by-zone winterization timing table (Zones 3–4 through 8–10); 6-step winterization procedure; 4-step spring reactivation checklist |
+| Section 8: Troubleshooting Common Problems | ✅ Done | 9-row problem/cause/solution table (barrel not filling, spigot leaks, mosquito larvae, bad odor, algae, foundation overflow, low pressure, winter cracking, chronic overflow) |
+| Section 9: Scaling Up — Cisterns & Advanced Systems | ✅ Done | 6-row storage tank options table (linked barrels through underground cisterns); 4-item multi-barrel/cistern design guidance; permits/HOA considerations (building permits, HOA restrictions, structural requirements) |
+| Section 10: The Ecological Context — Beyond the Barrel | ✅ Done | Stormwater problem (50–70% runoff in developed landscapes); 5 complementary practices (rain gardens, permeable paving, strategic grading, sheet mulching, native plantings); impact calculation (1,000–40,000 gal/year range); closing tip callout + 15-item quick reference checklist |
 
 ---
 
