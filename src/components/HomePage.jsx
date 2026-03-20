@@ -73,8 +73,42 @@ export default function HomePage() {
         </div>
 
         <p className="text-xs text-gray-400 dark:text-gray-500">
-          148 plants · 27 live guides · no account required
+          148 plants · 35 live guides · no account required
         </p>
+
+        {/* Media & Resources row */}
+        <div className="w-full">
+          <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-3 text-center">
+            Media &amp; Resources
+          </p>
+          <div className="grid grid-cols-3 gap-3">
+            <Link
+              href="/infographics"
+              className="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-garden-400 dark:hover:border-garden-500 rounded-2xl p-4 text-center shadow-sm hover:shadow-md transition-all duration-200 flex flex-col items-center gap-2"
+            >
+              <span className="text-3xl group-hover:scale-110 transition-transform duration-200">🖼️</span>
+              <span className="text-xs font-semibold text-garden-800 dark:text-garden-300">Infographics</span>
+              <span className="text-xs text-gray-400 dark:text-gray-500 hidden sm:block leading-tight">Visual quick-reference charts</span>
+            </Link>
+            <Link
+              href="/podcasts"
+              className="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-garden-400 dark:hover:border-garden-500 rounded-2xl p-4 text-center shadow-sm hover:shadow-md transition-all duration-200 flex flex-col items-center gap-2"
+            >
+              <span className="text-3xl group-hover:scale-110 transition-transform duration-200">🎙️</span>
+              <span className="text-xs font-semibold text-garden-800 dark:text-garden-300">Podcasts</span>
+              <span className="text-xs text-gray-400 dark:text-gray-500 hidden sm:block leading-tight">Best gardening shows</span>
+            </Link>
+            <Link
+              href="/videos"
+              className="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-garden-400 dark:hover:border-garden-500 rounded-2xl p-4 text-center shadow-sm hover:shadow-md transition-all duration-200 flex flex-col items-center gap-2"
+            >
+              <span className="text-3xl group-hover:scale-110 transition-transform duration-200">🎬</span>
+              <span className="text-xs font-semibold text-garden-800 dark:text-garden-300">Videos</span>
+              <span className="text-xs text-gray-400 dark:text-gray-500 hidden sm:block leading-tight">Top YouTube channels</span>
+            </Link>
+          </div>
+        </div>
+
       </div>
 
       {/* Long-form homepage content */}

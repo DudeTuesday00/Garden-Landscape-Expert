@@ -75,23 +75,32 @@ export default function RootLayout({ children }) {
         <div className="min-h-screen bg-gradient-to-b from-garden-50 to-white dark:from-gray-900 dark:to-gray-900">
           <Nav />
           <main>{children}</main>
-          <footer className="mt-16 py-6 border-t border-gray-200 dark:border-gray-700 text-center text-sm text-gray-400 dark:text-gray-500">
-            <p>
-              © {new Date().getFullYear()} Planting Atlas &nbsp;·&nbsp;
-              <Link
-                href="/privacy"
-                className="underline hover:text-garden-600 dark:hover:text-garden-400 transition-colors"
-              >
-                Privacy Policy
-              </Link>
-              &nbsp;·&nbsp;
-              <Link
-                href="/contact"
-                className="underline hover:text-garden-600 dark:hover:text-garden-400 transition-colors"
-              >
-                Contact Us
-              </Link>
-            </p>
+          <footer className="mt-16 py-8 border-t border-gray-200 dark:border-gray-700 text-center text-sm text-gray-400 dark:text-gray-500">
+            <div className="max-w-3xl mx-auto px-4">
+              <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-3">
+                <Link href="/infographics" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🖼️ Infographics</Link>
+                <Link href="/podcasts"     className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🎙️ Podcasts</Link>
+                <Link href="/videos"       className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🎬 Videos</Link>
+                <Link href="/guides"       className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">📖 Plantopedia</Link>
+                <Link href="/wizard"       className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🌱 Garden Architect</Link>
+              </div>
+              <p>
+                © {new Date().getFullYear()} Planting Atlas &nbsp;·&nbsp;
+                <Link
+                  href="/privacy"
+                  className="underline hover:text-garden-600 dark:hover:text-garden-400 transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+                &nbsp;·&nbsp;
+                <Link
+                  href="/contact"
+                  className="underline hover:text-garden-600 dark:hover:text-garden-400 transition-colors"
+                >
+                  Contact Us
+                </Link>
+              </p>
+            </div>
           </footer>
         </div>
 
