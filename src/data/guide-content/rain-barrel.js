@@ -601,5 +601,86 @@ export const rainBarrelContent = {
       ],
     },
 
+
+    // ─── SECTION 10: THE ECOLOGICAL CONTEXT ──────────────────────────────────
+    {
+      id: 'ecological-context',
+      title: 'Section 10: The Ecological Context — Beyond the Barrel',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A rain barrel is a useful tool, but it is most powerful when understood as part of a broader approach to managing how water moves through your property. The larger ecological opportunity is to slow water down, spread it out, and let it sink in — rather than channeling all precipitation off the property as quickly as possible through engineered drainage systems designed for exactly the opposite goal.',
+        },
+        {
+          type: 'h3',
+          text: 'The Stormwater Problem',
+        },
+        {
+          type: 'p',
+          text: 'In a natural landscape, a significant rainfall event infiltrates into the soil, is taken up by vegetation, and slowly percolates toward groundwater or moves as shallow subsurface flow toward streams. In a developed residential landscape, typically 50 to 70 percent of the same rainfall becomes immediate surface runoff that carries pollutants into storm drains and overwhelms streams with sudden peak flows that cause flooding and erosion.',
+        },
+        {
+          type: 'p',
+          text: 'A rain barrel intercepts a small fraction of that runoff. The real ecological leverage comes from combining the rain barrel with landscape practices that keep more water on-site: rain gardens, permeable paving, bioswales, and strategic grading that directs overflow toward planted areas rather than toward impermeable surfaces and storm drains.',
+        },
+        {
+          type: 'h3',
+          text: 'Complementary Practices',
+        },
+        {
+          type: 'list',
+          items: [
+            'Rain gardens: A planted depression in the landscape, positioned to receive overflow from the rain barrel (and from the rest of the downspout during large events), that holds water long enough to percolate into the soil rather than running off the property. A rain garden sized to capture a 1–2 inch rain event from its contributing area typically drains within 24–48 hours. It is not a pond; it is a planted infiltration basin. Combined with a rain barrel, the rain garden handles the overflow that the barrel cannot capture.',
+            'Permeable paving: Replacing impermeable concrete or asphalt driveways, paths, and patios with permeable pavers, gravel, or pervious concrete allows rainfall to infiltrate where it falls rather than running off. Permeable paving combined with rain barrels can capture the majority of a rain event from a residential property.',
+            'Strategic grading: Simple grading changes — sloping yard areas toward planted beds rather than toward paved surfaces; creating gentle swales that slow and spread runoff; building berms that hold water in place — can dramatically increase on-site infiltration without any plumbing or structures.',
+            'Sheet mulching: Maintaining 3–4 inches of organic mulch over all planted areas reduces runoff velocity, increases infiltration, and reduces soil evaporation — keeping more of the rain that does fall in place where it can benefit plants.',
+            'Native and deep-rooted plantings: Native plants with deep root systems create channels for water infiltration that dramatically exceed the infiltration rate of turf grass. A deep-rooted native prairie planting or native woodland garden captures and infiltrates far more rainfall per square foot than any lawn.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Calculating Your Impact',
+        },
+        {
+          type: 'p',
+          text: 'A single 55-gallon rain barrel, used consciously through a growing season, can save 1,000 to 2,000 gallons of municipal water annually — a meaningful but modest amount. The impact grows with each additional barrel, each linked cistern, each rain garden installed downstream of the barrel\'s overflow. A household that combines a 200-gallon cistern system with a 300-square-foot rain garden and strategic grading can retain and use 20,000 to 40,000 gallons of rainfall annually that would otherwise have flowed into the storm drain — a contribution to stormwater management that is genuinely significant at the watershed level when replicated across a neighborhood.',
+        },
+        {
+          type: 'tip',
+          emoji: '💧',
+          text: 'The rain barrel is the most accessible entry point into a different relationship with water — one that sees precipitation as a resource rather than a problem to be managed away as quickly as possible. Once you have installed a rain barrel and watched it fill during a summer thunderstorm, then drawn that water out to irrigate your garden through a dry August week, the principle becomes intuitive in a way that no amount of reading about water conservation can fully communicate. The barrel is a beginning. The rain garden that handles the overflow is a next step. The cistern that provides serious irrigation supply is another. Together, they represent a meaningful, practical contribution to the health of the local watershed, the regional aquifer, and the planet\'s freshwater cycle — one downspout at a time.',
+        },
+        {
+          type: 'h3',
+          text: 'Quick Reference Checklist',
+        },
+        {
+          type: 'list',
+          items: [
+            'Verify your state\'s rainwater collection laws and any local ordinances',
+            'Check your water utility and local municipality for rebates or subsidized barrel programs',
+            'Identify the best downspout location (largest roof area, closest to garden)',
+            'Calculate collection potential: Rainfall × Roof Area × 0.623 × 0.85',
+            'Choose barrel type and size appropriate to garden irrigation needs',
+            'Acquire materials: barrel, diverter, spigot, overflow fitting, screen, platform materials',
+            'Build elevated platform (12–24 inch minimum; ensure it is level and load-rated)',
+            'Modify downspout with diverter kit',
+            'Install overflow hose directed 4–6 feet from foundation',
+            'Verify all openings are screened (inlet, overflow outlet, any vents)',
+            'Install first-flush diverter if using water on edibles',
+            'Test system with a garden hose before the first rain event',
+            'Add a Bti mosquito dunk to water during warm months',
+            'Plan winterization (drain before first hard freeze in Zones 3–7)',
+            'Use stored water regularly; don\'t let it sit for more than 2–3 weeks in summer',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌧️',
+          text: 'Every drop that falls on your roof is a gift. A rain barrel is simply how you catch it.',
+        },
+      ],
+    },
+
   ],
 }
