@@ -799,7 +799,7 @@ Every page in the app exports full metadata including:
 | Section 4: Fragrant Trees | ✅ Done | 9-tree table (magnolias, black locust, linden, fringe tree, Japanese tree lilac, crabapple, sweetgum) + placement tip |
 | Section 5: The Evening Garden | ✅ Done | 9-plant nocturnal table (night jasmine, moonflower, four o'clocks, evening primrose, nicotiana, night phlox, angel's trumpet, tuberose, datura) + evening garden design tip |
 | Section 6: Fragrance Through Every Season | ✅ Done | Late Winter / Spring / Summer / Fall subsections with detailed plant lists per season |
-| Section 7: Regional Fragrance Plant Guide | ⬜ Pending | 8-row regional table (NE, Mid-Atlantic, SE, Midwest, Rocky Mtn, PNW, CA, Desert SW) |
+| Section 7: Regional Fragrance Plant Guide | ✅ Done | 8-row regional table (NE, Mid-Atlantic, SE/Gulf, Midwest, Rocky Mtn/High Desert, PNW, CA/Coastal, Desert SW) |
 | Section 8: Container Fragrance Gardens | ⬜ Pending | 8-plant container table + container formula tip |
 | Section 9: The Fragrant Garden Seasonal Calendar | ⬜ Pending | 7-row LFD/FFD-anchored calendar + regional timing tip |
 | Section 10: Troubleshooting | ⬜ Pending | 8-row problem/solution table + closing reflection |

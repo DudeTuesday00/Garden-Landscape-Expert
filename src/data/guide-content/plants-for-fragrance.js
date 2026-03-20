@@ -434,5 +434,26 @@ export const plantsForFragranceContent = {
         },
       ],
     },
+    {
+      id: 'regional-fragrance-guide',
+      title: 'Regional Fragrance Plant Guide',
+      blocks: [
+        { type: 'p', text: 'No single plant list works across all of America\'s climate zones. A plant that thrives in the Pacific Northwest may barely survive a Texas summer; a rose that excels in New England may suffer fungal disease in Florida. The regional guides below focus on the fragrant plants most reliably suited to each major climate band, with notes on specific challenges and opportunities.' },
+        {
+          type: 'table',
+          headers: ['Region', 'Climate Challenge for Fragrance', 'Essential Fragrant Shrubs', 'Best Perennials & Annuals', 'Specialty Opportunities'],
+          rows: [
+            ['Northeast & New England (Zones 4–6)', 'Short season; cold winters eliminate tender plants; peak fragrance compressed into May–August', 'Lilac (outstanding), Koreanspice Viburnum, Mock Orange, Witch Hazel, Summersweet (Clethra)', 'Garden Phlox, Lily of the Valley, Dianthus, Catmint, Sweet Peas (cool springs are ideal)', 'Wisteria is spectacular here. Hyacinths and fragrant daffodils excel in cool spring air. Peony fragrance is at its best in Zone 5–6.'],
+            ['Mid-Atlantic (Zones 6–7)', 'Hot humid summers; disease pressure on roses; mild winters allow more options than further north', 'Lilac, Viburnum, Mock Orange, Gardenia (Zone 7), Sweet Shrub (Calycanthus floridus)', 'Garden Phlox, Catmint, Dianthus, Lavender (with excellent drainage), Garden Roses', 'Evening gardens particularly rewarding in warm summers. Gardenias thrive in-ground in Zone 7.'],
+            ['Southeast & Gulf Coast (Zones 7–9)', 'Heat and humidity stress many classic fragrant plants; roses require disease-resistant varieties', 'Gardenia (outstanding), Loropetalum, Camellia (fragrant varieties), Sweet Olive (Osmanthus fragrans), Tea Olive', 'Nicotiana, Four O\'clocks, Night-Blooming Jasmine (perennial here), Confederate Jasmine', 'Extraordinary evening garden opportunity. Brugmansia is perennial in Zone 9. Tea olive provides winter fragrance for months.'],
+            ['Midwest & Great Plains (Zones 4–6)', 'Cold winters; summer heat; high winds disperse fragrance; alkaline soils in many areas', 'Lilac (outstanding), Witch Hazel, Mock Orange, Koreanspice Viburnum, Summersweet (Clethra)', 'Garden Phlox, Catmint, Dianthus, Anise Hyssop (native prairie plant, exceptional here)', 'Native fragrant prairie plants: Anise Hyssop, Prairie Blazing Star (Liatris), native bee balm (Monarda fistulosa).'],
+            ['Rocky Mountain & High Desert (Zones 4–7)', 'Intense sun; low humidity (evaporates scent faster); alkaline soil; cold nights', 'Lilac (excellent at elevation), Mock Orange, Apache Plume (Fallugia paradoxa), Syringa microphylla \'Superba\'', 'Lavender (thrives in dry alkaline conditions), Catmint, Artemisia (foliage fragrance), Agastache (native)', 'Low humidity is excellent for lavender and Mediterranean aromatics — fragrance is more concentrated. High-altitude lilacs can be spectacular.'],
+            ['Pacific Northwest (Zones 7–9)', 'Mild, wet winters; cool summers; superb for most classic fragrant plants', 'Lilac, Mock Orange, Viburnum, Daphne odora (outstanding here), Rhododendron (fragrant species)', 'Sweet Peas (among the best in the country here), Lavender, Garden Phlox, Dianthus', 'The best climate in America for roses and sweet peas. Daphne odora thrives year-round. Cool summers extend spring fragrances well into June.'],
+            ['California & Coastal West (Zones 8–10)', 'Mild winters; summer dry; wide palette possible; coastal fog moderates extremes', 'Star Jasmine (Trachelospermum), Gardenia, Pittosporum (fragrant species), Osmanthus, Ceanothus (honey-fragrant)', 'Lavender (year-round in many areas), Dianthus, Heliotrope, Sweet Alyssum', 'Extraordinary opportunity for tender fragrant plants as perennials: night-blooming jasmine, Brugmansia, plumeria in Zone 10.'],
+            ['Desert Southwest (Zones 8–11)', 'Extreme heat; very low humidity (scent evaporates instantly outdoors in summer); alkaline soil', 'Desert Willow (Chilopsis; light orchid fragrance), Autumn Sage (Salvia greggii), Sweet Olive in sheltered microclimates', 'Lavender (low humidity is actually excellent), Four O\'clocks (evening garden staple), Nicotiana', 'Desert evening gardens are extraordinary — cool evenings after hot days concentrate fragrance beautifully. Night-blooming plants are especially effective here.'],
+          ],
+        },
+      ],
+    },
   ],
 }
