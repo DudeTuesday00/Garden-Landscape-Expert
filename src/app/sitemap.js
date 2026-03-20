@@ -1,6 +1,7 @@
 export const dynamic = 'force-static'
 
 import { guideCategories } from '../data/guides.js'
+import { products } from '../data/products.js'
 
 const SITE_URL = 'https://plantingatlas.com'
 
@@ -18,6 +19,7 @@ export default function sitemap() {
     { url: `${SITE_URL}/infographics/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/podcasts/`,     lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${SITE_URL}/videos/`,       lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${SITE_URL}/shop/`,         lastModified: now, changeFrequency: 'weekly',  priority: 0.9 },
     { url: `${SITE_URL}/contact/`,      lastModified: now, changeFrequency: 'yearly',  priority: 0.5 },
     { url: `${SITE_URL}/privacy/`,      lastModified: now, changeFrequency: 'yearly',  priority: 0.3 },
   ]
@@ -31,5 +33,12 @@ export default function sitemap() {
       priority: 0.8,
     }))
 
-  return [...staticPages, ...guidePages]
+  const productPages = products.map((p) => ({
+    url: `${SITE_URL}/shop/${p.id}/`,
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }))
+
+  return [...staticPages, ...guidePages, ...productPages]
 }
