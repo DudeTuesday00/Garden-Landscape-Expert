@@ -498,5 +498,27 @@ export const plantsForFragranceContent = {
         { type: 'tip', emoji: '🗓️', text: 'Zone 3–4: Add 3–4 weeks to spring timings (later last frost). Focus on the most cold-hardy fragrant plants: lilac, witch hazel, catmint, dianthus, Korean Spice Viburnum, peonies. Zone 8–9: Subtract 3–4 weeks from spring timings (earlier last frost). Your season extends later into fall and earlier in spring, and you can grow frost-tender fragrant plants as perennials: gardenia, star jasmine, sweet olive, and night-blooming jasmine as landscape shrubs.' },
       ],
     },
+    {
+      id: 'troubleshooting-fragrant-garden',
+      title: 'Troubleshooting the Fragrant Garden',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Problem', 'Likely Cause', 'Solution'],
+          rows: [
+            ['Lavender dies over winter or by midsummer', 'Poor drainage causing root rot; clay soil retaining moisture around the crown', 'Lavender death is almost always root rot from inadequate drainage. Plant in raised beds or mounded soil with added coarse grit. Never water established lavender in the second half of summer. In clay soils, plant in 6–8 inch raised mounds with amended fast-draining mix.'],
+            ['Roses have little to no fragrance despite being labeled as fragrant', 'Wrong cultivar chosen; many roses labeled \'fragrant\' by retailers have minimal scent; modern hybrid teas bred for disease resistance often sacrifice fragrance', 'Check that the variety is specifically a David Austin English rose, Old Garden Rose, or a well-reviewed fragrant variety. Always smell before you buy at a nursery. Fragrance also diminishes in extreme heat — roses smell best when temperatures are 65–75°F.'],
+            ['Lilac blooms poorly or not at all', 'Insufficient cold: lilacs need 6–8 weeks of temperatures below 45°F to set flower buds; common in Zones 7–8 and nearly impossible in Zones 9+', 'True lilacs require cold winters to bloom — they are not adapted to mild-winter climates. In Zone 7, choose late-blooming cultivars. In Zone 8+, use warm-climate alternatives: Chinese fringe flower, sweet olive (Osmanthus), or mock orange.'],
+            ['Sweet peas fail to flower or die in early summer', 'Planted too late; temperatures too warm when planted; insufficient sun', 'Sweet peas are cool-season plants that must be planted while temperatures are still cool — very early spring or even fall/winter in mild climates. They die when summer heat arrives. Plant earlier next season.'],
+            ['Gardenia has yellow leaves and drops buds', 'Alkaline soil pH (most common); insufficient humidity; temperature fluctuations; overwatering', 'Test soil pH — gardenias require pH 5.0–5.5. Amend with sulfur or use an acidifying fertilizer. Increase humidity around container plants. Avoid temperature swings — keep away from heating/cooling vents and cold drafts.'],
+            ['Nicotiana and heliotrope are growing well but have no noticeable fragrance', 'Modern hybrid cultivars instead of species or older varieties — most compact, brightly colored hybrids have had fragrance bred out', 'The most fragrant nicotiana is N. sylvestris (tall species, white flowers) and \'Only the Lonely\' — not the Domino or Sensation series. The most fragrant heliotrope varieties are \'Marine,\' \'Black Beauty,\' and heirloom types.'],
+            ['Fragrant plant smells great at the nursery but not in the garden', 'Wrong placement: too much wind, insufficient warmth, too far from where you actually spend time', 'Fragrance concentration requires still air and warm reflected heat. Move the plant to a sheltered south- or west-facing wall or corner, or plant it closer to outdoor seating. A fragrant plant 30 feet away in an open, breezy garden contributes almost no detectable scent.'],
+            ['Wisteria has never bloomed after several years', 'Grown from seed (takes 10–15 years to bloom); insufficient sun; too much nitrogen promoting vegetative growth', 'Always purchase grafted wisteria, not seed-grown. Plant in full sun (6+ hours minimum). Keep soil lean — avoid fertilizer. If still not blooming after 4–5 years, try root-pruning: drive a spade in a circle 18 inches from the trunk to stress the roots into flowering mode.'],
+          ],
+        },
+        { type: 'tip', emoji: '🌸', text: 'A fragrant garden is a garden designed for experience, not just observation. When a visitor pauses mid-step because something has stopped them — not the color, not the structure, but the scent — you have succeeded as a fragrant garden maker. Design for that moment of arrest. Every planting decision in a fragrant garden ultimately comes down to: will someone stop here? Will they close their eyes? Will they remember this?' },
+        { type: 'p', text: 'Plant for the nose. The garden that smells beautiful is the garden worth remembering.' },
+      ],
+    },
   ],
 }
