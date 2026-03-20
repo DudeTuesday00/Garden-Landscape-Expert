@@ -813,7 +813,7 @@ Every page in the app exports full metadata including:
 | Section | Status | Notes |
 |---|---|---|
 | Intro overview + At a Glance table | ✅ Done | Why collect rainwater intro paragraphs; 8-row At a Glance component table (Barrel, Diverter, Spigot, Overflow, First-flush diverter, Platform, Linking hardware, Mosquito screen); rebate tip callout |
-| Section 1: The Legal Landscape | 🔜 Pending | State-by-state table (50 states), rebates/incentives section |
+| Section 1: The Legal Landscape | ✅ Done | East vs. West water law explanation; ⚠️ laws-change warning callout; 50-row state-by-state table (Legal Status / Volume Limits / Permitted Uses / Incentives & Notes); rebates/incentives section (cash rebates, subsidized programs, tax incentives, HOA protections); tip callout for finding local programs |
 | Section 2: How Much Water Can You Collect? | 🔜 Pending | Collection formula, roof area calculation, annual rainfall table, garden size/storage table |
 | Section 3: Choosing Your Rain Barrel | 🔜 Pending | Commercial vs DIY table, key features, single vs linked systems |
 | Section 4: Installation — Step by Step | 🔜 Pending | Tools, step-by-step guide, downspout diverter options table |
