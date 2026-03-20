@@ -350,5 +350,28 @@ export const plantsForFragranceContent = {
         { type: 'tip', emoji: '🌳', text: 'Placement is everything with fragrant trees. A tree planted on the south or southwest side of an outdoor seating area will be upwind on the most common warm evenings — positioning its fragrance to drift naturally toward you. A linden or black locust planted 20–30 feet from a bedroom window will perfume the room through open windows on June evenings in a way no other plant can match.' },
       ],
     },
+    {
+      id: 'evening-garden',
+      title: 'The Evening Garden — Plants That Bloom After Dark',
+      blocks: [
+        { type: 'p', text: 'Evening and night-fragrance plants are among the most underappreciated in American gardening, possibly because most fragrance guides focus on daytime plants. But for the vast majority of working Americans who experience their gardens primarily in the evening — returning home after work, sitting on the patio after dinner — the evening garden is the garden that matters most. These plants are designed by evolution for exactly this moment: releasing their fragrance at dusk and after dark to attract moths and nocturnal pollinators.' },
+        {
+          type: 'table',
+          headers: ['Plant', 'Type', 'Zones', 'Fragrance Character', 'Peak Scent Time', 'Notes'],
+          rows: [
+            ['Night-Blooming Jasmine (Cestrum nocturnum)', 'Annual / Perennial Z8+', 'Annual all zones; perennial 8+', 'Intensely sweet jasmine; extraordinarily powerful — one plant can perfume an entire yard', 'Dusk to midnight', 'The most powerfully fragrant evening plant available. Grow in a large container and move indoors before frost in cold climates.'],
+            ['Moonflower (Ipomoea alba)', 'Annual', 'All zones', 'Sweet, heady, rich; similar to gardenias', 'Opens at dusk; closes by morning', 'Morning glory relative. Trains on a fence or trellis. Dinner-plate-sized white blooms unfurl at sunset.'],
+            ['Four O\'clocks (Mirabilis jalapa)', 'Annual / Perennial Z7+', 'Annual all; perennial 7+', 'Sweet, light, floral-spicy; subtle but noticeable when walking past', 'Opens 4pm onward; most fragrant at dusk', 'Easy, bold, tuberous plant. Mix colors (magenta, yellow, pink, white). Deer-resistant. Forms tuberous roots that can be dug and overwintered.'],
+            ['Evening Primrose (Oenothera spp.)', 'Perennial', '3–8 (varies by species)', 'Honey-lemon, fresh, light', 'Opens at dusk; pollinated by sphinx moths', 'O. biennis (native biennial) and O. speciosa (pink evening primrose) are the most ornamental. Self-seeds freely.'],
+            ['Flowering Tobacco (Nicotiana sylvestris)', 'Annual', 'All zones', 'Sweet, jasmine-like; one of the best evening annuals for fragrance', 'Intensifies strongly after sunset', 'Use the species form or \'Only the Lonely\' cultivar — not compact hybrid types, which have little to no fragrance.'],
+            ['Night Phlox (Zaluzianskya capensis)', 'Annual', 'All zones', 'Almond-vanilla-honey; extraordinary at dusk; almost undetectable during the day', 'Opens at dusk; closed during the day', 'Small, unpretentious plant; the fragrance is its entire reason for being. Outstanding in containers near evening seating.'],
+            ['Angel\'s Trumpet (Brugmansia spp.)', 'Annual / Perennial Z9+', 'Annual; perennial 9+', 'Rich, heavy, sweet tropical; hypnotic at close range — note: all parts toxic', 'Evening', 'Dramatic 8–12 inch pendant trumpets. Grow in large containers in all zones. Bring indoors before frost.'],
+            ['Tuberose (Polianthes tuberosa)', 'Annual / Bulb Z7+', 'Annual / bulb', 'Rich, creamy, intensely sweet; one of the most complex and beloved evening fragrances', 'Evening', 'One of the most prized cutting-garden plants. Double \'The Pearl\' is the most fragrant selection.'],
+            ['Datura (Datura meteloides)', 'Annual', 'All zones (reseeds)', 'Sweet, heavy, exotic; similar to angel\'s trumpet — note: extremely toxic if ingested', 'Evening through night', 'Large white or purple trumpets. Extremely drought-tolerant. Reseeds reliably. Keep away from children and pets.'],
+          ],
+        },
+        { type: 'tip', emoji: '🌙', text: 'A dedicated evening fragrance corner is one of the most rewarding garden investments for working adults. Choose a seating area that faces west or southwest — in gentle shade during the hottest afternoon hours and catching the last warm light at dusk. Plant moonflower on a trellis at the back, four o\'clocks and night phlox in the middle ground, nicotiana in the back corners, and a potted night-blooming jasmine or gardenia on the patio. When you arrive home after work in July and August, this space will be opening and filling with fragrance in real time.' },
+      ],
+    },
   ],
 }
