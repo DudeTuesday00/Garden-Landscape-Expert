@@ -39,6 +39,7 @@ import { japaneseGardenContent } from './japanese-garden.js'
 import { winterGardenPrepContent } from './winter-garden-prep.js'
 import { xeriscapeContent } from './xeriscape.js'
 import { commonGardenDiseasesContent } from './common-garden-diseases.js'
+import { rainBarrelContent } from './rain-barrel.js'
 
 export const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -76,4 +77,5 @@ export const contentMap = {
   'winter-garden-prep': winterGardenPrepContent,
   'xeriscape': xeriscapeContent,
   'common-diseases': commonGardenDiseasesContent,
+  'rain-barrel': rainBarrelContent,
 }
