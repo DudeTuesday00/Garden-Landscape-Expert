@@ -519,5 +519,29 @@ export const rainBarrelContent = {
       ],
     },
 
+
+    // ─── SECTION 8: TROUBLESHOOTING COMMON PROBLEMS ──────────────────────────
+    {
+      id: 'troubleshooting',
+      title: 'Section 8: Troubleshooting Common Problems',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Problem', 'Cause', 'Solution'],
+          rows: [
+            ['Barrel doesn\'t fill during rain', 'Diverter is set to bypass; downspout not connected to barrel inlet; inlet screen clogged with debris; barrel inlet positioned too high relative to downspout outlet', 'Check diverter position (most diverters have a bypass setting for winter use that must be switched); clear any debris from the inlet screen; verify the connecting hose between downspout and barrel is intact and unkinked; check that the downspout outlet is above the barrel inlet'],
+            ['Water leaks around the spigot', 'Loose fitting; dried or failed gasket; threads not sealed with Teflon tape; crack in barrel around the spigot hole', 'Tighten the interior nut against the barrel wall; replace the rubber gasket; remove and re-tape spigot threads with fresh Teflon tape; if the barrel is cracked around the fitting, replace the barrel or use a larger backing plate with silicone sealant'],
+            ['Mosquito larvae in the barrel', 'Screen has a gap or tear; one of the openings (inlet, overflow outlet, or vent) is not screened; lid is not fully sealed', 'Inspect every opening for gaps; repair or replace screens immediately; add a Bti mosquito dunk (Mosquito Dunks®) to the water — it kills larvae within 24 hours and lasts 30 days per dunk; screen the overflow hose outlet end'],
+            ['Water smells bad (rotten egg / sewage odor)', 'Anaerobic decomposition of organic debris in the barrel; water has been sitting for several weeks in summer heat with organic material present', 'Drain the barrel completely onto the garden (the water is still safe for irrigation despite the odor); scrub interior with a dilute bleach solution (1 oz bleach per gallon of water); rinse thoroughly; clean gutters to reduce organic input'],
+            ['Algae growth in barrel (green slime)', 'Light penetrating through a translucent barrel; organic nutrients from debris providing food for algae', 'Block light: paint the exterior of a translucent barrel with opaque paint; wrap in burlap or dark fabric; position in full shade. The water is still usable for irrigation but should be used promptly rather than stored.'],
+            ['Overflow runs back toward foundation', 'Overflow hose is too short; downward slope of yard channels overflow toward house; overflow hose is kinked or blocked', 'Extend the overflow hose 4–6 feet minimum from the barrel; use a rigid pipe or stake the flexible hose away from the foundation; redirect overflow toward a rain garden, swale, or planted area that absorbs it'],
+            ['Low water pressure / slow flow', 'Barrel is at ground level with insufficient elevation; hose is kinked; filter or screen in line is clogged', 'Elevate the barrel on a platform (12–24 inches minimum); check for kinks in the hose; clean any inline screen or filter; consider a small submersible pump for pressure-independent delivery'],
+            ['Barrel cracks in winter', 'Was not drained before freezing temperatures; water froze and expanded, cracking the barrel', 'Replace the barrel; this is not repairable. Implement winterization procedure before next winter: drain completely before first hard freeze.'],
+            ['Barrel overflows in every rain event before garden can use it', 'Barrel is too small for the roof area it serves; rainfall events exceed storage capacity before stored water can be used', 'Link additional barrels in series to increase storage; upgrade to a larger tank (150–275 gallons); divert overflow into a rain garden adjacent to the barrel location to capture the excess productively'],
+          ],
+        },
+      ],
+    },
+
   ],
 }
