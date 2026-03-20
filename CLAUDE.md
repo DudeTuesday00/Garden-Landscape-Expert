@@ -778,6 +778,17 @@ Every page in the app exports full metadata including:
 
 ---
 
+### Shade Trees Guide — Docx Sync Progress
+
+`src/data/guide-content/shade-trees.js` expanded to fully match `shade-tree-guide.docx`.
+
+| Section | Status | Notes |
+|---|---|---|
+| Trees and Lawn — The Age-Old Conflict | ✅ Done | Added as h3 block in `energy-placement` section: 4-item list (expand mulch ring, replace struggling turf, fertilizer placement, string trimmer avoidance) |
+| Final Thoughts — Plant Your Legacy | ✅ Done | New `final-thoughts` closing section — 3 paragraphs on the meaning of planting shade trees |
+
+---
+
 ## Notes for AI Assistants
 
 - **A guide must not be built unless a `.docx` source file exists for that subject.** The `.docx` file is the authoritative source of truth for guide content; do not create or populate a guide JS file from scratch without one.
