@@ -855,14 +855,21 @@ Three new content discovery pages added to the app:
 
 | Page | Route | Component | Description |
 |---|---|---|---|
-| Garden Infographics | `/infographics/` | `src/components/Infographics.jsx` | Visual quick-reference cards (companion planting, USDA zones, spacing, soil pH, watering) |
+| Garden Infographics | `/infographics/` | `src/components/Infographics.jsx` | Visual quick-reference cards (companion planting image with lightbox, USDA zones, spacing, soil pH, watering) |
 | Gardening Videos | `/videos/` | `src/components/Videos.jsx` | Curated YouTube channels by topic (Epic Gardening, MIgardener, Charles Dowding, Garden Answer, etc.) |
 | Gardening Podcasts | `/podcasts/` | `src/components/Podcasts.jsx` | Curated podcast list covering organic growing, permaculture, vegetable gardening, native plants |
 
 Each page has a full metadata export (`title`, `description`, `keywords`, `canonical`, `openGraph`, `twitter`).
 
+**Infographics page implementation notes:**
+- Section 1 (Companion Planting) displays `public/infographics/Companion-Planting-Quick-Reference.png` as a full-width image; clicking opens a full-screen lightbox overlay (implemented with `useState` + `'use client'` directive)
+- Sections 2–5 are HTML tables rendered inline (USDA zones, vegetable spacing, soil pH, watering frequency cards)
+- Three AdSense placeholder `<div>`s injected between sections
+- Affiliate cards at the bottom (Rodale's Encyclopedia, Old Farmer's Almanac)
+- "More Infographics Coming Soon" grid of 6 planned cards
+
 Public media directories added:
-- `public/infographics/` — static infographic assets
+- `public/infographics/` — static infographic assets (`Companion-Planting-Quick-Reference.png` live)
 - `public/videos/` — static video thumbnail assets
 - `public/podcasts/` — static podcast artwork assets
 
