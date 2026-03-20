@@ -543,5 +543,63 @@ export const rainBarrelContent = {
       ],
     },
 
+
+    // ─── SECTION 9: SCALING UP — CISTERNS, TANKS & ADVANCED SYSTEMS ──────────
+    {
+      id: 'scaling-up',
+      title: 'Section 9: Scaling Up — Cisterns, Tanks & Advanced Systems',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Once the rain barrel is installed and working, many gardeners reach the same conclusion: they want more. A single barrel fills quickly, empties quickly, and leaves the majority of the rooftop runoff potential untapped. Scaling up to cisterns and more sophisticated collection systems is the logical next step for gardeners serious about reducing their irrigation water footprint.',
+        },
+        {
+          type: 'h3',
+          text: 'Storage Tank Options Beyond the Barrel',
+        },
+        {
+          type: 'table',
+          headers: ['Storage Type', 'Capacity', 'Approximate Cost (empty)', 'Installation', 'Best Application'],
+          rows: [
+            ['Linked rain barrels (2–4 barrels)', '110–220 gallons', '$60–$200 total (purchased barrels)', 'DIY; same as single barrel plus linking fittings', 'First step up from single barrel; adequate for small to medium gardens; simplest scaling option'],
+            ['Above-ground poly tank (slim / vertical)', '100–300 gallons', '$80–$200', 'DIY; position at downspout; requires stable base', 'Medium garden irrigation; fits against house walls; available in narrow footprint designs (12–16 inches deep)'],
+            ['IBC tote (intermediate bulk container)', '275–330 gallons', '$100–$200 (used agricultural/food-grade surplus)', 'DIY with modifications (screening, spigot, overflow fittings); heavy (100+ lbs empty; 2,300+ lbs full)', 'Large garden irrigation supply; industrial appearance requires screening or enclosure; the highest volume-per-dollar option; widely available through agricultural suppliers and online marketplaces'],
+            ['Above-ground poly cistern', '500–2,500 gallons', '$300–$1,500', 'Professional installation recommended for larger sizes; requires structural base; may require local permits', 'Large landscape irrigation; covers significant garden irrigation needs; multiple downspout collection possible'],
+            ['Underground cistern / buried tank', '1,000–10,000+ gallons', '$1,000–$10,000+ installed', 'Requires excavation and professional installation; permits typically required', 'Whole-property irrigation supply; completely hidden; requires pump for delivery; significant investment; most cost-effective for very large gardens or landscape-scale irrigation'],
+            ['Rainwater harvest with pump system', 'Any of the above + electric pump', 'Pump: $50–$500 depending on size and type', 'Pump connects to tank outlet; runs to irrigation system or hose bib', 'Pressure-independent delivery; enables standard drip or sprinkler irrigation from harvested water; best for larger tanks where gravity pressure alone is insufficient'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Designing a Multi-Barrel or Cistern System',
+        },
+        {
+          type: 'list',
+          items: [
+            'Multiple downspout collection: Rather than collecting only from the nearest downspout, a more sophisticated system collects from multiple downspouts around the house and routes water to a central storage tank. This requires underground or above-ground piping to connect multiple collection points, which is a plumbing project requiring some planning but no specialized skills.',
+            'Gravity-fed distribution from an elevated tank: An IBC tote or above-ground cistern elevated 3–5 feet (on a reinforced concrete pad or heavy structural platform) provides meaningful gravity pressure for drip irrigation. The weight of a full 275-gallon IBC tote is 2,290 pounds — the platform must be engineered accordingly.',
+            'Pump-fed distribution: A small electric pump (submersible or inline) converts a low-pressure gravity system into a full-pressure irrigation supply. A 1/2 HP submersible pump costs $100–$200 and can pressurize a full drip irrigation system from a ground-level cistern. Pair with a timer and a simple drip system for automated, harvested-water irrigation.',
+            'First flush at scale: At larger collection volumes, a first-flush diverter becomes more important. For a 275-gallon IBC tote collecting from multiple downspouts, a proportionally larger first-flush standpipe (or multiple downspout-level diverters) ensures that stored water quality is consistently good.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Permits and HOA Considerations for Larger Systems',
+        },
+        {
+          type: 'p',
+          text: 'While a standard 55-gallon rain barrel typically requires no permit anywhere in the US, larger cisterns and underground tanks may trigger local requirements:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Building permits: Underground cisterns (typically any tank buried in the ground) may require a building permit in many jurisdictions. Above-ground cisterns over a certain size (varies by municipality, often 500–1,000 gallons) may also require permits. Check with your local building department before installing any large tank.',
+            'HOA restrictions: If you live in a community with an HOA, check the CC&Rs for restrictions on above-ground structures or water storage tanks. Many states now prohibit HOAs from banning rain barrels entirely, but restrictions on visible larger tanks may still be enforceable. Concealing an IBC tote with a wooden enclosure or lattice is a practical solution where visibility is restricted.',
+            'Structural considerations: Any water storage system above ground must have an adequately rated structural base. A full IBC tote (275 gallons = 2,290 lbs) on an inadequate surface can fail catastrophically. Underground cisterns require proper backfill and may require anti-flotation measures in areas with high groundwater.',
+          ],
+        },
+      ],
+    },
+
   ],
 }
