@@ -333,5 +333,72 @@ export const rainBarrelContent = {
       ],
     },
 
+
+    // ─── SECTION 5: FIRST FLUSH DIVERTERS & WATER QUALITY ────────────────────
+    {
+      id: 'water-quality',
+      title: 'Section 5: First Flush Diverters & Water Quality',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The quality of harvested rainwater depends enormously on what it washes off the roof before reaching the barrel. The first flow of water from a roof after a dry period carries accumulated bird droppings, dust, atmospheric pollutants, pollen, leaf debris, and roof material residue. This "first flush" water is the most contaminated portion of any rainfall event. A first-flush diverter automatically discards this initial volume and only sends cleaner subsequent flow into storage.',
+        },
+        {
+          type: 'h3',
+          text: "What's in Roof Runoff?",
+        },
+        {
+          type: 'p',
+          text: 'Rainwater arriving at your barrel has passed over the roof surface, through the gutter, and down the downspout. Each stage adds potential contaminants:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Atmospheric deposition: Dust, pollen, particulates, and atmospheric pollutants settle on the roof between rain events. The first flush washes most of these off. Rainwater in areas near industrial sites, highways, or agricultural operations with pesticide application may carry higher atmospheric contamination.',
+            'Roof material: Asphalt shingles can leach polycyclic aromatic hydrocarbons (PAHs) and zinc from metal flashings. Treated wood shakes historically leached preservatives. Copper roofing and gutters can elevate copper levels. Galvanized metal roofing can elevate zinc levels. For ornamental garden irrigation (not vegetables, not edibles, not lawns where children play), these levels are generally not a concern. For vegetable garden irrigation, the scientific evidence is mixed; many studies show levels below EPA thresholds after the first flush.',
+            'Biological contamination: Bird and squirrel droppings on roofs are the primary source of biological contamination in roof runoff. Salmonella and other pathogens from droppings can be present, particularly in the first flush. Studies consistently show that first-flush diversion and allowing water to settle dramatically reduces biological contamination in stored water.',
+            'Lead: Older homes with lead-soldered gutters or lead-based painted eaves may have elevated lead in roof runoff. Inspect gutters and fascia on older homes; replace lead-soldered gutters before installing a collection system.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The First-Flush Diverter: How It Works',
+        },
+        {
+          type: 'p',
+          text: 'A first-flush diverter is a simple device — most commonly a standpipe of PVC pipe — that fills with the initial dirty flow from the roof before the cleaner water reaches the storage barrel. Once the standpipe is full, overflow into the barrel begins. When rain stops, the standpipe slowly drains through a small orifice or ball valve, clearing it for the next rain event.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Sizing the first-flush volume: The standard recommendation is to divert the first 10 gallons per 1,000 square feet of roof area (or approximately 0.016 inches of rainfall times the roof area draining to that downspout). For a downspout serving 500 square feet of roof, divert the first 5 gallons — approximately 32 inches of 4-inch PVC pipe.',
+            'Commercial first-flush diverters: Available in several designs; typically $20–$50. They integrate with the downspout above the barrel inlet and include a self-cleaning ball or float mechanism. Follow manufacturer instructions for sizing to your roof area.',
+            'DIY first-flush diverter (PVC): The simplest DIY design uses 4-inch PVC pipe as the standpipe, a 4-inch Y-fitting at the top to connect to the downspout, a 4-inch end cap at the bottom of the standpipe with a small hole (1/4 inch) drilled through it to allow slow draining, and a T or Y fitting at the standpipe-to-barrel connection point. This is a straightforward PVC plumbing project requiring basic skills and a pipe cutter.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Water Quality by Intended Use',
+        },
+        {
+          type: 'table',
+          headers: ['Use', 'Suitability of Rain Barrel Water', 'Precautions', 'First Flush Diverter?'],
+          rows: [
+            ['Ornamental garden irrigation (flowers, trees, shrubs, lawn)', 'Excellent — ideal for ornamentals; better than tap water in many respects (unchlorinated, ambient temp, slightly acidic)', 'None required for typical suburban collection; avoid using water collected from treated-wood roofs on edibles', 'Recommended but not required'],
+            ['Vegetable garden irrigation (drip or soaker hose at root zone)', 'Good with precautions; extensive research shows collected rainwater is safe for vegetable irrigation at root zones', 'Apply at soil level, not as foliar spray; do not apply to leafy greens or root vegetables in the final days before harvest; first-flush diversion recommended; allow several hours of settling in barrel', 'Strongly recommended'],
+            ['Vegetable garden irrigation (overhead or foliar spray)', 'Use with caution; foliar application increases contact with biological contaminants', 'If using collected water overhead on edibles, first-flush diversion is essential; consider adding a 5-micron filter inline; do not spray on salad greens within 1 week of harvest', 'Required'],
+            ['Container and houseplant watering', 'Excellent; rain barrel water is often preferred over tap water for plants sensitive to chlorine or pH', 'Avoid water that smells strongly of algae or is visibly cloudy; refresh storage if water has sat more than 2 weeks in summer heat', 'Recommended'],
+            ['Lawn irrigation', 'Good; excellent for most lawns; may be slightly acidic but most turf tolerates wide pH range', 'Do not apply within 24 hours of children or pets playing on lawn if biological contamination is a concern; first-flush diversion recommended', 'Recommended'],
+            ['Drinking water (human)', 'NOT safe without comprehensive filtration and treatment — beyond the scope of a rain barrel system', 'Do not drink, cook with, or use for food washing from a standard rain barrel system without a proper multi-stage filtration and disinfection system. This guide does not cover potable rainwater systems.', 'N/A'],
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '🦟',
+          text: 'Mosquito Prevention: Non-Negotiable. An improperly managed rain barrel is an ideal mosquito breeding site. Aedes aegypti and Aedes albopictus (the primary vectors of dengue, Zika, and chikungunya in the US) can complete a full larva-to-adult life cycle in a rain barrel within 7–14 days in warm weather. The three rules: (1) The lid must be completely sealed or covered with fine-mesh screen (≤1/16 inch mesh) at all times — no exceptions. (2) Every opening — inlet, overflow outlet, and any vent — must be screened or sealed. (3) If a screen is damaged or missing, add a Bti (Bacillus thuringiensis israelensis) mosquito dunk to the barrel immediately. Bti dunks are non-toxic to other wildlife and pets and kill mosquito larvae within 24 hours. One dunk treats up to 100 gallons for 30 days. Inspect the screen and lid at every use — a single 1/4-inch gap is enough for a mosquito to enter and lay eggs.',
+        },
+      ],
+    },
+
   ],
 }
