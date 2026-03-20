@@ -6,6 +6,7 @@ import Link from 'next/link'
 export default function Infographics() {
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [zoneLightboxOpen, setZoneLightboxOpen] = useState(false)
+  const [soilPhLightboxOpen, setSoilPhLightboxOpen] = useState(false)
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
@@ -192,36 +193,47 @@ export default function Infographics() {
           Soil pH affects nutrient availability. Most garden plants prefer 6.0–7.0, but blueberries,
           potatoes, and azaleas need distinctly acidic conditions. Test your soil before amending.
         </p>
-        <div className="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700">
-          <table className="w-full text-sm">
-            <thead className="bg-amber-600 text-white">
-              <tr>
-                <th className="px-4 py-2 text-left font-semibold">pH Range</th>
-                <th className="px-4 py-2 text-left font-semibold">Classification</th>
-                <th className="px-4 py-2 text-left font-semibold">Plants That Thrive</th>
-                <th className="px-4 py-2 text-left font-semibold">How to Adjust</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ['4.5–5.0', 'Very Acidic',    'Blueberry, azalea, rhododendron',     'Lower with sulfur — takes 6–12 months'],
-                ['5.0–5.5', 'Acidic',         'Potato, sweet potato, watermelon',    'Lower with peat moss or sulfur'],
-                ['5.5–6.0', 'Mildly Acidic',  'Strawberry, pepper, carrot, corn',    'Add peat moss; test annually'],
-                ['6.0–6.5', 'Slightly Acidic','Most vegetables, most flowers',        'Ideal — minimal adjustment needed'],
-                ['6.5–7.0', 'Near Neutral',   'Tomato, bean, beet, lettuce',         'Add lime to raise from lower pH'],
-                ['7.0–7.5', 'Neutral–Alkaline','Asparagus, lavender, lilac, thyme',  'Add sulfur if too high for other crops'],
-                ['7.5+',    'Alkaline',       'Some herbs, native prairie plants',   'Add sulfur + organic matter to lower'],
-              ].map(([ph, cls, plants, adjust]) => (
-                <tr key={ph} className="border-t border-gray-100 dark:border-gray-700 even:bg-gray-50 dark:even:bg-gray-800/50">
-                  <td className="px-4 py-2 font-bold text-garden-700 dark:text-garden-400">{ph}</td>
-                  <td className="px-4 py-2 text-gray-700 dark:text-gray-300">{cls}</td>
-                  <td className="px-4 py-2 text-gray-700 dark:text-gray-300">{plants}</td>
-                  <td className="px-4 py-2 text-gray-500 dark:text-gray-400 text-xs">{adjust}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <button
+          type="button"
+          onClick={() => setSoilPhLightboxOpen(true)}
+          className="w-full rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-garden-600"
+          aria-label="View full-size Soil pH Preference by Plant Type infographic"
+        >
+          <img
+            src="/infographics/Soil-pH-Preference-by-Plant-Type.png"
+            alt="Soil pH Preference by Plant Type infographic"
+            className="w-full h-auto block hover:opacity-90 transition-opacity"
+          />
+        </button>
+        {/* Soil pH Lightbox */}
+        {soilPhLightboxOpen && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+            onClick={() => setSoilPhLightboxOpen(false)}
+          >
+            <div className="relative max-w-6xl w-full" onClick={e => e.stopPropagation()}>
+              <button
+                type="button"
+                onClick={() => setSoilPhLightboxOpen(false)}
+                className="absolute -top-10 right-0 text-white text-sm font-semibold hover:text-gray-300 transition-colors"
+                aria-label="Close"
+              >
+                ✕ Close
+              </button>
+              <img
+                src="/infographics/Soil-pH-Preference-by-Plant-Type.png"
+                alt="Soil pH Preference by Plant Type infographic — full size"
+                className="w-full h-auto rounded-xl shadow-2xl"
+              />
+            </div>
+          </div>
+        )}
+        <p className="mt-2 text-xs text-gray-400 dark:text-gray-500 text-right">
+          Click the image to enlarge · For soil prep tips, see our{' '}
+          <Link href="/guides/xeriscape" className="underline hover:text-garden-600 dark:hover:text-garden-400">
+            Xeriscape Design guide
+          </Link>.
+        </p>
       </section>
 
       {/* Section 5: Watering Guide */}
