@@ -478,7 +478,7 @@ Theme: stone/amber gradient in `GuideDetail.jsx`; set `comingSoon: false` under 
 
 ### Three New Live Guides (28th–30th) ✅
 
-- `src/data/guide-content/plants-for-fragrance.js` — Plants for Fragrance (`id: 'plants-for-smell'`); 7 sections: fragrance types by season, fragrant shrubs & trees, roses, perennials & groundcovers, annuals & climbers, design/placement rules, challenging conditions, and a full seasonal calendar; theme: purple/pink gradient in `GuideDetail.jsx`; set `comingSoon: false` under Herbs & Fragrance in `guides.js`
+- `src/data/guide-content/plants-for-fragrance.js` — Plants for Fragrance (`id: 'plants-for-smell'`); fully synced with `Plants_for_Fragrance_Guide.docx` — 16 sections covering fragrance types, seasonal planting, shrubs & trees (with rose table), perennials, annuals & climbers, fragrant vines, fragrant trees, the evening garden, fragrance through every season, design/placement rules, challenging conditions, regional guide, container fragrance gardens, seasonal calendar, and troubleshooting; theme: purple/pink gradient in `GuideDetail.jsx`
 - `src/data/guide-content/curb-appeal.js` — Front Yard Curb Appeal (`id: 'curb-appeal'`); 7 sections: five elements of curb appeal, three-zone layout, foundation planting rules, best plants by season, seasonal color strategy, hardscape & lighting, low-maintenance approach, and zone-by-zone picks; theme: sky/blue gradient in `GuideDetail.jsx`; set `comingSoon: false` under Landscape Design in `guides.js`
 - `src/data/guide-content/porch-plants.js` — Porch Plants (`id: 'porch-plants'`); 8 sections: porch microclimate assessment, sunny porch plants, shady porch plants, container selection & soil, fragrant porch plants, seasonal calendar, care & troubleshooting, and overwintering; theme: amber/yellow gradient in `GuideDetail.jsx`; set `comingSoon: false` under Container & Small Spaces in `guides.js`
 
@@ -786,6 +786,23 @@ Every page in the app exports full metadata including:
 |---|---|---|
 | Trees and Lawn — The Age-Old Conflict | ✅ Done | Added as h3 block in `energy-placement` section: 4-item list (expand mulch ring, replace struggling turf, fertilizer placement, string trimmer avoidance) |
 | Final Thoughts — Plant Your Legacy | ✅ Done | New `final-thoughts` closing section — 3 paragraphs on the meaning of planting shade trees |
+
+---
+
+### Plants for Fragrance Guide — Docx Sync Progress
+
+`src/data/guide-content/plants-for-fragrance.js` being expanded section-by-section to fully match `Plants_for_Fragrance_Guide.docx`.
+
+| Section | Status | Notes |
+|---|---|---|
+| Section 3: Fragrant Vines | ✅ Done | Wisteria (species + invasiveness notes), Honeysuckle (native vs invasive), Jasmine (5-row species table), Climbing Roses, Sweet Autumn Clematis; fragrance threshold tip |
+| Section 4: Fragrant Trees | ✅ Done | 9-tree table (magnolias, black locust, linden, fringe tree, Japanese tree lilac, crabapple, sweetgum) + placement tip |
+| Section 5: The Evening Garden | ✅ Done | 9-plant nocturnal table (night jasmine, moonflower, four o'clocks, evening primrose, nicotiana, night phlox, angel's trumpet, tuberose, datura) + evening garden design tip |
+| Section 6: Fragrance Through Every Season | ✅ Done | Late Winter / Spring / Summer / Fall subsections with detailed plant lists per season |
+| Section 7: Regional Fragrance Plant Guide | ✅ Done | 8-row regional table (NE, Mid-Atlantic, SE/Gulf, Midwest, Rocky Mtn/High Desert, PNW, CA/Coastal, Desert SW) |
+| Section 8: Container Fragrance Gardens | ✅ Done | 8-plant container table (gardenia, night jasmine, heliotrope, scented geraniums, tuberose, lemon verbena, sweet alyssum, Arabian jasmine) + container formula tip |
+| Section 9: The Fragrant Garden Seasonal Calendar | ✅ Done | 7-row LFD/FFD-anchored calendar (late winter through late fall/winter) + zone-shift tip |
+| Section 10: Troubleshooting | ✅ Done | 8-row problem/solution table (lavender rot, rose fragrance, lilac bloom failure, sweet peas, gardenia, nicotiana/heliotrope, placement, wisteria) + closing reflection |
 
 ---
 
