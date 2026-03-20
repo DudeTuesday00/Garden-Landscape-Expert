@@ -477,5 +477,26 @@ export const plantsForFragranceContent = {
         { type: 'tip', emoji: '🪴', text: 'For a single container designed to maximize fragrance impact at a patio entrance, combine: one gardenia or night-blooming jasmine as the centerpiece thriller; sweet alyssum as the spillover edge (continuous honey fragrance); and a scented geranium (rose or lemon type) as a mid-height filler. Brush against the geranium as you walk past, and the container delivers three completely different fragrance experiences in succession.' },
       ],
     },
+    {
+      id: 'fragrant-garden-seasonal-calendar',
+      title: 'The Fragrant Garden Seasonal Calendar',
+      blocks: [
+        { type: 'p', text: 'A fragrant garden requires seasonal attention to stay at its best: timely planting of annuals, division of perennials, pruning of shrubs after bloom, and the foresight to plant late-season and spring-blooming plants before their windows close. The calendar below is anchored to Last Frost Date (LFD) and First Fall Frost Date (FFD), making it applicable to all US climate zones.' },
+        {
+          type: 'table',
+          headers: ['Season / Timing', 'Planting & Propagation', 'Care & Harvest', 'What\'s Fragrant Now'],
+          rows: [
+            ['Late Winter (6–8 weeks before LFD)', 'Start nicotiana, heliotrope, and stock indoors under lights. Order tuberose bulbs. Order sweet pea seeds if not already done.', 'Prune roses (remove dead and crossing wood; do not cut back to the ground). Check stored tender bulbs and tubers — discard any that are rotting.', 'Witch hazel, winter daphne, wintersweet, sweet box (Sarcococca) — the most emotionally rewarding fragrances of the year.'],
+            ['Early Spring (2–4 weeks before LFD)', 'Direct sow sweet peas in the ground (cool soil is ideal). Divide established clumps of catmint, dianthus, and garden phlox if overcrowded.', 'Edge beds, apply fresh mulch. Deadhead any overwintered pot plants.', 'Witch hazel, daphne, magnolias (early species), forsythia (light scent), hyacinths in pots if forced.'],
+            ['Spring (Around LFD)', 'Transplant heliotrope and nicotiana after last frost. Set out container gardenias outdoors. Plant jasmine transplants.', 'Stake tall nicotiana. Provide trellis for sweet peas. Deadhead hyacinths but allow foliage to die naturally.', 'Lilac (peak season), viburnum, mock orange (beginning), peonies beginning, sweet peas, wisteria.'],
+            ['Early Summer (2–6 weeks after LFD)', 'Plant tuberose bulbs after soil is warm. Set out remaining annual fragrant plants (four o\'clocks, moonflower seeds direct-sown).', 'Deadhead roses after first flush to encourage rebloom. Cut lavender now — before buds open fully — for best dried fragrance.', 'Mock orange, roses (peak first flush), lavender (beginning), peonies, dianthus, catmint.'],
+            ['Midsummer (Peak growing season)', 'Sow sweet peas for fall in Pacific Northwest and other mild-summer climates. Take cuttings of heliotrope and scented geraniums to root for next year.', 'Harvest lavender now — this is peak fragrance. Deadhead phlox consistently to prevent mildew and encourage rebloom.', 'Roses (reblooming), garden phlox (peak), lavender, monarda, agastache, heliotrope, nicotiana, four o\'clocks.'],
+            ['Early Fall (4–6 weeks before FFD)', 'Plant spring-blooming fragrant bulbs now: hyacinth, fragrant narcissus, and grape hyacinth. Plant witch hazel, lilac, and viburnum — fall is the best time for planting woody fragrant plants.', 'Bring gardenia, night-blooming jasmine, and Arabian jasmine indoors before frost. Take final cuttings of scented geraniums and heliotrope for overwintering.', 'Garden phlox (late season), anise hyssop, roses (final flush — often the most fragrant of the year), sweet olive (Zone 8+).'],
+            ['Late Fall / Winter (After FFD)', 'Plant fragrant spring bulbs until ground freezes. Force hyacinth bulbs in pots for indoor winter bloom.', 'Cut back perennials (or leave for winter interest and wildlife). Clean and store tools.', 'Winter daphne (late fall bloom beginning in mild climates), sweet box, witch hazel (early-flowering species beginning).'],
+          ],
+        },
+        { type: 'tip', emoji: '🗓️', text: 'Zone 3–4: Add 3–4 weeks to spring timings (later last frost). Focus on the most cold-hardy fragrant plants: lilac, witch hazel, catmint, dianthus, Korean Spice Viburnum, peonies. Zone 8–9: Subtract 3–4 weeks from spring timings (earlier last frost). Your season extends later into fall and earlier in spring, and you can grow frost-tender fragrant plants as perennials: gardenia, star jasmine, sweet olive, and night-blooming jasmine as landscape shrubs.' },
+      ],
+    },
   ],
 }

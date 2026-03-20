@@ -801,7 +801,7 @@ Every page in the app exports full metadata including:
 | Section 6: Fragrance Through Every Season | ✅ Done | Late Winter / Spring / Summer / Fall subsections with detailed plant lists per season |
 | Section 7: Regional Fragrance Plant Guide | ✅ Done | 8-row regional table (NE, Mid-Atlantic, SE/Gulf, Midwest, Rocky Mtn/High Desert, PNW, CA/Coastal, Desert SW) |
 | Section 8: Container Fragrance Gardens | ✅ Done | 8-plant container table (gardenia, night jasmine, heliotrope, scented geraniums, tuberose, lemon verbena, sweet alyssum, Arabian jasmine) + container formula tip |
-| Section 9: The Fragrant Garden Seasonal Calendar | ⬜ Pending | 7-row LFD/FFD-anchored calendar + regional timing tip |
+| Section 9: The Fragrant Garden Seasonal Calendar | ✅ Done | 7-row LFD/FFD-anchored calendar (late winter through late fall/winter) + zone-shift tip |
 | Section 10: Troubleshooting | ⬜ Pending | 8-row problem/solution table + closing reflection |
 
 ---
