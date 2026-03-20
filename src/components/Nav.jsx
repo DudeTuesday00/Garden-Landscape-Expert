@@ -62,6 +62,9 @@ export default function Nav() {
           <Link href="/podcasts" className={navCls('/podcasts')}>
             🎙️ Podcasts
           </Link>
+          <Link href="/shop" className={navCls('/shop')}>
+            🖨️ Shop
+          </Link>
           <Link href="/contact" className={navCls('/contact')}>
             ✉️ Contact
           </Link>
