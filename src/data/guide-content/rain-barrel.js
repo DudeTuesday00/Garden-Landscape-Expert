@@ -221,5 +221,62 @@ export const rainBarrelContent = {
       ],
     },
 
+
+    // ─── SECTION 3: CHOOSING YOUR RAIN BARREL ────────────────────────────────
+    {
+      id: 'choosing-your-barrel',
+      title: 'Section 3: Choosing Your Rain Barrel',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Rain barrels range from a repurposed 55-gallon food-grade drum to a decorative urn-style barrel to a professional 100-gallon barrel with integrated first-flush diverter. The right choice depends on your collection goals, the aesthetics of your setting, your budget, and whether you are buying a ready-made product or assembling your own from components.',
+        },
+        {
+          type: 'h3',
+          text: 'Commercial vs. DIY Rain Barrels',
+        },
+        {
+          type: 'table',
+          headers: ['Approach', 'Pros', 'Cons', 'Best For', 'Typical Cost'],
+          rows: [
+            ['Commercial ready-made barrel', 'Everything included; designed to work together; often aesthetically finished; typically includes screen, overflow port, and spigot; may include diverter kit', 'Higher cost; limited size options; may not match your home\'s style', 'First-time users who want a complete, tested system without assembly; decorative applications where appearance matters', '$60–$200 complete'],
+            ['DIY from food-grade drum (55-gal)', 'Very low cost; widely available (food industry surplus); can customize with any fittings; widely documented build process', 'Requires drilling, fitting installation, and sourcing parts; plain industrial appearance unless painted; may be opaque and difficult to gauge water level', 'Budget-conscious DIYers; those who want to customize size, fittings, or appearance', '$15–$40 for barrel + $15–$30 for fittings = $30–$70 total'],
+            ['Decorative / urn-style barrel', 'Attractive; available in various styles (terracotta, wood-look, stone-look) suitable for visible front or side yard placement', 'Higher cost for the aesthetic premium; smaller storage volume typical; same functional limitation as standard barrel', 'Front-yard or visible side-yard placement where aesthetics matter', '$100–$300+'],
+            ['IBC tote (275–330 gallons)', 'Very large storage volume at relatively low cost; food-grade; widely available as agricultural surplus', 'Large and industrial in appearance; requires significant modification and screening; not suitable for visible placement without enclosure; very heavy when full (2,200+ lbs for a 275-gal tote)', 'Large garden or landscape irrigation supplement where aesthetics are secondary; concealed locations', '$100–$200 for used IBC tote + modification costs'],
+            ['Poly rain barrel (store-bought)', 'Widely available at home improvement stores; mid-range cost; solid functionality; flat back models fit against house wall neatly', 'Generic appearance; limited customization; size fixed at 50–65 gallons typically', 'The most common choice for most homeowners; reliable and readily available', '$60–$100'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Key Features to Look For in a Rain Barrel',
+        },
+        {
+          type: 'list',
+          items: [
+            'Closed, screened lid: The lid must be fully sealed or screened to prevent mosquito breeding. Aedes albopictus (Asian tiger mosquito) can complete its life cycle in as little as a week in standing water — an unscreened rain barrel becomes a mosquito hatchery within days in warm weather. The screen mesh must be fine enough to exclude mosquitoes (1/16-inch mesh minimum; finer is better). Commercial barrels almost always include appropriate screens; DIY barrels require fitting a screen over any opening.',
+            'Overflow port at or near the top: When the barrel is full, water must go somewhere controlled. An overflow port near the barrel\'s top, fitted with a hose or tube that directs overflow away from the foundation, is essential. Without it, overflow will run down the side of the barrel and pool against the foundation — the exact problem a functioning downspout was preventing.',
+            'Spigot positioned for gravity drainage: The spigot should be positioned as close to the bottom of the barrel as possible for maximum drainage volume. However, it also needs to be high enough off the ground that a watering can or hose fits underneath it — 3–4 inches of clearance is minimum; 6–8 is better. An elevated barrel platform solves both problems.',
+            'UV-resistant material: Barrels placed in outdoor sunlight must be made of UV-resistant polyethylene or similar material. Non-UV-treated plastic becomes brittle within 1–2 years in direct sun. Most commercial rain barrels are UV-stabilized; verify this when purchasing. Alternatively, paint a DIY barrel with exterior latex paint to provide UV protection.',
+            'Food-grade material: Even though rainwater collected for garden irrigation does not need to be potable, using food-grade barrels (previously used for food-grade liquids) ensures no leaching of industrial chemicals. Look for the recycling symbol with the number 1 (PETE), 2 (HDPE), or 5 (PP) — all food-safe. Avoid barrels previously used for chemicals, herbicides, or industrial solvents, even if apparently clean.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Single vs. Linked Barrel Systems',
+        },
+        {
+          type: 'p',
+          text: 'A single 55-gallon barrel fills quickly in a significant rain event and then provides no additional collection for the remainder of the storm. Linking two or more barrels in series dramatically increases storage capacity and slows the rate at which you overflow during large events. The math is simple: two linked 55-gallon barrels double the capture volume of a single barrel and more than double the effective capture for any event larger than 0.2–0.3 inches of rain.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Parallel linking (barrels fill simultaneously): Connect a T-fitting at the overflow port so that as the first barrel fills, overflow goes into a second barrel at the same level. Both barrels receive water simultaneously if the inlet is split; more commonly, barrels are linked at the overflow port so the first fills, then overflow feeds the second. Both methods work; the overflow-linked method is simpler.',
+            'Practical limit for linked barrels: Three to four standard barrels linked in series is typically the practical limit before plumbing complexity and the structural challenge of building a level, stable platform for multiple heavy barrels becomes a reason to consider a larger single tank instead.',
+          ],
+        },
+      ],
+    },
+
   ],
 }
