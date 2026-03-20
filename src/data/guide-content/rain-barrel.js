@@ -400,5 +400,69 @@ export const rainBarrelContent = {
       ],
     },
 
+
+    // ─── SECTION 6: USING YOUR STORED WATER ──────────────────────────────────
+    {
+      id: 'using-stored-water',
+      title: 'Section 6: Using Your Stored Water',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The most common frustration with rain barrels is low water pressure. A standard rain barrel sitting at ground level produces essentially no usable gravity pressure at the spigot — water will dribble rather than flow with the force needed to fill a watering can quickly or run a soaker hose. Understanding gravity pressure, elevation, and the solutions to low pressure transforms the rain barrel from a curiosity into a genuinely productive irrigation tool.',
+        },
+        {
+          type: 'h3',
+          text: 'Gravity Pressure: The Physics',
+        },
+        {
+          type: 'p',
+          text: 'Water pressure in a gravity-fed system is determined entirely by the height difference (head) between the water surface in the barrel and the outlet point. The relationship is direct: every foot of elevation above the outlet produces 0.43 PSI (pounds per square inch) of water pressure.',
+        },
+        {
+          type: 'table',
+          headers: ['Barrel Elevation', 'Pressure at Spigot', 'Practical Capability', 'Notes'],
+          rows: [
+            ['0 inches (ground level)', '0–0.1 PSI', 'Gravity drain only; filling a watering can takes several minutes; no soaker hose function', 'Usable only for direct gravity drain into a container placed directly beneath the spigot; not suitable for hose or soaker hose use'],
+            ['12 inches (one platform level)', '0.4–0.5 PSI', 'Slow fill of watering can; very slow soaker hose; limited but functional', 'The minimum useful elevation; most basic installations'],
+            ['24 inches (two platform levels)', '0.8–1.0 PSI', 'Reasonable watering can fill rate; slow soaker hose function for short runs (≤50 feet)', 'Adequate for most garden use; 2-foot elevation is the sweet spot for most installations'],
+            ['36 inches (3 feet)', '1.2–1.5 PSI', 'Good watering can fill; functional soaker hose up to 75–100 feet', 'Better; requires a sturdy elevated platform of 3 concrete blocks or heavy lumber frame'],
+            ['48–60 inches (4–5 feet)', '1.7–2.2 PSI', 'Good fill rate; soaker hose up to 100–200 feet; slow drip irrigation function', 'Achieves meaningful drip irrigation capability; elevated platform becomes a structural project'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '💧',
+          text: 'Building an elevated platform: Concrete blocks (standard 8×8×16 inch CMU blocks, each 8 inches tall) are the simplest elevation material. Two courses of two blocks side-by-side provides a 16-inch elevated, stable surface. Lumber framing (2×4 or 4×4 posts with a decking-grade plywood top) can achieve any height. Whatever the material, the platform must support the full weight of a filled barrel: 55 gallons weighs 458 pounds; a 100-gallon barrel weighs 835 pounds. Build accordingly.',
+        },
+        {
+          type: 'h3',
+          text: 'Delivery Methods',
+        },
+        {
+          type: 'list',
+          items: [
+            'Watering can: The simplest and most controlled method. Fill directly from the spigot. Works at any elevation but is slow at ground level. Best for targeted hand-watering of containers and individual plants.',
+            'Garden hose (gravity): A standard garden hose connected to the barrel\'s spigot works at low pressure but delivers water much more slowly than from a municipal supply. Use a hose with the nozzle removed or set to open flow; sprinkler nozzles and hose-end sprayers require more pressure than gravity barrels can typically provide. Drip the hose at the base of plants; it works well for slow, deep watering.',
+            'Soaker hose: Soaker hoses are specifically designed for low-pressure operation and pair well with rain barrels at 12–36 inches of elevation. Run soaker hoses along plant rows; connect to the barrel spigot with a short length of regular hose. Keep runs short (50–100 feet maximum for gravity-only pressure) for even distribution.',
+            'Drip irrigation: Standard drip irrigation emitters typically require 8–15 PSI — far above what a gravity barrel provides. Low-pressure or gravity-fed drip emitters (specifically labeled as such, requiring as little as 2–3 PSI) are available and work with elevated barrels. These are an excellent long-term investment for a garden irrigation system fed from a rain barrel or cistern.',
+            'Pump-assisted delivery: A small submersible pump (12V DC solar-powered pumps are ideal for rain barrel applications; small AC pumps also work) placed inside the barrel and connected to a standard hose or drip system provides full irrigation pressure regardless of barrel elevation. A 12V solar pump with a small solar panel costs $30–$80 and provides completely independent, electricity-free operation.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Keeping Stored Water Healthy',
+        },
+        {
+          type: 'list',
+          items: [
+            'Use it regularly: The single most effective practice. Water used frequently is replaced by fresh rainfall, preventing long-term stagnation. A barrel that sits full all summer while the garden is watered from the hose provides no benefit and may develop water quality issues. Use the barrel water first, before reaching for the hose.',
+            'Keep the barrel shaded: Algae require light. An opaque barrel blocks light and prevents algae growth. For translucent or light-colored barrels, shade with a burlap cover, wooden screen, or plant material. Alternatively, wrap in a dark fabric or paint the exterior.',
+            'Refresh stagnant water: If the barrel sits full for more than 2–3 weeks in summer without being used or replenished by rain, drain it partially onto the garden (the water is still excellent for irrigation even if the barrel smells slightly stale) and allow fresh rain to refill it.',
+            'Bti dunks for larval control: One Bti mosquito dunk treats 100 gallons for 30 days and kills any mosquito larvae present without harming other organisms. Add a dunk as a precaution during summer even when screens appear intact. Break the dunk in half for a 55-gallon barrel.',
+          ],
+        },
+      ],
+    },
+
   ],
 }
