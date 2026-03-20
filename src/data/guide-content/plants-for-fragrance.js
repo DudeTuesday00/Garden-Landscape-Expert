@@ -327,5 +327,28 @@ export const plantsForFragranceContent = {
         { type: 'tip', emoji: '🌿', text: 'Train a fragrant climbing rose or wisteria over the main entry to your garden — an arch, pergola, or substantial fence post. This creates a "fragrance threshold" that every visitor passes through, with scent positioned at face height where it is most immediately perceived. It is one of the most memorable garden features you can create.' },
       ],
     },
+    {
+      id: 'fragrant-trees',
+      title: 'Fragrant Trees — Whole-Garden Perfume',
+      blocks: [
+        { type: 'p', text: 'Fragrant trees are the most powerful tools in the scented garden — a single large specimen can perfume an entire property and extend fragrance across the street. They are long-term investments that reward patience, and they operate at a scale no other plant category can match. A fragrant tree in the right location is one of the finest gifts a gardener can give a landscape.' },
+        {
+          type: 'table',
+          headers: ['Tree', 'Zones', 'Fragrance Character', 'Bloom Season', 'Size & Notes'],
+          rows: [
+            ['Southern Magnolia (Magnolia grandiflora)', '6–10', 'Creamy, lemony, intensely sweet; one of the most powerful tree fragrances in the South', 'Late spring–summer', '15–80 ft depending on variety. \'Little Gem\' (15–20 ft) is the best choice for smaller gardens.'],
+            ['Sweetbay Magnolia (M. virginiana)', '5–10', 'Sweet, lemon-vanilla, fresh; more delicate than Southern Magnolia but more widely hardy', 'May–September (longest bloom season of any magnolia)', '10–35 ft. Semi-evergreen Zone 7+; deciduous in colder zones. Excellent for moist areas.'],
+            ['Saucer / Star Magnolia (M. × soulangeana / M. stellata)', '4–9', 'Light, sweet, floral; strongest in the early morning and on warm, still spring days', 'Early spring (before leaves)', '10–25 ft. Among the first trees to bloom in spring. Some frost risk in early-blooming years.'],
+            ['Black Locust (Robinia pseudoacacia)', '3–8', 'Intensely sweet, honey-vanilla; one of the most powerfully fragrant flowering trees in North America', 'Late spring (May–June)', '30–50 ft. Aggressive spreader by root suckers; best in naturalistic plantings or kept to a single trunk with regular pruning.'],
+            ['Linden / Basswood (Tilia spp.)', '3–8', 'Honey-sweet, intensely fragrant during bloom; beloved by bees and beekeepers — the source of prized basswood honey', 'Early summer (June–July)', '40–60 ft. T. cordata (littleleaf linden) is the most manageable for home landscapes. \'Greenspire\' is a reliable cultivar.'],
+            ['Fringe Tree (Chionanthus virginicus)', '3–9', 'Delicate, sweet, slightly floral; fragrant white fringe-like flowers with an ephemeral quality', 'Late spring', '12–20 ft. Native. Excellent four-season interest. Male plants are more floriferous; females produce ornamental blue berries.'],
+            ['Japanese Tree Lilac (Syringa reticulata)', '3–7', 'Privet-like, sweet, honeyed; very different from shrub lilacs — lighter and later', 'Early summer (June–July)', '15–25 ft. Blooms 4–6 weeks after shrub lilacs, extending the lilac season. Excellent urban tree; good disease resistance.'],
+            ['Crabapple — fragrant varieties (Malus spp.)', '3–8', 'Sweet, apple-blossom, honey', 'Spring', '8–25 ft. Not all crabapples are fragrant — fragrant varieties include \'Snowdrift,\' \'Donald Wyman,\' and \'Sugar Tyme.\''],
+            ['Sweetgum (Liquidambar styraciflua)', '5–9', 'Resinous, balsamic fragrance from foliage (not flowers) — released when leaves are crushed or warmed by sun', 'Spring foliage; fall color', '60–75 ft. Not fragrant-flowered but the foliage fragrance is distinctive and pleasant. Outstanding fall color from yellow to burgundy.'],
+          ],
+        },
+        { type: 'tip', emoji: '🌳', text: 'Placement is everything with fragrant trees. A tree planted on the south or southwest side of an outdoor seating area will be upwind on the most common warm evenings — positioning its fragrance to drift naturally toward you. A linden or black locust planted 20–30 feet from a bedroom window will perfume the room through open windows on June evenings in a way no other plant can match.' },
+      ],
+    },
   ],
 }
