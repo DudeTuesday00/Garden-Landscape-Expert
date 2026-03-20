@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 export default function Infographics() {
   const [lightboxOpen, setLightboxOpen] = useState(false)
+  const [zoneLightboxOpen, setZoneLightboxOpen] = useState(false)
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
@@ -85,40 +86,47 @@ export default function Infographics() {
           Your USDA zone determines your average minimum winter temperature. Use these average last
           spring frost and first fall frost dates to time transplants and season-end tasks.
         </p>
-        <div className="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700">
-          <table className="w-full text-sm">
-            <thead className="bg-earth-500 text-white">
-              <tr>
-                <th className="px-4 py-2 text-left font-semibold">Zone</th>
-                <th className="px-4 py-2 text-left font-semibold">Min Temp (°F)</th>
-                <th className="px-4 py-2 text-left font-semibold">Last Spring Frost</th>
-                <th className="px-4 py-2 text-left font-semibold">First Fall Frost</th>
-                <th className="px-4 py-2 text-left font-semibold">Example Regions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ['3', '-40 to -30', 'Late May', 'Mid Sept', 'ND, MN, northern ME'],
-                ['4', '-30 to -20', 'Mid May',  'Late Sept', 'WI, upstate NY, VT'],
-                ['5', '-20 to -10', 'Late Apr', 'Mid Oct',  'Chicago, Denver, Boston'],
-                ['6', '-10 to 0',   'Mid Apr',  'Late Oct',  'St. Louis, Baltimore, Kansas City'],
-                ['7', '0 to 10',    'Late Mar', 'Mid Nov',  'Nashville, Raleigh, OKC'],
-                ['8', '10 to 20',   'Late Feb', 'Late Nov',  'Seattle, Dallas, Atlanta'],
-                ['9', '20 to 30',   'Late Jan', 'Mid Dec',  'Sacramento, Phoenix, Jacksonville'],
-                ['10', '30 to 40',  'Frost-free year-round', '—', 'Miami, Honolulu, San Diego'],
-                ['11', '40+',       'Frost-free year-round', '—', 'Hawaii, S. Florida'],
-              ].map(([zone, temp, last, first, region]) => (
-                <tr key={zone} className="border-t border-gray-100 dark:border-gray-700 even:bg-gray-50 dark:even:bg-gray-800/50">
-                  <td className="px-4 py-2 font-bold text-garden-700 dark:text-garden-400">Zone {zone}</td>
-                  <td className="px-4 py-2 text-gray-700 dark:text-gray-300">{temp}</td>
-                  <td className="px-4 py-2 text-blue-600 dark:text-blue-400">{last}</td>
-                  <td className="px-4 py-2 text-orange-600 dark:text-orange-400">{first}</td>
-                  <td className="px-4 py-2 text-gray-500 dark:text-gray-400 text-xs">{region}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <button
+          type="button"
+          onClick={() => setZoneLightboxOpen(true)}
+          className="w-full rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-garden-600"
+          aria-label="View full-size USDA Hardiness Zones and Frost Date Reference infographic"
+        >
+          <img
+            src="/infographics/USDA-Hardiness-Zones-Frost-Date-Reference.png"
+            alt="USDA Hardiness Zones and Frost Date Reference infographic"
+            className="w-full h-auto block hover:opacity-90 transition-opacity"
+          />
+        </button>
+        {/* Zone Lightbox */}
+        {zoneLightboxOpen && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+            onClick={() => setZoneLightboxOpen(false)}
+          >
+            <div className="relative max-w-6xl w-full" onClick={e => e.stopPropagation()}>
+              <button
+                type="button"
+                onClick={() => setZoneLightboxOpen(false)}
+                className="absolute -top-10 right-0 text-white text-sm font-semibold hover:text-gray-300 transition-colors"
+                aria-label="Close"
+              >
+                ✕ Close
+              </button>
+              <img
+                src="/infographics/USDA-Hardiness-Zones-Frost-Date-Reference.png"
+                alt="USDA Hardiness Zones and Frost Date Reference infographic — full size"
+                className="w-full h-auto rounded-xl shadow-2xl"
+              />
+            </div>
+          </div>
+        )}
+        <p className="mt-2 text-xs text-gray-400 dark:text-gray-500 text-right">
+          Click the image to enlarge · For zone-by-zone planting tips, see our{' '}
+          <Link href="/guides/winter-garden-prep" className="underline hover:text-garden-600 dark:hover:text-garden-400">
+            Winter Garden Prep guide
+          </Link>.
+        </p>
         <div className="mt-3 p-3 bg-garden-50 dark:bg-garden-900/20 border border-garden-200 dark:border-garden-800 rounded-xl text-sm text-garden-800 dark:text-garden-300">
           💡 <strong>Tip:</strong> Use the USDA Plant Hardiness Zone Map at planthardiness.ars.usda.gov to look up your exact zip code.
         </div>
