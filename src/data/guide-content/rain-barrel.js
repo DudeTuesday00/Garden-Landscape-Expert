@@ -278,5 +278,60 @@ export const rainBarrelContent = {
       ],
     },
 
+
+    // ─── SECTION 4: INSTALLATION — STEP BY STEP ──────────────────────────────
+    {
+      id: 'installation',
+      title: 'Section 4: Installation — Step by Step',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A standard rain barrel installation takes 2 to 4 hours for a first-time installer. The most technically demanding part is modifying the downspout; the rest is positioning, plumbing, and testing. The tools required are basic: a drill, a utility knife or hacksaw, a level, and basic plumbing fittings.',
+        },
+        {
+          type: 'h3',
+          text: 'Tools and Materials',
+        },
+        {
+          type: 'list',
+          items: [
+            'Tools needed: Drill with 1-1/8 inch spade bit (for spigot hole in DIY barrel); utility knife or jigsaw for downspout modification; hacksaw for PVC pipe (if building a first-flush diverter); tape measure; pencil; level; adjustable wrench; Teflon tape.',
+            'Materials for a complete basic installation: The barrel itself; a downspout diverter or diverter kit; a spigot / brass or PVC hose bib (for DIY barrels); a grommet or silicone sealant for the spigot fitting; an overflow hose or fitting and extension; Teflon thread tape; mosquito screening (if not included); lumber or cinder blocks for a platform (optional).',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Step-by-Step Installation',
+        },
+        {
+          type: 'list',
+          items: [
+            'Choose your location: Select the downspout that drains the largest roof area and is closest to your primary garden use area. The barrel must be on firm, level ground — a full 55-gallon barrel weighs 458 pounds and will tip over or sink into soft ground if improperly placed. Check that the location allows for the overflow hose to direct water away from the foundation (ideally 6 feet or more from the house).',
+            'Build the platform (optional but recommended): A platform of stacked concrete blocks, a commercial rain barrel stand, or a simple frame of 4×4 lumber raises the barrel 12–24 inches, creating gravity pressure at the spigot and making it easier to fill a watering can underneath. Ensure the platform is level in all directions before placing the barrel. A full barrel on an unlevel platform will tip. Use a level on all sides.',
+            'Prepare the downspout: Most installation methods involve either (a) a downspout diverter — a T-fitting inserted into the downspout that redirects flow to the barrel when it is below capacity and continues to the original drainage path when the barrel is full; or (b) cutting the downspout and directing the cut end directly into the barrel inlet. Option (a) is reversible and preferred for most installations.',
+            'Install the downspout diverter: Measure and mark the diverter location on the downspout. The diverter must be positioned so the outlet that connects to the barrel is at or above the height of the barrel\'s inlet. Use a utility knife, tin snips, or a jigsaw to cut the downspout at the marked line. Insert the diverter following the manufacturer\'s instructions; secure with the provided screws or clips. Connect the diverter\'s barrel outlet to the barrel inlet with the flex hose or tubing provided.',
+            'Install the spigot (DIY barrels only): Drill a hole near the base of the barrel using the appropriate spade bit for your spigot\'s thread diameter (usually a 1-1/8 inch bit for a 3/4-inch hose bib). Apply Teflon tape to the spigot threads. Insert the spigot through the hole from the outside and thread the interior nut or backing fitting tight against the barrel wall. Use silicone sealant around the fitting to prevent leaks; allow to cure 24 hours before filling.',
+            'Install the overflow fitting: Insert or drill a hole for the overflow port near the top of the barrel (2–4 inches below the rim, or at the rim if the lid is sealed). Attach a 1-inch or larger overflow hose fitting. Extend the overflow hose or pipe to direct overflow at least 4–6 feet away from the foundation, ideally toward a garden bed, rain garden, or lawn area where the water will be absorbed rather than running off.',
+            'Ensure the lid is secured and screened: The lid must be in place and secured before the first use. Check that all gaps, inlet openings, and the overflow port outlet are screened with fine-mesh screen (mosquitoes can enter through the overflow hose and lay eggs if the outlet end is not screened or dipped in water). For DIY barrels with an open top, cut a piece of fiberglass window screen to fit and secure with a bungee cord or cut-and-press-fit ring.',
+            'Test the system: Run a hose into the gutter above the downspout diverter, or wait for rain. Check: water flows into the barrel correctly; no leaks at the spigot or overflow fittings; the overflow hose directs water away from the foundation; the lid remains in place and screened when the barrel fills and water pressure builds inside. Adjust as needed.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Downspout Diverter Options',
+        },
+        {
+          type: 'table',
+          headers: ['Diverter Type', 'How It Works', 'Reversibility', 'Best For', 'Notes'],
+          rows: [
+            ['Commercial T-diverter (Fiskars, EarthMinded, etc.)', 'Factory-made fitting that inserts into the downspout; auto-diverts flow to barrel and continues to drain when barrel is full', 'Fully reversible; original downspout re-connects to bypass when barrel is removed', 'Most homeowners; easiest installation; clean appearance; works with standard rectangular or round downspouts', 'Most widely sold option; available at home improvement stores; fits most standard downspout sizes; $15–$30'],
+            ['Flex hose from cut downspout', 'Downspout is cut; flexible corrugated hose directs flow into barrel inlet', 'Reversible with reconnection; less clean appearance', 'DIY installations; situations where the commercial diverter doesn\'t fit the downspout profile', 'Very inexpensive; fully adjustable; works for unusual downspout shapes'],
+            ['Leaf guard diverter', 'Combines leaf filtering with flow diversion; built-in screen separates leaves from flow before water enters barrel', 'Mostly reversible', 'Areas with heavy leaf fall; reduces debris in stored water significantly', 'Higher cost ($30–$50); reduces cleaning frequency; worth the investment in areas with large deciduous trees'],
+            ['Direct downspout cut with barrel inlet positioned below', 'Downspout cut and barrel positioned directly beneath; no overflow management built in', 'Not easily reversible; requires downspout repair if barrel removed', 'Rarely recommended; no overflow management means water overflows from the top of the barrel in large events', 'Not recommended — overflow management is critical'],
+          ],
+        },
+      ],
+    },
+
   ],
 }
