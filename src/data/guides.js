@@ -682,7 +682,7 @@ export const guideCategories = [
         title: 'Starting a Rain Barrel',
         emoji: '🛢️',
         description: 'Collect and store rainwater for free, sustainable garden irrigation.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'soil-health',

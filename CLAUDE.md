@@ -806,6 +806,26 @@ Every page in the app exports full metadata including:
 
 ---
 
+### Rain Barrel Guide — Docx Sync Progress
+
+`src/data/guide-content/rain-barrel.js` being built section-by-section to match `Rain_Barrel_Guide.docx`.
+
+| Section | Status | Notes |
+|---|---|---|
+| Intro overview + At a Glance table | ✅ Done | Why collect rainwater intro paragraphs; 8-row At a Glance component table (Barrel, Diverter, Spigot, Overflow, First-flush diverter, Platform, Linking hardware, Mosquito screen); rebate tip callout |
+| Section 1: The Legal Landscape | 🔜 Pending | State-by-state table (50 states), rebates/incentives section |
+| Section 2: How Much Water Can You Collect? | 🔜 Pending | Collection formula, roof area calculation, annual rainfall table, garden size/storage table |
+| Section 3: Choosing Your Rain Barrel | 🔜 Pending | Commercial vs DIY table, key features, single vs linked systems |
+| Section 4: Installation — Step by Step | 🔜 Pending | Tools, step-by-step guide, downspout diverter options table |
+| Section 5: First Flush Diverters & Water Quality | 🔜 Pending | What's in roof runoff, first flush diverter, water quality table, mosquito prevention |
+| Section 6: Using Your Stored Water | 🔜 Pending | Gravity pressure table, delivery methods, keeping water healthy |
+| Section 7: Winterizing & Seasonal Care | 🔜 Pending | When to winterize table, winterization procedure, spring reactivation |
+| Section 8: Troubleshooting Common Problems | 🔜 Pending | Problem/cause/solution table |
+| Section 9: Scaling Up — Cisterns & Advanced Systems | 🔜 Pending | Storage tank options table, multi-barrel design, permits/HOA |
+| Section 10: The Ecological Context — Beyond the Barrel | 🔜 Pending | Stormwater problem, complementary practices, impact calculation, closing tip + quick reference checklist |
+
+---
+
 ## Notes for AI Assistants
 
 - **A guide must not be built unless a `.docx` source file exists for that subject.** The `.docx` file is the authoritative source of truth for guide content; do not create or populate a guide JS file from scratch without one.
