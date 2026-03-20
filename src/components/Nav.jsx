@@ -53,6 +53,15 @@ export default function Nav() {
           <Link href="/guides" className={navCls('/guides')}>
             📖 Plantopedia
           </Link>
+          <Link href="/infographics" className={navCls('/infographics')}>
+            🗺️ Infographics
+          </Link>
+          <Link href="/videos" className={navCls('/videos')}>
+            🎬 Videos
+          </Link>
+          <Link href="/podcasts" className={navCls('/podcasts')}>
+            🎙️ Podcasts
+          </Link>
           <Link href="/contact" className={navCls('/contact')}>
             ✉️ Contact
           </Link>
