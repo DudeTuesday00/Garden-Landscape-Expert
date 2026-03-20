@@ -147,5 +147,79 @@ export const rainBarrelContent = {
       ],
     },
 
+    // ─── SECTION 2: HOW MUCH WATER CAN YOU COLLECT? ──────────────────────────
+    {
+      id: 'collection-potential',
+      title: 'Section 2: How Much Water Can You Collect?',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Understanding your potential collection volume is the foundation of system design. It tells you how large your storage needs to be, whether a single barrel is sufficient or whether a cistern is warranted, and how much of your garden irrigation need can realistically be offset by harvested rainwater.',
+        },
+        {
+          type: 'h3',
+          text: 'The Collection Formula',
+        },
+        {
+          type: 'p',
+          text: 'The amount of water collectible from a roof is determined by three variables: the rainfall amount, the roof area draining to the collection point, and a collection efficiency factor that accounts for evaporation, splash, and first-flush losses.',
+        },
+        {
+          type: 'tip',
+          emoji: '💧',
+          text: 'The Collection Formula: Gallons Collectible = Rainfall (inches) × Roof Area (sq ft) × 0.623 × Efficiency Factor. The constant 0.623 converts rainfall depth and area into gallons (1 inch of rain over 1 square foot = 0.623 gallons). Use an efficiency factor of 0.85 for smooth metal or asphalt roofing; reduce to 0.75–0.80 for rough or older shingle roofing. Example: A downspout draining 500 sq ft in a location receiving 1 inch of rain: 1 × 500 × 0.623 × 0.85 = 265 gallons per rain event. A 55-gallon barrel fills after only 0.21 inches of rain from that roof area.',
+        },
+        {
+          type: 'h3',
+          text: 'Roof Area Calculation',
+        },
+        {
+          type: 'p',
+          text: 'You don\'t need to measure your roof directly. The "footprint" — the horizontal area it covers, measured from the eaves, not along the slope — is what determines collection. Measure the outside dimensions of your house at ground level and multiply length by width for a rectangular home. For L-shaped or more complex footprints, break it into rectangles and sum them. Then divide the total footprint by the number of downspouts to estimate what each downspout serves.',
+        },
+        {
+          type: 'list',
+          items: [
+            'In a typical 1,500 sq ft ranch-style home with four downspouts, each downspout drains approximately 375 sq ft.',
+            'In a 2,500 sq ft two-story home with six downspouts, each drains about 415 sq ft.',
+            'Garage and outbuilding downspouts can be excellent collection points: the roof is often simpler (one or two downspouts draining the full footprint), the drainage area is clean, and the location is convenient for a garden barrel.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Annual Rainfall by Region: Collection Potential',
+        },
+        {
+          type: 'table',
+          headers: ['Region', 'Average Annual Rainfall', 'Primary Rain Season', 'Collection Potential (500 sq ft roof)', 'System Sizing Notes'],
+          rows: [
+            ['Pacific Northwest (western WA, OR)', '35–60+ inches/year', 'October–May (winter-wet, summer-dry)', 'Up to 14,000 gal/year theoretical; summer supply limited', 'Large storage capacity pays off — large winter events; nearly zero summer rain means collected water is very valuable in summer'],
+            ['Northern California coast', '20–40 inches/year', 'October–April', 'Up to 9,000 gal/year; summer near-zero', 'Maximize storage to bridge the dry season'],
+            ['Southern California / Southwest desert', '5–15 inches/year', 'Winter and summer monsoon (AZ/NM)', 'Up to 3,500 gal/year; highly variable', 'Storage premium: every drop is precious. First-flush diverter highly recommended. Larger cisterns make more sense than barrels alone.'],
+            ['Great Plains (KS, NE, SD, ND)', '15–25 inches/year', 'April–September (spring/summer storms)', 'Up to 6,000 gal/year from summer events', 'High-intensity summer thunderstorms mean large storage catches large events; single barrels may overflow repeatedly'],
+            ['Midwest (IL, IN, OH, MI, WI)', '30–40 inches/year', 'Distributed year-round; spring peak', 'Up to 10,000 gal/year theoretical; winter collection limited by freeze', 'Good collection potential in spring and fall; focus on spring/summer/fall collection'],
+            ['Southeast (GA, AL, MS, SC, FL)', '45–60+ inches/year', 'Distributed; summer afternoon thunderstorms', 'Up to 15,000 gal/year; summer events frequent and intense', 'Very high collection potential; mosquito management is critical; overflow management essential for summer events'],
+            ['Mid-Atlantic / Northeast (VA, MD, NY, PA, NE states)', '35–50 inches/year', 'Distributed year-round', 'Up to 12,000 gal/year; winter freeze limits collection', 'Strong collection potential spring through fall; spring collection especially valuable for gardens'],
+            ['Texas / Southern Great Plains', '15–55 inches/year (highly variable by region)', 'Spring and fall primary; summer drought typical', '4,000–14,000 gal/year depending on location', 'Western TX: desert conditions, cisterns warranted. East TX / Gulf Coast: very high rainfall, excellent collection year-round. Central TX: variable; storage capacity determines success.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'How Much Do You Need? Matching Storage to Use',
+        },
+        {
+          type: 'table',
+          headers: ['Garden Size / Type', 'Approximate Weekly Water Need', 'Barrels Needed for 1-Week Supply', 'Realistic System'],
+          rows: [
+            ['Container garden (10–15 large pots)', '20–30 gallons', '1 barrel', 'Single 55-gal barrel; refills from rain events or hose if needed'],
+            ['Small raised bed (4×8 ft)', '15–25 gallons/week in moderate weather', '1 barrel', 'Single barrel; succession filling keeps up with modest demand'],
+            ['Medium raised bed garden (100–200 sq ft total)', '50–100 gallons/week in summer', '2–3 linked barrels', 'Two or three linked 55-gal barrels; or a single 150–200 gal tank'],
+            ['Large vegetable garden (300–500 sq ft)', '100–200 gallons/week in summer', '4–6 barrels or a small cistern', 'Linked barrel system or 250–500 gal cistern; may need multiple downspout collection points'],
+            ['Large landscape / lawn supplement', '500+ gallons/week', 'Cistern system required', '500–1,500+ gallon poly cistern or underground tank; gravity or pump delivery; significant investment but significant return'],
+          ],
+        },
+      ],
+    },
+
   ],
 }
