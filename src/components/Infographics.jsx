@@ -1,6 +1,11 @@
+'use client'
+
+import { useState } from 'react'
 import Link from 'next/link'
 
 export default function Infographics() {
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
 
@@ -25,41 +30,43 @@ export default function Infographics() {
           Certain plants thrive together — and some actively repel each other's pests. Use this
           at-a-glance chart when planning your beds.
         </p>
-        <div className="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700">
-          <table className="w-full text-sm">
-            <thead className="bg-garden-600 text-white">
-              <tr>
-                <th className="px-4 py-2 text-left font-semibold">Plant</th>
-                <th className="px-4 py-2 text-left font-semibold">Good Companions</th>
-                <th className="px-4 py-2 text-left font-semibold">Keep Away From</th>
-                <th className="px-4 py-2 text-left font-semibold">Benefit</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ['🍅 Tomato',     'Basil, Marigold, Parsley',  'Fennel, Brassicas',      'Basil deters aphids & whitefly'],
-                ['🥕 Carrot',     'Onion, Leek, Rosemary',     'Dill, Parsnip',           'Onion confuses carrot fly'],
-                ['🥦 Broccoli',   'Dill, Sage, Thyme',         'Strawberry, Tomato',      'Dill attracts predatory wasps'],
-                ['🌽 Corn',       'Bean, Squash, Cucumber',    'Tomato, Celery',           'Three Sisters nitrogen cycle'],
-                ['🧅 Onion',      'Carrot, Pepper, Beet',      'Pea, Bean, Sage',         'Sulfur compounds deter pests'],
-                ['🥒 Cucumber',   'Radish, Marigold, Nasturtium', 'Sage, Fennel',         'Nasturtium traps aphids'],
-                ['🌿 Basil',      'Tomato, Pepper, Oregano',   'Sage, Rue',               'Repels thrips & aphids'],
-                ['🌸 Marigold',   'Most vegetables',           'Brassicas (in excess)',   'Root secretions deter nematodes'],
-                ['🫘 Bean',       'Corn, Squash, Carrot',      'Onion, Garlic, Fennel',   'Fixes nitrogen in soil'],
-                ['🍓 Strawberry', 'Borage, Thyme, Spinach',    'Brassicas, Fennel',       'Borage deters strawberry worm'],
-              ].map(([plant, good, bad, benefit]) => (
-                <tr key={plant} className="border-t border-gray-100 dark:border-gray-700 even:bg-gray-50 dark:even:bg-gray-800/50">
-                  <td className="px-4 py-2 font-medium text-gray-800 dark:text-gray-200">{plant}</td>
-                  <td className="px-4 py-2 text-green-700 dark:text-green-400">{good}</td>
-                  <td className="px-4 py-2 text-red-600 dark:text-red-400">{bad}</td>
-                  <td className="px-4 py-2 text-gray-600 dark:text-gray-400 text-xs">{benefit}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <button
+          type="button"
+          onClick={() => setLightboxOpen(true)}
+          className="w-full rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-garden-600"
+          aria-label="View full-size companion planting infographic"
+        >
+          <img
+            src="/infographics/Companion-Planting-Quick-Reference.png"
+            alt="Companion Planting Quick Reference infographic"
+            className="w-full h-auto block hover:opacity-90 transition-opacity"
+          />
+        </button>
+        {/* Lightbox */}
+        {lightboxOpen && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+            onClick={() => setLightboxOpen(false)}
+          >
+            <div className="relative max-w-6xl w-full" onClick={e => e.stopPropagation()}>
+              <button
+                type="button"
+                onClick={() => setLightboxOpen(false)}
+                className="absolute -top-10 right-0 text-white text-sm font-semibold hover:text-gray-300 transition-colors"
+                aria-label="Close"
+              >
+                ✕ Close
+              </button>
+              <img
+                src="/infographics/Companion-Planting-Quick-Reference.png"
+                alt="Companion Planting Quick Reference infographic — full size"
+                className="w-full h-auto rounded-xl shadow-2xl"
+              />
+            </div>
+          </div>
+        )}
         <p className="mt-2 text-xs text-gray-400 dark:text-gray-500 text-right">
-          For deeper companion planting research, see our{' '}
+          Click the image to enlarge · For deeper research, see our{' '}
           <Link href="/guides/pollinator-garden" className="underline hover:text-garden-600 dark:hover:text-garden-400">
             Pollinator Garden guide
           </Link>.
