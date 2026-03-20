@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 35 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 36 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -82,6 +82,12 @@ Garden-Landscape-Expert/
     │   │       └── page.jsx         # /guides/[id]/ — SSG guide pages (generateStaticParams + generateMetadata)
     │   ├── contact/
     │   │   └── page.jsx             # /contact/ — Contact page (metadata export)
+    │   ├── infographics/
+    │   │   └── page.jsx             # /infographics/ — Garden Infographics page (metadata export)
+    │   ├── videos/
+    │   │   └── page.jsx             # /videos/ — Gardening Videos page (metadata export)
+    │   ├── podcasts/
+    │   │   └── page.jsx             # /podcasts/ — Gardening Podcasts page (metadata export)
     │   ├── privacy/
     │   │   └── page.jsx             # /privacy/ — Privacy Policy (metadata export)
     │   ├── sitemap.js               # Auto-generates sitemap.xml at build time from guides.js data
@@ -90,6 +96,9 @@ Garden-Landscape-Expert/
     │   ├── Nav.jsx                  # 'use client' — sticky nav with usePathname active state + dark mode toggle
     │   ├── HomePage.jsx             # Landing page — two image-backed path cards (Link to /wizard and /guides)
     │   ├── ContactUs.jsx            # 'use client' — contact form (Formspree mlgpgdny); success state
+    │   ├── Infographics.jsx         # Garden infographics — visual quick-reference cards
+    │   ├── Videos.jsx               # Curated gardening YouTube channels by topic
+    │   ├── Podcasts.jsx             # Curated gardening podcasts list
     │   ├── PrivacyPolicy.jsx        # Static privacy policy page
     │   ├── wizard/
     │   │   ├── Garden-Architect.png   # Hero image used on HomePage card (Garden Architect)
@@ -311,14 +320,14 @@ Each question in `questions.js` has:
 4. Herbs & Fragrance (6 guides — 2 live ✅)
 5. Landscape Design (10 guides — 3 live ✅)
 6. Seasonal Guides (8 guides — 1 live ✅)
-7. Pest & Problem Solving (8 guides — 1 live ✅)
+7. Pest & Problem Solving (8 guides — 2 live ✅)
 8. Specialty Gardens (11 guides — 1 live ✅)
 9. Container & Small Spaces (8 guides — 1 live ✅)
-10. Eco & Sustainability (9 guides)
+10. Eco & Sustainability (9 guides — 1 live ✅)
 
 ### Planting Guides — Live Content ✅
 
-Thirty-four full guides integrated into the app:
+Thirty-six full guides integrated into the app:
 
 - `src/data/guide-content/shade-trees.js` — Shade Trees (`id: 'shade-trees'`)
 - `src/data/guide-content/fruit-trees.js` — Fruit Trees (`id: 'fruit-trees'`)
@@ -354,6 +363,8 @@ Thirty-four full guides integrated into the app:
 - `src/data/guide-content/japanese-garden.js` — Japanese Garden Elements (`id: 'japanese-garden'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/winter-garden-prep.js` — Winter Garden Prep (`id: 'winter-garden-prep'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/xeriscape.js` — Xeriscape Design (`id: 'xeriscape'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/common-garden-diseases.js` — Common Garden Diseases (`id: 'common-diseases'`) — **complete** (all 10 sections + rapid symptom key built)
+- `src/data/guide-content/rain-barrel.js` — Starting a Rain Barrel (`id: 'rain-barrel'`) — **complete** (all 10 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -374,6 +385,9 @@ Thirty-four full guides integrated into the app:
 | Plantopedia | `/guides/` | `Plantopedia — Gardening Guides & Growing Tutorials \| Planting Atlas` |
 | Each guide | `/guides/{guideId}/` | `{content.hero.title} \| Planting Atlas` (from `generateMetadata`) |
 | Contact | `/contact/` | `Contact Us \| Planting Atlas` |
+| Infographics | `/infographics/` | `Garden Infographics — Visual Planting & Growing Guides \| Planting Atlas` |
+| Videos | `/videos/` | `Gardening Videos — Best YouTube Channels & Tutorial Guides \| Planting Atlas` |
+| Podcasts | `/podcasts/` | `Gardening Podcasts — Best Shows for Every Gardener \| Planting Atlas` |
 | Privacy | `/privacy/` | `Privacy Policy \| Planting Atlas` |
 
 **Per-page metadata pattern:**
@@ -744,9 +758,9 @@ Every page in the app exports full metadata including:
 
 ---
 
-### Common Garden Diseases Guide — Docx Sync Progress
+### Common Garden Diseases Guide ✅
 
-`src/data/guide-content/common-garden-diseases.js` being built section-by-section to match `Common_Garden_Diseases_Guide.docx`.
+`src/data/guide-content/common-garden-diseases.js` fully synced with `Common_Garden_Diseases_Guide.docx`.
 
 | Section | Status | Notes |
 |---|---|---|
@@ -765,9 +779,9 @@ Every page in the app exports full metadata including:
 
 ---
 
-### Edible Flowers Guide — Docx Sync Progress
+### Edible Flowers Guide ✅
 
-`src/data/guide-content/edible-flowers.js` expanded to fully match `Edible_Flowers_Guide.docx`.
+`src/data/guide-content/edible-flowers.js` fully synced with `Edible_Flowers_Guide.docx`.
 
 | Section | Status | Notes |
 |---|---|---|
@@ -778,9 +792,9 @@ Every page in the app exports full metadata including:
 
 ---
 
-### Shade Trees Guide — Docx Sync Progress
+### Shade Trees Guide ✅
 
-`src/data/guide-content/shade-trees.js` expanded to fully match `shade-tree-guide.docx`.
+`src/data/guide-content/shade-trees.js` fully synced with `shade-tree-guide.docx`.
 
 | Section | Status | Notes |
 |---|---|---|
@@ -789,9 +803,9 @@ Every page in the app exports full metadata including:
 
 ---
 
-### Plants for Fragrance Guide — Docx Sync Progress
+### Plants for Fragrance Guide ✅
 
-`src/data/guide-content/plants-for-fragrance.js` being expanded section-by-section to fully match `Plants_for_Fragrance_Guide.docx`.
+`src/data/guide-content/plants-for-fragrance.js` fully synced with `Plants_for_Fragrance_Guide.docx`.
 
 | Section | Status | Notes |
 |---|---|---|
@@ -823,6 +837,44 @@ Every page in the app exports full metadata including:
 | Section 8: Troubleshooting Common Problems | ✅ Done | 9-row problem/cause/solution table (barrel not filling, spigot leaks, mosquito larvae, bad odor, algae, foundation overflow, low pressure, winter cracking, chronic overflow) |
 | Section 9: Scaling Up — Cisterns & Advanced Systems | ✅ Done | 6-row storage tank options table (linked barrels through underground cisterns); 4-item multi-barrel/cistern design guidance; permits/HOA considerations (building permits, HOA restrictions, structural requirements) |
 | Section 10: The Ecological Context — Beyond the Barrel | ✅ Done | Stormwater problem (50–70% runoff in developed landscapes); 5 complementary practices (rain gardens, permeable paving, strategic grading, sheet mulching, native plantings); impact calculation (1,000–40,000 gal/year range); closing tip callout + 15-item quick reference checklist |
+
+### Typography Upgrade ✅
+
+Raleway (headings) and Lato (body) loaded via `next/font/google` in `src/app/layout.jsx`.
+
+- `Raleway` — `variable: '--font-raleway'`, subsets: latin, display: swap
+- `Lato` — `variable: '--font-lato'`, weights: 400 + 700, subsets: latin, display: swap
+- Both font CSS variables are applied to the `<html>` element via `className` in the root layout
+- Self-hosted by Next.js at build time — no external font requests at runtime
+
+---
+
+### Infographics, Videos, and Podcasts Pages ✅
+
+Three new content discovery pages added to the app:
+
+| Page | Route | Component | Description |
+|---|---|---|---|
+| Garden Infographics | `/infographics/` | `src/components/Infographics.jsx` | Visual quick-reference cards (companion planting, USDA zones, spacing, soil pH, watering) |
+| Gardening Videos | `/videos/` | `src/components/Videos.jsx` | Curated YouTube channels by topic (Epic Gardening, MIgardener, Charles Dowding, Garden Answer, etc.) |
+| Gardening Podcasts | `/podcasts/` | `src/components/Podcasts.jsx` | Curated podcast list covering organic growing, permaculture, vegetable gardening, native plants |
+
+Each page has a full metadata export (`title`, `description`, `keywords`, `canonical`, `openGraph`, `twitter`).
+
+Public media directories added:
+- `public/infographics/` — static infographic assets
+- `public/videos/` — static video thumbnail assets
+- `public/podcasts/` — static podcast artwork assets
+
+### Nav Expansion ✅
+
+`src/components/Nav.jsx` updated — three new links added between Plantopedia and Contact:
+
+```
+🌱 Garden Architect | 📖 Plantopedia | 🗺️ Infographics | 🎬 Videos | 🎙️ Podcasts | ✉️ Contact
+```
+
+All links use the same `navCls()` active-state logic (`bg-garden-600 text-white` when active).
 
 ---
 
