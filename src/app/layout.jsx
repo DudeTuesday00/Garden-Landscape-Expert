@@ -1,7 +1,21 @@
 import './globals.css'
+import { Raleway, Lato } from 'next/font/google'
 import Script from 'next/script'
 import Link from 'next/link'
 import Nav from '../components/Nav.jsx'
+
+const raleway = Raleway({
+  subsets: ['latin'],
+  variable: '--font-raleway',
+  display: 'swap',
+})
+
+const lato = Lato({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-lato',
+  display: 'swap',
+})
 
 export const metadata = {
   title: {
@@ -37,7 +51,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={`${raleway.variable} ${lato.variable}`}>
       <head>
         {/* Dark mode — synchronous, runs before paint to prevent flash of wrong theme */}
         <script

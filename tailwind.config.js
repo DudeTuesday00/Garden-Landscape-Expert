@@ -4,6 +4,10 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-lato)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-raleway)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
       colors: {
         garden: {
           50:  '#F5F5F0',  // page background
