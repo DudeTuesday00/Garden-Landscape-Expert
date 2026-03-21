@@ -14,9 +14,12 @@ export async function generateMetadata({ params }) {
   const product = getProduct(productId)
   if (!product) return { title: 'Product Not Found' }
 
+  const hasRealImage = product.thumbnail && !product.thumbnail.includes('placeholder')
+
   return {
     title: product.name,
     description: `${product.tagline} — ${product.description.slice(0, 140)}...`,
+    keywords: `${product.name}, 3D printed garden accessories, ${product.categoryLabel}, custom garden tools, Planting Atlas shop`,
     alternates: {
       canonical: `${SITE_URL}/shop/${productId}/`,
     },
@@ -24,10 +27,12 @@ export async function generateMetadata({ params }) {
       title: `${product.name} | Planting Atlas Shop`,
       description: product.tagline,
       url: `${SITE_URL}/shop/${productId}/`,
+      ...(hasRealImage && { images: [{ url: `${SITE_URL}${product.thumbnail}`, width: 800, height: 800, alt: product.name }] }),
     },
     twitter: {
       title: `${product.name} | Planting Atlas Shop`,
       description: product.tagline,
+      ...(hasRealImage && { images: [`${SITE_URL}${product.thumbnail}`] }),
     },
   }
 }
