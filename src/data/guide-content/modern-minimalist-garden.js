@@ -70,5 +70,70 @@ export const modernMinimalistGardenContent = {
         },
       ],
     },
+    {
+      id: 'design-foundations',
+      title: 'Section 1: Design Foundations — Space, Light & Architecture',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Every successful minimalist garden begins with the same two questions: What is the architecture saying, and what does the space need to do? These questions come before any decision about plants, materials, or features. The minimalist garden is the architectural exterior extended into the landscape; it cannot be designed in isolation from the building it serves.',
+        },
+        {
+          type: 'h3',
+          text: 'Reading the Architecture',
+        },
+        {
+          type: 'p',
+          text: "The garden should speak the same visual language as the house. This does not mean slavish matching — a garden of concrete and steel attached to a concrete-and-steel house can be boring; contrast within a shared language is more interesting. But the garden's geometry, material character, color range, and level of formality should be in dialogue with the architecture, not in conflict with it.",
+        },
+        {
+          type: 'list',
+          items: [
+            'Contemporary flat-roof or shed-roof homes: These pair naturally with horizontal emphasis, strong geometric ground planes, massed planting in linear arrangements, and materials like board-formed concrete, weathered Corten steel, and large-format pavers. The garden becomes an extension of the interior through glass walls and uninterrupted sight lines.',
+            'Mid-century modern (1950s–1970s): The original minimalist residential architecture. Gardens that reference this period use clean geometry and integration of indoor-outdoor space: low horizontal plantings, specimen trees with bold form, warm wood and stone materials, and the swimming pool as a central design element. Knife-edge coping, exposed aggregate concrete, and classic ornamental grasses all read as authentically mid-century.',
+            'Industrial loft conversions and urban row houses: The urban context calls for spatial efficiency, vertical interest, and materials that reference the industrial surround — weathered steel, concrete, gravel, and plant palettes that work in low light or full shade. The rooftop garden and the courtyard garden are the primary forms.',
+            'Traditional homes with contemporary interiors: The most common and most challenging context. The resolution is usually a garden that simplifies and regularizes the traditional forms rather than replacing them: precise hedging in geometric shapes, a restrained plant palette, quality hardscape materials, and the elimination of the fussy, accumulative planting that characterizes traditional residential gardens.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Site Analysis for Minimalist Design',
+        },
+        {
+          type: 'p',
+          text: 'Minimalist design is unforgiving of site problems that a more complex garden would obscure. A poorly drained area, a utility box, an awkward grade change — all of these must be resolved in the design rather than hidden behind planting. The site analysis process for a minimalist garden is the same as for any garden, but the stakes for getting it right are higher.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Sun mapping: Trace shadow patterns from sunrise to sunset at the summer and winter solstice. Minimalist gardens are often composed primarily of hard material with limited planting; accurate sun mapping determines where plants will actually thrive and where the primary living areas should be positioned.',
+            'Sight lines: Identify the primary views into and out of the garden from inside the house — particularly through large windows and glass walls. The minimalist garden is often designed primarily to be seen from the interior. These sight lines are the equivalent of the viewpoints in a Zen garden: the composition is arranged for them.',
+            'Grade and drainage: Address all drainage issues before designing the surface. Minimalist gardens typically have more hardscape than conventional gardens; impermeable surfaces concentrate drainage challenges. Design for drainage first, then design the surface above it.',
+            'Utilities and infrastructure: Locate and map all utilities before designing. A minimalist garden\'s clean ground plane cannot accommodate unexpected utility access issues after the garden is installed. Work with your utility companies to understand easements and access requirements.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Spatial Proportions: The Design Grid',
+        },
+        {
+          type: 'p',
+          text: 'Most successful minimalist garden designs are organized on a grid — a modular spacing system derived from the architecture of the house that determines the dimensions of all major elements. The grid might be 2 feet, 3 feet, or 4 feet on center; the key is that all major dimensions in the garden — paving unit sizes, planting bed widths, path widths, wall heights — are multiples of the grid module. This creates the unconscious sense of order and proportion that characterizes a well-designed minimalist space.',
+        },
+        {
+          type: 'list',
+          items: [
+            "Deriving the grid: Look at the house's window and door spacing, the structural column spacing, or the exterior cladding module. These dimensions often suggest a natural garden grid. A house with 4-foot window modules suggests a 4-foot or 2-foot garden grid; a house with 3-foot brick courses suggests a 3-foot module.",
+            'The golden rectangle: The ratio of approximately 1:1.618 (the golden ratio) has been used in architectural proportion for millennia because it produces a rectangle that feels naturally balanced. In garden design, using this proportion for bed widths, paving panel sizes, and the relationship of planted to paved areas produces a quality of visual rightness that is difficult to achieve by eye alone.',
+            'Negative space as positive design: In minimalist design, the proportion of empty space to filled space matters as much as what is in the filled areas. A garden that is 60% hardscape and 40% planting will feel different from one that is 40% hardscape and 60% planting, independent of what those elements are. Decide this proportion consciously as part of the design process rather than arriving at it by default.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '📐',
+          text: "Start your site analysis with a single sheet of graph paper scaled to your plot. Draw the house footprint, mark all windows and doors, trace the shadow lines at 9am, noon, and 3pm on a midsummer day. The grid that emerges from those shadow lines and the house's own geometry is the foundation of your garden's design.",
+        },
+      ],
+    },
   ],
 }
