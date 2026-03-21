@@ -337,5 +337,208 @@ export const zenGardenContent = {
         },
       ],
     },
+    {
+      id: 'karesansui',
+      title: 'Gravel, Sand & the Dry Garden (Karesansui)',
+      blocks: [
+        {
+          type: 'p',
+          text: "The karesansui — dry landscape garden — uses raked gravel or sand to represent water in its various moods: the stillness of a lake, the movement of a stream, the turbulence of ocean waves. The raked surface is one of the most distinctive and most misunderstood elements of the Zen garden tradition. It is not decoration. It is a philosophical statement about the nature of perception, impermanence, and practice.",
+        },
+        {
+          type: 'p',
+          text: "The most famous karesansui gardens — Ryoanji with its fifteen stones in raked gravel visible only as fourteen from any single viewpoint; Daisen-in with its narrative dry waterfall and river — are among the most visited and most studied gardens on earth. Their power comes entirely from stone, gravel, and empty space. No plant, no structure, no ornament contributes what the composition of those materials achieves.",
+        },
+        {
+          type: 'h3',
+          text: 'Choosing the Raking Medium',
+        },
+        {
+          type: 'list',
+          items: [
+            'Decomposed granite: The standard material for dry gardens in many American climates. Angular particles hold raking patterns well and compact slightly over time to a stable surface. Available in various colors from pale gray to tan to rust-red. Choose the color that contrasts well with your stones and reads as a water surface at the scale you are working with.',
+            'Crushed granite: Similar to decomposed granite but more uniform particle size. Holds patterns crisply. Excellent for detailed raking work. More expensive than decomposed granite but produces cleaner results.',
+            'Pea gravel: Rounded particles that do not hold raking patterns as crisply as angular materials. The rounded form is more reminiscent of river gravel; the overall effect is softer and more naturalistic. Better for contexts where a precise raked pattern is not the primary aesthetic.',
+            'White marble chips: The material used in many historical Japanese gardens that have been adapted for Western contexts. Very high visual contrast. Holds patterns well. Can create significant glare in full-sun American climates. Most appropriate in shaded courtyard settings.',
+            'Sand: Requires a completely weed-free base and a stable boundary or edging to prevent migration. Holds the finest and most precise raking patterns. Requires the most frequent maintenance (resetting after rain). Most appropriate for contained indoor or very protected outdoor contexts.',
+            'Depth: 2 to 3 inches of raking material over a firm base. Less than 2 inches looks thin and does not hold patterns adequately. More than 3 inches wastes material and can make raking physically laborious.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Base Preparation',
+        },
+        {
+          type: 'list',
+          items: [
+            'Excavate 4–6 inches: Remove existing vegetation, roots, and soil to the required depth. The base must be firm and level; the quality of your raking surface depends entirely on the quality of what is beneath it.',
+            'Compacted gravel base: Install 2–3 inches of compacted crushed gravel (not the raking surface material) as a base. This provides drainage and prevents the raking surface from sinking or shifting unevenly over time.',
+            'Landscape fabric: Install long-term landscape fabric rated for perennial use (not the thin paper-like varieties that degrade quickly). This is one of the most important steps: without a weed barrier, weeds will grow through the raking surface, destroying the patterns and requiring constant intervention that undermines the contemplative quality of the garden.',
+            "Edge containment: Install a clean, firm edge around the perimeter before adding the raking surface. Traditional edging materials include flat stones, pressure-treated lumber, composite decking boards, or metal edging. The edge must be high enough to contain the raking material and low enough not to interrupt the garden's visual plane.",
+            'Add the raking surface: Spread to 2–3 inches depth. Rake level before placing stones or adding final composition.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Raking Patterns and Their Meanings',
+        },
+        {
+          type: 'table',
+          headers: ['Pattern', 'Visual Effect', 'Meaning or Evocation', 'How to Rake'],
+          rows: [
+            [
+              'Straight parallel lines',
+              'Open water; a lake surface in calm; the sea undisturbed',
+              'Stillness; equanimity; the mind at rest',
+              "Draw the rake in parallel lines from one edge to the other in a single direction. The spacing between lines is determined by the rake's tine width.",
+            ],
+            [
+              'Concentric circles around a stone',
+              'Water rippling outward from a point of contact; the ring a stone makes when dropped in still water',
+              'Cause and effect; the way one action spreads through everything',
+              'Work outward from the stone in expanding ovals or circles. The most meditative raking pattern: begin at the stone and move outward, then return and begin again.',
+            ],
+            [
+              'Diagonal crossing lines',
+              'Turbulent water; ocean waves in motion; energy',
+              'Impermanence; the nature of change; dynamic force',
+              'Rake from one corner at 45 degrees, then cross at the opposite 45 degrees. Used sparingly — a small area of turbulence reads as an accent, not as the primary field.',
+            ],
+            [
+              'Curved parallel lines',
+              "A flowing river; water moving through a channel or valley",
+              'Movement; passage; the river that is never the same water twice',
+              "Bend the parallel lines to suggest flow direction around stone 'islands.' The curve should be natural, not mechanical.",
+            ],
+            [
+              'Whirlpool / spiral around a single stone',
+              'Water turning around a fixed point; concentrated energy',
+              'The still point within movement; the fixed within the changing',
+              'Begin at the stone and work outward in a tightening spiral. Very powerful but use at only one point in a garden. Can overwhelm if applied broadly.',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🪨',
+          text: "In Zen Buddhist temple gardens, the daily raking of the karesansui was understood as a form of meditation practice equivalent to seated zazen. The act of raking — repetitive, precise, demanding complete present attention to the body's movement and the gravel's response — requires the same quality of non-discursive attention that seated meditation cultivates. Approach the raking with this understanding. Begin at the edge and work inward or outward with full attention to the physical sensations of the rake, the resistance of the gravel, the emerging pattern. If the mind wanders to planning or memory or fantasy, notice that and return to the physical act without judgment. The garden does not need a perfect pattern. It needs your complete attention while you make it. After heavy rain or wind, the pattern is gone. This is not a problem; it is the practice. Impermanence is not the obstacle to the garden's beauty. It is the point.",
+        },
+      ],
+    },
+    {
+      id: 'plants',
+      title: 'Plants — Restraint, Structure & Seasonal Meaning',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Plant selection in the Zen garden is governed by the same principle that governs everything else: restraint. A Zen garden typically uses far fewer species than a conventional garden of equivalent size — perhaps 6 to 12 species where a cottage garden might use 40. This is not poverty of imagination. It is compositional discipline. Each species is chosen to perform a specific role — structural anchor, seasonal accent, ground texture, screening, borrowed scenery — and given enough space to perform that role fully.',
+        },
+        {
+          type: 'p',
+          text: 'What makes a plant appropriate for a Zen garden is not its geographic origin but its character. A native American serviceberry with its spring cloud of white flowers, its summer berries, its excellent fall color, and its winter silhouette of fine branching performs every role that a Japanese cherry performs in a traditional garden. A native sedge growing in a shaded area fills exactly the role of Japanese forest grass. The Zen garden principles apply to any plant with the appropriate character — structural clarity, seasonal interest, the ability to age gracefully, and the capacity to be still.',
+        },
+        {
+          type: 'h3',
+          text: 'Trees: The Primary Structure',
+        },
+        {
+          type: 'table',
+          headers: ['Tree', 'Hardiness Zones', 'Role in Garden', 'Key Qualities', 'Native/Regional Notes'],
+          rows: [
+            [
+              'Japanese Maple (Acer palmatum)',
+              '5–9',
+              'The signature Zen garden tree; specimen, focal point, seasonal drama; multiple forms and foliage colors',
+              'Extraordinary fall color; refined leaf shape; sculptural winter branch; shade-tolerant; slow growth',
+              'Native to Japan but adapted widely. Weeping varieties for water\'s edge and containers. Choose variety for mature size and sun exposure.',
+            ],
+            [
+              'Serviceberry (Amelanchier spp.)',
+              '3–9 (varies)',
+              'Excellent native substitute for flowering cherry; spring flower, summer berry, fall color',
+              'White spring flowers; blue-black berries that feed birds; outstanding fall color in red-orange; multi-season interest',
+              'Native across North America. A. canadensis (eastern US); A. alnifolia (western US). Fully appropriate substitute for Japanese cherry in any Zen design.',
+            ],
+            [
+              'Redbud (Cercis canadensis or C. occidentalis)',
+              '4–9',
+              'Spring flowering accent; the eastern American equivalent of Japanese cherry bloom',
+              'Spectacular magenta-pink spring bloom on bare branches; heart-shaped summer foliage; good fall color',
+              'Eastern redbud (Z4–9) native to eastern US; Western redbud (Z6–10) native to California. Both are Zen-appropriate in their respective regions.',
+            ],
+            [
+              'Japanese Black Pine (Pinus thunbergii)',
+              '5–8',
+              'Structural evergreen; trained in the niwaki cloud-pruning tradition',
+              'Irregular, wind-shaped natural form; dramatic winter silhouette; excellent for cloud pruning',
+              'Widely adaptable. Requires annual candle pruning to develop cloud form. The definitive niwaki pine.',
+            ],
+            [
+              'Eastern White Pine (Pinus strobus)',
+              '3–8',
+              'Native alternative to Japanese pine; structural evergreen with soft texture',
+              'Soft blue-green needles; elegant natural form; excellent for cloud-pruning training; long-lived',
+              'Native across eastern North America. Responds well to niwaki training. A powerful Zen garden tree using North American material.',
+            ],
+            [
+              'Pacific Coast Natives (coastal redwood, coast live oak)',
+              '7–10 (Pacific Coast)',
+              'Regional structural anchors of extraordinary presence',
+              'Ancient character; massive scale at maturity; irreplaceable borrowed-scenery value',
+              'Where these trees exist on or adjacent to the property, design the garden in relationship to them rather than adding trees at all.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Shrubs: The Middle Layer',
+        },
+        {
+          type: 'list',
+          items: [
+            'Azalea (Rhododendron spp.): The most traditional Japanese garden shrub for cloud-pruned form and spring color. In Zones 4–9 depending on variety. Clip azaleas into rounded or cloud-pruned forms. Acid soil essential. Satsuki and Kurume types are most traditional; many American native azaleas (R. periclymenoides, R. viscosum) are equally appropriate with fragrant flowers.',
+            'Japanese Pieris (Pieris japonica): Zones 4–8. Year-round evergreen interest; cascading white spring flowers; attractive red new growth. One of the finest four-season shrubs for Zen garden use. Tolerates shade. Acid soil.',
+            'Muhly Grass (Muhlenbergia capillaris): Zones 5–10. Native American ornamental grass with extraordinary pink-mauve fall flower plumes. Provides the movement and seasonal drama that grasses contribute in traditional Japanese gardens, with entirely North American provenance.',
+            'Boxwood (Buxus spp.): Zones 4–9 (varies). The most widely available cloud-pruning subject in America. Responds beautifully to niwaki training. Evergreen year-round structure.',
+            'Sweetbox (Sarcococca spp.): Zones 5–8. Evergreen shrub with intensely fragrant small white winter flowers — fragrance of late winter before any other plant in the garden. The fragrance of an unseen flower (yugen) is one of the finest Zen garden experiences.',
+            "Heavenly Bamboo (Nandina domestica): Zones 6–9. Seasonal foliage color through the year; winter berries. Note: invasive in the Southeast — check your state's invasive species list. Where invasive, substitute native alternatives such as Itea virginica or Aronia arbutifolia, which offer similar multi-season interest.",
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Ground Layer: Moss, Ferns & Low Planting',
+        },
+        {
+          type: 'p',
+          text: 'The ground layer of a Zen garden is where the aesthetic difference from Western design is most immediately visible. Where a conventional garden might use mulch or a uniform ground cover, the Zen garden uses moss, ferns, and carefully chosen low plants that vary in texture and seasonal behavior, creating a ground plane as compositionally considered as everything above it.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Moss: The most quintessential Japanese garden ground cover. Communicates age, moisture, shade, and the quality of a place that has been attended to over years. Difficult to establish quickly but extraordinarily beautiful when healthy. Full guidance in Section 8.',
+            "Japanese painted fern (Athyrium niponicum 'Pictum'): Zones 3–8. Silver-painted fronds of extraordinary beauty. One of the finest ferns for the Zen garden ground layer. Tolerates considerable shade.",
+            'Christmas fern (Polystichum acrostichoides): Zones 3–9. Native American evergreen fern. Excellent in shade; holds its form through winter when most ferns have died back. A powerful Zen garden plant using entirely native material.',
+            'Pennsylvania sedge (Carex pensylvanica): Zones 3–8. Native fine-textured sedge that grows in shade and requires no mowing, no irrigation after establishment, and no fertilizing. One of the finest no-maintenance native ground covers for shaded Zen garden areas.',
+            "Mondo grass (Ophiopogon japonicus): Zones 6–10. Fine-textured, grass-like plant forming a dense low mat. Black mondo grass (O. planiscapus 'Nigrescens') is extraordinary in composition with pale gravel or light stone. Hardy to Zone 6.",
+            'Epimedium: Zones 4–8. Delicate heart-shaped leaves; small spring flowers; tolerates dry shade (rare in any ground cover). One of the finest Zen garden ground covers for challenging shaded dry spots.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Bamboo: Use with Caution and Intention',
+        },
+        {
+          type: 'p',
+          text: 'Bamboo is perhaps the most immediately recognizable Japanese garden plant in the American imagination, and one of the most frequently misused. Running bamboo (Phyllostachys, Pleioblastus) spreads aggressively by underground rhizomes and has become invasive in many states. Clumping bamboo (Fargesia) does not spread by running rhizomes and is the responsible choice for most American gardens.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Running bamboo in containers: If you want the tall, dramatic effect of running bamboo (P. nigra — black bamboo — is among the most beautiful), grow it in a large container sunk into the ground or in an above-ground container. This contains spread while providing the architectural form that makes bamboo so valuable as a sound screen and focal plant.',
+            'Clumping bamboo: Fargesia rufa, F. murielae, and F. nitida are the most widely available clumping bamboos in the US. Hardy to Zones 4–6 depending on species. Shade-tolerant. Non-invasive. The fountain-like arching canes are graceful and unmistakably bamboo. Excellent for corner accents, screening, and container specimens.',
+          ],
+        },
+      ],
+    },
   ],
 }
