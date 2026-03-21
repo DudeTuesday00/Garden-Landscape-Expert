@@ -1,6 +1,6 @@
 import { guideCategories } from '../../../data/guides.js'
 import { contentMap } from '../../../data/guide-content/index.js'
-import GuideDetail from '../../../components/guides/GuideDetail.jsx'
+import GuideDetail, { heroImages } from '../../../components/guides/GuideDetail.jsx'
 
 const SITE_URL = 'https://plantingatlas.com'
 
@@ -19,6 +19,7 @@ export async function generateMetadata({ params }) {
 
   const description =
     content.intro.length > 160 ? content.intro.slice(0, 157) + '...' : content.intro
+  const heroImage = heroImages[guideId]
 
   return {
     title: content.hero.title,
@@ -30,10 +31,12 @@ export async function generateMetadata({ params }) {
       title: `${content.hero.title} | Planting Atlas`,
       description,
       url: `${SITE_URL}/guides/${guideId}/`,
+      ...(heroImage && { images: [{ url: `${SITE_URL}${heroImage}`, width: 1200, height: 630, alt: content.hero.title }] }),
     },
     twitter: {
       title: `${content.hero.title} | Planting Atlas`,
       description,
+      ...(heroImage && { images: [`${SITE_URL}${heroImage}`] }),
     },
   }
 }

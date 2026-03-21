@@ -2,8 +2,8 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import { contentMap } from '../../data/guide-content/index.js'
 
-// Hero images for guides that have a corresponding photo
-const heroImages = {
+// Hero images for guides that have a corresponding photo (exported for use in generateMetadata)
+export const heroImages = {
   'shade-trees': '/guides/shade-tree-guide.png',
   'fruit-trees': '/guides/fruit-tree-guide.png',
   'ornamental-trees': '/guides/ornamental-tree-guide.png',
