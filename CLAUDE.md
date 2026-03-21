@@ -380,6 +380,7 @@ Thirty-six full guides integrated into the app:
 - `src/data/guide-content/common-garden-diseases.js` — Common Garden Diseases (`id: 'common-diseases'`) — **complete** (all 10 sections + rapid symptom key built)
 - `src/data/guide-content/rain-barrel.js` — Starting a Rain Barrel (`id: 'rain-barrel'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/zen-garden.js` — Zen Garden Design (`id: 'zen-garden'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/modern-minimalist-garden.js` — Modern Minimalist Garden (`id: 'modern-minimalist-garden'`) — **complete** (all 10 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -874,6 +875,27 @@ Every page in the app exports full metadata including:
 | Section 8: Moss, Water Features & Garden Lighting | ✅ Done | Moss establishment (transplant + slurry methods); 4-row moss types table (Sheet, Cushion, Haircap, Fern); recirculating pump systems; water quality and freeze protection; 4-item evening/night lighting guidance |
 | Section 9: Small-Space Zen Gardens & Regional Adaptation | ✅ Done | 6-row small-space compositions table (tsubo-niwa through indoor tray garden); 7-row regional adaptation table (NE, Mid-Atlantic, SE/Gulf, Midwest, PNW, SW/Rocky Mtn, CA/Coastal) |
 | Section 10: The Garden Through the Seasons & Ongoing Practice | ✅ Done | 5-row seasonal calendar (Late Winter/Spring/Summer/Fall/Winter) with garden experience, care tasks, and contemplative focus columns; 7-row troubleshooting table; 3-paragraph closing reflection "The Garden as Teacher" + Sakuteiki colophon tip |
+
+---
+
+### Modern Minimalist Garden Guide ✅
+
+`src/data/guide-content/modern-minimalist-garden.js` — Modern Minimalist Garden (`id: 'modern-minimalist-garden'`); fully synced with `Modern_Minimalist_Garden_Guide.docx` — 10 sections covering design principles through regional adaptation and seasonal maintenance.
+
+| Section | Status | Notes |
+|---|---|---|
+| Overview: What Makes a Garden Truly Minimalist? | ✅ Done | 6-row principles table (Reduction, Repetition, Geometry, Material Quality, Continuity, Seasonal Constancy); observation tip |
+| Section 1: Design Foundations — Space, Light & Architecture | ✅ Done | Reading architecture, spatial proportion, site analysis, proportion of hardscape to planting, sight-line design |
+| Section 2: Hardscape — Materials, Surfaces & Structure | ✅ Done | 5-row paving materials table (large-format concrete, natural stone, ipe/hardwood, gravel); walls, screens & vertical elements; design grid concept |
+| Section 3: Plants — The Minimalist Palette | ✅ Done | 7-row specimen trees table; 6-row mass planting ground layer table; 6-row seasonal accents table; hedge & edge plants list; palette tip |
+| Section 4: Water Features — Reflection, Sound & Stillness | ✅ Done | Reflecting pool (geometry, depth, overflow edge); rill and channel features; wall spouts and blade falls; maintenance (algae, winterizing, pump sizing) |
+| Section 5: Lighting — The Garden After Dark | ✅ Done | 4 lighting techniques (uplighting, grazing, moonlighting, path/step); fixture selection (material, color temp 2700–3000K, LED CRI 90+, controls); conduit-during-construction tip |
+| Section 6: Containers, Furniture & the Designed Object | ✅ Done | 5-row container materials table (poured concrete, Corten, glazed ceramic, fiber cement, powder-coated steel); furniture selection principles; odd-number grouping tip |
+| Section 7: Regional Adaptation Across American Climates | ✅ Done | 6-row regional table (PNW, CA/Coastal West, SW/Desert, Southeast, Mid-Atlantic/NE, Midwest/Great Plains) with climate character, primary opportunity, best structural plants, ground layer, and material notes |
+| Section 8: Maintenance — The Minimalist Discipline | ✅ Done | 2-paragraph maintenance philosophy; 5-row seasonal calendar table (Late Winter/Spring/Summer/Fall/Winter) with primary focus, key tasks, and design assessment; One-Third Replacement Principle (3-item list); re-edging tip |
+| Section 9: Troubleshooting & Closing | ✅ Done | 6-row design mistakes table (sparse/unfinished, competing focal points, architectural disconnect, ragged edges, undersized water feature, outgrown planting); 15-item quick reference checklist; 3-paragraph closing reflection; Dieter Rams tip callout |
+
+Theme: stone/slate gradient in `GuideDetail.jsx`; hero image: `public/guides/Modern_Minimalist_Garden_Guide.png`; set `comingSoon: false` under Specialty Gardens in `guides.js`
 
 ### Typography Upgrade ✅
 

@@ -670,5 +670,244 @@ export const modernMinimalistGardenContent = {
         },
       ],
     },
+    {
+      id: 'regional-adaptation',
+      title: 'Section 7: Regional Adaptation Across American Climates',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Minimalist garden design is a set of principles, not a set of plants. Every American climate region offers its own plant palette and material opportunities that are fully compatible with minimalist design — and often more authentic than importing plants from another region. A Pacific Northwest minimalist garden built from native ferns, carex, and dark basalt is as rigorous in its minimalism as a California garden of decomposed granite and olive trees; neither borrows from the other, and each is better for that regional specificity.',
+        },
+        {
+          type: 'table',
+          headers: ['Region', 'Climate Character', 'Primary Opportunity', 'Best Structural Plants', 'Best Ground Layer', 'Material Notes'],
+          rows: [
+            [
+              'Pacific Northwest (Zones 7–9)',
+              'Mild, wet winters; dry summers; maritime influence; naturally lush; minimal freeze events',
+              'Year-round green; moss and fern as authentic minimalist ground layer; the most naturalistic minimalist gardens in America are in this region',
+              'Japanese maple (thrives here); clumping bamboo (Fargesia); columnar hornbeam; Pacific madrone (Arbutus menziesii)',
+              'Native carex sedges; moss; bunchgrass; sword fern (Polystichum munitum) as dramatic native ground layer',
+              'Dark basalt and local stone; weathered cedar; the region\'s natural materials are extraordinarily well-suited to minimalist composition',
+            ],
+            [
+              'California & Coastal West (Zones 8–11)',
+              'Mediterranean climate; dry summers; fire risk in many areas; extraordinary range of native material',
+              'The California minimalist garden is one of the most developed and influential in America: decomposed granite, native grasses, olive trees, manzanita, and succulents define the vocabulary',
+              'Olive tree (Olea europaea); Arbutus; Agave; western redbud (Cercis occidentalis); coast live oak',
+              'Decomposed granite; native bunchgrass (Nassella, Muhlenbergia); California poppy as seasonal accent; dymondia as low ground cover',
+              'Decomposed granite; local stone (sandstone, granite, basalt); Corten pairs beautifully with California\'s warm tones and dry light',
+            ],
+            [
+              'Southwest / Desert (Zones 7–11)',
+              'Intense heat; low humidity; dramatic skies; alkaline soils; extraordinary native plant character',
+              'The desert minimalist garden is the most naturally austere: gravel, stone, and precisely placed specimens of extraordinary character create compositions of real power',
+              'Agave (multiple species); desert willow (Chilopsis linearifolia); Palo Verde; ocotillo; saguaro (use only nursery-grown plants — collecting wild plants is illegal)',
+              'Decomposed granite; fine gravel; dry rock mulch; prickly pear as ground-level mass at appropriate scale',
+              'All locally sourced stone; Corten steel; concrete. The desert light is exceptional for minimalist composition — long shadows at low sun angles reveal texture and form with extraordinary clarity',
+            ],
+            [
+              'Southeast (Zones 7–10)',
+              'Hot humid summers; mild winters; intense rainfall; extraordinary native and adapted plant material',
+              'Camellias, loropetalum, crape myrtle, and native ferns offer a distinctly Southern minimalist palette — utterly different from the California or Pacific Northwest version but equally powerful',
+              'Crape myrtle (allow natural form; no topping); southern magnolia (\'Little Gem\' for smaller spaces); camellia; native hollies (Ilex) in multiple forms',
+              'Mondo grass; liriope; native ferns (Osmunda, Athyrium); native southeastern carex sedges',
+              'Concrete (excellent year-round performance in mild climate); brick; weathered wood. Humidity accelerates moss and lichen on stone, which reads beautifully in a minimalist composition.',
+            ],
+            [
+              'Mid-Atlantic & Northeast (Zones 4–7)',
+              'Four distinct seasons; cold winters; hot humid summers; excellent tree and shrub palette',
+              'The four-season performance requirement favors plants with multiple seasons of interest: winter silhouette, spring bloom, summer foliage, fall color. The garden can be designed for a different minimalist composition in every season.',
+              'Japanese maple (hardy varieties); columnar hornbeam; serviceberry (Amelanchier); single-flowering crabapple',
+              'Prairie dropseed; Karl Foerster grass; Pennsylvania sedge; blue fescue in appropriate exposures',
+              'Granite; bluestone; ipe; concrete (plan for freeze-thaw in Zone 5 and colder). Corten steel is outstanding in the mid-Atlantic four-season context.',
+            ],
+            [
+              'Midwest & Great Plains (Zones 3–6)',
+              'Cold winters; hot summers; wind; native prairie ecology offers the most authentic minimalist plant material in America',
+              'Prairie-based minimalism: native grasses in mass, native wildflowers in disciplined repetition, locally quarried limestone or sandstone, and the extraordinary sky — horizontal emphasis everywhere',
+              'Quaking aspen (in groups of 3+); bur oak (native; extraordinary character); serviceberry; native hawthorn (Crataegus)',
+              'Prairie dropseed; buffalo grass; blue grama; little bluestem in mass; switchgrass',
+              'Local limestone; sandstone; salvaged granite. The Prairie School architectural tradition — Frank Lloyd Wright\'s horizontal emphasis and integration of landscape and architecture — is native to this region and remains its finest design resource.',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🗺️',
+          text: 'The most authentic minimalist gardens are made from materials and plants that belong to their region. A minimalist garden in New Mexico built from local basalt and native agaves has a clarity and authority that no imported design language can replicate. Start with what the region provides and edit it to its essential expression.',
+        },
+      ],
+    },
+    {
+      id: 'seasonal-maintenance',
+      title: 'Section 8: Maintenance — The Minimalist Discipline',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A minimalist garden requires different maintenance than a conventional garden — not necessarily more or less, but different in character and approach. The conventional garden hides imperfection behind abundance: a weedy corner is obscured by the surrounding planting; a dying plant disappears among dozens of neighbors. The minimalist garden has no such concealment. Every imperfection is visible; every unpruned edge, every dying stem, every overgrown mass reads against the design\'s intended precision.',
+        },
+        {
+          type: 'p',
+          text: 'The key insight of minimalist maintenance is that it is intensive in attention and infrequent in frequency. A minimalist garden maintained with total precision four times per year is more beautiful than a conventional garden maintained with moderate attention weekly. The work is different: it requires seeing the garden as a designed composition and responding to what has changed in that composition, not simply performing a routine checklist.',
+        },
+        {
+          type: 'h3',
+          text: 'The Seasonal Maintenance Calendar',
+        },
+        {
+          type: 'table',
+          headers: ['Season', 'Primary Focus', 'Key Tasks', 'Design Assessment'],
+          rows: [
+            [
+              'Late Winter / Early Spring (before growth begins)',
+              'Clearing; preparation; crisp edges; structural pruning',
+              'Cut ornamental grasses to 4–6 inches before new growth emerges. Remove dead stems from perennials. Edge all planting beds precisely with a spade or half-moon edger — crisp edges are one of the most impactful maintenance tasks in a minimalist garden and one of the most frequently neglected. Clean and inspect hardscape for winter damage.',
+              'This is the garden\'s most honest moment: no green to soften what is present. Walk the space with fresh eyes and a critical perspective. What has become overgrown? What has died and left a gap? What material looks tired and needs replacement?',
+            ],
+            [
+              'Spring (active growth begins)',
+              'Pruning; weed management; plant establishment',
+              'Prune all shrubs and hedges to their designated form. This is not a light trim; it is the annual restoration of the garden\'s designed form. Address all weeds at their first appearance — a weed in a minimalist garden reads much more prominently than one in a conventional garden. Plant any replacements or additions identified in the winter assessment.',
+              'Does the plant palette still serve the design? Are there species not earning their space? Spring is the moment to add or remove plants deliberately, when the ground is workable and replacement stock is available.',
+            ],
+            [
+              'Summer (full growth and use)',
+              'Edge maintenance; water management; hedge clipping; furniture arrangement',
+              'Re-edge planting beds at midsummer if edges have softened. Maintain crisp hedge forms with a second clip if needed. Manage irrigation: most established minimalist garden plants — especially ornamental grasses and Mediterranean species — are more drought-tolerant than they appear and do better with deep, infrequent watering than frequent shallow irrigation.',
+              'Is the garden being used? A minimalist garden designed for outdoor living must accommodate actual use without losing its composed quality. Observe how furniture placement, traffic patterns, and lighting perform in practice and note adjustments for next season.',
+            ],
+            [
+              'Fall (transition and preparation)',
+              'Leave grasses standing; clear spent annuals; prepare for winter',
+              'Do NOT cut ornamental grasses in fall. Their winter silhouette — copper stems, seed heads, movement in the wind — is one of the primary design elements of a well-designed minimalist garden from November through March. Remove spent annuals; do not replant with a winter equivalent. The empty space is more appropriate than seasonal bedding that interrupts the composition\'s permanence.',
+              'The garden in fall is the time to appreciate what the permanent elements — the trees, the grasses, the hardscape — look like without the softening of full foliage. This is the season to confirm that the structural plants are earning their place.',
+            ],
+            [
+              'Winter (observation and planning)',
+              'Observe the garden; make no unnecessary changes; plan for the following year',
+              'The maintenance discipline of the minimalist garden in winter is restraint: do nothing that does not need to be done. The garden in its winter state — grasses copper and rustling, bark visible on specimen trees, raking light across concrete and gravel — is not the garden at its worst. It is the garden in one of its most important expressions.',
+              'Winter is the design season: no plant material obscures the hardscape\'s quality, the edges\' precision, or the spatial relationships between elements. Plan changes for the following spring based on what winter reveals.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The One-Third Replacement Principle',
+        },
+        {
+          type: 'p',
+          text: 'Minimalist gardens age, and not always in the direction intended. Plants outgrow their proportional relationships; materials weather differently than anticipated; a species that seemed right proves not to serve the design in practice. The minimalist discipline of maintenance includes periodic editing — removing what is no longer working and replacing it with what will work better — as an ongoing practice rather than a remediation of failure.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Every 3–5 years: Assess each plant in the garden against the design\'s intentions. Is it the right size? The right form? Contributing to or competing with the primary composition? Replace those that are failing the design, even if they are perfectly healthy. A healthy plant in the wrong position is still wrong.',
+            'Replacement planting: Replace with the same species at the same size, or with a more appropriate species at a size that quickly restores the intended visual relationship. The minimalist garden is not a collection in which every individual plant has sentimental value; it is a designed composition in which every plant serves a specific purpose.',
+            'Material aging: Concrete and stone patinate in ways that can be beautiful (lichen, weathering) or damaging (spalling, staining). Assess hardscape on the same 3–5 year cycle. Sealing concrete every 3–5 years significantly extends its appearance and structural integrity in cold climates.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '✂️',
+          text: "The single maintenance task with the greatest visual return in a minimalist garden is re-edging planting beds. Crisp, clean bed edges — cut with a half-moon edger or spade, not a string trimmer — restore the designed geometry that defines the space. Budget for this task four times per growing season minimum. It costs almost nothing and reads immediately.",
+        },
+      ],
+    },
+    {
+      id: 'troubleshooting',
+      title: 'Section 9: Troubleshooting & Closing',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The minimalist garden\'s clarity of design means that problems read more distinctly than in a more complex garden. This section addresses the most common challenges — both design challenges and ongoing maintenance challenges — in direct, actionable terms.',
+        },
+        {
+          type: 'h3',
+          text: 'Common Design Mistakes & Their Solutions',
+        },
+        {
+          type: 'table',
+          headers: ['Problem', 'Why It Happens', 'Solution'],
+          rows: [
+            [
+              'The garden reads as sparse and unfinished rather than minimal and composed',
+              'Not enough mass in the ground layer; plants not yet at mature size; hardscape dominates without sufficient planting counterweight',
+              'Increase the planting mass of the primary ground layer species rather than adding new species. Most minimalist garden ground layers need to be planted at 3–5 times the density that feels comfortable at planting time — the plants will fill the gaps. If the garden genuinely needs more planting, add more of what is already there before adding anything new.',
+            ],
+            [
+              'Too many focal points competing for attention',
+              'Multiple specimen plants or water features in the same composition; ornaments or containers placed by accumulation rather than by design',
+              'Identify the single strongest element and make it dominant by removing or subordinating all competitors. Remove, relocate, or replace competing elements. A minimalist garden can have multiple elements but only one primary focal point.',
+            ],
+            [
+              'The garden looks disconnected from the house\'s architecture',
+              'Plant palette, material character, or design language chosen without reference to the house',
+              'Revisit the site analysis. Identify two or three material or color elements from the house\'s exterior and make them the design anchors for the garden. Even one shared material — concrete, a specific wood tone, a specific dark color — creates continuity.',
+            ],
+            [
+              'Edges are ragged; planting beds look untidy',
+              'Edge maintenance has not been performed with sufficient frequency or precision',
+              'Re-edge all planting beds with a half-moon edger or spade. This single task has more impact on the perceived quality of a minimalist garden than almost any other maintenance action. Edge quarterly minimum during the growing season.',
+            ],
+            [
+              'Water feature reads as small and insufficient for the space',
+              'Feature was scaled to budget rather than to the space\'s visual requirements',
+              'A water feature in a minimalist garden should feel inevitable — appropriately scaled and in the right location. If the feature is too small, it cannot be saved by addition. Determine the minimum scale at which the feature would feel adequate and retrofit or replace accordingly.',
+            ],
+            [
+              'Grass or ornamental planting has outgrown its boundaries',
+              'Plants selected for their small size at installation have reached a mature size that disrupts the design\'s proportions',
+              'Cut back or divide the plants to the intended scale. If the mature size of the species is genuinely incompatible with the space, replace with a smaller-growing variety of the same species that will remain in proportion.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Quick Reference: The Minimalist Garden Checklist',
+        },
+        {
+          type: 'list',
+          items: [
+            'Design phase — Site analysis complete: sun mapping, acoustic environment, sight lines from interior, views in and out, existing assets identified',
+            'Design phase — Architecture reading: material palette, color range, geometry, and formality level of the house documented',
+            'Design phase — Design grid established: module derived from architectural dimensions, not invented independently',
+            'Design phase — Primary viewpoint identified: the composition is designed for this point first',
+            'Design phase — Spatial proportion decided: ratio of hardscape to planting appropriate to use and character',
+            'Design phase — Plant palette defined on paper: maximum 2 structural anchors, 1–2 ground layer species, 1–3 seasonal accents, 1–2 boundary plants',
+            'Design phase — All plants evaluated for year-round contribution: every species earns its space in every season',
+            'Design phase — Water feature sized to the space, not to the budget; lighting plan developed simultaneously with garden plan',
+            'Installation — Base preparation completed to specification before surface work begins; weed barrier installed under all gravel and DG surfaces',
+            'Installation — All planting beds edged precisely; conduit runs for lighting buried during hardscape construction',
+            'Ongoing — Ornamental grasses left standing through winter; cut to 4–6 inches in late winter before new growth',
+            'Ongoing — Hedges and cloud-pruned specimens clipped 1–2 times annually to maintain designed form',
+            'Ongoing — Water features winterized before first hard freeze in Zones 5 and colder',
+            'Ongoing — Garden walked and assessed each season as a composition — not simply maintained as a collection',
+            'Every 3–5 years — Each plant assessed for design contribution; plants not earning their space replaced',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Standard the Minimalist Garden Sets for Itself',
+        },
+        {
+          type: 'p',
+          text: 'The minimalist garden makes a claim that the conventional garden does not: that what is here is exactly what should be here. That each element was chosen over all alternatives that could have taken its place. That the empty space is not empty by default but is empty by design — shaped, proportioned, and bounded as deliberately as anything that occupies it.',
+        },
+        {
+          type: 'p',
+          text: 'This is a high standard. It cannot be achieved by accumulation, by adding things until the space feels finished, by following trends or choosing what looks current at the garden center. It is achieved only by the discipline of editing — removing what does not belong until what remains is exactly right — and by the patience to let the design mature into what it was intended to become.',
+        },
+        {
+          type: 'p',
+          text: 'The reward is a garden that does not just look good in photographs. It is one that makes you feel something every time you see it from the window in winter, or sit in it on a late summer evening with the grasses catching the last light, or notice for the first time the shadow pattern a single tree makes on a concrete surface at two in the afternoon on a day in March when the sun is at exactly the right angle. Those moments are what the minimalist garden is designed for. They cannot be purchased or planted. They are designed, and they arrive, and they are worth the discipline that made them possible.',
+        },
+        {
+          type: 'tip',
+          emoji: '🏛️',
+          text: 'Less, but better. Always better. — after Dieter Rams',
+        },
+      ],
+    },
   ],
 }
