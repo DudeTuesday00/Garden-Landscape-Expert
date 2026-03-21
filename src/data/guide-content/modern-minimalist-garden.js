@@ -473,5 +473,81 @@ export const modernMinimalistGardenContent = {
         },
       ],
     },
+    {
+      id: 'water-features',
+      title: 'Section 4: Water Features — Reflection, Sound & Stillness',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Water in the minimalist garden serves three distinct purposes: it creates sound that anchors attention in the present; it provides reflection that doubles the visual depth of the space; and it gives the garden a quality of life and movement that static materials cannot. A single well-designed water feature can transform the entire character of a minimalist garden, making it more alive and more sensory-rich without adding visual complexity.',
+        },
+        {
+          type: 'h3',
+          text: 'The Reflecting Pool',
+        },
+        {
+          type: 'p',
+          text: 'The reflecting pool — a shallow, still body of water whose primary purpose is to mirror the sky and any plant or architectural element positioned above it — is one of the most powerful elements in contemporary garden design. The reflection doubles the visual height of any vertical element above the water: a specimen tree reflected in a still pool appears to have twice its height; the sky above becomes part of the garden composition.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Geometry: In minimalist design, reflecting pools are almost always geometric — square, rectangular, or circular. The hard geometry of the pool surround contrasts with the organic, shifting quality of the water surface and any reflections. Avoid informal curved edges, which suggest naturalism rather than architecture.',
+            'Depth: As little as 6 to 12 inches of water is sufficient for a reflecting pool. The shallower the water, the more the pool bottom affects reflection quality — a dark-painted or slate-tiled bottom produces the best mirror-like reflection by absorbing light rather than reflecting it back.',
+            'Overflow edge: An infinity or knife-edge overflow — where the water level meets the edge of the pool precisely, creating a mirror surface that appears to continue to the horizon — is one of the finest details in contemporary water feature design. Requires precise engineering and leveling; professional installation is recommended.',
+            'Aquatic plants: In a minimalist reflecting pool, plant sparingly or not at all. One or three water lily pads (not in full bloom — just the pads) on an otherwise open water surface is the most a minimalist composition typically accommodates. Avoid aquatic plant collections in minimalist pools.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Rill and Channel Water Features',
+        },
+        {
+          type: 'p',
+          text: 'A rill — a narrow, straight channel of moving water running through the hardscape — is one of the signature elements of contemporary landscape design. The water moves slowly but continuously, creating a quiet sound and a linear visual element that organizes space and guides movement.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Rill geometry: Typically 8 to 18 inches wide and 6 to 10 inches deep. The narrower the rill, the more precise and architectural its character. The rill can run the length of a garden as a central axis, flanked by planting or hardscape, terminating in a pool or reservoir at each end with a recirculating pump.',
+            'Materials: Concrete (poured or precast); slate tile; dark limestone; brushed stainless steel. The material should be chosen to contrast with or complement the primary hardscape material. A stainless steel rill through a concrete paving field creates a powerful material contrast; a concrete rill through a stone patio reads as a continuation of the same material language.',
+            'Termination: The rill should begin and end deliberately. A wall spout (water emerging from the face of a wall) at one end and a reservoir pool at the other is the classic arrangement. Both ends are design features, not afterthoughts.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Wall Spouts and Blade Falls',
+        },
+        {
+          type: 'p',
+          text: 'Water emerging from a wall and falling into a basin below creates a distinctive sound — different from a pool, different from a stream — that can be calibrated by the height of the fall and the surface of the basin. A blade fall (a thin sheet of water falling from a precisely machined edge rather than a spout) is one of the most architecturally elegant contemporary water features.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Spout materials: Stainless steel spouts in various diameters; copper spouts (will patinate to a warm green over time); bamboo spouts (for a more natural aesthetic within a contemporary framework); cast-bronze wall plates with circular openings. Each produces a different sound quality.',
+            'Basin size: The basin must be large enough that water splashing from the height of the fall does not spray outside it. As a rule, the basin diameter or width should be at least equal to the height of the fall. For a 24-inch fall, a 24-inch wide basin minimum; 30 to 36 inches is more forgiving.',
+            'Sound calibration: The height of the fall, the diameter of the spout or width of the blade, and the depth of the water in the basin all affect the quality and volume of sound. A taller fall over stone produces a louder, more energetic sound; a shorter fall into deep water produces a more subdued, hollow quality. Experiment before finalizing the installation.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Water Feature Maintenance',
+        },
+        {
+          type: 'list',
+          items: [
+            'Algae control: Algae in a minimalist reflecting pool or basin undermines the crisp, clean quality that is the feature\'s entire point. Prevention: keep the water moving (even slight recirculation prevents the stillness algae requires); maintain appropriate levels of beneficial bacteria; use a UV clarifier in the recirculating pump circuit; choose a dark-bottomed pool (light reaching the bottom is reduced and algae is less visible).',
+            'Winterizing: In climates where temperatures consistently fall below 25°F (Zones 5 and colder), concrete water features crack from freeze-expansion. Drain completely before the first hard freeze. Remove and store pumps and any plumbing exposed to frost. Cover with custom-cut rigid foam insulation if the pool cannot be fully drained. In Zone 6, drain during extended freeze warnings.',
+            'Pump sizing: Recirculating pumps for minimalist water features should move the full volume of the water feature every 1 to 2 hours. For a 100-gallon pool: 50 to 100 GPH pump minimum. Undersized pumps produce sluggish, stagnant-looking water even when running; oversized pumps create excessive turbulence in still-water features.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '💧',
+          text: "Size your water feature to the space, not to the budget. A water feature that is too small for the garden it occupies reads as an afterthought — worse than no water feature at all. If budget is the constraint, install the basin and plumbing now, and add the finished surround later. The scale is non-negotiable; the finish can be phased.",
+        },
+      ],
+    },
   ],
 }
