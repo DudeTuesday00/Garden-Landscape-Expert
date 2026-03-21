@@ -135,5 +135,113 @@ export const modernMinimalistGardenContent = {
         },
       ],
     },
+    {
+      id: 'hardscape',
+      title: 'Section 2: Hardscape — Materials, Surfaces & Structure',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Hardscape is the skeleton of the minimalist garden, and in minimalist design it is often the dominant element by surface area. Where a traditional residential garden might be 20% hardscape, a contemporary minimalist garden is frequently 50–70% hardscape. This means the quality, detail, and finish of every hard material matters enormously. The hardscape is not the background; it is the foreground.',
+        },
+        {
+          type: 'h3',
+          text: 'Primary Paving Materials',
+        },
+        {
+          type: 'table',
+          headers: ['Material', 'Aesthetic Character', 'Cost Range', 'Key Strengths', 'Limitations & Notes'],
+          rows: [
+            [
+              'Large-format concrete pavers (24×24" and larger)',
+              'Monolithic, contemporary, architectural; large format reduces the visual busyness of smaller unit paving',
+              '$$–$$$',
+              'Excellent durability; wide range of finishes (smooth, brushed, exposed aggregate, sandblasted); consistent sizing enables precise joint alignment; can be cut accurately for complex layouts',
+              'Requires stable compacted base; individual units are heavy and require machinery for large sizes; frost heave in cold climates requires deeper base preparation',
+            ],
+            [
+              'Poured-in-place concrete',
+              'The most architectural of all paving materials; seamless; can be shaped to any form; accepts various finishes and textures',
+              '$$$–$$$$',
+              'No visible joints; can integrate drains invisibly; highest design flexibility; broom-finished, exposed aggregate, polished, or form-marked options',
+              'Cracks over time, especially in freeze-thaw climates (Zones 5 and colder); requires control joints that become a design element; professional installation essential for quality results',
+            ],
+            [
+              'Large-format porcelain tile (outdoor rated)',
+              'Ultra-smooth, precise, contemporary; often used to extend interior tile finishes outdoors',
+              '$$$–$$$$',
+              'Extremely consistent appearance; low maintenance; frost-resistant options available; can match interior flooring exactly for seamless indoor-outdoor continuity',
+              'Can be slippery when wet — specify anti-slip finish (≥R11 rating) for outdoor use; requires precise, stable substrate; fewer recycled content options than concrete',
+            ],
+            [
+              'Corten (weathering) steel edging and panels',
+              'Warm, rust-toned, industrial-organic; one of the most distinctive contemporary garden materials',
+              '$$–$$$',
+              'Weathers to a stable, beautiful patina over 2–3 years; extremely durable once patinated; crisp knife-edge profile ideal for minimalist planting bed edges; works with any plant palette',
+              'Initial rust runoff stains adjacent light-colored materials during weathering period; not appropriate near salt water; avoid contact with concrete or masonry (galvanic staining)',
+            ],
+            [
+              'Decomposed granite (stabilized)',
+              'Natural, warm, informal; the most naturalistic hard surface in contemporary gardens; moves the design toward a desert or California aesthetic',
+              '$–$$',
+              'Permeable (excellent for stormwater); low cost; wide availability in warm tones from tan to rust; pairs beautifully with ornamental grasses and Mediterranean plants',
+              'Requires edging to contain; can track into the house; not suitable for level changes; less appropriate in wet climates where it becomes muddy and unstable',
+            ],
+            [
+              'Ipe or hardwood decking',
+              'Warm, natural, architectural; brings the material language of the interior outdoors; coordinates naturally with timber and concrete',
+              '$$$–$$$$',
+              'Extremely durable when maintained (25+ year lifespan); natural warmth contrasts beautifully with concrete and steel; can span grade changes economically',
+              'Requires annual oiling to maintain color; will weather to gray without maintenance; look for FSC-certified sources or domestic alternatives (black locust, white oak, thermally modified wood)',
+            ],
+            [
+              'Gravel and pea stone',
+              'Casual, textural, permeable; the most affordable contemporary surface; used extensively in dry gardens and low-maintenance designs',
+              '$',
+              'Fully permeable; lowest cost; easiest to install; self-draining; wide range of stone types and colors from white marble to dark basalt',
+              'Requires quality weed barrier beneath; can migrate into adjacent planting areas without containment; not ADA-compliant for accessible paths; tracks into the house',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Walls, Screens & Vertical Elements',
+        },
+        {
+          type: 'p',
+          text: 'Vertical elements in the minimalist garden serve multiple purposes simultaneously: they define space, create privacy, block unwanted views, support plants, and provide the composition\'s vertical dimension. In a minimalist design, the wall or screen is a major design element rather than a background feature, and its material, finish, height, and proportion are as carefully considered as any other element.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Board-formed concrete walls: Concrete cast against horizontal boards produces a lined texture that has become one of the signature elements of contemporary landscape design. The board marks make the material\'s history visible and add warmth to what would otherwise be a cold, industrial surface. Heights of 18–36 inches work as seat walls; 48–72 inches provide privacy screening. Requires professional formwork for consistent results.',
+            'Corten steel panels: Freestanding or post-supported weathering steel panels are one of the most architecturally powerful privacy and screening elements in contemporary garden design. A single 6-foot Corten panel can anchor an entire garden composition. The warm rust tone ages beautifully and pairs with almost every plant palette. Available in custom sizes from steel fabricators.',
+            'Gabion walls: Wire cages filled with stone — river rock, granite, or recycled concrete aggregate — create a wall that is simultaneously structural, textural, and ecological. An increasingly popular contemporary garden element that pairs well with natural plant palettes. The stone fill can be chosen to match or contrast with the garden\'s other materials.',
+            'Horizontal timber screens: A cedar, ipe, or thermally modified wood screen of horizontal boards with precise gaps creates privacy while allowing light and air movement. The horizontal emphasis reinforces the low, grounded character of minimalist design. Often used as a backdrop to planting beds, where the vertical stems of grasses or the architectural form of a specimen plant read against the horizontal rhythm.',
+            'Living walls and green screens: A steel or timber frame supporting climbing plants or modular planted panels creates a screen that is both structural and planted. In minimalist design, the green wall works best when a single plant species is used — climbing hydrangea, creeping fig, Virginia creeper — rather than a mixed tapestry.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Steps, Levels & Grade Change',
+        },
+        {
+          type: 'p',
+          text: 'Grade changes in a minimalist garden are resolved with clean, architectural precision rather than the informal sloping paths and cascading rock gardens of traditional design. Steps are wide, simple, and part of the spatial composition; retaining walls are straight or gently curved with clean tops; grade transitions are crisp.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Step proportions: The classical outdoor step proportion is a riser of 5.5 to 7 inches and a tread of 14 to 18 inches — the product of riser + tread should equal approximately 26. For minimalist gardens, the lower end of the riser height (5–6 inches) with deeper treads (16–20 inches) creates a more gracious, flowing quality appropriate to contemporary residential design.',
+            'Floating steps: Concrete or stone slabs cantilevered from a supporting structure or embedded in a bank, with open gaps between them rather than solid risers, create a dramatic, contemporary stair that allows light to pass through and planting to grow between the steps. One of the signature elements of contemporary landscape design.',
+            'Retaining walls as design features: A retaining wall that becomes a seat wall, or that integrates planters in its top surface, or that creates a terrace with a defined purpose transforms a utilitarian necessity into a positive design element.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🏗️',
+          text: 'Spend proportionally more on hardscape materials than feels comfortable — in a minimalist garden, every surface is visible and scrutinized. A smaller area of excellent concrete or stone is always better than a larger area of mediocre material. Quality hardscape installed correctly lasts 30–50 years; poor hardscape looks poor from day one.',
+        },
+      ],
+    },
   ],
 }
