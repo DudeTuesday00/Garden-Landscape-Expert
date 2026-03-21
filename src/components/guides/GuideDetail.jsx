@@ -40,6 +40,7 @@ const heroImages = {
   'culinary-herb-garden': '/guides/culinary-herb-garden-guide.png',
   'common-diseases': '/guides/Common_Garden_Diseases_Guide.png',
   'rain-barrel': '/guides/Rain_Barrel_Guide.png',
+  'zen-garden': '/guides/Zen_Garden_Guide.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -620,6 +621,22 @@ const themes = {
     tableHeadText: 'text-sky-800',
     tableHeadBorder: 'border-sky-200',
     bullet: 'text-cyan-600',
+  },
+  'zen-garden': {
+    heroBg: 'bg-gradient-to-br from-stone-50 to-zinc-100',
+    heroBorder: 'border-stone-300',
+    heroTitle: 'text-stone-900',
+    backBtn: 'text-stone-700 hover:text-stone-900',
+    sectionTitle: 'text-stone-900',
+    sectionBorder: 'border-stone-200',
+    h3: 'text-stone-800',
+    tipBg: 'bg-zinc-50',
+    tipBorder: 'border-stone-300',
+    tipText: 'text-stone-900',
+    tableHead: 'bg-stone-100',
+    tableHeadText: 'text-stone-800',
+    tableHeadBorder: 'border-stone-200',
+    bullet: 'text-stone-500',
   },
 }
 
