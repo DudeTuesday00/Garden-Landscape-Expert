@@ -324,7 +324,7 @@ export const guideCategories = [
         title: 'Zen Garden',
         emoji: '☯️',
         description: 'Create a peaceful, minimalist garden for meditation and mindfulness.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'xeriscape',
