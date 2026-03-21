@@ -156,5 +156,99 @@ export const zenGardenContent = {
         },
       ],
     },
+    {
+      id: 'space-design',
+      title: 'Space Design — Site Analysis & Garden Types',
+      blocks: [
+        {
+          type: 'p',
+          text: "The first question of Zen garden design is not 'what do I want to put here?' but 'what is this space already?'. Site analysis — understanding what you have before deciding what to do with it — is not merely practical. It is itself an expression of the garden's philosophy: attention to what is actually present rather than imposition of a predetermined idea.",
+        },
+        {
+          type: 'h3',
+          text: 'Reading Your Space',
+        },
+        {
+          type: 'list',
+          items: [
+            "Sun and shadow: Walk the site at three times of day: early morning, noon, and late afternoon. Note where the sun falls in each season if possible — a shadow map from midsummer looks very different from one in early spring when the sun angle is lower. The quality of light in a Zen garden — the way a raked gravel surface catches low afternoon light, the way dappled shade moves across a stone — is as important as the objects themselves.",
+            "Sound environment: Sit in the space for twenty minutes with your eyes closed. What do you hear? Traffic, neighbors, wind, birds, existing water? The acoustic environment shapes the contemplative quality of the garden profoundly. A garden site with significant traffic noise may benefit from a water feature positioned to mask it; a site with natural bird activity may need no enhancement at all.",
+            "Views and enclosure: What can be seen from the intended sitting position? Unwanted views — a neighbor's fence, a utility box, a busy street — can be screened by strategic planting or a simple bamboo panel. Borrowed views — a distant hillside, mature trees on adjacent properties, sky — can be incorporated into the garden's composition without belonging to it. The borrowed view technique (shakkei) is one of Zen garden design's most powerful tools.",
+            "Existing elements: An existing mature tree, a large stone, an interesting grade change — these are the garden's starting gifts. Design around them rather than removing them. A mature tree is decades of growth that no new planting can immediately replace; a large stone in place has a quality of belonging that no newly placed stone achieves in the first years.",
+            "Scale and proportion: A Zen garden of any size — from a two-square-foot balcony tray garden to an acre of walking garden — follows the same proportional principles. The scale of every element should relate to every other element and to the human body. A stone that looks impressive at the garden center often looks diminished in a large open space; a lantern that looks elegant in a large space can overwhelm a small courtyard.",
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Zen Garden Types: Choosing the Right Form',
+        },
+        {
+          type: 'table',
+          headers: ['Garden Type', 'Japanese Term', 'Defining Feature', 'Minimum Space', 'Best American Application'],
+          rows: [
+            [
+              'Dry Landscape Garden',
+              'Karesansui',
+              'Water represented by raked gravel or sand; stones as islands, mountains, or simply themselves; minimal or no planting; designed primarily for viewing from a fixed point',
+              'As small as 6–10 square feet',
+              'The most widely adaptable and most philosophical form. Perfectly suited to side yards, enclosed courtyards, and small urban gardens. Low maintenance. Transformative even at very small scale.',
+            ],
+            [
+              'Strolling Garden',
+              'Kaiyu-shiki-teien',
+              'Experienced by walking a path; sequential revelation of views; typically includes water feature, islands, bridges, multiple viewpoints',
+              'Minimum 1,000–2,000 sq ft for meaningful strolling experience',
+              'Adapted for larger suburban or rural properties. The key element is the sequential path; the water can be a small feature. Can be simplified significantly while retaining the essence.',
+            ],
+            [
+              'Tea Garden Path',
+              'Roji',
+              'Path leading to a tea house or seating area; deliberately naturalistic; rough stepping stones; stone lantern; water basin for ritual washing; shade plants and moss',
+              'As small as a 6–10-foot path',
+              'One of the most achievable and most beautiful Japanese garden forms for American homes. The path, lantern, water basin, and destination are the essential elements. Perfect for a path from the back door to a garden seating area.',
+            ],
+            [
+              'Courtyard Garden',
+              'Tsubo-niwa',
+              'Tiny enclosed garden designed to be seen from inside through a window or glass door; often a single composition of stone, moss, bamboo, or a small maple',
+              'As small as 6–15 square feet',
+              'Ideal for urban homes, side yards, and indoor-outdoor spaces. A single, resolved composition between two windows or outside a glass door. One of the most achievable and most impactful Zen garden forms.',
+            ],
+            [
+              'Meditation Corner',
+              'Contemporary adaptation',
+              'A designated outdoor seating and contemplation space surrounded by simplified Zen garden elements: gravel, stone, perhaps a single specimen plant or lantern',
+              '6–10 feet of depth from the seating point',
+              'The most flexible and most accessible form for American gardeners. Works within an existing garden, on a patio, or as a defined area within a larger yard.',
+            ],
+            [
+              'Indoor Tray Garden',
+              'Bonseki / adapted',
+              'A shallow tray containing raked sand or fine gravel, miniature stones, and possibly small plants; a complete Zen garden environment in table-top scale',
+              'A tray or container 12–36 inches wide',
+              'Perfect for apartments, offices, and spaces with no outdoor access. A genuine contemplative tool despite its small scale. Can be raked daily as a meditation practice.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Design Process: From Observation to Plan',
+        },
+        {
+          type: 'p',
+          text: 'Good Zen garden design is not planned from a drawing and then built. It is developed in dialogue with the site through a process of observation, proposal, and revision. The following process is adapted from traditional Japanese garden design practice for the American home gardener.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Observe first: Spend time in the space across different conditions — different times of day, different weather, different seasons if possible — before placing anything. Take photographs. Sit in the space and attend to it. Note what the space already has that is worth keeping, and what conditions it presents that will shape the design.',
+            'Define the primary viewpoint: Every Zen garden has a primary viewpoint — the position from which it is most often experienced. This might be a window, a doorway, a designated bench location. The garden is composed for this viewpoint first and foremost. Every element\'s placement should be evaluated from this position.',
+            'Place the major stones first: Before any gravel, planting, or structure, place the major stones. Stones are the structural and spiritual skeleton of the garden; everything else is arranged in relation to them. Use actual stones in the actual space rather than planning stone placement on paper — the quality and character of an individual stone determines how it is placed.',
+            'Then gravel, then planting: Once the stones are placed satisfactorily, add the gravel or ground material. Then add any planting. Then any structures (lantern, water basin, fence). This sequence ensures that the most important elements are placed first and that subsequent elements serve them rather than competing with them.',
+            'Edit: Step back and apply the kanso principle. What can be removed? What is competing for attention with the primary composition? The Zen garden that needs nothing added is finished. The Zen garden that could lose an element without losing its character should lose it.',
+          ],
+        },
+      ],
+    },
   ],
 }
