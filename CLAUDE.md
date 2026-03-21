@@ -379,6 +379,7 @@ Thirty-six full guides integrated into the app:
 - `src/data/guide-content/xeriscape.js` — Xeriscape Design (`id: 'xeriscape'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/common-garden-diseases.js` — Common Garden Diseases (`id: 'common-diseases'`) — **complete** (all 10 sections + rapid symptom key built)
 - `src/data/guide-content/rain-barrel.js` — Starting a Rain Barrel (`id: 'rain-barrel'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/zen-garden.js` — Zen Garden Design (`id: 'zen-garden'`) — **complete** (all 10 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -853,6 +854,26 @@ Every page in the app exports full metadata including:
 | Section 8: Troubleshooting Common Problems | ✅ Done | 9-row problem/cause/solution table (barrel not filling, spigot leaks, mosquito larvae, bad odor, algae, foundation overflow, low pressure, winter cracking, chronic overflow) |
 | Section 9: Scaling Up — Cisterns & Advanced Systems | ✅ Done | 6-row storage tank options table (linked barrels through underground cisterns); 4-item multi-barrel/cistern design guidance; permits/HOA considerations (building permits, HOA restrictions, structural requirements) |
 | Section 10: The Ecological Context — Beyond the Barrel | ✅ Done | Stormwater problem (50–70% runoff in developed landscapes); 5 complementary practices (rain gardens, permeable paving, strategic grading, sheet mulching, native plantings); impact calculation (1,000–40,000 gal/year range); closing tip callout + 15-item quick reference checklist |
+
+---
+
+### Zen Garden Design Guide ✅
+
+`src/data/guide-content/zen-garden.js` — Zen Garden Design (`id: 'zen-garden'`); fully synced with `Zen_Garden_Guide.docx` — 10 sections covering philosophy through seasonal practice.
+
+| Section | Status | Notes |
+|---|---|---|
+| Overview: What a Zen Garden Actually Is | ✅ Done | karesansui history intro; 7-row principles table (Fukinsei, Kanso, Koko, Shizen, Yugen, Datsuzoku, Seijaku) with Japanese concept, in-garden meaning, and design application |
+| Section 1: Philosophy — The Seven Principles | ✅ Done | Wabi-sabi (3 expressions, material implications); Ma (negative space, gravel as space, silence); extended design application for each of the 7 principles; wabi-sabi tip callout |
+| Section 2: Space Design, Site Analysis & Garden Types | ✅ Done | Site analysis 5-item list (sun, slope, drainage, existing features, views); 6-row garden types table (Karesansui, Strolling, Tea, Courtyard, Borrowed Scenery, Meditation Terrace); borrowed scenery tip callout |
+| Section 3: Stone — The Essential Element | ✅ Done | Stone selection rules (local stone, weathered texture, scale); 5-item placement principles list; 7-row composition types table (Sanzon, Island, Leaning, Stepping, Guardian, Bridge, Sando); lantern types and placement guidance |
+| Section 4: Karesansui — The Dry Garden | ✅ Done | 4-row gravel types table (DG, pea, granite chips, crushed quartzite); 5-step construction guide; 5-row raking patterns table (straight parallel, concentric, wave, checkerboard, cloud/pebble) |
+| Section 5: Plants — Selection and Placement | ✅ Done | 7-row trees table; 7-row shrubs table; ground layer list (mosses, ferns, sedges, mondo grass, liriope); bamboo warning callout; 4-row moss types table; avoiding the "Japanese garden clichés" tip |
+| Section 6: Structures, Paths & Hardscape | ✅ Done | 4 fence types; 5-row paths table (flagstone, stepping stone, gravel, moss path, bamboo boardwalk); gates; bridges; tea house/pavilion notes; lantern placement tip |
+| Section 7: Niwaki — Cloud Pruning | ✅ Done | 8-row plants table; 6-step technique guide; removal tip; karikomi (mass clipping) distinction tip |
+| Section 8: Moss, Water Features & Garden Lighting | ✅ Done | Moss establishment (transplant + slurry methods); 4-row moss types table (Sheet, Cushion, Haircap, Fern); recirculating pump systems; water quality and freeze protection; 4-item evening/night lighting guidance |
+| Section 9: Small-Space Zen Gardens & Regional Adaptation | ✅ Done | 6-row small-space compositions table (tsubo-niwa through indoor tray garden); 7-row regional adaptation table (NE, Mid-Atlantic, SE/Gulf, Midwest, PNW, SW/Rocky Mtn, CA/Coastal) |
+| Section 10: The Garden Through the Seasons & Ongoing Practice | ✅ Done | 5-row seasonal calendar (Late Winter/Spring/Summer/Fall/Winter) with garden experience, care tasks, and contemplative focus columns; 7-row troubleshooting table; 3-paragraph closing reflection "The Garden as Teacher" + Sakuteiki colophon tip |
 
 ### Typography Upgrade ✅
 
