@@ -697,5 +697,92 @@ export const zenGardenContent = {
         },
       ],
     },
+    {
+      id: 'moss-water-lighting',
+      title: 'Moss, Water Features & Garden Lighting',
+      blocks: [
+        {
+          type: 'h3',
+          text: 'Growing Moss: The Quintessential Zen Garden Skill',
+        },
+        {
+          type: 'p',
+          text: 'Moss is so central to the Zen garden aesthetic that an entire gardening tradition — koke-niwa, the moss garden — is devoted to it. Establishing moss requires patience and specific conditions, but once established, a healthy moss lawn is one of the most beautiful and low-maintenance surfaces a garden can support.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Where moss thrives: Shade or dappled light; consistent moisture; slightly acidic soil (pH 5.0–6.0); good atmospheric humidity. Moss is most easily established in the Pacific Northwest, New England, the upper Midwest, and the humid Southeast. In hot, dry climates (Southwest, Great Plains), moss is difficult without creating an artificially moist microclimate through irrigation and shading. In these climates, fine-textured decomposed granite, pea gravel, or low ground covers (Mazus, Pratia) may substitute for the visual role that moss plays.',
+            'Establishment by transplant: Collect or purchase living moss from a nursery or from areas of your property where it naturally grows. Remove existing ground cover. Lower soil pH to 5.5–6.0 if needed (test first). Press moss firmly onto moist soil with good contact. Water gently twice daily for 4–6 weeks. Do not allow to dry out during establishment. Avoid foot traffic for the first full season.',
+            'Establishment by slurry: Blend moss, buttermilk, and water into a slurry. Paint onto prepared surfaces — stone, bare soil, a clay pot, a concrete wall. Keep moist. Moss establishes within weeks in humid, shaded conditions.',
+            'Maintenance: Remove leaves by hand or with a soft broom (never a leaf blower, which destroys moss). Do not fertilize (moss does not need nutrients; fertilizer feeds the weeds that compete with it). Keep shaded and moist. Replenish patches that die back by transplanting from healthy areas.',
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['Moss Type', 'Best For', 'Light', 'Moisture', 'Climate Notes'],
+          rows: [
+            [
+              'Sheet Moss (Hypnum spp.)',
+              'Ground cover in large areas; stepping stone surrounds; the most widely available',
+              'Part shade to full shade',
+              'Consistently moist',
+              'Adaptable across most of the US in shade. The standard moss for Zen garden establishment.',
+            ],
+            [
+              'Cushion Moss (Leucobryum glaucum)',
+              'Stone compositions; the mounded cushion form is particularly beautiful with stone',
+              'Part shade to full shade',
+              'Moist; tolerates brief drying better than sheet moss',
+              'Eastern and Pacific Northwest US. The distinctive mounded form creates beautiful variation in the moss layer.',
+            ],
+            [
+              'Haircap Moss (Polytrichum spp.)',
+              'Taller, more textured moss for transitional zones between gravel and planting',
+              'Part shade',
+              'Moist to average',
+              'Very widely adaptable; tolerates more sun than other mosses.',
+            ],
+            [
+              'Fern Moss (Thuidium spp.)',
+              'The finest texture; feathery appearance; excellent in detailed stone compositions',
+              'Full shade to part shade',
+              'Consistently moist',
+              'Best in humid climates: Pacific Northwest, Southeast, New England.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Water Features: Installation and Maintenance',
+        },
+        {
+          type: 'list',
+          items: [
+            'Recirculating pump systems: A submersible pump placed in the water basin or pond, connected to a bamboo spout or stone channel, recirculates collected water continuously. Solar-powered submersible pumps (12V DC) are ideal for Zen garden water features: they operate when the sun shines, are silent, and require no electrical connection. A pump rated at 50–100 gallons per hour is adequate for a tsukubai basin; larger features need proportionally larger pumps.',
+            'Water quality in small features: Standing water in a small stone basin in summer heat becomes stagnant within days. A recirculating pump that keeps the water moving dramatically slows this process. For basins not served by a pump, change water every 3–5 days in summer. A Bti mosquito dunk (Bacillus thuringiensis israelensis) in any standing water feature prevents mosquito breeding.',
+            'Freeze protection: In Zones 6 and colder, any aboveground water feature must be drained before the first hard freeze. A stone basin cracked by freezing water cannot be repaired. Remove the pump and store indoors; drain all water and leave the basin tipped or covered to prevent it from refilling with rain.',
+            'Sound design: A bamboo spout dropping water 6 to 12 inches into a stone basin creates a quiet, continuous sound. The higher the drop, the more sound is produced. The surface of the basin — stone versus water-covered gravel versus open water — also affects the quality of sound. Experiment with height and surface before finalizing the installation.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Lighting for Evening and Night',
+        },
+        {
+          type: 'p',
+          text: 'A Zen garden at night can be as powerful as — and often more powerful than — the same garden in daylight. The simplification that darkness creates — reducing the garden to a composition of light, shadow, and silhouette — eliminates visual complexity and produces the quality of stillness that the Zen garden is designed to cultivate. Lighting is not enhancement; it is a design tool for a different garden.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Traditional stone lanterns: A stone lantern with a candle or small LED placed inside the lantern chamber casts a warm, low, indirect light that illuminates the area around the lantern without directing bright light anywhere. The silhouette of the lantern itself becomes a night composition.',
+            'Low-voltage LED path lighting: Small, low-profile fixtures at ground level along the path create the experience of a garden that can be walked through safely at night without eliminating the darkness that gives the evening garden its character. The goal is to see the path, not to illuminate the garden as if it were daytime.',
+            'Uplighting specimen plants: A single low-wattage uplight directed at a cloud-pruned pine or a specimen Japanese maple at night creates a dramatically different garden than the daytime version. The branch structure becomes the primary visual element; the gravel and ground material recede into shadow.',
+            'What to avoid: Bright flood lighting, colored lights, and multiple conflicting light sources all undermine the garden\'s quality of stillness. A garden with too many lights becomes a light show; a garden with one or two well-placed, low-intensity sources becomes a different kind of garden.',
+          ],
+        },
+      ],
+    },
   ],
 }
