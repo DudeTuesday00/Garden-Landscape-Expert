@@ -784,5 +784,232 @@ export const zenGardenContent = {
         },
       ],
     },
+    {
+      id: 'small-space-regional',
+      title: 'Small-Space Zen Gardens & Regional Adaptation',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Some of the most powerful Zen garden compositions in history have been created in extremely limited spaces. The tsubo-niwa — courtyard garden visible from inside a building — was traditionally as small as 36 square feet. The principle of mitate — using one thing to suggest another — is the key tool for the small Zen garden: a single stone suggests a mountain; a small moss mound suggests a forested island; a bamboo spout emptying into a stone basin suggests a river.',
+        },
+        {
+          type: 'h3',
+          text: 'Small-Space Compositions',
+        },
+        {
+          type: 'table',
+          headers: ['Composition', 'Space Required', 'Key Elements', 'Notes'],
+          rows: [
+            [
+              'Tsubo-niwa (courtyard garden)',
+              'As small as 36 sq ft',
+              'One specimen plant, one stone group, moss or fine gravel ground, one water basin or lantern',
+              'Designed to be viewed from inside the building. Design for the view from the window first. Evening lighting essential.',
+            ],
+            [
+              'Entryway dry garden',
+              '20–50 sq ft',
+              'Raked gravel or decomposed granite, 3–5 stones, one specimen plant, optional stepping stone path',
+              'The transition from street to entrance. Even a narrow strip between a path and a wall supports a simplified karesansui.',
+            ],
+            [
+              'Water basin composition',
+              '10–25 sq ft',
+              'Tsukubai basin, bamboo spout and pump, 3–5 surrounding stones, moss or fern planting, small lantern',
+              'One of the most achievable compositions. The sound of water is the primary gift of this design.',
+            ],
+            [
+              'Stepping stone path',
+              'Any length from 10 ft',
+              '5–10 stepping stones, ground cover between (moss, gravel, or low plants), minimal planting alongside',
+              'A path of stepping stones through a shaded area, surrounded by moss and ferns, transforms a utilitarian side yard.',
+            ],
+            [
+              'Container Zen garden (balcony / patio)',
+              '10–20 sq ft of container grouping',
+              'Japanese maple in large container, clipped boxwood or holly, small bamboo, water basin, gravel tray beneath',
+              'A complete Zen garden experience without any in-ground planting. Achievable on any balcony or terrace.',
+            ],
+            [
+              'Indoor tray garden',
+              'A tray 12–36 inches wide',
+              'Fine sand or decomposed granite, 3–5 small stones, a miniature rake, perhaps one small plant or moss',
+              'A genuine contemplative tool. Rake daily as a meditation practice. Works in any space including offices.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Regional Adaptation: American Climates',
+        },
+        {
+          type: 'table',
+          headers: ['Region', 'Climate Challenge', 'Plant Adaptations', 'Design Adaptations', 'Regional Opportunity'],
+          rows: [
+            [
+              'Northeast & New England (Zones 4–6)',
+              'Cold winters limit tender plants; late spring; intense fall color',
+              'Japanese maple (choose hardy varieties), pine for niwaki, clumping bamboo (Fargesia), hardy azaleas, Christmas fern, ostrich fern',
+              'Design for fall as the primary display season. Pond depth below frost line if koi are intended. Moss establishes readily in this climate.',
+              'The finest moss-growing climate in America outside the Pacific Northwest. Extraordinary fall color. Witch hazel and snowdrops provide late-winter interest when the garden is most austere.',
+            ],
+            [
+              'Mid-Atlantic (Zones 6–7)',
+              'Hot humid summers; cold winters; wide seasonal range',
+              'Full Japanese maple palette; camellias (Zone 7); azaleas; sweetbox; nandina (check invasive status)',
+              'Four-season garden design is fully achievable here. The finest climate for the complete Zen garden plant palette.',
+              'Cherry and redbud bloom in early spring; azaleas follow; summer is lush; fall is brilliant; winter reveals the bones.',
+            ],
+            [
+              'Southeast & Gulf Coast (Zones 7–9)',
+              'Intense summer heat and humidity; mild winters; camellias are foundational',
+              'Southern azaleas and camellias; loropetalum; gardenias; Japanese maple with afternoon shade; mondo grass; liriope',
+              'The garden lives outdoors year-round. Design for garden use from October through May. Summer shade is essential.',
+              'Camellias flower through winter and define the Southern Zen garden. Native ferns are extraordinary in damp shade compositions.',
+            ],
+            [
+              'Midwest & Great Plains (Zones 4–6)',
+              'Cold winters, hot summers, wind; clay soils; variable rainfall',
+              'Hardy Japanese maples, cold-hardy azaleas, serviceberry (cherry substitute), native ferns and sedges, mugo pine',
+              'Karesansui gardens are particularly well-suited — they require no water and minimal irrigation. Wind management through fence and planting screens is essential.',
+              'Prairie sedges and native grasses can be incorporated into Zen garden compositions with elegant effect.',
+            ],
+            [
+              'Pacific Northwest (Zones 7–9)',
+              'Mild, wet winters; relatively cool, dry summers; naturally Japanese-feeling climate',
+              'The widest plant palette available in America. Japanese maples, camellias, and rhododendrons thrive. Moss is easily established.',
+              'The climate that most closely resembles Japan\'s. Almost all traditional Zen garden elements can be used without adaptation.',
+              'Moss is the regional specialty. The Pacific Northwest produces and maintains moss more easily than almost anywhere in America.',
+            ],
+            [
+              'Southwest & Rocky Mountain (Zones 4–8)',
+              'Low humidity; intense sun; hot days, cool nights; alkaline soils',
+              'Native oaks, manzanita, penstemon, mugo pine, clumping bamboo at higher elevations; drought-adapted groundcovers',
+              'Karesansui gardens are the most sustainable and climate-appropriate choice. Use locally sourced stone (sandstone, granite, basalt). Replace moss with fine gravel or drought-adapted sedums.',
+              'The dry landscape is itself profoundly compatible with karesansui aesthetics. Native Southwest stone is among the most beautiful in America for garden use.',
+            ],
+            [
+              'California & Coastal West (Zones 8–10)',
+              'Mediterranean climate; wet winters, dry summers; coastal fog; fire risk in some areas',
+              'Western redbud, coast live oak, manzanita, ceanothus, native grasses, drought-tolerant bamboo',
+              'The dry garden and karesansui form are both aesthetically and environmentally appropriate. Borrowed scenery from California hills or coastal views is a significant opportunity.',
+              'The gnarled oak and silver-leaved manzanita have a wabi-sabi quality that integrates naturally with Zen principles. Native California gardens can be deeply Zen in character without a single Japanese plant.',
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      id: 'seasons-practice',
+      title: 'The Garden Through the Seasons & Ongoing Practice',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A Zen garden designed for a single season misses the philosophy that animates it. The concept of mono no aware — the bittersweet beauty of impermanence — requires experiencing the garden across time: the cherry bloom that is beautiful because it falls; the bare branch that is beautiful because it is what the tree has become. Design for all four seasons. Use each season.',
+        },
+        {
+          type: 'table',
+          headers: ['Season', 'Garden Experience', 'Care Tasks', 'Contemplative Focus'],
+          rows: [
+            [
+              'Late Winter / Early Spring',
+              'The garden at its most austere: bare branch structure against sky; first moss brightening with moisture; snow on stone. One of the finest Zen garden moments is a dusting of snow on raked gravel — the impermanence of the pattern made visible in the most literal way.',
+              'Prune pines (if not done in fall) before candle emergence. Re-rake the karesansui with fresh attention after winter. Clean and restart water features. Inspect moss for winter damage.',
+              'The austerity principle: what remains when everything is stripped away? The stone remains. The branch structure remains. The garden is most itself in winter.',
+            ],
+            [
+              'Spring',
+              'Cherry, redbud, or serviceberry bloom. Azaleas follow. Moss at its most vivid green. New maple foliage emerges. The garden\'s most celebrated season, and the briefest — which is exactly the point.',
+              'Plant new additions. Divide ferns and sedges. Top-dress moss areas. Check and clean pond filtration. Begin regular raking. Add a fresh layer of decomposed granite if the raking surface has compacted.',
+              'Mono no aware: the cherry blossoms are beautiful because they fall. Experience the bloom season fully aware of its brevity. This awareness is the practice.',
+            ],
+            [
+              'Summer',
+              'The green garden: full canopy, moss at its lushest, pond plants established, bamboo at its most vertical and dense. The garden is most private and enclosed in summer.',
+              'Rake karesansui regularly — this is the primary active season for raking practice. Clip niwaki plants (if second pruning is needed). Water moss areas in drought. Maintain pond and water features. Deadhead nothing — let the garden be.',
+              'The full-presence practice: the garden in summer heat, with the sound of water and the quality of green light through a maple canopy, is the Zen garden at full depth. Sit here without an agenda.',
+            ],
+            [
+              'Fall',
+              'The most celebrated season: Japanese maple color from yellow through orange to crimson. Fallen leaves on moss and gravel. The raked pattern interrupted by a fallen leaf is a composition in itself — one that changes daily.',
+              'Rake fallen leaves from moss (by hand or soft broom; never a leaf blower). Begin winter preparation: protect marginally hardy plants. Divide and replant perennials. Do not cut back ornamental grasses — their winter form is part of the garden.',
+              'The leaf on the raked gravel. The moment between the wind and the stillness. These are not interruptions to the garden\'s beauty; they are expressions of it. Practice noticing this.',
+            ],
+            [
+              'Winter',
+              'The purest Zen garden season: structure without distraction. Stone and gravel in full clarity. The lantern in snow. The garden is most austere and most philosophical in winter. The Western impulse to see winter as the garden\'s decline misses the point entirely.',
+              'Final cleanup before hard freeze: drain all water features; mulch marginally hardy plants; check rodent guards on young trees; nothing else — the winter garden does not need tending. It needs to be experienced.',
+              'Seijaku — active stillness. Sit in the winter garden as you sit in summer, but without the softness of green. What is the garden without its softness? What are you without yours?',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Troubleshooting the Zen Garden',
+        },
+        {
+          type: 'table',
+          headers: ['Challenge', 'Likely Cause', 'Resolution'],
+          rows: [
+            [
+              'Gravel surface becoming weedy',
+              'Landscape fabric degraded; seeds germinating on the gravel surface from wind and bird activity',
+              'Remove weeds by hand as soon as they appear — before they set seed. Replace landscape fabric if it has deteriorated. A thin layer of fine granite grit on top of larger gravel inhibits weed germination. Avoid organic mulch adjacent to the karesansui.',
+            ],
+            [
+              'Moss dying or browning in patches',
+              'Insufficient shade; soil drying out; foot traffic; pH too alkaline; fallen leaves left too long',
+              'Increase shading. Irrigate with a gentle mist during dry periods. Install stepping stones to redirect foot traffic. Test and amend soil pH to 5.5–6.0. Remove leaves promptly with a soft broom.',
+            ],
+            [
+              'Japanese maple scorching in summer',
+              'Too much afternoon sun; insufficient water in heat; reflected heat from hard surfaces',
+              'Japanese maples, particularly red-leaved varieties, prefer afternoon shade in Zone 7+. Move containerized specimens or add shade from a structure. Water deeply and mulch the root zone.',
+            ],
+            [
+              'Stone lantern looks out of place',
+              'Scale mismatch; wrong material; placement too central; insufficient aging',
+              'A lantern that looks prominent and new needs two things: time and partial concealment. Paint with diluted buttermilk in a shaded, moist location to encourage moss. Plant a low shrub or fern partially in front. Relocate from the center to an edge.',
+            ],
+            [
+              'Garden feels busy, not restful',
+              'Too many elements; too many plant species; too much color variety; insufficient negative space',
+              'Edit ruthlessly. Remove any element that does not clearly earn its presence. Reduce the number of plant species. Increase the proportion of empty space — gravel, moss, or bare stone — relative to planted area. Apply kanso: a garden that feels too full almost always needs subtraction, not addition.',
+            ],
+            [
+              'Raking pattern doesn\'t hold shape',
+              'Gravel particles too round (pea gravel); gravel layer too thin; gravel is wet',
+              'Switch to angular decomposed granite, which holds patterns better than rounded pea gravel. Increase depth to 2–3 inches. Rake when the gravel is dry.',
+            ],
+            [
+              'Pond water turning green',
+              'Algae bloom from too much sun, excess nutrients, or inadequate filtration',
+              'Add floating plants (waterlilies, water hyacinth where non-invasive) that shade the water and compete with algae for nutrients. Increase filtration. Add a UV clarifier to the pump circuit. Reduce direct sun by planting screening shrubs on the south side.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Garden as Teacher',
+        },
+        {
+          type: 'p',
+          text: 'There is an important distinction in Japanese culture between a garden that is finished and a garden that is practiced. Western garden design tends toward completion: the plan is executed, the plants are established, the garden is done. Zen garden design tends toward practice: the garden is a living relationship that deepens over years and decades, requiring regular attention, seasonal adjustment, and continuous refinement.',
+        },
+        {
+          type: 'p',
+          text: 'The niwaki tree that will be magnificent in twenty years is beginning now. The moss that will cover the stepping stones completely in five years is establishing today. The stone that looks slightly awkward in its first year will look as if it has always been there in its seventh. The karesansui that you rake every week in different weather and light and mood becomes, over time, a meditation practice as much as a garden feature.',
+        },
+        {
+          type: 'p',
+          text: 'Begin anywhere. One stone placed with intention. One path of stepping stones through a corner of the yard. A water basin and a lantern and a clump of moss. The principles of Zen garden design do not require a large garden, a large budget, or a complete renovation. They require a different quality of attention — and once that attention is brought to a space, it transforms the space in ways that no amount of planting or purchasing can replicate.',
+        },
+        {
+          type: 'tip',
+          emoji: '🪨',
+          text: 'The garden is already here. The practice is to see it. — after a 12th-century garden diary, Sakuteiki',
+        },
+      ],
+    },
   ],
 }
