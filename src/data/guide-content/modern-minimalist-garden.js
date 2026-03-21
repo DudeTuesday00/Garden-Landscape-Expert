@@ -590,5 +590,85 @@ export const modernMinimalistGardenContent = {
         },
       ],
     },
+    {
+      id: 'containers-furniture',
+      title: 'Section 6: Containers, Furniture & the Designed Object',
+      blocks: [
+        {
+          type: 'p',
+          text: 'In a minimalist garden, every object is a designed object — every pot, every piece of furniture, every lantern or sculpture is subject to the same scrutiny as the hardscape material and plant palette. A beautiful minimalist garden furnished with cheap, visually busy outdoor furniture loses its character at the moment of use. The objects people interact with most closely deserve the most careful selection.',
+        },
+        {
+          type: 'h3',
+          text: 'Containers: Form, Material & Plant',
+        },
+        {
+          type: 'p',
+          text: 'Containers in a minimalist garden serve two related purposes: they allow plants to be positioned precisely where the design needs them (on a paved surface, at an entry, on a rooftop), and they themselves become designed objects — their form and material contributing to the composition as much as what grows in them.',
+        },
+        {
+          type: 'table',
+          headers: ['Material', 'Character', 'Best Plants', 'Maintenance Notes'],
+          rows: [
+            [
+              'Poured concrete (custom or commercial)',
+              'Architectural, heavy, permanent-feeling; the closest material to poured-in-place hardscape; creates seamless transitions; ages beautifully with weathering and moss',
+              'Architectural grasses (Karl Foerster, blue oat grass); Japanese maple; olive tree; New Zealand flax; boxwood topiary',
+              'Seal with penetrating concrete sealer to reduce water absorption and freeze-thaw cracking in cold climates; avoid moving when filled — weight is significant',
+            ],
+            [
+              'Corten (weathering steel)',
+              'Warm, industrial, distinctive; the most architecturally powerful container material; pairs with almost any plant; ages from bright orange to deep brown-rust',
+              'Ornamental grasses; agave; lavender; all Mediterranean plants; plants with silver or gray foliage contrast beautifully with the warm rust tone',
+              'Allow to fully patinate (2–3 years outdoors) before placing on light-colored surfaces — rust runoff stains concrete and limestone. Once patinated, the surface is stable.',
+            ],
+            [
+              'Glazed ceramic (dark tones)',
+              'Refined, elegant; the most finished of container materials; dark navy, charcoal, and matte black glazes read as contemporary and sophisticated',
+              'Japanese maple; camellia; gardenia; bamboo; any plant deserving close-up presentation',
+              'Frost-rated ceramics (vitrified; check manufacturer specs) required for cold climates — many standard ceramics crack in freezing temperatures; drain and bring indoors or choose frost-proof specification',
+            ],
+            [
+              'Fiber cement / GRC (glass-reinforced concrete)',
+              'Lightweight concrete aesthetic; commercially produced in a wide range of contemporary forms; much lighter than actual concrete for rooftop and balcony applications',
+              'Any plant appropriate to a concrete container; particularly valuable on rooftops where weight is a structural concern',
+              'Verify manufacturer\'s frost rating; most commercial fiber cement containers are rated for cold climates',
+            ],
+            [
+              'Powder-coated steel planters',
+              'The most versatile production container for contemporary design; available in custom sizes and colors; square, rectangular, and circular forms',
+              'Any architectural plant; particularly effective in geometric arrangements of multiples',
+              'Verify drain hole sizing is adequate; clean drainage essential to prevent waterlogging; inspect powder coat annually for chips that allow rust to develop',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🪴',
+          text: 'Containers in a minimalist garden are almost always arranged in odd numbers (1, 3, or 5) and in related but varied sizes rather than identical matching sets. Three containers of the same form in different sizes — large, medium, small — create more visual interest and spatial depth than three identical containers in a row. Group containers as you would group stones: with attention to the relationships between them, the negative space around them, and the way the group reads from the primary viewpoint.',
+        },
+        {
+          type: 'h3',
+          text: 'Outdoor Furniture: Selection Principles',
+        },
+        {
+          type: 'p',
+          text: 'The garden furniture in a minimalist design must meet the same standard as the other designed elements: it should be beautiful in itself, appropriate in material and scale, and invisible in the sense that it belongs so completely to the space that you do not notice it separately from the space.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Material compatibility: Choose furniture in materials that relate to the garden\'s palette — powder-coated aluminum or steel in charcoal, black, or warm gray for contemporary industrial settings; solid teak or ipe in naturally weathering gray for warmer, more organic contexts; concrete and stone seat walls that are built into the hardscape rather than placed on top of it.',
+            'Scale and proportion: Outdoor furniture in a small garden can overwhelm the space if it is too numerous or too large. A minimalist garden seating arrangement is typically a single table with four chairs, or a pair of lounge chairs with a small side table, rather than a large multi-piece sectional that dominates the space. The furniture should serve the garden rather than compete with it.',
+            'Storage and visibility: Furniture that cannot be easily stored or is always visible should be beautiful enough to earn its year-round presence. Furniture that requires covering with tarps or will look weathered and tired in winter should be either stored seasonally or replaced with furniture whose natural weathering is itself beautiful — solid teak, black powder-coated steel, untreated concrete.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🪑',
+          text: "Before purchasing any outdoor furniture, bring a chair to the garden and sit in it at different times of day. Note what you see from each position — which views are revealed, which are blocked, where the light falls at the times you will most use the space. The furniture arrangement should be designed around these observed facts, not around the layout of the furniture showroom.",
+        },
+      ],
+    },
   ],
 }
