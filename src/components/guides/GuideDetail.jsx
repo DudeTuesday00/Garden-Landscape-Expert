@@ -41,6 +41,7 @@ const heroImages = {
   'common-diseases': '/guides/Common_Garden_Diseases_Guide.png',
   'rain-barrel': '/guides/Rain_Barrel_Guide.png',
   'zen-garden': '/guides/Zen_Garden_Guide.png',
+  'modern-minimalist-garden': '/guides/Modern_Minimalist_Garden_Guide.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -637,6 +638,22 @@ const themes = {
     tableHeadText: 'text-stone-800',
     tableHeadBorder: 'border-stone-200',
     bullet: 'text-stone-500',
+  },
+  'modern-minimalist-garden': {
+    heroBg: 'bg-gradient-to-br from-slate-50 to-zinc-100',
+    heroBorder: 'border-slate-200',
+    heroTitle: 'text-slate-800',
+    backBtn: 'text-slate-700 hover:text-slate-900',
+    sectionTitle: 'text-slate-800',
+    sectionBorder: 'border-slate-100',
+    h3: 'text-slate-700',
+    tipBg: 'bg-slate-50',
+    tipBorder: 'border-slate-300',
+    tipText: 'text-slate-900',
+    tableHead: 'bg-slate-100',
+    tableHeadText: 'text-slate-800',
+    tableHeadBorder: 'border-slate-200',
+    bullet: 'text-slate-400',
   },
 }
 

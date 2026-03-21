@@ -345,7 +345,7 @@ export const guideCategories = [
         title: 'Modern Minimalist Garden',
         emoji: '⬜',
         description: 'Clean lines, bold plants, and thoughtful simplicity for contemporary homes.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'foundation-planting',
