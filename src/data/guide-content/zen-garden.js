@@ -250,5 +250,92 @@ export const zenGardenContent = {
         },
       ],
     },
+    {
+      id: 'stone',
+      title: 'Stone — The Essential Element',
+      blocks: [
+        {
+          type: 'p',
+          text: "Stone is to the Zen garden what the skeleton is to the body: the structure on which everything else depends, and which remains present and meaningful even when everything else has been stripped away. In winter, when no leaf is on the maple and no flower on the moss, the stone composition remains. It is, in a sense, the garden's most permanent expression of itself.",
+        },
+        {
+          type: 'h3',
+          text: 'How to Choose Stones',
+        },
+        {
+          type: 'p',
+          text: 'The Japanese tradition of suiseki — the appreciation of naturally formed stones — is the philosophical foundation of stone selection. A stone is chosen for its character: the quality of its form, the texture and color of its surface, the way it holds shadow, the way light moves across it at different times of day, and what it suggests to the imagination. A stone that suggests a mountain is placed as a mountain; a stone whose flat surface suggests water is placed near or instead of water.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Stone character above all: Seek stones with inherent visual interest. Unusual shapes, surface texture that catches light, evidence of geological history in veins or inclusions, a crack or hollow where moisture gathers — these qualities make a stone compositionally valuable in ways that a smooth, featureless specimen is not. The stone with a story, visible in its surface, is more powerful than the perfect stone.',
+            "Source locally: The most important principle in stone selection. Japanese garden design has always used stone native to the local landscape, and this is as true for an American Zen garden as for one in Kyoto. Granite in New England; limestone in the Midwest; sandstone and red rock in the Southwest; basalt in the Pacific Northwest. Local stone belongs to the landscape in a way that imported stone cannot. It also ages and acquires moss and lichen in patterns appropriate to the local climate, which imported stone may not.",
+            'Scale to the space: The most common error in stone placement is choosing stones too small. A stone that looks impressive at the garden center or stone yard is often diminished once placed in a garden context among other elements and ground material. If in doubt, choose the larger stone. Err toward too large rather than too small — a stone that is too large commands the space; a stone that is too small disappears into it.',
+            "Odd numbers: Place stones in groups of three, five, or seven — never two or four. The classic three-stone composition is the fundamental unit of Zen stone design: one tall vertical stone (the primary), one lower diagonal stone (the secondary), and one horizontal flat stone (the tertiary). These three represent heaven, humanity, and earth in the Zen garden's symbolic vocabulary.",
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Placement Principles',
+        },
+        {
+          type: 'list',
+          items: [
+            'Bury at least one-third: A stone whose entire form is visible above grade looks placed. A stone whose lower third is buried looks as if it has always been there and belongs to the earth beneath it. This is the single most important principle of stone placement.',
+            'Lean slightly into the earth: Stones that lean slightly — not perfectly vertical or perfectly horizontal — look natural and settled. Perfect perpendiculars feel engineered and artificial.',
+            "Find the stone's strongest face: Every stone has a face — the side with the most interesting texture, the most revealing profile, the most compelling character. Find it before placing and orient it toward the primary viewpoint.",
+            'Consider shadow: How will this stone look at different times of day as light and shadow move across it? A stone that appears unremarkable at midday may have extraordinary texture at early morning or late afternoon light. Place it to take advantage of its finest light.',
+            "Allow the stone to speak: Once a stone is placed well, do not move it casually or repeatedly. The stone's position becomes part of the garden's character, and the relationship between placed stones creates the garden's compositional energy.",
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Stone Types and Their Roles',
+        },
+        {
+          type: 'table',
+          headers: ['Stone Feature', 'Japanese Term', 'Function', 'Placement Notes'],
+          rows: [
+            [
+              'Specimen Stone',
+              'Ishi',
+              'A single stone of character placed as a focal point, anchor to a composition, or primary element in a stone group.',
+              'Place partially buried. Face toward the primary viewpoint. Always in company of at least two supporting stones.',
+            ],
+            [
+              'Stepping Stones',
+              'Tobi-ishi',
+              'The path through the garden; flat-topped stones placed for walking that simultaneously compose the rhythm and experience of the garden journey.',
+              'Space irregularly (not evenly) at a natural walking stride. Vary stone sizes. Set flush with or slightly above grade. Set in moss, gravel, or low planting.',
+            ],
+            [
+              'Stone Lantern',
+              'Ishidoro',
+              'A carved stone lantern; originally functional, now primarily a compositional and atmospheric element. A focal point and seasonal object.',
+              'Never center in a composition. Always offset to a side, near water or a path. A lantern half-concealed by a plant or stone is more compelling than one in full open view.',
+            ],
+            [
+              'Water Basin',
+              'Tsukubai',
+              "A low stone basin for water; in the tea garden tradition, for ritual handwashing; in the contemporary garden, a water feature, bird bath, and compositional anchor simultaneously.",
+              "Position low (the name means 'to crouch'). Near a path or entry. The surrounding stones — the yakuishi — are as compositionally important as the basin itself.",
+            ],
+            [
+              'Bridge Stone',
+              'Ishi-bashi',
+              'A single large flat stone laid across a dry stream, path depression, or water feature to suggest a bridge.',
+              'Must span the gap fully with both ends resting on stable ground. Choose a stone with natural horizontal character. One of the most elegant minimal garden elements.',
+            ],
+            [
+              'Dry Waterfall',
+              'Kare-taki',
+              "Stones arranged to suggest a waterfall without water — the central feature of a dry stream garden.",
+              "Three primary stones: a tall central stone (the fall), flanking stones suggesting the water's spread, and flat stones at the base suggesting a pool.",
+            ],
+          ],
+        },
+      ],
+    },
   ],
 }
