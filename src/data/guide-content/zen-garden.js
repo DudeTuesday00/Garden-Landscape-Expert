@@ -540,5 +540,162 @@ export const zenGardenContent = {
         },
       ],
     },
+    {
+      id: 'structures',
+      title: 'Structures, Paths, Water & Sound',
+      blocks: [
+        {
+          type: 'p',
+          text: "Structures in the Zen garden — gates, fences, bridges, pavilions, and paths — are as carefully considered as the planting and stone. They do not merely serve functional purposes; they define the garden's spatial sequence, establish its character, and create the moments of pause and arrival that are central to the contemplative experience.",
+        },
+        {
+          type: 'h3',
+          text: "Paths: The Garden's Choreography",
+        },
+        {
+          type: 'p',
+          text: "The path in a Zen garden is not a route from A to B. It is the choreographer of the garden experience. The path determines the sequence of views, the pace of movement, the moments of pause, and the orientation of the walker's attention. A straight path says: move quickly, there is nothing to linger over. A curving path that disappears around a planting says: slow down, there is something ahead you cannot yet see.",
+        },
+        {
+          type: 'list',
+          items: [
+            "Rhythm and pace: Stepping stones placed close together encourage quick movement; stones placed slightly further apart require attention and naturally slow the walker. A single larger stone in the path — a 'stop stone' — creates a natural pause point from which a view is intended to be contemplated.",
+            'Irregular spacing: Stepping stones in a Zen garden are placed at irregular intervals and in irregular arrangements — not in a straight line, not at perfectly equal spacing. The irregularity mirrors natural stone placement and requires the walker to look at the path rather than moving on autopilot.',
+            'Materials: The finest path material for a Zen garden is flat natural stone — flagstone, slate, local granite, or sandstone of appropriate scale. Avoid concrete stepping stones, which look manufactured. Between stones: moss (the finest option; requires shade and moisture), fine gravel (practical and Japanese in character), low ground covers (Mazus, Pratia, Corsican mint, creeping thyme), or bare earth in the most naturalistic sections.',
+            'Never perfectly straight: A path that reveals the destination immediately misses the opportunity to control the garden experience. A path that curves right, then left, then reveals the destination is a path that earns its length.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Water: Stillness, Movement & Suggestion',
+        },
+        {
+          type: 'p',
+          text: 'Water in the Zen garden is never merely decorative. Still water represents the mind in meditation: reflective, calm, containing the sky. Moving water represents the continuous change of nature. Even in the dry garden, gravel is raked to suggest water — because the absence of water, thoughtfully composed, can evoke water more powerfully than water itself.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Still water (pond): An asymmetric, naturalistic water body whose edges blend into planting and stone. Flat stones partially into the water at the waterline. Planting — iris, rush, sedge — at the shallow margins. Even a very small still water feature (a stock tank sunk into the ground, a stone bowl, a half-buried container) creates an entirely different quality of contemplative space: the sky is now in the garden.',
+            'Moving water (stream or spout): The sound of water over stone is a primary sensory element in the Zen garden. A small recirculating pump connecting a water source to a bamboo spout that empties into a stone basin costs $40–80 and transforms the acoustic environment of a garden. The sound masks ambient noise, anchors attention in the present, and creates the quality of aliveness that makes a Zen garden a space in which something is always happening.',
+            "The water basin (tsukubai): A low stone basin, traditionally used for ritual handwashing before the tea ceremony, is one of the most achievable and beautiful Zen garden elements. A natural boulder with a depression drilled by a mason is the finest option; cast stone basins are widely available. The surrounding stones and a bamboo spout complete the composition. The act of approaching and pausing at the water basin is itself a transition from ordinary mind to garden mind.",
+            'Dry water: A dry stream — a naturalistic channel of rounded river stones — is one of the most effective and beautiful Zen garden techniques, particularly in drought-prone climates. It serves as a drainage channel during rain events and as a year-round compositional element. A flat bridge stone spanning the dry stream creates a garden moment of surprising power.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Gates, Fences & Enclosure',
+        },
+        {
+          type: 'p',
+          text: 'The gate is the threshold between the ordinary world and the garden world. Even a modest gate — two posts and a simple overhead member — creates a psychological transition that changes the experience of entering the garden. The garden that can be entered but cannot be simply walked into from any angle is a garden with a more intense interior quality.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Materials: Natural wood (cedar, redwood, teak) that weathers to gray; bamboo lashed with natural twine; stone posts with a simple timber lintel. Avoid decorative ironwork, vinyl, or treated lumber with a green cast.',
+            'The view through the gate: The most important design decision for any garden gate is what the visitor sees through it. Frame the view deliberately: a stone lantern, a specimen maple, a glimpse of water, a bend in a path. The gate creates the expectation; the garden beyond fulfills or deepens it.',
+            'Bamboo fence types: Yotsume-gaki (four-eyed fence: open-weave bamboo defining space without blocking it); Teppo-gaki (gun barrel fence: vertical bamboo poles of alternating heights, providing more privacy); Kinkakuji-gaki (dense brushwood panels framed in bamboo). Each provides a different balance of enclosure and openness.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Stone Lanterns: Placement and Character',
+        },
+        {
+          type: 'p',
+          text: 'The stone lantern (ishidoro) is the element most frequently imported into Western garden contexts, often placed with more enthusiasm than understanding. A lantern placed well is a powerful compositional anchor; placed poorly, it looks like a garden center impulse purchase.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Material: Natural granite that has begun to weather and acquire moss is ideal. Cast concrete lanterns can look cheap and lightweight. If budget requires concrete, choose a dense, well-cast version and allow several years to weather before evaluating.',
+            'Placement: Never in the center of the garden. Always offset — beside a path, at the edge of water, partially obscured by a plant. A lantern half-hidden behind a maple branch is more interesting than one standing in open view. Site where it will eventually acquire moss — north-facing and near water are ideal.',
+            'Number: One lantern per garden in most contexts. Two lanterns positioned symmetrically flanking an entry is a formal arrangement; elsewhere, a single lantern is always more powerful.',
+          ],
+        },
+      ],
+    },
+    {
+      id: 'niwaki',
+      title: 'Niwaki — The Art of Cloud Pruning',
+      blocks: [
+        {
+          type: 'p',
+          text: "Niwaki — literally 'garden tree' — refers to the Japanese practice of pruning trees and shrubs into deliberately artistic forms that suggest natural, wind-shaped trees while revealing and celebrating the underlying branch structure. The most recognized form is the cloud-pruned tree: foliage gathered into distinct, rounded pads or 'clouds' on carefully exposed branches, with negative space between each cloud that reveals the branch and trunk structure beneath.",
+        },
+        {
+          type: 'p',
+          text: 'Niwaki is one of the most powerful ways to introduce Zen garden aesthetics into an existing American garden without redesigning the entire space. A boxwood, Japanese holly, yew, or juniper that has been cloud-pruned is unmistakably Zen in character, requires no additional garden redesign, and becomes more interesting with each year of careful development.',
+        },
+        {
+          type: 'h3',
+          text: 'Plants Suitable for Niwaki Training',
+        },
+        {
+          type: 'table',
+          headers: ['Plant', 'Zones', 'Form Achievable', 'Training Difficulty', 'Notes'],
+          rows: [
+            [
+              'Japanese Black Pine (Pinus thunbergii)',
+              '5–8',
+              'The most authentic niwaki form — layered cloud pads on dramatically exposed trunk and branches',
+              'High — requires annual candle pruning and multi-year development',
+              'The definitive niwaki plant. Begin training from a young age. Annual candle pruning in early summer is the key technique.',
+            ],
+            [
+              'Boxwood (Buxus spp.)',
+              '4–9 (varies)',
+              'Cloud forms, layered pads, abstract rounded shapes',
+              'Medium — responds well to hard pruning and cloud-shaping',
+              'The most widely available cloud-pruning subject. B. sempervirens is vigorous; smaller-leaved varieties have finer cloud texture.',
+            ],
+            [
+              'Japanese Holly (Ilex crenata)',
+              '5–7',
+              'Cloud forms similar to boxwood; small glossy leaves create fine texture',
+              'Medium',
+              'Excellent boxwood substitute where boxwood blight is a concern.',
+            ],
+            [
+              'Yew (Taxus spp.)',
+              '3–7',
+              'Layered cloud forms; dense texture; very dark green',
+              'Medium — tolerates hard pruning; responds well to shaping',
+              'Extremely durable and shade-tolerant. T. × media is most widely available for niwaki development.',
+            ],
+            [
+              'Juniper (Juniperus spp.)',
+              'Varies',
+              'Natural windswept forms; informal cloud-pruned shapes; the most immediately Zen-looking result',
+              'Medium — remove unwanted branches rather than shear; develop over years',
+              'J. chinensis, J. scopulorum, and J. sabina all respond to niwaki-style shaping.',
+            ],
+            [
+              'American Holly (Ilex opaca)',
+              '5–9',
+              'Large-scale cloud forms; architectural winter presence with red berries',
+              'Medium',
+              'Native alternative to Japanese holly at larger scale. Provides birds with winter food while serving as a niwaki specimen.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Basic Niwaki Technique',
+        },
+        {
+          type: 'list',
+          items: [
+            'Identify the primary trunk line: Before pruning, study the tree and identify its most interesting trunk and branch structure. Niwaki reveals this structure. The first step is always to remove branches that obscure the trunk or clutter the primary branch lines.',
+            'Remove branches working bottom to top: Remove crossing branches, dead wood, and any branches growing straight up or straight down from a horizontal branch. Work slowly, removing one branch at a time and stepping back to evaluate the effect after each removal.',
+            'Identify the future cloud positions: Look at the remaining foliage masses and determine which should become cloud pads. Typically three to five clouds on a small tree. Each cloud should be on a different horizontal plane so the layering creates depth.',
+            'Shape each cloud: Clip each foliage mass into a rounded, slightly flattened cushion form. The underside should be relatively flat; the top slightly convex. This is done with hand pruners for the outline and by pinching or fine shearing within the pad for texture.',
+            "Create negative space: The space between cloud pads — where the branch is exposed and empty — is as important as the pads themselves. Do not be afraid of the empty spaces. They are the 'ma' of the tree: the meaningful emptiness that makes the pads visible as pads.",
+            'Maintain annually: Return to each tree once or twice per year to refine the cloud shapes, remove unwanted new growth, and continue developing the branch structure. A niwaki tree becomes more beautiful with each year of careful attention.',
+          ],
+        },
+      ],
+    },
   ],
 }
