@@ -549,5 +549,46 @@ export const modernMinimalistGardenContent = {
         },
       ],
     },
+    {
+      id: 'lighting',
+      title: 'Section 5: Lighting — The Garden After Dark',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Garden lighting in a minimalist design is not illumination; it is composition. The garden at night can be as powerful as the garden by day — a different composition using the same elements, with darkness as the primary material and light as the accent. Minimalist lighting philosophy: illuminate specific elements rather than flooding the space with general light; use the minimum quantity of fixtures that achieves the desired effect; choose fixtures whose own form is invisible or beautiful.',
+        },
+        {
+          type: 'h3',
+          text: 'The Four Lighting Techniques',
+        },
+        {
+          type: 'list',
+          items: [
+            'Uplighting: A fixture positioned at or below grade level directed upward at a plant or architectural element. The most dramatic of all garden lighting techniques: specimen trees uplighted from below appear to be self-luminous; a textured wall uplighted from below has depth and shadow that is invisible in daylight. Use sparingly — one or two key uplights on the garden\'s primary specimens. Every additional uplight reduces the dramatic impact of the ones before it.',
+            'Grazing: A fixture positioned at an angle very close to a textured surface — a stone wall, a board-formed concrete panel, a timber fence — that drags the light across the surface to emphasize its texture. Concrete becomes sculptural when grazed; masonry walls reveal their individual stone character. A powerful architectural lighting technique widely used in contemporary design.',
+            'Moonlighting / downlighting: A fixture positioned in a tree or on a tall structure directed downward through the canopy or branches, producing dappled shadow patterns on the ground below — suggesting moonlight filtered through leaves. The most naturalistic and least intrusive of all lighting techniques; creates the sense of a garden seen in moonlight rather than a garden that has been lit.',
+            'Path and step lighting: Low-profile, flush-mounted fixtures in path edges, step risers, or alongside paths provide safety illumination without architectural presence. The fixture should be as invisible as possible; the light itself is the design element. A series of precisely spaced low-glow path lights reinforces the geometry of the path.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Fixture Selection for Minimalist Design',
+        },
+        {
+          type: 'list',
+          items: [
+            'Fixture as object: In a minimalist design where every element is scrutinized, the fixture itself is a design object. Commercial-grade cast brass or stainless steel fixtures have a quality of material and finish appropriate to the context; inexpensive painted aluminum fixtures look like what they are. Spend proportionally more on fixtures in a minimalist design — you have fewer of them, and each one matters.',
+            'Color temperature: Choose fixtures in the 2700–3000K range (warm white) for planting and architectural elements. 4000–5000K (cool white) light produces a clinical, institutional quality inappropriate for most residential garden contexts. Consistency matters: mix warm and cool sources in the same garden and the composition looks unresolved.',
+            'LED technology: Modern LED fixtures provide excellent color rendering (CRI 90+), extremely long lifespan (50,000+ hours), and dramatically lower energy consumption than halogen or incandescent predecessors. Specify fixtures with a CRI of at least 90 for the most natural-looking illumination of plant material.',
+            'Control systems: A simple timer or photocell controller is the minimum; a smart-home integrated system that allows scene-setting — different lighting compositions for different moods and occasions — is the ideal. The minimalist garden at its best is a different space in different light; the ability to control this is worth the investment.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌙',
+          text: 'Design the lighting plan simultaneously with the garden plan — not as an afterthought after installation. Conduit and junction boxes buried after the hardscape is poured are expensive; buried during construction they cost almost nothing. Decide now where every fixture will be, run the conduit, and you can always install the fixtures later. Never retrofit lighting in a minimalist garden if it can be avoided.',
+        },
+      ],
+    },
   ],
 }
