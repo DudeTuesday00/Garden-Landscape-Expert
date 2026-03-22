@@ -960,5 +960,98 @@ export const gardenPestsContent = {
         },
       ],
     },
+    {
+      id: 'crop-by-crop',
+      title: 'Section 9: Crop-by-Crop Pest Reference',
+      blocks: [
+        {
+          type: 'p',
+          text: 'This section provides a quick reference for the most important pests affecting each major vegetable and fruit crop, with first-response organic control recommendations. For detailed control information, refer to the pest profile sections earlier in this guide.',
+        },
+        {
+          type: 'table',
+          headers: ['Crop', 'Primary Pests', 'First Response Organic Control', 'Prevention Priority'],
+          rows: [
+            [
+              'Tomatoes',
+              'Hornworm, aphids, whitefly, Colorado potato beetle (in rotation areas), tomato fruitworm, stink bugs, thrips (TSWV vector)',
+              'Hornworm: hand-pick; Bt. Aphids: water spray; insecticidal soap. Fruitworm: spinosad; Bt.',
+              'Deep planting; heavy mulch for splash prevention; drip irrigation; resistant varieties (VFN codes); crop rotation',
+            ],
+            [
+              'Cucumbers',
+              'Cucumber beetles (bacterial wilt vector), aphids, spider mites, squash bugs',
+              'Cucumber beetle: ROW COVER until flowering (bacterial wilt prevention is the priority); kaolin clay; pyrethrin. Aphids: water spray; insecticidal soap.',
+              'Row cover from transplanting through bloom is the single most important action; grow resistant varieties (\'Diva,\' \'Marketmore\')',
+            ],
+            [
+              'Squash & Zucchini',
+              'Squash vine borer, squash bugs, cucumber beetles, aphids',
+              'SVB: row cover until flowering; time plantings to avoid peak flight; inject Bt into stem at entry holes. Squash bugs: hand-pick egg masses on leaf undersides (orange-brown eggs in clusters).',
+              'Row cover; plant timing to avoid SVB flight peak; grow resistant varieties (\'Butternut\' more resistant than \'Acorn\')',
+            ],
+            [
+              'Beans (snap, dry)',
+              'Mexican bean beetle, bean leaf beetle, aphids, Japanese beetles, bean leaf miner, spider mites',
+              'Mexican bean beetle: hand-pick; Bt; spinosad. Japanese beetles: hand-pick in morning. Aphids: water spray.',
+              'Rotate bean family crops; avoid overhead irrigation; maintain plant vigor',
+            ],
+            [
+              'Brassicas (all)',
+              'Imported cabbageworm, cabbage looper, diamondback moth larvae, aphids (gray cabbage aphid), flea beetles, root maggots (fly larvae in roots)',
+              'Row cover (most important prevention). Bt kurstaki for caterpillars. Insecticidal soap for aphids.',
+              'Row cover from seeding/transplanting; monitor for butterfly egg-laying; crop rotation to a new bed each year (root maggot management)',
+            ],
+            [
+              'Potatoes',
+              'Colorado potato beetle, wireworm (tubers), potato leafhopper, aphids (potato virus vectors)',
+              'CPB: hand-pick; Bt tenebrionis; spinosad; kaolin. Leafhopper: row cover; insecticidal soap.',
+              'Crop rotation; plant certified seed potatoes; hill regularly; choose blight-resistant varieties in humid regions',
+            ],
+            [
+              'Peppers',
+              'Aphids (mosaic virus vectors), European corn borer (fruit entry), pepper weevil (southern US), thrips (TSWV vector), flea beetles',
+              'Aphids: water spray; insecticidal soap (critical to prevent virus spread). Corn borer: Bt; spinosad. Thrips: spinosad; blue sticky traps.',
+              'Row cover for seedlings; reflective mulch reduces aphid and thrips landing; inspect new transplants before field planting',
+            ],
+            [
+              'Lettuce & Greens',
+              'Aphids (gray aphid in lettuce); slugs; cabbage loopers; leafminers; earwigs (minor)',
+              'Slugs: iron phosphate bait. Aphids: water spray; reflective mulch. Caterpillars: Bt.',
+              'Row cover; inspect transplants; avoid overly moist conditions; use slug bait preventively in wet seasons',
+            ],
+            [
+              'Onions & Garlic',
+              'Onion thrips (major pest vectoring iris yellow spot virus); onion maggot (fly larva damaging bulbs); onion leafminer',
+              'Thrips: spinosad; insecticidal soap; blue sticky traps. Onion maggot: row cover from transplanting.',
+              'Row cover is the most effective prevention for onion maggot; resistant varieties for thrips tolerance where available',
+            ],
+            [
+              'Strawberries',
+              'Strawberry clipper weevil, tarnished plant bug, spider mites, slugs, birds, gray mold (Botrytis)',
+              'Spider mites: water spray; neem; predatory mites. Slugs: iron phosphate bait. Birds: netting.',
+              'Mulch with straw to reduce soil splash; remove old leaves and runners for air circulation; use netting for bird control',
+            ],
+            [
+              'Apples / Pears',
+              'Codling moth (larvae in fruit), apple maggot (fly larvae), fire blight (bacterial), aphids, scale, mites',
+              'Codling moth: spinosad timed to petal fall; kaolin clay starting at bloom. Apple maggot: sticky red sphere traps; kaolin clay. Scale: dormant oil in early spring.',
+              'Dormant oil spray in late winter for scale and mites; good sanitation (remove mummified fruit); fire blight-resistant varieties',
+            ],
+            [
+              'Roses',
+              'Japanese beetles, aphids, black spot (fungal), spider mites, thrips, rose slug (sawfly larvae)',
+              'Japanese beetle: hand-pick in morning. Aphids: water spray; ladybugs. Black spot: neem oil; copper. Spider mites: water spray to undersides.',
+              'Choose disease-resistant varieties (shrub roses, Knock Out series); proper spacing for air circulation; water at base; mulch',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🥒',
+          text: 'For cucumber beetles, row cover applied at transplanting and removed only at first bloom is more effective than any spray program. Cucumber beetles vector bacterial wilt — once a plant is infected, there is no cure and the plant must be removed. Prevention through exclusion is the only reliable strategy. Choose row cover over any other cucumber beetle control.',
+        },
+      ],
+    },
   ],
 }
