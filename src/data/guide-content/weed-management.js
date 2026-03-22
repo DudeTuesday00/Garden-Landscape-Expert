@@ -422,5 +422,38 @@ export const weedManagementContent = {
         },
       ],
     },
+    {
+      id: 'invasive-weeds',
+      title: 'Section 7: Invasive Weeds — Species Requiring Special Attention',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Invasive weeds are plants introduced from other regions — often other continents — that spread aggressively in American landscapes without the natural controls (insects, diseases, competitors) that limited them in their native range. They represent a special category of weed management because they spread beyond individual property lines, displace native plant communities, degrade wildlife habitat, and in some cases are nearly impossible to eradicate once established at landscape scale.',
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Before Purchasing or Planting — Check Your State\'s Invasive Species List: Every state maintains a list of invasive plant species that are prohibited, restricted, or listed as noxious weeds. Purchasing, planting, or transporting these species may be illegal in your state. Before purchasing any plant — particularly ornamentals sold for their vigorous growth — verify it is not on your state\'s invasive or noxious weed list. The USDA\'s National Invasive Species Information Center (invasivespeciesinfo.gov) and your state\'s department of agriculture or natural resources provide current state-specific information.',
+        },
+        {
+          type: 'h3',
+          text: 'High-Priority Invasive Weeds by Region',
+        },
+        {
+          type: 'table',
+          headers: ['Invasive Plant', 'Regions Most Affected', 'Why It\'s Serious', 'Management Options'],
+          rows: [
+            ['Japanese Knotweed (Reynoutria japonica)', 'Eastern US, Pacific Northwest; most aggressive in moist areas near streams and disturbed sites', 'One of the most invasive plants in the world; grows from root fragments as small as 1 cm; stems can penetrate asphalt and concrete foundations; spreads rapidly along waterways', 'Extremely difficult to eradicate. Cut stems repeatedly through the growing season to deplete root reserves (requires 3–5+ years of consistent effort). Glyphosate injected into cut stems in late summer is the most effective chemical approach. Never till — root fragments spread the plant.'],
+            ['Garlic Mustard (Alliaria petiolata)', 'Eastern US forests and shaded edges; edges of woodland gardens', 'Winter annual that germinates in fall and flowers in spring; produces chemicals that disrupt mycorrhizal fungi essential to native plants; spreads rapidly; creates monocultures in forest understories', 'Pull or cut plants before seed set (April–May in most regions). Bag and dispose of seed heads — do not compost. Requires consistent effort for several years to deplete the seed bank.'],
+            ['Kudzu (Pueraria montana var. lobata)', 'Southeast US primarily; increasingly in mid-Atlantic and Midwest', 'The "vine that ate the South"; grows up to 1 foot per day in summer; smothers trees, buildings, and all other vegetation; extremely deep root system', 'Very difficult. Repeated cutting throughout the growing season for multiple years; goats are an effective mechanical control for large infestations; herbicides (picloram, triclopyr, aminopyralid) are most effective for large infestations. Contact your county extension office for current management programs.'],
+            ['Oriental Bittersweet (Celastrus orbiculatus)', 'Eastern US and mid-Atlantic; particularly problematic in woodland edges and roadsides', 'A vine that girdles and kills trees; competes aggressively with native American bittersweet (C. scandens); spreads by birds consuming fruits; widespread in ornamental plantings historically', 'Cut vines at the base and apply herbicide (triclopyr) directly to the cut stump immediately. Remove all cut material carefully — do not compost. Repeat annually for 3+ years for established plants. American bittersweet (C. scandens) is a non-invasive native alternative.'],
+            ['Japanese Barberry (Berberis thunbergii)', 'Eastern and Midwestern US; Zones 4–8', 'Invasive in forest understories; creates dense thickets that exclude native plants; host for black-legged ticks (which carry Lyme disease) at higher densities than native plants; still widely sold in nurseries', 'Check state regulations before planting — banned in several states. Remove by hand-pulling small plants (wear thick gloves — spines are sharp) or cut and treat stumps with glyphosate. Sterile or non-fruiting varieties may be planted where the straight species is restricted.'],
+            ['English Ivy (Hedera helix)', 'Pacific Northwest, Eastern and Southern US; shaded areas', 'A ground cover that creates an "ivy desert" on forest floors, eliminating native plant diversity; climbs and stresses trees; spreads from garden plantings into natural areas via birds', 'Manual removal is effective for small areas: pull vines off trees first (cut at chest height and allow upper portions to die before removing); then dig out ground-level plants. Remove and bag rather than composting. Repeat annually. Native alternatives: native ginger, wild ginger, native ferns, Virginia creeper.'],
+            ['Purple Loosestrife (Lythrum salicaria)', 'Northern US, Great Lakes, and Pacific Northwest; wet areas, stream banks, pond edges', 'Wetland invasive that forms dense monocultures, eliminating wetland plant diversity and reducing wildlife habitat value dramatically', 'Biological control (a European beetle, Galerucella pusilla) is the most effective large-scale control and is available from some state extension programs. Manual removal of small infestations before seed set. Herbicides (imazapyr, glyphosate) in wetland settings require special permits in most states.'],
+            ['Tree of Heaven (Ailanthus altissima)', 'Eastern US, California; urban areas, roadsides, disturbed sites, forest edges', 'Extremely fast-growing tree (up to 6 feet/year); produces allelopathic chemicals that suppress other plants; resprouts prolifically from root sprouts after cutting; spreads by wind-dispersed seeds', 'Cut stump treatment with triclopyr or glyphosate applied immediately to the cut surface (within seconds) is the most effective approach. Basal bark treatment with triclopyr in oil carrier is effective for trees up to 6 inches diameter. Never leave a cut stump without herbicide treatment — sprouting is prolific.'],
+          ],
+        },
+      ],
+    },
   ],
 }
