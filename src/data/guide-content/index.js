@@ -43,6 +43,7 @@ import { rainBarrelContent } from './rain-barrel.js'
 import { zenGardenContent } from './zen-garden.js'
 import { modernMinimalistGardenContent } from './modern-minimalist-garden.js'
 import { indoorHouseplantsContent } from './indoor-houseplants.js'
+import { weedManagementContent } from './weed-management.js'
 
 export const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -84,4 +85,5 @@ export const contentMap = {
   'zen-garden': zenGardenContent,
   'modern-minimalist-garden': modernMinimalistGardenContent,
   'indoor-houseplants': indoorHouseplantsContent,
+  'weed-management': weedManagementContent,
 }
