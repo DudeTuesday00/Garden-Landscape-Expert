@@ -248,5 +248,154 @@ export const gardenPestsContent = {
         },
       ],
     },
+    {
+      id: 'sucking-insects',
+      title: 'Section 2: Sucking Insects — Aphids, Mites, Whitefly, Scale & Thrips',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Sucking insects feed by inserting a piercing mouthpart (stylet) into plant tissue and withdrawing cell contents, sap, or phloem fluid. They cause stippling, distortion, yellowing, and honeydew deposition. Most sucking insects are best controlled with contact products (insecticidal soap, neem oil) that must directly contact the pest to be effective. Natural enemies (ladybugs, lacewings, parasitic wasps) are highly effective and should be protected whenever possible.',
+        },
+        {
+          type: 'h3',
+          text: 'Aphids (Multiple species — family Aphididae)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Size: 1/16″ – 1/8″ (1–3 mm); visible to naked eye in clusters',
+            'Color: Green, black, yellow, pink, white, gray, or woolly white — color varies dramatically by species',
+            'Shape: Soft, pear-shaped body; 2 small tubes (cornicles) projecting from rear; may be winged or wingless',
+            'What you see: Clusters on new growth, stem tips, leaf undersides; distorted curled leaves; sticky honeydew; sooty black mold; ants tending colonies',
+            'Hosts: Almost all vegetables, fruits, flowers, and ornamentals — one of the broadest pest host ranges of any insect group',
+            'Regions: All 50 states; year-round in warm climates; spring–fall in northern states. Most problematic in spring during rapid plant growth.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Strong water spray to knock off colonies — very effective; repeat every 2–3 days. (2) Insecticidal soap spray directly on aphid clusters — must contact the insect. (3) Neem oil. (4) Introduce or encourage ladybugs, lacewings, and parasitic wasps — a single ladybug larva consumes 400 aphids in its development. (5) Pyrethrin for severe infestations.',
+            'Natural enemies to protect: Ladybugs (adult and larvae), green lacewing larvae, parasitic wasps (Aphidius spp. — mummified brown aphids are a sign they are working), hoverfly larvae, soldier beetles',
+            'Cultural controls: Avoid excessive nitrogen fertilization (promotes the succulent new growth aphids prefer). Plant pest-repelling companions: nasturtium (aphid trap plant), garlic, chives, catnip near susceptible plants. Reflective mulch disorients aphids flying in from adjacent areas.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Spider Mites (Tetranychus urticae and related species)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Size: Microscopic — 1/50″ (0.5 mm); barely visible as moving dots to the naked eye; magnification reveals ovoid body with 4 pairs of legs',
+            'Color: Yellow-green with dark spots (two-spotted spider mite); red (European red mite); russet mite (microscopic)',
+            'Webbing: Fine silk webbing on leaf undersides, between leaves, and along stems — webbing distinguishes mites from all other pests',
+            'What you see: Stippled, bronzed, or silvered leaves; premature leaf drop in severe infestations; fine webbing; worst in hot, dry conditions',
+            'Hosts: Tomatoes, cucumbers, beans, strawberries, roses, conifers, fruit trees, houseplants — very wide host range',
+            'Regions: All regions; most severe in hot, dry climates (Southwest, Midwest during drought). Populations explode rapidly in heat. Indoor/greenhouse populations year-round.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) FIRST: strong water spray to undersides of leaves — physically removes mites and their webbing; most effective non-chemical control. (2) Increase humidity — mites thrive in dry conditions. (3) Insecticidal soap to leaf undersides — repeat every 5–7 days for 3 treatments. (4) Neem oil. (5) Predatory mites (Phytoseiulus persimilis) — available from online suppliers; excellent for greenhouse and high-value situations.',
+            'Natural enemies to protect: Predatory mites (Phytoseiidae family), minute pirate bugs, lacewing larvae, predatory thrips (Scolothrips spp.)',
+            'Cultural controls: Avoid dusty conditions (dust suppresses natural predators). Do not overfertilize with nitrogen. Maintain adequate irrigation — water-stressed plants are more susceptible. Avoid broad-spectrum insecticides that kill predatory mites.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Whitefly (Bemisia tabaci, Trialeurodes vaporariorum, and others)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Size: Adults 1/16″; oval yellow body with powdery white wings. Nymphs are flat, oval, scale-like, and barely visible on leaf undersides.',
+            'Color: Adults white; nymph instars pale yellow to transparent flat ovals on leaf undersides',
+            'What you see: Adults fly in white clouds when plant is disturbed; yellowing; wilting; sticky honeydew; sooty black mold; nymphs on leaf undersides',
+            'Hosts: Tomatoes, peppers, squash, melons, sweet potatoes, beans, cucumbers, poinsettia, many tropical ornamentals',
+            'Regions: Most severe in the South (Zone 7+), California, and in greenhouses nationwide. Silverleaf whitefly is a tropical species most problematic in warm climates and greenhouses. Year-round in Zone 9+.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Yellow sticky traps — highly effective for monitoring and reducing adult populations; change weekly. (2) Insecticidal soap to leaf undersides — targets crawlers and nymphs; must contact directly. (3) Neem oil. (4) Spinosad. (5) Reflective silver mulch reduces whitefly landing rates significantly. (6) Pyrethrin for severe infestations in the evening.',
+            'Natural enemies to protect: Encarsia formosa parasitic wasp (excellent biological control; commercially available for greenhouse use); Delphastus catalinae predatory beetle; lacewings',
+            'Cultural controls: Remove and dispose of heavily infested leaves (do not compost). Avoid overfertilizing. Inspect and quarantine new transplants before placing near existing plants.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Mealybugs (Pseudococcus spp., Planococcus citri, and others)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Size: 1/16″ – 1/4″; oval, soft-bodied insects covered in a white, waxy, mealy coating',
+            'Color: White to gray; the waxy coating makes them appear fluffy or cottony',
+            'What you see: White cottony masses in leaf axils, stem joints, root crown; sticky honeydew; sooty mold; yellowing and wilting in severe infestations',
+            'Hosts: Citrus, grapes, succulents, cacti, orchids, houseplants, many ornamentals; outdoors in warm climates on vegetables',
+            'Regions: Year-round in Zone 9+; warm greenhouses and houseplant collections nationwide. Most common as an indoor/greenhouse pest in northern states.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Rubbing alcohol on a cotton swab — wipe individual colonies directly; extremely effective for small infestations. (2) Insecticidal soap applied to all plant surfaces. (3) Neem oil (good residual deterrent). (4) Repeat applications weekly for 4–6 weeks — mealybugs are persistent and have protected egg stages. (5) Introduce Cryptolaemus montrouzieri (mealybug destroyer beetle) for large greenhouse infestations.',
+            'Natural enemies to protect: Cryptolaemus montrouzieri (mealybug destroyer ladybug); lacewing larvae; Leptomastix parasitic wasps',
+            'Cultural controls: Inspect new plants carefully before introducing to your collection; quarantine for 2–3 weeks. Remove ants that protect mealybugs from natural enemies. Isolate infested plants immediately.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Scale Insects (Armored scale — Diaspididae; Soft scale — Coccidae; many species)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Adults: Sessile (permanently attached). Armored scale: hard, removable waxy covering separate from the body. Soft scale: the body itself is the covering.',
+            'Crawlers: The mobile first-instar nymphs are the most vulnerable stage — tiny, flat, oval, and yellow to orange',
+            'What you see: Brown, tan, white, or gray bumps on stems and leaves; yellowing; honeydew and sooty mold (soft scale more than armored); plant decline',
+            'Hosts: Fruit trees, ornamental shrubs, houseplants, citrus, grapes, junipers, roses — heaviest on woody plants and shrubs',
+            'Regions: Found in all regions; most species more problematic in warm climates (Zone 7+). Significant indoor/greenhouse problem nationwide.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Horticultural oil — dormant oil for dormant-season application; summer-weight oil during the growing season; highly effective by smothering overwintering eggs and crawlers. (2) Insecticidal soap on crawlers. (3) Rubbing alcohol on a toothbrush for removing scale from woody stems. (4) Neem oil.',
+            'Natural enemies to protect: Parasitic wasps (many species specific to scale); scale-eating ladybugs (Chilocorus spp.); predatory beetles',
+            'Cultural controls: Monitor for crawler emergence in spring with sticky tape wrapped around branches. Prune and dispose of severely infested branches. Maintain plant vigor — stressed plants are more susceptible.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Thrips (Frankliniella occidentalis, F. tritici, Thrips tabaci, and others)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Size: 1/20″ – 1/16″ (1–1.5 mm); slender, fast-moving; barely visible to naked eye; fringed wings on adults',
+            'Color: Yellow to brown to black; very variable by species and instar',
+            'What you see: Silvery scarring or streaking on leaf surfaces; distorted new growth; black fecal specks on leaves; flower petals with dark streaks or brown edges; fruit scarring',
+            'Hosts: Onions, beans, squash, peppers, tomatoes, cucumbers, flowers (especially roses, impatiens, gladiolus) — very wide host range',
+            'Regions: All regions; most severe in warm, dry conditions. Western flower thrips is the most economically important and widely distributed species. Also vectors tomato spotted wilt virus (TSWV) and impatiens necrotic spot virus (INSV).',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Blue or yellow sticky traps for monitoring — blue traps are more effective for thrips specifically. (2) Insecticidal soap on all plant surfaces including flowers. (3) Spinosad — the most effective organic control for thrips; apply in late afternoon after bee activity. (4) Neem oil as a deterrent. (5) Reflective mulch reduces thrips landing rates.',
+            'Natural enemies to protect: Minute pirate bugs (Orius spp.) — among the most effective predators; commercially available. Predatory mites (Amblyseius cucumeris). Lacewing larvae.',
+            'Cultural controls: Remove and dispose of heavily infested flowers and plant material. Avoid excessive nitrogen that promotes the succulent growth thrips prefer. Inspect new transplants carefully — thrips are often introduced on new plants.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'For all sucking insects: ants are a warning sign. Ants actively farm aphids, mealybugs, and soft scale — herding them, protecting them from predators, and moving them to new growth. If you see heavy ant traffic on a plant, check immediately for sucking insects. Banding tree trunks with sticky barriers (Tanglefoot) stops ants and allows natural enemies to do their work.',
+        },
+      ],
+    },
   ],
 }
