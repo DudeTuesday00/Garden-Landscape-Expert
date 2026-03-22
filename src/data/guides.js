@@ -468,9 +468,9 @@ export const guideCategories = [
       {
         id: 'weed-management',
         title: 'Weed Management',
-        emoji: '🌱',
+        emoji: '🌾',
         description: 'Prevent and control weeds the smart way — less work, better results.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'slug-control',

@@ -43,6 +43,7 @@ export const heroImages = {
   'zen-garden': '/guides/Zen_Garden_Guide.png',
   'modern-minimalist-garden': '/guides/Modern_Minimalist_Garden_Guide.png',
   'indoor-houseplants': '/guides/Indoor_Houseplants_101_Guide.png',
+  'weed-management': '/guides/Weed_Management_Guide.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -655,6 +656,22 @@ const themes = {
     tableHeadText: 'text-slate-800',
     tableHeadBorder: 'border-slate-200',
     bullet: 'text-slate-400',
+  },
+  'weed-management': {
+    heroBg: 'bg-gradient-to-br from-amber-50 to-green-100',
+    heroBorder: 'border-amber-200',
+    heroTitle: 'text-green-900',
+    backBtn: 'text-green-700 hover:text-green-900',
+    sectionTitle: 'text-green-900',
+    sectionBorder: 'border-amber-100',
+    h3: 'text-green-800',
+    tipBg: 'bg-amber-50',
+    tipBorder: 'border-amber-300',
+    tipText: 'text-green-900',
+    tableHead: 'bg-amber-100',
+    tableHeadText: 'text-green-800',
+    tableHeadBorder: 'border-amber-200',
+    bullet: 'text-amber-500',
   },
   'indoor-houseplants': {
     heroBg: 'bg-gradient-to-br from-lime-50 to-green-100',
