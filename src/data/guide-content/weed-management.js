@@ -376,5 +376,51 @@ export const weedManagementContent = {
         },
       ],
     },
+    {
+      id: 'bed-weeds',
+      title: 'Section 6: Vegetable & Ornamental Bed Weed Management',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Weed management in garden beds requires a different toolkit than lawn weed management. Most lawn herbicides cannot be used safely in vegetable gardens (many have plant-back restrictions of weeks to months), and even in ornamental beds, selectivity is much more limited because the diverse plant palette presents more non-target risk. The emphasis in garden beds shifts decisively toward prevention and physical control.',
+        },
+        {
+          type: 'h3',
+          text: 'The Vegetable Garden: A Systematic Approach',
+        },
+        {
+          type: 'list',
+          items: [
+            'The stale seedbed technique: One of the most effective vegetable garden strategies. Prepare the bed 2 to 3 weeks before planting by loosening the soil to planting depth (but no deeper). Water lightly to encourage the first flush of weed seeds to germinate. Then kill the emerged seedlings by flame weeding or shallow hoeing — without disturbing the soil more than 1 inch. Plant immediately afterward. The result: far fewer weed seeds in the germination zone for the early weeks of the crop\'s growth.',
+            'Transplants vs. direct seeding: Transplanted vegetable starts have a 3- to 4-week head start on weeds and can establish enough size to begin competing before weeds become problematic. Direct-seeded crops (carrots, beets, beans, peas, corn, squash) are at greater risk from early weed competition. For these crops, the stale seedbed technique and prompt hoeing of first weeds are essential.',
+            'Row spacing and plant density: Intensive spacing (based on equidistant spacing rather than rows and spaces) closes the canopy faster and leaves less bare soil for weed establishment. The intensive spacing recommended in square foot gardening is effective precisely because the dense plant spacing shades out weeds.',
+            'Mulching vegetable beds: Apply a 2-inch layer of straw or wood chips after transplants are established (but not before seedlings have emerged in direct-seeded crops). Pull mulch away from direct-seeded rows and apply between them. Maintain mulch through the season; replenish if it becomes thin. This single practice eliminates the majority of mid-season weeding in most vegetable gardens.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌾',
+          text: 'Hoe vegetable beds every 7 to 10 days through the growing season using an oscillating stirrup hoe — 10 minutes per session is far more effective than 2 hours every 4 weeks. Small weeds cut at soil level on a sunny day die without re-rooting; large weeds left for weeks require significant effort to remove and may have already begun setting seed.',
+        },
+        {
+          type: 'h3',
+          text: 'Ornamental Bed Weed Management',
+        },
+        {
+          type: 'list',
+          items: [
+            'Pre-emergent herbicides in ornamental beds: Several pre-emergent herbicides are labeled for use in established ornamental (non-vegetable) beds to prevent annual weed germination. Products containing prodiamine, pendimethalin, or isoxaben are widely used. Always verify that the specific ornamental plants in your bed are listed as tolerant on the product label. Apply in early spring before annual weed germination. Do not apply to beds where you plan to install new plants from seed.',
+            'Post-emergent selective options: Grassy weed killers (fluazifop, sethoxydim, clethodim) can be applied over most broadleaf ornamentals to kill grassy weeds (including crabgrass and quackgrass) without harming the ornamentals. Verify your specific plants are listed as tolerant on the label.',
+            'Glyphosate spot treatment: Glyphosate can be used as a spot treatment in ornamental beds with extreme care to avoid contact with desired plants. A sponge applicator or foam paintbrush rather than a sprayer dramatically reduces drift risk. A plastic shield held over desired plants during spot treatment prevents accidental contact.',
+            'The persistent perennial weed problem: Bindweed, quackgrass, Canada thistle, and nutsedge in ornamental beds are among the most frustrating weed management challenges. A multi-year strategy is required: consistent removal of top growth to deplete root reserves; targeted glyphosate application to foliage; improving drainage and soil health; and patience. There is no quick fix for established perennial weeds in an ornamental bed.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Landscape fabric in planting beds almost always creates more problems over time than it solves. Fabric degrades over 3–5 years; weed seeds germinate in the mulch layer on top; roots from desired plants become entangled in the fabric making removal nearly impossible. Remove existing fabric in planting beds and replace with 3 to 4 inches of wood chip mulch instead. Reserve landscape fabric for non-planted areas such as paths and under decks.',
+        },
+      ],
+    },
   ],
 }
