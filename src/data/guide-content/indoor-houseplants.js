@@ -654,5 +654,87 @@ export const indoorHouseplantsContent = {
         },
       ],
     },
+    {
+      id: 'feeding',
+      title: 'Section 6: Feeding — Fertilizing Your Houseplants',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Fertilizer is the most overdone aspect of beginner houseplant care. Most beginners who lose plants to overwatering or insufficient light compensate by adding more fertilizer, which does not address the actual problem and can make things worse. A plant that is receiving incorrect light or water is not able to use added nutrients effectively; over-fertilizing stressed plants burns roots and creates salt buildup in the soil.',
+        },
+        {
+          type: 'p',
+          text: 'The correct approach to fertilizing houseplants is: fertilize healthy, actively growing plants during their active growing season, and stop or significantly reduce fertilizer during the plant\'s rest period (typically fall and winter for most temperate-origin and many tropical houseplants). Fix light and water problems first; then address fertility.',
+        },
+        {
+          type: 'h3',
+          text: 'Fertilizer Basics: N-P-K and What It Means',
+        },
+        {
+          type: 'list',
+          items: [
+            'The three numbers: Every fertilizer label shows three numbers separated by hyphens (e.g., 20-20-20 or 10-5-5). These are the N-P-K ratio: Nitrogen (N) for foliage and stem growth; Phosphorus (P) for root development and flowering; Potassium (K) for overall health, stress resistance, and disease resistance.',
+            'For foliage plants: A balanced fertilizer (equal or near-equal N-P-K, such as 20-20-20 or 10-10-10) supports all-round growth and is appropriate for most tropical foliage houseplants.',
+            'For flowering plants: A formula with higher phosphorus (the middle number, such as 5-10-5 or 7-9-5) supports flower production. Switch to a higher-phosphorus formula when plants are approaching their bloom season.',
+            'For cacti and succulents: Use a dilute balanced fertilizer at 1/4 strength, or a specific cactus fertilizer. These plants are adapted to nutrient-poor soils and require very little fertilizer.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'When and How Much: The Simple Schedule',
+        },
+        {
+          type: 'table',
+          headers: ['Plant Category', 'Fertilizing Season', 'Frequency', 'Rate', 'Winter Approach'],
+          rows: [
+            [
+              'Active tropical foliage plants (pothos, monstera, philodendron, rubber plant)',
+              'Spring through fall (March–September in most of the US)',
+              'Every 2–4 weeks during active growth',
+              'Half the manufacturer\'s recommended rate — half-strength is safer and still effective',
+              'Do not fertilize, or fertilize once at full dormancy (December–January) only',
+            ],
+            [
+              'Slow-growing or low-light plants (ZZ plant, snake plant, cast iron plant)',
+              'Spring through summer only',
+              'Every 4–6 weeks at most',
+              'Quarter to half strength',
+              'No fertilizer in fall or winter',
+            ],
+            [
+              'Succulents and cacti',
+              'Spring and early summer only',
+              'Once per month maximum',
+              'Quarter strength; or once with a slow-release granular at the start of the growing season',
+              'No fertilizer from September through February',
+            ],
+            [
+              'Orchids (Phalaenopsis)',
+              'Year-round but less in winter',
+              'Every 2–3 weeks with a dilute orchid fertilizer ("weakly weekly" at 1/4 strength is a common approach)',
+              'Quarter strength weekly; or half strength biweekly',
+              'Reduce to monthly in winter',
+            ],
+            [
+              'Flowering annuals and seasonal plants',
+              'Actively growing and flowering period',
+              'Every 1–2 weeks with a higher-phosphorus formula',
+              'Per label; do not reduce for flowering plants at the height of bloom',
+              'Depends on plant cycle',
+            ],
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Signs of over-fertilizing: white crusty deposits on soil surface or pot rim; yellowing or browning leaf tips; wilting despite adequate watering; or in severe cases, root burn (roots turn brown). Remedy: flush the soil thoroughly with water to wash out excess salts; wait 4–6 weeks before fertilizing again.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌱',
+          text: 'Signs of under-fertilizing: slow or stalled growth despite adequate light and water; progressively paler, smaller new leaves; loss of variegation in variegated plants. These symptoms are slow to develop and may also indicate other problems — particularly insufficient light. Assess light first before reaching for fertilizer.',
+        },
+      ],
+    },
   ],
 }
