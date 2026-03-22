@@ -3,10 +3,43 @@
 import { useState } from 'react'
 import Link from 'next/link'
 
+function InfographicSection({ src, alt, heading, description, caption, guideHref, guideName, onOpen }) {
+  return (
+    <section className="mb-12">
+      <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-2">{heading}</h2>
+      <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed">{description}</p>
+      <button
+        type="button"
+        onClick={() => onOpen(src, alt)}
+        className="w-full rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-garden-600"
+        aria-label={`View full-size: ${alt}`}
+      >
+        <img
+          src={src}
+          alt={alt}
+          className="w-full h-auto block hover:opacity-90 transition-opacity"
+        />
+      </button>
+      <p className="mt-2 text-xs text-gray-400 dark:text-gray-500 text-right">
+        Click the image to enlarge
+        {guideHref && guideName && (
+          <> · For the full guide, see our{' '}
+            <Link href={guideHref} className="underline hover:text-garden-600 dark:hover:text-garden-400">
+              {guideName}
+            </Link>.
+          </>
+        )}
+        {caption && !guideHref && <> · {caption}</>}
+      </p>
+    </section>
+  )
+}
+
 export default function Infographics() {
-  const [lightboxOpen, setLightboxOpen] = useState(false)
-  const [zoneLightboxOpen, setZoneLightboxOpen] = useState(false)
-  const [soilPhLightboxOpen, setSoilPhLightboxOpen] = useState(false)
+  const [activeLightbox, setActiveLightbox] = useState(null) // { src, alt }
+
+  const openLightbox = (src, alt) => setActiveLightbox({ src, alt })
+  const closeLightbox = () => setActiveLightbox(null)
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
@@ -24,116 +57,214 @@ export default function Infographics() {
       </div>
 
       {/* Section 1: Companion Planting */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-2">
-          🌿 Companion Planting Quick Reference
-        </h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed">
-          Certain plants thrive together — and some actively repel each other's pests. Use this
-          at-a-glance chart when planning your beds.
-        </p>
-        <button
-          type="button"
-          onClick={() => setLightboxOpen(true)}
-          className="w-full rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-garden-600"
-          aria-label="View full-size companion planting infographic"
-        >
-          <img
-            src="/infographics/Companion-Planting-Quick-Reference.png"
-            alt="Companion Planting Quick Reference infographic"
-            className="w-full h-auto block hover:opacity-90 transition-opacity"
-          />
-        </button>
-        {/* Lightbox */}
-        {lightboxOpen && (
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
-            onClick={() => setLightboxOpen(false)}
-          >
-            <div className="relative max-w-6xl w-full" onClick={e => e.stopPropagation()}>
-              <button
-                type="button"
-                onClick={() => setLightboxOpen(false)}
-                className="absolute -top-10 right-0 text-white text-sm font-semibold hover:text-gray-300 transition-colors"
-                aria-label="Close"
-              >
-                ✕ Close
-              </button>
-              <img
-                src="/infographics/Companion-Planting-Quick-Reference.png"
-                alt="Companion Planting Quick Reference infographic — full size"
-                className="w-full h-auto rounded-xl shadow-2xl"
-              />
-            </div>
-          </div>
-        )}
-        <p className="mt-2 text-xs text-gray-400 dark:text-gray-500 text-right">
-          Click the image to enlarge · For deeper research, see our{' '}
-          <Link href="/guides/pollinator-garden" className="underline hover:text-garden-600 dark:hover:text-garden-400">
-            Pollinator Garden guide
-          </Link>.
-        </p>
-      </section>
+      <InfographicSection
+        src="/infographics/Companion-Planting-Quick-Reference.png"
+        alt="Companion Planting Quick Reference infographic"
+        heading="🌿 Companion Planting Quick Reference"
+        description="Certain plants thrive together — and some actively repel each other's pests. Use this at-a-glance chart when planning your beds."
+        guideHref="/guides/pollinator-garden"
+        guideName="Pollinator Garden guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 2: USDA Zone Reference */}
+      <InfographicSection
+        src="/infographics/USDA-Hardiness-Zones-Frost-Date-Reference.png"
+        alt="USDA Hardiness Zones and Frost Date Reference infographic"
+        heading="🗺️ USDA Hardiness Zones — Frost Date Reference"
+        description="Your USDA zone determines your average minimum winter temperature. Use these average last spring frost and first fall frost dates to time transplants and season-end tasks."
+        guideHref="/guides/winter-garden-prep"
+        guideName="Winter Garden Prep guide"
+        onOpen={openLightbox}
+      />
+      <div className="mt-3 mb-12 -mt-8 p-3 bg-garden-50 dark:bg-garden-900/20 border border-garden-200 dark:border-garden-800 rounded-xl text-sm text-garden-800 dark:text-garden-300">
+        💡 <strong>Tip:</strong> Use the USDA Plant Hardiness Zone Map at planthardiness.ars.usda.gov to look up your exact zip code.
+      </div>
 
       {/* Ad placeholder 1 */}
       <div id="adsense-infographics-1" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
 
-      {/* Section 2: USDA Zone Reference */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-2">
-          🗺️ USDA Hardiness Zones — Frost Date Reference
-        </h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed">
-          Your USDA zone determines your average minimum winter temperature. Use these average last
-          spring frost and first fall frost dates to time transplants and season-end tasks.
-        </p>
-        <button
-          type="button"
-          onClick={() => setZoneLightboxOpen(true)}
-          className="w-full rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-garden-600"
-          aria-label="View full-size USDA Hardiness Zones and Frost Date Reference infographic"
-        >
-          <img
-            src="/infographics/USDA-Hardiness-Zones-Frost-Date-Reference.png"
-            alt="USDA Hardiness Zones and Frost Date Reference infographic"
-            className="w-full h-auto block hover:opacity-90 transition-opacity"
-          />
-        </button>
-        {/* Zone Lightbox */}
-        {zoneLightboxOpen && (
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
-            onClick={() => setZoneLightboxOpen(false)}
-          >
-            <div className="relative max-w-6xl w-full" onClick={e => e.stopPropagation()}>
-              <button
-                type="button"
-                onClick={() => setZoneLightboxOpen(false)}
-                className="absolute -top-10 right-0 text-white text-sm font-semibold hover:text-gray-300 transition-colors"
-                aria-label="Close"
-              >
-                ✕ Close
-              </button>
-              <img
-                src="/infographics/USDA-Hardiness-Zones-Frost-Date-Reference.png"
-                alt="USDA Hardiness Zones and Frost Date Reference infographic — full size"
-                className="w-full h-auto rounded-xl shadow-2xl"
-              />
-            </div>
-          </div>
-        )}
-        <p className="mt-2 text-xs text-gray-400 dark:text-gray-500 text-right">
-          Click the image to enlarge · For zone-by-zone planting tips, see our{' '}
-          <Link href="/guides/winter-garden-prep" className="underline hover:text-garden-600 dark:hover:text-garden-400">
-            Winter Garden Prep guide
-          </Link>.
-        </p>
-        <div className="mt-3 p-3 bg-garden-50 dark:bg-garden-900/20 border border-garden-200 dark:border-garden-800 rounded-xl text-sm text-garden-800 dark:text-garden-300">
-          💡 <strong>Tip:</strong> Use the USDA Plant Hardiness Zone Map at planthardiness.ars.usda.gov to look up your exact zip code.
-        </div>
-      </section>
+      {/* Section 3: Soil pH */}
+      <InfographicSection
+        src="/infographics/Soil-pH-Preference-by-Plant-Type.png"
+        alt="Soil pH Preference by Plant Type infographic"
+        heading="🧪 Soil pH Preference by Plant Type"
+        description="Soil pH affects nutrient availability. Most garden plants prefer 6.0–7.0, but blueberries, potatoes, and azaleas need distinctly acidic conditions. Test your soil before amending."
+        guideHref="/guides/xeriscape"
+        guideName="Xeriscape Design guide"
+        onOpen={openLightbox}
+      />
 
-      {/* Section 3: Vegetable Spacing */}
+      {/* Section 4: Annual Flowers */}
+      <InfographicSection
+        src="/infographics/Annual_Flowers_Best_Picks_Guide_IG.png"
+        alt="Annual Flowers Best Picks infographic"
+        heading="🌸 Annual Flowers: Best Picks"
+        description="The top annual flowers for color, cut flowers, and pollinators — with sun, water, and spacing requirements at a glance."
+        guideHref="/guides/annual-flowers"
+        guideName="Annual Flowers guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 5: Long-Blooming Perennials */}
+      <InfographicSection
+        src="/infographics/Long_Blooming_Perennials_Guide_IG.png"
+        alt="Long-Blooming Perennials infographic"
+        heading="🌺 Long-Blooming Perennials"
+        description="Perennials that deliver weeks or months of color — with bloom times, zones, and care requirements for building a season-long garden."
+        guideHref="/guides/long-blooming-perennials"
+        guideName="Long-Blooming Perennials guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Ad placeholder 2 */}
+      <div id="adsense-infographics-2" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
+
+      {/* Section 6: Cut Flower Garden */}
+      <InfographicSection
+        src="/infographics/Cut_Flower_Garden_Guide_IG.png"
+        alt="Cut Flower Garden infographic"
+        heading="✂️ Cut Flower Garden"
+        description="Best flowers for cutting, with harvest timing, vase life, and succession-planting tips for continuous blooms from spring through fall."
+        guideHref="/guides/cut-flower-garden"
+        guideName="Cut Flower Garden guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 7: Cottage Garden Style */}
+      <InfographicSection
+        src="/infographics/Cottage_Garden_Style_Guide_IG.png"
+        alt="Cottage Garden Style infographic"
+        heading="🌹 Cottage Garden Style"
+        description="The essential plants, design principles, and layering techniques for creating an abundant, romantic cottage garden that blooms from spring to frost."
+        guideHref="/guides/cottage-garden"
+        guideName="Cottage Garden guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 8: Moon Garden */}
+      <InfographicSection
+        src="/infographics/Moon_Garden_Guide_IG.png"
+        alt="Moon Garden infographic"
+        heading="🌙 Moon Garden"
+        description="White and pale flowers, silver foliage, and night-fragrant plants that come alive after dark — with placement and bloom-time reference."
+        guideHref="/guides/moon-garden"
+        guideName="Moon Garden guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Ad placeholder 3 */}
+      <div id="adsense-infographics-3" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
+
+      {/* Section 9: Edible Flowers */}
+      <InfographicSection
+        src="/infographics/Edible_Flowers_Guide_IG.png"
+        alt="Edible Flowers infographic"
+        heading="🌼 Edible Flowers"
+        description="A visual guide to flowers you can eat — flavor profiles, safe varieties, which parts to use, and what to avoid."
+        guideHref="/guides/edible-flowers"
+        guideName="Edible Flowers guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 10: Children's Vegetable Garden */}
+      <InfographicSection
+        src="/infographics/Childrens_Vegetable_Garden_Guide_US_IG.png"
+        alt="Children's Vegetable Garden infographic"
+        heading="🥕 Children's Vegetable Garden"
+        description="The best vegetables for kids to grow by age group — with fun activities, easy-win plants, and tips for keeping young gardeners engaged all season."
+        guideHref="/guides/childrens-garden"
+        guideName="Children's Vegetable Garden guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 11: Culinary Herb Garden */}
+      <InfographicSection
+        src="/infographics/Culinary_Herb_Garden_Guide_IG.png"
+        alt="Culinary Herb Garden infographic"
+        heading="🍃 Culinary Herb Garden"
+        description="The most useful kitchen herbs — with harvest tips, companion plants, container vs. in-ground notes, and flavor pairing at a glance."
+        guideHref="/guides/culinary-herb-garden"
+        guideName="Culinary Herb Garden guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Ad placeholder 4 */}
+      <div id="adsense-infographics-4" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
+
+      {/* Section 12: Herb Garden Design */}
+      <InfographicSection
+        src="/infographics/Herb_Garden_Design_Guide_IG.png"
+        alt="Herb Garden Design infographic"
+        heading="🌿 Herb Garden Design"
+        description="Layout patterns, companion planting pairs, and design principles for creating a beautiful and functional herb garden in any space."
+        guideHref="/guides/herb-garden-design"
+        guideName="Herb Garden Design guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 13: Medicinal Garden */}
+      <InfographicSection
+        src="/infographics/Medicinal_Garden_Guide_US_IG.png"
+        alt="Medicinal Garden infographic"
+        heading="💊 Medicinal Garden"
+        description="Key medicinal herbs — their primary uses, parts used, preparation methods, and safety notes for a home apothecary garden."
+        guideHref="/guides/medicinal-garden"
+        guideName="Medicinal Garden guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 14: Common Garden Diseases */}
+      <InfographicSection
+        src="/infographics/Common_Garden_Diseases_Guide_IG.png"
+        alt="Common Garden Diseases infographic"
+        heading="🦠 Common Garden Diseases"
+        description="A visual symptom key for the most common fungal, bacterial, and viral plant diseases — with diagnosis tips and first-line treatment options."
+        guideHref="/guides/common-diseases"
+        guideName="Common Garden Diseases guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Ad placeholder 5 */}
+      <div id="adsense-infographics-5" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
+
+      {/* Section 15: Fast-Growing Privacy Trees */}
+      <InfographicSection
+        src="/infographics/Fast_Growing_Privacy_Trees_Guide_IG.png"
+        alt="Fast-Growing Privacy Trees infographic"
+        heading="🌲 Fast-Growing Privacy Trees"
+        description="Top privacy tree options by zone — with mature height, growth rate, spacing, and best-use notes for screening, windbreaks, and property lines."
+        guideHref="/guides/privacy-trees"
+        guideName="Privacy Trees guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 16: Japanese Garden Elements */}
+      <InfographicSection
+        src="/infographics/Japanese_Garden_Elements_Guide_IG.png"
+        alt="Japanese Garden Elements infographic"
+        heading="🎋 Japanese Garden Elements"
+        description="The key design elements, plants, and principles of Japanese garden style — from stone placement and karesansui to niwaki pruning and borrowed scenery."
+        guideHref="/guides/japanese-garden"
+        guideName="Japanese Garden Elements guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 17: Front Yard Curb Appeal */}
+      <InfographicSection
+        src="/infographics/Front_Yard_Curb_Appeal_Guide_IG.png"
+        alt="Front Yard Curb Appeal infographic"
+        heading="🏡 Front Yard Curb Appeal"
+        description="The five elements of curb appeal, three-zone layout principles, and best plants by season for a front yard that makes a great first impression."
+        guideHref="/guides/curb-appeal"
+        guideName="Front Yard Curb Appeal guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Ad placeholder 6 */}
+      <div id="adsense-infographics-6" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
+
+      {/* Vegetable Spacing — HTML table (no infographic image yet) */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-2">
           📐 Vegetable Spacing Quick Reference
@@ -181,62 +312,7 @@ export default function Infographics() {
         </div>
       </section>
 
-      {/* Ad placeholder 2 */}
-      <div id="adsense-infographics-2" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
-
-      {/* Section 4: Soil pH */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-2">
-          🧪 Soil pH Preference by Plant Type
-        </h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed">
-          Soil pH affects nutrient availability. Most garden plants prefer 6.0–7.0, but blueberries,
-          potatoes, and azaleas need distinctly acidic conditions. Test your soil before amending.
-        </p>
-        <button
-          type="button"
-          onClick={() => setSoilPhLightboxOpen(true)}
-          className="w-full rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-garden-600"
-          aria-label="View full-size Soil pH Preference by Plant Type infographic"
-        >
-          <img
-            src="/infographics/Soil-pH-Preference-by-Plant-Type.png"
-            alt="Soil pH Preference by Plant Type infographic"
-            className="w-full h-auto block hover:opacity-90 transition-opacity"
-          />
-        </button>
-        {/* Soil pH Lightbox */}
-        {soilPhLightboxOpen && (
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
-            onClick={() => setSoilPhLightboxOpen(false)}
-          >
-            <div className="relative max-w-6xl w-full" onClick={e => e.stopPropagation()}>
-              <button
-                type="button"
-                onClick={() => setSoilPhLightboxOpen(false)}
-                className="absolute -top-10 right-0 text-white text-sm font-semibold hover:text-gray-300 transition-colors"
-                aria-label="Close"
-              >
-                ✕ Close
-              </button>
-              <img
-                src="/infographics/Soil-pH-Preference-by-Plant-Type.png"
-                alt="Soil pH Preference by Plant Type infographic — full size"
-                className="w-full h-auto rounded-xl shadow-2xl"
-              />
-            </div>
-          </div>
-        )}
-        <p className="mt-2 text-xs text-gray-400 dark:text-gray-500 text-right">
-          Click the image to enlarge · For soil prep tips, see our{' '}
-          <Link href="/guides/xeriscape" className="underline hover:text-garden-600 dark:hover:text-garden-400">
-            Xeriscape Design guide
-          </Link>.
-        </p>
-      </section>
-
-      {/* Section 5: Watering Guide */}
+      {/* Watering Guide */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-2">
           💧 Watering Frequency Guide by Plant Category
@@ -248,10 +324,10 @@ export default function Infographics() {
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            {emoji:'💦', label:'Daily (Hot Weather)',      color:'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800', plants:['Container annuals in summer','Hanging baskets','Seedlings in heat','Newly transplanted herbs']},
-            {emoji:'🚿', label:'Every 2–3 Days',           color:'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800', plants:['Tomatoes (in-ground)','Cucumbers & squash','Most container vegetables','Ferns & shade perennials']},
-            {emoji:'🌿', label:'Weekly',                   color:'bg-yellow-50 dark:bg-yellow-900/20 border-yellow-200 dark:border-yellow-800', plants:['Established shrubs','Lawn (established)','Most in-ground perennials','Fruit trees (summer)']},
-            {emoji:'🌵', label:'Every 2–4 Weeks',          color:'bg-orange-50 dark:bg-orange-900/20 border-orange-200 dark:border-orange-800', plants:['Succulents & cacti','Established lavender','Native prairie plants','Drought-tolerant groundcovers']},
+            {emoji:'💦', label:'Daily (Hot Weather)',  color:'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800',   plants:['Container annuals in summer','Hanging baskets','Seedlings in heat','Newly transplanted herbs']},
+            {emoji:'🚿', label:'Every 2–3 Days',       color:'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800', plants:['Tomatoes (in-ground)','Cucumbers & squash','Most container vegetables','Ferns & shade perennials']},
+            {emoji:'🌿', label:'Weekly',               color:'bg-yellow-50 dark:bg-yellow-900/20 border-yellow-200 dark:border-yellow-800',plants:['Established shrubs','Lawn (established)','Most in-ground perennials','Fruit trees (summer)']},
+            {emoji:'🌵', label:'Every 2–4 Weeks',      color:'bg-orange-50 dark:bg-orange-900/20 border-orange-200 dark:border-orange-800',plants:['Succulents & cacti','Established lavender','Native prairie plants','Drought-tolerant groundcovers']},
           ].map(({emoji, label, color, plants}) => (
             <div key={label} className={`rounded-xl border p-4 ${color}`}>
               <div className="font-semibold text-gray-800 dark:text-gray-200 mb-2">{emoji} {label}</div>
@@ -267,8 +343,8 @@ export default function Infographics() {
         </div>
       </section>
 
-      {/* Ad placeholder 3 */}
-      <div id="adsense-infographics-3" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
+      {/* Ad placeholder 7 */}
+      <div id="adsense-infographics-7" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
 
       {/* Affiliate Products */}
       <section className="mb-12">
@@ -375,6 +451,31 @@ export default function Infographics() {
         {' · '}
         <Link href="/wizard" className="underline hover:text-garden-600 dark:hover:text-garden-400">Find your perfect plants</Link>
       </div>
+
+      {/* Shared lightbox */}
+      {activeLightbox && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          onClick={closeLightbox}
+        >
+          <div className="relative max-w-6xl w-full" onClick={e => e.stopPropagation()}>
+            <button
+              type="button"
+              onClick={closeLightbox}
+              className="absolute -top-10 right-0 text-white text-sm font-semibold hover:text-gray-300 transition-colors"
+              aria-label="Close"
+            >
+              ✕ Close
+            </button>
+            <img
+              src={activeLightbox.src}
+              alt={`${activeLightbox.alt} — full size`}
+              className="w-full h-auto rounded-xl shadow-2xl"
+            />
+          </div>
+        </div>
+      )}
+
     </div>
   )
 }

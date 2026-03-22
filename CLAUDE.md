@@ -962,21 +962,50 @@ Three new content discovery pages added to the app:
 
 | Page | Route | Component | Description |
 |---|---|---|---|
-| Garden Infographics | `/infographics/` | `src/components/Infographics.jsx` | Visual quick-reference cards (companion planting image with lightbox, USDA zones, spacing, soil pH, watering) |
+| Garden Infographics | `/infographics/` | `src/components/Infographics.jsx` | Visual quick-reference guides — 17 live infographic images with click-to-enlarge lightbox, plus HTML tables for vegetable spacing and watering frequency |
 | Gardening Videos | `/videos/` | `src/components/Videos.jsx` | Curated YouTube channels by topic (Epic Gardening, MIgardener, Charles Dowding, Garden Answer, etc.) |
 | Gardening Podcasts | `/podcasts/` | `src/components/Podcasts.jsx` | Curated podcast list covering organic growing, permaculture, vegetable gardening, native plants |
 
 Each page has a full metadata export (`title`, `description`, `keywords`, `canonical`, `openGraph`, `twitter`).
 
 **Infographics page implementation notes:**
-- Section 1 (Companion Planting) displays `public/infographics/Companion-Planting-Quick-Reference.png` as a full-width image; clicking opens a full-screen lightbox overlay (implemented with `useState` + `'use client'` directive)
-- Sections 2–5 are HTML tables rendered inline (USDA zones, vegetable spacing, soil pH, watering frequency cards)
-- Three AdSense placeholder `<div>`s injected between sections
+- **Shared lightbox:** single `activeLightbox` state (`{ src, alt }`) drives one lightbox overlay for all images — no per-image `useState`
+- **`InfographicSection` component:** reusable helper renders heading, description, image button, caption, and guide link for each infographic
+- **17 live image sections** — all images in `public/infographics/` are wired to sections with descriptions and links to their corresponding guide pages
+- **2 HTML sections** remain for Vegetable Spacing (table) and Watering Frequency (cards) — no infographic images exist for these topics yet
+- **7 AdSense placeholder `<div>`s** spaced throughout the page
 - Affiliate cards at the bottom (Rodale's Encyclopedia, Old Farmer's Almanac)
 - "More Infographics Coming Soon" grid of 6 planned cards
 
-Public media directories added:
-- `public/infographics/` — static infographic assets (`Companion-Planting-Quick-Reference.png` live)
+**Live infographic images** (`public/infographics/`):
+
+| File | Section |
+|---|---|
+| `Companion-Planting-Quick-Reference.png` | Companion Planting Quick Reference |
+| `USDA-Hardiness-Zones-Frost-Date-Reference.png` | USDA Hardiness Zones — Frost Date Reference |
+| `Soil-pH-Preference-by-Plant-Type.png` | Soil pH Preference by Plant Type |
+| `Annual_Flowers_Best_Picks_Guide_IG.png` | Annual Flowers: Best Picks |
+| `Long_Blooming_Perennials_Guide_IG.png` | Long-Blooming Perennials |
+| `Cut_Flower_Garden_Guide_IG.png` | Cut Flower Garden |
+| `Cottage_Garden_Style_Guide_IG.png` | Cottage Garden Style |
+| `Moon_Garden_Guide_IG.png` | Moon Garden |
+| `Edible_Flowers_Guide_IG.png` | Edible Flowers |
+| `Childrens_Vegetable_Garden_Guide_US_IG.png` | Children's Vegetable Garden |
+| `Culinary_Herb_Garden_Guide_IG.png` | Culinary Herb Garden |
+| `Herb_Garden_Design_Guide_IG.png` | Herb Garden Design |
+| `Medicinal_Garden_Guide_US_IG.png` | Medicinal Garden |
+| `Common_Garden_Diseases_Guide_IG.png` | Common Garden Diseases |
+| `Fast_Growing_Privacy_Trees_Guide_IG.png` | Fast-Growing Privacy Trees |
+| `Japanese_Garden_Elements_Guide_IG.png` | Japanese Garden Elements |
+| `Front_Yard_Curb_Appeal_Guide_IG.png` | Front Yard Curb Appeal |
+
+**To add a new infographic:**
+1. Drop the PNG into `public/infographics/`
+2. Add an `<InfographicSection>` block in `src/components/Infographics.jsx` with `src`, `alt`, `heading`, `description`, `guideHref`, and `guideName` props
+3. Add an ad placeholder `<div>` nearby if the page needs rebalancing
+
+Public media directories:
+- `public/infographics/` — static infographic assets (17 live images)
 - `public/videos/` — static video thumbnail assets
 - `public/podcasts/` — static podcast artwork assets
 
