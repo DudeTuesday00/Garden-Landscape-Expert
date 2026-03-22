@@ -1053,5 +1053,80 @@ export const gardenPestsContent = {
         },
       ],
     },
+    {
+      id: 'seasonal-calendar-ipm',
+      title: 'Section 10: Seasonal Pest Calendar & IPM Decision Framework',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Pest management is most efficient when it is anticipatory rather than reactive. The following seasonal calendar helps you prepare for predictable pest pressure before it peaks, and the IPM (Integrated Pest Management) framework provides a decision structure for choosing the most appropriate response to any pest situation.',
+        },
+        {
+          type: 'table',
+          headers: ['Season / Timing', 'Key Pest Events', 'Monitoring Priorities', 'Anticipatory Actions', 'Region Notes'],
+          rows: [
+            [
+              'Late Winter / Early Spring (Before planting)',
+              'Scale crawlers emerging on fruit trees; overwintering egg masses hatching; aphid queens emerging from overwintering sites; white grubs becoming active in lawns as soil warms',
+              'Inspect fruit trees for scale; check ornamentals for overwintering egg masses (cottony masses, clusters of scale)',
+              'Apply dormant oil to fruit trees and ornamentals for scale and mite eggs (before buds break). Order row cover and other supplies. Inspect seed-starting areas for fungus gnats.',
+              'Zone 3–4: April–May. Zone 7–8: February–March. Pacific Northwest: watch for slug pressure immediately as conditions warm.',
+            ],
+            [
+              'Spring (Planting season)',
+              'Flea beetles emerge and attack seedlings; cabbage white butterflies begin laying eggs on brassicas; aphid populations build on new growth; cutworms active at transplanting; cucumber beetles emerge',
+              'Inspect seedlings daily for flea beetle holes. Check brassica leaf undersides for cabbageworm eggs. Monitor aphid levels on new growth weekly.',
+              'Apply row cover immediately on brassica and cucumber transplants. Use cutworm collars on all tomato, pepper, and cabbage transplants. Plant pest-repelling companion flowers (nasturtium, dill, fennel). Begin monitoring with sticky traps.',
+              'Flea beetles are most severe in cool spring weather. Cutworm damage peaks at transplanting. Cucumber beetles emerge when soil temp reaches 60°F.',
+            ],
+            [
+              'Early Summer (Pre-heat)',
+              'Japanese beetles emerge (eastern US); squash vine borer adult flight begins; hornworm eggs hatching on tomatoes; Colorado potato beetle at peak larval stage; cucumber beetle populations building; leafhopper migration northward',
+              'Scout tomatoes twice weekly for hornworm frass and feeding. Monitor squash vine bases for SVB entry holes and frass. Check potato and eggplant for CPB egg masses on leaf undersides. Watch for Japanese beetle emergence.',
+              'Apply Bt to brassicas on schedule if cabbageworms are present. Hand-pick hornworms on tomatoes. Squash: inspect stem bases weekly; begin SVB management. CPB: begin Bt tenebrionis or hand-picking as egg masses appear.',
+              'Japanese beetles: peak emergence typically late June to July in the Midwest and East. SVB flight peaks in late June – July in most regions. Monitor for squash bug egg masses simultaneously.',
+            ],
+            [
+              'Midsummer (Peak pest season)',
+              'Highest pest diversity and pressure; spider mites peak in hot, dry conditions; corn earworm active on corn; thrips populations peak; stink bug nymphs (eastern US) begin feeding on fruit; squash bug populations building',
+              'Check leaf undersides for spider mites twice weekly. Monitor corn silks for earworm. Scout pepper and tomato fruit for stink bug feeding scars. Check squash for squash bug nymphs (gray, wingless, on leaf undersides).',
+              'Increase irrigation frequency if needed to reduce mite pressure (water-stressed plants are more susceptible). Apply corn earworm controls to silk at silk emergence. Squash bugs: hand-pick egg masses; pyrethrin if severe.',
+              'Mite pressure is highest in the Southwest, Plains states, and wherever conditions are hot and dry. Stink bugs are most severe in the mid-Atlantic states and spreading westward.',
+            ],
+            [
+              'Late Summer / Early Fall (Harvest and transition)',
+              'Pest pressure generally declining; second generation of cucumber beetles, aphids, and whitefly still active; corn earworm migrates south on storm fronts; beneficials at their highest populations',
+              'Monitor fall brassicas for cabbageworm and looper. Check squash and cucumber for powdery mildew. Inspect stored bulbs and tubers for wireworm and slug damage.',
+              'Remove spent crops promptly — old plants harbor pests and disease inoculum. Plant overwintering cover crops. Apply insect controls to fall brassicas if needed. Encourage beneficial insect populations by leaving flowering plants standing.',
+              'Fall brassicas planted in August–September may face renewed aphid and caterpillar pressure as the season cools. Beneficial insect populations are at their annual peak in late summer — an excellent time to observe natural enemy activity.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The IPM Decision Framework: What to Do When You Find a Pest',
+        },
+        {
+          type: 'p',
+          text: 'Integrated Pest Management (IPM) is the decision framework used by professional growers, cooperative extension services, and the most effective home gardeners. It prioritizes the least disruptive effective control at every step, escalating to more intensive interventions only when necessary.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Identify the pest correctly: Do not treat until you know what you are treating. Misidentification leads to using the wrong product, harming beneficial insects, and wasting money. Use the symptom key in Section 1, the pest profiles in Sections 2–7, and your state extension service resources.',
+            'Assess the damage level: Is the damage significant? A few aphids on a healthy plant are being managed by natural enemies and do not require intervention. A colony of aphids covering all new growth on a stressed plant requires action. The threshold question: is the pest present at a level that will cause meaningful damage if left unmanaged?',
+            'Consider the context: Is the plant at a vulnerable stage (seedling, transplant shock, fruit set) or a more resilient stage (established, mature)? Are beneficial insects present? Is this an isolated problem or widespread? What is the weather trend — will conditions favor or disfavor the pest?',
+            'Apply cultural and physical controls first: Can you remove the pest by hand? Apply a water spray? Apply row cover? Improve conditions to reduce pest favorability? These actions have no risk to beneficial insects and no pesticide resistance potential.',
+            'Apply targeted organic pesticides if necessary: Choose the most specific, least disruptive product effective against the identified pest. Bt is highly specific to its target and has no effect on beneficial insects; use it before broad-spectrum products like pyrethrin. Apply in the evening; target only affected plants or plant sections.',
+            'Evaluate and adjust: Did the treatment work? If not, why not? Was the identification correct? Was the product applied at the right time and in the right way? Adjust the approach based on observed results.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🐛',
+          text: 'The goal is not zero pests but a garden in which the pest community is in balance with the natural enemy community — where pest populations fluctuate but rarely cause significant, sustained damage. This balance is achieved not primarily by application of organic pesticides, but by investing in the conditions that support natural enemies: diverse flowering plants, permanent ground covers, and tolerance of the low pest populations that the natural enemy community needs to persist. The gardener who consistently sprays every time they see a pest will have more pest problems over time, not fewer. Observe first. Identify accurately. Tolerate what can be tolerated. Intervene specifically when necessary. Support your allies.',
+        },
+      ],
+    },
   ],
 }
