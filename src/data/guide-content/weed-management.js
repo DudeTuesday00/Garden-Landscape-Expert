@@ -455,5 +455,56 @@ export const weedManagementContent = {
         },
       ],
     },
+    {
+      id: 'organic-methods',
+      title: 'Section 8: Organic Weed Management',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Organic weed management relies on the same biological principles as conventional management but limits chemical tools to those approved for organic production under the National Organic Program (NOP). In practice, the most effective organic weed management strategies are the same as the most effective conventional ones: prevention, mulching, competitive planting, and physical control. Where conventional management often reaches for chemical tools as a primary response, organic management requires that prevention and physical control be developed to their highest level.',
+        },
+        {
+          type: 'h3',
+          text: 'Organic Certification and OMRI-Listed Products',
+        },
+        {
+          type: 'p',
+          text: 'Products for use in certified organic agricultural production must be approved under USDA National Organic Program standards. The Organic Materials Review Institute (OMRI) provides a searchable list of products reviewed and approved for organic use. For home gardeners not seeking certification, "organic" is often used more loosely to mean naturally derived or chemically simple — but it is worth understanding what formal organic certification means when evaluating products.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Corn gluten meal (OMRI-listed pre-emergent): Applied at 20 lbs per 1,000 square feet before germination, it provides some suppression of annual weeds by inhibiting root development in germinating seeds. Efficacy is significantly lower than synthetic pre-emergents (40–60% vs. 80–90%); best results require multiple seasons of consistent application. Must be kept dry for 4 to 6 weeks after application — rainfall immediately after application reduces effectiveness significantly. Also provides approximately 10% nitrogen by weight.',
+            'Horticultural vinegar (acetic acid, 20–30%): An OMRI-listed non-selective contact herbicide. Much more effective than household 5% vinegar. Burns plant tissue on contact; does not kill roots of perennial weeds. Best on seedlings and young annual weeds in sunny, dry conditions. Corrosive to skin and eyes — wear PPE (gloves, eye protection). Multiple applications required for established weeds.',
+            'Iron-based herbicides (FeHEDTA): Products such as Fiesta® target broadleaf weeds selectively in lawns without harming most turf grasses. Based on chelated iron, which causes rapid oxidative stress in sensitive broadleaf species. Effective on dandelion, clover, and many other common lawn broadleaf weeds. One of the most promising organic lawn broadleaf weed control options.',
+            'Flame weeding: Fully organic physical control suitable for most applications — see Section 3 for detailed guidance. Most effective on annual seedlings; does not kill perennial roots.',
+            'Essential oil herbicides (clove oil, citric acid, d-limonene): Various products combine essential oils that desiccate plant tissue on contact. Effectiveness is similar to horticultural vinegar — effective on seedlings and young annuals; insufficient for perennial weeds or large established plants. Degrade rapidly with low environmental persistence.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Organic Approach to Perennial Weed Management',
+        },
+        {
+          type: 'p',
+          text: 'Perennial weeds in organic systems are the greatest challenge because the most effective tool for them (systemic glyphosate) is not permitted. The organic approach relies on depletion through repeated top-removal, improving conditions that make desired plants more competitive, and targeted application of organic contact herbicides to accelerate the depletion process.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Identify and map the problem: Know exactly where perennial weeds are present and what species they are. Targeted management is more efficient than treating large areas.',
+            'Cut or pull repeatedly: Remove all above-ground growth as soon as it appears. Each time a perennial weed regrows and is removed before it can photosynthesize for any significant period, it draws from its root reserves. Over 1 to 2 growing seasons of consistent top removal, most perennial weeds weaken significantly.',
+            'Time removal to maximize stress: Remove top growth at the plant\'s most vulnerable stage — during active flowering (when root reserves are at their lowest), during hot dry weather, and before new reserve storage in fall. Removal in spring when the plant is drawing from root reserves and before it can replenish is maximally effective.',
+            'Apply organic contact herbicide: Immediately after cutting or after a flush of new growth appears, apply horticultural vinegar or an iron-based product to accelerate top kill and prevent photosynthesis from replenishing the root.',
+            'Smother with cardboard and mulch: After thorough top removal, cover the area with cardboard and then 4 to 6 inches of wood chip mulch. This deprives regrowth of light for an extended period. For bindweed and quackgrass, this must be maintained for 1 to 2 full growing seasons for effective control.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌾',
+          text: 'The organic gardener\'s most powerful long-term tool is patience combined with consistency. A perennial weed managed imperfectly but persistently — top removed every time it appears, never allowed to photosynthesize freely — will weaken and eventually succumb over 2 to 3 seasons. The same weed ignored for half the season, or managed only once, will be just as vigorous the following year. Consistency matters more than perfection.',
+        },
+      ],
+    },
   ],
 }
