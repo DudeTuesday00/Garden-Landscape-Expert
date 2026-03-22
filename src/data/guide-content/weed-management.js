@@ -506,5 +506,33 @@ export const weedManagementContent = {
         },
       ],
     },
+    {
+      id: 'regional-guide',
+      title: 'Section 9: Regional Weed Challenges Across America',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Weed pressure varies significantly by climate region. The hot, wet Southeast has different dominant weeds than the cool, dry Great Basin; the Pacific Northwest\'s mild, moist winters favor different species than the cold continental Midwest. Understanding the primary weed challenges in your region helps focus management resources on the species and timing that matter most.',
+        },
+        {
+          type: 'table',
+          headers: ['Region', 'Climate Factor', 'Most Challenging Weeds', 'Peak Management Season', 'Regional Priority'],
+          rows: [
+            ['Pacific Northwest (WA, OR, western)', 'Mild wet winters; dry summers; year-round weed pressure', 'Garlic mustard (forest edges), hairy bittercress (winter annual in beds), horsetail (Equisetum — very persistent), creeping buttercup in wet areas, English ivy', 'Fall through spring for winter annuals; summer for perennial management', 'Horsetail requires patience and persistence — there is no single effective control. Improve drainage; cut repeatedly; apply glyphosate or salt-based products. Garlic mustard: pull before seed set in April–May.'],
+            ['California & Southwest (CA, AZ, NM, NV)', 'Mediterranean wet/dry cycle; drought; heat; fire-adapted plants', 'Filaree (stork\'s bill), mustards (Brassica spp.), bermudagrass in landscape beds, yellow oxalis', 'Winter and spring for cool-season annuals; year-round for bermudagrass in warm-season regions', 'Bermudagrass in landscape beds is the most persistent challenge — it spreads by rhizomes and stolons that survive deep in the soil. Solarization is very effective in summer. Repeated glyphosate application required for full control.'],
+            ['Southeast (GA, AL, FL, MS, LA, SC)', 'Hot humid summers; mild winters; year-round growing season; highest weed diversity', 'Bermudagrass, Virginia buttonweed (in lawns), chamberbitter, tropical soda apple, nutsedge (yellow), cudweed, tropical spiderwort', 'Year-round; peak in summer', 'Virginia buttonweed in lawns is one of the most difficult southern lawn weeds; 3-way herbicide combinations with 2,4-D, dicamba, and MCPP are most effective. Tropical soda apple is a noxious weed in many southeastern states; report and manage promptly.'],
+            ['Mid-Atlantic & Northeast (VA, MD, PA, NY, NE states)', 'Four distinct seasons; variable humidity; warm summers; cold winters', 'Japanese knotweed, garlic mustard, crabgrass (major lawn weed), mugwort (Artemisia vulgaris), ground ivy, Japanese barberry, Oriental bittersweet', 'Spring for garlic mustard control; late spring for crabgrass pre-emergent; summer for post-emergent work; fall for perennial broadleaf control', 'Japanese knotweed is increasing in prevalence throughout the region and is one of the most important weed management priorities. Early and consistent management before it spreads is critical.'],
+            ['Midwest & Great Plains (IL, IN, OH, MN, IA, KS, NE)', 'Continental climate; hot summers; cold winters; significant agricultural weed pressure', 'Canada thistle (perennial; very persistent), bindweed (field bindweed — among the most difficult garden weeds), foxtail grasses, velvetleaf, waterhemp, common ragweed', 'Late spring through summer for most annual weeds; fall for perennial broadleaf control', 'Bindweed (Convolvulus arvensis) is the most frustrating garden weed in the region — the extensive white rhizome system allows it to resprout from any remaining root fragment. Repeated removal combined with fall glyphosate application is the most effective approach.'],
+            ['Rocky Mountain & High Plains (CO, UT, WY, MT, ID)', 'Short growing seasons; extreme temperature variation; drought; wind-dispersed weeds', 'Leafy spurge (highly invasive; toxic to cattle), spotted knapweed, cheatgrass (Bromus tectorum — annual grass that increases fire risk), Dalmatian toadflax, Canada thistle', 'Spring and early summer; manage cheatgrass before it sets seed', 'Cheatgrass is a major fire risk in the Mountain West — it cures to a highly flammable straw by midsummer. Reduce cheatgrass pressure around structures by mowing or treating before it dries. Leafy spurge: contact your state department of agriculture for biological control agent availability.'],
+            ['Great Lakes & Upper Midwest (MI, WI, MN)', 'Cold winters; cool-to-warm summers; high moisture in many areas', 'Garlic mustard (major forest edge invasive), Japanese barberry, common buckthorn (invasive shrub/small tree), wild parsnip, reed canary grass (wet areas)', 'Spring for garlic mustard; fall for woody invasive removal; midsummer for wild parsnip before seed set', 'Wild parsnip (Pastinaca sativa) is an expanding invasive that causes phytophotodermatitis — severe blistering burns when plant sap on skin is exposed to UV light. Identify and manage carefully; wear long sleeves, gloves, and eye protection when working near it.'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🔍',
+          text: 'Your state\'s cooperative extension service is the best source for region-specific weed identification and management guidance. Extension weed scientists monitor resistance patterns, update herbicide recommendations as new products become available, and provide identification help for unusual or newly arriving invasive species. Most state extension services maintain free online weed identification tools and management guides searchable by crop, weed species, and county.',
+        },
+      ],
+    },
   ],
 }
