@@ -623,7 +623,7 @@ export const guideCategories = [
         title: 'Indoor Houseplants 101',
         emoji: '🌱',
         description: 'The beginner\'s guide to choosing, placing, and caring for indoor plants.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'container-vegetables',
