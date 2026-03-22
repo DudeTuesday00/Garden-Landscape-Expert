@@ -736,5 +736,130 @@ export const indoorHouseplantsContent = {
         },
       ],
     },
+    {
+      id: 'pests-troubleshooting',
+      title: 'Section 7: Pests, Problems & Troubleshooting',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Every houseplant owner eventually encounters pests or problems. The key is early detection — catching an insect infestation when it is small and treating it quickly rather than discovering it after the entire collection is affected. Inspect plants carefully every time you water: look under leaves, at stem joints, and along soil surfaces. A hand lens or the camera zoom on your phone reveals pests that are invisible to the naked eye.',
+        },
+        {
+          type: 'h3',
+          text: 'Common Pests: Identification and Treatment',
+        },
+        {
+          type: 'table',
+          headers: ['Pest', 'What You See', 'Favorite Plants', 'Treatment', 'Prevention'],
+          rows: [
+            [
+              'Fungus Gnats',
+              'Tiny black flies hovering near soil; larvae are thin white worms in the top inch of soil; adults are more annoying than damaging; larvae damage roots of seedlings',
+              'Any plant in moist potting mix; worst in overwatered plants',
+              '(1) Let soil dry more thoroughly between waterings — larvae cannot survive in dry soil; (2) Apply a Bti product (Bacillus thuringiensis israelensis, sold as Mosquito Bits or Gnatrol) to the soil — kills larvae without harming plants; (3) Yellow sticky traps catch adults',
+              'The only reliable prevention is allowing soil to dry appropriately. Fungus gnats are primarily a symptom of overwatering.',
+            ],
+            [
+              'Spider Mites',
+              'Fine webbing on leaf undersides and between stems; stippled, pale, or bronzed leaves; tiny red-brown or white moving dots visible with magnification; worst in hot, dry conditions',
+              'Most houseplants; particularly bad on ivies, roses, and plants near heating vents',
+              '(1) Blast plant with water (shower or outdoor hose) to physically remove mites and webbing; (2) Apply neem oil or insecticidal soap to all leaf surfaces including undersides — repeat every 5–7 days for 3 treatments; (3) Isolate affected plant',
+              'Maintain adequate humidity (mites thrive in dry conditions); mist leaves periodically; keep plants away from hot, dry heating vents',
+            ],
+            [
+              'Mealybugs',
+              'White, cottony, fluffy masses in leaf axils and along stems; sticky honeydew on leaves below; distorted new growth',
+              'Succulents, cacti, pothos, philodendron, orchids, citrus; almost any houseplant',
+              '(1) Remove visible colonies with a cotton swab dipped in 70% isopropyl alcohol; wipe all surfaces; (2) Apply neem oil or insecticidal soap to all plant surfaces; (3) Repeat every week for 4–6 weeks — mealybugs are persistent; (4) Isolate affected plant',
+              'Inspect plants carefully before purchase; quarantine new plants for 2–3 weeks before introducing them to your collection',
+            ],
+            [
+              'Scale Insects',
+              'Brown, tan, or gray oval bumps attached to stems and leaves (look like part of the plant); sticky honeydew below; sooty black mold on leaves',
+              'Ficus, citrus, orchids, ferns; many woody-stemmed houseplants',
+              '(1) Scrape off individual scales with a toothbrush or fingernail; (2) Wipe stems and leaves with a cotton pad soaked in isopropyl alcohol; (3) Apply neem oil or horticultural oil; repeat weekly for 4–6 weeks; (4) Severely infested plants may not be worth saving',
+              'Inspect new plants before purchasing; quarantine new arrivals',
+            ],
+            [
+              'Aphids',
+              'Soft-bodied, small insects (green, black, white, or pink) clustered on new growth, flower buds, and shoot tips; sticky honeydew; distorted new growth',
+              'Any fast-growing plants with tender new growth; herbs, tropical plants, flowering plants',
+              '(1) Blast off with water — most aphid populations are physically removed this way; (2) Insecticidal soap spray on all surfaces; (3) Repeat every 5–7 days; (4) Neem oil for severe infestations',
+              'Inspect new growth regularly; aphid populations explode quickly when undetected; early detection is critical',
+            ],
+            [
+              'Thrips',
+              'Tiny, slender, fast-moving insects; silvery streaking or stippling on leaves; black fecal specks visible with a hand lens; can vector viral diseases',
+              'Any houseplant; particularly bad on fiddle leaf fig, monstera, and orchids',
+              '(1) Isolate affected plant immediately; (2) Neem oil spray, especially on new growth and undersides of leaves; (3) Insecticidal soap; (4) Repeat every 5–7 days for 4 treatments; (5) Yellow sticky traps monitor population levels',
+              'Thrips can enter the house on cut flowers, clothing, or through open windows; there is no reliable prevention, only early detection and rapid response',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Common Non-Pest Problems: Quick Diagnosis',
+        },
+        {
+          type: 'table',
+          headers: ['Symptom', 'Most Likely Cause(s)', 'Less Common Cause', 'Solution'],
+          rows: [
+            [
+              'Yellow leaves, older leaves first',
+              'Overwatering (most common); underwatering; natural aging of older leaves at the base',
+              'Nitrogen deficiency after months without fertilizing; rootbound',
+              'Check soil moisture — if wet, let dry and improve drainage; if dry, water more consistently. A few yellow leaves at the base is normal; many yellowing leaves throughout is a problem.',
+            ],
+            [
+              'Brown crispy leaf tips',
+              'Low humidity (most common, especially in winter); fluoride in tap water (for sensitive species); inconsistent watering; fertilizer salt buildup',
+              'Underwatering',
+              'Increase humidity (humidifier, pebble tray, grouping plants); switch to filtered water for sensitive species; flush soil monthly to remove salt buildup',
+            ],
+            [
+              'Soft, mushy stems or crown',
+              'Overwatering / root rot; bacterial or fungal infection',
+              'Physical damage',
+              'Act quickly: remove affected soil; trim rotted roots; repot in fresh dry mix; reduce watering significantly. If the entire stem is mushy at the base, the plant may be unrecoverable.',
+            ],
+            [
+              'Leggy, stretched growth toward light',
+              'Insufficient light; the plant is reaching for a brighter source',
+              'Infrequent rotation',
+              'Move to a brighter location; or add a grow light. Rotate the plant 1/4 turn weekly for even growth.',
+            ],
+            [
+              'Leaves dropping (particularly fiddle leaf fig)',
+              'Sudden change in location or environment; cold drafts; heat vent exposure; inconsistent watering',
+              'Overwatering; pest stress',
+              'Stabilize the plant\'s environment; move away from vents and drafts; establish a consistent watering routine and do not move the plant.',
+            ],
+            [
+              'No new growth for months',
+              'Insufficient light (most common); dormancy or rest period (winter); rootbound; severely depleted soil after years without repotting',
+              'Temperature too cold',
+              'Assess light first. If light is adequate: check if rootbound (repot if yes); fertilize if not done recently; verify temperature is appropriate for the species.',
+            ],
+            [
+              'White crusty buildup on soil or pot rim',
+              'Mineral and fertilizer salt accumulation from tap water and fertilizer; harmless aesthetically but can affect soil chemistry over time',
+              'Calcium deposits from hard water',
+              'Flush the soil by running a large volume of water through it monthly. Reduce fertilizer concentration or frequency. Consider switching to filtered water.',
+            ],
+            [
+              'Mold or fungus on soil surface',
+              'Overwatering; poor air circulation; organic debris on soil surface; high humidity',
+              'Poor-quality potting mix with organic matter at the surface',
+              'Let soil dry more thoroughly; improve air circulation; remove the mold physically; sprinkle a thin layer of perlite on the soil surface to deter mold growth',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🔍',
+          text: 'Quarantine every new plant for 2–3 weeks before placing it near your existing collection. A plant that looks healthy at the garden center may be harboring early-stage mealybugs, scale, or spider mites that only become visible once the plant is home. This single habit prevents the most common cause of widespread pest outbreaks in a houseplant collection.',
+        },
+      ],
+    },
   ],
 }
