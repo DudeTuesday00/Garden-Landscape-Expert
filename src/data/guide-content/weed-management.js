@@ -248,5 +248,66 @@ export const weedManagementContent = {
         },
       ],
     },
+    {
+      id: 'herbicides',
+      title: 'Section 4: Herbicides — Understanding Your Options',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Herbicides are valuable tools in weed management, but they are most effective when used as part of a broader management strategy rather than as the primary or sole approach. Understanding how different herbicides work — and the critical distinction between pre-emergent and post-emergent, and between selective and non-selective products — allows you to choose the right tool for each situation and avoid the common mistakes that make herbicide use ineffective or problematic.',
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Read the Label — It\'s a Legal Requirement: In the United States, pesticide labels (which include herbicide labels) are legally binding documents. Using a pesticide in a manner inconsistent with its label is a federal violation of the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA). This includes applying at higher-than-labeled rates, using on crops not listed, using in locations not permitted by the label, and using without the personal protective equipment (PPE) specified. At minimum, most herbicide labels require chemical-resistant gloves and eye protection.',
+        },
+        {
+          type: 'h3',
+          text: 'The Key Distinctions: Pre-Emergent vs. Post-Emergent',
+        },
+        {
+          type: 'table',
+          headers: ['Herbicide Type', 'How It Works', 'When to Apply', 'What It Controls', 'What It Does NOT Control'],
+          rows: [
+            ['Pre-emergent', 'Creates a chemical barrier in the soil that kills germinating seeds before they can emerge. Does not affect established plants or seeds that have already germinated.', 'BEFORE weed seeds germinate; typically early spring (for summer annuals) or late summer/early fall (for winter annuals). Timing relative to soil temperature is critical, not calendar date.', 'Germinating annual weed seeds in the treated zone. Highly effective for crabgrass, annual bluegrass, and other seeding annuals when properly timed.', 'Emerged weeds; perennial weeds (which do not reproduce primarily by seed); weeds that germinate after the treatment window has passed.'],
+            ['Post-emergent — contact', 'Damages or destroys the plant tissue it contacts directly. Does not move within the plant. Kills above-ground portions only; does not kill roots.', 'After weeds have emerged; most effective on small, actively growing seedlings. Older, larger weeds may require multiple applications.', 'Young annual weeds. Burns and kills above-ground tissue on many weeds.', 'Deep roots of perennial weeds (the plant will regrow from root tissue); any plant not directly contacted by the spray.'],
+            ['Post-emergent — systemic', 'Absorbed by leaves and transported throughout the plant, including to the roots. Kills the entire plant including root system.', 'After weeds have emerged and are actively growing. Applying to stressed, drought-affected, or dormant plants significantly reduces efficacy.', 'The entire plant, including roots of perennial weeds like bindweed, dandelion, and Canada thistle — making this the most effective chemical tool for perennial weed management.', 'Pre-emergent weed seeds; plants not directly contacted; plants not actively translocating the herbicide (stressed or dormant plants move absorbed compounds less effectively).'],
+            ['Selective', 'Kills specific plant groups while leaving others relatively unharmed. Grassy weed killers (fluazifop, sethoxydim) kill grasses without harming broadleaf plants. Broadleaf weed killers (2,4-D, dicamba) kill broadleaf weeds without harming most grasses.', 'Depends on target weed and product; see individual product labels.', 'The specific target weed categories the product is formulated for.', 'Plants outside the selective target range. Read labels carefully — selectivity has limits.'],
+            ['Non-selective (glyphosate, glufosinate, acetic acid)', 'Kills or seriously damages any green plant tissue it contacts. No distinction between weeds and garden plants.', 'Carefully targeted application; used in areas to be cleared, around hardscape, or spot-treated directly on weeds with no nearby garden plants at risk.', 'Virtually any actively growing plant it contacts.', 'Seeds in the soil (glyphosate has no soil activity); plants not contacted.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Common Herbicide Active Ingredients: A Reference',
+        },
+        {
+          type: 'table',
+          headers: ['Active Ingredient', 'Type', 'Common Products', 'Primary Uses', 'Key Safety & Environmental Notes'],
+          rows: [
+            ['Glyphosate', 'Non-selective systemic post-emergent', 'Roundup® and hundreds of generics', 'Clearing vegetation before new bed preparation; spot treatment of perennial weeds; management of invasive plants', 'The most widely used herbicide in the world. The EPA currently considers it non-carcinogenic at labeled use levels; IARC classified it as "probably carcinogenic." Follow label PPE requirements. Breaks down in soil relatively quickly (days to weeks). Do not apply near water bodies.'],
+            ['2,4-D', 'Selective systemic broadleaf post-emergent', 'Weed B Gon®, Trimec®, Ortho Weed-B-Gon', 'Lawn broadleaf weed control (dandelion, plantain, clover, chickweed) without harming turf grasses', 'Highly effective broadleaf selective. Volatile — do not apply above 85°F or on windy days; vapor drift can damage nearby broadleaf ornamentals and vegetables. Do not apply near ponds or streams.'],
+            ['Dicamba', 'Selective systemic broadleaf post-emergent', 'Found in many lawn broadleaf combination products', 'Broadleaf weed control in turf; often combined with 2,4-D for broader spectrum', 'Highly volatile. New DT (dicamba-tolerant) crop systems have created significant drift problems in agricultural areas. Follow label restrictions strictly regarding wind and temperature.'],
+            ['Pre-emergents: prodiamine / pendimethalin / dithiopyr', 'Pre-emergent — prevents seed germination', 'Barricade® (prodiamine); Pre-M® / Halts® (pendimethalin); Dimension® (dithiopyr)', 'Crabgrass prevention in lawns; annual weed prevention in ornamental beds. Prodiamine is longest-lasting; dithiopyr also provides some post-emergent activity on young crabgrass.', 'Apply before soil temps reach 55°F for crabgrass prevention; do not apply to beds where you intend to direct seed. Requires irrigation or rain to activate. Do not apply to newly seeded lawns until after 3 mowings.'],
+            ['Corn Gluten Meal (organic pre-emergent)', 'Natural pre-emergent — inhibits root development of germinating seeds', 'Various organic garden products', 'Organic lawn and garden weed prevention; lower efficacy than synthetic pre-emergents; requires high rates and dry conditions after application', 'OMRI-listed for organic use; safe around children and pets after drying; provides nitrogen as a side benefit. Wet conditions immediately after application significantly reduce effectiveness.'],
+            ['Acetic acid (horticultural vinegar)', 'Non-selective contact (organic option)', 'Various organic herbicide products (20–30% acetic acid — much stronger than food-grade 5% vinegar)', 'Spot treatment of emerged weeds; path and driveway weeds; hardscape cracks; organic programs', 'Burns above-ground tissue only — does not kill perennial roots; effective on young seedlings. Corrosive — causes skin and eye burns; PPE (gloves, eye protection) required.'],
+            ['Clove oil / eugenol (organic contact)', 'Non-selective contact', 'Burnout®, EcoSMART® and similar organic products', 'Spot treatment of small weeds in organic programs', 'Kills above-ground growth only; does not control perennial roots; effective primarily on seedlings; degrades rapidly.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Herbicide Application Best Practices',
+        },
+        {
+          type: 'list',
+          items: [
+            'Calibrate your equipment: A sprayer that applies too much or too little herbicide is ineffective and wasteful. For hand-pump sprayers, measure the output per minute by collecting output in a measuring cup for 30 seconds and doubling the result.',
+            'Apply in calm conditions: Wind drift carries herbicide onto non-target plants. Do not apply when winds exceed 5 mph. On hot days, volatile herbicides (2,4-D, dicamba) can volatilize and drift as vapor even without wind. Apply in early morning when temperatures and wind are lowest.',
+            'Spot treatment vs. broadcast: Many weed problems are best addressed with targeted spot treatment rather than blanket application. Walking the garden with a small hand sprayer and treating individual weeds uses far less herbicide and reduces non-target exposure.',
+            'Keep records: Note what you applied, where, when, and at what rate. This helps you evaluate effectiveness, avoid re-applying to areas already treated, and troubleshoot problems if unexpected plant damage occurs.',
+            'Resistance management: Herbicide resistance is a serious and growing problem. Rotate between herbicide modes of action; do not rely solely on any single product or active ingredient; use cultural controls alongside chemical controls to reduce selection pressure.',
+          ],
+        },
+      ],
+    },
   ],
 }
