@@ -44,6 +44,7 @@ export const heroImages = {
   'modern-minimalist-garden': '/guides/Modern_Minimalist_Garden_Guide.png',
   'indoor-houseplants': '/guides/Indoor_Houseplants_101_Guide.png',
   'weed-management': '/guides/Weed_Management_Guide.png',
+  'garden-pests': '/guides/Garden_Pests_ID_Charts_Guide.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -688,6 +689,22 @@ const themes = {
     tableHeadText: 'text-green-800',
     tableHeadBorder: 'border-lime-200',
     bullet: 'text-lime-500',
+  },
+  'garden-pests': {
+    heroBg: 'bg-gradient-to-br from-orange-50 to-amber-100',
+    heroBorder: 'border-orange-200',
+    heroTitle: 'text-orange-900',
+    backBtn: 'text-orange-700 hover:text-orange-900',
+    sectionTitle: 'text-orange-900',
+    sectionBorder: 'border-orange-100',
+    h3: 'text-orange-800',
+    tipBg: 'bg-orange-50',
+    tipBorder: 'border-orange-300',
+    tipText: 'text-orange-900',
+    tableHead: 'bg-orange-100',
+    tableHeadText: 'text-orange-800',
+    tableHeadBorder: 'border-orange-200',
+    bullet: 'text-orange-400',
   },
 }
 

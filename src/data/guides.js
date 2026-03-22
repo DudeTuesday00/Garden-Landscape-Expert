@@ -452,6 +452,13 @@ export const guideCategories = [
         comingSoon: false,
       },
       {
+        id: 'garden-pests',
+        title: 'Common Garden Pests',
+        emoji: '🐛',
+        description: 'Visual ID charts for 50+ pests — identify by symptom, choose organic controls, and protect your plants.',
+        comingSoon: false,
+      },
+      {
         id: 'deer-resistant',
         title: 'Deer-Resistant Plants',
         emoji: '🦌',
