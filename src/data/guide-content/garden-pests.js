@@ -829,5 +829,56 @@ export const gardenPestsContent = {
         },
       ],
     },
+    {
+      id: 'vertebrate-pests',
+      title: 'Section 7: Vertebrate Pests — Deer, Rabbits, Voles, Gophers & Birds',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Vertebrate pests — mammals and birds — are among the most frustrating garden challenges because they are mobile, intelligent, persistent, and often legally protected. Management relies primarily on exclusion (physical barriers), deterrents, and habitat modification rather than lethal control, which is regulated by state and federal wildlife laws. Always verify local regulations before attempting to trap or relocate any vertebrate pest.',
+        },
+        {
+          type: 'table',
+          headers: ['Pest', 'Evidence', 'Most Effective Organic Controls', 'Regional Notes'],
+          rows: [
+            [
+              'Deer (Odocoileus virginianus, O. hemionus)',
+              'Ragged, torn plant material (deer lack upper incisors so they tear rather than cut cleanly); browsed stems 1–6 feet high; hoof prints; deer droppings (oval pellets); damage worst in early morning and evening',
+              '(1) Physical exclusion: the ONLY reliable control — 8-foot fence; electric fence with bait; double-fencing 4–5 feet apart (deer are reluctant to jump into a narrow space). (2) Individual plant cages or row cover for vegetables. (3) Commercial repellents (Plantskydd, Deer Off, Liquid Fence) require frequent reapplication; habituation reduces long-term effectiveness. (4) Plant resistant species: deer avoid plants with strong fragrance (lavender, sage, yarrow, catmint), hairy or prickly texture (lamb\'s ear, globe thistle), or toxicity (foxglove, daffodil).',
+              'White-tailed deer: eastern and central US and Pacific Northwest. Mule deer: western US and Rocky Mountain states. Deer pressure is highest in suburban and rural interfaces; populations have increased significantly in the past 30 years as predators have declined.',
+            ],
+            [
+              'Rabbits (Sylvilagus floridanus and related species)',
+              'Clean, angled 45-degree cuts on stems (rabbits have sharp incisors; clean cuts vs. deer\'s torn ones); browsed stems 12–18 inches high; small round black droppings; damage worst in early morning and evening; damage also occurs in winter on bark of young trees',
+              '(1) Hardware cloth fencing: 24–30 inches tall, buried 6 inches in the ground; 1-inch mesh or smaller. (2) Individual plant guards (wire cylinders) around transplants and young perennials. (3) Tree guards on young trees from October through March to prevent bark girdling in winter. (4) Commercial repellents (blood meal, predator urine) require frequent reapplication. (5) Eliminate brush piles and dense cover where rabbits shelter.',
+              'Cottontail rabbits throughout the US; snowshoe hare in northern states and Canada. Jackrabbits in the West. Rabbit damage is most severe in new gardens and in late winter when other food is scarce.',
+            ],
+            [
+              'Voles (Microtus spp. — meadow voles and others)',
+              'Runways (1–2 inch wide paths in lawn and mulch); girdled roots and bark at the soil line (gnawed in a rough, jagged pattern); plants that pull out easily with no root system attached; damage to turf visible as dead patches in spring; evidence found in winter under snow cover',
+              '(1) Cylinder hardware cloth around vulnerable plant stems, buried 6 inches deep and extending 12–18 inches above ground. (2) Reduce mulch depth near plant crowns (deep mulch creates vole runways and nesting sites). (3) Keep lawn mowed; eliminate dense ground covers near garden areas. (4) Castor oil-based repellents. (5) Encourage natural predators: hawks, owls (install owl boxes), foxes, weasels.',
+              'Meadow voles are distributed throughout most of the US; pine voles in the East. Populations cycle dramatically every 3–5 years. Worst damage occurs in fall and winter under mulch and snow where voles are concealed from predators.',
+            ],
+            [
+              'Pocket Gophers (Thomomys spp., Geomys spp.)',
+              'Fresh mounds of fine, fan-shaped soil pushed to the surface from below; crescent-shaped mound typical of gopher vs. round mole mound; plants disappear as if pulled from below; roots of perennials, bulbs, and vegetables eaten underground',
+              '(1) Wire baskets: line planting holes with 1/2-inch hardware cloth for individual plants and bulbs. (2) Underground wire mesh barriers: 1/2-inch hardware cloth buried 2 feet deep along bed perimeters. (3) Vibration deterrents with variable effectiveness. (4) Castor oil granules repel moles and gophers with moderate effectiveness. (5) Planting deterrents: gopher spurge (Euphorbia lathyris) around garden perimeter — evidence is mixed.',
+              'Western states (Pacific Coast to the Great Plains) have the most gopher diversity and pressure; some species in the South. Pocket gophers are solitary and territorial — one individual typically creates all the damage in an area.',
+            ],
+            [
+              'Birds (Various species)',
+              'Peck wounds in fruit and berries; seeds dug from planting rows; entire seedlings pulled; corn silk pulled; tomatoes with clean circular holes; strawberries partially eaten',
+              '(1) Physical netting over berry bushes, strawberry beds, and fruit trees (must be properly secured or birds get under it). (2) Row cover over vegetable seedlings. (3) Reflective tape or holographic ribbon strung near vulnerable plants. (4) Scare devices (owls, hawks, balloons with eye patterns) — effective for 1–2 weeks before habituation; move regularly. (5) Grow extra for sharing — a pragmatic approach.',
+              'Bird damage varies enormously by region, season, and crop. Starlings and robins: major strawberry and cherry pests. American goldfinch and house finch: sunflower seeds. Corvids (crows, jays): corn. Cedar waxwing flocks: berry crops.',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🦌',
+          text: 'The only truly reliable deer control is an 8-foot physical fence. Repellents, scare devices, and plant selection reduce pressure but never eliminate it — especially when deer are hungry in late winter. For vegetable gardens, a 6-foot fence with an outward-angled overhang, or a double-fence system (two 4-foot fences spaced 4–5 feet apart), can deter deer at lower cost than a single tall fence.',
+        },
+      ],
+    },
   ],
 }
