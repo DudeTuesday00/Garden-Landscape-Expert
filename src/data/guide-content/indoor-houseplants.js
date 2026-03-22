@@ -861,5 +861,77 @@ export const indoorHouseplantsContent = {
         },
       ],
     },
+    {
+      id: 'humidity-temperature',
+      title: 'Section 8: Humidity & Temperature',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Most popular tropical houseplants originated in environments with year-round warmth and relative humidity of 60 to 90 percent. Most American homes run at 30 to 50 percent relative humidity in summer, and as low as 20 to 30 percent in winter when heating systems actively dry the air. Understanding this gap — and knowing which plants care about it and which do not — prevents the persistent frustration of brown leaf tips, crisping edges, and plants that look fine in summer and struggle every winter.',
+        },
+        {
+          type: 'h3',
+          text: 'Which Plants Need Extra Humidity?',
+        },
+        {
+          type: 'table',
+          headers: ['Humidity Need', 'Plants', 'Signs of Low Humidity', 'Solutions'],
+          rows: [
+            [
+              'High humidity required (50–70%+ RH)',
+              'Calathea, maranta, maidenhair fern, Boston fern, bird\'s nest fern, nerve plant (Fittonia), orchids',
+              'Brown crispy leaf edges and tips; leaf curl; yellowing edges; wilting despite moist soil',
+              'Small ultrasonic humidifier (most effective); bathroom placement; plant grouping; pebble tray with water (modest benefit)',
+            ],
+            [
+              'Moderate humidity preferred (40–60% RH)',
+              'Peace lily, monstera, pothos, philodendron, spider plant, rubber plant',
+              'Occasional brown tips; slower growth in very dry conditions',
+              'Grouping plants together; pebble tray; occasional misting; humidifier not strictly required in most American homes',
+            ],
+            [
+              'Average humidity is fine (30–50% RH)',
+              'Snake plant, ZZ plant, Chinese evergreen, cast iron plant, peperomia',
+              'No humidity-related symptoms at normal home humidity levels',
+              'No intervention needed',
+            ],
+            [
+              'Low humidity preferred',
+              'Succulents, cacti, aloe, haworthia, jade plant, ponytail palm',
+              'High humidity causes fungal issues in these plants; they come from dry environments',
+              'Avoid misting; keep away from humidifiers and bathrooms; ensure excellent air circulation',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '💨',
+          text: 'If you keep calatheas, ferns, or orchids and struggle with brown leaf edges despite correct watering, a small ultrasonic humidifier near your plants is likely the solution. A mid-range model ($30–60) runs silently and can maintain 50–60% RH in a typical room. Position it so mist falls near but not directly onto leaves — constant wet leaves promote fungal disease. A hygrometer ($10–15) tells you exactly what humidity you are maintaining.',
+        },
+        {
+          type: 'h3',
+          text: 'Temperature: What Your Plants Need',
+        },
+        {
+          type: 'p',
+          text: 'Most tropical houseplants are comfortable in the same temperature range that people find comfortable: 65 to 80°F. They dislike cold drafts, sudden temperature drops, and cold windowsills in winter. A few specific temperature sensitivities are worth knowing:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Cold windows in winter: In cold climates (Zones 3–6), the glass of a single-pane window can be significantly colder than the room air. Plants touching or very close to single-pane glass in winter may experience cold damage — darkening, wilting, or collapse of tissue. Move sensitive plants a few inches away from the glass or add bubble wrap to the window as insulation.',
+            'Heating vents: Forced-air heating systems blow very dry, hot air from floor vents and wall registers. Plants positioned over or directly beside these vents experience rapid dehydration, browning tips, and stress. Position plants well away from direct vent airflow.',
+            'Cold-sensitive plants: Calathea, peace lily, dracaena, and most tropical plants are damaged by temperatures below 55°F. Do not leave these plants in an unheated garage or outdoors overnight in cool weather.',
+            'Cold-tolerant plants: Snake plant, spider plant, pothos, English ivy, and cast iron plant tolerate temperatures down to 50°F without damage. Some succulents tolerate brief cold snaps well.',
+            'Seasonal temperature triggers: Some plants require specific temperature cues to flower. Christmas cactus needs a period of cooler nights (50–60°F) and reduced watering in fall to trigger winter bloom. Poinsettias require long dark nights in fall to develop their color.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌡️',
+          text: 'The two most common temperature mistakes: (1) placing a tropical plant on a cold windowsill in winter where it slowly chills against the glass, and (2) positioning any plant directly above or beside a forced-air heating vent. Both are easy to overlook because the damage accumulates slowly — a plant that was thriving in October may look sick by January from either cause.',
+        },
+      ],
+    },
   ],
 }
