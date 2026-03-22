@@ -385,6 +385,7 @@ Thirty-six full guides integrated into the app:
 - `src/data/guide-content/modern-minimalist-garden.js` — Modern Minimalist Garden (`id: 'modern-minimalist-garden'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/weed-management.js` — Weed Management (`id: 'weed-management'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/indoor-houseplants.js` — Indoor Houseplants 101 (`id: 'indoor-houseplants'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/garden-pests.js` — Garden Pests ID & Control (`id: 'garden-pests'`) — **complete** (all 10 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -944,6 +945,31 @@ Theme: amber/green gradient in `GuideDetail.jsx`; hero image: `public/guides/Wee
 | Section 10: Seasonal Care & Quick Reference | ✅ Done | 4-row seasonal calendar (Spring/Summer/Fall/Winter) with growth phase, care focus, and key tasks; 12-item quick-start checklist; closing tip |
 
 Theme: lime/green gradient in `GuideDetail.jsx`; hero image: `public/guides/Indoor_Houseplants_101_Guide.png`; set `comingSoon: false` under Container & Small Spaces in `guides.js`
+
+---
+
+### Garden Pests ID & Control Guide ✅
+
+`src/data/guide-content/garden-pests.js` — Garden Pests ID & Control (`id: 'garden-pests'`); fully synced with `Garden_Pests_ID_Charts_Guide.docx` — 10 sections covering rapid symptom diagnosis through a full seasonal IPM calendar.
+
+| Section | Status | Notes |
+|---|---|---|
+| How to Use This Guide + Rapid Symptom Key | ✅ Done | 15-row symptom diagnosis table (symptom / affected part / likely pest / section reference); organic pesticide quick-reference table (product / target pests / timing / cautions) |
+| Section 1: Sucking Insects | ✅ Done | Aphids (winged/wingless ID, 6-row species table, mummy ID for parasitic wasp activity), Whitefly (triangle trap, Encarsia biocontrol), Spider Mites (web test, predatory mite release), Thrips (TSWV vector, blue trap, spinosad timing), Scale (armor vs. soft, dormant oil), Mealybugs (alcohol swab, root mealybug), Stink Bugs (BMSB, exclusion netting); each with appearance, hosts, regional notes, organic controls, and natural enemies |
+| Section 2: Soil & Root Pests | ✅ Done | White Grubs (Japanese/masked chafer/June beetle, milky spore, beneficial nematodes), Wireworms (click beetle larvae, mustard trap crop), Cutworms (collar prevention, Bt at dusk), Fungus Gnats (sticky traps, BTi, soil dry-out), Root-Knot Nematodes (resistant varieties, solarization, French marigold trap crop) |
+| Section 3: Caterpillars & Moth Larvae | ✅ Done | Imported Cabbageworm/Cabbage Looper/Diamondback Moth (brassica pest trio, row cover, Bt timing), Tomato/Tobacco Hornworm (5″ caterpillar, parasitic wasp pupae ID), Squash Vine Borer (SVB stem-injection Bt technique, timing by region), Corn Earworm (silk-timing mineral oil, spinosad), Cutworm cross-reference, Codling Moth (pheromone traps, kaolin clay, spinosad at petal fall) |
+| Section 4: Beetles & Weevils | ✅ Done | Colorado Potato Beetle (Bt tenebrionis timing, spinosad resistance management), Cucumber Beetle (bacterial wilt vector — row cover as primary strategy, kaolin clay), Japanese Beetle (hand-pick morning, trap-crop risk, spinosad), Flea Beetle (row cover, reflective mulch, diatomaceous earth), Mexican Bean Beetle (Pediobius foveolatus biocontrol), Squash Bug (egg mass ID — orange-brown clusters, hand-pick before nymphs), Strawberry Clipper Weevil, Vine Weevil (Heterorhabditis nematodes) |
+| Section 5: Other Common Pests | ✅ Done | Slugs & Snails (iron phosphate bait, copper tape, beer traps, toad habitat tip), Earwigs (omnivore nuance — beneficial aphid predator before pest; trap and threshold guidance), Leafhoppers (potato leafhopper hopperburn ID, aster yellows disease vector, reflective mulch), Leafminers (serpentine trail ID, Diglyphus isaea parasitoid, spinosad adult-flight timing) |
+| Section 6: Vertebrate Pests | ✅ Done | 5-row table: Deer (8-foot fence as only reliable control; repellent limitations; deer-resistant plant list), Rabbits (hardware cloth fence + winter bark girdling prevention), Voles (runway ID; hardware cloth + mulch reduction + owl boxes), Pocket Gophers (wire basket planting holes; crescent mound vs. round mole mound ID), Birds (netting + reflective tape; crop-by-species damage notes) |
+| Section 7: Beneficial Insects | ✅ Done | 97%/3% principle intro; 4 support strategies (nectar planting, pesticide restraint, habitat, pest tolerance); 7-row ID table: Ladybugs (larva ID — often killed by mistake; wild-release caution), Green Lacewing (aphid lion larvae; egg-release cost-effective), Parasitic Wasps (mummified aphid evidence; carrot-family nectar essential), Ground Beetles (no-till; mulch shelter), Minute Pirate Bug (thrips suppressor; bites humans), Hoverflies (hover-stationary ID; aphid-predator larvae), Spiders (8-leg distinction; black widow/brown recluse caution only) |
+| Section 8: Crop-by-Crop Pest Reference | ✅ Done | 12-row table: Tomatoes, Cucumbers, Squash/Zucchini, Beans, Brassicas, Potatoes, Peppers, Lettuce/Greens, Onions/Garlic, Strawberries, Apples/Pears, Roses — each with primary pests, first-response organic control, and prevention priority |
+| Section 9: Seasonal Calendar & IPM Framework | ✅ Done | 5-row seasonal calendar (Late Winter/Spring/Early Summer/Midsummer/Late Summer–Fall) with key pest events, monitoring priorities, anticipatory actions, and regional notes; 6-step IPM decision framework; closing principle tip on balance between pest and natural enemy communities |
+
+**Note:** Guide content file is complete but not yet wired into the live app — the following steps remain to make it live:
+1. Import and add to `contentMap` in `src/data/guide-content/index.js`
+2. Add a color theme entry in `GuideDetail.jsx`
+3. Add hero image at `public/guides/garden-pests-guide.png` and wire into `heroImages` map in `GuideDetail.jsx`
+4. Set `comingSoon: false` on the matching entry in `guides.js`
 
 ### Typography Upgrade ✅
 
