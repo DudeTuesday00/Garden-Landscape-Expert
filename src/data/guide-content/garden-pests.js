@@ -624,5 +624,109 @@ export const gardenPestsContent = {
         },
       ],
     },
+    {
+      id: 'beetles-weevils',
+      title: 'Section 5: Beetles & Weevils',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Beetles (order Coleoptera) are the most species-rich order of insects on earth. Most beetle species are beneficial or neutral in the garden; a small number are significant pests. Both larvae and adults of pest beetle species may cause damage, sometimes in very different ways. Beetles are generally harder to control with organic tools than soft-bodied insects or caterpillars, making cultural and physical controls especially important.',
+        },
+        {
+          type: 'h3',
+          text: 'Colorado Potato Beetle (Leptinotarsa decemlineata)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Adult: 3/8″ oval beetle; yellow-orange with 10 black stripes on wing covers; hard-shelled; found on plant surfaces',
+            'Larva: Plump, red-orange with black spots; rows of black spots along the sides; humpbacked; feeds in groups; 1/2″ – 3/4″ when mature',
+            'Eggs: Bright yellow-orange oval eggs in clusters of 20–40 on leaf undersides',
+            'What you see: Heavily skeletonized leaves; complete defoliation in severe infestations; egg clusters on leaf undersides; all life stages may be present simultaneously',
+            'Hosts: Potatoes, tomatoes, eggplant, peppers — primarily Solanaceae family',
+            'Regions: Throughout the US east of the Rockies; lower pressure in the Rocky Mountain states and Pacific Coast. Has developed resistance to many synthetic insecticides in many regions.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Hand-pick adults, larvae, and crush egg masses daily when populations are low. (2) Bt tenebrionis — the specific Bt strain for beetle larvae; must be consumed by larvae; less effective on large larvae. (3) Spinosad. (4) Kaolin clay applied to the whole plant surface — deters adults from feeding and egg-laying. (5) Pyrethrin. (6) Neem oil deters egg-laying.',
+            'Natural enemies to protect: Edovum puttleri parasitic wasp (attacks eggs); Perillus bioculatus (spined soldier bug); ground beetles consume eggs and young larvae',
+            'Cultural controls: Crop rotation — adults overwinter in soil, so rotating Solanaceae to new beds each year forces adults to walk farther to find hosts. Straw mulch provides habitat for ground beetles that eat eggs and larvae. Inspect plants daily during adult emergence. Use eggplant as a trap crop to draw beetles away from potatoes.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Cucumber Beetles (Acalymma vittatum — striped; Diabrotica undecimpunctata — spotted)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Striped cucumber beetle: 1/4″; yellow with 3 black stripes; often seen on flowers; vectors bacterial wilt disease (Erwinia tracheiphila)',
+            'Spotted cucumber beetle: 1/4″; greenish-yellow with 12 black spots; same pest group, broader host range',
+            'What you see: Adult feeding on flowers, pollen, leaves, and fruit rinds; plant wilt from bacterial wilt transmission; larval root damage underground; use the thread test for bacterial wilt (see Section 1)',
+            'Hosts: Cucumbers (most susceptible to bacterial wilt), squash, melons, pumpkins; spotted beetle also damages corn and beans',
+            'Regions: Striped: eastern and central US. Spotted: throughout the US. Both emerge in spring when plants are first transplanted — the most vulnerable period.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Row cover from transplanting through early bloom — critical for preventing bacterial wilt transmission during the vulnerable seedling period; remove for pollination. (2) Hand-pick adults in early morning when sluggish. (3) Kaolin clay on all plant surfaces. (4) Pyrethrin. (5) Spinosad. (6) Yellow sticky traps for monitoring.',
+            'Natural enemies to protect: Tachinid flies (larval parasitoids); parasitic nematodes on larvae; ground beetles',
+            'Cultural controls: Plant resistant cucumber varieties (\'Saladin,\' \'Marketmore 76,\' \'Diva\'). Use transplants rather than direct seeding — larger plants are less vulnerable. Grow companion plants that deter beetles: catnip, tansy, radish. Remove and destroy any plant confirmed to have bacterial wilt immediately.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Japanese Beetle (Popillia japonica)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Adult: 1/2″; distinctive metallic green thorax and copper-brown wing covers; tuft of white hairs along each side of the abdomen; adults feed in groups; peak summer emergence',
+            'Larva: C-shaped white grub — see white grub profile in Section 3 for larval management',
+            'What you see: Adults skeletonize leaves (consume all tissue between veins, leaving a lace-like skeleton); heavily damaged flowers and fruit; adults often congregate in large numbers, preferring the sun-exposed top of plants',
+            'Hosts (adults): Roses, grapes, raspberries, beans, corn silk, apple, linden, Japanese maple, and 300+ other plant species',
+            'Regions: Eastern US (east of the Mississippi primarily, expanding into the Midwest and some western states). Peak adult emergence late June through August. Adults live 4–6 weeks.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Hand-pick into soapy water in early morning — adults are sluggish and drop when disturbed; hold the bucket under the branch and tap it. (2) Kaolin clay on plant surfaces — deters feeding and reduces egg-laying. (3) Pyrethrin for severe infestations. (4) Row cover during peak adult flight protects vulnerable plants. DO NOT use Japanese beetle traps — research consistently shows they attract more beetles than they capture, increasing damage in the surrounding area.',
+            'Natural enemies to protect: Tiphia vernalis parasitic wasp (attacks grubs); Istocheta aldrichi fly (attacks adults); birds',
+            'Cultural controls: See Section 3 (white grubs) for larval management. Grow resistant plants where possible: forsythia, arborvitae, boxwood, junipers, and many native plants are less preferred.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Flea Beetles (Epitrix spp. on Solanaceae; Phyllotreta spp. on Brassicas; many other species)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Size: 1/16″ – 1/8″; tiny hard-shelled beetles with enlarged hind femurs for jumping; hop when disturbed',
+            'Color: Shiny black (most common); blue-black; or striped — varies by species',
+            'What you see: Numerous tiny round holes across leaves giving a "shotgun" or "shot-hole" appearance; seedlings most vulnerable; worst in spring and early summer',
+            'Hosts: Brassica seedlings — turnips, arugula, radish, cabbage family (Phyllotreta spp.); eggplant, tomato, potato, pepper (Epitrix spp.); also affect corn, beans, spinach',
+            'Regions: All regions; spring emergence is the most critical period when seedlings are most vulnerable. Populations typically peak in early spring and again in late summer.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Row cover from seeding or transplanting through establishment — most effective prevention for spring seedlings. (2) Diatomaceous earth applied to soil surface and plant base. (3) Kaolin clay on plant surfaces. (4) Yellow sticky traps at plant height for monitoring and some population reduction. (5) Pyrethrin for severe infestations. (6) Spinosad.',
+            'Natural enemies to protect: Ground beetles and rove beetles consume flea beetle larvae and pupae in the soil',
+            'Cultural controls: Seed or transplant early in cool weather when flea beetles are less active. Start with larger transplants (4–6 inches) that tolerate early feeding better than seedlings. Use trap crops: radish draws flea beetles away from other brassicas; mustard attracts Phyllotreta beetles.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🪲',
+          text: 'Ground beetles (family Carabidae) are among the most valuable pest-control allies in the garden. These fast-moving, shiny black or iridescent beetles and their larvae prey on Colorado potato beetle eggs, flea beetle pupae, cutworms, slugs, and many other pests — entirely at night when you\'re not watching. Protect them by minimizing soil disturbance, maintaining permanent mulched pathways as daytime refuges, and avoiding broad-spectrum insecticide sprays. A single ground beetle can consume dozens of pests per night.',
+        },
+      ],
+    },
   ],
 }
