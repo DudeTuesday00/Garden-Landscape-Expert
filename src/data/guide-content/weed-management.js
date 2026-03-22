@@ -166,5 +166,87 @@ export const weedManagementContent = {
         },
       ],
     },
+    {
+      id: 'manual-control',
+      title: 'Section 3: Manual & Mechanical Weed Control',
+      blocks: [
+        {
+          type: 'p',
+          text: 'When weeds do appear despite prevention efforts, manual and mechanical control methods are the first response for most home gardeners. Done correctly and at the right time, these approaches are highly effective and involve no chemical inputs. The key principle is timing: small weeds disturbed by a hoe on a dry, sunny afternoon die quickly; large, established weeds require much more effort to remove and often leave root fragments that regrow.',
+        },
+        {
+          type: 'h3',
+          text: 'The Golden Rule of Hand Weeding: Pull Before They Flower',
+        },
+        {
+          type: 'p',
+          text: 'A weed removed before it flowers breaks the reproductive cycle and reduces future pressure. A weed removed after it sets seed has already reproduced; removing the parent plant does nothing to address the seeds now in the soil. For annual weeds, the goal is preventing seed set above all else. For perennial weeds, the goal is removing the entire root system before the plant has stored enough energy to fully regrow.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Timing the pull: Weed when the soil is moist (after rain or irrigation) but the surface is beginning to dry. Moist soil releases roots cleanly; wet surface conditions mean removed weeds can re-root rather than dying. Pull in the morning after overnight dew has evaporated.',
+            'The young weed advantage: A weed two inches tall with a small, shallow root system is removed in seconds with a finger-push or light hoe stroke. The same weed at two feet tall requires significant effort and may leave root fragments. A few minutes of weeding when weeds are tiny prevents hours of weeding when they are established.',
+            'Dealing with taproots: Dandelions, dock, and other deep-taprooted perennials regenerate from root fragments. Use a dandelion digger, fishtail weeder, or narrow trowel to extract the entire taproot. If the root breaks off below 3–4 inches, the weed will regrow, though smaller and weaker. Repeated removal over 2 to 3 seasons eventually exhausts the root\'s energy reserves.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Hoeing: The Most Efficient Tool for Large Areas',
+        },
+        {
+          type: 'p',
+          text: 'A sharp hoe used correctly is the most efficient weeding tool for bare soil areas, paths, and spaces between garden rows. Hoeing works by severing weed seedlings at or just below the soil surface. The severed tops die in the sun; the disturbed soil surface dries quickly and kills newly severed seedlings before they can re-root.',
+        },
+        {
+          type: 'list',
+          items: [
+            'The right conditions: Hoe on a hot, dry, sunny day. The combination of severing plus desiccation is far more effective than hoeing on a cool, cloudy, or damp day when severed seedlings can re-root into moist soil.',
+            'The right technique: Hold the hoe nearly parallel to the soil surface. Use a push-pull motion to skim just below the soil surface (1/4 to 1/2 inch depth), cutting weed stems without deeply disturbing the soil (which would bring dormant seeds to the surface). Work backward so you are not walking on hoed soil.',
+            'Standard flat hoe: Versatile for most situations. The collinear hoe has a narrow, precisely angled blade excellent for working close to plant stems in vegetable rows.',
+            'The oscillating / stirrup (hula) hoe: The most effective general-purpose hoe for frequent light weeding. The oscillating blade cuts on both the push and pull stroke and skims cleanly just below the surface without disturbing deeper soil layers. Use every 7 to 10 days through the growing season and weed pressure remains minimal with very little effort per session.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Flame Weeding',
+        },
+        {
+          type: 'p',
+          text: 'Flame weeding uses a propane torch to heat weed cells until they rupture, killing the plant without chemical inputs. Despite the dramatic name, the technique does not burn the weeds — it heats them briefly and the cellular damage kills them within hours. Flame weeding is most effective on annual weed seedlings and on weeds in difficult-to-reach locations (cracks in pavement, gravel paths, fence lines).',
+        },
+        {
+          type: 'list',
+          items: [
+            'Technique: Pass the flame slowly over seedlings at a walking pace — you are not trying to burn or blacken the plant but to heat each leaf briefly (2 to 3 seconds per weed). A wilted, dull appearance within a few hours confirms successful treatment.',
+            'Best uses: Ideal for paths, patios, gravel areas, and hardscape cracks; for the "stale seedbed" technique in vegetable gardens (allowing the first flush of weed seeds to germinate and then flame-killing them before planting, significantly reducing in-season weeding); and for flame-killing strips of weeds between vegetable rows.',
+            'Larger weeds require longer exposure or multiple treatments. Roots of perennial weeds are not killed by flame weeding — top growth is removed, but the root system survives.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Never use flame weeding near dry vegetation, in drought conditions, or in areas with fire risk. Keep a water source (hose or bucket) nearby. Many municipalities prohibit open-flame devices during fire restrictions — check local ordinances before use. Do not flame weed near plastic irrigation lines, edging, or any combustible material.',
+        },
+        {
+          type: 'h3',
+          text: 'Soil Solarization',
+        },
+        {
+          type: 'p',
+          text: 'Soil solarization — covering moist soil with clear plastic during the hottest weeks of summer — raises soil temperatures to levels that kill weed seeds, soil pathogens, and some pests in the top several inches. It is one of the most effective non-chemical tools for clearing a heavily weeded area before replanting, particularly in warm climates.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Prepare the area: Remove existing vegetation; water deeply (solarization works best in moist soil); rake smooth.',
+            'Cover with clear plastic: Clear plastic (1–1.5 mil) is more effective than black plastic because it allows solar radiation through while trapping heat. Bury or weight the edges completely.',
+            'Leave in place: 4 to 6 weeks in warm climates (Zone 7+); 6 to 8 weeks in cooler climates. Peak effectiveness in July and August.',
+            'Plant immediately after removing the plastic without disturbing the soil profile — digging or tilling would bring viable seeds from deeper in the seed bank back to the surface. Transplants work better than direct seeding immediately after solarization.',
+            'Effectiveness: Reduces weed seed germination by 50 to 90% in the treated zone; kills many soilborne pathogens; reduces nematode populations. Particularly effective in the Southwest, California, and the Deep South where summer temperatures are highest.',
+          ],
+        },
+      ],
+    },
   ],
 }
