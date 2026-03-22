@@ -309,5 +309,72 @@ export const weedManagementContent = {
         },
       ],
     },
+    {
+      id: 'lawn-weeds',
+      title: 'Section 5: Lawn Weed Management',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Lawn weed management is the largest category of residential herbicide use in the United States, and it is also one of the most commonly done incorrectly. The most effective approach to lawn weeds is one in which herbicide plays a supporting rather than primary role: a dense, healthy, properly maintained lawn is the most effective weed management system available, and no herbicide program can compensate for poor turf management.',
+        },
+        {
+          type: 'h3',
+          text: 'The Healthy Lawn Principle: Competition Is the Best Weed Control',
+        },
+        {
+          type: 'p',
+          text: 'Weeds in lawns are almost always a symptom of a problem rather than the problem itself. Thin, stressed, or damaged turf creates the bare or weakened areas where weed seeds germinate and establish. A lawn that is healthy and dense enough to prevent weed establishment in the first place requires far less herbicide intervention. The primary weed management investment in a lawn should be in turf health, not in herbicide.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Mowing height: The most important single factor in lawn weed management that most homeowners get wrong. Mowing too short weakens turf, reduces root depth, increases soil temperature (favoring crabgrass and other heat-loving weeds), and creates the thin, stressed conditions where weeds establish. Recommended heights: Kentucky bluegrass and fescues — 2.5 to 4 inches; tall fescue — 3 to 4 inches; Bermudagrass — 0.5 to 1.5 inches; Zoysia — 1 to 2 inches; St. Augustine — 3.5 to 4 inches. Most cool-season lawns should be mowed at the high end of the range in summer.',
+            'Fertilization: A properly fertilized lawn grows densely and recovers from damage quickly. Under-fertilized turf thins over time, creating weed entry points. Follow a soil-test-based fertilization program; apply the majority of nitrogen in fall for cool-season grasses and in late spring through summer for warm-season grasses.',
+            'Overseeding: Thin or bare areas in cool-season lawns should be overseeded in early fall (soil temperatures 50 to 65°F, adequate moisture, reduced competition from summer annuals). A thick, established turf prevents weed entry points from developing. Do not apply pre-emergent herbicides in areas to be overseeded — they will prevent grass seed germination.',
+            'Irrigation: Deep, infrequent irrigation (1 to 1.5 inches per week in 1 or 2 applications rather than daily shallow watering) encourages deep grass root development. Shallow watering also favors shallow-rooted weeds.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Lawn Weed Identification and Treatment',
+        },
+        {
+          type: 'table',
+          headers: ['Weed', 'Type', 'Preferred Conditions', 'Season of Activity', 'Best Control Method'],
+          rows: [
+            ['Crabgrass (Digitaria spp.)', 'Summer annual grass', 'Thin turf; bare soil; high temperatures; compacted soil', 'Germinates when soil temps reach 55–60°F; active through summer; dies at first frost', 'Pre-emergent applied BEFORE soil reaches 55°F (typically when forsythia blooms); mow at recommended height; overseed thin areas in fall. Post-emergent options include quinclorac and fenoxaprop — most effective on young plants.'],
+            ['Annual Bluegrass (Poa annua)', 'Winter annual grass', 'Compacted, moist soil; close mowing; thin turf; cool temperatures', 'Germinates in late summer–fall; most visible and problematic in cool spring conditions; dies in summer heat', 'Pre-emergent in late summer (August–September) before fall germination; dithiopyr is preferred because it provides some post-emergent activity. Aerating and overseeding in fall to improve competition.'],
+            ['Dandelion (Taraxacum officinale)', 'Perennial broadleaf', 'Any lawn; most problematic in thin turf and in spring and fall', 'Year-round in mild climates; most aggressive in spring and fall; seed dispersal in spring', 'Selective broadleaf post-emergent (2,4-D, dicamba, or triclopyr) applied in fall when plants are actively translocating to roots — the most effective timing. Or hand-dig individual plants with a long weeder, removing the entire taproot.'],
+            ['White Clover (Trifolium repens)', 'Perennial broadleaf; nitrogen-fixer', 'Low-nitrogen lawns; the nitrogen-fixing ability gives clover a competitive advantage in under-fertilized turf', 'Perennial; most visible in spring and summer', 'Broadleaf selective herbicide with clover on the label (MCPP or a three-way combination with 2,4-D and dicamba is most effective); OR accept clover as a beneficial component (it feeds pollinators and fixes nitrogen) and address turf nitrogen deficiency instead.'],
+            ['Creeping Charlie / Ground Ivy (Glechoma hederacea)', 'Perennial broadleaf; spreads by stolons and seed', 'Shaded, moist areas; thin turf under trees; low-light areas where turf struggles', 'Year-round in mild climates; most active in spring and fall', 'Triclopyr is the most effective herbicide for creeping Charlie; 2,4-D alone has limited efficacy. Apply in fall when plants are actively storing energy. Improve sunlight penetration where possible.'],
+            ['Nutsedge (Cyperus spp.)', 'Perennial sedge (not a grass; not a broadleaf)', 'Wet, waterlogged, or poorly drained soil; sandy soils; any soil with excess moisture', 'Most problematic in summer; dormant in winter; spreads by seeds, rhizomes, and nutlets (small underground tubers that are very persistent)', 'Halosulfuron (SedgeHammer®) or sulfentrazone — the only selective products effective on nutsedge in lawns. Improve drainage. Do not till or cultivate — this spreads nutlets. Multiple applications required over 1–2 seasons.'],
+            ['Plantain (Plantago spp.)', 'Perennial broadleaf', 'Compacted soil; high-traffic areas; thin turf', 'Year-round; most visible in spring and fall', 'Broadleaf selective herbicide (2,4-D); or hand-dig individual plants, removing the fibrous root crown. Aerating and overseeding to improve turf density addresses the compaction that favors plantain.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Pre-Emergent Timing Calendar for Lawns',
+        },
+        {
+          type: 'p',
+          text: 'Timing is the most critical factor in pre-emergent herbicide success for crabgrass and other summer annual lawn weeds. Applying too early allows the chemical barrier to break down before peak germination; applying too late allows weeds to already emerge past the germination stage. Soil temperature, not calendar date, is the reliable trigger.',
+        },
+        {
+          type: 'table',
+          headers: ['Region / Zone', 'Pre-Emergent Window (Summer Annuals)', 'Biological Indicator', 'Fall Pre-Emergent (Winter Annuals)'],
+          rows: [
+            ['Zones 3–4 (MN, ND, northern NE, MT)', 'April 15 – May 15 (when soil temps reach 50–55°F at 2-inch depth)', 'Forsythia in bloom; lilac leaves emerging', 'Late August – September 1'],
+            ['Zones 5–6 (Midwest, mid-Atlantic, Pacific NW)', 'March 15 – April 30', 'Forsythia in full bloom to petal drop; ornamental cherry bloom', 'August 15 – September 15'],
+            ['Zones 7–8 (South, parts of CA, mid-South)', 'February 15 – March 31', 'Daffodils fading; dogwood beginning to bloom', 'September 1 – October 1'],
+            ['Zones 9–10 (Gulf Coast, Southern CA, AZ)', 'January 15 – February 28', 'Local spring indicators; soil thermometer most reliable', 'October 1 – November 1'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌾',
+          text: 'The single most impactful lawn weed management practice costs nothing: raise your mowing height to the top of the recommended range for your grass species. A lawn mowed at 3.5 inches is dramatically more weed-resistant than the same lawn mowed at 2 inches — the taller grass shades the soil surface, keeping it cooler and suppressing weed seed germination throughout the season.',
+        },
+      ],
+    },
   ],
 }
