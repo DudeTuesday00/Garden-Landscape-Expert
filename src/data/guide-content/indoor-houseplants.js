@@ -255,5 +255,206 @@ export const indoorHouseplantsContent = {
         },
       ],
     },
+    {
+      id: 'plant-profiles',
+      title: 'Section 3: The 25 Essential Plants — In-Depth Profiles',
+      blocks: [
+        {
+          type: 'p',
+          text: 'This section provides detailed care profiles for the 25 best houseplants for beginners. Each profile covers the plant\'s character and appeal, specific light and water requirements, soil and pot preferences, humidity needs, common problems, and propagation. The plants are organized from easiest to most demanding.',
+        },
+        {
+          type: 'h3',
+          text: '🌿 Snake Plant (Sansevieria trifasciata / Dracaena trifasciata)',
+        },
+        {
+          type: 'p',
+          text: 'The snake plant is the single most forgiving houseplant available and the best starting point for any beginner or self-described plant killer. Its architectural, upright form with striking yellow-edged or banded sword-shaped leaves earns it a place in any interior, and its tolerance for neglect is genuinely extraordinary.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Light: Survives in near-dark corners but grows fastest and most vigorously in bright indirect light. Will tolerate a range from very low light to direct morning sun.',
+            'Water: Water every 2–6 weeks — one of the most drought-tolerant houseplants. In winter, or in low light, water as infrequently as once per month. Allow soil to dry completely between waterings. Overwatering causes root rot quickly in this plant.',
+            'Soil and pot: Well-draining potting mix; cactus/succulent mix or a standard potting mix amended with 25–30% perlite. Drainage holes essential. Prefers to be slightly rootbound.',
+            'Common problems: Root rot from overwatering is the primary cause of death. Soggy soil + cold temperatures = death. Otherwise, nearly indestructible.',
+            'Propagation: Division (separate pups/offsets from the base at repotting); leaf cuttings (sections of leaf placed in water or soil, though variegation is lost in leaf-propagated plants).',
+          ],
+        },
+        {
+          type: 'h3',
+          text: '🌿 Pothos (Epipremnum aureum)',
+        },
+        {
+          type: 'p',
+          text: 'Pothos may be the most popular houseplant in America — easy to find, easy to grow, hard to kill, and capable of producing long, trailing vines of heart-shaped leaves that are genuinely beautiful in a hanging basket or trailing from a high shelf.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Light: Tolerates low to medium indirect light but produces its finest foliage growth and best variegation in bright indirect light. In very low light, growth slows and variegation fades to plain green.',
+            'Water: Water when the top inch of soil is dry. Yellowing leaves usually indicate overwatering; wilting with dry soil indicates underwatering. Highly forgiving of occasional underwatering — recovers quickly when watered.',
+            'Growth habit: Vining; trails naturally. Pin to a moss pole or coir totem to encourage larger leaf development — aerial roots support climbing and trigger larger leaf expression in many aroid species including pothos.',
+            'Propagation: Cut stems with at least one node (the point where a leaf meets the stem) and root in water or directly in moist potting mix. One of the easiest plants to propagate.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: '🌿 ZZ Plant (Zamioculcas zamiifolia)',
+        },
+        {
+          type: 'p',
+          text: 'The ZZ plant stores water in its thick rhizomes (underground stems), making it extraordinarily drought tolerant. Its glossy, deep-green leaves and slow, upright growth are handsome in any interior style. A virtually indestructible plant for low-to-medium light conditions.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Light: One of the best low-light houseplants. Survives in dim conditions; grows faster in medium indirect light.',
+            'Water: Every 2–4 weeks in the growing season; even less frequently in winter. Truly tolerates drought. The most common mistake with ZZ plants is watering too often — the rhizomes store enough water to sustain the plant for weeks.',
+            'Propagation: Leaf petiole cuttings placed in water or soil (extremely slow but reliable); or division at repotting.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'All parts of the ZZ plant are toxic if ingested and the sap can irritate skin. Wash hands after handling. Keep away from pets and children.',
+        },
+        {
+          type: 'h3',
+          text: '🌿 Monstera deliciosa (Swiss Cheese Plant)',
+        },
+        {
+          type: 'p',
+          text: 'Monstera is one of the most popular and most visually striking houseplants of the past decade — its large, fenestrated (hole-punched) leaves are as recognizable as any plant in interior design. A relatively easy plant given adequate light and thoughtful watering.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Light: Needs medium to bright indirect light for good fenestration (the development of holes in the leaves). In low light, leaves remain small and undivided. Near a bright north or east window minimum.',
+            'Water: Allow the top 1–2 inches of soil to dry before watering. This plant dislikes both consistent overwatering and prolonged drought. Check weekly; water when ready.',
+            'Support: Monstera is a natural climber. A moss pole or coir totem allows the plant to climb, produces larger leaves, and keeps the plant upright. Without support, it sprawls.',
+            'Propagation: Stem cuttings with a node and at least one aerial root root readily in water or moist potting mix.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: '🌿 Peace Lily (Spathiphyllum spp.)',
+        },
+        {
+          type: 'p',
+          text: 'The peace lily is remarkable for thriving in lower light than most flowering houseplants and for being one of the few readily available indoor plants that blooms reliably in home conditions. It is also one of the best air-purifying plants in the NASA Clean Air Study.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Light: Medium to low indirect light. One of the best blooming plants for lower-light situations. Bright indirect light produces more flowers.',
+            'Water: Peace lilies are somewhat unique in their watering cue: they will slightly droop when they need water. Many experienced growers use this drooping as their watering signal rather than checking the soil. Do not let it wilt severely, but a slight, consistent droop is fine. Water thoroughly when this occurs.',
+            'Humidity: Appreciates higher humidity. Brown leaf tips are often a sign of low humidity rather than watering problems. Misting, a pebble tray with water beneath the pot, or a humidifier nearby all help.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Toxic to cats and dogs. Peace lily contains calcium oxalate crystals that cause oral irritation and swelling.',
+        },
+        {
+          type: 'h3',
+          text: '🌿 Fiddle Leaf Fig (Ficus lyrata)',
+        },
+        {
+          type: 'p',
+          text: 'The fiddle leaf fig is one of the most popular interior plants of the past 15 years and one of the most notorious for being difficult. It is not genuinely difficult — it has specific, consistent requirements — but it is unforgiving of their violation in a way that more casual plants are not.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Light: Needs bright, consistent indirect light — near a south or west window. The word "consistent" matters: fiddle leaf figs are sensitive to being moved. Find the right spot, put it there, and do not move it unless the plant is suffering.',
+            'Water: Water when the top inch of soil is dry. Do not allow to dry completely (brown leaf edges and dropping older leaves result). Do not overwater (root rot causes the same symptoms). Consistent, correct moisture is the key.',
+            'Sensitivity: Fiddle leaf figs drop leaves when moved to a new location, when drafts hit them, when heat vents blow on them, or when temperature changes significantly. Position away from all drafts, vents, and frequently opened doors.',
+            'Propagation: Stem cuttings with at least one leaf and node; root in water or moist potting mix. Slow but reliable.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: '🌿 Calathea / Prayer Plant (Calathea, Maranta, Ctenanthe spp.)',
+        },
+        {
+          type: 'p',
+          text: 'Calatheas and their relatives are grown for their extraordinary foliage — dramatically patterned in combinations of green, white, pink, and purple that no other plant group can match. They are the most humidity-demanding common houseplant and require more attention than the plants above, but reward that attention with some of the most beautiful foliage available.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Light: Low to medium indirect light. Direct sun scorches the delicate foliage. A north or low-east window works well. One of the few plants that actually prefers less light.',
+            'Water: Keep the soil evenly moist — not wet, not dry. These plants do not tolerate drying out; the beautiful leaf edges will turn brown rapidly if the soil dries. Use filtered or distilled water if your tap water is heavily chlorinated or fluorinated.',
+            'Humidity: The greatest challenge for calathea in most American homes. They need 50–60%+ relative humidity. Solutions: group multiple plants together (plants transpire and raise humidity in the immediate area), use a pebble tray with water beneath the pot, or use a small ultrasonic humidifier near the plants.',
+            'Movement: Calatheas and marantas fold their leaves upward at night and open them in the morning — the "prayer plant" motion. This is normal and healthy behavior.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Quick Reference: Eight More Essential Plants',
+        },
+        {
+          type: 'table',
+          headers: ['Plant', 'Key Care Note', 'Common Mistake', 'Special Feature'],
+          rows: [
+            [
+              'Spider Plant (Chlorophytum comosum)',
+              'Bright to medium indirect light; water when top inch is dry; produces babies (spiderettes) on long runners — root these in water for free new plants',
+              'Fluoride-sensitive — brown tips in fluoride-heavy tap water; use filtered water if tip burn is a problem',
+              'One of the most prolific propagators — a single plant produces dozens of babies per year; a gifter\'s plant',
+            ],
+            [
+              'Aloe Vera',
+              'Bright indirect to direct sun; water every 2–3 weeks; plant in cactus mix',
+              'Overwatering; planted in regular potting mix that stays too wet',
+              'Practical plant: slice open a leaf and apply the clear gel directly to minor burns, sunburn, and skin irritation',
+            ],
+            [
+              'Rubber Plant (Ficus elastica)',
+              'Medium to bright indirect light; water when top inch is dry; wipe glossy leaves with a damp cloth to keep them shining',
+              'Moving the plant frequently (like fiddle leaf fig, it adapts to its spot); overwatering',
+              'Comes in classic green, burgundy, pink-variegated (\'Tineke\'), and lime-yellow (\'Yellow Gem\') — variegated types need brighter light',
+            ],
+            [
+              'Chinese Evergreen (Aglaonema spp.)',
+              'Tolerates low to medium light better than most plants; water when top inch is dry; comes in green, red-pink, silver, and orange varieties',
+              'Bright-colored varieties (red, orange, pink) require bright indirect light to maintain color; dark-leaved varieties tolerate lower light',
+              'One of the toughest large-leaved tropical plants; highly recommended for offices and spaces with low natural light',
+            ],
+            [
+              'Bird of Paradise (Strelitzia reginae)',
+              'Needs very bright light — a direct south window is ideal; water when top 2 inches are dry; grows large (6+ feet indoors)',
+              'Insufficient light (the most common reason it never flowers indoors); small pots (it flowers better when somewhat rootbound)',
+              'One of the most architectural houseplants; produces its iconic orange flowers only after years of good growing — patience required',
+            ],
+            [
+              'Pilea peperomioides (Chinese Money Plant)',
+              'Bright indirect light; water when top inch is dry; rotate 1/4 turn weekly for even growth',
+              'Insufficient light causes legginess; direct sun burns the leaves',
+              'Produces abundant offsets (pups) at the base that can be separated and potted; one of the most shared plants among enthusiasts',
+            ],
+            [
+              'Peperomia spp.',
+              'Low to medium indirect light for most varieties; water when top half of soil is dry (stores water in thick leaves); comes in hundreds of varieties',
+              'Overwatering; planted in dense, heavy soil that stays wet',
+              'One of the best plants for offices, desks, and small spaces — compact, slow-growing, and tolerant of office conditions',
+            ],
+            [
+              'Christmas / Holiday Cactus (Schlumbergera spp.)',
+              'Bright indirect light; water when top inch is dry; reduce watering and move to a cooler (55–65°F) location in fall for 4–6 weeks to trigger winter bloom',
+              'Overwatering in summer; not providing the cool temperature/reduced watering trigger in fall = no blooms',
+              'A reliable, spectacular winter flower display that can last 4–6 weeks when properly triggered',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌱',
+          text: 'Start with the easiest plants first — snake plant, pothos, ZZ plant — and let your success with these build your understanding of light and watering before moving to more demanding plants like calathea or fiddle leaf fig. Every plant you keep successfully teaches you something that makes the next one easier.',
+        },
+      ],
+    },
   ],
 }
