@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 36 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 38 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. Online ordering is a placeholder (coming soon); the "Add to Cart" button links visitors to the Contact page for custom orders.
 
@@ -72,7 +72,9 @@ Garden-Landscape-Expert/
 │       ├── japanese-garden-guide.png
 │       ├── salad-garden-guide.png
 │       ├── culinary-herb-garden-guide.png
-│       └── Common_Garden_Diseases_Guide.png  # 35 images total — all live guides have a hero image
+│       ├── Common_Garden_Diseases_Guide.png
+│       ├── Weed_Management_Guide.png
+│       └── Indoor_Houseplants_101_Guide.png  # 37 images total — all live guides have a hero image
 └── src/
     ├── app/                         # Next.js App Router — one folder per route
     │   ├── layout.jsx               # Root layout — dark mode script, GTM, Nav, footer, GA4/AdSense via next/script
@@ -334,9 +336,9 @@ Each question in `questions.js` has:
 4. Herbs & Fragrance (6 guides — 2 live ✅)
 5. Landscape Design (10 guides — 3 live ✅)
 6. Seasonal Guides (8 guides — 1 live ✅)
-7. Pest & Problem Solving (8 guides — 2 live ✅)
+7. Pest & Problem Solving (8 guides — 3 live ✅)
 8. Specialty Gardens (11 guides — 1 live ✅)
-9. Container & Small Spaces (8 guides — 1 live ✅)
+9. Container & Small Spaces (8 guides — 2 live ✅)
 10. Eco & Sustainability (9 guides — 1 live ✅)
 
 ### Planting Guides — Live Content ✅
@@ -381,6 +383,8 @@ Thirty-six full guides integrated into the app:
 - `src/data/guide-content/rain-barrel.js` — Starting a Rain Barrel (`id: 'rain-barrel'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/zen-garden.js` — Zen Garden Design (`id: 'zen-garden'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/modern-minimalist-garden.js` — Modern Minimalist Garden (`id: 'modern-minimalist-garden'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/weed-management.js` — Weed Management (`id: 'weed-management'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/indoor-houseplants.js` — Indoor Houseplants 101 (`id: 'indoor-houseplants'`) — **complete** (all 10 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -710,7 +714,7 @@ Each live guide detail page displays a full-width hero photo below the nav, abov
 - **Naming convention:** `<guide-id>-guide.png` (e.g., `shade-tree-guide.png` for `id: 'shade-trees'`)
 - **Wired via** the `heroImages` map in `src/components/guides/GuideDetail.jsx` — keys are guide IDs, values are root-relative paths
 - **Conditional render:** `{heroImages[guideId] && <img .../>}` — guides without an entry simply render no photo; no broken images
-- **All 34 of 34 live guides** have hero images — `heroImages` map is complete
+- **All 38 of 38 live guides** have hero images — `heroImages` map is complete
 
 ### Favicon ✅
 
@@ -896,6 +900,50 @@ Every page in the app exports full metadata including:
 | Section 9: Troubleshooting & Closing | ✅ Done | 6-row design mistakes table (sparse/unfinished, competing focal points, architectural disconnect, ragged edges, undersized water feature, outgrown planting); 15-item quick reference checklist; 3-paragraph closing reflection; Dieter Rams tip callout |
 
 Theme: stone/slate gradient in `GuideDetail.jsx`; hero image: `public/guides/Modern_Minimalist_Garden_Guide.png`; set `comingSoon: false` under Specialty Gardens in `guides.js`
+
+---
+
+### Weed Management Guide ✅
+
+`src/data/guide-content/weed-management.js` — Weed Management (`id: 'weed-management'`); fully synced with source docx — 10 sections covering weed biology through regional and seasonal reference.
+
+| Section | Status | Notes |
+|---|---|---|
+| Overview: The Smart Approach | ✅ Done | Prevention-first philosophy; weed management hierarchy table; weed seed bank tip |
+| Section 1: Weed Biology | ✅ Done | Annual/biennial/perennial life cycle table; seed bank persistence; vegetative reproduction; weed competitive advantages |
+| Section 2: Prevention | ✅ Done | Mulch types and depth table; cover crops; dense planting; soil disturbance minimization; solarization; weed barrier fabric |
+| Section 3: Manual & Mechanical Control | ✅ Done | Hoeing techniques; hand-pulling root tips; cultivation timing ("hoe 'em while they're young"); tool selection table |
+| Section 4: Herbicides | ✅ Done | Pre-emergent vs. post-emergent; selective vs. non-selective; WSSA mode-of-action table; resistance management; label-as-law callout |
+| Section 5: Lawn Weed Management | ✅ Done | Common lawn weeds table (dandelion, clover, crabgrass, ground ivy, nutsedge, wild violet); cultural practices for weed suppression |
+| Section 6: Vegetable & Ornamental Bed Weed Management | ✅ Done | Cultivation timing; mulch in annual beds; weed management by season; close spacing tip |
+| Section 7: Invasive Weeds | ✅ Done | 8-row invasive species table (bindweed, nutsedge, quackgrass, mugwort, multiflora rose, Japanese knotweed, Canada thistle, Bermuda grass); persistence/spread/control columns |
+| Section 8: Organic Weed Management | ✅ Done | Flame weeding; acetic acid/citric acid herbicides; corn gluten meal; organic mulches; biological control; OMRI-listed products |
+| Section 9: Regional Weed Challenges | ✅ Done | 7-row regional table (NE, Mid-Atlantic/SE, Midwest, Great Plains, SW/Desert, PNW, CA) with dominant weeds and region-specific management notes |
+| Section 10: Seasonal Calendar & Quick Reference | ✅ Done | 5-row seasonal calendar; 10-row troubleshooting table; 15-item master weed management checklist; closing tip |
+
+Theme: amber/green gradient in `GuideDetail.jsx`; hero image: `public/guides/Weed_Management_Guide.png`; set `comingSoon: false` under Pest & Problem Solving in `guides.js`
+
+---
+
+### Indoor Houseplants 101 Guide ✅
+
+`src/data/guide-content/indoor-houseplants.js` — Indoor Houseplants 101 (`id: 'indoor-houseplants'`); fully synced with source docx — 10 sections covering light, watering, and 25 plant profiles through propagation and seasonal care.
+
+| Section | Status | Notes |
+|---|---|---|
+| Overview: Why Houseplants? | ✅ Done | NASA Clean Air Study; psychological benefits; overwatering and light as the two key beginner tips |
+| Section 1: Light | ✅ Done | 5-row light level table (bright direct through low light); measuring foot-candles; seasonal light shifts; grow lights |
+| Section 2: Watering | ✅ Done | Finger/skewer/lift/moisture-meter tests; 6-row watering frequency table by plant type; water quality (chlorine, fluoride); pot drainage |
+| Section 3: 25 Essential Plant Profiles | ✅ Done | In-depth profiles for 25 plants across beginner/intermediate/advanced tiers: Pothos, Snake Plant, ZZ Plant, Spider Plant, Peace Lily, Heartleaf Philodendron, Rubber Plant, Cast Iron Plant, Golden Barrel Cactus, Aloe Vera, Chinese Evergreen, Dracaena, Monstera, Bird of Paradise, Fiddle Leaf Fig, Calathea, Boston Fern, String of Pearls, Nerve Plant, Air Plants, Orchids, Croton, Jade Plant, Umbrella Plant, Hoya; each with light, water, humidity, soil, and tips |
+| Section 4: Placement — Room by Room | ✅ Done | 6-room guide (living room, bedroom, bathroom, kitchen, home office, low-light hallway); light conditions and recommended plants per room |
+| Section 5: Soil, Pots & Repotting | ✅ Done | 5-row potting mix types table; pot material comparison; drainage requirement; repotting timing and step-by-step guide |
+| Section 6: Feeding | ✅ Done | NPK ratios; fertilizer types (liquid, slow-release, organic); seasonal feeding schedule; common over-fertilization mistakes |
+| Section 7: Pests, Problems & Troubleshooting | ✅ Done | 8-row pest table (fungus gnats, spider mites, mealybugs, scale, aphids, thrips, whitefly, root mealybug); 8-row symptom/cause/fix table |
+| Section 8: Humidity & Temperature | ✅ Done | Humidity requirements by plant group; 5 humidity-boosting methods (grouping, trays, humidifiers, misting, terrariums); temperature ranges; cold/heat damage |
+| Section 9: Propagation | ✅ Done | 6 propagation methods (stem cuttings, leaf cuttings, division, offsets, air layering, seed); step-by-step for stem cuttings; rooting hormone tip |
+| Section 10: Seasonal Care & Quick Reference | ✅ Done | 4-row seasonal calendar (Spring/Summer/Fall/Winter) with growth phase, care focus, and key tasks; 12-item quick-start checklist; closing tip |
+
+Theme: lime/green gradient in `GuideDetail.jsx`; hero image: `public/guides/Indoor_Houseplants_101_Guide.png`; set `comingSoon: false` under Container & Small Spaces in `guides.js`
 
 ### Typography Upgrade ✅
 
