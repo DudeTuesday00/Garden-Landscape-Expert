@@ -933,5 +933,74 @@ export const indoorHouseplantsContent = {
         },
       ],
     },
+    {
+      id: 'propagation',
+      title: 'Section 9: Propagation — Making More Plants for Free',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Propagation — creating new plants from parts of existing ones — is one of the most satisfying aspects of keeping houseplants. Most popular houseplants can be propagated relatively easily by home gardeners without specialized equipment, and the process of watching a cutting develop roots and begin growing is genuinely engaging. Many propagation methods also produce plants ideal for sharing with friends and family.',
+        },
+        {
+          type: 'h3',
+          text: 'Propagation Methods by Technique',
+        },
+        {
+          type: 'table',
+          headers: ['Method', 'Best Plants', 'How to Do It', 'Success Rate for Beginners'],
+          rows: [
+            [
+              'Water propagation (stem cuttings in water)',
+              'Pothos, philodendron, tradescantia, begonia, coleus, impatiens, most soft-stemmed plants',
+              'Cut a stem with at least one node (the bumpy joint where a leaf attaches). Remove leaves that would be submerged. Place the node in a glass of water in bright indirect light. Change water weekly. Pot up into soil when roots are 1–2 inches long.',
+              'Very high — the most beginner-friendly method; roots are visible through the glass so progress is clear',
+            ],
+            [
+              'Stem cutting in soil',
+              'Pothos, philodendron, monstera, rubber plant, fiddle leaf fig, begonia',
+              'Take a cutting with 2–3 leaves and a node. Let cut end callus (dry) for 30–60 minutes. Dip in rooting hormone powder (optional but helpful). Insert into moist potting mix or perlite. Cover loosely with a clear plastic bag to maintain humidity. Keep in bright indirect light. Roots form in 2–4 weeks.',
+              'High with the humidity tent; moderate without it',
+            ],
+            [
+              'Leaf cuttings',
+              'Succulents (echeveria, sedum), African violets, snake plant, begonia',
+              'For succulents: remove a whole, healthy leaf; lay on dry succulent mix; mist occasionally. New rosettes sprout from the leaf base in 4–8 weeks. For African violets: cut a leaf with its petiole (stem); place petiole in water or moist mix; new plantlets form at the base in 4–8 weeks.',
+              'Moderate (succulents: variable; African violet: high)',
+            ],
+            [
+              'Division',
+              'Spider plant, peace lily, snake plant (offsets), ZZ plant (rhizome division), calathea, most clumping plants',
+              'Remove the plant from its pot. Use your hands or a clean knife to separate the root mass into 2 or more sections, each with adequate roots and foliage. Pot each section separately. Keep in bright indirect light and maintain moisture while the root system re-establishes.',
+              'Very high — the safest and most reliable propagation method for established clumping plants',
+            ],
+            [
+              'Offsets and pups',
+              'Spider plant (spiderettes), aloe (pups), agave (pups), tillandsia (pups), snake plant (offsets)',
+              'Wait until the offset is at least 1/3 the size of the parent plant. Separate by hand or with a clean knife at the point of connection. For succulents, let cut surfaces dry for a day before potting. For spider plant babies with aerial roots: place into water or soil before separating, or simply lay the runner on a pot of moist mix.',
+              'Very high — offsets come pre-rooted or nearly so',
+            ],
+            [
+              'Air layering',
+              'Rubber plant, fiddle leaf fig, any plant with a bare or leggy stem you want to shorten',
+              'Select a point on the stem below where you want roots to form. Remove leaves in that area. Make a small wound in the stem (nick or remove a ring of bark). Pack damp sphagnum moss around the wounded area. Wrap tightly in clear plastic film, secured above and below. Roots form in the moss in 4–12 weeks; cut below the roots and pot.',
+              'Moderate — reliable when done correctly; useful for rescuing leggy plants',
+            ],
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Rooting hormone: Available as a powder, gel, or liquid at any garden center. Contains IBA (indole-3-butyric acid), a natural plant hormone that promotes root formation. Not strictly necessary for easy-to-root plants like pothos and tradescantia, but significantly improves rooting success for slower-rooting species like rubber plant and fiddle leaf fig.',
+            'The humidity tent: For stem cuttings in soil, maintaining humidity around the cutting while it develops roots greatly improves success. Simply place a clear plastic bag loosely over the pot and cutting, creating a mini-greenhouse. Remove for 30 minutes daily to allow air circulation. Remove the tent permanently once the cutting shows signs of new growth.',
+            'Patience: Rooting timelines vary considerably by species, season, and conditions. Water cuttings of pothos may root in 1–2 weeks in summer warmth; a rubber plant cutting may take 6–8 weeks in soil even under ideal conditions. The signal that roots have formed in soil is new leaf growth — a cutting cannot produce new leaves without functioning roots.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'The best time to propagate is spring and early summer when plants are in active growth and warmth speeds rooting. A cutting taken in March in a warm room may root in two weeks; the same cutting taken in November may take six. If you want to propagate in winter, place cuttings on top of a refrigerator or near a heat mat to provide bottom warmth — even a few degrees above room temperature accelerates root formation significantly.',
+        },
+      ],
+    },
   ],
 }
