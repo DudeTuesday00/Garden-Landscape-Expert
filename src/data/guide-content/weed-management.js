@@ -534,5 +534,78 @@ export const weedManagementContent = {
         },
       ],
     },
+    {
+      id: 'seasonal-calendar',
+      title: 'Section 10: Seasonal Weed Management Calendar & Quick Reference',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Weed management is most efficient when it is proactive and timed to the weed\'s biological cycle rather than reactive to visible weeds that have already established. The following calendar translates this guide\'s principles into a season-by-season action framework that keeps management ahead of — rather than behind — the weed cycle.',
+        },
+        {
+          type: 'table',
+          headers: ['Season / Timing', 'Key Weed Events', 'Priority Actions', 'Herbicide Timing', 'Common Mistakes to Avoid'],
+          rows: [
+            ['Late Winter / Early Spring (4–6 weeks before LFD)', 'Winter annual weeds (chickweed, hairy bittercress, henbit) are actively growing and beginning to flower. First weed seeds of the year begin germinating in warming soil.', 'Pull or hoe winter annuals BEFORE they flower and set seed. Apply pre-emergent to lawn areas targeting crabgrass when forsythia blooms (soil temp 50–55°F). Prepare stale seedbeds for earliest vegetable plantings.', 'Window for crabgrass pre-emergent application — apply before soil reaches 55°F. Pre-emergent on ornamental beds for annual weed prevention.', 'Waiting too long to remove winter annuals and allowing seed set. Applying pre-emergent too late after crabgrass has already germinated. Planting grass seed in areas where pre-emergent has been applied.'],
+            ['Spring (LFD ± 2 weeks)', 'First flush of summer annual weeds (pigweed, lamb\'s quarters, purslane, crabgrass) germinates rapidly as soil warms. The most critical weed management window of the year.', 'Apply mulch to all garden beds — the single most impactful spring weed management action. Hoe small weed seedlings while they are tiny. Plant transplants rather than direct-seeded crops wherever practical. Flame weed paths and hardscape.', 'Post-emergent applications for emerged lawn broadleaf weeds (dandelion, clover, plantain) as they are actively growing. Grassy weed post-emergent in ornamental beds if present.', 'Skipping mulch application and spending the season hand-weeding instead. Allowing the first flush of annual weeds to grow large before addressing them. Tilling established beds and bringing dormant seeds to the surface.'],
+            ['Early Summer (LFD + 4–8 weeks)', 'Summer annual weeds are growing rapidly and must be managed before they flower. Perennial weeds (dandelion, bindweed) are actively growing and at their most vulnerable.', 'Hoe every 7–10 days in vegetable gardens; oscillating hoe is most efficient. Check mulch depth and replenish where thin. Target perennial weeds with repeated removal or foliar herbicide. Plant summer cover crops in any bare vegetable bed sections.', 'If perennial weeds (bindweed, dandelion) are actively growing and healthy, systemic post-emergent herbicide is most effective now. Spot treatment only in vegetable areas to avoid crop damage.', 'Allowing annual weeds to flower and set seed in adjacent areas (roadsides, fence lines, neglected areas). These continuously reseed managed areas throughout the season.'],
+            ['Midsummer', 'Warm-season weeds reach peak growth rate. Crabgrass is most visible and aggressive. First winter annual weed seeds may begin germinating in the soil as temperatures moderate slightly.', 'Continue hoeing and mulching. Deadhead and bag weed seed heads before seed dispersal if weeds are too large to remove entirely. Begin planning fall management actions. Consider solarizing any heavily weeded areas that will be replanted in fall.', 'Post-emergent for lawn broadleaf weeds. Avoid applying 2,4-D or dicamba on very hot days (above 85°F) due to vapor drift risk.', 'Applying herbicides in high heat, which can volatilize products and cause drift damage to non-target plants. Neglecting the beginning of winter annual weed germination.'],
+            ['Late Summer / Early Fall (4–6 weeks before FFD)', 'The most important season for perennial weed control. Perennials are actively translocating energy to their roots for winter storage — systemic herbicides applied now are translocated most effectively to roots, providing the deepest kill. First winter annuals are germinating.', 'Apply systemic herbicide to perennial weeds (dandelion, bindweed, creeping Charlie) in lawn and landscape — fall applications are more effective than spring for these species. Apply pre-emergent for winter annual weeds (annual bluegrass) in lawns. Plant fall vegetable crops with concurrent weed management.', 'BEST TIME for perennial weed control with systemic post-emergents. Apply when plants are still actively growing but temperatures are cooling (50–75°F ideal). Apply fall pre-emergent for annual bluegrass and other winter annuals.', 'Missing this critical window for perennial weed management. Not applying a fall pre-emergent in lawns that had significant annual bluegrass pressure the previous spring.'],
+            ['Fall / Winter', 'Winter annual weeds are actively growing. All summer annual weeds die at frost. Perennial weeds enter dormancy. Ideal time for bed renovation and new bed creation.', 'Remove all spent annual garden plants; do not leave weed-seeded debris in the garden. Sheet mulch any areas planned for new beds in spring. Pull remaining winter annuals before they set seed. Clean up fence lines and borders that may harbor weed seeds.', 'Limited herbicide use appropriate; glyphosate on actively growing winter annuals if populations are large. Spot treatment of any remaining perennial weeds still showing green foliage.', 'Leaving heavily weeded areas without mulch or cover crop through winter, allowing winter annual weeds to mature and build the spring seed bank.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Priority Checklist: High-Impact Actions First',
+        },
+        {
+          type: 'list',
+          items: [
+            'Apply 3–4 inches of mulch to ALL garden beds in spring (most impactful single action; reduces 70–90% of annual weed pressure)',
+            'Apply pre-emergent to lawn before crabgrass germination — when forsythia blooms; do NOT delay past soil temp 55°F',
+            'Remove all winter annual weeds BEFORE they flower and set seed (February–April depending on region)',
+            'Hoe vegetable beds every 7–10 days through the growing season (10 minutes per session is far more effective than 2 hours every 4 weeks)',
+            'Apply systemic herbicide to perennial lawn weeds in FALL, not spring (2–3× more effective due to active translocation to roots)',
+            'Plant cover crops in any bare vegetable bed sections between crops',
+            'Check and replenish mulch depth mid-season (thin mulch = weed breakthrough)',
+            'Identify and manage invasive weeds on your property before they spread beyond control',
+            'Maintain mowing height at the high end of the recommended range for your grass species',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Troubleshooting Common Weed Problems',
+        },
+        {
+          type: 'table',
+          headers: ['Problem', 'Likely Cause', 'Smart Response'],
+          rows: [
+            ['Weeds keep coming back no matter how much I pull', 'Annual weeds are producing seed before removal; or perennial weeds are regrowing from root fragments left in the soil', 'Identify whether annual or perennial. For annuals: remove BEFORE flowering every time, without exception — the seed bank will deplete over 3–5 seasons. For perennials: commit to repeated removal OR targeted herbicide; half-measures do not work with perennials.'],
+            ['Crabgrass invades lawn every summer despite pulling', 'Pre-emergent has not been applied; or timing was wrong; or lawn is thin and stressed, providing entry points for crabgrass establishment', 'Apply pre-emergent BEFORE soil reaches 55°F in spring. Improve turf density with fall overseeding. Raise mowing height. Crabgrass is an annual — it dies at frost; the battle is won by preventing next year\'s germination.'],
+            ['Bindweed / field morning glory in the vegetable garden', 'An extremely persistent perennial with white rhizomes extending 20+ feet deep; one of the most difficult weeds to eradicate', 'Commit to a multi-year program: weekly removal of all top growth through the growing season; apply glyphosate to regrowth in fall before frost; smother with cardboard and thick mulch in areas not in production. Expect 3–5 years of consistent effort for significant reduction.'],
+            ['Nutsedge spreading through garden beds', 'Nutsedge is a perennial sedge (not a grass or broadleaf) that spreads by underground nutlets — pulling the above-ground plant detaches the nutlets and spreads them; tilling makes it worse', 'Do not pull or till. Treat with halosulfuron (SedgeHammer®) or sulfentrazone. Improve drainage (nutsedge thrives in wet soil). Multiple treatments over 2+ seasons required.'],
+            ['Weeds growing through landscape fabric', 'Landscape fabric degrades over 3–5 years; weed seeds germinate in the mulch layer on top of the aging fabric; roots penetrate through the fabric as it degrades', 'Landscape fabric in planting beds almost always creates more problems over time than it solves. Remove, install new beds without fabric, and use 3–4 inches of wood chip mulch instead.'],
+            ['Weeds spreading from neighbor\'s property / road edges', 'Wind-dispersed or bird-dispersed seeds constantly arriving from adjacent areas with weed infestations', 'Install a mowing or mulching buffer along the property edge that prevents seed establishment. Mow edge areas frequently to prevent weeds from flowering and setting seed.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Most Productive Mindset Shift in Weed Management',
+        },
+        {
+          type: 'p',
+          text: 'The gardener who approaches weeds reactively — who waits until they see a problem and then responds to it — will always be behind. Weeds grow faster than most garden plants, produce seed faster than most gardeners notice, and in the case of perennials, have root systems that make them inherently more persistent than their above-ground presence suggests.',
+        },
+        {
+          type: 'p',
+          text: 'The productive shift is from reactive to proactive: mulching before weeds appear rather than after; applying pre-emergent before crabgrass germinates rather than after; pulling seedlings when they are thumbnails rather than when they are knee-high. The proactive gardener spends far fewer hours on weed management than the reactive one, and experiences far less frustration, because prevention is always more efficient than control.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌾',
+          text: 'The second shift is from perfection to tolerance. A garden with some weeds managed below the threshold where they affect plant health, productivity, or appearance is a garden in healthy ecological balance. The gardener who accepts occasional weeds as a manageable condition rather than a failure is a gardener who can enjoy their garden rather than being consumed by its maintenance. Cover the soil. Time your interventions. Work with biology, not against it.',
+        },
+      ],
+    },
   ],
 }
