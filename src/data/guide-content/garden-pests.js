@@ -499,5 +499,130 @@ export const gardenPestsContent = {
         },
       ],
     },
+    {
+      id: 'caterpillars',
+      title: 'Section 4: Caterpillars & Larvae — The Leaf & Fruit Eaters',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Caterpillars are the larvae of moths and butterflies (order Lepidoptera). They are among the most damaging garden pests by volume of plant tissue consumed, but also among the most effectively managed with targeted organic controls — particularly Bt (Bacillus thuringiensis), which kills caterpillars specifically without harming other insects when used correctly.',
+        },
+        {
+          type: 'h3',
+          text: 'Tomato Hornworm & Tobacco Hornworm (Manduca quinquemaculata & M. sexta)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Size: One of the largest garden caterpillars — 3–4 inches long when mature; green with white diagonal stripes; a horn on the rear end',
+            'Tomato vs. tobacco: Tomato hornworm has V-shaped white marks on its sides and a black horn. Tobacco hornworm has diagonal white stripes and a red horn. Both cause identical damage.',
+            'What you see: Dramatic defoliation of tomato, pepper, and eggplant; large dark green or black droppings (frass) on leaves below the feeding site; stems stripped of leaves; the green larva is extremely well-camouflaged',
+            'Adults: Large sphinx moths (hummingbird moths); wingspan 4–5 inches; not damaging but lay eggs on plant',
+            'Regions: Throughout the continental US; M. quinquemaculata more common in northern states; M. sexta more prevalent in the South. Peak caterpillar feeding in mid-to-late summer.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Hand-pick — the most effective control; hornworms are large enough to find by their frass and by black-light inspection at night (they fluoresce). (2) Bt kurstaki sprayed on foliage — larvae must ingest treated foliage; most effective on young larvae. (3) Spinosad.',
+            'Natural enemies to protect: Cotesia congregata parasitic wasp — hornworms bearing small white cocoons on their backs are being controlled by this wasp and should not be killed; they will not survive to reproduce. Trichogramma egg parasites. Ground beetles.',
+            'Cultural controls: Till soil in fall to expose pupae to birds and cold. Plant dill, basil, and marigold to attract beneficial wasps. Row cover over young transplants before egg-laying period.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Imported Cabbageworm (Pieris rapae)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Adult: The familiar cabbage white butterfly — white wings with black-tipped forewings; adults are not damaging but lay pale yellow bullet-shaped eggs on cabbage family leaves',
+            'Larva: Velvety green caterpillar with a faint yellow dorsal stripe; 1–1.5 inches at maturity; very well camouflaged on green leaves',
+            'What you see: Ragged holes in outer leaves of cabbage, broccoli, cauliflower, kale, and brussels sprouts; green frass inside cabbage heads; frass on leaf surfaces below feeding sites',
+            'Hosts: All Brassica species — cabbage, broccoli, cauliflower, kale, brussels sprouts, kohlrabi, bok choy, arugula, radish, turnip',
+            'Regions: Throughout the US; 2–3 generations per season in most regions; most damaging in spring and fall when brassicas are in season. Year-round in mild climates.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Row cover from transplanting through harvest — most effective prevention; removes the butterfly from contact with the plant entirely. (2) Bt kurstaki applied weekly when butterflies are active — must be ingested by larvae; reapply after rain. (3) Spinosad. (4) Hand-pick larvae and yellow eggs. (5) Trichogramma parasitic wasps released when adults are present.',
+            'Natural enemies to protect: Trichogramma parasitic wasps (attack eggs); Cotesia glomerata (larval parasitoid); spiders; ground beetles',
+            'Cultural controls: Inspect plants twice weekly and hand-remove eggs (pale yellow, bullet-shaped on leaf undersides). Plant purple or red cabbage varieties — some studies show they receive less egg-laying.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Squash Vine Borer (Melittia cucurbitae)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Adult: Day-flying moth resembling a wasp — red abdomen with black dots, metallic green wings; forewing span 1–1.5 inches; present in early summer',
+            'Larva: Creamy white caterpillar, 1–1.5 inches; found inside the vine stem; wrinkled body; brown head capsule',
+            'What you see: Sudden wilting of a mature squash vine that had appeared healthy; sawdust-like frass (orange-green) at a small entry hole on the stem base; vine yellows and dies rapidly; cutting open the stem reveals the larva inside',
+            'Hosts: Butternut and acorn squash (most susceptible); zucchini; pumpkins (less so); winter squash; sometimes cucumbers and melons',
+            'Regions: Eastern US, Midwest, and southern states; less common in the West. Most damaging from June through August. Adult flight period is 4–6 weeks.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Row cover from transplanting until flowering (remove for pollination). (2) Time planting to avoid peak adult flight: in northern regions, plant zucchini in mid-June or early July so vines are small during early July peak; or plant in early spring so vines are large and past peak vulnerability. (3) Wrap stem bases with aluminum foil to deter egg-laying. (4) Inject Bt into stem at entry holes. (5) Cut out larvae with a knife and bury the vine node in soil — it may root and continue producing.',
+            'Natural enemies to protect: Parasitic wasps attack eggs; spiders; predatory wasps',
+            'Cultural controls: Monitor for orange, flat eggs on stem bases from June onward. Grow resistant varieties (butternut is more resistant than acorn). Remove and destroy infested vines promptly to prevent larvae from completing development.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Corn Earworm / Tomato Fruitworm (Helicoverpa zea)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Larva: 1.5–2 inches; highly variable in color — green, brown, pink, or nearly black with pale stripes; spiny head capsule visible with a hand lens',
+            'What you see on corn: Silks eaten; tip of ear shows frass and feeding; larva in tip of ear when husked; chewed kernels at the ear tip',
+            'What you see on tomato: Entry hole in fruit near the stem scar area; frass at entry hole; hollow cavity inside fruit; larva inside',
+            'Hosts: Corn (primary); tomatoes, peppers, beans, squash, sorghum; broad host range late in season',
+            'Regions: Throughout the US; a major economic pest. Overwinters in the deep South and migrates northward on storm fronts each spring. Northern regions see 1–2 generations; southern regions 3–4+ per year.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls on corn: (1) Apply a few drops of mineral oil to each silk mass 3–4 days after silk emergence — prevents larvae from entering the ear. (2) Inject Bt into each ear at silk stage every 3–5 days. (3) Spinosad timed to silk emergence. (4) Trichogramma egg wasps released at tasseling.',
+            'Organic controls on tomato: (1) Bt or spinosad applied when adult moths are flying (use pheromone traps to monitor flight). (2) Pyrethrin. (3) Remove and dispose of infested fruit immediately.',
+            'Natural enemies to protect: Trichogramma parasitic wasps; Cotesia marginiventris; earwigs (predators of eggs and young larvae); ground beetles',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Cabbage Looper (Trichoplusia ni)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Adult: Brown moth with a silver figure-eight marking on each forewing; nocturnal; flies spring through fall',
+            'Larva: 1.5–2 inches; pale green; moves in a characteristic looping motion, arching its back as it walks like an inchworm; thin white lines along each side',
+            'What you see: Ragged holes in leaves of brassicas, lettuce, spinach, celery, and tomatoes; similar damage to imported cabbageworm but with a broader host range',
+            'Hosts: Cabbage family, lettuce, spinach, celery, parsley, tomatoes, cucumbers — broader than imported cabbageworm',
+            'Regions: Throughout the US; 3–5 generations per year in warm climates; overwinters in warm southern states and migrates northward. Year-round pest in Zone 8+.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Bt kurstaki — highly effective; apply to all leaf surfaces including undersides; repeat after rain. (2) Spinosad. (3) Row cover to prevent egg-laying. (4) Hand-pick larvae.',
+            'Natural enemies to protect: Trichogramma parasitic wasps (attack eggs); Microplitis brassicae (larval parasitoid); spiders; ground beetles; birds',
+            'Cultural controls: Row cover is the most effective prevention. Check plants 2–3 times per week. Loopers are often present alongside imported cabbageworm, so the same management serves both.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🦋',
+          text: 'Before spraying Bt or spinosad, check each caterpillar for small white rice-grain-shaped cocoons attached to its body — these are the pupal cases of Cotesia parasitic wasps. A hornworm or cabbageworm carrying cocoons is already doomed and is acting as a host nursery for your next generation of pest control. Leave these parasitized caterpillars in the garden. Spraying them wastes product and kills the wasps emerging from them.',
+        },
+      ],
+    },
   ],
 }
