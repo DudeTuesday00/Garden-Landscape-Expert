@@ -164,5 +164,96 @@ export const indoorHouseplantsContent = {
         },
       ],
     },
+    {
+      id: 'watering',
+      title: 'Section 2: Watering — The Skill Every Beginner Must Master',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Overwatering is the number one killer of houseplants in America, and it kills them not by drowning the leaves but by rotting the roots. When soil stays wet for too long, the oxygen that roots need to function is displaced by water, and root cells begin to die. Dead roots cannot absorb water, which creates a cruel irony: a plant dying of overwatering often looks like it needs more water — wilting, yellowing, drooping. The beginner pours on more water and the plant dies faster.',
+        },
+        {
+          type: 'h3',
+          text: 'The Core Watering Principles',
+        },
+        {
+          type: 'list',
+          items: [
+            "Water according to the soil, not the schedule: The most important watering principle. Different plants in different pots in different locations with different soil mixes dry out at completely different rates. A schedule that says 'water every Sunday' will overwater some plants and underwater others. Check the soil before every watering — it takes 5 seconds and provides precise information.",
+            'The finger test: Push your finger 1–2 inches into the soil. If it feels moist, wait. If it feels dry at that depth, water. For drought-tolerant plants (succulents, cacti, ZZ plant, snake plant), wait until the soil is dry down to 2–3 inches or more. For moisture-loving plants (calathea, ferns, peace lily), water when the top 1–2 inches dry.',
+            'Water thoroughly when you do water: When it is time to water, water until water runs freely from the drainage holes. This ensures the entire root ball is moistened — not just the top few inches — and that any salt buildup from fertilizer is flushed through. Then stop and let the soil dry appropriately before watering again.',
+            'Always use pots with drainage holes: Without drainage, excess water has nowhere to go and accumulates at the bottom of the pot where roots sit in it and rot. If you love a decorative pot without holes, use it as a cachepot: place the plant in a plain nursery pot with drainage inside the decorative pot and remove the inner pot to water, allowing it to drain completely before returning it.',
+            'Dump the saucer: After watering, any water that collects in the saucer beneath the pot should be emptied after 30 minutes. Plants sitting in standing water in their saucers are vulnerable to the same root rot as overwatered plants.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Watering Needs by Plant Type',
+        },
+        {
+          type: 'table',
+          headers: ['Plant Type / Category', 'Watering Frequency', 'Water When…', 'Signs of Overwatering', 'Signs of Underwatering'],
+          rows: [
+            [
+              'Succulents & cacti (aloe, jade, echeveria, haworthia, cacti)',
+              'Every 2–6 weeks depending on season and light',
+              'Soil is completely dry to the bottom of the pot',
+              'Soft, mushy, translucent leaves; black or brown stem base; soggy soil',
+              'Shriveled, puckered, or wrinkled leaves; soil bone dry for extended periods',
+            ],
+            [
+              'Low-water tropicals (ZZ plant, snake plant, cast iron plant, ponytail palm)',
+              'Every 2–4 weeks',
+              'Soil dry down 2–3 inches',
+              'Yellowing lower leaves; soft mushy stems; soil that stays wet for weeks',
+              'Curling or wrinkling of leaves (rare — these plants are very drought tolerant)',
+            ],
+            [
+              'Average tropical houseplants (pothos, philodendron, monstera, rubber plant, dracaena)',
+              'Every 7–14 days in summer; every 14–21 days in winter',
+              'Top 1–2 inches of soil are dry',
+              'Yellowing leaves; wilting despite moist soil; root rot smell; fungus gnats',
+              'Wilting when soil is dry; brown crispy leaf tips; soil pulling away from pot edges',
+            ],
+            [
+              'Moisture-loving tropicals (calathea, maranta, ferns, peace lily)',
+              'Every 5–10 days; keep consistently moist but not wet',
+              'Top inch begins to dry; do not allow to dry out completely',
+              'Root rot; mold on soil surface; fungus gnats; consistently wet soil',
+              'Crispy brown leaf edges; drooping; leaf curl; browning tips (also a humidity issue)',
+            ],
+            [
+              'Flowering plants (African violet, orchid, Christmas cactus)',
+              'Varies significantly by species — see individual plant profiles in Section 3',
+              'Species-specific; see profiles',
+              'Species-specific',
+              'Species-specific',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Water Quality: Does It Matter?',
+        },
+        {
+          type: 'p',
+          text: 'Tap water is fine for most houseplants in most American households. However, a few situations warrant consideration:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Chlorinated tap water: Most municipalities use chlorine or chloramine to treat drinking water. Many plants are fine with this. If you notice tip browning on sensitive plants (spider plants, calathea), try leaving tap water in an open container overnight before using — this allows chlorine (but not chloramine) to off-gas. Alternatively, use filtered water.',
+            'Fluoride sensitivity: A small number of plants — most notably spider plants, dracaenas, and peace lilies — are sensitive to fluoride in tap water and show brown or tan tip burning as a result. Use distilled, filtered, or rainwater for these plants if tip burn is a persistent problem despite correct watering.',
+            'Hard water (high mineral content): In areas with very hard tap water, mineral deposits (white crusty buildup on the soil surface and pot rim) can gradually affect pH and nutrient availability. Flush the pot thoroughly monthly by running a large volume of water through the soil to dissolve and carry out salt buildup. Or switch to filtered or rainwater.',
+            'Temperature: Very cold tap water can shock tropical houseplants. Let water sit until it reaches room temperature before watering, or mix warm and cold tap water to achieve room temperature.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '💧',
+          text: 'When in doubt, underwater rather than overwater. A wilting plant from underwatering can recover within hours of a good drink. A plant with root rot from overwatering may be beyond saving. The single best habit a beginning plant parent can develop is checking the soil with their finger before every single watering.',
+        },
+      ],
+    },
   ],
 }
