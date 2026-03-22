@@ -1002,5 +1002,86 @@ export const indoorHouseplantsContent = {
         },
       ],
     },
+    {
+      id: 'seasonal-care',
+      title: 'Section 10: Seasonal Care & the Beginner\'s Quick Reference',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Houseplants are not static objects — they respond to seasonal changes in light and temperature even indoors. Understanding the seasonal cycle allows you to anticipate your plants\' changing needs rather than reacting to problems after they develop. The seasonal adjustment is simple but makes a genuine difference in plant health and longevity.',
+        },
+        {
+          type: 'h3',
+          text: 'The Indoor Plant Seasonal Calendar',
+        },
+        {
+          type: 'table',
+          headers: ['Season', 'What Changes Indoors', 'Adjust Watering', 'Adjust Feeding', 'Key Tasks'],
+          rows: [
+            [
+              'Spring (March–May)',
+              'Increasing day length and light intensity; plants emerge from winter slowdown and begin active growth; roots become more active',
+              'Gradually increase frequency as growth resumes; soil dries faster with more active growth',
+              'Resume full fertilizing schedule as new growth appears; start with half strength and build to regular schedule',
+              'Repot any rootbound plants now for the best establishment season. Propagate cuttings in warming conditions. Move any plants that were shifted away from cold windows back to prime positions.',
+            ],
+            [
+              'Summer (June–August)',
+              'Maximum light intensity; potential heat stress; highest water demand; fastest growth; some south and west windows may become too intense for some plants',
+              'Most frequent watering of the year; check every few days; consider watering twice weekly for moisture-loving plants in hot conditions',
+              'Full fertilizing schedule every 2–4 weeks depending on plant type',
+              'Watch for pests (spider mites proliferate in hot, dry conditions). Monitor plants near south and west windows for sun scorch. Repot as needed. Excellent time for propagation.',
+            ],
+            [
+              'Fall (September–November)',
+              'Decreasing day length; lower light intensity; plants begin to slow growth; some plants require cooling for bloom initiation (Christmas cactus, forced bulbs)',
+              'Begin reducing frequency as growth slows; soil takes longer to dry as light and temperature decrease',
+              'Taper off to once monthly by November; stop completely for succulents and slow-growing plants',
+              'Begin Christmas cactus bloom protocol (reduce water, move to cooler location). Bring any plants that went outdoors in summer inside before temperatures drop below 55°F. Clean leaves of dust before lower winter light levels.',
+            ],
+            [
+              'Winter (December–February)',
+              'Shortest days and lowest light; indoor heating creates dry air; plant growth is minimal for most species; plants are resting',
+              'Minimum frequency of the year; most plants need watering every 10–21 days; succulents may need watering only once per month',
+              'No fertilizer for most plants; at most a single monthly application at 1/4 strength for fast-growing tropicals under grow lights',
+              'Focus on humidity — run a humidifier for sensitive plants. Clean windows to maximize available winter light. Add grow lights for light-hungry plants. Enjoy the rest period — slow growth in winter is normal.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Beginner\'s Master Checklist',
+        },
+        {
+          type: 'list',
+          items: [
+            'Buying a New Plant — Know the light level of the intended location BEFORE buying; choose a plant whose light requirements match that location; verify the plant is safe for your specific pets before purchasing; inspect for pests in the store (check leaf undersides, stem joints, and soil surface); quarantine new plants for 2–3 weeks away from existing plants.',
+            'Weekly Care Routine — Check every plant\'s soil before watering (finger test to 1–2 inches); water only plants whose soil has reached the appropriate dryness for their type; water thoroughly (until water runs from drainage holes) when you do water; empty saucers 30 minutes after watering; rotate plants 1/4 turn for even growth; quickly scan each plant for signs of pests or problems while watering.',
+            'Monthly Care Routine — Fertilize appropriate plants on schedule (spring through fall only for most); flush soil of any plant showing white salt crust on soil or pot rim; wipe dusty leaves with a damp cloth or give dusty plants a shower (promotes photosynthesis and deters spider mites); check whether any plant is rootbound and needs repotting; propagate cuttings from any plant that needs to be pruned back; inspect the entire collection carefully for early signs of pests.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: '🌿 The One Rule That Explains Almost Everything',
+        },
+        {
+          type: 'p',
+          text: 'If there is one principle to carry from this guide, it is this: fix the light first. Not the pot. Not the fertilizer. Not the humidity. Not the special soil mix. Light first, every time.',
+        },
+        {
+          type: 'p',
+          text: 'A plant receiving incorrect light cannot be rescued by any other intervention. It will slowly decline regardless of how perfectly you water it, fertilize it, or care for it in every other way. A plant receiving correct light will be resilient to minor watering mistakes, will use fertilizer efficiently, will resist pests better, and will reward your care with growth that is visibly satisfying.',
+        },
+        {
+          type: 'p',
+          text: 'Assess the light level honestly. Choose plants that match that level. Then learn to water them correctly. Everything else — soil, fertilizer, humidity, propagation, pest management — is secondary to these two skills. Master them and you will keep plants successfully for the rest of your life.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌱',
+          text: 'Every expert was once a beginner who killed a few plants first. Start, learn, keep going.',
+        },
+      ],
+    },
   ],
 }
