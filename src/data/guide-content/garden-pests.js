@@ -880,5 +880,85 @@ export const gardenPestsContent = {
         },
       ],
     },
+    {
+      id: 'beneficial-insects',
+      title: 'Section 8: Beneficial Insects — Your Most Important Allies',
+      blocks: [
+        {
+          type: 'p',
+          text: 'An estimated 97 percent of insect species are either beneficial to gardens or are neutral. Only 3 percent of insects are garden pests. The gardener who understands this invests in supporting beneficial insect populations rather than spraying broadly against the minority that cause damage. A garden rich in beneficial insects has dramatically fewer pest problems than one managed primarily with pesticides — including organic pesticides — that disrupt the natural enemy community.',
+        },
+        {
+          type: 'h3',
+          text: 'How to Attract and Support Beneficial Insects',
+        },
+        {
+          type: 'list',
+          items: [
+            'Plant for nectar and pollen: Adult beneficial insects (including parasitic wasps, hoverflies, lacewings, and predatory bugs) feed on nectar and pollen as adults. A diverse planting of small-flowered plants in the carrot family (Daucus, Coriandrum, Anethum, Ammi), composite family (Achillea, Echinacea, Coreopsis, Cosmos), and mint family (Salvia, Nepeta, Monarda) provides the resources these insects need to establish and reproduce in your garden.',
+            'Avoid broad-spectrum pesticides: Every application of pyrethrin, neem oil, or insecticidal soap that contacts beneficial insects reduces their populations. Use organic pesticides only when necessary, in targeted spot applications, in the evening after bee activity, and only on the specific plant that has a pest problem. The beneficial insect community recovers more slowly than pest populations after disruption.',
+            'Provide habitat: Beneficial insects need shelter, overwintering sites, and water. Leaving some stems standing through winter (hollow stems house native bees); keeping a brush pile or rock pile at the garden\'s edge; providing a shallow water source; and tolerating some \'weedy\' areas that flower early provide habitat that a purely manicured garden cannot.',
+            'Tolerate low pest populations: Some pest presence is necessary to maintain a population of natural enemies. A garden with zero pests has nothing for the beneficial insects to eat; they leave. A garden with a low, controlled pest population maintains the natural enemy community that provides free, ongoing pest suppression. The goal is not zero pests; it is pests below the level of significant damage.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Key Beneficial Insects: Identification & Value',
+        },
+        {
+          type: 'table',
+          headers: ['Beneficial Insect', 'Appearance & ID', 'What It Controls', 'How to Support It'],
+          rows: [
+            [
+              'Ladybug / Lady Beetle (Coccinellidae family)',
+              'Round, domed beetles; classic red with black spots (Coccinella septempunctata) but also orange, yellow, or black with varying spot patterns. Larvae: alligator-shaped, gray-orange with orange spots; often overlooked and mistakenly killed.',
+              'Aphids (primary prey; adult and larva each consume hundreds per day); scale crawlers; mites; small caterpillars; eggs of many pests. One larva consumes 400 aphids before pupating.',
+              'Plant carrot-family flowers for adult nectar. Avoid broad-spectrum pesticides. Do not purchase and release ladybugs — commercially sold Hippodamia convergens are wild-collected; most disperse within days of release and are often diseased; supporting native populations is more effective.',
+            ],
+            [
+              'Green Lacewing (Chrysoperla spp., Chrysopa spp.)',
+              'Adults: delicate, pale green with large net-veined wings and golden eyes; 3/4″; nocturnal; attracted to lights. Larvae: 1/4″–3/8″; alligator-shaped; tan and brown with sickle-shaped jaws; voracious and aggressive.',
+              'Larvae consume aphids, thrips, mites, whitefly nymphs, leafhopper nymphs, small caterpillars, insect eggs. Called \'aphid lions.\' Adults primarily feed on nectar and pollen.',
+              'Plant carrot-family and composite flowers. Provide structural diversity (tall plants, ground covers, woody plants). Lacewing eggs can be purchased and released effectively — one of the few commercially available beneficials where releases are genuinely cost-effective.',
+            ],
+            [
+              'Parasitic Wasps (Braconidae, Ichneumonidae, Trichogrammatidae, Chalcididae — many families)',
+              'Most are tiny (1/16″ – 1/4″) and easily mistaken for gnats or small flies. Non-stinging (females can technically sting but virtually never do; too small to penetrate skin).',
+              'Each species parasitizes specific host pests: Cotesia congregata on hornworms; Aphidius spp. on aphids (mummified brown aphids are evidence); Trichogramma on moth and butterfly eggs; Encarsia formosa on whitefly; Aphelinus on aphids. Collectively control the majority of chewing and sucking pest species in a healthy garden.',
+              'Plant carrot family (dill, fennel, cilantro, Bishop\'s weed, Queen Anne\'s lace) for adult nectar — these plants are most important for supporting parasitic wasp populations. Trichogramma can be purchased and released effectively for caterpillar control.',
+            ],
+            [
+              'Ground Beetles (Carabidae family)',
+              '1/4″ – 1″; dark brown to black; shiny; fast-running on the ground; nocturnal hunters. Many species have colorful, iridescent wing covers.',
+              'Generalist predators; consume cutworms, slugs, slug eggs, caterpillar pupae, cabbage root fly eggs, flea beetle larvae and pupae, weed seeds, aphids that fall to the ground. One of the most valuable and underappreciated beneficial insects.',
+              'Provide permanent ground cover (mulch, ground covers, low shrubs) where ground beetles can shelter during the day. Avoid tilling (destroys pupae and disrupts populations). Maintain perennial plantings at garden edges.',
+            ],
+            [
+              'Minute Pirate Bug (Orius spp.)',
+              '1/16″ – 1/8″; black and white patterned; oval; fast-moving; found inside flowers and on plant surfaces. Can deliver a noticeable bite to human skin.',
+              'Thrips (one of the few natural enemies that significantly suppresses thrips populations); spider mites; insect eggs; aphids; small caterpillars. Both adults and nymphs are predatory.',
+              'Plant carrot-family and composite flowers. Orius populations develop in gardens with diverse flowering plants and low pesticide use. Commercially available for release in greenhouses and high-value crops.',
+            ],
+            [
+              'Hoverflies / Flower Flies (Syrphidae family)',
+              'Often bee or wasp mimics (yellow and black striped); 1/4″ – 3/4″; distinctively hover in place in mid-air (unlike bees, they can hover stationary). Adults pollinate; larvae have no legs.',
+              'Larvae of many species are aphid predators — a single larva consumes hundreds of aphids. Adults are important pollinators second only to bees.',
+              'Plant carrot-family and composite flowers for adult nectar. Hoverflies are among the most abundant beneficial insects in gardens with diverse plantings.',
+            ],
+            [
+              'Spiders (Order Araneae — many species)',
+              '8 legs (distinguishes from insects which have 6); wide variety of body forms; web-building and hunting species both present in gardens.',
+              'Generalist predators; collectively consume an enormous number of insects including many pest species. Wolf spiders, crab spiders, jumping spiders, and orb weavers all contribute to garden pest suppression.',
+              'Protect spiders wherever found in the garden. Avoid broad-spectrum sprays. Mulch and perennial plantings provide shelter. Most garden spider species are harmless to humans; very few (black widow in the West and South; brown recluse in the South/Midwest) require caution.',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌼',
+          text: 'The single most impactful thing you can do for beneficial insects is plant a continuous succession of small-flowered plants from early spring through fall frost. Dill, fennel, cilantro allowed to bolt, sweet alyssum, phacelia, buckwheat, and native asters collectively support parasitic wasps, hoverflies, lacewings, and predatory bugs better than any commercial release program. A 4-foot border of these plants around or within the vegetable garden is enough to make a measurable difference.',
+        },
+      ],
+    },
   ],
 }
