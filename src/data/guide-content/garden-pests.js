@@ -397,5 +397,107 @@ export const gardenPestsContent = {
         },
       ],
     },
+    {
+      id: 'soil-pests',
+      title: 'Section 3: Soil Pests — Cutworms, Grubs, Wireworms & Nematodes',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Soil pests damage plants at or below the soil surface, making them difficult to detect until significant damage has occurred. Prevention — physical barriers, crop rotation, beneficial nematodes, and healthy soil biology — is more reliable than treatment for most soil pests. When soil pest damage is suspected, dig around the base of affected plants to examine the root zone.',
+        },
+        {
+          type: 'h3',
+          text: 'Cutworms (Agrotis ipsilon, Peridroma saucia, and others)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Adult: Gray-brown moths; nocturnal; non-damaging as adults',
+            'Larva: 1–2 inch plump caterpillars, gray to brown to nearly black; curl into a C-shape when disturbed; greasy appearance',
+            'What you see: Young transplants and seedlings severed at or just below soil line overnight; plants topple and wilt; the plant appears cut off cleanly',
+            'Hosts: Nearly any young transplant or seedling; particularly destructive on tomatoes, peppers, cabbage family, corn, and annual flowers at transplanting time',
+            'Regions: All 50 states; most damaging at the time of spring and fall transplanting when populations of overwintering or spring-hatched larvae are active in the soil',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Physical collar barriers — a 3–4 inch cylinder of cardboard, newspaper, or plastic pushed 1 inch into the soil and extending 2–3 inches above; most effective prevention. (2) Beneficial nematodes (Steinernema carpocapsae) applied to moist soil before transplanting; effective for 4–6 weeks. (3) Bt kurstaki applied to soil surface at dusk. (4) Diatomaceous earth around transplant bases. (5) Hand-pick by digging 2–3 inches below cut plants at night.',
+            'Natural enemies to protect: Ground beetles, tachinid flies, parasitic wasps, birds, toads',
+            'Cultural controls: Cultivate soil 2–3 weeks before transplanting to expose larvae to birds and weather. Remove plant debris (cutworms hide under it during the day). Check planting areas at dusk with a flashlight for active larvae.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'White Grubs (Japanese Beetle, June Bug, May Beetle larvae — Popillia japonica and related scarab species)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Larva: 1/2″ – 1.5″ C-shaped grubs with a white or cream body, brown head capsule, and 3 pairs of true legs; found in soil, particularly in lawns',
+            'Adult: Beetles emerge in summer — Japanese beetle is metallic green with copper-brown wing covers (1/2″); June bugs are reddish-brown (3/4″ – 1″)',
+            'What you see in lawns: Irregular dead patches; sod rolls back like carpet revealing C-shaped grubs; raccoons and skunks dig up lawn',
+            'What you see in gardens: Roots chewed; plants wilt and die; tugging the plant reveals no root attachment',
+            'Hosts (larvae): Grass roots (primary); vegetable root systems; ornamental plant roots in ground',
+            'Regions: Japanese beetle is primarily eastern US (east of the Mississippi, expanding westward); most damaging in the Northeast and Midwest. Grub damage most visible in late summer and fall.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls for grubs: (1) Milky spore disease (Paenibacillus popilliae) — specific to Japanese beetle grubs; apply to lawns; takes 2–3 seasons to establish but persists for years. (2) Beneficial nematodes (Heterorhabditis bacteriophora) — apply in late summer/early fall when young grubs are near the surface; must be applied to moist soil. (3) Steinernema glaseri for larger grubs.',
+            'Organic controls for adult beetles: (1) Hand-pick adults into soapy water in early morning when sluggish. (2) Row cover over vulnerable plants during peak adult flight. (3) Kaolin clay deterrent. (4) Pyrethrin. AVOID Japanese beetle traps — research shows they attract more beetles than they catch and increase damage in the surrounding area.',
+            'Cultural controls: Reduce lawn area (primary grub habitat). Maintain healthy, deep-rooted turf. Attract and support natural predators: birds, ground beetles, parasitic wasps.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Wireworms (Agriotes spp., Melanotus spp., and other click beetle larvae)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Larva: 1/2″ – 1.5″ long; slender, hard-bodied, shiny, yellow-brown; cylindrical with distinct segments; live in soil 3–6+ years before pupating',
+            'Adult: Click beetles (1/2″ – 3/4″); not directly damaging; make a clicking sound when flipped onto their back',
+            'What you see: Small round holes bored into potato tubers, carrot roots, corn kernels at germination, beets; wilting seedlings with damaged roots; round tunnels through root crops',
+            'Hosts: Root crops (potatoes, carrots, beets, sweet potatoes, radishes); corn and small grain seedlings; transplant roots of many vegetables',
+            'Regions: All regions; most problematic in the Pacific Northwest, California, and in recently turned sod or fields converted from grass. Populations highest in soils with high organic matter.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Beneficial nematodes (Steinernema feltiae) applied to moist soil before planting. (2) Trap crops: bury pieces of potato or carrot as bait traps; dig up and destroy weekly. (3) Diatomaceous earth incorporated into the planting area. (4) Mustard seed meal (biofumigant) incorporated into soil.',
+            'Cultural controls: Avoid planting root crops in areas recently converted from sod. Rotate root crops to new areas annually. Deep cultivation exposes wireworms to birds and desiccation. Allow soil to dry somewhat before planting in wireworm-prone areas.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Root-Knot Nematodes (Meloidogyne incognita, M. arenaria, M. hapla, and related species)',
+        },
+        {
+          type: 'list',
+          items: [
+            'What they are: Microscopic roundworms in the soil; females induce the formation of galls (knots) on roots where they feed and lay eggs; cannot be seen without a microscope',
+            'What you see above ground: Plants stunted, yellowing, wilting despite adequate water — symptoms appear when plants should be vigorous',
+            'What you see below ground: Bumpy, knotted galls on roots — the diagnostic sign. Not the same as nitrogen-fixing nodules (which are smooth and pink).',
+            'Hosts: Tomatoes, peppers, cucumbers, melons, squash, beans, carrots — very wide host range; most vegetable crops are susceptible',
+            'Regions: Most severe in the South and Southwest (Zone 7+) where hot, sandy soils support large populations. M. hapla is the northern root-knot species, active in cooler soils. Worst in light, sandy, warm soils.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) French marigolds (Tagetes patula) as a dense interplanting or cover crop — roots exude compounds toxic to root-knot nematodes; plant densely and till in at season end for best effect (requires a full season). (2) Beneficial nematodes (Steinernema and Heterorhabditis spp.) have some suppressive effect. (3) Soil solarization — highly effective in summer in warm climates; reduces populations in the top 6 inches significantly. (4) Neem cake (meal remaining after oil extraction) incorporated into soil.',
+            'Cultural controls: Choose resistant varieties — look for N in tomato hybrid codes (VFN = Verticillium, Fusarium, Nematode resistant). Crop rotation using non-host crops (corn, onions, garlic, small grains) for 1–2 seasons. Improve soil organic matter to promote natural nematode enemies. Add compost generously.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🪱',
+          text: 'Beneficial nematodes appear as a control across three of the four soil pest profiles above — they are one of the most versatile tools in the organic gardener\'s toolkit. Different species target different pests: Steinernema carpocapsae for cutworms near the soil surface, Heterorhabditis bacteriophora for white grubs, and Steinernema feltiae for wireworms and fungus gnats. Apply to moist soil at dusk or on a cloudy day; UV light kills them quickly. Refrigerate and use within the date on the package.',
+        },
+      ],
+    },
   ],
 }
