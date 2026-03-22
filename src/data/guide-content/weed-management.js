@@ -102,5 +102,69 @@ export const weedManagementContent = {
         },
       ],
     },
+    {
+      id: 'prevention',
+      title: 'Section 2: Prevention — Stop Weeds Before They Start',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Prevention is not glamorous, but it is dramatically more efficient than removal. An hour spent on prevention in spring — applying mulch, planting cover crops, spacing plants correctly — saves multiple hours of weeding throughout the season. The gardener who invests in prevention at the beginning of the season works consistently less than the one who skips prevention and then reacts to emerged weeds all season long.',
+        },
+        {
+          type: 'h3',
+          text: 'Mulch: The Single Most Effective Weed Prevention Tool',
+        },
+        {
+          type: 'p',
+          text: 'A correct application of mulch prevents weed seed germination by depriving seeds of the light they need. Studies consistently show that 3 to 4 inches of opaque organic mulch reduces weed emergence by 70 to 90 percent compared to bare soil. This is not a modest improvement — it is a transformation of the garden\'s weed management burden.',
+        },
+        {
+          type: 'table',
+          headers: ['Mulch Type', 'Depth', 'Weed Suppression', 'Additional Benefits', 'Considerations'],
+          rows: [
+            ['Wood chips (arborist chips)', '3–4 inches', 'Excellent; one of the most effective when applied at correct depth', 'Improves soil structure and biology as it decomposes; often free from tree services; excellent moisture retention', 'Do not apply to vegetable beds where it will interfere with direct seeding; avoid piling against plant stems. Fresh chips may temporarily tie up nitrogen as they decompose.'],
+            ['Shredded bark / bark nuggets', '3–4 inches', 'Very good; large nuggets suppress weeds well', 'Long-lasting; available in various sizes and colors; professional appearance in ornamental beds', 'Larger nuggets can roll downslope; use shredded bark for sloped beds. Decomposes more slowly than wood chips, providing less soil-building benefit.'],
+            ['Straw (wheat or oat)', '3–4 inches', 'Good when weed-free straw is used', 'Excellent for vegetable beds; warms soil in spring; easy to pull back for direct seeding', 'Can contain weed seeds (hay much more so than straw; always use certified weed-free straw). Breaks down quickly — replenish mid-season.'],
+            ['Newspaper / cardboard + mulch', '6–8 layers newspaper (or cardboard) + 2–3 inches mulch on top', 'Outstanding; blocks virtually all light; the gold standard for new bed creation and renovation', 'Sheet mulching with cardboard kills existing vegetation without tilling; excellent for converting lawn to garden; builds soil as it decomposes', 'Cardboard or newspaper must be overlapped 6+ inches at seams to prevent light gaps. Remove tape and staples from cardboard.'],
+            ['Landscape fabric (woven)', 'Install flat, then cover with 2 inches of mulch', 'Excellent initially; degrades over 3–5 years; weed seeds germinate in the mulch layer on top as fabric ages', 'Durable for paths and areas that will not be replanted; allows water penetration', 'NOT recommended for perennial beds or vegetable gardens — fabric becomes entangled with roots and makes removal nearly impossible. Best for permanent landscape areas only.'],
+            ['Living mulch / ground covers', 'Dense enough to shade soil (varies by plant)', 'Excellent once established', 'Ecological value; habitat; beauty; living root systems improve soil biology; does not need replenishing', 'Requires an establishment period; may need supplemental weed control while establishing; competition with desired plants in some applications'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌾',
+          text: 'The Mulch Depth Rule — 3 Inches Is the Minimum: The most common mulching mistake is applying too little. A 1-inch layer provides minimal suppression; 3 to 4 inches is the threshold where suppression becomes highly effective. The second most common mistake is applying mulch against plant stems and tree trunks ("mulch volcano"). Mulch should be pulled back 2 to 3 inches from all stems and trunks — contact with woody stems promotes rot, invites rodents, and encourages adventitious root development. Apply in a donut shape with the center empty.',
+        },
+        {
+          type: 'h3',
+          text: 'Cover Crops: Biological Weed Suppression',
+        },
+        {
+          type: 'p',
+          text: 'Cover crops — plants grown primarily to protect and improve the soil rather than for harvest — are one of the most powerful weed suppression tools available, particularly in vegetable gardens with sections temporarily out of production. A dense cover crop outcompetes weeds for light, water, and nutrients, reducing the weed seed bank through competitive exclusion and allelopathy (chemical suppression of germination).',
+        },
+        {
+          type: 'list',
+          items: [
+            'Summer cover crops (between spring and fall crops): Buckwheat is the fastest-germinating and most effective summer cover crop for weed suppression — it establishes within days, creates dense ground cover, and can be terminated by mowing before it sets seed. Sorghum-sudangrass is an excellent warm-season option for larger areas.',
+            'Winter cover crops (between fall harvest and spring planting): Winter rye, winter wheat, hairy vetch, crimson clover, and winter peas are the most widely used options. They protect the soil through the off-season and are terminated in spring 2 to 3 weeks before planting. Winter rye produces allelopathic compounds that suppress germination of small-seeded annual weeds even after termination.',
+            'Regional cover crop timing: Zone 3–4 — plant winter-hardy covers (winter rye, hairy vetch) by mid-September; plant summer covers (buckwheat) after last frost through July. Zone 5–7 — plant winter covers through October; summer covers through August. Zone 8–10 — cover crops can be grown through most of the year; choose species appropriate to the season.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Planting Design for Weed Suppression',
+        },
+        {
+          type: 'list',
+          items: [
+            'Close spacing: Plants spaced to close the canopy by midsummer shade out weed seeds below. This does not mean overcrowding — it means spacing at the appropriate density for each species to achieve canopy closure. A vegetable garden where plants shade the soil surface between them requires far less weeding than one with wide, open spacing between rows.',
+            'Perennial ground covers: A dense, healthy ground cover in ornamental areas eliminates weeding almost entirely once established. Creeping phlox, ajuga, pachysandra (shade), creeping thyme, epimedium, and native sedges are among the most effective. Choose species appropriate to your climate and light conditions.',
+            'Avoid bare soil: Any area of bare soil not actively being prepared for planting should be covered — with mulch, a cover crop, or a planted ground cover. Bare soil is an invitation to weed colonization that is accepted immediately under the right conditions.',
+            'The importance of healthy, dense plantings: Vigorous, well-spaced, properly fertilized plants that reach their full size outcompete weeds more effectively than stressed, underfed plants. A crowded, nutrient-deficient bed with struggling plants provides more opportunity for weeds than a well-managed bed where plants are thriving.',
+          ],
+        },
+      ],
+    },
   ],
 }
