@@ -971,9 +971,8 @@ Each page has a full metadata export (`title`, `description`, `keywords`, `canon
 **Infographics page implementation notes:**
 - **Shared lightbox:** single `activeLightbox` state (`{ src, alt }`) drives one lightbox overlay for all images — no per-image `useState`
 - **`InfographicSection` component:** reusable helper renders heading, description, image button, caption, and guide link for each infographic
-- **17 live image sections** — all images in `public/infographics/` are wired to sections with descriptions and links to their corresponding guide pages
-- **2 HTML sections** remain for Vegetable Spacing (table) and Watering Frequency (cards) — no infographic images exist for these topics yet
-- **7 AdSense placeholder `<div>`s** spaced throughout the page
+- **27 live image sections** — all images in `public/infographics/` are wired to `InfographicSection` components; no HTML table fallbacks remain
+- **9 AdSense placeholder `<div>`s** spaced throughout the page
 - Affiliate cards at the bottom (Rodale's Encyclopedia, Old Farmer's Almanac)
 - "More Infographics Coming Soon" grid of 6 planned cards
 
@@ -998,6 +997,16 @@ Each page has a full metadata export (`title`, `description`, `keywords`, `canon
 | `Fast_Growing_Privacy_Trees_Guide_IG.png` | Fast-Growing Privacy Trees |
 | `Japanese_Garden_Elements_Guide_IG.png` | Japanese Garden Elements |
 | `Front_Yard_Curb_Appeal_Guide_IG.png` | Front Yard Curb Appeal |
+| `Plants_for_Color_Guide_IG.png` | Plants for Color |
+| `Pollinator_Garden_Guide_IG.png` | Pollinator Garden |
+| `Pizza_Garden_Guide_IG.png` | Pizza Garden |
+| `Salad_Garden_Guide_IG.png` | Salad Garden |
+| `Salsa_Garden_Guide_IG.png` | Salsa Garden |
+| `Plants_for_Fragrance_Guide_IG.png` | Plants for Fragrance |
+| `Porch_Plants_Guide_IG.png` | Porch Plants |
+| `Rain_Barrel_Guide_IG.png` | Rain Barrel Guide |
+| `Vegetable_Spacing_Quick_Reference_IG.png` | Vegetable Spacing Quick Reference |
+| `Watering_Frequency_Guide_by_Plant_Category_IG.png` | Watering Frequency Guide by Plant Category |
 
 **To add a new infographic:**
 1. Drop the PNG into `public/infographics/`
@@ -1005,7 +1014,7 @@ Each page has a full metadata export (`title`, `description`, `keywords`, `canon
 3. Add an ad placeholder `<div>` nearby if the page needs rebalancing
 
 Public media directories:
-- `public/infographics/` — static infographic assets (17 live images)
+- `public/infographics/` — static infographic assets (27 live images)
 - `public/videos/` — static video thumbnail assets
 - `public/podcasts/` — static podcast artwork assets
 

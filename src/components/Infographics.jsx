@@ -261,90 +261,125 @@ export default function Infographics() {
         onOpen={openLightbox}
       />
 
+      {/* Section 18: Plants for Color */}
+      <InfographicSection
+        src="/infographics/Plants_for_Color_Guide_IG.png"
+        alt="Plants for Color infographic"
+        heading="🎨 Plants for Color"
+        description="Bold annuals, perennials, and foliage plants organized by color — with bloom times and design tips for creating vibrant seasonal combinations."
+        guideHref="/guides/plants-for-color"
+        guideName="Plants for Color guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 19: Pollinator Garden */}
+      <InfographicSection
+        src="/infographics/Pollinator_Garden_Guide_IG.png"
+        alt="Pollinator Garden infographic"
+        heading="🐝 Pollinator Garden"
+        description="The best plants for attracting bees, butterflies, and hummingbirds — with bloom succession, native plant highlights, and design principles for a wildlife-friendly garden."
+        guideHref="/guides/pollinator-garden"
+        guideName="Pollinator Garden guide"
+        onOpen={openLightbox}
+      />
+
       {/* Ad placeholder 6 */}
       <div id="adsense-infographics-6" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
 
-      {/* Vegetable Spacing — HTML table (no infographic image yet) */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-2">
-          📐 Vegetable Spacing Quick Reference
-        </h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed">
-          Proper plant spacing prevents disease, reduces competition, and maximizes yield. Measurements
-          are plant-to-plant spacing. Rows should be spaced 1.5–2× plant spacing for in-ground beds.
-        </p>
-        <div className="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700">
-          <table className="w-full text-sm">
-            <thead className="bg-garden-800 text-white">
-              <tr>
-                <th className="px-4 py-2 text-left font-semibold">Vegetable</th>
-                <th className="px-4 py-2 text-left font-semibold">In-Ground Spacing</th>
-                <th className="px-4 py-2 text-left font-semibold">Sq Ft Gardening</th>
-                <th className="px-4 py-2 text-left font-semibold">Depth to Plant</th>
-                <th className="px-4 py-2 text-left font-semibold">Days to Harvest</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ['🍅 Tomato (indeterminate)', '24–36"', '1 per sq ft', 'Transplant deep', '70–85 days'],
-                ['🍅 Tomato (determinate)',   '18–24"', '1 per sq ft', 'Transplant deep', '60–70 days'],
-                ['🥒 Cucumber',              '12–18"', '2 per sq ft', '½–1" seed depth', '50–65 days'],
-                ['🌽 Corn',                  '8–12"',  '1 per sq ft', '1–1.5" seed depth','65–90 days'],
-                ['🥬 Lettuce (leaf)',         '6–8"',   '4 per sq ft', 'Surface sow',      '45–55 days'],
-                ['🥕 Carrot',                '2–3"',   '16 per sq ft','¼" seed depth',    '65–80 days'],
-                ['🫘 Bush Bean',              '4–6"',   '9 per sq ft', '1–1.5" seed depth','50–60 days'],
-                ['🧅 Onion',                 '4–6"',   '9 per sq ft', '½" depth (set)',   '90–120 days'],
-                ['🥦 Broccoli',              '18–24"', '1 per sq ft', 'Transplant ½" deep','60–80 days'],
-                ['🌿 Basil',                 '12"',    '1 per sq ft', 'Surface/thin',     '25–30 days (leaves)'],
-                ['🍓 Strawberry',            '12–18"', '4 per sq ft', 'Crown at soil line','60–90 days'],
-                ['🎃 Pumpkin (standard)',     '36–48"', '1 per 4 sq ft','1" seed depth',   '90–120 days'],
-              ].map(([veg, spacing, sqft, depth, days]) => (
-                <tr key={veg} className="border-t border-gray-100 dark:border-gray-700 even:bg-gray-50 dark:even:bg-gray-800/50">
-                  <td className="px-4 py-2 font-medium text-gray-800 dark:text-gray-200">{veg}</td>
-                  <td className="px-4 py-2 text-gray-700 dark:text-gray-300">{spacing}</td>
-                  <td className="px-4 py-2 text-garden-700 dark:text-garden-400">{sqft}</td>
-                  <td className="px-4 py-2 text-gray-600 dark:text-gray-400">{depth}</td>
-                  <td className="px-4 py-2 text-earth-600 dark:text-earth-400 text-xs">{days}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
+      {/* Section 20: Pizza Garden */}
+      <InfographicSection
+        src="/infographics/Pizza_Garden_Guide_IG.png"
+        alt="Pizza Garden infographic"
+        heading="🍕 Pizza Garden"
+        description="Everything you need to grow your own pizza toppings — tomatoes, peppers, basil, oregano, and more — with spacing, companion planting, and harvest timing."
+        guideHref="/guides/pizza-garden"
+        guideName="Pizza Garden guide"
+        onOpen={openLightbox}
+      />
 
-      {/* Watering Guide */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-2">
-          💧 Watering Frequency Guide by Plant Category
-        </h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed">
-          Overwatering is the #1 killer of container and new transplants. These are general guidelines
-          for established plants — newly transplanted specimens need 2× more frequent watering for the
-          first 2–3 weeks.
-        </p>
-        <div className="grid sm:grid-cols-2 gap-4">
-          {[
-            {emoji:'💦', label:'Daily (Hot Weather)',  color:'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800',   plants:['Container annuals in summer','Hanging baskets','Seedlings in heat','Newly transplanted herbs']},
-            {emoji:'🚿', label:'Every 2–3 Days',       color:'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800', plants:['Tomatoes (in-ground)','Cucumbers & squash','Most container vegetables','Ferns & shade perennials']},
-            {emoji:'🌿', label:'Weekly',               color:'bg-yellow-50 dark:bg-yellow-900/20 border-yellow-200 dark:border-yellow-800',plants:['Established shrubs','Lawn (established)','Most in-ground perennials','Fruit trees (summer)']},
-            {emoji:'🌵', label:'Every 2–4 Weeks',      color:'bg-orange-50 dark:bg-orange-900/20 border-orange-200 dark:border-orange-800',plants:['Succulents & cacti','Established lavender','Native prairie plants','Drought-tolerant groundcovers']},
-          ].map(({emoji, label, color, plants}) => (
-            <div key={label} className={`rounded-xl border p-4 ${color}`}>
-              <div className="font-semibold text-gray-800 dark:text-gray-200 mb-2">{emoji} {label}</div>
-              <ul className="space-y-1">
-                {plants.map(p => (
-                  <li key={p} className="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-1">
-                    <span className="text-gray-400 mt-0.5">•</span>{p}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* Section 21: Salad Garden */}
+      <InfographicSection
+        src="/infographics/Salad_Garden_Guide_IG.png"
+        alt="Salad Garden infographic"
+        heading="🥗 Salad Garden"
+        description="Fast-growing greens, succession planting schedules, and cut-and-come-again techniques for a continuous harvest of fresh salad ingredients."
+        guideHref="/guides/salad-garden"
+        guideName="Salad Garden guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 22: Salsa Garden */}
+      <InfographicSection
+        src="/infographics/Salsa_Garden_Guide_IG.png"
+        alt="Salsa Garden infographic"
+        heading="🌶️ Salsa Garden"
+        description="Tomatoes, peppers, onions, cilantro, and tomatillos — with zone-specific timing, companion planting, and harvest tips for a fresh salsa garden."
+        guideHref="/guides/salsa-garden"
+        guideName="Salsa Garden guide"
+        onOpen={openLightbox}
+      />
 
       {/* Ad placeholder 7 */}
       <div id="adsense-infographics-7" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
+
+      {/* Section 23: Plants for Fragrance */}
+      <InfographicSection
+        src="/infographics/Plants_for_Fragrance_Guide_IG.png"
+        alt="Plants for Fragrance infographic"
+        heading="🌸 Plants for Fragrance"
+        description="The most fragrant garden plants by season — shrubs, perennials, annuals, and vines with placement tips for maximizing scent near paths, windows, and seating areas."
+        guideHref="/guides/plants-for-smell"
+        guideName="Plants for Fragrance guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 24: Porch Plants */}
+      <InfographicSection
+        src="/infographics/Porch_Plants_Guide_IG.png"
+        alt="Porch Plants infographic"
+        heading="🪴 Porch Plants"
+        description="The best container plants for sunny and shady porches — with care requirements, seasonal swaps, and tips for overwintering tender favorites."
+        guideHref="/guides/porch-plants"
+        guideName="Porch Plants guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 25: Rain Barrel */}
+      <InfographicSection
+        src="/infographics/Rain_Barrel_Guide_IG.png"
+        alt="Rain Barrel Guide infographic"
+        heading="🌧️ Rain Barrel Guide"
+        description="How to set up a rain barrel system — collection math, installation steps, legal status by state, and tips for getting the most from your stored rainwater."
+        guideHref="/guides/rain-barrel"
+        guideName="Rain Barrel guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Ad placeholder 8 */}
+      <div id="adsense-infographics-8" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
+
+      {/* Section 26: Vegetable Spacing */}
+      <InfographicSection
+        src="/infographics/Vegetable_Spacing_Quick_Reference_IG.png"
+        alt="Vegetable Spacing Quick Reference infographic"
+        heading="📐 Vegetable Spacing Quick Reference"
+        description="Proper plant spacing prevents disease, reduces competition, and maximizes yield. In-ground spacing, square foot gardening density, seed depth, and days to harvest at a glance."
+        guideHref="/guides/square-foot-gardening"
+        guideName="Square Foot Gardening guide"
+        onOpen={openLightbox}
+      />
+
+      {/* Section 27: Watering Frequency */}
+      <InfographicSection
+        src="/infographics/Watering_Frequency_Guide_by_Plant_Category_IG.png"
+        alt="Watering Frequency Guide by Plant Category infographic"
+        heading="💧 Watering Frequency Guide by Plant Category"
+        description="Overwatering is the #1 killer of container plants and new transplants. Use this guide to dial in the right frequency for every plant type in your garden."
+        onOpen={openLightbox}
+      />
+
+      {/* Ad placeholder 9 */}
+      <div id="adsense-infographics-9" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
 
       {/* Affiliate Products */}
       <section className="mb-12">
