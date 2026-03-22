@@ -556,5 +556,103 @@ export const indoorHouseplantsContent = {
         },
       ],
     },
+    {
+      id: 'soil-pots-repotting',
+      title: 'Section 5: Soil, Pots & Repotting',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The potting mix and container you choose affect every other aspect of plant care — how quickly the soil dries, how well the roots are oxygenated, how efficiently nutrients are available, and how susceptible the plant is to root rot. Good decisions here prevent problems that no amount of attentive watering or fertilizing can fix afterward.',
+        },
+        {
+          type: 'h3',
+          text: 'Potting Mixes: What\'s in the Bag and What to Add',
+        },
+        {
+          type: 'p',
+          text: 'Standard all-purpose potting mix is suitable for most common tropical houseplants straight from the bag, but it benefits from amendment for specific plant types. Potting mix is not garden soil — it contains little or no actual soil but is instead a blend of peat or coco coir, perlite, vermiculite, and sometimes bark or compost. This blend provides adequate drainage and aeration for most plants in most conditions.',
+        },
+        {
+          type: 'table',
+          headers: ['Soil Type', 'Best For', 'How to Make It', 'Key Benefit'],
+          rows: [
+            [
+              'Standard potting mix (as-sold)',
+              'Moisture-loving tropicals: calathea, peace lily, ferns, pothos, philodendron in medium-to-bright light',
+              'Purchase standard all-purpose potting mix; use as-is',
+              'Good moisture retention; widely available; suitable for most average tropical houseplants',
+            ],
+            [
+              'Well-draining tropical mix',
+              'Most aroids (monstera, philodendron, pothos), rubber plant, ZZ plant',
+              'Standard potting mix + 20–25% perlite by volume. Mix thoroughly.',
+              'Improved drainage and root aeration; reduces risk of root rot in plants that prefer to dry slightly between waterings',
+            ],
+            [
+              'Cactus/succulent mix',
+              'Cacti, succulents, aloe, haworthia, jade plant, echeveria',
+              'Purchase premixed cactus/succulent potting mix; OR standard potting mix + 50% coarse perlite + small amount of coarse sand',
+              'Very fast drainage; prevents the root rot that kills succulents in standard mixes',
+            ],
+            [
+              'Orchid bark mix',
+              'Phalaenopsis orchids, some epiphytic plants',
+              'Purchase premixed orchid bark; or large bark chips + perlite + a small amount of sphagnum moss',
+              'Orchid roots need air, not soil; bark mix provides the support and moisture retention orchids require without smothering roots',
+            ],
+            [
+              'High-humidity mix (moisture-retaining)',
+              'Ferns, calathea in low-humidity environments; terrarium plants',
+              'Standard potting mix + 20% coco coir + reduce perlite to 10%; or add a small amount of sphagnum moss',
+              'Enhanced moisture retention helps maintain consistent moisture for plants that cannot tolerate drying out',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'Perlite — those tiny white balls in potting mix that look like styrofoam beads — is a volcanic glass heated until it pops into a lightweight, porous particle. Adding 20–25% perlite to standard potting mix is the single most impactful amendment you can make to prevent root rot. For succulents, increase to 40–50%. A bag costs $5–10 and lasts for years.',
+        },
+        {
+          type: 'h3',
+          text: 'Choosing the Right Pot',
+        },
+        {
+          type: 'list',
+          items: [
+            'Size matters enormously: The most common potting mistake is choosing a pot that is too large. A plant in an oversized pot sits in soil that takes weeks to dry out, creating chronically moist conditions that promote root rot. Choose a pot that is 1–2 inches larger in diameter than the plant\'s current root ball.',
+            'Drainage holes are non-negotiable: Every pot used for a living plant should have at least one drainage hole. If a beautiful decorative pot lacks holes, use it as a cachepot — place the plant in a plain nursery pot with drainage inside the decorative pot and remove the inner pot to water.',
+            'Terracotta (unglazed clay): Porous terracotta allows air and moisture movement through the pot walls, which dries soil faster and reduces root rot risk. Ideal for succulents, cacti, Mediterranean herbs, and any plant that prefers drying between waterings. Trade-off: you may need to water more frequently.',
+            'Glazed ceramic and plastic: Non-porous; holds moisture longer than terracotta. Better for moisture-loving plants (calathea, ferns, peace lily) and in low-humidity environments where soil would otherwise dry too quickly.',
+            'Self-watering pots: Feature a reservoir at the bottom that wicks water up to the roots as needed. Genuinely useful for forgetful waterers and plants that benefit from consistent moisture. Less appropriate for drought-tolerant plants that need the soil to dry completely between waterings.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Repotting: When and How',
+        },
+        {
+          type: 'p',
+          text: 'Most houseplants benefit from repotting every 1–2 years, though some prefer to be somewhat rootbound (snake plant, ZZ plant, peace lily) and should be repotted less frequently. The signs that a plant needs repotting are reliable: roots emerging from drainage holes; roots circling the soil surface; the plant drying out extremely rapidly after watering; soil that has become compacted or has broken down into a dense mass.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Choose the right time: Spring is the ideal time to repot most houseplants — the beginning of the active growth season gives roots the longest possible warm period to establish in their new container. Avoid repotting in winter when the plant is growing slowly, or when the plant is severely stressed by pests, disease, or root rot.',
+            'Choose the right pot: One size up only — 1–2 inches larger in diameter. No larger.',
+            'Prepare the new pot: Place a coffee filter or mesh screen over the drainage hole to prevent soil from washing out while still allowing drainage. Add a layer of fresh potting mix to the bottom.',
+            'Remove the plant: Tip the pot on its side and gently slide the plant out. If stuck, run a knife or thin spatula around the inside edge. Do not pull the stem.',
+            'Inspect and prepare the root ball: Shake off the old soil gently. Examine the roots — white and firm is healthy; brown, black, or mushy roots are rotted and should be trimmed away with clean scissors. If significant root rot is present, repotting is urgent; trim all rotted roots, let the plant dry for a few hours, and repot in fresh, dry mix.',
+            'Position and fill: Place the plant in the center of the new pot at the same depth it was previously growing. Fill in around the root ball with fresh potting mix, pressing gently to eliminate large air pockets. Leave 1 inch of space below the pot rim for watering.',
+            'Water and wait: Water thoroughly after repotting. Then wait at least 4–6 weeks before fertilizing — give any damaged roots time to recover before adding fertilizer.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🪴',
+          text: 'Spring repotting tip: if you are unsure whether a plant needs repotting, gently tip it out of its pot in spring to check. If the roots are tightly circling the pot or have filled the entire soil mass, it\'s time. If the roots still have room to grow, slide the plant back in and check again next spring.',
+        },
+      ],
+    },
   ],
 }
