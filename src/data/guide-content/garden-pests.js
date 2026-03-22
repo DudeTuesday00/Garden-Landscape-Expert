@@ -728,5 +728,106 @@ export const gardenPestsContent = {
         },
       ],
     },
+    {
+      id: 'other-pests',
+      title: 'Section 6: Other Common Pests — Slugs, Earwigs, Leafhoppers, Leafminers & More',
+      blocks: [
+        {
+          type: 'p',
+          text: 'This section covers common garden pests that don\'t fit neatly into the beetle, caterpillar, or sucking insect categories but are frequently encountered and sometimes difficult to identify or control.',
+        },
+        {
+          type: 'h3',
+          text: 'Slugs & Snails (Arion spp., Deroceras spp. — slugs; Cornu aspersum and others — snails)',
+        },
+        {
+          type: 'list',
+          items: [
+            'What they are: Mollusks, not insects; slugs lack shells; snails have coiled shells; both are soft-bodied and nocturnal; leave characteristic slime trails',
+            'Size: Slugs 1/2″ – 3″; snails 3/4″ – 1.5″ with shell',
+            'What you see: Irregular holes in leaves with smooth edges; complete consumption of seedlings; slime trails on leaves, soil, and nearby surfaces; primarily nocturnal — rarely seen in daylight; worst in cool, moist conditions',
+            'Hosts: Almost any plant; particularly damaging to seedlings, lettuce, hostas, strawberries, and the cabbage family; thrives under mulch',
+            'Regions: All regions; most severe in the Pacific Northwest, Northeast, and other high-humidity climates. Population explosions after cool, wet springs.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Iron phosphate bait (Sluggo, Escar-Go) — highly effective; safe for wildlife, pets, and children; OMRI-listed; apply in the evening when slugs are active; reapply after rain. (2) Diatomaceous earth around plant bases (loses effectiveness when wet; must be reapplied). (3) Copper tape as a barrier around raised beds — electrical charge deters slug crossing. (4) Hand-pick at night with a flashlight; drop into soapy water or salt. (5) Beer traps (containers sunk to rim level, filled with beer — slugs drown; effective but requires frequent emptying).',
+            'Natural enemies to protect: Ground beetles; rove beetles; toads and frogs (excellent slug predators — a toad in the garden is worth a dozen treatments); garter snakes; birds (especially robins and ducks)',
+            'Cultural controls: Reduce moisture and mulch depth in slug-prone areas during wet seasons. Water in the morning rather than evening so the soil surface dries before nightfall. Eliminate hiding spots (boards, dense ground covers, leaf piles) near vulnerable plants.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Earwigs (Forficula auricularia — European earwig)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Appearance: 3/4″ – 1″; reddish-brown; distinctive rear pincers (forceps); 6 legs; wings folded under short wing covers; nocturnal; moves quickly',
+            'Role in garden: IMPORTANT — earwigs are omnivores. They eat plant material AND pest insects (aphids, insect eggs, soft-bodied larvae). They are considered beneficial in many situations; management is warranted only when plant damage is significant.',
+            'What you see: Ragged holes in flowers, soft leaves, and seedlings; damage to corn silk and strawberry fruit; no slime trail (distinguishes from slug damage); found hiding in mulch, under boards, and in curled leaves during the day',
+            'Hosts: Marigolds, dahlias, lettuces, strawberries, corn, soft-tissue seedlings; significant plant damage is most common only in dense populations',
+            'Regions: Throughout the US; most populations in the western states are European earwig, introduced in the early 20th century. They are abundant and largely beneficial.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls (only when damage warrants): (1) Eliminate hiding places — reduce mulch depth near vulnerable plants; remove boards and debris. (2) Trap: roll up damp newspaper at night and dispose of in the morning; or use a tuna can filled with a small amount of oil — earwigs fall in and drown. (3) Diatomaceous earth around plant bases. (4) Spinosad for severe situations.',
+            'Natural enemies to protect: Tachinid flies (Bigonicheta spinipennis — a specific earwig parasitoid); toads; ground beetles',
+            'Cultural controls: Assess whether earwigs are actually causing significant damage before treating — they consume significant numbers of aphids and other pests and are often a net benefit. Damage from earwigs is often confused with slug damage; look for slime trails to distinguish.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Leafhoppers (Empoasca fabae — potato leafhopper; Macrosteles quadrilineatus — aster leafhopper; many species)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Appearance: 1/8″ – 1/4″; wedge-shaped; green, yellow, or brown; hold wings tent-like over body; fly and hop sideways rapidly when disturbed',
+            'What you see: Stippled, pale leaves; "hopperburn" (potato leafhopper) — leaf edges turn yellow then brown and curl under; stunted growth; some species vector plant diseases (aster yellows — Macrosteles spp.; beet curly top — Circulifer tenellus)',
+            'Hosts: Potatoes, beans, grapes, apples, alfalfa (potato leafhopper); aster family and many ornamentals (aster leafhopper); sugar beets, tomatoes (beet leafhopper)',
+            'Regions: Potato leafhopper: eastern US; migrates north from the Gulf Coast each spring; particularly severe in the Midwest and Northeast on potatoes and beans. Aster leafhopper: throughout the US.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Insecticidal soap applied to leaf undersides where nymphs feed. (2) Pyrethrin. (3) Neem oil as a deterrent. (4) Row cover prevents infestation on beans and potatoes.',
+            'Natural enemies to protect: Anagrus epos parasitic wasp (attacks leafhopper eggs in grape vineyards); spiders; minute pirate bugs; assassin bugs',
+            'Cultural controls: Reflective silver mulch significantly reduces leafhopper landing. Monitor with yellow sticky traps. Remove weeds that serve as leafhopper reservoirs. For aster yellows disease: remove infected plants immediately (there is no cure) and control the leafhopper vector in susceptible plantings.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Leafminers (Liriomyza sativae, Agromyza spp., Phyllocnistis citrella, and many other species)',
+        },
+        {
+          type: 'list',
+          items: [
+            'What they are: Larvae of small flies, moths, or beetles that mine (tunnel) between the upper and lower leaf surfaces, leaving characteristic visible trails or blotches',
+            'What you see: Serpentine (winding) pale yellow-white trails or irregular blotches (depending on species) visible on the leaf surface; leaf tissue intact but pale where mined; hold the leaf to light to see the larva in early stages',
+            'Hosts: Spinach, beet, chard (Pegomya spp.); beans, tomatoes, peppers (Liriomyza spp.); citrus (Phyllocnistis); columbine and many ornamentals — host specificity varies by species',
+            'Regions: Different species throughout the US. Liriomyza vegetable leafminer is most prevalent in California, Florida, and the South. Columbine leafminer affects ornamentals throughout the eastern US.',
+          ],
+        },
+        {
+          type: 'list',
+          items: [
+            'Organic controls: (1) Spinosad — most effective; must be applied when adults are flying, as eggs and larvae inside the leaf are protected from contact sprays. (2) Neem oil as a deterrent to adult egg-laying. (3) Remove and destroy mined leaves — the larvae are inside; removing them removes the pest. (4) Yellow sticky traps to capture adult flies and reduce egg-laying.',
+            'Natural enemies to protect: Diglyphus isaea parasitic wasp — a highly effective natural enemy of leafminer larvae; present naturally in gardens; can be purchased commercially for greenhouse use',
+            'Cultural controls: Row cover prevents adult egg-laying. If a mine is still active (larva visible inside), squish the end of the mine to kill the larva before removing the leaf. Avoid broad-spectrum spraying that kills D. isaea.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🐸',
+          text: 'A single toad can eat up to 100 insects, slugs, and other invertebrates per night — every night of the growing season. Encourage toads by providing a shallow water dish at ground level, leaving some areas of bare moist soil for burrowing, and placing a broken clay pot as a daytime shelter. Avoid pesticide use near toad habitat; amphibians absorb chemicals through their skin and are highly vulnerable to even organic sprays.',
+        },
+      ],
+    },
   ],
 }
