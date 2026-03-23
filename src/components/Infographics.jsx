@@ -225,10 +225,21 @@ export default function Infographics() {
         onOpen={openLightbox}
       />
 
+      {/* Section 15: Garden Pests ID & Control */}
+      <InfographicSection
+        src="/infographics/Garden_Pests_ID_Charts_Guide_IG.png"
+        alt="Garden Pests ID & Control infographic"
+        heading="🐛 Garden Pests ID & Control"
+        description="Visual identification for 50+ common garden pests — with symptom-based diagnosis, organic controls, and natural enemy strategies organized by pest type."
+        guideHref="/guides/garden-pests"
+        guideName="Garden Pests ID & Control guide"
+        onOpen={openLightbox}
+      />
+
       {/* Ad placeholder 5 */}
       <div id="adsense-infographics-5" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
 
-      {/* Section 15: Fast-Growing Privacy Trees */}
+      {/* Section 16: Fast-Growing Privacy Trees */}
       <InfographicSection
         src="/infographics/Fast_Growing_Privacy_Trees_Guide_IG.png"
         alt="Fast-Growing Privacy Trees infographic"
@@ -459,7 +470,6 @@ export default function Infographics() {
         <div className="grid sm:grid-cols-2 gap-3">
           {[
             ['🌱','Seed Starting Calendar by Zone','Printable monthly seed-start chart for Zones 3–9'],
-            ['🐛','Common Garden Pests ID Chart','Visual pest identification with organic controls'],
             ['🌼','Pollinator Attraction Guide','Which flowers attract which beneficial insects'],
             ['🍂','Fall Garden Prep Checklist','Zone-specific fall tasks from perennial cutback to bulb planting'],
             ['🌿','Herb Drying & Storage Guide','Best methods for each herb type with shelf-life notes'],
