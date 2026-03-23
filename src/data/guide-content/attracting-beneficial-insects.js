@@ -457,5 +457,124 @@ export const attractingBeneficialInsectsContent = {
         },
       ],
     },
+    {
+      id: 'habitat',
+      title: 'Water, Shelter & Overwintering Habitat',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Plants are the foundation of the beneficial insect garden, but plants alone are not sufficient. Beneficial insects also require water, shelter from extreme weather and predators, nesting sites, and overwintering quarters. In a conventional, highly managed landscape — regularly tilled, cleaned up in fall, mulched wall to wall with bark, and surrounded by lawn — most of these resources are absent. Creating a fully functional beneficial insect community requires addressing all four pillars: food (nectar and pollen), water, nesting habitat, and overwintering habitat.',
+        },
+        {
+          type: 'h3',
+          text: 'Water',
+        },
+        {
+          type: 'p',
+          text: 'Beneficial insects need water, particularly during hot, dry periods. Unlike birds, which can use a standard birdbath, many small beneficial insects need very shallow water with rough or textured surfaces that allow them to land and drink without falling in. A clean birdbath with steep sides and smooth porcelain offers almost nothing to beneficial insects — they will land, be unable to get traction, fall into the water, and drown.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Shallow water source: A wide, shallow dish (a plant saucer works well), a ceramic bowl filled with coarse gravel and water, or a wide terracotta pot saucer placed flat on the ground provides safe drinking access. The water surface should be no more than ½ inch deep, with rocks, gravel, or marbles creating safe perches.',
+            'Wet mud: Many native bees and beneficial wasps collect mud for nest construction. A small consistently moist patch of bare, sandy-clay soil — even a bucket filled with muddy water set in a corner — serves this function.',
+            'Location: Place water sources near plantings, in partial shade to reduce evaporation, and within easy reach for refilling. During drought or heat waves, check and refill every day or two.',
+            'Mosquito management: Change the water every 2–3 days to prevent mosquito breeding, or place BTi (Bacillus thuringiensis israelensis) dunks in larger water features. Mosquito larvae cannot survive in water that is changed regularly.',
+            'Sand puddles: A permanently moist patch of fine sand in a sunny location is used by many ground-nesting bees and beneficial wasps for water and mineral absorption.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Nesting Habitat for Native Bees and Beneficial Wasps',
+        },
+        {
+          type: 'p',
+          text: 'Most beneficial insects in the garden — native bees, parasitic wasps, predatory wasps, ground beetles — do not live in hives or colonies. They are solitary insects that find or create individual nests. The two primary nest types in most gardens are ground nests (70% of native bee species nest in the ground) and cavity nests (hollow stems, beetle galleries in wood, pre-existing holes).',
+        },
+        {
+          type: 'table',
+          headers: ['Habitat Type', 'Who Uses It', 'How to Provide It', 'Management Notes'],
+          rows: [
+            [
+              'Bare or sparsely vegetated ground',
+              '70% of native bee species (ground-nesters): mining bees (Andrena, Colletes), sweat bees (Halictus, Lasioglossum), digger bees (Anthophora), cicada killer wasps, many ground-nesting wasps',
+              'Leave areas of bare, undisturbed, well-drained soil — especially south-facing slopes that warm quickly in spring. Sandy loam or fine sandy soil is preferred. Even a 1–2 sq ft patch is useful. Avoid mulching these areas.',
+              'Do not disturb from fall through spring as nests may be active or dormant. Ground-nesting bees excavate small round holes; leave them alone — they are essentially harmless and highly beneficial.',
+            ],
+            [
+              'Hollow or pithy stems',
+              'Small solitary bees (small mason bees, small sweat bees), parasitic and predatory wasps, some lacewing species',
+              'Leave standing hollow or pithy-stemmed perennials through winter and into early spring: cup plant (Silphium), elderberry (Sambucus), Joe-Pye weed (Eutrochium), ironweed (Vernonia), raspberry canes, roses, ornamental grasses with hollow culms. Cut stems to 12–18 in height rather than cutting to the ground.',
+              'Do not cut these stems until late spring (after last frost, when daytime temperatures are reliably above 50°F) to allow emergence of overwintering beneficials. Chop into shorter sections and leave on the ground after cutting to allow late emergers to exit.',
+            ],
+            [
+              'Undisturbed wood: logs, stumps, snags',
+              'Bumble bees (often nest in abandoned rodent burrows near wood), carpenter bees (Xylocopa — nest in soft dead wood), many predatory beetles, parasitic wasps',
+              'Leave one or more pieces of soft, partially rotted wood (log, stump, or section of branch) in a quiet corner of the garden. An undisturbed pile of branches and brush in a back corner serves multiple insect species simultaneously.',
+              'Carpenter bees are native, solitary, and highly important pollinators; their round entrance holes in soft wood are harmless in a garden context.',
+            ],
+            [
+              'Leaf litter',
+              'Overwintering beneficials including beneficial beetles (Carabidae), firefly larvae, many parasitoid pupae, bumble bee queens, spiders',
+              'Leave fallen leaves in place under shrubs and in garden beds through winter and into spring. A leaf layer of 2–3 inches is an insulating overwintering blanket for a very wide range of garden allies. Shred or chop leaves if runoff is a concern, but keep them in place.',
+              'Resist the urge to "clean up" the garden completely in fall. The leaf layer under trees and shrubs is not a disease reservoir — it is an overwintering habitat bank. Rake paths for safety; leave bed areas undisturbed.',
+            ],
+            [
+              'Brush and debris piles',
+              'Overwintering beneficials including native bumble bee queens, many beneficial beetles, spiders, and small mammals that in turn support insect diversity',
+              'A discreet pile of woody prunings, bark pieces, and rough material tucked in a corner provides layered overwintering habitat for many insect species.',
+              'Even a small pile (2–3 ft across) in an out-of-sight corner provides measurable habitat value.',
+            ],
+            [
+              'Rock and stone features',
+              'Ground beetles (Carabidae), rove beetles, beneficial spiders, lizards (secondary pest predators)',
+              'Flat rocks embedded in the ground at the edge of garden beds create sheltered microhabitats under and around them. Stone edging, dry-stacked stone walls, and stepping stones all provide beneficial microhabitat.',
+              'Ground beetles are among the most effective slug, cutworm, and soil pest predators in the garden; rock microhabitats directly support them.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Insect Hotels and Nest Boxes',
+        },
+        {
+          type: 'p',
+          text: 'Commercial and DIY "insect hotels" — structures filled with hollow bamboo tubes, drilled wood blocks, pine cones, and other materials — have become popular garden accessories. Their value is real but often overstated. Hollow-tube nesting structures primarily benefit two groups: mason bees (Osmia species) and leafcutter bees (Megachile species), both of which are highly effective pollinators. They provide far less benefit to the parasitic and predatory insects most important for pest suppression.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Effective tube nesting: Use paper tubes or natural bamboo tubes of 5/16-inch (8mm) inner diameter for mason bees — this is the optimal size for Osmia lignaria, the orchard mason bee. Tubes should be 6–8 inches deep, closed at the back, and open at the front. Replace tubes or paper inserts annually to prevent parasite and disease buildup.',
+            'Wood blocks: Untreated wood blocks (cedar or pine) drilled with multiple hole diameters (3/16, 1/4, 5/16, 3/8 inch) attract a greater diversity of cavity-nesting species. Drill to a depth of at least 3–4 inches; blind (dead-end) holes only.',
+            'Placement: Face tube/block structures south to southeast, at a height of 3–6 feet, with morning sun and shelter from afternoon wind and rain. A small roof overhang or protection from direct rain significantly extends usability.',
+            'What insect hotels cannot replace: Standing hollow stems, bare ground, and leaf litter are far more important to overall beneficial insect diversity than any purchased structure. Build and manage the living habitat first; add artificial structures as a supplement.',
+            'Bundles, not bunches: Avoid insect hotels with many different materials bundled together haphazardly (pine cones, sticks, bark) — these primarily serve as decoration and rarely provide functional nesting sites. Focus on correctly-sized, correctly-oriented tubes and drilled wood blocks.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Overwintering Habitat — The Fall and Winter Garden',
+        },
+        {
+          type: 'p',
+          text: 'The most consequential habitat decision in the entire gardening year is how the garden is managed in fall and early winter. The conventional "clean garden" approach — cutting all perennials to the ground, removing all leaf litter, tilling the beds, and putting the garden "to bed" — is simultaneously the most thorough and the most damaging management practice for beneficial insects. It destroys the overwintering habitat of the insects that would otherwise emerge in spring already present in the garden.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Leave standing structure: Leave perennials, ornamental grasses, and shrub prunings standing through winter. The hollow stems, seed heads, and supporting architecture are habitat for dozens of beneficial insect species.',
+            'The "messy" garden is the functional garden: Research consistently shows that gardens managed for overwintering insect habitat — with standing stems, leaf litter, and brush — support dramatically higher beneficial insect populations the following season than cleaned-up gardens.',
+            'Bumble bee queens: Mated bumble bee queens overwinter just a few inches underground in loose soil or under leaf litter at the base of plants and shrubs. Aggressive fall raking and cleanup kills queens before they can establish next year\'s colonies. Leave an undisturbed leaf layer at the base of shrubs and in quiet corners.',
+            'Timing of spring cutback: The single most important timing rule: do not cut back perennials or hollow stems until daytime temperatures are consistently above 50°F and remain there for at least two weeks. This is typically late April to mid-May across most of the US. Cutting earlier destroys insects still in dormancy; cutting later is fine.',
+            'The "leave the leaves" principle: Fallen leaves, particularly under trees and shrubs, should be left in place or raked into garden beds rather than removed from the property. They provide insulating overwintering cover for firefly larvae, beneficial beetles, many moth and butterfly pupae, and other species. A 2–3 inch leaf layer in a bed is not a disease risk — it is a habitat investment.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🍂',
+          text: 'Delay the spring garden cleanup by 6–8 weeks from when you normally do it. This single change — waiting until temperatures are reliably above 50°F before cutting stems and raking beds — has been shown in research to more than double beneficial insect emergence from overwintering sites compared to early cleanup. The calendar date that feels "late" for cleanup is in fact the ecologically correct date.',
+        },
+      ],
+    },
   ],
 }
