@@ -45,6 +45,7 @@ import { modernMinimalistGardenContent } from './modern-minimalist-garden.js'
 import { indoorHouseplantsContent } from './indoor-houseplants.js'
 import { weedManagementContent } from './weed-management.js'
 import { gardenPestsContent } from './garden-pests.js'
+import { attractingBeneficialInsectsContent } from './attracting-beneficial-insects.js'
 
 export const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -88,4 +89,5 @@ export const contentMap = {
   'indoor-houseplants': indoorHouseplantsContent,
   'weed-management': weedManagementContent,
   'garden-pests': gardenPestsContent,
+  'beneficial-insects': attractingBeneficialInsectsContent,
 }
