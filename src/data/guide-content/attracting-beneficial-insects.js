@@ -961,5 +961,106 @@ export const attractingBeneficialInsectsContent = {
         },
       ],
     },
+    {
+      id: 'natural-enemies-by-pest',
+      title: 'Natural Enemies by Pest Target',
+      blocks: [
+        {
+          type: 'p',
+          text: 'One of the most practical ways to approach beneficial insect gardening is to identify the specific pests causing damage in your garden and then understand which natural enemies target them — and which plants attract those natural enemies. The following reference tables are organized by pest category, listing the key predators and parasitoids that provide control, their biological mechanism, the plants that support them, and any important notes for the home gardener.',
+        },
+        {
+          type: 'h3',
+          text: 'Aphids',
+        },
+        {
+          type: 'table',
+          headers: ['Natural Enemy', 'Type', 'Control Mechanism', 'Best Supporting Plants', 'Notes'],
+          rows: [
+            ['Parasitic wasps (Aphidius, Lysiphlebus, Praon, Ephedrus spp.)', 'Parasitoid', 'Female lays a single egg inside an aphid; the larva consumes the aphid from the inside; the host becomes a tan "mummy" — a visible diagnostic sign of active parasitoid activity', 'Dill, fennel, cilantro, sweet alyssum, phacelia, yarrow, buckwheat', 'Mummified aphids on a colony mean parasitoids are already working — do not spray the colony if mummies are present'],
+            ['Ladybugs (Coccinella septempunctata, Hippodamia convergens, and many others)', 'Predator', 'Adults and larvae both consume aphids directly; a single larva may eat 200–400 aphids before pupating', 'Dill, fennel, yarrow, goldenrod, native asters, tansy', 'Wild-caught ladybugs purchased for release disperse immediately and provide minimal control; habitat that supports resident populations is far more effective'],
+            ['Green lacewing larvae (Chrysoperla spp.)', 'Predator', 'Larvae (called "aphid lions") are aggressive generalist predators that consume aphids with hollow sickle-shaped mandibles; they inject digestive enzymes and drain liquefied contents', 'Dill, fennel, sweet alyssum, coriander, goldenrod, native asters', 'Adults are nectar and pollen feeders and require flowering plants to reproduce; larvae are where the pest control happens'],
+            ['Hoverfly larvae (Syrphidae family)', 'Predator', 'Larvae of many species are blind, legless aphid hunters that move through colonies by touch, consuming aphids continuously', 'Sweet alyssum, phacelia, dill, fennel, cilantro, buckwheat, native asters — adults require these for nectar', 'Adults hover motionless in the air and are often mistaken for small bees or wasps; they are completely harmless and outstanding pollinators as well as aphid predators'],
+            ['Minute pirate bug (Orius spp.)', 'Predator', 'Pierces and drains aphids, thrips, mites, and whitefly with a short beak; feeds on eggs, nymphs, and adults of multiple pest species', 'Sweet alyssum, dill, goldenrod, native asters, corn tassels', 'Minute pirate bugs can bite humans if prey is scarce — bites are sharp but harmless'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Caterpillars & Moth Larvae',
+        },
+        {
+          type: 'table',
+          headers: ['Natural Enemy', 'Type', 'Control Mechanism', 'Best Supporting Plants', 'Notes'],
+          rows: [
+            ['Trichogramma wasps (Trichogramma spp.)', 'Egg parasitoid', 'Tiny wasps (0.3–0.4 mm) that parasitize the eggs of over 200 moth and butterfly species — corn earworm, tomato hornworm, cabbage looper, codling moth, squash vine borer — before caterpillars ever hatch', 'Sweet alyssum, dill, fennel, phacelia, coriander planted immediately adjacent to the target crop', 'Commercially available for release; most effective when insectary plants are directly adjacent to the protected crop'],
+            ['Cotesia wasps (Cotesia glomerata, C. congregata)', 'Larval parasitoid', 'Parasitize imported cabbageworm (C. glomerata) and tomato hornworm (C. congregata); larvae emerge through the caterpillar\'s skin and spin white silk cocoons on the outside of the still-living host — a very visible biological control event', 'Dill, fennel, yarrow, sweet alyssum, native asters', 'Never remove a caterpillar covered in white cocoons — the parasitoids are completing development and will emerge to continue the cycle; removing it destroys the next generation'],
+            ['Ground beetles (Carabidae family)', 'Predator', 'Nocturnal hunters that pursue cutworms, armyworms, and other ground-surface caterpillars; some species also consume weed seeds', 'Undisturbed soil, permanent mulch, and perennial plantings for daytime shelter — not dependent on flowers for feeding', 'No-till practices and permanent perennial plantings dramatically increase ground beetle populations; tillage destroys overwintering eggs and pupae'],
+            ['Tachinid flies (Tachinidae family)', 'Parasitoid', 'Largest family of parasitoid flies; parasitize caterpillars, stink bugs, beetle larvae, and sawfly larvae; female deposits eggs on or near the host; larvae burrow in and consume the host while it remains alive', 'Dill, fennel, coriander, phacelia, sweet alyssum, goldenrod, native asters', 'Over 1,300 species in North America; the most taxonomically diverse group of parasitoid insects; adults are often dismissed as "just flies"'],
+            ['Yellow jacket wasps (Vespula spp.)', 'Predator', 'Capture soft-bodied caterpillars and other insects to provision nests with protein; despite their pest reputation, yellow jackets remove significant caterpillar biomass from gardens in early to midsummer', 'Not dependent on insectary plants', 'Yellow jackets are beneficial as caterpillar predators before their populations peak in late summer; tolerance earlier in the season is warranted'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Whitefly, Scale & Mealybug',
+        },
+        {
+          type: 'table',
+          headers: ['Natural Enemy', 'Type', 'Control Mechanism', 'Best Supporting Plants', 'Notes'],
+          rows: [
+            ['Encarsia formosa', 'Parasitoid', 'Tiny parasitoid wasp that parasitizes greenhouse whitefly and sweetpotato whitefly nymphs; parasitized nymphs turn black vs. pale yellow for healthy nymphs — a clear diagnostic sign', 'Sweet alyssum, dill (in greenhouse settings)', 'Primarily effective in greenhouse and hoop house environments; requires temperatures above 65°F; commercially available'],
+            ['Eretmocerus eremicus', 'Parasitoid', 'Parasitizes silverleaf whitefly and greenhouse whitefly; slightly more heat-tolerant than Encarsia; often used in combination with it for broader control', 'Sweet alyssum, phacelia', 'Available commercially; tolerates higher desert temperatures better than Encarsia'],
+            ['Green lacewing larvae', 'Predator', 'Consume all whitefly life stages — eggs, nymphs, and adults caught on leaf surfaces', 'Dill, fennel, sweet alyssum, goldenrod', 'See aphid section for habitat details'],
+            ['Soft scale parasitoids (Metaphycus, Coccophagus spp.)', 'Parasitoid', 'Parasitize soft scale insects on ornamental shrubs and trees; small wasps that are rarely noticed but can suppress scale infestations substantially', 'Sweet alyssum, dill, fennel', 'Systemic insecticide soil drenches (imidacloprid) kill these parasitoids within the scale bodies; sooty mold following a scale infestation is a sign populations are high enough to warrant biological support rather than spraying'],
+            ['Mealybug destroyer (Cryptolaemus montrouzieri)', 'Predator', 'Specialist ladybug that targets mealybugs; larvae are covered in white wax and closely resemble mealybugs — do not confuse and remove them', 'Dill, fennel, yarrow', 'Primarily effective in greenhouse environments; limited cold tolerance in northern gardens'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Spider Mites',
+        },
+        {
+          type: 'table',
+          headers: ['Natural Enemy', 'Type', 'Control Mechanism', 'Best Supporting Plants / Conditions', 'Notes'],
+          rows: [
+            ['Phytoseiid predatory mites (Phytoseiulus persimilis, Neoseiulus californicus, Galendromus occidentalis)', 'Predatory mite', 'Consume spider mite eggs, nymphs, and adults; move faster than prey and can collapse spider mite colonies under the right temperature and humidity conditions', 'Predatory mites do not feed on plants; they are sustained by the spider mite population itself', 'Most spider mite outbreaks are caused by miticide applications that kill predatory mites while selecting for resistant spider mites; avoiding miticides allows predatory mite populations to establish naturally. Commercially available for release.'],
+            ['Six-spotted thrips (Scolothrips sexmaculatus)', 'Predatory thrips', 'An obligate spider mite predator that feeds on all mite life stages including eggs; found in gardens where spider mite infestations are active', 'Native asters, goldenrod, dill for adults', 'One of the few thrips species that is entirely beneficial; its presence in a mite outbreak is evidence that biological control is already responding'],
+            ['Stethorus punctillum (spider mite destroyer)', 'Predatory beetle', 'Minute ladybug (1–1.5 mm) that is an obligate spider mite predator; can consume 100–200 mites per day; colonizes mite infestations rapidly once populations build', 'Dill, fennel, goldenrod provide adult nectar; undisturbed perennial plantings support overwintering', 'Insecticide applications are the primary cause of stethorus population suppression; in gardens without pesticide history, stethorus populations often prevent mite outbreaks from recurring'],
+            ['Minute pirate bug (Orius spp.)', 'Predator', 'Feeds on spider mite eggs and nymphs as part of its generalist diet', 'Sweet alyssum, dill, goldenrod, corn', 'See aphid section for detailed notes'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Thrips',
+        },
+        {
+          type: 'table',
+          headers: ['Natural Enemy', 'Type', 'Control Mechanism', 'Best Supporting Plants', 'Notes'],
+          rows: [
+            ['Minute pirate bug (Orius spp.)', 'Predator', 'One of the most effective thrips predators; adults and nymphs pierce and drain thrips at all life stages including soil-pupating individuals; each Orius can consume 12–20 thrips per day', 'Sweet alyssum, dill, goldenrod, native asters, corn tassels — corn tassels are a primary summer reservoir for Orius populations', 'Blue sticky cards used to monitor for thrips also capture Orius; if Orius appear on blue traps, biological control of thrips is already active in the garden'],
+            ['Amblyseius cucumeris (predatory mite)', 'Predatory mite', 'Feeds on first-instar thrips larvae; less effective against adults; widely used commercially in greenhouse settings', 'High humidity (>70% RH) is critical for establishment — not dependent on flowering plants', 'Commercially available; most effective in enclosed or humid environments; less reliable outdoors in dry climates'],
+            ['Green lacewing larvae', 'Predator', 'Feed on thrips encountered on leaf surfaces at all life stages', 'Dill, fennel, sweet alyssum, coriander for adults', 'See aphid section for habitat details'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Soil Pests (Cutworms, White Grubs, Root Aphids)',
+        },
+        {
+          type: 'table',
+          headers: ['Natural Enemy', 'Type', 'Control Mechanism', 'Best Supporting Conditions', 'Notes'],
+          rows: [
+            ['Ground beetles (Carabidae)', 'Predator', 'Hunt cutworms, armyworm pupae, and white grubs at the soil surface and in the upper soil layer; adults are fast, aggressive nocturnal hunters', 'Permanent plantings, undisturbed mulch, and wood debris for daytime shelter; not dependent on flowers for feeding', 'Ground beetle diversity is highest in no-till gardens with permanent perennial plantings; even single annual tillage events reduce populations by destroying eggs and exposing overwintering adults'],
+            ['Rove beetles (Staphylinidae)', 'Predator', 'Large, fast-moving predatory beetles that pursue soil pest larvae, eggs, and root aphids in the upper soil layer; also feed on fungus gnat larvae', 'Undisturbed soil, leaf litter, and wood mulch for shelter', 'One of the most diverse beetle families; many species are soil-dwelling predators continuously active beneath mulch layers but rarely seen'],
+            ['Entomopathogenic nematodes (Steinernema, Heterorhabditis spp.)', 'Parasitoid nematode', 'Enter soil insect larvae through body openings; release symbiotic bacteria inside the host; reproduce within the dead host; effective against cutworms, grubs, fungus gnat larvae, and root weevil larvae', 'Moist soil and moderate temperatures (60–85°F); evening application protects nematodes from UV degradation', 'Not insects but functionally equivalent to a parasitoid; commercially available as a soil drench; highly effective when applied to moist soil'],
+            ['Parasitic wasps (Diapetimorpha introita and related species)', 'Parasitoid', 'Parasitize armyworm and cutworm pupae in the soil; females search the soil surface for oviposition targets', 'Flowering plants adjacent to affected areas — dill, fennel, sweet alyssum', 'Relatively understudied compared to foliar parasitoids, but likely a significant component of cutworm mortality in undisturbed garden soils'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🔍',
+          text: 'The most common mistake in biological control is treating a pest colony before checking for natural enemy activity. Before reaching for a spray, spend two minutes looking closely at the colony: mummified aphids (tan, hollow shells), white silk cocoon clusters on a caterpillar, predatory mites moving faster than spider mites, and minute pirate bugs active on a thrips-infested leaf are all signs that natural enemies are already suppressing the population. Spraying at this point eliminates the natural enemies alongside the pests — and the pests, with their far higher reproductive rate, will recover first.',
+        },
+      ],
+    },
   ],
 }
