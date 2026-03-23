@@ -334,9 +334,9 @@ Each question in `questions.js` has:
 2. Flowers & Color Gardens (9 guides — 9 live ✅)
 3. Edible Gardens (9 guides — 9 live ✅)
 4. Herbs & Fragrance (6 guides — 2 live ✅)
-5. Landscape Design (10 guides — 3 live ✅)
+5. Landscape Design (10 guides — 5 live ✅)
 6. Seasonal Guides (8 guides — 1 live ✅)
-7. Pest & Problem Solving (8 guides — 3 live ✅)
+7. Pest & Problem Solving (9 guides — 3 live ✅)
 8. Specialty Gardens (11 guides — 1 live ✅)
 9. Container & Small Spaces (8 guides — 2 live ✅)
 10. Eco & Sustainability (9 guides — 1 live ✅)
@@ -715,7 +715,7 @@ Each live guide detail page displays a full-width hero photo below the nav, abov
 - **Naming convention:** `<guide-id>-guide.png` (e.g., `shade-tree-guide.png` for `id: 'shade-trees'`)
 - **Wired via** the `heroImages` map in `src/components/guides/GuideDetail.jsx` — keys are guide IDs, values are root-relative paths
 - **Conditional render:** `{heroImages[guideId] && <img .../>}` — guides without an entry simply render no photo; no broken images
-- **All 38 of 38 live guides** have hero images — `heroImages` map is complete
+- **All 41 of 41 live guides** have hero images — `heroImages` map is complete
 
 ### Favicon ✅
 
@@ -965,11 +965,7 @@ Theme: lime/green gradient in `GuideDetail.jsx`; hero image: `public/guides/Indo
 | Section 8: Crop-by-Crop Pest Reference | ✅ Done | 12-row table: Tomatoes, Cucumbers, Squash/Zucchini, Beans, Brassicas, Potatoes, Peppers, Lettuce/Greens, Onions/Garlic, Strawberries, Apples/Pears, Roses — each with primary pests, first-response organic control, and prevention priority |
 | Section 9: Seasonal Calendar & IPM Framework | ✅ Done | 5-row seasonal calendar (Late Winter/Spring/Early Summer/Midsummer/Late Summer–Fall) with key pest events, monitoring priorities, anticipatory actions, and regional notes; 6-step IPM decision framework; closing principle tip on balance between pest and natural enemy communities |
 
-**Note:** Guide content file is complete but not yet wired into the live app — the following steps remain to make it live:
-1. Import and add to `contentMap` in `src/data/guide-content/index.js`
-2. Add a color theme entry in `GuideDetail.jsx`
-3. Add hero image at `public/guides/garden-pests-guide.png` and wire into `heroImages` map in `GuideDetail.jsx`
-4. Set `comingSoon: false` on the matching entry in `guides.js`
+Theme: color theme wired in `GuideDetail.jsx`; hero image: `public/guides/Garden_Pests_ID_Charts_Guide.png`; set `comingSoon: false` under Pest & Problem Solving in `guides.js`
 
 ### Typography Upgrade ✅
 
