@@ -1202,5 +1202,143 @@ export const attractingBeneficialInsectsContent = {
         },
       ],
     },
+    {
+      id: 'seasonal-calendar',
+      title: 'Seasonal Calendar & Quick Reference',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Building and maintaining a beneficial insect community is a year-round practice. Each season presents distinct opportunities — and distinct threats — to the natural enemy populations that protect your garden. The calendar below uses the Last Frost Date (LFD) and First Frost Date (FFD) as reference anchors so it applies across USDA Zones 3–10; shift timing 1–2 weeks per zone relative to Zone 7 (LFD ≈ April 15, FFD ≈ October 15).',
+        },
+        {
+          type: 'table',
+          headers: ['Season / Timing', 'Garden Condition', 'Key Beneficial Insect Activity', 'Priority Actions', 'What to Avoid'],
+          rows: [
+            [
+              'Late Winter\n6–8 weeks before LFD',
+              'Soil still cold; overwintering beneficials dormant in soil, leaf litter, hollow stems, and bark crevices',
+              'Ground beetles, spiders, and parasitic wasp pupae sheltering in undisturbed garden debris; overwintering lady beetle eggs in bark',
+              'Leave previous year\'s plant debris, hollow stems, and leaf litter in place until temperatures consistently reach 50°F; plan new habitat plantings; order seeds for flowering insectary plants; prepare annual planting beds by adding compost without disturbing adjacent perennial areas',
+              'Cutting back perennials and ornamental grasses before 50°F; shredding leaf litter that shelters overwintering pupae; applying dormant oil within 24 hours of expected freeze',
+            ],
+            [
+              'Early Spring\n4 weeks before LFD through LFD',
+              'Temperatures rising; queen bumblebees emerging; early-flowering plants beginning bloom; first pest aphid colonies appearing on new growth',
+              'Parasitic wasp queens beginning foraging; overwintered lady beetles and lacewings activating; ground beetles patrolling soil surface; first hover fly visits to early blooms',
+              'Plant early-flowering nectar sources (sweet alyssum, phacelia, candytuft, flowering mustard) immediately; do not cultivate perennial bed edges where ground beetles are active; set up monitoring — check aphid colonies on new growth and look for natural enemy activity before intervening; sow annual insectary plants (dill, cilantro, cosmos, zinnia) indoors or directly',
+              'Broad-spectrum pesticide applications on early-flowering plants when beneficial insects are actively foraging; aggressive cultivation of undisturbed perennial bed margins; removing all debris before 50°F is stable',
+            ],
+            [
+              'Late Spring\nLFD through 6 weeks after LFD',
+              'Peak plant growth flush; aphid populations building rapidly; caterpillar egg-laying beginning on brassicas and tomatoes; first whitefly and thrips populations in garden',
+              'Parasitic wasp populations building rapidly — watch for mummified aphids; lacewing larvae hatching near aphid colonies; lady beetle larvae active on aphid colonies; hover fly larvae in aphid clusters',
+              'Monitor weekly — count beneficial insects and pests simultaneously before making any control decisions; tolerate small aphid colonies if natural enemies are visible; plant tall flowering herbs (fennel, dill bolting, lovage) to support parasitic wasp populations; install Trichogramma releases if moth flight pheromone traps show activity',
+              'Spraying any aphid colony before confirming absence of lady beetle larvae, parasitic wasp activity, or lacewing larvae; using neonicotinoid-treated transplants; applying spinosad during bloom',
+            ],
+            [
+              'Early Summer\n6–10 weeks after LFD',
+              'Warm temperatures accelerating all insect life cycles; pest populations peaking; beneficial populations at seasonal high',
+              'Parasitic wasps at peak activity and diversity; predatory mite populations building on spider mite colonies; ground beetles peak nocturnal activity; hover flies abundant on flowering plants',
+              'Ensure continuous bloom — deadhead spent flowers to extend blooming period; establish a shallow water source; apply Steinernema feltiae drench for fungus gnats or Heterorhabditis bacteriophora for white grubs at peak young-instar timing; maintain moist mulch in paths to support ground beetles',
+              'Mowing flowering cover crops in the heat of the day when beneficial insects are foraging; applying broad-spectrum contact insecticides during peak activity; overhead watering that destroys parasitic wasp cocoons on foliage',
+            ],
+            [
+              'Midsummer\n10–14 weeks after LFD',
+              'Heat stress conditions; spider mite risk high; second-generation pest aphids; beneficial insect populations may dip mid-season if early-season annuals have set seed and stopped flowering',
+              'Second generation of most parasitic wasps active; predatory mites suppressing spider mites in gardens with good humidity; Orius and hover fly populations sustained where flowering continues',
+              'Plant late-season succession flowers (zinnia, basil, Mexican sunflower, anise hyssop) to maintain nectar continuity; scout carefully — midsummer pest resurgences often reflect natural enemy collapse from earlier pesticide applications; apply Bt for caterpillar control only when beneficials are absent from the pest colony',
+              'Assuming pest resurgence requires pesticide response without first checking for natural enemies; stopping watering of insectary plantings during drought; late-season broad-spectrum applications that will carry residues into fall overwintering season',
+            ],
+            [
+              'Late Summer — Early Fall\n6 weeks before FFD through FFD',
+              'Plant growth slowing; seed heads forming; many beneficial insects in pre-overwintering phase; last pest generations active',
+              'Lady beetles beginning aggregation behavior; ground beetles in peak pre-overwintering feeding; parasitic wasps laying final-generation eggs; hover flies visiting late-blooming plants',
+              'Allow seed heads on zinnias, coneflowers, fennel, and dill to remain; leave ornamental grasses standing; begin reducing annual bed cultivation to preserve soil-level overwintering sites; rake leaf litter into garden bed margins rather than removing entirely',
+              'Cutting back all plant material to the ground at first frost — wait until late winter; applying insecticides to plant stems where beneficial insects are aggregating; tilling annual beds aggressively in fall',
+            ],
+            [
+              'Winter\nAfter FFD through Late Winter',
+              'Beneficial insects dormant; garden structure matters enormously for overwintering success; hollow stems, leaf litter, loose bark, and undisturbed soil provide critical shelter',
+              'All life stages present in dormant form: eggs in bark crevices, pupae in hollow stems, adults in soil and leaf litter; no active foraging or reproduction',
+              'Install or maintain a brush pile in a sheltered corner; bundle hollow stems (cut at 6–8 inches) and mount horizontally in a sheltered south-facing location; plan any garden renovation to minimize disturbance; review the season and order insectary seeds for the following year',
+              'Any winter cleanup that removes all plant stems, leaf litter, or loose bark before late winter; rototilling or deeply cultivating perennial bed margins; pressure-washing fences and structures where overwintering insects shelter; burning brush piles that may contain overwintering queen bumblebees',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Troubleshooting: When the System Is Not Working',
+        },
+        {
+          type: 'table',
+          headers: ['Symptom / Observation', 'Likely Cause', 'Response'],
+          rows: [
+            [
+              'Aphid population explodes despite insectary plants being present',
+              'Natural enemy activity has not yet caught up with early-season aphid population growth; beneficials lag the pest population by 1–2 weeks by design',
+              'Wait 10–14 days before intervening; check the colony daily for mummified aphids, lacewing larvae, or lady beetle larvae. If natural enemies are present, the colony will collapse. If no natural enemies are visible after 2 weeks and the infestation is spreading, apply a spot treatment of insecticidal soap directly to the colony — soap has no soil residual and leaves natural enemies unharmed if not directly contacted.',
+            ],
+            [
+              'No beneficial insects visible despite flowering plants',
+              'Pesticide residues eliminating incoming beneficials; flowering plants not attractive to the specific guilds needed; habitat too isolated from source populations',
+              'Review pesticide use history for the past 60 days including systemic applications at transplanting. Plant Apiaceae (carrot family) plants which attract the broadest range of parasitic wasps. Consider whether adjacent properties have high pesticide use that prevents recolonization.',
+            ],
+            [
+              'Lady beetles present but aphid populations remain high',
+              'Lady beetles are feeding but the colony is large enough that adult predation is insufficient; larvae are the key predators',
+              'Look for larvae (spiny, dark, 6-legged, slow-moving) in the colony. If only adults are present, eggs have not yet hatched. Continue monitoring — the colony typically collapses 7–14 days after larvae become active. Supplement with insecticidal soap spot treatment only if the plant is in serious distress.',
+            ],
+            [
+              'Caterpillar damage despite Trichogramma release',
+              'Release was too late (after egg-laying window had passed); release rate was insufficient; conditions killed released wasps before establishment',
+              'Consult pheromone trap records for pest moth flight — Trichogramma releases must coincide with the pest egg-laying window, not the adult flight peak. For active infestations, apply Bt kurstaki to foliage. Resume Trichogramma releases timed to the next generation of moth flight.',
+            ],
+            [
+              'Released predatory mites appear to have failed (spider mites still active after 3 weeks)',
+              'Humidity too low; temperature excursions during shipping or storage; residual acaricide in the garden; insufficient spider mite density',
+              'Check relative humidity — if consistently below 50%, P. persimilis populations will not establish. Switch to N. californicus which tolerates lower humidity. Check for acaricide applications in the past 30 days. If mite populations are at threshold but no establishment occurred, consider a second release combined with overhead misting.',
+            ],
+            [
+              'Natural enemy populations crashed mid-season after appearing established',
+              'Insecticide application — by the gardener or a neighbor — is the most common cause of mid-season beneficial collapse; also possible: summer habitat gap if early annuals set seed and stopped flowering',
+              'Audit all pesticide applications including neighbor drift. Replant flowering annuals immediately to restore nectar sources. Allow 3–4 weeks for recolonization. Avoid any further broad-spectrum applications that would prevent recovery.',
+            ],
+            [
+              'Garden has good insectary plantings but hover flies rarely visible',
+              'Gaps in bloom continuity break the hover fly community and require recolonization; or Apiaceae plants are absent',
+              'Map bloom times and identify 2–4 week gaps; fill them with fast-flowering annuals. Phacelia, sweet alyssum, and lobularia are the most reliable hover fly attractors. Allow cilantro, dill, and basil to bolt — umbrella flower clusters are among the most visited by hover flies.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Quick Reference Checklist',
+        },
+        {
+          type: 'list',
+          items: [
+            'Bloom continuity: Ensure flowering from first frost-free week through FFD with no gaps longer than 2 weeks — use succession planting of phacelia, sweet alyssum, and zinnia to fill gaps between perennial bloom periods.',
+            'Plant diversity: Include at least 3 Apiaceae plants (dill, fennel, cilantro, lovage, or Queen Anne\'s lace) for parasitic wasp support; add Asteraceae (coneflower, yarrow, tansy) and Lamiaceae (catmint, oregano, anise hyssop) for broad coverage.',
+            'Year-round habitat: Leave hollow stems, ornamental grasses, perennial seed heads, and leaf litter margins undisturbed from FFD until consistent 50°F temperatures in late winter or early spring.',
+            'Water source: Provide a shallow water dish with fresh water every 3 days and small stones for landing surfaces; many beneficial insects are weakly flying and need nearby water.',
+            'Pesticide reduction: Treat only when necessary, only with selective or low-residual products (insecticidal soap, Bt, spinosad with bloom-avoidance), and always check for beneficial insect activity before applying anything.',
+            'Monitor before treating: Spend 2–5 minutes observing any pest colony before deciding to treat — look for mummified aphids, parasitic wasp cocoons, lacewing larvae, lady beetle larvae, predatory mites, or Orius before concluding that natural enemies are absent.',
+            'Avoid systemic neonicotinoids: Do not apply imidacloprid, clothianidin, thiamethoxam, or dinotefuran to flowering plants or plants adjacent to flowering plants; do not purchase transplants treated with systemic insecticides (check tags for "protected" or "Imida" language).',
+            'Support vertebrate predators: Provide nesting boxes for insectivorous birds (chickadees, wrens, bluebirds) and bat houses; allow habitat for toads (shallow water source, ground-level sheltered areas) which consume hundreds of pest insects nightly.',
+            'Native plants: Integrate native flowering plants specific to your region — native plants have co-evolved with local beneficial insect communities and support far more beneficial insect species than exotic ornamentals alone.',
+            'Seasonal timing: Delay spring cleanup until temperatures stabilize above 50°F; delay fall cleanup until after FFD; preserve undisturbed areas in the garden year-round for overwintering shelter.',
+          ],
+        },
+        {
+          type: 'p',
+          text: 'The shift from a pest-management mindset to a beneficial-insect-community mindset is the most important conceptual change a gardener can make. Pest management asks: "How do I eliminate this pest?" Beneficial insect community management asks: "What conditions in my garden are preventing natural enemies from controlling this pest?" The second question leads to durable, compounding improvements — a garden that becomes more resilient every season as the community of natural enemies grows more diverse, more abundant, and more deeply embedded in the landscape.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌱',
+          text: 'Give the system time. A newly established garden with excellent insectary plantings and zero pesticide use will see meaningful beneficial insect colonization within one season, significant natural enemy activity within two, and a largely self-regulating pest-suppression system by the third season. Patience in the first two years — tolerating more pest damage than feels comfortable while refraining from broad-spectrum intervention — is the single most important investment in long-term garden health.',
+        },
+      ],
+    },
   ],
 }
