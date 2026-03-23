@@ -718,5 +718,163 @@ export const attractingBeneficialInsectsContent = {
         },
       ],
     },
+    {
+      id: 'design',
+      title: 'Garden Design for Beneficial Insects',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Plant selection and habitat provision are necessary but not sufficient on their own — how plants are arranged in the garden determines whether beneficial insects can actually find and use the resources provided. A dozen excellent beneficial insect plants scattered randomly through a large ornamental border, surrounded by lawn, separated from the vegetable garden by a paved path, provide far less functional value than the same plants thoughtfully placed. Beneficial insect garden design has two primary goals: creating continuous bloom from early spring through hard frost, and placing insectary plants close enough to pest-prone crops that beneficial insects can move easily between food source and hunting ground.',
+        },
+        {
+          type: 'h3',
+          text: 'The Continuous Bloom Imperative',
+        },
+        {
+          type: 'p',
+          text: 'Beneficial insects, like all animals, require food continuously — not in a single late-summer peak. A garden that offers abundant bloom from July through September but nothing from April through June will not support a stable beneficial insect population; parasitic wasps and other key beneficials that emerge in early spring will find no nectar, disperse from the garden, and will not be present when the first pest generations appear. Bloom succession planning — ensuring that something is always in flower from the first warm days of spring through the last days before hard frost — is the design backbone of the beneficial insect garden.',
+        },
+        {
+          type: 'table',
+          headers: ['Season', 'Target Bloom Window', 'Key Plants', 'Notes'],
+          rows: [
+            [
+              'Early spring',
+              'First frost-free days through late April (Zone 7 reference; adjust by zone)',
+              'Native willows (Salix — pollen source before almost anything else flowers), red maple (Acer rubrum), serviceberry (Amelanchier), bloodroot (Sanguinaria), spring ephemerals, wild strawberry (Fragaria virginiana), native violets (Viola), dandelion (Taraxacum — do not eliminate entirely), native columbine (Aquilegia canadensis)',
+              'The early spring gap is critical and poorly served by most garden plantings. Native trees and shrubs — willows, maples, serviceberry — are the most important early-season resources because they bloom before most herbaceous plants emerge.',
+            ],
+            [
+              'Late spring',
+              'Late April–late May',
+              'Catmint (Nepeta), alliums (ornamental and culinary), native penstemon (western US), native wild geranium (Geranium maculatum), meadow rue (Thalictrum), false indigo (Baptisia), native roses, phacelia',
+              'The period when overwintered beneficial insects are actively foraging and establishing territories; critical for building spring populations.',
+            ],
+            [
+              'Early summer',
+              'Late May–early July',
+              'Dill, fennel, cilantro (bolting), Bishop\'s flower (Ammi), lavender, mountain mint (first blooms), wild bergamot (Monarda fistulosa), prairie clover (Dalea), elderberry, buckwheat (quick cycle from seed)',
+              'Overlap with peak aphid and early caterpillar pest pressure; parasitoid wasps foraging on Apiaceae umbels are directly adjacent to pests.',
+            ],
+            [
+              'Midsummer',
+              'July–early August',
+              'Mountain mint (peak), anise hyssop, yarrow, echinacea, black-eyed Susan, bee balm, native milkweeds (Asclepias), sunflower (early varieties), zinnia (single-flowered), cosmos',
+              'The most important period for overall beneficial insect diversity; mountain mint and yarrow peak here; plant in quantity.',
+            ],
+            [
+              'Late summer',
+              'August–September',
+              'Goldenrod (Solidago — critical), native asters (Symphyotrichum), sedum/stonecrop, Joe-Pye weed, ironweed (Vernonia), boneset (Eupatorium), sunflower (late varieties), anise hyssop (reblooming)',
+              'Goldenrod and native asters are the most important late-season beneficial insect plants in North America. Plant them in quantity; do not let misidentification as ragweed cause you to remove them.',
+            ],
+            [
+              'Fall',
+              'October through hard frost',
+              'Late native asters, witch hazel (Hamamelis — blooms after leaf drop in some species), hardy salvias, late goldenrods (Solidago rugosa, S. odora), late cosmos',
+              'Supports beneficial insects building fat reserves for overwintering; even a few late-season plants extend the season significantly past the typical garden\'s bloom end.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Proximity: Placing Insectary Plants Near Crops',
+        },
+        {
+          type: 'p',
+          text: 'Research on parasitic wasp foraging behavior consistently shows that most small parasitoid wasps have limited effective foraging ranges — typically 50–150 feet from their nectar source to their hunting area. A dedicated insectary bed located 200 feet from the vegetable garden provides substantially less pest suppression to the vegetable garden than the same plants woven through and directly adjacent to the crop beds. The design implication is to integrate beneficial insect plants into and around cropping areas rather than creating a single distant "pollinator garden."',
+        },
+        {
+          type: 'list',
+          items: [
+            'Interplanting: Grow bolting herbs (dill, fennel, cilantro, parsley) directly in vegetable beds — one or two plants allowed to flower per bed. The parasitic wasps foraging on the umbel flowers will hunt within feet of where they are feeding.',
+            'Bed borders: Edge vegetable beds with low-growing beneficial insect plants — sweet alyssum, catmint, signet marigold, phacelia — that bloom continuously and create a permanent beneficial insect resource immediately adjacent to crops.',
+            'The 10-foot rule: If any point in the vegetable garden is more than 10 feet from a flowering beneficial insect plant, consider whether additional plants can be integrated closer. Parasitic wasps foraging on sweet alyssum at a bed edge will hunt aphids on the plants immediately behind it.',
+            'Path plantings: Paths between vegetable beds can include low-growing thyme (Thymus) or creeping chamomile in the planting — both flower profusely in summer and attract small beneficial insects while tolerating foot traffic at the edges.',
+            'Vertical elements: Tall flowering plants — fennel, Joe-Pye weed, elderberry — placed at the upwind end of vegetable areas provide nectar-source signaling detectable by foraging beneficial insects from greater distances.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Hedgerows and Habitat Corridors',
+        },
+        {
+          type: 'p',
+          text: 'A hedgerow — a linear planting of shrubs, small trees, perennials, and grasses along a property edge or fence line — is the highest-value single habitat element available to the home gardener. It provides bloom across multiple seasons (from early-flowering shrubs through late-season perennials), nesting habitat in hollow stems and brush, overwintering shelter in the leaf layer, and a permanent refuge population of beneficial insects that colonizes the adjacent garden continuously. Even a 20-foot hedgerow along a back fence, planted with 3–5 shrub species and 5–8 perennial species, provides measurably more beneficial insect habitat than a much larger garden bed of single-species plantings.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Structural backbone: Native shrubs that flower in succession — serviceberry (early spring), elderberry (early summer), buttonbush (Cephalanthus — midsummer), native viburnums (late spring), native roses (early summer) — provide the seasonal scaffolding.',
+            'Midlayer: Native grasses (little bluestem, switchgrass) and tall perennials (Joe-Pye weed, goldenrod, ironweed, native asters) fill the midlayer and provide summer-through-fall bloom and standing winter structure.',
+            'Edge layer: Low-growing beneficial insect plants (mountain mint, wild bergamot, yarrow, native strawberry) at the hedgerow edge provide the dense flowering surface most visited by parasitic wasps.',
+            'Leave the base undisturbed: The soil and leaf layer at the base of a hedgerow is the overwintering habitat bank. Do not cultivate, blow out, or deeply mulch this zone — it is functioning as habitat.',
+            'Connectivity: Where possible, connect the hedgerow to other naturalistic areas — a neighbor\'s plantings, a street tree pit, a rain garden — creating a habitat corridor that allows beneficial insect populations to maintain larger territories and survive local disturbances.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Plant Mass and Density',
+        },
+        {
+          type: 'p',
+          text: 'One plant of each beneficial insect species is a collection. Three plants of the same species begin to be a garden. Seven plants of one species is a habitat patch that registers to foraging insects from a distance and sustains a feeding population through the bloom period. Research on insectary plantings consistently finds that mass plantings of key species — particularly mountain mint, goldenrod, and native asters — attract far greater beneficial insect diversity and abundance than the same square footage planted with many different species in ones and twos.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Minimum effective patch size: A single species patch of 9–12 square feet (roughly a 3×3 or 3×4 ft block) is the minimum that registers strongly to foraging beneficial insects. Smaller patches are better than nothing, but larger masses are disproportionately more effective.',
+            'The 30% rule: Aim for at least 30% of the total planted area in the beneficial insect garden to be in bloom at any given time during the season. If the majority of bloom is in July–August, the spring and fall gaps will limit overall beneficial insect community development.',
+            'Native plant priority: Where native and non-native plants offer similar beneficial insect value, choose the native species. Native plants support a broader community of specialist beneficial insects (including many specialist native bees and parasitoids) that non-native plants cannot sustain.',
+            'Avoid double-flowered ornamentals: Double-flowered varieties of coneflower, black-eyed Susan, coreopsis, and many other beneficial insect plants have been bred to produce additional petals at the expense of accessible pollen and nectar. Choose single-flowered species and straight species over ornamental doubles.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Garden Type Templates',
+        },
+        {
+          type: 'table',
+          headers: ['Garden Type', 'Space', 'Priority Plants', 'Design Notes'],
+          rows: [
+            [
+              'Vegetable garden companion border',
+              '3–4 ft wide strip along one or more vegetable bed edges',
+              'Sweet alyssum (edge), dill (interplanted or at back), fennel (back — allows bolting), phacelia (spring), catmint or mountain mint (midlayer), yarrow (back)',
+              'This is the highest-leverage small-space design: beneficial insect plants physically adjacent to the crops they protect. Even a 10-foot strip of alyssum + dill along a vegetable bed provides measurable aphid and caterpillar suppression.',
+            ],
+            [
+              'Dedicated insectary bed',
+              '50–200+ sq ft',
+              'Mountain mint (anchor — largest mass), goldenrod (fall anchor), native asters (fall), yarrow (summer), anise hyssop (summer), Apiaceae (dill, fennel, Bishop\'s flower), sweet alyssum (front edge)',
+              'Design for continuous bloom from late spring through hard frost. Place within 50 feet of vegetable or pest-susceptible ornamental areas. Leave standing through winter for overwintering habitat.',
+            ],
+            [
+              'Native meadow or prairie planting',
+              '200+ sq ft to acres',
+              'Native grasses (little bluestem, switchgrass, prairie dropseed) as matrix; native forbs woven through (coneflower, black-eyed Susan, prairie clover, wild bergamot, asters, goldenrod)',
+              'The highest-diversity long-term beneficial insect habitat; requires site preparation but minimal maintenance once established. Burns or cut-and-rake management in late winter maintains plant diversity.',
+            ],
+            [
+              'Property edge hedgerow',
+              '20–100+ ft linear',
+              'Native shrubs (serviceberry, elderberry, native roses, buttonbush, viburnums) as backbone; goldenrod, native asters, Joe-Pye weed, ironweed as midlayer; mountain mint, wild bergamot at the edge',
+              'The single highest-value habitat element per linear foot. Even a short hedgerow at the back of the property functions as a year-round beneficial insect refuge.',
+            ],
+            [
+              'Container / small-space insectary',
+              'Patio, balcony, or small yard',
+              'Sweet alyssum (window boxes), catmint (large containers), lavender (sunny containers), single-flowered zinnias and cosmos (summer pots), dill (tall pot — allow to bolt)',
+              'Container plantings provide meaningful beneficial insect support even without ground planting space. Prioritize plants with the longest bloom periods: sweet alyssum, catmint, and cosmos are the best container choices.',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌱',
+          text: 'If you can only make one design change this season, add a 3-foot-wide strip of sweet alyssum and bolting dill directly along the edge of your vegetable beds. These two plants — one providing dense, tiny flowers for parasitic wasps at knee height, the other providing tall umbel flowers at shoulder height — create a vertical layering of beneficial insect foraging habitat immediately adjacent to the crops they protect. It is the lowest-cost, highest-return beneficial insect planting available to any food gardener.',
+        },
+      ],
+    },
   ],
 }
