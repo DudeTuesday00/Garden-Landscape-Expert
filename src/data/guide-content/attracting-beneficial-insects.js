@@ -576,5 +576,147 @@ export const attractingBeneficialInsectsContent = {
         },
       ],
     },
+    {
+      id: 'pesticides',
+      title: 'Pesticide Avoidance & Harm Reduction',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Pesticide use is the single greatest obstacle to building a beneficial insect community in the garden. No planting plan, habitat feature, or purchased beneficial insect release can compensate for regular pesticide applications. Insecticides kill beneficial insects as readily as pest insects — and often more so, because beneficial insects spend more time on plant surfaces (foraging, ovipositing, hunting) than the cryptic pests they are hunting. Fungicides harm the soil fungal communities that many ground-nesting bees depend on. Systemic insecticides persist in pollen and nectar and are carried back to nests.',
+        },
+        {
+          type: 'p',
+          text: 'The goal of this section is not to prohibit all pest intervention, but to provide a framework for making interventions that address actual pest problems while causing the least possible damage to the beneficial insect community already present in the garden. The decision hierarchy is: tolerate → physical control → biological control → least-toxic spray → toxic spray as last resort.',
+        },
+        {
+          type: 'h3',
+          text: 'Understanding Pesticide Impact on Beneficial Insects',
+        },
+        {
+          type: 'table',
+          headers: ['Pesticide Class', 'Examples', 'Impact on Beneficials', 'Residual Activity', 'Notes'],
+          rows: [
+            [
+              'Neonicotinoids (systemic)',
+              'Imidacloprid, clothianidin, thiamethoxam, acetamiprid, dinotefuran — sold as Bayer Tree & Shrub, many systemic soil drenches, some seed coatings',
+              'Extremely high — systemic uptake into pollen and nectar exposes pollinators and beneficial insects directly; sublethal doses impair navigation, learning, and reproduction in bees; implicated in colony collapse in commercial bee operations',
+              '1–3+ years in woody plant tissue; months in soil; present in pollen and nectar throughout treated plant\'s bloom period',
+              'Do not use systemic neonicotinoids on any flowering plants or plants that will flower within 2–3 years of treatment. Avoid soil drenches under or near flowering plants. This is the highest-priority pesticide to eliminate from the beneficial insect garden.',
+            ],
+            [
+              'Pyrethroids (synthetic)',
+              'Bifenthrin, permethrin, cypermethrin, lambda-cyhalothrin, deltamethrin — very widely sold; most broad-spectrum yard insect sprays',
+              'Very high — contact and residual; kills nearly all arthropods on contact including all beneficial insects, ground beetles, and predatory spiders; highly toxic to aquatic invertebrates',
+              'Days to several weeks on plant surfaces depending on UV, rainfall; can persist longer in soil',
+              'Among the most broadly harmful insecticides available to home gardeners. The marketing as "safe for gardens" refers to plant safety, not insect safety. Avoid entirely in any garden managed for beneficial insects.',
+            ],
+            [
+              'Organophosphates',
+              'Malathion, acephate (Orthene) — still widely sold',
+              'Very high — broad-spectrum nerve toxins; contact, residual, and some systemic activity; highly toxic to parasitic wasps and predators',
+              'Days to 1–2 weeks',
+              'Avoid entirely in beneficial insect gardens. Malathion in particular is highly toxic to parasitic wasps and predatory insects.',
+            ],
+            [
+              'Carbamates',
+              'Carbaryl (Sevin) — marketed aggressively to home gardeners',
+              'Very high — carbaryl is highly toxic to bees and beneficial insects; also toxic to earthworms; broad-spectrum; dust formulations drift widely',
+              'Days to 1 week',
+              'Carbaryl/Sevin has one of the worst beneficial insect profiles of any widely sold garden insecticide. Dust formulations are particularly hazardous due to drift onto flowering plants.',
+            ],
+            [
+              'Spinosad',
+              'Monterey Garden Insect Spray, Spinosad-based sprays — derived from soil bacterium Saccharopolyspora spinosa',
+              'Moderate — toxic to bees when wet; much lower risk once dried (4–6 hours); toxic to some parasitic wasps when fresh; very effective against caterpillars, thrips, spider mites',
+              '1–7 days on foliage',
+              'Apply in evening when bees are not foraging; avoid application to open flowers; let dry overnight before bees return. A good compromise insecticide for caterpillar and thrips problems with careful timing.',
+            ],
+            [
+              'Bacillus thuringiensis (Bt)',
+              'Bt kurstaki (DiPel, Thuricide) for caterpillars; Bt israelensis (BTi, Gnatrol, mosquito dunks) for fungus gnats/mosquitoes; Bt tenebrionis for Colorado potato beetle',
+              'Low to very low — highly specific to target insect groups; Bt kurstaki affects only caterpillars; does not affect adult moths/butterflies, bees, wasps, beetles, or other beneficial insects',
+              'Days to 1 week (UV-sensitive)',
+              'One of the safest pest-targeted products available; the specificity is the key virtue. Apply to foliage in early evening; reapply after rain. Excellent first-resort treatment for caterpillar outbreaks.',
+            ],
+            [
+              'Insecticidal soap',
+              'Safer Brand Insect Killing Soap, Dr. Bronner\'s diluted — potassium salts of fatty acids',
+              'Low when used carefully — contact-only, no residual; kills soft-bodied insects (aphids, mites, whitefly) on contact; does not harm beneficials once dry (within hours); harmful to lacewing eggs and larvae on direct contact',
+              'No residual — effective only while wet',
+              'Excellent for aphid and mite control with minimal beneficial insect impact. Key practice: spray in early morning or evening; avoid spraying when beneficial insects are active; do not spray flowers. Rinse plants 24 hours later if possible.',
+            ],
+            [
+              'Neem oil / Azadirachtin',
+              'Cold-pressed neem oil, AzaMax, Azatrol — derived from neem tree seeds',
+              'Low to moderate — azadirachtin (the active compound) disrupts insect development; most harmful to immature insects; low contact toxicity to adult beneficials; some toxicity to beneficial larvae; disrupts molting in all arthropods including beneficial insects when ingested',
+              'Days to 1 week; breaks down rapidly in UV',
+              'Use clarified hydrophobic neem oil (without azadirachtin) as a fungicide with minimal insect impact. Use azadirachtin products sparingly, targeting specific pests only. Avoid spraying during flowering. A generally acceptable tool when used with care.',
+            ],
+            [
+              'Kaolin clay',
+              'Surround WP — physical barrier, not a pesticide',
+              'Very low — physical deterrent only; does not kill insects; coats plant surfaces making them inhospitable to pest insects; may interfere with some predatory insect activity when heavily applied',
+              'Until washed off by rain',
+              'One of the most beneficial-insect-friendly pest management tools available. Excellent for codling moth, apple maggot, cucumber beetle, and many other pests. Does not harm beneficials.',
+            ],
+            [
+              'Copper-based fungicides',
+              'Copper sulfate, Bordeaux mixture, copper octanoate',
+              'Low for insects directly; moderate soil impact with repeated use — copper accumulates in soil over time, reducing earthworm and soil beneficial invertebrate populations with heavy, repeated use',
+              'Days to weeks on foliage; accumulates in soil',
+              'Use at labeled rates only; avoid overapplication. Rotate with other fungicide approaches to minimize soil copper accumulation.',
+            ],
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Systemic neonicotinoids (imidacloprid, clothianidin, thiamethoxam) are the single most damaging class of pesticides available to home gardeners with respect to beneficial insects. They are sold widely as soil drenches for trees, shrubs, and ornamentals marketed as "season-long protection." When applied to a flowering tree or shrub, the systemic uptake means pollen and nectar are toxic to every insect visiting the plant throughout its entire bloom period — including all pollinators and all nectar-seeking parasitic wasps. A single soil drench application to a mature tree can maintain insecticidal concentrations in pollen and nectar for 2–3+ years.',
+        },
+        {
+          type: 'h3',
+          text: 'The Pest Threshold Concept',
+        },
+        {
+          type: 'p',
+          text: 'Integrated Pest Management (IPM) recognizes that the presence of a pest insect does not automatically justify a spray application. Every pest population has a threshold — a level below which the pest is causing less economic or aesthetic damage than the cost and collateral harm of intervention. Below the threshold, the correct response is to do nothing, monitor, and allow natural enemy populations to build and respond. Above the threshold, intervention is justified.',
+        },
+        {
+          type: 'list',
+          items: [
+            'The threshold question: Before spraying anything, ask: "Is the damage actually affecting plant health, productivity, or aesthetics beyond what I can tolerate?" Cosmetic damage to leaves is almost never a threshold-crossing event. A few aphids on a rose stem are not. A complete aphid colony collapsing a new shoot may be.',
+            'Natural enemy lag time: Beneficial insect populations always lag behind pest populations by 1–2 weeks. When a pest population first appears and builds rapidly, it is normal to see damage before the natural enemy population catches up. This is the most common moment when gardeners reach for a spray — and the moment when patience is most valuable. If you spray now, you kill the natural enemies arriving to solve the problem.',
+            'Spot treatment: If intervention is necessary, treat only the specific plant or specific part of the plant that is affected — not the whole garden. Spot treatment preserves the untreated areas as refuges for beneficial insects.',
+            'Physical controls first: Hand-picking caterpillars, aphid colony removal by hose blast, yellow sticky traps for whitefly monitoring, copper tape for slugs, row cover for pest exclusion — these controls are highly targeted and cause zero beneficial insect collateral damage.',
+            'Harvest timing: For edible crops close to harvest, accepting minor pest damage and harvesting slightly early is often superior to any spray application.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Harm Reduction When Spraying Is Necessary',
+        },
+        {
+          type: 'p',
+          text: 'When pest pressure genuinely exceeds tolerance and physical controls are insufficient, the following practices minimize beneficial insect impact while still addressing the pest problem.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Spray in the evening: Most beneficial insects — bees, parasitic wasps, hoverflies — are inactive after sunset. Evening applications allow contact-insecticides to dry and degrade overnight before beneficial insects return in the morning. This is the single most effective harm reduction timing practice.',
+            'Never spray open flowers: Flowers are the primary foraging surface for bees and parasitic wasps. Even relatively low-toxicity products sprayed onto open flowers create direct contact risk for all flower visitors. If a plant is in bloom, do not spray it — period. If treatment is urgent, remove the flowers before spraying.',
+            'Spot spray, never broadcast: Apply to the specific affected leaves or shoot tips, not the entire plant. Use a hand sprayer or squeeze bottle for targeted application rather than a pump sprayer on full-fan setting.',
+            'Choose contact-only products over systemics: Contact insecticides (soap, neem oil) lose toxicity within hours to days. Systemic insecticides persist in plant tissue for weeks to years, making every subsequent insect visit to that plant a toxic event.',
+            'Read and follow the label: The label will often specify pollinator protection requirements (e.g., "Do not apply when bees are foraging" or "Apply only in early morning or late evening"). These requirements are legally binding and ecologically sound.',
+            'Rinse foliage after treatment: For soap or neem oil applications, rinsing the treated area with plain water 24–48 hours after treatment removes residue and further reduces beneficial insect exposure.',
+            'Create spray-free refuges: Designate certain areas of the garden — the beneficial insect flower plantings, the hedgerow, the native planting — as permanently spray-free. Even if you must spray in the vegetable area, maintain these refuges as source populations for recolonization.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌙',
+          text: 'The most important pesticide rule in this guide: never spray a flowering plant. It does not matter how low-toxicity the product is — open flowers are the primary exposure point for every pollinator and parasitic wasp in the garden. If a plant must be treated while in bloom, remove the flowers first, spray in the evening, and allow full drying before the next day\'s bee activity. This single practice, consistently applied, prevents the majority of pesticide-related beneficial insect harm in home gardens.',
+        },
+      ],
+    },
   ],
 }
