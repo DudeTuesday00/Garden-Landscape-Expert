@@ -984,7 +984,7 @@ Three new content discovery pages added to the app:
 
 | Page | Route | Component | Description |
 |---|---|---|---|
-| Garden Infographics | `/infographics/` | `src/components/Infographics.jsx` | Visual quick-reference guides — 17 live infographic images with click-to-enlarge lightbox, plus HTML tables for vegetable spacing and watering frequency |
+| Garden Infographics | `/infographics/` | `src/components/Infographics.jsx` | Visual quick-reference guides — 28 live infographic images with click-to-enlarge lightbox |
 | Gardening Videos | `/videos/` | `src/components/Videos.jsx` | Curated YouTube channels by topic (Epic Gardening, MIgardener, Charles Dowding, Garden Answer, etc.) |
 | Gardening Podcasts | `/podcasts/` | `src/components/Podcasts.jsx` | Curated podcast list covering organic growing, permaculture, vegetable gardening, native plants |
 
@@ -993,10 +993,10 @@ Each page has a full metadata export (`title`, `description`, `keywords`, `canon
 **Infographics page implementation notes:**
 - **Shared lightbox:** single `activeLightbox` state (`{ src, alt }`) drives one lightbox overlay for all images — no per-image `useState`
 - **`InfographicSection` component:** reusable helper renders heading, description, image button, caption, and guide link for each infographic
-- **27 live image sections** — all images in `public/infographics/` are wired to `InfographicSection` components; no HTML table fallbacks remain
+- **28 live image sections** — all images in `public/infographics/` are wired to `InfographicSection` components; no HTML table fallbacks remain
 - **9 AdSense placeholder `<div>`s** spaced throughout the page
 - Affiliate cards at the bottom (Rodale's Encyclopedia, Old Farmer's Almanac)
-- "More Infographics Coming Soon" grid of 6 planned cards
+- "More Infographics Coming Soon" grid of 5 planned cards
 
 **Live infographic images** (`public/infographics/`):
 
@@ -1016,6 +1016,7 @@ Each page has a full metadata export (`title`, `description`, `keywords`, `canon
 | `Herb_Garden_Design_Guide_IG.png` | Herb Garden Design |
 | `Medicinal_Garden_Guide_US_IG.png` | Medicinal Garden |
 | `Common_Garden_Diseases_Guide_IG.png` | Common Garden Diseases |
+| `Garden_Pests_ID_Charts_Guide_IG.png` | Garden Pests ID & Control |
 | `Fast_Growing_Privacy_Trees_Guide_IG.png` | Fast-Growing Privacy Trees |
 | `Japanese_Garden_Elements_Guide_IG.png` | Japanese Garden Elements |
 | `Front_Yard_Curb_Appeal_Guide_IG.png` | Front Yard Curb Appeal |
@@ -1036,7 +1037,7 @@ Each page has a full metadata export (`title`, `description`, `keywords`, `canon
 3. Add an ad placeholder `<div>` nearby if the page needs rebalancing
 
 Public media directories:
-- `public/infographics/` — static infographic assets (27 live images)
+- `public/infographics/` — static infographic assets (28 live images)
 - `public/videos/` — static video thumbnail assets
 - `public/podcasts/` — static podcast artwork assets
 
