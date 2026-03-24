@@ -90,6 +90,138 @@ export const rabbitProofGardenContent = {
       ],
     },
     {
+      id: 'regional-quick-reference',
+      title: 'Section 10: Regional Strategies & Quick Reference',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Rabbit species, pressure levels, and seasonal timing vary significantly across American climate regions. The core strategies in this guide apply everywhere, but the specific species you are managing, the fence heights you need, and the timing of your most critical interventions differ by region.',
+        },
+        {
+          type: 'table',
+          headers: ['Region', 'Primary Species', 'Peak Challenge', 'Top Priority', 'Regional Plant Strategy'],
+          rows: [
+            [
+              'Northeast & New England (Zones 3–6)',
+              'Eastern cottontail; Snowshoe hare (northern areas)',
+              'Winter bark girdling; spring tulip and vegetable damage; deep snow allows access to higher bark in northern areas',
+              'Hardware cloth tree guards installed in October before first snow; vegetable garden fencing before spring planting; snowshoe hare concerns require guards extending 3+ feet above expected snow level in northern areas',
+              'Rely heavily on daffodils instead of tulips; catmint, salvia, and ornamental alliums as ornamental backbone; coneflower and black-eyed Susan for summer; most hostas are largely ignored after first year when established',
+            ],
+            [
+              'Mid-Atlantic & Southeast (Zones 6–9)',
+              'Eastern cottontail (primary)',
+              'Year-round pressure (mild winters keep rabbits active continuously); spring planting and summer vegetable garden',
+              'Fencing around vegetable gardens is the most important single action; tree guards for young trees in fall; longer repellent season required due to year-round activity',
+              'Native plants: beautyberry (Callicarpa americana), native salvias, native grasses, and native wildflowers provide beautiful, largely rabbit-resistant plantings. Camellia and azalea are generally safe after establishment.',
+            ],
+            [
+              'Midwest & Great Plains (Zones 3–6)',
+              'Eastern cottontail; black-tailed jackrabbit (western Great Plains)',
+              'Winter bark damage; spring planting; jackrabbit pressure in western areas requires higher fences',
+              'Hardware cloth fencing at proper jackrabbit height (30–36 inches) where jackrabbits are present; intensive tree guard program; native prairie plants as the ornamental backbone',
+              'Native prairie plants — little bluestem, prairie dropseed, coneflower, black-eyed Susan, prairie sage, and native alliums — are extraordinarily rabbit-resistant and perfectly suited to this climate',
+            ],
+            [
+              'Southwest & Desert West (Zones 6–11)',
+              'Desert cottontail; black-tailed jackrabbit',
+              'Year-round in warm desert areas; particularly severe on vegetable gardens and non-xeric ornamentals; jackrabbit pressure is high',
+              'Vegetable gardens require proper hardware cloth fencing year-round; xeriscape design using native desert plants dramatically reduces vulnerability; jackrabbit height requirements (30–36 inch fence minimum)',
+              'Desert-adapted native plants (agave, penstemon, Apache plume, desert marigold, cacti, native grasses) are naturally rabbit-resistant and water-wise',
+            ],
+            [
+              'Pacific Northwest (Zones 7–9)',
+              'Brush rabbit (west of Cascades, near cover); introduced eastern cottontail in many urban/suburban areas',
+              'Spring and fall planting seasons; vegetable garden; young fruit trees',
+              'Row cover and individual protection at planting; fruit tree guards; vegetable garden fencing',
+              'Extraordinary native plant resources that are largely rabbit-resistant: manzanita, ceanothus, mahonia (Oregon grape), native grasses, and native ferns',
+            ],
+            [
+              'California (Zones 8–11)',
+              'Desert cottontail (inland and south); brush rabbit (coastal); black-tailed jackrabbit (Central Valley and open areas)',
+              'Year-round vegetable garden pressure; fall planting of cool-season crops; jackrabbit issues in rural and open-space adjacent areas',
+              'Fenced vegetable garden; plant selection emphasizing California native and Mediterranean plants; jackrabbit-height fencing in exposed areas',
+              'California native garden design using manzanita, ceanothus, native grasses, and California poppies provides a spectacular, naturalistic, and almost entirely rabbit-resistant landscape that is also fire-resistant and drought-tolerant',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Quick Reference: Just Found Rabbit Damage — What to Do Right Now',
+        },
+        {
+          type: 'list',
+          items: [
+            'Identify the damaged plants and assess the severity.',
+            'Protect any vulnerable young trees by installing a hardware cloth cylinder immediately — bark girdling can kill a tree in a single winter and cannot be reversed.',
+            'Apply a repellent spray to all plants that show damage and adjacent vulnerable plants.',
+            'Order hardware cloth and plan your fencing priorities for the vegetable garden.',
+            'Look for rabbit shelter near the garden (brush piles, under decks, dense ground covers) and begin habitat modification.',
+            'Do not rely solely on repellents — plan for physical exclusion as the primary long-term strategy.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Quick Reference: Planning a New Garden in a Rabbit-Heavy Area',
+        },
+        {
+          type: 'list',
+          items: [
+            'Design the garden with 70–80% rabbit-resistant plants as the backbone (lavender, catmint, ornamental alliums, Russian sage, ornamental grasses, yarrow, salvia, daffodils, coneflower).',
+            'Plan a fenced enclosure for your vegetable garden from the start — budget for hardware cloth fencing before plants.',
+            'Replace tulip plantings with daffodil-dominated bulb displays, using alliums for spring accent.',
+            'Install hardware cloth tree guards on all young trees and shrubs before planting.',
+            'Evaluate existing shelter near the planting area and plan modifications (deck skirt, brush removal) as part of the initial project.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Troubleshooting Quick Reference',
+        },
+        {
+          type: 'table',
+          headers: ['Problem', 'Most Effective Response', 'Common Mistake to Avoid'],
+          rows: [
+            [
+              'Tulips disappearing every spring',
+              'Switch primary bulb planting to daffodils and narcissus (toxic to rabbits; reliably avoided); use alliums for color accent; protect any remaining tulips with hardware cloth cages',
+              'Replanting tulips in the same location and spraying repellent, then being surprised when the tulips are eaten again',
+            ],
+            [
+              'Young tree bark girdled in winter',
+              'Install hardware cloth cylinder around all vulnerable trees in fall, extending above expected snow depth; apply repellent to bark above the guard; for trees already girdled, consult a local arborist — bridge grafting may save a girdled tree if caught early',
+              'Waiting until you see damage in spring to install guards',
+            ],
+            [
+              'Vegetable garden decimated each spring',
+              'Install permanent hardware cloth perimeter fence with L-footer before spring planting; this solves the problem permanently; repellent alone will fail',
+              'Repeatedly trying new repellent products instead of installing a fence',
+            ],
+            [
+              'Repellents stop working after a few weeks',
+              'Implement the rotation strategy (alternate between products with different modes of action on a 3- to 4-week schedule); combine with habitat modification and resistant plant design',
+              'Applying the same product repeatedly and being surprised by habituation',
+            ],
+            [
+              'Rabbits entering raised beds',
+              'If raised bed is under 24 inches: add a simple hardware cloth frame over the bed. For beds 24 inches and taller with straight vertical sides: ensure no footing allows jumping to the bed edge.',
+              'Assuming a 12- to 18-inch raised bed is rabbit-proof',
+            ],
+            [
+              'Nest of baby rabbits found in the garden',
+              'Leave it alone. The doe returns at dawn and dusk to nurse. Kits are independent at 4–5 weeks. Mark the nest with a stick and mow/garden around it until the kits depart.',
+              'Removing or disturbing the nest; handling the kits (the doe may abandon them if they smell strongly of human scent)',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌱',
+          text: 'The Single Most Effective Investment in Rabbit Management: If you can only do one thing, fence your vegetable garden with hardware cloth. A properly installed fence — 1/2-inch mesh, 24 inches tall, buried 6 inches with an outward L-footer — provides reliable, long-term protection. It does not habituate. It does not wash off in rain. It works when the rabbit is hungry. It works in January and in June. The cost for a 4×8-foot vegetable garden fence is approximately $25 to $40 — less than a single season of repellent spray — and it continues working for 15 to 20 years. Fence first. Plant smart. Protect what matters. Enjoy the rest.',
+        },
+      ],
+    },
+    {
       id: 'seasonal-calendar',
       title: 'Section 9: Seasonal Strategy Calendar',
       blocks: [
