@@ -1308,5 +1308,114 @@ export const butterflyGardenContent = {
         },
       ],
     },
+    {
+      id: 'overwintering-shelter',
+      title: 'Section 8: Overwintering & Shelter Habitat',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A butterfly garden that supports only the nectar and host plant needs of adult butterflies and caterpillars is only half a garden. The third essential dimension is shelter — the structural complexity that allows butterflies to survive temperature extremes, predators, rain, and the long months between flight seasons. Most of a butterfly\'s life is spent not flying but waiting: as an egg, a pupa, a dormant adult tucked into bark, or a chrysalis attached to a stem that may be three feet from where it hatched. Managing your garden to protect these hidden life stages is among the highest-leverage actions a butterfly gardener can take.',
+        },
+        {
+          type: 'h3',
+          text: 'How Butterflies Overwinter — by Life Stage',
+        },
+        {
+          type: 'table',
+          headers: ['Overwintering Stage', 'Representative Species', 'Overwintering Location', 'Garden Implication'],
+          rows: [
+            [
+              'Adult (reproductive diapause)',
+              'Mourning cloak, Eastern comma, Question mark, Gray comma, Satyr comma, California tortoiseshell, Milbert\'s tortoiseshell, Goatweed leafwing',
+              'Tucked into bark crevices, beneath loose bark of dead trees, inside hollow logs, under leaf litter, inside unheated outbuildings. They enter a state of reduced metabolism but can emerge and fly on warm winter days (50°F+) before returning to shelter.',
+              'Leave dead wood, log piles, and loose bark structures in the garden through winter. Resist the urge to remove "messy" logs or stumps — they are primary overwintering refuges. A south-facing log pile in a sheltered corner is among the most productive overwintering structures you can provide.',
+            ],
+            [
+              'Pupa / chrysalis',
+              'Eastern tiger swallowtail, Black swallowtail, Spicebush swallowtail, Pipevine swallowtail, Giant swallowtail, Cabbage white, Cloudless sulphur, Orange sulphur, Clouded sulphur, Checkered white, Spring azure, Gray hairstreak',
+              'Attached by a silk girdle and cremaster to woody stems, fence posts, dead stalks, bark, and garden structures. Swallowtail chrysalises are cryptically colored brown or green and closely resemble a broken stick or piece of bark — they are easily overlooked and easily destroyed during fall cleanup.',
+              'Leave all standing woody stems and dead stalks through winter. Do not cut ornamental grasses, perennial stems, or shrub branches in fall — chrysalises may be attached anywhere from 1 inch to 6 feet above ground. When you do cut stems in spring, cut at 12–18 inches above ground and leave the cut pieces bundled in a corner of the garden through late May to allow any attached chrysalises to eclose.',
+            ],
+            [
+              'Larva (caterpillar)',
+              'Hackberry emperor, Tawny emperor, American snout, Viceroy (young caterpillar overwinters inside a rolled leaf tied to the twig), Red-spotted purple, White admiral',
+              'Viceroy and related species overwinter as tiny early-instar caterpillars inside a hibernaculum — a leaf rolled and tied with silk to the host plant twig. They resume feeding in spring when host plant buds break. Other species overwinter as late-instar caterpillars in leaf litter or soil.',
+              'Leave hackberry, willow, and poplar leaf litter under host trees — it contains overwintering caterpillars. Do not rake deeply under host trees in fall. Viceroy hibernacula (rolled brown leaves tied to willow or poplar twigs) are distinctive once you know to look for them — avoid pruning willow and poplar in fall and early winter.',
+            ],
+            [
+              'Egg',
+              'Baltimore checkerspot, Harris\' checkerspot, Northern crescent, Pearl crescent',
+              'Eggs are laid in late summer on the underside of host plant leaves; they remain attached to the standing dead stems and leaf debris through winter, hatching when host plants break dormancy in spring.',
+              'Leave standing stems and dead leaf material of turtlehead (Chelone glabra — Baltimore checkerspot host), native asters, and other late-season host plants through winter. Do not cut or remove these stems until well after host plant growth has begun in spring (mid-May in Zone 6).',
+            ],
+            [
+              'Communal roost (adults)',
+              'Zebra longwing (Florida and Gulf Coast), Monarch (overwintering colonies in Mexico and California)',
+              'Zebra longwings form communal night roosts of 20–30+ adults on the same vine or branch year-round in frost-free climates. Monarchs cluster in vast aggregations at overwintering sites in oyamel fir forests (eastern population) and coastal California groves (western population).',
+              'In frost-free areas of Florida and the Gulf Coast, maintaining stable passionvine with adjacent sheltered roosting structure supports year-round zebra longwing colonies. For monarchs, the overwintering sites themselves are the conservation priority — supporting fall migration nectar is the best garden contribution to overwintering colony health.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Building Overwintering Habitat',
+        },
+        {
+          type: 'p',
+          text: 'Effective overwintering habitat does not require purchasing specialized products — it is almost entirely a matter of what you leave in place rather than what you add. The following structural elements provide the greatest overwintering value per square foot of garden.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Standing dead stems: Leave perennial and ornamental grass stems at 18–24 inches through winter. Cut in late March or early April — not in fall. Hollow or pithy stems (Joe Pye weed, ironweed, bergamot, cup plant) also provide nesting habitat for small native bees.',
+            'Leaf litter: A 3–4 inch layer of fallen leaves under trees and shrubs insulates soil, retains moisture, and harbors overwintering caterpillars, pupae, and adult beetles that prey on garden pests. "Messy" leaf litter is a functioning ecosystem layer. If you must move leaves off lawn areas, rake them into garden beds rather than bagging for disposal.',
+            'Log and brush piles: A loosely stacked pile of logs, branches, and woody debris provides adult butterfly overwintering refuge, nesting habitat for ground-nesting bees, foraging habitat for ground beetles, and basking structure. Place in a south-facing, sheltered corner. No special construction required — simply pile and leave.',
+            'Dead wood and snags: Dead standing trees (snags) and large-diameter logs on the ground are among the highest-value structural elements in any wildlife garden. If a dead tree poses no safety hazard, leave it standing. A single large log on the ground can harbor overwintering mourning cloaks, anglewings, and dozens of other invertebrate species.',
+            'Dense shrub structure: Native shrubs with dense branching (viburnums, native hollies, native spireas, buttonbush) provide wind shelter and thermal mass for adult butterflies on cold days. Butterflies basking on south-facing shrub surfaces can raise their body temperature significantly above ambient air temperature on cold but sunny winter days.',
+            'Rock features: Flat-topped rocks, stone walls, and gravel areas in full sun serve as basking platforms — butterflies require external heat to reach flight temperature (roughly 60–100°F thorax temperature depending on species). A south-facing rock face that absorbs heat in the morning allows butterflies to become active before air temperatures are sufficient for flight.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Butterfly Houses — Are They Useful?',
+        },
+        {
+          type: 'p',
+          text: 'Commercially sold "butterfly houses" — narrow wooden boxes with vertical slots — are widely marketed as overwintering habitat for butterflies. The evidence that butterflies actually use them is very limited. No North American butterfly species is known to preferentially roost in these structures. The narrow slots are better suited to wasps, earwigs, and small beetles than to butterflies. Mourning cloaks and anglewings, which do overwinter as adults in sheltered cavities, use loose bark, wood crevices, and unheated outbuildings — not narrow-slotted boxes.',
+        },
+        {
+          type: 'p',
+          text: 'This is not a reason to remove an existing butterfly house if you have one — it does no harm and may shelter other beneficial invertebrates. But if you are deciding how to spend garden resources, a log pile, a bundle of hollow stems, or a south-facing brush pile will provide far more genuine overwintering value for butterflies than a purchased butterfly house.',
+        },
+        {
+          type: 'h3',
+          text: 'Rain, Wind, and Thermal Shelter',
+        },
+        {
+          type: 'p',
+          text: 'Beyond winter overwintering, butterflies need shelter from daily weather events throughout the active season. Understanding how butterflies use garden structure for thermoregulation and weather avoidance helps explain why garden design choices affect butterfly residence time.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Cold morning basking: Butterflies are ectotherms — they cannot generate body heat internally and must warm up by basking before flight. South- and east-facing surfaces that receive direct morning sun are used intensively in early morning. Flat rocks, dark-colored pavers, south-facing wood fences, and the upper surface of broad-leaved plants all serve as basking sites. Placing nectar plants adjacent to basking surfaces means butterflies can move immediately from warming to feeding.',
+            'Midday heat retreat: During peak midday heat (above 95°F), many butterfly species retreat to shaded leaf surfaces on the north side of shrubs or under large-leaved plants. They resume activity in the late afternoon as temperatures moderate. Garden design that includes both full-sun nectar areas and adjacent dense shrub shade allows butterflies to remain in the garden through the full day rather than departing at midday.',
+            'Rain shelter: Butterflies cannot fly effectively in rain and will shelter under large leaves, in dense shrub interiors, and under overhanging bark during storms. Broad-leaved native shrubs (viburnum, buttonbush, native hollies) provide this function. Butterflies often emerge immediately after rain passes to take advantage of refreshed nectar — having shelter adjacent to nectar plants means they can resume feeding within minutes of rain clearing.',
+            'Wind protection: On windy days, butterfly flight is metabolically expensive and navigation is impaired. Sheltered garden microclimates — created by hedgerows, dense shrub borders, walls, and fences — concentrate butterfly activity on windy days. A south-facing garden with a windbreak on the north side will hold more butterflies on cool, windy spring days than an exposed open site.',
+            'Overnight roosting: Many butterflies roost overnight clinging to the underside of leaves or to stems in dense vegetation. They are immobile and vulnerable during roosting hours. Dense ornamental grasses, tall perennial stems, and the interior of shrubs all provide overnight roosting sites. A garden with structural complexity at multiple heights provides roosting habitat across a range of species preferences.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'The single most common cause of unintentional butterfly mortality in home gardens is fall and early spring cleanup — cutting stems, removing leaf litter, and raking under host plants during the months when overwintering eggs, caterpillars, chrysalises, and adult butterflies are present in those exact locations. If you change only one practice, delay all garden cleanup until nighttime temperatures are consistently above 50°F in spring (typically late March in Zone 7, mid-April in Zone 6, early May in Zone 5).',
+        },
+        {
+          type: 'tip',
+          emoji: '🪵',
+          text: 'The "leave the leaves" movement promoted by the Xerces Society and Doug Tallamy\'s research asks gardeners to treat fallen leaves as a resource rather than a waste product. A single oak leaf litter layer hosts hundreds of invertebrate species including moth and butterfly pupae, ground beetle larvae, and the overwintering stages of dozens of beneficial insects. Move leaves from lawn areas to garden beds, under shrubs, and along fence lines rather than bagging. Your spring butterfly emergence — and your garden\'s overall insect diversity — will reflect the difference.',
+        },
+      ],
+    },
   ],
 }
