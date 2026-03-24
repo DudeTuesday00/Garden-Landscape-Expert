@@ -336,7 +336,7 @@ Each question in `questions.js` has:
 4. Herbs & Fragrance (6 guides — 2 live ✅)
 5. Landscape Design (10 guides — 5 live ✅)
 6. Seasonal Guides (8 guides — 1 live ✅)
-7. Pest & Problem Solving (9 guides — 3 live ✅)
+7. Pest & Problem Solving (9 guides — 4 live ✅)
 8. Specialty Gardens (11 guides — 1 live ✅)
 9. Container & Small Spaces (8 guides — 2 live ✅)
 10. Eco & Sustainability (9 guides — 1 live ✅)
@@ -386,6 +386,7 @@ Thirty-six full guides integrated into the app:
 - `src/data/guide-content/weed-management.js` — Weed Management (`id: 'weed-management'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/indoor-houseplants.js` — Indoor Houseplants 101 (`id: 'indoor-houseplants'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/garden-pests.js` — Garden Pests ID & Control (`id: 'garden-pests'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/attracting-beneficial-insects.js` — Attracting Beneficial Insects (`id: 'beneficial-insects'`) — **complete** (all 10 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -966,6 +967,27 @@ Theme: lime/green gradient in `GuideDetail.jsx`; hero image: `public/guides/Indo
 | Section 9: Seasonal Calendar & IPM Framework | ✅ Done | 5-row seasonal calendar (Late Winter/Spring/Early Summer/Midsummer/Late Summer–Fall) with key pest events, monitoring priorities, anticipatory actions, and regional notes; 6-step IPM decision framework; closing principle tip on balance between pest and natural enemy communities |
 
 Theme: color theme wired in `GuideDetail.jsx`; hero image: `public/guides/Garden_Pests_ID_Charts_Guide.png`; set `comingSoon: false` under Pest & Problem Solving in `guides.js`
+
+---
+
+### Attracting Beneficial Insects Guide ✅
+
+`src/data/guide-content/attracting-beneficial-insects.js` — Attracting Beneficial Insects (`id: 'beneficial-insects'`); fully built — 10 sections covering the pollinator guild through a full seasonal calendar and troubleshooting reference.
+
+| Section | Status | Notes |
+|---|---|---|
+| Overview & At a Glance | ✅ Done | Why beneficial insects matter; 8-row At a Glance table (guild / primary role / key species / what they need / what harms them); pesticide-restraint-first tip |
+| Section 1: The Pollinator Guild | ✅ Done | Honeybees, native bees (7 groups: bumblebees, mason bees, leafcutters, sweat bees, mining bees, squash bees, long-horned bees), hover flies, butterflies and moths; bloom continuity tip; nesting habitat list |
+| Section 2: Parasitic Wasps | ✅ Done | 8-row species table (Braconids, Ichneumonids, Chalcids, Trichogramma, Pteromalids, Aphelinids, Encyrtids, Eulophids); mummified aphid ID tip; 6-plant Apiaceae attractant list; host plant avoidance warning callout |
+| Section 3: Predatory Beetles & Flies | ✅ Done | Lady beetles (7-row species table; wild-caught release warning), ground beetles (8-row species table; nocturnal hunter; no-till tip), rove beetles, soldier beetles, tiger beetles, hover flies (larval predators), robber flies |
+| Section 4: Specialist Predators | ✅ Done | Lacewings (aphid lion larvae; egg placement; lacewing house tip), minute pirate bug (thrips/mites/aphids; bites humans warning), assassin bugs (ambush predator; handle-with-care warning), damsel bugs, big-eyed bugs, spined soldier bug; 8-row specialist predator reference table |
+| Section 5: Habitat — Flowering Plants & Insectary Gardens | ✅ Done | 4 functional plant guilds; 10-row annual insectary table; 10-row perennial insectary table; 6-row insectary shrubs/trees table; bloom succession tip; 5-region native plant guidance |
+| Section 6: Habitat — Structure, Shelter & Overwintering | ✅ Done | 7-row overwintering shelter table; stem bundle/bee block construction; ground-level habitat; brush piles; water sources; 4-region climate adaptation; seasonal cleanup timing warning |
+| Section 7: Pesticides & the Beneficial Insect Community | ✅ Done | Pesticide impact spectrum; 8-row toxicity reference table (contact/residual/systemic × beneficials); neonicotinoid systemic uptake warning; 4 IPM decision rules; 7 low-impact alternatives; natural enemy observation tip |
+| Section 8: Purchasing & Releasing Beneficial Insects | ✅ Done | When releases work vs. don't; wild-caught ladybug warning callout; 8-row commercial species table (lacewings, Trichogramma, Encarsia, 2 predatory mite species, Orius, 2 nematode species); sourcing quality product (6 items); preparing the garden for release (6 items); habitat-first closing tip |
+| Section 9: Seasonal Calendar & Quick Reference | ✅ Done | LFD/FFD-anchored 7-row seasonal calendar (Late Winter through Winter) with garden conditions, beneficial activity, priority actions, and what to avoid; 7-row troubleshooting table; 10-item quick reference checklist; 2-paragraph closing reflection; patience tip callout |
+
+Theme: green/lime gradient in `GuideDetail.jsx`; hero image: `public/guides/Attracting_Beneficial_Insects_Guide.png`; set `comingSoon: false` under Pest & Problem Solving in `guides.js`
 
 ### Typography Upgrade ✅
 
