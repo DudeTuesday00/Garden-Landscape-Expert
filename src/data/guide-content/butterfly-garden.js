@@ -1417,5 +1417,176 @@ export const butterflyGardenContent = {
         },
       ],
     },
+    {
+      id: 'citizen-science-photography',
+      title: 'Section 9: Citizen Science & Garden Photography',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Butterfly gardens generate data as well as beauty. Because butterflies are highly visible, respond quickly to habitat change, and are tractable for identification by non-specialists, they are among the most citizen-science-ready wildlife groups in existence. The observations you make in your own garden — when kept systematically and contributed to shared databases — become part of the scientific record used to track population trends, range shifts, phenology changes, and the effects of habitat conservation programs. You do not need to be an expert to contribute; you need only observe carefully, record consistently, and upload reliably.',
+        },
+        {
+          type: 'h3',
+          text: 'Citizen Science Programs for Butterfly Gardeners',
+        },
+        {
+          type: 'table',
+          headers: ['Program', 'Organization', 'What You Submit', 'Best For', 'URL'],
+          rows: [
+            [
+              'Journey North',
+              'Journey North / Annenberg Learner',
+              'First monarch sighting of spring migration, first milkweed emergence, fall roost sightings. Simple date + location reports.',
+              'Monarch migration tracking; ideal for gardeners who want to contribute to a long-running dataset with minimal time investment.',
+              'journeynorth.org',
+            ],
+            [
+              'iNaturalist',
+              'California Academy of Sciences / National Geographic',
+              'Photographs of any organism with GPS location. Community ID confirms species. All observations feed into GBIF (Global Biodiversity Information Facility).',
+              'All-species documentation; best for gardeners interested in building a full species inventory of their yard. Most impactful if you photograph both adults and caterpillars — larval records are especially underrepresented.',
+              'inaturalist.org',
+            ],
+            [
+              'eButterfly',
+              'University of Ottawa / Butterflies of America',
+              'Complete checklist-style counts — all species observed during a defined garden visit, including zero counts (absence data). More rigorous than iNat for population monitoring.',
+              'Gardeners willing to conduct structured timed counts once or twice a month. Absence data is scientifically valuable and distinguishes eButterfly from photo-only platforms.',
+              'e-butterfly.org',
+            ],
+            [
+              'North American Butterfly Association (NABA) Counts',
+              'NABA',
+              'Annual butterfly count: all species and individuals counted within a 15-mile diameter circle on a single designated day in summer. Organized by local chapters.',
+              'Joining a local count team rather than counting solo. Good entry point to the butterfly-watching community and expert identification guidance.',
+              'naba.org',
+            ],
+            [
+              'Monarch Watch Waystation Registry',
+              'Monarch Watch / University of Kansas',
+              'Registration of your garden as a certified Monarch Waystation. Requires milkweed + nectar plants in sufficient quantity. Contributes to the waystation habitat map.',
+              'Monarch-focused gardeners who want their habitat formally recognized and mapped. Registry fee supports tagging and research programs.',
+              'monarchwatch.org',
+            ],
+            [
+              'Monarch Larva Monitoring Project (MLMP)',
+              'University of Minnesota',
+              'Weekly counts of monarch eggs and caterpillars on milkweed plants during the breeding season (June–August). Requires marking and revisiting a set of milkweed stems.',
+              'Gardeners with established milkweed patches who can commit to weekly counts. Produces some of the most rigorous breeding population data available for monarchs.',
+              'mlmp.org',
+            ],
+            [
+              'Lost Ladybug Project / Native Bee Monitoring',
+              'Cornell University',
+              'Photographic records of native ladybugs and native bees. Cross-applicable if your butterfly garden also supports pollinators (it will).',
+              'Gardeners interested in expanding observations beyond butterflies to the full beneficial insect community.',
+              'lostladybug.org',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Setting Up a Garden Butterfly Monitoring Protocol',
+        },
+        {
+          type: 'p',
+          text: 'A structured monitoring protocol — even a simple one — produces far more scientifically useful data than opportunistic sightings. The key elements are consistency (same route, same time of day, same frequency), completeness (recording all species seen, including common ones), and effort recording (noting survey duration and conditions). Even a 15-minute weekly walk through your garden, recorded consistently from April through October, builds a multi-year phenology dataset that is genuinely useful to researchers.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Define a fixed transect: A transect is simply a defined path you walk the same way each time. In a garden setting, this might be a single loop through all planting beds, walking at a slow, steady pace (roughly 1–2 minutes per bed). The key is that you cover the same area each time in the same order.',
+            'Set a consistent time window: Butterfly activity peaks when temperatures are between 65°F and 90°F and skies are mostly sunny. Mid-morning (9 AM–11 AM) surveys on clear days are optimal for most species. Avoid surveying in rain, strong wind, or temperatures below 60°F — or if you do, note the conditions so records can be weighted appropriately.',
+            'Record all species and counts: Note every butterfly species you see while walking the transect, with a count of individuals per species. If you cannot identify a species, photograph it and note "unidentified skipper" or similar — partial records are still useful.',
+            'Record effort and conditions: Note survey start time, duration, temperature, cloud cover (clear/partly cloudy/overcast), and wind speed (calm/light/breezy/strong). This allows your records to be compared meaningfully across dates and against other observers.',
+            'Maintain a garden species list: Separate from your count records, maintain a running list of every butterfly species you have ever confirmed in your garden. Mark first-of-year dates each season. Over multiple years, this list reveals which species are residents, which are regular migrants, and which are occasional strays.',
+            'Upload to iNaturalist and/or eButterfly: Photographs on iNaturalist provide voucher documentation; checklists on eButterfly provide the effort data that makes abundance trends calculable. Doing both takes only a few extra minutes per survey and maximizes the scientific value of your observations.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Garden Butterfly Photography',
+        },
+        {
+          type: 'p',
+          text: 'Photography serves three functions in the butterfly garden: it creates a personal species record, it produces documentation-quality images for citizen science submissions, and it deepens observational skill. The act of trying to photograph a butterfly forces slow, careful attention to its behavior, condition, and micro-habitat use in ways that casual observation does not. Many gardeners find that the quality of their butterfly observations improves significantly when they begin photographing regularly, independent of whether the resulting images are technically successful.',
+        },
+        {
+          type: 'h3',
+          text: 'Equipment and Settings',
+        },
+        {
+          type: 'table',
+          headers: ['Equipment Level', 'Setup', 'Strengths', 'Limitations'],
+          rows: [
+            [
+              'Smartphone',
+              'Any current smartphone camera. Use portrait mode for background blur; tap to focus on the butterfly before shooting.',
+              'Always in your pocket; sufficient for iNaturalist documentation of perched butterflies at close range (within 2–3 feet). Free.',
+              'No optical zoom; difficult in low light; not useful for flight shots or skittish species that will not allow close approach.',
+            ],
+            [
+              'Entry-level mirrorless or DSLR with kit lens (18–55mm)',
+              'Set to Aperture Priority, f/5.6–f/8, Auto ISO (max 1600), spot metering. Use continuous autofocus if available.',
+              'Significant improvement over smartphone for image quality and subject separation. Adequate for perched butterflies in good light.',
+              'Kit lens at 55mm requires very close approach (12–18 inches) for frame-filling shots; flighty species may flush before you are close enough.',
+            ],
+            [
+              'Macro lens (90–105mm)',
+              'Aperture Priority, f/5.6–f/8 for wing detail / f/11–f/16 if you need more depth of field for dorsal wing shots. ISO auto. Shutter speed priority at 1/500s+ for moving subjects.',
+              'Frame-filling images from 12–18 inches without disturbing the subject. Reveals wing scale structure, eye detail, and proboscis at a level impossible with other lenses. The gold standard for butterfly documentation photography.',
+              'Heavy and slow to handle; narrow depth of field requires precise focus placement; steep learning curve. No advantage for flight shots.',
+            ],
+            [
+              'Telephoto zoom (150–600mm)',
+              'Aperture Priority, f/6.3–f/8, Auto ISO, continuous AF tracking. Shutter 1/1000s+ for flight shots.',
+              'Allows frame-filling shots from 6–15 feet — useful for skittish species like giant swallowtails and emperors that will not allow close approach. Also effective for flight shots.',
+              'Heavy; expensive; depth of field is narrow even at longer focal lengths; difficult to hand-hold steadily in garden conditions.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Field Technique for Garden Photography',
+        },
+        {
+          type: 'list',
+          items: [
+            'Approach from downwind and from the side rather than head-on. Butterflies are sensitive to movement in their forward visual field. A slow lateral approach from downwind is far less alarming than walking directly toward them.',
+            'Lower your profile: Crouching or kneeling brings you to the butterfly\'s plane and reduces your apparent size. Many photographers photograph most effectively from a kneeling position with the camera at or slightly below the butterfly\'s level.',
+            'Wait for the butterfly to come to you: In a dense nectar planting, it is often more productive to stand still at the edge of a patch and let butterflies approach than to chase individuals through the planting. Butterflies on nectar are often briefly inattentive and will accept closer approach than those resting or patrolling.',
+            'Focus on the eye: For dorsal (wings-open) shots, focus on the forewing base near the body. For lateral shots, focus on the compound eye — a sharp eye reads as a sharp image even if the wingbase is slightly soft. Autofocus will hunt on wing patterns; override to the eye if your camera allows it.',
+            'Shoot in continuous burst mode: Even perched butterflies make small positional adjustments. A burst of 5–10 frames at the right moment will contain at least one with wings fully open and sharp focus.',
+            'Photograph both dorsal and lateral views: For species identification, dorsal (wings spread, top view) and lateral (wings closed, side view) are both often necessary. Many skippers and hairstreaks look nearly identical from above but are distinctive from the side. Try to capture both aspects of each individual you photograph.',
+            'Photograph caterpillars and chrysalises: Adult photos are abundant on iNaturalist; larval and pupal records are underrepresented and carry disproportionate scientific value. Photograph every caterpillar and chrysalis you find, noting the host plant. These records document breeding, not just presence.',
+            'Note behavior: A photograph of a butterfly ovipositing (egg-laying) on a specific plant is among the most valuable records you can make — it documents host plant use, not just flower visiting. Note and photograph any behavior beyond simple nectaring: puddling, mate-chasing, hilltopping, roosting, basking.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Photographing for Identification',
+        },
+        {
+          type: 'p',
+          text: 'When the goal is definitive species identification rather than aesthetics, specific field marks matter more than composition. Several groups require particular care:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Skippers: The most photographically challenging group. Many grass skippers (tribe Hesperiini) are nearly identical and require close-up images of the forewing upperside, hindwing underside, and — for males — the stigma (scent patch) on the forewing. Full dorsal and full hindwing underside photos together are often required for confident identification.',
+            'Hairstreaks: The hindwing underside pattern is the primary field mark for most species. Photograph the closed-wing lateral view; the upper surface is rarely diagnostic.',
+            'Blues (Lycaenidae): Dorsal wing color is highly variable by sex and season. For identification, photograph the hindwing underside — the spot pattern is diagnostic and more stable than dorsal coloration.',
+            'Crescents and checkerspots: The hindwing underside band pattern is key. Photograph both surfaces if possible.',
+            'Duskywings (Erynnis): Among the most difficult North American butterflies to identify. Consistent identification requires knowing which host plants are present in the area (many species are host-specific) and, in some cases, geographic range maps to eliminate species that do not occur locally. Photograph dorsal forewing pattern and note location carefully.',
+            'Swallowtails: Generally identifiable from dorsal photographs, but photograph the hindwing underside as well — the "red spot" row near the body tail base varies between species (and is absent in some). Note whether orange spots are present or absent on the hindwing upper surface.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '📷',
+          text: 'The most useful single citizen science habit a butterfly gardener can develop is daily iNaturalist photo uploads during the flight season. It takes roughly five minutes per session — photograph what you see during a morning garden walk, upload with auto-GPS location before breakfast. Over a single season this produces 50–100 research-grade observations that contribute to range maps, phenology studies, and habitat assessments. Multiplied across thousands of gardeners doing the same thing, this is how large-scale biodiversity monitoring happens now.',
+        },
+      ],
+    },
   ],
 }
