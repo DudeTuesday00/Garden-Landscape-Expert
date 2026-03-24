@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 38 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 39 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. Online ordering is a placeholder (coming soon); the "Add to Cart" button links visitors to the Contact page for custom orders.
 
@@ -388,6 +388,7 @@ Thirty-six full guides integrated into the app:
 - `src/data/guide-content/garden-pests.js` — Garden Pests ID & Control (`id: 'garden-pests'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/attracting-beneficial-insects.js` — Attracting Beneficial Insects (`id: 'beneficial-insects'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/butterfly-garden.js` — Butterfly Garden (`id: 'butterfly-garden'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/rabbit-proof-garden.js` — Rabbit-Proof Garden (`id: 'rabbit-proof'`) — **complete** (all 10 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -1011,6 +1012,28 @@ Theme: green/lime gradient in `GuideDetail.jsx`; hero image: `public/guides/Attr
 | Section 10: Seasonal Calendar & Quick Reference | ✅ Done | Zone 6-anchored 8-row seasonal calendar (late winter through winter) with flight season events, care tasks, and observation priorities; 8-row troubleshooting table; 9-item master checklist; 3-paragraph closing reflection; host-plant-first tip |
 
 Theme: orange/amber gradient in `GuideDetail.jsx`; hero image: `public/guides/Butterfly_Garden_Guide.png`; `comingSoon: false` under Specialty Gardens in `guides.js`; wired in `src/data/guide-content/index.js`
+
+---
+
+### Rabbit-Proof Garden Guide ✅
+
+`src/data/guide-content/rabbit-proof-garden.js` — Rabbit-Proof Garden (`id: 'rabbit-proof'`); fully built — 10 sections covering rabbit biology through regional strategies and a full troubleshooting quick reference.
+
+| Section | Status | Notes |
+|---|---|---|
+| Overview: Strategy Overview | ✅ Done | 8-row strategy comparison table (fencing through humane trapping) with effectiveness, cost, labor, and best-for columns; layered-approach tip |
+| Section 1: Know Your Rabbit — Biology, Behavior & Damage Patterns | ✅ Done | 6-row species table (Eastern Cottontail, Desert Cottontail, Brush Rabbit, New England Cottontail, Black-tailed Jackrabbit, Snowshoe Hare); behavior bullet list (feeding patterns, territory, shelter, water, seasonal patterns, breeding rate); damage ID list (45-degree clean cut, browse height, preferred targets, droppings, no slime trails); identification tip |
+| Section 2: Physical Exclusion — Fencing That Actually Works | ✅ Done | 5-row hardware cloth specs table (mesh, height, burial depth, post spacing, gate); 5-step L-footer installation guide; fence-gap warning callout; individual plant protection list (wire cylinders, tree guards, raised beds, row cover); cost comparison tip |
+| Section 3: Repellents — What Works, What Doesn't, and Why | ✅ Done | 4-item failure explanation list (olfactory, taste, habituation, rain problems); 8-row product comparison table (Plantskydd, Liquid Fence, Repels-All, predator urine, capsaicin, home remedies, bone/blood meal, motion-activated sprinkler); rotation strategy tip |
+| Section 4: Rabbit-Resistant Plants — Build a Garden Rabbits Ignore | ✅ Done | 18-row perennials/annuals/bulbs table (lavender, catmint, Russian sage, salvia, lamb's ear, coneflower, black-eyed Susan, allium, daffodil, foxglove, monkshood, yarrow, agastache, ornamental grasses, bleeding heart, columbine, Siberian iris, wisteria); 8-row trees/shrubs table (barberry, holly, boxwood, lilac, spirea, potentilla, butterfly bush, Russian olive); resistant-claims caveat tip |
+| Section 5: Plants Rabbits Love Most — What Needs Protection | ✅ Done | 8-row vulnerable plants table (vegetables, spring bulbs, annual flowers, young trees/bark girdling, roses, herbs, strawberries, young perennials) with damage timing, priority protection, and notes columns; tulip-to-daffodil swap tip |
+| Section 6: Habitat Modification | ✅ Done | 5-item shelter elimination list (brush piles, dense ground covers, deck/shed access, fence rows, lawn height); natural predators section (raptor perches, owl boxes, dogs, cats caveat); summer-projects tip |
+| Section 7: Humane Trapping, Lethal Control & Legal Considerations | ✅ Done | Legal status warning callout; 5-item live trapping guidance (trap selection, bait, placement, monitoring, relocation); nursing doe/kits warning callout; 3-item other control methods list; trapping-alone caveat tip |
+| Section 8: Garden Design for Rabbit Resistance | ✅ Done | Layered defense approach (4-item: perimeter shrubs, middle resistant perennials, protected inner zone, elevated plantings); raised beds section (24-inch height requirement, hardware cloth liner, elevated containers); companion planting section (alliums, lavender borders, catmint edging); fence-first tip |
+| Section 9: Seasonal Strategy Calendar | ✅ Done | 6-row seasonal calendar (Late Winter/Spring/Late Spring/Summer/Fall/Winter) with rabbit activity, garden vulnerability, priority actions, and regional notes columns; two critical calendar dates tip |
+| Section 10: Regional Strategies & Quick Reference | ✅ Done | 6-row regional table (Northeast, Mid-Atlantic/Southeast, Midwest/Great Plains, Southwest/Desert West, Pacific Northwest, California); "just found damage" 6-step action list; "planning new garden" 5-step list; 6-row troubleshooting table; closing fence-first tip |
+
+Theme: stone/amber gradient in `GuideDetail.jsx`; hero image: `public/guides/Rabbit_Proof_Garden_Guide.png`; `comingSoon: false` under Pest & Problem Solving in `guides.js`; wired in `src/data/guide-content/index.js`
 
 ### Typography Upgrade ✅
 

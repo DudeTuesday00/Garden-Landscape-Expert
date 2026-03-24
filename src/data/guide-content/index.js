@@ -47,6 +47,7 @@ import { weedManagementContent } from './weed-management.js'
 import { gardenPestsContent } from './garden-pests.js'
 import { attractingBeneficialInsectsContent } from './attracting-beneficial-insects.js'
 import { butterflyGardenContent } from './butterfly-garden.js'
+import { rabbitProofGardenContent } from './rabbit-proof-garden.js'
 
 export const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -92,4 +93,5 @@ export const contentMap = {
   'garden-pests': gardenPestsContent,
   'beneficial-insects': attractingBeneficialInsectsContent,
   'butterfly-garden': butterflyGardenContent,
+  'rabbit-proof': rabbitProofGardenContent,
 }
