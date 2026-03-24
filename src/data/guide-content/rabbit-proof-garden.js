@@ -90,6 +90,52 @@ export const rabbitProofGardenContent = {
       ],
     },
     {
+      id: 'habitat-modification',
+      title: 'Section 6: Habitat Modification — Making Your Property Less Attractive',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Rabbits use gardens because gardens provide two things: food and shelter. Removing or reducing available shelter does not eliminate rabbit damage — rabbits will travel some distance from shelter to feed — but it reduces the resident rabbit population in your yard and makes your property less attractive as a permanent home range. A property with excellent shelter near abundant food supports far more rabbits than one with limited shelter.',
+        },
+        {
+          type: 'h3',
+          text: 'Eliminating Rabbit Habitat',
+        },
+        {
+          type: 'list',
+          items: [
+            'Brush pile removal: Brush piles, wood piles, and dense debris accumulations are primary rabbit daytime resting areas (forms). Removing these from near the garden reduces the rabbit population that considers the immediate garden area its home territory. Stack wood away from the garden; chip brush rather than piling it; remove debris accumulations in fall before winter habitat is established.',
+            'Dense ground cover management: Dense, low ground covers (juniper, pachysandra, thick ornamental grasses) provide excellent rabbit shelter. Where ground covers are adjacent to vulnerable gardens, maintain a 3- to 5-foot open zone between the ground cover and the garden. This reduces the shelter-to-food transition distance and makes rabbits more exposed during their garden visits.',
+            'Deck and shed access: Spaces under decks and sheds are highly preferred rabbit nesting and shelter sites. Installing hardware cloth (1/2 inch) along the skirt of decks and sheds, buried 6 inches in the ground, prevents rabbits from establishing residence there. This one action, combined with removing nearby brush, can significantly reduce the local rabbit population.',
+            'Overgrown fence rows and property edges: Dense, weedy growth along fence lines and property edges provides travel corridors and shelter for rabbits. Maintaining a mowed or managed edge along property boundaries reduces rabbit-friendly travel routes into the garden.',
+            'Lawn mowing height: Rabbits prefer short grass for feeding because it provides better visibility of approaching predators. A lawn mowed to 3 to 4 inches is slightly less attractive to rabbits than one mowed to 1 to 2 inches. This is a small effect overall, but it contributes to the habitat modification strategy while also supporting beneficial insects.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Attracting Natural Predators',
+        },
+        {
+          type: 'p',
+          text: 'Rabbits are prey animals with numerous natural predators: hawks, owls, foxes, coyotes, weasels, minks, and domestic cats and dogs. In rural and semi-rural settings, supporting predator populations can provide meaningful rabbit population suppression. In suburban and urban settings, this is less reliable but worth encouraging.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Raptor perches: Installing a raptor perch — a simple 10- to 14-foot post in an open area near the garden — provides a hunting platform for red-tailed hawks, Cooper\'s hawks, and American kestrels. These raptors will actively hunt rabbits if they can see them from a perch. Commercial raptor perch kits are available, or a simple 4-inch wooden post works well.',
+            'Owl boxes: Barn owl nest boxes and great horned owl perches can attract owls that are significant rabbit predators, particularly for twilight and nighttime activity. Site owl boxes on the edge of open areas with good hunting visibility.',
+            'Domestic dogs: A dog with access to the yard — particularly one that actively chases rabbits — is one of the most effective practical rabbit deterrents available for residential properties. The scent of a resident dog (from fur, urine, and presence) deters many rabbits from establishing territory in the yard.',
+            'Cats (with caveats): Outdoor cats are known rabbit predators but are also significant predators of native birds, reptiles, and beneficial wildlife. The American Bird Conservancy and wildlife organizations strongly recommend keeping cats indoors to protect native wildlife. This guide does not recommend outdoor cats as a rabbit management tool given the significant collateral wildlife cost.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🦅',
+          text: 'Habitat modification is a background strategy — it rarely solves a rabbit problem on its own, but it reduces the baseline rabbit population that other strategies have to manage. Removing brush piles, closing off under-deck access, and installing a raptor perch take an afternoon of work each and continue paying dividends for years. Do these projects in summer when rabbit pressure is at its annual low and the work is most comfortable.',
+        },
+      ],
+    },
+    {
       id: 'vulnerable-plants',
       title: 'Section 5: Plants Rabbits Love Most — What Needs Protection',
       blocks: [
