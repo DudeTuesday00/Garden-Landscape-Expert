@@ -293,10 +293,36 @@ export default function Podcasts() {
         </div>
       </section>
 
+      {/* Planting Atlas Original Episode */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-1">
+          🎙️ Planting Atlas Original
+        </h2>
+        <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Our first original episode — listen now.</p>
+        <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm">
+          <h3 className="font-bold text-lg text-garden-800 dark:text-garden-300 mb-1">
+            Tricking Annuals into Non-Stop Blooms
+          </h3>
+          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Most annuals start strong and fade fast — but with a few techniques, you can keep
+            them blooming from planting day to first frost. This episode covers deadheading
+            strategy, succession sowing, heat-tolerant variety selection, and the fertilizer
+            timing that extends peak bloom by weeks.
+          </p>
+          <audio
+            controls
+            className="w-full"
+            src="/podcasts/Tricking_annuals_into_non-stop_blooms.m4a"
+          >
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </section>
+
       {/* Coming Soon */}
       <section className="mb-8">
         <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-3">
-          🎙️ Planting Atlas Audio — Coming Soon
+          🎙️ More Episodes — Coming Soon
         </h2>
         <div className="p-5 bg-earth-50 dark:bg-earth-900/20 border border-earth-300 dark:border-earth-700 rounded-2xl">
           <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-2">
