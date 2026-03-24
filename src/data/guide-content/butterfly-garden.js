@@ -1588,5 +1588,158 @@ export const butterflyGardenContent = {
         },
       ],
     },
+    {
+      id: 'seasonal-calendar-quick-reference',
+      title: 'Section 10: Seasonal Calendar, Troubleshooting & Quick Reference',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Butterfly garden management is cyclical — the same tasks recur in the same seasons year after year, layered on top of a multi-year arc of habitat maturation as plants fill in, host plant colonies establish, and local butterfly populations discover and colonize the garden. The calendar below uses a Zone 6 reference point (last frost date approximately April 20–May 1, first frost approximately October 15–25). Shift tasks 2–3 weeks earlier per zone warmer, 2–3 weeks later per zone cooler.',
+        },
+        {
+          type: 'table',
+          headers: ['Season / Period', 'Flight Season Events', 'Garden Care Tasks', 'Observation Priorities'],
+          rows: [
+            [
+              'Late Winter (Zone 6: Feb–Mar)',
+              'No resident butterfly flight. Overwintering adults (mourning cloak, anglewings) may emerge briefly on warm days (50°F+) — first sightings of the year. Monarch overwintering colonies still present in Mexico and California.',
+              'Plan and order seeds. Start slow-germinating nectar plants indoors. Do NOT clean up garden yet — overwintering stages are still present. Review last year\'s species list; set goals for new host plant additions.',
+              'Watch for first overwinter adult emergence on warm days. Record date — it contributes to phenology data. Check Monarch Watch and Journey North for overwintering colony news.',
+            ],
+            [
+              'Early Spring (Zone 6: Apr – mid-May)',
+              'First resident species emerge: mourning cloak, eastern comma, question mark, cabbage white. Spring azure appears at first cherry/serviceberry bloom. First sulphurs.',
+              'Begin cleanup ONLY after consistent nights above 50°F (mid-April at earliest in Zone 6). Cut stems to 18 inches; leave cut pieces bundled 4–6 weeks. Set out puddling stations. Plant transplants of fast-establishing nectar plants.',
+              'First-of-year records for each species. Photograph spring forms of eastern comma and question mark. Note which host plants are budding vs. still dormant.',
+            ],
+            [
+              'Late Spring (Zone 6: mid-May – mid-Jun)',
+              'Peak spring diversity: swallowtails emerge in succession. Spring azure, red admiral, American lady, painted lady, common buckeye begin appearing. First monarch scouts arrive from overwintering grounds.',
+              'Transplant milkweed after last frost. Direct sow late-season annuals. Set up Monarch Larva Monitoring transect if participating. Begin weekly butterfly counts.',
+              'Swallowtail oviposition on host plants — photograph eggs and early-instar caterpillars. First monarch egg-laying on milkweed. Note which swallowtail species uses which host plants in your garden.',
+            ],
+            [
+              'Early Summer (Zone 6: mid-Jun – mid-Jul)',
+              'First-generation flight at or near peak: all resident species active. Monarch breeding underway. Summer azure replaces spring azure. Hackberry emperors appear at hackberry trees.',
+              'Monitor milkweed for monarch eggs and caterpillars weekly (MLMP counts). Deadhead nectar plants to extend bloom. Water deeply during heat stress. Stake tall nectar plants before they lodge.',
+              'Monarch egg and caterpillar counts (MLMP). Photo-document the full monarch larval sequence if caterpillars are present. Track peak nectaring hours by species.',
+            ],
+            [
+              'Midsummer (Zone 6: mid-Jul – mid-Aug)',
+              'Second-generation flight peaks. Great spangled fritillary nectaring heavily on milkweed and coneflower. Pearl crescent, silvery checkerspot, red-spotted purple active. Monarch third (migratory) generation beginning.',
+              'Continue deadheading. Sow seeds of fast-establishing fall-blooming annuals if gaps exist. Assess which nectar plants are performing. Do not mow meadow areas — chrysalises attached to stems.',
+              'Watch for migrating monarchs arriving from northern breeding areas. Note which nectar plants monarchs prefer. Begin compiling fall migration arrival dates.',
+            ],
+            [
+              'Late Summer – Early Fall (Zone 6: mid-Aug – Sep)',
+              'Fall migration peaks for monarchs (peak in many Zone 6 gardens: mid-September). Painted ladies, red admirals, cloudless sulphurs moving through. Late-season residents feeding heavily pre-hibernation.',
+              'Leave all stems standing. Do not cut ornamental grasses or perennial stalks. Allow native asters, goldenrod, and Joe Pye weed to go to seed. Tag any chrysalises found so you can monitor eclosion.',
+              'Peak migration counts — record daily monarch totals during peak migration week. Photograph fresh fall-form anglewings and tortoiseshells. Note last-of-year dates for each species.',
+            ],
+            [
+              'Fall (Zone 6: Oct – Nov)',
+              'Flight season ending. Last sulphur sightings in warm years. Mourning cloaks and anglewings entering hibernation. Last monarch sightings.',
+              'Leave all stems, all leaf litter, all log piles undisturbed. Plant spring-flowering bulbs adjacent to early nectar beds. Place or refill log piles in sheltered south-facing positions. Plant new host plant trees and shrubs — fall planting establishes roots before winter.',
+              'Record last-of-year dates for all species. Check Journey North for Monarch overwintering colony arrival reports. Final iNaturalist upload sweep.',
+            ],
+            [
+              'Winter (Zone 6: Dec – Jan)',
+              'No active flight. Overwintering stages (adult mourning cloaks, anglewings, swallowtail chrysalises, viceroy hibernacula, Baltimore checkerspot eggs) present throughout garden.',
+              'Garden planning and seed ordering. Review species list for the year; compare against prior years for trend analysis. Order or stratify cold-requiring milkweed seed.',
+              'Look for viceroy hibernacula (rolled brown leaves tied to willow or poplar twigs). Check overcast warm days for mourning cloak emergence. Monitor Journey North for overwintering colony health news.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Troubleshooting Common Butterfly Garden Problems',
+        },
+        {
+          type: 'table',
+          headers: ['Problem', 'Likely Cause(s)', 'Solutions'],
+          rows: [
+            [
+              'Butterflies visit but do not stay — pass through without nectaring',
+              'Insufficient nectar plant density; wrong species for local butterflies; plants past peak bloom; nectar quality reduced by drought stress; garden too isolated — butterflies are in transit along a corridor that does not terminate at your garden.',
+              'Increase planting density — mass plantings of 9+ plants per species rather than single specimens. Add a puddling station to create an additional resource that requires stopping. Ensure continuous bloom across the full season. Water nectar plants during drought. Add host plants to encourage breeding and residence rather than transience.',
+            ],
+            [
+              'Milkweed is present but monarchs are not using it',
+              'Milkweed density too low (monarchs are area-sensitive and may overlook small patches); wrong species for region; milkweed isolated from migration route; OE (Ophryocystis elektroscirrha) protozoan parasite buildup on tropical milkweed in frost-free areas.',
+              'Plant at minimum 6–12 milkweed stems; 20+ is better. In the Southeast and Gulf Coast, cut tropical milkweed (A. curassavica) to the ground in November to interrupt OE cycling and force monarchs to migrate. Native milkweed species do not support OE buildup because they die back naturally.',
+            ],
+            [
+              'Caterpillars disappear from host plants before chrysalis stage',
+              'Predation by birds, wasps, spiders (all natural and expected); parasitism by tachinid flies or braconid wasps (natural — do not intervene); caterpillar wandered to pupate elsewhere (many travel 10–30+ feet from host plant to find a pupation site); disease.',
+              'Predation and parasitism losses of 90%+ are normal in wild populations — do not intervene. If a caterpillar vanishes from its host plant, search nearby fences, walls, stems, and overhanging surfaces — it has likely wandered to pupate. Only raise caterpillars indoors if you intend to release adults.',
+            ],
+            [
+              'Chrysalises turning black or failing to eclose',
+              'Parasitism by tachinid flies or braconid wasps (chrysalis will not produce a butterfly — this is natural and important to predator-prey balance); failed pupal development due to temperature extremes, physical damage, or disease; OE infection (monarchs).',
+              'Leave blackened chrysalises in place for several weeks — parasitoids that emerge continue the natural food web. Do not attempt to "save" parasitized chrysalises. For monarchs, test for OE using tape pressed to abdomen scales and viewed under a hand lens — oval dark spores indicate infection.',
+            ],
+            [
+              'Host plants are repeatedly defoliated and not recovering',
+              'Very high caterpillar density on a limited number of host plant stems; plant stressed by drought or poor establishment; wrong host plant species for local butterfly population.',
+              'Plant more host plant stems — density is the primary solution. A single spicebush plant will not support a spicebush swallowtail population; plant 3–5 shrubs minimum. Defoliation is not plant death — most host plants refoliate within 2–4 weeks under normal conditions.',
+            ],
+            [
+              'Garden is visited heavily in summer but nearly empty in spring and fall',
+              'Insufficient early- and late-season bloom; host plants for spring-breeding species (violets for fritillaries, early cherries for hairstreaks) may be absent; spring gap between early bulbs and peak summer bloom not bridged.',
+              'Add early-spring nectar plants: dame\'s rocket, golden alexanders, native phlox, early crabapple. Add fall-extending plants: native asters, goldenrod, ironweed, tall Joe Pye weed. Plant violets (Viola sororia and V. pedata) as fritillary host plants — they bloom early and set seed before summer annuals fill the space.',
+            ],
+            [
+              'Deer or rabbits are consuming host plants and nectar plants',
+              'Garden is within deer or rabbit territory; plants are tender new transplants or regrowth after caterpillar defoliation (more palatable); no deterrent in place.',
+              'Protect new transplants with hardware cloth cylinders until established. Plant deer-resistant nectar plants as the primary palette — ironweed, Joe Pye weed, native mints, and most native asters are lightly browsed or avoided. A motion-activated sprinkler is among the most effective non-lethal deer deterrents for garden-scale areas.',
+            ],
+            [
+              'Very few species despite good habitat — garden seems to not attract butterflies',
+              'Garden is recently established — host plant colonies not yet mature; garden is geographically isolated from source populations; pesticide drift from adjacent properties; too much shade.',
+              'Patience is the primary prescription for recently established gardens — allow 2–3 full seasons. Verify the garden receives at least 6 hours of direct sun during peak butterfly activity hours (9 AM–3 PM). Speak with neighbors about pesticide use — neonicotinoid-treated ornamentals from garden centers can reduce butterfly abundance significantly in adjacent habitats.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Quick Reference: Butterfly Garden Master Checklist',
+        },
+        {
+          type: 'list',
+          items: [
+            'NECTAR PLANTS — Provide continuous bloom from early spring through hard frost. Include at minimum: one early-spring source (native phlox, golden alexanders, or dame\'s rocket), three or more peak-summer sources (purple coneflower, milkweed, Joe Pye weed, tall garden phlox, monarda), and two or more late-season sources (native asters and goldenrod as the non-negotiable core pair). Mass plant — 9+ individuals per species minimum.',
+            'HOST PLANTS — Identify the five butterfly species you most want to support and plant their primary host plants. For most gardeners: milkweed (monarch), spicebush (spicebush swallowtail), fennel/dill/parsley (black swallowtail), native violets (fritillaries), hackberry or native cherry (multiple species). Increase host plant density over time.',
+            'PUDDLING — Maintain one or more puddling stations from May through October. Refill as needed. Place in sun adjacent to nectar plantings. Add a small amount of wood ash or sea salt to one station.',
+            'SUN — Ensure 6+ hours of direct sun in the primary nectar planting area. Shaded gardens will not hold butterfly populations regardless of plant selection.',
+            'PESTICIDES — Eliminate all pesticide use in the butterfly garden area. Do not use systemic insecticides (neonicotinoids) anywhere on the property — systemic uptake into nectar and pollen kills butterflies and caterpillars even when insects are not directly sprayed.',
+            'OVERWINTERING HABITAT — Leave all stems, leaf litter, and dead wood in place through winter. Begin spring cleanup no earlier than when overnight temperatures are consistently above 50°F. When cutting stems in spring, leave 18-inch stubs for 4–6 additional weeks to allow any attached chrysalises to eclose.',
+            'WATER — In drought, water nectar plants deeply twice per week. Stressed plants produce less nectar. Milkweed is drought-tolerant once established but benefits from supplemental water during first-season establishment.',
+            'CITIZEN SCIENCE — Contribute observations to iNaturalist and/or eButterfly at least monthly during the flight season. Participate in Journey North monarch migration tracking. If monarchs breed in your garden, enroll in the Monarch Larva Monitoring Project for weekly caterpillar counts.',
+            'ANNUAL ASSESSMENT — At end of each season, review your species list. Add host plants for species you have seen nectaring but not breeding. Note which plants received the most use and expand those. Compare species list year-over-year — a growing list indicates maturing habitat.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Butterfly Garden as a Living System',
+        },
+        {
+          type: 'p',
+          text: 'A butterfly garden is never finished. It matures across years as host plant colonies develop root systems deep enough to survive drought, as multi-stemmed spicebush and native viburnums grow large enough to support multiple caterpillar cohorts simultaneously, and as the garden becomes known — in whatever sense butterflies know places — as a reliable resource in the local landscape. The first year, you may find three or four species. The third year, eight or ten. By the fifth or sixth year, a well-planted garden in a good location can support twenty or more species through the season, with some present every day from April through October.',
+        },
+        {
+          type: 'p',
+          text: 'The management shift that matters most over this arc is from active addition to protective stewardship. In the early years, the work is planting — building the palette of nectar and host plants that makes the garden functional. In the mature garden, the work is largely restraint: not cutting too early, not cleaning up too thoroughly, not spraying when a pest appears, not replacing a "dead-looking" plant that is actually overwintering. The garden\'s productivity at that point depends less on what you do than on what you leave alone.',
+        },
+        {
+          type: 'p',
+          text: 'This is the deepest lesson butterfly gardening tends to teach: that the most ecologically productive spaces are often the ones that look, by conventional garden standards, somewhat unkempt. The log pile in the corner. The ragged edges of the aster patch. The fallen branch that never got removed. The caterpillar-stripped spicebush that looked dead in July and was covered in new foliage by September. These are not signs of garden neglect — they are signs of a garden that is genuinely alive.',
+        },
+        {
+          type: 'tip',
+          emoji: '🦋',
+          text: 'The single most transformative thing you can do for butterfly conservation from a home garden is plant native host plants — not just nectar plants. A garden full of zinnias and coneflower is a diner; a garden with spicebush, hackberry, native violets, pipevine, and milkweed is a home. Butterflies can pass through a diner on migration. They can only build a population in a place that has everything they need to complete a life cycle.',
+        },
+      ],
+    },
   ],
 }
