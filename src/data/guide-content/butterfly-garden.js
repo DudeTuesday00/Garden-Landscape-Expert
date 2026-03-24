@@ -1178,5 +1178,135 @@ export const butterflyGardenContent = {
         },
       ],
     },
+    {
+      id: 'seasonal-calendar',
+      title: 'Section 7: Seasonal Calendar & Troubleshooting',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A butterfly garden has a rhythm tied to the progression of flight seasons, host plant growth cycles, and the annual journey of migratory species. Managing your garden with that rhythm in mind — rather than treating it like a conventional ornamental border — produces dramatically better results. The calendar below uses Zone 6 as a reference point (last frost date approximately April 15, first fall frost approximately October 15); shift tasks 2–4 weeks earlier for Zones 7–9 and 2–4 weeks later for Zones 4–5.',
+        },
+        {
+          type: 'table',
+          headers: ['Season', 'Butterfly Activity', 'Garden Priority', 'Key Tasks', 'What to Avoid'],
+          rows: [
+            [
+              'Late Winter (Feb–Mar, Zone 6 reference)',
+              'Mourning cloaks and eastern commas emerge on warm days (50°F+) — among the first butterflies of the year; they overwinter as adults in bark crevices and log piles. Overwintering chrysalises of swallowtails and others are attached to stems and woody debris throughout the garden.',
+              'Resist the urge to "clean up" — overwintering adults, chrysalises, and pupae are present in leaf litter, hollow stems, and attached to plant debris. Early nectar sources for the first fliers are critical.',
+              'Leave all standing stems and leaf litter until nighttime temperatures are consistently above 50°F. Order seeds and native plant plugs from nurseries now — popular natives sell out by April. Start dill, fennel, and parsley indoors 6–8 weeks before last frost for black swallowtail host plants. Review and refresh any bare soil areas with new plantings planned for spring.',
+              'Do not cut back ornamental grasses, perennial stems, or conduct aggressive garden cleanup in late winter — overwintering chrysalises and adult butterflies are present and will be destroyed. Do not apply dormant oil sprays near shrubs where chrysalises may be attached.',
+            ],
+            [
+              'Early Spring (Mar–Apr, Zone 6 reference)',
+              'Overwintering adults (mourning cloak, eastern comma, question mark) are active on warm days. First-generation spring azure, cabbage white, and falcate orangetip appear. Monarchs arrive in Texas and begin moving north following milkweed emergence.',
+              'Establish early-season nectar sources before most perennials bloom. Milkweed emergence monitoring is important — first-generation monarchs arriving in May need milkweed that is already growing.',
+              'Plant cold-tolerant nectar sources: native violets (also host plants), pussy willow (Salix discolor), redbud (Cercis canadensis), native serviceberry (Amelanchier spp.). Transplant overwintered dill and parsley seedlings outside after last frost. Set out milkweed plugs once soil temperature reaches 55°F. Add or refresh mud puddle areas — male swallowtails and sulphurs begin puddling early.',
+              'Avoid applying any herbicides near host plant areas in early spring — herbicide drift can affect host plants and caterpillars. Do not plant non-native ornamental plants in host plant areas where they will crowd out natives.',
+            ],
+            [
+              'Late Spring (May–Jun, Zone 6 reference)',
+              'Peak swallowtail season in most of the eastern US — tiger, spicebush, black, and zebra swallowtails all flying. First monarch generation arrives and begins breeding. Fritillaries emerge. Sulphurs and whites are abundant. Caterpillar season begins in earnest on host plants.',
+              'Nectar continuity across the late-spring gap (after spring bulbs, before summer perennials) is a common problem — fill it with native clovers, native phlox, native columbine, and catmint.',
+              'Monitor host plants for caterpillars daily — document species and instar stages. Transplant dill, fennel, and parsley to the herb/host plant area. Direct-sow annual host plants (zinnias for painted ladies, native thistles). Begin staggered sowings of parsley and dill every 3 weeks to maintain continuous host plant availability through summer. Set up a butterfly journal or iNaturalist account to track first appearances.',
+              'Resist the urge to remove caterpillars from host plants — even large feeding damage is temporary and worth the outcome. Do not apply Bt (Bacillus thuringiensis) anywhere near host plants during caterpillar season — it kills all lepidopteran larvae, including your target species.',
+            ],
+            [
+              'Early Summer (Jun–Jul, Zone 6 reference)',
+              'Peak butterfly diversity in most regions. Multiple broods of swallowtails, fritillaries, and sulphurs flying simultaneously. Monarchs in second generation breeding across the Midwest. Painted lady irruptions occur in some years. Hackberry emperors, red admirals, and skippers reach peak abundance.',
+              'Maintain nectar continuity through the midsummer gap — many spring perennials have finished; summer perennials must carry the load. Water management for nectar plants is critical during heat and drought.',
+              'Deadhead spent nectar plants to extend bloom; allow some to go to seed for fall (especially goldenrods and asters that bloom from old growth). Water nectar plants at the base during drought — stressed plants produce less nectar. Refresh mud puddle areas during dry spells. Begin fall planting planning — order native aster and goldenrod plugs for fall planting now while selection is best.',
+              'Do not apply systemic pesticides (neonicotinoids) to nectar plants during bloom — these persist in nectar and pollen and are acutely toxic to butterflies. Avoid overhead irrigation on hot sunny days, which can damage delicate butterfly wings.',
+            ],
+            [
+              'Midsummer (Jul–Aug, Zone 6 reference)',
+              'The migratory generation of monarchs begins forming in late July in the northern breeding range — these are the butterflies that will fly to Mexico. Painted ladies, red admirals, and cloudless sulphurs begin moving. Host plant quality for caterpillars is critical — this generation must be large and fat-loaded enough to complete the 2,000-mile migration.',
+              'Fall migration fueling preparation is the single most important task of midsummer. The asters and goldenrods that are still buds now will be the critical nectar sources for monarchs and other migrants in 6–8 weeks.',
+              'Plant or transplant native asters and goldenrods now for fall bloom. Allow milkweed to grow vigorously — do not cut back in August (monarchs are still breeding). Set up a monarch tagging station if participating in Monarch Watch. Begin recording monarch caterpillar and adult counts for citizen science programs (MonarchWatch.org Journey North). Note which nectar plants have the highest butterfly traffic — priority species for expansion next year.',
+              'Do not cut back goldenrods or asters in late summer — they are building toward their fall bloom. Do not mow areas with late-summer milkweed. Avoid Bt applications during the migratory generation breeding period.',
+            ],
+            [
+              'Late Summer & Fall (Aug–Oct, Zone 6 reference)',
+              'Peak migration season — monarchs, cloudless sulphurs, painted ladies, American ladies, and red admirals all moving south or to overwintering sites. Fall-flying species (eastern comma, question mark, mourning cloak) are preparing to overwinter as adults. This is the most visually spectacular time in a well-planted butterfly garden.',
+              'Fall nectar is the single highest-impact contribution a butterfly garden can make to migratory species. Mass plantings of native asters and goldenrods in full bloom are the priority. Monarch tagging peaks late August through mid-October.',
+              'Allow native asters and goldenrods to bloom fully — do not deadhead fall-blooming natives. Participate in monarch tagging (Monarch Watch kits available in August). Submit monarch migration observations to Journey North. Leave standing stems and seed heads after first frost — they become overwintering habitat. Begin planning any new host plant additions for next spring.',
+              'Do not conduct fall garden cleanup until spring — overwintering butterflies (adults, chrysalises, eggs) are present in standing stems, leaf litter, and bark crevices from October onward. Resist neighborhood pressure to "tidy up" in fall.',
+            ],
+            [
+              'Winter (Nov–Jan, Zone 6 reference)',
+              'Most butterflies are in diapause — overwintering as eggs, larvae, pupae, or adults in sheltered sites throughout the garden. Mourning cloaks and anglewings may emerge on unusually warm days (55°F+) to bask. Western monarchs are clustered at California overwintering sites; eastern monarchs are in the oyamel forests of Michoacán.',
+              'Garden structure for overwintering habitat. Planning and ordering for the coming season.',
+              'Leave all garden structure intact through winter — no cleanup until spring. Order seeds (dill, fennel, parsley, native annuals) for spring sowing. Research any new host or nectar plants to add next season. Review your butterfly journal — which species appeared, which were missing, what host plants had the most caterpillar activity. Submit any late-season sightings to iNaturalist or eButterfly.',
+              'Do not apply dormant oils or horticultural sprays near areas where chrysalises may be attached to woody stems. Do not blow or burn leaf litter — it contains overwintering pupae and adult butterflies.',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🍂',
+          text: 'The single most impactful change most butterfly gardeners can make is to delay fall cleanup until late March or April, when nighttime temperatures are consistently above 50°F. Caterpillars of many species overwinter as pupae attached to standing stems or buried in leaf litter directly under their host plants. A single overnight cleanup in October can eliminate an entire local population of a species that spent the summer breeding in your garden.',
+        },
+        {
+          type: 'h3',
+          text: 'Troubleshooting Common Problems',
+        },
+        {
+          type: 'table',
+          headers: ['Problem', 'Likely Cause', 'Solution'],
+          rows: [
+            [
+              'Butterflies visit briefly but don\'t linger or return',
+              'Insufficient nectar plant mass — isolated individual plants rarely hold butterflies for long. Butterflies orient toward large blocks of color and high nectar density.',
+              'Plant nectar species in masses of 5–10+ plants rather than one of each. A 4-foot drift of native asters holds butterflies far longer than a single plant. Expand the overall size of your nectar planting — butterfly gardens reward scale.',
+            ],
+            [
+              'No caterpillars on host plants despite adult butterflies present',
+              'Host plants are too young or too small to attract egg-laying females; plants may be isolated and hard to find; surrounding landscape may lack host plants for local breeding populations.',
+              'Larger, more established host plants attract more egg-laying — allow milkweed and other hosts to grow multiple seasons before expecting heavy use. Plant host plants in groups of 3+ rather than singles. Check plants daily in early morning when females are most active — eggs and young caterpillars are easy to miss.',
+            ],
+            [
+              'Caterpillars disappear from host plants overnight',
+              'Predation by birds, wasps, spiders, or ground beetles — this is normal and expected. Parasitic wasps and flies also parasitize caterpillars; parasitized caterpillars may disappear or die before pupating.',
+              'Accept that most caterpillars will not survive to adulthood — a 1–2% survival rate from egg to adult is normal in nature. Plant enough host plant to sustain the losses. Do not attempt to exclude all predators — they are part of the ecosystem.',
+            ],
+            [
+              'Monarch caterpillars or eggs present but no adults emerging',
+              'Parasitism by the tachinid fly Lespesia archippivora, which lays eggs on monarch caterpillars; OE (Ophryocystis elektroscirrha) protozoan infection; predation during the pupal stage.',
+              'OE infection is most common on tropical milkweed in warm climates — switch to native milkweeds. Tachinid fly parasitism is natural and not controllable without harming other beneficial insects. Maintain a diverse habitat with ample host plant so that overall production remains high despite individual losses.',
+            ],
+            [
+              'Milkweed covered in orange aphids',
+              'Oleander aphids (Aphis nerii) — a non-native species that specializes on milkweed. They do not harm monarch eggs or small caterpillars directly, though large infestations can weaken plants.',
+              'Tolerate moderate aphid populations — they attract ladybugs, lacewings, and parasitic wasps that provide natural control. Knock off severe infestations with a strong water spray. Do not use insecticides on milkweed under any circumstances — they will kill monarch caterpillars.',
+            ],
+            [
+              'Swallowtail caterpillars stripping parsley or dill plants bare',
+              'Black swallowtail caterpillars are voracious feeders — a single late-instar caterpillar can defoliate a parsley plant in 48 hours.',
+              'Plant more host material than you think you need — 6–10 parsley plants per expected caterpillar cohort is a reasonable rule. Succession-sow dill every 3 weeks through summer. Allow bronze fennel to self-sow freely as it is both ornamental and an inexhaustible host. Accept plant defoliation as the goal, not a failure.',
+            ],
+            [
+              'Few or no butterflies despite good plant selection',
+              'Garden may be too isolated from source populations; surrounding landscape may be heavily pesticide-treated; garden may be too small or too shaded; wrong bloom timing relative to local flight seasons.',
+              'Check sun exposure — butterfly gardens need at minimum 6 hours of direct sun. Increase garden size — small isolated plots struggle in heavily degraded landscapes. Talk to neighbors about pesticide use. Connect your garden to adjacent habitat with a corridor of plantings if possible. Check iNaturalist for which species are present in your area and verify that your host plants match those species.',
+            ],
+            [
+              'Garden attracts butterflies but no puddling behavior',
+              'Mud puddle area is too dry, too far from nectar source, or not accessible — males puddle most in warm morning hours when nectar sources are close by.',
+              'Place mud puddle within 20 feet of primary nectar area. Keep consistently moist but not flooded — refresh daily in hot weather. Add a pinch of salt or wood ash to provide minerals. Flat stones at the edge give butterflies a landing platform adjacent to wet mud.',
+            ],
+            [
+              'Passionvine (Passiflora) being completely defoliated',
+              'Gulf fritillary and/or zebra longwing caterpillars — this is the intended outcome. These species depend entirely on passionvine and will consume it heavily when populations are high.',
+              'Plant multiple passionvine plants or allow the vine to grow large enough to sustain repeated defoliation — it recovers vigorously from the roots. In frost-free areas, cut it back by half in late fall to remove accumulated OE (in regions where it applies) and encourage fresh growth. Defoliation is not plant death — it is success.',
+            ],
+            [
+              'Butterfly numbers declining year over year despite consistent garden',
+              'Regional population decline from habitat loss, pesticide use, or climate shifts; garden may be producing butterflies but they are not surviving in the surrounding landscape; local weather patterns affecting population cycles.',
+              'Expand habitat if possible — more host plant area, more nectar diversity, more overwintering structure. Engage neighbors in planting. Participate in citizen science counts (NABA butterfly counts, Fourth of July butterfly counts) to track regional trends. Reduce or eliminate all pesticide use in and near the garden. Contact local native plant societies or Xerces Society chapter for regional conservation context.',
+            ],
+          ],
+        },
+      ],
+    },
   ],
 }
