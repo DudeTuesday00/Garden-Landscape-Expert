@@ -90,6 +90,100 @@ export const rabbitProofGardenContent = {
       ],
     },
     {
+      id: 'repellents',
+      title: 'Section 3: Repellents — What Works, What Doesn\'t, and Why',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Repellents are the most widely purchased rabbit management product and among the least reliable as a standalone strategy. They work by making plants smell or taste unpleasant to rabbits, or by triggering a fear response through predator scents. Under conditions of moderate rabbit pressure and abundant alternative food, repellents can reduce garden visits. Under high rabbit pressure or scarce food — particularly in winter and early spring — rabbits\' hunger typically overwhelms their aversion.',
+        },
+        {
+          type: 'h3',
+          text: 'How Repellents Work (and Why They Fail)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Olfactory repellents (scent-based): Products containing putrescent whole egg solids, garlic, or predator urine trigger the rabbit\'s fear response or disgust through smell. These can be effective for 1 to 3 weeks when first applied, but rabbits habituate (become accustomed) to persistent scents over time. Effectiveness also degrades rapidly with rain, irrigation, and temperature fluctuations.',
+            'Taste repellents: Products containing hot pepper extracts (capsaicin) or denatonium benzoate are applied to plant surfaces. They are ineffective when rain washes them off, and rabbits learn to eat the untreated newer growth that appears after application.',
+            'The habituation problem: A rabbit in a garden treated uniformly will test treated plants repeatedly, and when driven by hunger will begin eating them despite the aversion. Once a rabbit has habituated to a specific repellent, switching to a different product with a different chemical mode of action can restore effectiveness temporarily.',
+            'The rain problem: Most repellents require reapplication every 7 to 14 days and after every significant rain event. In wet regions (Pacific Northwest, Southeast, New England) or during rainy spring seasons, maintaining effective repellent coverage is both labor-intensive and expensive.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Repellent Products: A Comparative Reference',
+        },
+        {
+          type: 'table',
+          headers: ['Product / Type', 'Active Ingredients', 'Effectiveness', 'Reapplication Frequency', 'Best Use Case'],
+          rows: [
+            [
+              'Plantskydd® (powder and liquid)',
+              'Dried porcine (pig) blood; strong predator-fear response in prey animals',
+              'Good–Very good; one of the most consistently effective commercial repellents in research trials',
+              'Every 3–4 weeks (longer rain-free interval than most liquid products; dry formula adheres better)',
+              'Ornamental beds and borders; perennials and shrubs; winter bark protection on young trees. Very unpleasant smell when first applied.',
+            ],
+            [
+              'Liquid Fence®',
+              'Putrescent whole egg solids, garlic oil',
+              'Good when freshly applied; decreases significantly with rain and habituation',
+              'Every 1–2 weeks; after rain',
+              'Supplemental deterrent when used with other methods; moderate-pressure situations',
+            ],
+            [
+              'Repels-All®',
+              'Putrescent whole egg solids, cloves, garlic, fish oil, onion, dried blood',
+              'Moderate; broad-spectrum formulation for multiple pests',
+              'Every 1–2 weeks; after rain',
+              'Multi-pest situations (rabbits + deer + squirrels)',
+            ],
+            [
+              'Predator urine products',
+              'Coyote, fox, bobcat, or mountain lion urine; some products use synthetic predator scent compounds',
+              'Variable; often effective initially; habituation develops quickly as prey animals realize no predator is actually present',
+              'Every 1–2 weeks; more frequently in wet conditions',
+              'Short-term deterrence while other methods are implemented; not a standalone long-term solution',
+            ],
+            [
+              'Hot pepper / capsaicin sprays',
+              'Capsaicin extract; ground hot pepper',
+              'Low–moderate; washes off immediately in rain; rabbits may not taste before biting off tender stems entirely',
+              'After every rain; every 7–10 days',
+              'Very limited effectiveness for determined rabbits; may reduce casual browsing',
+            ],
+            [
+              'Irish Spring soap / human hair / home remedies',
+              'Odors from human presence, soap fragrance, or predator scent',
+              'Low; anecdotal effectiveness; most gardeners find these ineffective beyond 1–2 weeks',
+              'Continuous (soap) or frequent (hair)',
+              'Very low-cost supplements to other methods; not reliable as primary management',
+            ],
+            [
+              'Bone meal / blood meal (as deterrent)',
+              'Dried blood; bone',
+              'Low; primarily soil amendments; the scent may temporarily deter rabbits but effectiveness is limited and inconsistent',
+              'After rain; when applied as surface treatment',
+              'The fertilizer benefit may be worth applying regardless of deterrent effect; do not rely on these for rabbit management',
+            ],
+            [
+              'Motion-activated sprinkler (Scarecrow® and similar)',
+              'Sudden motion + noise + water spray; triggers flight response',
+              'Good–Very good when first deployed; habituation occurs in 2–4 weeks; very effective in low-pressure situations',
+              'No reapplication; battery or water pressure dependent; relocate every 2–3 weeks to prevent habituation',
+              'Entry points to gardens; areas where fencing is impractical; works best combined with repellent sprays at the perimeter',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🔄',
+          text: 'The Rotation Strategy — Preventing Repellent Habituation: The most effective repellent program alternates between products with different modes of action on a 3- to 4-week schedule. A typical rotation: Weeks 1–3: blood-meal-based product (Plantskydd). Weeks 4–6: egg-and-garlic product (Liquid Fence). Weeks 7–9: predator urine product. Weeks 10–12: capsaicin product. Habituation is compound-specific — a rabbit habituated to putrescent egg has not habituated to dried blood, and vice versa. The rotation strategy works best in moderate-pressure situations; in high-pressure situations with limited food alternatives, even rotated repellents will eventually be overcome by hunger.',
+        },
+      ],
+    },
+    {
       id: 'physical-exclusion',
       title: 'Section 2: Physical Exclusion — Fencing That Actually Works',
       blocks: [
