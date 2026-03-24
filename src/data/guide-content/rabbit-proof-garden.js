@@ -90,6 +90,69 @@ export const rabbitProofGardenContent = {
       ],
     },
     {
+      id: 'seasonal-calendar',
+      title: 'Section 9: Seasonal Strategy Calendar',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Rabbit pressure is not constant through the year — it peaks in spring (when new plantings coincide with peak hunger and breeding activity) and again in winter (when bark becomes a critical food source and snow elevates reach). Matching your protection efforts to the season makes management far more efficient than applying the same level of effort year-round.',
+        },
+        {
+          type: 'table',
+          headers: ['Season / Timing', 'Rabbit Activity', 'Garden Vulnerability', 'Priority Actions', 'Regional Notes'],
+          rows: [
+            [
+              'Late Winter / Early Spring (February–March in most regions)',
+              'Rabbits are hungry; overwintering food scarce; breeding begins; highly motivated to find new food sources',
+              'Bark of young trees and shrubs extremely vulnerable when snow cover is still present; emerging bulb shoots; early transplants',
+              'Inspect and repair all tree guards and fencing installed last fall. Apply repellent sprays to any woody plants not protected with hardware cloth. Do NOT plant vulnerable annuals yet.',
+              'Zone 3–4: Rabbits still standing on snow and reaching bark higher than summer guards cover; check that guards extend above current snow depth. Zone 7+: Breeding already underway; kits may be present by late February.',
+            ],
+            [
+              'Spring (March–May in most regions)',
+              'Peak breeding activity; does raising kits; juveniles emerging from nests and learning to forage; high garden activity',
+              'Maximum vulnerability: new transplants, emerging bulb foliage, seedlings, and all tender new growth are being planted exactly when rabbit pressure is highest',
+              'Install vegetable garden fencing BEFORE transplanting. Use wire cages on all new perennial transplants. Apply repellent immediately after planting any vulnerable annuals. Plant alliums and daffodils among vulnerable bulb companions.',
+              'The spring planting period (April–May in Zones 5–6; March–April in Zones 7–8; May–June in Zones 3–4) is when the most rabbit damage occurs because it coincides with peak hunger and peak new planting vulnerability simultaneously.',
+            ],
+            [
+              'Late Spring / Early Summer (May–June)',
+              'Population at peak (multiple litters present); juveniles independent and foraging actively; food becoming more abundant as plants mature',
+              'Strawberries and early vegetables; some annual planting continues; young trees still vulnerable',
+              'Install strawberry protection (wire frame or low fence). Continue reapplying repellents on a 10–14 day schedule. If trapping, this is an effective period — but check for nursing does before relocating.',
+              'Juvenile rabbits in spring and early summer are the most reckless foragers; they have not yet learned which plants to avoid and will sample almost anything — including plants that adult rabbits normally ignore.',
+            ],
+            [
+              'Summer (June–August)',
+              'Food generally abundant; damage typically less severe than spring and winter; population stabilizes; second and third litters possible',
+              'Ongoing vegetable garden; some continued annual damage but typically manageable with existing strategies',
+              'Maintain fencing; touch up repellent as needed after rain. Evaluate what management worked this year and what needs adjustment. Begin planning fall bulb protection.',
+              'Summer is the best season for habitat modification projects (deck skirt installation, brush removal) while work is comfortable and rabbit pressure is at its annual low.',
+            ],
+            [
+              'Fall (September–November)',
+              'Rabbits preparing for winter; actively foraging to maintain body condition; beginning to use bark as food source as temperatures drop',
+              'Fall-planted bulbs (tulips especially) are extremely vulnerable immediately after planting; perennial transplants; bark of young woody plants',
+              'Install or reinstall tree guards on ALL woody plants under 4–5 years old BEFORE ground freezes. Plant vulnerable bulbs with hardware cloth baskets or protective cages. Ensure fencing is intact before winter.',
+              'Fall bulb planting is a critical period: freshly planted tulip bulbs are attractive to rabbits (and squirrels) before they establish. Hardware cloth baskets are the most reliable protection.',
+            ],
+            [
+              'Winter (December–February)',
+              'Rabbits under maximum food stress; willing to eat plants they would ignore in other seasons; standing on snow to reach bark above summer browse height',
+              'Young tree and shrub bark; evergreen and semi-evergreen foliage; the garden is at maximum risk for bark girdling',
+              'Check tree guards monthly; ensure guards extend above current snow level (add extensions if needed). Apply fresh repellent on woody plants where guards are not in place. Inspect perimeter fencing for gaps created by frost heaving.',
+              'In Zone 3–4 states with consistent snow: the most severe rabbit damage of the year occurs in February and early March as snow depth is at maximum and food is at minimum. Do not wait until you see damage to act.',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '📅',
+          text: 'The two most critical calendar dates for rabbit management: (1) the date you install your vegetable garden fence — it must go in BEFORE you plant, not after the first damage; and (2) the date you install tree guards in fall — they must be in place BEFORE the first hard frost and snow, not after you find girdled bark in February. Both mistakes are extremely common and entirely preventable.',
+        },
+      ],
+    },
+    {
       id: 'garden-design',
       title: 'Section 8: Garden Design for Rabbit Resistance',
       blocks: [
