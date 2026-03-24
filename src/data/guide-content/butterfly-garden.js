@@ -796,5 +796,136 @@ export const butterflyGardenContent = {
         },
       ],
     },
+    {
+      id: 'garden-design',
+      title: 'Section 4: Garden Design — Sun, Shelter, Water, and Layout',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Butterfly garden design is fundamentally about creating conditions that match butterfly biology. Butterflies are ectothermic (cold-blooded) — they regulate body temperature by moving between sun and shade and by basking with wings spread to absorb heat. They require warmth to fly, to find mates, to locate host plants, and to feed. A butterfly garden that is shaded for more than half the day will attract far fewer butterflies than one in full sun, regardless of how many nectar plants it contains.',
+        },
+        {
+          type: 'h3',
+          text: 'Sun and Microclimate',
+        },
+        {
+          type: 'list',
+          items: [
+            'Full sun (6+ hours of direct sun) is the baseline requirement. South- and west-facing sites are most productive. East-facing sites work in warm climates; north-facing sites are generally unsuitable.',
+            'Wind shelter dramatically increases butterfly activity. A windbreak of shrubs, a fence, a hedge, or a garden wall on the north and west sides of the planting creates a warm, protected microclimate that butterflies preferentially use. Even a 20% reduction in wind speed meaningfully extends the daily window of butterfly activity.',
+            'Basking stones and bare soil patches — flat rocks, pavers, compacted sandy areas — absorb heat and provide surfaces where butterflies warm up in the morning and thermoregulate through the day. Position at least one large flat stone in the sunniest part of the garden, angled slightly toward the south.',
+            'Dark-colored surfaces heat up fastest. A dark flagstone or exposed dark soil patch at the garden center is consistently visited by basking butterflies, especially in the morning and on cool days.',
+            'Warm air pockets form at the base of south-facing walls and garden structures. Placing low-growing nectar plants (low phlox, sweet alyssum, low asters) against a south-facing wall capitalizes on these microclimates.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Water and Mud Puddling',
+        },
+        {
+          type: 'p',
+          text: 'Butterflies do not drink from open water the way birds do. Instead, many species — particularly swallowtails, sulphurs, skippers, and blues — engage in "puddling," gathering at damp soil, mud, or sand to extract dissolved minerals, amino acids, and sodium that are scarce in flower nectar. Puddling is most commonly observed in males, who pass minerals to females during mating — the nutrient transfer enhances egg fertility and caterpillar survival.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Create a puddling station by filling a shallow dish, clay saucer, or buried basin to the rim with coarse sand, then keeping it consistently moist with a slow drip or manual watering every few days.',
+            'Add a small amount of aged compost, wood ash, or a pinch of sea salt to the puddling sand — minerals and sodium significantly increase attractiveness.',
+            'Position the puddling station in full sun on the ground, not elevated on a stand. Butterflies puddle at ground level and are reluctant to use elevated water features designed for birds.',
+            'A slight depression in compacted soil that retains water after rain is a natural puddling site — observe these in your garden and enhance rather than drain them.',
+            'Do not add fresh manure, which may contain pathogens; use composted manure if adding organic matter to the puddling mix.',
+            'In arid climates, a reliable artificial puddling station may be the only mineral source for miles. Swallowtails and sulphurs in desert gardens readily adopt well-maintained puddling stations.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '💧',
+          text: 'A mud puddle outperforms a bird bath for butterfly gardening purposes. If you have only one water feature to install, make it a ground-level sand-and-mud puddling station in full sun rather than an elevated water dish. Swallowtail clusters of 10–20 individuals are regularly observed at established puddling sites — nothing else produces the same congregation effect.',
+        },
+        {
+          type: 'h3',
+          text: 'Layout and Planting Design Principles',
+        },
+        {
+          type: 'table',
+          headers: ['Design Principle', 'Why It Matters', 'How to Apply'],
+          rows: [
+            [
+              'Plant in drifts, not isolated specimens',
+              'Butterflies detect nectar sources from a distance. Large masses of color and scent are detected more readily than single plants. A group of 7 coneflowers produces more butterfly visits than 7 individual coneflowers scattered through the border.',
+              'Plant nectar plants in groups of 5–9 minimum. Repeat groups of the same species throughout the garden to create visual rhythm and multiple nectar stations. In small gardens, 3 plants of a kind is the minimum useful unit.',
+            ],
+            [
+              'Layer heights for multiple species',
+              'Different butterfly species fly and feed at different heights. Ground-skimming skippers, mid-level fritillaries, and canopy-visiting swallowtails all need plants at their preferred flight height.',
+              'Design with a low layer (6–18 inches: low asters, creeping thyme, sweet alyssum, phlox subulata), mid layer (2–4 feet: coneflowers, black-eyed Susans, bee balm, mountain mint), and tall layer (4–7 feet: ironweed, Joe Pye weed, tall goldenrod, swamp milkweed). Include at least one shrub layer (spicebush, buttonbush, native viburnums).',
+            ],
+            [
+              'Integrate host plants into the design',
+              'Host plants placed at the garden edge or hidden in utility areas are less likely to be used than those integrated into the main planting where female butterflies already congregate to nectar.',
+              'Site milkweed within or directly adjacent to the main nectar planting — female monarchs nectar and search for host plants in the same area. Plant spicebush at the garden perimeter where it can grow to a natural size. Allow violets to naturalize under deciduous shrubs. Integrate parsley and dill into herb and vegetable gardens visible from the butterfly garden.',
+            ],
+            [
+              'Provide edge habitat',
+              'Butterflies are most abundant at the interface between open and woody habitat — garden edges, woodland margins, brushy fence lines. Edge structure provides both sunlit nectar habitat and sheltered areas for perching, roosting, and overwintering.',
+              'Create a rough edge between the sunny butterfly garden and any adjacent shrub or tree plantings. A brushy hedgerow of native shrubs (buttonbush, native viburnums, elderberry, dogwood) along one side of the butterfly garden substantially increases species diversity beyond what sun-only plantings produce.',
+            ],
+            [
+              'Leave the leaf litter',
+              'Multiple butterfly species overwinter as adults, pupae, or eggs in leaf litter, hollow stems, and rough ground. Pristine fall and spring cleanup destroys the overwintering generation.',
+              'Leave perennial stalks standing through winter and cut them back in late March or April rather than fall. Do not blow or bag fallen leaves from garden beds — shred lightly in place or pile at the garden edge. The Mourning Cloak, Eastern Comma, and Question Mark overwinter as adults in leaf piles and loose bark; giant swallowtail pupae overwinter attached to woody stems.',
+            ],
+            [
+              'Avoid straight-line formal layouts',
+              'Butterfly garden layouts with irregular edges, curved beds, and varied plant masses better mimic the natural habitats butterflies evolved in and are more productive than formal geometric arrangements of the same plants.',
+              'Use flowing curves for bed edges. Allow plants to grow and self-seed naturally rather than constraining them to exact grid positions. Intentional "messiness" — volunteer plants, naturalized colonies, rough edges — is biologically productive and is increasingly recognized as a design aesthetic in its own right.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Overwintering Habitat',
+        },
+        {
+          type: 'p',
+          text: 'Butterflies overwinter in four different life stages depending on the species. Understanding which stage is used by the butterflies in your garden determines what habitat elements to maintain through winter.',
+        },
+        {
+          type: 'table',
+          headers: ['Overwintering Stage', 'Species Examples', 'Habitat Required', 'Garden Action'],
+          rows: [
+            [
+              'Adult (sheltered dormancy)',
+              'Mourning Cloak, Eastern Comma, Question Mark, Gray Comma, Satyr Comma',
+              'Loose bark, hollow logs, dense brush piles, spaces under leaf litter',
+              'Leave brush piles at the garden edge; do not remove dead bark from logs and stumps; avoid tidying hedgerows in fall',
+            ],
+            [
+              'Pupa (chrysalis)',
+              'Giant Swallowtail, Black Swallowtail, Pipevine Swallowtail, Spicebush Swallowtail',
+              'Attached to woody stems, fence posts, rough bark — chrysalises are camouflaged and look like dried leaves or bark chips',
+              'Leave woody perennial stems and shrub branches uncut through winter; do not pressure-wash fences or structures in spring before April 15',
+            ],
+            [
+              'Larva (caterpillar)',
+              'Various hairstreaks, elfins, and some skippers overwinter as small early-instar larvae',
+              'Concealed in tight crevices, rolled leaves, or at the base of host plants',
+              'Leave leaf litter on soil surface under host plants; do not cultivate soil aggressively in early spring around host plant bases',
+            ],
+            [
+              'Egg',
+              'Some hairstreaks, Gray Hairstreak, Juniper Hairstreak',
+              'Eggs are laid directly on host plant twigs and bark and remain there through winter',
+              'Do not prune host plants aggressively in late fall or early spring; if pruning is necessary, inspect cut material for tiny spherical eggs before composting',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🍂',
+          text: 'The "leave the leaves" movement in garden design is directly aligned with butterfly conservation. A fall cleanup standard of "leave everything standing until daytime temperatures are consistently above 50°F in spring" protects overwintering butterflies across all four life stages. Spring cleanup done in late March to mid-April — after overwintering adults have emerged and before egg-laying begins in earnest — strikes the best balance between garden tidiness and wildlife habitat.',
+        },
+      ],
+    },
   ],
 }
