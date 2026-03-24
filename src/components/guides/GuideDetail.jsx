@@ -45,6 +45,7 @@ export const heroImages = {
   'indoor-houseplants': '/guides/Indoor_Houseplants_101_Guide.png',
   'weed-management': '/guides/Weed_Management_Guide.png',
   'garden-pests': '/guides/Garden_Pests_ID_Charts_Guide.png',
+  'beneficial-insects': '/guides/Attracting_Beneficial_Insects_Guide.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -705,6 +706,22 @@ const themes = {
     tableHeadText: 'text-orange-800',
     tableHeadBorder: 'border-orange-200',
     bullet: 'text-orange-400',
+  },
+  'beneficial-insects': {
+    heroBg: 'bg-gradient-to-br from-green-50 to-lime-100',
+    heroBorder: 'border-green-200',
+    heroTitle: 'text-green-900',
+    backBtn: 'text-green-700 hover:text-green-900',
+    sectionTitle: 'text-green-900',
+    sectionBorder: 'border-green-100',
+    h3: 'text-green-800',
+    tipBg: 'bg-green-50',
+    tipBorder: 'border-green-300',
+    tipText: 'text-green-900',
+    tableHead: 'bg-green-100',
+    tableHeadText: 'text-green-800',
+    tableHeadBorder: 'border-green-200',
+    bullet: 'text-green-500',
   },
 }
 

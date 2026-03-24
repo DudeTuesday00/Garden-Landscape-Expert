@@ -491,7 +491,7 @@ export const guideCategories = [
         title: 'Attracting Beneficial Insects',
         emoji: '🦋',
         description: 'Invite ladybugs, lacewings, and parasitic wasps to do pest control for you.',
-        comingSoon: true,
+        comingSoon: false,
       },
     ],
   },
