@@ -90,6 +90,83 @@ export const rabbitProofGardenContent = {
       ],
     },
     {
+      id: 'vulnerable-plants',
+      title: 'Section 5: Plants Rabbits Love Most — What Needs Protection',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Understanding which plants are most vulnerable allows you to focus protection resources where they matter most. Many of the most beloved garden plants are also among the most attractive to rabbits. If you are committed to growing these plants, targeted fencing or individual plant protection is the most reliable approach.',
+        },
+        {
+          type: 'table',
+          headers: ['Plant Category', 'Specific Examples', 'Damage Timing', 'Priority Protection', 'Notes'],
+          rows: [
+            [
+              'Vegetable garden crops',
+              'Beans, peas, lettuce, spinach, arugula, brassicas (broccoli, cabbage, kale), carrots, beets, Swiss chard, cilantro, parsley',
+              'Spring through fall; most severe on seedlings and transplants; beans and peas are particularly preferred',
+              'Hardware cloth fencing around entire vegetable garden',
+              'The vegetable garden is the most important single area to fence; even a basic hardware cloth perimeter provides excellent protection',
+            ],
+            [
+              'Spring bulbs (highly vulnerable)',
+              'Tulips (most vulnerable of all bulbs), crocus, muscari (grape hyacinth), lilies (true Lilium spp.), hyacinths, fritillaria',
+              'Spring emergence; bulbs may also be dug in fall in some regions',
+              'Hardware cloth cages around tulip beds; plant bulbs in hardware cloth baskets; consider replacing with daffodils in high-pressure areas',
+              'Daffodils and narcissus are TOXIC to rabbits and reliably avoided; replacing tulips with daffodils in rabbit-heavy areas is a common and successful long-term strategy',
+            ],
+            [
+              'Annual flowers',
+              'Impatiens, pansies, violas, petunias, marigolds, zinnias, snapdragons, dianthus, alyssum',
+              'Spring planting through summer; newly planted annuals most vulnerable',
+              'Individual plant wire cages; repellent spray immediately after planting; consider replacing with resistant annuals (salvia, ageratum, cleome)',
+              'Newly transplanted annuals are extremely vulnerable in the first 1–2 weeks before they establish; targeted protection at planting time is most critical',
+            ],
+            [
+              'Young trees (bark girdling)',
+              'Any tree or shrub under 4–5 years old or with bark under 1 inch diameter; most vulnerable: fruit trees, ornamental cherries and crabapples, willows, dogwoods, young maples',
+              'Most severe in winter when snow covers the ground and other food is scarce; also spring when rabbits eat new tender bark',
+              'Hardware cloth tree guards installed in fall; extend above expected snow depth in cold climates; leave in place until bark is thick enough to resist browsing (usually 3–5 years)',
+              'Bark girdling — chewing a complete ring around the trunk — kills the tree by severing the phloem layer. This is the most serious rabbit damage possible and is very difficult to reverse once it occurs.',
+            ],
+            [
+              'Roses (canes)',
+              'All rose types; hybrid teas and climbers most vulnerable; canes up to 1/2 inch diameter are preferred',
+              'Fall through spring; winter cane damage is common in cold regions when canes are accessible above the snow',
+              'Hardware cloth cylinder around rose bushes; remove cylinder in spring after growth begins; reapply in fall',
+              'Established, large rose shrubs may sustain some browsing and recover; young roses and hybrid teas require reliable protection',
+            ],
+            [
+              'Herbs (culinary and ornamental)',
+              'Parsley (most vulnerable), cilantro, basil, arugula, dill; also young thyme and marjoram plants',
+              'Spring through fall',
+              'Individual plant wire cages; row cover over herb plantings; locate herbs within fenced vegetable garden area',
+              'Established lavender, rosemary, and thyme are typically avoided; it is the young, tender herbs that are most at risk',
+            ],
+            [
+              'Strawberries',
+              'All strawberry varieties; flowers and young fruit particularly preferred',
+              'Spring (flowers) and early summer (fruit)',
+              'Hardware cloth cage over strawberry beds; low fence around strawberry patch',
+              'A simple 12-inch hardware cloth fence over a strawberry patch excludes rabbits entirely; without protection, rabbit damage on strawberries can be nearly total',
+            ],
+            [
+              'Young perennials in their first season',
+              'Hostas (especially newly planted), daylilies as new transplants, astilbe newly planted, many perennials before they build up root systems',
+              'Spring planting season; spring emergence',
+              'Wire cages or cylinders around new transplants; remove after first full growing season when plants are established and larger',
+              'Most perennials are less vulnerable after their first year; the protection investment at planting time yields long-term benefits',
+            ],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌷',
+          text: 'The Tulip-to-Daffodil Swap: If tulips are disappearing every spring despite repellent applications, the most reliable fix is not a better spray — it is replacing most tulip plantings with daffodils and narcissus (which are toxic to rabbits and reliably avoided) and using ornamental alliums for spring color accent. This one plant substitution eliminates the most frustrating recurring rabbit problem for many gardeners permanently.',
+        },
+      ],
+    },
+    {
       id: 'rabbit-resistant-plants',
       title: 'Section 4: Rabbit-Resistant Plants — Build a Garden Rabbits Ignore',
       blocks: [
