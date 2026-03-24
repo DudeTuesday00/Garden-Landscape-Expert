@@ -90,6 +90,70 @@ export const rabbitProofGardenContent = {
       ],
     },
     {
+      id: 'garden-design',
+      title: 'Section 8: Garden Design for Rabbit Resistance',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The most powerful long-term rabbit management strategy is designing the garden itself to minimize vulnerability. A garden that is 80 to 90 percent composed of rabbit-resistant plants, with targeted physical protection for the vulnerable 10 to 20 percent, requires dramatically less ongoing management than one where every plant needs protection.',
+        },
+        {
+          type: 'h3',
+          text: 'The Layered Defense Garden Design',
+        },
+        {
+          type: 'p',
+          text: 'A layered defense approach uses the garden\'s own structure to reduce rabbit incursions, reserves physical fencing for the highest-priority areas, and uses resistant plants as the visual backbone — so that even if a rabbit does enter, most of what it encounters gives it little reason to return.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Perimeter planting with prickly or aromatic shrubs: The garden\'s outermost layer — the plants nearest the lawn and property edges — should be the most rabbit-resistant: barberry, holly, boxwood, or strongly aromatic shrubs like lavender, rosemary, and Russian sage. A dense planting of these at the garden\'s perimeter creates a deterrent barrier that does not rely on fencing or chemicals.',
+            'Middle layer of resistant perennials: The body of the ornamental garden filled with catmint, salvia, yarrow, ornamental alliums, coneflower, black-eyed Susan, and ornamental grasses provides year-round beauty while giving rabbits very little that attracts them.',
+            'Protected inner zone: The garden\'s innermost area — perhaps 20 to 30 percent of the total planting area — contains the plants you love that are not rabbit-resistant: roses, tulips, certain perennials. This inner zone is protected by a simple, unobtrusive hardware cloth fence or individual wire cages.',
+            'Elevated plantings: Window boxes, elevated container gardens, and raised planters at 24 inches or higher place vulnerable plants completely out of reach of cottontail rabbits. A window box of petunias or a hanging basket of impatiens requires no chemical or wire protection.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Raised Beds and Containers',
+        },
+        {
+          type: 'p',
+          text: 'Raised beds and container plantings offer an elegant solution to rabbit pressure in both vegetable and ornamental contexts. A raised bed with solid 24-inch sides is essentially rabbit-proof for cottontails without any additional fencing — the clean vertical walls offer no footing for jumping over.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Raised bed height: A standard raised bed of 12 to 18 inches is NOT rabbit-proof — cottontails can jump onto and enter these beds easily. For rabbit exclusion, raised beds need to be 24 inches or higher. Alternatively, standard-height raised beds can be covered with a simple hardware cloth frame or row cover.',
+            'Hardware cloth liner: For additional security against burrowing and against rabbits that might enter through soil edges at grade level, line the inside of the raised bed frame with hardware cloth before filling with soil. A U-shaped liner of 1/2-inch hardware cloth secured to the inside of the frame prevents burrowing entry.',
+            'Elevated containers: Containers on legs, tables, or elevated platforms place plants completely out of reach. This approach is ideal for strawberries (which are highly vulnerable), herbs for the kitchen, and small-scale ornamental arrangements.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Companion Planting for Rabbit Deterrence',
+        },
+        {
+          type: 'p',
+          text: 'The companion planting principle for rabbit deterrence is simple: plant strongly aromatic rabbit-resistant plants near or interspersed with vulnerable plants. The aromatic plants mask or overwhelm the attractiveness of the vulnerable plants nearby.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Alliums as companions: Ornamental alliums, garlic, chives, and ornamental onions planted throughout a garden bed create a persistent onion-garlic scent that rabbits find aversive. Interplanting alliums with tulips is a classic companion planting combination — the tulips gain protection while the alliums provide a second wave of spring color as the tulips fade.',
+            'Lavender borders: A continuous border of lavender along the garden\'s edge serves simultaneously as an ornamental planting, a pollinator habitat, and a rabbit deterrent. Lavender borders are particularly effective along paths and garden entrances where rabbits commonly enter.',
+            'Catmint edging: A continuous edging of catmint (Nepeta × faassenii) creates a low, aromatic border that is beautiful in bloom and aversive to rabbits throughout the season. Works well along paths and at garden boundaries, and doubles as an excellent companion for roses.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🏡',
+          text: 'When planning a new garden in a rabbit-heavy area, budget for the fenced vegetable enclosure before the plants — not after. The most common mistake is installing a beautiful vegetable garden and then scrambling to add rabbit protection after the first wave of damage. Hardware cloth fencing installed before first planting is far easier than retrofitting an established bed, and it works from day one.',
+        },
+      ],
+    },
+    {
       id: 'trapping-legal',
       title: 'Section 7: Humane Trapping, Lethal Control & Legal Considerations',
       blocks: [
