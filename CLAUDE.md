@@ -387,6 +387,7 @@ Thirty-six full guides integrated into the app:
 - `src/data/guide-content/indoor-houseplants.js` — Indoor Houseplants 101 (`id: 'indoor-houseplants'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/garden-pests.js` — Garden Pests ID & Control (`id: 'garden-pests'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/attracting-beneficial-insects.js` — Attracting Beneficial Insects (`id: 'beneficial-insects'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/butterfly-garden.js` — Butterfly Garden (`id: 'butterfly-garden'`) — **complete** (all 10 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -988,6 +989,28 @@ Theme: color theme wired in `GuideDetail.jsx`; hero image: `public/guides/Garden
 | Section 9: Seasonal Calendar & Quick Reference | ✅ Done | LFD/FFD-anchored 7-row seasonal calendar (Late Winter through Winter) with garden conditions, beneficial activity, priority actions, and what to avoid; 7-row troubleshooting table; 10-item quick reference checklist; 2-paragraph closing reflection; patience tip callout |
 
 Theme: green/lime gradient in `GuideDetail.jsx`; hero image: `public/guides/Attracting_Beneficial_Insects_Guide.png`; set `comingSoon: false` under Pest & Problem Solving in `guides.js`
+
+---
+
+### Butterfly Garden Guide ✅
+
+`src/data/guide-content/butterfly-garden.js` — Butterfly Garden (`id: 'butterfly-garden'`); fully built — 10 sections covering nectar and host plant selection through a full seasonal calendar, citizen science, and troubleshooting reference.
+
+| Section | Status | Notes |
+|---|---|---|
+| Overview & At a Glance | ✅ Done | Why butterfly gardens matter; 8-row At a Glance table (role / key species / what they need / host plants / what harms them); pesticide-elimination-first tip |
+| Section 1: Nectar Plants | ✅ Done | Bloom succession by season; 10-row spring nectar table; 12-row summer nectar table; 8-row fall nectar table; native asters and goldenrod as non-negotiable core; mass planting principle; 4-row regional native nectar table (NE, SE, Midwest, West); early-spring gap tip |
+| Section 2: Host Plants | ✅ Done | Host plant vs. nectar plant distinction; 14-row host plant reference table by butterfly family (swallowtails, sulphurs, whites, blues/hairstreaks/coppers, fritillaries, monarchs, admirals/viceroys, emperors, checkerspots/crescents, skippers); host plant density guidance; OE warning for tropical milkweed; milkweed species table (8 rows) |
+| Section 3: Garden Design | ✅ Done | Sun requirements; microclimate stacking; 5-row garden size/species expectation table; four structural layers; puddling station construction; windbreak and thermal mass design; 6-row design pattern table (meadow, cottage, formal, xeric, shade, container); year-round interest tip |
+| Section 4: Puddling & Water | ✅ Done | Puddling behavior explanation; minerals and sodium role; 5-step puddling station construction; 5-row mineral additive table (sea salt, wood ash, compost tea, rotting fruit, aged manure); siting and maintenance; water depth for drinking; 4-row regional puddling notes |
+| Section 5: Regional Adaptation | ✅ Done | 7-row regional guide (NE, Mid-Atlantic/SE, Deep South/Gulf, Midwest, Rocky Mtn/High Plains, PNW, SW Desert/CA) with climate character, resident species, key host plants, key nectar plants, and regional notes |
+| Section 6: Monarchs & Migration | ✅ Done | IUCN endangered listing; 4-row migration route table (Eastern, Central, Western, non-migratory Florida); 8-row milkweed species by region; OE lifecycle and tropical milkweed warning; tagging program details (Monarch Watch); fall fueling nectar plants; 5-row migration nectar table |
+| Section 7: Species Profiles | ✅ Done | 25 in-depth profiles organized by family: swallowtails (tiger, black, spicebush, pipevine, zebra longwing, giant), pierids (cloudless sulphur, orange sulphur, cabbage white), nymphalids (monarch, painted lady, American lady, red admiral, common buckeye, mourning cloak, question mark/eastern comma, great spangled fritillary, viceroy, hackberry emperor, red-spotted purple), lycaenids (gray hairstreak, eastern tailed-blue, spring azure); each with flight season, host plants, nectar preferences, habitat, and garden notes |
+| Section 8: Overwintering & Shelter | ✅ Done | 5-row overwintering life-stage table (adult diapause, chrysalis, larva, egg, communal roost) with garden implications; 6 structural habitat elements (stems, leaf litter, log piles, snags, dense shrubs, rocks); butterfly houses debunked; 5 seasonal shelter functions (morning basking, midday retreat, rain shelter, wind protection, overnight roosting); cleanup-timing warning; leave-the-leaves tip |
+| Section 9: Citizen Science & Photography | ✅ Done | 7-program citizen science table (Journey North, iNaturalist, eButterfly, NABA Counts, Monarch Watch, MLMP, Lost Ladybug); structured transect monitoring protocol (6 steps); 4-row photography equipment table; 8 field technique items; 6-item identification-by-group guide (skippers, hairstreaks, blues, crescents, duskywings, swallowtails); daily iNaturalist upload tip |
+| Section 10: Seasonal Calendar & Quick Reference | ✅ Done | Zone 6-anchored 8-row seasonal calendar (late winter through winter) with flight season events, care tasks, and observation priorities; 8-row troubleshooting table; 9-item master checklist; 3-paragraph closing reflection; host-plant-first tip |
+
+Theme: orange/amber gradient in `GuideDetail.jsx`; hero image: `public/guides/Butterfly_Garden_Guide.png`; `comingSoon: false` under Specialty Gardens in `guides.js`; wired in `src/data/guide-content/index.js`
 
 ### Typography Upgrade ✅
 
