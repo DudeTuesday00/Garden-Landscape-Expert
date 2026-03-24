@@ -927,5 +927,144 @@ export const butterflyGardenContent = {
         },
       ],
     },
+    {
+      id: 'monarch-conservation',
+      title: 'Section 5: Monarch Conservation — Migration, Milkweed, and the Waystation Network',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The monarch butterfly (Danaus plexippus) undertakes the most remarkable insect migration in North America — a multi-generational round trip of up to 3,000 miles between overwintering sites in the oyamel fir forests of central Mexico (eastern population) or the California coast (western population) and summer breeding habitat across the United States and Canada. The eastern monarch population has declined by more than 80% since the 1990s. Habitat loss along the migration corridor — particularly the loss of milkweed from Midwestern agricultural landscapes and the loss of fall nectar plants — is the primary driver. Home gardens have become a meaningful part of the conservation response.',
+        },
+        {
+          type: 'h3',
+          text: 'The Migration Cycle',
+        },
+        {
+          type: 'table',
+          headers: ['Generation', 'Timing', 'Range', 'What They Need'],
+          rows: [
+            [
+              'Overwintering adults — "Methuselah generation"',
+              'October–March',
+              'Oyamel fir forests in Michoacán, Mexico (eastern population); eucalyptus and Monterey pine groves on the California coast (western population)',
+              'Intact forest cover at overwintering sites; mild, humid conditions to prevent desiccation; these butterflies do not breed during winter — they enter reproductive diapause',
+            ],
+            [
+              'First spring generation',
+              'March–May',
+              'Texas, Oklahoma, Kansas, northern Mexico — the re-colonization front moves northward following milkweed emergence',
+              'Early milkweed availability in Texas and the southern Great Plains is critical — the spring generation breeds on the first milkweed flush as monarchs move north; fall nectar plants from the previous season\'s seed bank in Texas provide fueling for northbound adults',
+            ],
+            [
+              'Second and third generations',
+              'May–August',
+              'Breeding range expands north and east across the Midwest, Northeast, and into southern Canada; population builds through 3–4 summer generations',
+              'Abundant milkweed throughout the breeding range — particularly common milkweed (A. syriaca) in the Midwest; summer nectar plants to fuel reproduction; host plant availability for 3–4 successive broods',
+            ],
+            [
+              'Migratory generation',
+              'August–October',
+              'Southward migration from breeding range to overwintering sites; major corridor through Great Plains, then Texas funnel, into Mexico',
+              'Fall nectar plants along the migration corridor — native asters, goldenrods, ironweed, and boneset in the northern range; maximilian sunflower and native composites in Texas and Oklahoma; adult monarchs must build fat reserves sufficient for the entire 2,000–3,000 mile journey to Mexico',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Milkweed Selection by Region',
+        },
+        {
+          type: 'p',
+          text: 'Not all milkweed is equal for monarch conservation. The most important rule is to plant milkweed species native to your region — monarchs have evolved to complete their breeding cycle on the milkweed species naturally present along their migration and breeding routes. Tropical milkweed (Asclepias curassavica), a popular nursery plant native to Central America, presents specific risks in warm climates that gardeners should understand.',
+        },
+        {
+          type: 'table',
+          headers: ['Region', 'Recommended Native Milkweed Species', 'Bloom Period', 'Notes'],
+          rows: [
+            [
+              'Midwest and Great Plains (Zones 3–6)',
+              'Common milkweed (A. syriaca), butterfly weed (A. tuberosa), swamp milkweed (A. incarnata), purple milkweed (A. purpurascens)',
+              'June–August',
+              'Common milkweed is the backbone of monarch breeding in the Midwest. It spreads by runners and forms colonies — ideal in naturalized areas, meadows, and open lawn areas. Swamp milkweed is more garden-friendly and tolerates moist soils. Allow common milkweed colonies to grow where possible rather than removing them as weeds.',
+            ],
+            [
+              'Northeast and Mid-Atlantic (Zones 4–7)',
+              'Swamp milkweed (A. incarnata), butterfly weed (A. tuberosa), common milkweed (A. syriaca), poke milkweed (A. exaltata)',
+              'June–September',
+              'Swamp milkweed is the most reliable garden species in this region — tolerates a wide range of moisture conditions, grows to 3–4 feet, and produces abundant pink flower clusters. Poke milkweed is a woodland-edge species tolerant of part shade.',
+            ],
+            [
+              'Southeast (Zones 6–9)',
+              'Butterfly weed (A. tuberosa), swamp milkweed (A. incarnata), aquatic milkweed (A. perennis), white milkweed (A. variegata), longleaf milkweed (A. longifolia)',
+              'May–September',
+              'Multiple species are native to the Southeast. Aquatic milkweed is important for moist and wet areas. Avoid tropical milkweed (A. curassavica) in the Southeast — in the Gulf Coast and Florida, it does not die back in winter, allowing the protozoan parasite OE (Ophryocystis elektroscirrha) to persist year-round on the plant and infect successive monarch generations.',
+            ],
+            [
+              'Texas and Southern Plains (Zones 6–9)',
+              'Green antelope horn (A. viridis), spider milkweed (A. asperula), butterfly weed (A. tuberosa), zizotes milkweed (A. oenotheroides)',
+              'March–October (multiple flushes)',
+              'Texas is the bottleneck of monarch migration in both spring and fall — it is arguably the single most important state for monarch conservation. Green antelope horn is the primary spring breeding milkweed; zizotes milkweed is highly drought-tolerant. Native milkweed in Texas blooms in response to fall rains and provides a critical late-season resource for the migratory generation.',
+            ],
+            [
+              'Mountain West and Intermountain (Zones 4–7)',
+              'Showy milkweed (A. speciosa), narrowleaf milkweed (A. fascicularis), butterfly weed (A. tuberosa)',
+              'June–August',
+              'Showy milkweed is the dominant native species across the interior West — large, fragrant pink-white flowers; spreads by runners in the manner of common milkweed. Narrowleaf milkweed is slender and drought-tolerant, found along roadsides and dry slopes.',
+            ],
+            [
+              'Pacific Coast and California (Zones 8–11)',
+              'Narrowleaf milkweed (A. fascicularis), showy milkweed (A. speciosa), woollypod milkweed (A. eriocarpa), California milkweed (A. californica)',
+              'April–August',
+              'The western monarch population overwinters along the California coast and breeds primarily in California and the Pacific Northwest. Narrowleaf milkweed (A. fascicularis) is the key breeding milkweed. Do not plant tropical milkweed in California coastal areas, where it remains evergreen and supports OE parasite persistence. Cut back any tropical milkweed to the ground in November to force dormancy if removing it entirely is not possible.',
+            ],
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Tropical milkweed (Asclepias curassavica) sold widely at garden centers poses a conservation risk in frost-free and mild-winter regions (Zones 8–11, Gulf Coast, California). In climates where it does not freeze to the ground, tropical milkweed remains green year-round and accumulates the protozoan parasite OE (Ophryocystis elektroscirrha) on its leaves. Monarchs laying eggs on OE-contaminated foliage produce heavily parasitized offspring with reduced survival, weight, and flight ability. In the northern US (Zones 3–7), tropical milkweed freezes to the ground each winter and breaks the OE cycle — it is lower-risk in these regions but native species are still preferred. If you have tropical milkweed in a warm climate, cut it to the ground each November to force winter dormancy.',
+        },
+        {
+          type: 'h3',
+          text: 'Monarch Waystation Certification',
+        },
+        {
+          type: 'p',
+          text: 'Monarch Watch, a nonprofit research and education program at the University of Kansas, operates the Monarch Waystation Program — a registry of gardens, schoolyards, and public spaces that provide monarch habitat. Certification requires a minimum of two native milkweed species, nectar plants that bloom in spring, summer, and fall, and a commitment to pesticide-free or minimal-pesticide gardening in the milkweed and nectar planting area.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Registration is available at monarchwatch.org/waystations/ for a modest fee that includes a metal waystation sign, habitat certificate, and registry listing.',
+            'Certified waystations are mapped in a publicly accessible database — your garden becomes part of a documented continental network.',
+            'Monarch Watch also operates the Milkweed Market program, selling plugs of regionally appropriate native milkweed species at cost to gardeners, schools, and restoration projects in the monarch breeding range.',
+            'The Monarch Waystation program is particularly well-suited for schoolyards, community gardens, roadsides, and institutional properties where the educational and visibility value of the signage and certification adds meaning beyond the habitat itself.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Monarch Tagging',
+        },
+        {
+          type: 'p',
+          text: 'Monarch Watch\'s tagging program allows citizen scientists to apply small adhesive tags to wild monarchs during the fall migration, contributing to population research that tracks survival rates, migration timing, and route shifts over time. Tagged monarchs recovered at overwintering sites in Mexico are reported back to the tagger, creating a direct personal connection between a garden in Kansas and a butterfly cluster on an oyamel fir tree in Michoacán.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Tagging kits (tags, instructions, catch net guidance) are available from Monarch Watch each August in time for the fall migration season.',
+            'Tags are applied to the discal cell of the hindwing using a gentle hand-catch method — no special equipment required beyond patience and a soft net.',
+            'Peak tagging window is late August through mid-October depending on region; the migration front moves south roughly 25 miles per day during favorable weather.',
+            'Journey North (journeynorth.org) tracks monarch migration sightings in both spring and fall — submitting observations to their database contributes to the continental migration map regardless of whether you tag butterflies.',
+            'The Xerces Society\'s Western Monarch Thanksgiving Count conducts annual overwintering population surveys at California sites each November — volunteers are recruited each fall at xerces.org.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🏷️',
+          text: 'The recovery rate for tagged monarchs at Mexican overwintering sites is roughly 1 in 1,000 tags — but the cumulative data from tens of thousands of tagged butterflies over 30 years has produced the most detailed picture of monarch migration routes, timing, and survival rates available to science. A recovered tag from your garden is among the rarest and most satisfying outcomes a butterfly gardener can experience.',
+        },
+      ],
+    },
   ],
 }
