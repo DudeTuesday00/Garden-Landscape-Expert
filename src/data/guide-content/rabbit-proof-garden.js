@@ -90,6 +90,61 @@ export const rabbitProofGardenContent = {
       ],
     },
     {
+      id: 'trapping-legal',
+      title: 'Section 7: Humane Trapping, Lethal Control & Legal Considerations',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Rabbits in most American states are classified as either game animals or non-protected wildlife. Their management — including trapping and relocation — is regulated by state fish and wildlife agencies, and the rules vary significantly by state. Before trapping or relocating any rabbit, understanding your state\'s laws is essential.',
+        },
+        {
+          type: 'warning',
+          emoji: '⚖️',
+          text: 'Legal Status — Check Your State Before Trapping: In most US states, cottontail rabbits are classified as game animals. This means: (1) they may be hunted during open hunting seasons with the appropriate license; (2) live trapping for relocation is generally legal without a permit but varies by state; and (3) lethal control methods beyond hunting season may require a depredation permit. Some municipalities and HOAs have local ordinances restricting certain trapping activities. Contact your state\'s fish and wildlife agency or your local cooperative extension service BEFORE trapping or lethal control to confirm what is legal in your location. This guide provides general information only and is not legal advice.',
+        },
+        {
+          type: 'h3',
+          text: 'Humane Live Trapping',
+        },
+        {
+          type: 'p',
+          text: 'Humane live trapping catches rabbits in a wire cage trap without harming them, allowing relocation or other disposition. It is legal in most states for residential use and is the most commonly used active rabbit control method for home gardeners. Its primary limitation is that it reduces the local rabbit population only temporarily — neighboring rabbits will typically occupy vacated territory within a few weeks, making it most valuable as a component of a broader management program.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Trap selection: Use a wire live trap sized for rabbits — minimum 10 inches × 12 inches × 30 inches (Havahart® Model 1089 or equivalent is the most widely used). The trap should be large enough for the rabbit to turn around inside. Traps smaller than this spec may injure the rabbit when it panics.',
+            'Bait: Rabbits are attracted by fresh apple slices or apple extract; fresh clover, alfalfa, or grass; carrot pieces; and leafy greens. Place bait at the back of the trap, beyond the trigger plate, so the rabbit must fully enter to reach the bait. Adding a few drops of apple extract or vanilla extract to the trap door and trigger area enhances attractiveness.',
+            'Placement: Place the trap along established rabbit runs — the well-worn paths rabbits use regularly along fence lines, at garden entry points, or in areas with concentrated rabbit activity. Cover the trap sides and top with burlap or a dark cloth, leaving only the entrance open. A partially covered trap appears less threatening and catches more rabbits.',
+            'Monitoring: Check the trap at least twice daily — at first light and again by mid-morning. A trapped rabbit in a wire cage in summer heat can die of heat stress within hours. In winter, a wet and cold trapped rabbit faces hypothermia. Never leave a set trap unmonitored overnight in extreme weather.',
+            'Releasing or relocating: Relocation is most successful when the rabbit is moved at least 3 to 5 miles from the capture site to a suitable habitat (open fields with brush cover, wildlife management areas, parks that permit wildlife release). Releasing a rabbit within 1 to 2 miles of the capture site often results in the rabbit returning. Contact your local cooperative extension service or state wildlife agency for recommended release sites.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '🐣',
+          text: 'Nursing Does and Kits — A Critical Consideration: If you trap a female rabbit in late spring or summer (March through August), there is a significant probability she is a nursing doe with a nest of young (kits) somewhere in the yard. Removing a nursing doe causes the kits to die of starvation within 1 to 3 days. Before relocating any trapped rabbit during breeding season, examine the animal for signs of lactation and search the yard for a nest — a shallow depression in the ground lined with grass and the doe\'s fur, often in the middle of the lawn or in a planting bed. If kits are found, leave them in place — the doe will return nightly to nurse if the nest is undisturbed. Most cottontail kits are fully independent at 4 to 5 weeks. Do not attempt to raise wild kits at home; the mortality rate in inexperienced care is very high and many states require a wildlife rehabilitation permit.',
+        },
+        {
+          type: 'h3',
+          text: 'Other Control Methods',
+        },
+        {
+          type: 'list',
+          items: [
+            'Exclusion in combination with trapping: The most effective approach combines trapping to reduce immediate population pressure with simultaneous installation of permanent exclusion fencing. Trapping while installing fencing means the fence is completed with fewer rabbits competing to find entry points — giving the new fence a better chance to remain effective before rabbits identify any weak points.',
+            'Lethal control: In most states, landowners may kill rabbits causing damage to property during appropriate seasons or with appropriate permits. Because this guide is focused on humane strategies, and because lethal control faces the same population replacement problem as live trapping, detailed coverage is outside this guide\'s scope. Your state wildlife agency can provide current legal guidance.',
+            'Professional wildlife management: For properties with very high rabbit pressure or where the gardener prefers not to manage trapping personally, professional wildlife management services operate in most US states. Many local pest control companies offer wildlife management services and can assess the situation, implement trapping programs, and advise on habitat modification.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🪤',
+          text: 'Trapping alone is never a permanent solution. Population studies consistently show that neighboring rabbits move into vacated territory within 2 to 6 weeks of removal. Use trapping as a bridge strategy — reduce immediate pressure while you install fencing and transition to more resistant plantings. A trap used without a longer-term plan just creates an ongoing trapping commitment.',
+        },
+      ],
+    },
+    {
       id: 'habitat-modification',
       title: 'Section 6: Habitat Modification — Making Your Property Less Attractive',
       blocks: [
