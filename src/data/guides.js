@@ -470,7 +470,7 @@ export const guideCategories = [
         title: 'Rabbit-Proof Garden',
         emoji: '🐰',
         description: 'Stop rabbits from destroying your garden with plants and smart strategies.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'weed-management',
