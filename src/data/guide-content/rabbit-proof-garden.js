@@ -90,6 +90,105 @@ export const rabbitProofGardenContent = {
       ],
     },
     {
+      id: 'physical-exclusion',
+      title: 'Section 2: Physical Exclusion — Fencing That Actually Works',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Physical exclusion — preventing rabbits from reaching vulnerable plants with barriers — is the most reliable rabbit management strategy available. A correctly installed fence solves the problem completely for the area it encloses: it does not require reapplication, it does not habituate, it does not wash off in rain, and it works regardless of how hungry the rabbit is. The two most common reasons fencing fails are incorrect height and improper burial at the base.',
+        },
+        {
+          type: 'h3',
+          text: 'The Hardware Cloth Fence: The Gold Standard',
+        },
+        {
+          type: 'p',
+          text: 'Hardware cloth — a welded wire mesh typically sold in 1/4-inch or 1/2-inch opening sizes — is the most reliable material for rabbit exclusion fencing. Chicken wire (hexagonal woven wire) is cheaper but stretches, sags, and eventually develops gaps that rabbits find and exploit. Hardware cloth holds its form, resists deformation, and provides the precise opening control needed to exclude rabbits of all sizes.',
+        },
+        {
+          type: 'table',
+          headers: ['Specification', 'Cottontail Rabbits', 'Jackrabbits', 'Notes'],
+          rows: [
+            [
+              'Mesh opening',
+              '1/2 inch maximum',
+              '1/2 inch maximum',
+              'Young cottontails (leverets) can squeeze through 1-inch mesh; 1/2-inch mesh excludes all ages and sizes',
+            ],
+            [
+              'Height above ground',
+              '18–24 inches minimum',
+              '30–36 inches minimum',
+              'Taller is always better; 24 inches is a comfortable standard for cottontails in most situations; do not cut corners on height',
+            ],
+            [
+              'Burial depth',
+              '6 inches minimum below grade, bent outward 6 inches horizontally at the base (forming an "L")',
+              '6 inches minimum',
+              'This "L-Footer" configuration prevents rabbits from digging under the fence. Without burial, a persistent rabbit will eventually dig underneath even a tall fence.',
+            ],
+            [
+              'Post spacing',
+              'Every 4–5 feet',
+              'Every 3–4 feet (jackrabbits apply more pressure)',
+              'U-shaped garden staples every 12–18 inches along the base secure the fence to the ground and prevent gaps',
+            ],
+            [
+              'Gate specification',
+              'Hardware cloth secured to a rigid frame; tight seal at the base; self-closing hinges recommended',
+              'Same, plus extra height if needed',
+              'Gates are the most common failure point in exclusion fencing. A gate with a gap at the base undermines the entire fence.',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The L-Footer: The Most Important Installation Detail',
+        },
+        {
+          type: 'p',
+          text: 'The L-footer — bending the bottom 6 to 12 inches of the fence outward horizontally before burial — is the most critical anti-dig feature of rabbit exclusion fencing. When a rabbit attempts to dig under the fence, it encounters the buried horizontal portion extending outward. Its instinct is to dig straight down at the fence base rather than back and away, so the L-footer stops the attempt without requiring a very deep vertical burial.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Excavate a shallow trench: Dig a 6-inch-deep trench along the fence line.',
+            'Roll out hardware cloth: Stand the hardware cloth vertically and unroll it along the fence line, with the bottom 6 to 12 inches folded outward at a 90-degree angle (the horizontal part of the L).',
+            'Bury the horizontal portion: Lay the horizontal portion of the L flat in the trench, oriented away from the garden (toward the rabbit\'s approach). Backfill the trench.',
+            'Attach to posts: Drive posts at 4- to 5-foot intervals and attach the vertical portion of the fence with hog rings, zip ties, or fence staples.',
+            'Secure at the base: Push U-shaped garden staples through the bottom of the vertical section every 12 to 18 inches to pin the fence tight to the ground.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'The Single Most Common Fence Failure: The most common reason a rabbit fence fails is a gap at the gate, at a corner, or at the base where the fence has lifted from the soil. Rabbits are patient and methodical — they will test the fence line repeatedly and find any gap within days of its appearance. Walk your fence perimeter monthly and after any heavy rain or frost heaving. A fence that is 99% intact with one 4-inch gap is effectively no fence at all for a persistent rabbit. It will find the gap.',
+        },
+        {
+          type: 'h3',
+          text: 'Individual Plant Protection',
+        },
+        {
+          type: 'p',
+          text: 'When enclosing an entire garden with fencing is impractical, individual plant protection — wire cylinders or cages around specific vulnerable plants — is the next best option. This is particularly effective for protecting young trees during their vulnerable first years, newly planted perennials before they establish, and high-value specimens.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Wire cylinders: Cut a 2- to 3-foot length of hardware cloth and form it into a cylinder around the plant. The cylinder should be 6 to 8 inches larger in diameter than the plant to allow growth and prevent rabbits from reaching through to nibble. Secure the cylinder with a stake driven through it into the ground.',
+            'Tree guards: For young trees and shrubs (bark of trees under 1 inch diameter is particularly vulnerable), use a commercial spiral plastic tree guard or a hardware cloth cylinder. In areas with significant snow accumulation, extend the guard 6 to 12 inches above the expected snow depth — rabbits stand on the snow pack and gnaw bark above where the guard ends.',
+            'Raised beds: Raised beds with sides 24 inches or higher are often rabbit-proof simply because of their height — cottontails rarely jump over a straight 24-inch wall with no footing. Add a hardware cloth liner to the sides and base for additional security against burrowing entry.',
+            'Row cover: Floating row cover draped over low-growing vegetable plants provides short-term protection and also protects against insects and frost. Not a permanent solution for aggressive rabbit pressure, but valuable as a temporary measure for newly emerged seedlings.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🔧',
+          text: 'For a standard 4×8-foot raised vegetable bed, the cost of hardware cloth fencing is approximately $25 to $40. A modest repellent program over a single season easily exceeds this cost — and the fence continues working for 15 to 20 years without reapplication.',
+        },
+      ],
+    },
+    {
       id: 'know-your-rabbit',
       title: 'Section 1: Know Your Rabbit — Biology, Behavior & Damage Patterns',
       blocks: [
