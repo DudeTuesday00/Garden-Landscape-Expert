@@ -522,7 +522,7 @@ export const guideCategories = [
         title: 'Butterfly Garden',
         emoji: '🦋',
         description: 'Attract and support butterflies with the right host and nectar plants.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'hummingbird-garden',
