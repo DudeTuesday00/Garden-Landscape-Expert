@@ -1053,8 +1053,8 @@ Three new content discovery pages added to the app:
 | Page | Route | Component | Description |
 |---|---|---|---|
 | Garden Infographics | `/infographics/` | `src/components/Infographics.jsx` | Visual quick-reference guides — 28 live infographic images with click-to-enlarge lightbox |
-| Gardening Videos | `/videos/` | `src/components/Videos.jsx` | Curated YouTube channels by topic (Epic Gardening, MIgardener, Charles Dowding, Garden Answer, etc.) |
-| Gardening Podcasts | `/podcasts/` | `src/components/Podcasts.jsx` | Curated podcast list covering organic growing, permaculture, vegetable gardening, native plants |
+| Gardening Videos | `/videos/` | `src/components/Videos.jsx` | Curated YouTube channels by topic + original Planting Atlas videos (YouTube-hosted, embedded via iframe) |
+| Gardening Podcasts | `/podcasts/` | `src/components/Podcasts.jsx` | Curated podcast list + original Planting Atlas episodes (RSS.com-hosted, embedded via iframe) |
 
 Each page has a full metadata export (`title`, `description`, `keywords`, `canonical`, `openGraph`, `twitter`).
 
@@ -1184,6 +1184,40 @@ A new e-commerce shop section has been added to the site for selling 3D printed 
 3. The new product URL (`/shop/<id>/`) is automatically SSG'd and added to the sitemap — no extra config needed
 
 **Add to Cart status:** The "Add to Cart" button is currently disabled with a "Coming Soon" label. Visitors are directed to `/contact/` to place custom orders. When a payment system is integrated, `ShopGrid.jsx` and `ProductDetail.jsx` will need updating.
+
+---
+
+### OG Social Share Image ✅
+
+- `public/og-image.png` — 1200×630 branded watercolor floral image; served at `/og-image.png`
+- Referenced in `src/app/layout.jsx` metadata as the default `openGraph.images` and `twitter.images` entry for all pages
+- Do not replace this file without a new 1200×630 image ready — it affects every page's social share preview
+
+---
+
+### Original Planting Atlas Media ✅
+
+Original video and podcast content is externally hosted (no large media files in the repo) and embedded via iframe on the respective pages.
+
+**Video — YouTube hosted**
+
+| Title | YouTube ID | Embed URL |
+|---|---|---|
+| The Annual Garden Equation: Buying Time and Renting Color | `Jo47nbbQGBI` | `https://www.youtube.com/embed/Jo47nbbQGBI` |
+
+- Embedded in `src/components/Videos.jsx` in a "🎬 Planting Atlas Original" section using a responsive `aspect-video` wrapper + `<iframe>`
+- To add a new video: add a new card in the "Planting Atlas Original" section in `Videos.jsx` with the YouTube embed URL (`https://www.youtube.com/embed/<VIDEO_ID>`)
+
+**Podcast — RSS.com hosted**
+
+| Title | RSS.com slug | Embed URL |
+|---|---|---|
+| Tricking Annuals Into Non-Stop Blooms | `tricking-annuals-into-non-stop-blooms` | `https://player.rss.com/tricking-annuals-into-non-stop-blooms?theme=color&v=2` |
+
+- Embedded in `src/components/Podcasts.jsx` in a "🎙️ Planting Atlas Original" section using the RSS.com iframe player (height: 393px)
+- To add a new episode: add a new card in the "Planting Atlas Original" section in `Podcasts.jsx` with the RSS.com player iframe from the episode's share/embed settings
+
+**Media hosting policy:** Do not commit audio or video files to the repo. YouTube handles video delivery; RSS.com handles podcast delivery. Only embed code (iframes) belongs in the components.
 
 ---
 

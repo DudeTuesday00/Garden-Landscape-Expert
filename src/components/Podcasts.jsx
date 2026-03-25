@@ -309,13 +309,16 @@ export default function Podcasts() {
             strategy, succession sowing, heat-tolerant variety selection, and the fertilizer
             timing that extends peak bloom by weeks.
           </p>
-          <audio
-            controls
-            className="w-full"
-            src="/podcasts/Tricking_annuals_into_non-stop_blooms.m4a"
-          >
-            Your browser does not support the audio element.
-          </audio>
+          <iframe
+            src="https://player.rss.com/tricking-annuals-into-non-stop-blooms?theme=color&v=2"
+            width="100%"
+            height="393px"
+            title="Tricking Annuals Into Non-Stop Blooms"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            scrolling="no"
+          />
         </div>
       </section>
 
