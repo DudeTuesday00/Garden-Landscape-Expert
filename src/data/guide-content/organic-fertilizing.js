@@ -325,5 +325,144 @@ export const organicFertilizingContent = {
         },
       ],
     },
+    /* ── Section 4: Organic Fertilizer Types ── */
+    {
+      id: 'fertilizer-types',
+      title: 'Section 3: Organic Fertilizer Types',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Compost is the foundation — but organic gardening has a rich toolkit of specialized fertilizers, each with distinct nutrient profiles, release rates, and best uses. Understanding what each product delivers helps you choose the right tool for each situation, whether you\'re pushing nitrogen for leafy growth, boosting phosphorus for root development, or correcting a specific deficiency.',
+        },
+        {
+          type: 'h3',
+          text: 'Fish-Based Fertilizers: Fast Nitrogen with Benefits',
+        },
+        {
+          type: 'p',
+          text: 'Fish-based fertilizers have been used as soil amendments for thousands of years — Native Americans buried fish in planting hills long before European contact. Today\'s fish fertilizers are manufactured products derived from the fish processing industry, but the core benefit is the same: a nitrogen-rich, biologically active amendment that releases nutrients relatively quickly while also supplying micronutrients.',
+        },
+        {
+          type: 'table',
+          headers: ['Product', 'Typical N-P-K', 'Release Speed', 'Best Uses', 'Notes'],
+          rows: [
+            [
+              'Fish emulsion',
+              '4-1-1 to 5-2-2',
+              'Fast-moderate (days to weeks)',
+              'Heavy feeders (corn, tomatoes, brassicas); leafy vegetables; lawns; new transplants; nitrogen boost during season',
+              'Odor can be significant; dilute 2–4 tbsp per gallon; apply every 2–3 weeks; drench soil or apply as foliar feed',
+            ],
+            [
+              'Fish meal',
+              '10-6-2',
+              'Slow (weeks to months)',
+              'Season-long soil amendment; worked into beds before planting',
+              'Highest-nitrogen fish product; excellent all-season feeding when incorporated pre-planting',
+            ],
+            [
+              'Fish bone meal',
+              '3-18-0',
+              'Moderate (weeks)',
+              'Root development at transplanting; supporting flowering and fruiting; phosphorus-deficient soils',
+              'Primarily a phosphorus fertilizer; use at planting time when phosphorus demand is highest',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Manure-Based Amendments: Time-Honored Soil Building',
+        },
+        {
+          type: 'p',
+          text: 'Animal manures have been the backbone of soil fertility management for all of human agricultural history. Used correctly — ideally composted — they are among the most complete and affordable organic soil amendments available. The key word is correctly: raw manure applied improperly can burn plants, contaminate edible crops with pathogens, and create nutrient imbalances.',
+        },
+        {
+          type: 'table',
+          headers: ['Manure Type', 'N-P-K (approx)', 'Relative Strength', 'Best Uses', 'Key Considerations'],
+          rows: [
+            ['Chicken (composted)', '3-2-2', 'Hot — high in nitrogen', 'Vegetable gardens; heavy feeders; soil building', 'Must be fully composted; raw is "hot" and will burn plants and may contain Salmonella; composted bagged versions are reliable and widely available'],
+            ['Cow (composted)', '1-1-1', 'Mild — excellent soil conditioner', 'General soil amendment; all garden types; lawns', 'Most benign and widely available; good weed seed elimination if properly hot-composted; excellent structure improver'],
+            ['Horse (composted)', '1.5-1-1.5', 'Moderate', 'Bulk soil building; mulching; compost pile activator', 'Frequently contains weed seeds if not hot-composted; availability varies — often free from local stables'],
+            ['Sheep/Goat (composted)', '2-1-2', 'Moderate', 'Vegetables; flower gardens', 'Pelletized sheep manure widely available; excellent nutrient balance; lower odor than chicken'],
+            ['Rabbit', '2-1-1', 'Mild — cold manure', 'Can be applied directly without composting', 'One of the few manures safe to use without composting first; excellent all-purpose amendment; low odor'],
+            ['Worm castings', '1-0-0 (but much more)', 'Mild but biologically extraordinary', 'Transplanting; seed starting; foliar teas; high-value plants', 'Nutrient numbers are misleading — the real value is the biological activity and plant growth hormones; best amendment for delicate plants'],
+            ['Bat guano', '10-3-1 (high N type)', 'Very concentrated', 'Container plants; fruiting plants; targeted nitrogen boost', 'Two types: high-N (seabird/bat from coastal/cave) and high-P (aged deposits); buy from reputable sources; expensive but powerful'],
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Raw Manure Safety Rules: The FDA Food Safety Modernization Act (FSMA) and USDA National Organic Program guidelines both address raw manure use near food crops. For organic certification, raw manure must be applied at least 120 days before harvest for crops with edible portions that contact soil, or 90 days for crops whose edible portions do not contact soil. Even if you\'re not certified organic, these are sensible food safety guidelines to follow. The safest approach: always compost manure before using it on food crops.',
+        },
+        {
+          type: 'h3',
+          text: 'Plant-Based Organic Fertilizers',
+        },
+        {
+          type: 'p',
+          text: 'Plant-derived fertilizers are some of the most versatile in the organic toolkit — many are byproducts of food and fiber processing that would otherwise be waste. They tend to have moderate release rates, are safe to handle, and integrate well into vegetable gardens and ornamental beds alike.',
+        },
+        {
+          type: 'table',
+          headers: ['Fertilizer', 'N-P-K', 'Release', 'Best Use', 'Notes'],
+          rows: [
+            ['Alfalfa meal/pellets', '3-1-2', 'Moderate (weeks)', 'Roses; perennials; compost activator; general soil builder', 'Contains triacontanol, a natural plant growth stimulant; great all-purpose amendment; widely available at feed stores'],
+            ['Soybean meal', '7-2-1', 'Moderate', 'High-nitrogen applications; corn; leafy vegetables; lawns', 'Inexpensive when bought in bulk at feed stores; excellent nitrogen content; breaks down in soil quickly'],
+            ['Cottonseed meal', '6-1-2', 'Moderate-slow', 'Acid-loving plants (blueberries, azaleas, rhododendrons); lawns', 'Slightly acidifying; excellent for plants preferring pH 4.5–6.0; may contain pesticide residues unless labeled organic'],
+            ['Kelp meal', '1-0-2 + micronutrients', 'Slow', 'Micronutrient correction; plant growth promotion; soil biology boost', 'Primary value is 70+ trace minerals and natural plant hormones (cytokinins); use as a supplement, not primary fertilizer'],
+            ['Corn gluten meal', '9-0-0', 'Moderate', 'Lawn fertilizing; pre-emergent weed suppression', 'Doubles as a pre-emergent herbicide — suppresses seed germination; do NOT use where you\'re planting from seed'],
+            ['Blood meal', '12-0-0', 'Fast', 'Quick nitrogen boost; nitrogen-deficient soils; brassicas; corn', 'Fastest-releasing organic nitrogen source; use cautiously — can burn if over-applied; will repel some animals'],
+            ['Feather meal', '12-0-0', 'Slow', 'Season-long nitrogen supply; soil building', 'High nitrogen but very slow release — takes months to fully break down; best worked into soil before planting'],
+            ['Canola/Neem cake', '5-1-2', 'Moderate', 'Pest-suppressing soil amendment; general feeding', 'Neem cake has additional pest and disease suppression properties; excellent all-purpose amendment'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Mineral-Based Organic Amendments',
+        },
+        {
+          type: 'p',
+          text: 'Natural rock minerals and mined deposits are an essential category of organic fertilizing, particularly for correcting specific mineral deficiencies and adjusting pH. These products release nutrients very slowly — often over years — making them excellent long-term soil investments.',
+        },
+        {
+          type: 'table',
+          headers: ['Amendment', 'Primary Nutrients', 'pH Effect', 'Best Use', 'Application Rate'],
+          rows: [
+            ['Agricultural lime (calcium carbonate)', 'Calcium; raises pH', 'Raises pH', 'Correcting acid soils; adding calcium; improving clay soil structure', '50–150 lbs per 1,000 sq ft depending on soil type and current pH; apply fall for spring benefit'],
+            ['Dolomitic lime', 'Calcium + Magnesium; raises pH', 'Raises pH', 'Correcting acid soils that are also magnesium-deficient; common in Southeast', 'Same as ag lime; use when soil test shows low Mg; do not use if magnesium is already adequate'],
+            ['Elemental sulfur', 'Sulfur', 'Lowers pH', 'Acidifying alkaline soils; pH correction in Western U.S.; acid-loving plants', '1–2 lbs per 100 sq ft to drop pH by 1 unit (varies by soil type); very slow — test 3–6 months later'],
+            ['Greensand', 'Potassium + 30+ trace minerals', 'Neutral', 'Long-term potassium and mineral supply; improving soil texture', '5–10 lbs per 100 sq ft; very slow release — a multi-year investment in soil fertility'],
+            ['Rock phosphate', 'Phosphorus (slow)', 'Slightly lowering', 'Long-term phosphorus building in deficient soils; most effective in acidic soils', '5–10 lbs per 100 sq ft; most effective in soils below pH 6.5; slow-release over 3–5 years'],
+            ['Granite dust/meal', 'Potassium + trace minerals', 'Neutral', 'Very long-term potassium supply; improving soil mineral content', '10–20 lbs per 100 sq ft; extremely slow release; a generational soil investment'],
+            ['Azomite (volcanic ash)', '70+ trace minerals', 'Neutral', 'Trace mineral correction; remineralization of depleted soils; all garden types', '1–2 lbs per 100 sq ft; annual or biannual application; excellent supplemental mineral source'],
+            ['Oyster shell flour', 'Calcium; some pH raising', 'Slightly raises', 'Calcium supplementation; blossom end rot prevention; slight pH adjustment', '5–10 lbs per 100 sq ft; slower than lime but more sustained calcium release'],
+            ['Gypsum (calcium sulfate)', 'Calcium + Sulfur', 'Neutral', 'Breaking up heavy clay; adding calcium without pH change; blossom end rot', '20–40 lbs per 1,000 sq ft; one of the few amendments that improves clay without affecting pH'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Liquid Organic Fertilizers: Fast Action, Foliar Feeding',
+        },
+        {
+          type: 'p',
+          text: 'Liquid organic fertilizers are the "fast food" of the organic world — they provide nutrients in plant-available forms that can be taken up quickly through roots or directly through leaf surfaces (foliar feeding). While they don\'t build soil organic matter the way solid amendments do, they are invaluable for addressing acute deficiencies, giving transplants a boost, or feeding container plants.',
+        },
+        {
+          type: 'table',
+          headers: ['Liquid Fertilizer', 'N-P-K', 'Speed', 'Best Application', 'Notes'],
+          rows: [
+            ['Fish emulsion', '4-1-1 to 5-2-2', 'Fast (days)', 'Soil drench or foliar; heavy feeders; transplant booster; nitrogen boost during season', 'Odor is significant; extremely effective; dilute 2–4 tbsp per gallon before use'],
+            ['Liquid kelp/seaweed', '1-0-2 + hormones', 'Fast', 'Foliar spray; stress recovery; micronutrient delivery; root stimulation', 'Primary value is plant hormones (cytokinins, auxins) and 70+ trace elements, not macronutrients; excellent stress reducer after transplanting'],
+            ['Compost tea (actively aerated)', 'Variable (low)', 'Moderate', 'Soil drench; foliar spray to suppress disease; biological inoculant', 'Brew with an aquarium pump for 24 hours; use immediately; inoculates soil with beneficial microbes'],
+            ['Worm casting tea', 'Variable (low)', 'Moderate', 'Transplants; seedlings; container plants; foliar feeding on any plant', 'Same method as compost tea; particularly rich in beneficial microbes and plant growth hormones'],
+            ['Liquid fish/kelp blend', '3-2-2 typical', 'Fast', 'General purpose liquid feeding; vegetables; ornamentals; lawns', 'Best of both worlds — nitrogen from fish, trace minerals and hormones from kelp; most versatile liquid organic fertilizer'],
+            ['Nettle tea (homemade)', 'High N + iron', 'Moderate', 'Nitrogen boost; iron correction; general tonic for all plants', 'Steep fresh stinging nettles in water for 2–4 weeks; dilute 10:1 before use; powerful and free if you have nettles growing nearby'],
+            ['Comfrey tea (homemade)', 'High K + N + P', 'Moderate', 'Fruiting plants; tomatoes, peppers; root vegetables', 'Steep comfrey leaves for 3–6 weeks; dilute 15:1; very high in potassium — excellent for fruiting/flowering stage'],
+            ['Molasses (blackstrap)', 'Negligible N-P-K but rich in sugars', 'Fast', 'Soil biology activator; mixed into compost tea', '1–2 tbsp per gallon water; the sugars feed soil microbes, amplifying biological activity; use with compost tea, not alone'],
+          ],
+        },
+      ],
+    },
   ],
 }
