@@ -342,13 +342,16 @@ export default function Videos() {
         </h2>
         <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Our first original video — now live.</p>
         <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden shadow-sm">
-          <video
-            controls
-            className="w-full"
-            src="/videos/The_Annual_Garden_Equation__Buying_Time_and_Renting_Color.mp4"
-          >
-            Your browser does not support the video tag.
-          </video>
+          <div className="aspect-video">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/Jo47nbbQGBI"
+              title="The Annual Garden Equation: Buying Time and Renting Color"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
           <div className="p-5">
             <h3 className="font-bold text-lg text-garden-800 dark:text-garden-300 mb-2">
               The Annual Garden Equation: Buying Time and Renting Color
