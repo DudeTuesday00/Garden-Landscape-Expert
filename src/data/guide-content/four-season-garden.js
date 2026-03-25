@@ -457,5 +457,82 @@ export const fourSeasonGardenContent = {
         },
       ],
     },
+    /* ── Section 7: Month-by-Month Calendar ── */
+    {
+      id: 'monthly-calendar',
+      title: 'Month-by-Month Garden Calendar',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Use this calendar as a planning and management guide. Timing varies by region — adjust 2–4 weeks earlier for warmer zones, 2–4 weeks later for colder zones. Zone 5–6 (Midwest/Mid-Atlantic) is used as the baseline.',
+        },
+        {
+          type: 'table',
+          headers: ['Month', 'What\'s Happening in the Garden', 'Key Tasks'],
+          rows: [
+            [
+              'January',
+              'Evergreens and structural plants carry the show. Seedheads of grasses and perennials dusted with frost or snow. Winterberry and holly berries at peak.',
+              'Plan for spring planting. Order seed catalogs and bulb orders. Check anti-desiccant spray on broadleaf evergreens in cold climates. Protect roses and tender shrubs from cold.',
+            ],
+            [
+              'February',
+              'Witch hazel blooms in late Feb in mild years. Hellebores begin to push flower buds. Snowdrops and winter aconite may appear by month\'s end in Zone 6+. Ornamental grasses still providing structure.',
+              'Cut back ornamental grasses before new growth emerges (late Feb–Mar). Start seeds indoors for tomatoes, peppers, and slow-growing annuals. Begin planning for spring bulb layering.',
+            ],
+            [
+              'March',
+              'Crocus carpets open. Forsythia explodes into yellow. Early daffodils emerge. Hellebores in full bloom. Trees beginning to bud up. Redbud and star magnolia open in Zones 5–7.',
+              'Divide early perennials (hostas, daylilies, coneflowers) before they leaf out. Plant bare-root trees and shrubs while still dormant. Begin weeding before weeds get established. Apply pre-emergent in lawn if using.',
+            ],
+            [
+              'April',
+              'Peak bulb season — tulips, daffodils, hyacinths, muscari in full bloom. Bleeding hearts emerge. Flowering trees (cherry, magnolia, ornamental pear) in full flower. Perennials leafing up rapidly.',
+              'Plant trees and shrubs. Harden off transplants started indoors. Direct sow cool-season vegetables. Finish dividing perennials. Apply mulch to beds — 2–3 inches after soil has warmed slightly. Watch for late frosts.',
+            ],
+            [
+              'May',
+              'Garden explodes into action. Alliums extend spring into early summer. Iris, peonies, baptisia blooming. Columbines, catmint, geraniums in full swing. Perennial border hitting its first peak.',
+              'Plant out warm-season annuals after last frost date. Plant dahlia tubers, caladiums, cannas. Stake tall perennials before they need it. Fertilize established perennials lightly. Deadhead spring bulbs but let foliage die naturally.',
+            ],
+            [
+              'June',
+              'Transition from spring to summer. Salvia, coreopsis, early echinacea begin. Roses hit first flush. Daylilies open. Late alliums still going. Ornamental grasses leafing out fully.',
+              'Pinch mums and asters for more compact, floriferous plants (stop pinching July 4th). Deadhead perennials to extend bloom. Irrigate new plantings during dry spells. Apply second round of mulch if needed.',
+            ],
+            [
+              'July',
+              'Peak summer heat. Echinacea, rudbeckia, monarda, agastache in full bloom. Dahlias beginning. Zinnias and annuals at their best. Ornamental grasses approaching full height.',
+              'Cut back early-blooming perennials (salvia, catmint, geraniums) by 1/3 for rebloom. Deep water established trees and shrubs during drought. Divide spring-blooming iris after bloom. Harvest vegetables regularly to keep plants producing.',
+            ],
+            [
+              'August',
+              'Summer holding strong but garden looking for reinforcement. Sedums beginning to color. Japanese anemones open. Late dahlias spectacular. Rudbeckia and echinacea heavy in seedheads.',
+              'Plant fall-blooming perennials and shrubs now for quick establishment. Sow cool-season vegetables for fall harvest (kale, lettuce, spinach, chard). Order spring bulbs for fall planting. Plant cool-season annuals in the South for fall color.',
+            ],
+            [
+              'September',
+              'Fall explodes. Asters blooming. Goldenrod peaking. Ornamental grasses plume out. Fall foliage beginning in northern gardens. Beautyberry in brilliant purple berry. Seedheads at their most architectural.',
+              'Plant spring bulbs (tulips, daffodils, alliums, crocus) — best month for planting in most zones. Plant trees, shrubs, and perennials now for fall establishment. Bring tender plants indoors before first frost.',
+            ],
+            [
+              'October',
+              'Peak fall color in Zones 5–7. Asters still going. Ornamental grasses at full beauty. Rudbeckia seedheads turning black. Winterberry holly at peak. Late witch hazel beginning.',
+              'Continue bulb planting through October. Plant garlic for next year\'s harvest. Cut back only diseased plants; leave all healthy perennials standing through winter. Take cuttings of tender plants to overwinter indoors.',
+            ],
+            [
+              'November',
+              'Color fading but structure emerging. Ornamental grasses creating movement. Berries of holly, firethorn, and crabapple glowing. Late witch hazel flowering. Bark textures becoming apparent as leaves fall.',
+              'Final bulb planting before ground freezes hard. Wrap tender plants and apply extra mulch over marginally hardy plants after a few hard freezes (late Nov–Dec). Celebrate your garden\'s structure — you earned it.',
+            ],
+            [
+              'December',
+              'Winter structure fully revealed. Evergreens, bark, and berries are the show. Ornamental grasses and seedheads with frost or snow. Holly and winterberry at full berry peak. Witch hazel may begin in mild years.',
+              'Review and plan. Photograph your garden now to identify gaps in winter interest. Order seed catalogs. Make a wish list of plants to add for better year-round coverage. Rest, enjoy, plan.',
+            ],
+          ],
+        },
+      ],
+    },
   ],
 }
