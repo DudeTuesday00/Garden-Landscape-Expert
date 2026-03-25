@@ -100,6 +100,35 @@ export default function Podcasts() {
         </p>
       </div>
 
+      {/* Planting Atlas Original Episode */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-1">
+          🎙️ Planting Atlas Original
+        </h2>
+        <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Our first original episode — listen now.</p>
+        <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm">
+          <h3 className="font-bold text-lg text-garden-800 dark:text-garden-300 mb-1">
+            Tricking Annuals into Non-Stop Blooms
+          </h3>
+          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Most annuals start strong and fade fast — but with a few techniques, you can keep
+            them blooming from planting day to first frost. This episode covers deadheading
+            strategy, succession sowing, heat-tolerant variety selection, and the fertilizer
+            timing that extends peak bloom by weeks.
+          </p>
+          <iframe
+            src="https://player.rss.com/tricking-annuals-into-non-stop-blooms?theme=color&v=2"
+            width="100%"
+            height="393px"
+            title="Tricking Annuals Into Non-Stop Blooms"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            scrolling="no"
+          />
+        </div>
+      </section>
+
       {/* Why podcasts */}
       <section className="mb-10 p-5 bg-garden-50 dark:bg-garden-900/20 border border-garden-200 dark:border-garden-800 rounded-2xl">
         <h2 className="text-xl font-bold text-garden-800 dark:text-garden-300 mb-2">
@@ -290,35 +319,6 @@ export default function Podcasts() {
             </div>
           </div>
 
-        </div>
-      </section>
-
-      {/* Planting Atlas Original Episode */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-1">
-          🎙️ Planting Atlas Original
-        </h2>
-        <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Our first original episode — listen now.</p>
-        <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm">
-          <h3 className="font-bold text-lg text-garden-800 dark:text-garden-300 mb-1">
-            Tricking Annuals into Non-Stop Blooms
-          </h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-            Most annuals start strong and fade fast — but with a few techniques, you can keep
-            them blooming from planting day to first frost. This episode covers deadheading
-            strategy, succession sowing, heat-tolerant variety selection, and the fertilizer
-            timing that extends peak bloom by weeks.
-          </p>
-          <iframe
-            src="https://player.rss.com/tricking-annuals-into-non-stop-blooms?theme=color&v=2"
-            width="100%"
-            height="393px"
-            title="Tricking Annuals Into Non-Stop Blooms"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            scrolling="no"
-          />
         </div>
       </section>
 

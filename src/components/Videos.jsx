@@ -108,6 +108,37 @@ export default function Videos() {
         </p>
       </div>
 
+      {/* Planting Atlas Original Video */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-1">
+          🎬 Planting Atlas Original
+        </h2>
+        <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Our first original video — now live.</p>
+        <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden shadow-sm">
+          <div className="aspect-video">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/Jo47nbbQGBI"
+              title="The Annual Garden Equation: Buying Time and Renting Color"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+          <div className="p-5">
+            <h3 className="font-bold text-lg text-garden-800 dark:text-garden-300 mb-2">
+              The Annual Garden Equation: Buying Time and Renting Color
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              Annuals live fast and die young — but that life cycle is exactly what makes them
+              so powerful in the garden. This video explores how to use annuals strategically:
+              bridging gaps between perennial flushes, anchoring containers through the season,
+              and choosing varieties that flower continuously rather than burning out by July.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Intro */}
       <section className="mb-10 p-5 bg-garden-50 dark:bg-garden-900/20 border border-garden-200 dark:border-garden-800 rounded-2xl">
         <h2 className="text-xl font-bold text-garden-800 dark:text-garden-300 mb-2">
@@ -332,37 +363,6 @@ export default function Videos() {
             </div>
           </div>
 
-        </div>
-      </section>
-
-      {/* Planting Atlas Original Video */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-1">
-          🎬 Planting Atlas Original
-        </h2>
-        <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Our first original video — now live.</p>
-        <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden shadow-sm">
-          <div className="aspect-video">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/Jo47nbbQGBI"
-              title="The Annual Garden Equation: Buying Time and Renting Color"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-          <div className="p-5">
-            <h3 className="font-bold text-lg text-garden-800 dark:text-garden-300 mb-2">
-              The Annual Garden Equation: Buying Time and Renting Color
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-              Annuals live fast and die young — but that life cycle is exactly what makes them
-              so powerful in the garden. This video explores how to use annuals strategically:
-              bridging gaps between perennial flushes, anchoring containers through the season,
-              and choosing varieties that flower continuously rather than burning out by July.
-            </p>
-          </div>
         </div>
       </section>
 
