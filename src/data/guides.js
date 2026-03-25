@@ -310,7 +310,7 @@ export const guideCategories = [
         title: 'Four-Season Garden Design',
         emoji: '🍂',
         description: 'Keep your garden interesting every month of the year.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'japanese-garden',

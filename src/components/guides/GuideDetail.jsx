@@ -48,6 +48,7 @@ export const heroImages = {
   'beneficial-insects': '/guides/Attracting_Beneficial_Insects_Guide.png',
   'butterfly-garden': '/guides/Butterfly_Garden_Guide.png',
   'rabbit-proof': '/guides/Rabbit_Proof_Garden_Guide.png',
+  'four-season-garden': '/guides/four-season-garden.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -756,6 +757,22 @@ const themes = {
     tableHeadText: 'text-stone-800',
     tableHeadBorder: 'border-stone-200',
     bullet: 'text-amber-600',
+  },
+  'four-season-garden': {
+    heroBg: 'bg-gradient-to-br from-amber-50 to-orange-100',
+    heroBorder: 'border-amber-200',
+    heroTitle: 'text-amber-800',
+    backBtn: 'text-amber-700 hover:text-amber-900',
+    sectionTitle: 'text-amber-800',
+    sectionBorder: 'border-amber-100',
+    h3: 'text-amber-800',
+    tipBg: 'bg-amber-50',
+    tipBorder: 'border-amber-200',
+    tipText: 'text-amber-900',
+    tableHead: 'bg-amber-100',
+    tableHeadText: 'text-amber-800',
+    tableHeadBorder: 'border-amber-200',
+    bullet: 'text-orange-500',
   },
 }
 

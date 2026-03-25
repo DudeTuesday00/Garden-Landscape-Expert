@@ -74,7 +74,8 @@ Garden-Landscape-Expert/
 │       ├── culinary-herb-garden-guide.png
 │       ├── Common_Garden_Diseases_Guide.png
 │       ├── Weed_Management_Guide.png
-│       └── Indoor_Houseplants_101_Guide.png  # 37 images total — all live guides have a hero image
+│       ├── Indoor_Houseplants_101_Guide.png
+│       └── four-season-garden.png  # 38 images total — all live guides have a hero image
 └── src/
     ├── app/                         # Next.js App Router — one folder per route
     │   ├── layout.jsx               # Root layout — dark mode script, GTM, Nav, footer, GA4/AdSense via next/script
@@ -389,6 +390,7 @@ Thirty-six full guides integrated into the app:
 - `src/data/guide-content/attracting-beneficial-insects.js` — Attracting Beneficial Insects (`id: 'beneficial-insects'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/butterfly-garden.js` — Butterfly Garden (`id: 'butterfly-garden'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/rabbit-proof-garden.js` — Rabbit-Proof Garden (`id: 'rabbit-proof'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/four-season-garden.js` — Four-Season Garden Design (`id: 'four-season-garden'`) — **complete** (all 10 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -718,7 +720,7 @@ Each live guide detail page displays a full-width hero photo below the nav, abov
 - **Naming convention:** `<guide-id>-guide.png` (e.g., `shade-tree-guide.png` for `id: 'shade-trees'`)
 - **Wired via** the `heroImages` map in `src/components/guides/GuideDetail.jsx` — keys are guide IDs, values are root-relative paths
 - **Conditional render:** `{heroImages[guideId] && <img .../>}` — guides without an entry simply render no photo; no broken images
-- **All 41 of 41 live guides** have hero images — `heroImages` map is complete
+- **All 42 of 42 live guides** have hero images — `heroImages` map is complete
 
 ### Favicon ✅
 
@@ -1034,6 +1036,27 @@ Theme: orange/amber gradient in `GuideDetail.jsx`; hero image: `public/guides/Bu
 | Section 10: Regional Strategies & Quick Reference | ✅ Done | 6-row regional table (Northeast, Mid-Atlantic/Southeast, Midwest/Great Plains, Southwest/Desert West, Pacific Northwest, California); "just found damage" 6-step action list; "planning new garden" 5-step list; 6-row troubleshooting table; closing fence-first tip |
 
 Theme: stone/amber gradient in `GuideDetail.jsx`; hero image: `public/guides/Rabbit_Proof_Garden_Guide.png`; `comingSoon: false` under Pest & Problem Solving in `guides.js`; wired in `src/data/guide-content/index.js`
+
+---
+
+### Four-Season Garden Design Guide ✅
+
+`src/data/guide-content/four-season-garden.js` — Four-Season Garden Design (`id: 'four-season-garden'`); fully built from `four-season-garden.docx` — 10 sections covering dead zone design problems through a 50-plant quick reference.
+
+| Section | Status | Notes |
+|---|---|---|
+| Overview: Why Most Gardens Have a Dead Zone | ✅ Done | Dead zone = design problem, not climate problem; Four Pillars of Year-Round Interest (bloom sequence, foliage, structure, texture/light); 6-row USDA regional overview table (Zones 3–4 through Zone 11+) |
+| Section 1: Spring — The Awakening | ✅ Done | Three-wave bloom approach (early/mid/late spring); Bulb Rule tip (depth, drifts, pre-chilling for Zones 8–10); 15-row spring plant table (Snowdrop through Creeping Phlox); regional strategies; cool-season annuals tip for Zones 7–10 |
+| Section 2: Summer — The Long Game | ✅ Done | Summer Succession Principle tip; 4-item strategy list (reblooming perennials, long-blooming annuals, foliage plants, ornamental grasses); 15-row summer plant table (Echinacea through Dahlia); 4-row regional heat tolerance table |
+| Section 3: Fall — The Underrated Season | ✅ Done | Three sources of fall beauty; Leave the Leaves tip (wildlife value of seedheads and hollow stems); 15-row fall plant table (New England Aster through Switchgrass); fall foliage planning principles (sequencing, native species, evergreen contrast, eye-level shrubs) |
+| Section 4: Winter — The Forgotten Season | ✅ Done | Four elements of winter interest; January photo test tip; 15-row winter plant table (Winterberry Holly through Mugo Pine/Dwarf conifers); regional winter design; Broadleaf Evergreens tip for Zones 6–9 |
+| Section 5: Design Principles | ✅ Done | 5 principles: Anchor with Structure (50–60% rule + Structural Framework Rule tip), Think in Layers (4 height layers), Plant in Drifts Not Spots, Repeat Colors and Forms, Celebrate Transitions (bridge plants) |
+| Section 6: Month-by-Month Calendar | ✅ Done | 12-row calendar (Jan–Dec) with garden happenings and key tasks per month; baselined to Zones 5–6 with 2–4 week zone-shift guidance |
+| Section 7: Proven Plant Combinations | ✅ Done | Combination 1: Classic Four-Season Border (4-row seasonal table + full plant list); Combination 2: Shade Garden (4-season breakdown); Combination 3: Native Plant Garden (all-native species); Container swap strategy + 4-row thriller/filler/spiller seasonal table |
+| Section 8: Getting Started Action Plan | ✅ Done | 5 steps: seasonal audit, add structure, address weakest season first, add spring bulbs every fall, learn to love seedheads; 10-Year Payoff tip |
+| Section 9: Quick Reference — 50 Essential Plants | ✅ Done | 50-row plant table (Serviceberry through Beautyberry americana) with type, zones, peak seasons, and primary value; closing reflection + "plant something for January" tip |
+
+Theme: amber/orange gradient in `GuideDetail.jsx`; hero image: `public/guides/four-season-garden.png`; `comingSoon: false` under Landscape Design in `guides.js`; wired in `src/data/guide-content/index.js`
 
 ### Typography Upgrade ✅
 
