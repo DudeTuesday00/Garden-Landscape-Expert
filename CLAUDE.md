@@ -1199,13 +1199,15 @@ A new e-commerce shop section has been added to the site for selling 3D printed 
 
 Original video and podcast content is externally hosted (no large media files in the repo) and embedded via iframe on the respective pages.
 
+**Page placement:** The "Planting Atlas Original" section appears **first** on both the Videos and Podcasts pages — directly below the hero, before any curated third-party content.
+
 **Video — YouTube hosted**
 
 | Title | YouTube ID | Embed URL |
 |---|---|---|
 | The Annual Garden Equation: Buying Time and Renting Color | `Jo47nbbQGBI` | `https://www.youtube.com/embed/Jo47nbbQGBI` |
 
-- Embedded in `src/components/Videos.jsx` in a "🎬 Planting Atlas Original" section using a responsive `aspect-video` wrapper + `<iframe>`
+- Embedded in `src/components/Videos.jsx` as the first content section, using a responsive `aspect-video` wrapper + `<iframe>`
 - To add a new video: add a new card in the "Planting Atlas Original" section in `Videos.jsx` with the YouTube embed URL (`https://www.youtube.com/embed/<VIDEO_ID>`)
 
 **Podcast — RSS.com hosted**
@@ -1214,7 +1216,7 @@ Original video and podcast content is externally hosted (no large media files in
 |---|---|---|
 | Tricking Annuals Into Non-Stop Blooms | `tricking-annuals-into-non-stop-blooms` | `https://player.rss.com/tricking-annuals-into-non-stop-blooms?theme=color&v=2` |
 
-- Embedded in `src/components/Podcasts.jsx` in a "🎙️ Planting Atlas Original" section using the RSS.com iframe player (height: 393px)
+- Embedded in `src/components/Podcasts.jsx` as the first content section, using the RSS.com iframe player (height: 393px)
 - To add a new episode: add a new card in the "Planting Atlas Original" section in `Podcasts.jsx` with the RSS.com player iframe from the episode's share/embed settings
 
 **Media hosting policy:** Do not commit audio or video files to the repo. YouTube handles video delivery; RSS.com handles podcast delivery. Only embed code (iframes) belongs in the components.
