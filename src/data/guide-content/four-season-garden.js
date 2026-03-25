@@ -392,5 +392,70 @@ export const fourSeasonGardenContent = {
         },
       ],
     },
+    /* ── Section 6: Design Principles ── */
+    {
+      id: 'design-principles',
+      title: 'Design Principles for the Four-Season Garden',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The specific plants matter — but the design principles that govern how you put them together matter more. These are the rules that four-season garden designers return to again and again:',
+        },
+        {
+          type: 'h3',
+          text: '1. Anchor with Structure First',
+        },
+        {
+          type: 'p',
+          text: 'Before choosing any perennial or annual, lay out your structural framework: trees, shrubs, and hardscaping elements that provide visual anchors year-round. A good rule of thumb: 50–60% of your garden\'s volume should be structural plants (shrubs and small trees) with the remainder devoted to perennials, grasses, bulbs, and annuals.',
+        },
+        {
+          type: 'tip',
+          emoji: '🏗️',
+          text: 'The Structural Framework Rule: If you removed every perennial from your garden beds, would anything be left worth looking at? If the answer is no, you need more structural planting. A garden with no woody framework — only perennials — will look great for 3 months and bare for 9. Add shrubs, small trees, ornamental grasses, and evergreens to provide the year-round backbone.',
+        },
+        {
+          type: 'h3',
+          text: '2. Think in Layers',
+        },
+        {
+          type: 'p',
+          text: 'A well-designed border has four distinct height layers, each contributing interest at different times of year:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Canopy layer (15+ feet): Shade trees, large ornamental trees — flowering dogwood, serviceberry, magnolia, ornamental crabapple',
+            'Understory layer (6–15 feet): Large shrubs and small trees — viburnum, witch hazel, native hollies, oakleaf hydrangea',
+            'Shrub layer (2–6 feet): Medium shrubs — hydrangeas, spireas, native asters, ornamental grasses, roses',
+            'Ground layer (0–2 feet): Perennials, groundcovers, bulbs, low grasses — the seasonal color engine of the border',
+          ],
+        },
+        {
+          type: 'h3',
+          text: '3. Plant in Drifts, Not Spots',
+        },
+        {
+          type: 'p',
+          text: 'A single purple coneflower disappears in a border. Seven purple coneflowers planted in a flowing drift create an impact. Three or more of anything — planted in odd numbers, drifting diagonally through a bed — reads as intentional design rather than random placement. For spring bulbs, think in terms of dozens to hundreds, not threes and fives.',
+        },
+        {
+          type: 'h3',
+          text: '4. Repeat Colors and Forms',
+        },
+        {
+          type: 'p',
+          text: 'The most visually unified borders repeat the same colors and forms throughout the planting in different plants. If you love purple, plant it in multiple spots along the border — catmint, allium, asters, and salvia all sharing the same hue creates a through-line of color that ties the composition together. The eye follows repetition; without it, borders look restless and confused.',
+        },
+        {
+          type: 'h3',
+          text: '5. Celebrate Transitions',
+        },
+        {
+          type: 'p',
+          text: 'The moments between seasons — late winter into spring, spring into summer, summer into fall — are design opportunities. Plant "bridge" plants that carry beauty across the transition: alliums that extend from late spring into early summer; rudbeckia that carries from midsummer through fall; ornamental grasses that peak in fall and persist beautifully through winter. These bridges eliminate the gap that typically exists between seasons.',
+        },
+      ],
+    },
   ],
 }
