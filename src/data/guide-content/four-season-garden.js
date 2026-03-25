@@ -325,5 +325,72 @@ export const fourSeasonGardenContent = {
         },
       ],
     },
+    /* ── Section 5: Winter ── */
+    {
+      id: 'winter',
+      title: '❄️ Winter — The Forgotten Season: Structure, Texture, and Quiet Beauty',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Winter is the season that separates intentionally designed gardens from accidentally planted ones. Strip away the flowers, most of the foliage, and the lush summer growth — and what remains? The answer is either "not much" or "something deeply beautiful." That answer is determined entirely by design choices.',
+        },
+        {
+          type: 'p',
+          text: 'A winter garden is defined by four elements:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Evergreen structure — plants that maintain foliage and form year-round, providing visual anchors when everything else is bare',
+            'Bark and stem color — the extraordinary texture show of exfoliating birch bark, red-twig dogwood stems, and paperbark maple',
+            'Persistent fruits and berries — holly, winterberry, firethorn, and crabapple that color the garden red and orange',
+            'Architectural seedheads — the skeletal geometry of ornamental grasses, coneflowers, and alliums dusted with frost or snow',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '❄️',
+          text: 'Winter Is the Ultimate Design Test: Photograph your garden on a gray January day. If you like what you see — if there\'s structure, texture, something worth looking at — your design is working. If all you see is bare soil and brown sticks, that\'s your shopping list for fall planting.',
+        },
+        {
+          type: 'h3',
+          text: 'Top Winter Interest Plants',
+        },
+        {
+          type: 'table',
+          headers: ['Plant', 'Type', 'Zones', 'Winter Feature', 'Height', 'Notes'],
+          rows: [
+            ['Winterberry Holly (Ilex verticillata)', 'Shrub (native)', '3–9', 'Brilliant red berries', '6–10 ft', 'Deciduous; berries persist; needs male pollinator'],
+            ['American Holly (Ilex opaca)', 'Tree (native)', '5–9', 'Red berries + evergreen foliage', '15–50 ft', 'Excellent bird plant; classic winter look'],
+            ['Red-twig Dogwood (Cornus sericea)', 'Shrub (native)', '2–9', 'Brilliant red stems', '6–8 ft', 'Native; wet tolerant; cut 1/3 annually for best stem color'],
+            ['Yellow-twig Dogwood (Cornus sericea \'Flaviramea\')', 'Shrub', '2–8', 'Bright yellow stems', '6–8 ft', 'Contrast with red-twig for stunning winter pairing'],
+            ['River Birch (Betula nigra)', 'Tree (native)', '4–9', 'Peeling, cinnamon-colored bark', '40–70 ft', 'Multi-trunk form; incredible texture year-round'],
+            ['Paper Birch (Betula papyrifera)', 'Tree (native)', '2–7', 'White peeling bark', '40–60 ft', 'Iconic northern winter silhouette; multi-stem form'],
+            ['Paperbark Maple (Acer griseum)', 'Tree', '4–8', 'Cinnamon exfoliating bark', '20–30 ft', 'Stunning bark show; three-season interest'],
+            ['Ornamental Grasses (Miscanthus, Panicum)', 'Perennial', '3–9', 'Feathery plumes; movement', '3–8 ft', 'Leave standing through winter; cut back in late Feb–Mar'],
+            ['Coneflower (Echinacea) seedheads', 'Perennial', '3–9', 'Spiky seedheads; bird food', '2–4 ft', 'Leave standing; goldfinches will feed on seeds all winter'],
+            ['Leatherleaf Viburnum', 'Shrub', '5–8', 'Semi-evergreen; burgundy winter foliage', '5–6 ft', 'Excellent textural screen in winter'],
+            ['Hellebore (Lenten rose)', 'Perennial (evergreen)', '4–9', 'Evergreen foliage; late winter blooms', '18–24 in', 'Blooms Feb–April; deer resistant'],
+            ['Firethorn (Pyracantha)', 'Shrub', '6–9', 'Orange-red berries', '6–12 ft', 'Evergreen; persists into winter; birds will eventually eat berries'],
+            ['Crabapple (ornamental)', 'Tree', '4–8', 'Persistent small fruits', '15–25 ft', 'Choose persistent-fruited varieties like \'Donald Wyman\''],
+            ['Beautyberry (Callicarpa)', 'Shrub', '5–8', 'Purple/magenta berries persist', '4–6 ft', 'Best berry show of any shrub; deer resistant'],
+            ['Mugo Pine / Dwarf conifers', 'Shrub', '2–7', 'Evergreen structure + texture', '2–6 ft', 'Dwarf conifers provide low structure without overwhelming borders'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Designing for Winter in Your Climate',
+        },
+        {
+          type: 'p',
+          text: 'Winter design varies dramatically by region. In northern zones, evergreens are critical anchors — choose cold-hardy broadleafs like inkberry holly and winterberry along with native conifers. In the mid-South, broadleaf evergreens like camellias, mahonia, and sweet box bloom in winter itself. In mild coastal climates, winter may be your best growing season for cool-season interest plants.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'Broadleaf Evergreens for Winter Interest: In Zones 6–9, consider these winter stars: Southern magnolia, camellias (Zones 7–9; bloom Nov–Mar), mahonia (Zones 5–9; yellow winter flowers), boxwood (structure), nandina (Zones 6–9; red winter berries and foliage), and sweet box (Sarcococca; Zones 6–9; fragrant winter flowers). These plants give you a garden that looks genuinely alive in January.',
+        },
+      ],
+    },
   ],
 }
