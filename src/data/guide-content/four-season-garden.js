@@ -255,5 +255,75 @@ export const fourSeasonGardenContent = {
         },
       ],
     },
+    /* ── Section 4: Fall ── */
+    {
+      id: 'fall',
+      title: '🍂 Fall — The Underrated Season: Color, Texture, and Wildlife Value',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Fall is having a moment in garden design — and rightfully so. For decades, American gardeners treated fall as the garden\'s ending: time to cut everything down, rake the leaves, and close up shop. Today\'s best garden designers know that fall is actually one of the richest seasons for beauty and wildlife, and that cleaning up in fall is often the worst thing you can do for your garden\'s ecosystem and winter structure.',
+        },
+        {
+          type: 'p',
+          text: 'A fall garden has three sources of beauty that most gardeners exploit poorly:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Fall-blooming plants — asters, sedums, rudbeckia, toad lily, and witch hazel that bloom September through November',
+            'Fall foliage — the brilliant color show of deciduous trees and shrubs that shifts the entire landscape',
+            'Seedheads and structure — the skeletal beauty of coneflowers, grasses, baptisia, and other plants that provide interest (and wildlife food) through winter',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🐦',
+          text: 'Leave the Leaves (and Seedheads): Research consistently shows that seedheads left standing through winter provide critical food for overwintering birds — goldfinches, nuthatches, chickadees, and sparrows rely on them. Hollow stems also house native bees and beneficial insects. Cut back only what is truly diseased; leave the rest until spring. Your garden will look better and your local wildlife will thank you.',
+        },
+        {
+          type: 'h3',
+          text: 'Top Fall Performers',
+        },
+        {
+          type: 'table',
+          headers: ['Plant', 'Type', 'Zones', 'Season', 'Height', 'Fall Feature'],
+          rows: [
+            ['New England Aster', 'Perennial', '3–8', 'Sep–Oct', '3–5 ft', 'Purple flowers; butterfly magnet'],
+            ['Sedum (Hylotelephium)', 'Perennial', '3–11', 'Aug–Oct', '12–24 in', 'Pink/red flowers; copper seedheads into winter'],
+            ['Japanese Anemone', 'Perennial', '4–8', 'Aug–Oct', '2–4 ft', 'Elegant pink/white flowers; late-season delicacy'],
+            ['Rudbeckia (black-eyed Susan)', 'Perennial', '3–10', 'Jun–Oct', '2–3 ft', 'Glowing gold into October; birds love seedheads'],
+            ['Ornamental Grasses (misc)', 'Perennial', '3–10', 'Sep–Feb', '2–8 ft', 'Feathery plumes; movement and sound in wind'],
+            ['Witch Hazel (Hamamelis)', 'Shrub/tree', '3–9', 'Oct–Feb', '10–20 ft', 'Spidery flowers; some species bloom in winter!'],
+            ['Toad Lily (Tricyrtis)', 'Perennial', '4–9', 'Sep–Oct', '24–36 in', 'Orchid-like spotted flowers; shade garden gem'],
+            ['Goldenrod (Solidago)', 'Perennial', '3–9', 'Aug–Oct', '2–4 ft', 'Native; pollinator powerhouse; feathery gold'],
+            ['Firethorn (Pyracantha)', 'Shrub', '6–9', 'Fall–winter', '6–12 ft', 'Brilliant orange-red berries through winter'],
+            ['Beautyberry (Callicarpa)', 'Shrub', '5–8', 'Sep–Dec', '4–6 ft', 'Stunning magenta-purple berry clusters'],
+            ['Oakleaf Hydrangea', 'Shrub', '5–9', 'Fall–winter', '4–8 ft', 'Papery white flowerheads; exfoliating bark; fall leaf color'],
+            ['Burning Bush (native alt: Itea)', 'Shrub', '5–9', 'Sep–Nov', '4–6 ft', 'Brilliant red fall foliage; Itea is a native substitute'],
+            ['Sugar Maple', 'Tree', '3–8', 'Sep–Nov', '60–80 ft', 'Quintessential fall color: gold to orange to scarlet'],
+            ['Serviceberry (Amelanchier)', 'Tree/shrub', '3–9', 'Sep–Oct', '6–25 ft', 'Red-orange fall color; native; multi-season interest'],
+            ['Switchgrass (Panicum)', 'Grass', '3–9', 'Sep–Jan', '3–5 ft', 'Native; airy texture; burgundy-red fall color'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Planning the Fall Foliage Show',
+        },
+        {
+          type: 'p',
+          text: 'Fall foliage is the most spectacular large-scale color event in the American landscape — and you can deliberately design for it. A few key principles:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Layer your fall color: some trees color in late September, others in October, others in November. Choose trees that give you a sequence, not all at once.',
+            'Native species tend to give the most reliable fall color in their home regions. Sugar and red maples in the Northeast; sweetgum and tupelo in the South; quaking aspen and bigtooth aspen in the Mountain West.',
+            'Pair fall-foliage trees with evergreen backgrounds — the contrast between brilliant deciduous color and dark green conifers or broadleaf evergreens is electrifying.',
+            'Shrubs add color at eye level where you notice it most: oakleaf hydrangea, fothergilla, viburnum, itea, and native blueberry all give excellent fall shrub color.',
+          ],
+        },
+      ],
+    },
   ],
 }
