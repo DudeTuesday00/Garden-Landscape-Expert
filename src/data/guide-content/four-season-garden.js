@@ -635,5 +635,61 @@ export const fourSeasonGardenContent = {
         },
       ],
     },
+    /* ── Section 9: Getting Started Action Plan ── */
+    {
+      id: 'action-plan',
+      title: 'Getting Started: Your Four-Season Garden Action Plan',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Four-season gardens aren\'t built in a weekend — they\'re built in layers, over years, as you observe how your existing plants perform and fill in the gaps. Here\'s a practical starting framework:',
+        },
+        {
+          type: 'h3',
+          text: 'Step 1: Audit Your Existing Garden Season by Season',
+        },
+        {
+          type: 'p',
+          text: 'Walk your garden in each season and photograph what you see. Ask yourself: What months are interesting? What months are empty? Where are the gaps — early spring, late summer, winter? Make a simple list of your current "dead" months — those are your priority planting targets.',
+        },
+        {
+          type: 'h3',
+          text: 'Step 2: Add Structure if You Don\'t Have It',
+        },
+        {
+          type: 'p',
+          text: 'If your garden has no woody plants — no shrubs or small trees — start there. A single four-season shrub (viburnum, oakleaf hydrangea, native holly, fothergilla) contributes interest in every season and anchors everything else you plant around it. Choose one, plant it this fall or next spring, and observe how it changes the character of that garden space year-round.',
+        },
+        {
+          type: 'h3',
+          text: 'Step 3: Address Your Weakest Season First',
+        },
+        {
+          type: 'p',
+          text: 'Most gardeners have plenty of summer color and very little else. If winter is your empty season, add a winter-interest shrub and some ornamental grasses this fall. If late summer is your gap, add asters, rudbeckia, and sedums this spring. Don\'t try to fix everything at once — focus on one seasonal gap per year and steadily build toward a year-round garden.',
+        },
+        {
+          type: 'h3',
+          text: 'Step 4: Add Spring Bulbs Every Fall',
+        },
+        {
+          type: 'p',
+          text: 'This is the single highest-return gardening action available to you. Every fall, plant more bulbs — daffodils, alliums, species tulips, crocus, snowdrops. They naturalize, multiply, and cost almost nothing per bloom. A garden with a generous and diverse spring bulb layer will outperform one without by an embarrassing margin. Plant 50 bulbs this fall. Next fall, plant 100. Within a few years your spring garden will be breathtaking.',
+        },
+        {
+          type: 'h3',
+          text: 'Step 5: Learn to Love Seedheads',
+        },
+        {
+          type: 'p',
+          text: 'Changing your cut-back habits is one of the easiest ways to improve your fall and winter garden immediately and for free. Leave ornamental grasses standing until late winter. Leave coneflower, rudbeckia, and baptisia seedheads in place. Leave aster and goldenrod alone after blooming. You gain weeks of additional winter interest, help overwintering birds, and support native bees that nest in hollow stems. Cut back in late February or early March before new growth emerges.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌱',
+          text: 'The 10-Year Payoff: A four-season garden isn\'t built in a year. It\'s a 10-year project of observation, addition, and refinement. But each year you plant with year-round intention, your garden gets measurably better — more interesting in February, richer in October, more alive in January. The gardeners with the most beautiful four-season landscapes didn\'t start with a master plan. They just kept asking: "What would make this garden more interesting this month?" — and then planted the answer.',
+        },
+      ],
+    },
   ],
 }
