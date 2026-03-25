@@ -534,5 +534,106 @@ export const fourSeasonGardenContent = {
         },
       ],
     },
+    /* ── Section 8: Proven Plant Combinations ── */
+    {
+      id: 'plant-combinations',
+      title: 'Proven Four-Season Plant Combinations',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The best way to learn four-season design is through examples of combinations that genuinely work together across all seasons. Each combination below offers something of value in spring, summer, fall, AND winter.',
+        },
+        {
+          type: 'h3',
+          text: 'Combination 1: The Classic Four-Season Border (Zones 4–8)',
+        },
+        {
+          type: 'table',
+          headers: ['Season', 'What\'s Contributing Interest'],
+          rows: [
+            [
+              '🌸 Spring',
+              'Daffodils and tulips emerge through the ornamental grass clumps. Redbud and serviceberry tree in bloom overhead. Baptisia emerges with glaucous blue-green foliage.',
+            ],
+            [
+              '☀️ Summer',
+              'Purple coneflower and black-eyed Susan anchor mid-border. Ornamental grass (Karl Foerster) adding 4-ft vertical interest. Salvia providing continuous blue. Knockout rose providing color through heat.',
+            ],
+            [
+              '🍂 Fall',
+              'New England asters bloom purple through October. Coneflower and rudbeckia seedheads turning golden-black. Serviceberry and redbud with orange-red fall foliage. Ornamental grass plumes at their most spectacular.',
+            ],
+            [
+              '❄️ Winter',
+              'Karl Foerster grass maintaining feathery structure through January. Serviceberry and redbud showing branch structure and exfoliating bark. Coneflower seedheads providing bird food. Baptisia dark seed pods rattling in the breeze.',
+            ],
+          ],
+        },
+        {
+          type: 'p',
+          text: 'Plants in this combination: Daffodil \'Ice Follies\', Tulip \'Queen of Night\', Serviceberry (Amelanchier canadensis), Redbud (Cercis canadensis), Baptisia australis, Purple Coneflower (Echinacea purpurea), Black-eyed Susan (Rudbeckia fulgida \'Goldsturm\'), Karl Foerster Grass (Calamagrostis), Salvia \'May Night\', New England Aster \'Purple Dome\'',
+        },
+        {
+          type: 'h3',
+          text: 'Combination 2: The Shade Garden — All-Season Interest Without Full Sun (Zones 4–8)',
+        },
+        {
+          type: 'p',
+          text: 'Shade gardens are often underplanted for winter interest — here\'s a combination that delivers across all four seasons in partial to full shade:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Spring: Hellebores (blooming late Feb–April), Virginia bluebells (ephemeral; April), astilbe emerging',
+            'Summer: Astilbe in full bloom, hosta at full architectural size, coral bells foliage providing continuous color, toad lily budding up',
+            'Fall: Toad lily in bloom (Sep–Oct), hosta foliage turning gold before dying back, oakleaf hydrangea flowerheads turning papery buff-tan, serviceberry and redbud showing color in the canopy',
+            'Winter: Hellebore evergreen foliage, oakleaf hydrangea exfoliating bark and persistent seedheads, shrub structure of viburnum, witchhazel ready to bloom in late winter',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Combination 3: The Native Plant Four-Season Garden (All zones — adjust species to region)',
+        },
+        {
+          type: 'p',
+          text: 'Native plants offer the highest wildlife value and tend to be exceptionally resilient once established. This combination uses native species for all four seasons:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Spring: Bloodroot (Sanguinaria), Virginia bluebells, Eastern redbud (tree layer), wild columbine (Aquilegia canadensis)',
+            'Summer: Purple coneflower, wild bergamot (Monarda fistulosa), black-eyed Susan, cardinal flower (Lobelia cardinalis), Joe-pye weed',
+            'Fall: New England asters, goldenrod, switchgrass plumes, beautyberry, native viburnum berries',
+            'Winter: Winterberry holly berries, switchgrass structure, dried seedheads of Joe-pye weed and coneflower, native inkberry evergreen foliage',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Four-Season Container Garden Design',
+        },
+        {
+          type: 'p',
+          text: 'Container gardens can change with every season — which makes them powerful tools for year-round interest at entries, patios, and focal points. The "thriller, filler, spiller" formula applies equally well to four-season container planning.',
+        },
+        {
+          type: 'h3',
+          text: 'The Container Swap Strategy',
+        },
+        {
+          type: 'p',
+          text: 'Rather than constantly replanting the same containers, maintain a small reserve of plants in holding pots. Swap star performers into your display containers when they are looking their best, and rotate them out to recover. This gives you a perpetually impressive container display with much less effort than starting from scratch each time.',
+        },
+        {
+          type: 'table',
+          headers: ['Season', 'Thriller (Vertical)', 'Filler (Mounding)', 'Spiller (Trailing)'],
+          rows: [
+            ['🌸 Spring', 'Ornamental grass or dwarf conifer', 'Pansies, violas, primrose, snapdragon', 'Trailing alyssum, ivy, creeping Jenny'],
+            ['☀️ Summer', 'Canna, Cordyline, tall Salvia', 'Impatiens, petunias, lantana, zinnias', 'Sweet potato vine, bacopa, calibrachoa'],
+            ['🍂 Fall', 'Ornamental kale or flowering cabbage', 'Mums, asters, sedum, pansies', 'Trailing ivy, creeping Jenny, ornamental pepper'],
+            ['❄️ Winter', 'Dwarf conifer or evergreen holly', 'Hellebore, heathers, dogwood stems in pot', 'Trailing ivy, creeping thyme, wintercreeper'],
+          ],
+        },
+      ],
+    },
   ],
 }
