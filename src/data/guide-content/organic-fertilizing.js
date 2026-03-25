@@ -178,5 +178,152 @@ export const organicFertilizingContent = {
         },
       ],
     },
+    /* ── Section 3: Compost — The Foundation of Everything ── */
+    {
+      id: 'compost',
+      title: 'Section 2: Compost — The Foundation of Everything',
+      blocks: [
+        {
+          type: 'p',
+          text: 'If you\'re going to do one thing for your garden\'s long-term health, make it compost. Not buy a bag of 10-10-10. Not apply fish emulsion. Compost. Finished compost is the product of decomposed organic matter — kitchen scraps, yard waste, leaves, food scraps — broken down by microbes into a stable, humus-rich material that does more for your soil than anything else you can add.',
+        },
+        {
+          type: 'p',
+          text: 'Compost is simultaneously a soil amendment (improving structure, drainage, and water retention), a slow-release fertilizer (providing a balanced supply of macro and micronutrients), a pH buffer (moderating soil acidity and alkalinity), and a biological inoculant (introducing billions of beneficial microbes). No synthetic product comes close to doing all four things at once.',
+        },
+        {
+          type: 'h3',
+          text: 'What Compost Does for Your Soil',
+        },
+        {
+          type: 'table',
+          headers: ['Benefit', 'What Actually Happens', 'Timeline'],
+          rows: [
+            [
+              'Improves soil structure',
+              'Humus particles bind with sand, silt, and clay to create aggregates — the crumb structure that gives healthy soil its sponge-like quality. Sandy soils gain water retention; clay soils gain drainage and aeration.',
+              'Noticeable after 1 season; full effect in 2–3 years of regular application',
+            ],
+            [
+              'Feeds soil life',
+              'A single teaspoon of finished compost contains over a billion bacteria, plus fungi, nematodes, protozoa, and other organisms that form the food web converting organic matter into plant-available nutrients.',
+              'Immediate — organisms are active as soon as compost is incorporated',
+            ],
+            [
+              'Slow-release nutrients',
+              'Nitrogen, phosphorus, potassium, and dozens of micronutrients are released gradually as microbes break down organic compounds — matching plant uptake rates and minimizing leaching.',
+              'Nutrients release over weeks to months throughout the growing season',
+            ],
+            [
+              'Buffers pH',
+              'The organic acids and humus compounds in compost act as a buffer, resisting extreme swings in pH. Especially valuable in regions with inherently alkaline or acidic soils.',
+              'Gradual; significant pH moderation takes 1–2 years of regular use',
+            ],
+            [
+              'Suppresses disease',
+              'Beneficial microbes in compost compete with and suppress soil-borne pathogens. Compost tea and compost mulch have shown documented suppression of common fungal diseases.',
+              'Active biological suppression from first application',
+            ],
+            [
+              'Sequesters carbon',
+              'Incorporating organic matter into soil stores atmospheric carbon in stable humus compounds. Organic gardening is one of the most accessible forms of practical carbon sequestration.',
+              'Ongoing as long as organic matter is added regularly',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Carbon-to-Nitrogen Ratio: The Most Important Compost Concept',
+        },
+        {
+          type: 'p',
+          text: 'Hot composting — building a pile that heats to 130–160°F internally — is the fastest way to produce finished compost (in as little as 4–8 weeks) and the most reliable way to kill weed seeds and pathogens. Every compost problem — piles that don\'t heat, slimy piles, piles that smell — ultimately comes down to the carbon-to-nitrogen (C:N) ratio. The ideal ratio for hot composting is roughly 25–30 parts carbon to 1 part nitrogen by weight. In practice, this means balancing "browns" (high-carbon materials) with "greens" (high-nitrogen materials):',
+        },
+        {
+          type: 'table',
+          headers: ['Material', 'Type', 'C:N Ratio', 'Best Use', 'Notes'],
+          rows: [
+            ['Dry leaves', 'Brown (Carbon)', '60–80:1', 'Bulk carbon for balancing greens', 'Most abundant fall material; shred for faster breakdown'],
+            ['Straw (not hay)', 'Brown (Carbon)', '80–100:1', 'Bulk carbon; good aeration', 'Straw has no seeds; hay does — know the difference'],
+            ['Cardboard (plain)', 'Brown (Carbon)', '350:1', 'Layer at pile base; worm bedding', 'Remove tape and staples; shred or wet first'],
+            ['Wood chips', 'Brown (Carbon)', '400:1', 'Bulking agent; long-term carbon', 'Use sparingly in hot compost; best as mulch or slow pile'],
+            ['Paper (unbleached)', 'Brown (Carbon)', '150–200:1', 'Layering with wet materials', 'Shred first; avoid glossy or colored inks'],
+            ['Sawdust (untreated)', 'Brown (Carbon)', '300–500:1', 'Mix with high-N material', 'Never use treated/painted wood sawdust'],
+            ['Fresh grass clippings', 'Green (Nitrogen)', '15–20:1', 'Excellent nitrogen activator', 'Apply in thin layers or mix in; thick layers mat and smell'],
+            ['Kitchen scraps (fruit/veg)', 'Green (Nitrogen)', '15–20:1', 'Core nitrogen source', 'Bury in pile center to deter pests'],
+            ['Coffee grounds', 'Green (Nitrogen)', '20:1', 'Great nitrogen source', 'Myth: not strongly acidic; near-neutral pH when wet'],
+            ['Fresh manure (chicken)', 'Green (Nitrogen)', '7:1', 'Powerful nitrogen activator', 'Hot-compost first; never apply raw to edible plants'],
+            ['Fresh manure (cow/horse)', 'Green (Nitrogen)', '20:1', 'Balanced nitrogen addition', 'Best composted; may contain weed seeds'],
+            ['Garden trimmings', 'Green (Nitrogen)', '20–30:1', 'Bulk nitrogen material', 'Avoid diseased plant material in cool piles'],
+            ['Seaweed / kelp', 'Green (Nitrogen)', '19:1', 'Micronutrient booster', 'Excellent; rinse salt water off if collected fresh'],
+            ['Hair / wool', 'Green (Nitrogen)', '4–6:1', 'Slow-release nitrogen boost', 'Works well; breaks down slowly'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Building the Perfect Hot Compost Pile',
+        },
+        {
+          type: 'p',
+          text: 'Follow this sequence for a pile that heats reliably and produces finished compost in 4–8 weeks:',
+        },
+        {
+          type: 'list',
+          items: [
+            'Choose your location: Partial shade is ideal — full sun dries the pile too fast; full shade slows it. Ensure good drainage underneath.',
+            'Size it right: Minimum pile size for hot composting is 3×3×3 feet. Smaller piles lose heat too fast. Maximum useful size is about 5×5×5 feet — larger piles are hard to turn.',
+            'Layer browns and greens: Start with a 4–6 inch layer of coarse browns for aeration at the base. Then alternate 2–4 inch layers of greens with 4–6 inch layers of browns. Target a roughly 3:1 brown-to-green ratio by volume.',
+            'Moisture is critical: Each layer should feel like a wrung-out sponge — moist but not dripping. Too dry and decomposition stalls; too wet and the pile goes anaerobic (slimy, smelly).',
+            'Turn for oxygen: A hot pile needs oxygen. Turn every 3–7 days by moving the outside material to the inside of a new pile. Each turning reintroduces oxygen and restarts heating.',
+            'Watch the temperature: Use a compost thermometer. The pile should reach 130–160°F within 48–72 hours. Below 130°F, add more nitrogen (greens) or moisture. If it exceeds 165°F, turn immediately — above this temperature, beneficial organisms die off.',
+            'Know when it\'s done: Finished compost is dark, crumbly, and smells like rich earth — not like any of its original ingredients. No recognizable original materials should remain.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🪱',
+          text: 'Cold Composting: The Low-Effort Alternative: If turning a hot pile every few days sounds like too much work, cold composting produces excellent compost with almost no effort. Simply pile up organic material, keep it moist, and let it decompose on its own timeline. The result in 6–18 months is finished compost just as valuable as hot-composted material. The trade-off: weed seeds and pathogens may survive, and the process is slower. For most home gardeners, cold composting is the practical choice.',
+        },
+        {
+          type: 'h3',
+          text: 'Vermicomposting: Worm Castings at Home',
+        },
+        {
+          type: 'p',
+          text: 'Vermicomposting — composting with worms, specifically red wigglers (Eisenia fetida) — produces worm castings, which are widely considered the most biologically active and nutrient-dense organic fertilizer available. Worm castings are rich in plant-available nutrients, beneficial microbes, and plant growth hormones, and they can be produced year-round in a bin indoors or in a garage.',
+        },
+        {
+          type: 'table',
+          headers: ['Aspect', 'Details'],
+          rows: [
+            ['Worm species', 'Red wigglers (Eisenia fetida) — NOT earthworms, which don\'t thrive in bins. Red wigglers are surface-dwelling composters that process material rapidly.'],
+            ['Bin requirements', 'Opaque bin with drainage and ventilation; 8–12 inches deep; 1 sq ft per pound of weekly food scraps; can be purchased or DIY (wooden or plastic)'],
+            ['Bedding materials', 'Shredded newspaper, cardboard, coconut coir, or leaf litter at 70–80% moisture; creates the worms\' living environment'],
+            ['What to feed', 'Fruit and vegetable scraps, coffee grounds and filters, tea bags, crushed eggshells, bread in small amounts; bury food in bedding to avoid fruit flies'],
+            ['What to avoid', 'Meat, fish, dairy, oily foods, citrus (in large quantities), onions and garlic (in large quantities), pet waste'],
+            ['Harvesting castings', 'Every 3–4 months; separate worms by moving finished castings to one side and adding fresh bedding; worms migrate toward new food; harvest finished material'],
+            ['How to use', 'Mix into potting mix (up to 25%); side-dress around plants (1–2 inches); brew into worm casting tea; use as a seed-starting amendment'],
+            ['Worm casting tea', 'Steep 1–2 cups castings in 1 gallon non-chlorinated water for 24 hours (with air bubbler if possible); apply to soil or as foliar spray; use immediately'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'How to Apply Compost: Rates and Methods',
+        },
+        {
+          type: 'table',
+          headers: ['Application', 'Rate / Method', 'Timing', 'Best For'],
+          rows: [
+            ['Bed preparation', '2–4 inches incorporated 6–8 inches deep', 'Before planting; fall for spring beds', 'New beds; exhausted soil; heavy clay or sandy soil'],
+            ['Annual top-dress', '1–2 inches spread on surface', 'Early spring; after harvest', 'Established beds; vegetable gardens; perennial borders'],
+            ['Transplant amendment', 'Mix 25–30% compost into backfill', 'At planting time', 'Individual trees, shrubs, perennials at transplant'],
+            ['Seed starting mix', 'Up to 30% by volume in mix', 'When preparing mix', 'Starting seeds; must be well-finished compost only'],
+            ['Lawn topdress', '1/4–1/2 inch raked into lawn', 'Fall or early spring', 'Improving lawn soil; overseeding; thin turf areas'],
+            ['Mulch layer', '2–3 inches around plants', 'Spring; after planting', 'Moisture retention; weed suppression; slow soil amendment'],
+            ['Compost tea', '1–2 cups per gallon water, steeped 24 hr', 'Every 2–4 weeks growing season', 'Foliar feeding; soil drench; disease suppression'],
+          ],
+        },
+      ],
+    },
   ],
 }
