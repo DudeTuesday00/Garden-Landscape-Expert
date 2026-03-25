@@ -171,5 +171,89 @@ export const fourSeasonGardenContent = {
         },
       ],
     },
+    /* ── Section 3: Summer ── */
+    {
+      id: 'summer',
+      title: '☀️ Summer — The Long Game: Designing Sustained Color Through Heat',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Summer is the season most home gardens are designed for — and yet it\'s also the season where gardens most often fall apart. The problem: most gardeners rely too heavily on annuals that wear out in July, or perennials that bloom beautifully for three weeks and then contribute nothing for the rest of the season.',
+        },
+        {
+          type: 'p',
+          text: 'Great summer garden design is about the long game. You want plants that carry interest from June through September — or failing that, a relay race where something new is always stepping up as another finishes.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Reblooming perennials — deadhead or cut back for a second flush: coneflowers, salvia, catmint, coreopsis',
+            'Long-blooming annuals — zinnias, lantana, pentas, marigolds, and portulaca bloom relentlessly from planting to frost',
+            'Foliage plants — caladiums, coleus, ornamental sweet potato, and cannas carry the load between flowering bursts',
+            'Ornamental grasses — not primarily summer bloomers, but their texture and movement add summer garden structure',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '☀️',
+          text: 'The Summer Succession Principle: For every perennial that blooms in June, plan a companion that blooms in July–August. For every perennial that fades in August, have a fall partner starting to emerge. A border designed this way never has an empty moment — it just shifts emphasis as the season progresses.',
+        },
+        {
+          type: 'h3',
+          text: 'Top Summer Performers',
+        },
+        {
+          type: 'table',
+          headers: ['Plant', 'Type', 'Zones', 'Bloom/Season', 'Height', 'Design Role'],
+          rows: [
+            ['Purple Coneflower (Echinacea)', 'Perennial', '3–9', 'Jun–Sep', '2–4 ft', 'Native; long-blooming; wildlife magnet'],
+            ['Black-eyed Susan (Rudbeckia)', 'Perennial/Ann', '3–10', 'Jun–Oct', '2–3 ft', 'Cheerful; native; extends into fall'],
+            ['Salvia (blue sage spp.)', 'Perennial/Ann', '4–11', 'Jun–frost', '18–36 in', 'Reliable long-bloomer; pollinator favorite'],
+            ['Catmint (Nepeta)', 'Perennial', '3–8', 'May–Sep', '12–24 in', 'Reblooms; blue-lavender edging plant'],
+            ['Daylily (Hemerocallis)', 'Perennial', '3–10', 'Jun–Aug', '18–48 in', 'Wide color range; tough; repeats with deadheading'],
+            ['Coneflower (Helenium)', 'Perennial', '3–8', 'Jul–Sep', '2–4 ft', 'Rich fall-toned colors; excellent pollinators'],
+            ['Coreopsis (tickseed)', 'Perennial', '4–9', 'Jun–Sep', '12–24 in', 'Heat-tolerant; nonstop yellow/orange/pink bloom'],
+            ['Zinnia', 'Annual', 'All zones', 'Jun–frost', '12–36 in', 'Maximum color; easy; cut-and-come-again'],
+            ['Lantana', 'Ann/tender per', '9–11', 'May–frost', '18–48 in', 'Extreme heat tolerant; butterfly attractor'],
+            ['Caladium', 'Tender bulb', '9–11', 'All summer', '12–24 in', 'Tropical foliage; shade or part-shade star'],
+            ['Monarda (bee balm)', 'Perennial', '3–9', 'Jun–Aug', '3–4 ft', 'Native; hummingbird magnet; fragrant'],
+            ['Agastache (hyssop)', 'Perennial', '5–10', 'Jun–frost', '18–36 in', 'Fragrant; drought-tolerant; long-blooming'],
+            ['Veronicastrum', 'Perennial', '3–8', 'Jul–Aug', '4–6 ft', 'Tall architectural spikes; back-of-border'],
+            ['Garden Phlox', 'Perennial', '3–8', 'Jul–Sep', '3–4 ft', 'Fragrant; bold color; mid-border height'],
+            ['Dahlia', 'Tender tuber', '8–11', 'Jul–frost', '18–72 in', 'Extraordinary range; cut flower; bold color'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Designing for Heat Tolerance by Region',
+        },
+        {
+          type: 'p',
+          text: 'Summer is when regional differences matter most. The table below highlights how to adapt summer garden design to your specific conditions:',
+        },
+        {
+          type: 'table',
+          headers: ['Region / Climate', 'Summer Design Strategy'],
+          rows: [
+            [
+              'Hot & Humid (Gulf Coast, Southeast, Mid-Atlantic coast)',
+              'Choose plants rated one zone warmer than your zone. Emphasize shade (large trees, pergolas) and container plants you can move. Crape myrtle, knockout roses, lantana, pentas, and vinca thrive. Water deeply but less frequently to discourage fungal disease. Add shade cloth to vegetable gardens.',
+            ],
+            [
+              'Hot & Dry (Southwest, Great Plains, High Desert)',
+              'Native and drought-adapted plants are your core: agave, yucca, salvia, desert marigold, globe mallow, lavender, ornamental grasses. Deep infrequent watering trains roots downward. Mulch 3–4 inches deep to retain soil moisture and lower soil temperature.',
+            ],
+            [
+              'Cool Summers (Pacific Northwest, Northern New England, Mountain West)',
+              'Mediterranean plants thrive here — lavender, rosemary, cistus. You can grow plants that struggle in humidity: delphinium, foxglove, lupine. Take advantage of cooler conditions to push the season with plants rated 1–2 zones colder.',
+            ],
+            [
+              'Continental Midwest & Great Plains',
+              'Four-season region par excellence. Wide temperature swings mean choosing plants with proven toughness. Native prairie plants — coneflower, prairie dropseed, little bluestem, rattlesnake master — are engineered for exactly this climate.',
+            ],
+          ],
+        },
+      ],
+    },
   ],
 }
