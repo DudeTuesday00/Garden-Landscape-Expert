@@ -692,6 +692,7 @@ Each placeholder has `minHeight: 280px` to reserve layout space before Google fi
 ### Contact Us Page ✅
 
 - `src/components/ContactUs.jsx` — contact form powered by `@formspree/react`; posts to `https://formspree.io/f/mlgpgdny`
+- `src/app/contact/contact-us-header.png` — full-width header image at top of the card; imported via Next.js static import; emoji icon removed
 - Fields: **Name**, **Email Address**, **Subject** (dropdown: General Question / Plant Recommendation / Guide Feedback / Bug Report / Partnership & Advertising / Other), **Message**
 - All inputs carry `name` attributes and the `<form>` has `action="https://formspree.io/f/mlgpgdny"` + `method="POST"`
 - Uses `useForm("mlgpgdny")` + `<ValidationError>` from `@formspree/react` for inline field-level error display
