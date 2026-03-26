@@ -88,9 +88,15 @@ export default function Podcasts() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
 
+      {/* Header image */}
+      <img
+        src="/podcasts/gardening-podcasts-header.png"
+        alt="Gardening Podcasts"
+        className="w-full h-auto rounded-2xl mb-8"
+      />
+
       {/* Hero */}
       <div className="text-center mb-10">
-        <div className="text-5xl mb-4">🎙️</div>
         <h1 className="text-3xl sm:text-4xl font-bold text-garden-800 dark:text-garden-300 leading-tight">
           Gardening Podcasts
         </h1>
