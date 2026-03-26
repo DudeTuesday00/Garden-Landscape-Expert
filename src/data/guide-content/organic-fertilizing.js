@@ -464,5 +464,131 @@ export const organicFertilizingContent = {
         },
       ],
     },
+    {
+      id: 'diy-fertilizers',
+      title: 'Section 5: DIY Organic Fertilizers',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Some of the most effective organic fertilizers cost nothing — or nearly nothing. They can be made from kitchen scraps, garden weeds, and plants grown specifically for the purpose. DIY fertilizers are particularly valuable because they put nutrients back into the garden from materials that would otherwise go to waste, closing the loop in a home-scale nutrient cycle.',
+        },
+        {
+          type: 'h3',
+          text: 'Comfrey: The Permaculture Powerhouse',
+        },
+        {
+          type: 'p',
+          text: 'Comfrey (Symphytum officinale and especially the sterile hybrid Bocking 14) is arguably the single most useful plant for an organic gardener. Its deep taproot — sometimes reaching 6 feet — mines subsoil minerals that most plants cannot access. The leaves break down rapidly and are extraordinarily rich in potassium, nitrogen, phosphorus, and a suite of trace minerals. Plant comfrey in an out-of-the-way corner; it returns year after year and you can harvest the leaves three to five times per season.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Comfrey mulch: Lay fresh or wilted leaves directly around fruiting plants (tomatoes, peppers, squash, strawberries) as a thick mulch. As they decompose, they release a slow but potent dose of potassium and other minerals directly into the root zone.',
+            'Comfrey tea: Pack a bucket with comfrey leaves, weigh them down with a brick, fill with water, and cover loosely. Steep 3–6 weeks until the liquid is dark and pungent. Dilute 15:1 (15 parts water to 1 part tea) before applying as a soil drench. This is one of the highest-potassium liquid feeds you can make, ideal for the fruiting and flowering stage.',
+            'Comfrey activator: Chop and drop comfrey leaves into compost or directly into planting holes when transplanting. The rapid breakdown accelerates compost decomposition and enriches the planting zone.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'Use Bocking 14 comfrey — it is a sterile hybrid that does not set viable seed, so it will not spread aggressively through your garden the way common comfrey can.',
+        },
+        {
+          type: 'h3',
+          text: 'Nettle Tea: A Free Nitrogen and Iron Tonic',
+        },
+        {
+          type: 'p',
+          text: 'Stinging nettles (Urtica dioica) are one of the most nutrient-dense wild plants in North America. Where they grow — typically in moist, disturbed, nitrogen-rich ground — they are essentially free fertilizer waiting to be harvested. Nettle tea is high in nitrogen, iron, calcium, magnesium, and a range of micronutrients. It acts as a general tonic for all plants and is particularly useful for correcting iron deficiency in acid-loving plants like blueberries, rhododendrons, and strawberries.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Wear gloves when harvesting — the sting comes from formic acid in the leaf hairs and disappears completely once leaves are wilted or submerged.',
+            'Pack fresh nettles into a bucket (do not use metal, as the acids will react), weigh down, fill with water, and cover. Steep 2–4 weeks. The smell is strong — keep it away from doorways.',
+            'Dilute 10:1 before use. Apply as a soil drench every 2–3 weeks during the growing season, or use as a foliar spray for a quick micronutrient hit.',
+            'Nettle tea can also be made quickly by simmering fresh leaves for 20 minutes, cooling, and diluting — but the longer cold-steep version extracts more minerals.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Banana Peel Fertilizer: Potassium for Fruiting Plants',
+        },
+        {
+          type: 'p',
+          text: 'Banana peels are high in potassium (around 42% of dry weight) with moderate amounts of phosphorus and calcium. They are particularly useful during the flowering and fruiting stage, when potassium demand increases and nitrogen demand decreases. They will not substitute for a complete fertilizer program, but they are a useful supplement — especially for container plants and fruiting crops like tomatoes and peppers.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Buried: Chop or tear peels into small pieces and bury 4–6 inches deep in the soil near the root zone. They break down in 2–4 weeks, releasing potassium gradually.',
+            'Tea: Soak two to three banana peels in a quart of water for 24–48 hours. Use the water directly on plants — no dilution needed. Quick, convenient, and nearly odor-free.',
+            'Dried and powdered: Dry peels in a low oven (200°F / 95°C) or a food dehydrator until brittle, then grind to a powder. Sprinkle around plants and work in lightly. The dried powder is shelf-stable and makes a convenient potassium amendment year-round.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Eggshell Amendment: Slow-Release Calcium',
+        },
+        {
+          type: 'p',
+          text: 'Eggshells are approximately 95% calcium carbonate — the same compound as agricultural lime. They break down slowly in the soil, making them a gentle, long-term calcium amendment rather than a quick fix. Calcium is critical for cell wall integrity in plants. Calcium deficiency manifests as blossom end rot in tomatoes and peppers, tip burn in lettuce and cabbage, and poor fruit set and keeping quality across many crops.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Dry eggshells thoroughly (a few hours in a low oven prevents odor), then crush in a food processor, blender, or mortar and pestle. Finer particle size = faster breakdown.',
+            'Work crushed shells into the top 2–3 inches of soil in spring, or add to planting holes at transplanting time.',
+            'Add liberally to compost — they provide calcium to the finished compost and help maintain a slightly alkaline pH that benefits decomposer organisms.',
+            'For a faster calcium hit in cases of confirmed deficiency, use agricultural gypsum or foliar calcium rather than eggshells, which are too slow-acting to correct acute deficiency mid-season.',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Eggshells are a slow calcium supplement, not a fast fix. If your tomatoes already have blossom end rot mid-season, use a foliar calcium spray or calcium nitrate drench — not eggshells, which will not break down fast enough to help this season.',
+        },
+        {
+          type: 'h3',
+          text: 'Bokashi: Fermenting Kitchen Waste',
+        },
+        {
+          type: 'p',
+          text: 'Bokashi is a Japanese fermentation system that processes kitchen scraps — including meat, dairy, cooked food, and citrus, which traditional composting cannot handle — using a spray or bran inoculated with effective microorganisms (EM). Rather than decomposing waste, bokashi ferments it into a pre-compost that is then buried in soil or added to a compost pile to finish breaking down.',
+        },
+        {
+          type: 'list',
+          items: [
+            'How it works: Layer kitchen scraps in an airtight bokashi bucket, sprinkling bokashi bran (available at garden centers or online) between layers. Seal tightly. The anaerobic fermentation process takes 2–4 weeks at room temperature.',
+            'The result is a pickled, acidic fermented material — not compost. It must be buried 6–8 inches deep in a garden bed and left for another 2–4 weeks to finish breaking down before planting in that spot.',
+            'Advantages: Processes all kitchen waste including dairy and meat; no odor when sealed; faster total cycle than traditional composting; adds beneficial microorganisms to soil.',
+            'The liquid that drains into the bottom of a two-part bokashi bucket is highly concentrated and should be diluted 100:1 as a drain cleaner or 200:1 as a plant fertilizer. Do not apply undiluted — the acidity will damage roots.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Homemade Compost Tea: The Basics',
+        },
+        {
+          type: 'p',
+          text: 'Actively aerated compost tea (AACT) amplifies the biology in finished compost by brewing it with oxygen and a food source for microbes, multiplying the microbial population several-fold in 24 hours. The result is applied as a soil drench or foliar spray to inoculate plants and soil with beneficial bacteria and fungi, suppress foliar disease, and stimulate plant immune response.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Equipment needed: 5-gallon bucket, aquarium air pump with air stone and tubing, mesh bag or old pillowcase (to hold the compost), unsulfured blackstrap molasses.',
+            'Recipe: Fill the bucket with dechlorinated water (let tap water sit uncovered for 24 hours, or use collected rainwater). Add 1–2 cups of mature finished compost in a mesh bag. Add 1 tablespoon of blackstrap molasses to feed the microbes. Run the air pump continuously for 24 hours.',
+            'Strain the liquid through cheesecloth or a fine mesh. The finished tea should have an earthy, pleasant smell — not sour or sulfuric. A bad smell indicates anaerobic conditions and the batch should be discarded.',
+            'Use immediately — microbial populations decline rapidly once aeration stops. Do not store. Apply as a soil drench around the root zone or as a foliar spray in early morning so leaves dry before nightfall.',
+            'Apply every 2–4 weeks during the growing season, or whenever plants are under stress.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🫧',
+          text: 'The most important ingredient in compost tea is the quality of the compost you start with. Well-finished compost from a diverse mix of materials — kitchen scraps, leaves, grass, wood chips — will produce far more biologically diverse tea than young or poorly finished compost.',
+        },
+      ],
+    },
   ],
 }
