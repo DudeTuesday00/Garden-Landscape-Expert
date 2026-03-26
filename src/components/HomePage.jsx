@@ -30,7 +30,7 @@ export default function HomePage() {
               alt="Garden Architect"
               className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
             />
-            <div className="p-6 flex flex-col gap-3">
+            <div className="p-6 flex flex-col items-center text-center gap-3">
               <div>
                 <h2 className="text-xl font-bold text-garden-800 dark:text-garden-300">
                   Garden Architect
@@ -39,7 +39,7 @@ export default function HomePage() {
                   The Smartest Way to Plan Your Garden
                 </p>
               </div>
-              <span className="self-start bg-garden-600 group-hover:bg-garden-700 text-white text-sm font-semibold px-5 py-2 rounded-xl transition-colors duration-200">
+              <span className="bg-garden-600 group-hover:bg-garden-700 text-white text-sm font-semibold px-5 py-2 rounded-xl transition-colors duration-200">
                 Start Planning →
               </span>
             </div>
@@ -55,7 +55,7 @@ export default function HomePage() {
               alt="Plantopedia"
               className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
             />
-            <div className="p-6 flex flex-col gap-3">
+            <div className="p-6 flex flex-col items-center text-center gap-3">
               <div>
                 <h2 className="text-xl font-bold text-garden-800 dark:text-garden-300">
                   Plantopedia
@@ -64,7 +64,7 @@ export default function HomePage() {
                   Your Green Thumb Repository
                 </p>
               </div>
-              <span className="self-start bg-earth-500 group-hover:bg-earth-600 text-white text-sm font-semibold px-5 py-2 rounded-xl transition-colors duration-200">
+              <span className="bg-earth-500 group-hover:bg-earth-600 text-white text-sm font-semibold px-5 py-2 rounded-xl transition-colors duration-200">
                 Explore Guides →
               </span>
             </div>
