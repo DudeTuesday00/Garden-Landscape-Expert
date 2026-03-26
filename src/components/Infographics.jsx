@@ -44,9 +44,15 @@ export default function Infographics() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
 
+      {/* Header image */}
+      <img
+        src="/infographics/garden-infographics-header.png"
+        alt="Garden Infographics"
+        className="w-full h-auto rounded-2xl mb-8"
+      />
+
       {/* Hero */}
       <div className="text-center mb-10">
-        <div className="text-5xl mb-4">🖼️</div>
         <h1 className="text-3xl sm:text-4xl font-bold text-garden-800 dark:text-garden-300 leading-tight">
           Garden Infographics
         </h1>
