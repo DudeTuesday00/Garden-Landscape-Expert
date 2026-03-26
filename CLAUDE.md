@@ -593,8 +593,8 @@ All guide content is now written for a national US audience (Zones 3–11). Okla
 
 ### Section Landing Page Hero Images ✅
 
-- **Garden Architect landing** (`WelcomeScreen.jsx`) — `src/components/wizard/garden-architect-2.png` renders as a full-width image at the top of the welcome screen, above the title and "Get Started" button
-- **Plantopedia landing** (`GuidesHome.jsx`) — `src/components/guides/Plantopedia.png` renders as a full-width image at the top of the header card, above the title, description, and guide-count badges
+- **Garden Architect landing** (`WelcomeScreen.jsx`) — `src/components/wizard/garden-architect-2.png` renders as a full-width image (`w-full max-w-2xl rounded-2xl shadow-md`) at the top of the welcome screen, above the title and "Get Started" button
+- **Plantopedia landing** (`GuidesHome.jsx`) — `src/components/guides/Plantopedia.png` renders at the top of the header card using `w-full max-w-2xl mx-auto block h-auto` — constrained to `max-w-2xl` to match the Garden Architect image size
 - **HomePage cards** (`HomePage.jsx`) use separate images: `Garden-Architect.png` (Garden Architect card) and `Plantopedia.png` (Plantopedia card)
 
 ### Rebrand to Planting Atlas ✅
