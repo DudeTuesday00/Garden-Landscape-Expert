@@ -590,5 +590,121 @@ export const organicFertilizingContent = {
         },
       ],
     },
+    {
+      id: 'feeding-by-plant-type',
+      title: 'Section 6: Feeding by Plant Type',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Different plants have dramatically different nutrient needs. A lawn needs high nitrogen applied differently than a blueberry bush, which needs very different treatment than a tomato plant or a daylily. This section gives you specific, practical guidance for every major garden category.',
+        },
+        {
+          type: 'h3',
+          text: 'Vegetable Gardens: High-Performance Organic Feeding',
+        },
+        {
+          type: 'p',
+          text: 'Vegetable gardens are the highest-demand systems in any home landscape — they are intensively planted, regularly harvested (removing nutrients with every harvest), and expected to produce abundantly. Organic vegetable gardening requires a proactive, layered approach to soil fertility.',
+        },
+        {
+          type: 'table',
+          headers: ['Vegetable Type', 'Nutrient Priority', 'Recommended Organic Approach', 'Timing Notes'],
+          rows: [
+            ['Leafy greens (lettuce, spinach, kale, chard)', 'High nitrogen; moderate everything else', 'Blood meal or fish emulsion side-dresses every 3–4 weeks; compost-enriched bed preparation; soybean meal at planting', 'Start nitrogen feeding at planting; continue through harvest; stop feeding 1 week before harvest for flavor'],
+            ['Fruiting vegetables (tomatoes, peppers, squash, cucumbers)', 'Balanced N early; then high K + P for fruiting', 'Compost + fish bone meal at planting; fish emulsion biweekly until flowering; switch to comfrey tea or liquid kelp at flowering for potassium push', 'High nitrogen early for plant establishment; reduce N and increase K/P when first flowers appear — excess N at fruiting causes leaf growth at expense of fruit'],
+            ['Root vegetables (carrots, beets, radishes, turnips)', 'Moderate N; high phosphorus; good potassium', 'Compost + rock phosphate at bed preparation; avoid high-nitrogen amendments after planting (causes hairy, forked roots); side-dress with kelp', 'Front-load amendments before planting; avoid nitrogen-heavy feeding once plants are established; one kelp drench mid-season'],
+            ['Legumes (beans, peas)', 'Low nitrogen (they fix their own); phosphorus and trace minerals', 'Inoculate seed with rhizobium inoculant; compost at planting; rock phosphate or bone meal for phosphorus; kelp for trace minerals', 'Fertilize less than other vegetables — legumes fix atmospheric nitrogen through root nodules; excess N inhibits fixation'],
+            ['Alliums (onions, garlic, leeks)', 'High nitrogen early; high potassium late', 'Heavy compost incorporation; soybean or blood meal for nitrogen early; wood ash or greensand for potassium as bulbs develop', 'Heavy feeding from planting through mid-season; reduce nitrogen in last 4–6 weeks as bulbs size up; stop all feeding 2–3 weeks before harvest'],
+            ['Brassicas (cabbage, broccoli, cauliflower, Brussels sprouts)', 'Very high nitrogen; calcium; pH above 6.5', 'Compost at planting; blood meal or chicken manure for nitrogen; lime to maintain pH above 6.5 (club root prevention); weekly fish emulsion', 'Consistent feeding throughout growing season; calcium and pH management are critical for preventing tip burn and club root'],
+            ['Corn', 'Very high nitrogen at multiple stages', 'Heavy compost + soybean or feather meal preplant; blood meal or fish emulsion side-dress at knee-high stage; repeat at tasseling', 'Nitrogen is the primary limiting nutrient; two side-dressings during the season are standard; also add potassium for strong stalks and good ear fill'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Lawns: Organic Feeding for a Healthy Turf',
+        },
+        {
+          type: 'p',
+          text: 'Organic lawn care is one of the most transformative shifts a homeowner can make — not just for soil health, but for the surrounding environment. Synthetic lawn fertilizers are among the most significant sources of nutrient pollution in American waterways. Organic alternatives, applied correctly, produce lawns that are just as lush, far more resilient, and genuinely better for the watershed. The core principle of organic lawn feeding: feed the soil, and the grass feeds itself. A lawn with 3–5% organic matter, living soil biology, and good pH will outperform a synthetically fertilized lawn on depleted soil within 3–4 years of consistent organic management.',
+        },
+        {
+          type: 'table',
+          headers: ['Season', 'Organic Action', 'Products', 'Cool-Season vs. Warm-Season Notes'],
+          rows: [
+            ['Early Spring', 'Light nitrogen application; soil biology activation', 'Corn gluten meal (also pre-emergent); compost topdress (¼ inch); liquid fish emulsion', 'Cool-season grasses (fescue, bluegrass, ryegrass) are actively growing — apply nitrogen now. Warm-season grasses (Bermuda, zoysia, St. Augustine) are still dormant — wait.'],
+            ['Late Spring', 'Core aeration + compost topdress; weed control if needed', 'Compost; corn gluten meal if weeds are a concern', 'Corn gluten meal prevents seed germination — do not apply if overseeding. Both grass types can receive compost topdress in late spring.'],
+            ['Summer', 'Minimal for cool-season; main feeding for warm-season', 'Slow-release organic N (feather meal, soybean meal); liquid kelp for stress resistance', 'Cool-season grasses go semi-dormant in summer heat — do not push with nitrogen. Warm-season grasses are at peak growth — this is their main feeding season.'],
+            ['Fall', 'Most important feeding for cool-season grasses; final feeding for warm-season', 'Compost topdress; slow-release organic N (feather meal, soybean meal); overseeding with compost', 'The single most important lawn feeding of the year for cool-season grasses — fall fertilizing determines winter hardiness and spring greenup. Warm-season grasses: one final light feeding in early fall.'],
+            ['Anytime', 'pH correction; topdress for compaction', 'Lime if below 6.0; gypsum for clay compaction; compost', 'Soil test drives lime applications — do not lime without testing. Most lawn problems trace back to pH being off or soil compaction, not nitrogen deficiency.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Trees and Shrubs: Long-Term Soil Building',
+        },
+        {
+          type: 'p',
+          text: 'Established trees and shrubs are often over-fertilized by homeowners who worry about them the same way they worry about annual vegetables. In most cases, a well-sited, established tree or shrub in decent soil needs very little supplemental fertilization — the leaf litter, natural soil biology, and slow mineral weathering supply what they need. The exceptions are newly planted specimens, trees in compacted or nutrient-poor urban soils, and plants showing visible signs of deficiency.',
+        },
+        {
+          type: 'list',
+          items: [
+            'New plantings: Mix compost into backfill (25–30%); water in with diluted fish emulsion; mulch with 3–4 inches of wood chips in a ring (not touching the trunk)',
+            'Established trees in good soil: Let the leaf litter cycle nutrients naturally; no fertilizer needed unless a soil test shows deficiency',
+            'Established trees in poor or urban soil: Compost topdress under the drip line annually; annual application of a balanced organic fertilizer (4-4-4 type); deep-root watering with liquid organic fertilizer',
+            'Flowering shrubs: One application of a balanced organic fertilizer in early spring as growth begins; compost topdress after blooming',
+            'Acid-loving shrubs (blueberries, azaleas, rhododendrons): Cottonseed meal or acidified fertilizer; sulfur to maintain pH 4.5–6.0; avoid lime',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌳',
+          text: 'A 4-inch deep ring of wood chip mulch extending to the drip line of a tree (kept away from the trunk) does more for long-term tree health than almost any fertilizer. As the chips decompose, they feed soil fungi that form mycorrhizal networks with tree roots, dramatically expanding the tree\'s ability to access water and nutrients. This is not just mulch — it\'s creating the forest floor ecosystem that trees evolved to grow in.',
+        },
+        {
+          type: 'h3',
+          text: 'Roses: Heavy Feeders with Specific Needs',
+        },
+        {
+          type: 'p',
+          text: 'Roses have a reputation as fussy plants, but much of that reputation comes from growing them in poor soil with sporadic feeding. Organically grown roses in well-prepared, compost-rich soil are remarkably resilient and often less disease-prone than synthetically fed plants, which tend to produce the succulent, soft growth that diseases love.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Bed preparation: Incorporate 4–6 inches of compost and 1–2 cups of alfalfa meal per plant; roses need deep, rich, well-drained soil',
+            'Spring startup: Apply 1–2 cups of alfalfa meal or pellets per plant as growth begins; water in; follow with liquid fish emulsion every 2 weeks',
+            'Midsummer: Apply 1 cup of greensand and 1 cup of kelp meal per plant to replenish potassium and trace minerals; continue biweekly liquid feeding',
+            'After each bloom flush: Cut back, apply 1 cup alfalfa meal, water in; this reliably stimulates repeat blooming in reblooming varieties',
+            'Fall: Final application of compost as mulch (3–4 inches around base); no nitrogen after late summer — promotes cold-hardy hardening-off',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Container Plants: Organic Feeding in Confined Space',
+        },
+        {
+          type: 'p',
+          text: 'Container gardening presents a unique challenge for organic fertilizers — many slow-release solid amendments cannot be incorporated into existing containers, and the limited volume of potting mix gets depleted of nutrients very quickly. Liquid organic fertilizers and worm castings are the workhorses of container organic fertilizing.',
+        },
+        {
+          type: 'table',
+          headers: ['Strategy', 'Method', 'Frequency'],
+          rows: [
+            ['Top-dress with compost', 'Replace the top 1–2 inches of potting mix with finished compost or worm castings each spring', 'Once per season — spring'],
+            ['Liquid fish emulsion', 'Dilute 2–3 tbsp per gallon; water containers thoroughly', 'Every 2–3 weeks during active growing season'],
+            ['Liquid kelp', 'Add 1 tbsp per gallon to regular watering; can be combined with fish emulsion', 'Every 2–3 weeks; especially at transplanting and during stress'],
+            ['Worm casting tea', 'Steep 1 cup castings in 1 gallon water for 24 hrs; apply as regular watering', 'Every 2–4 weeks; excellent for edibles and flowering containers'],
+            ['Slow-release organic pellets', 'Work 1–2 tbsp of balanced organic granular fertilizer into top inch of soil', 'Once every 4–6 weeks; choose products with 3-month release window'],
+            ['Repotting', 'Replace potting mix entirely or add 25–30% fresh compost when repotting', 'Every 1–3 years depending on plant size and growth rate'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🪴',
+          text: 'Container plants flush nutrients through with every watering — there is no soil reserve to draw on. Even well-made potting mixes are largely depleted of nutrients within 4–6 weeks of planting. Consistent liquid feeding through the season is not optional for containers; it is the entire fertility program.',
+        },
+      ],
+    },
   ],
 }
