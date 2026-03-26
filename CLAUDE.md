@@ -586,6 +586,7 @@ All guide content is now written for a national US audience (Zones 3–11). Okla
 - **Garden Architect card** — uses `src/components/wizard/Garden-Architect.png` as a full-width hero image; routes to the wizard; green (`garden-*`) border and button
 - **Plantopedia card** — uses `src/components/guides/Plantopedia.png` as a full-width hero image; routes to guides; gold (`earth-*`) border and button
 - Cards use `w-full h-auto` so images render at their natural aspect ratio (no cropping); subtle `scale-105` zoom on hover
+- Card content divs use `items-center text-center` — title, subtitle, and button are all horizontally centered within each card
 - Nav tabs renamed: **Garden Architect** (was "Plant Wizard") and **Plantopedia** (was "Planting Guides")
 - `WelcomeScreen.jsx` title updated to "Garden Architect" with slogan "The Smartest Way to Plan Your Garden"
 - `GuidesHome.jsx` header updated to "Plantopedia" with slogan "Your Green Thumb Repository"
@@ -1148,10 +1149,16 @@ Each page has a full metadata export (`title`, `description`, `keywords`, `canon
 2. Add an `<InfographicSection>` block in `src/components/Infographics.jsx` with `src`, `alt`, `heading`, `description`, `guideHref`, and `guideName` props
 3. Add an ad placeholder `<div>` nearby if the page needs rebalancing
 
+**Page header images:**
+- `public/infographics/garden-infographics-header.png` — full-width header image at top of Infographics page
+- `public/podcasts/gardening-podcasts-header.png` — full-width header image at top of Podcasts page
+- `public/videos/gardening-videos-header.png` — full-width header image at top of Videos page
+- Each renders as `<img className="w-full h-auto rounded-2xl mb-8" />` above the page title; the emoji icon above the `<h1>` was removed when the image was added
+
 Public media directories:
-- `public/infographics/` — static infographic assets (28 live images)
-- `public/videos/` — static video thumbnail assets
-- `public/podcasts/` — static podcast artwork assets
+- `public/infographics/` — static infographic assets (28 live images + header image)
+- `public/videos/` — static video thumbnail assets + header image
+- `public/podcasts/` — static podcast artwork assets + header image
 
 ### Nav Expansion ✅
 
