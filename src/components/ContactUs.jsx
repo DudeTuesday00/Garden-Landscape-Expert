@@ -1,16 +1,22 @@
 'use client'
 
 import { useForm, ValidationError } from '@formspree/react'
+import contactHeaderImg from '../app/contact/contact-us-header.png'
 
 export default function ContactUs() {
   const [state, handleSubmit] = useForm('mlgpgdny')
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-12">
-      <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-8 sm:p-10">
+      <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 overflow-hidden">
+        <img
+          src={contactHeaderImg.src}
+          alt="Contact Us"
+          className="w-full h-auto"
+        />
+        <div className="p-8 sm:p-10">
 
         <div className="mb-8 text-center">
-          <div className="text-4xl mb-3">✉️</div>
           <h1 className="text-2xl font-bold text-garden-800 dark:text-white">Contact Us</h1>
           <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
             Questions, feedback, or just want to talk plants? We'd love to hear from you.
@@ -76,6 +82,7 @@ export default function ContactUs() {
             </button>
           </form>
         )}
+        </div>
       </div>
     </div>
   )
