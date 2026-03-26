@@ -762,5 +762,93 @@ export const organicFertilizingContent = {
         },
       ],
     },
+    {
+      id: 'troubleshooting-getting-started',
+      title: 'Section 8: Troubleshooting, Getting Started & Closing',
+      blocks: [
+        {
+          type: 'h3',
+          text: 'Troubleshooting: Reading Your Plants\' Signals',
+        },
+        {
+          type: 'p',
+          text: 'Plants are constantly communicating — through leaf color, growth habit, and structure — the state of their nutrition. Learning to read these signals accurately is one of the most valuable skills an organic gardener can develop, because it allows you to respond precisely to what your plants actually need rather than applying fertilizers on a fixed schedule regardless of need.',
+        },
+        {
+          type: 'warning',
+          emoji: '🧪',
+          text: 'Always confirm with a soil test before treating any symptom. Visual symptoms can indicate a nutrient deficiency, a pH problem that prevents uptake, overwatering, or disease — all of which can look similar. In many cases the "deficiency" is actually a pH problem — the nutrient is present but unavailable. Treating a pH problem with more fertilizer makes the situation worse.',
+        },
+        {
+          type: 'table',
+          headers: ['Symptom', 'Most Likely Cause(s)', 'Organic Solution', 'What to Rule Out First'],
+          rows: [
+            ['Pale yellow color overall; older leaves yellowing first', 'Nitrogen deficiency', 'Fish emulsion drench; blood meal; compost topdress; soybean meal', 'Overwatering (roots can\'t uptake N in waterlogged soil); low pH; compaction'],
+            ['Yellowing between leaf veins; young leaves affected first', 'Iron or manganese deficiency; usually caused by high pH', 'Lower pH with sulfur; chelated iron foliar spray; compost; acidifying amendments', 'This is almost always a pH problem (alkaline soil) — correct pH first before adding iron'],
+            ['Purple or reddish discoloration on leaf undersides', 'Phosphorus deficiency or cold stress', 'Fish bone meal; rock phosphate; compost; warm soil temperatures', 'Cold soil temperatures mimic P deficiency in young seedlings — wait for soil to warm before treating'],
+            ['Leaf edges browning and scorching (older leaves first)', 'Potassium deficiency', 'Wood ash; greensand; comfrey tea; kelp meal; potassium sulfate', 'Salt damage (from over-fertilizing); wind burn; drought stress — all look similar'],
+            ['Blossom end rot in tomatoes/peppers/squash', 'Calcium deficiency or uptake problem (usually inconsistent watering)', 'Consistent deep watering; gypsum or lime; oyster shell; foliar calcium spray', 'Almost always caused by inconsistent watering preventing calcium uptake — fix watering before adding calcium'],
+            ['Slow growth; dark green color; few flowers or fruit', 'Excess nitrogen', 'Stop all nitrogen feeding; improve drainage; do not fertilize for 4–6 weeks', 'Heavy or waterlogged soil prevents root function; drought stress; herbicide drift'],
+            ['Leaf tip burn in lettuce/cabbage/brassicas', 'Calcium deficiency; usually due to rapid growth or inconsistent watering', 'Consistent moisture; foliar calcium spray; reduce nitrogen to slow growth rate', 'Primarily a moisture management issue in most cases; ensure consistent watering and well-drained soil'],
+            ['Stunted plants; very dark green; failing to thrive', 'Soil compaction; pH too far off; overwatering; root disease', 'Aerate soil; correct pH; improve drainage; add compost for structure', 'Not a fertilizer problem — physical soil problems or disease; fertilizing won\'t help and may make it worse'],
+            ['Yellowing of bottom leaves; plant losing leaves', 'Often normal for lower leaves; also N deficiency; sometimes disease', 'If widespread: fish emulsion; if isolated lower leaves: usually normal aging', 'Inspect for disease (spots, lesions); remove infected material before fertilizing'],
+            ['Distorted, cupped, or puckered new growth', 'Boron deficiency; calcium deficiency; herbicide drift', 'Kelp meal (contains boron); correct pH; compost', 'Herbicide drift from neighboring properties is a common cause of distorted growth — inspect carefully before diagnosing nutritional'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Getting Started: Your First Season Organic Plan',
+        },
+        {
+          type: 'p',
+          text: 'Transitioning to organic fertilizing can feel overwhelming when you look at everything that\'s possible. Don\'t let that stop you. The best organic garden starts with a few simple commitments, and complexity grows naturally from there as you observe, experiment, and learn your soil.',
+        },
+        {
+          type: 'h3',
+          text: 'Year 1: The Foundation',
+        },
+        {
+          type: 'list',
+          items: [
+            'Get a soil test — your state Cooperative Extension office is the most affordable and authoritative option. Know your pH and major nutrient levels before you spend anything.',
+            'Start composting — even a simple cold pile in a corner of your yard. Begin collecting leaves, kitchen scraps, and garden trimmings. This is the most important investment you\'ll make in your soil.',
+            'Add compost to every bed — incorporate 2–4 inches into existing beds; 4–6 inches into new beds. If you don\'t have your own compost yet, buy a few bags of quality finished compost.',
+            'Choose one liquid organic fertilizer — fish emulsion is the most versatile, widely available, and effective. Use it every 2–3 weeks on heavy feeders (vegetables, roses, annual flowers).',
+            'Mulch everything — 2–4 inches of wood chips, straw, or shredded leaves over every bed. This one action improves moisture retention, suppresses weeds, moderates soil temperature, and adds organic matter as it breaks down.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Year 2: Building on Success',
+        },
+        {
+          type: 'list',
+          items: [
+            'Retest your soil — see what the first year of organic amendments has done; adjust strategy based on results.',
+            'Try vermicomposting — a bin of red wigglers turns kitchen scraps into the most potent organic amendment you can produce at home.',
+            'Plant a comfrey crown or two — a permanent, low-maintenance fertilizer factory that will produce for decades.',
+            'Experiment with compost tea — a simple aerated tea setup is inexpensive and gives your soil biology a significant boost.',
+            'Add cover crops to any empty beds — Austrian winter peas, crimson clover, buckwheat, or winter rye depending on your region and season. Let them build organic matter and fix nitrogen for free.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Year 3 and Beyond: The Thriving Organic Garden',
+        },
+        {
+          type: 'p',
+          text: 'By year three of consistent organic management — regular compost additions, proper pH, diverse amendments, and cover cropping — you will notice that your garden fundamentally changes. Plants are more vigorous. Pest pressure is lower. The soil looks and smells different — darker, more crumbly, more alive. You\'ll spend less time troubleshooting nutrient problems because the soil ecosystem is doing that work for you. You\'ll use less fertilizer, not more, because a healthy soil releases nutrients on its own.',
+        },
+        {
+          type: 'p',
+          text: 'That\'s the real promise of organic fertilizing: a garden that gets better over time, not one that stays dependent on inputs forever. Feed the soil, and the soil feeds the plants. It\'s the oldest agricultural wisdom in the world — and it\'s still the best.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'Healthy soil is not a destination. It\'s a practice. Every handful of compost, every cover crop, every time you choose to leave the leaves and feed the worms — you are building something that will outlast this season, this year, and this garden. Start simple. Start now. The soil will respond.',
+        },
+      ],
+    },
   ],
 }
