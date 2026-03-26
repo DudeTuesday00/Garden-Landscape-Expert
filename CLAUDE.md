@@ -1058,6 +1058,27 @@ Theme: stone/amber gradient in `GuideDetail.jsx`; hero image: `public/guides/Rab
 
 Theme: amber/orange gradient in `GuideDetail.jsx`; hero image: `public/guides/four-season-garden.png`; `comingSoon: false` under Landscape Design in `guides.js`; wired in `src/data/guide-content/index.js`
 
+---
+
+### Organic Fertilizing Guide ✅
+
+`src/data/guide-content/organic-fertilizing.js` — Organic Fertilizing (`id: 'organic-fertilizing'`); fully built from `organic-fertilizing.docx` — 8 sections covering soil nutrition through regional guidance, troubleshooting, and a multi-year getting-started plan.
+
+| Section | Status | Notes |
+|---|---|---|
+| Overview: Why Organic Fertilizing Is Worth Understanding | ✅ Done | Feeding the soil ecosystem vs. pushing nutrition; 2–3 season transition timeline; regional diversity intro callout |
+| Section 1: Understanding Soil & Plant Nutrition | ✅ Done | 6-row primary macronutrient table (N/P/K/Ca/Mg/S — roles, deficiency, excess signs); 7-row micronutrient table (Fe, Mn, Zn, Cu, B, Mo, Cl); 5-row pH table (below 5.5 through above 7.5 — nutrient availability, U.S. regions, organic correction); soil test tip callout |
+| Section 2: Compost — The Foundation of Everything | ✅ Done | 6-row compost benefits table; C:N ratio concept; 14-row browns/greens materials table; 7-step hot composting guide; cold composting tip; vermicomposting 8-row details table; 7-row compost application rates table |
+| Section 3: Organic Fertilizer Types | ✅ Done | Fish-based (emulsion, hydrolysate, fish bone meal — 5-row details table each); seaweed/kelp; manure (4-row type/N-P-K table); alfalfa, blood, feather, bone meals; rock phosphate; greensand; 6-row soil amendments table; 8-row liquid fertilizers table |
+| Section 4: DIY Organic Fertilizers | ✅ Done | Comfrey (mulch, tea, activator — Bocking 14 tip); nettle tea; banana peel fertilizer (3 methods); eggshell amendment (emergency-fix warning callout); bokashi (fermentation, liquid dilution); homemade compost tea (5-gallon AACT recipe) |
+| Section 5: Feeding by Plant Type | ✅ Done | 7-row vegetable table (leafy greens, fruiting vegetables, root vegetables, legumes, alliums, brassicas, corn); 5-row lawn seasonal calendar (cool vs. warm-season distinctions); trees & shrubs list with mulch circle tip; roses seasonal program; 6-row container plants table |
+| Section 6: Regional Organic Fertilizing Guide & Fertilizer Selector | ✅ Done | 10-row regional table (NE through Desert SW — soil challenges, priority amendments, key notes); 16-row fertilizer selector quick reference (situation → best choices, application method, speed of action) |
+| Section 7: Troubleshooting, Getting Started & Closing | ✅ Done | Soil-test-first warning callout; 10-row symptom/cause/solution troubleshooting table; Year 1 foundation plan (5 items); Year 2 building plan (5 items); Year 3+ closing reflection and tip callout |
+
+Theme: lime/green gradient in `GuideDetail.jsx`; hero image: `public/guides/organic-fertilizing.png`; `comingSoon: false` under Eco & Sustainability in `guides.js`; wired in `src/data/guide-content/index.js`
+
+---
+
 ### Typography Upgrade ✅
 
 Raleway (headings) and Lato (body) loaded via `next/font/google` in `src/app/layout.jsx`.

@@ -710,7 +710,7 @@ export const guideCategories = [
         title: 'Organic Fertilizing',
         emoji: '🌾',
         description: 'Feed your plants naturally with compost, fish emulsion, and other organic options.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'seed-saving',

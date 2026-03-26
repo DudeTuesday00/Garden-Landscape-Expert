@@ -49,6 +49,7 @@ export const heroImages = {
   'butterfly-garden': '/guides/Butterfly_Garden_Guide.png',
   'rabbit-proof': '/guides/Rabbit_Proof_Garden_Guide.png',
   'four-season-garden': '/guides/four-season-garden.png',
+  'organic-fertilizing': '/guides/organic-fertilizing.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -773,6 +774,22 @@ const themes = {
     tableHeadText: 'text-amber-800',
     tableHeadBorder: 'border-amber-200',
     bullet: 'text-orange-500',
+  },
+  'organic-fertilizing': {
+    heroBg: 'bg-gradient-to-br from-lime-50 to-green-100',
+    heroBorder: 'border-lime-200',
+    heroTitle: 'text-green-800',
+    backBtn: 'text-green-700 hover:text-green-900',
+    sectionTitle: 'text-green-800',
+    sectionBorder: 'border-lime-100',
+    h3: 'text-green-800',
+    tipBg: 'bg-lime-50',
+    tipBorder: 'border-lime-200',
+    tipText: 'text-green-900',
+    tableHead: 'bg-lime-100',
+    tableHeadText: 'text-green-800',
+    tableHeadBorder: 'border-lime-200',
+    bullet: 'text-lime-600',
   },
 }
 
