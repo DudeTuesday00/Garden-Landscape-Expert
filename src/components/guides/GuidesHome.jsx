@@ -78,7 +78,7 @@ export default function GuidesHome() {
           <img
             src={plantopediaImg.src}
             alt="Plantopedia"
-            className="w-full h-auto"
+            className="w-full max-w-2xl mx-auto block h-auto"
           />
           <div className="text-center p-6 sm:p-8">
             <h1 className="text-3xl font-bold text-garden-800 dark:text-garden-300">Plantopedia</h1>
