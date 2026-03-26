@@ -1181,7 +1181,8 @@ A new e-commerce shop section has been added to the site for selling 3D printed 
 | File | Role |
 |---|---|
 | `src/data/products.js` | Product database — 6 placeholder products across 5 categories; exports `products`, `productCategories`, `getProduct()`, `getProductsByCategory()` |
-| `src/components/shop/ShopHome.jsx` | Server component — page wrapper with header and trust-badge strip |
+| `src/components/shop/ShopHome.jsx` | Server component — page wrapper with header image, title, description, and trust-badge strip |
+| `src/components/shop/3d-printed-garden-shop-header.png` | Full-width header image displayed at the top of the shop header card |
 | `src/components/shop/ShopGrid.jsx` | `'use client'` — category filter tabs + Etsy-style product card grid with badge overlays and out-of-stock state |
 | `src/components/shop/ImageGallery.jsx` | `'use client'` — main image + thumbnail strip + click-to-enlarge lightbox |
 | `src/components/shop/ProductDetail.jsx` | Server component — full product page: breadcrumb, two-column layout, features list, specs table, custom-order callout |
