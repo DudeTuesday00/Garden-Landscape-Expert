@@ -301,5 +301,121 @@ export const sunroomPlantsContent = {
         },
       ],
     },
+    {
+      id: 'sunroom-plant-care',
+      title: 'Section 3: Sunroom Plant Care',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Sunroom growing conditions amplify both the opportunities and the challenges of tropical plant care. The intense light that makes sunrooms ideal for light-hungry tropicals also drives faster water consumption, faster soil drying, and faster buildup of mineral salts in containers. The warm enclosed environment that tropicals love also creates ideal conditions for pests to multiply rapidly once established.',
+        },
+        {
+          type: 'h3',
+          text: 'Watering in a Sunroom: More Frequent Than You Think',
+        },
+        {
+          type: 'p',
+          text: 'Plants in a sunny sunroom typically need watering 30–60% more frequently than the same plants in an interior room. The combination of brighter light, higher temperatures, and better drainage means the soil dries faster and plants need more water more often.',
+        },
+        {
+          type: 'list',
+          items: [
+            'The finger test: push your finger 1–2 inches into the soil — if dry at that depth, most plants need water; if moist, check again in 1–2 days; this simple test beats any watering schedule',
+            'Water thoroughly: when you water, water until it flows freely from drainage holes — don\'t just dampen the surface; this ensures the entire root ball receives moisture and flushes accumulated mineral salts',
+            'Never let pots sit in standing water: empty saucers within 30 minutes of watering; roots in standing water deplete oxygen rapidly and root rot develops within days in a warm sunroom',
+            'Morning watering is ideal: water in the morning so foliage dries before evening; evening wet foliage in a humid sunroom is an invitation to fungal disease',
+            'Reduce watering in winter: even in a heated sunroom, shorter days and lower light intensity mean plants photosynthesize less and use less water; many overwatering deaths happen in winter',
+            'Water quality matters: tropical plants are sensitive to fluoride and chlorine in municipal water; if you see brown leaf tip burn (especially on spider plants, dracaena, and peace lily), switch to filtered or rainwater, or allow tap water to sit out overnight',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '💧',
+          text: 'Self-watering containers with a reservoir in the base are particularly valuable in sunrooms, where intense light and heat can cause soil to dry out faster than busy schedules allow. Plants draw water up through capillary action as needed. Especially excellent for hibiscus, citrus, ferns, and other plants that dislike soil swinging between wet and dry — fill the reservoir every 1–2 weeks instead of watering every few days.',
+        },
+        {
+          type: 'h3',
+          text: 'Soil and Potting Mix for Sunroom Plants',
+        },
+        {
+          type: 'p',
+          text: 'Standard potting mix sold in most garden centers is a general-purpose medium that works adequately for many plants but is optimized for none of them. In the high-light, warm conditions of a sunroom, understanding what your specific plants need in their potting mix pays significant dividends.',
+        },
+        {
+          type: 'table',
+          headers: ['Mix Type', 'Composition', 'Best For', 'Notes'],
+          rows: [
+            ['Standard tropical mix', 'Quality potting mix + 20% perlite; well-draining but moisture-retentive', 'Most foliage tropicals: monstera, philodendron, pothos, Chinese evergreen, rubber tree, dracaena', 'The workhorse mix; perlite addition is critical — standard potting mix alone compacts too quickly in containers'],
+            ['Epiphyte / aroid mix', 'Potting mix (40%) + perlite (30%) + orchid bark (20%) + worm castings (10%)', 'Anthuriums, monsteras, philodendrons, elephant ears, bird of paradise', 'Chunkier mix mimics epiphytic root conditions; excellent drainage; roots can breathe'],
+            ['Orchid bark mix', 'Coarse orchid bark (60%) + perlite (20%) + sphagnum moss (20%)', 'Orchids (phalaenopsis, cattleya, oncidium); bromeliads; staghorn fern', 'Never use regular potting mix for orchids — it smothers their air roots; bark allows drainage and airflow'],
+            ['Cactus / succulent mix', 'Standard mix (50%) + coarse sand or pumice (30%) + perlite (20%)', 'Aloe, cacti, succulents, jade plant, desert-adapted plants', 'Extremely fast-draining; allow to dry completely between waterings'],
+            ['Heavy moisture-retentive mix', 'Potting mix (60%) + coco coir (30%) + perlite (10%)', 'Peace lily, bird\'s nest fern, calathea, fittonia, moisture-loving tropicals', 'Coco coir retains moisture longer than standard mix without becoming waterlogged'],
+            ['Bromeliad mix', 'Orchid bark (50%) + perlite (30%) + peat or coco coir (20%)', 'All bromeliads including tillandsia mounted varieties', 'Light and very fast-draining; most bromeliads are epiphytic and dislike dense soil'],
+            ['Citrus / fruiting plant mix', 'Potting mix (50%) + perlite (25%) + coarse sand (15%) + worm castings (10%)', 'Citrus, plumeria, bougainvillea, hibiscus', 'Good drainage with some nutrient retention; worm castings add beneficial microbes; pH slightly acidic (6.0–6.5) for citrus'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Fertilizing Sunroom Plants',
+        },
+        {
+          type: 'p',
+          text: 'Sunroom plants are typically heavier feeders than the same plants grown indoors under dimmer conditions. Nutrients also deplete faster in containers that are watered frequently. A consistent, appropriate fertilizing program is the difference between plants that merely survive and plants that truly thrive.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Balanced fertilizer (20-20-20 or similar): excellent for foliage-focused tropicals (monstera, philodendron, ferns, palms) during active growing season; dilute to half-strength and apply every 2–3 weeks',
+            'High-phosphorus fertilizer ("bloom booster," e.g., 10-30-20): encourages flowering in hibiscus, bougainvillea, orchids, and other flowering plants; use when you want to stimulate blooming',
+            'Slow-release granular fertilizer (Osmocote or similar): mix into potting soil at repotting or top-dress; releases nutrients over 3–6 months; convenient for large collections',
+            'Orchid fertilizer: dilute liquid orchid fertilizer at 1/4 strength, every watering when in active growth ("weakly, weekly"); specialized formulas have the right micronutrient balance',
+            'Citrus fertilizer: dedicated citrus fertilizers include micronutrients (iron, magnesium, manganese) that standard fertilizers lack; use year-round for actively growing sunroom citrus',
+            'Winter reduction: reduce fertilizing frequency by 50–75% during the shortest days; most tropical plants slow growth significantly even in a heated sunroom when December–January light levels drop',
+            'Flush soil monthly: water heavily until water pours from drainage holes for a full minute; this washes away accumulated fertilizer salts that cause root burn and leaf tip damage',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Repotting: When and How',
+        },
+        {
+          type: 'list',
+          items: [
+            'Signs repotting is needed: roots growing through drainage holes or visibly circling the soil surface; plant drying out within 1–2 days of watering; plant clearly too large for its container; potting mix breaking down (dark and compacted)',
+            'Timing: repot in spring as light intensity increases and plants enter active growth; never repot a stressed or sick plant; avoid repotting during flowering',
+            'Size up gradually: choose a pot only 1–2 inches larger in diameter than the current pot; oversized pots hold too much moisture relative to root volume and increase root rot risk significantly',
+            'Pot material: terra cotta dries faster (good for drought-tolerant plants; bad for moisture-lovers); glazed ceramic and plastic retain moisture longer; drainage holes are non-negotiable regardless of material',
+            'Refreshing without repotting: if a plant is in the right-sized pot, remove the top 2–3 inches of old soil and replace with fresh potting mix; refreshes nutrients without the disruption of full repotting',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Pest and Disease Management in the Sunroom',
+        },
+        {
+          type: 'p',
+          text: 'The warm, humid, densely planted conditions of a sunroom create an ideal environment for certain pests. Regular inspection is the most important pest management strategy — catching problems early when populations are small prevents them from becoming infestations that damage your entire collection.',
+        },
+        {
+          type: 'table',
+          headers: ['Pest / Disease', 'What It Looks Like', 'Plants Most Affected', 'Treatment', 'Prevention'],
+          rows: [
+            ['Spider Mites', 'Tiny red or yellow dots on leaf undersides; fine webbing between leaves; stippled, yellowing foliage; worst in hot, dry conditions', 'Almost all tropicals; hibiscus, bird of paradise, palms, citrus especially vulnerable', 'Forceful water spray to dislodge; insecticidal soap; neem oil; increase humidity; miticides as last resort', 'Maintain humidity above 50%; inspect regularly; isolate new plants; keep air moving with fans'],
+            ['Fungus Gnats', 'Small black flies hovering around soil; larvae in soil damage roots; worse in overwatered plants', 'Any plant in overly moist soil; seedlings especially vulnerable', 'Allow soil to dry more between waterings; yellow sticky traps; Bacillus thuringiensis israelensis (Bti) in soil; beneficial nematodes', 'Avoid overwatering; let surface soil dry; cover soil with a sand layer (gnats don\'t lay eggs in dry sand)'],
+            ['Scale Insects', 'Waxy brown or white bumps on stems and undersides of leaves; sticky honeydew residue; sooty mold follows', 'Citrus, ficus, bird of paradise, orchids, palms', 'Rub off with alcohol-soaked cotton swab; neem oil spray; systemic insecticides for severe infestations', 'Inspect new plants thoroughly before introduction; monthly inspection of all plants'],
+            ['Mealybugs', 'White cottony masses in leaf axils, stem joints, root zone; sticky honeydew; plant decline', 'Succulents, orchids, citrus, jade plant, many others', 'Alcohol-soaked cotton swab directly on bugs; neem oil; isolate affected plant; soil drench for root mealybugs', 'Inspect monthly; quarantine new plants; check plant bases and root zones during repotting'],
+            ['Aphids', 'Clusters of small soft-bodied insects on new growth; curling, distorted leaves; sticky residue', 'Hibiscus, citrus, plumeria, gardenias; most soft new growth', 'Strong water spray; insecticidal soap; neem oil; introduce beneficial insects', 'Avoid excessive nitrogen fertilizing which produces the soft growth aphids love; inspect new growth weekly'],
+            ['Root Rot (Pythium / Phytophthora)', 'Wilting despite moist soil; yellowing leaves; black, mushy roots when pulled from soil; soil smells sour', 'Any plant in waterlogged, poorly draining soil; worst in overwatered containers', 'Remove from pot; cut away all black/brown mushy roots; repot in fresh well-draining mix; reduce watering; fungicide drench if severe', 'Drainage holes in every pot; appropriate potting mix; do not let pots sit in water; correct watering frequency'],
+            ['Powdery Mildew', 'White powdery coating on leaves and stems; mainly in periods of high humidity with poor air circulation', 'Begonias, gardenias, some orchids', 'Improve air circulation with fans; reduce humidity slightly; baking soda spray (1 tbsp/gallon water); sulfur-based fungicides', 'Maintain air movement; avoid splashing water on leaves; space plants for airflow'],
+            ['Leaf Scorch / Sunburn', 'Pale, bleached, or brown patches on leaves; worst on sun-facing leaf surfaces', 'Plants moved suddenly from low to high light; ferns, orchids, peace lily in direct sun', 'Move plant to lower light immediately; damaged leaves will not recover but new growth will be healthy', 'Acclimate plants gradually to brighter positions; observe new acquisitions carefully for first 2 weeks'],
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '🔍',
+          text: 'The new plant quarantine rule: every new plant introduced to your sunroom should spend 2–4 weeks in isolation — physically separated from your existing collection — before being integrated. Inspect it thoroughly under bright light and a magnifying glass for eggs, insects, and web material. This single habit prevents the vast majority of pest infestations. A beautiful ficus from the nursery can carry scale that will spread to every plant in your sunroom within months if introduced without quarantine.',
+        },
+      ],
+    },
   ],
 }
