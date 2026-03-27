@@ -432,5 +432,87 @@ export const hummingbirdGardenContent = {
         },
       ],
     },
+    {
+      id: 'advanced-topics',
+      title: 'Section 6: Advanced Hummingbird Gardening',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Once you have the basics in place — a succession of tubular flowers, clean feeders, and structural habitat — the following strategies take your garden to the next level: supporting nesting, attracting hard-to-reach species, photographing the birds you attract, and contributing to the science that helps protect them.',
+        },
+        {
+          type: 'h3',
+          text: 'Troubleshooting Common Problems',
+        },
+        {
+          type: 'table',
+          headers: ['Problem', 'Likely Cause', 'Solution'],
+          rows: [
+            ['No hummingbirds after several weeks', 'Garden not yet discovered; no early-arrival signal plant; feeder not visible', 'Add a bright red feeder to draw scouts; ensure at least one early-blooming tubular plant is visible from above; be patient — newly established gardens can take a full season to be found'],
+            ['One aggressive male chases all others away', 'Natural territorial behavior of dominant males', 'Add 2–3 additional feeders placed out of line-of-sight of each other; add supplemental nectar plantings in separate areas so the male cannot monitor all food sources simultaneously'],
+            ['Ants in the feeder', 'Ants following scent trail to nectar', 'Install an ant moat (water-filled barrier) above the feeder hanger; never use oil or petroleum products on the hanger — hummingbirds preen with their bills and can be poisoned'],
+            ['Bees and wasps dominating feeder', 'Yellow ports attract bees; sweet nectar is irresistible to wasps in late summer', 'Switch to a saucer-style feeder where nectar sits below port level; remove yellow bee guards if present; reduce nectar concentration slightly (1:5 ratio) during worst wasp periods'],
+            ['Feeder ignored despite birds in garden', 'Wrong feeder style; nectar spoiled; location conflict with dominant bird', 'Try a different feeder style; change nectar and move feeder to a new location; ensure feeder is not in the direct sightline of a territorial male\'s perch'],
+            ['Hummingbirds disappearing in midsummer', 'Post-breeding dispersal; females and juveniles moving after nesting; temporary lull', 'Normal behavior — activity often drops July–early August after breeding; maintain feeders and plants; activity typically resumes in mid-August as migration begins and new juveniles appear'],
+            ['Nectar turning black or cloudy within days', 'Mold growth; feeder not cleaned between fills; direct sun location', 'Increase cleaning frequency; move feeder to shade; in very hot weather, make smaller batches and change daily; inspect all port seals for cracks where mold hides'],
+            ['Hummingbird hitting windows', 'Bird sees reflected sky/trees in glass; high-traffic flight path near window', 'Apply window collision tape or decals in a grid pattern (2×4 inch spacing); move feeder more than 3 feet or less than 1 foot from glass — intermediate distances are the most dangerous; add external window screens'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Supporting Nesting Hummingbirds',
+        },
+        {
+          type: 'p',
+          text: 'Hummingbird nests are among the most remarkable structures in the bird world — a walnut-sized cup of plant fibers, spider silk, and lichen, built entirely by the female. Females alone incubate eggs and raise young; the male plays no role after mating. Supporting nesting females requires understanding what they need.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Plant native trees and large shrubs — nests are built on small horizontal branches 10–40 feet up in deciduous trees; oaks, maples, sycamores, and alders are commonly used in the East; eucalyptus, live oaks, and native conifers in the West',
+            'Provide spider silk sources — female hummingbirds actively collect spider webs to bind and elasticize the nest; allow orb-weaver and grass spiders to maintain webs in sheltered spots in the garden',
+            'Leave lichen on trees and rocks — lichen is the primary camouflage material pressed onto the outside of the nest; do not scrub or remove lichen from tree bark',
+            'Plant native plants that produce soft seed-down — thistle, cattail, willow catkins, and dandelion fluff are used as nest lining material; leaving a few of these "weeds" in a back corner of the garden supports breeding females',
+            'Minimize disturbance near known nesting sites — females will abandon eggs if disturbed repeatedly during incubation; once you locate a nest, observe from a distance and avoid pruning or mowing in that immediate area until fledglings have left',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Hummingbird Photography in the Garden',
+        },
+        {
+          type: 'list',
+          items: [
+            'Use a fast shutter speed — hummingbird wings beat 40–80 times per second; to freeze wing motion you need at least 1/2000 sec, ideally 1/4000–1/8000 sec; raise ISO as needed to achieve this in your garden\'s light conditions',
+            'Pre-focus on a known perch or flower — hummingbirds are creatures of habit; identify where a bird returns repeatedly and pre-focus there rather than trying to track fast movement',
+            'Position the sun behind you and slightly to one side — gorget (throat) iridescence only appears when light hits it at the right angle; without front-lighting, male throat patches often appear black in photos',
+            'Use a feeder as a controlled setting — replace one port cover with a single fresh flower stem for a more natural-looking shot; the bird\'s approach and hover time is predictable',
+            'Burst mode and patience — even experienced wildlife photographers take dozens of shots per bird; continuous shooting mode captures the one frame where wings, light, and position align perfectly',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Winter Feeder Guidance',
+        },
+        {
+          type: 'p',
+          text: 'For most of the country, winter feeders serve two purposes: supporting year-round residents (Anna\'s hummingbirds along the Pacific Coast) and catching late-season or off-course migrants that would otherwise have no fuel source. Never take down a feeder thinking you are "helping" birds migrate — if a hummingbird is still present in cold weather, it either cannot migrate or is a year-round resident that depends on your feeder.',
+        },
+        {
+          type: 'list',
+          items: [
+            'In freezing temperatures, nectar freezes before it spoils — rotate two feeders, bringing one inside overnight and putting it out in the morning while the other warms indoors',
+            'A low-wattage outdoor light bulb or hand warmer placed near (not touching) the feeder can keep nectar liquid on cold nights',
+            'Do not increase sugar concentration above 1:3 (one part sugar to three parts water) in winter — higher concentrations were once recommended but current evidence suggests the standard 1:4 ratio is appropriate year-round',
+            'In the Pacific Northwest and California, Anna\'s hummingbirds require feeders through all winter months; pair feeders with winter-blooming plants like red-flowering currant, winter jasmine, or early-blooming native shrubs',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🔬',
+          text: 'Citizen science: Submit your hummingbird sightings to eBird (ebird.org) and Hummingbird Central (hummingbirdcentral.com/migration). Your first-of-season and last-of-season sightings contribute to migration tracking maps used by researchers to monitor population trends and climate-shift responses. It takes 30 seconds and directly helps hummingbird conservation.',
+        },
+      ],
+    },
   ],
 }
