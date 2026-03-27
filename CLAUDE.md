@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 46 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 47 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. Online ordering is a placeholder (coming soon); the "Add to Cart" button links visitors to the Contact page for custom orders.
 
@@ -75,7 +75,8 @@ Garden-Landscape-Expert/
 │       ├── Common_Garden_Diseases_Guide.png
 │       ├── Weed_Management_Guide.png
 │       ├── Indoor_Houseplants_101_Guide.png
-│       └── four-season-garden.png  # 38 images total — all live guides have a hero image
+│       ├── four-season-garden.png
+│       └── hummingbird-garden.png  # 39 images total — all live guides have a hero image
 └── src/
     ├── app/                         # Next.js App Router — one folder per route
     │   ├── layout.jsx               # Root layout — dark mode script, GTM, Nav, footer, GA4/AdSense via next/script
@@ -391,6 +392,7 @@ Thirty-six full guides integrated into the app:
 - `src/data/guide-content/butterfly-garden.js` — Butterfly Garden (`id: 'butterfly-garden'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/rabbit-proof-garden.js` — Rabbit-Proof Garden (`id: 'rabbit-proof'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/four-season-garden.js` — Four-Season Garden Design (`id: 'four-season-garden'`) — **complete** (all 10 sections built)
+- `src/data/guide-content/hummingbird-garden.js` — Hummingbird Garden (`id: 'hummingbird-garden'`) — **complete** (all 8 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -1078,6 +1080,25 @@ Theme: amber/orange gradient in `GuideDetail.jsx`; hero image: `public/guides/fo
 | Section 7: Troubleshooting, Getting Started & Closing | ✅ Done | Soil-test-first warning callout; 10-row symptom/cause/solution troubleshooting table; Year 1 foundation plan (5 items); Year 2 building plan (5 items); Year 3+ closing reflection and tip callout |
 
 Theme: lime/green gradient in `GuideDetail.jsx`; hero image: `public/guides/organic-fertilizing.png`; `comingSoon: false` under Eco & Sustainability in `guides.js`; wired in `src/data/guide-content/index.js`
+
+---
+
+### Hummingbird Garden Guide ✅
+
+`src/data/guide-content/hummingbird-garden.js` — Hummingbird Garden (`id: 'hummingbird-garden'`); fully built from `hummingbird-garden.docx` — 8 sections covering species ID through a getting started action plan.
+
+| Section | Status | Notes |
+|---|---|---|
+| Section 1: Meet the Hummingbirds | ✅ Done | 10-row species table (Ruby-throated through Blue-throated/Rivoli's) with range, presence, ID notes, garden notes; 10-row biology facts table (heart rate through color preference) with garden implications; eBird tip callout |
+| Section 2: The Best Hummingbird Plants | ✅ Done | Native plants gold standard tip; 15-row native plants table with 5-star ratings (trumpet honeysuckle through chuparosa); 13-row non-native plants table; 6-row season-by-season bloom calendar; 12-month feeder rule tip |
+| Section 3: Hummingbird Feeders | ✅ Done | 5-row feeder types table (saucer through large capacity); feeder buying guide (6 items); nectar recipe tip (1:4 sugar:water); what not to use list (6 items); 5-row nectar freshness by temperature table; deep cleaning warning callout; feeder placement list (6 items) |
+| Section 4: Designing the Hummingbird Garden | ✅ Done | 5 essential habitat elements list (nectar succession, vertical structure, perches, insect habitat, water); 4-row plant combination designs table (Eastern border, Western native, Desert SW, Small space/container); 5 design principles list; garden mister tip |
+| Section 5: Regional Hummingbird Gardening Guide | ✅ Done | 9-row regional table (New England, Mid-Atlantic/SE, Midwest/Great Plains, Pacific NW, California/Coastal West, Mountain West/Rockies, Southwest Desert, Texas, Florida/Gulf Coast) with primary species, season, key native plants, key non-native plants, and regional notes; regional border tip |
+| Section 6: Advanced Hummingbird Gardening | ✅ Done | 8-row troubleshooting table; nesting support guidance (5-item list); photography tips (5-item list); winter feeder guidance (4-item list); citizen science tip (eBird + Hummingbird Central) |
+| Quick Reference: Top 40 Hummingbird Plants | ✅ Done | 40-row plant table (native flag, zones, flower color, height, peak season, star rating); covers all US regions and bloom seasons; plant selection tip |
+| Getting Started Action Plan | ✅ Done | One Week plan (4 items); One Month plan (6 items); One Full Season plan (6 items); closing reflection paragraph; start-small tip callout |
+
+Theme: red/rose gradient in `GuideDetail.jsx`; hero image: `public/guides/hummingbird-garden.png`; `comingSoon: false` under Specialty Gardens in `guides.js`; wired in `src/data/guide-content/index.js`
 
 ---
 
