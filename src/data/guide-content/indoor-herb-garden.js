@@ -960,5 +960,100 @@ export const indoorHerbGardenContent = {
         },
       ],
     },
+    {
+      id: 'quick-reference',
+      title: 'Quick Reference: Indoor Herb Growing at a Glance',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Use this table to quickly compare all major culinary herbs across the key growing variables. Ratings reflect indoor growing conditions specifically — not what herbs prefer outdoors.',
+        },
+        {
+          type: 'table',
+          headers: ['Herb', 'Light (Indoor)', 'Water', 'Min Temp', 'Best Container', 'Harvest Method', 'Difficulty', 'Start By'],
+          rows: [
+            ['Basil', 'High (6+ hrs or grow light)', 'Consistent moisture; check daily', '60°F', 'Plastic or glazed 6–8"', 'Pinch tips above leaf nodes', 'Moderate', 'Seed or transplant'],
+            ['Chives', 'Medium (4–6 hrs)', 'Moderate moisture', '45°F', 'Wide shallow 6–8"', 'Snip outer leaves 1" above soil', 'Very Easy', 'Seed or division'],
+            ['Mint', 'Low–Medium', 'Consistently moist', '50°F', 'Plastic 6–8" solo pot', 'Pinch growing tips', 'Very Easy', 'Transplant / division'],
+            ['Parsley (flat)', 'Medium–High', 'Moderate; don\'t let dry', '50°F', 'Deep pot 6–8"', 'Cut outer stems at base', 'Easy', 'Transplant or seed (soak seeds)'],
+            ['Parsley (curly)', 'Medium–High', 'Moderate', '50°F', 'Deep pot 6"', 'Cut outer stems at base', 'Easy', 'Transplant or seed'],
+            ['Cilantro', 'Medium; keep cool (under 72°F)', 'Moderate moisture', '50°F', 'Any 6–8"; direct seed in final pot', 'Harvest whole stems; succession plant', 'Easy (but short-lived)', 'Seed directly in final pot'],
+            ['Rosemary', 'Very High (6+ hrs south or grow light)', 'Drought-tolerant; dry deeply between waterings', '40°F', 'Terra cotta 8–10"', 'Snip 4–6" stem tips (green only)', 'Moderate', 'Transplant'],
+            ['Thyme', 'High (6+ hrs or grow light)', 'Drought-tolerant; allow to dry', '30°F', 'Terra cotta 6–8"', 'Snip 4–5" stem tips', 'Easy–Moderate', 'Seed or transplant'],
+            ['Oregano (Greek)', 'High (6+ hrs or grow light)', 'Drought-tolerant; allow to dry', '30°F', 'Terra cotta 6–8"', 'Snip growing tips before flowering', 'Easy', 'Seed or transplant'],
+            ['Sage', 'High (6+ hrs or grow light)', 'Drought-tolerant; allow to dry', '15°F', 'Terra cotta 8–10"', 'Snip 4–6" stem tips (green only)', 'Moderate', 'Transplant'],
+            ['Lemon Balm', 'Low–Medium', 'Moderate', '20°F', 'Plastic or glazed 6"', 'Pinch growing tips', 'Very Easy', 'Seed or transplant'],
+            ['French Tarragon', 'High', 'Moderate; well-drained', '10°F (dormant)', 'Any 6–8"', 'Snip stem tips', 'Moderate', 'Division ONLY (never from seed)'],
+            ['Bay Laurel', 'High', 'Moderate; allow partial drying', '20°F', 'Any 10–14"; repot annually', 'Harvest individual leaves', 'Easy once established', 'Nursery plant'],
+            ['Lemongrass', 'Very High', 'Consistent moisture', '55°F', 'Large 12–14"', 'Cut stalks at base when thick', 'Moderate', 'Division or grocery stalks'],
+            ['Chervil', 'Low–Medium; cool', 'Consistent moisture', '30°F', 'Any 6"', 'Snip outer leaves', 'Easy', 'Seed'],
+            ['Stevia', 'High', 'Moderate', '55°F', 'Any 6–8"', 'Harvest leaves and tips', 'Moderate', 'Cutting (not seed)'],
+            ['Shiso / Perilla', 'Medium–High', 'Consistent moisture', '60°F', 'Large 8–10"', 'Harvest leaves and tips', 'Easy', 'Seed'],
+            ['Vietnamese Coriander', 'Medium', 'Consistently moist', '55°F', 'Plastic or glazed 6"', 'Snip growing tips', 'Easy', 'Cutting or transplant'],
+            ['Green Onions / Scallions', 'Medium', 'Consistent moisture', '40°F', 'Any pot or water glass', 'Snip greens above 2"', 'Very Easy', 'Grocery store root ends or seed'],
+            ['Dill', 'High', 'Moderate; don\'t overwater', '50°F', 'Deep pot 6–8" (taproot)', 'Snip fronds; succession plant', 'Easy (short-lived)', 'Seed directly in final pot'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'Begin with the "Very Easy" herbs — chives, mint, and lemon balm. These three together cover an enormous range of culinary uses and will teach you the rhythms of your specific kitchen environment. Add more demanding herbs once you\'ve found your light and watering groove.',
+        },
+      ],
+    },
+    {
+      id: 'getting-started',
+      title: 'Getting Started: Your First Indoor Herb Garden',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The most important thing now is to begin — because an indoor herb garden, like most good things, teaches you far more in practice than it can from a guide.',
+        },
+        {
+          type: 'h3',
+          text: 'The One-Week Start: Minimum Viable Herb Garden',
+        },
+        {
+          type: 'list',
+          items: [
+            'Buy two or three plants this week: Chives (easiest, most productive, most forgiving), basil (if you have a south window or will get grow lights), and mint (most shade-tolerant, most versatile). These three herbs cover a huge range of culinary applications.',
+            'Get proper containers: Terra cotta 6-inch pots for Mediterranean herbs, plastic 6-inch pots for moisture-lovers; every pot must have a drainage hole.',
+            'Use quality potting mix: Add 25–30% perlite to whatever potting mix you buy. This one step prevents more problems than almost anything else.',
+            'Place strategically: South window if you have one; grow light if you don\'t. Accept no compromise on light.',
+            'Start the watering habit: Check your herbs every day for the first two weeks. You\'re calibrating — learning how fast each pot dries in your specific kitchen conditions. After two weeks, you\'ll know the rhythm instinctively.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The One-Month Expansion',
+        },
+        {
+          type: 'list',
+          items: [
+            'Add rosemary, thyme, or oregano: Now that you understand your light situation, add a Mediterranean herb to the sunny spot you\'ve identified. Use terra cotta, use fast-draining mix, and water less than you think you should.',
+            'Add parsley: A deep 6-inch pot, consistent moisture, medium light. The workhorse herb that goes with almost everything.',
+            'Start a succession of cilantro from seed: Plant six seeds in a 6-inch pot. In 3–4 weeks, start another. The rhythm of cilantro succession planting is satisfying once established.',
+            'Consider a grow light if winter is approaching: If it\'s September or October, get LED strip lights before winter arrives. A simple under-cabinet strip light over your herb arrangement makes the difference between herbs that make it through winter and ones that slowly fail.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Ongoing Practice',
+        },
+        {
+          type: 'p',
+          text: 'A thriving indoor herb garden is not a project you finish — it\'s a practice you maintain. Herbs die, decline, get repotted, get replaced, and are started again from seed. The gardener who understands this and treats each failure as information rather than defeat builds something genuinely remarkable over time: a living kitchen garden that provides fresh herbs 365 days a year, that requires five minutes of daily attention and rewards that attention with ingredients that make every meal better.',
+        },
+        {
+          type: 'p',
+          text: 'That\'s the real payoff. Not just the basil on the pasta or the mint in the drink, but the daily act of caring for something living in your kitchen — snipping a few leaves, checking the soil, noticing new growth — which turns out to be one of the most quietly satisfying things you can do in a home.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'Fresh herbs change how you cook. Not dramatically, not all at once — but steadily, season by season, meal by meal. The moment you reach six inches to your left and snip fresh basil onto something you\'re cooking instead of opening a jar of dried flakes, you\'ll understand why people grow herbs indoors. Start simple. Start now. Go get a pot of chives — it starts there.',
+        },
+      ],
+    },
   ],
 }
