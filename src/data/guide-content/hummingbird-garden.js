@@ -258,5 +258,86 @@ export const hummingbirdGardenContent = {
         },
       ],
     },
+    {
+      id: 'garden-design',
+      title: 'Section 4: Designing the Hummingbird Garden',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A hummingbird garden is more than a collection of red flowers. The most productive habitat combines a layered planting structure, a reliable nectar succession from spring to fall, open flight corridors, and the structural elements that let hummingbirds do everything they need — feed, perch, rest, nest, and hunt insects. Thoughtful design multiplies the value of every plant you put in the ground.',
+        },
+        {
+          type: 'h3',
+          text: 'The 5 Essential Habitat Elements',
+        },
+        {
+          type: 'list',
+          items: [
+            'Nectar succession — at least one tubular hummingbird plant in bloom at all times during the active season; plan specifically for the early-arrival gap (first 2 weeks) and the late-migration fueling window (last 3 weeks)',
+            'Vertical structure — a mix of ground-level flowers, mid-height shrubs and perennials, and at least one tall shrub or small tree; hummingbirds use different height layers for feeding, perching, and surveying territory',
+            'Exposed perches — dead branch tips, thin wire, or the very tops of tall shrubs where males can perch in the open to watch for rivals and females; these high, exposed spots are used far more than leafy interior branches',
+            'Insect habitat — plants that host small insects and spiders (especially aphid-prone species, late-season asters, and native flowers); protein from insects is essential for breeding females and nestlings',
+            'Water — a misting device or a fountain with gentle moving water is far more effective than a birdbath; hummingbirds bathe by flying through fine mist or hovering under dripping water, not by standing in a pool',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Plant Combination Designs',
+        },
+        {
+          type: 'p',
+          text: 'The following four combinations are proven, regionally appropriate plantings that provide bloom succession, structural variety, and high nectar value. Each can be scaled up or down and adapted to your specific site.',
+        },
+        {
+          type: 'table',
+          headers: ['Design', 'Key Plants', 'Bloom Succession', 'Size / Context'],
+          rows: [
+            [
+              'Eastern Hummingbird Border',
+              'Red columbine (spring) → bee balm (early summer) → trumpet honeysuckle (spring–fall) → cardinal flower (midsummer–fall) → pineapple sage (fall)',
+              'Early Apr through Oct; columbine greets migrants, sage fuels fall departure',
+              'A 10–20 ft sunny border; works in Zones 4–8; all plants native to the eastern US',
+            ],
+            [
+              'Western Native Garden',
+              'Early penstemon species (spring) → Salvia spathacea or S. clevelandii (spring–summer) → Agastache (summer–fall) → Epilobium/Zauschneria (late summer–fall)',
+              'Mar–Nov in mild climates; Epilobium blooms while late migrants are still present',
+              'A dry, sunny slope or hillside planting; Zones 7–10 (CA, PNW, Mountain West); extremely drought-tolerant once established',
+            ],
+            [
+              'Desert Southwest Design',
+              'Chuparosa (winter–spring) → penstemon species (spring) → desert willow (summer) → Salvia coccinea (summer–fall) → Tecoma stans or Salvia greggii (fall)',
+              'Oct–May peak for resident Costa\'s and Anna\'s; summer bloomers serve Black-chinned and Broad-billed hummingbirds',
+              'A xeric courtyard or desert-adapted garden; Zones 8–11 (AZ, NM, CA desert); designed around summer water restrictions',
+            ],
+            [
+              'Small Space / Container Garden',
+              'Salvia microphylla or S. guaranitica (containers, long season) + Agastache \'Desert Sunrise\' (container) + trailing Fuchsia (hanging basket) + annual Salvia coccinea',
+              'Late spring through hard frost; containers can be moved to maximize sun exposure as season shifts',
+              'A patio, balcony, or 6×6 ft courtyard; works in any zone with appropriate annual/tender perennial choices; feeders essential as supplement',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: '5 Design Principles',
+        },
+        {
+          type: 'list',
+          items: [
+            'Mass plantings over single specimens — three to five plants of the same species in a cluster produce enough nectar to register as a territory-worth defending; a single plant of everything produces scattered calories that hummingbirds may not bother to defend or return to reliably',
+            'Design for flight corridors — hummingbirds approach feeders and flowers from above and to the side; avoid planting dense barriers directly in front of feeders or between major nectar sources; leave open airspace for the fast, direct flight patterns they prefer',
+            'Separate competing males — if you want more than one male hummingbird using your garden, space high-value nectar sources (feeders or dense flower clusters) at least 20–30 feet apart and use tall shrubs or fences as visual barriers between them',
+            'Include at least one large structural plant — a tall native shrub, small tree, or large vine (trumpet vine, trumpet honeysuckle on a substantial trellis) provides the elevated perching, territorial survey, and shelter structure that turns a "flower garden with hummingbirds" into actual hummingbird habitat',
+            'Plan for the gaps — identify the weeks in your season when nothing hummingbird-worthy is blooming and fill them deliberately; the most common gaps are the 2–3 weeks after spring bulbs fade before early perennials peak, and the midsummer lull when spring bloomers are finished and fall salvias haven\'t yet started',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '💧',
+          text: 'A garden mister is one of the highest-return investments you can make for hummingbirds. Attach a fine-mist nozzle to a hose near a shrub or small tree and run it for 15–20 minutes in the morning. Hummingbirds will fly through the mist repeatedly to bathe — a behavior rarely triggered by birdbaths. Once they discover it, they will return to that spot daily.',
+        },
+      ],
+    },
   ],
 }
