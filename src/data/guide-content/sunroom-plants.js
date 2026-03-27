@@ -417,5 +417,99 @@ export const sunroomPlantsContent = {
         },
       ],
     },
+    {
+      id: 'designing-the-sunroom',
+      title: 'Section 4: Designing the Lush Sunroom Garden',
+      blocks: [
+        {
+          type: 'p',
+          text: 'There is a significant difference between a sunroom with plants in it and a sunroom designed as a living garden. The former is a room where individual plants happen to be present; the latter is a space where plants, furnishings, containers, and design elements work together to create an environment that feels genuinely immersive and intentional.',
+        },
+        {
+          type: 'h3',
+          text: 'The Layering Principle: Creating Depth and Density',
+        },
+        {
+          type: 'p',
+          text: 'The single most effective design principle for sunroom plant gardens is layering — arranging plants at different heights so that no wall reads as "floor only." Great sunroom gardens have plants at four distinct levels: when all four levels are occupied, the space transforms from "room with plants" to "garden you inhabit."',
+        },
+        {
+          type: 'table',
+          headers: ['Level', 'Height', 'Plants and Elements'],
+          rows: [
+            ['Floor level', '0–3 ft', 'Large statement specimens: bird of paradise, fiddle-leaf fig, tall palms, banana, large monstera, tree ferns; statement containers; floor-level groupings of medium plants; sprawling low growth like large bromeliads'],
+            ['Mid level', '3–5 ft', 'Plants on plant stands, side tables, and low shelves; medium tropicals (hibiscus, orchid displays, citrus trees, anthuriums); terracotta pot groupings at staggered heights; decorative pedestals with trailing plants'],
+            ['High level', '5–8 ft', 'Tall slender specimens (columnar cacti, tall dracaena, bamboo palm); hanging baskets on ceiling hooks (pothos, ferns, trailing hoyas); wall-mounted staghorn ferns; espaliered bougainvillea on glazing'],
+            ['Overhead / ceiling', '8+ ft', 'Reserved for the tallest specimens (large palms, Ravenala, Strelitzia nicolai); ceiling-suspended macrame hangers; trained climbing vines along ceiling beams; overhead planters in very tall sunrooms'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Container Selection: The Foundation of Sunroom Aesthetics',
+        },
+        {
+          type: 'p',
+          text: 'Containers are the frames of your plant artwork — they should be chosen with as much intention as the plants themselves. In a sunroom, where containers are highly visible and often close to seating, the aesthetic quality of your pot selection significantly affects the overall look of the space.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Terracotta: classic, beautiful, breathable (good for plant health); heavy; breaks in frost; appropriate for Mediterranean-style and traditional design schemes; excellent for succulents, citrus, and drought-tolerant plants that benefit from faster soil drying',
+            'Glazed ceramic: wide color and style range; retains moisture longer than terracotta; excellent for moisture-loving tropicals; choose colors that complement your decor scheme',
+            'Lightweight faux-terra and resin: excellent for large-format pots and hanging baskets; much lighter than ceramic or terracotta; increasingly realistic appearance; practical for large floor specimens that need to be moved',
+            'Concrete and stone: extremely heavy but architecturally striking; permanent once placed; excellent for true statement specimens; best in sunrooms with solid floors that can support the weight',
+            'Hanging baskets: lined coco fiber or moss baskets with a plastic insert maintain moisture; consider drip catchers in hanging baskets to protect floors',
+            'Self-watering containers: particularly practical in sunrooms where frequent watering is required; reservoir systems dramatically reduce watering frequency; excellent for hibiscus, citrus, and moisture-sensitive plants',
+            'Design coherence: choose 2–3 complementary container materials or colors and stick to them throughout the sunroom; a consistent container palette creates a more designed, intentional look than a random mix of every pot style available',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Plant Combinations for Sunrooms',
+        },
+        {
+          type: 'p',
+          text: 'Grouping plants intentionally — for aesthetic effect and practical benefit — elevates a sunroom from a row of individual pots to a living composition. Plants that share similar care requirements also benefit from shared humidity created by collective transpiration.',
+        },
+        {
+          type: 'table',
+          headers: ['Combination', 'Sunroom Type', 'Key Plants', 'Design Notes'],
+          rows: [
+            [
+              'The Tropical Statement Grouping',
+              'South or West sunroom',
+              'Anchor: Bird of paradise in large terracotta pot. Mid-height: Bougainvillea on fan trellis + Aechmea bromeliad. Ground cover: Agave or aloe for textural contrast. Overhead: Trailing pothos or hoya in coco-lined basket.',
+              'All prefer bright sun; terracotta container palette unifies the grouping; bougainvillea provides seasonal color while permanent structure holds when not in bloom',
+            ],
+            [
+              'The Lush Green Tropical Retreat',
+              'East or Mixed sunroom',
+              'Anchor: Monstera on large moss pole + Kentia palm for vertical structure. Mid-level: Bird\'s nest fern + Philodendron + ZZ plant in grouped ceramics. High: Staghorn fern on driftwood wall mount + trailing pothos. Fragrance: Gardenia tucked among foliage.',
+              'All prefer bright indirect light; humidifier maintains high humidity; all-green palette with textural variation is the design intent; gardenia provides seasonal white flowers',
+            ],
+            [
+              'The Orchid and Bromeliad Collection',
+              'East sunroom',
+              'Primary: Tiered wooden shelving on east wall with 8–12 phalaenopsis orchids at various bloom stages. Floor: Guzmania bromeliad groupings (3–5 plants, varied bract colors). Companion: Peace lily for low-light areas. Air plants: Tillandsia mounted on driftwood between shelving units.',
+              'Humidity tray under shelving maintains local humidity; coordinated white and terracotta container palette; when orchids finish blooming, rotate to a recovery area and bring in blooming replacements',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Practical Design Considerations',
+        },
+        {
+          type: 'list',
+          items: [
+            'Floor protection: watering, drainage, and humidity all affect flooring; use large saucers under all pots; place a waterproof mat under groupings; consider sealed concrete, tile, or luxury vinyl in plant-heavy areas rather than hardwood or carpet',
+            'Weight distribution: large floor specimens in ceramic pots can weigh 50–200 lbs when watered; distribute weight across the floor; check structural specifications for upper-floor or deck-mounted sunrooms',
+            'Ventilation for plants and people: plants benefit from gentle air movement (reduces disease, mimics natural conditions); overhead fans on low settings or small oscillating fans at floor level keep air circulating without desiccating plants',
+            'Grow lights for winter: in northern climates, supplemental full-spectrum LED grow lights positioned over the most light-demanding plants extend the growing season and prevent winter decline; LED strips above shelving are barely visible when off',
+            'Plant traffic patterns: leave pathways of at least 24–30 inches between plant groupings for comfortable passage and ease of care; dense plantings that can\'t be reached become neglected plantings',
+          ],
+        },
+      ],
+    },
   ],
 }
