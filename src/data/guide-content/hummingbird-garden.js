@@ -575,5 +575,67 @@ export const hummingbirdGardenContent = {
         },
       ],
     },
+    {
+      id: 'getting-started',
+      title: 'Getting Started Action Plan',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Whether you have a week, a month, or a full season to invest, these action plans give you a clear starting point. You do not need to do everything at once — hummingbird habitat builds incrementally, and even a single well-chosen plant or a clean feeder can make your garden a stop on a migration route.',
+        },
+        {
+          type: 'h3',
+          text: 'If You Have One Week',
+        },
+        {
+          type: 'list',
+          items: [
+            'Hang one red saucer-style feeder in a partially shaded spot visible from a window and fill it with fresh 1:4 sugar water',
+            'Check eBird for which hummingbird species visit your county and their typical first-arrival date — set a calendar reminder to have the feeder up one week before that date',
+            'Buy one or two of the highest-rated native plants for your region from the Quick Reference table and place them near the feeder',
+            'Commit to a feeder-change schedule based on your typical summer temperature — write it on the calendar so it becomes a habit from day one',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'If You Have One Month',
+        },
+        {
+          type: 'list',
+          items: [
+            'Plan a bloom succession: identify which weeks in your season currently have no hummingbird-attractive flowers and fill those gaps with at least one plant each',
+            'Add a second feeder positioned out of sight of the first to reduce territorial monopolization',
+            'Install an ant moat above each feeder',
+            'Plant a mass of at least 3–5 plants of your highest-rated native species — a single specimen registers less than a cluster',
+            'Add one structural element: a section of trellis for trumpet honeysuckle or coral honeysuckle, or a tall shrub that provides both nectar and a high perch',
+            'Set up a garden mister near a shrub for 15–20 minutes in the morning — observe within a week whether hummingbirds discover it',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'If You Have One Full Season',
+        },
+        {
+          type: 'list',
+          items: [
+            'Map your garden in early spring and identify the sunniest, most visible area for a hummingbird border — this becomes your primary planting zone',
+            'Build a full succession planting using the Season-by-Season Bloom Calendar: at least one plant for early arrival, two or three for peak season, and one for late-migration fueling',
+            'Establish at least one large structural plant (trumpet vine on a trellis, or a native shrub like red-flowering currant or native azalea) that provides vertical height and a territory anchor',
+            'Keep detailed notes on your first and last sighting dates, which plants were visited most frequently, and which feeder positions attracted the most birds — this becomes your personalized guide for next year',
+            'Submit sightings to eBird and Hummingbird Central throughout the season; photograph what you can and begin to learn individual bird differences (male vs. female, resident vs. migrant)',
+            'In fall, resist the urge to cut back late-blooming plants before the last bird has departed — pineapple sage, cigar plant, and late agastache are feeding birds that are about to make long journeys',
+          ],
+        },
+        {
+          type: 'p',
+          text: 'Hummingbird gardening rewards patience and observation more than any other kind of wildlife gardening. The birds themselves will teach you what works — pay attention to which flowers they visit first each morning, which perches they favor, and where they go when they leave your yard. Over two or three seasons, a garden built around those observations becomes something genuinely alive: a place that hummingbirds choose, return to year after year, and occasionally raise young in. That is the goal worth working toward.',
+        },
+        {
+          type: 'tip',
+          emoji: '🐦',
+          text: 'The single most important thing you can do today: put up one clean feeder with fresh nectar and plant one native tubular flower. Everything else in this guide builds from that foundation. Start small, observe carefully, and let the hummingbirds show you what to do next.',
+        },
+      ],
+    },
   ],
 }
