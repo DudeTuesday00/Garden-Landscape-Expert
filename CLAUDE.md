@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 48 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 49 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. Online ordering is a placeholder (coming soon); the "Add to Cart" button links visitors to the Contact page for custom orders.
 
@@ -77,7 +77,8 @@ Garden-Landscape-Expert/
 │       ├── Indoor_Houseplants_101_Guide.png
 │       ├── four-season-garden.png
 │       ├── hummingbird-garden.png
-│       └── sunroom-plants.png  # 40 images total — all live guides have a hero image
+│       ├── sunroom-plants.png
+│       └── indoor-herb-garden.png  # 41 images total — all live guides have a hero image
 └── src/
     ├── app/                         # Next.js App Router — one folder per route
     │   ├── layout.jsx               # Root layout — dark mode script, GTM, Nav, footer, GA4/AdSense via next/script
@@ -395,6 +396,7 @@ Thirty-six full guides integrated into the app:
 - `src/data/guide-content/four-season-garden.js` — Four-Season Garden Design (`id: 'four-season-garden'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/hummingbird-garden.js` — Hummingbird Garden (`id: 'hummingbird-garden'`) — **complete** (all 8 sections built)
 - `src/data/guide-content/sunroom-plants.js` — Sunroom Plants (`id: 'sunroom-plants'`) — **complete** (all 7 sections built)
+- `src/data/guide-content/indoor-herb-garden.js` — Indoor Herb Garden (`id: 'indoor-herb-garden'`) — **complete** (all 9 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -1119,6 +1121,26 @@ Theme: red/rose gradient in `GuideDetail.jsx`; hero image: `public/guides/hummin
 | Getting Started: Building Your Sunroom Garden | ✅ Done | 5-item essential first collection list; The Long View — 2 closing paragraphs; closing tip callout with guiding principles |
 
 Theme: amber/yellow gradient in `GuideDetail.jsx`; hero image: `public/guides/sunroom-plants.png`; `comingSoon: false` under Container & Small Spaces in `guides.js`; wired in `src/data/guide-content/index.js`
+
+---
+
+### Indoor Herb Garden Guide ✅
+
+`src/data/guide-content/indoor-herb-garden.js` — Indoor Herb Garden (`id: 'indoor-herb-garden'`); fully built from `indoor-herb-garden.docx` — 9 sections covering the case for indoor herb growing through a quick reference table and getting started plan.
+
+| Section | Status | Notes |
+|---|---|---|
+| Section 1: Why Grow Herbs Indoors? | ✅ Done | Economic and culinary case for fresh herbs; the two primary failure modes (light and watering); 5-row success factors table (light, containers, potting mix, harvesting, expectations) |
+| Section 2: Light — The Foundation of Everything | ✅ Done | 5-row window orientation table with honest assessments; light drop-off tip; 5-row seasonal winter light table by US region (Zone 9–11 through Zone 3–5); 5-row grow light types table; specifications list (spectrum, PAR/PPFD, coverage, timer, heat, aesthetics); daily duration guidance by herb; practical grow light herb shelf setup |
+| Section 3: The Herbs — Complete Growing Profiles | ✅ Done | Tier 1 (easiest): Chives, Mint, Lemon Balm; Tier 2 (excellent): Basil, Parsley, Cilantro, Green Onions; Tier 3 (Mediterranean): Rosemary, Thyme, Oregano, Sage; Tier 4 (specialty): 9-row table covering French Tarragon, Bay Laurel, Lemongrass, Chervil, Vietnamese Coriander, Stevia, Shiso, Epazote |
+| Section 4: Containers, Soil & Setup | ✅ Done | 13-row container sizing table; 6-row material comparison table (terra cotta through window boxes) with best/avoid guidance; 5-row potting mix recipes; drainage warning callout |
+| Section 5: Year-Round Care & Harvesting | ✅ Done | 3-row watering frequency table by herb category with over/underwatering signs; fertilizing guidance (7 items); 6 universal harvesting principles; 9-row herb-specific harvest technique table; 8-row troubleshooting table; potting mix refresh tip |
+| Section 6: Starting Herbs from Seed | ✅ Done | 12-row seeds vs. transplants table with germination times and weeks to harvest; French tarragon warning callout; 9-step seed starting guide; succession planting strategies for cilantro, basil, parsley, and chives |
+| Section 7: Design, Layout & Hydroponics | ✅ Done | 8-row setup options table (windowsill through hydroponic kit) with space, light, cost, and ideal-for columns; 6 herb garden design principles; 5-row hydroponics comparison table (AeroGarden, Click & Grow, DIY Kratky) |
+| Quick Reference: Indoor Herb Growing at a Glance | ✅ Done | 20-row table covering all major culinary herbs (light, water, min temp, best container, harvest method, difficulty, start method) |
+| Getting Started | ✅ Done | One-week starter plan (5 items); one-month expansion (4 items); closing reflection on the ongoing practice; start-with-chives tip callout |
+
+Theme: teal/green gradient in `GuideDetail.jsx`; hero image: `public/guides/indoor-herb-garden.png`; `comingSoon: false` under Herbs & Fragrance in `guides.js`; wired in `src/data/guide-content/index.js`
 
 ---
 
