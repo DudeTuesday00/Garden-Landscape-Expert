@@ -565,5 +565,78 @@ export const indoorHerbGardenContent = {
         },
       ],
     },
+    {
+      id: 'containers-setup',
+      title: 'Section 4: Containers, Soil & Setup',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Container selection for herbs is more important than most beginners realize. The wrong pot — wrong size, wrong material, wrong drainage situation — is responsible for more herb garden failures than any other single factor aside from light. Understanding what each herb actually needs in a container will save you plants, money, and frustration.',
+        },
+        {
+          type: 'h3',
+          text: 'Container Size: Matching Pot to Plant',
+        },
+        {
+          type: 'p',
+          text: 'Herbs in containers that are too small dry out too quickly and become root-bound. Herbs in containers that are too large have a high soil-to-root ratio that leads to soggy soil that never fully dries — a recipe for root rot. Matching pot size to plant size is essential.',
+        },
+        {
+          type: 'table',
+          headers: ['Herb', 'Minimum Container', 'Optimal Container', 'Notes on Sizing'],
+          rows: [
+            ['Basil (single plant)', '6-inch diameter, 6-inch deep', '8-inch diameter, 8-inch deep', 'Basil needs more root space than most people provide; larger pot extends productive life significantly'],
+            ['Basil (3-plant collection)', '10–12-inch diameter, 8-inch deep', '12-inch diameter, 10-inch deep', 'Multiple basil plants in a wide container work well; provides insurance if one declines'],
+            ['Chives', '6-inch diameter, 6-inch deep', '8–10-inch diameter', 'Chives grow in clumps; wider containers accommodate spreading better than deep pots'],
+            ['Mint', '6-inch diameter', '8-inch diameter', 'Keep in its own pot; the pot itself contains spreading; don\'t give mint too much room'],
+            ['Rosemary', '8-inch diameter, 8-inch deep', '10–12-inch diameter', 'Rosemary grows large; give it room; terra cotta strongly preferred for drainage'],
+            ['Thyme', '6-inch diameter, 6-inch deep', '8-inch diameter', 'Compact grower; terra cotta ideal for drainage'],
+            ['Oregano', '6-inch diameter', '8-inch diameter', 'Spreads somewhat; a wider pot allows natural growth habit'],
+            ['Sage', '8-inch diameter, 8-inch deep', '10-inch diameter', 'Grows quite large; plan for a shrub-sized plant at maturity'],
+            ['Parsley', '6-inch diameter, 8-inch deep', '8-inch diameter, 8-inch deep', 'Needs depth for taproot; shallow containers cause premature stress'],
+            ['Cilantro', '6-inch diameter, 6-inch deep', '8-inch wide', 'Fast-growing and fast-dying; a 6-inch pot is fine for a succession-planting rotation'],
+            ['Bay laurel', '10-inch diameter', '12–14-inch diameter', 'A tree; plan for eventual large size; repot every 2–3 years as it grows'],
+            ['Lemongrass', '12-inch diameter, 12-inch deep', '14–16-inch diameter', 'Grows large clumps; needs substantial container; can be overwintered indoors in a large pot'],
+            ['Mixed herb planter (3–4 herbs)', '12–14-inch diameter', '16-inch diameter window box', 'Only mix herbs with compatible water and light needs; Mediterranean herbs together, moisture-lovers together'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Container Materials: What Really Matters',
+        },
+        {
+          type: 'table',
+          headers: ['Material', 'Drainage Rate', 'Best For', 'Avoid For'],
+          rows: [
+            ['Terra cotta (unglazed)', 'Fastest — porous walls wick moisture away from soil', 'Rosemary, thyme, oregano, sage, lavender — any Mediterranean herb', 'Mint, parsley, cilantro — herbs that prefer consistently moist soil; terra cotta dries them too fast'],
+            ['Glazed ceramic', 'Moderate — drains through hole only', 'Medium-water herbs; windowsill display where aesthetics matter', 'Mediterranean herbs (holds too much moisture)'],
+            ['Plastic', 'Slowest — retains moisture longest', 'Moisture-loving herbs (mint, cilantro, parsley, basil); grow light shelves where weight is a concern', 'Mediterranean herbs in high-moisture environments'],
+            ['Self-watering pots', 'Reservoir-fed from below; doesn\'t dry out', 'Basil (ideal — consistent moisture without waterlogging); parsley; herbs grown by forgetful waterers', 'Rosemary, thyme, sage, oregano — Mediterranean herbs that must dry between waterings'],
+            ['Hanging baskets', 'Very fast — dries quickly; requires frequent watering', 'Trailing thyme, mint, tumbling basil varieties, nasturtium', 'Anything that can\'t be watered every day'],
+            ['Window boxes', 'Moderate to slow depending on length', 'Mixed herb displays on windowsills; parsley, chives, and basil together', 'Mediterranean herbs mixed with moisture-lovers — they have conflicting water needs'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Right Potting Mix for Indoor Herbs',
+        },
+        {
+          type: 'table',
+          headers: ['Mix Type', 'Composition', 'Best For', 'Why It Works'],
+          rows: [
+            ['Mediterranean herb mix', '50% quality potting mix + 30% perlite + 20% coarse sand or pumice', 'Rosemary, thyme, oregano, sage, lavender', 'Fast drainage mimics their native poor, rocky, dry soils; roots get oxygen between waterings; dramatically reduces root rot risk'],
+            ['Standard herb mix', '70% quality potting mix + 30% perlite', 'Basil, chives, parsley, lemon balm, bay, tarragon, shiso', 'Well-draining but retains adequate moisture; perlite addition prevents compaction'],
+            ['Moisture-retentive mix', '60% potting mix + 20% perlite + 20% coco coir', 'Mint, cilantro, Vietnamese coriander, lemongrass', 'Coco coir retains moisture without becoming waterlogged; supports herbs that prefer more consistently moist soil'],
+            ['Seedling / germination mix', 'Fine-textured seed-starting mix; very light, no perlite chunks', 'Starting herbs from seed', 'Fine texture allows delicate roots to penetrate easily; sterilized to prevent damping-off fungal disease'],
+            ['Ready-made herb mix', 'Commercial potting mixes formulated for herbs', 'All herbs; convenience option', 'Quality commercial herb mixes work well; check that they include drainage amendments (perlite or vermiculite); avoid heavy, dense mixes'],
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Drainage Holes Are Non-Negotiable: Every herb container must have drainage holes. No exceptions. Herbs sitting in water develop root rot within days — sometimes hours for rosemary and thyme. If you love a beautiful ceramic pot without a drainage hole, use it as a cachepot: place your herb in a plain nursery pot inside the decorative one, and empty the decorative pot of any water 30 minutes after each watering.',
+        },
+      ],
+    },
   ],
 }
