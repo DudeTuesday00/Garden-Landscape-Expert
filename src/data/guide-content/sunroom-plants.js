@@ -511,5 +511,97 @@ export const sunroomPlantsContent = {
         },
       ],
     },
+    {
+      id: 'seasonal-management',
+      title: 'Section 5: Managing Your Sunroom Plant Collection Year-Round',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A sunroom plant collection requires different management in each season — not because the plants change, but because the conditions around them do. Temperature, light duration, humidity, and pest pressure all shift seasonally, and your care routines need to shift with them.',
+        },
+        {
+          type: 'h3',
+          text: 'Spring: The Season of Expansion',
+        },
+        {
+          type: 'p',
+          text: 'Spring is the most exciting season in the sunroom — increasing light intensity, warming temperatures, and the return of active growth mean plants that have been quietly surviving winter begin to visibly thrive. It\'s the season for repotting, propagation, fertilizing increases, and introducing new plants.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Begin increasing fertilizer frequency as light increases (March–April in most regions; February in the South)',
+            'Repot any root-bound plants as growth begins; use fresh potting mix appropriate to each plant type',
+            'Move cold-sensitive plants back from glass panels where they may have been crowded away from cold pockets during winter',
+            'Begin scouting for pests that overwintered — spider mites often explode in early spring as temperatures rise',
+            'Start moving appropriate plants outside to covered or shaded patios as night temperatures consistently stay above 50°F — outdoor conditions invigorate tropicals that have spent winter inside',
+            'Take cuttings and propagate: pothos, philodendron, plumeria, bougainvillea, and most tropicals root readily in spring when growth is active',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Summer: Managing Heat and Humidity',
+        },
+        {
+          type: 'p',
+          text: 'Summer presents the primary management challenge of most American sunrooms: overheating. South and west-facing sunrooms without good ventilation can reach temperatures lethal to plants in summer. Managing heat while maintaining the tropical environment is the core summer task.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Monitor temperature daily with a min/max thermometer; above 95°F requires immediate intervention',
+            'Open vents, windows, and doors during cooler morning hours; use fans to create cross-ventilation',
+            'Apply interior shade cloth (30–50% shade factor) to south and west glazing in midsummer; removable with suction cups or tension rods',
+            'Move heat-sensitive plants (orchids, ferns, gardenias) away from glazing or shade them with taller plants',
+            'Increase watering frequency dramatically in summer — plants in full sun may need watering every 1–2 days; check daily in heat waves',
+            'Humidity typically self-manages in summer through plant transpiration; focus on ventilation rather than adding more humidity',
+            'Many sunroom plants benefit from spending summer partially or fully outdoors; this rejuvenates them significantly and frees up sunroom space for heat-sensitive subjects',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Fall: Preparing for the Transition',
+        },
+        {
+          type: 'p',
+          text: 'Fall is transition season — the period of shrinking day length and cooling temperatures that requires the most active management of any season. The decisions you make in fall determine how well your plant collection survives winter.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Begin bringing outdoor-summering plants inside before first frost; inspect and treat for pests BEFORE they come in — outdoor plants often bring hitchhikers',
+            'Reduce fertilizing as growth slows; switch to a lower-nitrogen formula for most plants',
+            'Move the most light-demanding plants to the best positions near south and west glazing as the sun angle drops',
+            'Set up supplemental grow lights in northern climates (Zones 3–6) before the darkest months arrive; position full-spectrum LED strips above shelving units',
+            'Clean glass thoroughly inside and out — dirty glass can reduce light transmission by 10–20%; clean glass is more important in winter than any other season',
+            'Check weatherstripping and insulation around sunroom doors and windows; cold drafts at floor level stress tropical plants significantly',
+            'Orchid growers: many orchids set flower buds in response to cooling fall night temperatures — allow nighttime temperatures to drop to 55–60°F for 4–6 weeks to trigger blooming in phalaenopsis and cattleya',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Winter: Keeping the Garden Alive in Cold Climates',
+        },
+        {
+          type: 'p',
+          text: 'Winter management varies enormously by region. In the Gulf Coast, Florida, Southern California, and the Desert Southwest, sunroom winters are mild enough that management is minimal. In the upper Midwest, New England, and Pacific Northwest, winter is the most demanding season — maintaining adequate warmth and light while managing dramatically reduced light levels.',
+        },
+        {
+          type: 'table',
+          headers: ['U.S. Climate Zone', 'Sunroom Winter Conditions', 'Primary Challenge', 'Key Winter Strategies'],
+          rows: [
+            ['Zones 3–5 (Northern Plains, Upper Midwest, New England, Mountains)', 'Temperatures can drop below 40°F in unheated sunrooms; light levels drop 40–50% from summer; very short days', 'Maintaining adequate warmth and light; preventing cold damage near glass; managing dry heating air', 'Dedicated sunroom heating system; grow lights for most light-demanding plants; move plants away from glass at night; focus collection on cold-tolerant tropicals; accept that some plants will rest rather than grow'],
+            ['Zones 6–7 (Mid-Atlantic, Lower Midwest, Pacific NW coast, Middle South)', 'Mild winters with occasional cold snaps; light drops but not as severely as farther north; heating usually manageable', 'Cold snaps that temporarily damage cold-sensitive plants; reduced light causing stress in demanding plants', 'Know your plants\' cold minimums; have insulating curtains or covers ready for exceptional cold nights; supplement light for orchids and other precision growers'],
+            ['Zones 8–9 (Southeast, Pacific Coast, Lower South)', 'Mild winters; light reduction modest; freezes rare and brief; heating needs minimal', 'Occasional freeze events that stress frost-sensitive plants; some light reduction in overcast Pacific regions', 'Minimal intervention needed; keep heating available for freeze events; Pacific NW may need grow lights for orchids; excellent for year-round sunroom gardening'],
+            ['Zones 10–11 (South Florida, Southern California, Hawaii, Desert Southwest)', 'Near-perfect growing conditions year-round; winter is actually the most pleasant growing season; minimal heating needed', 'Summer heat management is the primary challenge year-round; occasional desert cold nights in Zone 10', 'Virtually no winter plant management needed; focus energy on summer cooling and ventilation; winter is the ideal season to introduce new heat-sensitive specimens'],
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '❄️',
+          text: 'Emergency cold protection: if an unexpected cold snap threatens to drop your sunroom below 40°F overnight — whether from a heating failure or a record cold event — group all plants together in the center of the room away from cold glass; drape with old bedsheets or horticultural frost cloth; place a space heater on the opposite side of the room; use bubble wrap temporarily against glass panels to add insulation. Most tropicals can survive a single night at 38–40°F if protected; repeated nights below 40°F cause permanent damage.',
+        },
+      ],
+    },
   ],
 }
