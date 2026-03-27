@@ -272,7 +272,7 @@ export const guideCategories = [
         title: 'Indoor Herb Garden',
         emoji: '🏠',
         description: 'Grow fresh herbs year-round on your windowsill or under grow lights.',
-        comingSoon: true,
+        comingSoon: false,
       },
     ],
   },

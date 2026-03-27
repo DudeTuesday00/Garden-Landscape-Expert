@@ -52,6 +52,7 @@ import { fourSeasonGardenContent } from './four-season-garden.js'
 import { organicFertilizingContent } from './organic-fertilizing.js'
 import { hummingbirdGardenContent } from './hummingbird-garden.js'
 import { sunroomPlantsContent } from './sunroom-plants.js'
+import { indoorHerbGardenContent } from './indoor-herb-garden.js'
 
 export const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -102,4 +103,5 @@ export const contentMap = {
   'organic-fertilizing': organicFertilizingContent,
   'hummingbird-garden': hummingbirdGardenContent,
   'sunroom-plants': sunroomPlantsContent,
+  'indoor-herb-garden': indoorHerbGardenContent,
 }
