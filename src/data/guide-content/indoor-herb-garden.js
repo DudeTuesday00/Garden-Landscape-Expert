@@ -638,5 +638,126 @@ export const indoorHerbGardenContent = {
         },
       ],
     },
+    {
+      id: 'care-harvesting',
+      title: 'Section 5: Year-Round Care & Harvesting',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Consistent, attentive care is what distinguishes a thriving indoor herb garden from one that slowly declines. Most care tasks are simple once you understand the reasoning behind them — and the reasoning always comes back to the same principles: provide enough light, water appropriately for each herb\'s needs, harvest regularly, and catch problems early.',
+        },
+        {
+          type: 'h3',
+          text: 'Watering: The Most Important Daily Habit',
+        },
+        {
+          type: 'p',
+          text: 'Watering is where most herb gardeners go wrong — either chronically overwatering (which kills Mediterranean herbs through root rot) or chronically underwatering (which stresses moisture-loving herbs and reduces flavor and productivity). Different herbs on the same windowsill may need very different watering frequencies.',
+        },
+        {
+          type: 'table',
+          headers: ['Herb Category', 'Herbs', 'Frequency', 'How to Check', 'Signs of Underwatering', 'Signs of Overwatering'],
+          rows: [
+            [
+              'Mediterranean / Drought-tolerant',
+              'Rosemary, thyme, oregano, sage, lavender',
+              'Every 7–14 days; allow top half to fully dry between waterings',
+              'Push finger 2 inches into soil; water only when dry at that depth',
+              'Dry, brittle leaf tips; woody stems losing lower leaves; shriveling',
+              'Yellowing leaves; mushy stems at base; dropping leaves; powdery mildew; foul-smelling soil',
+            ],
+            [
+              'Moderate water',
+              'Basil, parsley, chives, bay, tarragon, lemon balm',
+              'Every 3–5 days; allow top inch to dry between waterings',
+              'Finger test to 1 inch; also observe plant — basil shows slight drooping when water-ready',
+              'Wilting; dull leaf surface; edges curling; basil drama-wilts quickly',
+              'Yellowing lower leaves; slow decline; root odor; fungus gnats',
+            ],
+            [
+              'Moisture-preferring',
+              'Mint, cilantro, Vietnamese coriander, lemongrass',
+              'Every 1–3 days; keep consistently moist but not soggy',
+              'Finger test to 1 inch; soil should feel slightly moist at all times',
+              'Mint wilts; cilantro collapses; rapid leaf loss; stunted growth',
+              'Yellowing; mushy roots; fungus gnats; sour smell',
+            ],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Fertilizing Indoor Herbs',
+        },
+        {
+          type: 'list',
+          items: [
+            'The goal for herbs is moderate, steady nutrition — not maximum growth. High-nitrogen feeding produces lush but diluted growth with reduced essential oil content and less flavor.',
+            'Best fertilizer type: Balanced liquid fertilizer (e.g., 5-5-5 or 10-10-10) at half the recommended dose every 3–4 weeks during active growing season; monthly in winter.',
+            'Organic liquid fertilizers (fish emulsion, liquid kelp, worm casting tea) are excellent for kitchen herbs — gentle, broad-spectrum nutrition with less risk of over-fertilizing.',
+            'Slow-release granular fertilizers (Osmocote or similar): Work into potting mix at planting or top-dress; release nutrients over 3–6 months; very convenient for low-maintenance growing.',
+            'Avoid high-nitrogen fertilizers: Excess nitrogen produces weak, diluted herbs with reduced flavor; use balanced or slightly lower-nitrogen formulas.',
+            'Reduce fertilizing in winter: When light levels are low and growth slows, cut fertilizing by 50–75% to avoid nutrient accumulation in slower-growing plants.',
+            'Flush occasionally: Water heavily until water pours freely from drainage holes once a month to flush accumulated fertilizer salts that cause leaf tip burn.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Art of Harvesting: Growing More by Taking More',
+        },
+        {
+          type: 'p',
+          text: 'The most counterintuitive truth in indoor herb growing is that harvesting — aggressive, regular harvesting — is the action that keeps herbs alive and productive. For herbs, which evolved to be grazed by animals and insects in the wild, being cut stimulates new vegetative growth, delays flowering, and extends the productive life of the plant.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Harvest at the nodes: Always cut stems just above a pair of leaves or a node. The plant will send two new shoots from that node, doubling the branches at that point — the key to a bushy, productive herb plant.',
+            'Never harvest more than 1/3 at once: Taking more than one-third stresses the plant and slows recovery. Harvest lightly and frequently rather than heavily and occasionally.',
+            'Harvest the growing tips first: The top few inches of each stem is the most tender, most flavorful part. Harvesting tips also prevents the stem from becoming woody.',
+            'Harvest before and instead of flowering: The moment an herb bolts (flowers), it redirects energy from leaf production to reproduction. Leaves become less flavorful. Pinch off flower buds the moment they appear.',
+            'Morning is the best harvest time: Essential oil content is highest before heat volatilizes the oils. The flavor difference is real, though modest for casual kitchen use.',
+            'Use a sharp, clean snip: Scissors or pruning snips rather than tearing; clean cuts heal faster and reduce disease entry points.',
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['Herb', 'Where to Cut', 'How Much at Once', 'Regrowth Time', 'Special Notes'],
+          rows: [
+            ['Basil', 'Above a pair of leaves, at a node; harvest the top 2–4 leaf pairs of each stem', '1/3 of the plant maximum', '1–2 weeks to visible new growth', 'Pinch flower buds IMMEDIATELY when they appear; flowering is the beginning of the end for basil; keep it pinched back to a bushy shape at all times'],
+            ['Chives', 'Cut entire clump to 1 inch above soil level from the outer edge', '1/4 to 1/3 of the clump at once', '2–3 weeks to harvest-ready length', 'Can also harvest individual leaves; edible flowers can be snipped too — beautiful as a garnish'],
+            ['Mint', 'Pinch growing tips; cut stems to any node', 'Up to 1/3 at once', '1–2 weeks', 'Pinching tips promotes bushy growth and prevents the leggy, stretched look of unharvested mint; keep it compact'],
+            ['Rosemary', 'Cut 4–6 inch stem tips; never cut into woody brown stems', 'Only 15–20% at once; slow-growing', '3–4 weeks', 'Rosemary regrows slowly indoors; harvest conservatively; woody stems do not resprout — always cut into green growth'],
+            ['Thyme', 'Cut 4–5 inch stem tips; avoid woody base', '20% at once maximum', '2–3 weeks', 'Slow-growing indoors; snip sprigs as needed rather than taking large amounts at once'],
+            ['Oregano', 'Cut stems to first set of leaves from tip; 4–6 inch sections', '1/3 at once', '2–3 weeks', 'Flavor is most intense just before flowering; harvest regularly to delay bolting; excellent for drying'],
+            ['Parsley', 'Cut outer stems at the base near soil level; leave inner growing center untouched', '1/3 of outer stems at once', '2–3 weeks', 'The inner growing rosette is the plant\'s future production — never cut it; only take the outer, most mature stems'],
+            ['Cilantro', 'Cut stems near the base when 6 inches tall; harvest whole plants as they begin to bolt', 'Harvest aggressively when bolting begins', 'Succession plant rather than waiting for regrowth', 'Accept cilantro\'s short life; when it bolts, harvest everything, pull it, and plant the next succession pot'],
+            ['Sage', 'Cut 4–6 inch stem tips; avoid woody stems', '20% at once; slow-growing', '3–4 weeks', 'Sage produces best flavor just before flowering; once established, very productive; don\'t be timid with mature plants'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Troubleshooting Indoor Herb Problems',
+        },
+        {
+          type: 'table',
+          headers: ['Problem', 'Likely Cause', 'Solution', 'Prevention'],
+          rows: [
+            ['Leggy, stretched stems reaching toward light', 'Insufficient light — the most common herb problem', 'Move to brighter window; add grow light; rotate pot so all sides receive equal light', 'Provide adequate light from the start; grow lights eliminate this problem entirely'],
+            ['Yellowing leaves (lower leaves first)', 'Overwatering, poor drainage, or natural leaf senescence on lower stems', 'Check drainage; allow soil to dry more; ensure pot isn\'t sitting in water; remove yellow leaves', 'Proper drainage; appropriate watering frequency; don\'t let pots sit in saucers of water'],
+            ['Yellowing leaves overall; slow growth', 'Underfeeding; depleted potting mix', 'Begin regular fertilizing schedule; repot with fresh potting mix if mix is old (1+ year)', 'Fertilize every 3–4 weeks during growing season'],
+            ['White powdery coating on leaves', 'Powdery mildew — caused by poor air circulation and humidity stress; most common on rosemary, sage, and basil', 'Remove affected leaves; improve air circulation with a small fan; reduce watering; treat with dilute baking soda spray (1 tsp/quart water) or neem oil', 'Good airflow around plants; avoid wetting foliage; space plants so air moves between them'],
+            ['Brown, crispy leaf tips and edges', 'Low humidity; mineral/salt buildup from fertilizer or hard water; or fluoride sensitivity', 'Flush soil with plain water; use filtered or rainwater; reduce fertilizer concentration; raise humidity', 'Monthly soil flushing; occasional use of rain or filtered water for sensitive herbs'],
+            ['Sudden wilting despite moist soil', 'Root rot — roots damaged and can no longer function; caused by prolonged overwatering', 'Remove plant from pot; inspect roots (healthy = white/tan; rotten = brown/black/mushy); cut away all rotten roots; repot in fresh, dry mix; reduce future watering', 'Proper drainage holes; appropriate watering frequency; fast-draining soil mix'],
+            ['Tiny flying insects around soil (fungus gnats)', 'Overwatered soil; larvae feed on roots; common in moisture-retentive mixes', 'Allow soil to dry more between waterings; use yellow sticky traps; apply Bacillus thuringiensis israelensis (Bti) to soil', 'Avoid chronically moist soil; allow soil surface to dry; cover soil with a thin layer of sand'],
+            ['Aphids or whiteflies on leaves', 'Common pest; more likely when plants are weakened by inadequate light or improper care', 'Knock off with strong water spray in sink; apply insecticidal soap spray or neem oil; separate affected plant immediately', 'Healthy plants are more resistant; inspect new plants before placing near existing herbs'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🔄',
+          text: 'Refresh your potting mix every 12–18 months. Potting mix breaks down over time, losing its structure and drainage properties. Annual repotting into fresh mix with new perlite is one of the simplest ways to revitalize a struggling herb garden.',
+        },
+      ],
+    },
   ],
 }
