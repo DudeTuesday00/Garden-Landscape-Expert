@@ -602,7 +602,7 @@ export const guideCategories = [
         title: 'Sunroom Plants',
         emoji: '🌤️',
         description: 'Turn your sunroom into a lush indoor garden with the right tropical plants.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'balcony-garden',
