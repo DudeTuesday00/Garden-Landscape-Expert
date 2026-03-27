@@ -50,6 +50,7 @@ export const heroImages = {
   'rabbit-proof': '/guides/Rabbit_Proof_Garden_Guide.png',
   'four-season-garden': '/guides/four-season-garden.png',
   'organic-fertilizing': '/guides/organic-fertilizing.png',
+  'hummingbird-garden': '/guides/hummingbird-garden.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -790,6 +791,22 @@ const themes = {
     tableHeadText: 'text-green-800',
     tableHeadBorder: 'border-lime-200',
     bullet: 'text-lime-600',
+  },
+  'hummingbird-garden': {
+    heroBg: 'bg-gradient-to-br from-red-50 to-rose-100',
+    heroBorder: 'border-red-200',
+    heroTitle: 'text-red-800',
+    backBtn: 'text-red-700 hover:text-red-900',
+    sectionTitle: 'text-red-800',
+    sectionBorder: 'border-red-100',
+    h3: 'text-red-800',
+    tipBg: 'bg-red-50',
+    tipBorder: 'border-red-200',
+    tipText: 'text-red-900',
+    tableHead: 'bg-red-100',
+    tableHeadText: 'text-red-800',
+    tableHeadBorder: 'border-red-200',
+    bullet: 'text-red-500',
   },
 }
 

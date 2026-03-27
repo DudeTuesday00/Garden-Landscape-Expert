@@ -529,7 +529,7 @@ export const guideCategories = [
         title: 'Hummingbird Garden',
         emoji: '🐦',
         description: 'The best tubular flowers and feeders to attract hummingbirds all season.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'native-plants',
