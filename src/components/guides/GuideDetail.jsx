@@ -52,6 +52,7 @@ export const heroImages = {
   'organic-fertilizing': '/guides/organic-fertilizing.png',
   'hummingbird-garden': '/guides/hummingbird-garden.png',
   'sunroom-plants': '/guides/sunroom-plants.png',
+  'indoor-herb-garden': '/guides/indoor-herb-garden.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -824,6 +825,22 @@ const themes = {
     tableHeadText: 'text-red-800',
     tableHeadBorder: 'border-red-200',
     bullet: 'text-red-500',
+  },
+  'indoor-herb-garden': {
+    heroBg: 'bg-gradient-to-br from-teal-50 to-green-100',
+    heroBorder: 'border-teal-200',
+    heroTitle: 'text-teal-800',
+    backBtn: 'text-teal-700 hover:text-teal-900',
+    sectionTitle: 'text-teal-800',
+    sectionBorder: 'border-teal-100',
+    h3: 'text-teal-800',
+    tipBg: 'bg-teal-50',
+    tipBorder: 'border-teal-200',
+    tipText: 'text-teal-900',
+    tableHead: 'bg-teal-100',
+    tableHeadText: 'text-teal-800',
+    tableHeadBorder: 'border-teal-200',
+    bullet: 'text-teal-500',
   },
 }
 
