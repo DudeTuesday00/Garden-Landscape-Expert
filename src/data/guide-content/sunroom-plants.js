@@ -674,5 +674,50 @@ export const sunroomPlantsContent = {
         },
       ],
     },
+    {
+      id: 'getting-started',
+      title: 'Getting Started: Building Your Sunroom Garden',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The most important thing to understand about building a sunroom plant collection is that it\'s not a project with a completion date — it\'s an ongoing, evolving conversation between you and a living space. Every plant teaches you something about your sunroom\'s specific conditions. Every season reveals something about the light, temperature, and humidity patterns you didn\'t know before. The gardeners with the most beautiful sunroom collections have simply been paying attention longer.',
+        },
+        {
+          type: 'h3',
+          text: 'The Essential First Sunroom Plant Collection',
+        },
+        {
+          type: 'p',
+          text: 'If you\'re starting fresh, resist the temptation to fill your sunroom immediately with every beautiful tropical plant you encounter. Begin with a small, well-chosen collection of plants suited to your specific sunroom conditions, learn those plants thoroughly, and expand as your confidence and knowledge grow. Here is a starting collection appropriate for most American sunrooms:',
+        },
+        {
+          type: 'list',
+          items: [
+            'One statement floor specimen — bird of paradise for bright sunrooms; kentia palm for medium light; fiddle-leaf fig for east-facing spaces',
+            'Two trailing plants — pothos (almost anywhere) plus heartleaf philodendron; hang one, let one trail from a shelf',
+            'One fragrant plant — jasmine for most sunrooms; gardenia if you\'re willing to meet its demands; citrus for bright south-facing rooms',
+            'One easy tropical foliage plant — monstera (bright light), Chinese evergreen (lower light), or rubber tree (medium to bright)',
+            'One bromeliad — Guzmania for color in indirect light; Aechmea for slightly more light; Tillandsia air plants mounted anywhere',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Long View: What a Thriving Sunroom Becomes',
+        },
+        {
+          type: 'p',
+          text: 'Give a well-chosen, well-cared-for sunroom plant collection three to five years, and something remarkable happens. Plants that were small nursery specimens become architectural specimens that fill corners and reach toward the ceiling. The air in your sunroom becomes noticeably different — humidified by the collective transpiration of dozens of plants, fragrant from jasmine or citrus blossoms, cool and green in the way that only genuinely dense plant growth can create. The space transforms from an underused room to the most lived-in room in the house.',
+        },
+        {
+          type: 'p',
+          text: 'That is what a sunroom garden can be. Not just a room with plants in it, but a place that feels genuinely alive — a year-round tropical sanctuary that belongs to you regardless of what\'s happening outside the glass.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'Every great sunroom garden began with a single plant in the right spot. Understand your light. Know your temperatures. Choose plants that match your conditions rather than fighting them. Water with intention. And then give it time. The jungle you want is patient — it\'ll get there. Now go find your sunroom its first perfect plant.',
+        },
+      ],
+    },
   ],
 }
