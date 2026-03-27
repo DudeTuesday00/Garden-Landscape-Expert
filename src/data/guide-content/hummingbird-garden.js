@@ -151,5 +151,112 @@ export const hummingbirdGardenContent = {
         },
       ],
     },
+    {
+      id: 'feeders',
+      title: 'Section 3: Hummingbird Feeders',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A well-maintained feeder is a powerful complement to a planted hummingbird garden — it draws birds in from a distance, anchors territory, and provides critical calories during periods when flowers are between bloom cycles. The key word is well-maintained: a neglected feeder with spoiled nectar is worse than no feeder at all, as moldy sugar water can cause fatal fungal infections in the birds that drink it.',
+        },
+        {
+          type: 'h3',
+          text: 'Feeder Types',
+        },
+        {
+          type: 'table',
+          headers: ['Type', 'How It Works', 'Pros', 'Cons', 'Best For'],
+          rows: [
+            ['Saucer / dish feeder', 'Shallow reservoir; ports sit above the nectar surface', 'Easy to clean; bee and wasp resistant; no drips', 'Smaller capacity; exposed nectar heats faster in direct sun', 'Most gardeners; beginners; anyone prioritizing cleanliness'],
+            ['Bottle / inverted tube feeder', 'Inverted bottle creates vacuum seal; nectar drawn up through ports', 'Larger capacity; widely available; many decorative options', 'Drips when temperature changes create vacuum breaks; harder to clean bottle neck', 'High-traffic gardens; regions with multiple birds needing high-volume supply'],
+            ['Window-mount feeder', 'Suction-cup mounted directly to glass; birds feed inches from indoors', 'Exceptional close-up viewing; no pole required', 'Small capacity; must be cleaned frequently; some birds initially wary', 'Close observation; patios and apartment balconies; photography'],
+            ['Decorative ceramic / glass feeder', 'Hand-blown glass or ceramic; typically bottle-style with decorative ports', 'Attractive; sturdy; less UV degradation than plastic', 'Often difficult to clean thoroughly; irregular shapes may harbor mold', 'Aesthetic-focused gardens where appearance matters; low-traffic sites'],
+            ['Large capacity / multiple port feeder', 'High-volume reservoirs with 6–10+ feeding ports; often with perches', 'Serves many birds simultaneously; reduces refill frequency', 'Perches can encourage aggressive monopolizing; large reservoir = faster spoilage if turnover is low', 'High-density areas with many birds; late summer migration fueling stations'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Feeder Buying Guide',
+        },
+        {
+          type: 'list',
+          items: [
+            'Choose red feeders or feeders with red ports — initial scouting birds are drawn to red; do not add red dye to the nectar itself',
+            'Prioritize ease of cleaning above all else — if you cannot disassemble and scrub every surface, the feeder will grow mold',
+            'Avoid feeders with yellow bee guards — yellow attracts bees and wasps; most saucer-style feeders naturally resist insects because the nectar sits below port level',
+            'Look for wide-mouth openings and smooth interior curves — bottle-style feeders with narrow necks are nearly impossible to clean properly without a bottle brush set',
+            'Perches are optional — hummingbirds can hover to feed, but perches allow tired migrants to rest and make for better observation; they do let aggressive males monopolize a feeder more easily',
+            'BPA-free, UV-stable plastic or glass are both acceptable materials; avoid cheap plastic that cracks or discolors quickly',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Nectar Recipe',
+        },
+        {
+          type: 'p',
+          text: 'The correct nectar formula is simple, cheap, and matches the sugar concentration of the flowers hummingbirds evolved to visit. Use plain white granulated cane sugar and clean water — nothing else.',
+        },
+        {
+          type: 'tip',
+          emoji: '🍬',
+          text: 'Standard nectar recipe: 1 part white granulated sugar to 4 parts water (1:4 ratio). Boil water briefly, stir in sugar until fully dissolved, cool completely before filling the feeder. This produces approximately a 20% sucrose solution — within the natural range of hummingbird-adapted flowers. Store unused nectar in the refrigerator for up to two weeks.',
+        },
+        {
+          type: 'h3',
+          text: 'What Not to Use',
+        },
+        {
+          type: 'list',
+          items: [
+            'Red dye or food coloring — completely unnecessary and potentially harmful; the red feeder body is sufficient to attract birds',
+            'Honey — ferments rapidly and can cause fatal fungal infections (Candidiasis); never use in feeders',
+            'Brown sugar, raw sugar, turbinado, or coconut sugar — contain molasses and other compounds that are difficult for hummingbirds to process; stick to plain white cane sugar',
+            'Artificial sweeteners — provide no calories; hummingbirds will abandon a feeder filled with zero-calorie liquid',
+            'Nectar concentrate products — some commercial mixes contain additives, preservatives, or incorrect ratios; mixing fresh 1:4 sugar water is cheaper and safer',
+            'Well water high in minerals — use filtered or tap water; very high mineral content can leave residue and affect palatability',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Nectar Freshness — How Often to Change',
+        },
+        {
+          type: 'p',
+          text: 'Nectar spoilage is temperature-dependent. Fermented or moldy nectar is the leading cause of feeder-related hummingbird illness. When in doubt, change the nectar — the cost of a cup of sugar water is trivial compared to the harm spoiled nectar causes.',
+        },
+        {
+          type: 'table',
+          headers: ['Temperature', 'Change Nectar Every', 'Notes'],
+          rows: [
+            ['Below 60°F', 'Every 5–7 days', 'Cool weather slows fermentation; still check for cloudiness or floating particles'],
+            ['60–70°F', 'Every 3–4 days', 'Moderate fermentation risk; inspect visually at each fill'],
+            ['70–80°F', 'Every 2–3 days', 'Fermentation noticeably faster; nectar may appear cloudy before full spoilage'],
+            ['80–90°F', 'Every 1–2 days', 'High risk; nectar can begin fermenting within 24 hours in full sun; move feeder to shade'],
+            ['Above 90°F', 'Daily', 'Critical — partial fills help so less nectar is wasted with daily changes; shade placement is essential'],
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '🧼',
+          text: 'Deep cleaning protocol: Every time you refill, rinse the feeder with hot water and scrub all surfaces. Every 1–2 weeks (or whenever you see black mold spots), disassemble completely and soak in a 1:10 bleach-to-water solution or undiluted white vinegar for 1–2 hours, then scrub every surface with a bottle brush and port cleaner, rinse thoroughly multiple times, and air-dry completely before refilling. Black mold in feeder ports is a serious health hazard to hummingbirds — it cannot be rinsed away.',
+        },
+        {
+          type: 'h3',
+          text: 'Feeder Placement',
+        },
+        {
+          type: 'list',
+          items: [
+            'Place in partial shade or morning sun only — direct afternoon sun accelerates nectar spoilage significantly',
+            'Hang near tubular flowers so birds moving between feeder and plants encounter your plantings naturally',
+            'Position multiple feeders out of sight of each other — a dominant male cannot guard what he cannot see; this is the most effective strategy for serving more birds',
+            'Keep at least 10–15 feet from windows to prevent collision risk; window-mount feeders are the exception (inches away is safe)',
+            'Hang high enough to be accessible to hummingbirds but reachable by you for cleaning — a feeder you cannot easily remove will not get cleaned often enough',
+            'Avoid placing near ant-prone surfaces; use an ant moat (a water-filled barrier above the hanger) to prevent ants from reaching the nectar',
+          ],
+        },
+      ],
+    },
   ],
 }
