@@ -759,5 +759,83 @@ export const indoorHerbGardenContent = {
         },
       ],
     },
+    {
+      id: 'starting-from-seed',
+      title: 'Section 6: Starting Herbs from Seed',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Growing herbs from seed is inexpensive, gives you access to a much wider variety of herbs and cultivars than any nursery carries, and produces plants that are perfectly adapted to indoor conditions from their first day. It requires more patience and attention than buying transplants, but for herbs you use heavily — basil, cilantro, chives, parsley — seed-starting pays dividends almost immediately.',
+        },
+        {
+          type: 'h3',
+          text: 'Seeds vs. Transplants: When to Choose Each',
+        },
+        {
+          type: 'table',
+          headers: ['Herb', 'Seed or Transplant?', 'Why', 'Germination Time', 'Weeks to First Harvest'],
+          rows: [
+            ['Basil', 'Either; seed is inexpensive and fast', 'Seed-starting gives access to many more varieties; germination quick; transplants available everywhere', '5–10 days at 70°F', '5–7 weeks from seed'],
+            ['Cilantro', 'Seed preferred', 'Cilantro develops a taproot and transplants poorly; direct seeding in final container is best', '7–14 days', '3–4 weeks (harvesting starts early)'],
+            ['Parsley', 'Transplant preferred; seeds viable', 'Parsley seeds germinate very slowly (2–4 weeks); transplants save time', '14–28 days (soak seeds overnight first)', '6–8 weeks from seed; 3–4 weeks from transplant'],
+            ['Chives', 'Either; seed easy and inexpensive', 'Very easy from seed; seed gives you many plants inexpensively', '7–14 days', '8–10 weeks from seed for a good clump'],
+            ['Mint', 'Transplant strongly preferred', 'Mint seeds are tiny, slow, and variable in flavor; named varieties cannot be grown true from seed — they must be propagated vegetatively', 'Variable; not recommended', '4–6 weeks from divisions'],
+            ['Rosemary', 'Transplant preferred; seed very slow', 'Rosemary germinates slowly and inconsistently (30–90 days); plants take 6 months to become useful from seed', '14–45 days (unreliable)', '3+ months from seed; 4–6 weeks from transplant'],
+            ['Thyme', 'Either; seed acceptable', 'Thyme germinates reasonably well; transplants produce faster results', '14–28 days', '8–10 weeks from seed'],
+            ['Oregano', 'Either; seed works well', 'Seed germinates reliably; ensure you buy named culinary varieties (Greek, Italian), not plain O. vulgare which has minimal flavor', '7–14 days', '6–8 weeks'],
+            ['Sage', 'Transplant preferred; seeds fine', 'Seeds work but are slow; transplants more practical for kitchen use', '14–21 days', '8–10 weeks from seed'],
+            ['French Tarragon', 'Transplant only — NEVER seed', 'French tarragon cannot be grown from seed; "tarragon" seeds produce Russian tarragon with no culinary flavor; buy only named French tarragon divisions or cuttings', 'N/A', '4–6 weeks from division'],
+            ['Bay Laurel', 'Transplant or cutting', 'Seeds germinate poorly; slow-growing regardless of method; buy a small nursery plant and grow it on', 'Unreliable (months)', '6–12 months before useful harvest size'],
+            ['Lemon Balm', 'Either; seed excellent', 'Very easy from seed; germinates quickly; inexpensive; a good beginner seed-starting herb', '7–14 days', '6–8 weeks'],
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Never buy "tarragon" seeds. They produce Russian tarragon — a flavorless weed with no culinary value. French tarragon (the herb used in béarnaise sauce and French cooking) cannot be grown from seed. Always buy a division or cutting of named French tarragon.',
+        },
+        {
+          type: 'h3',
+          text: 'Seed Starting Step-by-Step',
+        },
+        {
+          type: 'list',
+          items: [
+            'Choose your containers: Small cell trays, 2-inch pots, or 4-inch pots work well for starting most herb seeds; use larger final pots for herbs like cilantro and parsley that don\'t transplant well.',
+            'Use seed-starting mix: Not regular potting soil — seed-starting mix is finer-textured, lighter, and sterile to prevent damping-off fungal disease. Available at any garden center.',
+            'Plant at the right depth: Plant seeds at a depth equal to 2–3 times their diameter. Tiny seeds (basil, thyme, oregano) are sown on the surface and barely covered. Larger seeds (cilantro, parsley) are pressed 1/4 inch deep.',
+            'Moisten before and after: Moisten the seed-starting mix before filling containers; water gently after sowing using a spray mister to prevent washing seeds away.',
+            'Cover for humidity: A clear plastic dome or plastic wrap over the tray maintains the high humidity that aids germination; remove immediately once seedlings emerge.',
+            'Heat for germination: Most herb seeds germinate best at 65–75°F; a bottom heat mat speeds germination significantly for basil and other warm-season herbs. Cool-season herbs (cilantro, parsley, chervil) germinate well at 60–70°F.',
+            'Light after germination: Seedlings need light immediately upon emergence — grow lights or a bright south window prevents damping-off and leggy seedlings; position lights 2–4 inches above seedling tops.',
+            'Thin to the strongest seedling: When 2 sets of true leaves appear, snip (don\'t pull) the weaker seedlings at soil level, leaving the strongest one per cell.',
+            'Transplant when root-bound: When roots begin circling the bottom of the cell or you can see roots at the drainage holes, it\'s time to move to the final growing container.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Succession Planting: The Key to Continuous Harvest',
+        },
+        {
+          type: 'p',
+          text: 'For herbs that have a short productive life — particularly cilantro, basil (in summer, when it bolts quickly), and dill — succession planting ensures you always have a productive plant on deck when the current one declines. The concept is simple: start a new pot from seed every 2–3 weeks so that by the time one plant bolts or declines, the next is just reaching productive size.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Cilantro succession: Plant a new pot from seed every 2–3 weeks, year-round. Keep 3 pots in rotation: one just planted, one at peak production, one beginning to bolt. Harvest from the peak pot; let the bolting one go to coriander seed; start a new one to replace it.',
+            'Basil succession in summer: In warm conditions, basil bolts quickly even indoors. Start a new basil plant from seed every 4–6 weeks in summer. In winter under grow lights at controlled temperatures, a single basil plant can last 6+ months with proper pinching.',
+            'Parsley succession: Parsley is biennial — after its first year, it bolts and dies. Start a new parsley plant annually, keeping one plant in production at all times.',
+            'Chives succession: Chives grow from bulbs and are very long-lived; they don\'t need succession planting. Simply let the clump grow and divide it annually to make more plants.',
+            'The succession planting calendar: Keep a small notebook or phone note tracking when each herb pot was started. Set reminders to start the next succession when needed. Within 2–3 rotation cycles, succession planting becomes automatic.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌱',
+          text: 'The most reliable succession planting system: keep a small bag of cilantro seeds on your kitchen counter. Every time you harvest the last of a cilantro plant, immediately sow a new pot. No calendar needed — the harvest itself is the reminder.',
+        },
+      ],
+    },
   ],
 }
