@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 47 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 48 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. Online ordering is a placeholder (coming soon); the "Add to Cart" button links visitors to the Contact page for custom orders.
 
@@ -76,7 +76,8 @@ Garden-Landscape-Expert/
 │       ├── Weed_Management_Guide.png
 │       ├── Indoor_Houseplants_101_Guide.png
 │       ├── four-season-garden.png
-│       └── hummingbird-garden.png  # 39 images total — all live guides have a hero image
+│       ├── hummingbird-garden.png
+│       └── sunroom-plants.png  # 40 images total — all live guides have a hero image
 └── src/
     ├── app/                         # Next.js App Router — one folder per route
     │   ├── layout.jsx               # Root layout — dark mode script, GTM, Nav, footer, GA4/AdSense via next/script
@@ -393,6 +394,7 @@ Thirty-six full guides integrated into the app:
 - `src/data/guide-content/rabbit-proof-garden.js` — Rabbit-Proof Garden (`id: 'rabbit-proof'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/four-season-garden.js` — Four-Season Garden Design (`id: 'four-season-garden'`) — **complete** (all 10 sections built)
 - `src/data/guide-content/hummingbird-garden.js` — Hummingbird Garden (`id: 'hummingbird-garden'`) — **complete** (all 8 sections built)
+- `src/data/guide-content/sunroom-plants.js` — Sunroom Plants (`id: 'sunroom-plants'`) — **complete** (all 7 sections built)
 - `src/components/guides/GuideDetail.jsx` — Renders guide content with sections, paragraphs, tips, warnings, lists, tables, and affiliate product cards
 
 ### Dynamic SEO + Google Tag Manager ✅
@@ -1099,6 +1101,24 @@ Theme: lime/green gradient in `GuideDetail.jsx`; hero image: `public/guides/orga
 | Getting Started Action Plan | ✅ Done | One Week plan (4 items); One Month plan (6 items); One Full Season plan (6 items); closing reflection paragraph; start-small tip callout |
 
 Theme: red/rose gradient in `GuideDetail.jsx`; hero image: `public/guides/hummingbird-garden.png`; `comingSoon: false` under Specialty Gardens in `guides.js`; wired in `src/data/guide-content/index.js`
+
+---
+
+### Sunroom Plants Guide ✅
+
+`src/data/guide-content/sunroom-plants.js` — Sunroom Plants (`id: 'sunroom-plants'`); fully built from `sunroom-plants.docx` — 7 sections covering sunroom assessment through a getting started plant collection.
+
+| Section | Status | Notes |
+|---|---|---|
+| Section 1: Understanding Your Sunroom | ✅ Done | 5-row orientation table (South through Mixed); glass type list (5 types); 6-row temperature range table; min/max thermometer tip; humidity solutions list (5 items); 4-row light levels table; seasonal light drop warning callout |
+| Section 2: The Best Sunroom Plants | ✅ Done | Category 1: 5-row Statement Makers table (Bird of Paradise through Plumeria); Category 2: 12-row Lush Foliage table; Category 3: 7-row Orchids table; Category 4: 6-row Bromeliads table; Category 5: 10-row Easy Winners table with difficulty ratings; Category 6: 8-item Fragrant Plants list; layered collection tip |
+| Section 3: Sunroom Plant Care | ✅ Done | Watering 6-item list + self-watering pot tip; 7-row potting mix table; fertilizing 7-item list; repotting 5-item list; 8-row pest/disease table (spider mites through leaf scorch); new plant quarantine warning |
+| Section 4: Designing the Lush Sunroom Garden | ✅ Done | 4-row layering principle table (floor through ceiling); container selection 7-item list; 3-row plant combinations table (Tropical Statement, Lush Green Retreat, Orchid & Bromeliad); practical considerations 5-item list |
+| Section 5: Managing Your Sunroom Plant Collection Year-Round | ✅ Done | Spring 6-item list; Summer 7-item list; Fall 7-item list (including orchid bud-set temperatures); 4-row winter regional table (Zones 3–5 through 10–11); emergency cold protection warning callout |
+| Quick Reference: 50 Best Sunroom Plants at a Glance | ✅ Done | 50-row plant table (light, min temp, humidity, size, primary appeal, difficulty); organized from most light-demanding to most shade-tolerant; plant selection tip |
+| Getting Started: Building Your Sunroom Garden | ✅ Done | 5-item essential first collection list; The Long View — 2 closing paragraphs; closing tip callout with guiding principles |
+
+Theme: amber/yellow gradient in `GuideDetail.jsx`; hero image: `public/guides/sunroom-plants.png`; `comingSoon: false` under Container & Small Spaces in `guides.js`; wired in `src/data/guide-content/index.js`
 
 ---
 
