@@ -87,5 +87,110 @@ export const rainGardenContent = {
         },
       ],
     },
+    {
+      id: 'siting-and-sizing',
+      title: 'Section 2: Siting and Sizing',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The single most important decision in rain garden design is where you put it. Location determines whether the garden receives runoff effectively, drains properly, avoids potential harm to structures, and integrates gracefully into your landscape. Spend more time on siting than on any other planning step — a poorly located rain garden is at best ineffective and at worst damaging.',
+        },
+        {
+          type: 'h3',
+          text: 'The Non-Negotiable Siting Rules',
+        },
+        {
+          type: 'table',
+          headers: ['Rule', 'Minimum Distance / Requirement', 'Why It Matters'],
+          rows: [
+            ['Distance from house foundation', 'Minimum 10 feet; 15–25 feet recommended', 'Water infiltrating near your foundation can migrate into a basement or crawlspace; the most critical safety rule'],
+            ['Distance from septic system', 'Minimum 25 feet from septic tank; 50–100 feet from drain field', 'Saturating soil near a septic system can cause system failure; check local codes as requirements vary by state and county'],
+            ['Distance from well', 'Minimum 50–100 feet from drinking water well', 'Protects drinking water from potential contaminants in stormwater; check local well setback requirements'],
+            ['Distance from buried utilities', 'Minimum 5 feet from any buried utility line; call 811 before excavating', 'Digging into utility lines is dangerous and expensive; 811 is free and legally required in most states before any excavation'],
+            ['Distance from property line', 'Minimum 2–5 feet from property line; check local codes', 'Prevents runoff from being directed onto neighboring property'],
+            ['Slope of site', 'Best: gentle natural slope of 2–12% leading water to the garden', 'Steeper slopes create faster, more erosive water flow; may require terracing or a bioswale inlet to convey water safely'],
+            ['Soil drainage', 'Soil must drain at least 0.5 inches per hour; always test before building', 'Clay soils that drain too slowly create standing water longer than 48 hours, causing plant death and mosquito problems'],
+            ['Flood plain / wetland', 'Do not build in FEMA-designated flood plains or regulated wetlands without permits', 'May be prohibited, and can expose rain gardens to overwhelming flood volumes they are not designed to handle'],
+            ['Overhead utilities', 'Keep large trees at least 20 feet from overhead power lines', 'Large trees near power lines require frequent trimming or pose safety hazards; choose appropriately sized plants near utilities'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Finding the Best Location on Your Property',
+        },
+        {
+          type: 'list',
+          items: [
+            'Observe your yard during or after heavy rain: Watch where water flows, where it pools, and what path it takes. This natural drainage pattern tells you where a rain garden will receive water most easily.',
+            'Identify your primary contributing drainage area: What surfaces drain to the location you\'re considering? A roof downspout, a section of driveway, a sloped lawn area, or a combination? Knowing the contributing area is essential for sizing.',
+            'Look for natural low spots: Existing depressions, areas where grass stays green longer after rain, or spots where water puddles briefly after a storm are natural candidates — they already receive runoff and may only need modest reshaping.',
+            'Consider visibility and aesthetics: A well-planted rain garden is a garden feature worth showcasing. Front yard placement near a downspout is increasingly popular — it demonstrates environmental responsibility visibly and adds curb appeal.',
+            'Check sun exposure: Most rain garden plants prefer full sun (6+ hours). Shaded locations under trees limit your plant palette and may slow infiltration due to root competition.',
+            'Consider overflow: Every rain garden needs an overflow path for storms that exceed its capacity. Identify where overflow would naturally flow and ensure it will not cause erosion or flood neighboring properties.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'How to Size Your Rain Garden',
+        },
+        {
+          type: 'p',
+          text: 'Sizing a rain garden correctly is the most technical part of the design process — but it doesn\'t require an engineering degree. The goal is to size the rain garden so that it can hold and infiltrate the runoff from a 1-inch design storm from its contributing drainage area within 24–48 hours.',
+        },
+        {
+          type: 'h3',
+          text: 'Step 1: Calculate Your Drainage Area',
+        },
+        {
+          type: 'list',
+          items: [
+            'Roof area: Measure the footprint of the roof section draining to the relevant downspout (typically 500–1,500 sq ft per downspout)',
+            'Driveway/patio: Measure the full impervious surface area that slopes toward the garden location',
+            'Lawn area: Measure any lawn sections that slope into the proposed area; multiply by 0.3 (lawns shed only about 30% of rainfall as runoff)',
+            'Add these together for your total contributing drainage area in square feet',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Step 2: Determine Your Soil Infiltration Rate',
+        },
+        {
+          type: 'table',
+          headers: ['Soil Type', 'Infiltration Rate', 'Description', 'Sizing Factor', 'Amendment Needed?'],
+          rows: [
+            ['Sandy / Gravelly', '1.0–3.0+ in/hr', 'Gritty texture; drains within minutes to hours; does not clump; common in coastal plains, river valleys, and arid West', '20–25% of drainage area', 'Add organic matter to improve water retention and filtration capacity'],
+            ['Sandy Loam', '0.5–1.0 in/hr', 'Good all-around soil; crumbles easily; ideal for rain gardens', '25–30% of drainage area', 'Minimal — add compost for plant establishment'],
+            ['Loam / Silt Loam', '0.3–0.5 in/hr', 'Balanced mineral mix; moderate drainage; common across Midwest and Mid-Atlantic', '30–35% of drainage area', 'Moderate — adding 30–40% coarse sand improves drainage; or use rain garden mix in excavated area'],
+            ['Clay Loam', '0.1–0.3 in/hr', 'Significant clay content; the most common home garden soil type', '35–45% of drainage area', 'Yes — excavate 18–24 inches and backfill with rain garden soil mix'],
+            ['Clay (heavy)', 'Below 0.1 in/hr', 'Sticky, plastic when wet; cracks when dry; very slow drainage; common in Southeast, Midwest, and coastal areas', '45–60% or engineered underdrain', 'Required — excavate 24–36 inches; backfill with amended mix; may need perforated underdrain pipe'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '📐',
+          text: 'Step 3 — The Sizing Formula: Rain Garden Area (sq ft) = Contributing Drainage Area (sq ft) × Sizing Factor. Example: 1,000 sq ft roof with loam soil (factor 0.30) = 300 sq ft rain garden. Example: 800 sq ft driveway with clay loam soil (factor 0.40) = 320 sq ft rain garden.',
+        },
+        {
+          type: 'h3',
+          text: 'The Critical Soil Infiltration Test',
+        },
+        {
+          type: 'list',
+          items: [
+            'Dig a 12-inch deep hole at your proposed location',
+            'Fill the hole completely with water and let it drain fully — this pre-saturates the soil to simulate conditions after a prolonged rain',
+            'Fill the hole again to 12 inches; mark the water surface level',
+            'After 1 hour, measure how much the water level has dropped. A drop of 0.5 inches or more indicates suitable soil.',
+            'If less than 0.5 in/hr: excavate and backfill with amended rain garden soil mix, or install an underdrain system',
+            'If more than 6 in/hr (very sandy): add organic matter to slow infiltration and improve filtration capacity',
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '📍',
+          text: 'Know Before You Dig — Call 811: Before any excavation, call 811 (the national "Call Before You Dig" number) or visit 811.com. This is free and legally required in most states. Utility companies will mark buried electrical, gas, water, sewer, and telecommunications lines within a few business days. Digging into an unmarked utility line is extremely dangerous. Always call first.',
+        },
+      ],
+    },
   ],
 }
