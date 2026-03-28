@@ -1144,6 +1144,29 @@ Theme: teal/green gradient in `GuideDetail.jsx`; hero image: `public/guides/indo
 
 ---
 
+### Rain Garden Guide ✅
+
+`src/data/guide-content/rain-garden.js` — Starting a Rain Garden (`id: 'rain-garden'`); fully built from `rain-garden.docx` — 12 sections covering stormwater science through a complete planning checklist and closing reflection.
+
+| Section | Status | Notes |
+|---|---|---|
+| Overview: What Is a Rain Garden? | ✅ Done | Stormwater problems 5-row comparison table (conventional lawn → full xeriscape); 7-row feature comparison table (rain garden vs. pond, bog, bioswale, etc.); incentives tip callout |
+| Section 1: Siting & Sizing | ✅ Done | 9-row siting rules table; location guidance list; sizing formula (drainage area × soil factor); 5-row soil infiltration table; 6-step perc test; Call 811 warning callout |
+| Section 2: Design & Construction | ✅ Done | 8-row anatomy table (berm, bowl, inlet, overflow, zones, soil, mulch, plants); soil mix formulas (standard + clay + sandy variants); state guidance tip; 12-step construction guide; timing tip |
+| Section 3: Connecting Water | ✅ Done | 3 downspout connection methods (flex pipe, buried PVC, rain chain + splash basin) with steps/costs; driveway routing guidance; 7-row bioswale design table; dry creek beds; design tip |
+| Section 4: Planting | ✅ Done | 3-zone table (wet/transitional/dry-berm); local ecotype tip; 5 regional plant tables (Midwest/Great Lakes 13 plants, Mid-Atlantic/Southeast 7, Prairie 6, Pacific Coast/Mountain West 6, Desert SW 5); 10-row universal plants table |
+| Section 5: Aesthetic Design Principles | ✅ Done | Shape and form list (5 items — naturalistic curves, aspect ratio, placement, edge treatment, hardscape integration); planting design list (6 items — rule of threes, height layering, seasonal sequence, repetition, contrast, grass backbone); 5-row seasonal interest table; landscape integration list (5 items); storytelling tip |
+| Section 6: Costs, Budgeting & DIY vs. Hiring | ✅ Done | 12-row cost breakdown table (components from soil testing through professional design); 4-row total project estimates ($250–$15,000+); incentives tip; 6-row DIY vs. professional decision table; contractor vetting 6-item list |
+| Section 7: Maintenance & Long-Term Care | ✅ Done | Year 1 establishment 5-item list; 10-row annual maintenance calendar (early spring through ongoing); 9-row common problems/solutions table (slow drainage, erosion, mosquitoes, invasives, sediment) |
+| Section 8: Regional Rain Garden Guide | ✅ Done | 10-row regional table (New England, Mid-Atlantic, Southeast, Gulf Coast/Texas, Great Lakes/Upper Midwest, Great Plains, Mountain West, Pacific Northwest, California, Desert SW) with rainfall pattern, soil challenge, sizing notes, seasonal design notes, and key resources |
+| Section 9: Green Infrastructure Integration | ✅ Done | Rain barrels/cisterns (connection, capacity, mosquito control, legal); 5-row permeable paving table (PICP, permeable concrete, gravel, stepping stones, DG); native lawn alternatives 4-item list; neighborhood-scale networks 4-item list |
+| Section 10: Permits, Regulations & Resources | ✅ Done | 5-item permit trigger list; 7-row resources table (Extension, DNR, water utilities, NRCS, native plant societies, regional programs, city programs); national online resources tip |
+| Section 11: Quick Reference & The Bigger Picture | ✅ Done | 30-row planning checklist (Planning → Site Selection → Site Assessment → Design → Materials → Construction → Connection → Planting → Establishment → Ongoing → Integration); 3-paragraph closing reflection; closing tip callout |
+
+Theme: sky/teal gradient in `GuideDetail.jsx`; hero image: `public/guides/rain-garden.png`; `comingSoon: false` under Eco & Sustainability in `guides.js`; wired in `src/data/guide-content/index.js`
+
+---
+
 ### Typography Upgrade ✅
 
 Raleway (headings) and Lato (body) loaded via `next/font/google` in `src/app/layout.jsx`.
