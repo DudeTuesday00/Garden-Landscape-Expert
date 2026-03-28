@@ -527,5 +527,78 @@ export const rainGardenContent = {
         },
       ],
     },
+    {
+      id: 'aesthetic-design',
+      title: 'Section 6: Aesthetic Design Principles',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A rain garden that looks like a maintenance lapse — a weedy muddy depression — fails its owner in a different way than one that fails to drain. A rain garden designed with aesthetic intention is not just more pleasant to live with — it is also more likely to earn neighborhood converts, because beautiful things inspire imitation. The good news is that rain garden aesthetics and function are not in tension. The same principles that make a rain garden work beautifully — layered planting, seasonal interest, naturalistic form — are the same principles that make it look like a thoughtfully designed garden.',
+        },
+        {
+          type: 'h3',
+          text: 'Shape and Form: The Foundation of Appearance',
+        },
+        {
+          type: 'list',
+          items: [
+            'Naturalistic curves: Use a garden hose to lay out the shape before marking or digging; adjust until the curve looks natural from multiple vantage points — the kitchen window, the street, and the back porch. Kidney, crescent, and teardrop shapes integrate more gracefully than circles or rectangles.',
+            'Aspect ratio: Rain gardens look best when wider than they are deep — a roughly 2:1 width-to-depth ratio (as read from above) is pleasing. A very narrow elongated shape reads as a ditch; a very wide shallow shape reads as a mulched area.',
+            'Placement in the landscape: A rain garden placed at the natural terminus of a slope reads as appropriate; one placed seemingly at random on flat ground looks puzzling unless the water source (dry creek, bioswale, visible downspout pipe) is evident. Connect the rain garden visually to its water source.',
+            'Edge treatment: The transition between rain garden and surrounding lawn is as important as the garden itself. A clean, crisp edge (maintained with a flat spade) communicates "intentional garden." A ragged or undefined edge reads as "neglected area." Edge once per season.',
+            'Hardscape integration: A simple pathway of stepping stones around or through a larger rain garden allows access for maintenance and viewing. A small bench near a beautiful rain garden with fragrant natives turns it from a stormwater feature into a garden destination.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Planting Design: Creating a Composed Garden',
+        },
+        {
+          type: 'list',
+          items: [
+            'Use the rule of threes and fives: Plant in groups of 3, 5, or 7 of the same species rather than planting one of everything. A mass of seven switchgrasses creates a visual anchor; seven individual specimens of seven different species creates a chaotic collection.',
+            'Layer by height: Tallest plants (Joe-pye weed, cup plant, buttonbush) at the back or center; medium height (blazing star, coneflower, asters) in the middle; low spreading plants (soft rush, creeping sedges) at the front edges.',
+            'Plan for seasonal sequence: The best-designed rain gardens bloom from spring through late fall. Early: wild columbine, blue flag iris → midsummer: cardinal flower, blazing star, bergamot → late summer: coneflower, aster, joe-pye → fall: seedheads and copper-orange grasses for winter structure.',
+            'Repeat key plants: A single species repeated in multiple spots creates visual rhythm and unity. Switchgrass appearing three times through a garden ties the composition together.',
+            'Contrast form and texture: Pair fine-textured grasses with bold-leafed perennials (Joe-pye with prairie dropseed; cardinal flower with switchgrass). The contrast makes both plants more interesting.',
+            'Use native grasses as the backbone: Ornamental grasses provide year-round structure, movement, and winter interest. A rain garden designed around a grass backbone — with flowering perennials filling in around it — holds its visual integrity through every season.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Seasonal Interest: Something Beautiful Every Month',
+        },
+        {
+          type: 'table',
+          headers: ['Season', 'What Provides Interest', 'Key Plants', 'Design Emphasis'],
+          rows: [
+            ['Early Spring (Mar–Apr)', 'Early bulbs; emerging perennial foliage; fresh green of new growth', 'Wild columbine, early blue flag iris, emerging switchgrass, native bulbs', 'The freshness of new growth is itself beautiful; let the native emergence be the show'],
+            ['Late Spring (May–Jun)', 'First major bloom flush; blue flag iris at full bloom', 'Blue flag iris, wild columbine, baptisia, cardinal flower beginning', 'Peak color relative to the season; often the most photographed moment in a rain garden'],
+            ['Midsummer (Jul–Aug)', 'Peak bloom; maximum wildlife activity; hummingbirds, butterflies, and native bees at their busiest', 'Cardinal flower, swamp milkweed, blazing star, joe-pye weed, switchgrass plumes emerging', 'The most abundant season; ensure enough late-blooming plants to maintain interest into fall'],
+            ['Late Summer / Fall (Sep–Oct)', 'Aster bloom; monarch migration; seed development; grass color turning copper and orange', 'New England aster, goldenrod, sneezeweed, switchgrass copper, little bluestem orange', 'One of the most spectacular seasons — the fall color of native grasses rivals any ornamental tree'],
+            ['Winter (Nov–Feb)', 'Seedhead structure; dried grass plumes; snow accumulation on standing stems; bird feeding activity', 'Switchgrass, coneflower seedheads, joe-pye dried heads, soft rush', 'Leave all stems standing through winter: structural beauty in snow, critical bird food, and insect overwintering habitat'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Integrating the Rain Garden into the Existing Landscape',
+        },
+        {
+          type: 'list',
+          items: [
+            'Connect to existing planting beds: Where possible, design the rain garden to flow organically into adjacent beds rather than sitting as an island in lawn. This creates a larger overall garden space and makes both features look more intentional.',
+            'Match materials: If your home uses certain stone types in its architecture, use the same stone family for inlet rock armoring, dry creek bed cobbles, or stepping stones. Material consistency ties the rain garden to the house aesthetically.',
+            'Consider the view from inside: The window you look out of most — kitchen sink, home office, living room — should be considered in rain garden placement. A rain garden visible from your most-used vantage point pays daily aesthetic dividends.',
+            'Front yard considerations: Front yard rain gardens face additional scrutiny. A small interpretive sign explaining what it is and why it\'s there transforms confusion into curiosity and often inspires neighbors to do the same.',
+            'HOA and neighborhood context: In neighborhoods with formal landscape norms, a rain garden can be designed to look entirely conventional from a distance — a simple depression with native plants looks almost identical to a traditional perennial border when well-maintained. The key is edge definition and visible care.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🎨',
+          text: 'The most beautiful rain garden systems tell a story: the water\'s journey from roof to rain chain to dry creek bed to planted garden is legible, intentional, and beautiful at every step. Design the whole system — not just the garden in isolation — and the result will be a landscape feature that educates and inspires everyone who sees it.',
+        },
+      ],
+    },
   ],
 }
