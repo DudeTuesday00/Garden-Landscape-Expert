@@ -600,5 +600,87 @@ export const rainGardenContent = {
         },
       ],
     },
+    {
+      id: 'costs-and-budgeting',
+      title: 'Costs, Budgeting & DIY vs. Hiring',
+      blocks: [
+        {
+          type: 'p',
+          text: 'One of the most common frustrations for homeowners researching rain gardens is the absence of honest cost information. Guides describe the technique in detail but leave readers with no idea whether they\'re planning a $200 weekend project or a $5,000 contractor engagement. The answer is both — and everything in between — depending on garden size, soil conditions, DIY vs. professional labor, and plant sourcing choices.',
+        },
+        {
+          type: 'h3',
+          text: 'Cost Breakdown by Component',
+        },
+        {
+          type: 'table',
+          headers: ['Component', 'DIY Cost Range', 'Contractor Cost Range', 'Notes'],
+          rows: [
+            ['Soil testing (perc test + lab soil test)', '$0–80', 'N/A — do this yourself', 'DIY perc test is free; professional lab soil test through county extension is $15–50 and worth it for unknown soils; skip professional lab if you know your soil type'],
+            ['Soil mix materials (per 100 sq ft, 18" deep)', '$150–300', '$300–600 installed', 'Coarse sand: $40–80/cubic yard; compost: $30–60/cubic yard; a 200 sq ft garden needs approximately 3–4 yards of mix total'],
+            ['Excavation (100–300 sq ft garden)', '$0 (hand digging)', '$200–800 (mini-excavator or hand labor)', 'A 300 sq ft garden at 18" depth = approximately 14 cubic yards of soil to move; most homeowners can hand-dig a 100–150 sq ft garden over 1–2 weekends'],
+            ['Mini-excavator rental (if needed)', '$200–350/day', 'Included in labor', 'Most rental companies require a credit card but no special license; mini-excavators are surprisingly easy to operate; consider for gardens larger than 150 sq ft'],
+            ['Plants (per 100 sq ft of garden)', '$75–250 (bare-root and plugs)', '$200–500 (1-gallon containers installed)', 'Buying bare-root or plug-size native plants from native plant societies or specialty nurseries reduces cost 50–75% vs. 1-gallon containers'],
+            ['Mulch (2–3 in layer over rain garden)', '$30–80 (self-haul bulk)', '$80–180 (delivered)', 'Bulk shredded hardwood mulch is far less expensive than bagged; most municipalities offer free wood chip mulch programs (call parks department)'],
+            ['Inlet rock armoring (river rock)', '$30–80', '$100–200 installed', 'River rock or cobble (2–4 in size); typically 1–2 tons for a residential installation; local stone yards much less expensive than bagged stone'],
+            ['Downspout connection — flex pipe method', '$30–80', '$150–300 installed', 'Flexible corrugated pipe, elbow fittings, pop-up emitter; the simplest connection method'],
+            ['Downspout connection — buried PVC method', '$100–250', '$300–600 installed', 'Solid PVC pipe, fittings, trench excavation; more permanent and attractive than surface flex pipe'],
+            ['Dry creek bed or bioswale (per 20 linear feet)', '$100–300 DIY', '$400–900 installed', 'River rock, landscape fabric (optional), plants alongside; adds significant aesthetic value'],
+            ['Underdrain system (if needed in clay soils)', '$100–300 materials', '$400–900 installed', '4-in perforated PVC, gravel, clean-outs; only needed in heavy clay that fails the perc test; adds significant drainage capacity'],
+            ['Professional design/consultation', 'N/A', '$300–1,500 for site design', 'Most cooperative extension offices and some municipalities offer free or low-cost design assistance; worth it for complex sites'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Total Project Cost Estimates',
+        },
+        {
+          type: 'table',
+          headers: ['Project Type', 'Garden Size', 'Description', 'DIY Total', 'Contractor Total'],
+          rows: [
+            ['Minimal starter garden', '100–150 sq ft', 'Hand-dug; basic soil amendment; plug plants from native plant sale; flex pipe downspout connection; hand-spread mulch', '$250–500', '$800–1,500'],
+            ['Mid-size standard garden', '200–300 sq ft', 'Mini-excavator or contractor excavation; full soil mix replacement; 1-gallon native plants from nursery; buried PVC downspout connection; bulk mulch', '$600–1,200', '$2,000–4,000'],
+            ['Large garden with features', '300–500 sq ft', 'Full excavation; engineered soil mix; dry creek bed or bioswale connection; professionally sourced native plants; rock work; underdrain if needed', '$1,000–2,500', '$4,000–8,000'],
+            ['Complex/challenging site', 'Any size with clay soils, large drainage area, or steep grade', 'Soil amendment, underdrain, professional design, extensive rock work, engineered overflow structure', '$1,500–4,000', '$5,000–15,000+'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '💵',
+          text: 'Before finalizing your budget, research available rebates and incentives. A $500 municipal rebate on a $1,000 DIY project reduces your out-of-pocket cost to $500 — halving the effective cost. Some utilities and state programs cover 50–100% of costs for qualifying installations. Free plant giveaways from native plant societies can reduce the plant budget to near-zero. Factor incentives into your planning before assuming the project is out of budget.',
+        },
+        {
+          type: 'h3',
+          text: 'DIY vs. Hiring a Professional: An Honest Guide',
+        },
+        {
+          type: 'table',
+          headers: ['Situation', 'DIY or Professional?', 'Why'],
+          rows: [
+            ['Small garden (under 150 sq ft), good soil drainage, flat or gentle slope, simple downspout connection', 'DIY — ideal candidate', 'Manageable excavation by hand over 1–2 weekends; straightforward construction; low risk of error; a great weekend project that teaches you about your land'],
+            ['Medium garden (150–300 sq ft), average soil conditions, moderate slope, buried pipe connection', 'DIY with mini-excavator rental, or hybrid approach', 'Rent a mini-excavator for the excavation portion; do planting and finishing yourself; saves 40–60% of contractor cost while removing the most physically demanding work'],
+            ['Large garden (300+ sq ft), or any size with very heavy clay soil that needs underdrain', 'Professional excavation + DIY planting', 'Excavation and soil replacement at this scale is beyond practical DIY; hire a contractor for construction and do planting yourself — this hybrid reduces cost while preserving the most personally meaningful part of the project'],
+            ['Complex site: steep slopes, near foundation concerns, large drainage area, formal front yard', 'Professional design and construction', 'The risk of error on complex sites — erosion, foundation issues, aesthetics that miss HOA standards — justifies professional involvement; hire a landscape architect for design even if a general contractor does the labor'],
+            ['Budget is the primary constraint', 'DIY with patience and native plant society plants', 'A small rain garden (100 sq ft) built over several weekends with plug plants from a native plant society sale can be built for $200–400 in materials — start small and expand later'],
+            ['You want to learn the process and engage with your land', 'DIY regardless of garden size', 'There is genuine value in understanding how water moves through your property, what your soil is like, and which plants succeed in your conditions. DIY installation teaches you your land in a way no contractor visit can replicate.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Finding and Working with a Rain Garden Contractor',
+        },
+        {
+          type: 'list',
+          items: [
+            'Ask your local cooperative extension service: Extension offices often maintain lists of landscapers trained in native plants and stormwater management; they may also offer a referral service for rain garden installers.',
+            'Contact your state\'s professional landscape organization: State chapters of the American Society of Landscape Architects (ASLA) or the Association of Professional Landscape Designers (APLD) can provide referrals to designers with native plant and stormwater experience.',
+            'Ask for photos of previous rain gardens: A contractor who can\'t show you photos of rain gardens they\'ve previously installed has probably not built many; review their work and talk to previous clients.',
+            'Confirm they understand native plants: Ask specifically which native plant species they recommend for your region and why; a contractor who recommends only non-native ornamentals doesn\'t understand the project.',
+            'Get the soil mix specification in writing: Ask what soil mix they plan to use and get it specified in the contract; this is the most important material in the project and should be clearly defined.',
+            'Ask about the overflow design: A contractor who hasn\'t thought about overflow is not thinking about your project correctly; the overflow design is a non-negotiable component of any rain garden.',
+          ],
+        },
+      ],
+    },
   ],
 }
