@@ -192,5 +192,75 @@ export const rainGardenContent = {
         },
       ],
     },
+    {
+      id: 'design-and-construction',
+      title: 'Section 3: Design and Construction',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Rain garden construction follows a logical sequence: design the shape and cross-section, excavate the bowl, build the berm, prepare and install the soil, create an overflow structure, and install plants. Each step is achievable by a homeowner with basic tools over a weekend, though larger gardens or those in challenging soils may benefit from professional assistance.',
+        },
+        {
+          type: 'h3',
+          text: 'Anatomy of a Rain Garden',
+        },
+        {
+          type: 'table',
+          headers: ['Component', 'Description', 'Key Detail'],
+          rows: [
+            ['Inlet area', 'The upslope edge or point where water enters the garden — a simple opening in the berm, a splash pad of river rock, or a constructed inlet channel', 'Must slow incoming water to prevent erosion; use rocks, river gravel, or dense vegetation at the point of entry'],
+            ['Garden bowl', 'The excavated, flat-bottomed depression that holds water temporarily; should be level from side to side', 'Depth: 4–8 inches below surrounding grade. Deeper bowls take longer to drain and cause root problems — deeper is not better.'],
+            ['Amended soil layer', 'The specially prepared growing medium that fills the bowl: fast-draining, organically rich, and appropriate for the plants selected', 'Typically 18–24 inches deep; the most important component of rain garden function'],
+            ['Native soil subgrade', 'The undisturbed native soil below the amended layer; does its own infiltration work in well-draining soils', 'In clay soils, a transition gravel layer between amended soil and clay subgrade improves drainage'],
+            ['Berm (downslope edge)', 'The raised earthen edge on the low side of the garden, built from the excavated soil; typically 6–12 inches above surrounding grade', 'Plant the berm with sturdy, erosion-resistant natives that handle both dry conditions and periodic wet feet'],
+            ['Overflow structure', 'A designed overflow for storms exceeding capacity — a rock-armored spillway in the berm, a pipe outlet, or a bioswale leading overflow to a safe discharge point', 'Every rain garden must have a designed overflow; failure to provide one leads to berm failure in large storms'],
+            ['Inlet pipe / downspout connection', 'For roof runoff, extended downspout pipe carries water to the rain garden inlet; buried or protected from damage', 'Ensure pipe is disconnected from the storm sewer — see Section 4 for full connection guidance'],
+            ['Mulch layer', '2–3 inch layer of shredded hardwood mulch covers the soil surface in the bowl (not the berm)', 'Use chunky shredded hardwood that knits together — not fine bark that floats away in storm flows'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Rain Garden Soil Mix: The Critical Component',
+        },
+        {
+          type: 'list',
+          items: [
+            'Standard Rain Garden Soil Mix (for most sites): 50–60% coarse sand (concrete sand or washed torpedo sand — NOT fine beach sand or play sand, which compact and clog); 20–30% compost (finished, mature compost — not fresh manure or wood chips); 20–25% existing topsoil or native soil (adds biological activity and soil microbes). The mix should be loose, crumbly, and drain quickly when squeezed in your hand.',
+            'High-Performance Mix (for heavy clay or high-pollution sites): 50% coarse sand or 3/8-inch washed gravel for maximum drainage; 30% compost; 20% native soil or biochar (biochar improves filtration of heavy metals and hydrocarbons).',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '📄',
+          text: 'State-Specific Soil Mix Guidance: Many state cooperative extension services and stormwater programs publish region-specific rain garden soil mix specifications. Search "[your state] rain garden guide PDF" or check your state\'s Department of Environmental Quality, Department of Natural Resources, or land-grant university extension website for downloadable specifications tailored to local conditions.',
+        },
+        {
+          type: 'h3',
+          text: 'Step-by-Step Construction',
+        },
+        {
+          type: 'list',
+          items: [
+            'Mark the rain garden outline: Use marking paint, flour, or a garden hose to mark the shape. Kidney, teardrop, and crescent shapes work well — avoid perfect circles or squares, which look artificial.',
+            'Remove existing turf and vegetation: Strip sod within the bowl area; compost or use it to reinforce the berm.',
+            'Excavate the bowl: Dig to the design depth. Keep the bottom as level as possible from side to side — use a carpenter\'s level or laser level to check. The bottom should be flat, not sloped or rounded.',
+            'Build the berm: Pile excavated soil on the downslope side, compacting in 4–6 inch layers by tamping firmly. Berm top should be 6–8 inches above the surrounding grade. Slope berm sides at 3:1 (horizontal:vertical) to resist erosion.',
+            'Install underdrains if needed: In heavy clay soils, lay 4-inch perforated PVC pipe in a 6-inch gravel bed at the bottom of the excavation before adding soil mix. Outlet should discharge to a safe location downslope.',
+            'Install transition layer (clay soils): Spread a 4–6 inch layer of pea gravel or 3/8-inch washed stone directly on the excavated bottom before adding soil mix.',
+            'Fill with rain garden soil mix: Add prepared soil mix to design depth. The soil surface should be 4–6 inches below the top of the berm. Tamp lightly — do not compact aggressively.',
+            'Create the inlet: At the upslope entry point, line the inlet area with river rock or pea gravel 12–18 inches wide to absorb the energy of incoming water.',
+            'Create the overflow: At the downslope end of the berm, create an armored spillway lined with large river rock (3–5 inch stone set 6 inches deep) that channels overflow safely away.',
+            'Install plants: Plant while soil is moist but not saturated; water in thoroughly. See Section 5 for plant selection guidance.',
+            'Apply mulch: Cover all bare soil with 2–3 inches of shredded hardwood mulch; keep mulch away from plant crowns.',
+            'Test with a hose: Before the first real rain, run a garden hose into the inlet for 30 minutes. Observe water entry, distribution, and overflow function. Make adjustments before plants are established.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌧️',
+          text: 'Timing Your Installation: The best time to build a rain garden is late summer through fall in most U.S. regions — soil is workable, temperatures are moderate for plant establishment, and fall rains help plants root before winter. Spring is the second-best option. In the Southeast and Gulf Coast, late fall through winter is ideal. Avoid building during frozen ground, drought, or during heavy-rain periods when soils are saturated.',
+        },
+      ],
+    },
   ],
 }
