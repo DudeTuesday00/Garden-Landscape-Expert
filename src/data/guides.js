@@ -515,7 +515,7 @@ export const guideCategories = [
         title: 'Rain Garden',
         emoji: '🌧️',
         description: 'Turn runoff into an asset with a planted depression that filters and absorbs water.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'butterfly-garden',
