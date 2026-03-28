@@ -262,5 +262,135 @@ export const rainGardenContent = {
         },
       ],
     },
+    {
+      id: 'connecting-water',
+      title: 'Section 4: Connecting Water to Your Rain Garden',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A rain garden sitting next to a functioning storm sewer is a decorative garden, not a stormwater feature. The transformative step — the one that makes a rain garden actually work — is disconnecting runoff sources from the storm sewer and routing them into the garden. This section covers how to do that for the three most common water sources: roof downspouts, driveways and paved surfaces, and lawn runoff.',
+        },
+        {
+          type: 'p',
+          text: 'Many homeowners assume connecting a downspout to a rain garden is complicated or requires a plumber. It is neither. The basic connection — extending a downspout with flexible corrugated pipe and directing it to the rain garden inlet — is a two-hour project requiring no special skills.',
+        },
+        {
+          type: 'h3',
+          text: 'Downspout Disconnection: The Core Connection',
+        },
+        {
+          type: 'p',
+          text: 'In most American homes, downspouts drain into underground pipes that connect directly to the storm sewer system. Disconnecting one downspout — redirecting its flow to a rain garden instead of the storm sewer — is the single highest-impact action you can take for stormwater management on your property.',
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Check Local Codes Before Disconnecting: Some municipalities require a permit for downspout disconnection, and a few older cities (particularly those with combined sewer systems, where storm and sanitary sewers share the same pipe) may have specific rules about where disconnected downspouts can discharge. Check with your local stormwater or sewer authority before disconnecting. Most jurisdictions actively encourage disconnection and offer incentives to do it.',
+        },
+        {
+          type: 'h3',
+          text: 'Method 1: Flexible Corrugated Pipe Extension (Simplest)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Cut the downspout 6–12 inches above ground level using tin snips or a hacksaw',
+            'Attach a downspout elbow fitting to redirect flow horizontally away from the house',
+            'Connect flexible corrugated drainage pipe (4-inch diameter) to the elbow; secure with sheet metal screws or hose clamps',
+            'Route the pipe on the ground surface or slightly buried (2–3 inches deep) across the lawn to the rain garden inlet',
+            'Terminate at the rock-armored inlet area; the pipe end should discharge onto the rock pad to dissipate energy',
+            'Install a pop-up emitter at the pipe end to prevent rodents from nesting in the pipe',
+            'Cost: $30–80 in materials; 2–4 hours of work',
+            'Limitation: Surface or slightly buried pipe can be a tripping hazard; less aesthetically refined than buried alternatives',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Method 2: Buried Solid PVC Pipe (Most Durable)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Excavate a trench 12 inches deep from the downspout to the rain garden inlet; slope the trench 1/4 inch per foot toward the garden',
+            'Cut the downspout and attach a downspout adapter to transition to 4-inch PVC',
+            'Lay 4-inch solid PVC pipe (not perforated — solid pipe conveys water to the garden rather than infiltrating it in the trench) in the trench',
+            'Install a cleanout access port at the top of the downspout connection for future maintenance access',
+            'At the rain garden end, terminate with a flared end cap or pop-up emitter at the inlet rock pad',
+            'Backfill trench; restore grass or add mulch over the trench line',
+            'Cost: $100–300 in materials; 4–8 hours of work (more for long runs)',
+            'Advantage: Permanent, invisible, no tripping hazard; handles any storm volume; cleanable if it becomes clogged',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Method 3: Rain Chain + Splash Basin (Most Beautiful)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Remove the existing downspout and install a rain chain (decorative copper, aluminum, or stainless steel chain or cup series) in its place',
+            'Dig a splash basin directly below the rain chain: a shallow depression (18–24 inches wide, 8–12 inches deep) filled with river rock and gravel',
+            'Connect the splash basin to the rain garden inlet via a surface bioswale or buried pipe',
+            'Rain chains work best in light to moderate rain; in very heavy downpours, water may splash off before reaching the basin — account for this in overflow planning',
+            'Cost: $50–200 for rain chain; additional materials for basin and connection',
+            'Aesthetic payoff is exceptional — rain chains are one of the most beautiful landscape water features available',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Routing Driveway and Paved Surface Runoff',
+        },
+        {
+          type: 'list',
+          items: [
+            'Identify the low edge: Paved surfaces typically drain to one side or corner; identify where runoff concentrates and exits the paved area',
+            'Create or enhance a curb cut: A small notch or opening in any concrete edging or curb allows water to flow off the paved area; concrete curb cuts can be cut by a masonry contractor or DIY with an angle grinder and diamond blade ($40–60 blade)',
+            'Install a bioswale to convey driveway runoff to the rain garden: A vegetated swale along the driveway edge is aesthetically pleasing and provides additional filtration before water reaches the rain garden',
+            'For sealed driveways with heavy oil or de-icing salt contamination, consider a small gravel forebay at the rain garden inlet: a 2–4 foot wide gravel strip that captures the first flush of heavily contaminated runoff before it enters the planted area',
+            'Permeable pavers as an alternative: For driveways being repaved or patios being redesigned, permeable pavers or permeable concrete eliminate runoff at the source — water infiltrates through the paving surface itself',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Bioswales: Channeling Runoff Beautifully',
+        },
+        {
+          type: 'p',
+          text: 'A bioswale is a vegetated, gently sloped channel that conveys stormwater from its source to a rain garden while also providing additional infiltration and filtration along its length. Where a straight pipe connection gets water to the garden efficiently but invisibly, a bioswale creates a landscape feature — a planted drainage path that is beautiful, functional, and ecologically valuable.',
+        },
+        {
+          type: 'table',
+          headers: ['Bioswale Element', 'Specification', 'Purpose'],
+          rows: [
+            ['Width', '2–4 feet minimum; 4–8 feet ideal', 'Wider swales slow water and increase infiltration; narrower swales are more practical in tight spaces'],
+            ['Side slopes', 'Maximum 3:1 (horizontal:vertical); shallower is better (5:1 or flatter)', 'Steep sides erode; gentle slopes support dense planting and are easier to mow if needed'],
+            ['Bottom grade', '0.5–2% slope toward rain garden; avoid grades steeper than 5%', 'Gentle grade moves water without erosive velocity; steeper grades require check dams or rock stabilization'],
+            ['Check dams', 'Small rock or log barriers placed perpendicular to flow every 10–20 feet on steeper swales', 'Slow water velocity on steeper slopes; pool water temporarily to allow infiltration; prevent channel erosion'],
+            ['Soil mix', 'Same as rain garden mix (50% sand, 30% compost, 20% topsoil) in the swale bottom; native soil on side slopes', 'Fast-draining bottom supports infiltration along swale length; native soil on sides supports vegetation'],
+            ['Plants', 'Dense native groundcovers and low grasses in the bottom (creeping sedges, Blue Wild Rye, Prairie Dropseed); taller natives on the sides', 'Dense vegetation slows water, holds soil, and provides filtration; deep roots create infiltration channels'],
+            ['Rock inlet', '6–12 inch wide rock pad at the uphill intake point; river rock at each check dam', 'Prevents erosion at water entry points; stabilizes transitions'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Dry Creek Beds: Decorative Conveyance',
+        },
+        {
+          type: 'list',
+          items: [
+            'Best use case: When you want to create a naturalistic landscape feature that tells the "story" of water moving through your property; dry creek beds make the water flow visible and intentional',
+            'Construction: Excavate a shallow channel (4–8 inches deep, 18–36 inches wide); line with landscape fabric (optional — prevents weed growth but reduces infiltration); fill with river rock (2–4 inch cobble at edges, 3–5 inch at the center line)',
+            'Plants alongside: Native grasses, ferns, and flowering perennials planted along the banks create a natural riparian look; choose moisture-tolerant species that handle periodic splash',
+            'Function: A dry creek bed from a downspout to a rain garden inlet creates a complete, visible, beautiful water management system — the creek bed conveys water elegantly while the rain garden captures and infiltrates it',
+            'Sizing: A 24-inch wide dry creek bed can convey the runoff from approximately 1,000–2,000 sq ft of contributing area in moderate storms; for very large drainage areas, size up or use a bioswale instead',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🎨',
+          text: 'Make the Water Path Visible: The most beautiful rain garden systems make the water\'s journey legible — a rain chain falling into a splash basin, a dry creek bed winding across the yard, and a lush planted rain garden at the end. When visitors see your garden in the rain, they should be able to read immediately what\'s happening and why. This storytelling approach to rain garden design is more aesthetically rewarding and also educational for neighbors who might be inspired to do the same.',
+        },
+      ],
+    },
   ],
 }
