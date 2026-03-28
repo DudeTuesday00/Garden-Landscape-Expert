@@ -53,6 +53,7 @@ import { organicFertilizingContent } from './organic-fertilizing.js'
 import { hummingbirdGardenContent } from './hummingbird-garden.js'
 import { sunroomPlantsContent } from './sunroom-plants.js'
 import { indoorHerbGardenContent } from './indoor-herb-garden.js'
+import { rainGardenContent } from './rain-garden.js'
 
 export const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -104,4 +105,5 @@ export const contentMap = {
   'hummingbird-garden': hummingbirdGardenContent,
   'sunroom-plants': sunroomPlantsContent,
   'indoor-herb-garden': indoorHerbGardenContent,
+  'rain-garden': rainGardenContent,
 }
