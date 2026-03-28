@@ -709,6 +709,75 @@ export const rainGardenContent = {
       ],
     },
     {
+      id: 'green-infrastructure',
+      title: 'Green Infrastructure Integration',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A rain garden on its own is a powerful stormwater management tool. A rain garden combined thoughtfully with rain barrels, permeable paving, bioswales, and native landscaping across a property — or across a neighborhood — is an entirely different level of impact. This section covers how to integrate your rain garden into a more comprehensive green infrastructure system and what each additional tool contributes.',
+        },
+        {
+          type: 'h3',
+          text: 'Rain Barrels and Cisterns: Capture Before the Garden',
+        },
+        {
+          type: 'list',
+          items: [
+            'How to connect them: Install a rain barrel at the downspout; connect the barrel overflow (a port near the top) to the rain garden via flexible pipe or buried PVC. When the barrel is full, overflow routes automatically to the rain garden. This captures the first flush in the barrel (for irrigation use) and routes remaining runoff to infiltration.',
+            'Capacity sizing: A standard 50–80 gallon rain barrel fills in minutes from a modest rainfall on a typical roof; a cistern (300–5,000 gallons) can capture the first inch or more of a storm from the full roof. For most homeowners, a single 50-gallon barrel plus a rain garden provides the best practical balance of water harvesting and infiltration.',
+            'Mosquito control in barrels: Rain barrels must have a tight-fitting lid or fine mesh screen over the inlet to prevent mosquito breeding. Check after each storm; any standing water in a barrel that is open to mosquito access will produce larvae within days in warm weather.',
+            'Legal considerations: Most states allow rainwater harvesting; some western states have historically restricted it due to water rights laws, though many have updated these laws in recent years. Colorado now allows up to two 55-gallon rain barrels per household. Check your state\'s current rules before installing.',
+            'Pairing irrigation with rain garden watering: During establishment, use saved rainwater from your barrel to water rain garden plants during dry spells; this closes the loop — the rain garden is established using rain collected from your own roof.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Permeable Paving: Infiltration at the Source',
+        },
+        {
+          type: 'p',
+          text: 'Permeable paving surfaces allow rainfall to infiltrate directly through the paving surface rather than running off. Where a rain garden captures runoff after the fact, permeable paving eliminates runoff at the source.',
+        },
+        {
+          type: 'table',
+          headers: ['Permeable Paving Type', 'Best For', 'Cost Range', 'Maintenance', 'Integration with Rain Garden'],
+          rows: [
+            ['Permeable Interlocking Concrete Pavers (PICP)', 'Driveways, patios, parking areas with moderate traffic; highest aesthetic versatility', '$15–30/sq ft installed', 'Vacuum-sweep joints annually; avoid sand or silt from other areas washing into joints', 'PICP driveways dramatically reduce rain garden sizing requirements; any remaining runoff edges can be directed to rain garden as primary capture'],
+            ['Permeable concrete / asphalt', 'Driveways and parking areas; utilitarian; most cost-effective large-area option', '$8–15/sq ft installed', 'Clear joints of sediment with pressure washing every 2–3 years; avoid sand salt in winter (clogs pores)', 'Eliminates most driveway runoff; pair with a small rain garden at edges for any residual flow'],
+            ['Gravel / crushed stone', 'Pathways, parking areas, informal driveways; most affordable permeable option', '$2–6/sq ft installed', 'Rake periodically; add fresh gravel every 3–5 years; keep edged to prevent migration', 'Simple to install; very effective; excellent for pathways adjacent to rain gardens; not suitable for main vehicle driveways due to tracking'],
+            ['Stepping stones with permeable gaps', 'Pedestrian paths; patio areas with low traffic', '$3–10/sq ft installed', 'Maintain groundcover between stones; reset any that heave from frost', 'Allows significant infiltration between stones; plant rain garden plants in gaps for unified aesthetic; beautiful and functional'],
+            ['Stabilized decomposed granite', 'Dry climate patios, paths, low-traffic parking in arid regions', '$2–5/sq ft installed', 'Re-level after heavy rains; apply stabilizer every 2–3 years in trafficked areas', 'Excellent in desert and California climates; pairs naturally with xeric native plantings; lower infiltration rate than PICP but significant improvement over concrete'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Native Lawn Alternatives: Reducing Runoff Across the Property',
+        },
+        {
+          type: 'list',
+          items: [
+            'Low-growing native groundcovers (wild ginger, native violets, Pennsylvania sedge, creeping thyme) can replace lawn in areas where a low, walkable surface is desired; they absorb 50–80% more rainfall than mowed turf.',
+            'Native meadow plantings (seeded native grass and wildflower mixes) are the most dramatic runoff reduction option — mature meadow plantings with deep native grass roots absorb 90%+ of rainfall, generating virtually no runoff.',
+            'No-mow lawn alternatives (fine fescue mixes, buffalo grass in appropriate climates) require little to no mowing, no irrigation, and no fertilizing after establishment; they absorb more rainfall than conventional turf due to deeper root systems and better soil health.',
+            'Reducing lawn area is complementary to rain garden installation; every square foot of native planting added is a square foot removed from the contributing drainage area, which may allow a smaller rain garden to serve the same property effectively.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Neighborhood-Scale Rain Garden Networks',
+        },
+        {
+          type: 'list',
+          items: [
+            'Talk to your neighbors: Explaining your rain garden — especially a beautiful, well-maintained one — to neighbors is the most effective advocacy. Many rain garden installations have been followed by multiple neighbors building their own within a season.',
+            'Reach out to your watershed group: Most American communities have a watershed association, land conservancy, or environmental advocacy organization that tracks stream health and promotes stormwater practices. Connecting with these groups can provide resources, plant sourcing, and community support.',
+            'Contact your municipality: Many cities have stormwater goals they are working to achieve under EPA MS4 permits; a homeowner proposing to build a rain garden is helping the city meet its compliance targets, and many municipal stormwater coordinators will provide free design assistance, plants, or even installation support for private projects that advance their compliance goals.',
+            'Document and share: Photograph your rain garden across seasons; track rainfall events and note when the garden is performing. Before-and-after documentation of a flooding area being transformed by a rain garden is powerful and shareable content that inspires others.',
+          ],
+        },
+      ],
+    },
+    {
       id: 'maintenance',
       title: 'Maintenance & Long-Term Care',
       blocks: [
