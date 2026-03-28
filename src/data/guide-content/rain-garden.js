@@ -682,5 +682,68 @@ export const rainGardenContent = {
         },
       ],
     },
+    {
+      id: 'maintenance',
+      title: 'Maintenance & Long-Term Care',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A well-designed and well-planted rain garden is one of the most low-maintenance landscape features available — far less work than a conventional lawn or traditional flower border. However, "low maintenance" does not mean "no maintenance." Particularly in the first two years while plants establish, regular attention is needed. After that, annual maintenance tasks keep the garden performing at its best for decades.',
+        },
+        {
+          type: 'h3',
+          text: 'Year 1: The Establishment Phase',
+        },
+        {
+          type: 'list',
+          items: [
+            'Water regularly during establishment: Native rain garden plants still need supplemental watering during their first summer even though they are drought-tolerant once established. Water every 3–5 days during dry spells for the first 8–12 weeks.',
+            'Weed aggressively: Weeds are the primary threat to rain garden establishment. Identify and remove non-native weeds before they set seed. Hand-pulling is preferred over herbicides. Weed every 1–2 weeks in the first season.',
+            'Check drainage after every rain: Confirm water flows in, distributes through the garden, and drains within 24–48 hours. Address any drainage slower than this immediately.',
+            'Watch for erosion: Inspect the inlet area, berm slopes, and overflow structure after each significant storm. Address any erosion immediately — a small rut becomes a large channel if left unaddressed.',
+            'Add mulch as needed: Mulch settles and decomposes through the first season; add additional shredded hardwood mulch to maintain a 2–3 inch depth.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Year 2 and Beyond: Annual Maintenance Calendar',
+        },
+        {
+          type: 'table',
+          headers: ['Season', 'Task', 'Details'],
+          rows: [
+            ['Early Spring', 'Cut back previous year\'s growth', 'Cut or pull previous season\'s dead stems to 4–6 inches above ground before new growth emerges. Leave intact through winter for wildlife habitat — cut in late March/April, not in fall.'],
+            ['Early Spring', 'Inspect inlet and overflow structures', 'Check for debris blocking the inlet or clogging the overflow; clear any blockages before rain season. Check berm integrity after winter frost heaving.'],
+            ['Early Spring', 'Add fresh mulch if needed', 'Maintain 2–3 inch mulch depth in the bowl. Pull mulch back from plant crowns. Use shredded hardwood, not bark chips or rubber mulch.'],
+            ['Spring–Summer', 'Weed throughout growing season', 'Remove weeds before they set seed. After Year 2, weed pressure decreases significantly as native plants fill in. A 2-hour monthly walk-through is typically sufficient for an established garden.'],
+            ['Spring–Summer', 'Divide overcrowded plants', 'Divide aggressive spreaders (asters, switchgrass, joe-pye weed) every 2–3 years; use divisions to expand the garden or share with neighbors.'],
+            ['Summer', 'Monitor drainage after storms', 'Occasional check that the garden is draining within 48 hours. If drainage slows over time, the soil surface may be clogging with fine sediment — cultivate lightly with a hand fork or add compost to revive drainage.'],
+            ['Fall', 'Leave plants standing through winter', 'Do NOT cut back in fall. Dead stems provide critical overwintering habitat for native bees, food for birds, and visual interest. Cut in spring.'],
+            ['Fall', 'Remove invasive plants before they spread', 'Fall is when many invasive species set seed. Identify and remove invasive plants before seed dispersal — purple loosestrife, reed canary grass, Japanese knotweed, common reed (Phragmites), and garlic mustard are common threats.'],
+            ['Fall / Every 5 Years', 'Sediment removal from inlet', 'Stormwater carries suspended sediment that gradually reduces soil porosity. Every 5–10 years, remove and replace the top 2–3 inches of sediment-laden soil in the inlet area; stir and aerate soil in the bowl center.'],
+            ['Anytime', 'Inspect and repair overflow structure', 'After major storm events, check that the overflow structure is intact and functioning. Replace displaced rocks. Repair any erosion channels immediately.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Common Rain Garden Problems and Solutions',
+        },
+        {
+          type: 'table',
+          headers: ['Problem', 'Likely Cause(s)', 'Solution'],
+          rows: [
+            ['Water ponds for more than 48 hours after rain', 'Soil drainage too slow; soil mix compacted over time; clay subgrade blocking drainage; inlet clogged with sediment', 'Test soil drainage again; stir/aerate soil in bowl with a hand fork; clean inlet; consider adding a perforated underdrain pipe; in extreme cases, replace soil mix'],
+            ['Erosion at inlet area', 'Incoming water velocity too high; not enough rock armoring', 'Increase rock armor at inlet: add larger rocks (3–5 inch) and extend armoring 18–24 inches from entry point; add more plants at inlet edge to slow water with roots'],
+            ['Berm eroding', 'Berm soil too loose; sparse planting; storm flow overtopping berm', 'Dense-plant the berm immediately; add erosion-control blanket (coir or jute mat) temporarily until plants establish; check that overflow is functioning so berm isn\'t being overtopped regularly'],
+            ['Plants dying in Zone 1 (wet center)', 'Plants not flood-tolerant enough; drainage too slow causing oxygen depletion', 'Replace with true wet-tolerant plants (Buttonbush, Blue Flag Iris, Cardinal Flower, Soft Rush, Swamp Milkweed); ensure drainage is occurring within 48 hours'],
+            ['Plants dying on berm', 'Drought stress; berm soil too thin; wrong plants for dry conditions', 'Plant only true drought-tolerant natives on berm; ensure berm soil is at least 8–12 inches deep; mulch berm heavily; edge berm from adjacent lawn to prevent grass intrusion'],
+            ['Mosquitoes breeding in garden', 'Water not draining within 48 hours — the primary cause; note that properly draining rain gardens do NOT produce significant mosquito populations', 'Resolve drainage issue; if drainage is working (under 48 hours) mosquitoes are not a concern; if drainage cannot be improved, use Bacillus thuringiensis israelensis (Bti) dunks as interim control'],
+            ['Weeds overwhelming the garden', 'Insufficient mulch; gaps in planting; inadequate Year 1 weeding', 'Pull weeds before they set seed; add fresh mulch to 3 inches; add more native plants to fill gaps; dense native plantings will outcompete weeds naturally once established'],
+            ['Sediment clogging soil over time', 'Normal long-term accumulation; especially common with driveway or construction site runoff', 'Remove and replace top 2–3 inches of inlet area soil every 5 years; consider adding a sediment forebay (small gravel-filled depression before the main garden) to trap sediment and simplify maintenance'],
+            ['Invasive plants taking over', 'Common invasive species spreading from surrounding landscape (purple loosestrife, reed canary grass, Phragmites)', 'Hand-pull small infestations immediately; for established invasives, targeted herbicide by a licensed professional may be necessary; consult local extension for region-specific invasive control guidance'],
+          ],
+        },
+      ],
+    },
   ],
 }
