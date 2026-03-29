@@ -647,5 +647,75 @@ export const mulchingGuideContent = {
         },
       ],
     },
+    {
+      id: 'mulch-economics-and-sourcing',
+      title: 'Mulch Economics & Sourcing',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Mulch is one of the most cost-variable garden inputs — the same cubic yard of shredded hardwood bark costs $8–15 purchased in bulk but $40–60 if purchased in individual 2-cubic-foot bags. Understanding how to calculate what you need, where to find free or low-cost material, and how to buy smart can reduce your mulching costs by 50–75% or more.',
+        },
+        {
+          type: 'h3',
+          text: 'How Much Mulch Do You Need? The Calculation',
+        },
+        {
+          type: 'tip',
+          emoji: '📐',
+          text: 'Mulch volume formula: Square footage of area ÷ 12 × desired depth in inches = cubic feet needed. Cubic feet ÷ 27 = cubic yards needed. Example: 500 sq ft bed at 3 inches deep = 500 ÷ 12 × 3 = 125 cubic feet = 4.6 cubic yards.',
+        },
+        {
+          type: 'table',
+          headers: ['Area (square feet)', '2-inch depth', '3-inch depth', '4-inch depth', 'Cubic yards needed (at 3 in)'],
+          rows: [
+            ['100 sq ft', '0.6 cu yd', '0.9 cu yd', '1.2 cu yd', '~1 yard (order 1)'],
+            ['250 sq ft', '1.5 cu yd', '2.3 cu yd', '3.1 cu yd', '~2.5 yards (order 3)'],
+            ['500 sq ft', '3.1 cu yd', '4.6 cu yd', '6.2 cu yd', '~5 yards (order 5–6)'],
+            ['1,000 sq ft', '6.2 cu yd', '9.3 cu yd', '12.4 cu yd', '~9–10 yards (order 10)'],
+            ['2,000 sq ft', '12.4 cu yd', '18.5 cu yd', '24.7 cu yd', '~18–20 yards (order 20)'],
+            ['5,000 sq ft', '30.9 cu yd', '46.3 cu yd', '61.7 cu yd', '~46 yards — order in semi-truck quantities'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '📦',
+          text: 'Bags vs. bulk — the cost reality: A 2-cubic-foot bag of shredded hardwood bark typically costs $4–7 = $54–94 per cubic yard. Bulk delivery of the same material typically costs $25–45 per cubic yard delivered. For anything more than 2–3 cubic yards, bulk is dramatically more economical. If you need more than 6 bags (0.44 cubic yards), call a landscape supply yard for a bulk quote. Most will deliver with a minimum order of 1–3 cubic yards.',
+        },
+        {
+          type: 'h3',
+          text: 'Free and Low-Cost Mulch Sources',
+        },
+        {
+          type: 'list',
+          items: [
+            'Arborist wood chips (ChipDrop): ChipDrop.com connects homeowners with local arborists who need to dispose of wood chips; a full truck load (10–15 cubic yards) is delivered free or for a small tip; requires advance notice and flexible acceptance timing; the best deal in mulch for anyone who can use that quantity.',
+            'Municipal leaf and yard waste programs: Most American cities and counties offer free or low-cost compost, wood chips, or shredded mulch from municipal leaf and yard waste collection; check your city\'s Public Works or Parks Department website; quality varies but is generally good.',
+            'Your own trees (if you have a chipper): A wood chipper rental ($100–200/day) processes branches from tree trimming into excellent mulch on-site; or hire a tree service to chip while they\'re already doing trimming work.',
+            'Fall leaves (free with a mower): Run a lawn mower over fallen leaves to shred them; 6 passes of accumulated leaves in fall produces enough shredded leaf mulch for substantial garden coverage; store in a pile or bags to use throughout the season.',
+            'Landscape company overstock: Landscape contractors often have leftover mulch at the end of projects; calling local companies and asking if they have excess material sometimes yields free or very low-cost material.',
+            'Coffee grounds from cafes: Many coffee shops give away used coffee grounds; grounds can be used as a thin mulch layer (1 inch maximum) and are particularly good as a nitrogen-rich amendment mixed into compost.',
+            'Co-op buying with neighbors: Splitting a bulk delivery with neighbors can help meet minimums and qualify for volume discount pricing; a joint order of 6–10 yards often achieves better per-yard pricing.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Cost Comparison by Mulch Type',
+        },
+        {
+          type: 'table',
+          headers: ['Mulch Type', 'Bags (per cu yd equivalent)', 'Bulk (per cu yd)', 'Free / Low-Cost Sources', 'Annual Cost per 1,000 sq ft (3 in)'],
+          rows: [
+            ['Shredded hardwood bark', '$60–90', '$25–50 delivered', 'Municipal programs; some utility company programs', '$235–460 bulk; replenish ~half annually = $120–230/yr ongoing'],
+            ['Wood chips (arborist)', 'Not typically bagged', '$0–20 (often free)', 'ChipDrop; local arborists; municipal programs; tree trimming', '$0–60 with free source; $0–185 with low-cost delivery'],
+            ['Pine straw (regional)', '$30–50 per bale (1 bale ≈ 40 sq ft at 3 in)', 'N/A — sold by bale in Southeast', 'Under your own pine trees; farm/timber operations in SE', '$75–120 per 1,000 sq ft in the Southeast where abundant'],
+            ['Straw (vegetable garden)', '$7–12 per bale (1 bale ≈ 80–100 sq ft at 3 in)', '$120–200 per ton', 'Local farms; feed stores; grain elevator overstock', '$80–150 per 1,000 sq ft; annual replenishment of vegetable garden'],
+            ['Shredded leaves', 'Free (generate yourself)', 'Free (municipal programs)', 'Your own yard; neighbor collaboration; municipal leaf programs', '$0 — purely time cost for collection and shredding'],
+            ['Rubber mulch', '$80–120', '$80–120 (not widely sold in bulk)', 'Not available free', '$740–1,100 installed; may last 5+ years = $150–220/yr amortized; not recommended for plant beds'],
+            ['Gravel/river rock', '$60–120', '$45–80 delivered', 'Construction site cleanup (limited)', '$415–740 installed; permanent — minimal ongoing cost; not recommended for most plant beds'],
+            ['Colored mulch (bagged)', '$70–95', '$30–55', 'Rarely available free', '$275–510 bulk; replenish ~half annually'],
+          ],
+        },
+      ],
+    },
   ],
 }
