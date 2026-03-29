@@ -563,5 +563,89 @@ export const mulchingGuideContent = {
         },
       ],
     },
+    {
+      id: 'application-techniques',
+      title: 'Application Techniques',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Correct mulch application technique is more important than most gardeners realize. The same material at the correct depth, applied correctly, performs dramatically better than the same material applied carelessly.',
+        },
+        {
+          type: 'h3',
+          text: 'Standard Mulch Application',
+        },
+        {
+          type: 'list',
+          items: [
+            'Prepare the bed: Remove existing weeds by hand (or smother with cardboard — see Sheet Mulching below); cut or pull rather than tilling, which brings weed seeds to the surface.',
+            'Edge the bed clearly: Define the boundary between mulched bed and lawn or walkway with a flat spade or bed edger; a clean edge makes the finished result look intentional and prevents grass from growing into the mulch.',
+            'Water the soil: If soil is dry, water thoroughly before applying mulch; applying mulch over very dry soil traps the dry condition; soil should be moist 2–3 inches down.',
+            'Apply base layer of compost (optional): A 1-inch layer of compost applied directly on soil before the main mulch material provides a fertility boost and inoculant layer; particularly beneficial when establishing new beds or on poor soils.',
+            'Apply mulch to correct depth: Distribute material evenly using a rake or by hand; check depth at multiple points — aim for 3 inches after minor settling.',
+            'Maintain gaps at plant bases: Work carefully around the base of every plant to maintain a 2–4 inch gap for stems (more for shrubs and trees); this step is not optional and should be done plant by plant.',
+            'Do not disturb soil surface when raking: Rake gently on the mulch surface; vigorous raking disturbs the mulch layer and may bring weed seeds from below; use a light touch when leveling.',
+            'Water in: Water lightly after application to settle the mulch, reduce wind movement, and begin decomposition of the bottom layer.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Sheet Mulching (Cardboard Method) — For New Beds and Severe Weed Problems',
+        },
+        {
+          type: 'p',
+          text: 'Sheet mulching — using cardboard or newspaper as a base layer under organic mulch — is the most effective non-herbicide approach for converting grass or weed-covered ground to a planting bed. It smothers existing vegetation without digging, enriches soil as the cardboard decomposes, and provides 6–18 months of excellent weed suppression.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Mow or cut existing vegetation as short as possible: The less vegetation mass under the cardboard, the faster it breaks down and the better the coverage.',
+            'Water the ground thoroughly: Wet soil under the cardboard is essential for decomposition to begin and for maintaining worm activity.',
+            'Lay cardboard with generous overlaps: Overlap sheets by at least 6 inches; weed growth will find and exploit every gap; cover the entire area plus 6 inches beyond the intended bed boundary.',
+            'Remove all tape, staples, and labels from cardboard: Tape does not decompose; it creates a persistent barrier and should not be added to the garden.',
+            'Wet the cardboard: Saturate the cardboard after laying; this activates decomposition and weights it down against wind.',
+            'Apply 3–4 inches of wood chips or shredded bark over the wet cardboard immediately: The mulch weighs down the cardboard, maintains moisture beneath it, and begins the long decomposition process.',
+            'Plant through the layer: To plant into a sheet mulched area, simply push aside the mulch, cut through the cardboard with a knife, and plant into the soil below; the surrounding cardboard continues suppressing weeds while the plant establishes.',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '⏱️',
+          text: 'Sheet mulching timeline: Cardboard takes 6–18 months to fully decompose, depending on moisture and temperature. During this time it provides excellent weed suppression. After the cardboard decomposes, the layer of wood chips above becomes the standard mulch layer requiring periodic replenishment. The soil below a sheet-mulched area is significantly improved by earthworm activity and decomposition.',
+        },
+        {
+          type: 'h3',
+          text: 'Maintaining Existing Mulch',
+        },
+        {
+          type: 'list',
+          items: [
+            'Assess existing depth first: Use a ruler or pencil to measure the actual depth of mulch in several spots; do not estimate by looking from above.',
+            'If existing mulch is decomposed and 1 inch or less: The existing material has become soil amendment — this is a good thing; apply 2–3 inches of new mulch on top.',
+            'If existing mulch is intact at 2 inches: Top up with 1 inch of fresh mulch to restore to 3 inches depth; stir or fluff the existing layer with a fork first to restore air pockets and prevent packing.',
+            'If existing mulch is at 3+ inches already: Do not add more mulch this season; adding more mulch on top of adequate-depth existing mulch is one of the most common ways volcano mulch depths accumulate over years of "annual mulching."',
+            'Clear and re-do when depth exceeds 6 inches: In beds where annual mulching has accumulated layers without evaluation, rake away the excess; the decomposed base material may be useful compost for other areas.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Mulch Troubleshooting: Common Problems and Solutions',
+        },
+        {
+          type: 'table',
+          headers: ['Problem', 'Cause', 'Is It Harmful?', 'Solution'],
+          rows: [
+            ['Artillery fungus (dark specks on surfaces)', 'Certain Basidiomycete fungi in shredded hardwood mulch that "shoot" spores; spores appear as black specks on house siding, cars, and other surfaces', 'Not harmful to plants or people; but the spores are nearly impossible to remove from surfaces — they bond permanently', 'Replace hardwood bark mulch with wood chips, pine bark, or pine needles; keep mulch beds away from house siding; no effective treatment after spore attachment'],
+            ['Slime mold (bright yellow or orange blob)', 'Physarum polycephalum and related organisms; appear after rain; temporary; naturally occurring', 'Not harmful to plants or people; temporary; unattractive', 'No action needed; slime mold will dry out and disappear within 1–2 weeks; if aesthetically problematic, break it up with a stick or shovel'],
+            ['Sooty mold (black coating on mulch surface)', 'Fungal growth on decomposing mulch surface; common in humid conditions; associated with insects producing honeydew above', 'Not harmful to plants; indicates adequate biological activity; if coating entire surface, suggests too-deep mulch preventing aeration', 'Stir the mulch surface to introduce air; check for insect infestations in plants above (scale, aphids, whiteflies) producing honeydew; thin mulch if too deep'],
+            ['Mulch is waterproof (water runs off surface)', '"Hydrophobic mulch" — finely ground wood fiber mulch that dries to a hard crust that actually repels water; common with some bagged double-ground products', 'Harmful — water that runs off mulch does not reach plant roots; creates drought stress in mulched plants', 'Break up the surface crust with a rake or hand fork; water slowly to allow penetration; switch to coarser mulch that does not develop this characteristic'],
+            ['White fungal mycelium in mulch', 'Decomposer fungi breaking down the mulch organically; visible as white strings or plates in and beneath the mulch layer', 'Generally beneficial — these are the organisms doing the work of decomposition and building soil biology', 'Leave in place; this is healthy decomposition; if near the base of a stressed tree, monitor the tree\'s health and consult an arborist if concerned'],
+            ['Mulch compacting to solid mat', 'Fine-textured mulch (double-ground, grass clippings, or fine straw) has matted into an impermeable layer; water runs off; oxygen cannot penetrate', 'Harmful — restricts water penetration and gas exchange to roots', 'Fork or rake the entire surface to break up the mat; add coarser material on top; switch to coarser mulch material; reduce depth slightly'],
+            ['Weeds growing through mulch', 'Wind-blown seeds germinating in mulch surface; insufficient depth; persistent rhizomatous weeds pushing through', 'Weed competition reduces plant health; aesthetically poor', 'Pull weeds before they set seed; add 1 inch of fresh mulch if depth has fallen below 2 inches; for persistent rhizomatous weeds (nutsedge, bindweed, Bermudagrass) mulch alone may not be sufficient — sheet mulching needed'],
+            ['Mulch movement in rain or wind', 'Light or loose material (bark nuggets, fine straw, pea gravel) washing or blowing out of beds; sloped areas particularly affected', 'Reduces coverage and effectiveness; creates unsightly displacement', 'Switch to interlocking materials (wood chips, shredded bark) that resist movement; on slopes, use coarse chips and consider biodegradable erosion blankets; edging boards can contain mulch in high-wind situations'],
+          ],
+        },
+      ],
+    },
   ],
 }
