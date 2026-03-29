@@ -203,5 +203,94 @@ export const mulchingGuideContent = {
         },
       ],
     },
+    {
+      id: 'inorganic-mulch-types',
+      title: 'Inorganic Mulch Types',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Inorganic mulches are materials that do not decompose: stone, gravel, pebbles, rubber, crushed glass, and landscape fabric. They offer permanence and durability — once installed, they typically require far less replenishment than organic mulches. However, they provide no soil-building benefit and in some cases actively degrade soil health over time. Understanding when inorganic mulches are appropriate — and when they cause more harm than good — is essential knowledge for any gardener.',
+        },
+        {
+          type: 'h3',
+          text: 'Gravel, Rock, and Stone Mulch',
+        },
+        {
+          type: 'p',
+          text: 'Gravel, crushed rock, river stone, pea gravel, and decorative boulders represent a massive category of inorganic mulching materials with genuinely excellent applications in appropriate contexts. Stone mulch is excellent for drainage, heat retention, and low-maintenance applications, but it is often misapplied in contexts where organic mulch would perform significantly better.',
+        },
+        {
+          type: 'table',
+          headers: ['Rock/Gravel Type', 'Size / Texture', 'Best Applications', 'Avoid Using For', 'Notes'],
+          rows: [
+            ['Pea gravel (3/8 inch washed)', 'Small rounded; smooth; beige to tan or mixed colors', 'Paths and walkways; dog runs; drainage areas; decorative fill; between stepping stones', 'Plant beds in hot climates; areas requiring weed suppression (weeds grow through easily)', 'Washes and rolls under foot traffic; very poor weed suppression without landscape fabric'],
+            ['Crushed granite / decomposed granite (DG)', 'Angular; compacts well; ¼ inch and finer; tan to gray', 'Paths; desert and xeric gardens; formal driveways; fire-resistant landscapes; areas between desert-adapted plants', 'High-rainfall areas where it washes out; formal perennial beds where soil improvement is desired', 'Excellent for Mediterranean, desert, and xeric gardens in the West; drains extremely fast; does not retain moisture'],
+            ['River rock / cobble (2–4 inch)', 'Smooth rounded; various colors; medium to large size', 'Dry creek beds; rain garden inlets; drainage channels; accent areas around water features', 'General plant bed mulching (too heavy; hard to work around; compacts soil if walked on)', 'Outstanding for specific landscape applications where appearance and durability matter; poor choice for general mulching use'],
+            ['Lava rock', 'Lightweight; very porous; dark red to black; textured surface', 'Southwest and arid Western landscapes; areas with a modern or desert aesthetic; retaining walls and berm faces', 'Cold northern climates where freeze-thaw can break it down; high-rainfall climates', 'Excellent moisture retention compared to other stones (porous structure holds some water); used extensively in dry-climate residential landscapes'],
+            ['Limestone gravel / chips', 'Gray to white; angular; calcium carbonate content', 'Alkaline soil gardens; Mediterranean-style plantings; areas needing soil pH increase', 'Acid-loving plants; areas where soil pH is already adequate or high', 'Gradually raises soil pH as it weathers; intentional use around lavender, thyme, and other Mediterranean plants that prefer alkaline conditions'],
+            ['Marble chips / white stone', 'White to cream; decorative; available in various sizes', 'Formal garden designs; high-contrast aesthetic applications; Mediterranean-style gardens', 'Vegetable gardens (reflects heat that can stress plants); heavily shaded areas (looks dirty quickly)', 'Very high heat reflectance in full sun — can heat plant crowns and stems in hot climates; beautiful but requires thought about placement'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌡️',
+          text: 'Gravel and heat in hot climates: In warm climates (Zones 7–11), gravel and stone absorb heat during the day and release it at night — significantly raising temperatures around plant crowns and roots. This benefits heat-loving Mediterranean plants (lavender, rosemary, thyme) and desert-adapted succulents, but can stress moisture-loving plants and cool-season vegetables. In cold climates (Zones 3–6), this heat-retention effect is actually beneficial for root protection.',
+        },
+        {
+          type: 'h3',
+          text: 'Rubber Mulch',
+        },
+        {
+          type: 'p',
+          text: 'Shredded rubber mulch — made from recycled tires — is heavily marketed as a permanent, low-maintenance mulch with superior moisture retention. The marketing is partially accurate: rubber mulch does not decompose and does retain some moisture. However, its use in garden beds is increasingly discouraged by horticulturalists and soil scientists.',
+        },
+        {
+          type: 'table',
+          headers: ['Attribute', 'Rubber Mulch Reality'],
+          rows: [
+            ['Soil health impact', 'Provides no organic matter to soil; may leach zinc, iron, and other compounds over time, particularly in hot climates; studies show elevated metal concentrations in soil under rubber mulch after several years; no evidence of benefits to soil biology'],
+            ['Plant safety', 'For most established landscape plants, leaching compounds appear to be at low enough concentrations to not cause immediate harm; for food plants (vegetable gardens, fruit trees) use is not recommended due to potential food safety concerns'],
+            ['Temperature', 'In full sun, rubber mulch heats to extremely high temperatures — sometimes 160°F+ surface temperature on hot days; this can stress or kill plant crowns and shallow roots in summer; far hotter than bare soil'],
+            ['Weed suppression', 'Good initially; weed seeds blown in from air germinate in the mulch surface over time, and their roots penetrate into the soil; becomes increasingly weed-filled over 3–5 years and is very difficult to weed without removing the mulch entirely'],
+            ['Fire risk', 'Rubber mulch is combustible and burns hotly; not appropriate near structures, in fire-prone regions, or anywhere fire safety is a concern'],
+            ['Best appropriate uses', 'Playground surfaces under play equipment — the original and best application (fall impact attenuation for child safety); specific non-planting areas where weed suppression and durability are the only requirements'],
+            ['Recommended alternative', 'For landscape beds, shredded hardwood bark or wood chips outperform rubber mulch in every category except longevity; the modest additional cost of annual replenishment is far outweighed by the soil health benefits of organic materials'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Landscape Fabric: Honest Assessment of an Oversold Product',
+        },
+        {
+          type: 'p',
+          text: 'Landscape fabric — woven or non-woven polypropylene sheeting placed on soil before mulch — is one of the most widely used and most widely regretted landscape products in America. It is sold as a permanent weed barrier that eliminates maintenance. The reality, measured in gardens after 5–10 years of use, is more complicated.',
+        },
+        {
+          type: 'table',
+          headers: ['Attribute', 'Reality'],
+          rows: [
+            ['What it does well', 'Short-term weed suppression (first 1–3 years) when installed over existing weeds; prevents mulch from mixing into soil on slopes; useful under gravel paths where soil separation is the goal'],
+            ['What goes wrong over time', 'Weed seeds blow in and germinate in the mulch on top of the fabric; their roots grow through the fabric and anchor into the soil — now impossible to pull; organic matter accumulates on the fabric surface creating a growing medium for weeds; the fabric degrades into pieces that are nearly impossible to remove completely'],
+            ['The 5-year reality', 'Most landscapes with landscape fabric become increasingly weed-filled after year 3; by year 7–10, many homeowners describe the situation as worse than before fabric was installed — same weeds, plus intact fabric that can\'t be removed without destroying plants'],
+            ['Root restriction', 'Fabric restricts root growth as plants mature; trees and shrubs planted through landscape fabric frequently show root girdling, reduced growth, and premature decline; the fabric becomes physically embedded in root systems and cannot be removed later'],
+            ['When fabric IS appropriate', 'Under gravel or stone pathways where the goal is soil separation (not weed suppression) and no plants are growing; under driveways and hardscaping for subbase stabilization; as temporary erosion control on bare soil slopes before vegetation establishes'],
+            ['Better alternative', 'For planted beds: 3–4 inches of wood chip or shredded bark mulch alone outperforms fabric + mulch for weed suppression after year 3, while building soil instead of degrading it'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Biodegradable Weed Barrier Options',
+        },
+        {
+          type: 'list',
+          items: [
+            'Cardboard (corrugated): The workhorse of sheet mulching and lasagna gardening; highly effective weed suppressant; completely biodegrades in 6–18 months; remove all tape and staples before use; overlap sheets by 6 inches to prevent gaps; dampen before applying mulch on top to prevent blowing and activate decomposition.',
+            'Newspaper (6–10 sheets thick): Similar to cardboard; works particularly well in vegetable gardens; decomposes in one season; excellent for sheet mulching new vegetable beds; avoid glossy/colored inserts.',
+            'Biodegradable weed barrier fabric (jute, coir, hemp): Woven natural fiber fabrics that provide 1–2 seasons of weed suppression while decomposing into the soil; excellent for erosion control on slopes; appropriate for steep grades where mulch alone would wash away.',
+            'Paper mulch (colored or black): Used commercially in vegetable production; black paper heats soil in spring; available in rolls for home garden use; decomposes within one season; can be used with drip irrigation punched through.',
+          ],
+        },
+      ],
+    },
   ],
 }
