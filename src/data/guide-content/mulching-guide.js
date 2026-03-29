@@ -717,5 +717,120 @@ export const mulchingGuideContent = {
         },
       ],
     },
+    {
+      id: 'special-applications-and-quick-reference',
+      title: 'Special Applications & Quick Reference',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Beyond standard landscape mulching, there are specialized applications of mulch that address specific challenges or goals — from fire-resistant landscaping near structures to deep mulch food forest systems that build extraordinary soil over years.',
+        },
+        {
+          type: 'h3',
+          text: 'Mulching for Wildfire Safety (Defensible Space)',
+        },
+        {
+          type: 'p',
+          text: 'For millions of Americans living in the Wildland-Urban Interface (WUI), mulch choice directly affects fire safety. Many conventional mulches are highly combustible and should not be used within the "Zone 0" and "Zone 1" fire defensible spaces around structures.',
+        },
+        {
+          type: 'table',
+          headers: ['Zone', 'Distance from Structure', 'Mulch Guidance', 'Recommended Materials'],
+          rows: [
+            ['Zone 0 (Ember-resistant zone)', 'Within 5 feet of any structure', 'No combustible mulch at all in this zone; use non-combustible materials only', 'Gravel; crushed stone; concrete; pavers; flagstone; decomposed granite; no organic mulch regardless of type'],
+            ['Zone 1 (Lean, Clean, Green zone)', '5–30 feet from structures', 'Organic mulch allowed but only at reduced depths with specific materials; avoid thick applications', 'Composted wood chips (moist; less flammable than dry); irrigated ground covers; low-growing fire-resistant plants; 2-inch maximum depth; no rubber mulch'],
+            ['Zone 2 (Reduced fuel zone)', '30–100 feet from structures', 'Standard mulch practices appropriate; some fire safety awareness still important', 'Standard organic mulches appropriate; maintain good moisture; avoid large accumulations against anything combustible'],
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '🔥',
+          text: 'The most dangerous mulch near structures: Rubber mulch burns intensely and is nearly impossible to extinguish with water alone — never use it in fire-prone areas or near any structure. Dry pine needles, dry bark nuggets, and dry shredded hardwood are all significantly combustible when dry. Moist wood chip mulch is one of the least flammable organic options. Check with your local fire department for specific guidance for your area.',
+        },
+        {
+          type: 'h3',
+          text: 'Deep Mulch Food Forest Systems',
+        },
+        {
+          type: 'list',
+          items: [
+            'The approach: Apply 6–12 inches of arborist wood chips (not processed bark) over a cardboard sheet mulch base around trees and perennial food plants; do not till into soil; allow to decompose in place over years.',
+            'Who this works for: Established orchards and food forests with permanent plantings; systems being converted to low-input management; situations where abundant free wood chip material is available.',
+            'Critical requirement: Plants must be established before applying deep mulch; never apply 6–12 inches of chips around newly planted or young trees; wait 1–2 growing seasons after planting before transitioning to deep mulch.',
+            'What happens over time: Within 1–2 seasons, the bottom layer of chips decomposes into dark, rich soil amendment; within 3–5 years, the soil beneath a deep chip system is measurably improved in organic matter, structure, and biological activity.',
+            'Nitrogen concern management: Deep chip mulch is the application where nitrogen tie-up is a real (though temporary) concern; address by adding a nitrogen source annually — a thin layer of compost, alfalfa meal, or blood meal on top of the chips before each new layer.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Mulching for Water Harvesting in Arid Climates',
+        },
+        {
+          type: 'list',
+          items: [
+            'Mulch in planted basins (waffle garden technique): Sunken planting basins surrounded by low earthen berms collect and concentrate rainfall; filling basins with 3–4 inches of organic mulch or gravel dramatically increases water infiltration and reduces evaporation.',
+            'Mulched berms and swales: The upslope edge of swales planted and mulched with appropriate materials captures and infiltrates runoff; mulch prevents evaporation from infiltrated water that would be lost from bare soil berms.',
+            'Traditional practices: Native American farming traditions in the Southwest — Zuni waffle gardens, Hopi dry farming, and O\'odham ak chin farming — used organic mulch and earthworks to grow crops in regions with 8–12 inches of annual rainfall.',
+            'Material choice for arid water harvesting: Rock mulch and gravel are appropriate in xeric landscape areas; organic wood chip mulch should be concentrated around irrigated or basin-planted areas where it provides its maximum moisture-conservation benefit.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Mulching Slopes and Erosion Control',
+        },
+        {
+          type: 'list',
+          items: [
+            'Best materials for slopes: Pine needles (interlock and resist movement); coarse wood chips (heavy enough to resist moderate rain; interlock slightly); jute or coir erosion netting over mulch (anchors material during establishment); hydroseed with wood fiber mulch for large-scale slope revegetation.',
+            'Worst materials for slopes: Bark nuggets (roll and wash away rapidly); fine bark (washes as a slurry); pea gravel (flows in water); straw without anchoring (blows and washes).',
+            'Anchoring techniques: On moderate slopes (15–25%), install biodegradable wooden stakes across the slope every 4–6 feet to create miniature berms that catch washing mulch; drive stakes at 45 degrees into the slope face.',
+            'Vegetation is the long-term solution: No mulch alone provides permanent slope erosion control; the goal of mulching slopes is to protect soil while vegetation establishes; once deeply rooted plants anchor the slope, mulch becomes secondary to root structure.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Quick Reference: Mulch Selection Guide',
+        },
+        {
+          type: 'table',
+          headers: ['If You Need...', 'Best Choice', 'Acceptable Alternatives', 'Avoid'],
+          rows: [
+            ['Maximum soil building for trees and shrubs', 'Fresh arborist wood chips (3–4 in)', 'Shredded hardwood bark; double-ground bark', 'Rubber mulch; landscape fabric; large bark nuggets'],
+            ['Best weed suppression for landscape beds', 'Shredded hardwood bark (3 in) on wet cardboard base', 'Double-ground hardwood; pine straw (3–4 in)', 'Bark nuggets; straw; any material under 2 in depth'],
+            ['Vegetable garden moisture retention and disease prevention', 'Straw (3–4 in between rows)', 'Shredded leaves; grass clippings (thin); plastic mulch', 'Wood chips against vegetable stems; rubber mulch; fresh manure'],
+            ['Acid-loving plants (blueberries, azaleas, rhododendrons)', 'Pine needles (3–4 in); shredded oak leaves', 'Wood chips (slightly acidifying when decomposed)', 'Alkaline materials (wood ash, crushed limestone); rubber mulch'],
+            ['Formal, aesthetically refined appearance', 'Colored hardwood bark (double-ground black or brown)', 'Shredded hardwood bark; pine bark nuggets', 'Fresh arborist chips (inconsistent appearance); straw'],
+            ['Fire-resistant near structures (WUI zones)', 'Gravel; decomposed granite; crushed stone (Zone 0–1)', 'Moist wood chips at reduced depth (Zone 1)', 'Rubber mulch (extremely flammable); dry pine needles; bark nuggets near structures'],
+            ['Maximum cost-effectiveness for large areas', 'Free arborist chips (ChipDrop or local tree service)', 'Municipal wood chip programs; bulk hardwood bark', 'Bagged retail mulch (3–5x more expensive than bulk)'],
+            ['Winter plant protection in cold climates (Zones 3–6)', 'Straw (6–8 in applied after hard freeze); shredded leaves', 'Wood chips; pine straw', 'Applying too early (before dormancy); fine material that compacts and traps moisture'],
+            ['Erosion control on slopes', 'Pine needles (interlock best); coarse wood chips with erosion netting', 'Straw with erosion blanket; wood fiber hydromulch', 'Bark nuggets; pea gravel; fine bark; any loose material without anchoring'],
+            ['Paths and walkways between beds', 'Wood chips (3–6 in); decomposed granite; shredded bark', 'Pine straw; straw; pea gravel (for drainage)', 'Landscape fabric + gravel (long-term maintenance problem)'],
+            ['Water conservation in arid/drought-prone climates', 'Wood chips (4 in — maximum moisture retention of any organic mulch)', 'Shredded bark; pine straw; gravel for xeric areas', 'Thin applications (under 3 in provide minimal water conservation)'],
+            ['Strawberries and berry patches', 'Straw (2–3 in; keep thin around crowns)', 'Pine straw; shredded leaves', 'Wood chips (too heavy for strawberry crown management); fine bark that mats'],
+            ['Rose beds', 'Shredded bark or wood chips (2–3 in; 4–6 in gap from stems)', 'Pine straw; compost top-dressed then bark', 'Cocoa shell (risk of dogs); fresh unaged wood chips near disease-susceptible roses'],
+            ['Under fruit trees', 'Coarse wood chips (3–4 in; 12 in clear from trunk)', 'Shredded bark; compost plus bark layer', 'Ground covers and grass under drip line; fine materials against trunk'],
+            ['Natural/woodland garden aesthetic', 'Shredded leaves; coarse arborist chips; pine straw', 'Any natural-appearing organic material', 'Colored/dyed bark; rubber mulch; decorative stone (inappropriate for woodland context)'],
+            ['Container gardens and pots', 'Shredded bark or decorative gravel (1 in)', 'Small stone; coco coir', 'Deep mulch that covers soil surface completely (prevents monitoring of moisture)'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Mulching Commitment: A Long-Term Investment',
+        },
+        {
+          type: 'p',
+          text: 'Mulching is not a one-time event — it\'s a commitment to a better-managed soil system. A single application improves your garden this season. A consistent program of appropriate mulching maintained over years creates something qualitatively different from what any single application can achieve: deep, biologically active soil with exceptional structure, water retention, and fertility that supports healthier plants with less effort and less supplemental input each year.',
+        },
+        {
+          type: 'p',
+          text: 'The compound effect of annual organic mulching is measurable. A garden bed properly mulched with 2–3 inches of organic material every year for five years has measurably higher organic matter content, higher earthworm populations, better drainage and water retention, and lower weed pressure than the same garden unmulched. These differences don\'t just persist — they accelerate. Healthy soil grows healthier plants, which contribute more organic matter, which builds better soil further.',
+        },
+        {
+          type: 'tip',
+          emoji: '🍂',
+          text: 'Healthy soil is not inherited. It\'s built — one layer at a time. A 3-inch layer of good mulch costs less than an hour\'s wages and does more for your garden\'s long-term health than almost anything else you can do. Do it consistently, do it correctly, and watch what happens to your soil over years. Start with the right mulch, at the right depth, at the right time — and let the compounding work in your favor.',
+        },
+      ],
+    },
   ],
 }
