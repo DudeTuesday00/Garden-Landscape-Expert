@@ -54,6 +54,7 @@ export const heroImages = {
   'sunroom-plants': '/guides/sunroom-plants.png',
   'indoor-herb-garden': '/guides/indoor-herb-garden.png',
   'rain-garden': '/guides/rain-garden.png',
+  'mulching-guide': '/guides/mulching-guide.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -826,6 +827,22 @@ const themes = {
     tableHeadText: 'text-sky-800',
     tableHeadBorder: 'border-sky-200',
     bullet: 'text-teal-500',
+  },
+  'mulching-guide': {
+    heroBg: 'bg-gradient-to-br from-amber-50 to-yellow-100',
+    heroBorder: 'border-amber-200',
+    heroTitle: 'text-amber-900',
+    backBtn: 'text-amber-700 hover:text-amber-900',
+    sectionTitle: 'text-amber-900',
+    sectionBorder: 'border-amber-100',
+    h3: 'text-amber-800',
+    tipBg: 'bg-amber-50',
+    tipBorder: 'border-amber-200',
+    tipText: 'text-amber-900',
+    tableHead: 'bg-amber-100',
+    tableHeadText: 'text-amber-800',
+    tableHeadBorder: 'border-amber-200',
+    bullet: 'text-yellow-600',
   },
   'hummingbird-garden': {
     heroBg: 'bg-gradient-to-br from-red-50 to-rose-100',

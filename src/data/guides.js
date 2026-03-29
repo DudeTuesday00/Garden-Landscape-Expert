@@ -668,7 +668,7 @@ export const guideCategories = [
         title: 'Mulching Guide',
         emoji: '🌰',
         description: 'Which mulch, how thick, and when to apply it for maximum benefit.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'water-wise-gardening',
