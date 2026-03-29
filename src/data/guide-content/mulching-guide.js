@@ -437,5 +437,106 @@ export const mulchingGuideContent = {
         },
       ],
     },
+    {
+      id: 'mulching-by-plant-type',
+      title: 'Mulching by Plant Type',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Different plants have fundamentally different relationships with mulch. A tree benefits from deep mulch extending to the drip line — mimicking the natural leaf litter layer of a forest floor. A tomato plant wants warmth and air around its base. A newly seeded lawn needs no mulch at all in some situations or very fine straw in others. This section gives plant-specific guidance for every major garden category.',
+        },
+        {
+          type: 'h3',
+          text: 'Trees: The Most Important Mulching You\'ll Ever Do',
+        },
+        {
+          type: 'p',
+          text: 'Mulching trees properly is the highest-impact maintenance decision you can make for their long-term health — and yet volcano mulching (piling mulch against trunks) is so common that it kills thousands of otherwise-healthy trees every year in America. Done correctly, mulching trees is transformative; done wrong, it\'s slowly lethal.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Extend the mulched area as far as possible: The tree\'s feeder roots extend well beyond the drip line; the larger the mulched area, the greater the benefit; minimum is the drip line area, but mulching further is always better.',
+            'The "donut" shape: The mulched area should look like a donut from above — full coverage from about 6 inches out from the trunk to the edge of the drip line, with a gap of 2–4 inches immediately around the trunk; this gap is not optional.',
+            'Depth: 3–4 inches of shredded hardwood bark or wood chips; for trees on poor soils or in high-stress urban environments, 4–6 inches away from the trunk.',
+            'Best mulch for trees: Arborist wood chips — the coarser the better; they support the mycorrhizal fungi that directly improve tree health and root function; do not use fine mulch against tree trunks where it holds moisture.',
+            'Replacing lawn around trees: Lawn grass competes aggressively for water and nutrients, and mowing/string-trimmer damage to bark is a major source of stress and disease entry; removing lawn and replacing with mulch is one of the single best things you can do for a tree\'s long-term health.',
+            'Young tree establishment: Mulch rings of 3–4 feet diameter and 3-inch depth around newly planted trees can reduce transplant stress significantly — mulched trees establish 2–3x faster than unmulched trees in the same conditions.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Shrubs and Hedges',
+        },
+        {
+          type: 'list',
+          items: [
+            'Depth: 2–3 inches across the root zone of individual shrubs; 3–4 inches in hedge rows where weeds compete heavily.',
+            'Maintain clearance from ALL stems: In multi-stemmed shrubs, check carefully that no stems are in contact with mulch, especially at the soil line where bark is most vulnerable.',
+            'Acid-loving shrubs (azaleas, rhododendrons, blueberries, camellias): Pine needles, shredded oak leaves, or acidified wood chip mulch; the slight acidifying effect and moisture retention is critical for their shallow, fibrous root systems; never use alkaline materials (wood ash, crushed limestone) around these plants.',
+            'Boxwood specifically: Pull mulch back completely from boxwood crowns; boxwood is extremely sensitive to crown moisture and one of the plants most commonly killed by over-mulching or mulch-against-stem situations.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Roses',
+        },
+        {
+          type: 'table',
+          headers: ['Rose Type', 'Recommended Mulch', 'Depth', 'Key Considerations'],
+          rows: [
+            ['Hybrid tea and grandiflora (grafted)', 'Shredded bark or wood chips; avoid fine materials around crowns', '2–3 inches; keep 4–6 inches away from canes at soil line; in Zones 5 and colder, mound 8–12 inches over bud union for winter', 'Bud union must be kept dry; mulch reduces black spot from soil splash significantly; bud union should be protected with mounded winter mulch in Zones 5–6'],
+            ['Shrub roses (own-root)', 'Any organic mulch; wood chips preferred', '2–3 inches; 2-inch gap from cane bases', 'More forgiving than grafted roses; own-root roses in Zones 4–6 can be reliably overwintered with standard 3-inch mulch; they regenerate from the base even if top-killed'],
+            ['Climbing roses', 'Shredded bark or wood chips at base', '2–3 inches at base; for winter protection tie canes and wrap with burlap before applying insulating mulch over base', 'Keep mulch off wooden structures or walls to which canes are attached to prevent rot'],
+            ['Miniature roses', 'Fine-textured bark mulch or shredded leaves', '1.5–2 inches; very careful clearance from tiny stems', 'Scale matters — a 2-inch mulch application appropriate for a full-size rose can be proportionally overwhelming for a miniature; use fine material'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Vegetable Gardens',
+        },
+        {
+          type: 'table',
+          headers: ['Vegetable Category', 'Best Mulch', 'Depth / Method', 'Special Considerations'],
+          rows: [
+            ['Tomatoes, peppers, eggplant (warm-season fruiting)', 'Straw, shredded leaves, or plastic mulch', '3–4 inches straw between plants; 1 inch around stems; alternatively black plastic pre-warms soil and manages moisture exceptionally well', 'Mulch significantly reduces early and late blight, Septoria, and Anthracnose in humid climates; allow soil to warm to 65°F before mulching in cool climates'],
+            ['Cucumbers, squash, melons (cucurbits)', 'Black plastic (pre-warming) then straw after establishment; or straw alone once soil is warm', 'Black plastic at planting then 3–4 inches straw when plants are established', 'Cucurbits are extremely temperature-sensitive; pre-warming with black plastic can extend harvest window significantly in cool climates'],
+            ['Beans and peas (legumes)', 'Straw or shredded leaves', '2–3 inches between rows', 'Legumes are nitrogen-fixers and don\'t need nitrogen-rich mulches; peas prefer cool soil — mulch early to keep soil cool for extended harvest'],
+            ['Corn', 'Straw or grass clippings', '2–3 inches between rows after plants are 6+ inches tall', 'Corn needs warm soil to germinate; don\'t mulch until plants are established; focus on keeping straw between rows, not around plant bases'],
+            ['Root vegetables (carrots, beets, radishes)', 'Light straw or shredded leaves', '1–2 inches — very light application; keep clear of emerging greens', 'Heavy mulch prevents the even soil moisture needed for uniform root development; use light application primarily for moisture retention'],
+            ['Brassicas (broccoli, cabbage, kale)', 'Straw, shredded bark, or arborist chips', '2–3 inches', 'Brassicas prefer cool soil — mulch early to keep roots cool in summer; check for slugs and earwigs sheltering under mulch'],
+            ['Lettuce and salad greens', 'Fine straw or shredded leaves', '1–2 inches light application', 'Delicate stems are easily smothered or damaged by heavy mulch; light application keeps soil moist and prevents splash on edible leaves'],
+            ['Garlic and onions', 'Straw mulch', '4–6 inches over garlic after fall planting; remove in spring when shoots emerge; 2–3 inches around growing onions', 'Fall-planted garlic benefits enormously from deep straw mulch; do not mulch onion bulbing area in summer (needs heat and drying)'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Fruit Trees and Berry Bushes',
+        },
+        {
+          type: 'list',
+          items: [
+            'Fruit trees: 3–4 inches of wood chips or shredded bark extending to the drip line; CRITICAL — maintain a completely clear area of 12+ inches from the trunk; this prevents rodent habitat and disease entry that are especially problematic in fruit trees.',
+            'Fire blight management (apples, pears): Avoid excessive nitrogen from composted mulch immediately around fire-blight-susceptible trees; nitrogen promotes the succulent growth that fire blight most readily attacks; use wood chips rather than compost under susceptible apples and pears.',
+            'Blueberries: 3–4 inches of wood chips, pine needles, or shredded oak leaves; blueberries have very shallow, fibrous roots that are extremely sensitive to soil temperature and moisture swings; the mild acidifying effect of pine needles and oak leaves is beneficial.',
+            'Strawberries: 2–3 inches of weed-free straw between rows; keep mulch thin around crowns; replace after harvest to protect over winter in Zones 4–6.',
+            'Raspberries and blackberries: 2–3 inches of wood chips or straw between rows; keep mulch thin at cane bases; excellent for moisture retention and weed suppression in the vigorous-growing canes.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Lawn Areas: When and How to Mulch Grass',
+        },
+        {
+          type: 'list',
+          items: [
+            'New seeding: When overseeding bare areas or establishing a new lawn from seed, a very thin layer (1/4–1/2 inch) of weed-free straw over the seed prevents desiccation and bird predation; keep it thin enough that 50–75% of the soil surface is still visible.',
+            'Sod seams: After laying sod, topdressing seams between sod pieces with a thin application of sandy loam or compost helps them knit together faster.',
+            'Grass clipping mulching: Leaving mowed grass clippings on the lawn (mulching mowing) is one of the simplest and most beneficial lawn care practices; clippings contain 4% nitrogen and return nutrition to the lawn with each mowing.',
+            'Tree rings: Removing grass from under trees and replacing with a 3–4 inch wood chip mulch ring is one of the most beneficial practices for tree health; the grass-to-mulch transition should be clean and clearly edged for aesthetic coherence with the lawn.',
+          ],
+        },
+      ],
+    },
   ],
 }
