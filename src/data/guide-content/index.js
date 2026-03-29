@@ -54,6 +54,7 @@ import { hummingbirdGardenContent } from './hummingbird-garden.js'
 import { sunroomPlantsContent } from './sunroom-plants.js'
 import { indoorHerbGardenContent } from './indoor-herb-garden.js'
 import { rainGardenContent } from './rain-garden.js'
+import { mulchingGuideContent } from './mulching-guide.js'
 
 export const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -106,4 +107,5 @@ export const contentMap = {
   'sunroom-plants': sunroomPlantsContent,
   'indoor-herb-garden': indoorHerbGardenContent,
   'rain-garden': rainGardenContent,
+  'mulching-guide': mulchingGuideContent,
 }
