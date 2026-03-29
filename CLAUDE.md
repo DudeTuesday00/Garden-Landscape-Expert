@@ -1178,6 +1178,27 @@ Raleway (headings) and Lato (body) loaded via `next/font/google` in `src/app/lay
 
 ---
 
+### Mulching Guide ✅
+
+`src/data/guide-content/mulching-guide.js` — Mulching Guide (`id: 'mulching-guide'`); fully built from `mulching-guide.docx` — 10 sections covering mulch science through advanced techniques and a complete mulch selection quick reference.
+
+| Section | Status | Notes |
+|---|---|---|
+| Section 1: Why Mulch Matters | ✅ Done | 7-row core benefits table (moisture retention, weed suppression, soil temperature, soil structure, erosion prevention, biological activity, aesthetics); soil ecology and mycorrhizal fungi; earthworm population effects; mulch sandwich biology |
+| Section 2: Organic Mulch Types | ✅ Done | Wood chips/arborist chips (8-row attribute table, nitrogen tie-up myth debunked); shredded hardwood bark (6-row product type table including cocoa shell dog warning); straw and hay (straw vs. hay warning callout, 5-row straw type table); shredded leaves/leaf mold; compost as mulch; pine needles (6-row attribute table, fire risk note); grass clippings (herbicide contamination warning) |
+| Section 3: Inorganic Mulch Types | ✅ Done | Gravel/rock/stone (6-row type table: pea gravel, DG, river rock, lava rock, limestone, marble chips; heat-in-hot-climates tip); rubber mulch (7-row reality table — playground use only recommendation); landscape fabric honest assessment (5-row reality table — long-term failure documented); biodegradable weed barrier options (cardboard, newspaper, jute/coir/hemp, paper mulch) |
+| Section 4: How Deep to Mulch | ✅ Done | Two cardinal rules tip callout; 12-row depth by application table (trees through containers); 8-row fine-tuning by material table; 5-row volcano mulch problem table (crown rot, root suffocation, rodent girdling, anaerobic conditions, graft union disease) |
+| Section 5: When to Apply Mulch | ✅ Done | 7-row seasonal timing table (early spring through post-storm); spring perennial bed timing sequence (4 items); vegetable garden timing (4 items); winter mulching for plant protection (5 items) |
+| Section 6: Mulching by Plant Type | ✅ Done | Trees (donut shape, drip-line extension, arborist chips, lawn replacement); shrubs and hedges (boxwood warning, acid-loving shrubs); roses (4-row type table: hybrid tea, shrub, climbing, miniature); vegetable gardens (8-row crop table); fruit trees and berry bushes (5 items); lawn areas (new seeding, grass clipping mulching, tree rings) |
+| Section 7: Regional Mulching Guide | ✅ Done | 9-row regional table (New England, Mid-Atlantic, Southeast/Gulf, Midwest/Great Lakes, Great Plains, Mountain West, Pacific NW, California, Desert SW) with climate challenge, best organic/inorganic mulches, depth guidance, and key regional notes |
+| Section 8: Application Techniques | ✅ Done | Standard mulch application 8-step guide; sheet mulching/cardboard method (7 steps + timeline tip); maintaining existing mulch (5-item depth assessment guide); 8-row troubleshooting table (artillery fungus, slime mold, sooty mold, hydrophobic mulch, white mycelium, compacting mat, weeds, mulch movement) |
+| Section 9: Mulch Economics & Sourcing | ✅ Done | Volume calculation formula tip; 6-row area/depth reference table; bags vs. bulk cost reality tip; 7 free and low-cost sources (ChipDrop, municipal programs, leaf mower method, cafe coffee grounds, co-op buying); 8-row cost comparison table by mulch type with annual cost per 1,000 sq ft |
+| Section 10: Special Applications & Quick Reference | ✅ Done | Wildfire safety 3-row defensible space table (Zone 0/1/2) + flammability warning; deep mulch food forest systems (5 items); water harvesting in arid climates (4 items); slope/erosion control (4 items); 16-row mulch selection quick reference table; closing reflection + tip callout |
+
+Theme: amber/yellow gradient in `GuideDetail.jsx`; hero image: `public/guides/mulching-guide.png`; `comingSoon: false` under Eco & Sustainability in `guides.js`; wired in `src/data/guide-content/index.js`
+
+---
+
 ### Infographics, Videos, and Podcasts Pages ✅
 
 Three new content discovery pages added to the app:
