@@ -366,5 +366,76 @@ export const mulchingGuideContent = {
         },
       ],
     },
+    {
+      id: 'when-to-apply-mulch',
+      title: 'When to Apply Mulch',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The timing of mulch application is almost as important as the type and depth. Applied at the right moment, mulch locks in moisture before summer heat arrives, insulates roots before winter freezes, or suppresses spring weeds before they establish. Applied at the wrong time, mulch traps cold in spring soil when you want warmth, delays summer soil heating in vegetable gardens, or covers crown diseases that should be exposed and treated.',
+        },
+        {
+          type: 'h3',
+          text: 'Seasonal Timing by Region and Climate',
+        },
+        {
+          type: 'table',
+          headers: ['Season / Timing', 'What to Do', 'Why', 'Regions Where This Matters Most'],
+          rows: [
+            ['Early Spring (soil warmup)', 'Wait until soil has warmed before applying mulch to vegetable gardens and annual beds; pull mulch back from perennial crowns to allow emergence', 'Cold soil delays planting and germination; mulch insulates soil from warming; premature mulching can delay the growing season by 1–2 weeks in cold climates', 'Critical in Zones 3–6; less important in Zones 7–11 where soil rarely needs time to warm'],
+            ['Mid-Spring (pre-heat season)', 'Best time for most landscape mulch application; apply after soil has warmed but before summer heat and weed seed germination peaks; refresh or reapply as annual application', 'Captures full moisture-retention benefit for the summer ahead; prevents the main flush of annual weed germination; gives maximum benefit for the entire growing season', 'Universal best timing for all U.S. regions; typically April–May in Zones 5–7; February–March in Zones 8–10; May–June in Zones 3–4'],
+            ['Late Spring / Early Summer (before heat)', 'Apply or reapply mulch before summer heat peaks if missed in spring; last practical window for full summer benefit', 'Soil that has been warm and dry in May/June benefits greatly from mulch that will slow evaporation through July–August; water deeply before applying over dry soil', 'Particularly important in hot summer climates (Southwest, Great Plains, Southeast)'],
+            ['Midsummer', 'Generally avoid adding new mulch layers in full summer; if needed, apply only 1 inch as a top-up; ensure soil is moist before applying', 'Adding thick mulch over dry soil in summer traps the dry condition; ensure soil is moist and water deeply before summer mulch application', 'Drought-prone regions where summer mulching seems most needed but can be counterproductive if soil is already dry and hard'],
+            ['Fall (pre-winter)', 'Apply winter mulch after the first few hard freezes but before the ground freezes solid; do not mulch too early before plants have hardened off', 'Goal: insulate frozen soil to prevent damaging freeze-thaw cycles, not prevent initial freezing; premature fall mulch can delay plant hardening off and extend disease pressure', 'Critical in Zones 3–6 for overwintering perennials, roses, root vegetables, and marginally hardy plants'],
+            ['Winter (mild climates)', 'In Zones 8–11, apply mulch throughout winter as needed since growing continues; protect tender plants with extra mulch before expected cold snaps', 'Mild-climate winters have active growth in some seasons; mulch management continues year-round rather than following a seasonal cycle', 'Gulf Coast, Florida, Pacific Coast, Desert Southwest where winter is a legitimate growing season'],
+            ['After heavy rain / storms', 'Replace mulch that has washed away; do not add new mulch over waterlogged soil — allow drainage first; check that mulch has not redistributed to cover plant crowns', 'Mulch integrity is compromised by heavy rain; storm redistribution can pile mulch against plant stems causing unseen crown rot', 'High-rainfall regions (Pacific NW, Southeast, Gulf Coast, Mountain West during monsoon season)'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Spring Perennial Bed Timing Question',
+        },
+        {
+          type: 'list',
+          items: [
+            'In late winter / very early spring: Pull back or lightly stir existing mulch from plant crowns; check for signs of disease or pest damage; allow crowns to be exposed to drying air briefly.',
+            'After crowns are visible but before leaf expansion: Apply or refresh mulch around plants — not on top of them; 2–3 inches between plants, kept clear of crowns by 2–4 inches.',
+            'Timing window: Typically after the last hard freeze is likely but before consistently warm temperatures bring weed seed germination — a 2–3 week window in late March–April (Zones 5–6), mid-March (Zones 7–8), or February (Zones 9–10).',
+            'Do not wait for full emergence before mulching: If you wait until perennials are fully leafed out, weeds have already germinated in the bare soil between plants; the goal is to mulch while you can still navigate between emerging but not-yet-expanded plants.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Vegetable Garden Timing: Maximizing Soil Temperature',
+        },
+        {
+          type: 'list',
+          items: [
+            'Cool-season vegetable beds (spring): Do NOT mulch cool-season beds early in spring; allow the soil to warm as fast as possible; light-colored or black plastic mulch can be used to pre-warm soil before planting in cold climates.',
+            'After warm-season transplants are established (2–4 weeks after transplanting): Apply 3–4 inches of straw or shredded leaves; soil is warm, plants are established, and the summer moisture retention benefit is about to become critical.',
+            'Do not mulch around direct-seeded crops until seedlings are 3–4 inches tall: mulch prevents germination and impedes seedling emergence; thin carefully around seedlings before applying mulch between rows.',
+            'Fall vegetable garden: After fall harvest, apply 4–6 inches of straw or shredded leaves over the entire bed to protect soil over winter, prevent erosion, and provide organic matter for spring incorporation.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Winter Mulching for Plant Protection',
+        },
+        {
+          type: 'p',
+          text: 'In Zones 3–7, winter mulch applied specifically for plant protection is fundamentally different in purpose from regular landscape mulch. Its goal is to insulate already-frozen soil from the repeated freeze-thaw cycles that damage plant roots — not to prevent freezing in the first place.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Timing is critical: Apply winter protection mulch after plants have entered full dormancy and after the soil has experienced several hard freezes (typically late November–December in Zones 5–6; October–November in Zones 3–4). Applying too early in Zones 5–7 can delay plant hardening off.',
+            'Roses: Mound 10–12 inches of compost, bark, or soil over the base of hybrid tea and grandiflora roses in Zones 5 and colder; remove in spring when forsythia blooms. With own-root roses and hardy shrub roses, a standard 3-inch mulch layer is typically sufficient.',
+            'Marginally hardy perennials: Add an extra 2–3 inches of straw, shredded leaves, or evergreen boughs over plants rated 1 zone colder than your actual zone; this can extend survival of borderline plants significantly.',
+            'Root vegetables in ground: In Zones 5–7, 6–8 inches of straw mulch over carrots, parsnips, leeks, and other root vegetables allows harvest through much of winter as the mulch prevents the ground from freezing solid in moderate winters.',
+            'Removal timing: Remove winter protection mulch in spring before new growth is forced under the mulch; typically when forsythia blooms or when ground temperatures are consistently above 40°F.',
+          ],
+        },
+      ],
+    },
   ],
 }
