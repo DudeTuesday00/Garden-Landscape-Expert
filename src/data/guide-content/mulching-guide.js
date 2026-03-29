@@ -292,5 +292,79 @@ export const mulchingGuideContent = {
         },
       ],
     },
+    {
+      id: 'how-deep-to-mulch',
+      title: 'How Deep to Mulch',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Mulch depth is where most home gardeners go wrong in both directions. Too thin and the mulch provides minimal weed suppression or moisture retention — a 1-inch layer is barely better than nothing. Too thick and the mulch deprives plant roots of oxygen, creates a habitat for fungal disease and rodents, and prevents rain from penetrating to the soil. The correct depth varies by application, plant type, and mulch material — but the principles are consistent.',
+        },
+        {
+          type: 'tip',
+          emoji: '📏',
+          text: 'The two cardinal rules of mulch depth: Never less than 2 inches — below this threshold, mulch provides minimal benefit. Never more than 4 inches on established beds (6 inches only for special situations). Always keep mulch 2–4 inches away from all plant stems and tree trunks.',
+        },
+        {
+          type: 'h3',
+          text: 'Depth by Application Type',
+        },
+        {
+          type: 'table',
+          headers: ['Application', 'Recommended Depth', 'Rationale', 'Common Mistakes'],
+          rows: [
+            ['Trees and large shrubs (established)', '3–4 inches over root zone; 4–6 inches in poor soils or for maximum moisture conservation', 'Deeper mulch provides greater moisture retention and more insulation for the extensive root systems of large woody plants; also suppresses lawn grass competition', 'Volcano mulching (piling against trunk); not extending the mulched area far enough — ideal is to the drip line or beyond'],
+            ['Trees (newly planted)', '2–3 inches initially; expand circle and increase to 3–4 inches after first year', 'Newly planted trees are establishing roots and need moisture retention and temperature moderation; keep circle small initially (3 ft diameter) and expand as tree establishes', 'Applying too much too soon; piling against trunk; not watering through the mulch adequately in the first growing season'],
+            ['Shrubs and hedges', '2–3 inches', 'Shrubs typically have shallower root systems than trees; 2–3 inches provides good moisture retention and weed suppression without oxygen deprivation risks', 'Letting mulch touch the base of shrubs (causes crown rot on many species, particularly evergreen azaleas, boxwood, and other susceptible plants)'],
+            ['Perennial flower beds', '2–3 inches', 'Perennials need their crowns to breathe; 2–3 inches balances weed suppression and aeration needs; some perennials are sensitive to mulch contact at the crown', 'Mulching over dormant crowns in fall before they are fully dormant; using fine materials that compact and prevent spring emergence'],
+            ['Annual flower beds', '1.5–2 inches', 'Annuals are shallower-rooted and often need to self-sow for the following season; thinner layer allows easy transplanting and soil warmth', 'Over-mulching thin-stemmed annuals; preventing self-seeding of desired annuals'],
+            ['Vegetable gardens (between rows)', '2–4 inches straw or shredded leaves', 'Deeper mulch needed in vegetable gardens to manage moisture through hot summer production months; straw at 3–4 inches provides excellent performance', 'Using fine mulch that compacts; applying before soil has warmed in spring (delays planting season)'],
+            ['Vegetable gardens (around plants)', '1–2 inches close to stems; 3–4 inches between plants', 'Keep thin near stems to prevent disease; thicker between plants for weed and moisture management', 'Over-mulching around tomato, squash, and cucumber stems — dramatically increases disease pressure from soil splash and crown moisture'],
+            ['Vegetable seed rows', 'None until seedlings are 3+ inches tall', 'Mulch prevents light from reaching germinating seeds and physically impedes emergence of small seedlings', 'Mulching over newly seeded areas — a very common mistake that dramatically reduces germination rates'],
+            ['Strawberries', '2–3 inches between rows; 1 inch under and around plants', 'Keeps fruit off soil; moderates temperature; reduces disease from soil splash', 'Too deep under plants smothers crowns; too thin between rows allows weeds to overtake during fruiting'],
+            ['Roses', '2–3 inches; keep clear of bud union and canes', 'Moisture retention helps roses through drought; insulation of roots in winter; disease prevention from reduced soil splash', 'Mulching over the bud union on grafted roses, especially in cold climates; using fresh wood chips or manure that may introduce pathogens'],
+            ['Pathways and non-planted areas', '3–6 inches; can go deeper with no plant health concerns', 'Deeper mulch on pathways provides better weed suppression and lasts longer; comfort underfoot with deeper material', 'Not edging pathways properly, leading to mulch spreading into planted areas'],
+            ['Hillsides and slopes (erosion control)', '3–4 inches; use coarse material that anchors', 'Deeper needed for erosion control; coarse or interlocking material (pine needles, wood chips, straw with erosion blanket) resists washing in rain events', 'Using fine or loose material (bark nuggets, gravel) that washes off slopes easily'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Fine-Tuning Depth by Mulch Material',
+        },
+        {
+          type: 'table',
+          headers: ['Mulch Material', 'Apply At', 'Settles To', 'Notes on Depth'],
+          rows: [
+            ['Shredded hardwood bark', '3–4 inches', '2–3 inches after rain and settling', 'Standard benchmark depth; the basis for most mulch depth recommendations'],
+            ['Wood chips (coarse arborist chips)', '4–5 inches', '3–4 inches settled', 'Coarser material requires slightly more initial depth to achieve equivalent settled density'],
+            ['Bark nuggets (medium)', '4 inches', '3.5 inches settled — gaps between nuggets persist', 'Because gaps allow light penetration, bark nuggets need to be slightly deeper than shredded materials to achieve equivalent weed suppression'],
+            ['Pine needles / straw', '3–4 inches', '2.5–3 inches settled', 'Both materials are lightweight and settle significantly; apply generously knowing they will compress'],
+            ['Shredded leaves', '3–4 inches', '1.5–2 inches after decomposition begins', 'Leaves compact dramatically, especially when wet; apply generously to account for rapid settling and early-season decomposition'],
+            ['Compost (as mulch)', '1–2 inches (used as base layer)', '0.75–1.5 inches settled', 'Should be used as a base under another mulch, not as the primary mulch layer; apply before topping with 2–3 inches of another material'],
+            ['Gravel / rock (1.5 inch)', '2–3 inches', '2–3 inches — minimal settling', 'Inorganic; does not settle; apply at final depth; very difficult to adjust once in place'],
+            ['Grass clippings', '1–1.5 inches (maximum)', '0.75 inch after settling and initial decomposition', 'Apply thin; thicker layers mat and create anaerobic conditions; this is one material where less is genuinely more'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Volcano Mulch Problem: What Happens When You Go Too Deep',
+        },
+        {
+          type: 'p',
+          text: 'Over-mulching is at least as common and as damaging as under-mulching. The problems caused by excessive mulch depth and mulch contact with plant stems are well-documented and affect millions of American landscapes every year.',
+        },
+        {
+          type: 'table',
+          headers: ['Problem', 'Caused By', 'Affects', 'Signs', 'Solution'],
+          rows: [
+            ['Crown and collar rot', 'Mulch piled against stems keeps moisture in contact with bark; creates conditions for Phytophthora and other fungal pathogens to attack the stem at ground level', 'All woody plants; most severe in arborvitae, yews, boxwood, roses, young fruit trees, and grafted plants', 'Discoloration and softening of bark at soil line; leaves yellow and die suddenly in summer; plant declines rapidly', 'Pull mulch back immediately; create a 3–4 inch gap from stems; in severe cases, remove all mulch and allow the crown to dry before replacing properly'],
+            ['Root suffocation', 'Mulch deeper than 6 inches significantly restricts oxygen diffusion to the root zone', 'Trees and shrubs with deep applications (6–12 inches is not uncommon in commercial landscapes)', 'Gradual decline; poor leaf color; smaller than normal leaf size; dieback of branch tips; bark softening at base', 'Remove and thin to proper depth immediately; aerate soil if compacted; roots may recover if caught early'],
+            ['Rodent habitat and girdling', 'Deep mulch piled against trees creates ideal habitat for voles, mice, and gophers that chew bark while hidden under the mulch layer', 'Trees and shrubs; particularly vulnerable: young fruit trees, newly planted specimens, thin-barked trees', 'Bark missing from trunk at the mulch line; sudden death of otherwise healthy tree in late winter/early spring', 'Pull mulch back from trunk; install physical trunk guards (hardware cloth cylinders) as prevention'],
+            ['Anaerobic soil conditions', 'Very thick mulch layers prevent normal gas exchange; CO2 builds up and oxygen depletes in the soil', 'Established plantings under years of accumulated mulch without removal of old layers', 'Sulfur smell from soil under mulch; wilting despite adequate moisture; root rot without visible crown disease', 'Remove top layer of mulch entirely; let soil breathe; reapply at correct depth after 1 week'],
+            ['Stem/graft union disease', 'Mulch in contact with graft unions allows moisture to wick into the union, causing rot and loss of grafted top', 'All grafted plants: roses (bud union), fruit trees (graft union), ornamental trees', 'Top of grafted plant dies; suckers emerge from rootstock below union; visible rotting at union when inspected', 'Expose the union completely; it should always be above the mulch line'],
+          ],
+        },
+      ],
+    },
   ],
 }
