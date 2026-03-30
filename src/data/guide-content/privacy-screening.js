@@ -621,5 +621,109 @@ export const privacyScreeningContent = {
         },
       ],
     },
+    {
+      id: 'costs-budgets-quick-reference',
+      title: 'Section 9: Costs, Budgets & Quick Reference',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Privacy improvements span one of the widest cost ranges of any home improvement category — from a $30 trellis panel to a $40,000 complete landscape overhaul. Understanding the realistic cost of each approach and how to sequence investments for maximum early impact with available budget is the key to getting value from every dollar spent.',
+        },
+        {
+          type: 'h3',
+          text: 'Cost Comparison: Privacy Screening Options',
+        },
+        {
+          type: 'table',
+          headers: ['Solution', 'DIY Cost Range (materials)', 'Professional Cost Range (installed)', 'Speed of Privacy', 'Lifespan', 'Notes'],
+          rows: [
+            ['Privacy fence (wood, 100 linear feet)', '$1,500–3,500 materials', '$4,000–10,000 installed', 'Immediate', '15–25 years', 'Fastest and most reliable; best ROI for immediate need; requires permit in most areas; professional installation strongly recommended for proper post setting'],
+            ['Privacy fence (vinyl, 100 linear feet)', '$2,000–4,500 materials', '$5,000–12,000 installed', 'Immediate', '20–30 years', 'Higher upfront cost; lower maintenance; HOA friendly; permit required'],
+            ['Privacy hedge planting (100 linear feet, 5-gallon plants)', '$800–2,000 plants + soil prep', '$3,000–8,000 installed', '2–5 years to full screening', 'Indefinite with care', 'Lower cost but requires patience; most cost-effective long-term solution; professional installation speeds establishment significantly'],
+            ['Thuja \'Green Giant\' (15 plants, 5-gallon)', '$450–900', '$2,000–5,000 planted', '4–6 years to full screening', '40+ years', 'Best long-term value of any conifer screen; price for larger plants (7-gallon) is $80–120 each; immediate impact with larger stock'],
+            ['Bamboo screen (clumping, 20 linear feet)', '$400–800 plants', '$1,200–3,000 installed', '2–4 years to full height', '20+ years in Zone 7+', 'Very effective in appropriate zones; rhizome barrier adds $200–500 for running types in confined situations'],
+            ['Pergola (12×16 feet, cedar)', '$3,500–7,000 materials', '$8,000–20,000 installed', 'Immediate overhead coverage', '15–25 years', 'Most impactful single investment for transforming outdoor space; adds significant property value; permit required'],
+            ['Shade sail (12×12 feet)', '$100–400', '$300–800 installed', 'Same day', '5–10 years', 'Most affordable overhead privacy option; requires adequate anchor points; temporary solution'],
+            ['Outdoor curtain system (pergola)', '$200–600', '$400–1,000', 'Same day after mounting', '5–8 years', 'Excellent for deck side privacy; great aesthetic result; combine with existing pergola'],
+            ['Raised planter with bamboo', '$300–800 per 8 ft section', '$600–1,500 installed', '1–2 years to full height', '10+ years (container)', 'Excellent for patio and deck privacy; movable; no ground disturbance; works for renters'],
+            ['Berm construction (100 linear feet, 3-foot height)', '$2,000–5,000 materials + grading', '$5,000–15,000 installed', 'Immediate grade change; planting takes 3–5 years', 'Permanent', 'Highest long-term ROI for road noise and elevated view problems; requires significant earthwork; transforms the site permanently'],
+            ['Masonry wall (50 linear feet, 6 feet height)', '$8,000–15,000 materials', '$15,000–35,000 installed', 'Immediate', '50+ years', 'Most durable and effective non-plant barrier; requires engineering and permits; appropriate for high-traffic noise situations; exceptional long-term investment'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Phasing Your Investment: Getting Maximum Early Impact',
+        },
+        {
+          type: 'table',
+          headers: ['Phase', 'Timeline', 'Actions', 'Budget Range', 'Privacy Result'],
+          rows: [
+            ['Phase 1: Immediate Impact', 'Month 1', 'Install privacy fence at most critical sight line; add shade sail or pergola over primary seating area; plant 3–5 large arborvitae at most visible intrusion point', '$3,000–8,000', '70–80% privacy at primary use area immediately; critical sight lines blocked'],
+            ['Phase 2: Plant Framework', 'Year 1', 'Install full privacy hedge or screening tree row at property perimeter; plant climbing vines on fence; add container bamboo on deck/patio', '$2,000–5,000', 'Full perimeter planting established; begins growing toward full screening height; 60% screening at perimeter'],
+            ['Phase 3: Middle Layer', 'Year 1–2', 'Fill in middle layer of privacy design with evergreen shrubs; add lattice to fence top for vine climbing; install cable trellis systems where needed', '$1,500–4,000', 'Three-layer design beginning to function; visual depth and enclosure building'],
+            ['Phase 4: Completion and Refinement', 'Year 3–5', 'Replace temporary screening with permanent plantings as trees establish; add landscape lighting; install permanent water feature; remove fast-temporary screens as permanent trees take over', '$2,000–6,000', 'Complete privacy design fully functional; living and structural elements mature; full retreat experience achieved'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'DIY vs. Professional: The Honest Guide',
+        },
+        {
+          type: 'table',
+          headers: ['Task', 'DIY-Suitable?', 'Why / Why Not', 'Professional Value-Add'],
+          rows: [
+            ['Small plant installation (under 30 plants, 5-gallon or smaller)', 'Yes — very DIY-friendly', 'Straightforward; no special equipment; significant cost savings (60–70% less than professional install)', 'Professional grading and soil prep may add value; professional warranty on plants'],
+            ['Large tree installation (15-gallon or larger; 50+ plants)', 'Partially — site prep DIY; actual large plant installation difficult without equipment', 'Large trees require equipment (tree spade, bobcat); physical demand is high for DIY', 'Professional planting crews install large orders much faster with better root zone preparation; often worth the cost for the warranty alone'],
+            ['Wood fence installation', 'Possible for experienced DIYers with proper tools', 'Post setting is critical — improper depth, concrete, and alignment leads to fence failure within 5 years; common DIY failure point', 'Professional fence installers set posts correctly for local frost depth and soil conditions; typically include warranty; faster and more likely to pass permit inspection'],
+            ['Pergola construction', 'Possible for experienced DIYers — moderate woodworking project', 'Straightforward if you have basic carpentry skills; post setting and beam connection are the critical joints', 'Professional carpenter or deck contractor ensures structural adequacy; particularly valuable if pergola attaches to house (ledger board connection requires specific flashing)'],
+            ['Shade sail installation', 'Yes — very DIY-friendly', 'Simple installation if proper anchor points exist; instructions included with most sails', 'Professional installation only warranted for large commercial-grade sails where anchor engineering is critical'],
+            ['Landscape lighting', 'Partially — low-voltage systems are DIY-friendly', 'Low-voltage (12V) landscape lighting is safe for DIY; line voltage (120V) must be done by a licensed electrician', 'Electrician required for line-voltage installations; landscape lighting designers provide high-value design consultation for complex systems'],
+            ['Grading and berm construction', 'Partially — small berms under 2 feet; larger grading requires equipment', 'Equipment rental ($300–600/day for mini-excavator) makes larger grading accessible to DIY; proper compaction and drainage important', 'Professional grading contractors ensure proper drainage grades; essential for large berms and drainage-sensitive sites'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Quick Reference: Privacy Screening Selector',
+        },
+        {
+          type: 'table',
+          headers: ['Situation', 'Best First Action', 'Best Long-Term Solution', 'Speed', 'Budget Range'],
+          rows: [
+            ['Need privacy now — no time to wait for plants', 'Install privacy fence at problem area', 'Fence + evergreen plants behind it', 'Immediate', '$4,000–12,000 for 50 linear feet'],
+            ['Budget under $1,000', 'Plant 5–7 Thuja Green Giant in most critical zone; add shade sail over seating area', 'Continue planting additional zones each season', '3–5 years for primary screening', '$400–900 plants + $150–400 sail'],
+            ['Overlooking second-floor neighbor window', 'Plant tall columnar trees (arborvitae, Green Giant) closest to that direction; add pergola overhead', 'Tall evergreens + pergola with retractable canopy', '4–6 years for full effectiveness', '$5,000–15,000 combined'],
+            ['Front yard street visibility', 'Evergreen hedge along property line (check setback requirements); low berm if road is elevated', 'Multi-row native evergreen screen set back from street', '3–5 years for substantial privacy', '$2,000–8,000'],
+            ['HOA won\'t allow tall fence', 'Use maximum-height permitted fence + lattice + climbers; plant evergreens inside fence', 'Fence at code + Green Giant hedge behind it exceeding fence height over time', '1 year for fence; 5 for full planting', '$5,000–15,000'],
+            ['Renter with no permanent installation options', 'Container bamboo on deck/patio; freestanding privacy screens; outdoor curtains on pergola', 'Maximize movable solutions that come with you when you leave', 'Immediate–1 year', '$500–3,000'],
+            ['Noise reduction from road', 'Dense evergreen plantings (multiple rows if possible); berm if site allows; water feature near seating', 'Earth berm + multi-row evergreen planting + water feature combination', '5–8 years for significant noise reduction', '$8,000–30,000 for berm + planting'],
+            ['Privacy on small city lot', 'Columnar evergreens (narrow footprint); pergola over patio; outdoor curtains on patio sides', 'Three-layer design with columnar background, evergreen middle layer, container foreground', '2–5 years for full effect', '$5,000–20,000 depending on scope'],
+            ['Pool area privacy from multiple neighbors', 'Install fence to maximum permitted height immediately; plant arborvitae on fence interior', 'Privacy fence + mature evergreen hedge + pergola over deck portion of pool area', 'Fence immediate; full design 4–7 years', '$10,000–30,000 complete'],
+            ['Maximum deer pressure area', 'Choose deer-resistant species only (Green Giant, hollies, native ferns); protect young plants with temporary fencing during establishment', 'Deer-resistant evergreen species permanently established', '3–5 years with deer-resistant plants', '$3,000–10,000 depending on length'],
+            ['Privacy on a slope', 'Plant on top of slope (elevated planting on natural grade is more effective); consider terracing with retaining walls plus plantings', 'Terraced retaining wall with evergreen planting at each level', 'Terracing immediate; plants 3–5 years', '$8,000–25,000 for terracing + planting'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Creating Your Private Retreat: A Final Word',
+        },
+        {
+          type: 'p',
+          text: 'Privacy is one of those qualities that you don\'t fully appreciate until you have it — and can\'t fully tolerate not having once you\'ve experienced it. The difference between a backyard that feels like an extension of your home and one that feels like a performance for the neighbors is almost entirely a matter of deliberate screening design. The plants, fences, and structures described in this guide are the tools; the design principles are the map.',
+        },
+        {
+          type: 'p',
+          text: 'The most important thing to remember: start. The Green Giant arborvitae you plant this fall will be 8 feet tall in four years. The pergola you build this spring will transform how you use your outdoor space this summer. The fence that goes in before the season starts gives you privacy from day one. Every season you wait is a season of outdoor space you underutilize because it doesn\'t feel like yours.',
+        },
+        {
+          type: 'p',
+          text: 'Design for your specific situation. Understand what you\'re screening from and at what height. Choose plants matched to your climate and site conditions. Layer your solutions so they support each other. Work within your local regulations and maintain good relationships with neighbors while you do it. And invest with a long-term mindset — the privacy screen that takes five years to mature is yours forever, and it gets more beautiful every year.',
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'A private yard is not a luxury. It\'s the difference between outdoor space you own and outdoor space that owns you. Plant the tree. Build the pergola. Put up the fence. Give yourself the retreat your backyard is supposed to be.',
+        },
+      ],
+    },
   ],
 }
