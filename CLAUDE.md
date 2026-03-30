@@ -1199,6 +1199,26 @@ Theme: amber/yellow gradient in `GuideDetail.jsx`; hero image: `public/guides/mu
 
 ---
 
+### Privacy Screening Guide ✅
+
+`src/data/guide-content/privacy-screening.js` — Backyard Privacy Screening (`id: 'privacy-screening'`); fully built from `privacy-screening.docx` — 9 sections covering privacy diagnosis through costs, quick reference, and closing.
+
+| Section | Status | Notes |
+|---|---|---|
+| Section 1: Privacy Planning Fundamentals | ✅ Done | Three-step privacy assessment; 7-row privacy problem/solution table (street visibility, first-floor window, second-floor/elevated, elevated road, overlooking deck, corner lot, night lighting); 7-row local regulations table (fence height, setbacks, HOA rules, view easements, plant height limits, utility easements, tree ordinances); HOA written-approval warning callout |
+| Section 2: Fences and Solid Structures | ✅ Done | 8-row fence materials table (cedar, pressure-treated pine, redwood, composite, vinyl, aluminum/steel, horizontal board, bamboo panel — privacy rating, lifespan, installed cost, maintenance, best for, limitations); lattice top extension, board-on-board construction, fence-as-design-feature list; 7-row fence permitting table |
+| Section 3: Privacy Plants — The Complete Selection Guide | ✅ Done | Growth expectations tip; 10-row evergreen trees table (Green Giant, Leyland Cypress, Emerald Green, American Arborvitae, Eastern Red Cedar, American Holly, Wax Myrtle, Cryptomeria, Skip Laurel, Loblolly Pine); 8-row evergreen shrubs table; running bamboo warning + clumping bamboo/container/rhizome barrier guidance; 7-row vines/climbers table + Asian wisteria warning; 8-row plants-for-specific-challenges table (deer, wet soil, drought, shade, cold, salt air, alkaline soil, urban pollution) |
+| Section 4: Structures — Pergolas, Screens & Overhead Enclosure | ✅ Done | 6-row pergola materials table (cedar/redwood, PT pine, composite, aluminum, steel, vinyl); adding privacy to a pergola (climbing plants, shade sails, retractable canopies, solid roofing); 6-row modular systems table (shade sails, outdoor curtains, reed/bamboo screens, living walls, cable trellis, freestanding screens); gazebos, cabanas, garden houses + permit considerations |
+| Section 5: Layered Privacy Design | ✅ Done | 3-row three-layer formula table (structural background/middle screening/foreground softening); small urban backyard strategies (5 items); suburban lot strategies (4 items); large lot/rural strategies (4 items); 4-row regional planting plans table (Northeast, Southeast, Pacific NW, Arid West); fence + plants combination tip callout |
+| Section 6: Noise, Wind & Light Screening | ✅ Done | 6-row noise reduction table (dense plant mass, fence + plants, masonry walls, water features, berms, interior garden sounds); wind protection list (turbulence paradox, 7x rule, multi-row windbreaks, wind-tolerant species, microclimate benefit); light control list (evergreens vs headlights, reclaim space with lighting, dark sky fixtures, night lighting discipline); water feature upgrade tip |
+| Section 7: Regional Privacy Guide | ✅ Done | 10-row regional table (New England, Mid-Atlantic, Southeast/Gulf, Florida, Great Lakes/Midwest, Great Plains, Mountain West, Pacific NW, California, Desert SW) with climate challenges, best evergreen screens, best fast-growing options, what to avoid, regional design notes; Cooperative Extension tip callout |
+| Section 8: HOA & Neighbor Considerations | ✅ Done | 5-row HOA compliance table (fence height, materials/color, plant height limits, species restrictions, approval process) with compliant approach and negotiating guidance; neighbor considerations list (communicate before building, good-neighbor fence design, property-line hedge ownership, view easements, spite fence laws, encroachment); good neighbor fence tip callout |
+| Section 9: Costs, Budgets & Quick Reference | ✅ Done | 11-row cost comparison table (fence/vinyl/hedge/arborvitae/bamboo/pergola/shade sail/curtains/raised planter/berm/masonry wall); 4-phase investment sequencing table (Month 1 through Year 3–5); 7-row DIY vs. professional table; 11-row quick reference privacy screening selector by situation; 3-paragraph closing reflection + final tip callout |
+
+Theme: slate/green gradient in `GuideDetail.jsx`; hero image: `public/guides/privacy-screening.png`; `comingSoon: false` under Landscape Design in `guides.js`; wired in `src/data/guide-content/index.js`
+
+---
+
 ### Infographics, Videos, and Podcasts Pages ✅
 
 Three new content discovery pages added to the app:

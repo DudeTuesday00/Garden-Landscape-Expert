@@ -296,7 +296,7 @@ export const guideCategories = [
         title: 'Backyard Privacy Screening',
         emoji: '🔒',
         description: 'Create a private outdoor retreat with plants, fences, and smart design.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'low-maintenance-landscape',
