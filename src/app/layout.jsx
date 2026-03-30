@@ -101,6 +101,13 @@ export default function RootLayout({ children }) {
               <p>
                 © {new Date().getFullYear()} Planting Atlas &nbsp;·&nbsp;
                 <Link
+                  href="/about"
+                  className="underline hover:text-garden-600 dark:hover:text-garden-400 transition-colors"
+                >
+                  About
+                </Link>
+                &nbsp;·&nbsp;
+                <Link
                   href="/privacy"
                   className="underline hover:text-garden-600 dark:hover:text-garden-400 transition-colors"
                 >
