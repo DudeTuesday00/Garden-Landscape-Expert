@@ -285,5 +285,89 @@ export const privacyScreeningContent = {
         },
       ],
     },
+    {
+      id: 'structures-pergolas-screens',
+      title: 'Section 4: Structures — Pergolas, Screens & Overhead Enclosure',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Fences and plants address the sides of your outdoor space — the lateral privacy problem. But for yards with overlooking neighbors, elevated roads, or upper-floor windows, lateral screening is insufficient without overhead privacy as well. Structures — pergolas, shade sails, overhead trellises, cabanas, and gazebos — address the vertical dimension of privacy and transform a backyard from an open space into a defined outdoor room.',
+        },
+        {
+          type: 'p',
+          text: 'The relationship between privacy and structure is reciprocal: structures create the architectural framework that defines an outdoor room and gives plants a vertical surface to climb, while plants soften, animate, and integrate the structure into the garden. The most complete privacy solutions combine structural elements with plant screening.',
+        },
+        {
+          type: 'h3',
+          text: 'Pergolas: The Framework of Outdoor Privacy',
+        },
+        {
+          type: 'p',
+          text: 'A pergola — an open overhead structure supported by columns with beams and rafters — is one of the most versatile outdoor structures for privacy enhancement. On its own, a pergola provides dappled shade and creates the psychological sense of enclosure that defines an outdoor room. Combined with climbing plants, shade sails, or retractable canopies, it provides genuine overhead privacy from upstairs windows and overlooking decks.',
+        },
+        {
+          type: 'table',
+          headers: ['Pergola Material', 'Lifespan', 'Cost Range (12×16 ft)', 'Best For', 'Maintenance', 'Notes'],
+          rows: [
+            ['Cedar or redwood', '15–25 years with care', '$3,500–8,000 DIY; $7,000–18,000 installed', 'Natural appearance; traditional gardens; Pacific NW and mountain West', 'Stain or seal every 2–3 years', 'Most beautiful and traditional option; naturally rot-resistant; quality varies by lumber source'],
+            ['Pressure-treated pine', '15–20 years', '$2,500–6,000 DIY; $5,000–14,000 installed', 'Budget-conscious construction; paint or stain for appearance upgrade', 'Paint or stain every 2–3 years', 'Functional but requires cosmetic treatment for best appearance; the most affordable wood option'],
+            ['Composite (Trex, etc.)', '25–30 years', '$4,500–10,000 DIY; $9,000–22,000 installed', 'Low-maintenance; modern aesthetic; HOA communities', 'Minimal — clean annually', 'No painting or staining; consistent appearance; some composite materials look less natural than wood'],
+            ['Aluminum (powder-coated)', '30–50 years', '$3,000–8,000 DIY kit; $7,000–18,000 installed', 'Coastal environments (no rust); modern/contemporary aesthetic; highest durability', 'Minimal — touch up scratches', 'Excellent in humid, coastal, or rainy climates; kits widely available for DIY'],
+            ['Steel', '30–50 years', '$4,000–12,000 DIY; $10,000–25,000+ custom installed', 'Architectural/modern aesthetic; very heavy structural applications', 'Inspect for rust annually; touch up paint as needed', 'For contemporary homes and modern landscape designs; requires skilled fabrication for custom work'],
+            ['Vinyl / PVC', '20–30 years', '$3,000–7,000 DIY kit; $6,000–15,000 installed', 'HOA communities; very low maintenance households', 'Minimal', 'Kit-based systems are widely available; consistent white or tan appearance; less visually interesting than wood but highly durable'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Adding Privacy to a Pergola',
+        },
+        {
+          type: 'list',
+          items: [
+            'Climbing plants: Plant wisteria, climbing roses, grapes, hops, or annual vines at each post; within 2–3 seasons, the canopy fills in significantly; combined with rafters or shade cloth, creates near-complete overhead coverage',
+            'Shade sails: Triangular or rectangular tensioned fabric sails attached to pergola posts provide immediate overhead coverage; available in UV-blocking fabric; easily removed seasonally',
+            'Retractable canopies: Track-mounted retractable fabric canopies allow full coverage when needed and full open sky when preferred; good canopy systems run $2,000–8,000 depending on size but provide exceptional function',
+            'Solid roofing: Polycarbonate panels or conventional roofing material over a pergola converts it to a covered patio with genuine weather and privacy protection; transforms the space dramatically but requires a more substantial structure and typically a building permit',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Shade Sails, Screens, and Modular Systems',
+        },
+        {
+          type: 'p',
+          text: 'Not every privacy solution requires building a full pergola or installing a fence. A range of modular, semi-permanent, and temporary screening systems offer genuine privacy benefits with minimal commitment and lower cost — excellent for renters, for testing solutions before permanent installation, or for filling specific gaps in an existing privacy screen.',
+        },
+        {
+          type: 'table',
+          headers: ['System', 'Description & Cost', 'Best For', 'Limitations'],
+          rows: [
+            ['Shade sails', 'Triangular or square tensioned fabric panels attached to anchor points; $50–500+; attached to fence posts, pergola posts, or freestanding anchors', 'Overhead protection from elevated neighbors; renters; quick deployment', 'Require proper tensioning and anchor points rated for wind load; can tear out anchors in high wind'],
+            ['Outdoor curtains', 'Weatherproof fabric panels on tension rods, cable systems, or curtain tracks; $30–150 per panel; hung from a pergola or porch ceiling', 'Deck and covered patio side privacy; selective privacy (close what you need, open what you want)', 'Only effective as side screening, not overhead; need a pergola or overhead structure for mounting'],
+            ['Reed and bamboo screens', 'Natural fiber rolls or panels; $30–100 for a 6×8 foot panel; attach to existing fences or stand independently', 'Temporary or seasonal screening; extending fence height 12–18 inches while plants establish', 'Limited longevity (1–5 years); not as effective as purpose-built screening'],
+            ['Living walls / vertical planter systems', 'Modular planting panels filled with growing medium; $200–800 for a 4×4 section installed; requires irrigation', 'Urban balconies; high-visual-impact situations; limited space', 'More expensive and maintenance-intensive than other options; irrigation required'],
+            ['Cable wire trellis systems', 'Horizontal or diagonal stainless steel cables between posts or wall brackets; guide for climbing plants', 'Training espalier trees or dense climbing vines; elegant solution when plants fill in', 'No immediate privacy — relies on plant growth to fill in; takes 2–4 seasons for effective screening'],
+            ['Freestanding modular screens', 'Manufactured panels (teak, aluminum, HDPE, or composite) on weighted bases; $150–800+ per panel', 'Patios, poolside, renters; portable and repositionable', 'Wind stability can be a concern; individual panel coverage limited for larger spaces'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Gazebos, Cabanas, and Garden Houses',
+        },
+        {
+          type: 'p',
+          text: 'At the most invested end of the outdoor privacy structure spectrum, gazebos, cabanas, and garden houses provide complete architectural enclosure — private outdoor rooms as usable in rain as in sun, as private as any interior room, and defining features of a backyard design. These are significant investments ($5,000–50,000+) that require permits in most jurisdictions.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Gazebos: Octagonal or round roofed structures with open or screened sides; a well-placed gazebo creates an outdoor room that is inherently private through enclosure; screen panel infill between posts provides insect protection and further privacy',
+            'Cabanas and pool houses: Pool-adjacent structures that provide changing facilities, shade, and privacy; critical for pool-adjacent privacy screening in subdivision settings where pool areas are visible from multiple neighbors',
+            'Garden houses and pavilions: Rectangular roofed structures with variable wall configurations; the most architecturally versatile option; can be fully open, partially enclosed, or fully enclosed with screened walls; excellent for outdoor dining and entertaining',
+            'Permit and code considerations: Any permanent roofed structure typically requires a building permit; setback requirements from property lines are stricter for structures than for fences; height restrictions may apply; always check with local building and planning departments before purchasing or building',
+          ],
+        },
+      ],
+    },
   ],
 }
