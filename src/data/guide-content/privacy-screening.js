@@ -572,5 +572,54 @@ export const privacyScreeningContent = {
         },
       ],
     },
+    {
+      id: 'hoa-and-neighbor-considerations',
+      title: 'Section 8: HOA & Neighbor Considerations',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Privacy improvements sit at the intersection of your needs and your community\'s rules — and your neighbor\'s interests. A beautifully designed privacy screen that triggers an HOA violation notice, or a hedge planted on the property line that becomes a neighbor dispute, costs far more in time, money, and stress than it saves in privacy. Navigating these relationships proactively is as important as any design decision.',
+        },
+        {
+          type: 'h3',
+          text: 'HOA Compliance: Getting It Right the First Time',
+        },
+        {
+          type: 'table',
+          headers: ['HOA Concern', 'Typical HOA Position', 'Compliant Approach', 'Negotiating When Needed'],
+          rows: [
+            ['Fence height', 'Usually limits fence height to 6 ft in backyards; often 4 ft in front yards; some HOAs further limit heights', 'Build to maximum permitted height; use lattice extensions with climbing plants if additional height is desired (check if lattice counts toward height limit)', 'Request a variance with a written plan showing sight-line problem; include photos of the privacy intrusion; many HOAs grant variances for documented privacy needs'],
+            ['Fence materials and color', 'Often specifies approved materials (usually wood, vinyl, or composite) and sometimes color (white vinyl is common HOA standard)', 'Confirm approved materials list before purchasing; HOA-approved colors may be more limited than personal preference allows', 'Request a sample approval — many HOAs will approve materials not on the standard list if aesthetics are consistent with community standards'],
+            ['Plant height limits', 'Some HOAs limit hedge height or specify setback requirements for tall plantings', 'Check specific restrictions; trees may be treated differently from shrubs from hedges in the rules', 'Fast-growing plants that are managed to an HOA-acceptable height can still provide effective screening; a management plan may reassure the HOA board'],
+            ['Plant species restrictions', 'Some HOAs prohibit specific invasive species or may require approval for new plantings above a certain height or near property lines', 'Avoid invasive species regardless of HOA rules (ecological responsibility); check invasive species lists for your state', 'Native plants and non-invasive species are rarely restricted and are often explicitly encouraged in HOA guidelines in ecologically aware communities'],
+            ['Approval process', 'Most HOAs require Architectural Review Committee (ARC) approval for new structures and significant landscape changes', 'Submit a detailed plan with dimensions, materials, plant species, and site plan before purchasing or building anything; include photos of the area', 'Engage the ARC proactively — committee members are more helpful in planning than in enforcement; a pre-application conversation often reveals what will and won\'t be approved before you commit to a plan'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Neighbor Considerations: Privacy Without Conflict',
+        },
+        {
+          type: 'p',
+          text: 'Your privacy screening affects your neighbors — in how it looks from their side, in how it might shade their yard or block their views, and in the ongoing relationship you have to maintain over years of shared property line. Getting this right from the beginning prevents conflicts that can escalate into expensive legal disputes.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Communicate before you build: a brief conversation with affected neighbors about your privacy plans — showing them what you\'re planning — prevents surprises and creates an opportunity for cooperation; many neighbor privacy conflicts begin with perceived disrespect, not the actual screening itself',
+            'Consider the neighbor\'s view: a fence\'s "bad side" typically faces the neighbor — the side with posts and horizontal rails rather than the finished face; choose fence styles that look good from both sides (board-on-board, horizontal boards) or plant on the neighbor\'s side of the fence (with their permission) to soften the back face',
+            'Hedges on property lines: a hedge planted on the property line is jointly owned in most states — you and your neighbor are both responsible for it and both have a right to maintain it from their side; a hedge planted 12–18 inches inside your property line is entirely your responsibility and control',
+            'View easements and neighborhood covenants: in communities with recorded view easements or neighborhood covenants (common in mountain and coastal areas), planting trees that block a protected view can result in mandatory removal at your expense; review your title documents and check for recorded easements before planting anything that might affect neighbor views',
+            'Spite fence laws: fences or plantings built primarily to annoy a neighbor rather than for legitimate privacy use may be subject to "spite fence" laws in your state; keep the purpose of your screening legitimate and documented — address real privacy needs rather than creating screening out of conflict with a neighbor',
+            'Tree and hedge encroachment: branches or roots extending over a property line can be trimmed by the neighbor to the property line; however, significant trimming that harms the tree\'s health, done without consultation, can create conflict; work cooperatively on maintenance near property lines',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🤝',
+          text: 'The Good Neighbor Fence: When installing a fence along a shared property line, consider offering to split the cost with your neighbor in exchange for their agreement on the style and placement. A shared fence is mutually beneficial, looks better from both sides, and turns a potential conflict into a cooperative project. Many neighbor relationships have been improved, not damaged, by a well-handled fence conversation.',
+        },
+      ],
+    },
   ],
 }
