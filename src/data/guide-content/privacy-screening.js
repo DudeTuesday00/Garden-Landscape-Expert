@@ -76,5 +76,91 @@ export const privacyScreeningContent = {
         },
       ],
     },
+    {
+      id: 'fences-and-solid-structures',
+      title: 'Section 2: Fences and Solid Structures',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A fence provides immediate, complete, year-round privacy from the day it is installed — no waiting years for plants to grow, no seasonal gaps when deciduous plants lose their leaves. It is the fastest and most reliable privacy solution available and the right choice in many situations. The trade-off: fences are typically the most expensive per-linear-foot privacy option, they require permits and contractor work for most installations, and they can feel claustrophobic or create "prison yard" aesthetics when poorly designed.',
+        },
+        {
+          type: 'p',
+          text: 'The most successful privacy designs typically combine fences with plantings — using a fence as the primary privacy layer for immediate results while planting around it for aesthetics, longevity, and to soften the hard edges that fences create. A fence alone is functional; a fence with intentional plantings is a designed retreat.',
+        },
+        {
+          type: 'h3',
+          text: 'Fence Materials: Comparing the Full Range',
+        },
+        {
+          type: 'table',
+          headers: ['Material', 'Privacy Rating', 'Lifespan', 'Cost (per linear foot installed)', 'Maintenance', 'Best For', 'Limitations'],
+          rows: [
+            ['Cedar (western red cedar)', 'Excellent — solid board construction', '15–25 years with care; 10–15 without', '$25–50/lf installed', 'Stain or seal every 2–3 years; replace rotted boards as needed', 'Natural appearance; Pacific NW and western states where cedar is local; premium residential', 'Grays and weathers without treatment; expensive; quality varies widely; some cedar today is plantation-grown and less durable than old-growth'],
+            ['Pressure-treated pine', 'Excellent — solid board construction', '15–20 years; posts 20–30 years', '$20–40/lf installed', 'Stain or seal every 2–3 years for appearance; structurally OK without treatment', 'Cost-effective; most widely available wood option; excellent in humid Southeast and Mid-Atlantic', 'Greenish tint when new fades over time; chemicals in older treated wood (current ACQ treatment is safer); not as attractive as cedar'],
+            ['Redwood', 'Excellent', '20–30 years with care', '$40–75/lf installed', 'Oil or stain every 2–3 years', 'California and Pacific Coast where redwood is traditional and regionally sourced; premium appearance', 'Expensive; increasingly difficult to find sustainably sourced; primarily a regional California product; heavy'],
+            ['Composite / PVC-wood blend', 'Excellent', '20–30 years', '$35–65/lf installed', 'Very low — clean annually with soap and water; never needs painting or staining', 'Low-maintenance preference; areas with high humidity where wood rots; homeowners who want "install and forget" fence', 'Plastic appearance (improving with newer products); more expensive upfront; fades and becomes chalky in intense sun without UV-resistant products'],
+            ['Vinyl (PVC)', 'Excellent — no gaps in solid panel styles', '20–30 years', '$30–60/lf installed', 'Very low — rinse occasionally', 'HOA-friendly areas where white vinyl is accepted or required; low-maintenance households', 'Aesthetic range limited; can crack in severe cold; yellows with UV exposure over time without quality UV inhibitors; limited repair options (replace whole sections)'],
+            ['Aluminum and steel', 'Lower — typically picket or spear style; solid panel options exist but less common', '30–50 years; effectively permanent with galvanizing or powder coat', '$40–120/lf installed (solid panel much higher)', 'Minimal — inspect and touch up paint/powder coat when scratched', 'Pool fencing (meets code); modern architectural aesthetic; high-security applications; humid or coastal climates where wood rots quickly', 'Standard picket style provides minimal privacy; solid metal panels are expensive and industrial-looking'],
+            ['Horizontal board (hardwood or cedar)', 'Excellent — contemporary board-on-board or solid horizontal', '15–25 years depending on species', '$40–80/lf installed', 'Same as vertical wood; oil or stain every 2–3 years', 'Modern and contemporary design aesthetic; very popular in new construction neighborhoods; creates distinctive high-end look', 'Requires quality lumber with minimal warp; horizontal boards hold moisture differently than vertical — choose naturally rot-resistant species; more expensive than standard vertical cedar'],
+            ['Bamboo panel fencing', 'Good — solid rolls and panels available; some gaps in standard products', '5–15 years depending on type and climate', '$15–35/lf materials; installation variable', 'Annual sealing recommended; replace deteriorated sections', 'Tropical and Asian aesthetic gardens; budget screening; container-based screening that can be moved', 'Durability varies enormously by product quality; some split and deteriorate quickly; not appropriate in humid climates without treatment; avoid near irrigation'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Fence Design: Making Privacy Beautiful',
+        },
+        {
+          type: 'p',
+          text: 'A 6-foot solid board fence stops the views — but it can also feel like a wall, create a tunnel effect in narrow yards, and reduce rather than enhance the experience of the space it was meant to protect. Thoughtful fence design turns a functional structure into an aesthetic feature.',
+        },
+        {
+          type: 'h3',
+          text: 'The Lattice Top Extension',
+        },
+        {
+          type: 'p',
+          text: 'Adding a 12–18 inch lattice section above a standard 6-foot fence accomplishes three things simultaneously: it increases effective visual screening height to 7–7.5 feet for standing viewers, it creates a support structure for climbing plants that soften the fence appearance, and it creates visual interest and scale variation that breaks up the monotony of a plain board fence. Lattice extensions can be added to new fences at construction or retrofitted to existing fences.',
+        },
+        {
+          type: 'h3',
+          text: 'Board-on-Board Construction',
+        },
+        {
+          type: 'p',
+          text: 'Standard privacy fences leave slight gaps between boards that widen as lumber dries and shrinks. Board-on-board construction overlaps adjacent boards so that there are no through-gaps regardless of shrinkage — providing guaranteed privacy from any angle while also giving the fence a more substantial, layered appearance. This is the correct construction method for any fence where actual privacy (not just visual privacy at certain angles) is the goal.',
+        },
+        {
+          type: 'h3',
+          text: 'Fence as Design Feature',
+        },
+        {
+          type: 'list',
+          items: [
+            'Incorporate integrated planters: Built-in planter boxes at fence base allow climbing plants and shrubs to grow against and over the fence, softening hard edges and integrating the fence into the garden rather than segregating it',
+            'Vary height for visual interest: A fence that steps down in height in some sections and rises in others creates rhythm and reduces the tunnel effect of a uniform-height enclosure; use taller sections to block specific sight lines and lower sections where privacy is less critical',
+            'Consider the inside face: The face of the fence you live with every day deserves as much attention as the outside face; horizontal board fences are beautiful from both sides; vertical board fences can be treated with paint, stain, or planters on the interior',
+            'Incorporate lighting: Post cap lights, strip lighting along the top rail, or solar-powered post lights transform a daytime privacy structure into an atmospheric evening element; the fence becomes part of the outdoor room rather than just its wall',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Fence Permitting: What to Expect Nationwide',
+        },
+        {
+          type: 'table',
+          headers: ['Topic', 'Details'],
+          rows: [
+            ['When a permit is typically required', 'Fences over 6 feet in most jurisdictions; any fence on corner lots that may affect traffic sight lines; fences in historic districts or special overlay zones; fences within FEMA floodplain areas; fences adjacent to public right-of-way'],
+            ['When a permit is typically not required', 'Residential fences under 6 feet in many jurisdictions; fences set back from property lines; fences replacing existing permitted fences of the same height and type — but always verify locally'],
+            ['Typical permit requirements', 'Survey showing property lines and fence placement; fence elevation drawings showing height and style; material specification; often neighbor notification or signature requirements; setback verification'],
+            ['Permit timeline', 'Varies from same-day administrative review in some cities to 4–8 weeks in busy permit offices; factor into your project timeline; many contractors handle permit filing as part of their service'],
+            ['Cost of permits', 'Typically $50–300 for residential fence permits; some jurisdictions charge by linear foot of fence; commercial applications can be significantly more'],
+            ['Property line verification', 'Fences built on the wrong side of a property line can result in forced removal at significant cost; commission a boundary survey ($400–1,500 depending on lot size and region) before installing any fence; alternatively, use existing surveys from your title documents, but verify their accuracy with corner markers'],
+            ['Spite fence laws', 'Many states have laws prohibiting "spite fences" — structures built primarily to annoy a neighbor rather than for legitimate use; fences over certain heights built near a property line without functional purpose may be actionable under these laws'],
+          ],
+        },
+      ],
+    },
   ],
 }
