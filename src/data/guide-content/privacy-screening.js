@@ -471,5 +471,75 @@ export const privacyScreeningContent = {
         },
       ],
     },
+    {
+      id: 'noise-wind-light-screening',
+      title: 'Section 6: Noise, Wind & Light Screening',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Visual privacy addresses one dimension of outdoor privacy. In many American yards — near busy roads, commercial areas, neighboring properties with active outdoor life — the intrusions are as much auditory and atmospheric as visual. Traffic noise, music from neighboring properties, headlights sweeping through a yard at night, and uncomfortable wind all prevent a space from feeling like a private retreat even when the sight lines are blocked.',
+        },
+        {
+          type: 'h3',
+          text: 'Noise Reduction: What Plants and Fences Actually Do',
+        },
+        {
+          type: 'p',
+          text: 'Complete noise elimination from a backyard is not achievable with landscaping short of a solid concrete wall. But meaningful noise reduction — 5–10 decibels, which the human ear perceives as a doubling or halving of loudness — is achievable with appropriate plant mass and strategic design. More importantly, plants have a secondary acoustic effect that is as significant as actual sound reduction: they create white noise through wind movement and create visual interruption that reduces perceived noise even when the actual decibel reduction is modest.',
+        },
+        {
+          type: 'table',
+          headers: ['Noise Strategy', 'How It Works', 'Effectiveness', 'Best Elements'],
+          rows: [
+            ['Dense plant mass', 'Plants absorb and scatter sound waves; the more mass, the more absorption; a single row of trees provides minimal sound reduction; multiple rows provide meaningful reduction', '5–8 dB reduction with 30+ feet of dense mixed plantings; perceived as significant noise reduction', 'Multiple rows of dense evergreens; mixed conifer and broadleaf species; mass planting (not single specimens)'],
+            ['Solid fencing + plant combination', 'Hard surfaces reflect sound; plants behind the fence absorb what gets through; the combination outperforms either alone', '8–12 dB reduction with solid fence plus 10+ feet of planting behind it', 'Solid concrete, masonry, or dense wood fence plus conifer planting; most effective combination for urban noise'],
+            ['Masonry walls', 'Solid masonry (brick, stone, or concrete block) provides the best reflective barrier for road noise; professional installation required; expensive but effective', '10–15 dB reduction from a solid 6-foot masonry wall; the most effective single element', 'Concrete block with stucco finish; natural stone; brick; require engineering and permits for walls over 3–4 feet'],
+            ['White noise and water features', 'Running water creates broadband white noise that masks other sounds; doesn\'t reduce noise but changes the acoustic character of the space from "traffic noise" to "water feature"', 'Highly effective at masking; psychological effect of masking is significant; does not reduce actual decibels', 'Fountains; waterfalls; streams; rill water features; even a small fountain near the seating area is effective'],
+            ['Grade changes and berms', 'Raising a planted berm between the noise source and seating area creates both a physical barrier and positions plants higher; dramatically more effective than flat plantings for road noise', 'A 3–4 foot berm with plantings can reduce effective noise 8–15 dB beyond what flat plantings provide', 'Earth berms with evergreen plantings; effective for road and highway noise; requires significant earthwork'],
+            ['Interior garden sounds', 'Wind chimes, rustling grasses, birds attracted by feeders and native plants, and conversation near a water feature all contribute to acoustic character of the space', 'Subjective but significant; changes the acoustic experience from noise intrusion to active garden soundscape', 'Tall ornamental grasses that rustle; wind chimes; bird-attracting plants; water features; any elements that contribute pleasant ambient sound'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Wind Protection: Creating a Calm Outdoor Retreat',
+        },
+        {
+          type: 'p',
+          text: 'Strong prevailing winds can make outdoor spaces uncomfortable regardless of how private they are visually. Wind screening is one of the least discussed but most impactful aspects of backyard comfort, particularly in the Great Plains, coastal areas, and mountain communities where wind is a dominant environmental factor.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Solid fences and walls create turbulence: paradoxically, a completely solid barrier creates a zone of turbulence on the lee side as wind deflects over the top and creates eddies; a permeable windbreak (plants or a fence with some porosity) actually provides calmer conditions in the protected zone than a solid wall',
+            'The 7x rule: a windbreak provides protection for a distance approximately 7 times its height on the leeward side; a 10-foot windbreak protects approximately 70 feet of garden; placing seating areas in this zone is the goal',
+            'Multiple-row windbreaks are most effective: a staggered double or triple row of plants creates a more effective wind barrier than a single row at the same height; wind must navigate through multiple obstacles rather than deflecting over a single line',
+            'Species selection for wind: choose wind-tolerant species for exposed windbreak positions — junipers, native oaks, pines, and willows are significantly more wind-resistant than arborvitae, Leyland cypress, and most ornamental trees; a beautiful screening tree that is blown over by the first significant storm was a wasted investment',
+            'The microclimate benefit: an effective windbreak doesn\'t just make the garden more comfortable — it raises the effective growing zone temperature by 1–2 USDA zones in the protected area, extends the growing season, and increases outdoor comfort during shoulder seasons when wind is coldest',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Light Control: Headlights, Streetlights, and Night Privacy',
+        },
+        {
+          type: 'p',
+          text: 'Night privacy is often ignored in daytime-focused landscape design. A yard that feels reasonably private during the day can feel completely exposed at night when interior lights illuminate occupants for anyone passing. Conversely, streetlights, headlights, and neighboring property lights can intrude into what should be a private evening retreat.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Dense evergreen plantings are highly effective against headlights: multiple rows of arborvitae, holly, or mixed evergreens significantly reduce headlight penetration; a single row with gaps is insufficient — the headlight beams find the gaps; aim for 6–10 feet of continuous evergreen mass facing any headlight source',
+            'Your own lighting reclaims the space: thoughtfully designed landscape lighting — downward-directed path lights, up-lit trees and specimens, string lights in pergola and overhead structures — creates a visual environment dominated by your own light design rather than exterior intrusions; the spaces you illuminate become the visual focus',
+            'Dark sky-compliant fixtures: full-cutoff light fixtures that direct all light downward eliminate the glare that makes outdoor spaces feel exposed while reducing light pollution; increasingly available and aesthetically superior to older globe-style fixtures',
+            'Interior lighting discipline at night: if privacy from neighboring windows at night is a priority, the single most effective action is controlling the light inside the outdoor space; bright uplighting that illuminates occupants for neighbors is counterproductive — use downward-directed task lighting near seating and decorative atmospheric lighting rather than flood-style illumination',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '💧',
+          text: 'The Water Feature Upgrade: Even a modest recirculating fountain ($150–400) placed near your primary seating area changes the entire acoustic character of the space. The broadband white noise of moving water masks traffic, neighbor conversations, and ambient city sounds more effectively than any amount of fencing. It is the single highest-impact-per-dollar addition to any privacy-focused backyard design.',
+        },
+      ],
+    },
   ],
 }
