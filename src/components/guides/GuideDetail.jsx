@@ -55,6 +55,7 @@ export const heroImages = {
   'indoor-herb-garden': '/guides/indoor-herb-garden.png',
   'rain-garden': '/guides/rain-garden.png',
   'mulching-guide': '/guides/mulching-guide.png',
+  'privacy-screening': '/guides/privacy-screening.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
@@ -875,6 +876,22 @@ const themes = {
     tableHeadText: 'text-teal-800',
     tableHeadBorder: 'border-teal-200',
     bullet: 'text-teal-500',
+  },
+  'privacy-screening': {
+    heroBg: 'bg-gradient-to-br from-slate-50 to-green-100',
+    heroBorder: 'border-slate-200',
+    heroTitle: 'text-slate-900',
+    backBtn: 'text-slate-700 hover:text-slate-900',
+    sectionTitle: 'text-slate-900',
+    sectionBorder: 'border-slate-100',
+    h3: 'text-slate-800',
+    tipBg: 'bg-slate-50',
+    tipBorder: 'border-slate-200',
+    tipText: 'text-slate-900',
+    tableHead: 'bg-slate-100',
+    tableHeadText: 'text-slate-800',
+    tableHeadBorder: 'border-slate-200',
+    bullet: 'text-green-600',
   },
 }
 
