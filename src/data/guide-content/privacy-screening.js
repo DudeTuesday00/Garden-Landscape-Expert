@@ -369,5 +369,107 @@ export const privacyScreeningContent = {
         },
       ],
     },
+    {
+      id: 'layered-privacy-design',
+      title: 'Section 5: Layered Privacy Design',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The most effective and most beautiful privacy designs in American landscaping are not single solutions — not just a fence, not just a hedge, not just a pergola — but layered combinations of two or three approaches that complement each other\'s strengths and compensate for each other\'s weaknesses. A fence provides immediate privacy but looks harsh; add a planting on both sides and it disappears into the landscape. A planting screen takes years to establish; add a temporary fence or screen behind it for immediate privacy while you wait. A pergola creates overhead enclosure; add side screening plants around it to complete the private room.',
+        },
+        {
+          type: 'p',
+          text: 'Layered design also provides redundancy — if one element fails (a tree dies, a fence board rots), the other layers continue to function. And it allows gradual investment: start with what you can afford, then add layers as budget allows, always building toward a complete and coherent design.',
+        },
+        {
+          type: 'h3',
+          text: 'The Three-Layer Privacy Formula',
+        },
+        {
+          type: 'table',
+          headers: ['Layer', 'Role', 'Height Range', 'Typical Elements', 'Distance from Seating Area'],
+          rows: [
+            ['Layer 1 — Structural Background', 'The tall backdrop that screens elevated views and establishes the sense of enclosure; the primary privacy performer', '8–20+ feet', 'Tall evergreen trees (Green Giant, hollies, cryptomeria); existing tree canopy; privacy fence with lattice extension', '10–30 feet'],
+            ['Layer 2 — Middle Screening', 'Dense mid-height plants that fill the gap between ground and tree canopy; screens most first-floor neighbor windows; provides year-round visual texture', '4–8 feet', 'Evergreen shrubs (skip laurel, boxwood, viburnum); medium conifers (emerald arborvitae); privacy fence at standard height; dense mixed shrub hedge', '5–15 feet'],
+            ['Layer 3 — Foreground Softening', 'The plants closest to the seating area; not primarily privacy-focused but creates the feeling of lushness and separation that completes the retreat experience', '1–4 feet', 'Perennials, ornamental grasses, low shrubs, container plants; deck railing planters; raised planter boxes; groundcovers that extend to the lawn edge', '0–8 feet'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Privacy Design Strategies by Yard Type',
+        },
+        {
+          type: 'h3',
+          text: 'The Small Urban Backyard (Under 2,000 sq ft)',
+        },
+        {
+          type: 'p',
+          text: 'Small backyards face the most challenging privacy situation: multiple close neighbors, elevated views from surrounding buildings, limited horizontal space for plantings, and the psychological difficulty of making a small space feel private without making it feel even smaller.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Embrace vertical — plant tall columnar trees (columnar arborvitae, columnar hornbeam, columnar English oak) that provide height with minimal footprint; 2–3 feet wide and 20–25 feet tall is the ideal profile for urban privacy in tight spaces',
+            'Use pergola and overhead structure to create a "ceiling" — a defined overhead element is the single most powerful tool for making a small space feel like a private room rather than an exposed corner',
+            'Contain bamboo in planters for instant screen — large containers of clumping bamboo on wheels can be repositioned as needed and provide excellent screening density in very little space',
+            'Use evergreen walls rather than mass plantings — a wall of espaliered (trained flat) evergreen plants against a fence takes 18 inches of depth and provides a living green wall; Skip Laurel and Holly espalier well',
+            'Sound matters as much as sight in urban yards — a water feature (fountain, rill, or wall water feature) creates acoustic privacy that breaks city noise intrusion; combined with plant screening, it transforms a city backyard into a genuine retreat',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Suburban Lot (2,000–8,000 sq ft)',
+        },
+        {
+          type: 'p',
+          text: 'The typical American suburban backyard has the widest range of privacy strategies available — enough space for meaningful plantings, standard fence options, and the ability to create genuine depth between screening elements and the living area.',
+        },
+        {
+          type: 'list',
+          items: [
+            'The perimeter hedge is the backbone of suburban privacy — a continuous planting of Green Giant arborvitae, skip laurel, or mixed native evergreens along the rear and side property lines creates the private garden room that is the gold standard of suburban landscape design',
+            'Tier heights at property corners for visual interest — a privacy design that steps up at corners (taller at corners, slightly lower in between) creates a sense of enclosure without a uniform wall effect',
+            'Combine a solid rear fence with plantings in front of it on both sides — a fence provides immediate privacy while arborvitae or shrubs planted in front of it hide the fence and provide additional depth; spacing of 4–5 feet from the fence face creates a planting bed that looks like a designed garden, not a prison wall',
+            'Place a pergola over the primary patio or seating area — creates the overhead "room" effect that definitively separates your outdoor living area from the more public zones of the yard',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'The Large Lot or Rural Property (Over 8,000 sq ft)',
+        },
+        {
+          type: 'p',
+          text: 'Large lots offer the most latitude but also the most scope for the privacy problem — a rural 2-acre lot with no landscaping may be visible from a road 300 feet away, a neighboring farmhouse, and passing vehicles. The scale of solution must match the scale of the problem.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Think in terms of windbreaks and shelter belts, not hedges — multiple staggered rows of mixed evergreens and deciduous trees create a wildlife habitat corridor, significant noise and wind reduction, and full privacy at lower cost per linear foot than a single-row hedge',
+            'Use berms (raised earthworks) to dramatically increase the effective height of plantings — a 3–4 foot berm planted with trees effectively adds 3–4 feet of screening height without adding to tree size; a berm along a road-facing boundary is one of the most cost-effective large-lot privacy investments',
+            'Plan for a 10–20 year horizon — large-lot plantings include trees that will reach maturity over decades; mix fast-growing temporary screening (Leyland cypress, privet) with long-lived permanent trees (oaks, native hollies, pines); the temporary plants provide screening while the permanent trees establish, then are removed when the permanent trees mature',
+            'Consider privacy in zones — on a large lot, not every acre needs privacy; focus investment on the outdoor living zone immediately around the house and let the larger property have a more open character where privacy is less critical',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Regional Planting Plans: Proven Combinations',
+        },
+        {
+          type: 'table',
+          headers: ['Region', 'Background Layer', 'Middle Layer', 'Foreground Layer', 'Timeline to Full Screening'],
+          rows: [
+            ['Northeast Screen (Zones 4–6)', 'Thuja \'Green Giant\' at 6-foot spacing; or native White Spruce in Zone 4–5', 'Mix of American Holly (Zone 5+) and native inkberry holly; both provide year-round coverage and wildlife value', 'Switch grass (Panicum virgatum) in clumps; deer-resistant; native; beautiful fall color and winter structure', 'Background 70% screening by year 4; full screening by year 7'],
+            ['Southeast Summer Retreat (Zones 7–9)', 'Wax Myrtle as fast-growing native backbone (reaches 15+ feet in 5 years in Zone 7–9); supplement with Cryptomeria for form contrast', 'Oakleaf Hydrangea (native; spectacular four-season interest; tolerates heat and humidity; 6–8 ft)', 'Muhly Grass, Southern Blue Flag Iris, and native coral honeysuckle on fence or trellis', 'Wax Myrtle provides 60% screening in 3 years; full screening by year 5–6 in good growing conditions'],
+            ['Pacific Northwest (Zones 7–9)', 'Western Red Cedar (native; fast in PNW; reaches 20+ feet in 10 years); English Laurel / Skip Laurel as alternatives', 'Native Sword Fern + Salal for north-facing shade; for sun sites, Evergreen Huckleberry and Pacific Rhododendron', 'Climbing Hydrangea on cable trellis; native bleeding heart; Pacific Coast Iris', 'PNW growing conditions accelerate establishment; native conifers achieve substantial screening in 5–7 years; faster with supplemental irrigation'],
+            ['Arid West (Zones 5–8)', 'Arizona Cypress (Zones 7–9) or Rocky Mountain Juniper (Zones 4–7); both drought-tolerant once established', 'Desert Willow (Zone 7–11) for heat; Apache Plume (Zone 5–8)', 'Native grasses (Blue Grama, Buffalo Grass); Desert Marigold; Penstemon', 'Without supplemental irrigation expect 6–10 years; irrigation in the first 2 years dramatically accelerates establishment'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🌿',
+          text: 'Fence + Plants: The Most Reliable Combination. A 6-foot fence provides immediate full privacy at eye level; Green Giant arborvitae planted 3–4 feet in front of the fence will grow above it within 6–8 years and eventually screen second-floor windows too. The fence protects newly planted trees during establishment and provides full privacy while you wait. This combination — fence now, trees for the long term — is the most reliable privacy design in American residential landscaping.',
+        },
+      ],
+    },
   ],
 }
