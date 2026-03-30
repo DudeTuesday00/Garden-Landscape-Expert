@@ -162,5 +162,128 @@ export const privacyScreeningContent = {
         },
       ],
     },
+    {
+      id: 'privacy-plants',
+      title: 'Section 3: Privacy Plants — The Complete Selection Guide',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Plants are the most beautiful, most ecologically valuable, and — over the long term — most cost-effective privacy screening solution available. A well-chosen and well-planted privacy hedge or screen provides benefits that no fence can match: seasonal change and beauty, wildlife habitat, noise reduction through sound absorption, air filtering, cooling through transpiration, and an increasing rather than decreasing visual asset that grows more beautiful and more effective year after year.',
+        },
+        {
+          type: 'p',
+          text: 'The trade-off is time. A newly planted arborvitae hedge may take 5–7 years to reach full screening height. A Leyland cypress screen may deliver impressive results in 3–4 years but requires careful management to prevent it from overgrowing its space. Understanding the realistic growth timeline, the mature size, and the long-term maintenance requirements of any privacy plant is essential before committing to a specific species.',
+        },
+        {
+          type: 'tip',
+          emoji: '⏱️',
+          text: 'Managing Growth Expectations: The "fast-growing" label on privacy plants deserves scrutiny. "Fast" in the nursery industry means different things in different climates. A Leyland cypress rated for "3 feet per year" grows that fast in Zone 7 Virginia — it may grow 18 inches per year in Zone 5 Minnesota and 4 feet per year in Zone 8 Georgia. Climate, soil quality, irrigation, and fertilizing all affect growth rate. Add 20–30% to estimated timelines for challenging soils or climates, and subtract 20% if you invest in excellent soil preparation, irrigation, and fertilization.',
+        },
+        {
+          type: 'h3',
+          text: 'Evergreen Trees: The Tall Screen Specialists',
+        },
+        {
+          type: 'p',
+          text: 'Evergreen trees are the workhorse of privacy screening — they provide year-round coverage, grow tall enough to screen second-floor windows and elevated views, and create the most dramatic screening results. The key is choosing the right species for your climate and available space.',
+        },
+        {
+          type: 'table',
+          headers: ['Plant', 'Zones', 'Growth Rate', 'Mature Height / Width', 'Best Spacing', 'Key Strengths', 'Key Limitations'],
+          rows: [
+            ['Thuja \'Green Giant\' (Green Giant Arborvitae)', '5–8', 'Fast: 3–5 ft/yr in good conditions', '40–60 ft tall / 12–20 ft wide at maturity', '5–8 ft apart for hedge; 10–15 ft for specimen', 'Disease-resistant; deer-resistant in most regions; adapts to most soils; excellent cold hardiness; dense year-round foliage; most popular privacy screen in America for good reason', 'Can become very large if not managed; not deer-proof everywhere; susceptible to bagworms in some areas'],
+            ['Leyland Cypress', '6–10', 'Very fast: 3–4 ft/yr', '50–70 ft tall / 15–25 ft wide unmanaged', '6–10 ft apart; requires regular pruning to manage size', 'Extremely fast screening; dense from ground up; available in large sizes for immediate impact; widely available across the South and Mid-Atlantic', 'Develops Seiridium canker disease in humidity; not cold-hardy above Zone 6; becomes massive without regular pruning; better alternatives exist in most situations'],
+            ['Emerald Green Arborvitae (Thuja occidentalis)', '3–8', 'Slow-moderate: 6–9 in/yr', '10–15 ft tall / 3–4 ft wide', '3–4 ft apart for tight hedge; 4–5 ft for looser screen', 'Narrow columnar form; excellent for tight spaces; very cold-hardy; long-lived; widely available and affordable', 'Deer browse heavily in many regions — significant problem in suburban areas with deer pressure; slow growth requires patience; moderate drought tolerance'],
+            ['American Arborvitae (Thuja occidentalis native)', '2–8', 'Moderate: 12–24 in/yr', '20–40 ft tall / 10–15 ft wide', '5–8 ft apart', 'Native to eastern North America; very cold-hardy; excellent for wetlands and moist sites; wildlife value; long-lived', 'Deer browse extremely heavily — often unusable without deer protection in high-deer-pressure areas; spider mites in hot dry conditions'],
+            ['Eastern Red Cedar (Juniperus virginiana)', '2–9', 'Moderate: 12–18 in/yr', '30–40 ft tall / 10–20 ft wide', '6–10 ft apart', 'Native; extremely drought and heat tolerant; good for difficult sites; excellent wildlife habitat (berries for birds); very wind-resistant; hardy from Canada to Florida', 'Not appropriate near apple or crabapple trees (hosts cedar-apple rust); variable form'],
+            ['American Holly (Ilex opaca)', '5–9', 'Slow-moderate: 12–24 in/yr', '20–50 ft tall / 10–20 ft wide', '8–12 ft apart', 'Native; excellent four-season interest; red berries; dense evergreen foliage; good wildlife value; does not have the hedge-only aesthetic of conifers — a genuinely beautiful tree', 'Requires male and female plants for berries; slow initial establishment; needs acidic soil (pH 5.0–6.5)'],
+            ['Wax Myrtle (Morella cerifera)', '6–11', 'Fast: 3–5 ft/yr', '10–20 ft tall / 10–15 ft wide', '5–8 ft apart', 'Native to Southeast and Gulf Coast; extremely fast-growing; salt-tolerant; drought-tolerant once established; nitrogen-fixing; fragrant aromatic foliage; year-round bird habitat', 'Only for Zone 6–11; freezes back in Zone 6 but recovers; can be scrubby without regular light pruning'],
+            ['Cryptomeria (Japanese Cedar)', '5–8', 'Fast: 2–3 ft/yr', '40–60 ft tall / 20–30 ft wide', '8–15 ft apart', 'Beautiful graceful year-round form; fine-textured foliage; less stiff than arborvitae; disease-resistant; excellent in Pacific NW', 'Bronze winter color in cold climates; requires more space than columnar species; not always readily available'],
+            ['Skip Laurel (Prunus laurocerasus)', '6–9', 'Fast: 2–3 ft/yr', '8–18 ft tall / 5–8 ft wide', '4–6 ft apart', 'Very dense broadleaf evergreen; responds excellently to pruning; attractive glossy foliage; excellent for formal and informal applications', 'Susceptible to diseases in consistently wet conditions; not cold-hardy above Zone 6; toxic berries; some invasive concern in Pacific NW'],
+            ['Loblolly Pine (Pinus taeda)', '6–9', 'Very fast: 3–5 ft/yr', '60–90 ft tall / 25–35 ft wide', '10–15 ft apart', 'Fastest-growing native evergreen in the Southeast; excellent for large-scale screening on rural properties; very drought tolerant; excellent wildlife habitat', 'Loses lower branches with age — not effective for ground-level privacy as it matures; requires significant space; better for rural than urban applications'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Evergreen Shrubs: The Dense Middle Layer',
+        },
+        {
+          type: 'p',
+          text: 'Evergreen shrubs are the most versatile privacy screening plants — they can function as standalone screens, as the middle layer in a multi-tier planting, or as foundation plantings that provide year-round privacy at the 4–8 foot range where most first-floor window intrusions occur.',
+        },
+        {
+          type: 'table',
+          headers: ['Plant', 'Zones', 'Growth Rate', 'Mature Height', 'Best Use', 'Key Notes'],
+          rows: [
+            ['Boxwood (Buxus spp.)', '5–9 varies', 'Slow–moderate (6–12 in/yr)', '3–15 ft (varies widely by cultivar)', 'Formal hedges; foundation planting; structured privacy at medium heights', 'Classic formal hedge plant; responds well to shaping; \'Dee Runk\' and \'Graham Blandy\' are excellent columnar forms; blight-resistant varieties now available; NOT deer-resistant'],
+            ['Inkberry Holly (Ilex glabra)', '4–9', 'Moderate (1–2 ft/yr)', '5–8 ft', 'Native evergreen hedge; wet sites; naturalistic screens', 'Native to eastern North America; excellent for wet or poorly drained sites; dense evergreen foliage; black berries attractive to birds; spreads via suckers forming dense colonies'],
+            ['Mountain Laurel (Kalmia latifolia)', '4–9', 'Slow (6–12 in/yr)', '5–15 ft', 'Woodland screening; naturalistic privacy on shaded slopes', 'Native; beautiful spring bloom; excellent for shaded woodland settings; deer-resistant; requires acidic well-drained soil'],
+            ['Japanese Holly (Ilex crenata)', '5–8', 'Slow–moderate', '3–10 ft (cultivar dependent)', 'Formal low to medium hedges; foundation screens', 'Resembles boxwood but more disease-resistant; many cultivars available; excellent for structured privacy screening'],
+            ['Southern Magnolia (Magnolia grandiflora)', '7–9', 'Moderate (1–2 ft/yr)', '60–80 ft tall; can be maintained shorter', 'Large-scale screening; statement tree with screening function; Southeast specialty', 'Iconic Southern tree; year-round bold glossy foliage; spectacular blooms; \'Little Gem\' stays much smaller (15–20 ft)'],
+            ['Photinia (Red-tip Photinia)', '7–9', 'Fast (2–3 ft/yr)', '10–15 ft', 'Quick hedge formation in warm climates; Southeast screen', 'Distinctive red new growth is showy; however, extremely susceptible to Entomosporium leaf spot disease in humid climates — better alternatives usually available'],
+            ['Yew (Taxus spp.)', '4–7', 'Slow (6–12 in/yr)', '4–20 ft (cultivar dependent)', 'Formal hedge; shade-tolerant screen; foundation planting', 'Tolerates more shade than almost any other evergreen; long-lived; responds well to hard pruning; toxic berries; deer browse heavily'],
+            ['Viburnum (various evergreen)', '5–9 varies', 'Moderate–fast (1–3 ft/yr)', '6–15 ft varies', 'Informal evergreen screen; wildlife planting; mixed hedgerow', 'Diverse genus; Leatherleaf Viburnum (V. rhytidophyllum) is excellent large-scale evergreen; spring blooms; wildlife value; less formal than boxwood but more ecologically valuable'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Bamboo: Fast Privacy with Critical Caveats',
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Running bamboo (Phyllostachys spp.) — AVOID as a privacy plant unless you install continuous rhizome barrier 24–36 inches deep around the entire planting. Running bamboo spreads via underground rhizomes that can travel 20+ feet per year. Once established beyond a barrier, it is extremely difficult to eradicate. In many states, spreading bamboo onto a neighbor\'s property is legally actionable as a nuisance. The most commonly sold privacy bamboo (golden bamboo, black bamboo) are running types.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Clumping bamboo (Fargesia, Borinda, Thamnocalamus) — the safe alternative: grows in a slowly expanding clump that does not send runners. Fargesia species are cold-hardy to Zone 5; Fargesia robusta \'Campbell\' and Fargesia dracocephala \'Rufa\' are widely recommended',
+            'Bamboo in containers: running bamboo can be used in large containers (30–50 gallon minimum) to control spread completely while still providing dramatic privacy screening on patios and decks; change container soil every 3–5 years and monitor for roots escaping through drainage holes',
+            'Rhizome barrier installation: if using running bamboo in the ground, HDPE rhizome barrier (60 mil minimum thickness, 24–36 inches deep, installed with the top 2 inches above soil grade and overlapping/bonded at the seam) is the only reliable containment method; budget $3–8 per linear foot for barrier installation',
+            'Height and density: in appropriate climates (Zone 5–10 depending on species), clumping bamboo can reach 12–20 feet within 5–7 years, creating one of the most effective and visually striking privacy screens available',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Fast-Growing Privacy Vines and Climbers',
+        },
+        {
+          type: 'table',
+          headers: ['Vine', 'Zones', 'Evergreen?', 'Speed', 'Height on Trellis', 'Best For', 'Notes'],
+          rows: [
+            ['Climbing Hydrangea (Hydrangea anomala petiolaris)', '4–8', 'No — deciduous', 'Slow first 2 years; moderate after (1–2 ft/yr)', '30–80 ft on a structure', 'Shaded walls and fences where other vines struggle; very beautiful', 'Slow to establish but extremely long-lived and beautiful; worth the patience; excellent for north-facing situations; large white flowers'],
+            ['American Wisteria (W. frutescens)', '5–9', 'No — deciduous', 'Moderate–fast (3–6 ft/yr)', '15–30 ft', 'Dramatic seasonal screening; native alternative to invasive Asian wisterias', 'Native to Southeast; well-behaved; fragrant; blooms on new wood; much less aggressive than Asian species — the correct choice when wisteria is desired'],
+            ['Clematis (various spp.)', '3–9', 'No — deciduous mostly', 'Moderate (5–8 ft/yr)', '6–20 ft depending on species', 'Specific spot screening; mixed trellis plantings; adding bloom color to existing screening', 'Enormous variety — some bloom spring, summer, or fall; \'Jackmanii\' is vigorous and reliable; many varieties available for every zone'],
+            ['Star Jasmine (Trachelospermum jasminoides)', '7–10', 'Yes — evergreen', 'Moderate–fast (2–3 ft/yr)', '15–20 ft', 'Evergreen privacy screen in mild climates; fragrant year-round coverage', 'Excellent in southern and Pacific Coast gardens; fragrant white flowers; good for fence and trellis screening; requires mild winters'],
+            ['Passionflower (Passiflora incarnata)', '5–9', 'No — deciduous', 'Very fast (10–20 ft/yr)', '15–25 ft', 'Fast seasonal coverage; host plant for Gulf Fritillary butterfly', 'Native; extraordinarily fast and beautiful; unique flowers; dies to ground in winter in most zones; may spread aggressively'],
+            ['Virginia Creeper (Parthenocissus quinquefolia)', '3–9', 'No — deciduous', 'Very fast (6–10 ft/yr)', '40–50 ft on a structure', 'Fast large-scale coverage; excellent fall color; native wildlife habitat', 'Native; attaches via adhesive pads (no nails needed); brilliant red fall color; aggressive but manageable; not invasive in the ecological sense'],
+            ['Coral Honeysuckle (Lonicera sempervirens)', '4–9', 'Semi-evergreen in warm zones', 'Moderate (3–5 ft/yr)', '12–20 ft', 'Native; hummingbird magnet; non-invasive alternative to Japanese honeysuckle', 'Native to eastern U.S.; coral-red tubular flowers loved by hummingbirds; does not spread invasively like its Japanese relative; excellent on fences and trellises'],
+          ],
+        },
+        {
+          type: 'warning',
+          emoji: '⚠️',
+          text: 'Japanese and Chinese Wisteria (Wisteria sinensis, W. floribunda) — AVOID: highly invasive species in most of the U.S.; do not plant near natural areas. Also extremely aggressive — will damage gutters, siding, and trees. Use American Wisteria (W. frutescens) instead.',
+        },
+        {
+          type: 'h3',
+          text: 'Privacy Plants for Specific Challenges',
+        },
+        {
+          type: 'table',
+          headers: ['Challenge', 'Plant Recommendations', 'Why These Work'],
+          rows: [
+            ['Deer pressure', 'Thuja \'Green Giant\' (most deer-resistant arborvitae); native hollies (Ilex spp.); Mountain Laurel; Japanese Holly; Wax Myrtle (Zone 7+); Yaupon Holly; Boxwood (moderately resistant)', 'Deer avoid plants with strong fragrances, toxic compounds, or tough leathery foliage; no plant is 100% deer-proof when deer are extremely hungry; combining deer-resistant plants with temporary fencing during establishment is most reliable'],
+            ['Wet or poorly drained soil', 'Inkberry Holly; Wax Myrtle (Zone 6+); native Buttonbush (deciduous); Bald Cypress (Zone 4–9); River Birch (deciduous); native Elderberry (deciduous)', 'Most privacy plants prefer well-drained soil; these species are adapted to moist or periodically flooded conditions; wet sites dramatically limit conifer choices'],
+            ['Dry, drought-prone conditions', 'Eastern Red Cedar (Juniperus virginiana); Wax Myrtle; Desert Willow (Zone 7–11); Pinyon Pine; Mesquite; Yucca', 'These plants are native to or adapted for periodic drought; established specimens rarely need supplemental irrigation; do not plant arborvitae or Leyland Cypress in drought-prone sites without irrigation'],
+            ['Deep shade (north facing, dense tree canopy)', 'Yew (Taxus); Climbing Hydrangea; Mountain Laurel; Inkberry Holly; Native Rhododendrons; Aucuba Japonica (Zone 7–9)', 'Most screening conifers require at least 4–6 hours of sun; these plants tolerate considerably less; shade privacy solutions require creative multi-layer design'],
+            ['Very cold climates (Zones 3–4)', 'American Arborvitae (with deer protection); Black Hills Spruce; White Spruce; Balsam Fir; Juniperus scopulorum (Rocky Mountain Juniper)', 'Limited to genuinely cold-hardy species; most Leyland Cypress and many privacy favorites won\'t survive Zone 4 winters; native conifers from cold-climate regions are the most reliable'],
+            ['Salt air and coastal conditions', 'Eastern Red Cedar; Wax Myrtle; Yaupon Holly; Beach Plum (Prunus maritima); Red Chokeberry; Rugosa Rose (deciduous)', 'Salt spray from ocean winds damages foliage on most conifers; native coastal species are salt-tolerant; arborvitae and most Thuja species perform poorly in salt air'],
+            ['Alkaline soil (pH above 7.5)', 'Eastern Red Cedar; Lilac (deciduous); Rugosa Rose (deciduous); Ponderosa Pine (West); Juniper species', 'Most broadleaf evergreens and some conifers prefer acidic soil; these species tolerate neutral to alkaline conditions better; soil amendment is always preferable to fighting pH'],
+            ['Urban air pollution', 'Eastern Red Cedar; native oaks as tall canopy layer; Green Giant Arborvitae; Thornless Honeylocust canopy', 'Urban plants must tolerate poor air quality, reflected heat, compacted soils, and drought; native plants adapted to eastern cities perform best'],
+          ],
+        },
+      ],
+    },
   ],
 }
