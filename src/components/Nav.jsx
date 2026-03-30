@@ -65,6 +65,9 @@ export default function Nav() {
           <Link href="/shop" className={navCls('/shop')}>
             🖨️ Shop
           </Link>
+          <Link href="/about" className={navCls('/about')}>
+            👤 About
+          </Link>
           <Link href="/contact" className={navCls('/contact')}>
             ✉️ Contact
           </Link>
