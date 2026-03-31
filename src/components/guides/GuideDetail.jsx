@@ -1056,6 +1056,9 @@ export default function GuideDetail({ guideId }) {
           <div className="p-6 sm:p-8">
             {!heroImages[guideId] && <div className="text-5xl mb-3">{content.hero.emoji}</div>}
             <h1 className={`text-2xl font-bold ${theme.heroTitle} dark:text-white`}>{content.hero.title}</h1>
+            <p className="mt-1.5 text-xs text-gray-400 dark:text-gray-500">
+              Written by <span className="font-medium">David Rodgers</span> — Updated March 2026
+            </p>
             <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-lg mx-auto">{content.hero.subtitle}</p>
           </div>
         </div>
