@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import Link from 'next/link'
 import { contentMap } from '../../data/guide-content/index.js'
+import AuthorBox from './AuthorBox.jsx'
 
 // Hero images for guides that have a corresponding photo (exported for use in generateMetadata)
 export const heroImages = {
@@ -1078,6 +1079,9 @@ export default function GuideDetail({ guideId }) {
             )}
           </Fragment>
         ))}
+
+        {/* Author box */}
+        <AuthorBox />
 
         {/* Footer nav */}
         <div className="text-center pb-4">
