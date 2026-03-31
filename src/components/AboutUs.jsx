@@ -6,14 +6,21 @@ export default function AboutUs() {
       <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-8 space-y-8">
 
         {/* Hero */}
-        <div>
-          <h1 className="text-3xl font-bold text-garden-800 dark:text-garden-300 mb-4">
-            About Planting Atlas
-          </h1>
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-            Hi, I&apos;m <strong>David Rodgers</strong>, the founder of Planting Atlas and the person who
-            researches, writes, and maintains the information on this site.
-          </p>
+        <div className="flex flex-col sm:flex-row gap-6 items-start">
+          <img
+            src="/about-me-image.png"
+            alt="David Rodgers, founder of Planting Atlas"
+            className="w-full sm:w-48 rounded-xl object-cover flex-shrink-0"
+          />
+          <div>
+            <h1 className="text-3xl font-bold text-garden-800 dark:text-garden-300 mb-4">
+              About Planting Atlas
+            </h1>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              Hi, I&apos;m <strong>David Rodgers</strong>, the founder of Planting Atlas and the person who
+              researches, writes, and maintains the information on this site.
+            </p>
+          </div>
         </div>
 
         {/* Divider */}
