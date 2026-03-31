@@ -1250,6 +1250,16 @@ Theme: slate/green gradient in `GuideDetail.jsx`; hero image: `public/guides/pri
 - Styled with `garden-50` background, `garden-100` border, full dark mode support
 - Placed in `GuideDetail.jsx` between the last guide section and the "Back to All Planting Guides" footer nav — renders automatically on all 52+ live guides with no per-guide changes required
 
+### Author Byline on Guide Pages ✅
+
+A one-line byline renders on every guide detail page directly below the `<h1>` title, above the subtitle:
+
+> *Written by **David Rodgers** — Updated March 2026*
+
+- Implemented in `GuideDetail.jsx` as a single `<p>` tag (`text-xs text-gray-400`)
+- Applies automatically to all live guides — no per-guide changes needed
+- "March 2026" is a static string; update it here when guides are refreshed
+
 ---
 
 ### Infographics, Videos, and Podcasts Pages ✅
