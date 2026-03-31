@@ -1219,6 +1219,39 @@ Theme: slate/green gradient in `GuideDetail.jsx`; hero image: `public/guides/pri
 
 ---
 
+### About Us Page ✅
+
+`src/app/about/page.jsx` + `src/components/AboutUs.jsx` — Full About Us page at `/about/` with founder bio and E-E-A-T signals for Google AdSense compliance.
+
+**Content:**
+- Founder name and role: David Rodgers, Founder & Head Gardener
+- Photo: `public/about-me-image.png` displayed alongside the intro text (side-by-side on desktop, stacked on mobile)
+- 40 years of hands-on gardening experience in Oklahoma's Zone 7 climate
+- Editorial process: USDA data, university extension publications (OSU, Texas A&M), peer-reviewed horticulture journals, minimum two-source cross-checking
+- Mission statement
+- Location: Norman, Oklahoma
+- Link to Contact page in closing callout
+
+**Wiring:**
+- Nav.jsx: `👤 About` link added between Shop and Contact
+- `layout.jsx` footer: About link added alongside Privacy Policy and Contact Us
+- `src/app/sitemap.js`: `/about/` added at priority 0.6
+
+---
+
+### Author Box on Guide Pages ✅
+
+`src/components/guides/AuthorBox.jsx` — Reusable author attribution component rendered at the bottom of every live Plantopedia guide.
+
+- Circular photo (`public/about-me-image.png`, 64×64px, `rounded-full`)
+- **About the Author** heading
+- David Rodgers name + 2-sentence bio (40 years experience, draws from OSU Extension and USDA data)
+- "Read more about David and Planting Atlas →" link to `/about`
+- Styled with `garden-50` background, `garden-100` border, full dark mode support
+- Placed in `GuideDetail.jsx` between the last guide section and the "Back to All Planting Guides" footer nav — renders automatically on all 52+ live guides with no per-guide changes required
+
+---
+
 ### Infographics, Videos, and Podcasts Pages ✅
 
 Three new content discovery pages added to the app:
