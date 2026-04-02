@@ -251,7 +251,7 @@ export const guideCategories = [
         title: 'Medicinal Herb Garden',
         emoji: '💊',
         description: 'Time-honored healing herbs you can grow and use at home.',
-        comingSoon: true,
+        comingSoon: false,
       },
       {
         id: 'fragrant-garden-path',
