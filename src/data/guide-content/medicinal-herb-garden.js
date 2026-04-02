@@ -261,5 +261,124 @@ export const medicinalHerbGardenContent = {
         },
       ],
     },
+    {
+      id: 'preparing-herbal-remedies',
+      title: 'Section 4: Preparing Herbal Remedies',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The gap between a jar of dried herbs and a usable herbal remedy is the art of preparation. Different plant compounds are extracted by different solvents — some are water-soluble (extracted by tea or decoction), others are alcohol-soluble (extracted by tinctures), others are fat-soluble (extracted by infused oils). Understanding which extraction method suits which herb and which application is the practical foundation of home herbalism.',
+        },
+        {
+          type: 'h3',
+          text: 'Herbal Teas, Infusions & Decoctions',
+        },
+        {
+          type: 'p',
+          text: 'An infusion — what most people call herbal tea — is the simplest and one of the most effective herbal preparations for delicate plant parts like leaves and flowers. It extracts water-soluble compounds including volatile essential oils, water-soluble vitamins, and many active constituents.',
+        },
+        {
+          type: 'table',
+          headers: ['Preparation Type', 'Method', 'Best For', 'Dosage'],
+          rows: [
+            ['Standard infusion (tea)', 'Steep 1–2 teaspoons dried herb (or 2–4 teaspoons fresh herb) per cup of just-boiled water, covered, for 5–15 minutes. The cover is important — it traps volatile essential oils that would otherwise evaporate. Strain and drink.', 'Leaves, flowers, and soft aerial parts', '2–4 cups per day during acute conditions; 1–2 cups daily for tonic or preventive use'],
+            ['Long infusion (nourishing infusion)', 'Steep 1 ounce dried herb per quart of just-boiled water, covered and sealed, for 4–8 hours or overnight. Extracts a much higher concentration of minerals, water-soluble vitamins, and other compounds than a brief tea.', 'Nutritive herbs: nettles, oatstraw, red clover, comfrey leaf', '1–2 cups daily'],
+            ['Decoction', 'Simmer hard plant materials in water at a gentle simmer for 20–45 minutes. Use 1 tablespoon dried material per cup water; begin with cold water; bring to gentle simmer; cover; strain.', 'Roots, bark, seeds, dense berries — elderberry, astragalus, licorice root, burdock root, valerian root, cinnamon', '2–3 cups per day as directed'],
+            ['Cold infusion', 'Place herbs in cold water in a covered jar; steep overnight in the refrigerator.', 'Mucilaginous herbs like marshmallow root — cold water preserves intact mucilaginous compounds that hot water partially degrades', '1–2 cups per day'],
+            ['Sun tea', 'Place herbs in cold water in a clear jar; set in full sun for 4–6 hours.', 'Delicate herbs for culinary enjoyment; limited medicinal potency; consume same day (bacterial growth risk in warm water)', 'As desired — same day only'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Tinctures: Alcohol Extractions',
+        },
+        {
+          type: 'p',
+          text: 'A tincture is a concentrated herbal extract made by steeping plant material in alcohol, which extracts a broader range of compounds than water alone — including resinous, oily, and many bioactive compounds that don\'t extract well into water. Tinctures are more concentrated than teas, have a long shelf life (3–5 years), and allow precise dosing.',
+        },
+        {
+          type: 'h3',
+          text: 'Folk Method (Simple Ratio Method)',
+        },
+        {
+          type: 'list',
+          items: [
+            'Fill a clean glass jar loosely with fresh herbs or half-full with dried herbs',
+            'Cover completely with 80-proof vodka (40% alcohol) for most herbs; 190-proof grain alcohol diluted to 60% for resins, fresh roots, and very tough plant materials',
+            'Seal tightly; shake daily; steep for 4–6 weeks in a cool dark location',
+            'Strain through cheesecloth or muslin, squeezing all liquid from the marc (plant material)',
+            'Bottle in amber dropper bottles; label with herb, date, and alcohol used; store in cool dark location',
+            'Standard adult dose: 30–60 drops (1–2 ml) in water, 2–3 times daily; adjust based on herb-specific guidance',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Weight-to-Volume Method (More Precise)',
+        },
+        {
+          type: 'list',
+          items: [
+            '1:5 ratio (standard for dried herbs): 1 gram dried herb to 5 ml menstruum (solvent); weigh 200g dried herb; measure 1,000 ml alcohol-water mixture at appropriate percentage for the herb',
+            '1:2 ratio (standard for fresh herbs): 1 gram fresh herb to 2 ml solvent; fresh herbs contain water which dilutes the solvent, so less liquid is added',
+            'Alcohol percentage by herb type — Dried leaf and flower: 50–60% alcohol; Resins, high-resin roots: 70–90% alcohol; Mucilaginous herbs: 25–40% alcohol (more water for mucilage extraction); Dried roots, bark, and seeds: 50–70% alcohol',
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '🍯',
+          text: 'Non-Alcohol Alternatives (Glycerites): For those avoiding alcohol — children, recovering alcoholics, or those preferring alcohol-free preparations — vegetable glycerin can replace alcohol as the extracting solvent. Glycerites are sweet-tasting but extract fewer compounds than alcohol and have a shorter shelf life (1–2 years). Use 60–70% food-grade vegetable glycerin and 30–40% water. Preparation method is identical to alcohol tinctures.',
+        },
+        {
+          type: 'h3',
+          text: 'Infused Oils',
+        },
+        {
+          type: 'p',
+          text: 'Infused oils extract fat-soluble compounds from plant material and form the base of salves, balms, and topical applications. They are NOT the same as essential oils (which are concentrated aromatic distillates requiring specialized equipment). Infused oils are simple kitchen preparations.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Cold infusion method (best for volatile herbs): Fill a clean glass jar with dried herbs (fresh herbs must be wilted 12–24 hours first to reduce moisture that causes rancidity); cover completely with olive oil, jojoba, sunflower, or sweet almond oil; seal tightly; place in a warm sunny spot (70–80°F) for 4–6 weeks, shaking daily; strain through cheesecloth; bottle in amber glass; refrigerate for up to 1 year',
+            'Warm infusion method (faster): Place herbs and oil in a double boiler or slow cooker set to lowest setting (100–110°F); maintain low temperature for 4–8 hours, stirring occasionally — do not allow oil to exceed 140°F or simmer (destroys volatile compounds and degrades oil); strain and bottle as above',
+            'Best herbs for infused oils: calendula (classic wound-healing oil), St. John\'s Wort (pain relief; anti-inflammatory), lavender (calming; antiseptic), comfrey (tissue healing), plantain (drawing; anti-inflammatory), arnica (bruises; muscle pain — for external use only)',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Salves and Balms',
+        },
+        {
+          type: 'p',
+          text: 'A salve is simply an infused oil that has been thickened with beeswax (or candelilla wax for a vegan alternative) to produce a solid or semi-solid topical preparation. It is one of the most versatile and useful preparations in the home herbalist\'s repertoire.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Prepare infused oil by either method above',
+            'The standard ratio: 1 ounce beeswax per 8 ounces of infused oil produces a medium-firm salve; for a softer balm, use less wax; for a harder lip balm or stick, use more',
+            'Melt beeswax in a double boiler; add infused oil and stir to combine; test consistency by placing a small amount on a cold plate — adjusting wax up or down as needed',
+            'Remove from heat; add any essential oils at this point (10–15 drops per ounce if desired); pour immediately into clean tins or small glass jars before the wax begins to set',
+            'Allow to cool undisturbed; label and date; shelf life 1–2 years stored at room temperature away from heat and light',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Other Preparation Methods',
+        },
+        {
+          type: 'table',
+          headers: ['Preparation', 'Method', 'Best Applications', 'Notes'],
+          rows: [
+            ['Poultice', 'Mash or process fresh herbs into a paste and apply directly to skin; hold in place with a cloth bandage. Alternatively, moisten dried herbs with hot water to soften.', 'Fresh plantain poultice for bee stings and insect bites; comfrey poultice for bruises and sprains; cabbage poultice for inflammation', 'The classic field medicine application: chew a fresh plantain leaf and apply immediately to insect stings'],
+            ['Compress', 'Soak a clean cloth in strong herbal tea or diluted tincture; wring out; apply to affected area. Hot compress for muscle tension, sinus congestion, cramping. Cold compress for fever, inflammation, headache.', 'Larger surface topical application; more comfortable than poultice for some situations', 'Allows easy reapplication by re-soaking cloth in warm tea'],
+            ['Liniment', 'Herbal preparation in alcohol (or vinegar) designed for external use on muscles and joints — NOT for internal use. Make similarly to a tincture using rubbing alcohol or high-proof grain alcohol; apply externally.', 'Arnica liniment for bruises and sports injuries; camphor liniment for muscle pain', 'Label clearly "FOR EXTERNAL USE ONLY"; keep out of reach of children'],
+            ['Capsules & powders', 'Grind dried herbs to powder in a dedicated coffee grinder; fill into empty vegetable capsules (size 00 holds ~500mg). Standard adult dose: 1–3 capsules, 2–3 times daily.', 'Herbs with strong or unpleasant taste: valerian, turmeric, marshmallow root', 'Coffee grinder dedicated to herbs only; clean between herbs to avoid flavor cross-contamination'],
+            ['Oxymel', 'Equal parts raw honey and apple cider vinegar; add herbs; steep for 4–6 weeks; strain. Dose: 1–2 tablespoons as needed.', 'Respiratory herbs (thyme, elderberry, elecampane); excellent for children', 'Not for children under 1 year due to honey/botulism risk'],
+            ['Herb-infused honey', 'Gently warm raw honey (110°F maximum — preserves beneficial enzymes); add fresh or dried herbs; steep for 2–4 weeks; strain or leave herbs in honey.', 'Lavender honey, thyme honey (excellent for coughs), ginger honey', 'Antimicrobial honey combined with medicinal herbs creates a synergistic preparation'],
+          ],
+        },
+      ],
+    },
   ],
 }
