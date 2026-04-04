@@ -73,7 +73,6 @@ export const medicinalHerbGardenContent = {
         },
       ],
     },
-  ],
     {
       id: 'growing-medicinal-herb-garden',
       title: 'Section 2: Growing the Medicinal Herb Garden',
