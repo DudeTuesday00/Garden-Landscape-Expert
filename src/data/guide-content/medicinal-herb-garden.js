@@ -398,5 +398,76 @@ export const medicinalHerbGardenContent = {
         },
       ],
     },
+    {
+      id: 'medicinal-garden-designs',
+      title: 'Section 6: Medicinal Herb Garden Designs',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A well-organized medicinal herb garden is more useful than a random collection of plants because you can find what you need quickly, group plants by compatible growing requirements, and remember what you have. The following design approaches have proven practical across diverse American gardening situations.',
+        },
+        {
+          type: 'h3',
+          text: 'Design 1: The Kitchen Medicine Cabinet Garden (4×8 Raised Bed)',
+        },
+        {
+          type: 'p',
+          text: 'A curated collection of the most-used herbs for everyday wellness, organized for easy access and harvest. The highest-value medicinal garden per square foot for a beginning home herbalist.',
+        },
+        {
+          type: 'table',
+          headers: ['Position', 'Herb', 'Why Here', 'Notes'],
+          rows: [
+            ['Back center (tallest)', 'Echinacea purpurea', 'Tallest plant; beautiful; harvest aerial parts for immune support', '3–4 ft; divide every 3 years'],
+            ['Back left', 'Lemon Balm', 'Grows large; shade-tolerant; harvest frequently to contain; anxiety and sleep', '2–3 ft; aggressive spreader — cut back regularly'],
+            ['Back right', 'Valerian', 'Tall; harvest roots in fall of year 2; sleep and anxiety', '4–5 ft in bloom; dies back in winter'],
+            ['Middle left', 'Chamomile', 'Self-seeds freely; flowers for tea; most versatile medicinal in the garden', '18–24 in; deadhead for continuous bloom; allow some seed set'],
+            ['Middle center', 'Calendula', 'Prolific flower producer; harvest daily in peak season; wound healing and skin care', '18 in; most productive herb per flower; deadhead constantly'],
+            ['Middle right', 'Peppermint (in pot sunk in soil)', 'Contained to prevent spreading; harvest throughout season; digestive and respiratory', 'Keep in large pot; harvest frequently'],
+            ['Front left', 'Thyme (Greek)', 'Low-growing; drought-tolerant; harvest for respiratory and antimicrobial use', '8–12 in; perennial in Zone 5+; harvest before flowering'],
+            ['Front center', 'Lavender', 'Aromatic; beautiful; medicinal flowers for sleep and anxiety; requires excellent drainage', '18–24 in; needs well-drained gritty soil'],
+            ['Front right', 'Plantain (small section)', 'First-aid herb; harvest young leaves from elsewhere in garden or allow this section', 'Pull seeding stalks before they set; harvest young spring leaves'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Design 2: The Woodland Medicinal Garden',
+        },
+        {
+          type: 'p',
+          text: 'For gardeners with shade, this design groups native woodland medicinals that thrive in dappled light and rich, moist, acidic soil. All of these herbs prefer the understory conditions found under deciduous trees.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Goldenseal (Hydrastis canadensis, Zones 3–8): Most important American woodland medicinal herb; antimicrobial, immune stimulating; endangered in the wild — grow your own; rich moist acidic woodland soil; dense shade',
+            'Black Cohosh (Actaea racemosa, Zones 3–8): Tall dramatic plant for menopausal support; rich moist woodland soil; grows in dense shade',
+            'Solomon\'s Seal (Polygonatum biflorum, Zones 3–9): Anti-inflammatory; connective tissue support; nutritive; beautiful arching habit; very easy woodland perennial',
+            'Wild Ginger (Asarum canadense, Zones 3–8): Low ground-cover; digestive herb; native; shade; moist woodland soil',
+            'Skullcap (Zones 5–9): Native shade-tolerant nervine; excellent companion to woodland medicinals',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Design 3: The Balcony and Container Medicinal Garden',
+        },
+        {
+          type: 'table',
+          headers: ['Container', 'Herb(s)', 'Container Size', 'Light', 'Best Use'],
+          rows: [
+            ['Container 1', 'Peppermint (solo — its own pot)', '12 in wide, 10 in deep', 'Part shade to sun', 'Digestive and respiratory tea; must be alone to prevent spreading'],
+            ['Container 2', 'Lemon Balm', '12 in wide, 10 in deep', 'Part shade to sun', 'Anxiety, sleep, and calming teas; harvest leaves frequently'],
+            ['Container 3', 'Chamomile', '10 in wide, 8 in deep', 'Full sun', 'Anti-inflammatory tea; harvest flowers as they open daily'],
+            ['Container 4', 'Lavender (dwarf variety)', '12 in wide, well-draining mix', 'Full sun essential', 'Anxiety, sleep, aromatherapy; excellent drainage required'],
+            ['Container 5', 'Calendula', '10 in wide', 'Full sun', 'Wound and skin preparations; harvest flowers daily for continuous production'],
+            ['Container 6', 'Thyme (Greek)', '10 in wide, gritty mix', 'Full sun', 'Respiratory tea and antimicrobial support; long-lived perennial in containers'],
+            ['Container 7', 'Holy Basil / Tulsi', '10 in wide, warm location', 'Full sun; warmth essential', 'Adaptogen; stress and immune tea; summer and fall only in most climates'],
+            ['Container 8', 'Echinacea (\'Magnus\' or compact cultivar)', '12 in wide, 12 in deep', 'Full sun', 'Immune support; harvest flowers and aerial parts; divide every 2 years'],
+            ['Large Container A (16 in)', 'Aloe Vera', '16 in wide, cactus mix', 'Bright indirect to full sun indoors', 'First aid burn and skin herb; keep indoors in most U.S. climates; low maintenance'],
+            ['Large Container B (16 in)', 'Ginger (summer) / Store winter', '16 in wide, rich moist mix', 'Part shade to sun', 'Digestive, nausea, anti-inflammatory; harvest rhizomes in fall; bring inside for winter'],
+          ],
+        },
+      ],
+    },
   ],
 }
