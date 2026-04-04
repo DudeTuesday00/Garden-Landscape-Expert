@@ -111,8 +111,8 @@ Garden-Landscape-Expert/
     │   ├── HomePage.jsx             # Landing page — two image-backed path cards (Link to /wizard and /guides)
     │   ├── ContactUs.jsx            # 'use client' — contact form (Formspree mlgpgdny); success state
     │   ├── Infographics.jsx         # Garden infographics — visual quick-reference cards
-    │   ├── Videos.jsx               # Curated gardening YouTube channels by topic
-    │   ├── Podcasts.jsx             # Curated gardening podcasts list
+    │   ├── Videos.jsx               # Curated gardening YouTube channels by topic + original videos (stacked cards, newest first)
+    │   ├── Podcasts.jsx             # 'use client' — episode tile grid (EpisodePlayer) + curated podcast list
     │   ├── PrivacyPolicy.jsx        # Static privacy policy page
     │   ├── wizard/
     │   │   ├── Garden-Architect.png   # Hero image used on HomePage card (Garden Architect)
@@ -1291,8 +1291,8 @@ Three new content discovery pages added to the app:
 | Page | Route | Component | Description |
 |---|---|---|---|
 | Garden Infographics | `/infographics/` | `src/components/Infographics.jsx` | Visual quick-reference guides — 28 live infographic images with click-to-enlarge lightbox |
-| Gardening Videos | `/videos/` | `src/components/Videos.jsx` | Curated YouTube channels by topic + original Planting Atlas videos (YouTube-hosted, embedded via iframe) |
-| Gardening Podcasts | `/podcasts/` | `src/components/Podcasts.jsx` | Curated podcast list + original Planting Atlas episodes (RSS.com-hosted, embedded via iframe) |
+| Gardening Videos | `/videos/` | `src/components/Videos.jsx` | Curated YouTube channels by topic + 2 original Planting Atlas videos (YouTube-hosted, stacked cards newest first) |
+| Gardening Podcasts | `/podcasts/` | `src/components/Podcasts.jsx` | `'use client'` — responsive episode tile grid (`EpisodePlayer` component) + curated podcast list; episodes defined in `episodes` array at top of file |
 
 Each page has a full metadata export (`title`, `description`, `keywords`, `canonical`, `openGraph`, `twitter`).
 
@@ -1448,21 +1448,33 @@ Original video and podcast content is externally hosted (no large media files in
 
 **Video — YouTube hosted**
 
-| Title | YouTube ID | Embed URL |
-|---|---|---|
-| The Annual Garden Equation: Buying Time and Renting Color | `Jo47nbbQGBI` | `https://www.youtube.com/embed/Jo47nbbQGBI` |
+| # | Title | YouTube ID | Embed URL |
+|---|---|---|---|
+| 1 | Building the Quick Win Children's Garden | `agIvBCAOPEk` | `https://www.youtube.com/embed/agIvBCAOPEk` |
+| 2 | The Annual Garden Equation: Buying Time and Renting Color | `Jo47nbbQGBI` | `https://www.youtube.com/embed/Jo47nbbQGBI` |
 
-- Embedded in `src/components/Videos.jsx` as the first content section, using a responsive `aspect-video` wrapper + `<iframe>`
-- To add a new video: add a new card in the "Planting Atlas Original" section in `Videos.jsx` with the YouTube embed URL (`https://www.youtube.com/embed/<VIDEO_ID>`)
+- Embedded in `src/components/Videos.jsx` as stacked full-width cards (newest first), each with an `aspect-video` iframe, title, and description
+- To add a new video: add a new card **at the top** of the cards list in the "Planting Atlas Original" section in `Videos.jsx` with the YouTube embed URL (`https://www.youtube.com/embed/<VIDEO_ID>`)
 
 **Podcast — RSS.com hosted**
 
-| Title | RSS.com slug | Embed URL |
-|---|---|---|
-| Tricking Annuals Into Non-Stop Blooms | `tricking-annuals-into-non-stop-blooms` | `https://player.rss.com/tricking-annuals-into-non-stop-blooms?theme=color&v=2` |
+| Ep. | Title | RSS.com slug | Embed URL |
+|---|---|---|---|
+| 1 | Tricking Annuals Into Non-Stop Blooms | `tricking-annuals-into-non-stop-blooms` | `https://player.rss.com/tricking-annuals-into-non-stop-blooms?theme=color&v=2` |
 
-- Embedded in `src/components/Podcasts.jsx` as the first content section, using the RSS.com iframe player (height: 393px)
-- To add a new episode: add a new card in the "Planting Atlas Original" section in `Podcasts.jsx` with the RSS.com player iframe from the episode's share/embed settings
+- Episodes are defined in the `episodes` array at the top of `src/components/Podcasts.jsx`
+- The page renders a **responsive tile grid** (2–3 columns) where each tile shows episode number and title; clicking a tile loads that episode's RSS.com player and description below the grid
+- `Podcasts.jsx` uses `'use client'` for tile selection state (`EpisodePlayer` component)
+- **To add a new episode:** append an object to the `episodes` array in `Podcasts.jsx`:
+  ```js
+  {
+    id: 2,
+    title: 'Episode Title',
+    description: 'Episode description shown below the player.',
+    rssSlug: 'your-rss-com-episode-slug',
+  }
+  ```
+  The tile grid and player wire up automatically — no other changes needed.
 
 **Media hosting policy:** Do not commit audio or video files to the repo. YouTube handles video delivery; RSS.com handles podcast delivery. Only embed code (iframes) belongs in the components.
 
