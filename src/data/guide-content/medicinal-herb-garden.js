@@ -532,5 +532,76 @@ export const medicinalHerbGardenContent = {
         },
       ],
     },
+    {
+      id: 'year-round-herbal-calendar',
+      title: 'Section 8: The Year-Round Herbal Calendar',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A successful medicinal herb practice is a year-round rhythm — not a series of disconnected events. The following calendar uses Zones 5–7 as its baseline; adjust timing 2–4 weeks earlier for warmer zones (8–10) and 2–4 weeks later for colder zones (3–4).',
+        },
+        {
+          type: 'h3',
+          text: 'Winter: Reflection, Planning, and Medicine-Making (December–February)',
+        },
+        {
+          type: 'p',
+          text: 'Winter is the season of preparation, medicine-making, and planning. Many medicinal herbs have retreated below ground; some roots were harvested in fall and await processing; and the long evenings are ideal for making tinctures, salves, and other preparations from last season\'s harvest.',
+        },
+        {
+          type: 'table',
+          headers: ['Month', 'Garden Tasks', 'Harvesting', 'Medicine-Making', 'Planning & Learning'],
+          rows: [
+            ['December', 'Protect marginally hardy perennials with mulch; bring tender container herbs (ginger, tulsi, aloe) indoors', 'Wild roots in unfrozen ground (dandelion, burdock); dried herbs from storage', 'Begin tinctures from fall root harvests (valerian, dandelion, black cohosh); make salves and infused oils from summer flowers', 'Order seed catalogs; plan next year\'s garden layout; inventory herb supply; note what ran low'],
+            ['January', 'Check overwintering plants for frost heaving; water aloe vera and indoor herbs monthly', 'Dried herbs from storage; dried seed heads left standing (save seeds for spring planting)', 'Finish tinctures started in fall; make elderberry syrup from dried berries; prepare glycerites; process dried herbs into capsule powders', 'Order seeds early (medicinal seeds sell out quickly); read and plan; take a local herb walk or foraging class'],
+            ['February', 'Start slow-growing herbs from seed indoors: ashwagandha, valerian, echinacea, black cohosh (needs cold stratification), calendula; check cold-stored ginger rhizomes', 'Early wildcraft in mild climates (Zones 7+): dandelion root, first spring greens, chickweed', 'Continue tincture-making; make herbal vinegars (dried herbs in apple cider vinegar, 4–6 weeks)', 'Catalog all existing tinctures, dried herbs, and salves; date-check everything; compost anything over 2 years old (leaves/flowers) or 3 years old (roots)'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Spring: Planting, First Harvests, and Emerging Growth (March–May)',
+        },
+        {
+          type: 'table',
+          headers: ['Month', 'Garden Tasks', 'Harvesting', 'Medicine-Making', 'Notes'],
+          rows: [
+            ['March', 'Continue seeds indoors; divide established perennials (valerian, echinacea, lemon balm, yarrow) before fully leafing out; pull winter mulch back from emerging crowns', 'Spring roots before growth begins (Zones 6+): dandelion, burdock, marshmallow, yellow dock — harvest while energy is still in roots', 'Fresh dandelion root tincture; infused vinegar with spring growth (dandelion leaves, nettles, cleavers)', 'Nettles begin emerging — harvest first tender young growth with gloves; blanch and eat or make early nourishing nettle infusions'],
+            ['April', 'Transplant cold-hardy starts after last hard frost: chamomile, calendula, valerian, lemon balm; direct sow chamomile, calendula, borage; divide and transplant crowded perennials', 'Spring wildcrafting at peak: young nettles, violets, dandelion flowers and leaves, chickweed, cleavers (great spring lymphatic herb), red clover in warm areas', 'Fresh nettle nourishing infusion (1 oz per quart, overnight) as classic spring tonic; fresh tinctures of cleavers and violet leaf; dandelion flower-infused honey', 'Most foraging-rich month in most of the U.S. — many medicinal plants appear for only a brief spring window; prioritize wildcrafting'],
+            ['May', 'Transplant tender herbs after last frost: holy basil, ginger, lemon verbena; succession sow calendula; plant out echinacea transplants; set up supports for valerian', 'Elderflower harvest (bloom period is brief — 1–2 weeks; watch carefully); chamomile flowers begin; lemon balm first harvest; first rose petals from unsprayed roses', 'Elderflower cordial or tincture (prioritize above almost all others — brief season); fresh lemon balm tincture (fresh plant strongly preferred)', 'May is the herb garden\'s most hectic month — multiple first harvests happen simultaneously; keep a harvest journal to plan more precisely next year'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Summer: Peak Production, Continuous Harvest (June–August)',
+        },
+        {
+          type: 'table',
+          headers: ['Month', 'Garden Tasks', 'Primary Harvests', 'Medicine-Making Priority', 'Notes'],
+          rows: [
+            ['June', 'Deadhead calendula and chamomile constantly; harvest thyme, oregano, sage before flowering; first lavender harvest when buds just opening; weed regularly before seed set', 'Lavender at peak bloom; chamomile (every 2–3 days); St. John\'s Wort flowers (harvest when just opening — most time-critical harvest of the year); first echinacea flowers; thyme at peak aromatic quality', 'St. John\'s Wort red infused oil (fresh flowers only, cold-infused in olive oil — start now); lavender infused oil and tincture; chamomile infused oil and tincture; begin drying everything for winter supply', 'St. John\'s Wort harvest window is narrow — flowers lose potency quickly; plant is at peak for only 2–3 weeks; prioritize this harvest above all others in June'],
+            ['July', 'Continue daily calendula harvest; cut back lemon balm to prevent seed set; succession sow calendula for fall; harvest garlic when lower 1/3 of leaves brown; monitor elderberry development', 'Calendula daily; echinacea flowers and aerial parts; holy basil before seed set; yarrow flowers at peak; valerian flowers; elderflower in northern climates', 'Elderberry syrup from early ripe varieties; calendula infused oil and salve; yarrow tincture; fresh-plant echinacea tincture (fresh and dried tinctures are different — make both)', 'July is peak medicine-making season — work at capacity; what you don\'t harvest and process this month may not be available until next year'],
+            ['August', 'Harvest elderberries (most varieties ripe August–September); final chamomile harvest; cut back peppermint to stimulate fresh growth; harvest seeds for saving; prepare for root harvest season', 'Elderberries (most important August harvest); ashwagandha roots in warm climates; first echinacea root harvest on 3-year-old plants; marshmallow aerial parts', 'Elderberry syrup is the primary August priority — make at least a 3-month supply; elderberry tincture from fresh berries; dry elderberries for winter; ashwagandha root preparations', 'Elderberries ripen quickly and can ferment on the plant in hot weather — harvest as soon as they reach full dark color; check daily from late July'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Fall: Root Harvest, Preservation, and Winterizing (September–November)',
+        },
+        {
+          type: 'table',
+          headers: ['Month', 'Garden Tasks', 'Primary Harvests', 'Medicine-Making Priority', 'Notes'],
+          rows: [
+            ['September', 'Plant garlic for next year; sow chamomile and calendula for overwintering in Zones 7+; begin cutting back spent annuals; collect seeds from open-pollinated herbs', 'Elderberries continue in northern areas; harvest holy basil before first frost; final calendula harvest; ashwagandha roots at first frost; tulsi seeds for next year', 'Second elderberry syrup run from late harvest; dry and store all remaining summer herbs; begin tinctures from roots being harvested this month', 'Last opportunity to harvest tender annuals before frost — watch the forecast and harvest everything that won\'t survive before it comes'],
+            ['October', 'Apply winter mulch after a few hard freezes; cut back dead annuals; save seeds from open-pollinated herbs; final weeding before winter', 'PRIME ROOT HARVEST MONTH: dandelion, valerian (2-year-old roots), echinacea (3-year plants), black cohosh (3+ years), marshmallow, burdock, yellow dock, elecampane root', 'Root medicine season — process all roots immediately: wash, slice, dry or tincture; fresh root tinctures (1:2 in appropriate alcohol) generally superior to dried for most roots', 'Root harvest must happen after first hard frosts (energy in roots) but before ground freezes; this window may be only 2–4 weeks in Zones 5–6'],
+            ['November', 'Complete remaining root harvests before ground freezes; bring in container plants being overwintered; apply final mulch; clean and organize the apothecary', 'Late root harvests as ground allows; remaining seed heads for saving; last above-ground herb harvest in mild climates', 'Complete all tinctures started from fall roots; full apothecary inventory; plan what to make December–January from materials on hand', 'By end of November the annual herb garden cycle is essentially complete — take stock and note what you wished you had more of'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '📅',
+          text: 'Keep a harvest journal from your very first season. Recording when each herb reaches peak bloom, when you harvested, what you made, and how much you ended up using will make you dramatically more efficient by year two or three. The medicine-making calendar runs parallel to the growing calendar — both must be planned together.',
+        },
+      ],
+    },
   ],
 }
