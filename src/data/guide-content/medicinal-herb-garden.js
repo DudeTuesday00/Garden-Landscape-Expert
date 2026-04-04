@@ -130,5 +130,64 @@ export const medicinalHerbGardenContent = {
         },
       ],
     },
+    {
+      id: 'harvesting-drying-preservation',
+      title: 'Section 3: Harvesting, Drying & Preservation',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Harvesting at the right time is the most underappreciated aspect of home herbalism. The same plant harvested at peak potency versus off-peak can have dramatically different concentrations of active compounds — differences that can exceed 50% in studies of timed harvesting. Getting this right means the difference between herbs with real medicinal value and essentially dried plant material.',
+        },
+        {
+          type: 'h3',
+          text: 'When and How to Harvest Each Plant Part',
+        },
+        {
+          type: 'table',
+          headers: ['Plant Part', 'Best Time to Harvest', 'Indicators of Peak Potency', 'Practical Method'],
+          rows: [
+            ['Aerial parts (leaves, stems, flowers together)', 'Just before or during early bloom, when plant has reached full vegetative development but has not yet committed energy to seed production', 'Buds forming or first flowers opening; leaves at full size and vibrant green; maximum essential oil aroma', 'Cut stems to 1/3–1/2 of plant height in morning after dew dries; use clean sharp scissors; do not pull or tear'],
+            ['Leaves only', 'Before flowering for most medicinal herbs; plant\'s energy and chemistry is focused in leaves before it shifts to reproduction', 'Leaves fully expanded but still vibrant and unblemished; before flowering stalks elongate', 'Harvest individual leaves or full stems; strip dried or yellowing leaves; harvest outer leaves first on rosette plants'],
+            ['Flowers', 'At first opening or when just fully opened; harvest before pollen is released and before any browning begins', 'Petals fully open; color vibrant; pollen not yet scattered; no browning at petal edges', 'Harvest by hand or scissors into a wide shallow basket; avoid harvesting in heavy dew (mold risk)'],
+            ['Roots', 'In fall for perennials (after aerial parts die back) or in very early spring before growth resumes', 'Autumn: after first frost, stems brown and fallen; spring: before shoots emerge; roots contain highest compound concentration at these times', 'Dig carefully with a fork; wash soil off; for perennial plants, harvest only 1/3 or less of root system to allow plant recovery'],
+            ['Bark', 'Spring (cambium most active) or fall; from branches removed by pruning rather than from trunk', 'Cambium layer bright and moist; inner bark has characteristic color and aroma', 'Strip from pruned branches 1–3 inches diameter; never girdle a living tree; scrape off outer rough bark to reach active inner bark'],
+            ['Seeds and berries', 'At full maturity — seeds fully formed, berries deeply colored', 'Seeds: brown, firm, separating from seed head; berries: full color, firm-to-soft depending on species', 'For small seeds: cut seed heads into paper bags and allow to dry further; for berries: hand-pick at ripeness'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '⏰',
+          text: 'Time of Day Matters: Harvest most aerial parts (leaves, flowers, stems) in the morning after dew has dried but before afternoon heat drives off essential oils — typically 9 AM to noon. This is when essential oil content is highest. Avoid harvesting immediately after rain (diluted compounds, mold risk) or during extreme heat.',
+        },
+        {
+          type: 'h3',
+          text: 'Drying Methods for Medicinal Quality',
+        },
+        {
+          type: 'table',
+          headers: ['Drying Method', 'Best For', 'Temperature', 'Drying Time', 'Advantages', 'Watch Out For'],
+          rows: [
+            ['Hanging bunches (air drying)', 'Robust low-moisture herbs: lavender, rosemary, thyme, oregano, sage, yarrow, St. John\'s Wort', '65–90°F in dry conditions; below 90°F to preserve volatile oils', '1–3 weeks depending on humidity', 'Free; no equipment; no heat damage to volatile oils', 'Requires low humidity (below 60% RH); in humid climates, hanging bunches may mold before drying'],
+            ['Screen or mesh rack drying', 'Flowers (laid flat, single layer); roots (sliced thin); high-moisture herbs (lemon balm, basil)', '65–90°F with good air circulation; elevate screens for airflow beneath', '1–2 weeks typically; flowers often faster', 'Better air circulation than hanging; ideal for flowers; faster in humid climates', 'Flowers can stick to screens if not turned; needs rack/screen equipment and dedicated space'],
+            ['Dehydrator', 'Any part; especially good for thick roots, high-moisture herbs, high-humidity climates; fastest reliable method', '95–115°F maximum for leaves and flowers; 115–125°F for roots and bark; NEVER higher — destroys active compounds', '2–12 hours depending on part and moisture content', 'Consistent results; fast; works in any climate; reduces mold risk dramatically', 'Equipment cost ($40–200); check temperature carefully — many dehydrators run hotter than labeled'],
+            ['Oven drying (lowest setting)', 'Emergency drying only; not recommended for aromatic herbs', 'Lowest oven setting (170–200°F) — too hot for most active compounds; use door propped open', '1–4 hours', 'Fast; widely available equipment', 'Most ovens run too hot; destroys many volatile oils and heat-sensitive compounds; use a dehydrator instead'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Storage for Medicinal Longevity',
+        },
+        {
+          type: 'list',
+          items: [
+            'Containers: Amber glass jars with tight-fitting lids are ideal — they block UV light while allowing you to see contents; clear glass must be stored in a dark location; never store herbs long-term in plastic',
+            'Location: Cool, dark, and dry — pantry shelves away from the stove; a dedicated herb cabinet; never on kitchen windowsills (the worst possible location — light, heat, and steam from cooking)',
+            'Labeling: Label every container with herb name, part used, harvest date, and source. This is not optional — six months from now you will not remember which unlabeled jar is marshmallow root and which is dandelion root.',
+            'Shelf life: Volatile oil-rich herbs (lavender, rosemary, thyme) retain potency 1–2 years; most leaves and flowers 1–2 years; roots and bark 2–3 years; seeds 2–4 years. Mark jars with a "use by" date.',
+            'Testing potency: Crush a small amount between fingers — dried herbs should still release a clear aroma. If odorless and tasteless, the herb has lost potency and should be composted and replaced.',
+          ],
+        },
+      ],
+    },
   ],
 }
