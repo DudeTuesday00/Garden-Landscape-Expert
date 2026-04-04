@@ -189,5 +189,89 @@ export const medicinalHerbGardenContent = {
         },
       ],
     },
+    {
+      id: 'preparing-herbal-remedies',
+      title: 'Section 4: Preparing Herbal Remedies',
+      blocks: [
+        {
+          type: 'p',
+          text: 'The gap between a jar of dried herbs and a usable herbal remedy is the art of preparation. Different plant compounds are extracted by different solvents — some are water-soluble (extracted by tea or decoction), others are alcohol-soluble (extracted by tinctures), others are fat-soluble (extracted by infused oils). Understanding which extraction method suits which herb and which application is the practical foundation of home herbalism.',
+        },
+        {
+          type: 'h3',
+          text: 'Herbal Teas, Infusions & Decoctions',
+        },
+        {
+          type: 'table',
+          headers: ['Method', 'How To Make', 'Best For', 'Dose'],
+          rows: [
+            ['Standard infusion (tea)', 'Steep 1–2 tsp dried herb (or 2–4 tsp fresh) per cup of just-boiled water, covered, for 5–15 minutes. The cover traps volatile essential oils. Strain and drink.', 'Leaves, flowers, and soft aerial parts', '2–4 cups daily for acute conditions; 1–2 cups daily for tonic use'],
+            ['Long nourishing infusion', 'Steep 1 oz dried herb per quart of just-boiled water, covered and sealed, for 4–8 hours or overnight. Extracts much higher concentrations of minerals and water-soluble vitamins.', 'Nettles, oatstraw, red clover, lemon balm, chamomile', '1–2 cups daily'],
+            ['Decoction', 'Simmer hard plant materials at a gentle simmer for 20–45 minutes. Use 1 tablespoon dried material per cup water; begin cold; simmer covered; strain.', 'Roots, bark, seeds, dense berries — elderberry, hawthorn, valerian root, licorice root, cinnamon', '2–3 cups daily as directed'],
+            ['Cold infusion', 'Place herbs in cold water in a covered jar; steep overnight at room temperature or refrigerated.', 'Mucilaginous herbs like marshmallow root — cold water preserves intact mucilage that hot water partially degrades', '1–2 cups daily'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Tinctures: Alcohol Extractions',
+        },
+        {
+          type: 'h3',
+          text: 'Folk Method',
+        },
+        {
+          type: 'list',
+          items: [
+            'Fill a clean glass jar loosely with fresh herbs or half-full with dried herbs',
+            'Cover completely with 80-proof vodka (40% alcohol) for most herbs; 190-proof grain alcohol diluted to 60% for resins, fresh roots, and very tough plant materials',
+            'Seal tightly; shake daily; steep for 4–6 weeks in a cool dark location',
+            'Strain through cheesecloth, squeezing all liquid from the marc (plant material)',
+            'Bottle in amber dropper bottles; label with herb, date, and alcohol used; store in cool dark location',
+            'Standard adult dose: 30–60 drops (1–2 ml) in water, 2–3 times daily; adjust based on herb-specific guidance',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Alcohol Percentage by Herb Type',
+        },
+        {
+          type: 'list',
+          items: [
+            'Dried leaf and flower tinctures: 50–60% alcohol (roughly equal parts 80-proof vodka and water)',
+            'Resins, high-resin roots: 70–90% alcohol',
+            'Mucilaginous herbs (marshmallow root): 25–40% alcohol (more water for mucilage extraction)',
+            'Fresh plant tinctures: 1:2 ratio (1 gram fresh herb to 2 ml solvent); fresh herbs contain water which dilutes the solvent',
+            'Non-alcohol alternative (glycerites): Use food-grade vegetable glycerin at 60–70% plus 30–40% water; suitable for children and those avoiding alcohol; sweeter flavor; shorter shelf life (1–2 years)',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Infused Oils & Salves',
+        },
+        {
+          type: 'list',
+          items: [
+            'Cold infusion (best for volatile herbs): Fill a jar with dried herbs (fresh must be wilted 12–24 hours first); cover completely with olive oil, jojoba, or sweet almond oil; seal; place in a warm spot (70–80°F) for 4–6 weeks, shaking daily; strain; refrigerate up to 1 year',
+            'Making a salve: Use 1 oz beeswax per 8 oz infused oil for a medium-firm salve (less for softer balm); melt beeswax in a double boiler; add infused oil; test on a cold plate; add essential oils off heat (10–15 drops/oz); pour into tins immediately; cool undisturbed; shelf life 1–2 years',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Other Key Preparations',
+        },
+        {
+          type: 'table',
+          headers: ['Preparation', 'Method', 'Best Applications'],
+          rows: [
+            ['Poultice', 'Mash or process fresh herbs into a paste; apply directly to skin. Classic: chew fresh plantain leaf and apply immediately for bee stings and insect bites.', 'Minor wounds, bee stings, insect bites, bruises, sprains'],
+            ['Compress', 'Soak a clean cloth in strong herbal tea or diluted tincture; wring out; apply. Hot for muscle tension and sinus congestion; cold for fever and inflammation.', 'Muscle pain, headache, sinus congestion, fever, sprains'],
+            ['Capsules', 'Grind dried herbs in a dedicated coffee grinder; fill empty vegetable capsules (size 00 = ~500mg). Typical adult dose: 1–3 capsules, 2–3 times daily.', 'Herbs with unpleasant taste: valerian, turmeric, marshmallow root'],
+            ['Oxymel', 'Equal parts raw honey and apple cider vinegar; steep herbs 4–6 weeks; strain. Dose: 1–2 tablespoons as needed.', 'Respiratory herbs (thyme, elderberry, elecampane); suitable for children over 1 year'],
+            ['Infused honey', 'Gently warm raw honey (110°F max); add fresh or dried herbs; infuse 2–4 weeks; strain or leave herbs in honey.', 'Lavender honey; thyme honey for coughs; ginger honey — antimicrobial synergy'],
+            ['Liniment', 'Herbal preparation in alcohol or vinegar for external use only — NOT for internal use. Apply by rubbing into affected area.', 'Arnica for bruises and sports injuries; muscle and joint pain'],
+          ],
+        },
+      ],
+    },
   ],
 }
