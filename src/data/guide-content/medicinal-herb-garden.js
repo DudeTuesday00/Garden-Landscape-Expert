@@ -273,5 +273,69 @@ export const medicinalHerbGardenContent = {
         },
       ],
     },
+    {
+      id: 'the-herbs-part-a',
+      title: 'Section 5: The Herbs — 30 Complete Profiles (Part A: Herbs 1–15)',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Each profile gives you the complete picture: growing requirements, medicinal use, evidence base, best preparation, and critical safety notes. Read the safety notes — they contain herb-specific information that matters, not boilerplate. Profiles continue in Part B (herbs 16–30).',
+        },
+        {
+          type: 'h3',
+          text: 'Calming & Sleep Herbs',
+        },
+        {
+          type: 'table',
+          headers: ['Herb', 'Zones / Growing', 'Key Medicinal Uses', 'Best Preparation', 'Safety Notes'],
+          rows: [
+            ['Chamomile (Matricaria chamomilla)', 'All zones as annual; Roman chamomile perennial Zones 4–9. Full sun to part shade; well-drained average soil; self-seeds prolifically.', 'Anxiety and stress; digestive cramping, bloating, IBS (antispasmodic); mild insomnia; wound healing; skin inflammation; infant colic (diluted tea)', 'Tea: 1–2 tsp dried flowers per cup, covered, 5–10 min. Drink 2–3 cups daily for anxiety; 1 cup after meals for digestion. Tincture: 1:5 in 45% alcohol, 30–60 drops.', 'Asteraceae allergy warning — may react if allergic to ragweed, chrysanthemum, marigold. Avoid large medicinal doses in pregnancy (uterine stimulant at high doses).'],
+            ['Lavender (Lavandula angustifolia)', 'Zones 5–8 (English); 7–10 (French/Spanish). Full sun essential. Excellent drainage mandatory. Lean soil — do not fertilize. Prone to crown rot in humid climates.', 'Anxiety reduction (strongest clinical evidence); sleep quality; headache (topical); calming skin inflammation; antimicrobial; minor wound care', 'Tea: 1 tsp dried flowers per cup, 5 min before bed. Aromatherapy: diffuser or 2–4 drops on pillow. Infused oil for topical use. Tincture: 1:5 in 60% alcohol, 20–40 drops.', 'Do not take concentrated essential oil internally without professional guidance. Rare contact dermatitis. Theoretical hormonal activity concern with repeated topical use on young children.'],
+            ['Valerian (Valeriana officinalis)', 'Zones 4–9. Full sun to part shade; moist rich soil. Reaches 5 ft. Self-seeds. Cats powerfully attracted to dried root.', 'Insomnia (effects build over 2–4 weeks); anxiety and nervous tension; muscle relaxation; menstrual cramping', 'Capsules: 300–600mg standardized extract (0.8% valerenic acid), 30–60 min before bed. Tincture: 1:5 in 60% alcohol, 2–3 ml before bed. Root tea is unpleasantly flavored; most prefer capsules.', 'Additive sedation with benzodiazepines, sedatives, alcohol — avoid combining. Stop 2 weeks before surgery. Paradoxical stimulating effect in some individuals. Avoid in pregnancy.'],
+            ['Lemon Balm (Melissa officinalis)', 'Zones 4–9. One of the most shade-tolerant medicinal herbs. Consistent moisture; most soils. Can become weedy — grow in contained area.', 'Anxiety without sedation; cognitive support; digestive antispasmodic; antiviral (Herpes simplex topical cream); mild sleep support', 'Tea: 2–3 tsp fresh leaf or 1–2 tsp dried per cup, 5–10 min. Use fresh or recently dried for best effect. Tincture: 1:5 in 45% alcohol, 30–60 drops 2–3x daily.', 'Thyroid caution: documented thyroid-suppressing activity — avoid in hypothyroidism or with thyroid medications without monitoring. Additive sedation when combined with valerian.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Immune & Anti-Infective Herbs',
+        },
+        {
+          type: 'table',
+          headers: ['Herb', 'Zones / Growing', 'Key Medicinal Uses', 'Best Preparation', 'Safety Notes'],
+          rows: [
+            ['Echinacea (E. purpurea / angustifolia)', 'Zones 3–9. Full sun; well-drained soil; drought-tolerant; very cold-hardy. One of the most ornamental medicinal herbs. Do not harvest roots until year 3.', 'Reduction in duration and severity of upper respiratory infections; cold frequency reduction; immune modulation. Best taken at first sign of illness.', 'Tea: 1–2 tsp dried aerial parts per cup, 10 min; or 1 tsp root decocted 15–20 min. Tincture: 3–5 ml, 3–4x daily at illness onset. Use intensively 1–2 weeks; avoid continuous use beyond 8 weeks.', 'Asteraceae allergy caution. Theoretical concern in autoimmune conditions (MS, lupus, RA) — discuss with physician. May reduce immunosuppressant effectiveness in transplant patients.'],
+            ['Elderberry (Sambucus nigra)', 'Zones 3–9 (S. canadensis to Zone 3). Full sun to part shade; tolerates wet soil; very fast-growing; reaches 8–12 ft. Plant two varieties for best pollination.', 'Influenza duration and severity reduction; inhibits viral attachment; antioxidant; immune-modulating. Elderflower: fever management, sinus congestion, antiviral.', 'Elderberry syrup: simmer 1 cup dried berries in 2 cups water 20 min; strain; add 1 cup honey when cooled. 1 tbsp daily preventive; 1 tbsp 4x daily during illness. Elderflower tea: 1–2 tsp per cup, 5 min.', 'ALWAYS cook ripe berries — raw berries and all other plant parts contain sambunigrin (cyanogenic glycoside) causing nausea and vomiting. Flowers may be used raw in tea.'],
+            ['Garlic (Allium sativum)', 'Zones 3–9 (hardneck); 3–11 (softneck). Plant cloves in fall; harvest following June–July. Full sun; well-drained rich soil. Allicin (key compound) forms only when cells are crushed — allow crushed garlic to rest 10 min before cooking.', 'Cardiovascular protection (blood pressure, antiplatelet, LDL reduction); broad-spectrum antimicrobial; antioxidant; immune-modulating', 'Medicinal dose: 1–2 raw cloves daily, crushed and rested 10 min. Traditional: fire cider, garlic-ginger-honey preparations for antimicrobial use.', 'HIGH supplemental doses significantly increase bleeding risk with warfarin, aspirin, NSAIDs — stop supplements 2 weeks before surgery. GI irritation in sensitive individuals. Topical raw garlic can cause burns — always dilute in oil for skin application.'],
+            ['Thyme (Thymus vulgaris)', 'Zones 4–9. Full sun; excellent drainage essential; lean soil. Drought-tolerant. T. vulgaris has best medicinal and culinary qualities.', 'Bronchitis, cough, and respiratory infections (bronchodilator, expectorant, antimicrobial); antifungal; antioxidant. Clinical evidence: equivalent to pharmaceutical cough suppressants.', 'Tea: 1–2 tsp fresh or 1 tsp dried per cup, covered, 10 min; add honey; 3–4 cups daily. Steam inhalation: handful of fresh thyme in hot water. Thyme honey for coughs. Tincture: 1:5 in 60% alcohol, 2–4 ml 3x daily.', 'Avoid concentrated medicinal doses in pregnancy (uterine stimulant at high doses); culinary amounts are fine. Thyme essential oil should not be taken internally without professional guidance.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Digestive Herbs',
+        },
+        {
+          type: 'table',
+          headers: ['Herb', 'Zones / Growing', 'Key Medicinal Uses', 'Best Preparation', 'Safety Notes'],
+          rows: [
+            ['Peppermint (Mentha x piperita)', 'Zones 3–11. Part shade to full sun; moist soil. Spreads VERY aggressively by underground stolons — always grow in containers or with a 12-inch physical barrier.', 'IBS (strongest herbal evidence: multiple meta-analyses); nausea including chemotherapy-related; digestive antispasmodic; tension headache (topical); decongestant', 'Tea: 1–2 tsp dried per cup, covered, 5–10 min; drink after meals. Enteric-coated capsules for IBS (must be enteric-coated). Diluted essential oil (2–3 drops in 1 tbsp carrier oil) for headache or muscle pain.', 'Do NOT use for GERD — worsens reflux. Do not apply menthol to face or nostrils of infants/young children (respiratory distress risk). Regular peppermint oil internally causes esophageal spasm — use only enteric-coated capsules for IBS.'],
+            ['Ginger (Zingiber officinale)', 'Annual throughout U.S.; perennial Zones 8–11. Rich moist soil; partial shade; warm temps. Excellent container plant in northern climates; dig before first frost.', 'Nausea of any cause (pregnancy, motion sickness, chemotherapy, post-operative); anti-inflammatory (COX-2 inhibitor); osteoarthritis; digestive stimulant', 'Fresh tea: grate 1-inch piece into cup, steep 5–10 min, add honey and lemon. Capsules: 500–1000mg dried ginger, 1–3x daily. Tincture: 1:5 fresh ginger in 60% alcohol, 10–30 drops.', 'High supplemental doses: antiplatelet effect — stop supplements 2 weeks before surgery; caution with warfarin. GI irritation at high doses. Culinary use and moderate tea safe in pregnancy; high supplemental doses need physician awareness.'],
+            ['Marshmallow (Althaea officinalis)', 'Zones 3–9. Full sun to part shade; consistently moist to occasionally wet soil; tolerates clay. Tall (4–6 ft). Leave roots in ground 2 years before harvesting for best mucilage.', 'Sore throat and dry cough (mucilage coating); gastritis, ulcers, IBS; urinary tract irritation and inflammation; external wound healing and skin inflammation', 'Cold infusion (BEST): 2 tbsp dried root in 1 quart cold water overnight; strain; drink throughout day. Also: warm root decoction; honey syrup for throat; powdered root as skin poultice.', 'Excellent safety — one of the safest herbs available. Drug absorption: mucilage may slow medication absorption — take medications 1–2 hours before or after marshmallow. Safe in pregnancy and for children.'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: "Women's Health Herbs",
+        },
+        {
+          type: 'table',
+          headers: ['Herb', 'Zones / Growing', 'Key Medicinal Uses', 'Best Preparation', 'Safety Notes'],
+          rows: [
+            ['Red Raspberry Leaf (Rubus idaeus)', 'Zones 3–9. Full sun; well-drained rich soil; vigorous perennial shrub requiring support. Prune old canes after fruiting. Both fruit and leaves are harvestable.', 'Uterine tonic (traditional third-trimester preparation); menstrual irregularity and cramping; postpartum tonic; highly nutritive (iron, calcium, magnesium)', 'Tea: 1–2 tsp dried leaf per cup, steeped 10–15 min; 1–3 cups daily. Long infusion: 1 oz per quart hot water, steeped 4 hours for higher mineral extraction. Pleasant, mild flavor.', 'Generally considered safe throughout pregnancy by most midwives; some practitioners avoid large doses in first trimester. Very safe and nourishing for non-pregnant women.'],
+            ['Chaste Tree Berry / Vitex (Vitex agnus-castus)', 'Zones 6–9. Full sun; well-drained soil; drought-tolerant; heat-loving. Prune in late winter; blooms on new growth. Reaches 10–15 ft; dwarf cultivars available.', 'PMS and PMDD symptom reduction; breast tenderness (mastalgia); menstrual irregularity. Works slowly — requires 3–6 months of consistent use for full effect.', 'Tincture: 1:5 in 60% alcohol, 2–4 ml in the morning (single daily dose). Standardized extract capsules (0.5% agnuside): 20–40mg in the morning. Take consistently — single morning dose is key.', 'Do not use with hormone-sensitive cancers or hormonal medications without medical supervision. May reduce effectiveness of dopamine antagonists. Avoid in pregnancy. Not for those taking fertility drugs without physician guidance.'],
+            ['Black Cohosh (Actaea racemosa)', 'Zones 3–8. SHADE required — woodland understory habitat. Rich, moist, well-drained soil (pH 5.5–6.5). Reaches 4–6 ft. Do not harvest roots for 3–5 years. Buy from verified cultivated sources — wild populations are over-harvested.', 'Menopausal symptoms: hot flash reduction, sleep improvement, mood support (multiple positive trials). Also: menstrual cramping, PMS.', 'Tincture: 1:5 in 60% alcohol, 2–4 ml 2x daily. Standardized extract capsules (2.5% triterpenes): 40–80mg daily. Standard course: 6 months of consistent use.', 'Liver caution: rare hepatotoxicity case reports — stop immediately if jaundice, dark urine, or abdominal pain develops; avoid with alcohol or hepatotoxic drugs. Discuss with oncologist before use if history of hormone-sensitive cancer. Not recommended in pregnancy.'],
+          ],
+        },
+      ],
+    },
   ],
 }
