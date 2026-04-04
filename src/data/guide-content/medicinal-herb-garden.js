@@ -74,4 +74,62 @@ export const medicinalHerbGardenContent = {
       ],
     },
   ],
+    {
+      id: 'growing-medicinal-herb-garden',
+      title: 'Section 2: Growing the Medicinal Herb Garden',
+      blocks: [
+        {
+          type: 'p',
+          text: 'A medicinal herb garden can be as simple as three pots on a windowsill or as elaborate as a formal physic garden with dozens of species organized by medicinal application. The fundamentals are not dramatically different from culinary herb growing — most medicinal plants are not difficult to grow and many thrive with minimal care once established. What distinguishes medicinal herb growing is attention to harvest timing and method, because the concentration of active compounds varies significantly by growth stage, time of day, and season.',
+        },
+        {
+          type: 'h3',
+          text: 'Siting the Medicinal Herb Garden',
+        },
+        {
+          type: 'table',
+          headers: ['Site Factor', 'Optimal Conditions', 'Acceptable Range', 'Problem Situations'],
+          rows: [
+            ['Sunlight', 'Full sun (6+ hours) for most Mediterranean herbs; partial shade (3–5 hours) for woodland herbs (goldenseal, black cohosh, wild ginger)', 'Most sun-lovers tolerate 4–5 hours; most shade-lovers handle morning sun with afternoon shade', 'Deep shade produces weak, leggy plants with reduced essential oil content; harsh afternoon-only sun stresses shade-lovers'],
+            ['Soil drainage', 'Excellent drainage for Mediterranean herbs; consistently moist but well-drained for woodland and meadow herbs; wet conditions for skullcap, blue vervain, marshmallow', 'Most herbs tolerate average garden drainage; poor drainage is the most common site failure', 'Waterlogged soil kills most medicinal herbs within weeks; raised beds solve drainage problems universally'],
+            ['Soil pH', '6.0–7.0 for most herbs; lavender/rosemary/thyme prefer 6.5–7.5; goldenseal prefers 5.5–6.5', 'Broad tolerance in the 5.5–7.5 range', 'Very alkaline soils (above 7.5) reduce iron availability; very acidic soils (below 5.0) problematic for most herbs'],
+            ['Soil fertility', 'Moderate — NOT excessively rich; overly fertile soil produces lush growth with lower essential oil content; Mediterranean herbs prefer lean, well-drained soil', 'Add compost at planting for structure and micronutrients; avoid heavy fertilization', 'Overfertilized herbs produce beautiful plants with dramatically reduced medicinal value'],
+            ['Air circulation', 'Good airflow reduces fungal disease pressure; lavender, chamomile, and echinacea particularly prone to crown rot in still, humid air', 'Avoid planting in corners with no air movement', 'Still, humid microclimates promote powdery mildew, crown rot, and root rot — the primary herb garden disease problems'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Medicinal Herb Growing Across U.S. Climates',
+        },
+        {
+          type: 'table',
+          headers: ['Region / Zone', 'Opportunities', 'Challenges', 'Best Approach', 'Regional Stars'],
+          rows: [
+            ['Pacific Northwest (Zones 7–9)', 'Mild temperatures; consistent moisture; long growing season', 'Wet winters cause root rot in Mediterranean herbs; slugs on tender plants', 'Raised beds with excellent drainage; gravel mulch around Mediterranean herbs', 'Elderberry; valerian; skullcap; lemon balm; California poppy'],
+            ['California (Zones 8–11)', 'Warm dry summers ideal for Mediterranean herbs; mild winters allow year-round growing', 'Summer drought stresses moisture-loving herbs without irrigation; fire risk', 'Drip irrigation; mulch heavily; California natives alongside Mediterranean herbs', 'Lavender; rosemary; California poppy; elderberry; sage'],
+            ['Desert Southwest (Zones 7–11)', 'Excellent for heat-adapted herbs; monsoon rains harvestable', 'Extreme summer heat damages temperate herbs; alkaline soil; intense UV', 'Morning sun/afternoon shade positioning; deep mulching; shade for vulnerable herbs in summer', 'Aloe vera; holy basil; rosemary; oregano; desert lavender'],
+            ['Mountain West (Zones 4–7)', 'Cool summers ideal; intense sunshine increases essential oil content', 'Short growing season; cold winters; intense UV; hail risk', 'Cold-hardy herbs as backbone; row covers for season extension; choose cold-hardy cultivars', 'Echinacea; yarrow; elderberry; valerian; lemon balm; mint'],
+            ['Great Plains (Zones 4–7)', 'Native prairie medicinals superb in local conditions; good summer heat', 'Wind desiccates herbs; alkaline soils in west; drought on western plains', 'Focus on native prairie medicinals; windbreaks for tender herbs; drip irrigation in drier areas', 'Purple coneflower; black-eyed Susan; wild bergamot; elderberry; yarrow'],
+            ['Midwest & Great Lakes (Zones 4–7)', 'Four distinct seasons; excellent summer growing; rich soils; abundant moisture', 'Humid summers increase fungal disease pressure; cold winters for marginal herbs', 'Most medicinal herbs grow excellently; focus on air circulation; winter mulch for marginally hardy plants', 'Echinacea; elderberry; goldenseal (shade); valerian; St. John\'s Wort'],
+            ['Mid-Atlantic & Southeast (Zones 6–9)', 'Long growing season; mild winters; humid summers favor moisture-loving herbs', 'High humidity favors fungal diseases; heat stresses Mediterranean herbs in summer', 'Emphasize heat-tolerant herbs; provide afternoon shade for European herbs in Zone 8+; excellent drainage', 'Lemon balm; holy basil; passionflower; elderberry; skullcap; St. John\'s Wort'],
+            ['New England & Northeast (Zones 4–6)', 'Cool temperatures produce excellent essential oil development; adequate moisture', 'Short growing season; cold winters; late spring frosts delay planting', 'Start annuals indoors 6–8 weeks before last frost; focus on cold-hardy perennials', 'Echinacea; yarrow; valerian; lemon balm; elderberry; goldenseal; boneset'],
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Soil Preparation by Herb Type',
+        },
+        {
+          type: 'list',
+          items: [
+            'Mediterranean herbs (lavender, thyme, oregano, rosemary, sage): Add coarse sand or pea gravel to improve drainage; avoid heavy compost; pH 6.5–7.5; no high-nitrogen fertilizers — lean soil produces more essential oils',
+            'Woodland herbs (goldenseal, black cohosh, Solomon\'s seal, wild ginger): Incorporate leaf mold and compost generously; acidic pH 5.5–6.5; consistently moist but well-draining; dappled shade required',
+            'Meadow and prairie herbs (echinacea, yarrow, wild bergamot): Average garden soil with good drainage; moderate compost; do not over-enrich — these are native prairie plants that thrive in lean conditions',
+            'Moisture-loving herbs (skullcap, marshmallow, blue vervain): Rich, consistently moist soil; compost heavily; will tolerate heavy soils better than most herbs',
+            'Universal principle: Excellent drainage is more important than fertility for most medicinal herbs; a raised bed prevents the waterlogging that kills more medicinal herbs than any other single cause',
+          ],
+        },
+      ],
+    },
+  ],
 }
