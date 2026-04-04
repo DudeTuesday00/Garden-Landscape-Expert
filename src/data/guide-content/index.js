@@ -56,6 +56,7 @@ import { indoorHerbGardenContent } from './indoor-herb-garden.js'
 import { rainGardenContent } from './rain-garden.js'
 import { mulchingGuideContent } from './mulching-guide.js'
 import { privacyScreeningContent } from './privacy-screening.js'
+import { medicinalHerbGardenContent } from './medicinal-herb-garden.js'
 
 export const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -110,4 +111,5 @@ export const contentMap = {
   'rain-garden': rainGardenContent,
   'mulching-guide': mulchingGuideContent,
   'privacy-screening': privacyScreeningContent,
+  'medicinal-herb-garden': medicinalHerbGardenContent,
 }

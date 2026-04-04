@@ -1219,6 +1219,28 @@ Theme: slate/green gradient in `GuideDetail.jsx`; hero image: `public/guides/pri
 
 ---
 
+### Medicinal Herb Garden Guide ✅
+
+`src/data/guide-content/medicinal-herb-garden.js` — Medicinal Herb Garden (`id: 'medicinal-herb-garden'`); fully rebuilt from `src/components/guides/medicinal-herb-garden.docx` — 9 sections covering plant medicine science through building a home apothecary. Built in compact table format (split across two sessions) to avoid context timeouts on large sections.
+
+| Section | Content |
+|---|---|
+| Hero + Intro + Safety | Guide intro, safety-first warning callout |
+| Section 1: The Science of Plant Medicine | Phytochemical constituent classes, extraction methods table, evidence spectrum |
+| Section 2: Making Herbal Preparations | Tinctures, teas/infusions/decoctions, infused oils, salves, syrups, oxymels, vinegars |
+| Section 3: Harvesting & Drying | Harvest timing by plant part, drying methods, storage guidelines |
+| Section 4: Sourcing & Quality | Growing your own vs. buying, quality markers, supplier standards |
+| Section 5a: The Herbs — Profiles 1–15 | Immune/anti-infective, digestive, and women's health herbs (15 profiles in compact 5-column tables) |
+| Section 5b: The Herbs — Profiles 16–30 | Nervine/adaptogenic, skin/wound, circulatory/anti-inflammatory/liver, and additional essential herbs (15 profiles) |
+| Section 6: Medicinal Garden Designs | Three layouts: 4×8 raised bed (9-herb position table), woodland garden (5 native shade herbs), balcony/container garden (10-container table) |
+| Section 7: Herb Combinations & Formulas | Four formula roles, synergy mechanisms, 8 classic therapeutic formulas with ratios and dosing |
+| Section 8: The Year-Round Herbal Calendar | 12-month calendar across 4 seasons (Zones 5–7 baseline); garden tasks, harvest windows, medicine-making priorities |
+| Section 9: Building Your Home Apothecary | 3-tier stocking table, organization principles, 10-item first aid kit, children's herbalism safety table, 30-herb quick reference, long-term practice guidance |
+
+Theme: green/emerald gradient in `GuideDetail.jsx`; hero image: `public/guides/medical-herb-garden.png`; `comingSoon: false` under Specialty Gardens in `guides.js`; wired in `src/data/guide-content/index.js`
+
+---
+
 ### About Us Page ✅
 
 `src/app/about/page.jsx` + `src/components/AboutUs.jsx` — Full About Us page at `/about/` with founder bio and E-E-A-T signals for Google AdSense compliance.
