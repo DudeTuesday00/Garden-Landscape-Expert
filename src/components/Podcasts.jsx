@@ -1,4 +1,15 @@
+'use client'
+import { useState } from 'react'
 import Link from 'next/link'
+
+const episodes = [
+  {
+    id: 1,
+    title: 'Tricking Annuals into Non-Stop Blooms',
+    description: 'Most annuals start strong and fade fast — but with a few techniques, you can keep them blooming from planting day to first frost. Covers deadheading strategy, succession sowing, heat-tolerant variety selection, and the fertilizer timing that extends peak bloom by weeks.',
+    rssSlug: 'tricking-annuals-into-non-stop-blooms',
+  },
+]
 
 const podcasts = [
   {
@@ -84,6 +95,57 @@ const topics = [
   { emoji: '🍂', title: 'Seasonal Garden Prep', desc: 'Fall bed cleanup, winter mulching, spring soil prep, and how to succession-plant for continuous harvests.' },
 ]
 
+function EpisodePlayer() {
+  const [selected, setSelected] = useState(episodes[0])
+
+  return (
+    <div>
+      {/* Episode tile grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-5">
+        {episodes.map(ep => (
+          <button
+            key={ep.id}
+            onClick={() => setSelected(ep)}
+            className={`text-left p-3 rounded-xl border transition-all ${
+              selected.id === ep.id
+                ? 'bg-garden-600 border-garden-600 text-white shadow-md'
+                : 'bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-garden-400 dark:hover:border-garden-500'
+            }`}
+          >
+            <div className={`text-xs font-semibold mb-1 ${selected.id === ep.id ? 'text-garden-100' : 'text-garden-600 dark:text-garden-400'}`}>
+              Ep. {ep.id}
+            </div>
+            <div className="text-sm font-semibold leading-snug line-clamp-2">
+              {ep.title}
+            </div>
+          </button>
+        ))}
+      </div>
+
+      {/* Player for selected episode */}
+      <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm">
+        <h3 className="font-bold text-lg text-garden-800 dark:text-garden-300 mb-1">
+          {selected.title}
+        </h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+          {selected.description}
+        </p>
+        <iframe
+          key={selected.rssSlug}
+          src={`https://player.rss.com/${selected.rssSlug}?theme=color&v=2`}
+          width="100%"
+          height="393px"
+          title={selected.title}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          scrolling="no"
+        />
+      </div>
+    </div>
+  )
+}
+
 export default function Podcasts() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
@@ -106,34 +168,14 @@ export default function Podcasts() {
         </p>
       </div>
 
-      {/* Planting Atlas Original Episode */}
+      {/* Planting Atlas Original Episodes */}
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-1">
           🎙️ Planting Atlas Original
         </h2>
-        <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Our first original episode — listen now.</p>
-        <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 shadow-sm">
-          <h3 className="font-bold text-lg text-garden-800 dark:text-garden-300 mb-1">
-            Tricking Annuals into Non-Stop Blooms
-          </h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-            Most annuals start strong and fade fast — but with a few techniques, you can keep
-            them blooming from planting day to first frost. This episode covers deadheading
-            strategy, succession sowing, heat-tolerant variety selection, and the fertilizer
-            timing that extends peak bloom by weeks.
-          </p>
-          <iframe
-            src="https://player.rss.com/tricking-annuals-into-non-stop-blooms?theme=color&v=2"
-            width="100%"
-            height="393px"
-            title="Tricking Annuals Into Non-Stop Blooms"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            scrolling="no"
-          />
-        </div>
-      </section>
+        <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Original episodes from Planting Atlas — select an episode to listen.</p>
+
+        <EpisodePlayer /></section>
 
       {/* Why podcasts */}
       <section className="mb-10 p-5 bg-garden-50 dark:bg-garden-900/20 border border-garden-200 dark:border-garden-800 rounded-2xl">
