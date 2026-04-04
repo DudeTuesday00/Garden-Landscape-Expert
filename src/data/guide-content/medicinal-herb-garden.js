@@ -469,5 +469,68 @@ export const medicinalHerbGardenContent = {
         },
       ],
     },
+    {
+      id: 'herb-combinations-formulas',
+      title: 'Section 7: Herb Combinations & Formulas',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Most beginning herbalists use one herb at a time. Most experienced herbalists rarely do. The tradition of combining herbs — called "formulary" in the Western tradition and part of every major herbal medicine system worldwide — is based on centuries of observation that herbs used together often produce better results than any single herb used alone. The reasons are both practical and pharmacological: some herbs enhance the absorption of active compounds in other herbs, some provide gentler action by balancing each other\'s stronger properties, and others address different aspects of the same condition simultaneously.',
+        },
+        {
+          type: 'p',
+          text: 'Western herbalism typically organizes formula plants into roles: the primary therapeutic herb (the "chief"), supporting herbs that reinforce the primary herb\'s action, balancing herbs that smooth the edges of a strong formula, and digestive "carriers" that improve absorption and palatability.',
+        },
+        {
+          type: 'h3',
+          text: 'The Four Roles in an Herbal Formula',
+        },
+        {
+          type: 'list',
+          items: [
+            'Chief / Primary herb — The herb that directly addresses the main condition. Used at the highest dose in the formula. In a sleep formula: valerian. In an acute cold formula: echinacea.',
+            'Supporting herbs (Deputies) — One or two herbs that reinforce the chief herb\'s primary action or address secondary aspects. Lemon balm supports valerian\'s sedative action while also calming digestive tension that may be disrupting sleep.',
+            'Balancing herbs (Assistants) — Herbs that moderate any potential harshness of the chief herb or counterbalance side effects. Ginger is a classic balancing herb: improves circulation and absorption, reduces GI irritation, warms cold or damp constitutions.',
+            'Carrier / Conductor herbs — Herbs with minimal direct therapeutic effect but that improve palatability, absorption, or targeting. Licorice root sweetens formulas, soothes the digestive tract, and has documented synergistic effects with many herbs. Peppermint improves palatability and promotes GI uptake.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Synergy and Bioavailability: Why Combinations Work',
+        },
+        {
+          type: 'list',
+          items: [
+            'Enhanced bioavailability: Piperine (black pepper) increases curcumin absorption by 2000%. Ginger increases circulation to GI mucosa, improving absorption of co-administered herbs.',
+            'Multi-pathway action: Most conditions involve multiple physiological pathways. Insomnia may involve elevated cortisol, racing thoughts, digestive tension, and deficient GABA activity — each requiring a different herbal approach.',
+            'Buffering of strong herbs: Some highly effective herbs have narrow therapeutic windows. Combining them at lower doses with synergistic partners often produces better results with fewer problems than maximizing any single herb.',
+            'Broad-spectrum antimicrobial coverage: Combining thyme, oregano, garlic, and elderberry creates overlapping antimicrobial spectra with much lower chance of pathogen resistance.',
+          ],
+        },
+        {
+          type: 'h3',
+          text: 'Classic Therapeutic Formulas for Home Use',
+        },
+        {
+          type: 'table',
+          headers: ['Formula Name', 'Condition', 'Herbs & Ratios', 'Preparation', 'How to Use', 'Notes'],
+          rows: [
+            ['Classic Sleep Blend', 'Insomnia; difficulty falling asleep; anxious rumination before bed', 'Valerian root 40% + Lemon balm 30% + Passionflower 20% + Chamomile 10%', 'Tincture: blend individual tinctures at stated ratios; or as combined tea; or fill capsules with powdered blend', 'Tincture: 2–4 ml in water, 30–60 min before bed. Tea: 2 tsp blend per cup, steeped 15 min, covered.', 'Works better after 2–3 weeks of consistent use; valerian builds over time; passionflower adds GABA-supporting activity'],
+            ['Relaxing Nervine Formula', 'Daytime anxiety; stress; nervous tension without wanting sedation', 'Lemon balm 40% + Skullcap 30% + Holy Basil 20% + Oatstraw 10%', 'Tea or tincture blend', 'Tea: 2 tsp per cup, 3 cups daily. Tincture: 2–3 ml 2–3x daily during stressful periods.', 'Calms without sedating — excellent for daytime functional anxiety; holy basil adds adaptogenic cortisol-modulating effect'],
+            ['Immune Defense Formula', 'First sign of cold or flu; acute immune challenge; exposure prevention', 'Echinacea aerial/root 40% + Elderberry 30% + Thyme 20% + Ginger 10%', 'Tincture blend; or as oxymel (honey-vinegar base especially good for this formula)', 'Take at FIRST sign of illness: 2–4 ml or 1–2 tbsp oxymel every 3–4 hours for first 24 hours, then 3x daily for 1 week', '"At first sign" timing is critical — most effective in first 12–24 hours; less effective as illness progresses'],
+            ['Respiratory Support Blend', 'Coughs; bronchitis; chest congestion; productive or dry cough', 'Thyme 40% + Mullein 30% + Elecampane root 20% + Licorice root 10%', 'Oxymel or syrup (ideal for respiratory formulas); also as tea or tincture', '1–2 tbsp oxymel 3–4x daily. Tea: steep 15 min; 3–4 cups. Tincture: 2–4 ml 4x daily during acute illness.', 'Elecampane root (Inula helenium): antiviral, antimicrobial, expectorant — prepare as decoction (simmer 15 min)'],
+            ['Digestive Calm Formula', 'IBS symptoms; stress-related cramping; gas and bloating; nervous digestive upset', 'Chamomile 40% + Peppermint 30% + Fennel seed 20% + Lemon balm 10%', 'Tea (warm liquid itself is therapeutic); tincture for convenience', '1 cup of tea after meals; drink slowly. Tincture: 1–2 ml 20 min before meals.', 'Do NOT use peppermint component if GERD is present. Lemon balm addresses the anxiety component of nervous digestive disorders.'],
+            ['Wound Healing Salve', 'Minor cuts, scrapes, burns, dry skin, insect bites, rashes', 'Calendula-infused oil 60% + St. John\'s Wort-infused oil 30% + Plantain-infused oil 10%; add lavender EO (1%) + tea tree EO (0.5%) at beeswax stage', 'Make three separate infused oils; blend at stated ratios; make into salve with beeswax (1 oz beeswax per 8 oz oil)', 'Apply to affected skin 2–4x daily as long as healing is needed', 'St. John\'s Wort oil adds anti-inflammatory and nerve pain properties; plantain adds drawing and anti-inflammatory action'],
+            ['Hormone Balance Tea (Women)', 'PMS support; menstrual irregularity; perimenopausal transition', 'Red Raspberry leaf 40% + Nettle leaf 20% + Chamomile 20% + Rose petals 10% + Lemon balm 10%', 'Long nourishing infusion (overnight preferred for maximum mineral extraction)', '1–2 cups daily throughout cycle; can be drunk consistently as a daily tonic long-term', 'Gentle daily tonic — not a substitute for Vitex or Black Cohosh for acute hormonal concerns; nettle provides iron and mineral support'],
+            ['Liver Support Formula', 'Liver tonic; post-medication support; fatty liver; post-illness recovery', 'Milk Thistle seed 40% + Dandelion root 30% + Burdock root 20% + Yellow dock 10%', 'Tincture blend; capsules using ground seed blend; decoction', 'Tincture: 2–3 ml 3x daily. Capsule blend: 500–1000mg 2x daily. Decoction: 1 tbsp blend per 2 cups water, simmered 20 min; 1–2 cups daily.', 'Best used over 2–3 months; burdock and yellow dock are classic alterative (slow-acting cleansing) herbs complementing milk thistle\'s hepatoprotective focus'],
+          ],
+        },
+        {
+          type: 'tip',
+          emoji: '⚗️',
+          text: 'Dosage for tincture blends: use the stated ratio as a proportion of total volume. A formula with Herb A 40% + Herb B 30% + Herb C 20% + Herb D 10% means 40ml + 30ml + 20ml + 10ml = 100ml total. Standard adult dose: 2–4 ml (40–80 drops) in water, 2–3 times daily. For acute illness onset, increase to 4–5x daily for first 24–48 hours, then return to standard dosing. Children\'s dosing: Clark\'s Rule — divide child\'s weight in pounds by 150 for fraction of adult dose (50 lb child = 1/3 adult dose). Always start at the lower end of any dose range.',
+        },
+      ],
+    },
   ],
 }
