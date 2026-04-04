@@ -119,29 +119,58 @@ export default function Videos() {
         <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-1">
           🎬 Planting Atlas Original
         </h2>
-        <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Our first original video — now live.</p>
-        <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden shadow-sm">
-          <div className="aspect-video">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/Jo47nbbQGBI"
-              title="The Annual Garden Equation: Buying Time and Renting Color"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+        <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Original gardening videos from Planting Atlas.</p>
+
+        <div className="flex flex-col gap-6">
+
+          <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden shadow-sm">
+            <div className="aspect-video">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/agIvBCAOPEk"
+                title="Building the Quick Win Children's Garden"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <div className="p-5">
+              <h3 className="font-bold text-lg text-garden-800 dark:text-garden-300 mb-2">
+                Building the Quick Win Children's Garden
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                The best plants for a children's garden aren't the most productive — they're the ones
+                that grow fast enough to hold a child's attention, look interesting enough to spark
+                curiosity, and taste good enough to eat right off the vine. Because in a kids' garden,
+                the experience of growing matters as much as the harvest.
+              </p>
+            </div>
           </div>
-          <div className="p-5">
-            <h3 className="font-bold text-lg text-garden-800 dark:text-garden-300 mb-2">
-              The Annual Garden Equation: Buying Time and Renting Color
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-              Annuals live fast and die young — but that life cycle is exactly what makes them
-              so powerful in the garden. This video explores how to use annuals strategically:
-              bridging gaps between perennial flushes, anchoring containers through the season,
-              and choosing varieties that flower continuously rather than burning out by July.
-            </p>
+
+          <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden shadow-sm">
+            <div className="aspect-video">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/Jo47nbbQGBI"
+                title="The Annual Garden Equation: Buying Time and Renting Color"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <div className="p-5">
+              <h3 className="font-bold text-lg text-garden-800 dark:text-garden-300 mb-2">
+                The Annual Garden Equation: Buying Time and Renting Color
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Annuals live fast and die young — but that life cycle is exactly what makes them
+                so powerful in the garden. This video explores how to use annuals strategically:
+                bridging gaps between perennial flushes, anchoring containers through the season,
+                and choosing varieties that flower continuously rather than burning out by July.
+              </p>
+            </div>
           </div>
+
         </div>
       </section>
 
@@ -390,6 +419,7 @@ export default function Videos() {
               'Zone 5–7 Spring Planting Timeline — What to Do Each Week',
               'Companion Planting in a 4×8 Raised Bed — Layout Walkthrough',
               'Starting Tomatoes Indoors — Step-by-Step from Seed to Transplant',
+              'The Pollinator Garden Build — Plants, Layout, and First-Season Results',
             ].map(ep => (
               <li key={ep} className="flex items-start gap-2">
                 <span className="text-earth-500 mt-0.5">🎬</span>
