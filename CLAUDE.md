@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 53 guides are fully built and live; the remainder are hidden by default behind a per-category toggle button (amber pill) and revealed on demand. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 88 guides total. All 88 are live and indexable: 54 have full in-depth content; the remaining 34 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
@@ -118,6 +118,7 @@ Garden-Landscape-Expert/
     │   ├── Infographics.jsx         # Garden infographics — visual quick-reference cards (28 live, all kebab-case filenames)
     │   ├── Videos.jsx               # Curated gardening YouTube channels by topic + original videos (stacked cards, newest first)
     │   ├── Podcasts.jsx             # Curated gardening podcasts list + original Planting Atlas episodes
+    │   ├── NewsletterSignup.jsx     # 'use client' — email capture form; Formspree interim; swap FORM_ENDPOINT for Mailchimp/ConvertKit
     │   ├── PrivacyPolicy.jsx        # Static privacy policy page (no tracking IDs in headings)
     │   ├── AffiliateDisclosure.jsx  # Affiliate Disclosure page — finsanctuary.com style, garden-adapted
     │   ├── AdvertisingDisclosure.jsx # Advertising Disclosure page — finsanctuary.com style, garden-adapted
@@ -144,7 +145,7 @@ Garden-Landscape-Expert/
     ├── data/
     │   ├── plants.js                # Static plant database (148 plants across 12 types)
     │   ├── questions.js             # Wizard question definitions (with hydro routing flags)
-    │   ├── guides.js                # 10 guide categories, ~75 guides (comingSoon flag per guide)
+    │   ├── guides.js                # 10 guide categories, 88 guides — all comingSoon: false; stubs active for undeveloped guides
     │   ├── products.js              # 3D printed product database (6 placeholder products, 5 categories)
     │   └── guide-content/           # One JS file per live guide + shared index
     │       ├── index.js             # contentMap export — used by GuideDetail and [guideId]/page.jsx
@@ -780,7 +781,7 @@ The site was fully migrated from a Vite SPA to **Next.js 15 App Router** with st
 
 **Client vs server components:**
 - Server (default): `HomePage`, `GuidesHome`, `GuideDetail`, `ShopHome`, `ProductDetail`, `PrivacyPolicy`, all page files
-- Client (`'use client'`): `Nav`, `Wizard` (and its sub-components), `ContactUs`, `ShopGrid`, `ImageGallery`, `Infographics`, `CategorySection`, `GuidesSearch`, `CookieBanner`
+- Client (`'use client'`): `Nav`, `Wizard` (and its sub-components), `ContactUs`, `ShopGrid`, `ImageGallery`, `Infographics`, `CategorySection`, `GuidesSearch`, `NewsletterSignup`, `CookieBanner`
 
 **Build output:** `next build` generates `out/` — a fully static directory deployable to Cloudflare Pages with zero server required.
 
@@ -1673,6 +1674,55 @@ Five style and credibility improvements:
 
 **Sitemap** (`src/app/sitemap.js`)
 - Both new pages added at priority 0.3, `changeFrequency: 'yearly'`
+
+---
+
+### Newsletter Signup, Social Sharing, Breadcrumb Schema & Guide TOC ✅
+
+**1. Newsletter Signup** (`src/components/NewsletterSignup.jsx`)
+- `'use client'` component with email input, loading state, and success state ("You're in! 🌱")
+- Posts to Formspree as interim capture; swap `FORM_ENDPOINT` constant for Mailchimp/ConvertKit endpoint when ready
+- Placed on every guide page (above `AuthorBox`) and on the homepage (below the author strip)
+- No-spam note; fully dark-mode supported
+
+**2. Social Sharing Buttons** (`src/components/guides/GuideDetail.jsx`)
+- Pinterest (pre-loads hero image URL), Twitter/X, and Facebook — styled brand-color `<a>` buttons
+- Placed between the intro paragraph and the first guide section on every guide page
+- Pure static links — no JavaScript or `'use client'` needed; works in static export
+
+**3. Breadcrumb JSON-LD** (`src/app/guides/[guideId]/page.jsx`)
+- `BreadcrumbList` schema: Home → Plantopedia → Guide Title
+- Injected as a second `<script type="application/ld+json">` tag alongside the existing `Article` schema
+- Enables breadcrumb display in Google search results for all 88 guide pages
+
+**4. Table of Contents** (`src/components/guides/GuideDetail.jsx`)
+- Collapsible `<details>/<summary>` block rendered on guides with 4+ sections, open by default
+- Each entry links to `#section.id`; section `<div>` cards receive `id={section.id}` for anchor scrolling
+- Native HTML — no JavaScript required; degrades gracefully
+
+---
+
+### All Guides Activated — Stubs for Undeveloped Pages ✅
+
+All 34 previously `comingSoon: true` guides have been converted to active stub pages. There are no hidden or locked guides remaining anywhere on the site.
+
+**What changed:**
+- **25 new stub content files** created in `src/data/guide-content/` covering: year-round-calendar, overwintering, cold-frames, pest-eliminating-plants, organic-pest-control, deer-resistant, slug-control, pet-friendly-plants, native-plants, sensory-garden, water-feature-plants, fire-safe-landscaping, bird-garden, cutting-garden, balcony-garden, window-box, hanging-baskets, container-vegetables, vertical-gardening, composting-basics, water-wise-gardening, companion-planting, soil-health, no-dig-gardening, seed-saving
+- **9 previously created stub files** were already in place (fragrant-garden-path, aromatherapy-garden, low-maintenance-landscape, cottage-landscape, foundation-planting, spring-startup, summer-maintenance, fall-planting, post-harvest)
+- **`src/data/guide-content/index.js`** — 34 new imports and contentMap entries added; contentMap now covers 88 guides
+- **`src/data/guides.js`** — all `comingSoon: true` flags flipped to `false` via `sed`; 0 hidden guides remain
+
+**Stub page structure:** Each stub has one section ("What This Guide Covers") containing:
+1. A substantive introductory paragraph (2–3 sentences about the topic)
+2. A second paragraph expanding on key subtopics or decisions
+3. A `tip` callout: "A comprehensive guide covering [specific subtopics] is currently in development. Subscribe to the Planting Atlas newsletter to be notified when it publishes."
+
+**Guide counts:**
+- 54 full in-depth guides (full section/table/tip/affiliate content)
+- 34 active stub pages (2 paragraphs + coming-soon notice)
+- 88 total live, indexable guide pages
+
+**Principle going forward:** Do not set any guide to `comingSoon: true`. When a docx source file is not yet available, create a stub page following the structure above. When a full docx is received, expand the stub into the complete guide.
 
 ---
 
