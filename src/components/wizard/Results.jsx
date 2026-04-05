@@ -1,4 +1,22 @@
+import Link from 'next/link'
+
 const waterLabel = { low: '💧 Low', moderate: '💧💧 Moderate', high: '💧💧💧 High' }
+
+// Maps plant type → up to 2 relevant guide IDs (live guides only)
+const typeGuides = {
+  flower:      [{ id: 'plants-for-color',          title: 'Plants for Color' },          { id: 'pollinator-garden',      title: 'Pollinator Garden' }],
+  vegetable:   [{ id: 'salad-garden',               title: 'Salad Garden' },               { id: 'square-foot-gardening',  title: 'Square Foot Gardening' }],
+  fruit:       [{ id: 'fruit-trees',                title: 'Fruit Trees' },                { id: 'salsa-garden',           title: 'Salsa Garden' }],
+  herb:        [{ id: 'culinary-herb-garden',        title: 'Culinary Herb Garden' },       { id: 'medicinal-garden',       title: 'Medicinal Garden' }],
+  tree:        [{ id: 'shade-trees',                 title: 'Shade Trees' },                { id: 'ornamental-trees',       title: 'Ornamental Trees' }],
+  shrub:       [{ id: 'cottage-garden',              title: 'Cottage Garden' },             { id: 'curb-appeal',            title: 'Curb Appeal' }],
+  vine:        [{ id: 'plants-for-smell',            title: 'Plants for Fragrance' },       { id: 'cottage-garden',         title: 'Cottage Garden' }],
+  bulb:        [{ id: 'spring-bulb-garden',          title: 'Spring Bulb Garden' },         { id: 'plants-for-color',       title: 'Plants for Color' }],
+  grass:       [{ id: 'xeriscape',                   title: 'Xeriscape Design' },           { id: 'four-season-garden',     title: 'Four-Season Garden' }],
+  succulent:   [{ id: 'xeriscape',                   title: 'Xeriscape Design' },           { id: 'porch-plants',           title: 'Porch Plants' }],
+  fern:        [{ id: 'shade-trees',                 title: 'Shade Garden Guide' },         { id: 'japanese-garden',        title: 'Japanese Garden' }],
+  groundcover: [{ id: 'xeriscape',                   title: 'Xeriscape Design' },           { id: 'curb-appeal',            title: 'Curb Appeal' }],
+}
 const spaceLabel  = { container: '🪴 Container', small: '🌱 Small Bed', large: '🏡 Large Garden' }
 const typeColors  = {
   flower:      'bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300',
@@ -94,6 +112,21 @@ function PlantCard({ plant, isHydro }) {
         {(!isHydro || !plant.hydroponicsNotes) && (
           <div className="bg-garden-50 dark:bg-gray-700 rounded-lg px-3 py-2 text-xs text-garden-800 dark:text-garden-300 leading-relaxed">
             <span className="font-semibold">Care tip: </span>{plant.careNotes}
+          </div>
+        )}
+
+        {/* Related guide links */}
+        {typeGuides[plant.type] && (
+          <div className="pt-1 flex flex-wrap gap-2">
+            {typeGuides[plant.type].map((g) => (
+              <Link
+                key={g.id}
+                href={`/guides/${g.id}`}
+                className="inline-flex items-center gap-1 text-xs font-medium text-garden-700 dark:text-garden-400 hover:text-garden-900 dark:hover:text-garden-200 underline underline-offset-2 transition-colors"
+              >
+                📖 {g.title}
+              </Link>
+            ))}
           </div>
         )}
       </div>
