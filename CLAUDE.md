@@ -14,7 +14,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 53 guides are fully built and live; the remainder are hidden by default behind a per-category toggle button (amber pill) and revealed on demand. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
-3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. Online ordering is a placeholder (coming soon); the "Add to Cart" button links visitors to the Contact page for custom orders.
+3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -407,7 +407,9 @@ Thirty-six full guides integrated into the app:
 
 - **Next.js `metadata` exports** — no third-party library; each `app/*/page.jsx` exports a `metadata` object or `generateMetadata` async function
 - **Layout-level metadata** in `src/app/layout.jsx` — sets `title.template: '%s | Planting Atlas'`, site-wide description, OG image, and Twitter Card defaults
-- **`generateMetadata`** in `src/app/guides/[guideId]/page.jsx` — per-guide title from `content.hero.title`, description from `content.intro` (truncated to 160 chars), canonical URL, and OG overrides
+- **`generateMetadata`** in `src/app/guides/[guideId]/page.jsx` — per-guide title from `content.hero.title`, description from `content.intro` (word-boundary truncated to ≤160 chars via `truncateDescription()`), canonical URL, and OG overrides
+- **JSON-LD `Article` schema** — every guide page outputs structured data (headline, author, publisher, dates, image) for Google rich results
+- **JSON-LD `FAQPage` schema** — wizard page outputs 5 Q&A pairs eligible for FAQ rich results
 - **GTM container `GTM-TT46476S`** — inline `<script dangerouslySetInnerHTML>` in `<head>` of `src/app/layout.jsx` (synchronous, first in head); noscript fallback in `<body>`
 - **Google Analytics 4 `G-7S7248T634`** — `<Script strategy="afterInteractive">` in `layout.jsx` via `next/script`
 - **Google AdSense `ca-pub-2083020536499662`** — `<Script strategy="afterInteractive">` in `layout.jsx` via `next/script`
@@ -1500,6 +1502,75 @@ Four improvements applied across the site for better UX, AdSense compliance, and
 - Amber pill toggle button: `Show N in development →` / `Hide in-development guides ↑`; only renders when a category has coming-soon guides
 - `src/components/guides/GuidesHome.jsx` — now a clean server component; old `GuideCard` and `CategorySection` functions removed; imports `CategorySection` from the new file
 - `GuideCard` function lives inside `CategorySection.jsx` since it only renders there
+
+---
+
+### AdSense & Policy Fixes ✅
+
+**Privacy Policy expansion** (`src/components/PrivacyPolicy.jsx`):
+- Replaced thin single-paragraph sections with named processor entries for all 5 data processors:
+  - **Google Tag Manager (GTM-TT46476S)** — loads analytics/ad tags; no personal data itself
+  - **Google Analytics 4 (G-7S7248T634)** — pages, time on site, device, region, client ID; opt-out link provided
+  - **Google AdSense (ca-pub-2083020536499662)** — IP, browser, cookie IDs, inferred interests; two opt-out links (Google Ad Settings + aboutads.info)
+  - **Formspree** — receives name/email/message from contact form; links to Formspree policy
+  - **Amazon Associates & Impact** — affiliate tracking cookies; links to both policies
+- Cookies section now names both first-party storage keys: `pa-dark-mode` and `pa-cookie-consent`
+- Your Rights section expanded with specific opt-out links (Google, aboutads.info, networkadvertising.org)
+- "Last updated" date updated to April 5, 2026
+
+**Ad density reduction** (`src/components/Infographics.jsx`):
+- Removed placeholders #1, #3, #7, #8 — reduced from 9 → 5 total
+- Remaining 5 placeholders (originally #2, #4, #5, #6, #9) are evenly spaced across 28 infographic sections (~1 per 5–6 sections)
+
+---
+
+### Content & Credibility Improvements ✅
+
+**Shop link removed from Nav**
+- `src/components/Nav.jsx` — `🖨️ Shop` link removed until real products are available
+- Shop pages remain in the codebase (`/shop/` and `/shop/[productId]/`) but are no longer linked from the nav
+- To restore: add the link back to `Nav.jsx` when real product photos and ordering are ready
+
+**Category threshold in Plantopedia** (`src/components/guides/GuidesHome.jsx`)
+- `visibleCategories` filter: only renders categories with ≥ 2 live guides
+- Seasonal Guides (1 of 8 live) is automatically hidden; reappears when a second guide in the category goes live
+- Prevents near-empty categories from creating a poor first impression
+
+**"You might also like" related guides** (`src/components/guides/GuideDetail.jsx`)
+- `getRelatedGuides(guideId, count = 3)` helper finds the current guide's category in `guideCategories`, filters to live guides, excludes the current guide, returns up to 3
+- Renders a grid of guide cards between `<AuthorBox />` and the "Back to All Planting Guides" link
+- Works automatically on all 53+ live guides — no per-guide configuration needed
+- Imports `guideCategories` from `../../data/guides.js`
+
+**Wizard results → guide cross-links** (`src/components/wizard/Results.jsx`)
+- `typeGuides` mapping at top of file: each of the 12 plant types maps to up to 2 relevant live guide IDs
+- Each `PlantCard` renders a `📖 Guide Title` link row at the bottom based on `plant.type`
+- Mapping covers all 12 types: flower, vegetable, fruit, herb, tree, shrub, vine, bulb, grass, succulent, fern, groundcover
+
+---
+
+### SEO: JSON-LD Structured Data ✅
+
+**Article schema on guide pages** (`src/app/guides/[guideId]/page.jsx`)
+- Every guide page outputs `<script type="application/ld+json">` with `Article` schema:
+  - `headline` — guide title
+  - `description` — truncated intro (word-boundary safe)
+  - `author` — David Rodgers, `https://plantingatlas.com/about/`
+  - `publisher` — Planting Atlas with `favicon.png` logo
+  - `datePublished: '2026-03-01'`, `dateModified: '2026-04-05'`
+  - `url` — canonical guide URL
+  - `image` — hero image URL (when available)
+- `truncateDescription()` helper replaces old hard `slice(0, 157)` cut with `lastIndexOf(' ')` word-boundary truncation — meta descriptions no longer cut mid-word
+- Schema injected before `<GuideDetail />` in the page JSX
+
+**FAQPage schema on wizard** (`src/app/wizard/page.jsx`)
+- Outputs `<script type="application/ld+json">` with `FAQPage` schema containing 5 Q&A pairs:
+  1. How does the wizard work?
+  2. What USDA zones are supported?
+  3. Does it work for hydroponic growers?
+  4. Is the tool free?
+  5. What plants are in the database?
+- Eligible for FAQ rich results in Google Search
 
 ---
 

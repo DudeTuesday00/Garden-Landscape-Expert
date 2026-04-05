@@ -22,9 +22,60 @@ export const metadata = {
   },
 }
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How does the Garden Architect plant recommendation wizard work?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The Garden Architect asks 8 targeted questions about your garden conditions — plant type, growing method, USDA hardiness zone, sunlight, soil type, watering habits, space, and experience level. It then filters and scores a database of 148 plants across 12 categories to produce a personalized plant list matched to your specific situation.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What USDA hardiness zones does the plant wizard support?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The Garden Architect supports all USDA hardiness zones from 3 to 11, covering the full range of climates across the United States — from the cold winters of Minnesota (Zone 3) to the year-round warmth of coastal California and Hawaii (Zone 10–11).',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does the wizard work for hydroponic growers?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. The Garden Architect has a dedicated hydroponic path. When you select hydroponic as your growing method, it skips outdoor-only questions (zone, soil, season) and instead asks about your system type — deep water culture, nutrient film technique, Kratky, or ebb and flow. Results are filtered to hydroponic-compatible plants with system-specific care notes.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is this plant recommendation tool free to use?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, the Garden Architect is completely free to use. No account or sign-up is required. You can run it as many times as you like — each run takes about two minutes and produces a fresh set of personalized plant recommendations.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What kinds of plants are in the recommendation database?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The database includes 148 plants across 12 types: flowers, vegetables, fruits, herbs, trees, shrubs, vines, bulbs, ornamental grasses, succulents, ferns, and groundcovers. Each plant entry includes zone compatibility, sunlight needs, soil preferences, water requirements, space requirements, seasonal timing, and care notes.',
+      },
+    },
+  ],
+}
+
 export default function WizardPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Wizard />
 
       {/* Long-form editorial content — always visible, indexed by Google */}
