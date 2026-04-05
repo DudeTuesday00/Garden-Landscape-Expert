@@ -73,7 +73,7 @@ export default function HomePage() {
         </div>
 
         <p className="text-xs text-gray-400 dark:text-gray-500">
-          148 plants · 35 live guides · no account required
+          148 plants · 53 live guides · no account required
         </p>
 
         {/* Media & Resources row */}

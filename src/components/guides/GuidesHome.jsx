@@ -1,66 +1,6 @@
-import Link from 'next/link'
 import { guideCategories } from '../../data/guides.js'
 import plantopediaImg from './Plantopedia.png'
-
-function GuideCard({ guide }) {
-  const isLive = !guide.comingSoon
-
-  const cardCls = `bg-white dark:bg-gray-800 rounded-2xl border shadow-sm p-4 flex gap-3 items-start transition-shadow ${
-    isLive
-      ? 'border-garden-200 dark:border-garden-700 hover:shadow-md hover:border-garden-400 dark:hover:border-garden-500'
-      : 'border-gray-200 dark:border-gray-700 opacity-80'
-  }`
-
-  const inner = (
-    <>
-      <span className="text-2xl flex-shrink-0">{guide.emoji}</span>
-      <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2 flex-wrap">
-          <h4 className="font-semibold text-sm text-garden-900 dark:text-garden-300 leading-tight">{guide.title}</h4>
-          {guide.comingSoon ? (
-            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 flex-shrink-0">
-              Coming Soon
-            </span>
-          ) : (
-            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-garden-100 dark:bg-garden-900/30 text-garden-700 dark:text-garden-300 flex-shrink-0">
-              Read Guide →
-            </span>
-          )}
-        </div>
-        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">{guide.description}</p>
-      </div>
-    </>
-  )
-
-  if (isLive) {
-    return (
-      <Link href={`/guides/${guide.id}`} className={cardCls}>
-        {inner}
-      </Link>
-    )
-  }
-
-  return <div className={cardCls}>{inner}</div>
-}
-
-function CategorySection({ category }) {
-  return (
-    <section>
-      <div className="flex items-center gap-2 mb-4">
-        <span className="text-2xl">{category.emoji}</span>
-        <div>
-          <h2 className="text-lg font-bold text-garden-800 dark:text-garden-300">{category.title}</h2>
-          <p className="text-sm text-gray-500 dark:text-gray-400">{category.description}</p>
-        </div>
-      </div>
-      <div className="grid gap-3 sm:grid-cols-2">
-        {category.guides.map((guide) => (
-          <GuideCard key={guide.id} guide={guide} />
-        ))}
-      </div>
-    </section>
-  )
-}
+import CategorySection from './CategorySection.jsx'
 
 export default function GuidesHome() {
   const totalGuides = guideCategories.reduce((sum, cat) => sum + cat.guides.length, 0)
