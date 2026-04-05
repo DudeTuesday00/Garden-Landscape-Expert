@@ -68,7 +68,7 @@ export const heroImages = {
   'rain-garden': '/guides/rain-garden.png',
   'mulching-guide': '/guides/mulching-guide.png',
   'privacy-screening': '/guides/privacy-screening.png',
-  'medicinal-herb-garden': '/guides/medical-herb-garden.png',
+  'medicinal-herb-garden': '/guides/medicinal-herb-garden.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.

@@ -1,6 +1,27 @@
+import { useState } from 'react'
 import Link from 'next/link'
 
 const waterLabel = { low: '💧 Low', moderate: '💧💧 Moderate', high: '💧💧💧 High' }
+
+function formatAnswer(question, value) {
+  if (value === undefined || value === null) return '—'
+  const opts = question.options || []
+  if (Array.isArray(value) && !question.multi) {
+    // zone value is an array like [5,6] stored as a single answer
+    const match = opts.find((o) => JSON.stringify(o.value) === JSON.stringify(value))
+    return match ? `${match.emoji} ${match.label}` : JSON.stringify(value)
+  }
+  if (Array.isArray(value)) {
+    return value
+      .map((v) => {
+        const match = opts.find((o) => o.value === v)
+        return match ? `${match.emoji} ${match.label}` : v
+      })
+      .join(', ')
+  }
+  const match = opts.find((o) => o.value === value)
+  return match ? `${match.emoji} ${match.label}` : String(value)
+}
 
 // Maps plant type → up to 2 relevant guide IDs (live guides only)
 const typeGuides = {
@@ -134,7 +155,8 @@ function PlantCard({ plant, isHydro }) {
   )
 }
 
-export default function Results({ plants, answers, onRestart }) {
+export default function Results({ plants, answers, activeQuestions, onRestart, onGoToStep }) {
+  const [showRefine, setShowRefine] = useState(false)
   const isHydro = answers.growingMethod === 'hydroponic'
   const hydroSystem = hydroSystemLabel[answers.hydroSystem]
 
@@ -178,6 +200,37 @@ export default function Results({ plants, answers, onRestart }) {
           <p className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full">
             <span>💧</span> Optimized for {hydroSystem} system
           </p>
+        )}
+      </div>
+
+      {/* Refine answers */}
+      <div className="bg-garden-50 dark:bg-gray-700/50 rounded-2xl border border-garden-100 dark:border-gray-600 overflow-hidden">
+        <button
+          onClick={() => setShowRefine((s) => !s)}
+          className="w-full flex items-center justify-between px-5 py-3 text-sm font-medium text-garden-800 dark:text-garden-300 hover:bg-garden-100 dark:hover:bg-gray-700 transition-colors"
+        >
+          <span>✏️ Refine your answers</span>
+          <span className="text-gray-400 dark:text-gray-500 text-xs">{showRefine ? '▲ Hide' : '▼ Show'}</span>
+        </button>
+        {showRefine && activeQuestions && (
+          <div className="border-t border-garden-100 dark:border-gray-600 divide-y divide-garden-100 dark:divide-gray-600">
+            {activeQuestions.map((q, i) => (
+              <div key={q.id} className="flex items-center justify-between px-5 py-2.5 gap-3">
+                <div className="flex-1 min-w-0">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 leading-tight">{q.title}</p>
+                  <p className="text-sm font-medium text-garden-900 dark:text-garden-200 leading-snug mt-0.5 truncate">
+                    {formatAnswer(q, answers[q.id])}
+                  </p>
+                </div>
+                <button
+                  onClick={() => { setShowRefine(false); onGoToStep(i) }}
+                  className="flex-shrink-0 text-xs font-medium text-garden-600 dark:text-garden-400 hover:text-garden-800 dark:hover:text-garden-200 underline underline-offset-2 transition-colors"
+                >
+                  Change
+                </button>
+              </div>
+            ))}
+          </div>
         )}
       </div>
 

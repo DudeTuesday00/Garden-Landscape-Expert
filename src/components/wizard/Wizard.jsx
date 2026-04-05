@@ -83,6 +83,11 @@ export default function Wizard() {
     setResults([])
   }
 
+  function handleGoToStep(index) {
+    setStepIndex(index)
+    setStage(STAGES.QUESTIONS)
+  }
+
   return (
     <div className="min-h-screen flex items-start justify-center px-4 py-10">
       <div className="w-full max-w-2xl">
@@ -109,7 +114,9 @@ export default function Wizard() {
             <Results
               plants={results}
               answers={answers}
+              activeQuestions={activeQuestions}
               onRestart={handleRestart}
+              onGoToStep={handleGoToStep}
             />
           )}
         </div>
