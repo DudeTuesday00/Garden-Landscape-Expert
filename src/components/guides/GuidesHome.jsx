@@ -8,6 +8,10 @@ export default function GuidesHome() {
     (sum, cat) => sum + cat.guides.filter((g) => !g.comingSoon).length,
     0
   )
+  // Only show categories with at least 2 live guides — avoids near-empty sections
+  const visibleCategories = guideCategories.filter(
+    (cat) => cat.guides.filter((g) => !g.comingSoon).length >= 2
+  )
 
   return (
     <div className="min-h-screen px-4 py-10">
@@ -39,8 +43,8 @@ export default function GuidesHome() {
           </div>
         </div>
 
-        {/* Guide Categories */}
-        {guideCategories.map((category) => (
+        {/* Guide Categories — only show if ≥2 live guides */}
+        {visibleCategories.map((category) => (
           <div key={category.id} className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8">
             <CategorySection category={category} />
           </div>

@@ -1,7 +1,18 @@
 import { Fragment } from 'react'
 import Link from 'next/link'
 import { contentMap } from '../../data/guide-content/index.js'
+import { guideCategories } from '../../data/guides.js'
 import AuthorBox from './AuthorBox.jsx'
+
+function getRelatedGuides(guideId, count = 3) {
+  const category = guideCategories.find((cat) =>
+    cat.guides.some((g) => g.id === guideId)
+  )
+  if (!category) return []
+  return category.guides
+    .filter((g) => !g.comingSoon && g.id !== guideId)
+    .slice(0, count)
+}
 
 // Hero images for guides that have a corresponding photo (exported for use in generateMetadata)
 export const heroImages = {
@@ -1102,6 +1113,34 @@ export default function GuideDetail({ guideId }) {
 
         {/* Author box */}
         <AuthorBox />
+
+        {/* Related guides */}
+        {(() => {
+          const related = getRelatedGuides(guideId)
+          if (related.length === 0) return null
+          return (
+            <div className="mt-2">
+              <h2 className={`text-lg font-bold mb-3 ${theme.sectionTitle} dark:text-garden-300`}>
+                You might also like
+              </h2>
+              <div className="grid gap-3 sm:grid-cols-3">
+                {related.map((g) => (
+                  <Link
+                    key={g.id}
+                    href={`/guides/${g.id}`}
+                    className="bg-white dark:bg-gray-800 rounded-2xl border border-garden-200 dark:border-garden-700 shadow-sm p-4 flex gap-3 items-start hover:shadow-md hover:border-garden-400 dark:hover:border-garden-500 transition-shadow"
+                  >
+                    <span className="text-2xl flex-shrink-0">{g.emoji}</span>
+                    <div className="flex-1 min-w-0">
+                      <p className="font-semibold text-sm text-garden-900 dark:text-garden-300 leading-tight">{g.title}</p>
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed line-clamp-2">{g.description}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )
+        })()}
 
         {/* Footer nav */}
         <div className="text-center pb-4">
