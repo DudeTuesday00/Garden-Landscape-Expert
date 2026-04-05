@@ -21,13 +21,13 @@ export default function PrivacyPolicy() {
             <h2 className={h2}>Third-Party Data Processors</h2>
             <p>The following services are embedded on this site and may collect data independently under their own privacy policies.</p>
 
-            <h3 className={h3}>Google Tag Manager (GTM-TT46476S)</h3>
+            <h3 className={h3}>Google Tag Manager</h3>
             <p>We use Google Tag Manager to deploy and manage analytics and advertising tags. GTM itself does not collect personal data, but it loads the scripts described below. GTM is initialized on every page load. <a href="https://policies.google.com/privacy" className={link} target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></p>
 
-            <h3 className={h3}>Google Analytics 4 (G-7S7248T634)</h3>
+            <h3 className={h3}>Google Analytics 4</h3>
             <p>GA4 collects anonymized usage data including pages visited, time on site, scroll depth, clicks, general geographic region (country/city level), device type, browser, and referral source. GA4 uses first-party cookies and may use a unique client ID stored in your browser. No personally identifiable information is sent. You can opt out via the <a href="https://tools.google.com/dlpage/gaoptout" className={link} target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>.</p>
 
-            <h3 className={h3}>Google AdSense (ca-pub-2083020536499662)</h3>
+            <h3 className={h3}>Google AdSense</h3>
             <p>This site displays advertisements through Google AdSense. AdSense and its partners use cookies, web beacons, and device identifiers to serve ads based on your prior visits to this and other websites. Data collected may include IP address, browser type, cookie identifiers, and inferred interests. You can opt out of personalized advertising at <a href="https://www.google.com/settings/ads" className={link} target="_blank" rel="noopener noreferrer">Google Ad Settings</a> or via the <a href="https://optout.aboutads.info/" className={link} target="_blank" rel="noopener noreferrer">Digital Advertising Alliance opt-out</a>.</p>
 
             <h3 className={h3}>Formspree (Contact Form)</h3>
