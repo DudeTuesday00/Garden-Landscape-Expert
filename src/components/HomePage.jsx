@@ -72,9 +72,20 @@ export default function HomePage() {
 
         </div>
 
-        <p className="text-xs text-gray-400 dark:text-gray-500">
-          148 plants · 53 live guides · no account required
-        </p>
+        {/* Credibility stats strip */}
+        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+          {[
+            { value: '148', label: 'Plants in database' },
+            { value: '53',  label: 'In-depth guides' },
+            { value: '12',  label: 'Plant categories' },
+            { value: '100%', label: 'Free, no account' },
+          ].map(({ value, label }) => (
+            <div key={label} className="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl py-3 px-2 shadow-sm">
+              <p className="text-xl font-bold text-garden-700 dark:text-garden-400">{value}</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400 leading-tight mt-0.5">{label}</p>
+            </div>
+          ))}
+        </div>
 
         {/* Media & Resources row */}
         <div className="w-full">
@@ -106,6 +117,24 @@ export default function HomePage() {
               <span className="text-xs font-semibold text-garden-800 dark:text-garden-300">Videos</span>
               <span className="text-xs text-gray-400 dark:text-gray-500 hidden sm:block leading-tight">Top YouTube channels</span>
             </Link>
+          </div>
+        </div>
+
+        {/* About the author — E-E-A-T strip */}
+        <div className="w-full bg-white dark:bg-gray-800 border border-garden-100 dark:border-gray-700 rounded-2xl shadow-sm p-5 flex items-center gap-4">
+          <img
+            src="/about-me-image.png"
+            alt="David Rodgers"
+            className="w-14 h-14 rounded-full object-cover flex-shrink-0 border-2 border-garden-200 dark:border-garden-700"
+          />
+          <div>
+            <p className="text-sm font-semibold text-garden-800 dark:text-garden-300">Written &amp; curated by David Rodgers</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 leading-relaxed">
+              40+ years of hands-on gardening across USDA Zones 3–11. All content is cross-checked against USDA data and university extension publications.{' '}
+              <Link href="/about" className="text-garden-600 dark:text-garden-400 underline underline-offset-2 hover:text-garden-800 dark:hover:text-garden-200 transition-colors">
+                Learn more →
+              </Link>
+            </p>
           </div>
         </div>
 

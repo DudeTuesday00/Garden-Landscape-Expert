@@ -18,8 +18,17 @@ function GuideCard({ guide }) {
         <div className="flex items-center gap-2 flex-wrap">
           <h4 className="font-semibold text-sm text-garden-900 dark:text-garden-300 leading-tight">{guide.title}</h4>
           {guide.comingSoon ? (
-            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 flex-shrink-0">
-              Coming Soon
+            <span className="inline-flex items-center gap-1.5 flex-shrink-0">
+              <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300">
+                Coming Soon
+              </span>
+              <Link
+                href="/contact"
+                onClick={(e) => e.stopPropagation()}
+                className="text-xs font-medium text-garden-600 dark:text-garden-400 hover:text-garden-800 dark:hover:text-garden-200 underline underline-offset-2 transition-colors"
+              >
+                ✉️ Notify me
+              </Link>
             </span>
           ) : (
             <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-garden-100 dark:bg-garden-900/30 text-garden-700 dark:text-garden-300 flex-shrink-0">

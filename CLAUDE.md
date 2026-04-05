@@ -108,27 +108,28 @@ Garden-Landscape-Expert/
     │   ├── sitemap.js               # Auto-generates sitemap.xml at build time from guides.js data
     │   └── robots.js                # Auto-generates robots.txt at build time
     ├── components/
-    │   ├── Nav.jsx                  # 'use client' — sticky nav with usePathname active state + dark mode toggle
-    │   ├── HomePage.jsx             # Landing page — two image-backed path cards (Link to /wizard and /guides)
+    │   ├── Nav.jsx                  # 'use client' — sticky nav with usePathname active state, dark mode toggle, and hamburger mobile menu
+    │   ├── HomePage.jsx             # Landing page — path cards, credibility stats strip, E-E-A-T author strip
     │   ├── ContactUs.jsx            # 'use client' — contact form (Formspree mlgpgdny); success state
-    │   ├── Infographics.jsx         # Garden infographics — visual quick-reference cards
+    │   ├── Infographics.jsx         # Garden infographics — visual quick-reference cards (28 live, all kebab-case filenames)
     │   ├── Videos.jsx               # Curated gardening YouTube channels by topic + original videos (stacked cards, newest first)
     │   ├── Podcasts.jsx             # Curated gardening podcasts list + original Planting Atlas episodes
     │   ├── PrivacyPolicy.jsx        # Static privacy policy page
     │   ├── wizard/
     │   │   ├── Garden-Architect.png   # Hero image used on HomePage card (Garden Architect)
     │   │   ├── garden-architect-2.png # Hero image used on WelcomeScreen landing
-    │   │   ├── Wizard.jsx             # 'use client' — main wizard shell + state machine
+    │   │   ├── Wizard.jsx             # 'use client' — main wizard shell + state machine; passes onGoToStep to Results
     │   │   ├── WelcomeScreen.jsx      # Intro screen — shows garden-architect-2.png at top
     │   │   ├── QuestionStep.jsx       # Per-question UI (single + multi-select)
     │   │   ├── ProgressBar.jsx        # Step progress indicator
-    │   │   └── Results.jsx            # Plant recommendation cards
+    │   │   └── Results.jsx            # Plant recommendation cards + collapsible refine-answers panel + guide cross-links
     │   ├── guides/
     │   │   ├── Plantopedia.png        # Hero image used on both HomePage card and GuidesHome landing
-    │   │   ├── GuidesHome.jsx         # Server component — Plantopedia landing; delegates category rendering to CategorySection
-    │   │   ├── CategorySection.jsx    # 'use client' — per-category card grid; coming-soon cards hidden by default, toggled via amber pill button
+    │   │   ├── GuidesHome.jsx         # Server component — Plantopedia landing; filters categories with ≥2 live guides; delegates to GuidesSearch
+    │   │   ├── GuidesSearch.jsx       # 'use client' — live search input + CategorySection list; receives visibleCategories from GuidesHome
+    │   │   ├── CategorySection.jsx    # 'use client' — per-category card grid; coming-soon cards hidden by default, toggled via amber pill button; "Notify me" link
     │   │   ├── AuthorBox.jsx          # Author attribution block rendered at bottom of every guide
-    │   │   └── GuideDetail.jsx        # Server component — renders guide content from contentMap; Link back to /guides
+    │   │   └── GuideDetail.jsx        # Server component — renders guide content from contentMap; related guides section; Link back to /guides
     │   └── shop/
     │       ├── ShopHome.jsx           # Server component — shop page wrapper (header + trust badges)
     │       ├── ShopGrid.jsx           # 'use client' — category filter tabs + Etsy-style product card grid
@@ -771,7 +772,7 @@ The site was fully migrated from a Vite SPA to **Next.js 15 App Router** with st
 
 **Client vs server components:**
 - Server (default): `HomePage`, `GuidesHome`, `GuideDetail`, `ShopHome`, `ProductDetail`, `PrivacyPolicy`, all page files
-- Client (`'use client'`): `Nav`, `Wizard` (and its sub-components), `ContactUs`, `ShopGrid`, `ImageGallery`, `Infographics`, `CategorySection`, `CookieBanner`
+- Client (`'use client'`): `Nav`, `Wizard` (and its sub-components), `ContactUs`, `ShopGrid`, `ImageGallery`, `Infographics`, `CategorySection`, `GuidesSearch`, `CookieBanner`
 
 **Build output:** `next build` generates `out/` — a fully static directory deployable to Cloudflare Pages with zero server required.
 
@@ -1306,42 +1307,43 @@ Each page has a full metadata export (`title`, `description`, `keywords`, `canon
 - **Shared lightbox:** single `activeLightbox` state (`{ src, alt }`) drives one lightbox overlay for all images — no per-image `useState`
 - **`InfographicSection` component:** reusable helper renders heading, description, image button, caption, and guide link for each infographic
 - **28 live image sections** — all images in `public/infographics/` are wired to `InfographicSection` components; no HTML table fallbacks remain
-- **9 AdSense placeholder `<div>`s** spaced throughout the page
+- **5 AdSense placeholder `<div>`s** spaced throughout the page (reduced from 9 to avoid policy violations — roughly 1 per 5–6 sections)
+- **All filenames are lowercase kebab-case** — standardized from PascalCase/underscore originals; `src` paths in `Infographics.jsx` match exactly
 - Affiliate cards at the bottom (Rodale's Encyclopedia, Old Farmer's Almanac)
 - "More Infographics Coming Soon" grid of 5 planned cards
 
 **Live infographic images** (`public/infographics/`):
 
-| File | Section |
+| File (all lowercase kebab-case) | Section |
 |---|---|
-| `Companion-Planting-Quick-Reference.png` | Companion Planting Quick Reference |
-| `USDA-Hardiness-Zones-Frost-Date-Reference.png` | USDA Hardiness Zones — Frost Date Reference |
-| `Soil-pH-Preference-by-Plant-Type.png` | Soil pH Preference by Plant Type |
-| `Annual_Flowers_Best_Picks_Guide_IG.png` | Annual Flowers: Best Picks |
-| `Long_Blooming_Perennials_Guide_IG.png` | Long-Blooming Perennials |
-| `Cut_Flower_Garden_Guide_IG.png` | Cut Flower Garden |
-| `Cottage_Garden_Style_Guide_IG.png` | Cottage Garden Style |
-| `Moon_Garden_Guide_IG.png` | Moon Garden |
-| `Edible_Flowers_Guide_IG.png` | Edible Flowers |
-| `Childrens_Vegetable_Garden_Guide_US_IG.png` | Children's Vegetable Garden |
-| `Culinary_Herb_Garden_Guide_IG.png` | Culinary Herb Garden |
-| `Herb_Garden_Design_Guide_IG.png` | Herb Garden Design |
-| `Medicinal_Garden_Guide_US_IG.png` | Medicinal Garden |
-| `Common_Garden_Diseases_Guide_IG.png` | Common Garden Diseases |
-| `Garden_Pests_ID_Charts_Guide_IG.png` | Garden Pests ID & Control |
-| `Fast_Growing_Privacy_Trees_Guide_IG.png` | Fast-Growing Privacy Trees |
-| `Japanese_Garden_Elements_Guide_IG.png` | Japanese Garden Elements |
-| `Front_Yard_Curb_Appeal_Guide_IG.png` | Front Yard Curb Appeal |
-| `Plants_for_Color_Guide_IG.png` | Plants for Color |
-| `Pollinator_Garden_Guide_IG.png` | Pollinator Garden |
-| `Pizza_Garden_Guide_IG.png` | Pizza Garden |
-| `Salad_Garden_Guide_IG.png` | Salad Garden |
-| `Salsa_Garden_Guide_IG.png` | Salsa Garden |
-| `Plants_for_Fragrance_Guide_IG.png` | Plants for Fragrance |
-| `Porch_Plants_Guide_IG.png` | Porch Plants |
-| `Rain_Barrel_Guide_IG.png` | Rain Barrel Guide |
-| `Vegetable_Spacing_Quick_Reference_IG.png` | Vegetable Spacing Quick Reference |
-| `Watering_Frequency_Guide_by_Plant_Category_IG.png` | Watering Frequency Guide by Plant Category |
+| `companion-planting-quick-reference.png` | Companion Planting Quick Reference |
+| `usda-hardiness-zones-frost-date-reference.png` | USDA Hardiness Zones — Frost Date Reference |
+| `soil-ph-preference-by-plant-type.png` | Soil pH Preference by Plant Type |
+| `annual-flowers-ig.png` | Annual Flowers: Best Picks |
+| `long-blooming-perennials-ig.png` | Long-Blooming Perennials |
+| `cut-flower-garden-ig.png` | Cut Flower Garden |
+| `cottage-garden-style-ig.png` | Cottage Garden Style |
+| `moon-garden-ig.png` | Moon Garden |
+| `edible-flowers-ig.png` | Edible Flowers |
+| `childrens-vegetable-garden-ig.png` | Children's Vegetable Garden |
+| `culinary-herb-garden-ig.png` | Culinary Herb Garden |
+| `herb-garden-design-ig.png` | Herb Garden Design |
+| `medicinal-garden-ig.png` | Medicinal Garden |
+| `common-garden-diseases-ig.png` | Common Garden Diseases |
+| `garden-pests-id-charts-ig.png` | Garden Pests ID & Control |
+| `fast-growing-privacy-trees-ig.png` | Fast-Growing Privacy Trees |
+| `japanese-garden-elements-ig.png` | Japanese Garden Elements |
+| `front-yard-curb-appeal-ig.png` | Front Yard Curb Appeal |
+| `plants-for-color-ig.png` | Plants for Color |
+| `pollinator-garden-ig.png` | Pollinator Garden |
+| `pizza-garden-ig.png` | Pizza Garden |
+| `salad-garden-ig.png` | Salad Garden |
+| `salsa-garden-ig.png` | Salsa Garden |
+| `plants-for-fragrance-ig.png` | Plants for Fragrance |
+| `porch-plants-ig.png` | Porch Plants |
+| `rain-barrel-ig.png` | Rain Barrel Guide |
+| `vegetable-spacing-quick-reference-ig.png` | Vegetable Spacing Quick Reference |
+| `watering-frequency-guide-by-plant-category-ig.png` | Watering Frequency Guide by Plant Category |
 
 **To add a new infographic:**
 1. Drop the PNG into `public/infographics/`
@@ -1361,13 +1363,17 @@ Public media directories:
 
 ### Nav Expansion ✅
 
-`src/components/Nav.jsx` updated — three new links added between Plantopedia and Contact:
+`src/components/Nav.jsx` updated — links added across multiple phases. Current final state:
 
 ```
-🌱 Garden Architect | 📖 Plantopedia | 🗺️ Infographics | 🎬 Videos | 🎙️ Podcasts | 🖨️ Shop | ✉️ Contact
+🌱 Garden Architect | 📖 Plantopedia | 🗺️ Infographics | 🎬 Videos | 🎙️ Podcasts | ✉️ Contact
 ```
 
-All links use the same `navCls()` active-state logic (`bg-garden-600 text-white` when active).
+(Shop link removed until real products are available — pages remain in codebase at `/shop/`.)
+
+Desktop links use `navCls()` active-state logic (`bg-garden-600 text-white` when active).
+
+**Hamburger mobile menu added:** `menuOpen` state toggled by `☰`/`✕` button; `useEffect([pathname])` closes menu on navigation; mobile dropdown renders as stacked link list using `mobileNavCls()` for active styling.
 
 ---
 
@@ -1571,6 +1577,64 @@ Four improvements applied across the site for better UX, AdSense compliance, and
   4. Is the tool free?
   5. What plants are in the database?
 - Eligible for FAQ rich results in Google Search
+
+---
+
+### UX & Navigation Improvements ✅
+
+Four UX improvements applied across the site:
+
+**1. Hamburger Mobile Nav** (`src/components/Nav.jsx`)
+- `menuOpen` state; `useEffect([pathname])` closes menu on every route change
+- `navLinks` array (no Shop) drives both desktop (`hidden md:flex`) and mobile renderers
+- Mobile controls: dark mode toggle + `☰`/`✕` SVG button (`md:hidden`)
+- Mobile dropdown: `{menuOpen && <div className="md:hidden ...">}` — stacked link list with `mobileNavCls()` active styling
+
+**2. Plantopedia Live Search** (`src/components/guides/GuidesSearch.jsx`)
+- New `'use client'` island; receives `visibleCategories` as a plain serializable prop from server component `GuidesHome`
+- `useState('')` query; filters all live guides across all categories by title/description
+- Shows match count + results grid when searching; reverts to normal `CategorySection` list when idle
+- Clear (×) button in search input
+
+**3. Wizard Refine Answers Panel** (`src/components/wizard/Results.jsx` + `Wizard.jsx`)
+- `showRefine` state; collapsible "✏️ Refine your answers" panel above plant results
+- `formatAnswer(question, value)` helper handles zone arrays (via `JSON.stringify` comparison) and multi-value answers
+- Each row shows question title, current answer, and "Change" button that calls `onGoToStep(i)` to jump back to that step
+- `handleGoToStep(index)` in `Wizard.jsx` sets `stepIndex` and returns to `STAGES.QUESTIONS`
+
+**4. Hero Image Filename Fix**
+- `public/guides/medical-herb-garden.png` → `public/guides/medicinal-herb-garden.png` (typo correction)
+- `heroImages['medicinal-herb-garden']` path updated in `GuideDetail.jsx`
+
+---
+
+### Style & Polish Improvements ✅
+
+Five style and credibility improvements:
+
+**1. Homepage Credibility Stats Strip** (`src/components/HomePage.jsx`)
+- 4-stat grid: 148 Plants in database / 53 In-depth guides / 12 Plant categories / 100% Free, no account
+- Each stat: `bg-white` card, `text-xl font-bold text-garden-700`, full dark mode support
+
+**2. E-E-A-T Author Strip** (`src/components/HomePage.jsx`)
+- Full-width card below stats: circular photo (`/about-me-image.png`, 56×56px `rounded-full`), David Rodgers name, 2-sentence bio (40+ years, USDA/extension cross-checking), Link to `/about`
+
+**3. Coming Soon "Notify Me" Links** (`src/components/guides/CategorySection.jsx`)
+- Each Coming Soon badge now paired with an inline `✉️ Notify me` link to `/contact`
+- Uses `e.stopPropagation()` to prevent card click when clicking the link
+- Renders as `inline-flex items-center gap-1.5` alongside the amber badge
+
+**4. Expanded 3-Column Footer** (`src/app/layout.jsx`)
+- Replaced single-row footer with `grid sm:grid-cols-3` layout:
+  - **Left (sm:col-span-1):** Brand logo (🌿 Planting Atlas) + 1-sentence site description
+  - **Middle:** "Guides & Tools" — Garden Architect, Plantopedia, Infographics, Videos, Podcasts
+  - **Right:** "Info & Legal" — About David Rodgers, Contact Us, Privacy Policy
+  - Bottom bar: © year + tagline
+
+**5. Infographic Filenames Standardized to Kebab-Case** (`public/infographics/`)
+- All 28 infographic files renamed from PascalCase/underscore (`Annual_Flowers_Best_Picks_Guide_IG.png`) to lowercase kebab-case (`annual-flowers-ig.png`)
+- All 3 standalone reference images renamed (e.g., `USDA-Hardiness-Zones-Frost-Date-Reference.png` → `usda-hardiness-zones-frost-date-reference.png`)
+- All `src` paths in `src/components/Infographics.jsx` updated to match via batch `sed -i` replacement
 
 ---
 

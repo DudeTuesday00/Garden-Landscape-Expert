@@ -64,7 +64,7 @@ export default function Infographics() {
 
       {/* Section 1: Companion Planting */}
       <InfographicSection
-        src="/infographics/Companion-Planting-Quick-Reference.png"
+        src="/infographics/companion-planting-quick-reference.png"
         alt="Companion Planting Quick Reference infographic"
         heading="🌿 Companion Planting Quick Reference"
         description="Certain plants thrive together — and some actively repel each other's pests. Use this at-a-glance chart when planning your beds."
@@ -75,7 +75,7 @@ export default function Infographics() {
 
       {/* Section 2: USDA Zone Reference */}
       <InfographicSection
-        src="/infographics/USDA-Hardiness-Zones-Frost-Date-Reference.png"
+        src="/infographics/usda-hardiness-zones-frost-date-reference.png"
         alt="USDA Hardiness Zones and Frost Date Reference infographic"
         heading="🗺️ USDA Hardiness Zones — Frost Date Reference"
         description="Your USDA zone determines your average minimum winter temperature. Use these average last spring frost and first fall frost dates to time transplants and season-end tasks."
@@ -89,7 +89,7 @@ export default function Infographics() {
 
       {/* Section 3: Soil pH */}
       <InfographicSection
-        src="/infographics/Soil-pH-Preference-by-Plant-Type.png"
+        src="/infographics/soil-ph-preference-by-plant-type.png"
         alt="Soil pH Preference by Plant Type infographic"
         heading="🧪 Soil pH Preference by Plant Type"
         description="Soil pH affects nutrient availability. Most garden plants prefer 6.0–7.0, but blueberries, potatoes, and azaleas need distinctly acidic conditions. Test your soil before amending."
@@ -100,7 +100,7 @@ export default function Infographics() {
 
       {/* Section 4: Annual Flowers */}
       <InfographicSection
-        src="/infographics/Annual_Flowers_Best_Picks_Guide_IG.png"
+        src="/infographics/annual-flowers-ig.png"
         alt="Annual Flowers Best Picks infographic"
         heading="🌸 Annual Flowers: Best Picks"
         description="The top annual flowers for color, cut flowers, and pollinators — with sun, water, and spacing requirements at a glance."
@@ -111,7 +111,7 @@ export default function Infographics() {
 
       {/* Section 5: Long-Blooming Perennials */}
       <InfographicSection
-        src="/infographics/Long_Blooming_Perennials_Guide_IG.png"
+        src="/infographics/long-blooming-perennials-ig.png"
         alt="Long-Blooming Perennials infographic"
         heading="🌺 Long-Blooming Perennials"
         description="Perennials that deliver weeks or months of color — with bloom times, zones, and care requirements for building a season-long garden."
@@ -125,7 +125,7 @@ export default function Infographics() {
 
       {/* Section 6: Cut Flower Garden */}
       <InfographicSection
-        src="/infographics/Cut_Flower_Garden_Guide_IG.png"
+        src="/infographics/cut-flower-garden-ig.png"
         alt="Cut Flower Garden infographic"
         heading="✂️ Cut Flower Garden"
         description="Best flowers for cutting, with harvest timing, vase life, and succession-planting tips for continuous blooms from spring through fall."
@@ -136,7 +136,7 @@ export default function Infographics() {
 
       {/* Section 7: Cottage Garden Style */}
       <InfographicSection
-        src="/infographics/Cottage_Garden_Style_Guide_IG.png"
+        src="/infographics/cottage-garden-style-ig.png"
         alt="Cottage Garden Style infographic"
         heading="🌹 Cottage Garden Style"
         description="The essential plants, design principles, and layering techniques for creating an abundant, romantic cottage garden that blooms from spring to frost."
@@ -147,7 +147,7 @@ export default function Infographics() {
 
       {/* Section 8: Moon Garden */}
       <InfographicSection
-        src="/infographics/Moon_Garden_Guide_IG.png"
+        src="/infographics/moon-garden-ig.png"
         alt="Moon Garden infographic"
         heading="🌙 Moon Garden"
         description="White and pale flowers, silver foliage, and night-fragrant plants that come alive after dark — with placement and bloom-time reference."
@@ -158,7 +158,7 @@ export default function Infographics() {
 
       {/* Section 9: Edible Flowers */}
       <InfographicSection
-        src="/infographics/Edible_Flowers_Guide_IG.png"
+        src="/infographics/edible-flowers-ig.png"
         alt="Edible Flowers infographic"
         heading="🌼 Edible Flowers"
         description="A visual guide to flowers you can eat — flavor profiles, safe varieties, which parts to use, and what to avoid."
@@ -169,7 +169,7 @@ export default function Infographics() {
 
       {/* Section 10: Children's Vegetable Garden */}
       <InfographicSection
-        src="/infographics/Childrens_Vegetable_Garden_Guide_US_IG.png"
+        src="/infographics/childrens-vegetable-garden-ig.png"
         alt="Children's Vegetable Garden infographic"
         heading="🥕 Children's Vegetable Garden"
         description="The best vegetables for kids to grow by age group — with fun activities, easy-win plants, and tips for keeping young gardeners engaged all season."
@@ -180,7 +180,7 @@ export default function Infographics() {
 
       {/* Section 11: Culinary Herb Garden */}
       <InfographicSection
-        src="/infographics/Culinary_Herb_Garden_Guide_IG.png"
+        src="/infographics/culinary-herb-garden-ig.png"
         alt="Culinary Herb Garden infographic"
         heading="🍃 Culinary Herb Garden"
         description="The most useful kitchen herbs — with harvest tips, companion plants, container vs. in-ground notes, and flavor pairing at a glance."
@@ -194,7 +194,7 @@ export default function Infographics() {
 
       {/* Section 12: Herb Garden Design */}
       <InfographicSection
-        src="/infographics/Herb_Garden_Design_Guide_IG.png"
+        src="/infographics/herb-garden-design-ig.png"
         alt="Herb Garden Design infographic"
         heading="🌿 Herb Garden Design"
         description="Layout patterns, companion planting pairs, and design principles for creating a beautiful and functional herb garden in any space."
@@ -205,7 +205,7 @@ export default function Infographics() {
 
       {/* Section 13: Medicinal Garden */}
       <InfographicSection
-        src="/infographics/Medicinal_Garden_Guide_US_IG.png"
+        src="/infographics/medicinal-garden-ig.png"
         alt="Medicinal Garden infographic"
         heading="💊 Medicinal Garden"
         description="Key medicinal herbs — their primary uses, parts used, preparation methods, and safety notes for a home apothecary garden."
@@ -216,7 +216,7 @@ export default function Infographics() {
 
       {/* Section 14: Common Garden Diseases */}
       <InfographicSection
-        src="/infographics/Common_Garden_Diseases_Guide_IG.png"
+        src="/infographics/common-garden-diseases-ig.png"
         alt="Common Garden Diseases infographic"
         heading="🦠 Common Garden Diseases"
         description="A visual symptom key for the most common fungal, bacterial, and viral plant diseases — with diagnosis tips and first-line treatment options."
@@ -227,7 +227,7 @@ export default function Infographics() {
 
       {/* Section 15: Garden Pests ID & Control */}
       <InfographicSection
-        src="/infographics/Garden_Pests_ID_Charts_Guide_IG.png"
+        src="/infographics/garden-pests-ig.png"
         alt="Garden Pests ID & Control infographic"
         heading="🐛 Garden Pests ID & Control"
         description="Visual identification for 50+ common garden pests — with symptom-based diagnosis, organic controls, and natural enemy strategies organized by pest type."
@@ -241,7 +241,7 @@ export default function Infographics() {
 
       {/* Section 16: Fast-Growing Privacy Trees */}
       <InfographicSection
-        src="/infographics/Fast_Growing_Privacy_Trees_Guide_IG.png"
+        src="/infographics/fast-growing-privacy-trees-ig.png"
         alt="Fast-Growing Privacy Trees infographic"
         heading="🌲 Fast-Growing Privacy Trees"
         description="Top privacy tree options by zone — with mature height, growth rate, spacing, and best-use notes for screening, windbreaks, and property lines."
@@ -252,7 +252,7 @@ export default function Infographics() {
 
       {/* Section 16: Japanese Garden Elements */}
       <InfographicSection
-        src="/infographics/Japanese_Garden_Elements_Guide_IG.png"
+        src="/infographics/japanese-garden-elements-ig.png"
         alt="Japanese Garden Elements infographic"
         heading="🎋 Japanese Garden Elements"
         description="The key design elements, plants, and principles of Japanese garden style — from stone placement and karesansui to niwaki pruning and borrowed scenery."
@@ -263,7 +263,7 @@ export default function Infographics() {
 
       {/* Section 17: Front Yard Curb Appeal */}
       <InfographicSection
-        src="/infographics/Front_Yard_Curb_Appeal_Guide_IG.png"
+        src="/infographics/front-yard-curb-appeal-ig.png"
         alt="Front Yard Curb Appeal infographic"
         heading="🏡 Front Yard Curb Appeal"
         description="The five elements of curb appeal, three-zone layout principles, and best plants by season for a front yard that makes a great first impression."
@@ -274,7 +274,7 @@ export default function Infographics() {
 
       {/* Section 18: Plants for Color */}
       <InfographicSection
-        src="/infographics/Plants_for_Color_Guide_IG.png"
+        src="/infographics/plants-for-color-ig.png"
         alt="Plants for Color infographic"
         heading="🎨 Plants for Color"
         description="Bold annuals, perennials, and foliage plants organized by color — with bloom times and design tips for creating vibrant seasonal combinations."
@@ -285,7 +285,7 @@ export default function Infographics() {
 
       {/* Section 19: Pollinator Garden */}
       <InfographicSection
-        src="/infographics/Pollinator_Garden_Guide_IG.png"
+        src="/infographics/pollinator-garden-ig.png"
         alt="Pollinator Garden infographic"
         heading="🐝 Pollinator Garden"
         description="The best plants for attracting bees, butterflies, and hummingbirds — with bloom succession, native plant highlights, and design principles for a wildlife-friendly garden."
@@ -299,7 +299,7 @@ export default function Infographics() {
 
       {/* Section 20: Pizza Garden */}
       <InfographicSection
-        src="/infographics/Pizza_Garden_Guide_IG.png"
+        src="/infographics/pizza-garden-ig.png"
         alt="Pizza Garden infographic"
         heading="🍕 Pizza Garden"
         description="Everything you need to grow your own pizza toppings — tomatoes, peppers, basil, oregano, and more — with spacing, companion planting, and harvest timing."
@@ -310,7 +310,7 @@ export default function Infographics() {
 
       {/* Section 21: Salad Garden */}
       <InfographicSection
-        src="/infographics/Salad_Garden_Guide_IG.png"
+        src="/infographics/salad-garden-ig.png"
         alt="Salad Garden infographic"
         heading="🥗 Salad Garden"
         description="Fast-growing greens, succession planting schedules, and cut-and-come-again techniques for a continuous harvest of fresh salad ingredients."
@@ -321,7 +321,7 @@ export default function Infographics() {
 
       {/* Section 22: Salsa Garden */}
       <InfographicSection
-        src="/infographics/Salsa_Garden_Guide_IG.png"
+        src="/infographics/salsa-garden-ig.png"
         alt="Salsa Garden infographic"
         heading="🌶️ Salsa Garden"
         description="Tomatoes, peppers, onions, cilantro, and tomatillos — with zone-specific timing, companion planting, and harvest tips for a fresh salsa garden."
@@ -332,7 +332,7 @@ export default function Infographics() {
 
       {/* Section 23: Plants for Fragrance */}
       <InfographicSection
-        src="/infographics/Plants_for_Fragrance_Guide_IG.png"
+        src="/infographics/plants-for-fragrance-ig.png"
         alt="Plants for Fragrance infographic"
         heading="🌸 Plants for Fragrance"
         description="The most fragrant garden plants by season — shrubs, perennials, annuals, and vines with placement tips for maximizing scent near paths, windows, and seating areas."
@@ -343,7 +343,7 @@ export default function Infographics() {
 
       {/* Section 24: Porch Plants */}
       <InfographicSection
-        src="/infographics/Porch_Plants_Guide_IG.png"
+        src="/infographics/porch-plants-ig.png"
         alt="Porch Plants infographic"
         heading="🪴 Porch Plants"
         description="The best container plants for sunny and shady porches — with care requirements, seasonal swaps, and tips for overwintering tender favorites."
@@ -354,7 +354,7 @@ export default function Infographics() {
 
       {/* Section 25: Rain Barrel */}
       <InfographicSection
-        src="/infographics/Rain_Barrel_Guide_IG.png"
+        src="/infographics/rain-barrel-ig.png"
         alt="Rain Barrel Guide infographic"
         heading="🌧️ Rain Barrel Guide"
         description="How to set up a rain barrel system — collection math, installation steps, legal status by state, and tips for getting the most from your stored rainwater."
@@ -365,7 +365,7 @@ export default function Infographics() {
 
       {/* Section 26: Vegetable Spacing */}
       <InfographicSection
-        src="/infographics/Vegetable_Spacing_Quick_Reference_IG.png"
+        src="/infographics/vegetable-spacing-ig.png"
         alt="Vegetable Spacing Quick Reference infographic"
         heading="📐 Vegetable Spacing Quick Reference"
         description="Proper plant spacing prevents disease, reduces competition, and maximizes yield. In-ground spacing, square foot gardening density, seed depth, and days to harvest at a glance."
@@ -376,7 +376,7 @@ export default function Infographics() {
 
       {/* Section 27: Watering Frequency */}
       <InfographicSection
-        src="/infographics/Watering_Frequency_Guide_by_Plant_Category_IG.png"
+        src="/infographics/watering-frequency-ig.png"
         alt="Watering Frequency Guide by Plant Category infographic"
         heading="💧 Watering Frequency Guide by Plant Category"
         description="Overwatering is the #1 killer of container plants and new transplants. Use this guide to dial in the right frequency for every plant type in your garden."

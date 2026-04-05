@@ -90,38 +90,52 @@ export default function RootLayout({ children }) {
         <div className="min-h-screen bg-gradient-to-b from-garden-50 to-white dark:from-gray-900 dark:to-gray-900">
           <Nav />
           <main>{children}</main>
-          <footer className="mt-16 py-8 border-t border-gray-200 dark:border-gray-700 text-center text-sm text-gray-400 dark:text-gray-500">
-            <div className="max-w-3xl mx-auto px-4">
-              <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-3">
-                <Link href="/infographics" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🖼️ Infographics</Link>
-                <Link href="/podcasts"     className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🎙️ Podcasts</Link>
-                <Link href="/videos"       className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🎬 Videos</Link>
-                <Link href="/guides"       className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">📖 Plantopedia</Link>
-                <Link href="/wizard"       className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🌱 Garden Architect</Link>
+          <footer className="mt-16 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-500 dark:text-gray-400">
+            <div className="max-w-3xl mx-auto px-4 py-10">
+
+              {/* Two-column grid */}
+              <div className="grid sm:grid-cols-3 gap-8 mb-8">
+
+                {/* Brand column */}
+                <div className="sm:col-span-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xl">🌿</span>
+                    <span className="font-bold text-garden-700 dark:text-garden-400 tracking-wide">Planting Atlas</span>
+                  </div>
+                  <p className="text-xs leading-relaxed text-gray-500 dark:text-gray-400">
+                    Expert garden planning for every climate, skill level, and growing style. Free tools, in-depth guides, and personalized plant recommendations — no account required.
+                  </p>
+                </div>
+
+                {/* Guides & Tools */}
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-3">Guides &amp; Tools</p>
+                  <ul className="space-y-2">
+                    <li><Link href="/wizard"  className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🌱 Garden Architect</Link></li>
+                    <li><Link href="/guides"  className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">📖 Plantopedia</Link></li>
+                    <li><Link href="/infographics" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🖼️ Infographics</Link></li>
+                    <li><Link href="/videos"  className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🎬 Videos</Link></li>
+                    <li><Link href="/podcasts" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🎙️ Podcasts</Link></li>
+                  </ul>
+                </div>
+
+                {/* Info & Legal */}
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-3">Info &amp; Legal</p>
+                  <ul className="space-y-2">
+                    <li><Link href="/about"   className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">👤 About David Rodgers</Link></li>
+                    <li><Link href="/contact" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">✉️ Contact Us</Link></li>
+                    <li><Link href="/privacy" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🔒 Privacy Policy</Link></li>
+                  </ul>
+                </div>
+
               </div>
-              <p>
-                © {new Date().getFullYear()} Planting Atlas &nbsp;·&nbsp;
-                <Link
-                  href="/about"
-                  className="underline hover:text-garden-600 dark:hover:text-garden-400 transition-colors"
-                >
-                  About
-                </Link>
-                &nbsp;·&nbsp;
-                <Link
-                  href="/privacy"
-                  className="underline hover:text-garden-600 dark:hover:text-garden-400 transition-colors"
-                >
-                  Privacy Policy
-                </Link>
-                &nbsp;·&nbsp;
-                <Link
-                  href="/contact"
-                  className="underline hover:text-garden-600 dark:hover:text-garden-400 transition-colors"
-                >
-                  Contact Us
-                </Link>
-              </p>
+
+              {/* Bottom bar */}
+              <div className="pt-6 border-t border-gray-100 dark:border-gray-800 text-xs text-center text-gray-400 dark:text-gray-500">
+                © {new Date().getFullYear()} Planting Atlas — Plan it. Plant it. Grow it.
+              </div>
+
             </div>
           </footer>
         </div>
