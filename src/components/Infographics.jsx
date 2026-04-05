@@ -87,9 +87,6 @@ export default function Infographics() {
         💡 <strong>Tip:</strong> Use the USDA Plant Hardiness Zone Map at planthardiness.ars.usda.gov to look up your exact zip code.
       </div>
 
-      {/* Ad placeholder 1 */}
-      <div id="adsense-infographics-1" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
-
       {/* Section 3: Soil pH */}
       <InfographicSection
         src="/infographics/Soil-pH-Preference-by-Plant-Type.png"
@@ -158,9 +155,6 @@ export default function Infographics() {
         guideName="Moon Garden guide"
         onOpen={openLightbox}
       />
-
-      {/* Ad placeholder 3 */}
-      <div id="adsense-infographics-3" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
 
       {/* Section 9: Edible Flowers */}
       <InfographicSection
@@ -336,9 +330,6 @@ export default function Infographics() {
         onOpen={openLightbox}
       />
 
-      {/* Ad placeholder 7 */}
-      <div id="adsense-infographics-7" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
-
       {/* Section 23: Plants for Fragrance */}
       <InfographicSection
         src="/infographics/Plants_for_Fragrance_Guide_IG.png"
@@ -371,9 +362,6 @@ export default function Infographics() {
         guideName="Rain Barrel guide"
         onOpen={openLightbox}
       />
-
-      {/* Ad placeholder 8 */}
-      <div id="adsense-infographics-8" className="my-8 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-dashed border-gray-200 dark:border-gray-700" style={{ minHeight: '280px' }} />
 
       {/* Section 26: Vegetable Spacing */}
       <InfographicSection
