@@ -3,6 +3,7 @@ import { Raleway, Lato } from 'next/font/google'
 import Script from 'next/script'
 import Link from 'next/link'
 import Nav from '../components/Nav.jsx'
+import CookieBanner from '../components/CookieBanner.jsx'
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -143,6 +144,8 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
           crossOrigin="anonymous"
         />
+
+        <CookieBanner />
       </body>
     </html>
   )
