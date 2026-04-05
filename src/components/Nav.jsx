@@ -52,6 +52,7 @@ export default function Nav() {
     { href: '/infographics', label: '🗺️ Infographics' },
     { href: '/videos',       label: '🎬 Videos' },
     { href: '/podcasts',     label: '🎙️ Podcasts' },
+    { href: 'https://pixelsandchisels.etsy.com', label: '🖨️ Shop', external: true },
     { href: '/about',        label: '👤 About' },
     { href: '/contact',      label: '✉️ Contact' },
   ]
@@ -71,11 +72,17 @@ export default function Nav() {
 
         {/* Desktop nav — hidden on mobile */}
         <nav className="hidden md:flex items-center gap-1">
-          {navLinks.map(({ href, label }) => (
-            <Link key={href} href={href} className={navCls(href)}>
-              {label}
-            </Link>
-          ))}
+          {navLinks.map(({ href, label, external }) =>
+            external ? (
+              <a key={href} href={href} target="_blank" rel="noopener noreferrer" className={navCls(href)}>
+                {label}
+              </a>
+            ) : (
+              <Link key={href} href={href} className={navCls(href)}>
+                {label}
+              </Link>
+            )
+          )}
           <button
             onClick={toggleDark}
             className="ml-1 p-1.5 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
@@ -117,11 +124,17 @@ export default function Nav() {
       {/* Mobile dropdown menu */}
       {menuOpen && (
         <div className="md:hidden border-t border-gray-100 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-3 flex flex-col gap-1">
-          {navLinks.map(({ href, label }) => (
-            <Link key={href} href={href} className={mobileNavCls(href)}>
-              {label}
-            </Link>
-          ))}
+          {navLinks.map(({ href, label, external }) =>
+            external ? (
+              <a key={href} href={href} target="_blank" rel="noopener noreferrer" className={mobileNavCls(href)}>
+                {label}
+              </a>
+            ) : (
+              <Link key={href} href={href} className={mobileNavCls(href)}>
+                {label}
+              </Link>
+            )
+          )}
         </div>
       )}
     </header>
