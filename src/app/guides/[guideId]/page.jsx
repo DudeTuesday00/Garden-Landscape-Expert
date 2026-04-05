@@ -52,6 +52,16 @@ export default async function GuidePage({ params }) {
   const content = contentMap[guideId]
   const heroImage = heroImages[guideId]
 
+  const breadcrumbSchema = content ? {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home',        item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: 'Plantopedia', item: `${SITE_URL}/guides/` },
+      { '@type': 'ListItem', position: 3, name: content.hero.title, item: `${SITE_URL}/guides/${guideId}/` },
+    ],
+  } : null
+
   const articleSchema = content ? {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -79,6 +89,12 @@ export default async function GuidePage({ params }) {
 
   return (
     <>
+      {breadcrumbSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+      )}
       {articleSchema && (
         <script
           type="application/ld+json"

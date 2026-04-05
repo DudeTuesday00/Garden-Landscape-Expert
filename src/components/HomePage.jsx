@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import gardenArchitectImg from './wizard/Garden-Architect.png'
 import plantopediaImg from './guides/Plantopedia.png'
+import NewsletterSignup from './NewsletterSignup.jsx'
 
 export default function HomePage() {
   return (
@@ -136,6 +137,11 @@ export default function HomePage() {
               </Link>
             </p>
           </div>
+        </div>
+
+        {/* Newsletter signup */}
+        <div className="w-full">
+          <NewsletterSignup />
         </div>
 
       </div>

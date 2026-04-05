@@ -3,6 +3,9 @@ import Link from 'next/link'
 import { contentMap } from '../../data/guide-content/index.js'
 import { guideCategories } from '../../data/guides.js'
 import AuthorBox from './AuthorBox.jsx'
+import NewsletterSignup from '../NewsletterSignup.jsx'
+
+const SITE_URL = 'https://plantingatlas.com'
 
 function getRelatedGuides(guideId, count = 3) {
   const category = guideCategories.find((cat) =>
@@ -1036,7 +1039,7 @@ function Block({ block, theme }) {
 
 function Section({ section, theme }) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8 flex flex-col gap-4">
+    <div id={section.id} className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8 flex flex-col gap-4">
       <h2 className={`text-lg font-bold ${theme.sectionTitle} dark:text-gray-100 pb-2 border-b ${theme.sectionBorder} dark:border-gray-600`}>
         {section.title}
       </h2>
@@ -1096,6 +1099,59 @@ export default function GuideDetail({ guideId }) {
           <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{content.intro}</p>
         </div>
 
+        {/* Table of Contents — shown for guides with 4+ sections */}
+        {content.sections.length >= 4 && (
+          <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8">
+            <details open>
+              <summary className="flex items-center gap-2 cursor-pointer list-none select-none">
+                <span className="text-base font-bold text-garden-800 dark:text-garden-300">📋 In This Guide</span>
+                <span className="ml-auto text-gray-400 dark:text-gray-500 text-xs">▼</span>
+              </summary>
+              <ol className="mt-4 space-y-2">
+                {content.sections.map((s, i) => (
+                  <li key={s.id} className="flex items-baseline gap-2">
+                    <span className="text-xs font-bold text-gray-400 dark:text-gray-500 w-5 flex-shrink-0 text-right">{i + 1}.</span>
+                    <a
+                      href={`#${s.id}`}
+                      className="text-sm text-garden-700 dark:text-garden-400 hover:text-garden-900 dark:hover:text-garden-200 hover:underline transition-colors"
+                    >
+                      {s.title}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </details>
+          </div>
+        )}
+
+        {/* Share buttons */}
+        {(() => {
+          const url = `${SITE_URL}/guides/${guideId}/`
+          const title = content.hero.title
+          const heroImg = heroImages[guideId]
+          const pinterestUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}&description=${encodeURIComponent(title)}${heroImg ? `&media=${encodeURIComponent(SITE_URL + heroImg)}` : ''}`
+          const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title + ' — via @PlantingAtlas')}`
+          const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`
+          const btnCls = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border transition-colors hover:opacity-80'
+          return (
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wide">Share:</span>
+              <a href={pinterestUrl} target="_blank" rel="noopener noreferrer"
+                className={`${btnCls} bg-[#E60023] border-[#E60023] text-white`}>
+                📌 Pinterest
+              </a>
+              <a href={twitterUrl} target="_blank" rel="noopener noreferrer"
+                className={`${btnCls} bg-black border-black text-white dark:bg-gray-700 dark:border-gray-600`}>
+                𝕏 Twitter
+              </a>
+              <a href={facebookUrl} target="_blank" rel="noopener noreferrer"
+                className={`${btnCls} bg-[#1877F2] border-[#1877F2] text-white`}>
+                f Facebook
+              </a>
+            </div>
+          )
+        })()}
+
         {/* Sections — ad placeholders injected after the 2nd, 4th, and 6th sections */}
         {content.sections.map((section, i) => (
           <Fragment key={section.id}>
@@ -1110,6 +1166,9 @@ export default function GuideDetail({ guideId }) {
             )}
           </Fragment>
         ))}
+
+        {/* Newsletter signup */}
+        <NewsletterSignup />
 
         {/* Author box */}
         <AuthorBox />
