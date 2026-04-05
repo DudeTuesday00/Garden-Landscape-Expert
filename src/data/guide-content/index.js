@@ -57,6 +57,40 @@ import { rainGardenContent } from './rain-garden.js'
 import { mulchingGuideContent } from './mulching-guide.js'
 import { privacyScreeningContent } from './privacy-screening.js'
 import { medicinalHerbGardenContent } from './medicinal-herb-garden.js'
+import { fragrantGardenPathContent } from './fragrant-garden-path.js'
+import { aromatherapyGardenContent } from './aromatherapy-garden.js'
+import { lowMaintenanceLandscapeContent } from './low-maintenance-landscape.js'
+import { cottageLandscapeContent } from './cottage-landscape.js'
+import { foundationPlantingContent } from './foundation-planting.js'
+import { springStartupContent } from './spring-startup.js'
+import { summerMaintenanceContent } from './summer-maintenance.js'
+import { fallPlantingContent } from './fall-planting.js'
+import { postHarvestContent } from './post-harvest.js'
+import { yearRoundCalendarContent } from './year-round-calendar.js'
+import { overwinteringContent } from './overwintering.js'
+import { coldFramesContent } from './cold-frames.js'
+import { pestEliminatingPlantsContent } from './pest-eliminating-plants.js'
+import { organicPestControlContent } from './organic-pest-control.js'
+import { deerResistantContent } from './deer-resistant.js'
+import { slugControlContent } from './slug-control.js'
+import { petFriendlyPlantsContent } from './pet-friendly-plants.js'
+import { nativePlantsContent } from './native-plants.js'
+import { sensoryGardenContent } from './sensory-garden.js'
+import { waterFeaturePlantsContent } from './water-feature-plants.js'
+import { fireSafeLandscapingContent } from './fire-safe-landscaping.js'
+import { birdGardenContent } from './bird-garden.js'
+import { cuttingGardenContent } from './cutting-garden.js'
+import { balconyGardenContent } from './balcony-garden.js'
+import { windowBoxContent } from './window-box.js'
+import { hangingBasketsContent } from './hanging-baskets.js'
+import { containerVegetablesContent } from './container-vegetables.js'
+import { verticalGardeningContent } from './vertical-gardening.js'
+import { compostingBasicsContent } from './composting-basics.js'
+import { waterWiseGardeningContent } from './water-wise-gardening.js'
+import { companionPlantingContent } from './companion-planting.js'
+import { soilHealthContent } from './soil-health.js'
+import { noDigGardeningContent } from './no-dig-gardening.js'
+import { seedSavingContent } from './seed-saving.js'
 
 export const contentMap = {
   'shade-trees': shadeTreeContent,
@@ -112,4 +146,38 @@ export const contentMap = {
   'mulching-guide': mulchingGuideContent,
   'privacy-screening': privacyScreeningContent,
   'medicinal-herb-garden': medicinalHerbGardenContent,
+  'fragrant-garden-path': fragrantGardenPathContent,
+  'aromatherapy-garden': aromatherapyGardenContent,
+  'low-maintenance-landscape': lowMaintenanceLandscapeContent,
+  'cottage-landscape': cottageLandscapeContent,
+  'foundation-planting': foundationPlantingContent,
+  'spring-startup': springStartupContent,
+  'summer-maintenance': summerMaintenanceContent,
+  'fall-planting': fallPlantingContent,
+  'post-harvest': postHarvestContent,
+  'year-round-calendar': yearRoundCalendarContent,
+  'overwintering': overwinteringContent,
+  'cold-frames': coldFramesContent,
+  'pest-eliminating-plants': pestEliminatingPlantsContent,
+  'organic-pest-control': organicPestControlContent,
+  'deer-resistant': deerResistantContent,
+  'slug-control': slugControlContent,
+  'pet-friendly-plants': petFriendlyPlantsContent,
+  'native-plants': nativePlantsContent,
+  'sensory-garden': sensoryGardenContent,
+  'water-feature-plants': waterFeaturePlantsContent,
+  'fire-safe-landscaping': fireSafeLandscapingContent,
+  'bird-garden': birdGardenContent,
+  'cutting-garden': cuttingGardenContent,
+  'balcony-garden': balconyGardenContent,
+  'window-box': windowBoxContent,
+  'hanging-baskets': hangingBasketsContent,
+  'container-vegetables': containerVegetablesContent,
+  'vertical-gardening': verticalGardeningContent,
+  'composting-basics': compostingBasicsContent,
+  'water-wise-gardening': waterWiseGardeningContent,
+  'companion-planting': companionPlantingContent,
+  'soil-health': soilHealthContent,
+  'no-dig-gardening': noDigGardeningContent,
+  'seed-saving': seedSavingContent,
 }
