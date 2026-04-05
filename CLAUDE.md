@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 49 guides are fully built and live; the remainder show "Coming Soon" badges. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories (~75 guides total). 53 guides are fully built and live; the remainder are hidden by default behind a per-category toggle button (amber pill) and revealed on demand. Live guides are clickable and route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. Online ordering is a placeholder (coming soon); the "Add to Cart" button links visitors to the Contact page for custom orders.
 
@@ -104,6 +104,7 @@ Garden-Landscape-Expert/
     │   │   └── page.jsx             # /podcasts/ — Gardening Podcasts page (metadata export)
     │   ├── privacy/
     │   │   └── page.jsx             # /privacy/ — Privacy Policy (metadata export)
+    │   ├── not-found.jsx            # Custom 404 page — gardening-themed, three nav buttons, renders as 404.html on Cloudflare Pages
     │   ├── sitemap.js               # Auto-generates sitemap.xml at build time from guides.js data
     │   └── robots.js                # Auto-generates robots.txt at build time
     ├── components/
@@ -124,7 +125,9 @@ Garden-Landscape-Expert/
     │   │   └── Results.jsx            # Plant recommendation cards
     │   ├── guides/
     │   │   ├── Plantopedia.png        # Hero image used on both HomePage card and GuidesHome landing
-    │   │   ├── GuidesHome.jsx         # Plantopedia landing — card grid + Coming Soon badges; live guides Link to /guides/[id]
+    │   │   ├── GuidesHome.jsx         # Server component — Plantopedia landing; delegates category rendering to CategorySection
+    │   │   ├── CategorySection.jsx    # 'use client' — per-category card grid; coming-soon cards hidden by default, toggled via amber pill button
+    │   │   ├── AuthorBox.jsx          # Author attribution block rendered at bottom of every guide
     │   │   └── GuideDetail.jsx        # Server component — renders guide content from contentMap; Link back to /guides
     │   └── shop/
     │       ├── ShopHome.jsx           # Server component — shop page wrapper (header + trust badges)
@@ -328,8 +331,9 @@ Each question in `questions.js` has:
 
 ### Planting Guides Section (scaffold) ✅
 
-- `src/data/guides.js` — 10 categories, ~75 guides (34 live, remainder `comingSoon: true`)
-- `src/components/guides/GuidesHome.jsx` — guide cards with "Coming Soon" badges; live guides are clickable and route to full guide detail view
+- `src/data/guides.js` — 10 categories, ~75 guides (53 live, remainder `comingSoon: true`)
+- `src/components/guides/GuidesHome.jsx` — server component; live guides always shown; coming-soon cards hidden by default behind per-category toggle (see `CategorySection.jsx`)
+- `src/components/guides/CategorySection.jsx` — `'use client'` island; handles show/hide toggle for coming-soon guides within each category
 - `src/app/page.jsx` — home page server component rendering `HomePage.jsx`
 - `src/components/wizard/Wizard.jsx` — brand strip removed (now in Nav)
 
@@ -765,7 +769,7 @@ The site was fully migrated from a Vite SPA to **Next.js 15 App Router** with st
 
 **Client vs server components:**
 - Server (default): `HomePage`, `GuidesHome`, `GuideDetail`, `ShopHome`, `ProductDetail`, `PrivacyPolicy`, all page files
-- Client (`'use client'`): `Nav`, `Wizard` (and its sub-components), `ContactUs`, `ShopGrid`, `ImageGallery`, `Infographics`
+- Client (`'use client'`): `Nav`, `Wizard` (and its sub-components), `ContactUs`, `ShopGrid`, `ImageGallery`, `Infographics`, `CategorySection`, `CookieBanner`
 
 **Build output:** `next build` generates `out/` — a fully static directory deployable to Cloudflare Pages with zero server required.
 
@@ -1466,6 +1470,36 @@ Original video and podcast content is externally hosted (no large media files in
 - To add a new episode: add a new card in the "Planting Atlas Original" section in `Podcasts.jsx` with the RSS.com player iframe from the episode's share/embed settings
 
 **Media hosting policy:** Do not commit audio or video files to the repo. YouTube handles video delivery; RSS.com handles podcast delivery. Only embed code (iframes) belongs in the components.
+
+---
+
+### Tier 1 Site Improvements ✅
+
+Four improvements applied across the site for better UX, AdSense compliance, and accuracy:
+
+**1. Stat Line Fix**
+- `src/components/HomePage.jsx` — updated stat strip from "35 live guides" → "53 live guides"
+
+**2. Branded 404 Page**
+- `src/app/not-found.jsx` — server component; no `'use client'`, no metadata export
+- Gardening-themed copy: "Looks like this seed didn't sprout."
+- Three nav buttons: Go Home (garden-600), Browse Guides (earth-500), Garden Architect (outline)
+- Next.js `not-found.jsx` convention automatically generates `404.html` in the static export, served by Cloudflare Pages for all unmatched URLs
+
+**3. Cookie Consent Banner**
+- `src/components/CookieBanner.jsx` — `'use client'`; `useState(null)` pattern for SSR-safe localStorage read (prevents hydration mismatch)
+- `useEffect` on mount reads `localStorage.getItem('pa-cookie-consent')`; returns `null` until hydrated
+- Guard: `if (consented !== false) return null` — banner is invisible to returning visitors with no re-render flash
+- "OK, Got It" button writes `'true'` to `pa-cookie-consent` key and sets state to dismiss
+- Fixed bottom bar with Privacy Policy link; full dark mode support
+- Wired into `src/app/layout.jsx` (imported and rendered before `</body>`)
+
+**4. Collapsible Coming-Soon Cards (Plantopedia)**
+- `src/components/guides/CategorySection.jsx` — new `'use client'` island; replaces the old server-only `CategorySection` function in `GuidesHome.jsx`
+- Splits guides into `liveGuides` and `comingSoonGuides`; live guides always visible, coming-soon cards hidden by default
+- Amber pill toggle button: `Show N in development →` / `Hide in-development guides ↑`; only renders when a category has coming-soon guides
+- `src/components/guides/GuidesHome.jsx` — now a clean server component; old `GuideCard` and `CategorySection` functions removed; imports `CategorySection` from the new file
+- `GuideCard` function lives inside `CategorySection.jsx` since it only renders there
 
 ---
 
