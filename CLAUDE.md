@@ -104,6 +104,10 @@ Garden-Landscape-Expert/
     │   │   └── page.jsx             # /podcasts/ — Gardening Podcasts page (metadata export)
     │   ├── privacy/
     │   │   └── page.jsx             # /privacy/ — Privacy Policy (metadata export)
+    │   ├── affiliate-disclosure/
+    │   │   └── page.jsx             # /affiliate-disclosure/ — Affiliate Disclosure (metadata export)
+    │   ├── advertising-disclosure/
+    │   │   └── page.jsx             # /advertising-disclosure/ — Advertising Disclosure (metadata export)
     │   ├── not-found.jsx            # Custom 404 page — gardening-themed, three nav buttons, renders as 404.html on Cloudflare Pages
     │   ├── sitemap.js               # Auto-generates sitemap.xml at build time from guides.js data
     │   └── robots.js                # Auto-generates robots.txt at build time
@@ -114,7 +118,9 @@ Garden-Landscape-Expert/
     │   ├── Infographics.jsx         # Garden infographics — visual quick-reference cards (28 live, all kebab-case filenames)
     │   ├── Videos.jsx               # Curated gardening YouTube channels by topic + original videos (stacked cards, newest first)
     │   ├── Podcasts.jsx             # Curated gardening podcasts list + original Planting Atlas episodes
-    │   ├── PrivacyPolicy.jsx        # Static privacy policy page
+    │   ├── PrivacyPolicy.jsx        # Static privacy policy page (no tracking IDs in headings)
+    │   ├── AffiliateDisclosure.jsx  # Affiliate Disclosure page — finsanctuary.com style, garden-adapted
+    │   ├── AdvertisingDisclosure.jsx # Advertising Disclosure page — finsanctuary.com style, garden-adapted
     │   ├── wizard/
     │   │   ├── Garden-Architect.png   # Hero image used on HomePage card (Garden Architect)
     │   │   ├── garden-architect-2.png # Hero image used on WelcomeScreen landing
@@ -430,6 +436,8 @@ Thirty-six full guides integrated into the app:
 | Videos | `/videos/` | `Gardening Videos — Best YouTube Channels & Tutorial Guides \| Planting Atlas` |
 | Podcasts | `/podcasts/` | `Gardening Podcasts — Best Shows for Every Gardener \| Planting Atlas` |
 | Privacy | `/privacy/` | `Privacy Policy \| Planting Atlas` |
+| Affiliate Disclosure | `/affiliate-disclosure/` | `Affiliate Disclosure \| Planting Atlas` |
+| Advertising Disclosure | `/advertising-disclosure/` | `Advertising Disclosure \| Planting Atlas` |
 
 **Per-page metadata pattern:**
 ```jsx
@@ -1628,13 +1636,43 @@ Five style and credibility improvements:
 - Replaced single-row footer with `grid sm:grid-cols-3` layout:
   - **Left (sm:col-span-1):** Brand logo (🌿 Planting Atlas) + 1-sentence site description
   - **Middle:** "Guides & Tools" — Garden Architect, Plantopedia, Infographics, Videos, Podcasts
-  - **Right:** "Info & Legal" — About David Rodgers, Contact Us, Privacy Policy
+  - **Right:** "Info & Legal" — About David Rodgers, Contact Us, Privacy Policy, Affiliate Disclosure, Advertising Disclosure
   - Bottom bar: © year + tagline
 
 **5. Infographic Filenames Standardized to Kebab-Case** (`public/infographics/`)
 - All 28 infographic files renamed from PascalCase/underscore (`Annual_Flowers_Best_Picks_Guide_IG.png`) to lowercase kebab-case (`annual-flowers-ig.png`)
 - All 3 standalone reference images renamed (e.g., `USDA-Hardiness-Zones-Frost-Date-Reference.png` → `usda-hardiness-zones-frost-date-reference.png`)
 - All `src` paths in `src/components/Infographics.jsx` updated to match via batch `sed -i` replacement
+
+---
+
+### Etsy Shop Link ✅
+
+- `src/components/Nav.jsx` — `🖨️ Shop` link restored to `navLinks` with `external: true`, pointing to `https://pixelsandchisels.etsy.com`
+- External links render as `<a target="_blank" rel="noopener noreferrer">` in both desktop and mobile menus
+- When own product pages are ready, change `href` to `/shop` and remove `external: true`
+
+---
+
+### Disclosure Pages & Privacy Policy Cleanup ✅
+
+**Privacy Policy** (`src/components/PrivacyPolicy.jsx`)
+- Specific tracking IDs removed from section headings — now reads "Google Tag Manager", "Google Analytics 4", "Google AdSense" (no ID numbers shown publicly)
+
+**Affiliate Disclosure** (`src/components/AffiliateDisclosure.jsx` + `src/app/affiliate-disclosure/page.jsx`)
+- New page at `/affiliate-disclosure/` — minimal, direct style modeled on finsanctuary.com
+- Four sections: Affiliate Relationships (Amazon Associates), Editorial Priority, Where Links Appear, No Guarantee or Endorsement Promise
+- Garden-specific language throughout (climate zone, soil type, garden size)
+
+**Advertising Disclosure** (`src/components/AdvertisingDisclosure.jsx` + `src/app/advertising-disclosure/page.jsx`)
+- New page at `/advertising-disclosure/` — same style as Affiliate Disclosure
+- Four sections: Advertising May Appear, Ads Are Not Endorsements, Editorial Separation, Advertising Providers (Google Ad Settings link)
+
+**Footer** (`src/app/layout.jsx`)
+- "Info & Legal" column now includes Affiliate Disclosure and Advertising Disclosure links
+
+**Sitemap** (`src/app/sitemap.js`)
+- Both new pages added at priority 0.3, `changeFrequency: 'yearly'`
 
 ---
 

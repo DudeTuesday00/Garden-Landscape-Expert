@@ -126,6 +126,8 @@ export default function RootLayout({ children }) {
                     <li><Link href="/about"   className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">👤 About David Rodgers</Link></li>
                     <li><Link href="/contact" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">✉️ Contact Us</Link></li>
                     <li><Link href="/privacy" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🔒 Privacy Policy</Link></li>
+                    <li><Link href="/affiliate-disclosure" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🔗 Affiliate Disclosure</Link></li>
+                    <li><Link href="/advertising-disclosure" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">📢 Advertising Disclosure</Link></li>
                   </ul>
                 </div>
 
