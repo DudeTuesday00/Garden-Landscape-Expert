@@ -1366,10 +1366,10 @@ Public media directories:
 `src/components/Nav.jsx` updated — links added across multiple phases. Current final state:
 
 ```
-🌱 Garden Architect | 📖 Plantopedia | 🗺️ Infographics | 🎬 Videos | 🎙️ Podcasts | ✉️ Contact
+🌱 Garden Architect | 📖 Plantopedia | 🗺️ Infographics | 🎬 Videos | 🎙️ Podcasts | 🖨️ Shop | 👤 About | ✉️ Contact
 ```
 
-(Shop link removed until real products are available — pages remain in codebase at `/shop/`.)
+The `navLinks` array supports an `external: true` flag — external links render as `<a target="_blank" rel="noopener noreferrer">` instead of Next.js `<Link>`. The Shop link (`https://pixelsandchisels.etsy.com`) uses this flag and opens in a new tab.
 
 Desktop links use `navCls()` active-state logic (`bg-garden-600 text-white` when active).
 
