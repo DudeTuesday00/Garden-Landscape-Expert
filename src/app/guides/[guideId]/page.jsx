@@ -11,14 +11,20 @@ export function generateStaticParams() {
     .map((g) => ({ guideId: g.id }))
 }
 
+function truncateDescription(text) {
+  if (text.length <= 160) return text
+  const cut = text.slice(0, 157)
+  const lastSpace = cut.lastIndexOf(' ')
+  return (lastSpace > 100 ? cut.slice(0, lastSpace) : cut) + '...'
+}
+
 // Per-guide <head> metadata (title, description, OG, canonical)
 export async function generateMetadata({ params }) {
   const { guideId } = await params
   const content = contentMap[guideId]
   if (!content) return { title: 'Guide Not Found' }
 
-  const description =
-    content.intro.length > 160 ? content.intro.slice(0, 157) + '...' : content.intro
+  const description = truncateDescription(content.intro)
   const heroImage = heroImages[guideId]
 
   return {
@@ -43,5 +49,43 @@ export async function generateMetadata({ params }) {
 
 export default async function GuidePage({ params }) {
   const { guideId } = await params
-  return <GuideDetail guideId={guideId} />
+  const content = contentMap[guideId]
+  const heroImage = heroImages[guideId]
+
+  const articleSchema = content ? {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: content.hero.title,
+    description: truncateDescription(content.intro),
+    author: {
+      '@type': 'Person',
+      name: 'David Rodgers',
+      url: `${SITE_URL}/about/`,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Planting Atlas',
+      url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/favicon.png`,
+      },
+    },
+    datePublished: '2026-03-01',
+    dateModified: '2026-04-05',
+    url: `${SITE_URL}/guides/${guideId}/`,
+    ...(heroImage && { image: `${SITE_URL}${heroImage}` }),
+  } : null
+
+  return (
+    <>
+      {articleSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+      )}
+      <GuideDetail guideId={guideId} />
+    </>
+  )
 }
