@@ -7,11 +7,17 @@ import Link from 'next/link'
 export default function Nav() {
   const pathname = usePathname()
   const [dark, setDark] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   // Sync dark state with what the inline script already applied to <html>
   useEffect(() => {
     setDark(document.documentElement.classList.contains('dark'))
   }, [])
+
+  // Close menu on route change
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [pathname])
 
   function toggleDark() {
     const next = !dark
@@ -32,6 +38,24 @@ export default function Nav() {
     }`
   }
 
+  function mobileNavCls(href) {
+    return `block w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
+      isActive(href)
+        ? 'bg-garden-600 text-white'
+        : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'
+    }`
+  }
+
+  const navLinks = [
+    { href: '/wizard',       label: '🌱 Garden Architect' },
+    { href: '/guides',       label: '📖 Plantopedia' },
+    { href: '/infographics', label: '🗺️ Infographics' },
+    { href: '/videos',       label: '🎬 Videos' },
+    { href: '/podcasts',     label: '🎙️ Podcasts' },
+    { href: '/about',        label: '👤 About' },
+    { href: '/contact',      label: '✉️ Contact' },
+  ]
+
   return (
     <header className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-700 shadow-sm sticky top-0 z-10">
       <div className="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between">
@@ -45,30 +69,13 @@ export default function Nav() {
           <span className="font-bold text-sm tracking-wide uppercase sm:hidden">PA</span>
         </Link>
 
-        {/* Nav tabs + dark toggle */}
-        <nav className="flex items-center gap-1">
-          <Link href="/wizard" className={navCls('/wizard')}>
-            🌱 Garden Architect
-          </Link>
-          <Link href="/guides" className={navCls('/guides')}>
-            📖 Plantopedia
-          </Link>
-          <Link href="/infographics" className={navCls('/infographics')}>
-            🗺️ Infographics
-          </Link>
-          <Link href="/videos" className={navCls('/videos')}>
-            🎬 Videos
-          </Link>
-          <Link href="/podcasts" className={navCls('/podcasts')}>
-            🎙️ Podcasts
-          </Link>
-          <Link href="/about" className={navCls('/about')}>
-            👤 About
-          </Link>
-          <Link href="/contact" className={navCls('/contact')}>
-            ✉️ Contact
-          </Link>
-
+        {/* Desktop nav — hidden on mobile */}
+        <nav className="hidden md:flex items-center gap-1">
+          {navLinks.map(({ href, label }) => (
+            <Link key={href} href={href} className={navCls(href)}>
+              {label}
+            </Link>
+          ))}
           <button
             onClick={toggleDark}
             className="ml-1 p-1.5 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
@@ -78,7 +85,45 @@ export default function Nav() {
             {dark ? '☀️' : '🌙'}
           </button>
         </nav>
+
+        {/* Mobile controls — dark toggle + hamburger */}
+        <div className="flex items-center gap-1 md:hidden">
+          <button
+            onClick={toggleDark}
+            className="p-1.5 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
+          >
+            {dark ? '☀️' : '🌙'}
+          </button>
+          <button
+            onClick={() => setMenuOpen((o) => !o)}
+            className="p-1.5 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={menuOpen}
+          >
+            {menuOpen ? (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            )}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile dropdown menu */}
+      {menuOpen && (
+        <div className="md:hidden border-t border-gray-100 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-3 flex flex-col gap-1">
+          {navLinks.map(({ href, label }) => (
+            <Link key={href} href={href} className={mobileNavCls(href)}>
+              {label}
+            </Link>
+          ))}
+        </div>
+      )}
     </header>
   )
 }

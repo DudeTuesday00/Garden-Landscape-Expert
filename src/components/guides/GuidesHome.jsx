@@ -1,6 +1,6 @@
 import { guideCategories } from '../../data/guides.js'
 import plantopediaImg from './Plantopedia.png'
-import CategorySection from './CategorySection.jsx'
+import GuidesSearch from './GuidesSearch.jsx'
 
 export default function GuidesHome() {
   const totalGuides = guideCategories.reduce((sum, cat) => sum + cat.guides.length, 0)
@@ -43,12 +43,8 @@ export default function GuidesHome() {
           </div>
         </div>
 
-        {/* Guide Categories — only show if ≥2 live guides */}
-        {visibleCategories.map((category) => (
-          <div key={category.id} className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8">
-            <CategorySection category={category} />
-          </div>
-        ))}
+        {/* Search + category list (client island) */}
+        <GuidesSearch visibleCategories={visibleCategories} />
 
         <p className="text-center text-xs text-gray-400 dark:text-gray-500 pb-4">
           Planting Atlas · Plantopedia — more guides added regularly

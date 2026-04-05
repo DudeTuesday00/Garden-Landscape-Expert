@@ -1243,7 +1243,7 @@ Theme: slate/green gradient in `GuideDetail.jsx`; hero image: `public/guides/pri
 | Section 8: The Year-Round Herbal Calendar | 12-month calendar across 4 seasons (Zones 5–7 baseline); garden tasks, harvest windows, medicine-making priorities |
 | Section 9: Building Your Home Apothecary | 3-tier stocking table, organization principles, 10-item first aid kit, children's herbalism safety table, 30-herb quick reference, long-term practice guidance |
 
-Theme: green/emerald gradient in `GuideDetail.jsx`; hero image: `public/guides/medical-herb-garden.png`; `comingSoon: false` under Specialty Gardens in `guides.js`; wired in `src/data/guide-content/index.js`
+Theme: green/emerald gradient in `GuideDetail.jsx`; hero image: `public/guides/medicinal-herb-garden.png`; `comingSoon: false` under Specialty Gardens in `guides.js`; wired in `src/data/guide-content/index.js`
 
 ---
 
