@@ -21,7 +21,7 @@ export default function CookieBanner() {
       <div className="max-w-3xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
         <p className="text-sm text-gray-600 dark:text-gray-300 flex-1 min-w-0">
           We use cookies for analytics and personalized ads.{' '}
-          <Link href="/privacy" className="underline text-garden-600 dark:text-garden-400 hover:text-garden-800 dark:hover:text-garden-300">
+          <Link href="/privacy/" className="underline text-garden-600 dark:text-garden-400 hover:text-garden-800 dark:hover:text-garden-300">
             Privacy Policy
           </Link>
         </p>

@@ -23,7 +23,7 @@ export default function HomePage() {
 
           {/* Garden Architect */}
           <Link
-            href="/wizard"
+            href="/wizard/"
             className="group bg-white dark:bg-gray-800 border-2 border-garden-200 dark:border-garden-700 hover:border-garden-500 dark:hover:border-garden-400 rounded-3xl shadow-md hover:shadow-xl transition-all duration-200 overflow-hidden flex flex-col"
           >
             <img
@@ -48,7 +48,7 @@ export default function HomePage() {
 
           {/* Plantopedia */}
           <Link
-            href="/guides"
+            href="/guides/"
             className="group bg-white dark:bg-gray-800 border-2 border-earth-400 dark:border-earth-600 hover:border-earth-500 dark:hover:border-earth-400 rounded-3xl shadow-md hover:shadow-xl transition-all duration-200 overflow-hidden flex flex-col"
           >
             <img
@@ -95,7 +95,7 @@ export default function HomePage() {
           </p>
           <div className="grid grid-cols-3 gap-3">
             <Link
-              href="/infographics"
+              href="/infographics/"
               className="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-garden-400 dark:hover:border-garden-500 rounded-2xl p-4 text-center shadow-sm hover:shadow-md transition-all duration-200 flex flex-col items-center gap-2"
             >
               <span className="text-3xl group-hover:scale-110 transition-transform duration-200">🖼️</span>
@@ -103,7 +103,7 @@ export default function HomePage() {
               <span className="text-xs text-gray-400 dark:text-gray-500 hidden sm:block leading-tight">Visual quick-reference charts</span>
             </Link>
             <Link
-              href="/podcasts"
+              href="/podcasts/"
               className="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-garden-400 dark:hover:border-garden-500 rounded-2xl p-4 text-center shadow-sm hover:shadow-md transition-all duration-200 flex flex-col items-center gap-2"
             >
               <span className="text-3xl group-hover:scale-110 transition-transform duration-200">🎙️</span>
@@ -111,7 +111,7 @@ export default function HomePage() {
               <span className="text-xs text-gray-400 dark:text-gray-500 hidden sm:block leading-tight">Best gardening shows</span>
             </Link>
             <Link
-              href="/videos"
+              href="/videos/"
               className="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-garden-400 dark:hover:border-garden-500 rounded-2xl p-4 text-center shadow-sm hover:shadow-md transition-all duration-200 flex flex-col items-center gap-2"
             >
               <span className="text-3xl group-hover:scale-110 transition-transform duration-200">🎬</span>
@@ -132,7 +132,7 @@ export default function HomePage() {
             <p className="text-sm font-semibold text-garden-800 dark:text-garden-300">Written &amp; curated by David Rodgers</p>
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 leading-relaxed">
               40+ years of hands-on gardening across USDA Zones 3–11. All content is cross-checked against USDA data and university extension publications.{' '}
-              <Link href="/about" className="text-garden-600 dark:text-garden-400 underline underline-offset-2 hover:text-garden-800 dark:hover:text-garden-200 transition-colors">
+              <Link href="/about/" className="text-garden-600 dark:text-garden-400 underline underline-offset-2 hover:text-garden-800 dark:hover:text-garden-200 transition-colors">
                 Learn more →
               </Link>
             </p>

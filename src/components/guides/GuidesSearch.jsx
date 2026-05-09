@@ -59,7 +59,7 @@ export default function GuidesSearch({ visibleCategories }) {
                 {searchResults.map((guide) => (
                   <Link
                     key={guide.id}
-                    href={`/guides/${guide.id}`}
+                    href={`/guides/${guide.id}/`}
                     className="bg-white dark:bg-gray-800 rounded-2xl border border-garden-200 dark:border-garden-700 shadow-sm p-4 flex gap-3 items-start hover:shadow-md hover:border-garden-400 dark:hover:border-garden-500 transition-shadow"
                   >
                     <span className="text-2xl flex-shrink-0">{guide.emoji}</span>

@@ -102,7 +102,7 @@ export default function AboutUs() {
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
             If you have questions, feedback, or want to share your own garden story, I&apos;d love to
             hear from you on the{' '}
-            <Link href="/contact" className="text-garden-700 dark:text-garden-400 underline hover:text-garden-800">
+            <Link href="/contact/" className="text-garden-700 dark:text-garden-400 underline hover:text-garden-800">
               Contact page
             </Link>.
           </p>

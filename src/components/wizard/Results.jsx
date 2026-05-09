@@ -142,7 +142,7 @@ function PlantCard({ plant, isHydro }) {
             {typeGuides[plant.type].map((g) => (
               <Link
                 key={g.id}
-                href={`/guides/${g.id}`}
+                href={`/guides/${g.id}/`}
                 className="inline-flex items-center gap-1 text-xs font-medium text-garden-700 dark:text-garden-400 hover:text-garden-900 dark:hover:text-garden-200 underline underline-offset-2 transition-colors"
               >
                 📖 {g.title}

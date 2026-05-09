@@ -25,7 +25,7 @@ export default function AuthorBox() {
               that actually works.
             </p>
             <Link
-              href="/about"
+              href="/about/"
               className="text-sm font-semibold text-garden-700 dark:text-garden-400 hover:text-garden-900 dark:hover:text-garden-300 transition-colors"
             >
               Read more about David and Planting Atlas →

@@ -18,7 +18,7 @@ export default function ProductDetail({ productId }) {
           <p className="text-5xl mb-4">🪴</p>
           <h1 className="text-2xl font-bold text-garden-800 dark:text-garden-300 mb-2">Product not found</h1>
           <p className="text-gray-500 dark:text-gray-400 mb-6">This product may have been removed or renamed.</p>
-          <Link href="/shop" className="px-5 py-2.5 bg-garden-600 hover:bg-garden-700 text-white rounded-xl text-sm font-medium transition-colors">
+          <Link href="/shop/" className="px-5 py-2.5 bg-garden-600 hover:bg-garden-700 text-white rounded-xl text-sm font-medium transition-colors">
             ← Back to Shop
           </Link>
         </div>
@@ -34,7 +34,7 @@ export default function ProductDetail({ productId }) {
         <nav className="text-xs text-gray-500 dark:text-gray-400 mb-6 flex items-center gap-1.5 flex-wrap">
           <Link href="/" className="hover:text-garden-600 dark:hover:text-garden-400">Home</Link>
           <span>/</span>
-          <Link href="/shop" className="hover:text-garden-600 dark:hover:text-garden-400">Shop</Link>
+          <Link href="/shop/" className="hover:text-garden-600 dark:hover:text-garden-400">Shop</Link>
           <span>/</span>
           <span className="text-gray-700 dark:text-gray-300">{product.name}</span>
         </nav>
@@ -98,7 +98,7 @@ export default function ProductDetail({ productId }) {
                   </button>
                   <p className="text-center text-xs text-gray-400 dark:text-gray-500">
                     Online ordering is coming soon.{' '}
-                    <Link href="/contact" className="underline hover:text-garden-600">
+                    <Link href="/contact/" className="underline hover:text-garden-600">
                       Contact us
                     </Link>{' '}
                     to place a custom order today.
@@ -113,7 +113,7 @@ export default function ProductDetail({ productId }) {
                     Out of Stock
                   </button>
                   <p className="text-center text-xs text-gray-400 dark:text-gray-500">
-                    <Link href="/contact" className="underline hover:text-garden-600">
+                    <Link href="/contact/" className="underline hover:text-garden-600">
                       Contact us
                     </Link>{' '}
                     to be notified when this item is back.
@@ -188,7 +188,7 @@ export default function ProductDetail({ productId }) {
             <p className="text-sm text-gray-600 dark:text-gray-400">
               Need a specific color, a larger batch, or a custom size? We print to order and are happy
               to accommodate custom requests.{' '}
-              <Link href="/contact" className="text-garden-700 dark:text-garden-400 underline hover:text-garden-600">
+              <Link href="/contact/" className="text-garden-700 dark:text-garden-400 underline hover:text-garden-600">
                 Send us a message
               </Link>{' '}
               and we'll get back to you within 24 hours.
@@ -199,7 +199,7 @@ export default function ProductDetail({ productId }) {
         {/* Back link */}
         <div className="mt-8 text-center">
           <Link
-            href="/shop"
+            href="/shop/"
             className="inline-flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-xl text-sm font-medium hover:border-garden-400 dark:hover:border-garden-500 transition-colors shadow-sm"
           >
             ← Back to Shop

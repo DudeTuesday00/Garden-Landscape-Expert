@@ -1014,7 +1014,7 @@ export default function GuideDetail({ guideId }) {
 
         {/* Back button */}
         <Link
-          href="/guides"
+          href="/guides/"
           className={`flex items-center gap-1.5 text-sm ${theme.backBtn} dark:text-gray-300 dark:hover:text-white font-medium transition-colors self-start`}
         >
           <span>←</span>
@@ -1132,7 +1132,7 @@ export default function GuideDetail({ guideId }) {
                 {related.map((g) => (
                   <Link
                     key={g.id}
-                    href={`/guides/${g.id}`}
+                    href={`/guides/${g.id}/`}
                     className="bg-white dark:bg-gray-800 rounded-2xl border border-garden-200 dark:border-garden-700 shadow-sm p-4 flex gap-3 items-start hover:shadow-md hover:border-garden-400 dark:hover:border-garden-500 transition-shadow"
                   >
                     <span className="text-2xl flex-shrink-0">{g.emoji}</span>
@@ -1150,7 +1150,7 @@ export default function GuideDetail({ guideId }) {
         {/* Footer nav */}
         <div className="text-center pb-4">
           <Link
-            href="/guides"
+            href="/guides/"
             className={`text-sm ${theme.backBtn} dark:text-gray-300 dark:hover:text-white font-medium transition-colors`}
           >
             ← Back to All Planting Guides

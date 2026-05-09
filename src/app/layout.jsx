@@ -111,11 +111,11 @@ export default function RootLayout({ children }) {
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-3">Guides &amp; Tools</p>
                   <ul className="space-y-2">
-                    <li><Link href="/wizard"  className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🌱 Garden Architect</Link></li>
-                    <li><Link href="/guides"  className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">📖 Plantopedia</Link></li>
-                    <li><Link href="/infographics" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🖼️ Infographics</Link></li>
-                    <li><Link href="/videos"  className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🎬 Videos</Link></li>
-                    <li><Link href="/podcasts" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🎙️ Podcasts</Link></li>
+                    <li><Link href="/wizard/"  className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🌱 Garden Architect</Link></li>
+                    <li><Link href="/guides/"  className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">📖 Plantopedia</Link></li>
+                    <li><Link href="/infographics/" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🖼️ Infographics</Link></li>
+                    <li><Link href="/videos/"  className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🎬 Videos</Link></li>
+                    <li><Link href="/podcasts/" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🎙️ Podcasts</Link></li>
                   </ul>
                 </div>
 
@@ -123,11 +123,11 @@ export default function RootLayout({ children }) {
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-3">Info &amp; Legal</p>
                   <ul className="space-y-2">
-                    <li><Link href="/about"   className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">👤 About David Rodgers</Link></li>
-                    <li><Link href="/contact" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">✉️ Contact Us</Link></li>
-                    <li><Link href="/privacy" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🔒 Privacy Policy</Link></li>
-                    <li><Link href="/affiliate-disclosure" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🔗 Affiliate Disclosure</Link></li>
-                    <li><Link href="/advertising-disclosure" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">📢 Advertising Disclosure</Link></li>
+                    <li><Link href="/about/"   className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">👤 About David Rodgers</Link></li>
+                    <li><Link href="/contact/" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">✉️ Contact Us</Link></li>
+                    <li><Link href="/privacy/" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🔒 Privacy Policy</Link></li>
+                    <li><Link href="/affiliate-disclosure/" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🔗 Affiliate Disclosure</Link></li>
+                    <li><Link href="/advertising-disclosure/" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">📢 Advertising Disclosure</Link></li>
                   </ul>
                 </div>
 
