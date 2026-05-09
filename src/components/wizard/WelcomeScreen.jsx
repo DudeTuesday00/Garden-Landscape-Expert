@@ -1,4 +1,5 @@
 import gardenArchitectImg from './garden-architect-2.png'
+import TrustBadges from '../TrustBadges.jsx'
 
 export default function WelcomeScreen({ onStart }) {
   return (
@@ -21,9 +22,11 @@ export default function WelcomeScreen({ onStart }) {
         we'll recommend the perfect plants for you to grow and thrive.
       </p>
 
+      <TrustBadges />
+
       <button
         onClick={onStart}
-        className="mt-2 bg-garden-600 hover:bg-garden-700 active:bg-garden-800 text-white font-semibold text-lg px-10 py-3 rounded-2xl shadow-md transition-colors duration-200"
+        className="bg-garden-600 hover:bg-garden-700 active:bg-garden-800 text-white font-semibold text-lg px-10 py-3 rounded-2xl shadow-md transition-colors duration-200"
       >
         Get Started →
       </button>

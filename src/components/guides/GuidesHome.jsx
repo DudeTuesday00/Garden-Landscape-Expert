@@ -1,6 +1,7 @@
 import { guideCategories } from '../../data/guides.js'
 import plantopediaImg from './Plantopedia.png'
 import GuidesSearch from './GuidesSearch.jsx'
+import TrustBadges from '../TrustBadges.jsx'
 
 export default function GuidesHome() {
   const totalGuides = guideCategories.reduce((sum, cat) => sum + cat.guides.length, 0)
@@ -42,6 +43,8 @@ export default function GuidesHome() {
             </div>
           </div>
         </div>
+
+        <TrustBadges />
 
         {/* Search + category list (client island) */}
         <GuidesSearch visibleCategories={visibleCategories} />
