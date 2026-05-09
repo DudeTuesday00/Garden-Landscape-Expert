@@ -2,8 +2,11 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import { contentMap } from '../../data/guide-content/index.js'
 import { guideCategories } from '../../data/guides.js'
+import { heroImages } from '../../data/hero-images.js'
 import AuthorBox from './AuthorBox.jsx'
 import NewsletterSignup from '../NewsletterSignup.jsx'
+
+export { heroImages }
 
 const SITE_URL = 'https://plantingatlas.com'
 
@@ -15,63 +18,6 @@ function getRelatedGuides(guideId, count = 3) {
   return category.guides
     .filter((g) => !g.comingSoon && g.id !== guideId)
     .slice(0, count)
-}
-
-// Hero images for guides that have a corresponding photo (exported for use in generateMetadata)
-export const heroImages = {
-  'shade-trees': '/guides/shade-tree-guide.png',
-  'fruit-trees': '/guides/fruit-tree-guide.png',
-  'ornamental-trees': '/guides/ornamental-tree-guide.png',
-  'dwarf-trees': '/guides/dwarf-tree-guide.png',
-  'privacy-trees': '/guides/privacy-trees-guide.png',
-  'street-trees': '/guides/street-trees-guide.png',
-  'fall-color-trees': '/guides/fall-color-trees-guide.png',
-  'plants-for-color': '/guides/plants-for-color-guide.png',
-  'moon-garden': '/guides/moon-garden-guide.png',
-  'cottage-garden': '/guides/cottage-garden-guide.png',
-  'pollinator-garden': '/guides/pollinator-garden-guide.png',
-  'cut-flower-garden': '/guides/cut-flower-garden-guide.png',
-  'wildflower-meadow': '/guides/wildflower-meadow-guide.png',
-  'spring-bulb-garden': '/guides/spring-bulb-garden-guide.png',
-  'long-blooming-perennials': '/guides/long-blooming-perennials-guide.png',
-  'annual-flowers': '/guides/annual-flowers-guide.png',
-  'pizza-garden': '/guides/pizza-garden-guide.png',
-  'herb-garden-design': '/guides/herb-garden-design-guide.png',
-  'tea-garden': '/guides/tea-garden-guide.png',
-  'childrens-garden': '/guides/childrens-garden-guide.png',
-  'square-foot-gardening': '/guides/square-foot-gardening-guide.png',
-  'three-sisters': '/guides/three-sisters-guide.png',
-  'edible-flowers': '/guides/edible-flowers-guide.png',
-  'medicinal-garden': '/guides/medicinal-garden-guide.png',
-  'plants-for-smell': '/guides/plants-for-smell-guide.png',
-  'curb-appeal': '/guides/curb-appeal-guide.png',
-  'porch-plants': '/guides/porch-plants-guide.png',
-  'salsa-garden': '/guides/salsa-garden-guide.png',
-  'winter-garden-prep': '/guides/winter-garden-prep-guide.png',
-  'xeriscape': '/guides/xeriscape-guide.png',
-  'evergreen-trees': '/guides/evergreen-trees-guide.png',
-  'japanese-garden': '/guides/japanese-garden-guide.png',
-  'salad-garden': '/guides/salad-garden-guide.png',
-  'culinary-herb-garden': '/guides/culinary-herb-garden-guide.png',
-  'common-diseases': '/guides/Common_Garden_Diseases_Guide.png',
-  'rain-barrel': '/guides/Rain_Barrel_Guide.png',
-  'zen-garden': '/guides/Zen_Garden_Guide.png',
-  'modern-minimalist-garden': '/guides/Modern_Minimalist_Garden_Guide.png',
-  'indoor-houseplants': '/guides/Indoor_Houseplants_101_Guide.png',
-  'weed-management': '/guides/Weed_Management_Guide.png',
-  'garden-pests': '/guides/Garden_Pests_ID_Charts_Guide.png',
-  'beneficial-insects': '/guides/Attracting_Beneficial_Insects_Guide.png',
-  'butterfly-garden': '/guides/Butterfly_Garden_Guide.png',
-  'rabbit-proof': '/guides/Rabbit_Proof_Garden_Guide.png',
-  'four-season-garden': '/guides/four-season-garden.png',
-  'organic-fertilizing': '/guides/organic-fertilizing.png',
-  'hummingbird-garden': '/guides/hummingbird-garden.png',
-  'sunroom-plants': '/guides/sunroom-plants.png',
-  'indoor-herb-garden': '/guides/indoor-herb-garden.png',
-  'rain-garden': '/guides/rain-garden.png',
-  'mulching-guide': '/guides/mulching-guide.png',
-  'privacy-screening': '/guides/privacy-screening.png',
-  'medicinal-herb-garden': '/guides/medicinal-herb-garden.png',
 }
 
 // Per-guide color themes using standard Tailwind palettes.
