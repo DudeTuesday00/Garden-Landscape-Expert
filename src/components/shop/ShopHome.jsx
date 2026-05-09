@@ -43,7 +43,7 @@ export default function ShopHome() {
 
         <p className="text-center text-xs text-gray-400 dark:text-gray-500 pb-4">
           Planting Atlas Shop · All items made to order ·{' '}
-          <a href="/contact" className="underline hover:text-garden-600">
+          <a href="/contact/" className="underline hover:text-garden-600">
             Contact us
           </a>{' '}
           with any questions

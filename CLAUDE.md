@@ -790,6 +790,8 @@ The site was fully migrated from a Vite SPA to **Next.js 15 App Router** with st
 - Build command: `npm run build`
 - Output directory: `out`
 
+**Trailing slash requirement:** `next.config.mjs` sets `trailingSlash: true`, which means every route is generated as `out/<route>/index.html` and must be linked with a trailing slash. **All internal `href` values must end with `/`** — e.g., `href="/wizard/"` not `href="/wizard"`. Without the slash, Cloudflare Pages may 404 or incur an unnecessary redirect. This applies to both static paths (`href="/guides/"`) and dynamic template literals (`` href={`/guides/${g.id}/`} ``). Never write an internal link without a trailing slash.
+
 ### Auto-Generated Sitemap & robots.txt ✅
 
 - `src/app/sitemap.js` — generates `sitemap.xml` at build time by reading `guideCategories` from `guides.js`, `products` from `products.js`, and `heroImages` from `hero-images.js`; adding a new live guide or product automatically adds its URL — no manual XML editing required
@@ -1744,6 +1746,27 @@ All 34 previously `comingSoon: true` guides have been converted to active stub p
 - 88 total live, indexable guide pages
 
 **Principle going forward:** Do not set any guide to `comingSoon: true`. When a docx source file is not yet available, create a stub page following the structure above. When a full docx is received, expand the stub into the complete guide.
+
+---
+
+### Sitemap Improvements ✅
+
+Four improvements applied to `src/app/sitemap.js` (May 2026):
+
+- **Fixed `lastModified` dates** — replaced `new Date()` with four static date constants so Googlebot doesn't treat every deploy as a full-site content update
+- **Image sitemap entries** — all 54 full guides now emit `images: ['https://plantingatlas.com/guides/...']` using the `heroImages` map; stubs emit none
+- **Priority tiering** — full guides `priority: 0.8 / changeFrequency: 'monthly'`; stub guides `priority: 0.5 / changeFrequency: 'yearly'`
+- **`src/data/hero-images.js` extracted** — single source of truth for hero image paths, imported by both `GuideDetail.jsx` and `sitemap.js`
+
+---
+
+### Trailing Slash Audit ✅
+
+All internal `href` values across the codebase were corrected to include trailing slashes, matching the `trailingSlash: true` static export configuration. Without trailing slashes, Cloudflare Pages may return 404s or incur unnecessary redirects.
+
+**16 files updated** — `Nav.jsx`, `layout.jsx`, `HomePage.jsx`, `Infographics.jsx`, `Podcasts.jsx`, `Videos.jsx`, `AboutUs.jsx`, `GuideDetail.jsx`, `CategorySection.jsx`, `GuidesSearch.jsx`, `Results.jsx`, `ShopHome.jsx`, `ShopGrid.jsx`, `ProductDetail.jsx`, `not-found.jsx`, plus dynamic template literals for guide and shop URLs.
+
+**Rule going forward:** Every internal link must use a trailing slash — `href="/wizard/"` not `href="/wizard"`, and `` href={`/guides/${g.id}/`} `` not `` href={`/guides/${g.id}`} ``.
 
 ---
 

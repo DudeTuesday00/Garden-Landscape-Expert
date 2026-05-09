@@ -22,13 +22,13 @@ export default function NotFound() {
           Go Home
         </Link>
         <Link
-          href="/guides"
+          href="/guides/"
           className="px-6 py-2.5 rounded-xl bg-earth-500 hover:bg-earth-600 text-white font-semibold text-sm transition-colors"
         >
           Browse Guides
         </Link>
         <Link
-          href="/wizard"
+          href="/wizard/"
           className="px-6 py-2.5 rounded-xl border-2 border-garden-600 text-garden-700 dark:text-garden-400 hover:bg-garden-50 dark:hover:bg-gray-800 font-semibold text-sm transition-colors"
         >
           Garden Architect

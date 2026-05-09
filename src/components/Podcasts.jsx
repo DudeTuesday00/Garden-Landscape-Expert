@@ -360,11 +360,11 @@ export default function Podcasts() {
       {/* Related links */}
       <div className="p-4 bg-garden-50 dark:bg-garden-900/20 border border-garden-200 dark:border-garden-800 rounded-xl text-sm">
         <span className="font-semibold text-garden-800 dark:text-garden-300">Explore more:</span>{' '}
-        <Link href="/guides" className="underline hover:text-garden-600 dark:hover:text-garden-400">Browse all gardening guides</Link>
+        <Link href="/guides/" className="underline hover:text-garden-600 dark:hover:text-garden-400">Browse all gardening guides</Link>
         {' · '}
-        <Link href="/infographics" className="underline hover:text-garden-600 dark:hover:text-garden-400">Visual gardening infographics</Link>
+        <Link href="/infographics/" className="underline hover:text-garden-600 dark:hover:text-garden-400">Visual gardening infographics</Link>
         {' · '}
-        <Link href="/videos" className="underline hover:text-garden-600 dark:hover:text-garden-400">Gardening videos</Link>
+        <Link href="/videos/" className="underline hover:text-garden-600 dark:hover:text-garden-400">Gardening videos</Link>
       </div>
     </div>
   )

@@ -23,7 +23,7 @@ function GuideCard({ guide }) {
                 Coming Soon
               </span>
               <Link
-                href="/contact"
+                href="/contact/"
                 onClick={(e) => e.stopPropagation()}
                 className="text-xs font-medium text-garden-600 dark:text-garden-400 hover:text-garden-800 dark:hover:text-garden-200 underline underline-offset-2 transition-colors"
               >
@@ -43,7 +43,7 @@ function GuideCard({ guide }) {
 
   if (isLive) {
     return (
-      <Link href={`/guides/${guide.id}`} className={cardCls}>
+      <Link href={`/guides/${guide.id}/`} className={cardCls}>
         {inner}
       </Link>
     )

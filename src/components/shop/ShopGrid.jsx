@@ -15,7 +15,7 @@ function ProductCard({ product }) {
 
   return (
     <Link
-      href={`/shop/${product.id}`}
+      href={`/shop/${product.id}/`}
       className="group bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-md hover:border-garden-400 dark:hover:border-garden-500 transition-all duration-200 flex flex-col"
     >
       {/* Thumbnail */}
