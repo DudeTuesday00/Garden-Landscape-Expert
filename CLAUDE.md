@@ -147,6 +147,7 @@ Garden-Landscape-Expert/
     │   ├── questions.js             # Wizard question definitions (with hydro routing flags)
     │   ├── guides.js                # 10 guide categories, 88 guides — all comingSoon: false; stubs active for undeveloped guides
     │   ├── products.js              # 3D printed product database (6 placeholder products, 5 categories)
+    │   ├── hero-images.js           # Shared heroImages map (guide ID → /guides/*.png) — imported by GuideDetail.jsx and sitemap.js
     │   └── guide-content/           # One JS file per live guide + shared index
     │       ├── index.js             # contentMap export — used by GuideDetail and [guideId]/page.jsx
     │       ├── shade-trees.js
@@ -791,11 +792,31 @@ The site was fully migrated from a Vite SPA to **Next.js 15 App Router** with st
 
 ### Auto-Generated Sitemap & robots.txt ✅
 
-- `src/app/sitemap.js` — generates `sitemap.xml` at build time by reading `guideCategories` from `guides.js` and `products` from `products.js`; adding a new live guide or product automatically adds its URL — no manual XML editing required
+- `src/app/sitemap.js` — generates `sitemap.xml` at build time by reading `guideCategories` from `guides.js`, `products` from `products.js`, and `heroImages` from `hero-images.js`; adding a new live guide or product automatically adds its URL — no manual XML editing required
 - `src/app/robots.js` — generates `robots.txt` at build time (`Allow: *`, points to sitemap URL); requires `export const dynamic = 'force-static'` at the top of the file (Next.js `output: 'export'` requirement)
 - `public/sitemap.xml` and `public/robots.txt` — kept as minimal placeholders only; they do not contain live data and must not be edited (the generated files overwrite them during `next build`)
 
 > **Note:** Both `robots.js` and `sitemap.js` must include `export const dynamic = 'force-static'` — without it, `next build` will fail with: `export const dynamic = "force-static"/export const revalidate not configured on route "/robots.txt" with "output: export"`
+
+**Sitemap improvements applied (May 2026):**
+
+| Improvement | Implementation |
+|---|---|
+| Fixed `lastModified` dates | Four static date constants replace `new Date()` — Googlebot no longer treats every build as a full-site update |
+| Image sitemap entries | All 54 full guides emit `images: ['https://plantingatlas.com/guides/...']` using `heroImages` from `src/data/hero-images.js` |
+| Priority tiering | Full guides: `priority: 0.8`, `changeFrequency: 'monthly'`; stub guides: `priority: 0.5`, `changeFrequency: 'yearly'` |
+| Page coverage | All content pages verified present (`/infographics/`, `/videos/`, `/podcasts/`, `/about/`, `/shop/`) |
+
+**Date constants in `sitemap.js`:**
+
+| Constant | Value | Used for |
+|---|---|---|
+| `DATE_SITE_LAUNCH` | `2026-03-01` | Initial full guides + wizard + contact |
+| `DATE_RECENT_GUIDES` | `2026-04-15` | Second-wave full guides (hummingbird, sunroom, indoor-herb, rain-garden, mulching, privacy-screening, medicinal-herb-garden, four-season, organic-fertilizing) |
+| `DATE_STUBS_LAUNCHED` | `2026-05-01` | All 34 stub guides + /guides/ landing |
+| `DATE_PAGES_UPDATED` | `2026-04-05` | Static pages (home, infographics, about, privacy, disclosures) |
+
+**`src/data/hero-images.js`** — extracted from `GuideDetail.jsx` to serve as a single source of truth for the 54 hero image paths. Both `GuideDetail.jsx` (imports and re-exports) and `sitemap.js` (imports for image sitemap) consume this file. When a new full guide is added, add its hero image entry here — it will automatically appear in both the guide detail page and the sitemap.
 
 ### Complete Meta Tag Coverage ✅
 
