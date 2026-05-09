@@ -114,6 +114,7 @@ Garden-Landscape-Expert/
     ├── components/
     │   ├── Nav.jsx                  # 'use client' — sticky nav with usePathname active state, dark mode toggle, and hamburger mobile menu
     │   ├── HomePage.jsx             # Landing page — path cards, credibility stats strip, E-E-A-T author strip
+    │   ├── TrustBadges.jsx          # Server component — five credential pills (148 Plants, USDA Zones 3–11, 40+ Years, 88 Guides, 100% Free); used on WelcomeScreen and GuidesHome
     │   ├── ContactUs.jsx            # 'use client' — contact form (Formspree mlgpgdny); success state
     │   ├── Infographics.jsx         # Garden infographics — visual quick-reference cards (28 live, all kebab-case filenames)
     │   ├── Videos.jsx               # Curated gardening YouTube channels by topic + original videos (stacked cards, newest first)
@@ -416,7 +417,7 @@ Thirty-six full guides integrated into the app:
 
 - **Next.js `metadata` exports** — no third-party library; each `app/*/page.jsx` exports a `metadata` object or `generateMetadata` async function
 - **Layout-level metadata** in `src/app/layout.jsx` — sets `title.template: '%s | Planting Atlas'`, site-wide description, OG image, and Twitter Card defaults
-- **`generateMetadata`** in `src/app/guides/[guideId]/page.jsx` — per-guide title from `content.hero.title`, description from `content.intro` (word-boundary truncated to ≤160 chars via `truncateDescription()`), canonical URL, and OG overrides
+- **`generateMetadata`** in `src/app/guides/[guideId]/page.jsx` — per-guide title via `buildSeoTitle(content.hero.title, content.hero.subtitle)` (combines title + subtitle, capped at 58 chars at word boundary so full browser title stays ≤75 chars with `| Planting Atlas`), description from `content.intro` (word-boundary truncated to ≤160 chars via `truncateDescription()`), canonical URL, and OG overrides
 - **JSON-LD `Article` schema** — every guide page outputs structured data (headline, author, publisher, dates, image) for Google rich results
 - **JSON-LD `FAQPage` schema** — wizard page outputs 5 Q&A pairs eligible for FAQ rich results
 - **GTM container `GTM-TT46476S`** — inline `<script dangerouslySetInnerHTML>` in `<head>` of `src/app/layout.jsx` (synchronous, first in head); noscript fallback in `<body>`
@@ -430,7 +431,7 @@ Thirty-six full guides integrated into the app:
 | Home | `/` | `Planting Atlas — Plan it. Plant it. Grow it.` |
 | Garden Architect | `/wizard/` | `Garden Architect — Personalized Plant Recommendations \| Planting Atlas` |
 | Plantopedia | `/guides/` | `Plantopedia — Gardening Guides & Growing Tutorials \| Planting Atlas` |
-| Each guide | `/guides/{guideId}/` | `{content.hero.title} \| Planting Atlas` (from `generateMetadata`) |
+| Each guide | `/guides/{guideId}/` | `{buildSeoTitle(title, subtitle)} \| Planting Atlas` — e.g. `Pollinator Garden — Support Bees, Butterflies \| Planting Atlas` |
 | 3D Printed Shop | `/shop/` | `3D Printed Garden Shop \| Planting Atlas` |
 | Each product | `/shop/{productId}/` | `{product.name} \| Planting Atlas` (from `generateMetadata`) |
 | Contact | `/contact/` | `Contact Us \| Planting Atlas` |
@@ -1757,6 +1758,28 @@ Four improvements applied to `src/app/sitemap.js` (May 2026):
 - **Image sitemap entries** — all 54 full guides now emit `images: ['https://plantingatlas.com/guides/...']` using the `heroImages` map; stubs emit none
 - **Priority tiering** — full guides `priority: 0.8 / changeFrequency: 'monthly'`; stub guides `priority: 0.5 / changeFrequency: 'yearly'`
 - **`src/data/hero-images.js` extracted** — single source of truth for hero image paths, imported by both `GuideDetail.jsx` and `sitemap.js`
+
+---
+
+### Trust Badges ✅
+
+`src/components/TrustBadges.jsx` — server component (no JS, no state) rendering five credential pills in a `flex-wrap` row:
+
+| Badge | Sub-label (sm+ only) |
+|---|---|
+| 🌿 148 Plants | · verified database |
+| 🗺️ USDA Zones 3–11 | · all US climates |
+| 👨‍🌾 40+ Years | · hands-on experience |
+| 📖 88 Guides | · expert-reviewed |
+| ✅ 100% Free | · no account needed |
+
+Sub-labels are hidden on mobile and shown at `sm:` breakpoint. Full dark mode support.
+
+**Currently placed on:**
+- `WelcomeScreen.jsx` — between the description paragraph and the "Get Started" button
+- `GuidesHome.jsx` — between the header card and the search/category list
+
+**To add to another page:** `import TrustBadges from '../TrustBadges.jsx'` and drop in `<TrustBadges />`.
 
 ---
 
