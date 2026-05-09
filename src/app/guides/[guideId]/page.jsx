@@ -18,29 +18,41 @@ function truncateDescription(text) {
   return (lastSpace > 100 ? cut.slice(0, lastSpace) : cut) + '...'
 }
 
+// Combine title + subtitle into a richer SEO title, capped at 58 chars so the
+// full browser title (with ' | Planting Atlas') stays under ~75 chars.
+function buildSeoTitle(title, subtitle) {
+  if (!subtitle) return title
+  const combined = `${title} — ${subtitle}`
+  if (combined.length <= 58) return combined
+  // Trim to word boundary, then strip trailing punctuation/connectors
+  const cut = combined.slice(0, 58).replace(/\s+\S*$/, '').replace(/[,&:\-—\s]+$/, '')
+  return cut.length > title.length ? cut : title
+}
+
 // Per-guide <head> metadata (title, description, OG, canonical)
 export async function generateMetadata({ params }) {
   const { guideId } = await params
   const content = contentMap[guideId]
   if (!content) return { title: 'Guide Not Found' }
 
+  const seoTitle = buildSeoTitle(content.hero.title, content.hero.subtitle)
   const description = truncateDescription(content.intro)
   const heroImage = heroImages[guideId]
 
   return {
-    title: content.hero.title,
+    title: seoTitle,
     description,
     alternates: {
       canonical: `${SITE_URL}/guides/${guideId}/`,
     },
     openGraph: {
-      title: `${content.hero.title} | Planting Atlas`,
+      title: `${seoTitle} | Planting Atlas`,
       description,
       url: `${SITE_URL}/guides/${guideId}/`,
-      ...(heroImage && { images: [{ url: `${SITE_URL}${heroImage}`, width: 1200, height: 630, alt: content.hero.title }] }),
+      ...(heroImage && { images: [{ url: `${SITE_URL}${heroImage}`, width: 1200, height: 630, alt: seoTitle }] }),
     },
     twitter: {
-      title: `${content.hero.title} | Planting Atlas`,
+      title: `${seoTitle} | Planting Atlas`,
       description,
       ...(heroImage && { images: [`${SITE_URL}${heroImage}`] }),
     },
@@ -51,6 +63,7 @@ export default async function GuidePage({ params }) {
   const { guideId } = await params
   const content = contentMap[guideId]
   const heroImage = heroImages[guideId]
+  const seoTitle = content ? buildSeoTitle(content.hero.title, content.hero.subtitle) : ''
 
   const breadcrumbSchema = content ? {
     '@context': 'https://schema.org',
@@ -65,7 +78,7 @@ export default async function GuidePage({ params }) {
   const articleSchema = content ? {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: content.hero.title,
+    headline: seoTitle,
     description: truncateDescription(content.intro),
     author: {
       '@type': 'Person',
