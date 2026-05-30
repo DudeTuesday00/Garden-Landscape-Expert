@@ -7,8 +7,8 @@ import {
   physicalSizeOptions, 
   getFertilizerRecommendations,
   getFeedingProfile 
-} from '@/data/fertilizer-recommendations'
-import { fertilizerTypes } from '@/data/fertilizer-types'
+} from '../../data/fertilizer-recommendations'
+import { fertilizerTypes } from '../../data/fertilizer-types'
 
 export default function FertilizerCalculator() {
   const [plantType, setPlantType] = useState('vegetable')

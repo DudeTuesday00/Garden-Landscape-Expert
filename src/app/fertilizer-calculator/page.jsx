@@ -1,4 +1,4 @@
-import FertilizerCalculator from '@/components/fertilizer-calculator/FertilizerCalculator'
+import FertilizerCalculator from '../../components/fertilizer-calculator/FertilizerCalculator'
 
 export const metadata = {
   title: 'Fertilizer Calculator',
