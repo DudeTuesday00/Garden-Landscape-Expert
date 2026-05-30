@@ -16,6 +16,8 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
+4. **Fertilizer Calculator** (`/fertilizer-calculator/`) — A practical, interactive tool that generates personalized fertilizer recommendations. Users select from all 12 plant categories, growth stage (Seedling/Young/Mature), physical size (container sizes or bed sizes), and growing method (in-ground vs container). Outputs include organic-first recommendations with specific amounts, timing, and application notes, plus secondary synthetic options. Strong emphasis on soil health, compost, and realistic home-gardener rates. The engine lives in `src/data/fertilizer-recommendations.js`.
+
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
 - **Hydroponic path**: skips zone/soil/season (irrelevant indoors), asks hydroponic system type instead, and filters to hydro-compatible plants only
@@ -86,6 +88,8 @@ Garden-Landscape-Expert/
     │   ├── page.jsx                 # / — Home page (server component)
     │   ├── wizard/
     │   │   └── page.jsx             # /wizard/ — Garden Architect (metadata export)
+    │   ├── fertilizer-calculator/
+    │   │   └── page.jsx             # /fertilizer-calculator/ — Interactive fertilizer recommendation tool
     │   ├── guides/
     │   │   ├── page.jsx             # /guides/ — Plantopedia landing (metadata export)
     │   │   └── [guideId]/
@@ -143,12 +147,16 @@ Garden-Landscape-Expert/
     │       ├── ShopGrid.jsx           # 'use client' — category filter tabs + Etsy-style product card grid
     │       ├── ImageGallery.jsx       # 'use client' — main image + thumbnail strip + click-to-enlarge lightbox
     │       └── ProductDetail.jsx      # Server component — full detail page (gallery, features, specs, CTA)
+    │   └── fertilizer-calculator/
+    │       └── FertilizerCalculator.jsx # 'use client' — main interactive fertilizer recommendation tool
     ├── data/
     │   ├── plants.js                # Static plant database (148 plants across 12 types)
     │   ├── questions.js             # Wizard question definitions (with hydro routing flags)
-    │   ├── guides.js                # 10 guide categories, 88 guides — all comingSoon: false; stubs active for undeveloped guides
-    │   ├── products.js              # 3D printed product database (6 placeholder products, 5 categories)
-    │   ├── hero-images.js           # Shared heroImages map (guide ID → /guides/*.png) — imported by GuideDetail.jsx and sitemap.js
+    │   ├── guides.js                # 10 guide categories, 88 guides — all comingSoon: false
+    │   ├── products.js              # 3D printed product database
+    │   ├── fertilizer-types.js      # Fertilizer & amendment catalog used by the Fertilizer Calculator
+    │   ├── fertilizer-recommendations.js # Recommendation engine for the Fertilizer Calculator (supports all 12 plant types + size/stage logic)
+    │   ├── hero-images.js           # Shared heroImages map (guide ID → /guides/*.png)
     │   └── guide-content/           # One JS file per live guide + shared index
     │       ├── index.js             # contentMap export — used by GuideDetail and [guideId]/page.jsx
     │       ├── shade-trees.js
@@ -777,13 +785,13 @@ The site was fully migrated from a Vite SPA to **Next.js 15 App Router** with st
 | `src/app/layout.jsx` | Root layout — dark mode script, GTM, Nav, footer, scripts |
 | `src/app/guides/[guideId]/page.jsx` | SSG — `generateStaticParams` + `generateMetadata` per guide |
 | `src/data/guide-content/index.js` | Shared `contentMap` used by both `GuideDetail` and `[guideId]/page.jsx` |
-| `src/components/Nav.jsx` | `'use client'` — `usePathname` active state + dark mode toggle |
+| `src/components/Nav.jsx` | `'use client'` — `usePathname` active state + dark mode toggle; includes link to Fertilizer Calculator |
 | `src/components/wizard/Wizard.jsx` | Added `'use client'` directive |
 | `src/components/ContactUs.jsx` | Added `'use client'` directive; removed `SEO` |
 
 **Client vs server components:**
 - Server (default): `HomePage`, `GuidesHome`, `GuideDetail`, `ShopHome`, `ProductDetail`, `PrivacyPolicy`, all page files
-- Client (`'use client'`): `Nav`, `Wizard` (and its sub-components), `ContactUs`, `ShopGrid`, `ImageGallery`, `Infographics`, `CategorySection`, `GuidesSearch`, `NewsletterSignup`, `CookieBanner`
+- Client (`'use client'`): `Nav`, `Wizard` (and its sub-components), `ContactUs`, `ShopGrid`, `ImageGallery`, `Infographics`, `CategorySection`, `GuidesSearch`, `NewsletterSignup`, `CookieBanner`, `FertilizerCalculator`
 
 **Build output:** `next build` generates `out/` — a fully static directory deployable to Cloudflare Pages with zero server required.
 
