@@ -1805,6 +1805,7 @@ All internal `href` values across the codebase were corrected to include trailin
 
 - **A guide must not be built unless a `.docx` source file exists for that subject.** The `.docx` file is the authoritative source of truth for guide content; do not create or populate a guide JS file from scratch without one.
 - Prefer editing existing files over creating new ones unless strictly necessary
+- **Always use relative imports** (e.g. `../components/Nav.jsx`, `../../data/plants.js`). The project does **not** use the `@/` path alias, even though Next.js can support it. Using `@/` will cause Cloudflare Pages builds to fail.
 - Avoid over-engineering; keep solutions minimal and focused
 - Do not push to branches other than the designated `claude/` branch without explicit permission
 - When adding plants, follow the schema table above exactly
