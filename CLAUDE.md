@@ -1157,15 +1157,16 @@ Theme: emerald/teal gradient in `GuideDetail.jsx`; hero image: `public/guides/no
 
 ### Seed Saving Guide ✅
 
-`src/data/guide-content/seed-saving.js` — Seed Saving Guide (`id: 'seed-saving'`); fully built from `seed-saving-guide.docx` — 5 main sections covering why save seeds, the science of pollination/isolation/selection, a comprehensive crop-by-crop guide (50+ vegetables, herbs, and flowers), cleaning/testing/storage methods, and closing reflection.
+`src/data/guide-content/seed-saving.js` — Seed Saving Guide (`id: 'seed-saving'`); fully built from `seed-saving-guide.docx` — comprehensive guide with 5 major sections covering the philosophy and benefits of seed saving, the science of pollination/isolation/selection/maturity, an extensive crop-by-crop guide (Tomato family, Legumes, Cucurbits with species key, Corn, Salad crops, Root vegetables/biennials, full Brassica family breakdown, Onion family, Annual herbs, and many flowers), detailed cleaning/processing methods (threshing, winnowing, wet fermentation), germination testing, storage science and longevity tables, and closing reflection.
 
 | Section | Status | Notes |
 |---|---|---|
-| Section 1: Why Save Seeds | ✅ Done | 6-row benefits table (cost, local adaptation, variety preservation, food sovereignty, selection for taste, heritage); clear OP vs F1 Hybrid vs GMO table |
-| Section 2: The Science of Seeds | ✅ Done | Pollination types table (self / insect / wind); isolation methods table (distance, bagging, caging, temporal); seed maturity concepts; selection principles table; minimum population size table by crop type |
-| Section 3: Crop-by-Crop Seed Saving Guide | ✅ Done | Detailed tables for Tomato family, Legumes, Cucurbits (with species key tip), Corn, Salad crops, Root vegetables/biennials; isolation distances, harvest timing, and processing methods for each |
-| Section 4: Cleaning, Testing, and Storing Seeds | ✅ Done | Wet vs dry processing; germination testing protocol; storage conditions and labeling best practices |
-| Closing Reflection | ✅ Done | Connection to agricultural heritage; encouragement to start small with one easy crop |
+| Section 1: Why Save Seeds | ✅ Done | Expanded 6-row benefits table with rich explanations; full OP vs F1 Hybrid vs GMO vs Treated seed table; "Seed Saving Learning Curve" table (Beginner through Expert with example crops) |
+| Section 2: The Science of Seeds | ✅ Done | Detailed pollination types table; comprehensive isolation methods table (distance, bag, cage, temporal, population isolation); seed maturity stages table; selection principles table; minimum population size table by crop type |
+| Section 3: Crop-by-Crop Seed Saving Guide | ✅ Done | Rich tables with isolation, harvest timing, and step-by-step processing for: Tomato family, Legumes (beans, peas, runner, broad, soy), Cucurbits (with species key tip), Corn (special case), Salad crops, Root vegetables/biennials, full Brassica species breakdown, Onion family (including garlic note), Annual herbs, and 12+ flowers (zinnias through echinacea) |
+| Section 4: Cleaning & Processing Seeds | ✅ Done | Full threshing methods table (6 methods); winnowing instructions; complete wet fermentation process for tomatoes/cucurbits; germination testing protocol with rate guidance table |
+| Section 5: Storing Seeds for Maximum Viability | ✅ Done | "Two enemies of seed longevity" (heat & moisture); recommended conditions and containers; expected longevity table by crop; desiccant and labeling best practices |
+| Closing Reflection | ✅ Done | Connection to 10,000-year agricultural heritage; encouragement to start small |
 
 Theme: emerald/lime gradient in `GuideDetail.jsx`; hero image: `public/guides/seed-saving-guide.png`; `comingSoon: false` under Eco & Sustainability in `guides.js`; wired in `src/data/guide-content/index.js`
 
