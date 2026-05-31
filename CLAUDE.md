@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 88 guides total. All 88 are live and indexable: 54 have full in-depth content; the remaining 34 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 88 guides total. All 88 are live and indexable: 55 have full in-depth content; the remaining 33 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
@@ -1132,6 +1132,26 @@ Theme: amber/orange gradient in `GuideDetail.jsx`; hero image: `public/guides/fo
 | Section 7: Troubleshooting, Getting Started & Closing | ✅ Done | Soil-test-first warning callout; 10-row symptom/cause/solution troubleshooting table; Year 1 foundation plan (5 items); Year 2 building plan (5 items); Year 3+ closing reflection and tip callout |
 
 Theme: lime/green gradient in `GuideDetail.jsx`; hero image: `public/guides/organic-fertilizing.png`; `comingSoon: false` under Eco & Sustainability in `guides.js`; wired in `src/data/guide-content/index.js`
+
+---
+
+### No-Dig Gardening Guide ✅
+
+`src/data/guide-content/no-dig-gardening.js` — No-Dig Gardening (`id: 'no-dig-gardening'`); fully built from `no-dig-gardening.docx` — 9 sections covering the science of undisturbed soil, sheet mulching and lasagna bed construction, practical application for vegetables/ornamentals/cut flowers/specific crops, composting for the system, weeds/pests/problems, regional adaptations across the US, a full year-round calendar, quick reference tables, and closing reflection.
+
+| Section | Status | Notes |
+|---|---|---|
+| Section 1: The Science of No-Dig | ✅ Done | Why tillage destroys mycorrhizal networks, soil aggregates, organism communities, and triggers weeds; 4-row soil food web table; emphasis on mycorrhizal revolution and carbon sequestration |
+| Section 2: The No-Dig Method | ✅ Done | Sheet mulching step-by-step (cardboard + 4-6" compost); Lasagna bed layering table (green/brown/compost); annual 1-2" top-dressing protocol; transitioning from dug beds |
+| Section 3: No-Dig in Practice | ✅ Done | Permanent bed design (30-48" wide); 4-row specific crops table (potatoes surface method, root crops, tomatoes, garlic); ornamental borders and cut flower adaptations |
+| Section 4: Composting for No-Dig | ✅ Done | Hot vs cold composting details; materials quality table; sourcing options (municipal, manure, spent mushroom, worm castings); 1-2-3 compost rule |
+| Section 5: Weeds, Pests & Problems | ✅ Done | Weed seed bank dynamics; 3-row weed type management table; biological suppression of pests/diseases; 10-row common problems/solutions table |
+| Section 6: Regional No-Dig Guide | ✅ Done | 7-row regional table (PNW through New England) with opportunities, challenges, materials, and strategy; 4-row soil type adaptations (clay, sand, compacted urban, alkaline) |
+| Section 7: The No-Dig Calendar | ✅ Done | 6-row month-by-month table (Jan–Dec) with tasks, compost/mulch, planting, and regional notes |
+| Section 8: Quick Reference Tables | ✅ Done | Compost application rates table; 5-row Dos and Don'ts; starter shopping list |
+| Closing Reflection | ✅ Done | "The best time to stop digging was the day you started. The second best time is now." |
+
+Theme: emerald/teal gradient in `GuideDetail.jsx`; hero image: `public/guides/no-dig-gardening-guide.png`; `comingSoon: false` under Eco & Sustainability in `guides.js`; wired in `src/data/guide-content/index.js`
 
 ---
 
