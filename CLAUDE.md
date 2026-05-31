@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 88 guides total. All 88 are live and indexable: 55 have full in-depth content; the remaining 33 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 88 guides total. All 88 are live and indexable: 56 have full in-depth content; the remaining 32 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
@@ -1152,6 +1152,22 @@ Theme: lime/green gradient in `GuideDetail.jsx`; hero image: `public/guides/orga
 | Closing Reflection | ✅ Done | "The best time to stop digging was the day you started. The second best time is now." |
 
 Theme: emerald/teal gradient in `GuideDetail.jsx`; hero image: `public/guides/no-dig-gardening-guide.png`; `comingSoon: false` under Eco & Sustainability in `guides.js`; wired in `src/data/guide-content/index.js`
+
+---
+
+### Seed Saving Guide ✅
+
+`src/data/guide-content/seed-saving.js` — Seed Saving Guide (`id: 'seed-saving'`); fully built from `seed-saving-guide.docx` — 5 main sections covering why save seeds, the science of pollination/isolation/selection, a comprehensive crop-by-crop guide (50+ vegetables, herbs, and flowers), cleaning/testing/storage methods, and closing reflection.
+
+| Section | Status | Notes |
+|---|---|---|
+| Section 1: Why Save Seeds | ✅ Done | 6-row benefits table (cost, local adaptation, variety preservation, food sovereignty, selection for taste, heritage); clear OP vs F1 Hybrid vs GMO table |
+| Section 2: The Science of Seeds | ✅ Done | Pollination types table (self / insect / wind); isolation methods table (distance, bagging, caging, temporal); seed maturity concepts; selection principles table; minimum population size table by crop type |
+| Section 3: Crop-by-Crop Seed Saving Guide | ✅ Done | Detailed tables for Tomato family, Legumes, Cucurbits (with species key tip), Corn, Salad crops, Root vegetables/biennials; isolation distances, harvest timing, and processing methods for each |
+| Section 4: Cleaning, Testing, and Storing Seeds | ✅ Done | Wet vs dry processing; germination testing protocol; storage conditions and labeling best practices |
+| Closing Reflection | ✅ Done | Connection to agricultural heritage; encouragement to start small with one easy crop |
+
+Theme: emerald/lime gradient in `GuideDetail.jsx`; hero image: `public/guides/seed-saving-guide.png`; `comingSoon: false` under Eco & Sustainability in `guides.js`; wired in `src/data/guide-content/index.js`
 
 ---
 
