@@ -16,7 +16,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
-4. **Fertilizer Calculator** (`/fertilizer-calculator/`) — A practical, interactive tool that generates personalized fertilizer recommendations. Users select from all 12 plant categories, growth stage (Seedling/Young/Mature), physical size (container sizes or bed sizes), and growing method (in-ground vs container). Outputs include organic-first recommendations with specific amounts, timing, and application notes, plus secondary synthetic options. Strong emphasis on soil health, compost, and realistic home-gardener rates. The engine lives in `src/data/fertilizer-recommendations.js`.
+4. **Fertilizer Calculator** (`/fertilizer-calculator/`) — A practical, interactive tool that generates personalized fertilizer recommendations. Users select from all 12 plant categories, growth stage (Seedling/Young/Mature), physical size (container sizes or bed sizes, or hydro system scale), and growing method (in-ground, container, **or hydroponics**). Outputs include organic-first recommendations with specific amounts, timing, and application notes, plus secondary synthetic options. Strong emphasis on soil health, compost, and realistic home-gardener rates. Hydroponic mode provides liquid nutrient programs (e.g. Masterblend 3-part mixes, Cal-Mag, silica), reservoir change schedules, and pH/EC guidance. The engine lives in `src/data/fertilizer-recommendations.js` with supporting data in `fertilizer-types.js`.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -155,7 +155,7 @@ Garden-Landscape-Expert/
     │   ├── guides.js                # 10 guide categories, 88 guides — all comingSoon: false
     │   ├── products.js              # 3D printed product database
     │   ├── fertilizer-types.js      # Fertilizer & amendment catalog used by the Fertilizer Calculator
-    │   ├── fertilizer-recommendations.js # Recommendation engine for the Fertilizer Calculator (supports all 12 plant types + size/stage logic)
+    │   ├── fertilizer-recommendations.js # Recommendation engine for the Fertilizer Calculator (supports all 12 plant types + size/stage logic + hydroponics mode)
     │   ├── hero-images.js           # Shared heroImages map (guide ID → /guides/*.png)
     │   └── guide-content/           # One JS file per live guide + shared index
     │       ├── index.js             # contentMap export — used by GuideDetail and [guideId]/page.jsx
@@ -1798,6 +1798,34 @@ All internal `href` values across the codebase were corrected to include trailin
 **16 files updated** — `Nav.jsx`, `layout.jsx`, `HomePage.jsx`, `Infographics.jsx`, `Podcasts.jsx`, `Videos.jsx`, `AboutUs.jsx`, `GuideDetail.jsx`, `CategorySection.jsx`, `GuidesSearch.jsx`, `Results.jsx`, `ShopHome.jsx`, `ShopGrid.jsx`, `ProductDetail.jsx`, `not-found.jsx`, plus dynamic template literals for guide and shop URLs.
 
 **Rule going forward:** Every internal link must use a trailing slash — `href="/wizard/"` not `href="/wizard"`, and `` href={`/guides/${g.id}/`} `` not `` href={`/guides/${g.id}`} ``.
+
+---
+
+### Fertilizer Calculator ✅
+
+New interactive tool at `/fertilizer-calculator/`.
+
+**Key features:**
+- Supports **all 12 plant categories** from the plants database.
+- Dual size inputs: Growth stage (Seedling / Young / Mature) + Physical size (container volumes or bed square footage, or hydro system scale).
+- Three growing methods: In-ground, Container, and **Hydroponics**.
+- **Hydroponics mode** provides liquid nutrient recommendations (Masterblend 4-18-38 three-part system, General Hydroponics Flora series, Cal-Mag, potassium silicate), mixing rates (tsp/gallon), reservoir change schedules (7–14 days), and strong emphasis on pH (5.5–6.5) and EC monitoring.
+- Organic-first philosophy with secondary synthetic options.
+- Advanced output including timing, application notes, and reasoning ("why").
+- Lives in `src/data/fertilizer-types.js` (catalog) and `src/data/fertilizer-recommendations.js` (engine + logic).
+- UI component: `src/components/fertilizer-calculator/FertilizerCalculator.jsx` (fully client-side with live updates).
+- Page: `src/app/fertilizer-calculator/page.jsx`.
+
+**Design principles:**
+- Matches the site's soil-health-first tone from the "Organic Fertilizing" guide.
+- Hydroponics section avoids soil-based advice (compost, etc.) and focuses on water-soluble nutrients and system maintenance.
+- Uses relative imports only (no `@/` alias — this breaks Cloudflare builds).
+
+**Files added:**
+- `src/data/fertilizer-types.js`
+- `src/data/fertilizer-recommendations.js`
+- `src/components/fertilizer-calculator/FertilizerCalculator.jsx`
+- `src/app/fertilizer-calculator/page.jsx`
 
 ---
 

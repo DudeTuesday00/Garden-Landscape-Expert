@@ -23,7 +23,7 @@ export default function FertilizerCalculator() {
     growingMethod,
   })
 
-  const feedingProfile = getFeedingProfile(plantType)
+  const feedingProfile = getFeedingProfile(plantType, growingMethod)
   const selectedPlantLabel = plantTypeOptions.find(p => p.id === plantType)?.label || plantType
 
   // Separate essential/high priority from alternatives and notes
@@ -80,15 +80,24 @@ export default function FertilizerCalculator() {
             <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
               2. Growing method
             </label>
-            <div className="flex gap-3">
+            <div className="grid grid-cols-3 gap-2">
               {[
-                { value: 'in-ground', label: 'In-Ground Bed' },
+                { value: 'in-ground', label: 'In-Ground' },
                 { value: 'container', label: 'Container' },
+                { value: 'hydroponic', label: 'Hydroponics' },
               ].map((method) => (
                 <button
                   key={method.value}
-                  onClick={() => setGrowingMethod(method.value)}
-                  className={`flex-1 px-4 py-2.5 rounded-xl text-sm font-medium transition-all border ${
+                  onClick={() => {
+                    setGrowingMethod(method.value)
+                    // Reset size to a sensible hydro default when switching methods
+                    if (method.value === 'hydroponic') {
+                      setPhysicalSize('medium-hydro')
+                    } else if (physicalSize.includes('hydro')) {
+                      setPhysicalSize('per-plant')
+                    }
+                  }}
+                  className={`px-3 py-2.5 rounded-xl text-sm font-medium transition-all border text-center ${
                     growingMethod === method.value
                       ? 'bg-earth-500 text-white border-earth-500'
                       : 'bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700 hover:border-earth-400'
@@ -98,6 +107,11 @@ export default function FertilizerCalculator() {
                 </button>
               ))}
             </div>
+            {growingMethod === 'hydroponic' && (
+              <p className="mt-2 text-xs text-earth-600 dark:text-earth-400">
+                Hydroponic recommendations focus on liquid nutrients, EC/pH management, and reservoir schedules.
+              </p>
+            )}
           </div>
 
           {/* Size Inputs */}
@@ -125,21 +139,31 @@ export default function FertilizerCalculator() {
 
             <div>
               <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
-                4. Physical size (more precise)
+                4. {growingMethod === 'hydroponic' ? 'System / Reservoir Size' : 'Physical size (more precise)'}
               </label>
               <select
                 value={physicalSize}
                 onChange={(e) => setPhysicalSize(e.target.value)}
                 className="w-full px-4 py-2.5 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm"
               >
-                {physicalSizeOptions.map((size) => (
-                  <option key={size.id} value={size.id}>
-                    {size.label}
-                  </option>
-                ))}
+                {growingMethod === 'hydroponic' ? (
+                  <>
+                    <option value="small-hydro">Small System (DWC bucket, Kratky jar, 1–5 gal reservoir)</option>
+                    <option value="medium-hydro">Medium System (NFT, Drip, 5–20 gal reservoir)</option>
+                    <option value="large-hydro">Large System (20+ gal reservoir or commercial-style)</option>
+                  </>
+                ) : (
+                  physicalSizeOptions.map((size) => (
+                    <option key={size.id} value={size.id}>
+                      {size.label}
+                    </option>
+                  ))
+                )}
               </select>
               <p className="mt-1.5 text-xs text-gray-500 dark:text-gray-400">
-                Choose the option that best matches your situation.
+                {growingMethod === 'hydroponic'
+                  ? 'Select the scale of your hydroponic setup.'
+                  : 'Choose the option that best matches your situation.'}
               </p>
             </div>
           </div>
@@ -153,7 +177,7 @@ export default function FertilizerCalculator() {
                 Recommendations for {selectedPlantLabel}
               </h2>
               <span className="text-xs px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">
-                {growingMethod === 'container' ? 'Container' : 'In-Ground'}
+                {growingMethod === 'hydroponic' ? 'Hydroponics' : growingMethod === 'container' ? 'Container' : 'In-Ground'}
               </span>
             </div>
 

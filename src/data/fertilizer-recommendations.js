@@ -59,7 +59,7 @@ export function getFertilizerRecommendations({
   plantType,
   growthStage,
   physicalSize,
-  growingMethod = 'in-ground', // 'in-ground' | 'container'
+  growingMethod = 'in-ground', // 'in-ground' | 'container' | 'hydroponic'
 }) {
   const recommendations = []
 
@@ -73,6 +73,59 @@ export function getFertilizerRecommendations({
     notes: 'The foundation of healthy plants. Improves soil structure and feeds microbes. Apply 1–3 inches as a top-dress or mix into planting hole.',
     why: 'Most “fertilizer problems” are actually soil problems. Compost fixes the root cause.',
   })
+
+  // === HYDROPONICS RECOMMENDATIONS ===
+  if (growingMethod === 'hydroponic') {
+    recommendations.push({
+      fertilizerId: 'masterblend',
+      priority: 'high',
+      amount: '1 tsp Masterblend + 1 tsp Calcium Nitrate + ½ tsp Epsom Salt per gallon of water',
+      unit: '',
+      timing: 'Mix fresh nutrient solution every 7–14 days (or when EC drops significantly)',
+      notes: 'This is the most popular and reliable general-purpose hydroponic formula for vegetables, herbs, and many flowers.',
+      why: 'Provides balanced N-P-K plus calcium and magnesium in a stable, cost-effective form.',
+    })
+
+    recommendations.push({
+      fertilizerId: 'hydro-cal-mag',
+      priority: 'high',
+      amount: '1–2 ml per gallon (or follow product label)',
+      unit: '',
+      timing: 'Add to every nutrient solution change',
+      notes: 'Especially important when using RO or distilled water, or under high light/heat.',
+      why: 'Prevents common hydro deficiencies like blossom end rot and tip burn.',
+    })
+
+    if (['vegetable', 'fruit'].includes(plantType)) {
+      recommendations.push({
+        fertilizerId: 'general-hydroponics-flora',
+        priority: 'medium',
+        amount: 'Follow 3-part GH feeding chart (example veg: 3-2-1 tsp/gal Gro-Bloom-Micro)',
+        unit: '',
+        timing: 'Change solution every 7–10 days during peak growth',
+        notes: 'More flexible than single-part formulas. Increase Bloom ratio once flowering starts.',
+        why: 'Allows precise control over N-P-K ratios as plants move from vegetative to reproductive stages.',
+      })
+    }
+
+    recommendations.push({
+      fertilizerId: 'hydroponic-silicic-acid',
+      priority: 'medium',
+      amount: 'Follow product instructions (typically 1–2 ml per gallon)',
+      unit: '',
+      timing: 'Add during vegetative growth and early flowering',
+      notes: 'Add to reservoir before pH adjustment.',
+      why: 'Strengthens stems and improves resistance to pests and environmental stress in hydro systems.',
+    })
+
+    // Add a hydro-specific note
+    recommendations.push({
+      type: 'important-note',
+      message: 'Hydroponics requires regular monitoring of pH (typically 5.5–6.5) and EC/PPM. Flush the system with plain pH-adjusted water every 2–4 weeks to prevent nutrient lockout and salt buildup.',
+    })
+
+    return recommendations // Return early for hydro — soil-based recommendations don’t apply
+  }
 
   // === PLANT-TYPE SPECIFIC RECOMMENDATIONS ===
 
@@ -291,7 +344,11 @@ function getSyntheticAmount(physicalSize) {
 /**
  * Returns a human-friendly summary of the plant type's general feeding needs.
  */
-export function getFeedingProfile(plantType) {
+export function getFeedingProfile(plantType, growingMethod) {
+  if (growingMethod === 'hydroponic') {
+    return 'Hydroponic plants are usually moderate to heavy feeders. Precise control of EC, pH (5.5–6.5), and nutrient ratios is more important than in soil or coco.'
+  }
+
   const profiles = {
     vegetable: 'Heavy feeder — requires consistent nutrition for high yields.',
     herb: 'Light feeder — over-fertilizing reduces flavor and aroma.',

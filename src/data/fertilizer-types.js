@@ -137,6 +137,48 @@ export const fertilizerTypes = [
     whenToUse: 'Mix into potting soil at planting or top-dress containers',
     applicationNotes: 'Reduces the need for frequent liquid feeding.',
   },
+
+  // === HYDROPONICS NUTRIENTS ===
+  {
+    id: 'masterblend',
+    name: 'Masterblend 4-18-38 + Calcium Nitrate + Epsom Salt',
+    type: 'synthetic',
+    category: 'hydroponic',
+    npk: '5-11-26 (custom mixed)',
+    description: 'The gold standard for most hydroponic systems. Excellent all-purpose formula used by many commercial growers.',
+    whenToUse: 'Primary nutrient solution in recirculating or drain-to-waste systems',
+    applicationNotes: 'Typical mix: 1 tsp Masterblend + 1 tsp Calcium Nitrate + 0.5 tsp Epsom Salt per gallon. Adjust based on EC.',
+  },
+  {
+    id: 'general-hydroponics-flora',
+    name: 'General Hydroponics Flora Series (FloraGro + FloraBloom + FloraMicro)',
+    type: 'synthetic',
+    category: 'hydroponic',
+    npk: 'Varies by ratio',
+    description: 'Popular 3-part liquid nutrient system. Highly customizable for different growth stages.',
+    whenToUse: 'Vegetative (more Gro), Transition, and Flowering/Fruiting (more Bloom)',
+    applicationNotes: 'Follow the GH feeding chart for your plant type. Common starting ratio for veg: 3-2-1 (Gro-Bloom-Micro).',
+  },
+  {
+    id: 'hydro-cal-mag',
+    name: 'Cal-Mag Supplement (Calcium + Magnesium)',
+    type: 'synthetic',
+    category: 'hydroponic',
+    npk: 'N/A (secondary nutrients)',
+    description: 'Essential in hydroponics and coco coir to prevent blossom end rot and interveinal chlorosis.',
+    whenToUse: 'Add to almost every nutrient solution, especially with RO water or high-light conditions',
+    applicationNotes: 'Usually 1–2 ml per gallon alongside base nutrients. Critical for tomatoes, peppers, and cannabis.',
+  },
+  {
+    id: 'hydroponic-silicic-acid',
+    name: 'Potassium Silicate / Silicic Acid',
+    type: 'synthetic',
+    category: 'hydroponic',
+    npk: '0-0-0 (with silica)',
+    description: 'Strengthens cell walls, improves disease resistance, and helps plants handle stress in hydro systems.',
+    whenToUse: 'Add to nutrient solution during vegetative growth',
+    applicationNotes: 'Use a stabilized form (like AgSil or Rhino Skin). Add before pH adjustment.',
+  },
 ]
 
 /**
