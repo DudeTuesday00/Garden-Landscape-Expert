@@ -109,6 +109,9 @@ Garden-Landscape-Expert/
     │   ├── advertising-disclosure/
     │   │   └── page.jsx             # /advertising-disclosure/ — Advertising Disclosure (metadata export)
     │   ├── not-found.jsx            # Custom 404 page — gardening-themed, three nav buttons, renders as 404.html on Cloudflare Pages
+    │   ├── error.jsx                # Segment-level error boundary — gardening-themed, "Try Again" + "Go Home"
+    │   ├── global-error.jsx         # Root-layout error boundary — dependency-free inline styles (replaces <html>/<body>)
+    │   ├── loading.jsx              # Route-level loading skeleton shown during client-side navigation
     │   ├── sitemap.js               # Auto-generates sitemap.xml at build time from guides.js data
     │   └── robots.js                # Auto-generates robots.txt at build time
     ├── components/
@@ -1839,6 +1842,20 @@ The Garden Architect wizard now persists and shares results via the URL, and sup
 - Plant data (the 148-plant wizard database) is intentionally **not** included in the index — plants don't have individual detail pages, only guides and static pages do
 
 **To extend the index:** add an entry to `staticPages` in `SiteSearch.jsx` for a new top-level page; new guides are picked up automatically via `guideCategories` as soon as `comingSoon: false` is set.
+
+---
+
+### Branded Error & Loading Boundaries ✅
+
+Three Next.js App Router convention files added to `src/app/` so runtime errors and slow client-side navigations get a branded experience instead of a default/blank screen — mirroring the existing branded 404 page (`not-found.jsx`).
+
+| File | Scope | Notes |
+|---|---|---|
+| `src/app/error.jsx` | Segment-level error boundary | `'use client'`; logs the error to console, shows "Something wilted" messaging with **Try Again** (`reset()`) and **Go Home** buttons; styled to match `not-found.jsx` |
+| `src/app/global-error.jsx` | Root-layout error boundary | `'use client'`; only fires if the root layout itself throws, so it renders its own `<html>/<body>` and uses dependency-free inline styles (no Tailwind/font assumptions, since the layout that provides them may be the thing that failed) |
+| `src/app/loading.jsx` | Route-level loading state | Server component; small spinner shown during client-side route transitions while the next segment's data loads |
+
+All three are static-export compatible (verified via `next build`, 110 pages) and require no per-route wiring — Next.js picks them up automatically for every route under `src/app/`.
 
 ---
 
