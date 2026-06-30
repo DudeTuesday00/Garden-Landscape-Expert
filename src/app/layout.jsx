@@ -28,6 +28,7 @@ export const metadata = {
   keywords:
     'planting guide, landscape design, garden planning, USDA zones, plant database, gardening expert, hydroponic gardening, Plantopedia, Garden Architect',
   metadataBase: new URL('https://plantingatlas.com'),
+  manifest: '/manifest.json',
   icons: {
     icon: '/favicon.png',
     apple: '/favicon.png',
@@ -50,6 +51,33 @@ export const metadata = {
   },
 }
 
+export const viewport = {
+  themeColor: '#2F6B3F',
+}
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Planting Atlas',
+  url: 'https://plantingatlas.com',
+  logo: 'https://plantingatlas.com/favicon.png',
+}
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Planting Atlas',
+  url: 'https://plantingatlas.com',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://plantingatlas.com/guides/?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${raleway.variable} ${lato.variable}`}>
@@ -59,6 +87,16 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: `(function(){var s=localStorage.getItem('gle-dark-mode'),p=window.matchMedia('(prefers-color-scheme:dark)').matches;if(s==='true'||(s===null&&p))document.documentElement.classList.add('dark')})();`,
           }}
+        />
+
+        {/* Sitewide Organization + WebSite/SearchAction JSON-LD — enables Google sitelinks search box */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
 
         {/* Google Tag Manager — must be first script in <head> per Google's guidance */}
