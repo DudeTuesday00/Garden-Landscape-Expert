@@ -16,6 +16,8 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
+4. **Fertilizer Calculator** (`/fertilizer-calculator/`) — an interactive tool that generates personalized fertilizer recommendations. Users select from all 12 plant categories, growth stage (Seedling/Young/Mature), physical size (container sizes or bed sizes, or hydro system scale), and growing method (in-ground, container, or hydroponics). Outputs include organic-first recommendations with specific amounts, timing, and application notes, plus secondary synthetic options. Strong emphasis on soil health, compost, and realistic home-gardener rates. Hydroponic mode provides liquid nutrient programs (e.g. Masterblend 3-part mixes, Cal-Mag, silica), reservoir change schedules, and pH/EC guidance. The engine lives in `src/data/fertilizer-recommendations.js` with supporting data in `fertilizer-types.js`.
+
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
 - **Hydroponic path**: skips zone/soil/season (irrelevant indoors), asks hydroponic system type instead, and filters to hydro-compatible plants only
@@ -1910,6 +1912,30 @@ Hero/LCP images (page headers, guide hero photos, the two homepage path cards, t
 | `guides/GuideDetail.jsx` | Affiliate product card image | Embedded deep in guide body sections |
 | `shop/ShopGrid.jsx` | Product thumbnail | One of many cards in the shop grid |
 | `shop/ImageGallery.jsx` | Thumbnail strip images | Secondary to the already-loaded main product image |
+
+---
+
+### Fertilizer Calculator ✅
+
+`/fertilizer-calculator/` — an interactive tool that generates personalized, organic-first fertilizer recommendations.
+
+| File | Role |
+|---|---|
+| `src/data/fertilizer-types.js` | Catalog of organic + synthetic fertilizers/amendments (compost, worm castings, blood meal, bone meal, kelp meal, fish emulsion, hydroponic nutrients, etc.) with NPK, description, and application notes |
+| `src/data/fertilizer-recommendations.js` | Recommendation engine — `getFertilizerRecommendations()` takes `{ plantType, growthStage, physicalSize, growingMethod }` and returns a list of recommendation objects (or note objects); `getFeedingProfile()` returns a one-line feeding summary per plant type |
+| `src/components/fertilizer-calculator/FertilizerCalculator.jsx` | `'use client'` — interactive form (plant type buttons, growing method, growth stage, physical size) with live results panel |
+| `src/app/fertilizer-calculator/page.jsx` | Route with full SEO metadata |
+
+**Engine logic:**
+- Always includes a universal "Finished Compost" recommendation (soil health first)
+- **Hydroponic path:** returns early with liquid nutrient recommendations (Masterblend, Cal-Mag, GH Flora Series for vegetables/fruit, silicic acid) plus an EC/pH/flush note — skips all soil-based logic
+- **Soil-based path:** branches on `plantType` — every one of the 12 plant categories (vegetable, herb, flower, fruit, tree, shrub, **vine**, bulb, grass, succulent, fern, groundcover) has a dedicated recommendation block; `vine` uses bone meal at planting + kelp meal at flowering/fruiting (same pattern as flower/fruit)
+- Synthetic alternatives (balanced granular, bloom booster) are offered for `vegetable`, `flower`, `fruit`, and `vine` — the plant types where a quick-release backup is most commonly useful
+- Container-grown plants get an extra note about more frequent/lighter feeding and monthly flushing
+- Always closes with a soil-test recommendation note
+- Results panel in `FertilizerCalculator.jsx` is `lg:sticky lg:top-20` (not plain `sticky top-4`) so it doesn't tuck up under the sticky site header on desktop, and isn't sticky at all on the single-column mobile layout where that would trap it oddly mid-scroll
+
+**Wired into:** `Nav.jsx` (between Garden Architect and Plantopedia), `SiteSearch.jsx` static page index, and `sitemap.js`.
 
 ---
 

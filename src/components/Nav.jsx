@@ -28,7 +28,8 @@ export default function Nav() {
   }
 
   function isActive(href) {
-    return pathname === href || pathname === href + '/' || pathname.startsWith(href + '/')
+    const base = href.endsWith('/') ? href.slice(0, -1) : href
+    return pathname === base || pathname === base + '/' || pathname.startsWith(base + '/')
   }
 
   function navCls(href) {
@@ -48,14 +49,15 @@ export default function Nav() {
   }
 
   const navLinks = [
-    { href: '/wizard',       label: '🌱 Garden Architect' },
-    { href: '/guides',       label: '📖 Plantopedia' },
-    { href: '/infographics', label: '🗺️ Infographics' },
-    { href: '/videos',       label: '🎬 Videos' },
-    { href: '/podcasts',     label: '🎙️ Podcasts' },
+    { href: '/wizard/',                 label: '🌱 Garden Architect' },
+    { href: '/fertilizer-calculator/',  label: '🧪 Fertilizer Calculator' },
+    { href: '/guides/',                 label: '📖 Plantopedia' },
+    { href: '/infographics/',           label: '🗺️ Infographics' },
+    { href: '/videos/',                 label: '🎬 Videos' },
+    { href: '/podcasts/',               label: '🎙️ Podcasts' },
     { href: 'https://pixelsandchisels.etsy.com', label: '🖨️ Shop', external: true },
-    { href: '/about',        label: '👤 About' },
-    { href: '/contact',      label: '✉️ Contact' },
+    { href: '/about/',                  label: '👤 About' },
+    { href: '/contact/',                label: '✉️ Contact' },
   ]
 
   return (

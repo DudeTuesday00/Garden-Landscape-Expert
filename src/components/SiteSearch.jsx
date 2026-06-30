@@ -7,6 +7,7 @@ import { guideCategories } from '../data/guides.js'
 // Key static pages worth surfacing in global search alongside guides
 const staticPages = [
   { title: 'Garden Architect', emoji: '🌱', description: 'Get personalized plant recommendations from 148 plants.', href: '/wizard/' },
+  { title: 'Fertilizer Calculator', emoji: '🧪', description: 'Personalized fertilizer recommendations by plant type, size, and growing method.', href: '/fertilizer-calculator/' },
   { title: 'Plantopedia', emoji: '📖', description: 'Browse 88 expert growing guides by category.', href: '/guides/' },
   { title: 'Garden Infographics', emoji: '🗺️', description: 'Visual quick-reference guides for planting and growing.', href: '/infographics/' },
   { title: 'Gardening Videos', emoji: '🎬', description: 'Curated YouTube channels and original Planting Atlas videos.', href: '/videos/' },
