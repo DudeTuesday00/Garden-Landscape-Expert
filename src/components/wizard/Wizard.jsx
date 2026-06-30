@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import questions from '../../data/questions.js'
 import { matchPlants } from '../../logic/matchPlants.js'
 import WelcomeScreen from './WelcomeScreen.jsx'
@@ -12,6 +12,25 @@ const STAGES = {
   WELCOME: 'welcome',
   QUESTIONS: 'questions',
   RESULTS: 'results',
+}
+
+// Encodes/decodes the answers object into a shareable `?a=` URL param so
+// wizard results survive a refresh and can be copied/shared as a link.
+function encodeAnswers(answers) {
+  try {
+    return encodeURIComponent(JSON.stringify(answers))
+  } catch {
+    return ''
+  }
+}
+
+function decodeAnswers(param) {
+  try {
+    const parsed = JSON.parse(decodeURIComponent(param))
+    return parsed && typeof parsed === 'object' ? parsed : null
+  } catch {
+    return null
+  }
 }
 
 function getActiveQuestions(answers) {
@@ -33,6 +52,17 @@ export default function Wizard() {
 
   const activeQuestions = getActiveQuestions(answers)
   const currentQuestion = activeQuestions[stepIndex]
+
+  // On load, restore a shared/bookmarked result set from the URL (?a=...)
+  useEffect(() => {
+    const encoded = new URLSearchParams(window.location.search).get('a')
+    if (!encoded) return
+    const decoded = decodeAnswers(encoded)
+    if (!decoded) return
+    setAnswers(decoded)
+    setResults(matchPlants(decoded))
+    setStage(STAGES.RESULTS)
+  }, [])
 
   function handleStart() {
     setStage(STAGES.QUESTIONS)
@@ -65,6 +95,8 @@ export default function Wizard() {
       const matched = matchPlants(answers)
       setResults(matched)
       setStage(STAGES.RESULTS)
+      const encoded = encodeAnswers(answers)
+      window.history.replaceState(null, '', encoded ? `?a=${encoded}` : window.location.pathname)
     }
   }
 
@@ -81,6 +113,7 @@ export default function Wizard() {
     setStepIndex(0)
     setAnswers({})
     setResults([])
+    window.history.replaceState(null, '', window.location.pathname)
   }
 
   function handleGoToStep(index) {
@@ -89,9 +122,9 @@ export default function Wizard() {
   }
 
   return (
-    <div className="min-h-screen flex items-start justify-center px-4 py-10">
+    <div className="min-h-screen flex items-start justify-center px-4 py-10 print:py-0 print:px-0">
       <div className="w-full max-w-2xl">
-        <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8">
+        <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8 print:shadow-none print:border-0 print:rounded-none">
           {stage === STAGES.WELCOME && (
             <WelcomeScreen onStart={handleStart} />
           )}
@@ -121,7 +154,7 @@ export default function Wizard() {
           )}
         </div>
 
-        <p className="text-center text-xs text-gray-400 dark:text-gray-500 mt-4">
+        <p className="text-center text-xs text-gray-400 dark:text-gray-500 mt-4 print:hidden">
           Planting Atlas · Plant Selection Wizard v1.0
         </p>
       </div>

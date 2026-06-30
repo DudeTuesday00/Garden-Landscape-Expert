@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 88 guides total. All 88 are live and indexable: 54 have full in-depth content; the remaining 34 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 88 guides total. All 88 are live and indexable: 56 have full in-depth content; the remaining 32 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
@@ -1742,8 +1742,8 @@ All 34 previously `comingSoon: true` guides have been converted to active stub p
 3. A `tip` callout: "A comprehensive guide covering [specific subtopics] is currently in development. Subscribe to the Planting Atlas newsletter to be notified when it publishes."
 
 **Guide counts:**
-- 54 full in-depth guides (full section/table/tip/affiliate content)
-- 34 active stub pages (2 paragraphs + coming-soon notice)
+- 56 full in-depth guides (full section/table/tip/affiliate content) — includes No-Dig Gardening and Seed Saving, expanded from stubs
+- 32 active stub pages (2 paragraphs + coming-soon notice)
 - 88 total live, indexable guide pages
 
 **Principle going forward:** Do not set any guide to `comingSoon: true`. When a docx source file is not yet available, create a stub page following the structure above. When a full docx is received, expand the stub into the complete guide.
@@ -1790,6 +1790,55 @@ All internal `href` values across the codebase were corrected to include trailin
 **16 files updated** — `Nav.jsx`, `layout.jsx`, `HomePage.jsx`, `Infographics.jsx`, `Podcasts.jsx`, `Videos.jsx`, `AboutUs.jsx`, `GuideDetail.jsx`, `CategorySection.jsx`, `GuidesSearch.jsx`, `Results.jsx`, `ShopHome.jsx`, `ShopGrid.jsx`, `ProductDetail.jsx`, `not-found.jsx`, plus dynamic template literals for guide and shop URLs.
 
 **Rule going forward:** Every internal link must use a trailing slash — `href="/wizard/"` not `href="/wizard"`, and `` href={`/guides/${g.id}/`} `` not `` href={`/guides/${g.id}`} ``.
+
+---
+
+### No-Dig Gardening & Seed Saving Guides Expanded to Full Content ✅
+
+`src/data/guide-content/no-dig-gardening.js` and `src/data/guide-content/seed-saving.js` were expanded from 2-paragraph stub pages to full in-depth guides, matching their source `.docx` files (`src/components/guides/no-dig-gardening.docx` and `src/components/guides/seed-saving-guide.docx`).
+
+| Guide | Sections | Notes |
+|---|---|---|
+| No-Dig Gardening (`id: 'no-dig-gardening'`) | 9 sections | Soil food web science, sheet mulch/lasagna bed methods, crop-specific no-dig technique, hot/cold composting, weed & pest management without tillage, 7-row regional adaptation table, month-by-month calendar, quick reference tables, closing reflection |
+| Seed Saving (`id: 'seed-saving'`) | 6 sections, 20 tables | Pollination biology (self vs. cross), open-pollinated/hybrid/GMO distinctions, 50+ crop-specific saving profiles, cleaning (wet vs. dry processing), germination testing, storage guidelines |
+
+- Hero images added: `public/guides/no-dig-gardening-guide.png`, `public/guides/seed-saving-guide.png`; both wired into `src/data/hero-images.js`
+- New theme entries added to `GuideDetail.jsx`: `no-dig-gardening` (emerald/teal gradient), `seed-saving` (emerald/lime gradient)
+- Both guides verified with a full `next build` (110 static pages) before committing
+
+---
+
+### Shareable & Printable Wizard Results ✅
+
+The Garden Architect wizard now persists and shares results via the URL, and supports a clean print view — closing the gap where a completed wizard run vanished on refresh and couldn't be sent to anyone.
+
+**URL state (`src/components/wizard/Wizard.jsx`):**
+- `encodeAnswers()` / `decodeAnswers()` helpers JSON-encode the full `answers` object into a `?a=` query param
+- On mount, a `useEffect` reads `window.location.search` for `a` — if present and valid, it restores `answers`, re-runs `matchPlants()`, and jumps straight to the `RESULTS` stage (so a shared link or browser refresh reproduces the same result set without re-answering questions)
+- When the wizard reaches results (`handleNext`), the URL is updated via `window.history.replaceState` to include the encoded answers — no extra click required to make the current results linkable
+- `handleRestart` clears the `a` param back to a clean `/wizard/` URL
+
+**Share & Print bar (`src/components/wizard/Results.jsx`):**
+- New `ShareBar` component renders two buttons above the results: **🔗 Share My Results** and **🖨️ Print My List**
+- Share button uses `navigator.share()` on supporting devices (mobile share sheet); falls back to `navigator.clipboard.writeText(window.location.href)` with a "✅ Link Copied!" confirmation state on desktop
+- Print button calls `window.print()`
+
+**Print stylesheet (Tailwind `print:` variants, no separate CSS file):**
+- `print:hidden` applied to: site header (`Nav.jsx`), footer (`layout.jsx`), the `ShareBar`, the "Refine your answers" panel, the "Start Over" button, and the long-form SEO content block on `/wizard/page.jsx`
+- `print:shadow-none print:border-0 print:rounded-none print:py-0 print:px-0` applied to the wizard card frame in `Wizard.jsx` so the printed page shows only the plant recommendation cards on a clean white background
+
+---
+
+### Global Site Search ✅
+
+`src/components/SiteSearch.jsx` — a `'use client'` dropdown search reachable from every page via the nav, not just the Plantopedia listing page (`GuidesSearch.jsx` remains in place and unchanged for the in-page Plantopedia category browser).
+
+- **Index:** built once at module load — all live guides (`!comingSoon`) from `guideCategories` (title, emoji, description, `/guides/<id>/`) plus 7 key static pages (Garden Architect, Plantopedia, Infographics, Videos, Podcasts, About, Contact)
+- **UI:** a 🔍 icon button toggles a dropdown panel with an autofocused search input; results (capped at 8) show as a scrollable list with emoji, title, and description; clicking a result or pressing `Escape` or clicking outside the panel closes it
+- **Placement:** rendered as `<SiteSearch />` in `Nav.jsx` in both the desktop nav row (before the dark-mode toggle) and the mobile controls row (before the hamburger button) — each instance manages its own local open/query state independently, which is safe since only one is visible at a given viewport width
+- Plant data (the 148-plant wizard database) is intentionally **not** included in the index — plants don't have individual detail pages, only guides and static pages do
+
+**To extend the index:** add an entry to `staticPages` in `SiteSearch.jsx` for a new top-level page; new guides are picked up automatically via `guideCategories` as soon as `comingSoon: false` is set.
 
 ---
 

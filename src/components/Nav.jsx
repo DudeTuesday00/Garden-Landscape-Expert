@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import SiteSearch from './SiteSearch.jsx'
 
 export default function Nav() {
   const pathname = usePathname()
@@ -58,7 +59,7 @@ export default function Nav() {
   ]
 
   return (
-    <header className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-700 shadow-sm sticky top-0 z-10">
+    <header className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-700 shadow-sm sticky top-0 z-10 print:hidden">
       <div className="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between">
         {/* Brand */}
         <Link
@@ -83,6 +84,7 @@ export default function Nav() {
               </Link>
             )
           )}
+          <SiteSearch />
           <button
             onClick={toggleDark}
             className="ml-1 p-1.5 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
@@ -93,8 +95,9 @@ export default function Nav() {
           </button>
         </nav>
 
-        {/* Mobile controls — dark toggle + hamburger */}
+        {/* Mobile controls — search + dark toggle + hamburger */}
         <div className="flex items-center gap-1 md:hidden">
+          <SiteSearch />
           <button
             onClick={toggleDark}
             className="p-1.5 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"

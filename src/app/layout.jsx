@@ -90,7 +90,7 @@ export default function RootLayout({ children }) {
         <div className="min-h-screen bg-gradient-to-b from-garden-50 to-white dark:from-gray-900 dark:to-gray-900">
           <Nav />
           <main>{children}</main>
-          <footer className="mt-16 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-500 dark:text-gray-400">
+          <footer className="mt-16 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-500 dark:text-gray-400 print:hidden">
             <div className="max-w-3xl mx-auto px-4 py-10">
 
               {/* Two-column grid */}
