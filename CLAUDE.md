@@ -1892,6 +1892,27 @@ Two sitewide JSON-LD blocks added to `src/app/layout.jsx` (server component, app
 
 ---
 
+### Accessibility: Skip-to-Content Link & Image Lazy Loading ✅
+
+**Skip-to-content link** (`src/app/layout.jsx`):
+- A visually-hidden `<a href="#main-content">Skip to content</a>` is the first focusable element in `<body>`, using Tailwind's `sr-only` / `focus:not-sr-only` pattern — invisible until a keyboard user tabs to it, then appears as a fixed pill in the top-left corner
+- `<main>` now carries `id="main-content"` as the jump target
+- Lets keyboard and screen-reader users bypass the nav (8 links + search + dark-mode toggle) on every single page load
+
+**`loading="lazy"` on below-the-fold images:**
+Hero/LCP images (page headers, guide hero photos, the two homepage path cards, the wizard welcome image, the shop gallery's main product photo) are left at the browser default (eager) since lazy-loading the largest above-the-fold image delays paint rather than helping it. Everything rendered below an initial viewport got `loading="lazy"` added:
+
+| File | Image | Why lazy |
+|---|---|---|
+| `Infographics.jsx` | `InfographicSection` grid image | One of 28 images stacked down the page |
+| `HomePage.jsx` | Author strip photo (`/about-me-image.png`) | Below the path cards and stats strip |
+| `guides/AuthorBox.jsx` | Author photo, rendered on every guide | Always at the bottom of guide content |
+| `guides/GuideDetail.jsx` | Affiliate product card image | Embedded deep in guide body sections |
+| `shop/ShopGrid.jsx` | Product thumbnail | One of many cards in the shop grid |
+| `shop/ImageGallery.jsx` | Thumbnail strip images | Secondary to the already-loaded main product image |
+
+---
+
 ## Notes for AI Assistants
 
 - **A guide must not be built unless a `.docx` source file exists for that subject.** The `.docx` file is the authoritative source of truth for guide content; do not create or populate a guide JS file from scratch without one.

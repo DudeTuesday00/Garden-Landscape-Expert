@@ -108,6 +108,7 @@ function ThumbnailBtn({ img, idx, activeIdx, productName, emoji, onClick }) {
         <img
           src={img}
           alt={`${productName} thumbnail ${idx + 1}`}
+          loading="lazy"
           className="w-full h-full object-cover"
           onError={() => setFailed(true)}
         />

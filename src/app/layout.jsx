@@ -110,6 +110,14 @@ export default function RootLayout({ children }) {
         <meta name="google-adsense-account" content="ca-pub-2083020536499662" />
       </head>
       <body>
+        {/* Skip to content — first focusable element, visually hidden until keyboard-focused */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-garden-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-medium"
+        >
+          Skip to content
+        </a>
+
         {/* GTM noscript fallback — immediately after <body> per Google's guidance */}
         <noscript>
           <iframe
@@ -127,7 +135,7 @@ export default function RootLayout({ children }) {
 
         <div className="min-h-screen bg-gradient-to-b from-garden-50 to-white dark:from-gray-900 dark:to-gray-900">
           <Nav />
-          <main>{children}</main>
+          <main id="main-content">{children}</main>
           <footer className="mt-16 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-500 dark:text-gray-400 print:hidden">
             <div className="max-w-3xl mx-auto px-4 py-10">
 
