@@ -1,11 +1,17 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import CategorySection from './CategorySection.jsx'
 
 export default function GuidesSearch({ visibleCategories }) {
   const [query, setQuery] = useState('')
+
+  // Pre-fill from ?q= so the sitewide SearchAction (see layout.jsx JSON-LD) actually works
+  useEffect(() => {
+    const initial = new URLSearchParams(window.location.search).get('q')
+    if (initial) setQuery(initial)
+  }, [])
 
   const q = query.trim().toLowerCase()
 

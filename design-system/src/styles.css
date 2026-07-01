@@ -1,0 +1,7 @@
+/* Planting Atlas brand fonts — served remotely by Google Fonts (matches the
+   host app's next/font/google self-hosting: Raleway for headings, Lato for body) */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Lato:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

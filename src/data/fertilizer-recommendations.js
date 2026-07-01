@@ -244,6 +244,29 @@ export function getFertilizerRecommendations({
     }
   }
 
+  if (plantType === 'vine') {
+    // Climbers and vines — moderate feeders; phosphorus/potassium support flowering and fruiting vines alike
+    recommendations.push({
+      fertilizerId: 'bone-meal',
+      priority: 'high',
+      amount: '1–2 tbsp per plant',
+      unit: '',
+      timing: 'At planting, worked into the root zone at the base of the support structure',
+      notes: 'Especially important for clematis, climbing roses, grapes, and flowering vines.',
+      why: 'Phosphorus builds the root system a vine needs before it can climb and cover its support.',
+    })
+
+    recommendations.push({
+      fertilizerId: 'kelp-meal',
+      priority: 'medium',
+      amount: '1 tbsp per plant',
+      unit: '',
+      timing: 'Early spring and again when flowering or fruiting begins',
+      notes: 'Especially helpful for grapes, passionflower, and other fruiting or heavy-blooming vines.',
+      why: 'Potassium improves flower and fruit quality and helps vines tolerate the stress of climbing structures.',
+    })
+  }
+
   if (plantType === 'bulb') {
     recommendations.push({
       fertilizerId: 'bone-meal',
@@ -270,7 +293,7 @@ export function getFertilizerRecommendations({
   }
 
   // === SYNTHETIC SECONDARY OPTIONS (always shown as alternatives) ===
-  if (['vegetable', 'flower', 'fruit'].includes(plantType)) {
+  if (['vegetable', 'flower', 'fruit', 'vine'].includes(plantType)) {
     recommendations.push({
       fertilizerId: 'balanced-granular',
       priority: 'alternative',
@@ -281,7 +304,7 @@ export function getFertilizerRecommendations({
       why: 'Quick nutrient boost when organic options are not available.',
     })
 
-    if (plantType === 'vegetable' || plantType === 'flower') {
+    if (['vegetable', 'flower', 'vine'].includes(plantType)) {
       recommendations.push({
         fertilizerId: 'bloom-booster',
         priority: 'alternative',

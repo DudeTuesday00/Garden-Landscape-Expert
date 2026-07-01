@@ -28,6 +28,7 @@ export const metadata = {
   keywords:
     'planting guide, landscape design, garden planning, USDA zones, plant database, gardening expert, hydroponic gardening, Plantopedia, Garden Architect',
   metadataBase: new URL('https://plantingatlas.com'),
+  manifest: '/manifest.json',
   icons: {
     icon: '/favicon.png',
     apple: '/favicon.png',
@@ -50,6 +51,33 @@ export const metadata = {
   },
 }
 
+export const viewport = {
+  themeColor: '#2F6B3F',
+}
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Planting Atlas',
+  url: 'https://plantingatlas.com',
+  logo: 'https://plantingatlas.com/favicon.png',
+}
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Planting Atlas',
+  url: 'https://plantingatlas.com',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://plantingatlas.com/guides/?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${raleway.variable} ${lato.variable}`}>
@@ -59,6 +87,16 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: `(function(){var s=localStorage.getItem('gle-dark-mode'),p=window.matchMedia('(prefers-color-scheme:dark)').matches;if(s==='true'||(s===null&&p))document.documentElement.classList.add('dark')})();`,
           }}
+        />
+
+        {/* Sitewide Organization + WebSite/SearchAction JSON-LD — enables Google sitelinks search box */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
 
         {/* Google Tag Manager — must be first script in <head> per Google's guidance */}
@@ -76,6 +114,14 @@ export default function RootLayout({ children }) {
         <meta name="google-adsense-account" content="ca-pub-2083020536499662" />
       </head>
       <body>
+        {/* Skip to content — first focusable element, visually hidden until keyboard-focused */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-garden-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-medium"
+        >
+          Skip to content
+        </a>
+
         {/* GTM noscript fallback — immediately after <body> per Google's guidance */}
         <noscript>
           <iframe
@@ -93,8 +139,8 @@ export default function RootLayout({ children }) {
 
         <div className="min-h-screen bg-gradient-to-b from-garden-50 to-white dark:from-gray-900 dark:to-gray-900">
           <Nav />
-          <main>{children}</main>
-          <footer className="mt-16 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-500 dark:text-gray-400">
+          <main id="main-content">{children}</main>
+          <footer className="mt-16 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-500 dark:text-gray-400 print:hidden">
             <div className="max-w-3xl mx-auto px-4 py-10">
 
               {/* Two-column grid */}

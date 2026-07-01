@@ -1,12 +1,12 @@
 'use client'
 
 import { useState } from 'react'
-import { 
-  plantTypeOptions, 
-  growthStageOptions, 
-  physicalSizeOptions, 
+import {
+  plantTypeOptions,
+  growthStageOptions,
+  physicalSizeOptions,
   getFertilizerRecommendations,
-  getFeedingProfile 
+  getFeedingProfile
 } from '../../data/fertilizer-recommendations'
 import { fertilizerTypes } from '../../data/fertilizer-types'
 
@@ -27,7 +27,7 @@ export default function FertilizerCalculator() {
   const selectedPlantLabel = plantTypeOptions.find(p => p.id === plantType)?.label || plantType
 
   // Separate essential/high priority from alternatives and notes
-  const coreRecommendations = recommendations.filter(r => 
+  const coreRecommendations = recommendations.filter(r =>
     !r.type && (r.priority === 'essential' || r.priority === 'high' || r.priority === 'medium')
   )
   const alternatives = recommendations.filter(r => r.priority === 'alternative')
@@ -41,8 +41,8 @@ export default function FertilizerCalculator() {
           Fertilizer Calculator
         </h1>
         <p className="mt-2 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          Get personalized, practical fertilizer recommendations based on what you’re growing, 
-          how big it is, and whether it’s in the ground or a container.
+          Get personalized, practical fertilizer recommendations based on what you're growing,
+          how big it is, and whether it's in the ground or a container.
         </p>
       </div>
 
@@ -171,7 +171,7 @@ export default function FertilizerCalculator() {
 
         {/* RESULTS */}
         <div className="lg:col-span-3">
-          <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6 sticky top-4">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6 lg:sticky lg:top-20">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-xl font-bold text-garden-800 dark:text-garden-300">
                 Recommendations for {selectedPlantLabel}
@@ -259,11 +259,11 @@ export default function FertilizerCalculator() {
             {notes.length > 0 && (
               <div className="mt-6 space-y-3">
                 {notes.map((note, i) => (
-                  <div 
-                    key={i} 
+                  <div
+                    key={i}
                     className={`text-sm p-3 rounded-xl border ${
-                      note.type === 'important-note' 
-                        ? 'bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-900 text-amber-800 dark:text-amber-300' 
+                      note.type === 'important-note'
+                        ? 'bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-900 text-amber-800 dark:text-amber-300'
                         : 'bg-gray-50 dark:bg-gray-900 border-gray-200 dark:border-gray-700'
                     }`}
                   >
@@ -278,7 +278,7 @@ export default function FertilizerCalculator() {
 
       {/* Footer Note */}
       <div className="mt-8 text-center text-xs text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
-        These are general guidelines based on common horticultural practices. 
+        These are general guidelines based on common horticultural practices.
         A soil test is the best way to know exactly what your soil needs.
       </div>
     </div>

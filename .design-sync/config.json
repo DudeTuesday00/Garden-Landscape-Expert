@@ -1,0 +1,7 @@
+{
+  "pkg": "planting-atlas-ds",
+  "globalName": "PlantingAtlasDS",
+  "shape": "package",
+  "buildCmd": "npm run build",
+  "cssEntry": "dist/styles.css"
+}

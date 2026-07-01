@@ -126,6 +126,7 @@ export default function HomePage() {
           <img
             src="/about-me-image.png"
             alt="David Rodgers"
+            loading="lazy"
             className="w-14 h-14 rounded-full object-cover flex-shrink-0 border-2 border-garden-200 dark:border-garden-700"
           />
           <div>

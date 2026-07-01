@@ -155,6 +155,46 @@ function PlantCard({ plant, isHydro }) {
   )
 }
 
+function ShareBar() {
+  const [copied, setCopied] = useState(false)
+
+  async function handleShare() {
+    const url = window.location.href
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: 'My Planting Atlas Plant Recommendations', url })
+      } catch {
+        // user cancelled the native share sheet — no action needed
+      }
+      return
+    }
+    try {
+      await navigator.clipboard.writeText(url)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      // clipboard unavailable — silently ignore
+    }
+  }
+
+  return (
+    <div className="flex justify-center gap-3 print:hidden">
+      <button
+        onClick={handleShare}
+        className="inline-flex items-center gap-1.5 text-sm font-medium text-garden-700 dark:text-garden-400 bg-garden-50 dark:bg-gray-700 hover:bg-garden-100 dark:hover:bg-gray-600 border border-garden-200 dark:border-gray-600 rounded-xl px-4 py-2 transition-colors"
+      >
+        {copied ? '✅ Link Copied!' : '🔗 Share My Results'}
+      </button>
+      <button
+        onClick={() => window.print()}
+        className="inline-flex items-center gap-1.5 text-sm font-medium text-garden-700 dark:text-garden-400 bg-garden-50 dark:bg-gray-700 hover:bg-garden-100 dark:hover:bg-gray-600 border border-garden-200 dark:border-gray-600 rounded-xl px-4 py-2 transition-colors"
+      >
+        🖨️ Print My List
+      </button>
+    </div>
+  )
+}
+
 export default function Results({ plants, answers, activeQuestions, onRestart, onGoToStep }) {
   const [showRefine, setShowRefine] = useState(false)
   const isHydro = answers.growingMethod === 'hydroponic'
@@ -203,8 +243,10 @@ export default function Results({ plants, answers, activeQuestions, onRestart, o
         )}
       </div>
 
+      <ShareBar />
+
       {/* Refine answers */}
-      <div className="bg-garden-50 dark:bg-gray-700/50 rounded-2xl border border-garden-100 dark:border-gray-600 overflow-hidden">
+      <div className="bg-garden-50 dark:bg-gray-700/50 rounded-2xl border border-garden-100 dark:border-gray-600 overflow-hidden print:hidden">
         <button
           onClick={() => setShowRefine((s) => !s)}
           className="w-full flex items-center justify-between px-5 py-3 text-sm font-medium text-garden-800 dark:text-garden-300 hover:bg-garden-100 dark:hover:bg-gray-700 transition-colors"
@@ -263,7 +305,7 @@ export default function Results({ plants, answers, activeQuestions, onRestart, o
       )}
 
       {/* Restart */}
-      <div className="flex justify-center pt-2">
+      <div className="flex justify-center pt-2 print:hidden">
         <button
           onClick={onRestart}
           className="border-2 border-garden-500 text-garden-700 dark:text-garden-400 hover:bg-garden-50 dark:hover:bg-gray-700 font-semibold px-8 py-2.5 rounded-xl transition-colors"

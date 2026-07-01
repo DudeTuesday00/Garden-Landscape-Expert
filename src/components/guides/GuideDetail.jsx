@@ -966,7 +966,7 @@ function Block({ block, theme }) {
         <div className="rounded-2xl border-2 border-earth-500 bg-amber-50 dark:bg-gray-700 dark:border-yellow-600 overflow-hidden shadow-sm">
           {block.image && (
             <div className="flex justify-center bg-white dark:bg-gray-800 px-6 pt-5 pb-3">
-              <img src={block.image} alt={block.title} className="h-52 w-auto object-contain" />
+              <img src={block.image} alt={block.title} loading="lazy" className="h-52 w-auto object-contain" />
             </div>
           )}
           <div className="p-5 flex flex-col gap-3">

@@ -1,4 +1,4 @@
-import FertilizerCalculator from '../../components/fertilizer-calculator/FertilizerCalculator'
+import FertilizerCalculator from '../../components/fertilizer-calculator/FertilizerCalculator.jsx'
 
 export const metadata = {
   title: 'Fertilizer Calculator',
@@ -8,6 +8,10 @@ export const metadata = {
   },
   openGraph: {
     url: 'https://plantingatlas.com/fertilizer-calculator/',
+    title: 'Fertilizer Calculator | Planting Atlas',
+    description: 'Find out exactly what and how much fertilizer to use for your specific plants.',
+  },
+  twitter: {
     title: 'Fertilizer Calculator | Planting Atlas',
     description: 'Find out exactly what and how much fertilizer to use for your specific plants.',
   },

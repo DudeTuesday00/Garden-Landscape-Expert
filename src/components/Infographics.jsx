@@ -17,6 +17,7 @@ function InfographicSection({ src, alt, heading, description, caption, guideHref
         <img
           src={src}
           alt={alt}
+          loading="lazy"
           className="w-full h-auto block hover:opacity-90 transition-opacity"
         />
       </button>

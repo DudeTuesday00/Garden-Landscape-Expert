@@ -79,7 +79,7 @@ export default function WizardPage() {
       <Wizard />
 
       {/* Long-form editorial content — always visible, indexed by Google */}
-      <div className="w-full max-w-3xl mx-auto mt-6 px-4 pb-20 space-y-14 text-gray-700 dark:text-gray-300">
+      <div className="w-full max-w-3xl mx-auto mt-6 px-4 pb-20 space-y-14 text-gray-700 dark:text-gray-300 print:hidden">
 
         <section>
           <h2 className="text-2xl sm:text-3xl font-bold text-garden-800 dark:text-garden-300 mb-4">
