@@ -90,6 +90,8 @@ Garden-Landscape-Expert/
     │   ├── page.jsx                 # / — Home page (server component)
     │   ├── wizard/
     │   │   └── page.jsx             # /wizard/ — Garden Architect (metadata export)
+    │   ├── fertilizer-calculator/
+    │   │   └── page.jsx             # /fertilizer-calculator/ — Interactive fertilizer recommendation tool
     │   ├── guides/
     │   │   ├── page.jsx             # /guides/ — Plantopedia landing (metadata export)
     │   │   └── [guideId]/
@@ -150,12 +152,16 @@ Garden-Landscape-Expert/
     │       ├── ShopGrid.jsx           # 'use client' — category filter tabs + Etsy-style product card grid
     │       ├── ImageGallery.jsx       # 'use client' — main image + thumbnail strip + click-to-enlarge lightbox
     │       └── ProductDetail.jsx      # Server component — full detail page (gallery, features, specs, CTA)
+    │   └── fertilizer-calculator/
+    │       └── FertilizerCalculator.jsx # 'use client' — main interactive fertilizer recommendation tool
     ├── data/
     │   ├── plants.js                # Static plant database (148 plants across 12 types)
     │   ├── questions.js             # Wizard question definitions (with hydro routing flags)
-    │   ├── guides.js                # 10 guide categories, 88 guides — all comingSoon: false; stubs active for undeveloped guides
-    │   ├── products.js              # 3D printed product database (6 placeholder products, 5 categories)
-    │   ├── hero-images.js           # Shared heroImages map (guide ID → /guides/*.png) — imported by GuideDetail.jsx and sitemap.js
+    │   ├── guides.js                # 10 guide categories, 88 guides — all comingSoon: false
+    │   ├── products.js              # 3D printed product database
+    │   ├── fertilizer-types.js      # Fertilizer & amendment catalog used by the Fertilizer Calculator
+    │   ├── fertilizer-recommendations.js # Recommendation engine for the Fertilizer Calculator (supports all 12 plant types + size/stage logic + hydroponics mode)
+    │   ├── hero-images.js           # Shared heroImages map (guide ID → /guides/*.png)
     │   └── guide-content/           # One JS file per live guide + shared index
     │       ├── index.js             # contentMap export — used by GuideDetail and [guideId]/page.jsx
     │       ├── shade-trees.js
@@ -784,13 +790,13 @@ The site was fully migrated from a Vite SPA to **Next.js 15 App Router** with st
 | `src/app/layout.jsx` | Root layout — dark mode script, GTM, Nav, footer, scripts |
 | `src/app/guides/[guideId]/page.jsx` | SSG — `generateStaticParams` + `generateMetadata` per guide |
 | `src/data/guide-content/index.js` | Shared `contentMap` used by both `GuideDetail` and `[guideId]/page.jsx` |
-| `src/components/Nav.jsx` | `'use client'` — `usePathname` active state + dark mode toggle |
+| `src/components/Nav.jsx` | `'use client'` — `usePathname` active state + dark mode toggle; includes link to Fertilizer Calculator |
 | `src/components/wizard/Wizard.jsx` | Added `'use client'` directive |
 | `src/components/ContactUs.jsx` | Added `'use client'` directive; removed `SEO` |
 
 **Client vs server components:**
 - Server (default): `HomePage`, `GuidesHome`, `GuideDetail`, `ShopHome`, `ProductDetail`, `PrivacyPolicy`, all page files
-- Client (`'use client'`): `Nav`, `Wizard` (and its sub-components), `ContactUs`, `ShopGrid`, `ImageGallery`, `Infographics`, `CategorySection`, `GuidesSearch`, `NewsletterSignup`, `CookieBanner`
+- Client (`'use client'`): `Nav`, `Wizard` (and its sub-components), `ContactUs`, `ShopGrid`, `ImageGallery`, `Infographics`, `CategorySection`, `GuidesSearch`, `NewsletterSignup`, `CookieBanner`, `FertilizerCalculator`
 
 **Build output:** `next build` generates `out/` — a fully static directory deployable to Cloudflare Pages with zero server required.
 
@@ -1131,6 +1137,43 @@ Theme: amber/orange gradient in `GuideDetail.jsx`; hero image: `public/guides/fo
 | Section 7: Troubleshooting, Getting Started & Closing | ✅ Done | Soil-test-first warning callout; 10-row symptom/cause/solution troubleshooting table; Year 1 foundation plan (5 items); Year 2 building plan (5 items); Year 3+ closing reflection and tip callout |
 
 Theme: lime/green gradient in `GuideDetail.jsx`; hero image: `public/guides/organic-fertilizing.png`; `comingSoon: false` under Eco & Sustainability in `guides.js`; wired in `src/data/guide-content/index.js`
+
+---
+
+### No-Dig Gardening Guide ✅
+
+`src/data/guide-content/no-dig-gardening.js` — No-Dig Gardening (`id: 'no-dig-gardening'`); fully built from `no-dig-gardening.docx` — 9 sections covering the science of undisturbed soil, sheet mulching and lasagna bed construction, practical application for vegetables/ornamentals/cut flowers/specific crops, composting for the system, weeds/pests/problems, regional adaptations across the US, a full year-round calendar, quick reference tables, and closing reflection.
+
+| Section | Status | Notes |
+|---|---|---|
+| Section 1: The Science of No-Dig | ✅ Done | Why tillage destroys mycorrhizal networks, soil aggregates, organism communities, and triggers weeds; 4-row soil food web table; emphasis on mycorrhizal revolution and carbon sequestration |
+| Section 2: The No-Dig Method | ✅ Done | Sheet mulching step-by-step (cardboard + 4-6" compost); Lasagna bed layering table (green/brown/compost); annual 1-2" top-dressing protocol; transitioning from dug beds |
+| Section 3: No-Dig in Practice | ✅ Done | Permanent bed design (30-48" wide); 4-row specific crops table (potatoes surface method, root crops, tomatoes, garlic); ornamental borders and cut flower adaptations |
+| Section 4: Composting for No-Dig | ✅ Done | Hot vs cold composting details; materials quality table; sourcing options (municipal, manure, spent mushroom, worm castings); 1-2-3 compost rule |
+| Section 5: Weeds, Pests & Problems | ✅ Done | Weed seed bank dynamics; 3-row weed type management table; biological suppression of pests/diseases; 10-row common problems/solutions table |
+| Section 6: Regional No-Dig Guide | ✅ Done | 7-row regional table (PNW through New England) with opportunities, challenges, materials, and strategy; 4-row soil type adaptations (clay, sand, compacted urban, alkaline) |
+| Section 7: The No-Dig Calendar | ✅ Done | 6-row month-by-month table (Jan–Dec) with tasks, compost/mulch, planting, and regional notes |
+| Section 8: Quick Reference Tables | ✅ Done | Compost application rates table; 5-row Dos and Don'ts; starter shopping list |
+| Closing Reflection | ✅ Done | "The best time to stop digging was the day you started. The second best time is now." |
+
+Theme: emerald/teal gradient in `GuideDetail.jsx`; hero image: `public/guides/no-dig-gardening-guide.png`; `comingSoon: false` under Eco & Sustainability in `guides.js`; wired in `src/data/guide-content/index.js`
+
+---
+
+### Seed Saving Guide ✅
+
+`src/data/guide-content/seed-saving.js` — Seed Saving Guide (`id: 'seed-saving'`); fully built from `seed-saving-guide.docx` — comprehensive guide with 5 major sections covering the philosophy and benefits of seed saving, the science of pollination/isolation/selection/maturity, an extensive crop-by-crop guide (Tomato family, Legumes, Cucurbits with species key, Corn, Salad crops, Root vegetables/biennials, full Brassica family breakdown, Onion family, Annual herbs, and many flowers), detailed cleaning/processing methods (threshing, winnowing, wet fermentation), germination testing, storage science and longevity tables, and closing reflection.
+
+| Section | Status | Notes |
+|---|---|---|
+| Section 1: Why Save Seeds | ✅ Done | Expanded 6-row benefits table with rich explanations; full OP vs F1 Hybrid vs GMO vs Treated seed table; "Seed Saving Learning Curve" table (Beginner through Expert with example crops) |
+| Section 2: The Science of Seeds | ✅ Done | Detailed pollination types table; comprehensive isolation methods table (distance, bag, cage, temporal, population isolation); seed maturity stages table; selection principles table; minimum population size table by crop type |
+| Section 3: Crop-by-Crop Seed Saving Guide | ✅ Done | Rich tables with isolation, harvest timing, and step-by-step processing for: Tomato family, Legumes (beans, peas, runner, broad, soy), Cucurbits (with species key tip), Corn (special case), Salad crops, Root vegetables/biennials, full Brassica species breakdown, Onion family (including garlic note), Annual herbs, and 12+ flowers (zinnias through echinacea) |
+| Section 4: Cleaning & Processing Seeds | ✅ Done | Full threshing methods table (6 methods); winnowing instructions; complete wet fermentation process for tomatoes/cucurbits; germination testing protocol with rate guidance table |
+| Section 5: Storing Seeds for Maximum Viability | ✅ Done | "Two enemies of seed longevity" (heat & moisture); recommended conditions and containers; expected longevity table by crop; desiccant and labeling best practices |
+| Closing Reflection | ✅ Done | Connection to 10,000-year agricultural heritage; encouragement to start small |
+
+Theme: emerald/lime gradient in `GuideDetail.jsx`; hero image: `public/guides/seed-saving-guide.png`; `comingSoon: false` under Eco & Sustainability in `guides.js`; wired in `src/data/guide-content/index.js`
 
 ---
 
@@ -1943,6 +1986,7 @@ Hero/LCP images (page headers, guide hero photos, the two homepage path cards, t
 
 - **A guide must not be built unless a `.docx` source file exists for that subject.** The `.docx` file is the authoritative source of truth for guide content; do not create or populate a guide JS file from scratch without one.
 - Prefer editing existing files over creating new ones unless strictly necessary
+- **Always use relative imports** (e.g. `../components/Nav.jsx`, `../../data/plants.js`). The project does **not** use the `@/` path alias, even though Next.js can support it. Using `@/` will cause Cloudflare Pages builds to fail.
 - Avoid over-engineering; keep solutions minimal and focused
 - Do not push to branches other than the designated `claude/` branch without explicit permission
 - When adding plants, follow the schema table above exactly
@@ -1951,3 +1995,5 @@ Hero/LCP images (page headers, guide hero photos, the two homepage path cards, t
   - **Hydroponic path:** hard filters on `plant.hydroponic === true` and type; skips zone/soil/season; soft scores hydro system compatibility, water, space, experience
 - The wizard question list is computed dynamically in `Wizard.jsx` via `getActiveQuestions(answers)` — adding a question with `skipIfHydro` or `hydroOnly` is all that's needed to route it correctly
 - **Guide JS file structure — known build-breaking mistake:** When building a guide section-by-section across multiple commits, it is easy to accidentally insert a premature `  ],` that closes the `sections` array before all sections have been added. This causes a Next.js/webpack syntax error at build time ("Unexpected token `{`"). Before committing any guide content file, verify that only **one** `  ],` exists at the top level of the file (the correct closing of `sections`), and that all section objects `{ id, title, blocks }` sit inside that array. Use `grep -n "^  \]," <file>` to check.
+
+- **Google AdSense is intentionally disabled** (as of May 2026). The script that loads `adsbygoogle.js` is gated behind `process.env.NEXT_PUBLIC_ENABLE_ADSENSE === 'true'` in `src/app/layout.jsx`. The verification meta tag remains. Do not enable the ad script until the site is approved by Google. See `.env.example` for documentation. This change was made following an AdSense readiness audit.
