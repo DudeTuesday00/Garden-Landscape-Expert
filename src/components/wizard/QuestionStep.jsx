@@ -1,5 +1,7 @@
+import Link from 'next/link'
+
 export default function QuestionStep({ question, answer, onAnswer, onBack, onNext, isFirst }) {
-  const { id, title, subtitle, options, multi } = question
+  const { id, title, subtitle, subtitleLink, options, multi } = question
 
   function toggle(value) {
     if (!multi) {
@@ -27,7 +29,14 @@ export default function QuestionStep({ question, answer, onAnswer, onBack, onNex
       <div>
         <h2 className="text-2xl font-bold text-garden-800 dark:text-garden-300 leading-snug">{title}</h2>
         {subtitle && (
-          <p className="mt-1.5 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{subtitle}</p>
+          <p className="mt-1.5 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+            {subtitle}{' '}
+            {subtitleLink && (
+              <Link href={subtitleLink.href} className="text-garden-600 dark:text-garden-400 underline underline-offset-2 hover:text-garden-800 dark:hover:text-garden-200">
+                {subtitleLink.text}
+              </Link>
+            )}
+          </p>
         )}
       </div>
 

@@ -85,7 +85,11 @@ export default function Infographics() {
         onOpen={openLightbox}
       />
       <div className="mt-3 mb-12 -mt-8 p-3 bg-garden-50 dark:bg-garden-900/20 border border-garden-200 dark:border-garden-800 rounded-xl text-sm text-garden-800 dark:text-garden-300">
-        💡 <strong>Tip:</strong> Use the USDA Plant Hardiness Zone Map at planthardiness.ars.usda.gov to look up your exact zip code.
+        💡 <strong>Tip:</strong> Use our{' '}
+        <Link href="/tools/usda-zone-finder/" className="underline hover:text-garden-600 dark:hover:text-garden-400">
+          USDA Hardiness Zone Finder
+        </Link>{' '}
+        to look up your exact zone by zip code.
       </div>
 
       {/* Section 3: Soil pH */}
