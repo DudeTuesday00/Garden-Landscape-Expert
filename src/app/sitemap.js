@@ -36,6 +36,8 @@ export default function sitemap() {
     { url: `${SITE_URL}/tools/plant-symptom-checker/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/tools/companion-planting-checker/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/tools/succession-planner/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${SITE_URL}/tools/grow-your-own-savings/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${SITE_URL}/tools/watering-calculator/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/guides/`,                 lastModified: DATE_STUBS_LAUNCHED, changeFrequency: 'weekly',  priority: 0.9 },
     { url: `${SITE_URL}/infographics/`,           lastModified: DATE_PAGES_UPDATED,  changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/podcasts/`,               lastModified: DATE_PAGES_UPDATED,  changeFrequency: 'monthly', priority: 0.7 },

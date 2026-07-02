@@ -98,7 +98,7 @@ export const tools = [
     tagline: 'See how much money a home-grown harvest saves compared to store prices.',
     emoji: '💰',
     href: '/tools/grow-your-own-savings/',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     id: 'watering-calculator',
@@ -106,7 +106,7 @@ export const tools = [
     tagline: 'A concrete watering plan for your plant, container size, and climate.',
     emoji: '💧',
     href: '/tools/watering-calculator/',
-    status: 'coming-soon',
+    status: 'live',
   },
 ]
 

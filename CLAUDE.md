@@ -1977,7 +1977,7 @@ Hero/LCP images (page headers, guide hero photos, the two homepage path cards, t
 4. Add the route to `src/app/sitemap.js`
 5. Each tool page should include a "← Back to Garden Tools" link to `/tools/` (see `FertilizerCalculator.jsx` for the pattern)
 
-Currently registered: **Fertilizer Calculator** (live), **Find Your USDA Hardiness Zone** (live), **Garden Planting Calendar** (live).
+Currently registered (all live): **Fertilizer Calculator**, **Find Your USDA Hardiness Zone**, **Garden Planting Calendar**, **Soil & Raised Bed Calculator**, **Mulch Calculator**, **Compost Calculator**, **Plant Spacing & Square Foot Garden Planner**, **Garden Yield Estimator**, **Garden Symptom Diagnostic**, **Companion Planting Checker**, **Succession Planting Planner**, **Value of Growing Your Own**, **Watering Schedule Calculator**.
 
 ### Find Your USDA Hardiness Zone ✅
 
@@ -2057,6 +2057,127 @@ The garden/earth brand pair could **not** be used at their standard 600/500 step
 - Frost-free zones (11–13) skip frost-relative math entirely and fall back to the seasonal band, since "weeks before last frost" is meaningless where there isn't one
 
 **Cross-links:** Zone Finder's result panel links here with `?zip=` prefill; this tool's ZIP form reads that param on mount; each timeline row links to its plant type's guide via `typeGuides`; top-of-page links to Four-Season Garden Design, Winter Garden Prep, and the Spring Startup / Fall Planting stub guides.
+
+---
+
+### 10 Additional Calculators — "Beyond garden.org" Build ✅
+
+Built in response to a request to bring the site's calculator suite beyond garden.org's NGA calculator family (`garden.org/nga/calculators/`) — that page 403s automated fetches, so the plan was built from domain knowledge and grounded in this site's own guide content wherever possible rather than scraped. All 10 shipped one at a time, each verified live before starting the next, per the user's explicit request. Every tool follows the standard pattern: registry entry in `src/data/tools.js`, route + component under `src/app/tools/<id>/` and `src/components/tools/<id>/`, `sitemap.js` + `SiteSearch.jsx` wiring, a "← Back to Garden Tools" breadcrumb, and cross-links to relevant guides. The `/tools/` hub has zero "Coming Soon" cards remaining.
+
+#### Soil & Raised Bed Calculator ✅
+
+`/tools/soil-calculator/` — soil volume for a rectangular bed, circular bed/pot, or common container preset (3–25 gal), broken into a mix ratio and bag-count shopping list.
+
+| File | Role |
+|---|---|
+| `src/data/soil-mixes.js` | Three mix formulas — `raised-bed` (1/3 topsoil / 1/3 compost / 1/3 perlite-vermiculite, from `childrens-vegetable-garden.js`), `square-foot` (Mel Bartholomew's "Mel's Mix", from `square-foot-gardening.js`), `container` (a standard convention, not tied to one guide) |
+| `src/logic/soilCalculator.js` | `rectangularVolumeCuFt` / `circularVolumeCuFt` / `getContainerPresetVolumeCuFt` geometry helpers; `computeSoilBreakdown()` splits total volume by mix ratio and converts to bag counts (topsoil/compost bags ≈1.5 cu ft, perlite/vermiculite ≈4 cu ft, potting mix ≈2 cu ft) |
+| `src/components/tools/soil-calculator/SoilCalculator.jsx` | `'use client'` — shape selector, dimension inputs, mix picker, results panel with per-component bag counts |
+
+Cross-links to Square Foot Gardening, No-Dig Gardening, and Children's Vegetable Garden guides.
+
+#### Mulch Calculator ✅
+
+`/tools/mulch-calculator/` — mulch volume from area + depth, with depth defaults pulled directly from the Mulching Guide's own "Depth by Application Type" table (trees, shrubs, perennial/annual beds, vegetable rows, pathways, slopes), plus a bagged-vs-bulk cost estimate from the guide's cost comparison table.
+
+| File | Role |
+|---|---|
+| `src/data/mulch-types.js` | `mulchApplications` (9 application types with default depth in inches, from the guide) and `mulchTypes` (7 materials with `soldAs: 'bag'\|'bale'\|'bulk-only'\|'free'` — this distinction matters, see below) |
+| `src/logic/mulchCalculator.js` | `computeMulchVolume(areaSqFt, depthInches)` — the guide's own formula (`area ÷ 12 × depth = cu ft`; `÷ 27 = cu yd`); `estimateMulchCost()` |
+
+**A real bug caught during verification:** the guide's "Bags (per cu yd equivalent)" cost column is the total bag cost to cover **one cubic yard**, not a single bag's price — the first implementation multiplied by bag count instead of cubic yards, overstating bagged cost by roughly 13×. Fixed and reverified against the guide's own worked example (500 sq ft at 3 in = 125 cu ft = 4.6 cu yd). Bale-priced materials (straw, pine straw) are shown as guide reference text only, never run through the bag-cost math — a bale isn't a fixed cu-ft unit, so computing a per-cu-yd total for it would be fabricated precision.
+
+#### Compost Calculator ✅
+
+`/tools/compost-calculator/` — target pile/bin volume (presets tied to the Organic Fertilizing guide's own hot-composting size range, 3×3×3 to 5×5×5 ft) split into browns/greens by the guide's 3:1 by-volume ratio, distributed across whichever specific materials the user has on hand.
+
+| File | Role |
+|---|---|
+| `src/data/compost-materials.js` | 14 materials (7 browns, 7 greens) with real C:N ratios, copied verbatim from `organic-fertilizing.js`'s carbon-to-nitrogen table; `BROWN_GREEN_VOLUME_RATIO = {browns: 3, greens: 1}` |
+| `src/logic/compostCalculator.js` | `computeCompostPlan({totalCuFt, brownIds, greenIds})` — splits by the 3:1 ratio, then divides each share evenly across the selected materials of that category |
+
+Flags piles under 27 cu ft (3×3×3 ft) as too small for reliable hot composting, per the guide's stated minimum, and suggests cold composting instead.
+
+#### Plant Spacing & Square Foot Garden Planner ✅
+
+`/tools/plant-spacing-calculator/` — bed dimensions (one grid cell per square foot) + selected plants → a visual color-coded grid showing exactly how many of each fit, using the plants-per-square-foot convention.
+
+| File | Role |
+|---|---|
+| `src/data/plant-spacing.js` | `perSqFt` per plant — most entries copied directly from `square-foot-gardening.js`'s "Complete Plant Spacing Reference" tables (26 plants); a handful (strawberry, watermelon, winter-squash, blackberry, okra — added later, see below) extend to well-established SFG conventions the guide's own table doesn't cover, documented in the file's header comment as a distinct, honestly-labeled tier |
+| `src/logic/spacingPlanner.js` | `plantCountForSquares(perSqFt, squares)` — `perSqFt ≥ 1` means multiple plants share a square; `< 1` means one plant needs multiple contiguous squares (e.g. 0.25 = 4 squares/plant). Includes a `+1e-9` epsilon before flooring — see the floating-point bug below |
+| `src/components/tools/plant-spacing-calculator/PlantSpacingCalculator.jsx` | `'use client'` — bed dimensions, plant picker with per-plant square assignment, CSS-grid visual layout (sequential fill, color-coded per plant — not a shape-aware or companion-aware packer) |
+
+**A real floating-point bug caught during verification:** blackberry's spacing was first written as `perSqFt: 0.083` (a rounded decimal for 1/12). `12 × 0.083 = 0.996`, which floored to **0 plants** for a full 12-square allocation instead of 1. Fixed the data to use the exact fraction (`1 / 12`) and hardened `plantCountForSquares()` itself with a small epsilon so no other fractional value can hit the same boundary case.
+
+**Also caught:** an unused `label: 'Cherry Tomato'` field in the tomato entry that the component never actually read (it renders `plants.js`'s own `name`, "Tomato") — removed and folded the cherry-tomato context into the note text instead.
+
+#### Garden Yield Estimator ✅
+
+`/tools/yield-estimator/` — pick plants and a quantity, get an expected total harvest range in lbs, using a compiled yield-per-plant table plus the existing `daysToHarvest` field for a first-harvest timing note.
+
+| File | Role |
+|---|---|
+| `src/data/plant-yields.js` | Per-plant `yieldType: 'weight'` (lbPerPlant range) or `'ongoing'` (herbs/cut-and-come-again crops with no meaningful one-time weight — shown as a qualitative note instead of a fabricated number). 30 weight-type entries after the okra/strawberry/watermelon/blackberry/winter-squash additions (lettuce was a genuine gap in the original build, caught and fixed when those were added) |
+| `src/logic/yieldEstimator.js` | `computeYieldForSelection()`, `summarizeYields()` — sums weight-type selections into a household total, keeps ongoing-type selections in a separate list rather than folding them into the total |
+| `src/logic/plantingCalendar.js` | `parseAverageDays()` exported (was previously private to this file) so the Yield Estimator can reuse the same days-to-harvest parser instead of duplicating the regex |
+
+#### Garden Symptom Diagnostic ✅
+
+`/tools/plant-symptom-checker/` — a wizard-style tool, not a numeric calculator: filter by where the problem is (leaves, stems, fruit, flowers, roots, whole plant, seedlings), pick the matching symptom, get the likely pest/disease plus a direct deep-link into the exact guide section.
+
+| File | Role |
+|---|---|
+| `src/data/symptom-key.js` | All 33 entries (18 pest + 15 disease) copied verbatim from the "Rapid Symptom Key" tables already in `garden-pests.js` and `common-garden-diseases.js` — no new diagnostic content invented. `locationTags` (hand-assigned per row from each row's existing "Where" text) and `sectionAnchor` (mapping each row's "Go to Profile"/"Section N" reference to the guide's real section id) are the only new structure |
+| `src/components/tools/plant-symptom-checker/PlantSymptomChecker.jsx` | `'use client'` — location filter → symptom list → result card with a `/guides/<guideId>/#<sectionAnchor>` deep link |
+
+All 9 distinct section anchors used across the 33 entries were verified to actually exist in the built guide pages before shipping — a wrong anchor would fail silently (no scroll, no error).
+
+#### Companion Planting Checker ✅
+
+`/tools/companion-planting-checker/` — pick two plants, get a good/avoid/neutral verdict with reasoning.
+
+| File | Role |
+|---|---|
+| `src/data/companion-pairings.js` | 43 pairings across 25 plants, compiled from well-established companion planting knowledge, grounded in the specific mechanisms already named in `companion-planting.js`'s stub intro (Three Sisters, allium scent confusing carrot fly, fennel allelopathy, dill's mixed relationship with carrots/tomatoes vs. brassicas). `checkCompanionship(idA, idB)` checks both directions from one unordered-pair list rather than requiring each relationship duplicated on both plants' entries; an unmatched pair returns an honest "no documented relationship" neutral verdict rather than guessing |
+
+One deliberate nuance: dill is a *good* companion for brassicas (attracts predatory wasps) but should be *kept apart* from carrots (same family) and mature tomatoes — same plant, different verdicts depending on the pairing, correctly represented since pairings are keyed by pair, not by plant.
+
+#### Succession Planting Planner ✅
+
+`/tools/succession-planner/` — ZIP code + a fast crop (radish, lettuce, beans, etc.) → a spring and fall succession-sowing window with suggested sowing dates for each round.
+
+| File | Role |
+|---|---|
+| `src/data/succession-crops.js` | Succession interval (10–18 days) per crop, sourced from explicit "succession sow every N days/weeks" guidance already in `square-foot-gardening.js` and `salad-garden.js` (radish's 10-day interval is the one number cited multiple times verbatim; the rest extend the same "every 2–3 weeks" convention the guides apply to the group as a whole) |
+| `src/logic/successionPlanner.js` | `computeSuccessionPlan()` reuses the same frost-date estimates and `directSow`/`fallSow` week-offset windows already compiled for the Garden Planting Calendar — only the succession interval itself is new data |
+
+**A real sign-convention bug caught during verification:** `fallSow` week values in `planting-windows.js` are stored as "N weeks **before** first frost" (positive numbers), but the initial `computeWindowSuccessions()` added them directly to the first-frost date instead of subtracting — computing fall windows that landed **after** first frost (radish showed Nov 27–Dec 11, deep winter, instead of the correct Sep 18–Oct 2). Fixed with an explicit `sign` parameter (`sign=1` for directSow's already-signed weeks, `sign=-1` to negate fallSow's before-frost convention) and reverified.
+
+#### Value of Growing Your Own ✅
+
+`/tools/grow-your-own-savings/` — pick plants and quantities, get an estimated net dollar savings vs. grocery prices. Built by composing the Yield Estimator's existing yield computation with new economics data, not re-deriving harvest weight from scratch.
+
+| File | Role |
+|---|---|
+| `src/data/produce-economics.js` | `groceryPricePerLb` (representative national average) and `growingCostPerPlant` (a simplified one-time seed/transplant estimate — doesn't include soil/water/fertilizer, which the Soil, Compost, and Fertilizer calculators cover separately) for all 30 weight-type crops |
+| `src/logic/growYourOwnSavings.js` | `computeSavingsForSelection()` calls into `yieldEstimator.js`'s `computeYieldForSelection()` rather than duplicating yield logic; returns `null` for non-weight-type crops (herbs) rather than fabricating a dollar figure with no weight to price against |
+| `src/components/tools/grow-your-own-savings/GrowYourOwnSavings.jsx` | `'use client'` — includes a share button (`navigator.share()` on mobile, clipboard fallback on desktop) per the "shareable, marketing-friendly" framing from the original plan |
+
+Perennials (strawberry, blackberry) intentionally are **not** amortized across the multiple years they'll actually produce — a deliberately simple, conservative model that correctly shows a modest first-season net loss for those two rather than an inflated same-year payoff.
+
+#### Watering Schedule Calculator ✅
+
+`/tools/watering-calculator/` — plant + growing method + optional ZIP code → a concrete watering plan. The one tool in this batch needing essentially **no new per-plant data**: every `plants.js` entry already carries a `water: 'low'|'moderate'|'high'` field, so this searches the full 150-plant database rather than a curated subset.
+
+| File | Role |
+|---|---|
+| `src/data/watering-guide.js` | `inGroundWatering` (the classic "1 inch of water per week" rule, scaled by water-need level) and `containerWatering` ("check every N days, water when dry to X inches" — containers dry out far faster than garden soil, so a fixed calendar interval doesn't fit); `getClimateModifier(wholeZone)` — hot zones (9+) water more often, cool zones (≤5) less |
+| `src/logic/wateringCalculator.js` | `computeWateringPlan(plant, growingMethod, wholeZone)` — for `growingMethod === 'hydroponic'`, returns `{type: 'hydroponic'}` rather than a fabricated day-count, since reservoir-based systems don't run on a watering schedule the same way; the UI redirects that case to the Fertilizer Calculator's hydroponic mode |
+
+#### Plant Database Additions (Okra, Winter Squash) ✅
+
+While adding items to the Yield Estimator and Spacing Planner lists, two genuinely new plants had to be added to the core database (since every tool that lists plants only shows what exists in `plants.js`): **Okra** and **Winter Squash** (butternut/acorn-type, distinct from the existing Zucchini summer-squash entry). This took the database from 148 to **150 plants** — every "148 plants" reference site-wide (homepage stats, `TrustBadges.jsx`, `SiteSearch.jsx`, wizard page, meta descriptions) was updated to stay accurate. Both new plants are also now selectable in the Garden Architect wizard as a side effect of sharing the same database — not a deliberate wizard feature, just how the shared plant data works. Cherry tomato was **not** added as a separate plant — the existing `tomato` entry's yield (8–12 lbs) and spacing (0.5/sq ft) figures were already specifically written for a cherry tomato.
 
 ---
 
