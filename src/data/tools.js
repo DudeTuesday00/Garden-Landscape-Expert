@@ -66,7 +66,7 @@ export const tools = [
     tagline: 'How much harvest to expect from your plants — plan a garden sized to your household.',
     emoji: '🧺',
     href: '/tools/yield-estimator/',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     id: 'plant-symptom-checker',
