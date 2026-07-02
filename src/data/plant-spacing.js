@@ -1,10 +1,18 @@
 /**
  * Square Foot Gardening spacing data for the Plant Spacing Planner.
- * Copied directly from guide-content/square-foot-gardening.js's "Complete
- * Plant Spacing Reference" tables so the calculator's numbers match what
- * the guide teaches. Keyed to plants.js ids — only plants that exist in
- * our 150-plant database are included (a few guide entries like kohlrabi
- * and leeks aren't yet in plants.js and are omitted rather than guessed).
+ * Most entries are copied directly from guide-content/square-foot-gardening.js's
+ * "Complete Plant Spacing Reference" tables so the calculator's numbers
+ * match what the guide teaches. Keyed to plants.js ids — only plants that
+ * exist in our 150-plant database are included (a few guide entries like
+ * kohlrabi and leeks aren't yet in plants.js and are omitted rather than
+ * guessed).
+ *
+ * A few entries (marked in their own comment below) extend beyond that
+ * guide's table to well-established, widely-published Square Foot
+ * Gardening conventions (e.g. Mel Bartholomew's original 4-per-square
+ * strawberry spacing) for crops the guide's table doesn't cover — same
+ * discipline as the rest of the site's compiled reference data, not
+ * scraped from any third party.
  *
  * perSqFt: plants per square foot when >= 1 (e.g. 9 = nine plants share
  * one square). When < 1, the plant needs multiple contiguous squares —
@@ -16,6 +24,8 @@ export const plantSpacing = {
   'bell-pepper': { perSqFt: 1, note: 'Stays compact — fits a single square. Stake if heavily loaded.' },
   eggplant: { perSqFt: 1, note: 'Standard varieties need one square; dwarf varieties can share.' },
   zucchini: { perSqFt: 0.25, note: 'One of the largest SFG plants — plan 4 contiguous squares.' },
+  'winter-squash': { perSqFt: 0.25, note: 'Same footprint as zucchini — plan 4 contiguous squares for the vine to sprawl.' },
+  okra: { perSqFt: 1, note: 'Grows tall and upright like a small tree — one plant per square, same as kale or broccoli.' },
   cucumber: { perSqFt: 1, note: 'Must be trellised vertically — non-negotiable in SFG.' },
   'green-bean': { perSqFt: 9, note: 'The most productive use of a square foot. Succession plant every 2–3 weeks.' },
   peas: { perSqFt: 8, note: 'Train up a trellis on the north side of the bed.' },
@@ -38,6 +48,9 @@ export const plantSpacing = {
   basil: { perSqFt: 4, note: '1/sq ft for a large plant; 4/sq ft for regular pinching harvest.' },
   cilantro: { perSqFt: 9, note: 'Quick to bolt in heat — succession plant every 2–3 weeks in spring and fall.' },
   dill: { perSqFt: 9, note: "Tall — plant on the bed's north side so it doesn't shade others." },
+  strawberry: { perSqFt: 4, note: "Mel Bartholomew's original SFG spacing — a classic, well-established Square Foot Gardening crop." },
+  watermelon: { perSqFt: 0.125, note: 'One of the largest SFG plants — plan 8 contiguous squares, and trellis vertically with fruit slings to support the weight.' },
+  blackberry: { perSqFt: 1 / 12, note: 'A perennial cane fruit best grown outside the annual grid on its own dedicated trellis — this converts standard 3–4 ft row spacing into an approximate square-foot figure, not a true SFG density.' },
 }
 
 export function getPlantSpacing(plantId) {
