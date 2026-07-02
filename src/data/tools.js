@@ -98,7 +98,7 @@ export const tools = [
     tagline: 'See how much money a home-grown harvest saves compared to store prices.',
     emoji: '💰',
     href: '/tools/grow-your-own-savings/',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     id: 'watering-calculator',
