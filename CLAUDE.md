@@ -10,7 +10,7 @@ This file provides guidance for AI assistants working in this repository.
 
 The app has a **home page** with two prominent path cards, each leading to one of the two main sections, plus a shop and several supporting content pages:
 
-1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 150 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
+1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 185 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
 2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 88 guides total. All 88 are live and indexable: 56 have full in-depth content; the remaining 32 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
@@ -18,7 +18,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 4. **Garden Tools** (`/tools/`) — a hub of 13 free interactive calculators/planners (fertilizer, zone finder, planting calendar, soil, mulch, compost, plant spacing, yield estimator, symptom diagnostic, companion checker, succession planner, grow-your-own savings, watering schedule). See "Garden Tools Hub" and the per-tool sections under Completed Work for details on each.
 
-5. **Plant Database** (`/plants/`) — a searchable, filterable, user-facing browse experience over all 150 plants, with an individual detail page per plant (scientific name, lifecycle, native range, pet toxicity, bloom/harvest characteristics, traditional medicinal use where documented, plus every field already used by the wizard). Its own top-level nav item. See "Plant Database" under Completed Work.
+5. **Plant Database** (`/plants/`) — a searchable, filterable, user-facing browse experience over all 185 plants, with an individual detail page per plant (scientific name, lifecycle, native range, pet toxicity, bloom/harvest characteristics, traditional medicinal use where documented, plus every field already used by the wizard). Its own top-level nav item. See "Plant Database" under Completed Work.
 
 The wizard supports two paths:
 - **Traditional path** (in-ground, raised bed, container): asks zone, soil, and season questions
@@ -157,7 +157,7 @@ Garden-Landscape-Expert/
     │   └── fertilizer-calculator/
     │       └── FertilizerCalculator.jsx # 'use client' — main interactive fertilizer recommendation tool
     ├── data/
-    │   ├── plants.js                # Static plant database (150 plants across 12 types)
+    │   ├── plants.js                # Static plant database (185 plants across 12 types)
     │   ├── questions.js             # Wizard question definitions (with hydro routing flags)
     │   ├── guides.js                # 10 guide categories, 88 guides — all comingSoon: false
     │   ├── products.js              # 3D printed product database
@@ -343,13 +343,13 @@ Each question in `questions.js` has:
 
 ### Plant Database Expansion ✅
 
-- **150 plants** across **12 types** in `src/data/plants.js`
+- **185 plants** across **12 types** in `src/data/plants.js`
 - **6 original types:** flower, vegetable, fruit, herb, tree, shrub
 - **6 new types added:** vine, bulb, grass (ornamental), succulent, fern, groundcover
 - `questions.js` updated with all 12 type options
 - `Results.jsx` updated with `typeColors` for all 12 types
 
-**Plant counts by type:**
+**Plant counts by type (at original 150-plant launch — see "Landscape Plant Expansion" below for the current 185-plant Trees/Shrubs totals):**
 - Flowers: ~26 | Vegetables: ~20 | Fruits: ~14 | Herbs: ~18
 - Trees: ~15 | Shrubs: ~16 | Vines: 10 | Bulbs: 9
 - Grasses: 8 | Succulents: 8 | Ferns: 6 | Ground Covers: 8
@@ -2030,7 +2030,7 @@ Currently registered (all live): **Fertilizer Calculator**, **Find Your USDA Har
 
 ### Garden Planting Calendar ✅
 
-`/tools/gardening-calendar/` — a personalized planting timeline by ZIP code, covering **all 150 plants across all 12 types**, not just vegetables (the scope the reference tool it was benchmarked against — garden.org's planting calendar — is limited to). Built per the plan discussed with the user: **Option A** for frost dates (zone-derived estimates, not station-precise), **timeline-bar visualization**, and **week-level precision for the ~39 vegetables/herbs**, with an honest **seasonal-band fallback** for every other plant type.
+`/tools/gardening-calendar/` — a personalized planting timeline by ZIP code, covering **all 185 plants across all 12 types**, not just vegetables (the scope the reference tool it was benchmarked against — garden.org's planting calendar — is limited to). Built per the plan discussed with the user: **Option A** for frost dates (zone-derived estimates, not station-precise), **timeline-bar visualization**, and **week-level precision for the ~39 vegetables/herbs**, with an honest **seasonal-band fallback** for every other plant type.
 
 | File | Role |
 |---|---|
@@ -2185,20 +2185,50 @@ While adding items to the Yield Estimator and Spacing Planner lists, two genuine
 
 ### Plant Database ✅
 
-`/plants/` (searchable/filterable list) + `/plants/<id>/` (150 individual detail pages, SSG via `generateStaticParams`) — a genuinely user-facing browsable database, distinct from the wizard's plant-matching engine and every tool that quietly reuses `plants.js` behind the scenes. Its own **top-level nav item** (between Garden Architect and Tools) since it's a major content pillar, not a sub-feature.
+`/plants/` (searchable/filterable list) + `/plants/<id>/` (185 individual detail pages, SSG via `generateStaticParams`) — a genuinely user-facing browsable database, distinct from the wizard's plant-matching engine and every tool that quietly reuses `plants.js` behind the scenes. Its own **top-level nav item** (between Garden Architect and Tools) since it's a major content pillar, not a sub-feature.
 
 | File | Role |
 |---|---|
-| `src/data/plant-profiles.js` | 150 entries keyed by `plants.js` id, extending every plant with `scientificName`, `lifecycle` ('annual'\|'perennial'\|'biennial', **as commonly grown by home gardeners**, not strict botany — e.g. tomato and basil are technically tender perennials but classified `'annual'` here to match how the rest of the site already frames zones/seasons), `nativeRange`, `toxicity` (`{petSafe: boolean\|null, notes}`, ASPCA-style pet-safety guidance), `bloomColor` (`null` for foliage/fruit-grown plants), `bloomCycle`, `harvestCycle` (`'single'`\|`'continuous'`\|`'perennial'`\|`null` for non-edibles), `medicinalBenefits` (`null` unless genuinely well-documented — never fabricated for purely ornamental plants). Kept as a **companion file**, the same pattern already established by `plant-yields.js`/`plant-spacing.js`/`planting-windows.js`, rather than expanding the 2,500-line `plants.js` directly — verified 1:1 coverage (150 plants, 150 profiles, zero missing/orphaned) before shipping |
-| `src/components/plants/PlantDatabase.jsx` | `'use client'` — the `/plants/` list. Live search (name + scientific name) plus filter chips for type/sun/water/lifecycle/experience/hydroponic-compatible, all client-side over the full 150-plant set (no pagination needed at this scale) |
+| `src/data/plant-profiles.js` | 185 entries keyed by `plants.js` id, extending every plant with `scientificName`, `lifecycle` ('annual'\|'perennial'\|'biennial', **as commonly grown by home gardeners**, not strict botany — e.g. tomato and basil are technically tender perennials but classified `'annual'` here to match how the rest of the site already frames zones/seasons), `nativeRange`, `toxicity` (`{petSafe: boolean\|null, notes}`, ASPCA-style pet-safety guidance), `bloomColor` (`null` for foliage/fruit-grown plants), `bloomCycle`, `harvestCycle` (`'single'`\|`'continuous'`\|`'perennial'`\|`null` for non-edibles), `medicinalBenefits` (`null` unless genuinely well-documented — never fabricated for purely ornamental plants). Kept as a **companion file**, the same pattern already established by `plant-yields.js`/`plant-spacing.js`/`planting-windows.js`, rather than expanding the 2,500+ line `plants.js` directly — verified 1:1 coverage (185 plants, 185 profiles, zero missing/orphaned) before shipping |
+| `src/components/plants/PlantDatabase.jsx` | `'use client'` — the `/plants/` list. Live search (name + scientific name) plus filter chips for type/sun/water/lifecycle/experience/hydroponic-compatible, all client-side over the full 185-plant set (no pagination needed at this scale) |
 | `src/components/plants/PlantDetail.jsx` | Server component, same shape as `ProductDetail.jsx` (breadcrumb → header card → quick-facts grid → care notes → conditional pet-safety/medicinal callouts → cross-links → back link). Quick-facts grid merges the base `plants.js` fields (sun, water, zones, space, soil, seasons, experience) with the new profile fields |
-| `src/app/plants/page.jsx` / `src/app/plants/[plantId]/page.jsx` | Routes — list page metadata + `generateStaticParams`/`generateMetadata` for the 150 detail pages, same pattern as `/guides/[guideId]/` and `/shop/[productId]/` |
+| `src/app/plants/page.jsx` / `src/app/plants/[plantId]/page.jsx` | Routes — list page metadata + `generateStaticParams`/`generateMetadata` for the 185 detail pages, same pattern as `/guides/[guideId]/` and `/shop/[productId]/` |
 
-**Cross-links are conditional, not universal** — each detail page only shows links into tools that actually have data for that specific plant, checked by key existence (`plantId in plantSpacing`, `plantId in plantYields`, `companionCheckerPlantIds.includes(plantId)`, `plantId in plantingWindows`) rather than linking every plant to every tool and letting some dead-end. Fertilizer Calculator, Watering Calculator, and the Garden Architect wizard link unconditionally since those genuinely work for any of the 150 plants. Guide cross-links reuse the existing `typeGuides` mapping — zero new data needed.
+**Cross-links are conditional, not universal** — each detail page only shows links into tools that actually have data for that specific plant, checked by key existence (`plantId in plantSpacing`, `plantId in plantYields`, `companionCheckerPlantIds.includes(plantId)`, `plantId in plantingWindows`) rather than linking every plant to every tool and letting some dead-end. Fertilizer Calculator, Watering Calculator, and the Garden Architect wizard link unconditionally since those genuinely work for any of the 185 plants. Guide cross-links reuse the existing `typeGuides` mapping — zero new data needed.
 
-**Sitewide wiring:** `sitemap.js` adds `/plants/` + all 150 detail pages (`priority: 0.6`, `yearly` — lower than guides/tools since these are reference pages, not actively maintained content); `SiteSearch.jsx`'s global index now includes all 150 plants (scientific name folded into the description field so a search for "Solanum lycopersicum" surfaces Tomato) — this **reverses an earlier deliberate exclusion** ("Plant data is intentionally not included in the index — plants don't have individual detail pages") that no longer holds now that they do; `Results.jsx`'s wizard plant cards gained a "🌿 Full Profile" link into `/plants/<id>/` alongside the existing guide links.
+**Sitewide wiring:** `sitemap.js` adds `/plants/` + all 185 detail pages (`priority: 0.6`, `yearly` — lower than guides/tools since these are reference pages, not actively maintained content); `SiteSearch.jsx`'s global index now includes all 185 plants (scientific name folded into the description field so a search for "Solanum lycopersicum" surfaces Tomato) — this **reverses an earlier deliberate exclusion** ("Plant data is intentionally not included in the index — plants don't have individual detail pages") that no longer holds now that they do; `Results.jsx`'s wizard plant cards gained a "🌿 Full Profile" link into `/plants/<id>/` alongside the existing guide links.
 
 **Data provenance:** scientific names, lifecycle classification, native range, ASPCA-style pet toxicity, bloom characteristics, and traditional/folk medicinal use are all well-established, uncontroversial reference knowledge for common garden plants — the same compiled-knowledge discipline used throughout the site (fertilizer NPK data, C:N ratios, frost dates, companion pairings), not scraped or fabricated. `medicinalBenefits` is deliberately `null` for purely ornamental plants rather than inventing a use, and every populated entry is framed as informational/traditional use, never medical advice — same safety framing as `guide-content/medicinal-herb-garden.js`. Toxicity notes are always paired with "check with a veterinarian" / "consult a healthcare provider" guidance on the detail page itself, not just in the data comment.
+
+---
+
+### Landscape Plant Expansion (Trees, Shrubs, Conifers & Roses) ✅
+
+Following a coverage audit, `src/data/plants.js` was expanded from **150 → 185 plants** to strengthen depth in common American yard/landscape categories — the database previously leaned kitchen-garden-heavy relative to "planting in general." 35 new plants were added (21 trees, 14 shrubs), each with a full `plants.js` entry and a matching `plant-profiles.js` entry (scientific name, lifecycle, native range, pet toxicity, bloom characteristics), verified for 1:1 coverage the same way the original 150 were.
+
+**What was added and why (gap → fix):**
+
+| Gap identified | Plants added |
+|---|---|
+| Conifers/evergreens — only Arborvitae existed | Eastern White Pine, Colorado Blue Spruce, Douglas Fir, Leyland Cypress, Eastern Red Cedar |
+| Oaks — only Red Oak existed | White Oak, Pin Oak, Live Oak, Bur Oak |
+| Maples — only Japanese Maple + Red Maple existed | Sugar Maple, Silver Maple |
+| Large shade trees — thin coverage | American Sycamore, Tulip Poplar, Sweetgum, Ginkgo, American Linden, American Elm, Honeylocust, Bald Cypress |
+| Warm-climate/Zone 8–11 structure trees | Sabal Palm (Cabbage Palm), Queen Palm |
+| Hollies — only one generic entry existed | Winterberry Holly (deciduous), Inkberry Holly, Japanese Holly |
+| Common foundation/hedge shrubs | Burning Bush, Privet, Weigela, Camellia, Juniper (Shrub Form), Yew, Mountain Laurel, Japanese Barberry |
+| Roses — only Knockout Rose existed | Climbing Rose, Hybrid Tea Rose, Shrub Rose (English/Landscape) |
+
+**Schema notes for this batch:**
+- All 35 new plants use `type: 'tree'` or `type: 'shrub'` — the schema has no separate "conifer" category, so pines/spruces/cypresses/junipers/yews are classified by their landscape role (most are `tree`; compact/hedging conifers like Juniper Shrub Form and Yew are `shrub`)
+- All are `hydroponic: false` and omit `daysToHarvest` (ornamental/landscape plants, not edibles)
+- Roses (Climbing, Hybrid Tea, Shrub) are typed `shrub`, matching the existing Knockout Rose precedent, not `vine` — even though climbing roses are trained vertically, the genus and care profile are shrub-like, not a true climbing vine
+- Zones reflect real regional adaptation — e.g. Live Oak/Sabal Palm/Queen Palm are Zone 7–11 only, Blue Spruce/Bur Oak/Sugar Maple are Zone 3–8, giving the database genuine coast-to-coast and cold-to-warm climate range
+- `plant-profiles.js` toxicity notes flag genuinely hazardous landscape plants prominently — Yew and Mountain Laurel are marked highly toxic to pets/humans (not just "mildly"), since these are common but dangerous foundation-planting choices worth calling out clearly
+
+**Site-wide count update:** every "150 plants" reference was updated to "185 plants" — `TrustBadges.jsx`, `SiteSearch.jsx`, `HomePage.jsx`, `PlantDatabase.jsx`, `app/page.jsx`, `app/wizard/page.jsx`, `app/plants/page.jsx`, `app/layout.jsx` meta descriptions, `tools.js`, `GardenCalendar.jsx`, `WateringCalculator.jsx` and their route metadata, plus the `plant-profiles.js` and `plant-spacing.js` header comments. Verified via `npm test` (12/12 passing, insulated from `plants.js` by its mocked fixture) and a full `next build` (311 static pages, including all 185 `/plants/<id>/` detail pages) before committing.
+
+**New plants are automatically wizard-eligible** — since `matchPlants.js` operates on the full `plants` array, all 35 new landscape plants are immediately selectable results in the Garden Architect wizard (type: Tree or Shrub) with no additional wiring, the same side effect noted when Okra/Winter Squash were added.
 
 ---
 

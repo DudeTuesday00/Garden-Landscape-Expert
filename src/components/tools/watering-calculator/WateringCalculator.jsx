@@ -69,7 +69,7 @@ export default function WateringCalculator() {
           Watering Schedule Calculator
         </h1>
         <p className="mt-2 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          A concrete watering plan for any of our 150 plants — tailored to your growing method
+          A concrete watering plan for any of our 185 plants — tailored to your growing method
           and climate, not just a generic "water regularly."
         </p>
       </div>
@@ -85,7 +85,7 @@ export default function WateringCalculator() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search 150 plants…"
+              placeholder="Search 185 plants…"
               className="w-full px-3 py-2 rounded-lg border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-900 text-sm text-gray-800 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-garden-600"
             />
             {matches.length > 0 && (

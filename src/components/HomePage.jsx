@@ -76,7 +76,7 @@ export default function HomePage() {
         {/* Credibility stats strip */}
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
           {[
-            { value: '150', label: 'Plants in database' },
+            { value: '185', label: 'Plants in database' },
             { value: '53',  label: 'In-depth guides' },
             { value: '12',  label: 'Plant categories' },
             { value: '100%', label: 'Free, no account' },
@@ -181,7 +181,7 @@ export default function HomePage() {
             luck, it asks the questions that actually matter: your USDA hardiness zone, the type
             of soil in your beds, how much sun your space receives, how often you realistically
             plan to water, how much room you have to work with, and your experience level. From
-            there, it filters and scores a database of <strong>150 plants across 12 categories</strong> —
+            there, it filters and scores a database of <strong>185 plants across 12 categories</strong> —
             flowers, vegetables, fruits, herbs, trees, shrubs, vines, bulbs, ornamental grasses,
             succulents, ferns, and groundcovers — to surface the best matches for your exact
             situation.
