@@ -55,19 +55,38 @@ export default function Wizard() {
 
   // On load, restore a shared/bookmarked result set from the URL (?a=...)
   useEffect(() => {
-    const encoded = new URLSearchParams(window.location.search).get('a')
-    if (!encoded) return
-    const decoded = decodeAnswers(encoded)
-    if (!decoded) return
-    setAnswers(decoded)
-    setResults(matchPlants(decoded))
-    setStage(STAGES.RESULTS)
+    const params = new URLSearchParams(window.location.search)
+    const encoded = params.get('a')
+    if (encoded) {
+      const decoded = decodeAnswers(encoded)
+      if (decoded) {
+        setAnswers(decoded)
+        setResults(matchPlants(decoded))
+        setStage(STAGES.RESULTS)
+      }
+      return
+    }
+
+    // Prefill the zone question from a whole-number zone handed off by the
+    // USDA Hardiness Zone Finder tool (?zone=7) — maps it to the matching
+    // wizard option's own value reference so it shows pre-selected.
+    const zoneParam = params.get('zone')
+    if (!zoneParam) return
+    const zoneNum = parseInt(zoneParam, 10)
+    if (Number.isNaN(zoneNum)) return
+    const zoneQuestion = questions.find((q) => q.id === 'zone')
+    const matchedOption = zoneQuestion?.options.find(
+      (opt) => zoneNum >= opt.value[0] && zoneNum <= opt.value[1]
+    )
+    if (matchedOption) {
+      setAnswers((prev) => ({ ...prev, zone: matchedOption.value }))
+    }
   }, [])
 
   function handleStart() {
     setStage(STAGES.QUESTIONS)
     setStepIndex(0)
-    setAnswers({})
+    setAnswers((prev) => (prev.zone ? { zone: prev.zone } : {}))
   }
 
   function handleAnswer(id, value) {

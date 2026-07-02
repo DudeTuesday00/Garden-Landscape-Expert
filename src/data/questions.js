@@ -47,7 +47,8 @@ const questions = [
   {
     id: 'zone',
     title: 'What is your USDA Hardiness Zone?',
-    subtitle: 'Your zone is based on average minimum winter temperature. Not sure? Enter your zip code on the USDA website.',
+    subtitle: "Your zone is based on average minimum winter temperature. Not sure?",
+    subtitleLink: { text: 'Look it up by zip code →', href: '/tools/usda-zone-finder/' },
     multi: false,
     skipIfHydro: true,
     options: [

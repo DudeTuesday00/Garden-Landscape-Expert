@@ -1977,7 +1977,28 @@ Hero/LCP images (page headers, guide hero photos, the two homepage path cards, t
 4. Add the route to `src/app/sitemap.js`
 5. Each tool page should include a "← Back to Garden Tools" link to `/tools/` (see `FertilizerCalculator.jsx` for the pattern)
 
-Currently registered: **Fertilizer Calculator** (live), **Gardening Calendar** (coming soon), **Find Your USDA Hardiness Zone** (coming soon).
+Currently registered: **Fertilizer Calculator** (live), **Find Your USDA Hardiness Zone** (live), **Gardening Calendar** (coming soon).
+
+### Find Your USDA Hardiness Zone ✅
+
+`/tools/usda-zone-finder/` — instant, exact ZIP-code lookup against the real 2023 USDA Plant Hardiness Zone Map data (not a rough state/region approximation).
+
+| File | Role |
+|---|---|
+| `public/data/hardiness-zones.json` | Static ZIP → zone lookup table — **40,502 US ZIP codes** (continental US + AK + HI + PR), `{ "10001": "7b", ... }`. Fetched client-side on first lookup (~103 KB gzipped over the wire), not bundled into the page's JS so it doesn't bloat every route |
+| `src/data/hardiness-zone-info.js` | Static reference table — temperature range (°F) per half-zone (`1a`–`13b`); `isWizardSupportedZone()` flags whether a found zone falls in the 3–11 range the plant database/wizard actually cover |
+| `src/components/tools/usda-zone-finder/UsdaZoneFinder.jsx` | `'use client'` — ZIP input, fetches the JSON lazily and caches it in a ref so repeat lookups don't re-fetch |
+| `src/app/tools/usda-zone-finder/page.jsx` | Route with full SEO metadata |
+
+**Data provenance & licensing:** the dataset is the USDA-ARS/PRISM Climate Group (Oregon State University) plant hardiness GIS data, provided to Planting Atlas directly as 4 regional CSVs (`phzm_us_zipcode_2023.csv`, `phzm_ak_zipcode_2023.csv`, `phzm_hi_zipcode_2023.csv`, `phzm_pr_zipcode_2023.csv`, schema: `zipcode,zone,trange,zonetitle`) and merged into the single lookup JSON. OSU's terms require either (a) both USDA-ARS and OSU logos on any *map* derived from the data, or (b) an explicit "not the official map" disclaimer with logos omitted if the data is presented in an altered form. This tool renders a **text lookup result, not a map graphic**, and ships with an explicit disclaimer + links to the official source (`planthardiness.ars.usda.gov`) and the PRISM data page — the safer compliant path that avoids needing to source/maintain two official logo assets correctly. **Do not add a rendered map/graphic using this data without revisiting the logo requirement.**
+
+**Cross-links, both directions:**
+- Result panel links into the **Garden Architect wizard** with `?zone=<wholeZoneNumber>` — see below
+- Result panel links to `/infographics/` (the existing "USDA Hardiness Zones — Frost Date Reference" infographic)
+- Bottom of the page cross-links the three most zone-relevant live guides: Four-Season Garden Design, Xeriscape Design, Winter Garden Prep
+- The Infographics page's zone-reference tip callout now links to `/tools/usda-zone-finder/` instead of just naming the external USDA URL in plain text
+
+**Wizard zone prefill (`?zone=N`):** `Wizard.jsx`'s mount effect now also reads a `?zone=<number>` param (checked only when the existing `?a=` results-share param is absent) and maps it to the matching `questions.js` zone option's own array reference (e.g. whole zone `7` → the `[7, 8]` option) — using the *same reference*, not a new array, because `QuestionStep.jsx`'s `isSelected()` check is `answer === value` for single-select questions. `handleStart()` was changed from an unconditional `setAnswers({})` to preserve a pending zone prefill (`prev.zone ? { zone: prev.zone } : {}`) when the user clicks "Get Started" from the welcome screen. Zones outside 3–11 (e.g. interior Alaska) don't prefill — `wizardHref` in `UsdaZoneFinder.jsx` falls back to a plain `/wizard/` link via `isWizardSupportedZone()`. `QuestionStep.jsx` also gained an optional `subtitleLink: { text, href }` field (rendered as a real `Link`, since `subtitle` itself is plain text) — currently used only by the zone question, pointing at this tool.
 
 ### Fertilizer Calculator ✅
 

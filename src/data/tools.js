@@ -26,7 +26,7 @@ export const tools = [
     tagline: 'Look up your exact zone by ZIP code to get accurate planting and frost-date guidance.',
     emoji: '🗺️',
     href: '/tools/usda-zone-finder/',
-    status: 'coming-soon',
+    status: 'live',
   },
 ]
 
