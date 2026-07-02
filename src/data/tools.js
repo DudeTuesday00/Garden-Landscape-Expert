@@ -42,7 +42,7 @@ export const tools = [
     tagline: 'How much mulch you need by area and depth, using our guide’s own depth recommendations.',
     emoji: '🪵',
     href: '/tools/mulch-calculator/',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     id: 'compost-calculator',
