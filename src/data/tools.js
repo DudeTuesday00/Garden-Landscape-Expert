@@ -15,7 +15,7 @@ export const tools = [
   {
     id: 'gardening-calendar',
     name: 'Garden Planting Calendar',
-    tagline: 'A personalized planting timeline by ZIP code — for 148 plants, not just vegetables.',
+    tagline: 'A personalized planting timeline by ZIP code — for 150 plants, not just vegetables.',
     emoji: '📅',
     href: '/tools/gardening-calendar/',
     status: 'live',
@@ -90,7 +90,7 @@ export const tools = [
     tagline: 'How many rounds of fast crops like lettuce and radishes fit in your season.',
     emoji: '🔁',
     href: '/tools/succession-planner/',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     id: 'grow-your-own-savings',

@@ -5,7 +5,10 @@
  */
 export function plantCountForSquares(perSqFt, squares) {
   if (!(squares > 0) || !(perSqFt > 0)) return 0
-  return Math.floor(squares * perSqFt)
+  // A tiny epsilon guards against floating-point boundary cases — e.g.
+  // (1/12) * 12 can land a hair under 1 depending on JS's rounding, which
+  // would otherwise floor a plant that should count down to 0.
+  return Math.floor(squares * perSqFt + 1e-9)
 }
 
 /**

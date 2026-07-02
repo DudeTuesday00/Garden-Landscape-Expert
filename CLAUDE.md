@@ -10,7 +10,7 @@ This file provides guidance for AI assistants working in this repository.
 
 The app has a **home page** with two prominent path cards, each leading to one of the two main sections, plus a shop and several supporting content pages:
 
-1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 148 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
+1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 150 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
 2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 88 guides total. All 88 are live and indexable: 56 have full in-depth content; the remaining 32 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
@@ -123,7 +123,7 @@ Garden-Landscape-Expert/
     ├── components/
     │   ├── Nav.jsx                  # 'use client' — sticky nav with usePathname active state, dark mode toggle, and hamburger mobile menu
     │   ├── HomePage.jsx             # Landing page — path cards, credibility stats strip, E-E-A-T author strip
-    │   ├── TrustBadges.jsx          # Server component — five credential pills (148 Plants, USDA Zones 3–11, 40+ Years, 88 Guides, 100% Free); used on WelcomeScreen and GuidesHome
+    │   ├── TrustBadges.jsx          # Server component — five credential pills (150 Plants, USDA Zones 3–11, 40+ Years, 88 Guides, 100% Free); used on WelcomeScreen and GuidesHome
     │   ├── ContactUs.jsx            # 'use client' — contact form (Formspree mlgpgdny); success state
     │   ├── Infographics.jsx         # Garden infographics — visual quick-reference cards (28 live, all kebab-case filenames)
     │   ├── Videos.jsx               # Curated gardening YouTube channels by topic + original videos (stacked cards, newest first)
@@ -155,7 +155,7 @@ Garden-Landscape-Expert/
     │   └── fertilizer-calculator/
     │       └── FertilizerCalculator.jsx # 'use client' — main interactive fertilizer recommendation tool
     ├── data/
-    │   ├── plants.js                # Static plant database (148 plants across 12 types)
+    │   ├── plants.js                # Static plant database (150 plants across 12 types)
     │   ├── questions.js             # Wizard question definitions (with hydro routing flags)
     │   ├── guides.js                # 10 guide categories, 88 guides — all comingSoon: false
     │   ├── products.js              # 3D printed product database
@@ -341,7 +341,7 @@ Each question in `questions.js` has:
 
 ### Plant Database Expansion ✅
 
-- **148 plants** across **12 types** in `src/data/plants.js`
+- **150 plants** across **12 types** in `src/data/plants.js`
 - **6 original types:** flower, vegetable, fruit, herb, tree, shrub
 - **6 new types added:** vine, bulb, grass (ornamental), succulent, fern, groundcover
 - `questions.js` updated with all 12 type options
@@ -1696,7 +1696,7 @@ Four UX improvements applied across the site:
 Five style and credibility improvements:
 
 **1. Homepage Credibility Stats Strip** (`src/components/HomePage.jsx`)
-- 4-stat grid: 148 Plants in database / 53 In-depth guides / 12 Plant categories / 100% Free, no account
+- 4-stat grid: 150 Plants in database / 53 In-depth guides / 12 Plant categories / 100% Free, no account
 - Each stat: `bg-white` card, `text-xl font-bold text-garden-700`, full dark mode support
 
 **2. E-E-A-T Author Strip** (`src/components/HomePage.jsx`)
@@ -1817,7 +1817,7 @@ Four improvements applied to `src/app/sitemap.js` (May 2026):
 
 | Badge | Sub-label (sm+ only) |
 |---|---|
-| 🌿 148 Plants | · verified database |
+| 🌿 150 Plants | · verified database |
 | 🗺️ USDA Zones 3–11 | · all US climates |
 | 👨‍🌾 40+ Years | · hands-on experience |
 | 📖 88 Guides | · expert-reviewed |
@@ -1886,7 +1886,7 @@ The Garden Architect wizard now persists and shares results via the URL, and sup
 - **Index:** built once at module load — all live guides (`!comingSoon`) from `guideCategories` (title, emoji, description, `/guides/<id>/`) plus 7 key static pages (Garden Architect, Plantopedia, Infographics, Videos, Podcasts, About, Contact)
 - **UI:** a 🔍 icon button toggles a dropdown panel with an autofocused search input; results (capped at 8) show as a scrollable list with emoji, title, and description; clicking a result or pressing `Escape` or clicking outside the panel closes it
 - **Placement:** rendered as `<SiteSearch />` in `Nav.jsx` in both the desktop nav row (before the dark-mode toggle) and the mobile controls row (before the hamburger button) — each instance manages its own local open/query state independently, which is safe since only one is visible at a given viewport width
-- Plant data (the 148-plant wizard database) is intentionally **not** included in the index — plants don't have individual detail pages, only guides and static pages do
+- Plant data (the 150-plant wizard database) is intentionally **not** included in the index — plants don't have individual detail pages, only guides and static pages do
 
 **To extend the index:** add an entry to `staticPages` in `SiteSearch.jsx` for a new top-level page; new guides are picked up automatically via `guideCategories` as soon as `comingSoon: false` is set.
 
@@ -1929,7 +1929,7 @@ Two sitewide JSON-LD blocks added to `src/app/layout.jsx` (server component, app
 
 `npm test` runs `vitest run`. First (and currently only) coverage target: `src/logic/matchPlants.js` — the core wizard scoring/filtering engine, chosen because it's the one piece of pure business logic with two distinct code paths (traditional vs. hydroponic) that's easy to silently break while editing.
 
-- `src/logic/matchPlants.test.js` — 12 tests using `vi.mock('../data/plants.js', ...)` to substitute a small 4-plant fixture, so tests stay stable regardless of edits to the real 148-plant database
+- `src/logic/matchPlants.test.js` — 12 tests using `vi.mock('../data/plants.js', ...)` to substitute a small 4-plant fixture, so tests stay stable regardless of edits to the real 150-plant database
 - Covers: no-answers baseline, type/zone/sunlight/season hard filters, soil soft-scoring (exact vs. tolerant match), score-descending sort order, hydro hard filter (`hydroponic: true` only), hydro path correctly *ignoring* zone/season (the defining difference from the traditional path), and the `hydroSystem` keyword-match scoring bonus
 - `vitest.config.js` — added as a dedicated config (rather than reusing the stale, unused `vite.config.js` left over from the pre-Next.js Vite SPA migration) so Vitest doesn't try to resolve `@vitejs/plugin-react`, which isn't installed since the app no longer uses Vite
 
@@ -2028,7 +2028,7 @@ Currently registered: **Fertilizer Calculator** (live), **Find Your USDA Hardine
 
 ### Garden Planting Calendar ✅
 
-`/tools/gardening-calendar/` — a personalized planting timeline by ZIP code, covering **all 148 plants across all 12 types**, not just vegetables (the scope the reference tool it was benchmarked against — garden.org's planting calendar — is limited to). Built per the plan discussed with the user: **Option A** for frost dates (zone-derived estimates, not station-precise), **timeline-bar visualization**, and **week-level precision for the ~39 vegetables/herbs**, with an honest **seasonal-band fallback** for every other plant type.
+`/tools/gardening-calendar/` — a personalized planting timeline by ZIP code, covering **all 150 plants across all 12 types**, not just vegetables (the scope the reference tool it was benchmarked against — garden.org's planting calendar — is limited to). Built per the plan discussed with the user: **Option A** for frost dates (zone-derived estimates, not station-precise), **timeline-bar visualization**, and **week-level precision for the ~39 vegetables/herbs**, with an honest **seasonal-band fallback** for every other plant type.
 
 | File | Role |
 |---|---|

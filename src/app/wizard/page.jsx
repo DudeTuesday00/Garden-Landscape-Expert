@@ -3,7 +3,7 @@ import Wizard from '../../components/wizard/Wizard.jsx'
 export const metadata = {
   title: 'Garden Architect — Personalized Plant Recommendations',
   description:
-    'Answer a few questions about your garden conditions and get personalized plant recommendations from 148 plants. Supports traditional and hydroponic growing across all USDA zones.',
+    'Answer a few questions about your garden conditions and get personalized plant recommendations from 150 plants. Supports traditional and hydroponic growing across all USDA zones.',
   keywords:
     'plant recommendations, garden planner, USDA zones, hydroponic plants, garden wizard, personalized gardening',
   alternates: {
@@ -13,12 +13,12 @@ export const metadata = {
     url: 'https://plantingatlas.com/wizard/',
     title: 'Garden Architect — Personalized Plant Recommendations | Planting Atlas',
     description:
-      'Answer a few questions about your garden conditions and get personalized plant recommendations from 148 plants. Supports traditional and hydroponic growing across all USDA zones.',
+      'Answer a few questions about your garden conditions and get personalized plant recommendations from 150 plants. Supports traditional and hydroponic growing across all USDA zones.',
   },
   twitter: {
     title: 'Garden Architect — Personalized Plant Recommendations | Planting Atlas',
     description:
-      'Answer a few questions about your garden conditions and get personalized plant recommendations from 148 plants. Traditional or hydroponic, all USDA zones.',
+      'Answer a few questions about your garden conditions and get personalized plant recommendations from 150 plants. Traditional or hydroponic, all USDA zones.',
   },
 }
 
@@ -31,7 +31,7 @@ const faqSchema = {
       name: 'How does the Garden Architect plant recommendation wizard work?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The Garden Architect asks 8 targeted questions about your garden conditions — plant type, growing method, USDA hardiness zone, sunlight, soil type, watering habits, space, and experience level. It then filters and scores a database of 148 plants across 12 categories to produce a personalized plant list matched to your specific situation.',
+        text: 'The Garden Architect asks 8 targeted questions about your garden conditions — plant type, growing method, USDA hardiness zone, sunlight, soil type, watering habits, space, and experience level. It then filters and scores a database of 150 plants across 12 categories to produce a personalized plant list matched to your specific situation.',
       },
     },
     {
@@ -63,7 +63,7 @@ const faqSchema = {
       name: 'What kinds of plants are in the recommendation database?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The database includes 148 plants across 12 types: flowers, vegetables, fruits, herbs, trees, shrubs, vines, bulbs, ornamental grasses, succulents, ferns, and groundcovers. Each plant entry includes zone compatibility, sunlight needs, soil preferences, water requirements, space requirements, seasonal timing, and care notes.',
+        text: 'The database includes 150 plants across 12 types: flowers, vegetables, fruits, herbs, trees, shrubs, vines, bulbs, ornamental grasses, succulents, ferns, and groundcovers. Each plant entry includes zone compatibility, sunlight needs, soil preferences, water requirements, space requirements, seasonal timing, and care notes.',
       },
     },
   ],
@@ -110,7 +110,7 @@ export default function WizardPage() {
             questions — your plant type preferences, your growing method, your USDA hardiness
             zone, sunlight availability, soil type, watering habits, available space, and
             experience level. Each answer narrows and scores a database of{' '}
-            <strong>148 plants across 12 categories</strong>, including flowers, vegetables,
+            <strong>150 plants across 12 categories</strong>, including flowers, vegetables,
             fruits, herbs, trees, shrubs, vines, bulbs, ornamental grasses, succulents, ferns,
             and groundcovers.
           </p>
