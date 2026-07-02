@@ -29,6 +29,7 @@ export default function sitemap() {
     { url: `${SITE_URL}/tools/usda-zone-finder/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/tools/gardening-calendar/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/tools/soil-calculator/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${SITE_URL}/tools/mulch-calculator/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/guides/`,                 lastModified: DATE_STUBS_LAUNCHED, changeFrequency: 'weekly',  priority: 0.9 },
     { url: `${SITE_URL}/infographics/`,           lastModified: DATE_PAGES_UPDATED,  changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/podcasts/`,               lastModified: DATE_PAGES_UPDATED,  changeFrequency: 'monthly', priority: 0.7 },

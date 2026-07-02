@@ -12,6 +12,7 @@ const staticPages = [
   { title: 'Find Your USDA Hardiness Zone', emoji: '🗺️', description: 'Look up your exact zone by ZIP code.', href: '/tools/usda-zone-finder/' },
   { title: 'Garden Planting Calendar', emoji: '📅', description: 'A personalized planting timeline by ZIP code for 148 plants.', href: '/tools/gardening-calendar/' },
   { title: 'Soil & Raised Bed Calculator', emoji: '🪨', description: 'How much soil to buy for a raised bed, container, or Square Foot Garden.', href: '/tools/soil-calculator/' },
+  { title: 'Mulch Calculator', emoji: '🪵', description: 'How much mulch you need by area and depth.', href: '/tools/mulch-calculator/' },
   { title: 'Plantopedia', emoji: '📖', description: 'Browse 88 expert growing guides by category.', href: '/guides/' },
   { title: 'Garden Infographics', emoji: '🗺️', description: 'Visual quick-reference guides for planting and growing.', href: '/infographics/' },
   { title: 'Gardening Videos', emoji: '🎬', description: 'Curated YouTube channels and original Planting Atlas videos.', href: '/videos/' },
