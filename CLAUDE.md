@@ -1977,7 +1977,7 @@ Hero/LCP images (page headers, guide hero photos, the two homepage path cards, t
 4. Add the route to `src/app/sitemap.js`
 5. Each tool page should include a "← Back to Garden Tools" link to `/tools/` (see `FertilizerCalculator.jsx` for the pattern)
 
-Currently registered: **Fertilizer Calculator** (live), **Find Your USDA Hardiness Zone** (live), **Gardening Calendar** (coming soon).
+Currently registered: **Fertilizer Calculator** (live), **Find Your USDA Hardiness Zone** (live), **Garden Planting Calendar** (live).
 
 ### Find Your USDA Hardiness Zone ✅
 
@@ -2023,6 +2023,40 @@ Currently registered: **Fertilizer Calculator** (live), **Find Your USDA Hardine
 **`/fertilizer-calculator/` redirect stub:** `src/app/fertilizer-calculator/page.jsx` — the old standalone route is kept as a thin stub (`robots: noindex`, canonical → `/tools/fertilizer-calculator/`, `<meta httpEquiv="refresh">` + a manual link) since static export (`output: 'export'`) can't do a real server-side redirect. Don't delete this stub without checking analytics/backlinks first.
 
 **Wired into:** `Nav.jsx` (🧰 Tools, between Garden Architect and Plantopedia), footer "Guides & Tools" column, `SiteSearch.jsx` static page index (both `/tools/` and the calculator itself), and `sitemap.js`.
+
+---
+
+### Garden Planting Calendar ✅
+
+`/tools/gardening-calendar/` — a personalized planting timeline by ZIP code, covering **all 148 plants across all 12 types**, not just vegetables (the scope the reference tool it was benchmarked against — garden.org's planting calendar — is limited to). Built per the plan discussed with the user: **Option A** for frost dates (zone-derived estimates, not station-precise), **timeline-bar visualization**, and **week-level precision for the ~39 vegetables/herbs**, with an honest **seasonal-band fallback** for every other plant type.
+
+| File | Role |
+|---|---|
+| `src/data/frost-date-estimates.js` | Zone → estimated last spring / first fall frost date (`{month, day}`, 1-indexed month). Zones 11–13 are flagged `frostFree: true` |
+| `src/data/planting-windows.js` | Per-plant sowing offsets for the 39 vegetable/herb `plants.js` ids — `startIndoors` / `directSow` / `transplant` / `fallSow`, each `[minWeeks, maxWeeks]` relative to last or first frost. Compiled reference data (same category as a university extension planting chart), not scraped from any third party. `garlic` is the one `fallPlantOnly: true` entry (fall-planted, no spring window) |
+| `src/data/type-guides.js` | The `typeGuides` (plant type → up to 2 relevant guide links) mapping, **extracted from `Results.jsx`** so both the wizard and the calendar tool share one source instead of drifting |
+| `src/logic/plantingCalendar.js` | Pure functions — `computeAnnualCalendar(plant, wholeZone)` returns `{indoorStart, plantOutdoor, harvest, fallSow}` as `Set<month>` for the ~39 plants with compiled data (or `null` for everything else, or for a frost-free zone where frost-relative math doesn't apply); `computeSeasonalBand(plant)` derives a broad `Set<month>` from the existing `seasons` field for the fallback case. All month math is done in **decimal-month space** (not real `Date` objects) since the UI's display granularity is whole months, not days — deliberately simpler than the frost-date arithmetic that precision would require |
+| `src/components/tools/gardening-calendar/GardenCalendar.jsx` | `'use client'` — ZIP input (reuses the same `/data/hardiness-zones.json` fetch as the Zone Finder), plant-type filter row (reuses `plantTypeOptions` from `fertilizer-recommendations.js`), search, and two view modes |
+| `src/app/tools/gardening-calendar/page.jsx` | Route with full SEO metadata |
+
+**Timeline visualization — validated categorical palette:** built per the dataviz skill's procedure (color assigned last, computed not eyeballed). 5 nominal categories — Start Indoors, Plant Outdoors (merges direct-sow + transplant into one "get it in the ground" activity, since that distinction doesn't matter to the gardener the way the *timing* does), Harvest, Fall Planting, and a Best-Season catch-all for non-precision plant types — validated with `scripts/validate_palette.js` against both light (`#ffffff`) and dark (`#1f2937`, Tailwind `gray-800`) surfaces:
+
+| Activity | Light | Dark |
+|---|---|---|
+| Start Indoors | `#2a78d6` | `#3987e5` |
+| Plant Outdoors | `#5eae3d` (garden-700) | `#458f3c` (custom — garden-600/700 read too close to earth under protanopia at dark-mode lightness) |
+| Harvest | `#a8742c` (earth-700) | `#c4711f` (custom, same reason) |
+| Fall Planting | `#eb6834` | `#d95926` |
+| Best Season | `#4a3aa7` | `#9085e9` |
+
+The garden/earth brand pair could **not** be used at their standard 600/500 steps here — validated at ΔE 1.3 under protanopia (functionally the same color). Both modes pass with WARN-band CVD separation (8.5–10.8 ΔE, below the 12 target), which is legal only with secondary encoding — provided via a letter glyph in each cell (S/P/H/F) plus a "View as table" toggle that carries the same data as text, satisfying the skill's non-dismissable contrast-WARN relief requirement.
+
+**Known simplifications (documented, not bugs):**
+- Frost dates are a **zone-correlated estimate**, not a nearest-weather-station lookup (Option A from the build plan) — disclosed in-page, with a link to the Zone Finder / official USDA map for anyone who wants the precision Option B (real NOAA station data) would require
+- A month cell touched by more than one activity shows only the higher-priority one (`harvest > fallSow > plantOutdoor > indoorStart`) — a single-color-per-cell simplification suited to the tool's monthly (not daily) display granularity
+- Frost-free zones (11–13) skip frost-relative math entirely and fall back to the seasonal band, since "weeks before last frost" is meaningless where there isn't one
+
+**Cross-links:** Zone Finder's result panel links here with `?zip=` prefill; this tool's ZIP form reads that param on mount; each timeline row links to its plant type's guide via `typeGuides`; top-of-page links to Four-Season Garden Design, Winter Garden Prep, and the Spring Startup / Fall Planting stub guides.
 
 ---
 

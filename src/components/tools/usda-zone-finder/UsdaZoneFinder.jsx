@@ -135,6 +135,12 @@ export default function UsdaZoneFinder() {
                 🌱 Use this zone in the Garden Architect →
               </Link>
               <Link
+                href={`/tools/gardening-calendar/?zip=${result.zip}`}
+                className="bg-earth-500 hover:bg-earth-600 text-white text-sm font-semibold px-4 py-2 rounded-xl transition-colors"
+              >
+                📅 Get my planting calendar →
+              </Link>
+              <Link
                 href="/infographics/"
                 className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-garden-400 text-sm font-medium px-4 py-2 rounded-xl transition-colors text-gray-700 dark:text-gray-300"
               >
