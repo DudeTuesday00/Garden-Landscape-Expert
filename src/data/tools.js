@@ -50,7 +50,7 @@ export const tools = [
     tagline: 'Get the right browns-to-greens ratio for a bin or pile of any size.',
     emoji: '♻️',
     href: '/tools/compost-calculator/',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     id: 'plant-spacing-calculator',
