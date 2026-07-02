@@ -82,7 +82,7 @@ export const tools = [
     tagline: 'Check whether two plants make good neighbors — or should be kept apart.',
     emoji: '🤝',
     href: '/tools/companion-planting-checker/',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     id: 'succession-planner',
