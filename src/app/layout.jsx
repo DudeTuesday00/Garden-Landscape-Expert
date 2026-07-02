@@ -162,6 +162,7 @@ export default function RootLayout({ children }) {
                   <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-3">Guides &amp; Tools</p>
                   <ul className="space-y-2">
                     <li><Link href="/wizard/"  className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🌱 Garden Architect</Link></li>
+                    <li><Link href="/tools/"   className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🧰 Garden Tools</Link></li>
                     <li><Link href="/guides/"  className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">📖 Plantopedia</Link></li>
                     <li><Link href="/infographics/" className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🖼️ Infographics</Link></li>
                     <li><Link href="/videos/"  className="hover:text-garden-600 dark:hover:text-garden-400 transition-colors">🎬 Videos</Link></li>

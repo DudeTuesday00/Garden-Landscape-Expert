@@ -1958,16 +1958,37 @@ Hero/LCP images (page headers, guide hero photos, the two homepage path cards, t
 
 ---
 
+### Garden Tools Hub ✅
+
+`/tools/` — a landing page listing all interactive garden tools as cards; live tools link out, `comingSoon` tools render as a non-clickable card with a "Coming Soon" badge. This is the framework new tools get added to going forward — the Fertilizer Calculator was the first tool and now lives under it at `/tools/fertilizer-calculator/`.
+
+| File | Role |
+|---|---|
+| `src/data/tools.js` | Tool registry — `{ id, name, tagline, emoji, href, status: 'live' \| 'coming-soon' }`; exports `tools` and `getTool(id)` |
+| `src/components/tools/ToolsHome.jsx` | Server component — renders the `/tools/` card grid from the registry |
+| `src/app/tools/page.jsx` | Route with full SEO metadata |
+| `src/components/tools/<tool-id>/` | One folder per tool's component(s), e.g. `src/components/tools/fertilizer-calculator/FertilizerCalculator.jsx` |
+| `src/app/tools/<tool-id>/page.jsx` | One route per tool, e.g. `src/app/tools/fertilizer-calculator/page.jsx` |
+
+**To add a new tool:**
+1. Build its component(s) under `src/components/tools/<tool-id>/`
+2. Add its route at `src/app/tools/<tool-id>/page.jsx` (full metadata export, canonical URL under `/tools/<tool-id>/`)
+3. Add an entry to `tools` in `src/data/tools.js` with `status: 'live'` (or `'coming-soon'` to preview it on the hub before the route exists — point `href` at `#` or the future path)
+4. Add the route to `src/app/sitemap.js`
+5. Each tool page should include a "← Back to Garden Tools" link to `/tools/` (see `FertilizerCalculator.jsx` for the pattern)
+
+Currently registered: **Fertilizer Calculator** (live), **Gardening Calendar** (coming soon), **Find Your USDA Hardiness Zone** (coming soon).
+
 ### Fertilizer Calculator ✅
 
-`/fertilizer-calculator/` — an interactive tool that generates personalized, organic-first fertilizer recommendations.
+`/tools/fertilizer-calculator/` — an interactive tool that generates personalized, organic-first fertilizer recommendations. First tool built; moved under the Garden Tools hub (originally stood alone at `/fertilizer-calculator/`, which now redirects — see below).
 
 | File | Role |
 |---|---|
 | `src/data/fertilizer-types.js` | Catalog of organic + synthetic fertilizers/amendments (compost, worm castings, blood meal, bone meal, kelp meal, fish emulsion, hydroponic nutrients, etc.) with NPK, description, and application notes |
 | `src/data/fertilizer-recommendations.js` | Recommendation engine — `getFertilizerRecommendations()` takes `{ plantType, growthStage, physicalSize, growingMethod }` and returns a list of recommendation objects (or note objects); `getFeedingProfile()` returns a one-line feeding summary per plant type |
-| `src/components/fertilizer-calculator/FertilizerCalculator.jsx` | `'use client'` — interactive form (plant type buttons, growing method, growth stage, physical size) with live results panel |
-| `src/app/fertilizer-calculator/page.jsx` | Route with full SEO metadata |
+| `src/components/tools/fertilizer-calculator/FertilizerCalculator.jsx` | `'use client'` — interactive form (plant type buttons, growing method, growth stage, physical size) with live results panel |
+| `src/app/tools/fertilizer-calculator/page.jsx` | Route with full SEO metadata |
 
 **Engine logic:**
 - Always includes a universal "Finished Compost" recommendation (soil health first)
@@ -1978,7 +1999,9 @@ Hero/LCP images (page headers, guide hero photos, the two homepage path cards, t
 - Always closes with a soil-test recommendation note
 - Results panel in `FertilizerCalculator.jsx` is `lg:sticky lg:top-20` (not plain `sticky top-4`) so it doesn't tuck up under the sticky site header on desktop, and isn't sticky at all on the single-column mobile layout where that would trap it oddly mid-scroll
 
-**Wired into:** `Nav.jsx` (between Garden Architect and Plantopedia), `SiteSearch.jsx` static page index, and `sitemap.js`.
+**`/fertilizer-calculator/` redirect stub:** `src/app/fertilizer-calculator/page.jsx` — the old standalone route is kept as a thin stub (`robots: noindex`, canonical → `/tools/fertilizer-calculator/`, `<meta httpEquiv="refresh">` + a manual link) since static export (`output: 'export'`) can't do a real server-side redirect. Don't delete this stub without checking analytics/backlinks first.
+
+**Wired into:** `Nav.jsx` (🧰 Tools, between Garden Architect and Plantopedia), footer "Guides & Tools" column, `SiteSearch.jsx` static page index (both `/tools/` and the calculator itself), and `sitemap.js`.
 
 ---
 
