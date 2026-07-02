@@ -94,7 +94,7 @@ export default function PlantDatabase() {
           Plant Database
         </h1>
         <p className="mt-2 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          Search and filter all 150 plants — common and scientific names, sun and water needs,
+          Search and filter all 185 plants — common and scientific names, sun and water needs,
           lifecycle, native range, pet safety, bloom characteristics, and more.
         </p>
       </div>

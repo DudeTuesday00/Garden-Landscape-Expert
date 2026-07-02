@@ -2,7 +2,7 @@ import WateringCalculator from '../../../components/tools/watering-calculator/Wa
 
 export const metadata = {
   title: 'Watering Schedule Calculator',
-  description: 'A concrete watering plan for any of our 150 plants — frequency and amount tailored to your growing method (in-ground, container, or hydroponic) and climate.',
+  description: 'A concrete watering plan for any of our 185 plants — frequency and amount tailored to your growing method (in-ground, container, or hydroponic) and climate.',
   alternates: {
     canonical: 'https://plantingatlas.com/tools/watering-calculator/',
   },

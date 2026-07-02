@@ -3,7 +3,7 @@
  * Most entries are copied directly from guide-content/square-foot-gardening.js's
  * "Complete Plant Spacing Reference" tables so the calculator's numbers
  * match what the guide teaches. Keyed to plants.js ids — only plants that
- * exist in our 150-plant database are included (a few guide entries like
+ * exist in our 185-plant database are included (a few guide entries like
  * kohlrabi and leeks aren't yet in plants.js and are omitted rather than
  * guessed).
  *
