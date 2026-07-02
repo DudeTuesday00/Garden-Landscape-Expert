@@ -57,6 +57,8 @@ export const heroImages = {
   'indoor-herb-garden': '/guides/indoor-herb-garden.png',
   'rain-garden': '/guides/rain-garden.png',
   'mulching-guide': '/guides/mulching-guide.png',
+  'no-dig-gardening': '/guides/no-dig-gardening-guide.png',
+  'seed-saving': '/guides/seed-saving-guide.png',
   'privacy-screening': '/guides/privacy-screening.png',
   'medicinal-herb-garden': '/guides/medicinal-herb-garden.png',
   'no-dig-gardening': '/guides/no-dig-gardening-guide.png',

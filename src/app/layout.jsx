@@ -106,7 +106,11 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* Google AdSense account verification */}
+        {/* 
+          Google AdSense account verification meta tag.
+          This is safe (and recommended) to keep at all times — even before approval.
+          The actual ad script is conditionally loaded below based on NEXT_PUBLIC_ENABLE_ADSENSE.
+        */}
         <meta name="google-adsense-account" content="ca-pub-2083020536499662" />
       </head>
       <body>
@@ -201,12 +205,29 @@ export default function RootLayout({ children }) {
           gtag('config','G-7S7248T634');
         `}</Script>
 
-        {/* AdSense auto-ads */}
-        <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2083020536499662"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-        />
+        {/* 
+          === GOOGLE ADSENSE — DISABLED UNTIL APPROVED ===
+          
+          The AdSense script is intentionally disabled while awaiting Google AdSense approval.
+          
+          Why this matters:
+          - Loading adsbygoogle.js before approval is a common reason for rejection.
+          - Google reviews the live site exactly as visitors see it.
+          
+          How to re-enable after approval:
+          1. Set the environment variable: NEXT_PUBLIC_ENABLE_ADSENSE=true
+          2. Rebuild and deploy: npm run build
+          3. (Optional) Remove this conditional wrapper once permanently approved.
+          
+          The meta verification tag below is safe to keep at all times.
+        */}
+        {process.env.NEXT_PUBLIC_ENABLE_ADSENSE === 'true' && (
+          <Script
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2083020536499662"
+            strategy="afterInteractive"
+            crossOrigin="anonymous"
+          />
+        )}
 
         <CookieBanner />
       </body>
