@@ -6,11 +6,11 @@ import { guideCategories } from '../data/guides.js'
 
 // Key static pages worth surfacing in global search alongside guides
 const staticPages = [
-  { title: 'Garden Architect', emoji: '🌱', description: 'Get personalized plant recommendations from 148 plants.', href: '/wizard/' },
+  { title: 'Garden Architect', emoji: '🌱', description: 'Get personalized plant recommendations from 150 plants.', href: '/wizard/' },
   { title: 'Garden Tools', emoji: '🧰', description: 'Fertilizer calculator, gardening calendar, USDA zone finder, and more.', href: '/tools/' },
   { title: 'Fertilizer Calculator', emoji: '🧪', description: 'Personalized fertilizer recommendations by plant type, size, and growing method.', href: '/tools/fertilizer-calculator/' },
   { title: 'Find Your USDA Hardiness Zone', emoji: '🗺️', description: 'Look up your exact zone by ZIP code.', href: '/tools/usda-zone-finder/' },
-  { title: 'Garden Planting Calendar', emoji: '📅', description: 'A personalized planting timeline by ZIP code for 148 plants.', href: '/tools/gardening-calendar/' },
+  { title: 'Garden Planting Calendar', emoji: '📅', description: 'A personalized planting timeline by ZIP code for 150 plants.', href: '/tools/gardening-calendar/' },
   { title: 'Soil & Raised Bed Calculator', emoji: '🪨', description: 'How much soil to buy for a raised bed, container, or Square Foot Garden.', href: '/tools/soil-calculator/' },
   { title: 'Mulch Calculator', emoji: '🪵', description: 'How much mulch you need by area and depth.', href: '/tools/mulch-calculator/' },
   { title: 'Compost Calculator', emoji: '♻️', description: 'The right browns-to-greens ratio for a compost pile of any size.', href: '/tools/compost-calculator/' },

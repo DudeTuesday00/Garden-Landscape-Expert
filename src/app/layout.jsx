@@ -24,7 +24,7 @@ export const metadata = {
     template: '%s | Planting Atlas',
   },
   description:
-    'Your complete planting atlas for gardens and landscapes. Get personalized plant recommendations from 148 plants across 12 types, or browse 75+ expert growing guides by USDA zone.',
+    'Your complete planting atlas for gardens and landscapes. Get personalized plant recommendations from 150 plants across 12 types, or browse 75+ expert growing guides by USDA zone.',
   keywords:
     'planting guide, landscape design, garden planning, USDA zones, plant database, gardening expert, hydroponic gardening, Plantopedia, Garden Architect',
   metadataBase: new URL('https://plantingatlas.com'),
@@ -39,7 +39,7 @@ export const metadata = {
     locale: 'en_US',
     title: 'Planting Atlas — Plan it. Plant it. Grow it.',
     description:
-      'Your complete planting atlas for gardens and landscapes. Get personalized plant recommendations from 148 plants across 12 types, or browse 75+ expert growing guides by USDA zone.',
+      'Your complete planting atlas for gardens and landscapes. Get personalized plant recommendations from 150 plants across 12 types, or browse 75+ expert growing guides by USDA zone.',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Planting Atlas' }],
   },
   twitter: {

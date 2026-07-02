@@ -127,7 +127,7 @@ export default function GardenCalendar() {
         </h1>
         <p className="mt-2 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
           Enter your ZIP code to see when to start seeds indoors, plant outdoors, and harvest —
-          for every plant in our 148-plant database, not just vegetables.
+          for every plant in our 150-plant database, not just vegetables.
         </p>
       </div>
 
