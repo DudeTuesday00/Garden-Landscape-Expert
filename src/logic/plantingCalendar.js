@@ -30,7 +30,7 @@ function offsetMonths(anchorMonthDay, weeks) {
   return toDecimalMonth(anchorMonthDay) + weeks / WEEKS_PER_MONTH
 }
 
-function parseAverageDays(daysToHarvestStr) {
+export function parseAverageDays(daysToHarvestStr) {
   if (!daysToHarvestStr) return null
   const match = daysToHarvestStr.match(/(\d+)\s*[–-]\s*(\d+)/)
   if (match) return (parseInt(match[1], 10) + parseInt(match[2], 10)) / 2

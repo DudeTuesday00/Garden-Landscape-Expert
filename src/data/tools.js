@@ -58,7 +58,7 @@ export const tools = [
     tagline: 'See exactly how many plants fit in your bed with a visual grid.',
     emoji: '📐',
     href: '/tools/plant-spacing-calculator/',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     id: 'yield-estimator',
@@ -66,7 +66,7 @@ export const tools = [
     tagline: 'How much harvest to expect from your plants — plan a garden sized to your household.',
     emoji: '🧺',
     href: '/tools/yield-estimator/',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     id: 'plant-symptom-checker',
