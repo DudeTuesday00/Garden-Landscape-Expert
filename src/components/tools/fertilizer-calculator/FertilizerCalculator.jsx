@@ -1,14 +1,15 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import {
   plantTypeOptions,
   growthStageOptions,
   physicalSizeOptions,
   getFertilizerRecommendations,
   getFeedingProfile
-} from '../../data/fertilizer-recommendations'
-import { fertilizerTypes } from '../../data/fertilizer-types'
+} from '../../../data/fertilizer-recommendations'
+import { fertilizerTypes } from '../../../data/fertilizer-types'
 
 export default function FertilizerCalculator() {
   const [plantType, setPlantType] = useState('vegetable')
@@ -35,6 +36,13 @@ export default function FertilizerCalculator() {
 
   return (
     <div className="max-w-4xl mx-auto">
+      <Link
+        href="/tools/"
+        className="inline-flex items-center gap-1 text-sm text-garden-600 dark:text-garden-400 hover:underline mb-4"
+      >
+        ← Back to Garden Tools
+      </Link>
+
       {/* Header */}
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-garden-800 dark:text-garden-300">

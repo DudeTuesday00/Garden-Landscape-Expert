@@ -50,7 +50,7 @@ export default function Nav() {
 
   const navLinks = [
     { href: '/wizard/',                 label: '🌱 Garden Architect' },
-    { href: '/fertilizer-calculator/',  label: '🧪 Fertilizer Calculator' },
+    { href: '/tools/',                  label: '🧰 Tools' },
     { href: '/guides/',                 label: '📖 Plantopedia' },
     { href: '/infographics/',           label: '🗺️ Infographics' },
     { href: '/videos/',                 label: '🎬 Videos' },
