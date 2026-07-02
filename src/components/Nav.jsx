@@ -50,6 +50,7 @@ export default function Nav() {
 
   const navLinks = [
     { href: '/wizard/',                 label: '🌱 Garden Architect' },
+    { href: '/plants/',                 label: '🌿 Plant Database' },
     { href: '/tools/',                  label: '🧰 Tools' },
     { href: '/guides/',                 label: '📖 Plantopedia' },
     { href: '/infographics/',           label: '🗺️ Infographics' },

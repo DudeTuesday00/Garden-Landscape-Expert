@@ -3,6 +3,7 @@ export const dynamic = 'force-static'
 import { guideCategories } from '../data/guides.js'
 import { products } from '../data/products.js'
 import { heroImages } from '../data/hero-images.js'
+import plants from '../data/plants.js'
 
 const SITE_URL = 'https://plantingatlas.com'
 
@@ -12,6 +13,7 @@ const DATE_SITE_LAUNCH    = new Date('2026-03-01') // initial launch / first bat
 const DATE_RECENT_GUIDES  = new Date('2026-04-15') // second wave of full guides
 const DATE_STUBS_LAUNCHED = new Date('2026-05-01') // all stubs activated
 const DATE_PAGES_UPDATED  = new Date('2026-04-05') // last known static-page update
+const DATE_PLANT_DATABASE = new Date('2026-07-02') // Plant Database (/plants/) launch
 
 // Full guides published in the second wave (after the initial March launch)
 const RECENT_FULL_GUIDE_IDS = new Set([
@@ -24,6 +26,7 @@ export default function sitemap() {
   const staticPages = [
     { url: `${SITE_URL}/`,                        lastModified: DATE_PAGES_UPDATED,  changeFrequency: 'monthly', priority: 1.0 },
     { url: `${SITE_URL}/wizard/`,                 lastModified: DATE_SITE_LAUNCH,    changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${SITE_URL}/plants/`,                 lastModified: DATE_PLANT_DATABASE, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${SITE_URL}/tools/`,                  lastModified: DATE_RECENT_GUIDES,  changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/tools/fertilizer-calculator/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/tools/usda-zone-finder/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
@@ -76,5 +79,12 @@ export default function sitemap() {
     priority: 0.7,
   }))
 
-  return [...staticPages, ...guidePages, ...productPages]
+  const plantPages = plants.map((p) => ({
+    url: `${SITE_URL}/plants/${p.id}/`,
+    lastModified: DATE_PLANT_DATABASE,
+    changeFrequency: 'yearly',
+    priority: 0.6,
+  }))
+
+  return [...staticPages, ...guidePages, ...productPages, ...plantPages]
 }
