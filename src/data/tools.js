@@ -58,7 +58,7 @@ export const tools = [
     tagline: 'See exactly how many plants fit in your bed with a visual grid.',
     emoji: '📐',
     href: '/tools/plant-spacing-calculator/',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     id: 'yield-estimator',

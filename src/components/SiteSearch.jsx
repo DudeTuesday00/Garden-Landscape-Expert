@@ -14,6 +14,7 @@ const staticPages = [
   { title: 'Soil & Raised Bed Calculator', emoji: '🪨', description: 'How much soil to buy for a raised bed, container, or Square Foot Garden.', href: '/tools/soil-calculator/' },
   { title: 'Mulch Calculator', emoji: '🪵', description: 'How much mulch you need by area and depth.', href: '/tools/mulch-calculator/' },
   { title: 'Compost Calculator', emoji: '♻️', description: 'The right browns-to-greens ratio for a compost pile of any size.', href: '/tools/compost-calculator/' },
+  { title: 'Plant Spacing & Square Foot Planner', emoji: '📐', description: 'See how many plants fit in your bed with a visual grid.', href: '/tools/plant-spacing-calculator/' },
   { title: 'Plantopedia', emoji: '📖', description: 'Browse 88 expert growing guides by category.', href: '/guides/' },
   { title: 'Garden Infographics', emoji: '🗺️', description: 'Visual quick-reference guides for planting and growing.', href: '/infographics/' },
   { title: 'Gardening Videos', emoji: '🎬', description: 'Curated YouTube channels and original Planting Atlas videos.', href: '/videos/' },
