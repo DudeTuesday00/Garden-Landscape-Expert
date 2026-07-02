@@ -33,6 +33,7 @@ export default function sitemap() {
     { url: `${SITE_URL}/tools/compost-calculator/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/tools/plant-spacing-calculator/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/tools/yield-estimator/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${SITE_URL}/tools/plant-symptom-checker/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/guides/`,                 lastModified: DATE_STUBS_LAUNCHED, changeFrequency: 'weekly',  priority: 0.9 },
     { url: `${SITE_URL}/infographics/`,           lastModified: DATE_PAGES_UPDATED,  changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/podcasts/`,               lastModified: DATE_PAGES_UPDATED,  changeFrequency: 'monthly', priority: 0.7 },

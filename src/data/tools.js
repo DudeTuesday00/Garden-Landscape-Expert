@@ -74,7 +74,7 @@ export const tools = [
     tagline: 'Answer a few questions about what’s wrong with a plant to find the likely culprit.',
     emoji: '🩺',
     href: '/tools/plant-symptom-checker/',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     id: 'companion-planting-checker',
