@@ -74,7 +74,7 @@ export const tools = [
     tagline: 'Answer a few questions about what’s wrong with a plant to find the likely culprit.',
     emoji: '🩺',
     href: '/tools/plant-symptom-checker/',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     id: 'companion-planting-checker',
@@ -82,7 +82,7 @@ export const tools = [
     tagline: 'Check whether two plants make good neighbors — or should be kept apart.',
     emoji: '🤝',
     href: '/tools/companion-planting-checker/',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     id: 'succession-planner',
