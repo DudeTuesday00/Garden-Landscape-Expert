@@ -122,20 +122,24 @@ function PlantCard({ plant, isHydro }) {
           </div>
         )}
 
-        {/* Related guide links */}
-        {typeGuides[plant.type] && (
-          <div className="pt-1 flex flex-wrap gap-2">
-            {typeGuides[plant.type].map((g) => (
-              <Link
-                key={g.id}
-                href={`/guides/${g.id}/`}
-                className="inline-flex items-center gap-1 text-xs font-medium text-garden-700 dark:text-garden-400 hover:text-garden-900 dark:hover:text-garden-200 underline underline-offset-2 transition-colors"
-              >
-                📖 {g.title}
-              </Link>
-            ))}
-          </div>
-        )}
+        {/* Related guide links + full plant profile */}
+        <div className="pt-1 flex flex-wrap gap-2">
+          <Link
+            href={`/plants/${plant.id}/`}
+            className="inline-flex items-center gap-1 text-xs font-medium text-garden-700 dark:text-garden-400 hover:text-garden-900 dark:hover:text-garden-200 underline underline-offset-2 transition-colors"
+          >
+            🌿 Full Profile
+          </Link>
+          {typeGuides[plant.type]?.map((g) => (
+            <Link
+              key={g.id}
+              href={`/guides/${g.id}/`}
+              className="inline-flex items-center gap-1 text-xs font-medium text-garden-700 dark:text-garden-400 hover:text-garden-900 dark:hover:text-garden-200 underline underline-offset-2 transition-colors"
+            >
+              📖 {g.title}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   )

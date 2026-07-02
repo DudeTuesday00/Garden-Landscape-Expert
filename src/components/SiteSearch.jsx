@@ -3,10 +3,13 @@
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { guideCategories } from '../data/guides.js'
+import plants from '../data/plants.js'
+import { plantProfiles } from '../data/plant-profiles.js'
 
 // Key static pages worth surfacing in global search alongside guides
 const staticPages = [
   { title: 'Garden Architect', emoji: '🌱', description: 'Get personalized plant recommendations from 150 plants.', href: '/wizard/' },
+  { title: 'Plant Database', emoji: '🌿', description: 'Search and filter all 150 plants by common or scientific name, type, sun, water, and more.', href: '/plants/' },
   { title: 'Garden Tools', emoji: '🧰', description: 'Fertilizer calculator, gardening calendar, USDA zone finder, and more.', href: '/tools/' },
   { title: 'Fertilizer Calculator', emoji: '🧪', description: 'Personalized fertilizer recommendations by plant type, size, and growing method.', href: '/tools/fertilizer-calculator/' },
   { title: 'Find Your USDA Hardiness Zone', emoji: '🗺️', description: 'Look up your exact zone by ZIP code.', href: '/tools/usda-zone-finder/' },
@@ -41,7 +44,20 @@ const guideIndex = guideCategories.flatMap((cat) =>
     }))
 )
 
-const searchIndex = [...staticPages, ...guideIndex]
+// All 150 plants now have individual detail pages (/plants/<id>/), so they
+// belong in the global search index — description carries the scientific
+// name so a search for "Solanum lycopersicum" surfaces Tomato.
+const plantIndex = plants.map((p) => {
+  const scientificName = plantProfiles[p.id]?.scientificName
+  return {
+    title: p.name,
+    emoji: p.emoji,
+    description: scientificName ? `${scientificName} — ${p.description}` : p.description,
+    href: `/plants/${p.id}/`,
+  }
+})
+
+const searchIndex = [...staticPages, ...guideIndex, ...plantIndex]
 
 export default function SiteSearch() {
   const [open, setOpen] = useState(false)
