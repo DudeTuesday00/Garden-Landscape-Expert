@@ -18,6 +18,7 @@ const staticPages = [
   { title: 'Garden Yield Estimator', emoji: '🧺', description: 'How much harvest to expect from your plants.', href: '/tools/yield-estimator/' },
   { title: 'Garden Symptom Diagnostic', emoji: '🩺', description: 'Find the likely pest or disease behind what you\'re seeing.', href: '/tools/plant-symptom-checker/' },
   { title: 'Companion Planting Checker', emoji: '🤝', description: 'Check whether two plants make good neighbors.', href: '/tools/companion-planting-checker/' },
+  { title: 'Succession Planting Planner', emoji: '🔁', description: 'How many rounds of a fast crop fit in your season.', href: '/tools/succession-planner/' },
   { title: 'Plantopedia', emoji: '📖', description: 'Browse 88 expert growing guides by category.', href: '/guides/' },
   { title: 'Garden Infographics', emoji: '🗺️', description: 'Visual quick-reference guides for planting and growing.', href: '/infographics/' },
   { title: 'Gardening Videos', emoji: '🎬', description: 'Curated YouTube channels and original Planting Atlas videos.', href: '/videos/' },

@@ -90,7 +90,7 @@ export const tools = [
     tagline: 'How many rounds of fast crops like lettuce and radishes fit in your season.',
     emoji: '🔁',
     href: '/tools/succession-planner/',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     id: 'grow-your-own-savings',
