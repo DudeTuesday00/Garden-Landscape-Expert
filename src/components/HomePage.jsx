@@ -2,6 +2,7 @@ import Link from 'next/link'
 import gardenArchitectImg from './wizard/Garden-Architect.png'
 import plantopediaImg from './guides/Plantopedia.png'
 import NewsletterSignup from './NewsletterSignup.jsx'
+import TopicOfTheWeek from './TopicOfTheWeek.jsx'
 
 export default function HomePage() {
   return (
@@ -72,6 +73,9 @@ export default function HomePage() {
           </Link>
 
         </div>
+
+        {/* Topic of the Week */}
+        <TopicOfTheWeek />
 
         {/* Credibility stats strip */}
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">

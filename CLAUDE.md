@@ -630,6 +630,23 @@ All guide content is now written for a national US audience (Zones 3–11). Okla
 - `WelcomeScreen.jsx` title updated to "Garden Architect" with slogan "The Smartest Way to Plan Your Garden"
 - `GuidesHome.jsx` header updated to "Plantopedia" with slogan "Your Green Thumb Repository"
 
+### Homepage "Topic of the Week" ✅
+
+A rotating feature card on the homepage that highlights one guide, tool, video, podcast, or infographic per week — positioned between the two path cards and the credibility stats strip.
+
+| File | Role |
+|---|---|
+| `src/data/topic-of-the-week.js` | Curated, ordered rotation list of lightweight `{type, id}` references (for `'guide'`/`'tool'`) or self-contained `{type, title, teaser, href, emoji}` entries (for `'video'`/`'podcast'`/`'infographic'`, which have no exported data registry elsewhere in the codebase). Also exports `pinnedTopic` (`null` by default) for manually featuring something on-demand |
+| `src/logic/topicOfWeek.js` | Pure logic — `getIsoWeekYear(date)` (ISO 8601 week number + week-year, UTC-based); `resolveTopic(ref)` (looks up guide/tool refs live against `guideCategories`/`tools.js` so edits there propagate automatically; passes video/podcast/infographic refs through as-is); `getTopicOfWeek(date, list, pinned)` (returns the pinned topic if active, otherwise `index = (isoYear * 53 + isoWeek) % list.length` into the rotation list) |
+| `src/logic/topicOfWeek.test.js` | 12 tests — ISO week math against known dates, resolution of all reference types (including unknown-id → `null`), in-range indexing across a full year, same-result stability within one ISO week, a different result the following week, and pin/`until`-expiry behavior |
+| `src/components/TopicOfTheWeek.jsx` | `'use client'` — SSR-safe (renders nothing until mounted, then computes `getTopicOfWeek(new Date(), ...)` in `useEffect`), same pattern as the dark-mode toggle and `CookieBanner`, since "today's date" isn't knowable at static-export build time |
+
+**Why client-side, date-driven rotation:** the site is a static export with no backend and no scheduled job, so the rotation had to advance automatically without a weekly redeploy. Computing the ISO week number in the browser means every visitor within the same Mon–Sun (UTC) window sees the same pick, and it cycles forward forever — looping back to the start of the list once exhausted — with zero ongoing maintenance.
+
+**Manual override:** setting `pinnedTopic` in `topic-of-the-week.js` to `{ type, id (or inline fields), until: 'YYYY-MM-DD' }` takes priority over the rotation until that date (inclusive), then automatically falls back to normal rotation — useful for featuring a brand-new guide the week it launches without redesigning anything.
+
+**Curation rule:** only full, live guides go in the rotation (verified against `hero-images.js` — never a 2-paragraph stub), since a "Topic of the Week" pointing at thin content would undercut the feature's purpose.
+
 ### Section Landing Page Hero Images ✅
 
 - **Garden Architect landing** (`WelcomeScreen.jsx`) — `src/components/wizard/garden-architect-2.png` renders as a full-width image (`w-full max-w-2xl rounded-2xl shadow-md`) at the top of the welcome screen, above the title and "Get Started" button
