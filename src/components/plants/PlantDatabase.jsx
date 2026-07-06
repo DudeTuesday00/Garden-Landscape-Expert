@@ -29,6 +29,56 @@ const EXPERIENCE_OPTIONS = [
 
 const enriched = plants.map((p) => ({ ...p, profile: plantProfiles[p.id] }))
 
+function PlantCard({ p }) {
+  const [imgFailed, setImgFailed] = useState(false)
+
+  return (
+    <Link
+      href={`/plants/${p.id}/`}
+      className="group bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-garden-400 dark:hover:border-garden-500 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col"
+    >
+      {/* Thumbnail */}
+      <div className="relative w-full aspect-square bg-garden-50 dark:bg-gray-700 overflow-hidden">
+        {imgFailed ? (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="text-6xl">{p.emoji}</span>
+          </div>
+        ) : (
+          <img
+            src={`/plants/${p.id}/primary.jpg`}
+            alt={p.name}
+            loading="lazy"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            onError={() => setImgFailed(true)}
+          />
+        )}
+        <span className="absolute top-2 right-2 text-xs px-2 py-0.5 rounded-full bg-white/90 dark:bg-gray-900/90 text-garden-700 dark:text-garden-300 border border-garden-200 dark:border-garden-700 capitalize backdrop-blur-sm">
+          {p.type}
+        </span>
+      </div>
+
+      {/* Info */}
+      <div className="p-5 flex flex-col flex-1">
+        <div className="flex items-center gap-2 mb-1">
+          <span className="text-xl flex-shrink-0">{p.emoji}</span>
+          <h2 className="font-bold text-gray-900 dark:text-gray-100 group-hover:text-garden-700 dark:group-hover:text-garden-300 transition-colors">
+            {p.name}
+          </h2>
+        </div>
+        {p.profile?.scientificName && (
+          <p className="text-xs italic text-gray-500 dark:text-gray-400">{p.profile.scientificName}</p>
+        )}
+        <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 leading-relaxed flex-1">{p.description}</p>
+        <div className="mt-3 flex flex-wrap gap-1.5 text-xs text-gray-400 dark:text-gray-500">
+          {p.profile?.lifecycle && <span className="capitalize">{p.profile.lifecycle}</span>}
+          <span>·</span>
+          <span className="capitalize">{p.water} water</span>
+        </div>
+      </div>
+    </Link>
+  )
+}
+
 function FilterGroup({ label, options, value, onChange }) {
   return (
     <div>
@@ -152,30 +202,7 @@ export default function PlantDatabase() {
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {results.map((p) => (
-          <Link
-            key={p.id}
-            href={`/plants/${p.id}/`}
-            className="group bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-garden-400 dark:hover:border-garden-500 shadow-sm hover:shadow-md transition-all p-5 flex flex-col"
-          >
-            <div className="flex items-start justify-between gap-2 mb-2">
-              <span className="text-3xl">{p.emoji}</span>
-              <span className="text-xs px-2 py-0.5 rounded-full bg-garden-50 dark:bg-garden-900/30 text-garden-700 dark:text-garden-300 border border-garden-100 dark:border-garden-800 capitalize whitespace-nowrap">
-                {p.type}
-              </span>
-            </div>
-            <h2 className="font-bold text-gray-900 dark:text-gray-100 group-hover:text-garden-700 dark:group-hover:text-garden-300 transition-colors">
-              {p.name}
-            </h2>
-            {p.profile?.scientificName && (
-              <p className="text-xs italic text-gray-500 dark:text-gray-400 mt-0.5">{p.profile.scientificName}</p>
-            )}
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 leading-relaxed flex-1">{p.description}</p>
-            <div className="mt-3 flex flex-wrap gap-1.5 text-xs text-gray-400 dark:text-gray-500">
-              {p.profile?.lifecycle && <span className="capitalize">{p.profile.lifecycle}</span>}
-              <span>·</span>
-              <span className="capitalize">{p.water} water</span>
-            </div>
-          </Link>
+          <PlantCard key={p.id} p={p} />
         ))}
       </div>
 

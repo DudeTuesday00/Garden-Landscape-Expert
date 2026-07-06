@@ -6,6 +6,13 @@ import { plantSpacing } from '../../data/plant-spacing.js'
 import { plantYields } from '../../data/plant-yields.js'
 import { companionCheckerPlantIds } from '../../data/companion-pairings.js'
 import { plantingWindows } from '../../data/planting-windows.js'
+import ImageGallery from '../shop/ImageGallery.jsx'
+
+// Every plant in public/plants/<id>/ ships the same 4-file set (verified
+// 1:1 against plants.js before shipping) — no per-plant existence check
+// needed; ImageGallery already falls back to the plant's emoji per-image
+// if a given file is ever missing or fails to load.
+const GALLERY_FILES = ['primary.jpg', 'secondary-1.jpg', 'secondary-2.jpg', 'secondary-3.jpg']
 
 const SUN_LABELS = { 'full-sun': '☀️ Full Sun', 'partial-shade': '⛅ Partial Shade', 'full-shade': '🌑 Full Shade' }
 const WATER_LABELS = { low: '💧 Low', moderate: '💧💧 Moderate', high: '💧💧💧 High' }
@@ -44,10 +51,11 @@ export default function PlantDetail({ plantId }) {
   const hasYieldData = plantId in plantYields
   const hasCompanionData = companionCheckerPlantIds.includes(plantId)
   const hasCalendarData = plantId in plantingWindows
+  const galleryImages = GALLERY_FILES.map((file) => `/plants/${plantId}/${file}`)
 
   return (
     <div className="min-h-screen px-4 py-10">
-      <div className="w-full max-w-4xl mx-auto">
+      <div className="w-full max-w-5xl mx-auto">
 
         {/* Breadcrumb */}
         <nav className="text-xs text-gray-500 dark:text-gray-400 mb-6 flex items-center gap-1.5 flex-wrap">
@@ -58,35 +66,41 @@ export default function PlantDetail({ plantId }) {
           <span className="text-gray-700 dark:text-gray-300">{plant.name}</span>
         </nav>
 
-        {/* Header */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm p-6 sm:p-8 mb-5">
-          <div className="flex items-start gap-4">
-            <span className="text-5xl flex-shrink-0">{plant.emoji}</span>
-            <div className="min-w-0">
-              <div className="flex items-center gap-2 flex-wrap mb-1">
-                <span className="text-xs font-medium text-garden-600 dark:text-garden-400 bg-garden-50 dark:bg-garden-900/20 px-2.5 py-1 rounded-full border border-garden-200 dark:border-garden-700 capitalize">
-                  {plant.type}
-                </span>
-                {profile?.lifecycle && (
-                  <span className="text-xs font-medium text-earth-700 dark:text-earth-400 bg-earth-50 dark:bg-earth-900/20 px-2.5 py-1 rounded-full border border-earth-200 dark:border-earth-700 capitalize">
-                    {profile.lifecycle}
-                  </span>
-                )}
-                {plant.hydroponic && (
-                  <span className="text-xs font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 px-2.5 py-1 rounded-full border border-blue-200 dark:border-blue-700">
-                    💧 Hydroponic-Compatible
-                  </span>
-                )}
-              </div>
-              <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
-                {plant.name}
-              </h1>
-              {profile?.scientificName && (
-                <p className="mt-0.5 text-base italic text-gray-500 dark:text-gray-400">{profile.scientificName}</p>
-              )}
-              <p className="mt-3 text-gray-700 dark:text-gray-300 leading-relaxed">{plant.description}</p>
-            </div>
+        {/* Photo gallery + header */}
+        <div className="grid gap-6 lg:grid-cols-2 mb-5">
+
+          {/* Left: photo gallery */}
+          <div>
+            <ImageGallery images={galleryImages} productName={plant.name} emoji={plant.emoji} />
           </div>
+
+          {/* Right: header info */}
+          <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm p-6 sm:p-8 flex flex-col justify-center">
+            <div className="flex items-center gap-2 flex-wrap mb-2">
+              <span className="text-xs font-medium text-garden-600 dark:text-garden-400 bg-garden-50 dark:bg-garden-900/20 px-2.5 py-1 rounded-full border border-garden-200 dark:border-garden-700 capitalize">
+                {plant.type}
+              </span>
+              {profile?.lifecycle && (
+                <span className="text-xs font-medium text-earth-700 dark:text-earth-400 bg-earth-50 dark:bg-earth-900/20 px-2.5 py-1 rounded-full border border-earth-200 dark:border-earth-700 capitalize">
+                  {profile.lifecycle}
+                </span>
+              )}
+              {plant.hydroponic && (
+                <span className="text-xs font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 px-2.5 py-1 rounded-full border border-blue-200 dark:border-blue-700">
+                  💧 Hydroponic-Compatible
+                </span>
+              )}
+            </div>
+            <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
+              <span className="mr-1.5" aria-hidden="true">{plant.emoji}</span>
+              {plant.name}
+            </h1>
+            {profile?.scientificName && (
+              <p className="mt-0.5 text-base italic text-gray-500 dark:text-gray-400">{profile.scientificName}</p>
+            )}
+            <p className="mt-3 text-gray-700 dark:text-gray-300 leading-relaxed">{plant.description}</p>
+          </div>
+
         </div>
 
         {/* Quick facts */}
