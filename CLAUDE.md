@@ -2221,6 +2221,22 @@ While adding items to the Yield Estimator and Spacing Planner lists, two genuine
 
 ---
 
+### Plant Database — Extended Care Details ✅
+
+Three additional cards on every `/plants/<id>/` detail page — **Growing Details**, **Companions & Wildlife**, and **Troubleshooting** — rendered after Care Notes.
+
+| File | Role |
+|---|---|
+| `src/data/plant-care-details.js` | 185 entries keyed by plant id: `matureSize` (string), `growthRate` (`'slow'\|'moderate'\|'fast'`), `companions` (`[{name, reason}]`, can be empty), `deerResistance` (`{rating, note}` — standard Rutgers/extension 4-point scale: `'rarely damaged'\|'seldom damaged'\|'occasionally damaged'\|'frequently damaged'`), `pollinatorValue` (`{rating, note}` — `'high'\|'moderate'\|'low'\|'none'`), `zoneNotes` (short paragraph on cold-edge vs. warm-edge performance, not a generic frost-date reminder), `troubleshooting` (`[{issue, fix}]`, 2–4 per plant). Written at university-extension-fact-sheet specificity — no generic boilerplate that could apply to any plant. Verified 1:1 coverage (185/185, zero missing/orphaned), every entry has all 7 fields, every enum value validated against its allowed set before shipping |
+
+**Companion data consistency:** for the 25 plants also covered by the Companion Planting Checker (`companion-pairings.js`), the `companions` field is **force-derived** from that dataset's `type: 'good'` pairings rather than independently authored — this guarantees the detail page and the checker tool never contradict each other for the same plant pair. (An authoring pass initially let a few of these drift by adding extra companions beyond what the checker dataset supports; caught by a post-merge verification script comparing the two datasets and corrected by overwriting all 25 plants' `companions` arrays from the checker data directly, rather than trusting partial matches.) `fennel` legitimately has an empty `companions` array — it's allelopathic and has zero `'good'` pairings in the checker dataset (only `'avoid'` entries), so the UI simply omits the Good Companions block for it. All other 160 plants have independently authored, species-specific companion suggestions.
+
+**UI:** `PlantDetail.jsx` renders each card conditionally on `plantCareDetails[plantId]` and its sub-fields being present, so a plant missing from the dataset degrades gracefully rather than breaking — Deer Resistance and Pollinator Value render as color-coded cards (green/amber/red for deer resistance severity; earth/blue/gray for pollinator value) using the same badge-card visual language as the rest of the page.
+
+**Authoring at scale:** written via 13 parallel batches (grouped by plant type for content coherence — e.g. all oaks/maples/conifers together so an agent's deer-resistance and troubleshooting judgments stay internally consistent), each agent given the plant's existing `plants.js`/`plant-profiles.js` data plus its pre-computed companion-checker data (if any) as grounding context, writing to a JSON file that was merged, schema-validated, and enum-validated before being converted into the final `.js` data file — the same verify-before-ship discipline used throughout this project's large data-authoring efforts.
+
+---
+
 ### Landscape Plant Expansion (Trees, Shrubs, Conifers & Roses) ✅
 
 Following a coverage audit, `src/data/plants.js` was expanded from **150 → 185 plants** to strengthen depth in common American yard/landscape categories — the database previously leaned kitchen-garden-heavy relative to "planting in general." 35 new plants were added (21 trees, 14 shrubs), each with a full `plants.js` entry and a matching `plant-profiles.js` entry (scientific name, lifecycle, native range, pet toxicity, bloom characteristics), verified for 1:1 coverage the same way the original 150 were.

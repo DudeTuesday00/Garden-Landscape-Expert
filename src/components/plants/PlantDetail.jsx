@@ -6,6 +6,7 @@ import { plantSpacing } from '../../data/plant-spacing.js'
 import { plantYields } from '../../data/plant-yields.js'
 import { companionCheckerPlantIds } from '../../data/companion-pairings.js'
 import { plantingWindows } from '../../data/planting-windows.js'
+import { plantCareDetails } from '../../data/plant-care-details.js'
 import ImageGallery from '../shop/ImageGallery.jsx'
 
 // Every plant in public/plants/<id>/ ships the same 4-file set (verified
@@ -19,6 +20,20 @@ const WATER_LABELS = { low: '💧 Low', moderate: '💧💧 Moderate', high: '�
 const SPACE_LABELS = { container: '🪴 Container', small: '🌱 Small Bed', large: '🏡 Large Garden' }
 const SEASON_LABELS = { spring: 'Spring', summer: 'Summer', fall: 'Fall', winter: 'Winter' }
 const EXPERIENCE_LABELS = { beginner: '🌱 Beginner', intermediate: '🌿 Intermediate', advanced: '🌳 Advanced' }
+const GROWTH_RATE_LABELS = { slow: '🐢 Slow', moderate: '🌿 Moderate', fast: '🐇 Fast' }
+
+const DEER_STYLES = {
+  'rarely damaged': 'bg-garden-50 dark:bg-garden-900/20 border-garden-200 dark:border-garden-700 text-garden-800 dark:text-garden-300',
+  'seldom damaged': 'bg-garden-50 dark:bg-garden-900/20 border-garden-200 dark:border-garden-700 text-garden-800 dark:text-garden-300',
+  'occasionally damaged': 'bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-800 text-amber-800 dark:text-amber-300',
+  'frequently damaged': 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 text-red-800 dark:text-red-300',
+}
+const POLLINATOR_STYLES = {
+  high: 'bg-earth-50 dark:bg-earth-900/20 border-earth-200 dark:border-earth-700 text-earth-800 dark:text-earth-300',
+  moderate: 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 text-blue-800 dark:text-blue-300',
+  low: 'bg-gray-50 dark:bg-gray-900 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300',
+  none: 'bg-gray-50 dark:bg-gray-900 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300',
+}
 
 function formatZones(zones) {
   if (!zones || zones.length === 0) return '—'
@@ -52,6 +67,7 @@ export default function PlantDetail({ plantId }) {
   const hasCompanionData = companionCheckerPlantIds.includes(plantId)
   const hasCalendarData = plantId in plantingWindows
   const galleryImages = GALLERY_FILES.map((file) => `/plants/${plantId}/${file}`)
+  const care = plantCareDetails[plantId]
 
   return (
     <div className="min-h-screen px-4 py-10">
@@ -144,6 +160,76 @@ export default function PlantDetail({ plantId }) {
             </div>
           )}
         </div>
+
+        {/* Growing details */}
+        {care && (care.matureSize || care.growthRate || care.zoneNotes) && (
+          <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm p-6 sm:p-8 mb-5">
+            <h2 className="text-lg font-bold text-garden-800 dark:text-garden-300 mb-4">Growing Details</h2>
+            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-3 text-sm mb-4">
+              <Fact label="Mature Size" value={care.matureSize} />
+              <Fact label="Growth Rate" value={GROWTH_RATE_LABELS[care.growthRate] || care.growthRate} />
+            </div>
+            {care.zoneNotes && (
+              <div className="pt-3 border-t border-gray-100 dark:border-gray-700">
+                <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500 mb-1.5">Zone Performance</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{care.zoneNotes}</p>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Companions & wildlife */}
+        {care && (care.companions?.length > 0 || care.deerResistance || care.pollinatorValue) && (
+          <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm p-6 sm:p-8 mb-5">
+            <h2 className="text-lg font-bold text-garden-800 dark:text-garden-300 mb-4">Companions &amp; Wildlife</h2>
+            {(care.deerResistance || care.pollinatorValue) && (
+              <div className="grid sm:grid-cols-2 gap-3 mb-4">
+                {care.deerResistance && (
+                  <div className={`rounded-xl border p-4 ${DEER_STYLES[care.deerResistance.rating] || 'bg-gray-50 dark:bg-gray-900 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300'}`}>
+                    <p className="text-xs font-semibold uppercase tracking-wide mb-1">🦌 Deer Resistance</p>
+                    <p className="text-sm font-medium capitalize">{care.deerResistance.rating}</p>
+                    <p className="text-xs mt-1 opacity-90 leading-relaxed">{care.deerResistance.note}</p>
+                  </div>
+                )}
+                {care.pollinatorValue && (
+                  <div className={`rounded-xl border p-4 ${POLLINATOR_STYLES[care.pollinatorValue.rating] || 'bg-gray-50 dark:bg-gray-900 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300'}`}>
+                    <p className="text-xs font-semibold uppercase tracking-wide mb-1">🐝 Pollinator Value</p>
+                    <p className="text-sm font-medium capitalize">{care.pollinatorValue.rating}</p>
+                    <p className="text-xs mt-1 opacity-90 leading-relaxed">{care.pollinatorValue.note}</p>
+                  </div>
+                )}
+              </div>
+            )}
+            {care.companions?.length > 0 && (
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500 mb-2">Good Companions</p>
+                <div className="space-y-2">
+                  {care.companions.map((c, i) => (
+                    <p key={i} className="text-sm leading-relaxed">
+                      <span className="font-medium text-gray-800 dark:text-gray-200">{c.name}</span>
+                      <span className="text-gray-500 dark:text-gray-400"> — {c.reason}</span>
+                    </p>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Troubleshooting */}
+        {care?.troubleshooting?.length > 0 && (
+          <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm p-6 sm:p-8 mb-5">
+            <h2 className="text-lg font-bold text-garden-800 dark:text-garden-300 mb-4">Troubleshooting</h2>
+            <div className="space-y-3">
+              {care.troubleshooting.map((t, i) => (
+                <div key={i} className="text-sm">
+                  <p className="font-medium text-gray-800 dark:text-gray-200">⚠️ {t.issue}</p>
+                  <p className="text-gray-600 dark:text-gray-400 mt-0.5 leading-relaxed">{t.fix}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Pet safety */}
         {profile?.toxicity && (
