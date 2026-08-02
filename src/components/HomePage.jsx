@@ -81,7 +81,7 @@ export default function HomePage() {
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
           {[
             { value: '185', label: 'Plants in database' },
-            { value: '53',  label: 'In-depth guides' },
+            { value: '55',  label: 'In-depth guides' },
             { value: '12',  label: 'Plant categories' },
             { value: '100%', label: 'Free, no account' },
           ].map(({ value, label }) => (

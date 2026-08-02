@@ -2,7 +2,7 @@ const badges = [
   { emoji: '🌿', label: '185 Plants', sub: 'verified database' },
   { emoji: '🗺️', label: 'USDA Zones 3–11', sub: 'all US climates' },
   { emoji: '👨‍🌾', label: '40+ Years', sub: 'hands-on experience' },
-  { emoji: '📖', label: '88 Guides', sub: 'expert-reviewed' },
+  { emoji: '📖', label: '87 Guides', sub: 'expert-reviewed' },
   { emoji: '✅', label: '100% Free', sub: 'no account needed' },
 ]
 
