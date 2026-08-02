@@ -4,6 +4,7 @@ import { guideCategories } from '../data/guides.js'
 import { products } from '../data/products.js'
 import { heroImages } from '../data/hero-images.js'
 import plants from '../data/plants.js'
+import { newsletters } from '../data/newsletters.js'
 
 const SITE_URL = 'https://plantingatlas.com'
 
@@ -42,6 +43,7 @@ export default function sitemap() {
     { url: `${SITE_URL}/tools/grow-your-own-savings/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/tools/watering-calculator/`, lastModified: DATE_RECENT_GUIDES, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/guides/`,                 lastModified: DATE_STUBS_LAUNCHED, changeFrequency: 'weekly',  priority: 0.9 },
+    { url: `${SITE_URL}/newsletters/`,            lastModified: DATE_PLANT_DATABASE, changeFrequency: 'weekly',  priority: 0.7 },
     { url: `${SITE_URL}/infographics/`,           lastModified: DATE_PAGES_UPDATED,  changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/podcasts/`,               lastModified: DATE_PAGES_UPDATED,  changeFrequency: 'monthly', priority: 0.7 },
     { url: `${SITE_URL}/videos/`,                 lastModified: DATE_PAGES_UPDATED,  changeFrequency: 'monthly', priority: 0.7 },
@@ -86,5 +88,13 @@ export default function sitemap() {
     priority: 0.6,
   }))
 
-  return [...staticPages, ...guidePages, ...productPages, ...plantPages]
+  const newsletterPages = newsletters.map((n) => ({
+    url: `${SITE_URL}/newsletters/${n.slug}/`,
+    lastModified: n.date ? new Date(n.date) : DATE_PLANT_DATABASE,
+    changeFrequency: 'yearly',
+    priority: 0.6,
+    ...(n.heroImage && { images: [`${SITE_URL}${n.heroImage}`] }),
+  }))
+
+  return [...staticPages, ...guidePages, ...productPages, ...plantPages, ...newsletterPages]
 }
