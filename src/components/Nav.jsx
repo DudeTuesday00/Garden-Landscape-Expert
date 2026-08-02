@@ -56,6 +56,7 @@ export default function Nav() {
     { href: '/infographics/',           label: '🗺️ Infographics' },
     { href: '/videos/',                 label: '🎬 Videos' },
     { href: '/podcasts/',               label: '🎙️ Podcasts' },
+    { href: '/newsletters/',            label: '📬 Newsletter' },
     { href: 'https://pixelsandchisels.etsy.com', label: '🖨️ Shop', external: true },
     { href: '/about/',                  label: '👤 About' },
     { href: '/contact/',                label: '✉️ Contact' },
