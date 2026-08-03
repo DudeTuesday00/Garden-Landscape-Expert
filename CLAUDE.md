@@ -38,6 +38,7 @@ Garden-Landscape-Expert/
 ├── tailwind.config.js
 ├── postcss.config.js
 ├── vitest.config.js                  # Vitest config — `npm test` runs `vitest run`
+├── publish-newsletters.ps1           # Daily build-gate-commit-push script for newsletter content — see Newsletter Generator under Completed Work
 ├── public/
 │   ├── ads.txt                      # AdSense ads.txt — google.com, pub-2083020536499662, DIRECT, f08c47fec0942fa0
 │   ├── manifest.json                # PWA manifest — name, icons, theme color; linked via layout.jsx metadata
@@ -57,11 +58,12 @@ Garden-Landscape-Expert/
 │   │   └── gardening-podcasts-header.png
 │   ├── plants/                      # One folder per plant in plants.js — 185 folders total, verified 1:1
 │   │   └── <plant-id>/              # Each folder: primary.jpg, secondary-1.jpg, secondary-2.jpg, secondary-3.jpg
-│   └── guides/                      # Hero images for guide detail pages — 57 PNGs, one per live full guide
-│       ├── shade-tree-guide.png
-│       ├── pollinator-garden-guide.png
-│       ├── xeriscape-guide.png
-│       └── ...                      # 57 images total — see hero-images.js for the full id → filename map
+│   ├── guides/                      # Hero images for guide detail pages — 57 PNGs, one per live full guide
+│   │   ├── shade-tree-guide.png
+│   │   ├── pollinator-garden-guide.png
+│   │   ├── xeriscape-guide.png
+│   │   └── ...                      # 57 images total — see hero-images.js for the full id → filename map
+│   └── newsletters/                 # Newsletter issue images — <slug>.png (hero) + <slug>-section.png (second, AI-planned image), auto-written at export time
 └── src/
     ├── app/                         # Next.js App Router — one folder per route, all with metadata exports
     │   ├── layout.jsx               # Root layout — dark mode script, GTM, Nav, footer, GA4/AdSense via next/script, sitewide Organization/WebSite JSON-LD
@@ -97,6 +99,10 @@ Garden-Landscape-Expert/
     │   ├── infographics/page.jsx    # /infographics/
     │   ├── videos/page.jsx          # /videos/
     │   ├── podcasts/page.jsx        # /podcasts/
+    │   ├── newsletters/
+    │   │   ├── page.jsx             # /newsletters/ — archive/index of published issues
+    │   │   └── [slug]/page.jsx      # /newsletters/[slug]/ — SSG, one page per issue (generateStaticParams + generateMetadata + Article/Breadcrumb JSON-LD)
+    │   ├── guides-feed.xml/route.js # RSS feed of all 87 live guides — consumed by the separate Newsletter Generator project as Discovery source material
     │   ├── privacy/page.jsx         # /privacy/
     │   ├── affiliate-disclosure/page.jsx
     │   ├── advertising-disclosure/page.jsx
@@ -124,6 +130,7 @@ Garden-Landscape-Expert/
     │   ├── SEO.jsx                  # Legacy Vite-era helper — superseded by Next.js metadata exports, largely unused
     │   ├── wizard/                  # Garden Architect — Wizard.jsx ('use client' shell), WelcomeScreen, QuestionStep, ProgressBar, Results.jsx
     │   ├── guides/                  # GuidesHome, GuidesSearch, CategorySection, AuthorBox, GuideDetail.jsx (+ all source .docx files for live guides)
+    │   ├── newsletters/              # NewslettersHome.jsx (archive listing), NewsletterDetail.jsx (server, renders exported bodyHtml)
     │   ├── plants/                  # PlantDatabase.jsx ('use client' browse/search), PlantDetail.jsx (server, full detail page)
     │   ├── shop/                    # ShopHome, ShopGrid, ImageGallery (shared with plants/), ProductDetail
     │   ├── fertilizer-calculator/   # FertilizerCalculator.jsx (top-level, pre-dates the tools/ convention)
@@ -153,6 +160,9 @@ Garden-Landscape-Expert/
     │   ├── succession-crops.js      # Succession Planting Planner intervals
     │   ├── produce-economics.js     # Grow-Your-Own Savings pricing data
     │   ├── watering-guide.js        # Watering Calculator's in-ground/container rules + climate modifier
+    │   ├── newsletters.js           # Thin wrapper re-exporting newsletters.json — see Newsletter Generator under Completed Work
+    │   ├── newsletters.json         # Issue index — auto-maintained by the newsletter export step, not hand-authored
+    │   ├── newsletter-content/      # One JSON file per issue: { bodyHtml, sourceName, sourceUrl, references } — auto-written at export time
     │   └── guide-content/           # One JS file per live guide + shared index — 87 files total
     │       └── index.js             # contentMap export — used by GuideDetail.jsx and app/guides/[guideId]/page.jsx
     └── logic/                       # Pure functions, unit-tested where noted
@@ -289,7 +299,7 @@ Each question in `questions.js` has:
 
 ## Planned Sections (Future)
 
-- **Newsletter Generator — in scoping, not yet built.** Modeled on an existing n8n + Docker newsletter workflow the site owner runs for a different property (sixsigmakaizen.com): pull from a pool of RSS feeds/sites, draft a newsletter (LLM-assisted), hold it for the owner's manual approval, then publish to the site — with automated email-to-subscribers as an explicit later phase, not part of the first build. Key open decision as of this writing: development is moving from this cloud Claude Code session to a **local** Claude Code session (repo cloned to `D:\ClaudeProjects\plantingatlas` on the owner's machine) specifically so Claude can inspect the existing local n8n/Docker setup directly rather than working from a description. Nothing in `src/` yet reflects this feature — no `/newsletter/` route, no data files, no workflow config. Do not assume any of it exists until this note is replaced with a real "✅ Completed Work" entry.
+- **Newsletter Generator — Phase 2: automated subscriber email.** The generator itself (discovery → draft → approve → publish) is live — see "Newsletter Generator ✅" under Completed Work. Automated email-to-subscribers was always scoped as a later phase and is not built: no `Subscriber` model, no email service provider integration, nothing scaffolded for it yet.
 - **Planting Guides (ongoing)** — all 87 guides are live and indexable (55 full, 32 active stubs); continue expanding stubs to full guides from source `.docx` files using the established pattern in `guide-content/` as new source documents arrive (see "Notes for AI Assistants": a guide must not be built from scratch without a `.docx` source)
 - Real product photography for the 3D Printed Garden Shop, then re-enable the Shop nav link (currently hidden — see "Content & Credibility Improvements")
 - Google AdSense re-enablement once the site is approved (currently gated off — see Tech Stack above)
@@ -297,6 +307,45 @@ Each question in `questions.js` has:
 ---
 
 ## Completed Work
+
+### Newsletter Generator ✅
+
+Live as of 2026-08-02. The generator itself lives in a **separate project**,
+`D:\Planting Atlas Newsletter` (its own `CLAUDE.md` there has the full
+architecture, n8n workflow IDs, and rollout history) — this repo only contains
+the publish-facing half: the routes/data that render issues, the RSS feed that
+feeds the site's own guides back into Discovery as source material, and the
+script that ships approved issues live.
+
+**Pipeline:** pool of gardening RSS feeds + this site's own `guides-feed.xml`
+→ AI-scored topic ideas → AI-drafted issue in David Rodgers' voice (Ollama,
+local) → two AI-planned photorealistic images (hero + one spliced into a
+specific section) via ComfyUI/Flux → **owner reviews and approves in a
+separate dashboard** (`http://localhost:3003`, not part of this site) → export
+writes the files below directly into this repo → a daily Windows Scheduled
+Task (`publish-newsletters.ps1`, 9 PM) builds, commits, and pushes → Cloudflare
+Pages redeploys. Approve → live is same-day. Automated subscriber email is an
+explicit later phase — see "Planned Sections" below.
+
+**Site-side pieces:**
+- `src/app/newsletters/page.jsx` — archive/index page (`/newsletters/`)
+- `src/app/newsletters/[slug]/page.jsx` — SSG detail route, `generateStaticParams` + `generateMetadata` + Article/Breadcrumb JSON-LD, matching the guide-detail pattern exactly. **Gotcha:** with zero issues, `generateStaticParams` returning `[]` makes Next's `output: 'export'` throw a misleading "missing generateStaticParams()" error — guarded with a single inert `_placeholder` param; the page already renders a graceful "not found" state for any unmatched slug.
+- `src/components/newsletters/NewslettersHome.jsx` / `NewsletterDetail.jsx` — listing and detail views, `garden-*`/`earth-*` brand tokens throughout
+- `src/data/newsletters.js` / `newsletters.json` — the issue index. **Deliberately backed by JSON, not a hand-authored `.js` module** (unlike `guides.js`/`plants.js`) — an automated writer parsing/stringifying JSON is far less error-prone than programmatically editing a JS import list. Auto-maintained by the export step; don't hand-edit except to fix a mistake.
+- `src/data/newsletter-content/<slug>.json` — one file per issue: `{ bodyHtml, sourceName, sourceUrl, references }`. Markdown → HTML conversion happens once, at export time, in the separate project's review-app — this repo never needs a Markdown parser at runtime.
+- `public/newsletters/<slug>.png` (hero) and `<slug>-section.png` (second, AI-planned image spliced into the body at a specific heading — see the separate project's CLAUDE.md for how placement works; fails open to hero-only if generation or heading-matching fails)
+- `src/app/guides-feed.xml/route.js` — RSS feed of all 87 live guides, added specifically so the Newsletter Discovery Worker can draw on and cross-reference this site's own already-vetted content, not just outside news (mirrors the pattern from the site owner's other property, sixsigmakaizen.com). `force-static` for compatibility with `output: 'export'`.
+- `publish-newsletters.ps1` (repo root) — the daily build-gate-commit-push script. Unlike a hand-built static site's publish script (which can validate hand-written HTML), this one's gate is simply `npm run build` succeeding — sufficient to catch a malformed data file from the exporter before it ever reaches Cloudflare.
+- Nav: `📬 Newsletter` link in `src/components/Nav.jsx`, added once the first real issue was live (deliberately absent before that, to avoid linking an empty section)
+- `src/app/sitemap.js` — newsletter pages included via the `newsletters` data import, same pattern as guides/plants/products
+
+**Content-quality lesson learned:** the Discovery Worker's topic-scoring prompt
+initially let a Rodale Institute *hemp cover-crop* article score 85 and
+generate a draft with cannabis-plant imagery — caught in review, not before.
+The scoring prompt (in the separate project) now hard-excludes cannabis/hemp/
+marijuana topics regardless of framing. If another off-brand category slips
+through, the fix is the same pattern: add an explicit hard-exclusion rule
+rather than relying on general relevance scoring.
 
 ### Plant Database Expansion ✅
 
