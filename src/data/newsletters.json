@@ -1,5 +1,71 @@
 [
   {
+    "id": "how-to-design-a-backyard-that-actually-feels-like-home",
+    "slug": "how-to-design-a-backyard-that-actually-feels-like-home",
+    "title": "How to Design a Backyard That Actually Feels Like Home",
+    "subtitle": "Using simple materials and smart ideas for small spaces.",
+    "date": "2026-08-03",
+    "excerpt": "You don't need acreage to have a beautiful, productive garden. This issue focuses on transforming small yards and patios using techniques that work with what you already have.",
+    "tags": [
+      "landscape design",
+      "container gardening",
+      "small space gardening",
+      "backyard planning"
+    ],
+    "heroImage": "/newsletters/how-to-design-a-backyard-that-actually-feels-like-home.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What is the toughest space in your yard right now? Share pictures of your challenge below—we can troubleshoot it together!",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "making-your-garden-pop-when-everything-else-is-tired",
+    "slug": "making-your-garden-pop-when-everything-else-is-tired",
+    "title": "Making Your Garden Pop When Everything Else Is Tired.",
+    "subtitle": "The best varieties to keep the color going from July through September.",
+    "date": "2026-08-03",
+    "excerpt": "Midsummer can be brutal on blooms, but with a few key varieties and simple tricks, you can keep the color going until fall cleanup. We'll focus specifically on hardy selections proven to handle late-season heat.",
+    "tags": [
+      "heirlooms",
+      "perennials",
+      "color-blocking",
+      "zone_specific"
+    ],
+    "heroImage": "/newsletters/making-your-garden-pop-when-everything-else-is-tired.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual climate.",
+    "callToAction": "What are your favorite reliable mid-summer bloomers? Share them in our comments below! Give this issue a share if it helped you save a garden bed from looking boring.",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "what-to-do-right-now-general-garden-checkup",
+    "slug": "what-to-do-right-now-general-garden-checkup",
+    "title": "What to Do Right Now: General Garden Checkup",
+    "subtitle": "A roundup of timely tasks for your backyard this season.",
+    "date": "2026-08-03",
+    "excerpt": "Instead of guessing, we’re breaking down the most important general tasks—from watering strategies to clearing out old growth—so you can focus your energy where it actually matters right now.",
+    "tags": [
+      "seasonal care",
+      "general gardening",
+      "maintenance",
+      "planting"
+    ],
+    "heroImage": "/newsletters/what-to-do-right-now-general-garden-checkup.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What's been the hardest thing for your garden this year? Let me know in the comments. If this helped save you a trip to the nursery, share it with another neighbor!",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
     "id": "how-to-make-your-backyard-a-living-history-book",
     "slug": "how-to-make-your-backyard-a-living-history-book",
     "title": "How to make your backyard a living history book.",
