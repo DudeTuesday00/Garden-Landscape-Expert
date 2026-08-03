@@ -1,5 +1,120 @@
 [
   {
+    "id": "making-room-for-the-neighbors-salamanders-and-amphibians-in-your-yard",
+    "slug": "making-room-for-the-neighbors-salamanders-and-amphibians-in-your-yard",
+    "title": "Making Room for the Neighbors: Salamanders and Amphibians in Your Yard.",
+    "subtitle": "It's not enough to just plant native species; you need functional habitat structure.",
+    "date": "2026-08-03",
+    "excerpt": "Amphibians like spotted salamanders and eastern newts require more complex habitats than just a pond. This issue details how to structure your yard—from wet foraging tunnels to dry breeding areas—to support their full life cycle.",
+    "tags": [
+      "wildlife gardening",
+      "amphibian life cycles",
+      "native plants",
+      "habitat creation"
+    ],
+    "heroImage": "/newsletters/making-room-for-the-neighbors-salamanders-and-amphibians-in-your-yard.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What native species are you planning for your garden's wildlife corner this season? Share photos or ideas with us!",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "what-to-do-when-summer-starts-to-wind-down-in-the-garden",
+    "slug": "what-to-do-when-summer-starts-to-wind-down-in-the-garden",
+    "title": "What to Do When Summer Starts to Wind Down in the Garden",
+    "subtitle": "Maximizing your final harvest while getting ready for the cooler months.",
+    "date": "2026-08-03",
+    "excerpt": "August is a critical pivot point—the last big push before fall. We're covering what to pull, how to store the excess, and exactly how to feed your soil so it stays healthy through winter.",
+    "tags": [
+      "harvesting",
+      "fall prep",
+      "soil health",
+      "succession sowing"
+    ],
+    "heroImage": "/newsletters/what-to-do-when-summer-starts-to-wind-down-in-the-garden.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual climate.",
+    "callToAction": "What’s the biggest bounty you harvested this year? Send us pictures! Share this issue with a neighbor who needs some good garden advice right now.",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "stop-guessing-how-to-keep-black-spots-off-your-squash-and-tomatoes",
+    "slug": "stop-guessing-how-to-keep-black-spots-off-your-squash-and-tomatoes",
+    "title": "Stop Guessing: How to Keep Black Spots Off Your Squash and Tomatoes",
+    "subtitle": "A practical guide for preventing mildew before it takes hold.",
+    "date": "2026-08-03",
+    "excerpt": "Powdery mildew is one of the most frustratingly common problems. This guide focuses on fixing your garden setup so that you don't have to fight fungus every single year.",
+    "tags": [
+      "mildew",
+      "vegetables",
+      "prevention",
+      "fungicides"
+    ],
+    "heroImage": "/newsletters/stop-guessing-how-to-keep-black-spots-off-your-squash-and-tomatoes.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What crop in your yard gives you the biggest headache? Share a picture and let me know below!",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "stop-guessing-what-your-tomato-plants-need-after-they-start-fruiting",
+    "slug": "stop-guessing-what-your-tomato-plants-need-after-they-start-fruiting",
+    "title": "Stop Guessing What Your Tomato Plants Need After They Start Fruiting.",
+    "subtitle": "A guide to adjusting fertilizer as your tomatoes grow from leaves to luscious fruit.",
+    "date": "2026-08-03",
+    "excerpt": "Don't treat all tomato growth the same way. This issue walks through why simply adding fertilizer isn't enough, and how to adjust your feeding schedule based on what stage the plant is actually in.",
+    "tags": [
+      "tomatoes",
+      "fertilizing",
+      "container gardening",
+      "vegetables"
+    ],
+    "heroImage": "/newsletters/stop-guessing-what-your-tomato-plants-need-after-they-start-fruiting.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What's the biggest fertilizing mistake you see other people making? Send us a story!",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "what-to-do-when-you-ve-got-too-many-tomatoes",
+    "slug": "what-to-do-when-you-ve-got-too-many-tomatoes",
+    "title": "What to do when you've got too many tomatoes",
+    "subtitle": "A practical guide for preserving the bounty from a good season.",
+    "date": "2026-08-03",
+    "excerpt": "If your tomato plants are doing too well, congratulations—now you have an abundance problem. This issue covers everything from picking timing to the best ways to freeze and dry that bounty.",
+    "tags": [
+      "tomatoes",
+      "preservation",
+      "harvesting",
+      "storage"
+    ],
+    "heroImage": "/newsletters/what-to-do-when-you-ve-got-too-many-tomatoes.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What is your favorite way to preserve a massive harvest? Share your tips in the comments below!",
+    "nextIssuePreview": "",
+    "relatedResources": [
+      {
+        "title": "Seed Saving Basics",
+        "path": "/guides/seed-saving/"
+      }
+    ]
+  },
+  {
     "id": "how-to-design-a-backyard-that-actually-feels-like-home",
     "slug": "how-to-design-a-backyard-that-actually-feels-like-home",
     "title": "How to Design a Backyard That Actually Feels Like Home",

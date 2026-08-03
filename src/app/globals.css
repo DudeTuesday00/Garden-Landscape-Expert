@@ -58,3 +58,10 @@
 .newsletter-body td {
   @apply px-3 py-2 text-gray-700 dark:text-gray-300 border-b border-gray-100 dark:border-gray-600 align-top;
 }
+/* Second, section-specific image spliced into the body after its planned
+   heading (see the review-app's insertSectionImage). Smaller and simpler
+   than the hero treatment since it's an in-body supporting photo, not the
+   page's lead image. */
+.newsletter-body .newsletter-section-image {
+  @apply w-full h-auto rounded-2xl shadow-sm my-4;
+}
