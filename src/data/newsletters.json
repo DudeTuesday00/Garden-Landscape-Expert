@@ -1,5 +1,115 @@
 [
   {
+    "id": "stop-letting-your-zinnias-just-go-to-seed",
+    "slug": "stop-letting-your-zinnias-just-go-to-seed",
+    "title": "Stop Letting Your Zinnias Just Go To Seed",
+    "subtitle": "A guide to pinching your summer flowers for maximum color and bushiness.",
+    "date": "2026-08-04",
+    "excerpt": "If you're growing zinnias, cosmos, or similar annuals this summer, stopping them from going to seed early is key. We walk through the process and when it actually works in Zone 7 heat.",
+    "tags": [
+      "Annuals",
+      "Pinching",
+      "Oklahoma Gardening",
+      "Summer Care"
+    ],
+    "heroImage": "/newsletters/stop-letting-your-zinnias-just-go-to-seed.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual climate.",
+    "callToAction": "What are your favorite bush-forming annuals? Let me know what I should cover next! Share this with a neighbor who needs better garden advice.",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "what-to-do-when-you-find-a-mystery-plant-and-why-you-shouldn-t-touch-it",
+    "slug": "what-to-do-when-you-find-a-mystery-plant-and-why-you-shouldn-t-touch-it",
+    "title": "What to Do When You Find a Mystery Plant (and why you shouldn't touch it)",
+    "subtitle": "A guide to recognizing the plants that can hurt your yard or yourself.",
+    "date": "2026-08-04",
+    "excerpt": "Before you get excited about a new leaf, it's critical to know which plants are beautiful but deadly. We break down the key identification tricks so your backyard remains safe for people and pets.",
+    "tags": [
+      "safety",
+      "identification",
+      "wildlife",
+      "poisonous"
+    ],
+    "heroImage": "/newsletters/what-to-do-when-you-find-a-mystery-plant-and-why-you-shouldn-t-touch-it.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who want to stop guessing and start knowing what actually grows here.",
+    "callToAction": "What's the most dangerous mystery plant in your neighborhood? Send us photos (or descriptions!)—we love learning what everyone else has found.",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "choosing-shade-cooling-plants-for-your-backyard",
+    "slug": "choosing-shade-cooling-plants-for-your-backyard",
+    "title": "Choosing Shade-Cooling Plants for Your Backyard.",
+    "subtitle": "How to use fast-growing shrubs to cool down your yard and improve shade structure.",
+    "date": "2026-08-04",
+    "excerpt": "If summer heat feels oppressive, it's usually more than just the air—it's what your yard is radiating. We look at specific shrubs that can actually help cool down a space while giving you beautiful structure and shade.",
+    "tags": [
+      "shrubs",
+      "shade gardening",
+      "heat mitigation",
+      "hardscaping"
+    ],
+    "heroImage": "/newsletters/choosing-shade-cooling-plants-for-your-backyard.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual climate.",
+    "callToAction": "What’s the biggest source of reflected heat in your backyard? Share photos or questions below! Want to help a neighbor tackling summer heat? Send this newsletter their way.",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "choosing-a-fig-variety-that-actually-works-here",
+    "slug": "choosing-a-fig-variety-that-actually-works-here",
+    "title": "Choosing a Fig Variety That Actually Works Here",
+    "subtitle": "Don't buy the wrong kind; let's pick one that can handle your soil and climate.",
+    "date": "2026-08-04",
+    "excerpt": "Fig trees are fantastic, but choosing the right cultivar—one that handles your local soil and climate—is half the battle. We'll walk through what each type is best at doing in a small space or full sun bed.",
+    "tags": [
+      "Fruit Trees",
+      "Container Gardening",
+      "Zone Specific",
+      "Figs"
+    ],
+    "heroImage": "/newsletters/choosing-a-fig-variety-that-actually-works-here.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for backyard growers who want to stop guessing which fruit tree will actually survive their yard.",
+    "callToAction": "What fig variety do you think fits your yard? Tell me below! Share this with a neighbor who loves (or fears) fruit trees.",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "what-to-do-with-all-that-garden-bounty",
+    "slug": "what-to-do-with-all-that-garden-bounty",
+    "title": "What to do with all that garden bounty?",
+    "subtitle": "Practical techniques for using up every part of the season's yield.",
+    "date": "2026-08-04",
+    "excerpt": "When you have too much zucchini, tomatoes, or greens to eat fresh, this issue shows specific ways—from braising tough leaves to making simple broths—to save the bounty and keep your garden cycle going.",
+    "tags": [
+      "harvest",
+      "waste-reduction",
+      "seasonality",
+      "preservation"
+    ],
+    "heroImage": "/newsletters/what-to-do-with-all-that-garden-bounty.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What's the wildest thing you've ever managed to cook with excess harvest? Let me know in the comments. If this helped you clear out a pile of zucchini, share it with another gardener!",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
     "id": "making-room-for-the-neighbors-salamanders-and-amphibians-in-your-yard",
     "slug": "making-room-for-the-neighbors-salamanders-and-amphibians-in-your-yard",
     "title": "Making Room for the Neighbors: Salamanders and Amphibians in Your Yard.",
