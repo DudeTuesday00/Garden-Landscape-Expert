@@ -5,6 +5,7 @@ import Link from 'next/link'
 import plants from '../../../data/plants.js'
 import { plantYields } from '../../../data/plant-yields.js'
 import { computeYieldForSelection, summarizeYields } from '../../../logic/yieldEstimator.js'
+import RangeBarChart from '../shared/RangeBarChart.jsx'
 
 const YIELD_PLANTS = Object.keys(plantYields)
   .map((id) => {
@@ -142,31 +143,35 @@ export default function YieldEstimator() {
                   </div>
                 )}
 
-                {results.map((r) => (
-                  <div key={r.id} className="flex items-start justify-between border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-2.5 mb-2">
-                    <div className="min-w-0">
-                      <div className="text-sm font-medium text-gray-800 dark:text-gray-100">
-                        {r.emoji} {r.quantity}× {r.name}
-                      </div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-                        {r.note}
-                        {typeof r.avgDays === 'number' && ` First harvest in ~${Math.round(r.avgDays)} days.`}
-                      </div>
-                    </div>
-                    <div className="text-right flex-shrink-0 pl-3">
-                      {r.type === 'weight' ? (
-                        <>
-                          <div className="text-base font-bold text-garden-700 dark:text-garden-300">
-                            {r.lbRange[0].toFixed(1)}–{r.lbRange[1].toFixed(1)}
+                {weightResults.length > 0 && (
+                  <RangeBarChart
+                    unit=" lbs"
+                    rows={weightResults.map((r) => ({
+                      id: r.id,
+                      label: `${r.quantity}× ${r.name}`,
+                      emoji: r.emoji,
+                      low: r.lbRange[0],
+                      high: r.lbRange[1],
+                      note: r.note + (typeof r.avgDays === 'number' ? ` First harvest in ~${Math.round(r.avgDays)} days.` : ''),
+                    }))}
+                  />
+                )}
+
+                {ongoingResults.length > 0 && (
+                  <div className={weightResults.length > 0 ? 'mt-4 space-y-2' : 'space-y-2'}>
+                    {ongoingResults.map((r) => (
+                      <div key={r.id} className="flex items-start justify-between border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-2.5">
+                        <div className="min-w-0">
+                          <div className="text-sm font-medium text-gray-800 dark:text-gray-100">
+                            {r.emoji} {r.quantity}× {r.name}
                           </div>
-                          <div className="text-xs text-gray-500 dark:text-gray-400">lbs</div>
-                        </>
-                      ) : (
-                        <div className="text-xs font-medium text-earth-600 dark:text-earth-400 whitespace-nowrap">Ongoing harvest</div>
-                      )}
-                    </div>
+                          <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{r.note}</div>
+                        </div>
+                        <div className="text-xs font-medium text-earth-600 dark:text-earth-400 whitespace-nowrap flex-shrink-0 pl-3">Ongoing harvest</div>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                )}
 
                 <p className="mt-4 text-xs text-gray-500 dark:text-gray-400">
                   Ranges assume healthy, well-fed, full-season plants — actual harvest varies with

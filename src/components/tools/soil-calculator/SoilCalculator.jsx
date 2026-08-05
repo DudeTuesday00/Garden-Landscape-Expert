@@ -10,6 +10,7 @@ import {
   containerPresetOptions,
   getContainerPresetVolumeCuFt,
 } from '../../../logic/soilCalculator.js'
+import RatioBar from '../shared/RatioBar.jsx'
 
 const RELATED_GUIDES = [
   { id: 'square-foot-gardening', title: 'Square Foot Gardening', emoji: '📐' },
@@ -171,6 +172,20 @@ export default function SoilCalculator() {
                   <Stat label="Gallons" value={Math.round(breakdown.totalGallons)} />
                 </div>
 
+                <div className="flex items-start gap-4 mb-5">
+                  <BedCrossSection
+                    shape={shape}
+                    heightFt={shape === 'rectangular' ? parseFloat(height) : shape === 'circular' ? parseFloat(circHeight) : null}
+                    presetLabel={shape === 'preset' ? containerPresetOptions.find((p) => p.id === preset)?.label : null}
+                  />
+                  <div className="flex-1">
+                    <RatioBar
+                      segments={breakdown.components.map((c) => ({ label: c.name, value: c.cuFt }))}
+                      unit=" cu ft"
+                    />
+                  </div>
+                </div>
+
                 <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
                   Shopping list ({breakdown.mix.label})
                 </h3>
@@ -255,6 +270,46 @@ function Stat({ label, value }) {
     <div className="bg-garden-50 dark:bg-gray-900 rounded-xl py-3 px-2 border border-garden-100 dark:border-gray-700">
       <p className="text-lg font-bold text-garden-800 dark:text-garden-300">{value}</p>
       <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{label}</p>
+    </div>
+  )
+}
+
+// Reference max used to scale the fill height so a 6in pot and a 3ft raised
+// bed visibly differ, rather than every diagram looking the same size.
+const REFERENCE_MAX_FT = 2
+
+function BedCrossSection({ shape, heightFt, presetLabel }) {
+  const h = heightFt > 0 ? heightFt : 1
+  const fillFrac = Math.min(1, h / REFERENCE_MAX_FT)
+  const boxH = 90
+  const fillH = boxH * fillFrac
+  const isContainer = shape === 'preset'
+
+  return (
+    <div className="flex-shrink-0 flex flex-col items-center gap-1.5 w-20">
+      <svg viewBox="0 0 80 100" className="w-full h-auto" role="img" aria-label="Soil depth cross-section">
+        {isContainer ? (
+          <polygon
+            points="16,10 64,10 56,100 24,100"
+            className="fill-[#a8742c] dark:fill-[#9a6a1e]"
+            style={{ clipPath: `inset(${100 - fillFrac * 100}% 0 0 0)` }}
+          />
+        ) : (
+          <rect x="10" y={100 - fillH} width="60" height={fillH} className="fill-[#a8742c] dark:fill-[#9a6a1e]" />
+        )}
+        <rect
+          x={isContainer ? 14 : 8}
+          y="8"
+          width={isContainer ? 52 : 64}
+          height="94"
+          fill="none"
+          className="stroke-gray-300 dark:stroke-gray-600"
+          strokeWidth="2"
+        />
+      </svg>
+      <p className="text-[10px] text-gray-500 dark:text-gray-400 text-center leading-tight">
+        {presetLabel ? presetLabel.replace(/\s*\(.*\)/, '') : `${h.toFixed(1)} ft deep`}
+      </p>
     </div>
   )
 }

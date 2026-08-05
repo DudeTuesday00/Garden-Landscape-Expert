@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { mulchApplications, mulchTypes, getMulchApplication } from '../../../data/mulch-types.js'
 import { computeMulchVolume, estimateMulchCost } from '../../../logic/mulchCalculator.js'
+import RangeBarChart from '../shared/RangeBarChart.jsx'
 
 export default function MulchCalculator() {
   const [length, setLength] = useState('20')
@@ -137,26 +138,22 @@ export default function MulchCalculator() {
                   <Stat label="2 cu ft Bags" value={volume.bags} />
                 </div>
 
+                <DepthRuler depthIn={parseFloat(depth) || 0} />
+
                 {cost && (
                   <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-4">
-                    <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
+                    <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3">
                       Estimated cost — {cost.type.label}
                     </h3>
-                    {cost.baggedCostRange && (
-                      <div className="flex items-center justify-between text-sm py-1">
-                        <span className="text-gray-600 dark:text-gray-400">Bagged (retail)</span>
-                        <span className="font-semibold text-gray-800 dark:text-gray-100">
-                          ${cost.baggedCostRange[0].toFixed(0)}–{cost.baggedCostRange[1].toFixed(0)}
-                        </span>
-                      </div>
-                    )}
-                    {typeof cost.bulkCost === 'number' && (
-                      <div className="flex items-center justify-between text-sm py-1">
-                        <span className="text-gray-600 dark:text-gray-400">Bulk delivered</span>
-                        <span className="font-semibold text-gray-800 dark:text-gray-100">
-                          ~${cost.bulkCost.toFixed(0)}
-                        </span>
-                      </div>
+                    {(cost.baggedCostRange || typeof cost.bulkCost === 'number') && cost.bulkCost !== 0 && (
+                      <RangeBarChart
+                        unit=""
+                        formatValue={(v) => `$${v.toFixed(0)}`}
+                        rows={[
+                          cost.baggedCostRange && { id: 'bagged', label: 'Bagged (retail)', low: cost.baggedCostRange[0], high: cost.baggedCostRange[1] },
+                          typeof cost.bulkCost === 'number' && cost.bulkCost > 0 && { id: 'bulk', label: 'Bulk delivered', low: cost.bulkCost, high: cost.bulkCost },
+                        ].filter(Boolean)}
+                      />
                     )}
                     {!cost.baggedCostRange && !cost.bulkCost && cost.bulkCost !== 0 && (
                       <p className="text-sm text-gray-600 dark:text-gray-400">{cost.type.bagCostRange}</p>
@@ -233,6 +230,39 @@ function Stat({ label, value }) {
     <div className="bg-garden-50 dark:bg-gray-900 rounded-xl py-3 px-2 border border-garden-100 dark:border-gray-700">
       <p className="text-lg font-bold text-garden-800 dark:text-garden-300">{value}</p>
       <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{label}</p>
+    </div>
+  )
+}
+
+// Horizontal ruler, 0-6 inches, with the entered depth filled in — makes an
+// abstract "3 inches" tangible against a real inch scale.
+const RULER_MAX_IN = 6
+
+function DepthRuler({ depthIn }) {
+  const pct = (v) => (Math.min(v, RULER_MAX_IN) / RULER_MAX_IN) * 100
+  return (
+    <div className="mb-5">
+      <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 mb-2">Mulch depth</p>
+      <div className="relative h-6">
+        <div className="absolute inset-x-0 top-1.5 h-3 rounded-full bg-gray-100 dark:bg-gray-900" />
+        <div
+          className="absolute top-1.5 left-0 h-3 rounded-full bg-[#a8742c] dark:bg-[#9a6a1e] transition-all duration-300"
+          style={{ width: `${pct(depthIn)}%` }}
+        />
+        <div
+          className="absolute -translate-x-1/2 -top-0.5 flex flex-col items-center transition-all duration-300"
+          style={{ left: `${pct(depthIn)}%` }}
+        >
+          <span className="text-[10px] font-bold text-white bg-[#a8742c] dark:bg-[#9a6a1e] px-1.5 py-0.5 rounded whitespace-nowrap">
+            {depthIn}&quot;
+          </span>
+        </div>
+      </div>
+      <div className="flex justify-between mt-1">
+        {Array.from({ length: RULER_MAX_IN + 1 }, (_, i) => (
+          <span key={i} className="text-[9px] text-gray-400 dark:text-gray-500">{i}&quot;</span>
+        ))}
+      </div>
     </div>
   )
 }

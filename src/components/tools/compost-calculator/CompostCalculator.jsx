@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { compostMaterials } from '../../../data/compost-materials.js'
 import { computeCompostPlan, pilePresets } from '../../../logic/compostCalculator.js'
+import RatioBar from '../shared/RatioBar.jsx'
 
 const BROWN_MATERIALS = compostMaterials.filter((m) => m.category === 'brown')
 const GREEN_MATERIALS = compostMaterials.filter((m) => m.category === 'green')
@@ -142,10 +143,17 @@ export default function CompostCalculator() {
 
             {plan ? (
               <>
-                <div className="grid grid-cols-2 gap-3 text-center mb-5">
-                  <Stat label="Browns (75% by volume)" value={`${plan.brownsCuFt.toFixed(0)} cu ft`} />
-                  <Stat label="Greens (25% by volume)" value={`${plan.greensCuFt.toFixed(0)} cu ft`} />
+                <div className="mb-5">
+                  <RatioBar
+                    segments={[
+                      { label: 'Browns (carbon)', value: plan.brownsCuFt },
+                      { label: 'Greens (nitrogen)', value: plan.greensCuFt },
+                    ]}
+                    unit=" cu ft"
+                  />
                 </div>
+
+                <PileCrossSection />
 
                 {plan.brownBreakdown.length > 0 && (
                   <MaterialList title="Browns" items={plan.brownBreakdown} tone="earth" />
@@ -224,11 +232,50 @@ function MaterialList({ title, items, tone }) {
   )
 }
 
-function Stat({ label, value }) {
+// Layer heights (inches) matching the guidance text below: a thicker brown
+// base, then alternating green/brown layers, tapering thinner near the top
+// the way a real pile settles into shape.
+const LAYERS = [
+  { type: 'brown', inches: 5, label: 'Coarse browns (base)' },
+  { type: 'green', inches: 3, label: 'Greens' },
+  { type: 'brown', inches: 5, label: 'Browns' },
+  { type: 'green', inches: 3, label: 'Greens' },
+  { type: 'brown', inches: 4, label: 'Browns' },
+]
+
+function PileCrossSection() {
+  const totalIn = LAYERS.reduce((sum, l) => sum + l.inches, 0)
+  const height = 160
+  let yOffset = 0
+
   return (
-    <div className="bg-garden-50 dark:bg-gray-900 rounded-xl py-3 px-2 border border-garden-100 dark:border-gray-700">
-      <p className="text-lg font-bold text-garden-800 dark:text-garden-300">{value}</p>
-      <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{label}</p>
+    <div className="mb-5 flex items-center gap-4">
+      <svg viewBox={`0 0 160 ${height}`} className="w-28 h-auto flex-shrink-0" role="img" aria-label="Cross-section of a layered compost pile">
+        {/* pile silhouette (trapezoid) as a clip mask so layers read as a heap, not a box */}
+        <defs>
+          <clipPath id="pile-shape">
+            <polygon points={`10,${height} 150,${height} 130,10 30,10`} />
+          </clipPath>
+        </defs>
+        <g clipPath="url(#pile-shape)">
+          {LAYERS.map((layer, i) => {
+            const h = (layer.inches / totalIn) * height
+            const y = height - yOffset - h
+            yOffset += h
+            const fillClass = layer.type === 'brown' ? 'fill-[#a8742c] dark:fill-[#9a6a1e]' : 'fill-[#5eae3d] dark:fill-[#4f9e3a]'
+            return <rect key={i} x="0" y={y} width="160" height={h + 0.5} className={fillClass} stroke="rgba(0,0,0,0.08)" strokeWidth="1" />
+          })}
+        </g>
+      </svg>
+      <div className="flex-1 space-y-1.5">
+        <p className="text-xs font-semibold text-gray-500 dark:text-gray-400">How to layer it</p>
+        {[...LAYERS].reverse().map((l, i) => (
+          <div key={i} className="flex items-center gap-1.5 text-xs">
+            <span className={`w-2.5 h-2.5 rounded-sm flex-shrink-0 ${l.type === 'brown' ? 'bg-[#a8742c] dark:bg-[#9a6a1e]' : 'bg-[#5eae3d] dark:bg-[#4f9e3a]'}`} />
+            <span className="text-gray-600 dark:text-gray-300">{l.label} <span className="text-gray-400 dark:text-gray-500">— ~{l.inches} in</span></span>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

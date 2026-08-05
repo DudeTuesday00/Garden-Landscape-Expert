@@ -206,13 +206,7 @@ export default function FertilizerCalculator() {
                           </div>
                         </div>
                         <div className="text-right">
-                          <span className={`inline-block text-xs px-2.5 py-0.5 rounded-full font-medium ${
-                            rec.priority === 'essential' ? 'bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-400' :
-                            rec.priority === 'high' ? 'bg-garden-100 text-garden-700 dark:bg-garden-900/40 dark:text-garden-400' :
-                            'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-400'
-                          }`}>
-                            {rec.priority}
-                          </span>
+                          <PriorityBadge priority={rec.priority} />
                         </div>
                       </div>
 
@@ -220,6 +214,7 @@ export default function FertilizerCalculator() {
                         <span className="font-medium text-gray-700 dark:text-gray-300">When:</span>{' '}
                         <span className="text-gray-600 dark:text-gray-400">{rec.timing}</span>
                       </div>
+                      <SeasonStageStepper timing={rec.timing} />
 
                       {rec.notes && (
                         <div className="mt-2 text-sm text-gray-600 dark:text-gray-400">
@@ -289,6 +284,62 @@ export default function FertilizerCalculator() {
         These are general guidelines based on common horticultural practices.
         A soil test is the best way to know exactly what your soil needs.
       </div>
+    </div>
+  )
+}
+
+// essential = filled, high = outlined, medium = ghost — weighted by more
+// than color/text alone, so priority still reads at a glance in grayscale.
+function PriorityBadge({ priority }) {
+  if (priority === 'essential') {
+    return (
+      <span className="inline-block text-xs px-2.5 py-0.5 rounded-full font-semibold bg-[#5eae3d] dark:bg-[#4f9e3a] text-white">
+        essential
+      </span>
+    )
+  }
+  if (priority === 'high') {
+    return (
+      <span className="inline-block text-xs px-2.5 py-0.5 rounded-full font-medium border-2 border-[#5eae3d] dark:border-[#4f9e3a] text-[#4f8a30] dark:text-[#6cbd57]">
+        high
+      </span>
+    )
+  }
+  return (
+    <span className="inline-block text-xs px-2.5 py-0.5 rounded-full font-medium border border-dashed border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400">
+      {priority}
+    </span>
+  )
+}
+
+// Fertilizer timing is written as free-form guidance ("Early spring and
+// again when buds form"), not exact dates — so rather than fabricate a
+// day-precise timeline the data doesn't support, this maps the text to
+// broad season STAGES by keyword and highlights which stage(s) apply. If no
+// keyword matches, nothing renders — the "When" text above is still the
+// source of truth.
+const STAGES = [
+  { key: 'planting', label: 'Planting', match: /at planting|worked into|placed below/i },
+  { key: 'early', label: 'Early Season', match: /seedling|early spring|after transplant|top-dress in spring/i },
+  { key: 'active', label: 'Active Growth', match: /vegetative|active growth|every \d|mid-season/i },
+  { key: 'flowering', label: 'Flowering / Fruiting', match: /flower|bud|fruit/i },
+  { key: 'fall', label: 'Fall / Dormant', match: /fall|dormant|annually/i },
+]
+
+function SeasonStageStepper({ timing }) {
+  const active = STAGES.map((s) => s.match.test(timing))
+  if (!active.some(Boolean)) return null
+
+  return (
+    <div className="mt-2.5 flex items-center gap-1" aria-hidden="true">
+      {STAGES.map((s, i) => (
+        <div key={s.key} className="flex-1 flex flex-col items-center gap-1" title={s.label}>
+          <div className={`w-full h-1.5 rounded-full ${active[i] ? 'bg-[#a8742c] dark:bg-[#9a6a1e]' : 'bg-gray-100 dark:bg-gray-700'}`} />
+          <span className={`text-[9px] leading-tight text-center ${active[i] ? 'text-earth-700 dark:text-earth-400 font-semibold' : 'text-gray-400 dark:text-gray-600'}`}>
+            {s.label}
+          </span>
+        </div>
+      ))}
     </div>
   )
 }

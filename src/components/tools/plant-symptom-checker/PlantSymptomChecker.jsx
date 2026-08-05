@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { locationOptions, getEntriesForLocations } from '../../../data/symptom-key.js'
+import PlantDiagram from './PlantDiagram.jsx'
 
 const GUIDE_TITLES = {
   'garden-pests': 'Garden Pests ID & Control',
@@ -45,24 +46,29 @@ export default function PlantSymptomChecker() {
         <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
           1. Where do you see the problem?
         </label>
-        <div className="flex flex-wrap gap-2">
-          {locationOptions.map((loc) => (
-            <button
-              key={loc.id}
-              onClick={() => toggleLocation(loc.id)}
-              className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
-                locations.includes(loc.id)
-                  ? 'bg-garden-600 text-white border-garden-600'
-                  : 'bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 border-gray-300 dark:border-gray-600 hover:border-garden-400'
-              }`}
-            >
-              {loc.emoji} {loc.label}
-            </button>
-          ))}
+        <div className="flex flex-col sm:flex-row gap-5">
+          <PlantDiagram activeLocations={locations} className="flex-shrink-0 self-center sm:self-start" />
+          <div className="flex-1">
+            <div className="flex flex-wrap gap-2">
+              {locationOptions.map((loc) => (
+                <button
+                  key={loc.id}
+                  onClick={() => toggleLocation(loc.id)}
+                  className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
+                    locations.includes(loc.id)
+                      ? 'bg-garden-600 text-white border-garden-600'
+                      : 'bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 border-gray-300 dark:border-gray-600 hover:border-garden-400'
+                  }`}
+                >
+                  {loc.emoji} {loc.label}
+                </button>
+              ))}
+            </div>
+            <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+              Select one or more — leave all unselected to browse every symptom.
+            </p>
+          </div>
         </div>
-        <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
-          Select one or more — leave all unselected to browse every symptom.
-        </p>
       </div>
 
       {/* Step 2 */}

@@ -4,6 +4,8 @@ import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import plants from '../../../data/plants.js'
 import { checkCompanionship, companionCheckerPlantIds } from '../../../data/companion-pairings.js'
+import RelationshipLink from '../shared/RelationshipLink.jsx'
+import { STATUS } from '../shared/palette.js'
 
 const CHECKER_PLANTS = companionCheckerPlantIds
   .map((id) => plants.find((p) => p.id === id))
@@ -28,6 +30,13 @@ export default function CompanionPlantingChecker() {
 
   const plantAInfo = plants.find((p) => p.id === plantA)
   const plantBInfo = plants.find((p) => p.id === plantB)
+
+  const compatibilityGrid = useMemo(() => {
+    return CHECKER_PLANTS.filter((p) => p.id !== plantA).map((p) => {
+      const match = checkCompanionship(plantA, p.id)
+      return { plant: p, verdict: match?.type || 'neutral' }
+    })
+  }, [plantA])
 
   return (
     <div className="max-w-3xl mx-auto">
@@ -58,16 +67,45 @@ export default function CompanionPlantingChecker() {
           <p className="mt-5 text-sm text-gray-500 dark:text-gray-400 text-center">Pick two different plants to compare.</p>
         ) : result ? (
           <div className={`mt-5 rounded-xl border p-5 ${VERDICT_META[result.type].classes}`}>
-            <div className="flex items-center gap-2 mb-2">
+            <RelationshipLink plantA={plantAInfo} plantB={plantBInfo} verdict={result.type} />
+            <div className="flex items-center justify-center gap-2 mb-2">
               <span className="text-xl">{VERDICT_META[result.type].emoji}</span>
               <span className="font-bold">{VERDICT_META[result.type].label}</span>
             </div>
-            <p className="text-sm">
-              {plantAInfo?.emoji} {plantAInfo?.name} &amp; {plantBInfo?.emoji} {plantBInfo?.name}
-            </p>
-            <p className="text-sm mt-2 leading-relaxed">{result.reason}</p>
+            <p className="text-sm text-center leading-relaxed">{result.reason}</p>
           </div>
         ) : null}
+
+        {compatibilityGrid.length > 0 && (
+          <div className="mt-6">
+            <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+              {plantAInfo?.emoji} {plantAInfo?.name}&rsquo;s compatibility at a glance
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {compatibilityGrid.map(({ plant, verdict }) => {
+                const status = STATUS[verdict]
+                return (
+                  <button
+                    key={plant.id}
+                    onClick={() => setPlantB(plant.id)}
+                    className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-medium border transition-colors ${status.ring} ${
+                      plant.id === plantB ? `${status.bg} text-white` : `bg-white dark:bg-gray-900 ${status.text}`
+                    }`}
+                    title={verdict === 'good' ? 'Good companions' : verdict === 'avoid' ? 'Keep apart' : 'No strong documented relationship'}
+                  >
+                    <span>{plant.emoji}</span>
+                    <span>{plant.name}</span>
+                  </button>
+                )
+              })}
+            </div>
+            <div className="mt-2.5 flex flex-wrap gap-4 text-xs text-gray-500 dark:text-gray-400">
+              <span className="flex items-center gap-1.5"><span className={`w-2.5 h-2.5 rounded-full ${STATUS.good.bg}`} /> Good companions</span>
+              <span className="flex items-center gap-1.5"><span className={`w-2.5 h-2.5 rounded-full ${STATUS.avoid.bg}`} /> Keep apart</span>
+              <span className="flex items-center gap-1.5"><span className={`w-2.5 h-2.5 rounded-full ${STATUS.neutral.bg}`} /> No strong relationship</span>
+            </div>
+          </div>
+        )}
 
         <p className="mt-5 text-xs text-gray-500 dark:text-gray-400">
           Companion planting mechanisms vary widely in how well-supported they are — some (like

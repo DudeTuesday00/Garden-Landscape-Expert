@@ -3,6 +3,7 @@
 import { useState, useRef } from 'react'
 import Link from 'next/link'
 import { getZoneInfo, isWizardSupportedZone } from '../../../data/hardiness-zone-info.js'
+import GaugeStrip from '../shared/GaugeStrip.jsx'
 
 const RELATED_GUIDES = [
   { id: 'four-season-garden', title: 'Four-Season Garden Design', emoji: '🍂', description: 'Keep your garden interesting every month of the year.' },
@@ -126,6 +127,18 @@ export default function UsdaZoneFinder() {
             <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
               Average annual extreme minimum temperature: {result.info?.trange}°F
             </p>
+
+            <div className="mt-4 mb-1">
+              <GaugeStrip
+                min={1}
+                max={13}
+                value={wholeZone}
+                gradient="cold-warm"
+                ticks={['1', '3', '5', '7', '9', '11', '13']}
+                valueLabel={`Zone ${result.zone}`}
+                trackLabel="Coldest (Zone 1) to warmest (Zone 13)"
+              />
+            </div>
 
             <div className="mt-4 flex flex-wrap gap-3">
               <Link

@@ -5,6 +5,11 @@ import Link from 'next/link'
 import plants from '../../../data/plants.js'
 import { successionCrops } from '../../../data/succession-crops.js'
 import { computeSuccessionPlan, formatDate } from '../../../logic/successionPlanner.js'
+import Timeline, { MONTH_STARTS } from '../shared/Timeline.jsx'
+
+function monthDayToDay(md) {
+  return MONTH_STARTS[md.month - 1] + (md.day - 1)
+}
 
 const SUCCESSION_PLANTS = Object.keys(successionCrops)
   .map((id) => plants.find((p) => p.id === id))
@@ -127,10 +132,38 @@ export default function SuccessionPlanner() {
               nearly year-round with staggered sowings on your own schedule.
             </div>
           ) : (
-            <div className="grid sm:grid-cols-2 gap-6">
-              <SuccessionWindowCard title="🌱 Spring Window" window={plan.springWindow} />
-              <SuccessionWindowCard title="🍂 Fall Window" window={plan.fallWindow} />
-            </div>
+            <>
+              <Timeline
+                rows={[
+                  {
+                    id: plantId,
+                    label: plantInfo?.name,
+                    icon: plantInfo?.emoji,
+                    bands: [
+                      ...(plan.springWindow
+                        ? [{ startDay: monthDayToDay(plan.springWindow.start), endDay: monthDayToDay(plan.springWindow.end), colorIndex: 0, tooltip: `Spring window: ${formatDate(plan.springWindow.start)} – ${formatDate(plan.springWindow.end)}` }]
+                        : []),
+                      ...(plan.fallWindow
+                        ? [{ startDay: monthDayToDay(plan.fallWindow.start), endDay: monthDayToDay(plan.fallWindow.end), colorIndex: 1, tooltip: `Fall window: ${formatDate(plan.fallWindow.start)} – ${formatDate(plan.fallWindow.end)}` }]
+                        : []),
+                    ],
+                    ticks: [...(plan.springWindow?.sowings || []), ...(plan.fallWindow?.sowings || [])].map((d) => ({
+                      day: monthDayToDay(d),
+                      tooltip: formatDate(d),
+                    })),
+                  },
+                ]}
+              />
+              <div className="mt-4 flex flex-wrap gap-4 text-xs text-gray-500 dark:text-gray-400">
+                <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#5eae3d] dark:bg-[#4f9e3a]" /> Spring window</span>
+                <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#a8742c] dark:bg-[#9a6a1e]" /> Fall window</span>
+                <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full border-2 border-earth-600 dark:border-earth-400" /> Individual sowing</span>
+              </div>
+              <div className="mt-4 grid sm:grid-cols-2 gap-6">
+                <SuccessionWindowCard title="🌱 Spring Window" window={plan.springWindow} />
+                <SuccessionWindowCard title="🍂 Fall Window" window={plan.fallWindow} />
+              </div>
+            </>
           )}
 
           {plan && (

@@ -7,8 +7,7 @@ import { plantTypeOptions } from '../../../data/fertilizer-recommendations.js'
 import { typeGuides } from '../../../data/type-guides.js'
 import { getFrostEstimate, formatMonthDay } from '../../../data/frost-date-estimates.js'
 import { computeAnnualCalendar, computeSeasonalBand } from '../../../logic/plantingCalendar.js'
-
-const MONTH_LABELS = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D']
+import Timeline, { mergeMonthCellsToBands } from '../shared/Timeline.jsx'
 
 const RELATED_GUIDES = [
   { id: 'four-season-garden', title: 'Four-Season Garden Design', emoji: '🍂' },
@@ -305,54 +304,24 @@ export default function GardenCalendar() {
 }
 
 function TimelineView({ rows }) {
-  return (
-    <div className="flex flex-col gap-1.5 print:gap-1">
-      {/* Month header */}
-      <div className="flex items-center gap-3 px-1">
-        <div className="w-40 sm:w-48 flex-shrink-0" />
-        <div className="flex-1 grid grid-cols-12 gap-[2px] text-center text-[10px] text-gray-400 dark:text-gray-500">
-          {MONTH_LABELS.map((m, i) => (
-            <span key={i}>{m}</span>
-          ))}
-        </div>
-      </div>
+  const timelineRows = rows.map(({ plant, cells, precise }) => ({
+    id: plant.id,
+    label: plant.name,
+    icon: plant.emoji,
+    sub: typeGuides[plant.type]?.[0] ? (
+      <Link href={`/guides/${typeGuides[plant.type][0].id}/`} className="text-[11px] text-garden-600 dark:text-garden-400 hover:underline">
+        📖 {typeGuides[plant.type][0].title}
+      </Link>
+    ) : null,
+    bands: mergeMonthCellsToBands(cells, (activityKey) => ({
+      colorClass: ACTIVITY_META[activityKey].classes,
+      tooltip: precise ? ACTIVITY_META[activityKey].label : 'Best planting season (general)',
+    })),
+  }))
 
-      {rows.map(({ plant, cells, precise }) => (
-        <div key={plant.id} className="flex items-center gap-3 bg-white dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700 px-3 py-2">
-          <div className="w-40 sm:w-48 flex-shrink-0 flex items-center gap-2 min-w-0">
-            <span className="text-lg">{plant.emoji}</span>
-            <div className="min-w-0">
-              <p className="text-sm font-medium text-gray-800 dark:text-gray-100 truncate">{plant.name}</p>
-              {typeGuides[plant.type]?.[0] && (
-                <Link
-                  href={`/guides/${typeGuides[plant.type][0].id}/`}
-                  className="text-[11px] text-garden-600 dark:text-garden-400 hover:underline"
-                >
-                  📖 {typeGuides[plant.type][0].title}
-                </Link>
-              )}
-            </div>
-          </div>
-          <div className="flex-1 grid grid-cols-12 gap-[2px]">
-            {MONTH_LABELS.map((_, i) => {
-              const month = i + 1
-              const activity = cells[month]
-              const meta = activity ? ACTIVITY_META[activity] : null
-              return (
-                <div
-                  key={i}
-                  className={`h-6 rounded-[3px] flex items-center justify-center text-[9px] font-bold ${
-                    meta ? `${meta.classes} text-white` : 'bg-gray-50 dark:bg-gray-900'
-                  }`}
-                  title={meta ? (precise ? meta.label : 'Best planting season') : ''}
-                >
-                  {meta && precise ? meta.letter : ''}
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      ))}
+  return (
+    <div className="print:gap-1">
+      <Timeline rows={timelineRows} showTodayMarker />
     </div>
   )
 }

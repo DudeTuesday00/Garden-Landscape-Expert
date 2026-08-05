@@ -5,6 +5,7 @@ import Link from 'next/link'
 import plants from '../../../data/plants.js'
 import { produceEconomics } from '../../../data/produce-economics.js'
 import { computeSavingsForSelection, summarizeSavings } from '../../../logic/growYourOwnSavings.js'
+import RangeBarChart from '../shared/RangeBarChart.jsx'
 
 const SAVINGS_PLANTS = Object.keys(produceEconomics)
   .map((id) => plants.find((p) => p.id === id))
@@ -153,10 +154,9 @@ export default function GrowYourOwnSavings() {
                     {formatMoney(summary.netSavingsRange[0])}–{formatMoney(summary.netSavingsRange[1])}
                   </p>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Estimated net savings this season</p>
-                  <div className="mt-3 flex justify-center gap-6 text-xs text-gray-500 dark:text-gray-400">
-                    <span>Grocery value: {formatMoney(summary.groceryValueRange[0])}–{formatMoney(summary.groceryValueRange[1])}</span>
-                    <span>Growing cost: {formatMoney(summary.growingCost)}</span>
-                  </div>
+
+                  <SavingsWaterfall summary={summary} />
+
                   <button
                     onClick={handleShare}
                     className="mt-4 bg-earth-500 hover:bg-earth-600 text-white text-xs font-semibold px-4 py-2 rounded-xl transition-colors"
@@ -165,24 +165,18 @@ export default function GrowYourOwnSavings() {
                   </button>
                 </div>
 
-                {results.map((r) => (
-                  <div key={r.id} className="flex items-start justify-between border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-2.5 mb-2">
-                    <div className="min-w-0">
-                      <div className="text-sm font-medium text-gray-800 dark:text-gray-100">
-                        {r.emoji} {r.quantity}× {r.name}
-                      </div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-                        {r.lbRange[0].toFixed(1)}–{r.lbRange[1].toFixed(1)} lbs at ${r.groceryPricePerLb.toFixed(2)}/lb grocery price
-                      </div>
-                    </div>
-                    <div className="text-right flex-shrink-0 pl-3">
-                      <div className={`text-base font-bold ${r.netSavingsRange[0] >= 0 ? 'text-garden-700 dark:text-garden-300' : 'text-amber-600 dark:text-amber-400'}`}>
-                        {formatMoney(r.netSavingsRange[0])}–{formatMoney(r.netSavingsRange[1])}
-                      </div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400">net</div>
-                    </div>
-                  </div>
-                ))}
+                <RangeBarChart
+                  unit=""
+                  formatValue={(v) => formatMoney(v)}
+                  rows={results.map((r) => ({
+                    id: r.id,
+                    label: `${r.quantity}× ${r.name}`,
+                    emoji: r.emoji,
+                    low: Math.max(0, r.netSavingsRange[0]),
+                    high: Math.max(0, r.netSavingsRange[1]),
+                    note: `${r.lbRange[0].toFixed(1)}–${r.lbRange[1].toFixed(1)} lbs at $${r.groceryPricePerLb.toFixed(2)}/lb grocery price. Net savings: ${formatMoney(r.netSavingsRange[0])}–${formatMoney(r.netSavingsRange[1])}.`,
+                  }))}
+                />
 
                 <p className="mt-4 text-xs text-gray-500 dark:text-gray-400">
                   Grocery prices are representative national averages, not today's price at any one
@@ -229,4 +223,38 @@ export default function GrowYourOwnSavings() {
       </div>
     </div>
   )
+}
+
+function SavingsWaterfall({ summary }) {
+  return (
+    <div className="mt-4 flex items-stretch justify-center gap-1.5 text-center">
+      <WaterfallTile
+        label="Grocery value"
+        value={`${formatMoney(summary.groceryValueRange[0])}–${formatMoney(summary.groceryValueRange[1])}`}
+        tint="bg-[#5eae3d] dark:bg-[#4f9e3a]"
+      />
+      <Connector symbol="−" />
+      <WaterfallTile label="Growing cost" value={formatMoney(summary.growingCost)} tint="bg-[#a8742c] dark:bg-[#9a6a1e]" />
+      <Connector symbol="=" />
+      <WaterfallTile
+        label="Net savings"
+        value={`${formatMoney(summary.netSavingsRange[0])}–${formatMoney(summary.netSavingsRange[1])}`}
+        tint="bg-[#2563eb] dark:bg-[#3b82f6]"
+        emphasize
+      />
+    </div>
+  )
+}
+
+function WaterfallTile({ label, value, tint, emphasize }) {
+  return (
+    <div className={`flex-1 min-w-0 rounded-lg px-2 py-2 text-white ${tint} ${emphasize ? 'ring-2 ring-offset-1 ring-offset-white dark:ring-offset-gray-900 ring-[#2563eb]/40' : ''}`}>
+      <p className="text-[10px] font-medium opacity-90 truncate">{label}</p>
+      <p className="text-xs sm:text-sm font-bold truncate">{value}</p>
+    </div>
+  )
+}
+
+function Connector({ symbol }) {
+  return <span className="self-center text-gray-400 dark:text-gray-500 font-bold text-sm px-0.5">{symbol}</span>
 }

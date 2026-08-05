@@ -4,6 +4,7 @@ import { useState, useRef, useMemo } from 'react'
 import Link from 'next/link'
 import plants from '../../../data/plants.js'
 import { computeWateringPlan } from '../../../logic/wateringCalculator.js'
+import GaugeStrip from '../shared/GaugeStrip.jsx'
 
 const WATER_LEVEL_LABELS = { low: '💧 Low', moderate: '💧💧 Moderate', high: '💧💧💧 High' }
 
@@ -197,6 +198,18 @@ export default function WateringCalculator() {
                   <Stat label="Times per Week" value={plan.timesPerWeek} />
                   <Stat label="Inches per Week" value={plan.inchesPerWeek} />
                 </div>
+                <WeekStrip activeDays={plan.timesPerWeek} />
+                <div className="mb-5">
+                  <GaugeStrip
+                    min={0}
+                    max={2}
+                    value={plan.inchesPerWeek}
+                    gradient="sequential-blue"
+                    ticks={['0"', '1"', '2"']}
+                    valueLabel={`${plan.inchesPerWeek}"/wk`}
+                    trackLabel="Inches of water per week"
+                  />
+                </div>
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-4 text-sm text-gray-700 dark:text-gray-300">
                   {plan.note}
                 </div>
@@ -214,6 +227,7 @@ export default function WateringCalculator() {
                   <Stat label="Check Every" value={`${plan.checkEveryDays} day${plan.checkEveryDays !== 1 ? 's' : ''}`} />
                   <Stat label="Water When Dry To" value={`${plan.dryDepthIn}"`} />
                 </div>
+                <WeekStrip intervalDays={plan.checkEveryDays} label="Check-in days" />
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-4 text-sm text-gray-700 dark:text-gray-300">
                   {plan.note}
                 </div>
@@ -272,6 +286,41 @@ function Stat({ label, value }) {
     <div className="bg-garden-50 dark:bg-gray-900 rounded-xl py-3 px-2 border border-garden-100 dark:border-gray-700">
       <p className="text-lg font-bold text-garden-800 dark:text-garden-300">{value}</p>
       <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{label}</p>
+    </div>
+  )
+}
+
+const DAY_LABELS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+
+// Evenly distributes N marks across 7 slots (e.g. 3x/week -> roughly
+// Mon/Wed/Fri) — illustrative spacing, not a literal fixed schedule.
+function evenlySpacedDays(n) {
+  if (!(n > 0)) return new Set()
+  const days = new Set()
+  for (let k = 0; k < n; k++) days.add(Math.round((k * 7) / n) % 7)
+  return days
+}
+
+function WeekStrip({ activeDays, intervalDays, label = 'Suggested spread across the week' }) {
+  const active = activeDays ? evenlySpacedDays(activeDays) : evenlySpacedDays(Math.max(1, Math.round(7 / (intervalDays || 7))))
+
+  return (
+    <div className="mb-5">
+      <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 mb-2">{label}</p>
+      <div className="grid grid-cols-7 gap-1.5">
+        {DAY_LABELS.map((d, i) => (
+          <div key={d} className="flex flex-col items-center gap-1">
+            <span
+              className={`w-full aspect-square rounded-lg flex items-center justify-center text-base transition-colors ${
+                active.has(i) ? 'bg-[#2563eb] dark:bg-[#3b82f6]' : 'bg-gray-100 dark:bg-gray-900'
+              }`}
+            >
+              {active.has(i) ? '💧' : ''}
+            </span>
+            <span className="text-[9px] text-gray-400 dark:text-gray-500">{d}</span>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
