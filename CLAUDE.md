@@ -63,7 +63,7 @@ Garden-Landscape-Expert/
 │   │   ├── pollinator-garden-guide.png
 │   │   ├── xeriscape-guide.png
 │   │   └── ...                      # 57 images total — see hero-images.js for the full id → filename map
-│   └── newsletters/                 # Newsletter issue images — <slug>.png (hero) + <slug>-section.png (second, AI-planned image), auto-written at export time
+│   └── newsletters/                 # Newsletter issue images — <slug>.png (hero) + <slug>-section-1.png / -2.png / -3.png (0-3 AI-planned section images), auto-written at export time
 └── src/
     ├── app/                         # Next.js App Router — one folder per route, all with metadata exports
     │   ├── layout.jsx               # Root layout — dark mode script, GTM, Nav, footer, GA4/AdSense via next/script, sitewide Organization/WebSite JSON-LD
@@ -310,20 +310,24 @@ Each question in `questions.js` has:
 
 ### Newsletter Generator ✅
 
-Live as of 2026-08-02. The generator itself lives in a **separate project**,
-`D:\Planting Atlas Newsletter` (its own `CLAUDE.md` there has the full
-architecture, n8n workflow IDs, and rollout history) — this repo only contains
-the publish-facing half: the routes/data that render issues, the RSS feed that
-feeds the site's own guides back into Discovery as source material, and the
-script that ships approved issues live.
+Live as of 2026-08-02, last reconfirmed 2026-08-05. The generator itself lives
+in a **separate project**, `D:\Planting Atlas Newsletter` (its own `CLAUDE.md`
+there has the full architecture, n8n workflow IDs, and rollout history — that
+file is the source of truth for anything image/placement/revision-related
+below, this section is a summary) — this repo only contains the publish-facing
+half: the routes/data that render issues, the RSS feed that feeds the site's
+own guides back into Discovery as source material, and the script that ships
+approved issues live.
 
 **Pipeline:** pool of gardening RSS feeds + this site's own `guides-feed.xml`
 → AI-scored topic ideas → AI-drafted issue in David Rodgers' voice (Ollama,
-local) → two AI-planned photorealistic images (hero + one spliced into a
-specific section) via ComfyUI/Flux → **owner reviews and approves in a
-separate dashboard** (`http://localhost:3003`, not part of this site) → export
-writes the files below directly into this repo → a daily Windows Scheduled
-Task (`publish-newsletters.ps1`, 9 PM) builds, commits, and pushes → Cloudflare
+local) → 2 to 4 AI-planned images (hero + 1-3 section images, each
+independently styled — photorealistic, candid-iPhone, technical-drawing,
+watercolor, or pencil-sketch, picked per image by the model) via ComfyUI/Flux
+→ **owner reviews and approves in a separate dashboard**
+(`http://localhost:3003`, not part of this site) → export writes the files
+below directly into this repo → a daily Windows Scheduled Task
+(`publish-newsletters.ps1`, 9 PM) builds, commits, and pushes → Cloudflare
 Pages redeploys. Approve → live is same-day. Automated subscriber email is an
 explicit later phase — see "Planned Sections" below.
 
@@ -333,7 +337,7 @@ explicit later phase — see "Planned Sections" below.
 - `src/components/newsletters/NewslettersHome.jsx` / `NewsletterDetail.jsx` — listing and detail views, `garden-*`/`earth-*` brand tokens throughout
 - `src/data/newsletters.js` / `newsletters.json` — the issue index. **Deliberately backed by JSON, not a hand-authored `.js` module** (unlike `guides.js`/`plants.js`) — an automated writer parsing/stringifying JSON is far less error-prone than programmatically editing a JS import list. Auto-maintained by the export step; don't hand-edit except to fix a mistake.
 - `src/data/newsletter-content/<slug>.json` — one file per issue: `{ bodyHtml, sourceName, sourceUrl, references }`. Markdown → HTML conversion happens once, at export time, in the separate project's review-app — this repo never needs a Markdown parser at runtime.
-- `public/newsletters/<slug>.png` (hero) and `<slug>-section.png` (second, AI-planned image spliced into the body at a specific heading — see the separate project's CLAUDE.md for how placement works; fails open to hero-only if generation or heading-matching fails)
+- `public/newsletters/<slug>.png` (hero) and `<slug>-section-1.png` / `-2.png` / `-3.png` (0 to 3 AI-planned section images, each spliced into the body right after a specific `<h2>` by outline position — see the separate project's CLAUDE.md for how placement works; fails open per image to hero-only-or-fewer if generation or index validation fails on any one of them)
 - `src/app/guides-feed.xml/route.js` — RSS feed of all 87 live guides, added specifically so the Newsletter Discovery Worker can draw on and cross-reference this site's own already-vetted content, not just outside news (mirrors the pattern from the site owner's other property, sixsigmakaizen.com). `force-static` for compatibility with `output: 'export'`.
 - `publish-newsletters.ps1` (repo root) — the daily build-gate-commit-push script. Unlike a hand-built static site's publish script (which can validate hand-written HTML), this one's gate is simply `npm run build` succeeding — sufficient to catch a malformed data file from the exporter before it ever reaches Cloudflare.
 - Nav: `📬 Newsletter` link in `src/components/Nav.jsx`, added once the first real issue was live (deliberately absent before that, to avoid linking an empty section)
