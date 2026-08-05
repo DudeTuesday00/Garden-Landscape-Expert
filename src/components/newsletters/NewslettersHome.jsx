@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { newsletters } from '../../data/newsletters.js'
+import newsletterHeaderImg from './newsletter-page-header.png'
 
 export default function NewslettersHome() {
   const sorted = [...newsletters].sort((a, b) => (a.date < b.date ? 1 : -1))
@@ -9,13 +10,20 @@ export default function NewslettersHome() {
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-6">
 
         {/* Header */}
-        <div className="bg-gradient-to-br from-garden-50 to-amber-50 dark:from-gray-800 dark:to-gray-700 rounded-3xl shadow-lg border border-garden-100 dark:border-gray-600 p-6 sm:p-8 text-center">
-          <div className="text-4xl mb-2">📬</div>
-          <h1 className="text-2xl font-bold text-garden-800 dark:text-white">Planting Atlas Newsletter</h1>
-          <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-lg mx-auto">
-            Zone-specific, no-fluff gardening advice from 40 years of backyard trial and error — a new issue
-            whenever there&apos;s something genuinely worth telling you.
-          </p>
+        <div className="bg-gradient-to-br from-garden-50 to-amber-50 dark:from-gray-800 dark:to-gray-700 rounded-3xl shadow-lg border border-garden-100 dark:border-gray-600 overflow-hidden text-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={newsletterHeaderImg.src}
+            alt="Planting Atlas Newsletter"
+            className="w-full h-auto"
+          />
+          <div className="p-6 sm:p-8">
+            <h1 className="text-2xl font-bold text-garden-800 dark:text-white">Planting Atlas Newsletter</h1>
+            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-lg mx-auto">
+              Zone-specific, no-fluff gardening advice from 40 years of backyard trial and error — a new issue
+              whenever there&apos;s something genuinely worth telling you.
+            </p>
+          </div>
         </div>
 
         {/* Issue list */}
