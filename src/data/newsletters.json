@@ -1,5 +1,115 @@
 [
   {
+    "id": "late-summer-planting-what-to-grow-when-everything-else-is-bolting",
+    "slug": "late-summer-planting-what-to-grow-when-everything-else-is-bolting",
+    "title": "Late Summer Planting: What to Grow When Everything Else is Bolting",
+    "subtitle": "A guide for Southern Zone gardeners looking past the initial spring rush.",
+    "date": "2026-08-05",
+    "excerpt": "Don't wait until fall to think about planting. This guide focuses on the specific crops and methods needed to get a good yield even when the heat is brutal, tailored for warmer Southern zones.",
+    "tags": [
+      "Southern Gardening",
+      "Heat Tolerance",
+      "Fall Harvest",
+      "Zone 8-11"
+    ],
+    "heroImage": "/newsletters/late-summer-planting-what-to-grow-when-everything-else-is-bolting.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual climate.",
+    "callToAction": "What are you hoping to harvest before winter? Let me know in the comments below! Share this with another gardener who lives south of Florida.",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "how-to-start-a-good-autumn-vegetable-garden-without-killing-yourself",
+    "slug": "how-to-start-a-good-autumn-vegetable-garden-without-killing-yourself",
+    "title": "How to Start a Good Autumn Vegetable Garden (Without Killing Yourself)",
+    "subtitle": "Cool-weather crops and soil prep for your backyard plot.",
+    "date": "2026-08-05",
+    "excerpt": "Don't let the summer flush turn into an empty fall plot. We’re looking at what you can plant now, how to prep your soil right before frost hits, and how to keep those early crops alive when things get cold.",
+    "tags": [
+      "cool weather",
+      "soil health",
+      "fall planting",
+      "vegetables"
+    ],
+    "heroImage": "/newsletters/how-to-start-a-good-autumn-vegetable-garden-without-killing-yourself.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What are you most excited (or nervous) about planting this autumn? Share it below! If these tips saved you a failed harvest, share the issue with a neighbor who loves their backyard plot.",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "making-your-own-aerated-compost-tea-brewer-and-brew-it-right",
+    "slug": "making-your-own-aerated-compost-tea-brewer-and-brew-it-right",
+    "title": "Making Your Own Aerated Compost Tea Brewer and Brew It Right",
+    "subtitle": "A simple guide to backyard soil boosters that go beyond the basic bucket soak.",
+    "date": "2026-08-05",
+    "excerpt": "Stop buying expensive, proprietary soil boosters. This issue shows you how to build and use an affordable brewer at home to create powerful natural liquid feed for your beds.",
+    "tags": [
+      "composting",
+      "soil health",
+      "natural amendments",
+      "DIY"
+    ],
+    "heroImage": "/newsletters/making-your-own-aerated-compost-tea-brewer-and-brew-it-right.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "Have you brewed compost tea before? What was the biggest lesson learned (good or bad)? Share your results below!",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "how-to-keep-your-pepper-plants-healthy-and-productive-this-season",
+    "slug": "how-to-keep-your-pepper-plants-healthy-and-productive-this-season",
+    "title": "How to keep your pepper plants healthy and productive this season",
+    "subtitle": "A guide for keeping the yellow leaves off and maximizing yield in your backyard garden.",
+    "date": "2026-08-05",
+    "excerpt": "Yellowing leaves, wilting fruit, and strange spots can signal anything from simple nutrient needs to serious disease. We walk through the common problems so you know what’s really going on in your pepper patch.",
+    "tags": [
+      "peppers",
+      "pests",
+      "diseases",
+      "troubleshooting"
+    ],
+    "heroImage": "/newsletters/how-to-keep-your-pepper-plants-healthy-and-productive-this-season.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What's the weirdest plant problem you've faced this year? Drop it below—we might write about it next issue! Share this with a neighbor who grows peppers.",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "making-your-yard-ready-for-fall-planting-and-winter-harvest",
+    "slug": "making-your-yard-ready-for-fall-planting-and-winter-harvest",
+    "title": "Making Your Yard Ready for Fall Planting and Winter Harvest",
+    "subtitle": "A checklist of things to harvest, prep, or plant right now in Oklahoma.",
+    "date": "2026-08-05",
+    "excerpt": "August is the month you pivot from summer abundance to fall preparation. This issue covers everything from clearing spent plants to getting your soil ready for next season's seeds.",
+    "tags": [
+      "fall gardening",
+      "harvesting",
+      "composting",
+      "zone 7"
+    ],
+    "heroImage": "/newsletters/making-your-yard-ready-for-fall-planting-and-winter-harvest.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual climate.",
+    "callToAction": "What’s the first thing in your garden bed right now? Send us a photo and let us know what success (or failure) came of it! Share this with a neighbor who needs a fall planting checklist.",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
     "id": "stop-letting-your-zinnias-just-go-to-seed",
     "slug": "stop-letting-your-zinnias-just-go-to-seed",
     "title": "Stop Letting Your Zinnias Just Go To Seed",
