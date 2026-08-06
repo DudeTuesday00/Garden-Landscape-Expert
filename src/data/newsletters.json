@@ -1,5 +1,125 @@
 [
   {
+    "id": "how-to-pick-ornamental-trees-that-will-actually-work-in-your-backyard",
+    "slug": "how-to-pick-ornamental-trees-that-will-actually-work-in-your-backyard",
+    "title": "How to Pick Ornamental Trees That Will Actually Work in Your Backyard.",
+    "subtitle": "A decision guide that matches tree function and style to your unique space and climate.",
+    "date": "2026-08-06",
+    "excerpt": "Don't just buy a beautiful tree because it looks good in a catalog. This guide teaches you how to assess your site—your soil, light, and space—so you can pick trees that thrive where they are planted.",
+    "tags": [
+      "ornamental trees",
+      "landscape design",
+      "site assessment",
+      "hardscaping"
+    ],
+    "heroImage": "/newsletters/how-to-pick-ornamental-trees-that-will-actually-work-in-your-backyard.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who want to stop guessing which plant will survive their actual yard conditions.",
+    "callToAction": "Does the biggest hurdle in your garden right now feel like finding the perfect structure? Share this issue with a friend who is planning their first major landscape overhaul!",
+    "nextIssuePreview": "",
+    "relatedResources": [
+      {
+        "title": "The Ultimate Guide to Ornamental Trees",
+        "path": "/guides/ornamental-trees/"
+      }
+    ]
+  },
+  {
+    "id": "choosing-shade-trees-that-actually-work-in-your-yard",
+    "slug": "choosing-shade-trees-that-actually-work-in-your-yard",
+    "title": "Choosing Shade Trees That Actually Work in Your Yard",
+    "subtitle": "A guide to making sure your landscape enhances your life, not just looks pretty on a postcard.",
+    "date": "2026-08-06",
+    "excerpt": "Before you plant that gorgeous canopy, we need to talk about the things people forget: utility lines, mature width, and how seasonal needs change by your exact zip code. Let’s get this right so your yard works for you long-term.",
+    "tags": [
+      "shade trees",
+      "site planning",
+      "landscape design",
+      "USDA zones"
+    ],
+    "heroImage": "/newsletters/choosing-shade-trees-that-actually-work-in-your-yard.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What's one feature in your backyard (a path, a seating area, etc.) that currently feels underserviced? Share it below! Want to help others avoid the same tree planting mistakes? Send us your best shade tree advice!",
+    "nextIssuePreview": "",
+    "relatedResources": [
+      {
+        "title": "Native Plants for Pollinators",
+        "path": "/guides/native-plants/"
+      }
+    ]
+  },
+  {
+    "id": "your-seasonal-checklist-for-backyard-growers",
+    "slug": "your-seasonal-checklist-for-backyard-growers",
+    "title": "Your Seasonal Checklist for Backyard Growers.",
+    "subtitle": "A guide to what needs attention across the garden year, from Zone 3 through Zone 11.",
+    "date": "2026-08-06",
+    "excerpt": "Getting your garden ready, or keeping it alive, across wildly varying climates can feel overwhelming. This is an actionable guide to focus on the most important tasks this season, no matter where you live in USDA zones 3 through 11.",
+    "tags": [
+      "general care",
+      "seasonal gardening",
+      "backyard growing",
+      "garden checklist"
+    ],
+    "heroImage": "/newsletters/your-seasonal-checklist-for-backyard-growers.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What's the single biggest task facing *your* garden right now? Share your local advice below! \n\nDid this checklist save you a trip to the nursery? Please share it with a neighbor who needs to stop guessing!",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "don-t-forget-yourself-sun-safety-for-the-year-round-gardener",
+    "slug": "don-t-forget-yourself-sun-safety-for-the-year-round-gardener",
+    "title": "Don't forget yourself: Sun safety for the year-round gardener.",
+    "subtitle": "Simple ways to keep working in the garden even when the UV index is high.",
+    "date": "2026-08-06",
+    "excerpt": "UV exposure isn't just about sunburn; chronic sun damage affects skin and overall outdoor longevity. This guide gives practical, no-nonsense advice on keeping yourself safe while you work in the backyard.",
+    "tags": [
+      "gardening",
+      "sun protection",
+      "garden health",
+      "safety"
+    ],
+    "heroImage": "/newsletters/don-t-forget-yourself-sun-safety-for-the-year-round-gardener.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What’s your best trick for managing peak sun hours? Share a tip below or tell us what garden problem we should tackle next!",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "figuring-out-which-hydrangeas-need-to-be-cut-back-hard-and-which-ones-can-wait",
+    "slug": "figuring-out-which-hydrangeas-need-to-be-cut-back-hard-and-which-ones-can-wait",
+    "title": "Figuring Out Which Hydrangeas Need to Be Cut Back Hard and which Ones Can Wait.",
+    "subtitle": "A simple guide to pruning old-wood vs. new-wood bloomers this spring.",
+    "date": "2026-08-06",
+    "excerpt": "Hydrangea pruning is one of the most confusing things in gardening. This guide cuts through the confusion by separating old-wood bloomers (like big blue types) from new-wood bloomers, so you know exactly what to cut back and what to leave alone this spring.",
+    "tags": [
+      "perennials",
+      "pruning",
+      "hydrangeas",
+      "seasonal care"
+    ],
+    "heroImage": "/newsletters/figuring-out-which-hydrangeas-need-to-be-cut-back-hard-and-which-ones-can-wait.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for backyard growers who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "Are you starting with an established shrub or a fresh planting? Let me know in the comments. Share this guide if your neighbor also struggles with pruning decisions!",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
     "id": "late-summer-planting-what-to-grow-when-everything-else-is-bolting",
     "slug": "late-summer-planting-what-to-grow-when-everything-else-is-bolting",
     "title": "Late Summer Planting: What to Grow When Everything Else is Bolting",
