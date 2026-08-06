@@ -351,6 +351,21 @@ marijuana topics regardless of framing. If another off-brand category slips
 through, the fix is the same pattern: add an explicit hard-exclusion rule
 rather than relying on general relevance scoring.
 
+**Revision bug fixed 2026-08-06:** the Draft Revision Worker's `Upsert Draft`
+node read `currentText` from the pre-rewrite `Prepare Revision Context`
+snapshot instead of the actual `Rewrite Text` node output, so every
+requested text revision was silently discarded — the draft got saved back
+with its *original* body while `Draft Notes` logged "Revised (text)...".
+Verified via a synthetic isolated test draft (no real pending drafts existed
+at the time) showing the saved text was byte-identical to the pre-revision
+body across a full successful run. Fixed with a try/catch fallback that
+sources the revised text from `$('Rewrite Text').first().json.currentText`,
+falling back to the original only if that node didn't run (mirroring the
+pattern already used in the same node for `Build Revision Image Requests`).
+The identical bug (same forked code) was independently found and fixed the
+same day in the newer Sooner Smoker Draft Revision Worker, which is where it
+was first caught.
+
 ### Plant Database Expansion ✅
 
 - **185 plants** across **12 types** in `src/data/plants.js`
