@@ -1,5 +1,54 @@
 [
   {
+    "id": "the-edible-garden-harvesting-and-cooking-with-flower-blossoms",
+    "slug": "the-edible-garden-harvesting-and-cooking-with-flower-blossoms",
+    "title": "The Edible Garden: Harvesting and Cooking with Flower Blossoms",
+    "subtitle": "A guide to making the most of your garden's culinary potential.",
+    "date": "2026-08-07",
+    "excerpt": "Edible flowers are more than pretty; they add unexpected flavor, color, and texture to savory dishes, desserts, and preserves. We'll cover which blooms work best where.",
+    "tags": [
+      "culinary gardening",
+      "edible flowers",
+      "cooking",
+      "harvesting"
+    ],
+    "heroImage": "/newsletters/the-edible-garden-harvesting-and-cooking-with-flower-blossoms.png",
+    "mode": "series",
+    "seriesName": "",
+    "partNumber": 1,
+    "kicker": "The newsletter for gardeners who want to know how to turn their backyard bounty into a feast.",
+    "callToAction": "What edible flower is your favorite addition to a summer meal? Tell me in the comments! Don't forget to share this guide with another gardener who needs some serious culinary inspiration.",
+    "nextIssuePreview": "Part 2 will focus on preserving and drying these beautiful blossoms, ensuring you can enjoy them long after the season ends.",
+    "relatedResources": []
+  },
+  {
+    "id": "how-to-plant-fruit-trees-that-actually-survive-and-produce",
+    "slug": "how-to-plant-fruit-trees-that-actually-survive-and-produce",
+    "title": "How to Plant Fruit Trees That Actually Survive (And Produce)",
+    "subtitle": "Understanding the science and local conditions needed for a successful edible landscape.",
+    "date": "2026-08-07",
+    "excerpt": "Before you buy that perfect-looking sapling, there are three core biological requirements—like enough winter chill and the right neighbors—that determine if your tree will ever fruit. We break down exactly what those prerequisites are for our Oklahoma Zone 7 yard.",
+    "tags": [
+      "fruit trees",
+      "backyard gardening",
+      "chill hours",
+      "pollination"
+    ],
+    "heroImage": "/newsletters/how-to-plant-fruit-trees-that-actually-survive-and-produce.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What local edible plants are struggling in your zone? Let me know in the comments below! If this guide helped you plan an orchard, share it with a friend starting their own project.",
+    "nextIssuePreview": "",
+    "relatedResources": [
+      {
+        "title": "Fruit Tree Care",
+        "path": "/guides/fruit-trees/"
+      }
+    ]
+  },
+  {
     "id": "how-to-pick-ornamental-trees-that-will-actually-work-in-your-backyard",
     "slug": "how-to-pick-ornamental-trees-that-will-actually-work-in-your-backyard",
     "title": "How to Pick Ornamental Trees That Will Actually Work in Your Backyard.",
