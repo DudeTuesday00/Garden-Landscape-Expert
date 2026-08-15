@@ -1,5 +1,49 @@
 [
   {
+    "id": "how-to-build-a-cottage-garden-that-actually-looks-good-and-smells-great",
+    "slug": "how-to-build-a-cottage-garden-that-actually-looks-good-and-smells-great",
+    "title": "How to Build a Cottage Garden That Actually Looks Good (and Smells Great)",
+    "subtitle": "A guide to layering color and texture using plants that handle real-world backyards.",
+    "date": "2026-08-15",
+    "excerpt": "You want that lush, rambling English look, but you don't know where to start. This is how we build layered chaos using plants that can handle neglect and show off all year long.",
+    "tags": [
+      "Cottage Garden",
+      "Perennials",
+      "Layering",
+      "In-Ground Beds"
+    ],
+    "heroImage": "/newsletters/how-to-build-a-cottage-garden-that-actually-looks-good-and-smells-great.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for backyard growers who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What’s the wildest spot in your yard? Let me know below! If this helped get your garden going, pass it along to a neighbor who needs some color inspiration.",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "what-yellowing-tomato-leaves-are-really-telling-you",
+    "slug": "what-yellowing-tomato-leaves-are-really-telling-you",
+    "title": "What Yellowing Tomato Leaves Are Really Telling You",
+    "subtitle": "A guide to differential diagnosis for your backyard harvest.",
+    "date": "2026-08-15",
+    "excerpt": "Yellowing leaves on tomatoes are frustrating, but they rarely mean just one thing. We walk through the most common culprits—from overwatering to nutrient lock-out—so you can diagnose the problem and get back to growing.",
+    "tags": [
+      "Tomatoes",
+      "Troubleshooting",
+      "Nutrition",
+      "Pests"
+    ],
+    "heroImage": "/newsletters/what-yellowing-tomato-leaves-are-really-telling-you.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What’s the weirdest tomato problem you’ve ever had? Tell me in the comments below! Did this article help save your crop?",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
     "id": "keeping-the-little-pests-off-your-plants-without-reaching-for-chemicals",
     "slug": "keeping-the-little-pests-off-your-plants-without-reaching-for-chemicals",
     "title": "Keeping the little pests off your plants without reaching for chemicals.",
