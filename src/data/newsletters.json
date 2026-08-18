@@ -1,5 +1,49 @@
 [
   {
+    "id": "why-are-my-tomato-leaves-curling-up-a-field-guide",
+    "slug": "why-are-my-tomato-leaves-curling-up-a-field-guide",
+    "title": "Why are my tomato leaves curling up? A field guide.",
+    "subtitle": "Understanding the difference between environmental stress and actual disease damage.",
+    "date": "2026-08-18",
+    "excerpt": "Leaf curling is one of the most frustrating things to diagnose. This issue walks through multiple potential causes—from simple overwatering mistakes to serious nutrient deficiencies and disease—so you know exactly what your plant needs, not just what a website suggests.",
+    "tags": [
+      "tomatoes",
+      "pests",
+      "diagnostics",
+      "vegetable care"
+    ],
+    "heroImage": "/newsletters/why-are-my-tomato-leaves-curling-up-a-field-guide.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual climate.",
+    "callToAction": "What weird leaf problem have you run into this season? Send me a photo or email it over. And if this guide saved your tomatoes, share it with another struggling grower!",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "making-the-most-of-those-cool-october-days-in-the-backyard",
+    "slug": "making-the-most-of-those-cool-october-days-in-the-backyard",
+    "title": "Making the most of those cool October days in the backyard.",
+    "subtitle": "A guide to finishing strong with cold-hardy crops.",
+    "date": "2026-08-18",
+    "excerpt": "It’s time to stop thinking about summer and start preparing for the slow, steady harvest of fall. We're diving into the crops that thrive when everything else slows down: brassicas like kale, broccoli, and arugula.",
+    "tags": [
+      "Cool Weather",
+      "Fall Planting",
+      "Vegetables",
+      "Oklahoma Zone 7"
+    ],
+    "heroImage": "/newsletters/making-the-most-of-those-cool-october-days-in-the-backyard.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What cool-weather crop are you most excited to try this year? Share your plans below—we love seeing what everyone’s growing!",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
     "id": "don-t-chop-your-tomatoes-pruning-for-maximum-yield-and-health",
     "slug": "don-t-chop-your-tomatoes-pruning-for-maximum-yield-and-health",
     "title": "Don't Chop Your Tomatoes: Pruning for Maximum Yield and Health",
