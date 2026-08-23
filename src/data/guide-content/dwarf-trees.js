@@ -36,6 +36,12 @@ export const dwarfTreeContent = {
           ],
         },
         { type: 'warning', emoji: '⚠️', text: 'The Graft Union Warning (Again!): Grafted dwarf trees — especially fruit trees — must maintain the graft union above soil level. If the graft union is buried, the scion variety can root itself, bypassing the dwarfing rootstock and eventually growing into a full-sized tree. On ornamental weeping trees grafted at the top of a stake, watch for suckers growing from the rootstock below the graft — they must be removed immediately or they\'ll outcompete and overwhelm the ornamental top.' },
+        {
+          type: 'image',
+          src: '/guides/dwarf-trees/weeping-cherry-container.jpg',
+          alt: 'A small weeping cherry tree in full pink and white blossom growing in a large decorative container on a stone patio',
+          caption: 'Full-scale spring drama in a fraction of the footprint — exactly the "not a compromise" point this category makes.',
+        },
       ],
     },
     {
@@ -84,6 +90,12 @@ export const dwarfTreeContent = {
         { type: 'p', text: 'Here\'s a fact that catches many container gardeners off guard: a tree growing in a pot is more vulnerable to winter cold than the same tree growing in the ground. In the ground, soil acts as insulation — roots stay above freezing even when air temperatures plunge. In a container, roots are surrounded on all sides by the ambient air temperature and can freeze solid in a single hard winter.' },
         { type: 'p', text: 'The practical rule: choose container trees that are hardy 1–2 zones colder than your actual zone. If you\'re in zone 7, plant trees rated to zone 5 or 6 in outdoor containers. If you\'re in zone 6, go to zone 4 or 5. Alternatively, move containers to an unheated garage, basement, or shed when temperatures drop below 20°F — this protects roots without the warmth that would trigger premature spring growth.' },
         { type: 'tip', emoji: '❄️', text: 'Overwintering Container Trees: Hardy deciduous trees (Japanese maples, dwarf crabapples, dwarf serviceberry) can usually overwinter in a sheltered outdoor location — against a south-facing wall, in a corner protected from wind, or wrapped with insulating burlap over the container. Tender trees (citrus, fig in cold zones, crape myrtle in zone 6) need to come inside — a cool, bright space like an unheated sunroom, or a cool dark space like a garage (for dormant deciduous trees). Water sparingly through dormancy. Resume normal watering in spring as temperatures rise.' },
+        {
+          type: 'image',
+          src: '/guides/dwarf-trees/japanese-maple-entry.jpg',
+          alt: 'A compact Japanese maple with delicate red-orange foliage growing in an elegant ceramic container beside a front door',
+          caption: 'A container tree like this is more cold-vulnerable than the same species in the ground — plan its winter hardiness one to two zones colder than your actual zone.',
+        },
       ],
     },
     {
@@ -115,6 +127,12 @@ export const dwarfTreeContent = {
           items: [
             'Care: Full sun for best flowering; well-drained soil; prune only after flowering (late spring); watch for borers at trunk base (keep area clear of mulch contact); relatively short-lived (20–30 years) but beautiful every year.',
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/dwarf-trees/cherry-blossom-closeup.jpg',
+          alt: 'Extreme close-up of cascading pink cherry blossom branches in full bloom against a soft blue sky',
+          caption: 'The cascading branches come from a top-graft — the weeping scion grafted onto an upright rootstock at a fixed height determines this exact umbrella shape.',
         },
         { type: 'h3', text: '💜 Weeping and Compact Redbud — Native Drama at Ground Level' },
         { type: 'p', text: 'Eastern redbud (Cercis canadensis) is already one of the best small trees in North American horticulture — flowering on bare wood in brilliant pink-purple before a single leaf opens, adaptable to sun or part shade, native across most of the eastern US. The new generation of compact and weeping cultivars puts this beauty in reach of even the smallest spaces, including containers.' },
@@ -220,6 +238,12 @@ export const dwarfTreeContent = {
           items: [
             'Care: Full sun to part shade (afternoon shade appreciated in hot climates); consistently moist, well-drained, slightly acidic soil; do NOT let dry out — Hinoki cypress without adequate moisture never looks fully healthy; minimal pruning needed; no serious pest or disease issues; excellent container performer.',
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/dwarf-trees/hinoki-cypress.jpg',
+          alt: 'A dwarf Hinoki cypress conifer with distinctive flat fan-like foliage sprays in dark glossy green, sculptural bonsai-like form',
+          caption: 'That refined, almost-sculpted texture comes from the foliage growing in flat fan-like sprays — the trait that earns Hinoki cypress its "aristocrat" reputation.',
         },
         { type: 'h3', text: 'Dwarf Alberta Spruce (Picea glauca \'Conica\') — The Perfect Cone' },
         { type: 'p', text: 'The dwarf Alberta spruce is one of the most widely recognized dwarf conifers in American landscaping — and for good reason. Its dense, perfectly conical form requires zero pruning to maintain, stays green year-round, produces charming lime-green new growth in spring, and grows only 2–4 inches per year, taking 10+ years to reach 4–6 feet. It\'s often sold as a miniature Christmas tree and can transition to permanent landscape use. Cold-hardy to zone 2, making it one of the hardiest dwarf conifers available.' },
@@ -434,6 +458,12 @@ export const dwarfTreeContent = {
         { type: 'h3', text: 'The Rule of Threes — Grouping for Impact' },
         { type: 'p', text: 'A single dwarf tree is a nice plant. Three dwarf trees thoughtfully arranged are a garden. Designers consistently find that odd numbers (3, 5, 7) of plants create more visually satisfying compositions than even numbers. Group three dwarf conifers of varying height and form together — one conical, one globose, one spreading — and you have a year-round composition with texture, contrast, and layered height that looks intentional and sophisticated.' },
         { type: 'tip', emoji: '🌿', text: 'The Conifer Trio Formula: Choose one conical (vertical accent), one globe-shaped (mass and ground-level interest), and one with cascading or threadlike foliage (texture contrast). Vary the colors — deep green, blue-green, and gold work beautifully together. Space them so they\'ll just touch at maturity. This composition works year-round, needs almost no maintenance, and looks like professional landscape design.' },
+        {
+          type: 'image',
+          src: '/guides/dwarf-trees/conifer-trio.jpg',
+          alt: 'Three dwarf conifers of different forms grouped together in a garden bed in varying shades of blue-green, green, and gold',
+          caption: 'The formula in practice — three distinct forms and three distinct colors, and the composition still reads as a single cohesive planting.',
+        },
         { type: 'h3', text: 'Layering in Small Spaces' },
         { type: 'p', text: 'Even a tiny yard can have visual depth if you create layers. A dwarf tree at 8–12 feet provides the middle layer; compact shrubs at 3–5 feet fill below it; perennials and groundcovers complete the picture at ground level. This layering creates a sense of lush fullness that a flat bed of annuals never achieves.' },
         {

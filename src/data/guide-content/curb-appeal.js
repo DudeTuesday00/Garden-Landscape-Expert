@@ -24,6 +24,12 @@ export const curbAppealContent = {
           ],
         },
         { type: 'tip', emoji: '📸', text: 'Take a photo of your front yard from the street — the same angle a visitor or potential buyer would see first. View it on your phone at half-brightness to see the composition without being distracted by color. This reveals structural weaknesses: gaps, unbalanced masses, too-tall plants blocking windows, or a lost entry path that color and flowers were masking.' },
+        {
+          type: 'image',
+          src: '/guides/curb-appeal/landscaped-front-yard.jpg',
+          alt: 'A beautifully landscaped front yard with neatly trimmed evergreen foundation shrubs, a clean stone entry path, and colorful seasonal flowers',
+          caption: 'Every one of the five elements is doing its job here — clear entry, defined edges, right-sized plants, seasonal color, and a cohesive palette.',
+        },
       ],
     },
     {
@@ -47,6 +53,12 @@ export const curbAppealContent = {
           ],
         },
         { type: 'tip', emoji: '🚶', text: 'Walk your own front path as if you\'ve never been there before. Is the path wide enough? Is the destination (front door) visible from the start? Are there plants spilling into the path, narrowing it awkwardly? Is lighting adequate for safe use at night? The answers reveal what to fix first — structural path issues are always more important to address than plant selection.' },
+        {
+          type: 'image',
+          src: '/guides/curb-appeal/lavender-lined-path.jpg',
+          alt: 'A welcoming garden path lined with lavender and low boxwood hedges leading to a front door',
+          caption: 'A clear visual sequence that narrows toward the door, like a theater aisle — the entry path\'s whole job in one shot.',
+        },
       ],
     },
     {
@@ -76,6 +88,12 @@ export const curbAppealContent = {
           ],
         },
         { type: 'warning', emoji: '⚠️', text: 'The number one foundation planting mistake is buying Leyland cypress, arborvitae \'Emerald Green\', or similar fast-growing evergreens to \'fill space quickly\' — then discovering they are 15–20 feet tall and 6–8 feet wide in 10 years. For tight foundation spaces, always choose compact or dwarf selections specifically bred for small-space planting. Read the tag\'s mature dimensions — not the current nursery pot size.' },
+        {
+          type: 'image',
+          src: '/guides/curb-appeal/foundation-planting-bed.jpg',
+          alt: 'A well-maintained foundation planting bed with layered boxwood and dwarf shrubs beneath a house\'s windows',
+          caption: 'Height variation and clean mulched edges do most of the work here — no plant is anywhere close to blocking the window above it.',
+        },
       ],
     },
     {
@@ -96,6 +114,12 @@ export const curbAppealContent = {
             ['Inkberry Holly (Ilex glabra)', '4–8 ft', '4–9', 'Native; tolerates wet soil; shiny dark leaves; black berries; excellent for naturalizing at corners'],
             ['Helleri Japanese Holly', '2–3 ft', '5–9', 'Very compact mounding form; no shearing needed; excellent under windows; fine-textured dark foliage'],
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/curb-appeal/dwarf-alberta-spruce.jpg',
+          alt: 'A perfectly shaped dwarf Alberta spruce specimen shrub with dense cone-shaped form, planted near a home\'s entry',
+          caption: 'Its perfect cone shape needs no pruning to maintain — one of the few foundation evergreens that stays this tidy on its own.',
         },
         { type: 'h3', text: 'Shrubs for Seasonal Color and Four-Season Interest' },
         {
@@ -171,6 +195,12 @@ export const curbAppealContent = {
           ],
         },
         { type: 'tip', emoji: '🌷', text: 'The "bulb lasagna" method: plant large daffodils 8 inches deep, medium tulips 6 inches above them, and small crocus 3 inches above them in the same hole. Each layer blooms at a different time — crocus in March, tulips in April, daffodils in April–May — from a single planting effort in fall.' },
+        {
+          type: 'image',
+          src: '/guides/curb-appeal/spring-bulb-display.jpg',
+          alt: 'A front yard garden bed with bright red and yellow tulips blooming alongside golden daffodils under a flowering forsythia shrub',
+          caption: 'Zero summer maintenance for this much spring impact — the bulb foliage disappears naturally as the forsythia leafs out and covers it.',
+        },
       ],
     },
     {

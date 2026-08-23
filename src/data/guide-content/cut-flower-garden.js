@@ -36,6 +36,12 @@ export const cutFlowerGardenContent = {
         { type: 'p', text: 'Perennial cut flowers return year after year from the same roots. They require a season or two to establish but then provide low-effort harvests indefinitely. Peonies can live for 50 or more years. However, perennials have shorter bloom seasons than annuals and require more space.' },
         { type: 'p', text: 'Bulbs, corms, and tubers (tulips, dahlias, ranunculus, anemones) are planted seasonally and provide some of the most spectacular cut flowers available. Some are hardy enough to stay in the ground; others must be lifted and stored over winter.' },
         { type: 'tip', emoji: '💡', text: 'The cut-and-come-again principle: plants like zinnias, sweet peas, cosmos, snapdragons, and scabiosa produce MORE flowers when you keep cutting them. The plant is trying to set seed — when you cut the flower before it seeds, the plant generates new stems. The more aggressively you harvest, the more the plant gives you. Don\'t be shy about cutting!' },
+        {
+          type: 'image',
+          src: '/guides/cut-flower-garden/harvest-bucket.jpg',
+          alt: 'A rustic metal bucket filled with an abundance of freshly cut zinnias, cosmos, and dahlias sitting on a garden path',
+          caption: 'This is the whole point of a cutting garden — a production space where flowers exist to be cut, not admired in the bed.',
+        },
       ],
     },
     {
@@ -62,6 +68,12 @@ export const cutFlowerGardenContent = {
         },
         { type: 'tip', emoji: '✂️', text: 'Dahlias are hollow-stemmed — immediately after cutting, turn the stem upside down and fill the hollow with water, then plug with a small piece of cotton or your thumb as you place it in the bucket. This dramatically improves their vase life.' },
         { type: 'tip', emoji: '🌹', text: 'The absolute beginner\'s first focal choice: Zinnias. Plant \'Benary\'s Giant\' or \'Uproar Rose\' and you will have large, colorful flowers on long stems from midsummer to frost with almost no effort. Succession plant every 3 weeks for a constant supply.' },
+        {
+          type: 'image',
+          src: '/guides/cut-flower-garden/dinnerplate-dahlia.jpg',
+          alt: 'A close-up of a large dinnerplate dahlia flower in vivid deep red-orange with intricate layered petals',
+          caption: 'Dahlias don\'t open further once cut — pick them at exactly this stage, fully open and at peak bloom.',
+        },
       ],
     },
     {
@@ -88,6 +100,12 @@ export const cutFlowerGardenContent = {
         },
         { type: 'tip', emoji: '✂️', text: 'Snapdragons are the most important spike for beginners — they are easy to grow, beautiful, fragrant, prolific, and beloved by florists. Pinch them at 8 inches for better branching and more stems. Plant in early spring as they prefer cool weather and will stop blooming in midsummer heat.' },
         { type: 'warning', emoji: '⚠️', text: 'Foxgloves: All parts are toxic. Wear gloves when harvesting and handling foxglove. Despite this, they are magnificent spike flowers and excellent in arrangements. Keep arrangements with foxglove out of reach of young children.' },
+        {
+          type: 'image',
+          src: '/guides/cut-flower-garden/snapdragon-row.jpg',
+          alt: 'A row of tall snapdragon flower spikes in mixed pink, yellow, and orange colors growing in a cutting garden bed',
+          caption: 'Snapdragons are the most forgiving spike for beginners — pinch at 8 inches for branching, and they\'ll rebloom after every cut.',
+        },
       ],
     },
     {
@@ -163,6 +181,12 @@ export const cutFlowerGardenContent = {
           ],
         },
         { type: 'tip', emoji: '💐', text: 'The professional trick: Start every arrangement by placing 4–6 hosta leaves or eucalyptus branches crisscrossed in the vase. They create a natural grid that holds all your stems in exactly the positions you want, eliminating the need for floral foam. This works in any size vessel.' },
+        {
+          type: 'image',
+          src: '/guides/cut-flower-garden/foliage-grid-vase.jpg',
+          alt: 'A clear glass vase with crisscrossed eucalyptus branches forming a structural grid, ready for flowers to be added',
+          caption: 'No floral foam needed — this crisscrossed grid alone will hold every stem you add exactly where you place it.',
+        },
       ],
     },
     {
@@ -296,6 +320,12 @@ export const cutFlowerGardenContent = {
           ],
         },
         { type: 'tip', emoji: '💐', text: 'Mason jars are among the best vases for homegrown bouquets — the wide mouth makes arranging easy, the clear glass shows beautiful stems, and the casual container suits the informal garden-style aesthetic perfectly. Use a wide rubber band around the outside of the jar to mark the water level change reminder.' },
+        {
+          type: 'image',
+          src: '/guides/cut-flower-garden/mason-jar-bouquet.jpg',
+          alt: 'A lush garden-style bouquet of mixed zinnias, cosmos, and snapdragons arranged in a rustic mason jar on a wooden table',
+          caption: 'This is the reward for growing your own — a bouquet with more soul than anything a florist could sell you, built entirely from your own backyard.',
+        },
         { type: 'h3', text: 'Care After Arranging — Extending Vase Life' },
         {
           type: 'list',

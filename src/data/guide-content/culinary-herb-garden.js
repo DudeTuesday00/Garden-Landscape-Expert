@@ -38,6 +38,12 @@ export const culinaryHerbGardenContent = {
           emoji: '🌿',
           text: 'Annuals (basil, cilantro, dill) must be replanted each year but grow quickly from seed. Perennials (thyme, oregano, chives, mint, sage, rosemary) return each season once established and often spread — giving you more plant for less effort over time.',
         },
+        {
+          type: 'image',
+          src: '/guides/culinary-herb-garden/mixed-herb-bed.jpg',
+          alt: 'A thriving mixed culinary herb garden bed with bushy basil, low mounds of thyme, upright rosemary, and clumps of chives',
+          caption: 'A well-planned herb bed groups plants by water needs as much as by flavor — everything here wants full sun and lean, well-drained soil.',
+        },
       ],
     },
     {
@@ -87,6 +93,12 @@ export const culinaryHerbGardenContent = {
             ['Window box', 'Chives, thyme, parsley, basil (short-season)', 'Ultra-convenient harvest; indoor/outdoor flexible', 'Limited root depth; dries very quickly'],
           ],
         },
+        {
+          type: 'image',
+          src: '/guides/culinary-herb-garden/potted-herbs-patio.jpg',
+          alt: 'A collection of terracotta pots filled with basil, thyme, and parsley clustered on a sunny stone patio near a kitchen door',
+          caption: 'Research consistently shows proximity to the kitchen door is the single greatest predictor of whether fresh herbs actually get harvested.',
+        },
       ],
     },
     {
@@ -109,6 +121,12 @@ export const culinaryHerbGardenContent = {
             'Fertilize: A light application of balanced fertilizer (10-10-10) or compost tea every 3–4 weeks keeps basil producing aggressively. Too much nitrogen produces lush leaves with reduced flavor intensity.',
             'Common problem: Fusarium wilt — sudden wilting with brown streaks on stems. No cure; remove and discard the plant, do not compost. Choose resistant varieties (\'Nufar\', \'Eleonora\') in gardens with a history of the disease.',
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/culinary-herb-garden/basil-pinching-flower.jpg',
+          alt: 'A gardener\'s fingers pinching off a small white flower bud from the top of a lush green basil plant',
+          caption: 'Pinch the flower spike the moment it appears — this single habit redirects the plant\'s energy into leaves and extends the harvest by weeks.',
         },
         {
           type: 'h3',
@@ -182,6 +200,12 @@ export const culinaryHerbGardenContent = {
           text: "Mint is the easiest herb to grow and the easiest to lose control of. Given space, it will spread to fill it. Grow in a dedicated container or in a buried pot. Flavor varies significantly by variety — spearmint (Mentha spicata) is classic for cooking and beverages; peppermint (M. × piperita) is more intense and medicinal; chocolate mint and apple mint offer novelty. Mint prefers slightly moister conditions than most Mediterranean herbs and tolerates partial shade, making it one of the few herbs that performs well in less-than-ideal spots.",
         },
         {
+          type: 'image',
+          src: '/guides/culinary-herb-garden/mint-leaves-closeup.jpg',
+          alt: 'Close-up of fresh mint leaves growing densely in a container, vivid green serrated leaves catching morning light',
+          caption: 'The serrated, deeply veined leaves are a quick way to confirm true mint before it ends up loose in a shared bed.',
+        },
+        {
           type: 'h3',
           text: '🌿 Cilantro',
         },
@@ -242,6 +266,12 @@ export const culinaryHerbGardenContent = {
           type: 'tip',
           emoji: '⏰',
           text: 'Harvest herbs in the morning after any dew has dried but before midday heat. Essential oil concentration — which drives flavor and aroma — peaks in the morning. Herbs harvested mid-afternoon after hours of hot sun have measurably less flavor than morning-harvested herbs from the same plant.',
+        },
+        {
+          type: 'image',
+          src: '/guides/culinary-herb-garden/herb-cutting-board.jpg',
+          alt: 'A rustic wooden cutting board with freshly harvested thyme, rosemary, and sage sprigs laid out, morning dew visible',
+          caption: 'This is what a morning harvest looks like — cut before the heat of the day, while essential oil concentration is at its peak.',
         },
       ],
     },
