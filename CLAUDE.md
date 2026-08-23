@@ -351,6 +351,40 @@ marijuana topics regardless of framing. If another off-brand category slips
 through, the fix is the same pattern: add an explicit hard-exclusion rule
 rather than relying on general relevance scoring.
 
+**Legacy section-image backfill (2026-08-05):** the 8 issues published at
+initial go-live (2026-08-02, commits `a233c30`/`ca11e25`) predate the
+"2 to 4 images" feature entirely — their `newsletterMeta` had no
+section-image field at all, old or new, so there was nothing for the normal
+image-revision path to rebuild from (it only regenerates *already-planned*
+images; it can't plan a new one from scratch). Backfilled as a one-off
+script instead of new workflow infrastructure, since it only ever needed to
+run once against these 8 specific drafts: for each, asked Ollama to propose
+1-3 section images against the already-written body + outline (same rules as
+the live Generator's planning prompt), validated indices against the actual
+written `##` headings, generated each via the same style-aware ComfyUI/Flux
+pipeline, and spliced the `<img>` tags directly into the already-published
+`src/data/newsletter-content/<slug>.json` (no export-endpoint involvement,
+since these drafts are `published` status and the endpoint's clobber guard
+correctly refuses to touch that status). Also updated each draft's Postgres
+`newsletterMeta.sectionImages` directly via SQL for consistency with newer
+issues. 24 new images across 8 issues (`5414a8c`).
+
+**Caught on review before push, 2 of the 24 had AI-generated gibberish text
+(`229e7a3`):** a nursery plant tag covered in garbled pseudo-words, and
+fertilizer scoops labeled with nonsense "N-PK"/"N-PPK" text — the latter also
+had unintentionally cannabis-like foliage instead of tomato leaves. Both
+prompts involved a labeled/tagged real-world object ("a nursery tag showing
+cultivar names", "fertilizers... in separate watering cans" implying visible
+product labels) — **a labeled/tagged object in an image prompt reliably
+invites a diffusion model to attempt rendering text, even with an explicit
+"no readable text" negative instruction; avoid that concept entirely rather
+than trusting the negative prompt to suppress it.** Regenerated both with
+revised prompts that dropped the label/tag concept outright and made the
+tomato plant's features explicit (fuzzy serrated compound leaves, small
+yellow flowers) to avoid the cannabis look-alike. Caught by a full manual
+review of all 24 backfilled images before pushing — worth doing for any
+future bulk image generation, not just spot-checking a sample.
+
 **Revision bug fixed 2026-08-06:** the Draft Revision Worker's `Upsert Draft`
 node read `currentText` from the pre-rewrite `Prepare Revision Context`
 snapshot instead of the actual `Rewrite Text` node output, so every
@@ -2023,6 +2057,14 @@ Hero/LCP images (page headers, guide hero photos, the two homepage path cards, t
 
 Currently registered (all live): **Fertilizer Calculator**, **Find Your USDA Hardiness Zone**, **Garden Planting Calendar**, **Soil & Raised Bed Calculator**, **Mulch Calculator**, **Compost Calculator**, **Plant Spacing & Square Foot Garden Planner**, **Garden Yield Estimator**, **Garden Symptom Diagnostic**, **Companion Planting Checker**, **Succession Planting Planner**, **Value of Growing Your Own**, **Watering Schedule Calculator**.
 
+All 13 got a graphical redesign on 2026-08-05 — see "Garden Tools — Graphical
+Redesign" under "10 Additional Calculators" below for the shared
+`src/components/tools/shared/` visualization library (`RatioBar`,
+`RangeBarChart`, `Timeline`, `GaugeStrip`, `BedGrid`, `RelationshipLink`) and
+the validated color palette everything draws from; each tool's own section
+below has a short "**Visual (2026-08-05):**" note on what it specifically
+gained.
+
 ### Find Your USDA Hardiness Zone ✅
 
 `/tools/usda-zone-finder/` — instant, exact ZIP-code lookup against the real 2023 USDA Plant Hardiness Zone Map data (not a rough state/region approximation).
@@ -2035,6 +2077,8 @@ Currently registered (all live): **Fertilizer Calculator**, **Find Your USDA Har
 | `src/app/tools/usda-zone-finder/page.jsx` | Route with full SEO metadata |
 
 **Data provenance & licensing:** the dataset is the USDA-ARS/PRISM Climate Group (Oregon State University) plant hardiness GIS data, provided to Planting Atlas directly as 4 regional CSVs (`phzm_us_zipcode_2023.csv`, `phzm_ak_zipcode_2023.csv`, `phzm_hi_zipcode_2023.csv`, `phzm_pr_zipcode_2023.csv`, schema: `zipcode,zone,trange,zonetitle`) and merged into the single lookup JSON. OSU's terms require either (a) both USDA-ARS and OSU logos on any *map* derived from the data, or (b) an explicit "not the official map" disclaimer with logos omitted if the data is presented in an altered form. This tool renders a **text lookup result, not a map graphic**, and ships with an explicit disclaimer + links to the official source (`planthardiness.ars.usda.gov`) and the PRISM data page — the safer compliant path that avoids needing to source/maintain two official logo assets correctly. **Do not add a rendered map/graphic using this data without revisiting the logo requirement.**
+
+**Visual (2026-08-05):** result panel includes a `GaugeStrip` (shared component, see "Garden Tools — Graphical Redesign") spanning all 13 US zones on a cold→warm gradient with the found zone pinned — the interactive companion to the static infographic below, not a replacement for it.
 
 **Cross-links, both directions:**
 - Result panel links into the **Garden Architect wizard** with `?zone=<wholeZoneNumber>` — see below
@@ -2063,6 +2107,8 @@ Currently registered (all live): **Fertilizer Calculator**, **Find Your USDA Har
 - Container-grown plants get an extra note about more frequent/lighter feeding and monthly flushing
 - Always closes with a soil-test recommendation note
 - Results panel in `FertilizerCalculator.jsx` is `lg:sticky lg:top-20` (not plain `sticky top-4`) so it doesn't tuck up under the sticky site header on desktop, and isn't sticky at all on the single-column mobile layout where that would trap it oddly mid-scroll
+
+**Visual (2026-08-05):** each recommendation card gets a `SeasonStageStepper` (keyword-matched from the timing text — see "Garden Tools — Graphical Redesign" for why this is qualitative, not a literal date timeline) and a visually weighted `PriorityBadge` (essential = filled, high = outlined, medium = dashed ghost — priority now reads in grayscale, not color alone).
 
 **`/fertilizer-calculator/` redirect stub:** `src/app/fertilizer-calculator/page.jsx` — the old standalone route is kept as a thin stub (`robots: noindex`, canonical → `/tools/fertilizer-calculator/`, `<meta httpEquiv="refresh">` + a manual link) since static export (`output: 'export'`) can't do a real server-side redirect. Don't delete this stub without checking analytics/backlinks first.
 
@@ -2093,7 +2139,9 @@ Currently registered (all live): **Fertilizer Calculator**, **Find Your USDA Har
 | Fall Planting | `#eb6834` | `#d95926` |
 | Best Season | `#4a3aa7` | `#9085e9` |
 
-The garden/earth brand pair could **not** be used at their standard 600/500 steps here — validated at ΔE 1.3 under protanopia (functionally the same color). Both modes pass with WARN-band CVD separation (8.5–10.8 ΔE, below the 12 target), which is legal only with secondary encoding — provided via a letter glyph in each cell (S/P/H/F) plus a "View as table" toggle that carries the same data as text, satisfying the skill's non-dismissable contrast-WARN relief requirement.
+The garden/earth brand pair could **not** be used at their standard 600/500 steps here — validated at ΔE 1.3 under protanopia (functionally the same color). Both modes pass with WARN-band CVD separation (8.5–10.8 ΔE, below the 12 target), which is legal only with secondary encoding — provided via a hover tooltip naming the activity on every band, plus the "View as table" toggle that carries the same data as text, satisfying the skill's non-dismissable contrast-WARN relief requirement.
+
+**Visual (2026-08-05):** `TimelineView` was rebuilt on the shared `Timeline.jsx` component (see "Garden Tools — Graphical Redesign"). Each plant's activities now render as continuous rounded bars spanning their full month range — a 3-month harvest window is one bar, not three adjacent per-cell blocks like before — with a real hover tooltip (exact activity label, not just a `title` attribute) and a "today" marker line. `mergeMonthCellsToBands()` (exported from `Timeline.jsx`) does the month-set → contiguous-band merge, reused unchanged from `buildRow()`'s existing per-plant `cells` map. The per-cell letter glyph (S/P/H/F) is gone — replaced by the hover tooltip as the secondary encoding — the Table view is unaffected and remains the fully-textual fallback.
 
 **Known simplifications (documented, not bugs):**
 - Frost dates are a **zone-correlated estimate**, not a nearest-weather-station lookup (Option A from the build plan) — disclosed in-page, with a link to the Zone Finder / official USDA map for anyone who wants the precision Option B (real NOAA station data) would require
@@ -2118,6 +2166,8 @@ Built in response to a request to bring the site's calculator suite beyond garde
 | `src/logic/soilCalculator.js` | `rectangularVolumeCuFt` / `circularVolumeCuFt` / `getContainerPresetVolumeCuFt` geometry helpers; `computeSoilBreakdown()` splits total volume by mix ratio and converts to bag counts (topsoil/compost bags ≈1.5 cu ft, perlite/vermiculite ≈4 cu ft, potting mix ≈2 cu ft) |
 | `src/components/tools/soil-calculator/SoilCalculator.jsx` | `'use client'` — shape selector, dimension inputs, mix picker, results panel with per-component bag counts |
 
+**Visual (2026-08-05):** results panel gained a `RatioBar` for the mix composition (replacing 3 plain Stat tiles) and a `BedCrossSection` diagram — a side-view fill scaled to the entered depth (rectangular/circular bed) or the selected container's silhouette (preset mode).
+
 Cross-links to Square Foot Gardening, No-Dig Gardening, and Children's Vegetable Garden guides.
 
 #### Mulch Calculator ✅
@@ -2131,6 +2181,8 @@ Cross-links to Square Foot Gardening, No-Dig Gardening, and Children's Vegetable
 
 **A real bug caught during verification:** the guide's "Bags (per cu yd equivalent)" cost column is the total bag cost to cover **one cubic yard**, not a single bag's price — the first implementation multiplied by bag count instead of cubic yards, overstating bagged cost by roughly 13×. Fixed and reverified against the guide's own worked example (500 sq ft at 3 in = 125 cu ft = 4.6 cu yd). Bale-priced materials (straw, pine straw) are shown as guide reference text only, never run through the bag-cost math — a bale isn't a fixed cu-ft unit, so computing a per-cu-yd total for it would be fabricated precision.
 
+**Visual (2026-08-05):** an inch-`DepthRuler` (0-6" scale, filled to the entered depth) replaces the abstract "3 inches" text, and bagged-vs-bulk cost is now a `RangeBarChart` instead of two plain text rows.
+
 #### Compost Calculator ✅
 
 `/tools/compost-calculator/` — target pile/bin volume (presets tied to the Organic Fertilizing guide's own hot-composting size range, 3×3×3 to 5×5×5 ft) split into browns/greens by the guide's 3:1 by-volume ratio, distributed across whichever specific materials the user has on hand.
@@ -2141,6 +2193,8 @@ Cross-links to Square Foot Gardening, No-Dig Gardening, and Children's Vegetable
 | `src/logic/compostCalculator.js` | `computeCompostPlan({totalCuFt, brownIds, greenIds})` — splits by the 3:1 ratio, then divides each share evenly across the selected materials of that category |
 
 Flags piles under 27 cu ft (3×3×3 ft) as too small for reliable hot composting, per the guide's stated minimum, and suggests cold composting instead.
+
+**Visual (2026-08-05):** the browns/greens split is now a `RatioBar` (replacing 2 Stat tiles), plus a `PileCrossSection` diagram — a layered silhouette illustrating the guide's actual "4-6in brown base, alternating 2-4in green / 4-6in brown layers" instructions.
 
 #### Plant Spacing & Square Foot Garden Planner ✅
 
@@ -2156,6 +2210,8 @@ Flags piles under 27 cu ft (3×3×3 ft) as too small for reliable hot composting
 
 **Also caught:** an unused `label: 'Cherry Tomato'` field in the tomato entry that the component never actually read (it renders `plants.js`'s own `name`, "Tomato") — removed and folded the cherry-tomato context into the note text instead.
 
+**Visual (2026-08-05):** the inline color-grid was swapped for the shared `BedGrid` component — adds ruler labels on both edges and a per-cell hover tooltip on top of the existing color+emoji legend. `gridTintAt()` (from `shared/palette.js`) replaced the tool's own local `CELL_COLORS` array.
+
 #### Garden Yield Estimator ✅
 
 `/tools/yield-estimator/` — pick plants and a quantity, get an expected total harvest range in lbs, using a compiled yield-per-plant table plus the existing `daysToHarvest` field for a first-harvest timing note.
@@ -2165,6 +2221,8 @@ Flags piles under 27 cu ft (3×3×3 ft) as too small for reliable hot composting
 | `src/data/plant-yields.js` | Per-plant `yieldType: 'weight'` (lbPerPlant range) or `'ongoing'` (herbs/cut-and-come-again crops with no meaningful one-time weight — shown as a qualitative note instead of a fabricated number). 30 weight-type entries after the okra/strawberry/watermelon/blackberry/winter-squash additions (lettuce was a genuine gap in the original build, caught and fixed when those were added) |
 | `src/logic/yieldEstimator.js` | `computeYieldForSelection()`, `summarizeYields()` — sums weight-type selections into a household total, keeps ongoing-type selections in a separate list rather than folding them into the total |
 | `src/logic/plantingCalendar.js` | `parseAverageDays()` exported (was previously private to this file) so the Yield Estimator can reuse the same days-to-harvest parser instead of duplicating the regex |
+
+**Visual (2026-08-05):** weight-type results render as a `RangeBarChart` (lb-range per plant, one horizontal bar per row) instead of a plain list; ongoing-harvest (herb) results stay a separate text list below, since they have no magnitude to chart.
 
 #### Garden Symptom Diagnostic ✅
 
@@ -2177,6 +2235,8 @@ Flags piles under 27 cu ft (3×3×3 ft) as too small for reliable hot composting
 
 All 9 distinct section anchors used across the 33 entries were verified to actually exist in the built guide pages before shipping — a wrong anchor would fail silently (no scroll, no error).
 
+**Visual (2026-08-05):** added `PlantDiagram.jsx` (same folder) — a simple illustrated plant cross-section (roots/stem/leaves/fruit/flowers below and above a soil line) where the Step 1 location picker highlights the matching part(s) in real time. `whole-plant` and `seedlings` both highlight the full silhouette, since a mature-plant diagram has no separate "seedling" region to point at.
+
 #### Companion Planting Checker ✅
 
 `/tools/companion-planting-checker/` — pick two plants, get a good/avoid/neutral verdict with reasoning.
@@ -2186,6 +2246,8 @@ All 9 distinct section anchors used across the 33 entries were verified to actua
 | `src/data/companion-pairings.js` | 43 pairings across 25 plants, compiled from well-established companion planting knowledge, grounded in the specific mechanisms already named in `companion-planting.js`'s stub intro (Three Sisters, allium scent confusing carrot fly, fennel allelopathy, dill's mixed relationship with carrots/tomatoes vs. brassicas). `checkCompanionship(idA, idB)` checks both directions from one unordered-pair list rather than requiring each relationship duplicated on both plants' entries; an unmatched pair returns an honest "no documented relationship" neutral verdict rather than guessing |
 
 One deliberate nuance: dill is a *good* companion for brassicas (attracts predatory wasps) but should be *kept apart* from carrots (same family) and mature tomatoes — same plant, different verdicts depending on the pairing, correctly represented since pairings are keyed by pair, not by plant.
+
+**Visual (2026-08-05):** the verdict card now shows a `RelationshipLink` (two plant nodes joined by a solid/dashed/dotted line, style encoding verdict so it survives grayscale) above the text reasoning. Also added a "compatibility at a glance" grid — every other companion-checker plant shown as a clickable chip colored by its verdict against the currently selected plant, so the tool answers "what goes with X" in one view, not just "do these two match." Clicking a chip sets it as the second plant.
 
 #### Succession Planting Planner ✅
 
@@ -2197,6 +2259,8 @@ One deliberate nuance: dill is a *good* companion for brassicas (attracts predat
 | `src/logic/successionPlanner.js` | `computeSuccessionPlan()` reuses the same frost-date estimates and `directSow`/`fallSow` week-offset windows already compiled for the Garden Planting Calendar — only the succession interval itself is new data |
 
 **A real sign-convention bug caught during verification:** `fallSow` week values in `planting-windows.js` are stored as "N weeks **before** first frost" (positive numbers), but the initial `computeWindowSuccessions()` added them directly to the first-frost date instead of subtracting — computing fall windows that landed **after** first frost (radish showed Nov 27–Dec 11, deep winter, instead of the correct Sep 18–Oct 2). Fixed with an explicit `sign` parameter (`sign=1` for directSow's already-signed weeks, `sign=-1` to negate fallSow's before-frost convention) and reverified.
+
+**Visual (2026-08-05):** the two disconnected spring/fall "window" cards now sit below a single full-year `Timeline` (shared component) showing both windows as bands with each sowing date as a tick mark — "see your whole season at once" instead of parsing two separate date-chip lists. The original cards stay as the detailed/accessible fallback.
 
 #### Value of Growing Your Own ✅
 
@@ -2210,6 +2274,8 @@ One deliberate nuance: dill is a *good* companion for brassicas (attracts predat
 
 Perennials (strawberry, blackberry) intentionally are **not** amortized across the multiple years they'll actually produce — a deliberately simple, conservative model that correctly shows a modest first-season net loss for those two rather than an inflated same-year payoff.
 
+**Visual (2026-08-05):** the per-plant list is now a `RangeBarChart` (net-savings range per plant), and the summary card gained a `SavingsWaterfall` strip — Grocery Value → − Growing Cost → = Net Savings as three connected tiles.
+
 #### Watering Schedule Calculator ✅
 
 `/tools/watering-calculator/` — plant + growing method + optional ZIP code → a concrete watering plan. The one tool in this batch needing essentially **no new per-plant data**: every `plants.js` entry already carries a `water: 'low'|'moderate'|'high'` field, so this searches the full 150-plant database rather than a curated subset.
@@ -2219,9 +2285,84 @@ Perennials (strawberry, blackberry) intentionally are **not** amortized across t
 | `src/data/watering-guide.js` | `inGroundWatering` (the classic "1 inch of water per week" rule, scaled by water-need level) and `containerWatering` ("check every N days, water when dry to X inches" — containers dry out far faster than garden soil, so a fixed calendar interval doesn't fit); `getClimateModifier(wholeZone)` — hot zones (9+) water more often, cool zones (≤5) less |
 | `src/logic/wateringCalculator.js` | `computeWateringPlan(plant, growingMethod, wholeZone)` — for `growingMethod === 'hydroponic'`, returns `{type: 'hydroponic'}` rather than a fabricated day-count, since reservoir-based systems don't run on a watering schedule the same way; the UI redirects that case to the Fertilizer Calculator's hydroponic mode |
 
+**Visual (2026-08-05):** added a `WeekStrip` (Mon-Sun row with filled drop icons on the days to water, or check-in days for containers — `evenlySpacedDays()` distributes N marks across 7 slots, illustrative not a fixed literal schedule) and a `GaugeStrip` for inches/week against a 0-2" reference scale.
+
 #### Plant Database Additions (Okra, Winter Squash) ✅
 
 While adding items to the Yield Estimator and Spacing Planner lists, two genuinely new plants had to be added to the core database (since every tool that lists plants only shows what exists in `plants.js`): **Okra** and **Winter Squash** (butternut/acorn-type, distinct from the existing Zucchini summer-squash entry). This took the database from 148 to **150 plants** — every "148 plants" reference site-wide (homepage stats, `TrustBadges.jsx`, `SiteSearch.jsx`, wizard page, meta descriptions) was updated to stay accurate. Both new plants are also now selectable in the Garden Architect wizard as a side effect of sharing the same database — not a deliberate wizard feature, just how the shared plant data works. Cherry tomato was **not** added as a separate plant — the existing `tomato` entry's yield (8–12 lbs) and spacing (0.5/sq ft) figures were already specifically written for a cherry tomato.
+
+#### Garden Tools — Graphical Redesign ✅ (2026-08-05)
+
+All 13 tools were originally pure form-and-text UI: pill/button selectors on the
+left, a sticky card of number "Stat" tiles and text lists on the right — grep
+confirmed **zero** SVG/chart usage anywhere in `src/components` outside
+`Nav.jsx`'s icons, and no chart-library dependency in `package.json`. The
+owner asked for these to become "world-class, top-of-the-line, graphical, and
+perfect." Built with **custom lightweight SVG/HTML components, no chart
+library** (matches this repo's near-zero-dependency philosophy — a library
+like Recharts would add ~90-100kb for chart types that still don't cover half
+of what these tools needed: bed diagrams, timelines, gauges).
+
+**Shared component library** — `src/components/tools/shared/`, built once and
+reused across tools rather than 13 one-off implementations:
+
+| Component | Purpose | Used by |
+|---|---|---|
+| `RatioBar.jsx` | Segmented horizontal bar for a part-of-whole split (2-4 segments), rounded ends, selective in-bar labels + always-present legend | Compost (browns:greens), Soil (mix components) |
+| `RangeBarChart.jsx` | Horizontal bars comparing a magnitude with a min-max range across categories, single sequential hue | Yield Estimator, Grow-Your-Own-Savings, Mulch (bagged vs. bulk) |
+| `Timeline.jsx` | Horizontal day-of-year axis strip, continuous rounded activity bands (not per-cell blocks), hover tooltips, optional today marker. Exports `MONTH_STARTS` + `mergeMonthCellsToBands()` helpers for month-set → band conversion | Garden Calendar (replaced the old per-cell grid), Succession Planner |
+| `GaugeStrip.jsx` | Continuous position-on-a-scale gauge, two gradient presets (`cold-warm`, `sequential-blue`) | USDA Zone Finder (1-13 scale), Watering Calculator (inches/week) |
+| `BedGrid.jsx` | Formalized grid with ruler labels on both edges, per-cell hover title, and a real legend (swatch + emoji + name) | Plant Spacing Calculator |
+| `RelationshipLink.jsx` | Two plant nodes joined by a link whose *style* (not just color) encodes verdict — solid/dashed/dotted — so it survives grayscale/CVD | Companion Planting Checker |
+| `palette.js` | The validated color constants everything above draws from — see next | all of the above |
+
+**Palette validation (dataviz skill):** the site's own `garden`/`earth`
+Tailwind ramps were run through the dataviz skill's
+`scripts/validate_palette.js` as a 2-color categorical pair and **failed** —
+`garden-600`/`earth-500` have a CVD separation of ΔE 0.7 (essentially
+indistinguishable to protanopia) and a contrast WARN against both light and
+dark surfaces. Iterated to a 3-slot set that passes all checks in both modes
+(`palette.js`'s `CATEGORICAL` export):
+
+| Slot | Light | Dark |
+|---|---|---|
+| garden | `#5eae3d` | `#4f9e3a` (custom — not a stock Tailwind step, tuned for the dark-mode OKLCH lightness band) |
+| earth | `#a8742c` | `#9a6a1e` (custom, same reason) |
+| blue | `#2563eb` | `#3b82f6` |
+
+Expressed as literal Tailwind arbitrary-value classes (`bg-[#5eae3d]
+dark:bg-[#4f9e3a]`, plus `fill-`/`stroke-`/`text-` variants) — **never
+constructed at runtime via string concatenation/`.replace()`**, since
+Tailwind's JIT scanner only picks up class names that appear as literal
+substrings somewhere in a `content`-globbed file. (`RelationshipLink.jsx`
+originally derived its stroke color via `status.fill.replaceAll('fill-',
+'stroke-')`, which silently produced classes Tailwind never generated —
+caught before shipping, fixed by adding explicit `stroke` literals to
+`palette.js`'s `STATUS` export instead. Worth remembering for any future
+dynamic-color code in this repo.) A separate wider `GRID_TINTS` palette
+(8 tints) exists for `BedGrid`, where many plant types can appear at once and
+identity is carried by tint + emoji together, not by pairwise-distinct hue
+alone — validated less strictly than the 3-slot categorical set for that
+reason.
+
+**Fertilizer Calculator deviation from plan:** the original plan called for a
+literal day-precise timeline of feeding events. On inspection,
+`fertilizer-recommendations.js`'s `timing` field is free-form prose ("Early
+spring and again when buds form"), not real dates — a literal timeline would
+have fabricated false precision the data doesn't support. Shipped a
+qualitative 5-stage season stepper instead (`SeasonStageStepper` inside
+`FertilizerCalculator.jsx`): keyword-matches the timing text against Planting
+/ Early Season / Active Growth / Flowering-Fruiting / Fall-Dormant and
+highlights whichever stage(s) match, rendering nothing if no keyword matches
+rather than guessing.
+
+**Verification:** clean `npm run build` across all 13 tool routes (zero
+errors/warnings); confirmed real computed data renders correctly in the
+static export HTML (e.g. Compost's default 64 cu ft pile splits into exactly
+48/16 cu ft, matching `BROWN_GREEN_VOLUME_RATIO`); confirmed the custom
+palette classes actually compiled into the generated CSS (both light and
+dark selectors) by inspecting `out/_next/static/css/*.css` directly, given
+the arbitrary-value class risk above.
 
 ---
 
@@ -2309,4 +2450,5 @@ Following a coverage audit, `src/data/plants.js` was expanded from **150 → 185
 - **Google AdSense is intentionally disabled** (as of May 2026). The script that loads `adsbygoogle.js` is gated behind `process.env.NEXT_PUBLIC_ENABLE_ADSENSE === 'true'` in `src/app/layout.jsx`. The verification meta tag remains. Do not enable the ad script until the site is approved by Google. See `.env.example` for documentation. This change was made following an AdSense readiness audit.
 
 - **A `main` branch now exists and is the GitHub default** (as of August 2026 — this superseded the project's earlier `claude/*`-only setup). Local development happens on `main`: build locally, commit, and `git push` to `origin/main` on GitHub (`https://github.com/DudeTuesday00/Garden-Landscape-Expert.git`) — Cloudflare Pages deploys via its own dashboard-configured Git integration (build command `npm run build`, output dir `out` — see Development Workflow above), watching whichever branch is set as its production branch in the Cloudflare dashboard, not something visible from this repo's files (no `wrangler.toml` or `.github/workflows/` exist here). Confirm the Cloudflare dashboard's production branch is set to `main` before relying on this flow for a new feature. `claude/*` branches may still be used for individual pieces of work and merged into `main` via PR, but `main` is the trunk.
+- **Never construct a Tailwind class name at runtime** (string concatenation, `.replace()`, template literals building a class string) — Tailwind's JIT scanner only generates CSS for class names that appear as **literal substrings** somewhere in a `content`-globbed file. This bit `RelationshipLink.jsx` in the Garden Tools redesign: `status.fill.replaceAll('fill-', 'stroke-')` silently produced classes Tailwind never generated. Any color/variant a component needs must exist as a literal string in source (e.g. `src/components/tools/shared/palette.js`'s exported constants), never derived. For any new tool visualization, reuse `src/components/tools/shared/` (`RatioBar`, `RangeBarChart`, `Timeline`, `GaugeStrip`, `BedGrid`, `RelationshipLink`) and its validated `palette.js` colors before building something new — see "Garden Tools — Graphical Redesign" under Completed Work. Validate any new categorical color pairing with the dataviz skill's `scripts/validate_palette.js` (both light and dark surfaces) before shipping it — don't eyeball whether two colors are distinguishable.
 - **This site also has local (non-cloud) development happening.** The owner may work on this same repo from a local Claude Code session (repo cloned to their own machine) in addition to cloud sessions like this one — local sessions have real filesystem access this cloud session does not (e.g. to other local tools/services on their machine). If continuing work described as having started "locally," check with the owner about what's already been done there before assuming a clean slate.
