@@ -2433,6 +2433,85 @@ Following a coverage audit, `src/data/plants.js` was expanded from **150 → 185
 
 ---
 
+### Plantopedia Guides — Inline Photorealistic Images 🔄 (pilot batch complete, 2026-08-23)
+
+Following the same treatment already shipped on two sibling sites
+(countrytrailhead.com — 48/48 guides done; sixsigmakaizen.com), the
+Plantopedia guides are getting 3-5 inline photorealistic `<figure>` images
+dispersed through each guide's body, generated locally via **Z-Image Turbo**
+on ComfyUI — never uploaded to a third-party service.
+
+**Scope: the 55 "full" guides only, not all 87.** Split `src/data/guide-content/*.js`
+by line count: 32 files are exactly 26 lines — a stub schema (`hero` + one
+`intro` paragraph + a single section with one `p` block and one `tip` block
+reading "full guide in development, subscribe to the newsletter"). A 2-paragraph
+stub has nowhere meaningful to disperse 3-5 images into. Stubs are revisited
+if/when expanded to full content; the 55 full guides are in scope now.
+
+**Image generation (local ComfyUI):** reachable from this session at
+`192.168.1.123:8188` (LAN IP — the physical machine's own `CLAUDE.md`,
+if it has one, may reference `127.0.0.1:8188`, only valid from a session
+running directly on that machine). Workflow graph:
+`UNETLoader(z_image_turbo_bf16.safetensors)` → `CLIPLoader(qwen_3_4b.safetensors, type="lumina2")`
+→ `VAELoader(ae.safetensors)` (Z-Image is architecturally a `Lumina2`
+subclass, reuses the Flux VAE) → `TextEncodeZImageOmni` ×2 (positive/negative
+— note the input field is **`prompt`**, not `text`) → `KSampler(steps=8,
+cfg=1.0, sampler_name="euler", scheduler="simple")` → `VAEDecode` →
+`SaveImage`. 1216×832. Style suffix: "photorealistic garden photography,
+natural daylight, shallow depth of field, professional editorial quality,
+high detail". Negative prompt always includes "text, writing, letters, words,
+labels, signage, logos, watermark, caption" — a proactive mitigation for the
+AI-gibberish-text artifacts the owner has flagged as a hard blocker on going
+live, on top of the manual review every image still gets before commit.
+Reusable generation script: see the session scratchpad's
+`generate_zimage.py` pattern (queue via `POST /prompt`, poll
+`GET /history/<id>`, download via `GET /view`).
+
+**VRAM safety (non-negotiable):** call `POST /free` with
+`{"unload_models": true, "free_memory": true}` after every generation batch,
+confirm via `GET /system_stats` that `torch_vram_total` drops back to
+near-zero (~33MB on this install's RTX 5070). Leaving Z-Image's weights
+resident has crashed the owner's Docker Desktop before from GPU memory
+contention.
+
+**New `'image'` block type** in `GuideDetail.jsx`'s `Block({ block, theme })`
+switch — a `<figure>` with `rounded-2xl overflow-hidden` styling, lazy-loaded
+`<img>`, and an italic `<figcaption>`:
+```jsx
+{ type: 'image', src: '/guides/<slug>/<name>.jpg', alt: '...', caption: '...' }
+```
+Inserted directly into a section's `blocks` array like any other block type —
+after a `p` or `tip` block, never splitting a `table`/`list` from its lead-in
+sentence, never two images in the same section.
+
+**File convention:** `public/guides/<slug>/<name>.jpg` — a new per-slug
+subfolder under the existing flat `public/guides/*.png` (hero images
+untouched). Extends the repo's own existing `public/plants/<slug>/`
+convention rather than importing countrytrailhead's WebP/srcset pipeline;
+`next.config.js` already has `images: { unoptimized: true }` and every
+`<img>` in `GuideDetail.jsx` is already a plain tag.
+
+**Pilot batch (2 guides, 10 images) — validated the recipe end-to-end:**
+`organic-fertilizing` (5 images: compost-hands, compost-bin,
+watering-liquid-fertilizer, comfrey-harvest, raised-bed-tomatoes) and
+`shade-trees` (5 images: mature-canopy, sapling-planting-distance,
+oak-fall-color, root-flare-mulch-donut, soaker-hose-watering). One image
+(`root-flare-mulch-donut`) needed a regenerate — the first attempt showed
+mulch piled directly against the trunk with no visible gap, which would have
+visually contradicted the guide's own "keep mulch a few inches clear of the
+trunk" warning; the reprompted version explicitly calling for a visible root
+flare and a bare-soil gap ring fixed it. Confirmed via clean `npm run build`
+and direct inspection of the rendered static HTML (`<figure>`/`<figcaption>`
+count and image `src` paths) that all 10 wired in correctly.
+
+**Remaining 53 guides:** not yet started. Following the countrytrailhead
+precedent ("a long-running batch effort across many sessions") — a handful
+of guides per session, not all-at-once. **Never push to `origin/main`
+without the owner explicitly saying "push it live"** in that turn, regardless
+of how much batch work has accumulated locally.
+
+---
+
 ## Notes for AI Assistants
 
 - **A guide must not be built unless a `.docx` source file exists for that subject.** The `.docx` file is the authoritative source of truth for guide content; do not create or populate a guide JS file from scratch without one.

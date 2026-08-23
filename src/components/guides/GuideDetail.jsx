@@ -1002,6 +1002,18 @@ function Block({ block, theme }) {
         </div>
       )
 
+    case 'image':
+      return (
+        <figure className="rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700">
+          <img src={block.src} alt={block.alt} width="1216" height="832" loading="lazy" className="w-full h-auto" />
+          {block.caption && (
+            <figcaption className="px-4 py-2.5 text-xs text-gray-500 dark:text-gray-400 italic bg-gray-50 dark:bg-gray-700/50">
+              {block.caption}
+            </figcaption>
+          )}
+        </figure>
+      )
+
     case 'list':
       return (
         <ul className="space-y-1.5 pl-2">

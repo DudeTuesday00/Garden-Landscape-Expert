@@ -34,6 +34,12 @@ export const organicFertilizingContent = {
           emoji: '🌍',
           text: 'Organic Fertilizing Across America: The principles of organic soil health are universal, but the specific challenges vary enormously by region. Sandy soils in coastal Southeast Florida drain nutrients rapidly and need frequent organic amendments. Heavy clay soils in the Midwest hold nutrients but restrict root growth. Alkaline soils in the arid West lock up iron and manganese. This guide addresses the full range of American soil and climate conditions — look for region-specific guidance throughout.',
         },
+        {
+          type: 'image',
+          src: '/guides/organic-fertilizing/compost-hands.jpg',
+          alt: 'Gardener\'s hands cupping a mound of rich dark crumbly finished compost',
+          caption: 'Finished compost should be dark, crumbly, and smell like rich earth — a sign the soil ecosystem is doing its job.',
+        },
       ],
     },
     /* ── Section 2: Understanding Soil & Plant Nutrition ── */
@@ -232,6 +238,12 @@ export const organicFertilizingContent = {
           ],
         },
         {
+          type: 'image',
+          src: '/guides/organic-fertilizing/compost-bin.jpg',
+          alt: 'A wooden compost bin layered with brown dried leaves and green grass clippings, steam rising from active hot composting',
+          caption: 'Steam rising from a working pile is a good sign — it means the pile has reached the 130-160°F range where decomposition happens fastest.',
+        },
+        {
           type: 'h3',
           text: 'The Carbon-to-Nitrogen Ratio: The Most Important Compost Concept',
         },
@@ -370,6 +382,12 @@ export const organicFertilizingContent = {
           ],
         },
         {
+          type: 'image',
+          src: '/guides/organic-fertilizing/watering-liquid-fertilizer.jpg',
+          alt: 'A gardener pouring diluted liquid fertilizer from a watering can onto leafy vegetable plants in a garden bed',
+          caption: 'Liquid feeds like fish emulsion act fast because nutrients are already in plant-available form — useful for a quick correction, not a substitute for building soil.',
+        },
+        {
           type: 'h3',
           text: 'Manure-Based Amendments: Time-Honored Soil Building',
         },
@@ -494,6 +512,12 @@ export const organicFertilizingContent = {
           text: 'Use Bocking 14 comfrey — it is a sterile hybrid that does not set viable seed, so it will not spread aggressively through your garden the way common comfrey can.',
         },
         {
+          type: 'image',
+          src: '/guides/organic-fertilizing/comfrey-harvest.jpg',
+          alt: 'A hand harvesting a single fuzzy comfrey leaf from a comfrey plant with purple bell-shaped flowers',
+          caption: 'Comfrey\'s deep taproot mines minerals from subsoil most plants never reach — one plant can supply three to five leaf harvests in a season.',
+        },
+        {
           type: 'h3',
           text: 'Nettle Tea: A Free Nitrogen and Iron Tonic',
         },
@@ -605,6 +629,12 @@ export const organicFertilizingContent = {
         {
           type: 'p',
           text: 'Vegetable gardens are the highest-demand systems in any home landscape — they are intensively planted, regularly harvested (removing nutrients with every harvest), and expected to produce abundantly. Organic vegetable gardening requires a proactive, layered approach to soil fertility.',
+        },
+        {
+          type: 'image',
+          src: '/guides/organic-fertilizing/raised-bed-tomatoes.jpg',
+          alt: 'A raised wooden garden bed of healthy staked tomato plants heavy with ripening red tomatoes, mulched with straw',
+          caption: 'A raised bed with a compost-rich start and a consistent feeding schedule is what turns a handful of transplants into this.',
         },
         {
           type: 'table',
