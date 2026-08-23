@@ -15,6 +15,12 @@ export const fallColorTreeContent = {
         { type: 'p', text: 'But here\'s the thing most people don\'t know: a jaw-dropping autumn display in your own yard doesn\'t happen by accident. The trees that light up the hillsides in Vermont or the Blue Ridge Mountains were there for decades before anyone appreciated them — planted, usually by natural processes, in exactly the right conditions. In your yard, you get to engineer that same result, deliberately and beautifully.' },
         { type: 'p', text: 'This guide will give you the knowledge to do exactly that. We\'ll start with the actual chemistry behind why leaves change (it\'s more fascinating than you might think), then walk through the best species for every color and climate, teach you how to sequence a planting for maximum seasonal impact, and show you how to design a fall foliage display that starts in August and carries through to Thanksgiving — all in your own backyard.' },
         { type: 'tip', emoji: '🍂', text: 'Pro Tip: The best time to buy fall color trees is in the fall — when you can actually see the color the tree produces. Visit nurseries in September and October, evaluate real specimens at peak, and plant what you see. This eliminates any guessing about what cultivar you\'re getting.' },
+        {
+          type: 'image',
+          src: '/guides/fall-color-trees/autumn-forest.jpg',
+          alt: 'A wide view of a vivid multi-colored autumn forest hillside with trees in brilliant red, orange, and gold',
+          caption: 'No admission ticket, no reservation required — and every tree in this hillside started as a deliberate planting decision generations ago.',
+        },
       ],
     },
     {
@@ -81,6 +87,12 @@ export const fallColorTreeContent = {
           ],
         },
         { type: 'tip', emoji: '🍂', text: 'Pro Tip: Sugar Maple\'s fall color is most intense on the south and west sides of the tree, where leaves get more afternoon sun exposure. When siting your tree, position it where it will receive western afternoon sun to maximize color intensity on the side most visible from your house or street.' },
+        {
+          type: 'image',
+          src: '/guides/fall-color-trees/sugar-maple-gradient.jpg',
+          alt: 'Sugar maple leaves showing a gradient from yellow to orange to brilliant scarlet on the same branch',
+          caption: 'Yellow, orange, and scarlet on the same branch at once — a single mature Sugar Maple can become a multi-color fireworks display all by itself.',
+        },
         { type: 'h3', text: '🔴 The Reliable Workhorse: Red Maple (Acer rubrum)' },
         { type: 'p', text: 'Called \'one of the most stunning of all North American trees in autumn\' by tree experts, Red Maple has the widest climate range of any maple — thriving from Zone 3 all the way to Zone 9 — and delivers spectacular fall color across virtually every region. Michael Dirr, the dean of American dendrologists, noted it has something red in every season: red buds in winter, red flowers in spring, red leafstalks in summer, and blazing red foliage in fall. It\'s also significantly faster-growing than Sugar Maple.' },
         {
@@ -109,6 +121,12 @@ export const fallColorTreeContent = {
           ],
         },
         { type: 'tip', emoji: '🎨', text: 'Design Tip: Japanese Maples create their most dramatic effect when backlit — placed where morning or afternoon sun shines through the leaves. Try siting one where it will catch the low October sun from the east or west. The leaves literally glow from within, creating a luminous stained-glass effect that photographs (and lives in memory) spectacularly.' },
+        {
+          type: 'image',
+          src: '/guides/fall-color-trees/japanese-maple-backlit.jpg',
+          alt: 'Backlit Japanese maple leaves glowing translucent red and gold in autumn sunlight',
+          caption: 'This is the "stained glass" effect the design tip describes — sun coming through the leaves rather than bouncing off them.',
+        },
         { type: 'h3', text: '🌟 The Native Showstopper: Black Tupelo / Black Gum (Nyssa sylvatica)' },
         { type: 'p', text: 'Tree expert Michael Dirr called Black Tupelo \'one of the best and most consistent native trees for fall color.\' He wasn\'t exaggerating. On a single branch, you can find leaves turning yellow, orange, bright red, and purple simultaneously — a one-tree kaleidoscope. It also starts early — sometimes beginning to color in late August when everything else is still deep green. Hardy from Zones 3–9, native to eastern North America, loved by pollinators and wildlife, and reliably spectacular every single year.' },
         {
@@ -162,6 +180,12 @@ export const fallColorTreeContent = {
             'Best cultivars: \'Autumn Gold\' (broad, consistent color), \'Magyar\' (upright), \'Princeton Sentry\' (narrow columnar for tight spaces)',
             'CRITICAL: Always plant named MALE cultivars — female Ginkgo fruits produce a memorably unpleasant odor',
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/fall-color-trees/ginkgo-gold.jpg',
+          alt: 'A ginkgo tree with brilliant gold fan-shaped leaves, fallen leaves forming a golden carpet on the ground beneath',
+          caption: 'Usually within days of a hard frost, the whole tree drops its leaves at once — one of the most dramatic single events in the fall garden calendar.',
         },
         { type: 'h3', text: '🍬 The Fragrant Surprise: Katsura Tree (Cercidiphyllum japonicum)' },
         { type: 'p', text: 'The Katsura Tree delivers fall color with an extra sensory dimension: the falling leaves smell like burnt sugar or cotton candy. Yes, really — the sweet-spicy scent of fresh caramel fills the air around a Katsura in October. The heart-shaped leaves progress from reddish-purple new growth in spring → blue-green in summer → spectacular gold, apricot, and amber in fall. It\'s a tree that delights multiple senses in the best possible way.' },
@@ -398,6 +422,12 @@ export const fallColorTreeContent = {
         { type: 'p', text: 'This is the single most powerful design principle in fall color gardening: the same red maple that looks merely pretty against a blue sky becomes incandescent when viewed against a wall of dark green evergreens. Evergreens — whether a Norway spruce hedge, a grouping of hollies, or a row of Cryptomeria — act as a dark, neutral backdrop that makes fall colors pop with almost electric intensity.' },
         { type: 'p', text: 'Before planting fall color trees, think about what\'s behind them from your key viewing angles. If there\'s a dark fence, a building, or existing evergreen trees — great, work with that. If not, consider planting a screen of evergreens as the \'frame\' for your autumn canvas, even if those evergreens are less showy themselves.' },
         { type: 'tip', emoji: '🎨', text: 'Design Tip: Use an architectural evergreen (columnar Cryptomeria, Thuja Green Giant, or even a dark cedar fence line) as the visual \'wall\' behind your fall color specimens. The contrast of vivid autumn foliage against deep green creates an effect out of proportion to the number of trees actually planted.' },
+        {
+          type: 'image',
+          src: '/guides/fall-color-trees/maple-evergreen-contrast.jpg',
+          alt: 'A vivid red maple tree in full autumn color standing in front of a dark green evergreen hedge',
+          caption: 'The same red maple that\'s merely pretty against blue sky becomes incandescent against a wall of dark evergreen — the single most powerful design move in this guide.',
+        },
         { type: 'h3', text: 'Small-Space Fall Color: Big Impact in Tight Quarters' },
         { type: 'p', text: 'Think you don\'t have room for a fall color display? Think smaller. Some of the most spectacular fall color trees are genuinely compact — perfect for urban yards, courtyards, or as focal points near entryways.' },
         {

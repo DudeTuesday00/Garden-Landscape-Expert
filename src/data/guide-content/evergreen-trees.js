@@ -26,6 +26,12 @@ export const evergreenTreeContent = {
             'Sound and pollution buffering: Dense evergreen plantings reduce noise transmission and filter particulates from traffic and other sources — a meaningful benefit for properties near roads.',
           ],
         },
+        {
+          type: 'image',
+          src: '/guides/evergreen-trees/snowy-conifer-row.jpg',
+          alt: 'A row of tall dark green evergreen conifer trees dusted with fresh snow, providing structure in a winter garden landscape',
+          caption: 'This is the skeleton doing its job — the same structure that reads as backdrop in June becomes the entire show in January.',
+        },
       ],
     },
     {
@@ -133,6 +139,12 @@ export const evergreenTreeContent = {
             'Watch for: White pine blister rust (avoid planting near currant/gooseberry plants); white pine weevil (damages central leader — prune out and destroy affected tips in spring).',
           ],
         },
+        {
+          type: 'image',
+          src: '/guides/evergreen-trees/pine-needle-bundles.jpg',
+          alt: 'Long soft green pine needles growing in bundled clusters of five along a branch, held together at the base by a papery sheath',
+          caption: 'The bundled sheath at the base is the giveaway for pines — spruces and firs attach their needles individually, never in these papery-wrapped clusters.',
+        },
         { type: 'h3', text: '🌲 Norway Spruce (Picea abies) — The Reliable Workhorse' },
         { type: 'p', text: 'Norway spruce is one of the most widely planted large conifers in the northern United States and is among the best options for windbreaks and privacy screens. It grows vigorously (2–3 feet per year when young), maintains dense, low branching well into maturity, and tolerates a wide range of conditions including some clay and moderately poor drainage. The drooping branchlets give it a graceful, layered appearance. It\'s one of few conifers reliably hardy to zone 2.' },
         {
@@ -156,6 +168,12 @@ export const evergreenTreeContent = {
             'Notable cultivars: \'Fat Albert\' (compact, 15x10 feet, excellent form), \'Hoopsii\' (intense blue color), \'Montgomery\' (dense globe dwarf, 3–5 feet), \'Iseli Fastigiata\' (narrow columnar, intense blue).',
             'Disease management: Space at least 15 feet from other spruce; avoid overhead irrigation; apply preventive copper fungicide in spring if Rhizosphaera is common in your area.',
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/evergreen-trees/blue-spruce.jpg',
+          alt: 'A striking Colorado blue spruce tree with dense steel-blue needles in a perfectly symmetrical pyramid form',
+          caption: 'Magnificent and nearly trouble-free in its native dry West — in the humid East, that same steel-blue density needs generous spacing and air circulation to avoid needle cast.',
         },
         { type: 'h3', text: '🌲 Green Giant Arborvitae (Thuja standishii x plicata \'Green Giant\') — The Privacy Champion' },
         { type: 'p', text: 'Green Giant is currently the most widely planted privacy screen evergreen in the eastern United States, and for good reason. It grows 3–5 feet per year when young, reaching 20–30 feet at maturity with an 8–12 foot spread. It holds a dense, naturally pyramidal form without shearing. It is deer-resistant, highly disease-resistant, adaptable to a wide range of soil types, and maintains rich green color through winter without the bronzing that affects some arborvitaes. It\'s also resistant to most insect pests.' },
@@ -236,6 +254,12 @@ export const evergreenTreeContent = {
             'Key considerations: Shallow, wide root system — plant away from foundations and paving. Drops large leathery leaves throughout the year; avoid planting where leaf cleanup is difficult. Provide a generous mulch ring.',
           ],
         },
+        {
+          type: 'image',
+          src: '/guides/evergreen-trees/southern-magnolia.jpg',
+          alt: 'A Southern magnolia branch with a large glossy dark green leaf and an enormous white fragrant flower in full bloom',
+          caption: 'A single flower can span 8-12 inches — the lemon fragrance carries far enough on a warm evening that you\'ll smell the tree before you see it.',
+        },
         { type: 'h3', text: '🌿 American Holly (Ilex opaca) — Native Winter Jewel' },
         { type: 'p', text: 'American holly is a stately native broadleaf evergreen tree with spiny, dull to glossy green leaves and brilliant red berries that persist through winter — providing critical food for cedar waxwings, robins, mockingbirds, and dozens of other bird species. It grows slowly to 15–30 feet in cultivation (larger in ideal conditions), developing a dense, pyramidal form. Female plants berry prolifically; one male per 5–6 females is sufficient for pollination. It\'s one of the most wildlife-valuable broadleaf evergreens in eastern North American landscapes.' },
         {
@@ -258,6 +282,12 @@ export const evergreenTreeContent = {
             'Pruning: Prune in late winter or early spring, or right after the first flush of new growth. Tolerates hard pruning and shearing.',
             'Also consider: \'Mary Nell\' (similar to Nellie Stevens but more refined), \'Emily Bruner\' (taller, more upright), \'Oakleaf\' (slightly smaller, distinctive leaf shape).',
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/evergreen-trees/holly-berries.jpg',
+          alt: 'A holly branch with glossy spiny dark green leaves and clusters of bright red berries',
+          caption: 'Those berries only appear on female plants — and only if a male holly is blooming somewhere within 50-100 feet to pollinate them.',
         },
         { type: 'h3', text: '🌿 Cherry Laurel / Skip Laurel (Prunus laurocerasus) — Fast and Handsome' },
         { type: 'p', text: 'Cherry laurel is one of the fastest-growing and most reliable broadleaf evergreens for screening in zones 6–9. Its large (4–6 inch), glossy, deep-green leaves create an exceptionally dense visual barrier that filters wind and sound effectively. In spring, fragrant white flower spikes appear along the branches, followed by dark purple-black berries attractive to birds. It tolerates partial shade better than nearly any other fast-growing screening tree.' },

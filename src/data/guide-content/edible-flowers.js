@@ -125,6 +125,12 @@ export const edibleFlowersContent = {
             'Harvest tip: Pick flowers in the morning after dew dries. Use within 2-3 days; they do not hold long.',
           ],
         },
+        {
+          type: 'image',
+          src: '/guides/edible-flowers/nasturtium-closeup.jpg',
+          alt: 'Vivid orange and red nasturtium flowers with round lily-pad-like leaves in a garden bed',
+          caption: 'Every part of this plant is edible — flowers, leaves, and even the green seed pods, which pickle into a near-perfect caper substitute.',
+        },
         { type: 'h3', text: 'Arugula Flowers (Eruca vesicaria ssp. sativa)' },
         {
           type: 'p',
@@ -162,6 +168,12 @@ export const edibleFlowersContent = {
             'Growing: Full sun. Rich, well-drained soil with regular deep watering. No systemic pesticides — ever.',
             'Harvest tip: Cut petals from just-opened flowers in the morning. Use the same day or store loosely in a covered container in the refrigerator.',
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/edible-flowers/rose-petals.jpg',
+          alt: 'A deep pink fragrant garden rose with dew on the petals, ready for harvest',
+          caption: 'Fragrance is the tell — only strongly scented rose varieties carry meaningful flavor into jam, syrup, or crystallized petals.',
         },
         { type: 'h3', text: 'Lavender (Lavandula angustifolia)' },
         {
@@ -228,6 +240,12 @@ export const edibleFlowersContent = {
             'Growing: Direct sow after last frost. Full sun. Any well-drained soil. Self-seeds so aggressively it essentially becomes a perennial.',
             'Color note: Borage flowers turn from pink to blue as they mature — use blue flowers for the most dramatic visual impact.',
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/edible-flowers/borage-flowers.jpg',
+          alt: 'Vivid blue star-shaped borage flowers with tiny black centers',
+          caption: 'Pinch the floret away from the hairy green calyx before eating — that part isn\'t pleasant, even though the flower itself tastes like clean cucumber.',
         },
         { type: 'h3', text: 'Squash Blossom (Cucurbita spp.)' },
         {
@@ -358,6 +376,12 @@ export const edibleFlowersContent = {
             ['Thrips', 'Roses, lavender, calendula', 'Insecticidal soap. Reflective mulch deters adult thrips. Spinosad spray.', 'Inspect plants regularly. Thrips damage is more aesthetic than functional for edible flowers.'],
           ],
         },
+        {
+          type: 'image',
+          src: '/guides/edible-flowers/cutting-bed.jpg',
+          alt: 'A densely planted edible flower cutting bed with orange nasturtiums, yellow calendula, and blue borage growing together',
+          caption: 'A dedicated cutting bed like this lets you harvest regularly without stripping the flowers from ornamental plantings elsewhere in the yard.',
+        },
       ],
     },
 
@@ -413,6 +437,12 @@ export const edibleFlowersContent = {
             'Dry completely: Place sugared flowers on a parchment-lined tray in a warm, dry location (a barely-warm oven works well) for 12-24 hours until completely crisp.',
             'Store: Layer between sheets of parchment paper in a sealed container at room temperature. Crystallized flowers keep for 2-3 months.',
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/edible-flowers/crystallized-violets.jpg',
+          alt: 'A small white plate of crystallized sugared violet flowers, delicate purple petals coated in sparkling sugar crystals',
+          caption: 'Egg white and superfine sugar, dried until crisp — one of the oldest preserved-flower techniques, and still one of the most striking.',
         },
         { type: 'h3', text: 'Flower-Infused Oils' },
         {

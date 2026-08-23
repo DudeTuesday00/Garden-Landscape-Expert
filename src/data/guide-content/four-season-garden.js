@@ -132,6 +132,12 @@ export const fourSeasonGardenContent = {
           text: 'The Bulb Rule: Plant bulbs in fall for spring bloom — that\'s when the roots establish. A good rule of thumb: plant bulb depth at 2–3× the bulb\'s diameter. Naturalize bulbs in drifts of 15–25 or more for visual impact rather than scattering individuals. In Zones 8–10, many tulips and hyacinths need pre-chilling in the refrigerator for 6–8 weeks before planting.',
         },
         {
+          type: 'image',
+          src: '/guides/four-season-garden/spring-bulb-drift.jpg',
+          alt: 'A drift of yellow daffodils and red tulips blooming together in a garden bed in early spring sunlight',
+          caption: 'This is what "drifts of 15-25 or more" actually looks like — scattered singles never read with this kind of impact.',
+        },
+        {
           type: 'h3',
           text: 'Top Spring Performers',
         },
@@ -197,6 +203,12 @@ export const fourSeasonGardenContent = {
           type: 'tip',
           emoji: '☀️',
           text: 'The Summer Succession Principle: For every perennial that blooms in June, plan a companion that blooms in July–August. For every perennial that fades in August, have a fall partner starting to emerge. A border designed this way never has an empty moment — it just shifts emphasis as the season progresses.',
+        },
+        {
+          type: 'image',
+          src: '/guides/four-season-garden/summer-border.jpg',
+          alt: 'A lush summer garden border in full bloom with purple coneflowers, golden black-eyed susans, and blue salvia',
+          caption: 'Three long bloomers overlapping at once — this is the relay race the succession principle describes, not a single three-week burst.',
         },
         {
           type: 'h3',
@@ -282,6 +294,12 @@ export const fourSeasonGardenContent = {
           text: 'Leave the Leaves (and Seedheads): Research consistently shows that seedheads left standing through winter provide critical food for overwintering birds — goldfinches, nuthatches, chickadees, and sparrows rely on them. Hollow stems also house native bees and beneficial insects. Cut back only what is truly diseased; leave the rest until spring. Your garden will look better and your local wildlife will thank you.',
         },
         {
+          type: 'image',
+          src: '/guides/four-season-garden/fall-asters-grasses.jpg',
+          alt: 'Purple New England asters and feathery ornamental grass plumes glowing in soft fall afternoon light',
+          caption: 'Left standing instead of cut back, this exact combination becomes a food source and shelter for overwintering birds and native bees.',
+        },
+        {
           type: 'h3',
           text: 'Top Fall Performers',
         },
@@ -353,6 +371,12 @@ export const fourSeasonGardenContent = {
           text: 'Winter Is the Ultimate Design Test: Photograph your garden on a gray January day. If you like what you see — if there\'s structure, texture, something worth looking at — your design is working. If all you see is bare soil and brown sticks, that\'s your shopping list for fall planting.',
         },
         {
+          type: 'image',
+          src: '/guides/four-season-garden/winter-dogwood-stems.jpg',
+          alt: 'Bright red bare dogwood stems rising from snow-covered ground next to a dark green evergreen shrub in winter',
+          caption: 'This is a design that passes the gray-January-photo test — bark and stem color doing the work that flowers can\'t in February.',
+        },
+        {
           type: 'h3',
           text: 'Top Winter Interest Plants',
         },
@@ -413,6 +437,12 @@ export const fourSeasonGardenContent = {
           type: 'tip',
           emoji: '🏗️',
           text: 'The Structural Framework Rule: If you removed every perennial from your garden beds, would anything be left worth looking at? If the answer is no, you need more structural planting. A garden with no woody framework — only perennials — will look great for 3 months and bare for 9. Add shrubs, small trees, ornamental grasses, and evergreens to provide the year-round backbone.',
+        },
+        {
+          type: 'image',
+          src: '/guides/four-season-garden/layered-border.jpg',
+          alt: 'A well-layered garden border with a small flowering shrub, mid-height perennials, and low groundcover creating visual depth',
+          caption: 'Passing the removed-perennials test: the shrub in this border would still be worth looking at on its own, long after everything else has died back.',
         },
         {
           type: 'h3',
