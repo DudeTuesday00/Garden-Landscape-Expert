@@ -59,6 +59,12 @@ export const attractingBeneficialInsectsContent = {
             ],
           ],
         },
+        {
+          type: 'image',
+          src: '/guides/beneficial-insects/ladybug-macro.jpg',
+          alt: 'A close-up of a red ladybug with black spots resting on a green leaf',
+          caption: 'The most recognized member of the 97 percent — and one of the few beneficial insects most gardeners already know on sight.',
+        },
       ],
     },
     {
@@ -93,6 +99,12 @@ export const attractingBeneficialInsectsContent = {
           type: 'tip',
           emoji: '🐞',
           text: 'A single parasitic wasp female (Aphidius colemani) can parasitize 300–400 aphids in her lifetime. She is 1–12 millimeters long. She costs nothing to purchase, requires no application equipment, leaves no residue, and cannot develop resistance to the pest. She needs only undisturbed flowers and a pesticide-free environment. Studies from UC Davis found that hedgerow-adjacent vegetable fields had 3× higher natural enemy populations and required 3–5 fewer pesticide applications per season for equivalent pest control. In residential gardens, a well-designed beneficial insect garden reduces insecticide use by an estimated 60–80% compared to a conventionally managed garden of the same size.',
+        },
+        {
+          type: 'image',
+          src: '/guides/beneficial-insects/lacewing-macro.jpg',
+          alt: 'A pale green lacewing insect with delicate net-veined transparent wings resting on a leaf',
+          caption: 'Adult lacewings feed mostly on nectar and pollen — it\'s their larvae, the "aphid lions," that do the actual predation.',
         },
         {
           type: 'h3',
@@ -340,6 +352,12 @@ export const attractingBeneficialInsectsContent = {
           emoji: '⚠️',
           text: 'Many beneficial insect larvae — ladybug larvae, lacewing larvae ("aphid lions"), and rove beetles — are frequently mistaken for pests and killed. Before removing any unfamiliar insect from a plant that has a pest problem, observe it for a moment: if it is moving toward the pest colony rather than away from it, it is almost certainly your ally. The default assumption should be "beneficial" unless you have confirmed identification of a known pest.',
         },
+        {
+          type: 'image',
+          src: '/guides/beneficial-insects/ladybug-larva.jpg',
+          alt: 'An alligator-shaped ladybug larva with orange spots crawling among small aphids on a green leaf',
+          caption: 'This is the "pest" gardeners most often kill by mistake — one larva like this eats up to 400 aphids before it ever grows spots.',
+        },
       ],
     },
     {
@@ -455,6 +473,12 @@ export const attractingBeneficialInsectsContent = {
           emoji: '🌿',
           text: 'The single easiest action in this entire guide: stop pulling dill, cilantro, and parsley when they start to bolt and flower. A bolted dill plant covered in tiny yellow umbels hosts dozens of parasitic wasp species simultaneously. Letting three or four kitchen herbs flower each season costs nothing and provides immediate, season-long parasitoid support to the entire vegetable garden.',
         },
+        {
+          type: 'image',
+          src: '/guides/beneficial-insects/dill-flowers.jpg',
+          alt: 'A flowering dill plant with delicate lacy yellow umbel flower clusters and feathery green foliage',
+          caption: 'This is what "let it bolt" actually looks like — a single dill plant like this can host dozens of parasitic wasp species at once.',
+        },
       ],
     },
     {
@@ -540,6 +564,12 @@ export const attractingBeneficialInsectsContent = {
         {
           type: 'p',
           text: 'Commercial and DIY "insect hotels" — structures filled with hollow bamboo tubes, drilled wood blocks, pine cones, and other materials — have become popular garden accessories. Their value is real but often overstated. Hollow-tube nesting structures primarily benefit two groups: mason bees (Osmia species) and leafcutter bees (Megachile species), both of which are highly effective pollinators. They provide far less benefit to the parasitic and predatory insects most important for pest suppression.',
+        },
+        {
+          type: 'image',
+          src: '/guides/beneficial-insects/bee-hotel.jpg',
+          alt: 'A wooden insect hotel filled with bundled bamboo tubes of varying diameters, mounted on a garden fence',
+          caption: 'The varying tube diameters here matter — 5/16-inch tubes suit orchard mason bees, but a range of sizes attracts a broader mix of cavity-nesting species.',
         },
         {
           type: 'list',

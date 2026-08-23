@@ -30,6 +30,12 @@ export const annualFlowersContent = {
           ],
         },
         { type: 'tip', emoji: '🌿', text: 'The most beautiful gardens combine both: perennials for structure, seasonal accents, and ecological value; annuals for continuous color, container displays, and the bold seasonal statement. Think of annuals as the paint and perennials as the canvas. You need both.' },
+        {
+          type: 'image',
+          src: '/guides/annual-flowers/mixed-bed-bloom.jpg',
+          alt: 'A densely planted garden border overflowing with red and orange zinnias, yellow marigolds, and pink cosmos in full bloom',
+          caption: 'This is what "relentless, uncompromising color" actually looks like by midsummer — every one of these plants was still blooming from the day it went in the ground.',
+        },
         { type: 'tip', emoji: '🔬', text: 'Understanding the biology behind season-long bloom performance' },
         { type: 'p', text: 'An annual completes its entire life cycle — germination, growth, flowering, seed set, and death — in a single growing season. This biological fact is the key to everything about how annuals perform and how you should care for them.' },
         { type: 'h3', text: 'The Seed-Setting Instinct' },
@@ -79,6 +85,12 @@ export const annualFlowersContent = {
           ],
         },
         { type: 'tip', emoji: '🌺', text: 'For a season-long container that never stops: (1) Thriller — one upright focal plant such as angelonia or tall salvia; (2) Filler — one mounding plant such as impatiens or vinca; (3) Spiller — one trailing plant such as calibrachoa or sweet potato vine; (4) Texture — one foliage plant such as coleus or ornamental sweet potato. These four roles, filled with heat-tolerant annuals, produce the most beautiful and long-lasting container displays.' },
+        {
+          type: 'image',
+          src: '/guides/annual-flowers/zinnia-macro.jpg',
+          alt: 'Extreme close-up of a vivid layered orange zinnia flower in full bloom with a golden center',
+          caption: 'Zinnia \'Profusion\' and \'Benary\'s Giant\' varieties keep producing flowers like this one right through the first hard frost.',
+        },
       ],
     },
     {
@@ -105,6 +117,12 @@ export const annualFlowersContent = {
           ],
         },
         { type: 'tip', emoji: '💡', text: 'In deep shade, brilliant foliage often outperforms flowers. Layer coleus, caladium, and Persian shield (Strobilanthes) for a foliage tapestry that is as vivid as any flower bed — then accent with impatiens and torenia for color punctuation. This approach produces a richer, more sophisticated shade garden than trying to force flowering plants into conditions they tolerate rather than love.' },
+        {
+          type: 'image',
+          src: '/guides/annual-flowers/shade-container.jpg',
+          alt: 'A lush shaded garden container overflowing with pink and white impatiens, dark red coleus foliage, and trailing fuchsia flowers',
+          caption: 'Deep-burgundy coleus foliage does more visual work here than any single flower could — proof that shade gardens don\'t need to look muted.',
+        },
       ],
     },
     {
@@ -208,6 +226,12 @@ export const annualFlowersContent = {
             ['🌿 SPILLER', 'Trailing plant that cascades over the edge and softens the container', 'Wave petunia, calibrachoa, bacopa, sweet potato vine, lantana (spreading)', 'Trailing fuchsia, trailing impatiens, trailing begonia, English ivy', 'Usually 1–2 per container; critical for finished look'],
           ],
         },
+        {
+          type: 'image',
+          src: '/guides/annual-flowers/thriller-filler-spiller-container.jpg',
+          alt: 'A terracotta pot with a tall purple salvia thriller, mounding pink petunias as filler, on a sunny patio',
+          caption: 'The thriller-filler-spiller formula in action: one upright salvia doing the work of a focal point, everything else built around it.',
+        },
         { type: 'h3', text: 'Top Annual Container Combinations' },
         {
           type: 'table',
@@ -252,6 +276,12 @@ export const annualFlowersContent = {
             ['Direct seeding outdoors', 'Cosmos, zinnias, sunflowers, larkspur, bachelor\'s button, sweet peas, nigella', 'At or after last frost (warm-season); early spring or fall (cool-season)', 'Simplest approach; no equipment needed; plants acclimatize naturally to outdoor conditions', 'Slower to establish than transplants; requires patience; vulnerable to birds, slugs, and rain'],
             ['Buying transplants from nursery', 'All annuals — especially if time or space for starting seeds is limited', 'Plant out at or after last frost (warm-season) when soil warms', 'Instant results; plants already established; no equipment investment; professional quality', 'More expensive per plant; limited to locally available varieties; timing dependent on nursery stock'],
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/annual-flowers/transplanting-seedling.jpg',
+          alt: 'A gardener\'s hands gently transplanting a small young annual flower seedling into loosened dark garden soil',
+          caption: 'Whichever route you took to get here — seed tray, direct-sow, or nursery flat — this moment is where soil preparation actually pays off.',
         },
         { type: 'h3', text: 'Soil Preparation for Annual Beds' },
         { type: 'p', text: 'Unlike many perennials and bulbs that prefer lean conditions, most annual flowers are hungry plants that perform best in rich, well-amended, consistently moist but well-drained soil. They are growing their entire life cycle in a single season — they cannot afford to struggle with poor nutrition or drainage.' },
