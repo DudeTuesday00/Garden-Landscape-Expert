@@ -41,6 +41,12 @@ export const commonGardenDiseasesContent = {
           emoji: '🔬',
           text: 'A confident visual diagnosis is not always possible without laboratory testing. Your state\'s cooperative extension service plant disease diagnostic laboratory can test tissue samples for a definitive diagnosis, typically for $10–25. For significant or spreading problems, a laboratory diagnosis is worth the cost.',
         },
+        {
+          type: 'image',
+          src: '/guides/common-diseases/powdery-mildew-leaf.jpg',
+          alt: 'A green leaf covered in white powdery mildew fungal coating on its upper surface',
+          caption: 'Powdery mildew is one of the few fungal diseases that doesn\'t need free water to germinate — dry, warm days with cool nights are enough.',
+        },
       ],
     },
 
@@ -174,6 +180,12 @@ export const commonGardenDiseasesContent = {
           type: 'p',
           text: 'Cultural practices: 3-year crop rotation (Alternaria survives in soil debris for 1–2 years); avoid overhead irrigation; mulch heavily; maintain good plant nutrition (nitrogen-stressed plants are more susceptible). Resistant tomato varieties: \'Mountain Supreme,\' \'Defiant,\' \'Jasper\' cherry tomato.',
         },
+        {
+          type: 'image',
+          src: '/guides/common-diseases/early-blight-tomato-leaf.jpg',
+          alt: 'A tomato leaf with dark brown concentric ring target-spot lesions surrounded by yellow halos',
+          caption: 'The "target spot" concentric rings are what separate early blight from every other tomato leaf spot — Septoria and bacterial spot never show this pattern.',
+        },
 
         {
           type: 'h3',
@@ -219,6 +231,12 @@ export const commonGardenDiseasesContent = {
         {
           type: 'p',
           text: 'Treatment: Rusts cannot be cured but can be suppressed. Remove and dispose of infected plant material. Apply sulfur fungicide (the most effective organic treatment for most rusts); myclobutanil; tebuconazole; propiconazole; or trifloxystrobin. Apply preventively before infection or at very first sign of pustule formation — treatments are far more effective as preventives than as curative sprays. Remove and destroy fallen infected leaves, which can harbor spores.',
+        },
+        {
+          type: 'image',
+          src: '/guides/common-diseases/rust-pustules-leaf.jpg',
+          alt: 'A leaf covered in raised orange-red rust fungal pustules',
+          caption: 'Over 8,000 rust species exist, most highly host-specific — the pustule color alone (orange-red, yellow-orange, brown-black) can narrow down which one you\'re looking at.',
         },
 
         {
@@ -325,6 +343,12 @@ export const commonGardenDiseasesContent = {
           emoji: '⚠️',
           text: 'Standard fungicides labeled for powdery mildew and other true fungal diseases will NOT effectively control downy mildew or any other oomycete disease. Oomycetes lack the chitin cell walls that most fungicides target. Look specifically for mandipropamid (Revus), dimethomorph, phosphonate products (fosetyl-aluminum), or mefenoxam (Ridomil Gold) when treating oomycete diseases.',
         },
+        {
+          type: 'image',
+          src: '/guides/common-diseases/downy-mildew-underside.jpg',
+          alt: 'The underside of a leaf showing gray-purple fuzzy downy mildew sporulation between the veins with angular yellow spots',
+          caption: 'That fuzzy sporulation only ever shows up on the underside — check there first whenever the upper leaf surface looks angular and blotchy.',
+        },
 
         {
           type: 'h3',
@@ -386,6 +410,12 @@ export const commonGardenDiseasesContent = {
           type: 'tip',
           emoji: '🍎',
           text: "Resistant varieties are the most important long-term management tool for fire blight. Pear varieties 'Harrow Sweet,' 'Harrow Delight,' 'Seckel'; apple varieties 'Liberty,' 'Priscilla,' 'Enterprise,' and most disease-resistant rootstocks perform well in high-pressure regions. Avoid highly susceptible varieties ('Gala,' 'Fuji,' 'Bartlett' pear) where fire blight has a history.",
+        },
+        {
+          type: 'image',
+          src: '/guides/common-diseases/fire-blight-branch.jpg',
+          alt: 'A blackened wilted branch tip on a fruit tree curled into a shepherd\'s crook shape',
+          caption: 'The shepherd\'s crook is diagnostic for fire blight — no other common orchard disease bends a branch tip into this exact hook.',
         },
 
         {
