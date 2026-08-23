@@ -76,6 +76,12 @@ export const childrensGardenContent = {
             'Common mistake: Planting too close together. Children\'s gardens often try to fit in too many plants — a single well-grown cherry tomato plant in a 5-gallon container or a 2×2 ft raised bed space will outproduce three crowded plants every time.',
           ],
         },
+        {
+          type: 'image',
+          src: '/guides/childrens-garden/cherry-tomato-hands.jpg',
+          alt: 'A child\'s hands cupping a small pile of ripe red and orange cherry tomatoes just picked, a mason jar beside them',
+          caption: 'The harvest-jar challenge in action — the moment cherry tomatoes go from "plant" to "snack" is where most kids fall in love with gardening.',
+        },
         { type: 'h3', text: '🔴 Radishes — The Gateway Vegetable' },
         {
           type: 'p',
@@ -133,6 +139,12 @@ export const childrensGardenContent = {
           emoji: '🏡',
           text: "The Bean Teepee: Push 6–8 bamboo poles (6–8 feet long) into the ground in a circle 4–5 feet in diameter, tilting them inward and tying them at the top. Plant 3–4 Scarlet Runner beans or pole beans at the base of each pole. Within 8 weeks, the structure is covered in leaves and flowers with a shaded interior — a secret garden room. Leave one side open as a door. The teepee is one of the most magical structures a children's garden can offer: a living playhouse they grew themselves.",
         },
+        {
+          type: 'image',
+          src: '/guides/childrens-garden/bean-teepee.jpg',
+          alt: 'A tall garden bean teepee made of wooden poles tied at the top, covered in climbing green bean vines and small white flowers',
+          caption: 'By midsummer this becomes a shaded hideout with a door — plant the poles a few weeks before the birthday party and time it right.',
+        },
         { type: 'h3', text: '🥒 Cucumbers — The Munching Machine' },
         {
           type: 'p',
@@ -181,6 +193,12 @@ export const childrensGardenContent = {
             'Kid activity — seed roasting: When seed heads dry, let children rub out the seeds, rinse, toss with olive oil and salt, and roast at 300°F for 30–40 minutes. Seeds they grew and roasted themselves are a remarkable experience.',
             'Kid activity — bird feeder: Leave one dried seed head whole and hang it from a branch as a winter bird feeder. A connection between their summer garden and winter wildlife.',
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/childrens-garden/sunflower-tall.jpg',
+          alt: 'An extremely tall sunflower with a large yellow bloom towering above rows of vegetables in a sunny garden',
+          caption: 'The moment a sunflower surpasses a child\'s own height on the tracking chart is one of the most satisfying in the whole growing season.',
         },
         { type: 'h3', text: '🟢 Peas — The Garden Snack' },
         {
@@ -259,6 +277,12 @@ export const childrensGardenContent = {
             'Plan for the \'wow\' moment: Every children\'s garden should have at least one wow plant — something that grows to an astonishing height, produces an unexpected color, or reveals a surprise at harvest.',
             'Provide real tools scaled to the child\'s size — not toy tools. A child given a proper trowel that actually works will use it.',
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/childrens-garden/raised-bed-markers.jpg',
+          alt: 'A small wooden raised garden bed painted in bright cheerful colors with colorful plant marker stakes among young vegetable seedlings',
+          caption: 'A raised bed painted in colors the child chose does more for ownership than any lecture about responsibility ever could.',
         },
         { type: 'h3', text: 'The Personalization Principle' },
         {
@@ -457,6 +481,12 @@ export const childrensGardenContent = {
             'The harvest meal: Plan a simple meal built around whatever the garden produced.',
             'Preserving the excess: When production peaks, make simple preserves together: refrigerator pickles, pesto, tomato sauce.',
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/childrens-garden/harvest-basket.jpg',
+          alt: 'A wicker harvest basket overflowing with freshly picked cherry tomatoes, radishes, and green beans on a raised garden bed edge',
+          caption: 'A real basket — not a plastic bag — makes the harvest feel like the occasion it is.',
         },
         {
           type: 'tip',

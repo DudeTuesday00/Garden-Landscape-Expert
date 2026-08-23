@@ -64,6 +64,12 @@ export const butterflyGardenContent = {
           emoji: '🌿',
           text: 'Butterfly Diversity: The United States hosts 750+ butterfly species across every habitat from arctic tundra to tropical rainforest. Even a modest garden with host plants and pesticide-free management can support 15–25 species across a full season in most regions.',
         },
+        {
+          type: 'image',
+          src: '/guides/butterfly-garden/monarch-milkweed.jpg',
+          alt: 'A monarch butterfly with brilliant orange wings and black veins perched on orange butterfly weed milkweed flowers',
+          caption: 'Milkweed is the one plant a monarch garden cannot do without — every egg she lays depends on it.',
+        },
       ],
     },
     {
@@ -140,6 +146,12 @@ export const butterflyGardenContent = {
           type: 'tip',
           emoji: '🌿',
           text: 'Swallowtail gardening tip: Plant parsley, dill, and fennel together in a cluster to support Black Swallowtails — caterpillars will consume an entire plant, so having multiple in close proximity ensures enough foliage for a full brood. Spicebush is a superior native shrub for mid-Atlantic and southeastern gardens; it supports Spicebush Swallowtail exclusively, tolerates shade, has fragrant spring flowers, and produces bird-attracting red berries in fall.',
+        },
+        {
+          type: 'image',
+          src: '/guides/butterfly-garden/swallowtail-coneflower.jpg',
+          alt: 'A yellow and black eastern tiger swallowtail butterfly with wings spread feeding on a purple coneflower',
+          caption: 'Underside markings are often more diagnostic than the upperside — photograph both when you\'re trying to confirm a species.',
         },
         {
           type: 'h3',
@@ -579,6 +591,12 @@ export const butterflyGardenContent = {
           emoji: '⚠️',
           text: 'Never use systemic insecticides (neonicotinoids — imidacloprid, clothianidin, thiamethoxam, dinotefuran) on host plants or within 50 feet of them. Systemic insecticides are taken up by the plant\'s vascular system and expressed in all plant tissues, including the foliage that caterpillars eat. Plants labeled "protected" at the nursery have almost always been treated with neonicotinoids and should not be used as host plants. Grow your own host plants from seed or untreated transplants, or source from specialty native plant nurseries that confirm no systemic pesticide use.',
         },
+        {
+          type: 'image',
+          src: '/guides/butterfly-garden/monarch-chrysalis.jpg',
+          alt: 'A jade green monarch butterfly chrysalis with a ring of metallic gold dots, hanging from a thin stem',
+          caption: 'The pupa stage most gardeners never see — leave stems, fence posts, and undisturbed corners alone, since this is often where it happens.',
+        },
       ],
     },
     {
@@ -592,6 +610,12 @@ export const butterflyGardenContent = {
         {
           type: 'p',
           text: 'Butterfly nectar preferences favor flat or gently curved flower heads (composites, umbels, clusters) where multiple individual florets allow prolonged feeding without the butterfly having to reposition constantly. Deep tubular flowers preferred by hummingbirds are generally less useful for butterflies. Flower color preferences vary by species but red, orange, yellow, purple, and pink tones predominate — butterflies can also see ultraviolet nectar guides invisible to humans.',
+        },
+        {
+          type: 'image',
+          src: '/guides/butterfly-garden/puddling.jpg',
+          alt: 'A small cluster of butterflies gathered together puddling on wet sand at the edge of a garden path',
+          caption: 'Puddling isn\'t about nectar — it\'s minerals and moisture, and a shallow puddling area is one of the easiest habitat features to add.',
         },
         {
           type: 'h3',
@@ -644,6 +668,12 @@ export const butterflyGardenContent = {
               'One of the most valuable spring butterfly nectar trees in the East. Blooms in April before leaves emerge. Henry\'s Elfin butterfly is closely associated with redbud as both a nectar source and occasional partial host.',
             ],
           ],
+        },
+        {
+          type: 'image',
+          src: '/guides/butterfly-garden/redbud-bloom.jpg',
+          alt: 'A flowering eastern redbud tree covered in small pink-purple blossoms with a butterfly nectaring on the flowers',
+          caption: 'Redbud flowers open before the leaves do, making it one of the few reliable nectar sources for butterflies emerging in early spring.',
         },
         {
           type: 'h3',
