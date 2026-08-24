@@ -241,6 +241,7 @@ export const modernMinimalistGardenContent = {
           emoji: '🏗️',
           text: 'Spend proportionally more on hardscape materials than feels comfortable — in a minimalist garden, every surface is visible and scrutinized. A smaller area of excellent concrete or stone is always better than a larger area of mediocre material. Quality hardscape installed correctly lasts 30–50 years; poor hardscape looks poor from day one.',
         },
+        { type: 'image', src: '/guides/modern-minimalist-garden/large-format-concrete-pavers.jpg', alt: 'Large-format smooth concrete pavers forming a clean architectural garden path with minimal joints', caption: 'Large-format pavers reduce visual busyness by minimizing joint lines — precisely why they dominate contemporary garden hardscape.' },
       ],
     },
     {
@@ -341,6 +342,7 @@ export const modernMinimalistGardenContent = {
             ],
           ],
         },
+        { type: 'image', src: '/guides/modern-minimalist-garden/japanese-maple-focal-specimen.jpg', alt: 'A single sculptural Japanese maple tree standing as a focal specimen against a plain concrete wall', caption: 'A single, carefully chosen specimen against a plain wall does more design work than a dozen ordinary trees scattered through the space.' },
         {
           type: 'h3',
           text: 'Mass Planting Ground Layer',
@@ -400,6 +402,7 @@ export const modernMinimalistGardenContent = {
             ],
           ],
         },
+        { type: 'image', src: '/guides/modern-minimalist-garden/ornamental-grasses-mass-planting.jpg', alt: 'A mass planting of tall upright feather reed grass with feathery plumes in a contemporary garden bed', caption: 'Massed repetition — the same grass planted in drifts of 7, 11, or more — is what separates a minimalist ground layer from a scattered collection of specimens.' },
         {
           type: 'h3',
           text: 'Seasonal Accents: Bloom, Texture & Drama',
@@ -498,6 +501,7 @@ export const modernMinimalistGardenContent = {
             'Aquatic plants: In a minimalist reflecting pool, plant sparingly or not at all. One or three water lily pads (not in full bloom — just the pads) on an otherwise open water surface is the most a minimalist composition typically accommodates. Avoid aquatic plant collections in minimalist pools.',
           ],
         },
+        { type: 'image', src: '/guides/modern-minimalist-garden/geometric-reflecting-pool.jpg', alt: 'A shallow rectangular reflecting pool with a dark bottom mirroring the sky and a single tree above it', caption: 'A dark pool bottom is what produces this mirror-like reflection — a light-colored bottom would scatter light instead of doubling the view above.' },
         {
           type: 'h3',
           text: 'Rill and Channel Water Features',
@@ -588,6 +592,7 @@ export const modernMinimalistGardenContent = {
           emoji: '🌙',
           text: 'Design the lighting plan simultaneously with the garden plan — not as an afterthought after installation. Conduit and junction boxes buried after the hardscape is poured are expensive; buried during construction they cost almost nothing. Decide now where every fixture will be, run the conduit, and you can always install the fixtures later. Never retrofit lighting in a minimalist garden if it can be avoided.',
         },
+        { type: 'image', src: '/guides/modern-minimalist-garden/uplighted-tree-dusk.jpg', alt: 'A specimen tree uplighted from below against a dark minimalist garden at dusk, concrete wall in the background', caption: 'A single well-placed uplight on the garden\'s primary specimen does more than a dozen scattered fixtures — restraint applies after dark just as much as it does in daylight.' },
       ],
     },
     {

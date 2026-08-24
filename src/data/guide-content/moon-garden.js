@@ -57,6 +57,7 @@ export const moonGardenContent = {
         { type: 'p', text: 'If any plant deserves to be called the spirit animal of the moon garden, it is Ipomoea alba — the moonflower vine. Each evening as the light fades, the tightly furled buds unfurl in real time, often visibly spiraling open over just a few minutes. The blooms are pure white, silky, and enormous — often six inches across. Their fragrance is sweet and lemony, gentle rather than overwhelming.' },
         { type: 'p', text: 'Moonflower is a vigorous annual vine reaching 15–20 feet in a single season. It needs a sturdy trellis, fence, arbor, or pergola to climb. Plant seeds directly after last frost (or start indoors 4–6 weeks before) — nick the seeds with a knife or soak overnight to improve germination. Once established, moonflower blooms reliably from midsummer through the first frost.' },
         { type: 'tip', emoji: '✨', text: 'Glow Factor:  For the full moonflower experience, position a chair within a few feet of your moonflower trellis and sit there in the early evening during summer. Watch the buds begin to loosen around dusk, then spiral fully open over 5–15 minutes. The fragrance will build as more flowers open. This is one of the genuinely magical experiences available in any garden.' },
+        { type: 'image', src: '/guides/moon-garden/moonflower-vine-dusk.jpg', alt: 'Large white moonflower blooms unfurling on a climbing vine trellis at dusk', caption: 'Moonflowers spiral open over just a few minutes as dusk falls — watching the unfurling in real time is one of the genuine spectacles of the moon garden.' },
         { type: 'warning', emoji: '⚠️', text: 'Important:  Angel\'s Trumpets (Brugmansia) and Datura are among the most spectacular moon garden plants — and also among the most dangerous. Every part of both plants is toxic to humans and animals. They are not appropriate where children or pets have unsupervised access. Wash hands after handling.' },
         { type: 'tip', emoji: '✨', text: ' WHITE-FLOWERING PLANTS THAT GLOW AT NIGHT Daytime bloomers whose white flowers become luminous after dark — the backbone of the moon garden' },
         { type: 'p', text: 'The backbone of most moon gardens is not night-blooming exotics but reliable white-flowering perennials, annuals, and bulbs that bloom during the day and continue to glow luminously after dark. These workhorses provide the sustained white presence through the whole growing season.' },
@@ -83,6 +84,7 @@ export const moonGardenContent = {
             ['White Veronicastrum', 'Perennial', 'Tall white wand-like spires, architectural presence', '4–6 ft', 'Zones 3–8', 'Midsummer', 'Back border, prairie style'],
           ],
         },
+        { type: 'image', src: '/guides/moon-garden/white-garden-phlox-cluster.jpg', alt: 'Clusters of bright white phlox flowers blooming densely in a garden border at dusk', caption: 'Phlox \'David\' is fragrant, mildew-resistant, and reblooms if deadheaded — a workhorse that carries the moon garden\'s glow through midsummer.' },
         { type: 'tip', emoji: '🪙', text: ' SILVER & GRAY FOLIAGE PLANTS The unsung heroes — plants that glow all season and make every white flower shine even brighter' },
         { type: 'p', text: 'Silver and gray foliage plants are the most important supporting players in any moon garden. While white flowers provide the dramatic moments, silver foliage provides sustained luminosity — it glows on moonless nights, on overcast evenings, and during the day when white flowers aren\'t at their peak. It also serves as a visual bridge between different white flower tones.' },
         {
@@ -115,6 +117,7 @@ export const moonGardenContent = {
             'Many silver-leaved plants (artemisia, santolina, lamb\'s ear) need good drainage. Mediterranean in origin, they evolved in well-drained, lean soils. In soggy clay, they\'ll rot. Amend with grit or use raised beds.',
           ],
         },
+        { type: 'image', src: '/guides/moon-garden/artemisia-lambs-ear-silver-foliage.jpg', alt: 'Silvery-gray artemisia and velvety lamb\'s ear foliage growing together in a garden border', caption: 'Silver foliage like this glows on moonless nights and overcast evenings when white flowers alone would go dark — it does the work flowers can\'t.' },
         { type: 'tip', emoji: '🌳', text: ' WHITE-FLOWERING SHRUBS, TREES & VINES The structural backbone — plants that glow for weeks and anchor the design for years' },
         { type: 'p', text: 'White-flowering shrubs and small trees are the permanent structural elements of the moon garden — the bones around which annuals and perennials weave their seasonal color. Choose these first, because they establish the scale, architecture, and long-term character of the garden.' },
         {
@@ -146,6 +149,7 @@ export const moonGardenContent = {
             'Gardenia — if you\'re in zones 7–10, a gardenia near the evening seating area provides the most transcendent fragrance in gardening. Nothing else compares.',
           ],
         },
+        { type: 'image', src: '/guides/moon-garden/white-hydrangea-glowing-dusk.jpg', alt: 'Massive white hydrangea mophead blooms glowing in a garden as evening light fades', caption: 'Hydrangea \'Annabelle\' or \'Incrediball\' delivers sheer mass of moonlit white bloom from July through September — the shrub that anchors most moon gardens.' },
         { type: 'tip', emoji: '🧅', text: ' WHITE BULBS: SPRING THROUGH FALL MOON GLOW Plant once, enjoy for years — bulbs carry the white garden from February through October' },
         { type: 'p', text: 'White bulbs extend the moon garden\'s glow from the first snowdrops of late winter through dahlias and tuberose in the fall. Bulbs also provide some of the most intensely fragrant white flowers available. Plant a thoughtful collection of white bulbs and you\'ll have both glow and fragrance from March through October.' },
         {
@@ -233,6 +237,7 @@ export const moonGardenContent = {
             ['Outdoor mirrors', 'Strategically placed outdoor mirrors multiply garden depth and bounce light back into the planting. A metal-framed mirror on a dark fence creates depth illusion.'],
           ],
         },
+        { type: 'image', src: '/guides/moon-garden/seating-area-white-garden-twilight.jpg', alt: 'A comfortable garden bench surrounded by white flowers and silver foliage at twilight with soft lighting', caption: 'A moon garden needs somewhere to be in it, not just something to look at — seating at the prime glow-and-fragrance vantage point is what turns it into an experience.' },
       ],
     },
     {

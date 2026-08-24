@@ -184,6 +184,7 @@ export const medicinalGardenContent = {
             'Growing across US climates: All three species are prairie perennials hardy in Zones 3–9. E. purpurea tolerates more humidity and heavier soil — the better choice for the South and East. E. angustifolia prefers lean, well-drained soils of the Great Plains and West. Direct sow in fall for spring germination, or cold-stratify seeds 4–6 weeks before spring sowing. Harvest roots in fall of year 3+ for medicinal quality.',
           ],
         },
+        { type: 'image', src: '/guides/medicinal-garden/echinacea-purple-coneflowers.jpg', alt: 'Purple echinacea coneflowers with raised orange centers blooming in a medicinal herb bed', caption: 'Aerial parts harvested during peak bloom, like this, are what go into the most clinically studied echinacea preparations.' },
         { type: 'h3', text: '🫐 Elder (Sambucus nigra) — Elderberry & Elderflower' },
         {
           type: 'p',
@@ -262,6 +263,7 @@ export const medicinalGardenContent = {
             'Caution: Individuals with known ragweed or daisy-family (Asteraceae) allergies should introduce chamomile cautiously — oral allergy syndrome is possible.',
           ],
         },
+        { type: 'image', src: '/guides/medicinal-garden/chamomile-white-flowers.jpg', alt: 'Small white chamomile daisy flowers with yellow centers growing in a garden bed', caption: 'Harvest chamomile once the white petals fully reflex back from the yellow disk — picked too early, the flowers lose potency and flavor.' },
         { type: 'h3', text: '🍋 Lemon Balm (Melissa officinalis)' },
         {
           type: 'p',
@@ -356,6 +358,7 @@ export const medicinalGardenContent = {
             'Cautions: Pregnancy (contraindicated — uterine-stimulating). Thyroid conditions (withanolides stimulate thyroid function — monitor if on thyroid medication). Nightshade family sensitivity possible. Autoimmune conditions. Take with food to reduce GI upset.',
           ],
         },
+        { type: 'image', src: '/guides/medicinal-garden/ashwagandha-plant.jpg', alt: 'A bushy ashwagandha plant with small greenish flowers growing in a sunny garden bed', caption: 'Ashwagandha roots are harvested in fall as the plant begins to die back — this is what a mature, ready-to-harvest plant looks like.' },
         { type: 'h3', text: '🌱 Tulsi / Holy Basil (Ocimum tenuiflorum)' },
         {
           type: 'p',
@@ -429,6 +432,7 @@ export const medicinalGardenContent = {
             'Growing across US climates: Annual grown in all US climate zones. In Zones 3–7: direct sow outdoors in early spring — calendula tolerates light frost. It blooms spring through summer and again after fall temperatures drop. In Zones 8–10: sow in fall for winter-spring bloom; summer heat causes poor performance — grow as a cool-season crop. Deadhead regularly to extend bloom. Harvest flowers when fully open in the morning.',
           ],
         },
+        { type: 'image', src: '/guides/medicinal-garden/calendula-orange-flowers.jpg', alt: 'Bright orange and gold calendula daisy flowers blooming in a medicinal herb garden', caption: 'Harvest calendula flowers fully open in the morning — this is when their anti-inflammatory carotenoid content is at its peak.' },
         { type: 'h3', text: '🌿 Plantain (Plantago major / P. lanceolata)' },
         {
           type: 'p',
@@ -730,6 +734,7 @@ export const medicinalGardenContent = {
           emoji: '🫙',
           text: 'Label Everything: Every jar of tincture, infused oil, or dried herb needs a label with: plant name (common and Latin), plant part, harvest date, preparation date, alcohol percentage (for tinctures), and any other relevant notes. Memory is unreliable. A jar of unlabeled dried root from two years ago is worthless. A well-labeled jar is a precise record of your work.',
         },
+        { type: 'image', src: '/guides/medicinal-garden/amber-tincture-bottles.jpg', alt: 'Rows of amber glass dropper bottles and dried herb jars arranged on a wooden apothecary shelf', caption: 'An organized apothecary shelf like this only stays useful with consistent labeling — herb name, part, date, and alcohol percentage on every jar.' },
         { type: 'h3', text: 'Elderberry Syrup — The Gateway Preparation' },
         {
           type: 'p',

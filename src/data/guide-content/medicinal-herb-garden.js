@@ -128,6 +128,7 @@ export const medicinalHerbGardenContent = {
             'Universal principle: Excellent drainage is more important than fertility for most medicinal herbs; a raised bed prevents the waterlogging that kills more medicinal herbs than any other single cause',
           ],
         },
+        { type: 'image', src: '/guides/medicinal-herb-garden/mediterranean-medicinal-bed.jpg', alt: 'A raised garden bed of Mediterranean medicinal herbs including lavender, sage, and rosemary in lean gravelly soil', caption: 'Lean, sharply-draining soil like this produces more concentrated essential oils than rich garden soil — counterintuitive, but consistent across Mediterranean herbs.' },
       ],
     },
     {
@@ -187,6 +188,7 @@ export const medicinalHerbGardenContent = {
             'Testing potency: Crush a small amount between fingers — dried herbs should still release a clear aroma. If odorless and tasteless, the herb has lost potency and should be composted and replaced.',
           ],
         },
+        { type: 'image', src: '/guides/medicinal-herb-garden/hanging-herb-bundles-drying.jpg', alt: 'Bundles of lavender and herbs hanging upside down to air dry in a rustic room', caption: 'Hanging bunches works well for low-moisture herbs like lavender and rosemary — high humidity climates will need a dehydrator or screen rack instead.' },
       ],
     },
     {
@@ -255,6 +257,7 @@ export const medicinalHerbGardenContent = {
             'Making a salve: Use 1 oz beeswax per 8 oz infused oil for a medium-firm salve (less for softer balm); melt beeswax in a double boiler; add infused oil; test on a cold plate; add essential oils off heat (10–15 drops/oz); pour into tins immediately; cool undisturbed; shelf life 1–2 years',
           ],
         },
+        { type: 'image', src: '/guides/medicinal-herb-garden/herbal-salve-making.jpg', alt: 'Golden herbal salve being poured from a double boiler into small round tins', caption: 'The moment of pouring is time-sensitive — salve firms quickly as it cools, so tins need to be ready and waiting beforehand.' },
         {
           type: 'h3',
           text: 'Other Key Preparations',
@@ -295,6 +298,7 @@ export const medicinalHerbGardenContent = {
             ['Lemon Balm (Melissa officinalis)', 'Zones 4–9. One of the most shade-tolerant medicinal herbs. Consistent moisture; most soils. Can become weedy — grow in contained area.', 'Anxiety without sedation; cognitive support; digestive antispasmodic; antiviral (Herpes simplex topical cream); mild sleep support', 'Tea: 2–3 tsp fresh leaf or 1–2 tsp dried per cup, 5–10 min. Use fresh or recently dried for best effect. Tincture: 1:5 in 45% alcohol, 30–60 drops 2–3x daily.', 'Thyroid caution: documented thyroid-suppressing activity — avoid in hypothyroidism or with thyroid medications without monitoring. Additive sedation when combined with valerian.'],
           ],
         },
+        { type: 'image', src: '/guides/medicinal-herb-garden/lavender-field-closeup.jpg', alt: 'Close-up of dense purple lavender flower spikes growing in a garden row', caption: 'Lavender needs excellent drainage and lean soil above all else — overwatering and rich soil are the two most common reasons it fails.' },
         {
           type: 'h3',
           text: 'Immune & Anti-Infective Herbs',
@@ -447,6 +451,7 @@ export const medicinalHerbGardenContent = {
             'Skullcap (Zones 5–9): Native shade-tolerant nervine; excellent companion to woodland medicinals',
           ],
         },
+        { type: 'image', src: '/guides/medicinal-herb-garden/woodland-shade-medicinals.jpg', alt: 'Shade-loving woodland medicinal plants growing beneath deciduous trees in dappled light', caption: 'Dappled understory light and rich, moist, acidic soil are exactly what goldenseal, black cohosh, and Solomon\'s seal need to thrive.' },
         {
           type: 'h3',
           text: 'Design 3: The Balcony and Container Medicinal Garden',
