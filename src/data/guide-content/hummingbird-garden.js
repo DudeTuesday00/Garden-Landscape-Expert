@@ -57,6 +57,7 @@ export const hummingbirdGardenContent = {
           emoji: '📱',
           text: 'Download the free eBird app (Cornell Lab of Ornithology) to see exactly which hummingbird species have been reported in your county and when they typically arrive and depart. This data, collected by thousands of local birders, is far more precise than general range maps and helps you time feeder setup and early-blooming plant choices.',
         },
+        { type: 'image', src: '/guides/hummingbird-garden/hovering-hummingbird.jpg', alt: 'A hummingbird with an iridescent green back hovering beside a red tubular flower', caption: 'That blur of wings — 40 to 80 beats per second — is what lets a hummingbird hover precisely at a tubular flower\'s mouth.' },
       ],
     },
     {
@@ -124,6 +125,7 @@ export const hummingbirdGardenContent = {
             ['Weigela (red-flowering forms)', 'Shrub', 'Spring', '4–8', 'One of the best spring shrubs for early migrants; \'Wine and Roses\' and species forms most productive'],
           ],
         },
+        { type: 'image', src: '/guides/hummingbird-garden/honeysuckle-feeding.jpg', alt: 'A ruby-throated hummingbird with a red throat feeding from orange trumpet honeysuckle vine flowers on a trellis', caption: 'Trumpet honeysuckle is one of the most reliable native vines for greeting hummingbirds the moment they return in spring.' },
         {
           type: 'h3',
           text: 'Season-by-Season Bloom Calendar',
@@ -189,6 +191,7 @@ export const hummingbirdGardenContent = {
             'BPA-free, UV-stable plastic or glass are both acceptable materials; avoid cheap plastic that cracks or discolors quickly',
           ],
         },
+        { type: 'image', src: '/guides/hummingbird-garden/red-feeder.jpg', alt: 'A bright red saucer-style hummingbird feeder filled with clear nectar hanging in a garden', caption: 'A saucer-style feeder like this keeps nectar below the port level, which makes it both easier to keep clean and naturally more bee-resistant.' },
         {
           type: 'h3',
           text: 'Nectar Recipe',
@@ -280,6 +283,7 @@ export const hummingbirdGardenContent = {
             'Water — a misting device or a fountain with gentle moving water is far more effective than a birdbath; hummingbirds bathe by flying through fine mist or hovering under dripping water, not by standing in a pool',
           ],
         },
+        { type: 'image', src: '/guides/hummingbird-garden/layered-border.jpg', alt: 'A layered hummingbird garden border with a tall flowering shrub, mid-height red tubular perennials, and low flowers at the front', caption: 'Tall, mid, and low layers in one border — this vertical structure is what lets hummingbirds feed, perch, and survey territory all in the same space.' },
         {
           type: 'h3',
           text: 'Plant Combination Designs',
@@ -476,6 +480,7 @@ export const hummingbirdGardenContent = {
             'Minimize disturbance near known nesting sites — females will abandon eggs if disturbed repeatedly during incubation; once you locate a nest, observe from a distance and avoid pruning or mowing in that immediate area until fledglings have left',
           ],
         },
+        { type: 'image', src: '/guides/hummingbird-garden/nest.jpg', alt: 'A tiny hummingbird nest made of plant fiber and camouflaged with lichen, resting on a thin tree branch', caption: 'A walnut-sized cup bound with spider silk and camouflaged with lichen — built entirely by the female, without any help from the male.' },
         {
           type: 'h3',
           text: 'Hummingbird Photography in the Garden',

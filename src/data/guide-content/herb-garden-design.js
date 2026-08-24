@@ -29,6 +29,7 @@ export const herbGardenDesignContent = {
           ],
         },
         { type: 'tip', emoji: '🌿', text: 'An herb garden used is more valuable than an herb garden merely admired. The herbs you reach for most often must be closest to the kitchen. Place the herbs you use daily — parsley, chives, thyme, basil — within 10–20 steps of the kitchen door, or better still in a container right by the back door. Herbs tucked away in a far corner of the garden get used far less, regardless of their beauty. Design for use, not just appearance.' },
+        { type: 'image', src: '/guides/herb-garden-design/lavender-rosemary-chives-bed.jpg', alt: 'A lush herb garden bed with silvery lavender, dark green rosemary, and purple-flowering chives', caption: 'Silver lavender against dark rosemary, lifted by chive blossoms — this contrast is the classic herb garden color combination.' },
       ],
     },
     {
@@ -62,6 +63,7 @@ export const herbGardenDesignContent = {
           ],
         },
         { type: 'warning', emoji: '⚠️', text: 'Mint is one of the most useful and most destructive herb garden plants. Its underground rhizomes spread aggressively, invading and overwhelming neighboring plants. Within two seasons, an uncontained mint plant can take over a 4x4-foot bed entirely. The solution: always grow mint in containers, or sink a buried container (a 5-gallon pot with the bottom cut out) into the ground to contain the roots. Multiple mint varieties can share one large sunken container.' },
+        { type: 'image', src: '/guides/herb-garden-design/sunken-mint-container.jpg', alt: 'A large terracotta container densely planted with different varieties of mint', caption: 'Containing mint this way — pot or sunken pot — is non-negotiable; the rhizomes will take over an open bed within two seasons.' },
         { type: 'h3', text: 'Flavor and Use Categories' },
         {
           type: 'table',
@@ -167,6 +169,7 @@ export const herbGardenDesignContent = {
             ['Color Palette', 'Silver-grey (lavender, santolina) with green (box, thyme) and purple accents', 'Restrict to 3 colors maximum; silver + green + one accent color', 'Silver: lavender, santolina, wormwood. Green: box, thyme. Purple: sage \'Purpurascens\', hyssop'],
           ],
         },
+        { type: 'image', src: '/guides/herb-garden-design/boxwood-knot-garden.jpg', alt: 'A formal clipped boxwood knot garden pattern with lavender growing within the geometric hedges', caption: 'A true knot garden — clipped boxwood forming the pattern, lavender filling the interior. Even a simplified quartered version borrows this same discipline.' },
       ],
     },
     {
@@ -187,6 +190,7 @@ export const herbGardenDesignContent = {
             'Include a seat or a bench within or adjacent to the herb garden — the sensory pleasures of the cottage herb garden (fragrance, bees, the visual richness) are best enjoyed from a resting position',
           ],
         },
+        { type: 'image', src: '/guides/herb-garden-design/cottage-herb-path.jpg', alt: 'A cottage-style herb garden path with self-seeded blue borage, orange calendula, and feathery fennel spilling over stone edges', caption: 'Self-seeded borage and calendula spilling over a path edge — exactly the "productive disorder" that defines the cottage herb garden style.' },
         { type: 'h3', text: 'The Kitchen Herb Garden' },
         { type: 'p', text: 'The kitchen herb garden is designed entirely around function — growing the herbs most used in cooking in the most accessible, most productive configuration possible. Beauty is a bonus rather than the primary objective, and design choices are driven by harvest frequency, succession planting, and proximity to the kitchen.' },
         {
@@ -282,6 +286,7 @@ export const herbGardenDesignContent = {
             ['Container Collection for a Patio', '6 large pots + window box', 'Pot 1: rosemary + thyme + sage (Mediterranean mix). Pot 2: basil (3 varieties). Pot 3: mint (dedicated, large). Pot 4: lemon verbena (in season). Pot 5: chives + flat-leaf parsley. Pot 6: bay standard. Window box: cilantro + dill \'Fernleaf\' + chervil', 'A complete kitchen herb collection in containers. All herbs accessible on the patio. Move containers for seasonal optimization — Mediterranean herbs to the hottest spot; mint to a cooler, shadier position. Take lemon verbena and bay indoors for winter.'],
           ],
         },
+        { type: 'image', src: '/guides/herb-garden-design/mediterranean-raised-bed.jpg', alt: 'A raised garden bed with silver-green rosemary, purple sage, and low mounds of thyme growing together', caption: 'A Mediterranean gravel or raised bed like this succeeds because every plant shares the same needs — full sun, lean soil, sharp drainage.' },
       ],
     },
     {

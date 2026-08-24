@@ -66,6 +66,7 @@ export const fruitTreeContent = {
         { type: 'h3', text: '4. Grafting — Why Fruit Trees Aren\'t Grown From Seed' },
         { type: 'p', text: 'Almost all fruit trees sold at nurseries are grafted: the root system of one tree (the rootstock) is joined to the fruiting top of another (the scion). This is done because fruit trees grown from seed don\'t reliably produce the same fruit as the parent — an apple seed from a Honeycrisp will almost certainly NOT grow a Honeycrisp tree. Look for the graft union — a slightly knobby spot on the lower trunk. This union should always be planted a few inches ABOVE ground level.' },
         { type: 'warning', emoji: '🚨', text: 'If the graft union is buried, the scion can root itself and you\'ll lose the dwarfing effect of the rootstock. If the rootstock sends up shoots (suckers) below the union, remove them immediately — they\'re a different variety entirely.' },
+        { type: 'image', src: '/guides/fruit-trees/graft-union.jpg', alt: 'Close-up of a young fruit tree trunk showing a knobby graft union above the soil line', caption: 'The graft union — visible as a slightly offset, knobby ring on the lower trunk — should sit a few inches above the soil after planting.' },
         { type: 'h3', text: '5. USDA Hardiness Zone — The Starting Line' },
         { type: 'p', text: 'Your USDA Hardiness Zone is just the starting line for fruit trees — chill hours, summer heat, humidity, and frost dates all matter equally. Zone 8 in humid South Carolina grows very different fruit trees than zone 8 in arid central California. Your local Cooperative Extension office is the single best resource for variety recommendations in your specific region.' },
       ],
@@ -87,6 +88,7 @@ export const fruitTreeContent = {
             'Top Varieties: Honeycrisp (zones 3–8, exceptional flavor), Enterprise (outstanding disease resistance), Fuji (low-chill 300–400 hours, zones 6–9), Liberty (excellent disease resistance, zones 4–7), Anna (low-chill 200–300 hours for warm climates).',
           ],
         },
+        { type: 'image', src: '/guides/fruit-trees/apple-branch.jpg', alt: 'A fruit tree branch heavy with clusters of ripe red apples', caption: 'A well-thinned branch like this — fruit spaced rather than crowded — is the payoff of spring thinning.' },
         { type: 'h3', text: '🍐 Pears (Pyrus communis and Pyrus pyrifolia)' },
         { type: 'p', text: 'Pears are often the "easiest" pome fruit — more tolerant of wet soils and clay than apples, and somewhat less plagued by pest pressure. European pears (soft, buttery) must be picked before full ripeness and ripened indoors. Asian pears (crisp, apple-like texture) ripen on the tree.' },
         {
@@ -112,6 +114,7 @@ export const fruitTreeContent = {
             'Top Varieties: Contender (very cold-hardy, zones 4–8), Reliance (extremely cold-hardy, zones 4–8), Redhaven (classic mid-season, zones 5–8), Elberta (legendary, zones 5–9, 800 chill hours), Flordaprince (150 chill hours, zones 7–9).',
           ],
         },
+        { type: 'image', src: '/guides/fruit-trees/peach-branch.jpg', alt: 'A ripe fuzzy peach still hanging on the branch in warm afternoon light', caption: 'That telltale fuzzy skin and orange-red blush are the visual cues to combine with a gentle squeeze test at harvest time.' },
         { type: 'h3', text: '🍒 Cherries (Prunus avium & Prunus cerasus)' },
         { type: 'p', text: 'There are two very different cherry worlds. Sweet cherries (fresh eating) are finicky about late frosts and need pollinators. Sour/tart cherries (for pies and jams) are dramatically easier — smaller trees, self-fertile, more disease resistant, and incredibly productive.' },
         {
@@ -200,6 +203,7 @@ export const fruitTreeContent = {
           ],
         },
         { type: 'tip', emoji: '✂️', text: 'First-Year Pruning at Planting: For an unbranched whip (young tree with no side branches), cut it back to 30–36 inches above the ground at planting time. This triggers branching that will form your scaffold structure. It feels brutal but is essential for developing a strong, productive tree form.' },
+        { type: 'image', src: '/guides/fruit-trees/young-tree-whip.jpg', alt: 'A young newly planted fruit tree whip staked upright in an orchard row', caption: 'Freshly planted whips staked in rows — this is what year one of a home orchard actually looks like, long before the first harvest.' },
       ],
     },
     {
@@ -335,6 +339,7 @@ export const fruitTreeContent = {
           ],
         },
         { type: 'tip', emoji: '🧊', text: 'Freezing is the easiest way to preserve surplus fruit. Most fruit freezes beautifully: slice or halve, freeze on a single layer on a baking sheet, then transfer to bags. Stone fruits (peaches, plums, cherries) are outstanding frozen for smoothies, pies, and cobblers all winter long.' },
+        { type: 'image', src: '/guides/fruit-trees/harvest-basket.jpg', alt: 'A wicker basket overflowing with freshly picked apples, pears, and peaches', caption: 'A mixed harvest basket like this is the reward for a season of pruning, thinning, and watching the weather.' },
       ],
     },
     {

@@ -279,6 +279,7 @@ export const gardenPestsContent = {
             'Cultural controls: Avoid excessive nitrogen fertilization (promotes the succulent new growth aphids prefer). Plant pest-repelling companions: nasturtium (aphid trap plant), garlic, chives, catnip near susceptible plants. Reflective mulch disorients aphids flying in from adjacent areas.',
           ],
         },
+        { type: 'image', src: '/guides/garden-pests/aphid-cluster.jpg', alt: 'Extreme macro of a cluster of green aphids on a plant stem with an ant walking among them', caption: 'An ant tending an aphid colony like this is a reliable early-warning sign — ants farm and protect aphids from predators.' },
         {
           type: 'h3',
           text: 'Spider Mites (Tetranychus urticae and related species)',
@@ -302,6 +303,7 @@ export const gardenPestsContent = {
             'Cultural controls: Avoid dusty conditions (dust suppresses natural predators). Do not overfertilize with nitrogen. Maintain adequate irrigation — water-stressed plants are more susceptible. Avoid broad-spectrum insecticides that kill predatory mites.',
           ],
         },
+        { type: 'image', src: '/guides/garden-pests/spider-mite-damage.jpg', alt: 'Close-up of a leaf with silvery stippled bronze discoloration and fine spider mite webbing', caption: 'Stippled, bronzed leaf tissue plus fine silk webbing is the combination that distinguishes spider mites from every other sucking pest.' },
         {
           type: 'h3',
           text: 'Whitefly (Bemisia tabaci, Trialeurodes vaporariorum, and others)',
@@ -324,6 +326,7 @@ export const gardenPestsContent = {
             'Cultural controls: Remove and dispose of heavily infested leaves (do not compost). Avoid overfertilizing. Inspect and quarantine new transplants before placing near existing plants.',
           ],
         },
+        { type: 'image', src: '/guides/garden-pests/whitefly.jpg', alt: 'Tiny white whitefly insects flying up from the underside of a disturbed green leaf', caption: 'That characteristic cloud of tiny white insects rising when you brush a leaf is the fastest field confirmation for whitefly.' },
         {
           type: 'h3',
           text: 'Mealybugs (Pseudococcus spp., Planococcus citri, and others)',
@@ -427,6 +430,7 @@ export const gardenPestsContent = {
             'Cultural controls: Cultivate soil 2–3 weeks before transplanting to expose larvae to birds and weather. Remove plant debris (cutworms hide under it during the day). Check planting areas at dusk with a flashlight for active larvae.',
           ],
         },
+        { type: 'image', src: '/guides/garden-pests/cutworm.jpg', alt: 'A gray-brown C-shaped cutworm caterpillar curled in dark soil next to a seedling', caption: 'That tight C-shaped curl is diagnostic — a physical collar barrier at transplanting prevents this damage far more reliably than any spray.' },
         {
           type: 'h3',
           text: 'White Grubs (Japanese Beetle, June Bug, May Beetle larvae — Popillia japonica and related scarab species)',
@@ -529,6 +533,7 @@ export const gardenPestsContent = {
             'Cultural controls: Till soil in fall to expose pupae to birds and cold. Plant dill, basil, and marigold to attract beneficial wasps. Row cover over young transplants before egg-laying period.',
           ],
         },
+        { type: 'image', src: '/guides/garden-pests/tomato-hornworm.jpg', alt: 'A large green tomato hornworm with white diagonal stripes camouflaged on a tomato plant stem', caption: 'Hornworms are surprisingly well camouflaged despite their size — frass on the leaves below is often the first clue one is present.' },
         {
           type: 'h3',
           text: 'Imported Cabbageworm (Pieris rapae)',
