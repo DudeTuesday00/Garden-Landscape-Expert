@@ -309,6 +309,7 @@ export const indoorHerbGardenContent = {
           emoji: '🌱',
           text: 'The grow light herb shelf is the single upgrade that transforms indoor herb growing from an occasional success to a reliable, year-round production system. Once set up, it requires minimal daily attention — just water, harvest, and enjoy fresh herbs every month of the year.',
         },
+        { type: 'image', src: '/guides/indoor-herb-garden/grow-light-shelf.jpg', alt: 'A tiered wire shelving unit with LED grow lights mounted above rows of potted herbs', caption: 'A dedicated grow light shelf like this is what turns indoor herb growing from a windowsill gamble into a reliable, year-round system.' },
       ],
     },
     {
@@ -413,6 +414,7 @@ export const indoorHerbGardenContent = {
             ['Starting', 'Seed to harvest in 6–8 weeks; avoid grocery store plants (usually multiple seedlings crowded into a tiny pot) — separate and repot immediately or they will fail within weeks'],
           ],
         },
+        { type: 'image', src: '/guides/indoor-herb-garden/basil-windowsill.jpg', alt: 'A lush basil plant growing in a pot on a sunny kitchen windowsill', caption: 'Basil positioned right at the glass — light drops off fast with distance from the window, so this placement matters as much as the light hours themselves.' },
         {
           type: 'h3',
           text: 'Parsley (Petroselinum crispum)',
@@ -489,6 +491,7 @@ export const indoorHerbGardenContent = {
             ['Varieties', '\'Tuscan Blue\': Upright; excellent flavor; classic kitchen rosemary. \'Prostratus\': Trailing; excellent for hanging shelves. \'Arp\': More cold-tolerant; good for northern kitchens. \'Gorizia\': Large leaves; robust flavor.'],
           ],
         },
+        { type: 'image', src: '/guides/indoor-herb-garden/rosemary-terracotta-pot.jpg', alt: 'A woody rosemary plant growing in a terra cotta pot on a bright windowsill', caption: 'Terra cotta\'s porous walls wick moisture away from the roots — exactly what drought-adapted Mediterranean herbs like rosemary need indoors.' },
         {
           type: 'h3',
           text: 'Thyme (Thymus vulgaris and others)',
@@ -616,6 +619,7 @@ export const indoorHerbGardenContent = {
             ['Window boxes', 'Moderate to slow depending on length', 'Mixed herb displays on windowsills; parsley, chives, and basil together', 'Mediterranean herbs mixed with moisture-lovers — they have conflicting water needs'],
           ],
         },
+        { type: 'image', src: '/guides/indoor-herb-garden/mixed-window-box.jpg', alt: 'A wooden window box planted with parsley, chives, and basil on a sunny sill', caption: 'A mixed window box works only when every herb in it shares similar water needs — this parsley/chives/basil trio is a compatible combination.' },
         {
           type: 'h3',
           text: 'The Right Potting Mix for Indoor Herbs',
@@ -708,6 +712,7 @@ export const indoorHerbGardenContent = {
           type: 'p',
           text: 'The most counterintuitive truth in indoor herb growing is that harvesting — aggressive, regular harvesting — is the action that keeps herbs alive and productive. For herbs, which evolved to be grazed by animals and insects in the wild, being cut stimulates new vegetative growth, delays flowering, and extends the productive life of the plant.',
         },
+        { type: 'image', src: '/guides/indoor-herb-garden/harvesting-scissors.jpg', alt: 'A hand snipping fresh basil stems with small scissors above a kitchen counter', caption: 'Snipping just above a leaf node — never from the middle of a stem — is the harvesting technique that keeps an herb plant productive instead of leggy.' },
         {
           type: 'list',
           items: [

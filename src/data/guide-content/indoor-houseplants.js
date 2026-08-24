@@ -63,6 +63,7 @@ export const indoorHouseplantsContent = {
             ['Beaucarnea recurvata', 'Ponytail Palm', 'Bright indirect to full sun', 'Every 3–4 wks (stores water in base)', 'Low', '★ Very Easy'],
           ],
         },
+        { type: 'image', src: '/guides/indoor-houseplants/plant-collection-shelf.jpg', alt: 'A shelf filled with a curated collection of healthy houseplants in varying pot sizes near a bright window', caption: 'A well-chosen starter collection mixes difficulty levels — a few forgiving plants alongside one or two that will teach you to read a plant\'s signals.' },
       ],
     },
     {
@@ -336,6 +337,7 @@ export const indoorHouseplantsContent = {
             'Propagation: Stem cuttings with a node and at least one aerial root root readily in water or moist potting mix.',
           ],
         },
+        { type: 'image', src: '/guides/indoor-houseplants/monstera-leaves.jpg', alt: 'Large fenestrated Monstera deliciosa leaves climbing a moss pole indoors', caption: 'Those signature holes only develop with enough bright indirect light — in low light, monstera leaves stay small and undivided.' },
         {
           type: 'h3',
           text: '🌿 Peace Lily (Spathiphyllum spp.)',
@@ -391,6 +393,7 @@ export const indoorHouseplantsContent = {
             'Movement: Calatheas and marantas fold their leaves upward at night and open them in the morning — the "prayer plant" motion. This is normal and healthy behavior.',
           ],
         },
+        { type: 'image', src: '/guides/indoor-houseplants/calathea-patterned-leaves.jpg', alt: 'A calathea plant with dramatically patterned green, white, and purple leaves', caption: 'Calathea foliage patterning like this is the reward for meeting its one demanding requirement — consistently high humidity.' },
         {
           type: 'h3',
           text: 'Quick Reference: Eight More Essential Plants',
@@ -530,6 +533,7 @@ export const indoorHouseplantsContent = {
             ],
           ],
         },
+        { type: 'image', src: '/guides/indoor-houseplants/bathroom-ferns.jpg', alt: 'Lush ferns and a peace lily thriving on a shelf in a bright, humid bathroom', caption: 'Bathroom humidity from daily showers is exactly what ferns and peace lilies struggle to get anywhere else in the house.' },
         {
           type: 'h3',
           text: 'Plants for Specific Challenges',
@@ -995,6 +999,7 @@ export const indoorHouseplantsContent = {
             'Patience: Rooting timelines vary considerably by species, season, and conditions. Water cuttings of pothos may root in 1–2 weeks in summer warmth; a rubber plant cutting may take 6–8 weeks in soil even under ideal conditions. The signal that roots have formed in soil is new leaf growth — a cutting cannot produce new leaves without functioning roots.',
           ],
         },
+        { type: 'image', src: '/guides/indoor-houseplants/propagation-cuttings-water.jpg', alt: 'Pothos stem cuttings with visible white roots growing in glass jars of water on a windowsill', caption: 'Water propagation is the most beginner-friendly method precisely because you can watch the roots develop through the glass.' },
         {
           type: 'tip',
           emoji: '🌿',

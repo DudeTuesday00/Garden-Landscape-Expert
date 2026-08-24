@@ -154,6 +154,7 @@ export const japaneseGardenContent = {
           emoji: '🪨',
           text: 'A lantern that looks new and too prominent needs two things: time and partial concealment. Allow moss to develop on it by painting with diluted buttermilk in a shaded, moist location. Plant a low shrub or fern partially in front of it. Relocate it from the center of the composition to an edge or path intersection. The goal is a lantern that looks as if it has always been there.',
         },
+        { type: 'image', src: '/guides/japanese-garden/stone-lantern-moss.jpg', alt: 'A weathered stone lantern with moss growing on its surface beside a garden path', caption: 'A moss-covered stone lantern like this shows what patience produces — new lanterns need years of shade and moisture to acquire this character.' },
       ],
     },
     // ─── SECTION 4: WATER ─────────────────────────────────────────────────────
@@ -183,6 +184,7 @@ export const japaneseGardenContent = {
             'Koi: Koi are optional but traditional in many Japanese garden styles. They add movement and color — the flash of orange and white beneath the water surface is part of the designed experience. Koi require filtration, minimum pond depth, and feeding. Native goldfish are a lower-maintenance alternative.',
           ],
         },
+        { type: 'image', src: '/guides/japanese-garden/koi-pond-edge.jpg', alt: 'Koi swimming near a garden pond edge where flat stones meet the water and iris grows at the waterline', caption: 'Flat stones set right at the waterline, softened by iris planting — exactly how a Japanese garden pond edge should meet the land.' },
         {
           type: 'h3',
           text: 'Streams and Moving Water',
@@ -268,6 +270,7 @@ export const japaneseGardenContent = {
             ['Ginkgo (Ginkgo biloba)', '3–9', 'Ancient, deeply symbolic tree. Dramatic fan-shaped leaves. Extraordinary yellow fall color.', 'Fan-shaped leaves unique in the plant world; brilliant yellow fall color; pest and disease-free; extremely long-lived', 'Plant male trees only (females produce malodorous fruit). \'Autumn Gold\' and \'Princeton Sentry\' (narrow upright) are reliable male selections. Grows slowly; a patient investment.'],
           ],
         },
+        { type: 'image', src: '/guides/japanese-garden/japanese-maple-red-leaves.jpg', alt: 'A Japanese maple tree with brilliant red lace-like foliage arching over a garden path', caption: 'The Japanese maple\'s sculptural branch structure and refined leaf shape are as valuable in bare winter silhouette as they are for fall color.' },
         {
           type: 'h3',
           text: 'Shrubs: The Middle Layer',
@@ -395,6 +398,7 @@ export const japaneseGardenContent = {
             ['Whirlpool / spiral', 'Uzu (whirlpool)', 'Water turning around an obstacle; energy concentrated', 'Very sparingly; at a single stone of great presence; can overwhelm if used too broadly'],
           ],
         },
+        { type: 'image', src: '/guides/japanese-garden/raked-gravel-karesansui.jpg', alt: 'A dry Japanese rock garden with white gravel raked into concentric rippled patterns around dark stones', caption: 'Concentric ripple raking around each stone group is what makes stones read as islands rising from water that isn\'t actually there.' },
         {
           type: 'tip',
           emoji: '🌿',
@@ -566,6 +570,7 @@ export const japaneseGardenContent = {
           emoji: '🌿',
           text: 'Karikomi — the massed clipped mound planting seen in many Japanese gardens — is a related but distinct technique from cloud pruning. Multiple shrubs (most often azaleas, but also box, holly, and pittosporum) are clipped into smooth, rounded boulder-like forms and arranged in groups to suggest mountains or hills. Karikomi is simpler to achieve than cloud pruning — any shrub tolerant of shearing is a candidate — and is highly effective as a ground-level compositional element, particularly around stone features and water edges.',
         },
+        { type: 'image', src: '/guides/japanese-garden/cloud-pruned-pine.jpg', alt: 'A Japanese black pine trained into distinct cloud-shaped pads of foliage with visible empty space between them', caption: 'The clear space between each pad is as deliberate as the pads themselves — beginners most often err by not removing enough interior growth.' },
       ],
     },
 

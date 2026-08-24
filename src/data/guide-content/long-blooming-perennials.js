@@ -28,6 +28,7 @@ export const longBloomingPerennialsContent = {
           ],
         },
         { type: 'tip', emoji: '🌿', text: 'A single long-blooming perennial like Coreopsis or Echinacea can provide more total color-days per season than ten standard perennials combined. When you\'re planning borders, think in weeks of bloom, not just \'early,\' \'mid,\' and \'late\' season.' },
+        { type: 'image', src: '/guides/long-blooming-perennials/coreopsis-mass-planting.jpg', alt: 'A dense mass planting of golden-yellow coreopsis flowers covering the ground in a sunny garden bed', caption: 'Coreopsis earns its reputation as the champion long-bloomer — this kind of continuous coverage runs from early summer clear through to frost.' },
         { type: 'tip', emoji: '🔬', text: 'Understanding the biology behind extended flowering' },
         { type: 'p', text: 'Not all long bloomers achieve their endurance the same way. Understanding the mechanism helps you care for each plant correctly.' },
         { type: 'h3', text: 'Continuous Bud Production' },
@@ -69,6 +70,7 @@ export const longBloomingPerennialsContent = {
             ['Lobelia – Great Blue (Lobelia siphilitica)', '4–9', 'Jul–Sep', '10–12 weeks', '24–36 in', 'Part', 'Striking blue spikes in the rare blue-shade garden. Blooms prolifically from mid-summer through fall in consistently moist conditions. Hummingbird and bumblebee magnet. Self-seeds reliably in moist soils. One of very few long-blooming perennials that thrive in partial shade and consistently moist or wet conditions.'],
           ],
         },
+        { type: 'image', src: '/guides/long-blooming-perennials/echinacea-coneflowers.jpg', alt: 'Pink-purple echinacea coneflowers blooming in a sunny perennial border', caption: 'Modern echinacea hybrids extend the classic 12-16 week bloom window even further — deadhead the early flowers and leave the last flush of seed heads for goldfinches.' },
       ],
     },
     {
@@ -98,6 +100,7 @@ export const longBloomingPerennialsContent = {
           ],
         },
         { type: 'tip', emoji: '💡', text: 'In part shade, foliage becomes as important as flowers for season-long interest. Pair long-blooming perennials with exceptional foliage plants (Hosta, Heuchera, Pulmonaria) so that even between bloom cycles, the garden remains rich and layered.' },
+        { type: 'image', src: '/guides/long-blooming-perennials/astilbe-shade-garden.jpg', alt: 'Feathery pink and red astilbe plumes blooming in a shaded garden bed', caption: 'Astilbe\'s feathery plumes are one of the few reliable long bloomers for part shade — stagger varieties with different peak weeks for near-continuous color.' },
       ],
     },
     {
@@ -117,6 +120,7 @@ export const longBloomingPerennialsContent = {
             ['Division', 'All clump-forming perennials', 'Every 3–5 years, spring or fall', 'Dividing overcrowded clumps restores blooming vigor. A plant that was blooming for 16 weeks may drop to 8–10 weeks when the center dies out. Division renews the plant\'s energy, producing vigorous young divisions that bloom as prolifically as the original plant did in its prime. Divide in spring or fall; water divisions well for the first season.'],
           ],
         },
+        { type: 'image', src: '/guides/long-blooming-perennials/deadheading-shears.jpg', alt: 'A gardener\'s hand using small shears to snip a spent flower from a perennial plant', caption: 'A few minutes with shears each week is often the entire difference between an 8-week bloomer and a 16-week one.' },
       ],
     },
     {
@@ -179,6 +183,7 @@ export const longBloomingPerennialsContent = {
             ['The Prairie-Style Naturalistic', 'Rudbeckia + Agastache + Ratibida + Liatris + Coreopsis verticillata', 'Jun–Oct', 'All are prairie natives or prairie-adapted. Self-sufficient once established. Provides wildlife habitat, naturalistic aesthetics, and near-continuous bloom from early summer through frost.'],
           ],
         },
+        { type: 'image', src: '/guides/long-blooming-perennials/blue-gold-border.jpg', alt: 'A garden border combining purple catmint and salvia with golden rudbeckia and coreopsis', caption: 'The blue-and-gold border is a classic combination precisely because the plants hand off bloom duty to each other as the season progresses.' },
       ],
     },
     {
