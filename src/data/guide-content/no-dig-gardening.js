@@ -57,6 +57,7 @@ export const noDigGardeningContent = {
           emoji: '🌱',
           text: 'The Mycorrhizal Connection: Plants growing in undisturbed soil with intact mycorrhizal networks consistently outperform the same plants in tilled soil — not because of any nutrient addition, but because the fungal networks are simply more effective at gathering resources.',
         },
+        { type: 'image', src: '/guides/no-dig-gardening/earthworm-rich-soil-closeup.jpg', alt: 'Close-up of dark crumbly garden soil full of earthworms and organic matter', caption: 'This is what an undisturbed soil food web looks like — earthworm channels, dark crumbly structure, and no hardpan from tillage.' },
       ],
     },
     {
@@ -93,6 +94,7 @@ export const noDigGardeningContent = {
           emoji: '💡',
           text: 'Cardboard under 4-6 inches of compost typically breaks down within 3-6 months. By the second growing season, what was lawn has become fully integrated soil — with no digging required.',
         },
+        { type: 'image', src: '/guides/no-dig-gardening/cardboard-compost-sheet-mulch.jpg', alt: 'Overlapping sheets of cardboard being covered with a thick layer of dark compost to smother lawn grass', caption: 'This cardboard-and-compost sandwich is the entire technique — no tilling, no removing turf, just smothering and building on top.' },
         {
           type: 'h3',
           text: 'Method 2: The Lasagna Bed (Deep Nutrient-Building)',
@@ -135,6 +137,7 @@ export const noDigGardeningContent = {
           type: 'p',
           text: 'Design permanent beds 30-48 inches wide with permanent 12-18 inch paths. Never walk on beds.',
         },
+        { type: 'image', src: '/guides/no-dig-gardening/permanent-raised-bed-rows.jpg', alt: 'Permanent no-dig garden beds with narrow walking paths between them, vegetables growing in neat rows', caption: 'Fixed beds and permanent paths mean the growing soil is never compacted by foot traffic — the structural foundation the whole no-dig method depends on.' },
         {
           type: 'h3',
           text: 'Specific Crops in No-Dig',
@@ -149,6 +152,7 @@ export const noDigGardeningContent = {
             ['Garlic', 'Plant cloves 2-3 inches deep into compost in autumn', 'One of the best crops to follow summer vegetables'],
           ],
         },
+        { type: 'image', src: '/guides/no-dig-gardening/potato-straw-harvest.jpg', alt: 'Straw pulled back to reveal potatoes growing on top of a compost bed surface', caption: 'Growing potatoes on the surface under straw means harvest is just pulling back the mulch — no digging fork required.' },
         {
           type: 'h3',
           text: 'No-Dig for Ornamental Beds and Cut Flowers',
@@ -198,6 +202,7 @@ export const noDigGardeningContent = {
           emoji: '💡',
           text: 'The 1-2-3 Compost Rule: (1) A home composting system, (2) a bulk source for establishment, (3) steady input of green and brown materials.',
         },
+        { type: 'image', src: '/guides/no-dig-gardening/finished-dark-compost-pile.jpg', alt: 'A pile of dark, crumbly, finished compost with a garden fork resting in it', caption: 'Dark, crumbly, and earthy-smelling with no recognizable original materials — this is finished compost ready to top-dress a no-dig bed.' },
       ],
     },
     {

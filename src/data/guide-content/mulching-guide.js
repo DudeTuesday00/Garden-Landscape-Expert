@@ -88,6 +88,7 @@ export const mulchingGuideContent = {
             ['Regional notes', 'In humid climates (Southeast, Pacific NW), fresh chips break down faster — may need annual replenishment; in arid climates (Southwest, Mountain West) they persist longer'],
           ],
         },
+        { type: 'image', src: '/guides/mulching-guide/wood-chips-mulch-bed.jpg', alt: 'Coarse fresh wood chip mulch spread around the base of a young tree', caption: 'A mixed particle size like this — fine woody fines alongside larger chunks — is exactly what makes arborist chips outperform uniformly sized bagged mulch.' },
         {
           type: 'h3',
           text: 'Shredded Hardwood Bark and Bark Mulch',
@@ -188,6 +189,7 @@ export const mulchingGuideContent = {
             ['Regional availability', 'Extremely abundant and inexpensive in the Southeast; available in bags nationwide; free under any pine tree on your property'],
           ],
         },
+        { type: 'image', src: '/guides/mulching-guide/pine-straw-mulch.jpg', alt: 'A layer of reddish-brown pine needle mulch spread around azalea shrubs', caption: 'Pine straw interlocks as it settles, which is why it resists washing away on slopes better than almost any other organic mulch.' },
         {
           type: 'h3',
           text: 'Grass Clippings',
@@ -236,6 +238,7 @@ export const mulchingGuideContent = {
           emoji: '🌡️',
           text: 'Gravel and heat in hot climates: In warm climates (Zones 7–11), gravel and stone absorb heat during the day and release it at night — significantly raising temperatures around plant crowns and roots. This benefits heat-loving Mediterranean plants (lavender, rosemary, thyme) and desert-adapted succulents, but can stress moisture-loving plants and cool-season vegetables. In cold climates (Zones 3–6), this heat-retention effect is actually beneficial for root protection.',
         },
+        { type: 'image', src: '/guides/mulching-guide/decomposed-granite-xeric-bed.jpg', alt: 'Tan decomposed granite gravel mulch surrounding drought-tolerant plants in a xeric garden bed', caption: 'Decomposed granite drains so fast it never retains moisture — ideal for desert and Mediterranean plantings, a poor fit anywhere soil improvement is the goal.' },
         {
           type: 'h3',
           text: 'Rubber Mulch',
@@ -353,6 +356,7 @@ export const mulchingGuideContent = {
           type: 'p',
           text: 'Over-mulching is at least as common and as damaging as under-mulching. The problems caused by excessive mulch depth and mulch contact with plant stems are well-documented and affect millions of American landscapes every year.',
         },
+        { type: 'image', src: '/guides/mulching-guide/proper-mulch-ring-tree-base.jpg', alt: 'A tree base with a properly applied mulch ring showing a clear gap of bare soil between the mulch and the trunk', caption: 'Correct technique: mulch spread in a donut, not a volcano — note the visible bare-soil gap keeping moisture off the bark.' },
         {
           type: 'table',
           headers: ['Problem', 'Caused By', 'Affects', 'Signs', 'Solution'],
@@ -509,6 +513,7 @@ export const mulchingGuideContent = {
             ['Garlic and onions', 'Straw mulch', '4–6 inches over garlic after fall planting; remove in spring when shoots emerge; 2–3 inches around growing onions', 'Fall-planted garlic benefits enormously from deep straw mulch; do not mulch onion bulbing area in summer (needs heat and drying)'],
           ],
         },
+        { type: 'image', src: '/guides/mulching-guide/straw-mulch-vegetable-garden.jpg', alt: 'Golden straw mulch spread between rows of tomato plants in a vegetable garden', caption: 'Straw between rows like this manages summer moisture and cuts soil-splash disease pressure — the classic vegetable garden mulching setup.' },
         {
           type: 'h3',
           text: 'Fruit Trees and Berry Bushes',

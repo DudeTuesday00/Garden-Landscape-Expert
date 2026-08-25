@@ -30,6 +30,7 @@ export const pizzaGardenContent = {
           ],
         },
         { type: 'tip', emoji: '🍕', text: 'The minimum viable pizza garden needs just five crops: (1) Paste tomatoes for sauce; (2) Basil for fresh topping and pesto; (3) Oregano for sauce seasoning; (4) One sweet pepper and one hot pepper; (5) Garlic. These five crops fit in a 4x8-foot raised bed or six large containers and will supply a family\'s pizza nights from August through November, with preserved sauce carrying through winter.' },
+        { type: 'image', src: '/guides/pizza-garden/raised-bed-pizza-garden-overview.jpg', alt: 'A raised bed garden planted with tomatoes, basil, peppers, and oregano growing together', caption: 'A compact 4x8 bed like this — tomatoes, basil, peppers, and oregano growing side by side — is the minimum viable pizza garden.' },
       ],
     },
     {
@@ -105,6 +106,7 @@ export const pizzaGardenContent = {
             ['San Marzano DOP type', 'Authentic Neapolitan pizza sauce', 'Very dense; few seeds; sweet; low acid', 'The finest pizza sauce tomato in the world', '\'San Marzano\' (true type — grow from Italian seed if possible); \'San Marzano Lungo No. 2\'; \'Jersey Devil\' (similar character, more productive)'],
           ],
         },
+        { type: 'image', src: '/guides/pizza-garden/san-marzano-paste-tomatoes-vine.jpg', alt: 'Elongated red San Marzano paste tomatoes ripening on the vine', caption: 'Dense flesh, thin skin, and few seeds — the qualities that let a true paste tomato like this make sauce in 20 minutes instead of 2 hours.' },
         { type: 'h3', text: 'The All-Star Paste Tomato Varieties — Complete Guide' },
         {
           type: 'table',
@@ -192,6 +194,7 @@ export const pizzaGardenContent = {
             ['\'Purple Ruffles\' / \'Dark Opal\'', 'Medium; ruffled', 'Italian basil flavor with a slightly spiced edge', 'Visual accent on pizza; purple basil oil; pesto (grey-green color)', 'Stunning deep purple color. Excellent for basil-infused olive oil (it turns the oil a beautiful garnet color). The flavor is comparable to Genovese. Outstanding in a mixed basil planting for visual interest.'],
           ],
         },
+        { type: 'image', src: '/guides/pizza-garden/genovese-basil-plants.jpg', alt: 'A lush bushy Genovese basil plant with broad green leaves growing in a garden bed', caption: 'A bushy, multi-branched plant like this is the payoff of pinching the growing tip early — a single-stem basil plant never produces this much leaf.' },
         { type: 'h3', text: 'Growing the Best Basil' },
         {
           type: 'list',
@@ -243,6 +246,7 @@ export const pizzaGardenContent = {
             ['\'Lunchbox\' Mix', '62', 'Red, orange, yellow mix', '3 in; mini bell', 'Snack while making pizza; mini pizza topping; whole roasted', 'Compact plants; prolific mini sweet peppers in three colors. Beautiful on small individual pizzas whole or halved. Also the finest garden snacking pepper.'],
           ],
         },
+        { type: 'image', src: '/guides/pizza-garden/italian-frying-peppers-plant.jpg', alt: 'Long tapered red and green Italian frying peppers hanging from a pepper plant', caption: 'Thin-walled Italian frying peppers like these roast in about 10 minutes — the pepper Italian restaurants call peperoni arrostiti.' },
         { type: 'h3', text: 'Hot Peppers for Pizza — The Italian Tradition' },
         { type: 'p', text: 'Hot peppers are as fundamental to Southern Italian pizza culture as basil and tomato. The Calabrian chile — the peperoncino of Italy\'s toe — is the heat source behind Calabrian chile oil, \'nduja spreadable salami, and the spicy pizzas of Naples and Calabria. Growing your own hot peppers gives you access to a range of heat levels and flavors that grocery stores cannot provide, and allows you to make preserved chile products that rival anything you can buy.' },
         {
@@ -298,6 +302,7 @@ export const pizzaGardenContent = {
             ['Dried Greek Oregano (from the garden)', 'The highest possible — peak oils', 'Dry your own', 'Sauce (dried is often preferred); rubbing over pizza', 'Dried oregano actually has more concentrated flavor than fresh for sauce-making — the volatile oils concentrate during drying. Harvest entire stems when the plant begins to flower; dry in bundles; store in glass jars. One large plant produces enough oregano for a year of pizza-making.'],
           ],
         },
+        { type: 'image', src: '/guides/pizza-garden/greek-oregano-plant-closeup.jpg', alt: 'Close-up of small aromatic Greek oregano leaves growing in a garden bed', caption: 'Small leaves and an intensely pungent scent when rubbed — that\'s the test for true Greek oregano versus the flavorless common type most nurseries sell.' },
         { type: 'h3', text: 'All the Pizza Garden Herbs — Growing and Using' },
         {
           type: 'table',

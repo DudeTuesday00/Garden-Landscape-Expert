@@ -123,6 +123,7 @@ export const ornamentalTreeContent = {
             'Best Cultivars: \'Cherokee Princess\' (vigorous white bloomer), \'Cherokee Chief\' (deep pink), \'Appalachian Spring\' (white, very anthracnose-resistant).',
           ],
         },
+        { type: 'image', src: '/guides/ornamental-trees/flowering-dogwood-white-bracts.jpg', alt: 'A flowering dogwood tree covered in horizontal tiers of white bracts against bare branches', caption: 'Those horizontal tiers of white bracts against still-bare branches are what make flowering dogwood the tree most associated with Eastern American spring.' },
         { type: 'h3', text: 'Kousa Dogwood (Cornus kousa) — The Refined Alternative' },
         { type: 'p', text: 'The Asian counterpart to our native dogwood blooms 2–4 weeks later (avoiding late frosts), is significantly more resistant to dogwood anthracnose, and sports large, raspberry-like ornamental fruit in late summer. Its exfoliating gray-tan bark creates exceptional winter interest.' },
         {
@@ -196,6 +197,7 @@ export const ornamentalTreeContent = {
             'Best Cultivars by Size: Small (under 5 feet): \'Pocomoke\', \'Chickasaw\'; Medium (6–12 feet): \'Acoma\' (white, arching form), \'Hopi\' (pale pink, excellent mildew resistance); Large (15–25 feet): \'Natchez\' (the gold standard — white flowers, outstanding cinnamon-orange bark), \'Muskogee\' (lavender, very large).',
           ],
         },
+        { type: 'image', src: '/guides/ornamental-trees/crape-myrtle-summer-bloom.jpg', alt: 'A crape myrtle tree covered in crinkled pink flower panicles blooming in midsummer', caption: 'Crape myrtle is the rare tree that blooms heavily straight through July and August, when almost nothing else in the Southern landscape is flowering.' },
         { type: 'warning', emoji: '🚫', text: 'Never "top" a crape myrtle. This practice, known as "crape murder," destroys the tree\'s natural form, eliminates the beautiful exfoliating bark, weakens structure, and reduces blooming. The correct fix when a crape myrtle is too large for its space is to replace it with a smaller-maturing cultivar, not to mutilate what you have.' },
         { type: 'h3', text: 'Japanese Tree Lilac (Syringa reticulata) — The Forgotten Summer Bloomer' },
         { type: 'p', text: 'Most lilacs bloom in May and are finished before summer properly begins. The Japanese tree lilac blooms in late June and into July — filling a gap when almost nothing else is flowering. Massive panicles of creamy-white flowers with a honey-like fragrance cover the tree for 2–3 weeks. Zones 3–7 — excellent cold-climate ornamental.' },
@@ -227,6 +229,7 @@ export const ornamentalTreeContent = {
             'Best Cultivars: \'Bloodgood\' (upright to 15 feet, deep red-purple foliage, brilliant crimson fall color — the benchmark), \'Sango Kaku\' / Coral Bark (coral-red winter bark, yellow fall color), \'Crimson Queen\' (weeping lace-leaf, deep red all season), \'Waterfall\' (weeping lace-leaf, green, cascading — elegant).',
           ],
         },
+        { type: 'image', src: '/guides/ornamental-trees/japanese-maple-fall-color.jpg', alt: 'A Japanese maple tree with deep red-purple lace-leaf foliage in a garden setting', caption: 'The refined, sculptural branching visible here is why Japanese maple earns a spot in the landscape even in winter, long after the leaves are gone.' },
         { type: 'h3', text: 'Paperbark Maple (Acer griseum) — Winter\'s Greatest Treasure' },
         { type: 'p', text: 'Unlike most maples, which earn their keep in fall and then disappear into gray winter branches, the paperbark maple saves its finest trick for winter. The cinnamon-bronze bark peels away in thin papery curls, constantly revealing a fresh warm-toned layer beneath. In January sunlight, a mature paperbark maple glows like fire. It also delivers blue-green summer foliage and brilliant russet-red fall color. Slow-growing but worth every year of patience.' },
         {
@@ -304,6 +307,7 @@ export const ornamentalTreeContent = {
             'Most ornamental trees with a reasonable root ball do not need staking. If staking is necessary, remove stakes after ONE growing season maximum.',
           ],
         },
+        { type: 'image', src: '/guides/ornamental-trees/root-flare-visible-planting.jpg', alt: 'A newly planted ornamental tree with its root flare clearly visible above the soil line', caption: 'That visible widening at the base — the root flare — needs to sit at or slightly above the soil surface; burying it is the single most common cause of slow ornamental tree decline.' },
         { type: 'h3', text: 'Watering During Establishment' },
         {
           type: 'list',
@@ -414,6 +418,7 @@ export const ornamentalTreeContent = {
           type: 'p',
           text: 'A single weeping cherry is a nice accent. Three weeping cherries flanking a path or placed at three corners of a garden creates a unified, intentional composition. Two Japanese maples flanking an entryway create formal symmetry. A repeated dogwood threading through a planting bed creates a cohesive seasonal rhythm.',
         },
+        { type: 'image', src: '/guides/ornamental-trees/redbud-specimen-lawn.jpg', alt: 'A single flowering redbud tree in full magenta bloom standing alone as a specimen on a lawn', caption: 'A lawn backdrop like this is exactly what a specimen tree needs — open space and a simple green base to read against.' },
         { type: 'h3', text: 'Using Form and Shape' },
         {
           type: 'table',
