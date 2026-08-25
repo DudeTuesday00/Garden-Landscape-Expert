@@ -49,6 +49,7 @@ export const springBulbGardenContent = {
           ],
         },
         { type: 'warning', emoji: '⚠️', text: 'Tying, braiding, or binding daffodil and tulip leaves together makes them look tidier but dramatically reduces photosynthesis and next year\'s bloom. Plant low-growing perennials (catmint, hardy geraniums, hostas) that emerge and cover the dying foliage naturally — the aesthetically pleasing solution that also respects the bulb\'s biology.' },
+        { type: 'image', src: '/guides/spring-bulb-garden/tulips-daffodils-mixed-border.jpg', alt: 'A colorful mixed garden border of red and yellow tulips blooming alongside golden daffodils in early spring', caption: 'Three bulb genera, three months of overlapping color, one autumn planting session — this is what succession bloom looks like in practice.' },
       ],
     },
     {
@@ -79,6 +80,7 @@ export const springBulbGardenContent = {
             ['Species (Botanical)', 'Very early', '4–12 in', 'Small, naturalistic, very perennial', 'The most long-lived tulips. T. sylvestris, T. clusiana, T. tarda all naturalize and multiply for years. Best choice for meadow-style naturalistic planting. Irreplaceable for truly perennial tulip displays.'],
           ],
         },
+        { type: 'image', src: '/guides/spring-bulb-garden/purple-tulips-field.jpg', alt: 'A dense planting of purple tulips in full bloom in a garden bed', caption: 'Selecting varieties across the Early, Midseason, and Late divisions is what stretches a single tulip planting into 6-8 weeks of color instead of one.' },
       ],
     },
     {
@@ -130,6 +132,7 @@ export const springBulbGardenContent = {
             ['Div. 13 — Species & Wild Forms', 'As found in the wild; diverse, often miniature', 'Very early–very late', 'Irreplaceable for naturalizing. N. bulbocodium (hoop-petticoat — tiny, flared), N. cyclamineus (swept-back petals), N. triandrus (nodding). True species multiply freely and require minimal care. Best for meadow and woodland naturalization.'],
           ],
         },
+        { type: 'image', src: '/guides/spring-bulb-garden/golden-daffodils-naturalized-lawn.jpg', alt: 'Golden yellow daffodils naturalized in drifts across a green lawn', caption: 'Completely deer-proof and rodent-proof, daffodils reward almost no intervention with decades of multiplying color.' },
       ],
     },
     {
@@ -180,6 +183,7 @@ export const springBulbGardenContent = {
             ['Nectaroscordum siculum (Sicilian Honey Garlic)', 'May–Jun', '36–48 in', '3–4 in cluster', 'Cream, pink, green nodding', 'Technically in the Allium family. Drooping, bell-shaped flowers in a complex cream-pink-green-maroon. Opens wide in sun, closes at night. Naturalizes freely in well-drained soil. Extremely elegant and sophisticated. Easy to grow.'],
           ],
         },
+        { type: 'image', src: '/guides/spring-bulb-garden/purple-allium-globes-garden.jpg', alt: 'Large purple allium flower globes on tall stems in a garden border', caption: 'Blooming after most tulips and daffodils have faded, alliums extend spring color well into June — and deer and rodents leave them completely alone.' },
       ],
     },
     {
@@ -375,6 +379,7 @@ export const springBulbGardenContent = {
           ],
         },
         { type: 'tip', emoji: '💡', text: 'Top performers in containers: \'Tete-a-Tete\' daffodil (the best container daffodil — compact, multi-headed, very floriferous); \'Angelique\' double tulip (stunning, wind-resistant, long-lasting); \'Double Early\' tulips (compact, weather-resistant); species tulips; Muscari \'Blue Magic\' (grape hyacinth — perfect filler). Avoid very tall, large-flowered tulips in exposed container positions — they blow over in spring winds.' },
+        { type: 'image', src: '/guides/spring-bulb-garden/spring-bulbs-container-pot.jpg', alt: 'A large terracotta container planted with colorful tulips and daffodils on a patio', caption: 'The multi-layer container method packs 3-4 times more bulbs into a single pot than standard planting, for 8-10 weeks of bloom.' },
       ],
     },
     {

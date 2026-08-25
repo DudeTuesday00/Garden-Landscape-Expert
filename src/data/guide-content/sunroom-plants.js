@@ -123,6 +123,7 @@ export const sunroomPlantsContent = {
           emoji: '💡',
           text: 'Seasonal light drop in northern climates: in northern states (Zones 3–6), winter light levels in a sunroom can drop to 30–40% of summer levels — even in a south-facing room. Plants that thrive from April through October may show significant stress from November through February. Have a plan: supplemental grow lights, moving plants to better positions, or choosing plants that tolerate seasonal dormancy.',
         },
+        { type: 'image', src: '/guides/sunroom-plants/bright-sunroom-tropical-plants.jpg', alt: 'A bright glass sunroom filled with lush tropical plants and large windows', caption: 'A sunroom offers more light than any interior room and more protection than any outdoor garden — a genuinely unique growing environment once you understand its actual conditions.' },
       ],
     },
     {
@@ -182,6 +183,7 @@ export const sunroomPlantsContent = {
             ],
           ],
         },
+        { type: 'image', src: '/guides/sunroom-plants/bird-of-paradise-sunroom-window.jpg', alt: 'A bird of paradise plant with large paddle shaped leaves growing near a bright sunroom window', caption: 'These statement makers need bright direct light and warm temperatures — south and west-facing sunrooms are their natural home.' },
         {
           type: 'h3',
           text: 'Category 2: The Lush Foliage Plants — Tropical Drama from Leaves',
@@ -415,6 +417,7 @@ export const sunroomPlantsContent = {
           emoji: '🔍',
           text: 'The new plant quarantine rule: every new plant introduced to your sunroom should spend 2–4 weeks in isolation — physically separated from your existing collection — before being integrated. Inspect it thoroughly under bright light and a magnifying glass for eggs, insects, and web material. This single habit prevents the vast majority of pest infestations. A beautiful ficus from the nursery can carry scale that will spread to every plant in your sunroom within months if introduced without quarantine.',
         },
+        { type: 'image', src: '/guides/sunroom-plants/watering-potted-tropical-plant.jpg', alt: 'Watering a potted tropical plant with a small watering can in a sunlit sunroom', caption: 'Sunroom plants typically need watering 30-60% more often than the same plants in an interior room — the finger test beats any fixed schedule.' },
       ],
     },
     {
@@ -509,6 +512,7 @@ export const sunroomPlantsContent = {
             'Plant traffic patterns: leave pathways of at least 24–30 inches between plant groupings for comfortable passage and ease of care; dense plantings that can\'t be reached become neglected plantings',
           ],
         },
+        { type: 'image', src: '/guides/sunroom-plants/layered-plant-display-sunroom-shelves.jpg', alt: 'Tiered wooden shelves displaying orchids and bromeliads in a sunlit sunroom', caption: 'Layering at four distinct heights is what transforms a room with plants in it into a space that feels like a garden you inhabit.' },
       ],
     },
     {
@@ -601,6 +605,7 @@ export const sunroomPlantsContent = {
           emoji: '❄️',
           text: 'Emergency cold protection: if an unexpected cold snap threatens to drop your sunroom below 40°F overnight — whether from a heating failure or a record cold event — group all plants together in the center of the room away from cold glass; drape with old bedsheets or horticultural frost cloth; place a space heater on the opposite side of the room; use bubble wrap temporarily against glass panels to add insulation. Most tropicals can survive a single night at 38–40°F if protected; repeated nights below 40°F cause permanent damage.',
         },
+        { type: 'image', src: '/guides/sunroom-plants/orchids-blooming-sunroom-corner.jpg', alt: 'Colorful blooming orchids arranged on a shelf in a bright sunroom corner', caption: 'Orchid growers can trigger bud set in fall by letting nighttime temperatures drop to 55-60°F for a few weeks — one of the few sunroom tricks worth planning around.' },
       ],
     },
     {

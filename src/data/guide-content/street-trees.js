@@ -15,6 +15,7 @@ export const streetTreeContent = {
         { type: 'p', text: 'That\'s the miracle and the art of urban tree planting. Done well, a street tree is one of the highest-ROI investments a city or homeowner can make. It cools sidewalks, cleans air, manages stormwater, calms traffic, boosts property values, and transforms a bleak concrete corridor into something genuinely livable. Done poorly — wrong tree, wrong spot, wrong soil — it\'s an expensive failure that dies in 7–10 years and leaves nothing but a stump and a pothole.' },
         { type: 'p', text: 'This guide will make sure you\'re in the first category. We\'ll dig into the brutal realities of urban tree stress, walk you through the best performers species by species, explain the game-changing soil technologies that help trees beat concrete, and give you a step-by-step planting process built specifically for tight city spaces.' },
         { type: 'tip', emoji: '🏙️', text: 'City Fact: Studies show the average street tree in a standard compacted tree pit lives only 7–10 years. With proper soil volume and species selection, that same tree can live 80+ years and deliver exponentially more value.' },
+        { type: 'image', src: '/guides/street-trees/mature-street-tree-sidewalk-canopy.jpg', alt: 'A mature street tree with a full green canopy shading a city sidewalk', caption: 'Done well, a street tree is one of the highest-ROI investments a city can make — this is what 80 years of the right species in the right spot looks like.' },
       ],
     },
     {
@@ -270,6 +271,7 @@ export const streetTreeContent = {
             ['American Elm (Ulmus americana) – DED-resistant cvs.', '60–80 ft', '2–9', 'Fast', 'Iconic vase shape restored in DED-resistant cultivars; pollution + compaction tolerant'],
           ],
         },
+        { type: 'image', src: '/guides/street-trees/honey-locust-tree-urban-sidewalk.jpg', alt: 'A tree with dappled light green feathery foliage growing in a sidewalk tree pit along a city street', caption: 'Ranked #1 for simultaneous tolerance of compaction, salt, drought, and pollution — this is the tree urban foresters reach for first.' },
       ],
     },
     {
@@ -341,6 +343,7 @@ export const streetTreeContent = {
             ['Open planting strip', 'Trees in unpaved soil strip (no structural system needed)', 'Residential streets with planting strips; lower density areas', 'Lowest ($)'],
           ],
         },
+        { type: 'image', src: '/guides/street-trees/young-tree-sidewalk-tree-pit.jpg', alt: 'A young tree planted in a square sidewalk tree pit surrounded by pavement on a city street', caption: 'A standard 4x4 tree pit holds 30-60 cubic feet of soil; a mature canopy tree needs 1,000+ — the gap is exactly what these soil technologies exist to close.' },
       ],
     },
     {
@@ -387,6 +390,7 @@ export const streetTreeContent = {
             'Stake only if necessary. Stakes are often counterproductive — a tree that sways develops stronger trunk wood. Only stake if the tree would be physically displaced by wind or pedestrian contact. If you must stake, use soft ties and remove stakes after 1 year maximum.',
           ],
         },
+        { type: 'image', src: '/guides/street-trees/planting-young-tree-city-sidewalk.jpg', alt: 'Planting a young tree into a freshly dug hole in a city sidewalk tree pit', caption: 'The trunk flare must sit at or slightly above grade — urban trees planted too deep decline slowly over years, often without an obvious cause.' },
       ],
     },
     {
@@ -454,6 +458,7 @@ export const streetTreeContent = {
             'Select salt-tolerant species for high-salt exposure locations: Honey Locust, Ginkgo, Black Tupelo, Kentucky Coffee Tree',
           ],
         },
+        { type: 'image', src: '/guides/street-trees/mulched-street-tree-base-sidewalk.jpg', alt: 'A street tree trunk with a neat donut shaped ring of mulch around its base on a city sidewalk', caption: 'The highest-ROI maintenance action for an urban tree — 2-3 inches of mulch can cut soil temperature by 10-15°F and meaningfully reduce watering needs.' },
       ],
     },
     {

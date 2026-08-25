@@ -33,6 +33,7 @@ export const squareFootGardeningContent = {
           emoji: '📐',
           text: 'The central principle: never leave a square foot empty, and never let a square foot become exhausted. Every square in the grid should be growing something at all times during the growing season. When one crop is harvested, the square is immediately replanted — same crop for succession, or a different crop in the rotation. This continuous occupancy is what separates Square Foot Gardening from casual raised-bed growing.',
         },
+        { type: 'image', src: '/guides/square-foot-gardening/grid-raised-bed-overview.jpg', alt: 'An overhead view of a wooden raised garden bed divided into a grid with different vegetables growing in each square', caption: 'The grid is what makes the method visible — a glance tells you exactly what is planted where and which squares are ready to replant.' },
       ],
     },
     {
@@ -134,6 +135,7 @@ export const squareFootGardeningContent = {
             'The rule: As soon as a square is harvested, replant it the same day. A square that sits empty is a wasted resource.',
           ],
         },
+        { type: 'image', src: '/guides/square-foot-gardening/wooden-raised-bed-frame-grid.jpg', alt: 'A wooden raised garden bed frame with a string grid dividing it into one-foot squares, freshly filled with dark soil', caption: 'Build the grid before you plant anything — gardeners who skip it invariably drift back toward conventional row-garden habits.' },
       ],
     },
     {
@@ -207,6 +209,7 @@ export const squareFootGardeningContent = {
           emoji: '📋',
           text: 'Perennial herbs (chives, thyme, oregano, rosemary, sage) occupy their squares permanently. This is a feature: once established, they require almost no care and produce for years. Position them at the ends or edges of the bed so they don\'t block access to the rest of the grid.',
         },
+        { type: 'image', src: '/guides/square-foot-gardening/carrots-radishes-dense-planting.jpg', alt: 'Densely planted carrots and radishes growing in a small square section of a raised garden bed', caption: 'Mel\'s Mix is deep, loose, and stone-free — exactly what root vegetables need to reach the 16-per-square-foot density this system is built around.' },
       ],
     },
     {
@@ -312,6 +315,7 @@ export const squareFootGardeningContent = {
             ['Tomato cage (heavy)', 'Indeterminate tomatoes', 'Purchase 5–6 foot heavy wire cages, or make from concrete remesh.', 'Standard garden center cages are too short and flimsy. Use remesh or livestock panel cages.'],
           ],
         },
+        { type: 'image', src: '/guides/square-foot-gardening/cucumber-trellis-raised-bed.jpg', alt: 'Cucumbers climbing a vertical trellis at the edge of a wooden raised garden bed', caption: 'Trellising is non-negotiable for cucumbers in SFG — it turns a 4-square-foot sprawling plant into a 1-square-foot vertical one.' },
       ],
     },
     {
@@ -356,6 +360,7 @@ export const squareFootGardeningContent = {
             ['Low tunnel (hoops + row cover)', '4–8°F of frost protection', 'The most versatile season extension tool for SFG — easily covers one or more beds', 'Low to moderate cost. Hoops store easily; row cover reusable for 3–5 seasons.'],
           ],
         },
+        { type: 'image', src: '/guides/square-foot-gardening/row-cover-raised-bed-frost-protection.jpg', alt: 'A lightweight white fabric row cover draped over hoops covering a raised garden bed', caption: 'A low tunnel is the most versatile season-extension tool in SFG — a few degrees of frost protection can add weeks on both ends of the growing season.' },
       ],
     },
     {
