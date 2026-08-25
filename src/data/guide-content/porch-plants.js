@@ -36,6 +36,7 @@ export const porchPlantsContent = {
           ],
         },
         { type: 'tip', emoji: '💧', text: 'A porch plant on a covered porch during a week of rain will receive zero water unless you water manually. Even in rainy climates, porch plants under overhangs typically need watering every 1–2 days in summer. The most reliable solution is a drip irrigation system on a timer — they are inexpensive, easy to install, and completely eliminate the most common cause of porch plant death: forgetting to water during a busy week.' },
+        { type: 'image', src: '/guides/porch-plants/sunny-front-porch-container-garden.jpg', alt: 'A sunny front porch with large flowering containers of red geraniums and pink petunias flanking the entrance steps', caption: 'A full-sun porch like this offers the widest plant selection — but also the most demanding watering schedule.' },
       ],
     },
     {
@@ -81,6 +82,7 @@ export const porchPlantsContent = {
           ],
         },
         { type: 'tip', emoji: '🌿', text: 'Use a single dominant color with one or two companions rather than mixing every available color in one container. Example: all white petunias + silver dusty miller + trailing white calibrachoa makes a sophisticated, polished statement. All-red combinations (geranium + red salvia + trailing red verbena) are bold and classic. Mixed "party" containers look exciting in the nursery but often become chaotic against a complex home exterior.' },
+        { type: 'image', src: '/guides/porch-plants/geranium-petunia-porch-containers.jpg', alt: 'Close up of red geraniums and trailing pink petunias overflowing from a large porch container', caption: 'A committed single-color combination like this reads as intentional in a way a mixed "party" pot rarely does.' },
       ],
     },
     {
@@ -116,6 +118,7 @@ export const porchPlantsContent = {
           ],
         },
         { type: 'tip', emoji: '🌿', text: 'Combine caladiums in contrasting color variations within a single large pot for a spectacular shade container: \'White Queen\' (white with green edges) + \'Red Flash\' (red with pink and green) + \'Miss Muffet\' (lime with maroon spots) creates a living tapestry that intensifies through summer as leaves overlap and layer against each other. Add a trailing coleus at the edges to soften the container rim.' },
+        { type: 'image', src: '/guides/porch-plants/caladium-fern-shade-porch-containers.jpg', alt: 'Colorful caladium leaves and green ferns growing together in containers on a shaded porch', caption: 'Shade doesn\'t mean fewer options — it means trading flower color for the kind of layered foliage drama full sun can\'t match.' },
       ],
     },
     {
@@ -195,6 +198,7 @@ export const porchPlantsContent = {
           ],
         },
         { type: 'tip', emoji: '🌙', text: 'For an evening porch with all-day use, plant moonflower (Ipomoea alba) on a small trellis in a large container. It blooms only after dark, opening its large white trumpet flowers at sunset and filling the porch with a sweet floral scent through the evening. By morning the flowers are spent and closed — but a new set opens each evening. Train it up a porch post for a stunning vertical element.' },
+        { type: 'image', src: '/guides/porch-plants/gardenia-container-porch-blooming.jpg', alt: 'A white gardenia flower blooming on a potted plant on a porch, glossy dark green leaves', caption: 'The enclosed, sheltered space of a porch concentrates fragrance rather than dispersing it — a single gardenia in bloom can scent an entire seating area.' },
       ],
     },
     {
@@ -217,6 +221,7 @@ export const porchPlantsContent = {
         { type: 'h3', text: 'The Porch Mum — The Easiest Fall Transition' },
         { type: 'p', text: 'Chrysanthemums (garden mums) are the fastest, most impactful way to transition summer containers to fall. They are sold in full bloom from August through October in every home improvement store and garden center, typically for $8–12 per pot. Placed directly into existing containers between summer plants, or displayed in their own decorative cache pots, they provide 6–8 weeks of bold fall color. Combine with ornamental kale, small pumpkins, and gourds for a complete fall porch display.' },
         { type: 'tip', emoji: '🍂', text: 'Prolong the life of fall mums by purchasing them in bud rather than full bloom. A plant with mostly closed buds will bloom 3–4 weeks longer than one already at peak. Keep the root ball consistently moist — mums in full bloom dry out very quickly. A mum allowed to wilt severely even once will never fully recover its bloom quality.' },
+        { type: 'image', src: '/guides/porch-plants/chrysanthemum-fall-porch-containers.jpg', alt: 'Orange and burgundy chrysanthemums in containers on a porch with small pumpkins, autumn display', caption: 'Garden mums dropped directly into existing containers are the fastest, cheapest way to carry a porch from summer into fall.' },
       ],
     },
     {

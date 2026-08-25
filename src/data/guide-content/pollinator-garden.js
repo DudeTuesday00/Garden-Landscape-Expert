@@ -15,6 +15,7 @@ export const pollinatorGardenContent = {
         { type: 'p', text: 'The cause is clear: loss of habitat. Monoculture agriculture, suburban lawns, and conventional landscaping have eliminated the vast meadow, prairie, and woodland edge habitats that pollinators depend on. The solution is also clear — and surprisingly achievable at the scale of a single garden.' },
         { type: 'p', text: 'Research confirms that home gardens collectively represent an enormous and remarkably effective mosaic of pollinator habitat. A well-designed pollinator garden of even 200 square feet can support dozens of bee species, host multiple butterfly broods, and provide a critical waystation for migrating hummingbirds and monarchs. Multiply that by every willing gardener in a neighborhood, and the impact is measurable at the landscape level.' },
         { type: 'tip', emoji: '🌿', text: 'Habitat Tip:  The single most important thing you can do for pollinators is to provide flowers from early spring through late fall — not just summer. Many pollinator gardens fail because they peak in July and August and then go dark. The second most important thing is to stop using systemic pesticides (neonicotinoids), which are taken up into flowers and poison pollinators that visit them.' },
+        { type: 'image', src: '/guides/pollinator-garden/honeybee-on-purple-coneflower.jpg', alt: 'A honeybee gathering pollen on a purple coneflower blossom, close up macro garden photography', caption: 'Even a modest planting like this can support dozens of bee species over a single season.' },
       ],
     },
     {
@@ -118,6 +119,7 @@ export const pollinatorGardenContent = {
             'Herbs that bloom all season: thyme, oregano, and basil (when allowed to flower) provide a continuous small-batch nectar source',
           ],
         },
+        { type: 'image', src: '/guides/pollinator-garden/monarch-butterfly-on-milkweed-flower.jpg', alt: 'A monarch butterfly perched on orange milkweed flowers in a sunny garden', caption: 'Milkweed is the only plant monarch caterpillars can eat — without it in the garden, monarchs may visit but can never breed there.' },
         { type: 'tip', emoji: '🦋', text: ' PLANTS FOR BUTTERFLIES Nectar plants for adult butterflies plus host plants for caterpillars — both are essential' },
         { type: 'p', text: 'A complete butterfly garden has two distinct plant categories that must both be present: nectar plants for feeding adult butterflies, and host plants where females lay eggs and caterpillars develop. Most gardeners provide only nectar plants and wonder why they don\'t see more butterflies actually breeding in their garden. The answer is always: add host plants.' },
         { type: 'tip', emoji: '🦋', text: 'Butterfly Note:  A \'chewed\' or \'damaged\' plant is often a sign of success in a butterfly garden, not failure. Caterpillars are supposed to eat the host plant leaves. When you see distinctive caterpillars on your milkweed, parsley, or spicebush, the garden is working. Resist every instinct to remove them or spray the plant.' },
@@ -266,6 +268,7 @@ export const pollinatorGardenContent = {
             ['Winter (Dec–Feb)', 'No flowers needed — winter structure matters now; seed heads; evergreen shrubs for shelter', 'Most bees dormant in soil or hollow stems; butterflies overwintering as eggs, caterpillars, chrysalis, or adults under bark/leaf litter', 'Wait until late spring (May) to cut back perennials; leave leaves as insulation; order seeds and plan spring plantings'],
           ],
         },
+        { type: 'image', src: '/guides/pollinator-garden/bee-balm-red-flowers-hummingbird.jpg', alt: 'A hummingbird hovering near bright red bee balm flowers in a garden border', caption: 'Bee balm earns its name honestly — it draws bees, butterflies, and hummingbirds all at once through peak summer.' },
       ],
     },
     {
@@ -356,6 +359,7 @@ export const pollinatorGardenContent = {
           ],
         },
         { type: 'tip', emoji: '🌿', text: 'Habitat Tip:  With this 12-plant foundation, add these habitat features: one bare soil patch of 2 sq ft in full sun (ground-nesting bees), one bundle of hollow stems hung on a fence post (cavity bees), one shallow saucer with pebbles for bee water, one damp sand dish for butterfly puddling. That\'s a complete habitat with minimal effort.' },
+        { type: 'image', src: '/guides/pollinator-garden/goldenrod-asters-fall-pollinator-garden.jpg', alt: 'Golden yellow goldenrod and purple asters blooming together in a fall pollinator garden', caption: 'Goldenrod and asters are the two plants easiest to skip and hardest to do without — they fuel monarch migration and let bees stock winter stores.' },
         { type: 'h3', text: 'Scaling Up: Adding Layers Over Time' },
         {
           type: 'list',
@@ -396,6 +400,7 @@ export const pollinatorGardenContent = {
             ['☐', 'Registered garden with Monarch Watch, Xerces Society, or National Wildlife Federation for certification and connection to wider conservation network'],
           ],
         },
+        { type: 'image', src: '/guides/pollinator-garden/mixed-native-wildflower-pollinator-border.jpg', alt: 'A wide native wildflower garden border with purple coneflowers, black-eyed susans, and orange milkweed blooming together', caption: 'A finished pollinator garden looks like this — layered color, drifts instead of single specimens, and bloom stretching well past the summer peak.' },
         { type: 'p', text: 'The Pollinator Garden — A Garden That Gives Back' },
         { type: 'p', text: 'There\'s a before and after moment for most gardeners who plant a true pollinator garden. Before, the garden is beautiful but quiet. After — when the first coneflowers open, when the milkweed fills with monarch caterpillars, when a hummingbird discovers the salvia and returns three times a day — the garden becomes something alive. Something that is part of a larger web.' },
         { type: 'p', text: 'This is the difference between decorating with plants and creating habitat. Both are valid, but only one contributes to the living system that produces food, maintains biodiversity, and keeps the natural world working. A pollinator garden does something a lawn cannot: it creates connections — between a bee and a flower, a monarch and a milkweed, a hummingbird and the next flower on its route through your neighborhood.' },

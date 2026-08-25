@@ -25,6 +25,7 @@ export const plantsForFragranceContent = {
           ],
         },
         { type: 'tip', emoji: '🌬️', text: 'Place the most fragrant plants where air gently circulates around them but is not swept away by strong winds. A sheltered wall or fence behind the plants traps and concentrates scent, creating a fragrance pocket. Avoid open, breezy locations where scent dissipates immediately.' },
+        { type: 'image', src: '/guides/plants-for-smell/fragrant-rose-garden-path.jpg', alt: 'A garden path lined with blooming pink roses, close up of open rose blossoms with soft petals', caption: 'Bloom fragrance like this is the most familiar kind — strongest in warm, still air and at peak flowering.' },
         { type: 'h3', text: 'When Fragrant Plants Smell Strongest' },
         {
           type: 'list',
@@ -95,6 +96,7 @@ export const plantsForFragranceContent = {
           ],
         },
         { type: 'tip', emoji: '🏡', text: 'Plant mock orange (Philadelphus) or lilac near a bedroom window or back-porch seating area. Both bloom in late spring–early summer and will perfume interior spaces through open windows on still evenings — a feature that no amount of décor can replicate.' },
+        { type: 'image', src: '/guides/plants-for-smell/lilac-shrub-full-bloom-purple.jpg', alt: 'A large lilac shrub covered in dense purple flower clusters in full spring bloom', caption: 'Lilac is the benchmark spring shrub fragrance — but it needs real winter cold to set flower buds, so it thrives north of Zone 7 and struggles south of it.' },
         { type: 'h3', text: 'Fragrant Roses — The Crown Jewels of the Scent Garden' },
         { type: 'p', text: 'Roses are the most complex and beloved fragrant plants in cultivation. Modern hybrid teas often have little to no scent, but old garden roses and David Austin English roses have retained the rich, multi-layered fragrances that made roses prized throughout history. When choosing for fragrance, always smell before you buy — descriptions help, but individual response to scent is subjective.' },
         {
@@ -139,6 +141,7 @@ export const plantsForFragranceContent = {
           ],
         },
         { type: 'warning', emoji: '🌿', text: 'Not all lavender varieties carry the same fragrance intensity. \'Lavandin\' hybrids (Lavandula × intermedia) like \'Grosso\' are more vigorous and produce more essential oil, making them the most fragrant for culinary use and sachets. True lavender (L. angustifolia) types like \'Hidcote\' and \'Munstead\' are better for garden borders and have a finer, sweeter scent. Always check the species when buying lavender for fragrance.' },
+        { type: 'image', src: '/guides/plants-for-smell/lavender-rows-blooming-field.jpg', alt: 'Neat rows of blooming lavender plants in a garden bed, purple flower spikes in soft afternoon light', caption: 'Lavender\'s foliage stays fragrant all season, not just at bloom — one of the few plants that delivers scent whether or not it\'s flowering.' },
       ],
     },
     {
@@ -297,6 +300,7 @@ export const plantsForFragranceContent = {
             'The patience note: Wisteria is famously slow to begin flowering, sometimes taking 3–5 years after planting. Buy a grafted plant (not seed-grown) and plant in full sun in lean soil to accelerate first bloom.',
           ],
         },
+        { type: 'image', src: '/guides/plants-for-smell/wisteria-vine-covered-pergola.jpg', alt: 'Cascading purple wisteria blooms covering a wooden garden pergola', caption: 'A vine in full bloom places fragrance exactly at face height, where arriving visitors encounter it first.' },
         { type: 'h3', text: '🌼 Honeysuckle (Lonicera spp.)' },
         { type: 'p', text: 'Honeysuckle fragrance — sweet, rich, and slightly tropical — is one of the essential scents of the American summer. A honeysuckle-covered fence in full bloom on a warm evening is one of the most elemental summer garden experiences. Like wisteria, attention to species is important: some honeysuckles are invasive.' },
         {
@@ -371,6 +375,7 @@ export const plantsForFragranceContent = {
           ],
         },
         { type: 'tip', emoji: '🌙', text: 'A dedicated evening fragrance corner is one of the most rewarding garden investments for working adults. Choose a seating area that faces west or southwest — in gentle shade during the hottest afternoon hours and catching the last warm light at dusk. Plant moonflower on a trellis at the back, four o\'clocks and night phlox in the middle ground, nicotiana in the back corners, and a potted night-blooming jasmine or gardenia on the patio. When you arrive home after work in July and August, this space will be opening and filling with fragrance in real time.' },
+        { type: 'image', src: '/guides/plants-for-smell/moonflower-blooming-white-dusk.jpg', alt: 'A large white moonflower bloom open at dusk on a climbing vine, twilight garden setting', caption: 'Moonflower unfurls its dinner-plate-sized blooms at sunset and closes them again by morning — a different flower opens each evening.' },
       ],
     },
     {

@@ -15,6 +15,7 @@ export const plantsForColorContent = {
         { type: 'p', text: 'This guide will give you the design language and the plant knowledge to harness color intentionally — to build a garden that makes people feel exactly what you want them to feel, whether that\'s excitement, serenity, wonder, or joy. We\'ll start with color theory (the same principles artists and designers use), then move through the four great garden color strategies — Bold, Pastel, Monochromatic, and Rainbow — with specific plant recommendations for each, followed by design principles that work regardless of which palette you choose.' },
         { type: 'p', text: 'One important truth upfront: in garden design, green is not a color. It\'s a neutral. The thousands of green leaves surrounding your flowers create the background, the canvas, and the constant — they don\'t compete for attention. When we talk about garden color design, we\'re designing with the accent colors: the flowers, colored foliage, and colored stems that punctuate the green.' },
         { type: 'tip', emoji: '🎨', text: 'Design Tip:  Before choosing plants, choose a feeling. Do you want your garden to energize and excite? Choose warm, saturated colors (red, orange, gold). Do you want to calm and restore? Choose cool, soft colors (lavender, powder blue, white). The feeling should drive the palette, not the other way around.' },
+        { type: 'image', src: '/guides/plants-for-color/bold-hot-color-garden-border.jpg', alt: 'A vibrant garden border packed with red and orange dahlias, cannas, and zinnias in full bloom under bright sunlight', caption: 'Saturated warm colors like these advance visually and read as energy and excitement from across a yard.' },
       ],
     },
     {
@@ -199,6 +200,7 @@ export const plantsForColorContent = {
           ],
         },
         { type: 'tip', emoji: '🌱', text: 'Pro Tip:  If your pastel garden is in full sun, choose deeper tints (dusty rose, medium lavender) rather than the palest shades, which bleach out. Save the palest blush and powder blue for morning light or part-shade situations where they will glow rather than disappear.' },
+        { type: 'image', src: '/guides/plants-for-color/pastel-cottage-garden-border.jpg', alt: 'A soft pastel garden border with blush pink roses, powder blue delphiniums, and pale lavender flowers', caption: 'Because every pastel shares white as a base, these tints harmonize almost automatically — the discipline is in the texture and form, not the color matching.' },
         { type: 'tip', emoji: '🔵', text: ' MONOCHROMATIC GARDENS The power of one color done perfectly — the most sophisticated garden strategy' },
         { type: 'h3', text: 'Why One Color Is the Most Powerful Choice' },
         { type: 'p', text: 'Counterintuitively, limiting your palette to a single color produces the most sophisticated, intentional-looking garden you can make. A monochromatic garden tells everyone who sees it that a thoughtful designer made deliberate choices — that this is art, not an accident. Vita Sackville-West\'s White Garden at Sissinghurst, widely considered the most influential garden of the 20th century, is a monochromatic design.' },
@@ -381,6 +383,7 @@ export const plantsForColorContent = {
             ['The Odd Number Rule', 'Plant in groups of 3, 5, or 7 rather than 2 or 4. Odd numbers look more natural and relaxed; even numbers look formal and can feel static.'],
           ],
         },
+        { type: 'image', src: '/guides/plants-for-color/purple-salvia-mass-planting.jpg', alt: 'A mass planting of purple salvia and catmint repeated in flowing drifts along a garden border', caption: 'This is the Mass Planting Principle and the Rule of Repetition working together — a single color repeated in drifts reads as a deliberate design, not a scattered collection.' },
         { type: 'h3', text: 'The Four Neutrals: Your Most Powerful Design Tools' },
         { type: 'p', text: 'Neutrals are the unsung heroes of garden color design. Used strategically, they amplify every other color around them and provide the visual rest that makes bold colors hit harder.' },
         {
@@ -433,6 +436,7 @@ export const plantsForColorContent = {
             ['Cool, rainy climate', 'PASTEL or cool analogous', 'Sweet peas, foxglove, delphiniums, lupines, roses — pastels thrive in moist cool conditions'],
           ],
         },
+        { type: 'image', src: '/guides/plants-for-color/shade-garden-white-flowers.jpg', alt: 'White astilbe flowers and variegated hostas glowing in a deeply shaded garden corner', caption: 'In deep shade, white and silver do the work that bold saturated color can\'t — they reflect the little light available instead of disappearing into it.' },
       ],
     },
     {
@@ -460,6 +464,7 @@ export const plantsForColorContent = {
             ['☐', 'Ready to experiment — planted, assessed, adjusted, and planted again'],
           ],
         },
+        { type: 'image', src: '/guides/plants-for-color/mixed-perennial-color-border.jpg', alt: 'A wide flowering perennial garden border with layered color zones of red, yellow, and purple flowers', caption: 'A finished color garden reads as one composition — dominant, secondary, and accent colors working in the roughly 60-30-10 balance covered above.' },
         { type: 'p', text: 'Color Is the Garden\'s Voice — Learn to Use It Intentionally' },
         { type: 'p', text: 'The difference between a garden that people remember and one they forget is almost always intentional color. It doesn\'t require more plants, more money, or more space. It requires clarity — a decision about mood, palette, and structure made before the first plant goes in the ground.' },
         { type: 'p', text: 'Start with a feeling. Choose a palette that creates it. Design around foliage first. Add flowers as seasonal punctuation. Use neutrals to give your colors room to breathe. Plant in masses rather than samples. And most importantly — don\'t be afraid to experiment. Gardens are the most forgiving canvas that exists. Every year is a new opportunity to refine, adjust, and push further into the vision you\'re building.' },
