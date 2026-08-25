@@ -33,6 +33,7 @@ export const salsaGardenContent = {
           emoji: '📅',
           text: 'Salsa Garden Timing by Zone: Zone 5–6: last frost late April–mid-May; transplant tomatoes and peppers after last frost; plant onion sets in March–April. Zone 7: last frost mid-April; transplant mid-April; plant onion sets early March. Zone 8–9: last frost late February–March; transplant March–April; plant onion sets January–February. All zones: plant garlic in fall (October–November) for summer harvest; succession-sow cilantro in early spring and again in early fall. Peak salsa season is whenever tomatoes and peppers are both producing heavily — typically midsummer.',
         },
+        { type: 'image', src: '/guides/salsa-garden/tomatoes-peppers-harvest-basket.jpg', alt: 'A basket of freshly harvested red tomatoes and green jalapeno peppers', caption: 'Five crops, one bowl — the salsa garden is built around ingredients that all reach peak harvest around the same midsummer window.' },
       ],
     },
 
@@ -107,6 +108,7 @@ export const salsaGardenContent = {
             ['Spider mites', 'Stippled, pale leaves; fine webbing on leaf undersides; worst in hot dry weather', 'July-August heat waves', 'Strong water jet dislodges most mites. Apply neem oil or insecticidal soap.'],
           ],
         },
+        { type: 'image', src: '/guides/salsa-garden/roma-paste-tomatoes-vine.jpg', alt: 'Ripe red roma paste tomatoes growing on a vine in a garden', caption: 'Paste tomatoes are the salsa workhorse — dense, low-water flesh that gives salsa body instead of thinning it out.' },
       ],
     },
 
@@ -168,6 +170,7 @@ export const salsaGardenContent = {
             'Staking: Pepper plants loaded with fruit in late summer can snap at the main stem in wind. Install simple stakes or use tomato cages.',
           ],
         },
+        { type: 'image', src: '/guides/salsa-garden/jalapeno-peppers-plant.jpg', alt: 'Green jalapeno peppers growing on a pepper plant in a vegetable garden', caption: 'The classic salsa pepper — grassy, bright heat with enough fruitiness to carry a whole batch of pico de gallo.' },
       ],
     },
 
@@ -214,6 +217,7 @@ export const salsaGardenContent = {
             'Do not dry: Dried cilantro loses virtually all its essential oil and flavor. Freeze instead.',
           ],
         },
+        { type: 'image', src: '/guides/salsa-garden/cilantro-herb-bed-closeup.jpg', alt: 'Fresh cilantro leaves growing densely in a garden bed, close up', caption: 'Cilantro is the most time-sensitive salsa ingredient — succession sowing every 2-3 weeks is what keeps it available all season.' },
       ],
     },
 
@@ -283,6 +287,7 @@ export const salsaGardenContent = {
           emoji: '🧄',
           text: 'Save the Best Cloves for Next Year: Always reserve the largest, most perfect bulbs from your harvest for replanting in fall. Plant the largest cloves — they produce the largest bulbs. After 2-3 seasons of saving your own seed garlic, you will have a strain adapted to your specific garden conditions.',
         },
+        { type: 'image', src: '/guides/salsa-garden/garlic-onions-harvest-drying.jpg', alt: 'Freshly harvested garlic bulbs and onions drying on a wooden table in a garden', caption: 'Both crops need 2-4 weeks of curing before storage — the papery wrapper dries and the flavor actually intensifies.' },
       ],
     },
 

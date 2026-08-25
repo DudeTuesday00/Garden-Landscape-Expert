@@ -28,6 +28,7 @@ export const saladGardenContent = {
           ],
         },
         { type: 'tip', emoji: '🥗', text: 'Instead of growing large quantities of a few crops, the salad bar garden grows small quantities of many crops — 6 types of lettuce, 3 types of greens, radishes, scallions, cherry tomatoes, and herbs. This diversity means every salad is different, you\'re never overwhelmed with a single surplus, and the garden stays interesting all season.' },
+        { type: 'image', src: '/guides/salad-garden/raised-bed-salad-garden-overview.jpg', alt: 'A raised garden bed with rows of lettuce, radishes, and leafy greens growing together', caption: 'A well-planned 4x8 bed can put a fresh salad on the table five or six days a week at peak season.' },
       ],
     },
     {
@@ -106,6 +107,7 @@ export const saladGardenContent = {
             ['Baby Leaf / Mesclun', 'Cut at 3–4 inches; mixed varieties grown together; harvest in 3 weeks', '21–30 days', 'Low', 'Any mesclun or salad mix blend; Renee\'s Garden \'Italian Gourmet Salad\'; Johnny\'s \'Salad Mix\'', 'The fastest edible plant you can grow. Sow thickly in any container or bed; cut with scissors 2–3 times per sowing.'],
           ],
         },
+        { type: 'image', src: '/guides/salad-garden/mixed-lettuce-varieties-bed.jpg', alt: 'Rows of different colored lettuce varieties growing in a garden bed, red and green leaf lettuce', caption: 'Growing a mix of the five lettuce types gives you different textures, flavors, and heat tolerances rather than one bolt-prone crop.' },
       ],
     },
     {
@@ -169,6 +171,7 @@ export const saladGardenContent = {
           ],
         },
         { type: 'warning', emoji: '❄️', text: 'A layer of lightweight floating row cover (frost cloth) over cool-season crops extends their productive season by 2–4 weeks at each end. In spring it protects from late frosts and creates a mini-greenhouse effect that keeps soil warmer. In fall it protects from early frosts and extends the harvest deep into November in many climates. Keep row cover on hand — it is the highest-value tool in the salad garden.' },
+        { type: 'image', src: '/guides/salad-garden/spring-radishes-harvest.jpg', alt: 'Freshly harvested red radishes with green tops piled on a wooden garden bed edge', caption: 'At 20-30 days to harvest, radishes are the fastest-maturing vegetable in the garden — and a natural row marker for slower crops like carrots.' },
         { type: 'warning', emoji: '☀️', text: 'The summer additions that complete the salad bar — cucumbers, tomatoes, peppers, and more' },
         { type: 'p', text: 'When cool-season crops bolt and are pulled in June, the warm-season crops step in to carry the salad garden through the hottest months. These crops love the heat, produce abundantly in the long days of midsummer, and form the basis of the classic summer salad: sliced cucumbers and tomatoes from the garden, dressed simply with good olive oil and salt.' },
         { type: 'p', text: 'Warm-season crops require soil temperatures above 60°F to germinate and grow well, and most are killed by even a light frost. They are started either from transplants (tomatoes, peppers, basil) or direct-sown after the last frost (cucumbers, beans, summer squash). Their harvest season runs from roughly midsummer until fall frost — complementing the cool-season crops that bookend the season.' },
@@ -237,6 +240,7 @@ export const saladGardenContent = {
           ],
         },
         { type: 'warning', emoji: '☀️', text: 'For maximum salad garden productivity: (1) Cherry tomatoes — 1 indeterminate plant produces hundreds of fruits from a 2-square-foot footprint; (2) Cucumbers on a trellis — a 2-foot-wide trellis produces 20–30 cucumbers per plant; (3) Snap beans — a 4-foot row of bush beans provides 3–4 generous harvests. These three crops together transform the summer salad garden from salads-with-greens into complete, satisfying summer meals.' },
+        { type: 'image', src: '/guides/salad-garden/cucumbers-trellis-vine.jpg', alt: 'Cucumbers growing on a vertical garden trellis, several ripe green cucumbers hanging among leaves', caption: 'Trellising doesn\'t just save space — it produces straighter, cleaner fruit and better air circulation than letting vines sprawl on the ground.' },
       ],
     },
     {
@@ -262,6 +266,7 @@ export const saladGardenContent = {
           ],
         },
         { type: 'tip', emoji: '🌿', text: 'Herbs belong within 20 steps of the kitchen door — not in a far corner of the garden. The shorter the distance between herb and salad bowl, the more frequently you will use them, and the fresher and more intensely flavored they will be. A kitchen windowsill planter with chives, basil, and parsley — or a grouping of pots by the back door — delivers the freshest herbs possible with the least effort.' },
+        { type: 'image', src: '/guides/salad-garden/fresh-herbs-basil-chives-garden.jpg', alt: 'Fresh basil and chives growing in small terracotta pots near a kitchen garden path', caption: 'The volatile oils that carry flavor degrade fast after cutting — herbs grown steps from the kitchen taste nothing like the same herb from a grocery store.' },
       ],
     },
     {

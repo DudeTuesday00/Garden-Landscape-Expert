@@ -47,6 +47,7 @@ export const seedSavingContent = {
           emoji: '🌱',
           text: 'Look for OP or Heirloom: When buying seeds with the intention of saving them, look for packets marked "Open-Pollinated," "OP," "Heirloom," or "Heritage." Avoid any packet marked "F1 Hybrid" or simply "Hybrid." Reputable seed companies specializing in OP and heirloom varieties include Seed Savers Exchange, Baker Creek Heirloom Seeds, Southern Exposure Seed Exchange, and High Mowing Organic Seeds.',
         },
+        { type: 'image', src: '/guides/seed-saving/dried-bean-seeds-pods-table.jpg', alt: 'Dried bean seeds and brown pea pods scattered on a rustic wooden table', caption: 'Self-pollinating crops like beans are the classic beginner\'s entry point — little to no isolation required, simple processing.' },
         {
           type: 'h3',
           text: 'The Seed Saving Learning Curve: Easy to Expert',
@@ -161,6 +162,7 @@ export const seedSavingContent = {
             ['Outbreeding perennials and complex crops', 'Consult specialist resources; some crops require populations of 50-200+ to maintain long-term genetic health'],
           ],
         },
+        { type: 'image', src: '/guides/seed-saving/hand-holding-tomato-seeds-gel.jpg', alt: 'Close up of a hand scooping tomato seeds and gel from a ripe tomato into a glass jar', caption: 'Seeds harvested at full physiological maturity germinate at 80-95%+ — a huge jump from the 30-60% typical of seeds saved at edible maturity.' },
       ],
     },
     {
@@ -184,6 +186,7 @@ export const seedSavingContent = {
             ['Eggplant / Aubergine', '150-300 ft', 'Leave selected fruits on plant far past eating stage — fruits turn brown, yellow, or spotted and become hard and seedy', 'Dry or minimal wet processing', '1. Allow fruit to fully ripen past edible stage on the plant. 2. Cut open and scrape seeds. 3. Rinse briefly if seeds are in gel. 4. Spread on a plate and dry 1-2 weeks. Some gardeners ferment briefly (1 day) as with tomatoes — either method works. Seeds are ready when they are hard and off-white to cream colored.'],
           ],
         },
+        { type: 'image', src: '/guides/seed-saving/ripe-tomatoes-halved-seeds.jpg', alt: 'A ripe red tomato cut in half showing seeds and gel inside, on a rustic wooden cutting board', caption: 'Tomatoes are the classic starter crop — self-pollinating, seeds clearly visible, and the wet fermentation method is simple and forgiving.' },
         {
           type: 'h3',
           text: 'The Legume Family — Beans, Peas, and More',
@@ -399,6 +402,7 @@ export const seedSavingContent = {
             'Final hand-sorting: remove any remaining debris, discolored seeds, undersized seeds, or damaged seeds by hand. This step also allows visual assessment of seed quality.',
           ],
         },
+        { type: 'image', src: '/guides/seed-saving/winnowing-seeds-outdoor-bowl.jpg', alt: 'Pouring dried seeds and chaff between two wooden bowls outdoors to winnow them in a gentle breeze', caption: 'Winnowing is a 10,000-year-old technique that still works better than most modern alternatives for a home-scale harvest.' },
         {
           type: 'h3',
           text: 'Wet Processing: The Fermentation Method',
@@ -508,6 +512,7 @@ export const seedSavingContent = {
           emoji: '🌱',
           text: 'The silica gel packet from new shoes or vitamin bottles is your friend. Add one to each seed jar. It can be re-dried in a low oven (250°F for 2 hours) when it turns pink (if it has indicator) or feels damp.',
         },
+        { type: 'image', src: '/guides/seed-saving/saved-seeds-glass-jars-shelf.jpg', alt: 'Small glass jars filled with different types of saved garden seeds arranged on a rustic wooden shelf', caption: 'Cool, dry, and dark is the formula — a refrigerator with desiccant packets easily outperforms a kitchen drawer.' },
       ],
     },
     {

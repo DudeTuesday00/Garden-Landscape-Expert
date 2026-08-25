@@ -85,6 +85,7 @@ export const rainGardenContent = {
           emoji: '🏛️',
           text: 'Incentives and Rebates Across America: Many cities, counties, water utilities, and state agencies offer financial incentives for installing rain gardens — including rebates ($50–500+), stormwater utility bill credits, free native plants, free soil testing, and design assistance. Search "[your city/county] rain garden rebate" or "[your state] stormwater incentive program." States with particularly robust programs include Maryland, Virginia, Minnesota, Wisconsin, Pennsylvania, and Oregon.',
         },
+        { type: 'image', src: '/guides/rain-garden/planted-rain-garden-depression.jpg', alt: 'A shallow planted rain garden depression filled with blooming native perennials and ornamental grasses', caption: 'A rain garden is designed to drain within 24-48 hours — it is a planted feature, not a standing-water pond.' },
       ],
     },
     {
@@ -190,6 +191,7 @@ export const rainGardenContent = {
           emoji: '📍',
           text: 'Know Before You Dig — Call 811: Before any excavation, call 811 (the national "Call Before You Dig" number) or visit 811.com. This is free and legally required in most states. Utility companies will mark buried electrical, gas, water, sewer, and telecommunications lines within a few business days. Digging into an unmarked utility line is extremely dangerous. Always call first.',
         },
+        { type: 'image', src: '/guides/rain-garden/downspout-water-shallow-garden-depression.jpg', alt: 'A shallow garden depression positioned below a house downspout, collecting rainwater during a rain shower', caption: 'Siting is the single most important decision in the whole project — spend more time here than on any other planning step.' },
       ],
     },
     {
@@ -260,6 +262,7 @@ export const rainGardenContent = {
           emoji: '🌧️',
           text: 'Timing Your Installation: The best time to build a rain garden is late summer through fall in most U.S. regions — soil is workable, temperatures are moderate for plant establishment, and fall rains help plants root before winter. Spring is the second-best option. In the Southeast and Gulf Coast, late fall through winter is ideal. Avoid building during frozen ground, drought, or during heavy-rain periods when soils are saturated.',
         },
+        { type: 'image', src: '/guides/rain-garden/newly-planted-rain-garden-mulched-bed.jpg', alt: 'A newly planted rain garden bed with dark mulch and small native perennials arranged in a shallow bowl shape', caption: 'A flat-bottomed bowl, a mulched surface, and young natives spaced for their mature size — the construction sequence completed.' },
       ],
     },
     {
@@ -390,6 +393,7 @@ export const rainGardenContent = {
           emoji: '🎨',
           text: 'Make the Water Path Visible: The most beautiful rain garden systems make the water\'s journey legible — a rain chain falling into a splash basin, a dry creek bed winding across the yard, and a lush planted rain garden at the end. When visitors see your garden in the rain, they should be able to read immediately what\'s happening and why. This storytelling approach to rain garden design is more aesthetically rewarding and also educational for neighbors who might be inspired to do the same.',
         },
+        { type: 'image', src: '/guides/rain-garden/rain-chain-splash-basin-garden.jpg', alt: 'A decorative copper rain chain with water flowing down into a rock-lined splash basin in a garden', caption: 'Of the three downspout connection methods, the rain chain is the one that turns plumbing into a landscape feature.' },
       ],
     },
     {
@@ -418,6 +422,7 @@ export const rainGardenContent = {
           emoji: '🌿',
           text: 'Always prioritize local ecotypes — native plants sourced from your region or nearby — over plants of the same species grown in distant states. Local genetics are adapted to local conditions. Your state\'s cooperative extension service, native plant society, or local nature center can recommend suppliers of locally sourced plants.',
         },
+        { type: 'image', src: '/guides/rain-garden/swamp-milkweed-blue-flag-iris-wet-zone.jpg', alt: 'Pink swamp milkweed and blue flag iris blooming together in the wet zone of a rain garden', caption: 'Zone 1 plants must handle both extremes — standing water after a storm and dry soil in between — and these two natives are among the best at it.' },
         {
           type: 'h3',
           text: 'Eastern U.S. — Midwest & Great Lakes (Zones 3–6)',
