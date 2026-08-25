@@ -87,6 +87,7 @@ export const rabbitProofGardenContent = {
           emoji: '🐰',
           text: 'No single strategy eliminates rabbit damage on its own. The most effective approach combines at least two methods: typically physical exclusion for your highest-priority areas plus resistant plant selection for everything else. Think of rabbit management as layers — each layer reduces pressure so the next layer has less work to do.',
         },
+        { type: 'image', src: '/guides/rabbit-proof/lavender-catmint-resistant-border.jpg', alt: 'A lush garden border of lavender and catmint plants in full bloom, purple flowers', caption: 'Aromatic plants like these do double duty — beautiful borders that also happen to be among the most reliably rabbit-resistant choices available.' },
       ],
     },
     {
@@ -346,6 +347,7 @@ export const rabbitProofGardenContent = {
           emoji: '🏡',
           text: 'When planning a new garden in a rabbit-heavy area, budget for the fenced vegetable enclosure before the plants — not after. The most common mistake is installing a beautiful vegetable garden and then scrambling to add rabbit protection after the first wave of damage. Hardware cloth fencing installed before first planting is far easier than retrofitting an established bed, and it works from day one.',
         },
+        { type: 'image', src: '/guides/rabbit-proof/layered-garden-design-perimeter-shrubs.jpg', alt: 'A layered garden design with aromatic shrubs and lavender at the perimeter and colorful perennials in protected inner beds', caption: 'A garden built in resistant layers needs dramatically less ongoing management than one where every plant requires its own protection.' },
       ],
     },
     {
@@ -447,6 +449,7 @@ export const rabbitProofGardenContent = {
           emoji: '🦅',
           text: 'Habitat modification is a background strategy — it rarely solves a rabbit problem on its own, but it reduces the baseline rabbit population that other strategies have to manage. Removing brush piles, closing off under-deck access, and installing a raptor perch take an afternoon of work each and continue paying dividends for years. Do these projects in summer when rabbit pressure is at its annual low and the work is most comfortable.',
         },
+        { type: 'image', src: '/guides/rabbit-proof/tidy-open-garden-edge.jpg', alt: 'A tidy open garden edge with mowed grass and no brush piles, bordering a vegetable garden fence', caption: 'Removing shelter near the garden doesn\'t eliminate rabbits, but it shrinks the resident population that treats the yard as home territory.' },
       ],
     },
     {
@@ -524,6 +527,7 @@ export const rabbitProofGardenContent = {
           emoji: '🌷',
           text: 'The Tulip-to-Daffodil Swap: If tulips are disappearing every spring despite repellent applications, the most reliable fix is not a better spray — it is replacing most tulip plantings with daffodils and narcissus (which are toxic to rabbits and reliably avoided) and using ornamental alliums for spring color accent. This one plant substitution eliminates the most frustrating recurring rabbit problem for many gardeners permanently.',
         },
+        { type: 'image', src: '/guides/rabbit-proof/wire-cage-protecting-young-plant.jpg', alt: 'A small wire mesh cage protecting a young tulip plant in a garden bed', caption: 'A simple wire cylinder around the most vulnerable plants costs almost nothing and never habituates the way sprays do.' },
       ],
     },
     {
@@ -737,6 +741,7 @@ export const rabbitProofGardenContent = {
           emoji: '🌿',
           text: 'A Note on "Rabbit-Proof" Claims: No plant is completely rabbit-proof under all conditions. Even the most strongly repellent or toxic plants may be damaged in early spring when very young, in winter when food is critically scarce, or by juvenile rabbits that have not yet learned which plants to avoid. "Rabbit-resistant" is the more accurate term. The best approach: use resistant plants as the backbone of the garden (roughly 80%) and protect the vulnerable 20% — tulips, most vegetables, young trees — with targeted physical barriers.',
         },
+        { type: 'image', src: '/guides/rabbit-proof/daffodils-alliums-spring-border.jpg', alt: 'Yellow daffodils and purple ornamental allium flowers blooming together in a spring garden border', caption: 'Daffodils are toxic to rabbits and reliably ignored — swapping them in for tulips is the single most effective plant substitution in this guide.' },
       ],
     },
     {

@@ -74,6 +74,7 @@ export const privacyScreeningContent = {
           emoji: '📋',
           text: 'HOA Approval — Get It in Writing Before You Plant or Build: If you live in a community with an HOA, submit your screening plan — including plant species, sizes, fence type, and placement — for written approval before purchasing anything. Verbal approval is not binding. Many homeowners have installed expensive privacy plantings or fences only to receive a violation notice requiring removal. Written approval, including any conditions, protects your investment.',
         },
+        { type: 'image', src: '/guides/privacy-screening/evergreen-hedge-private-patio.jpg', alt: 'A lush backyard patio enclosed by a tall evergreen hedge with layered plantings, private outdoor seating area', caption: 'A completed privacy assessment often points toward exactly this kind of layered solution rather than a single tall barrier.' },
       ],
     },
     {
@@ -160,6 +161,7 @@ export const privacyScreeningContent = {
             ['Spite fence laws', 'Many states have laws prohibiting "spite fences" — structures built primarily to annoy a neighbor rather than for legitimate use; fences over certain heights built near a property line without functional purpose may be actionable under these laws'],
           ],
         },
+        { type: 'image', src: '/guides/privacy-screening/board-fence-lattice-climbing-vines.jpg', alt: 'A wooden board-on-board privacy fence with a lattice top and climbing vines, backyard garden setting', caption: 'A lattice top extension adds 12-18 inches of effective screening height while giving climbing plants a structure to soften the fence.' },
       ],
     },
     {
@@ -283,6 +285,7 @@ export const privacyScreeningContent = {
             ['Urban air pollution', 'Eastern Red Cedar; native oaks as tall canopy layer; Green Giant Arborvitae; Thornless Honeylocust canopy', 'Urban plants must tolerate poor air quality, reflected heat, compacted soils, and drought; native plants adapted to eastern cities perform best'],
           ],
         },
+        { type: 'image', src: '/guides/privacy-screening/arborvitae-hedge-row-fence-line.jpg', alt: 'A dense row of mature arborvitae evergreen trees forming a tall green privacy hedge along a backyard fence line', caption: 'Evergreen trees are the workhorse of privacy screening — the only category that reliably grows tall enough to screen a second-floor window.' },
       ],
     },
     {
@@ -367,6 +370,7 @@ export const privacyScreeningContent = {
             'Permit and code considerations: Any permanent roofed structure typically requires a building permit; setback requirements from property lines are stricter for structures than for fences; height restrictions may apply; always check with local building and planning departments before purchasing or building',
           ],
         },
+        { type: 'image', src: '/guides/privacy-screening/pergola-wisteria-patio-seating.jpg', alt: 'A wooden pergola with climbing wisteria vines over a backyard patio seating area, dappled shade', caption: 'A pergola addresses the vertical dimension of privacy that fences and hedges alone can never solve.' },
       ],
     },
     {
@@ -394,6 +398,7 @@ export const privacyScreeningContent = {
             ['Layer 3 — Foreground Softening', 'The plants closest to the seating area; not primarily privacy-focused but creates the feeling of lushness and separation that completes the retreat experience', '1–4 feet', 'Perennials, ornamental grasses, low shrubs, container plants; deck railing planters; raised planter boxes; groundcovers that extend to the lawn edge', '0–8 feet'],
           ],
         },
+        { type: 'image', src: '/guides/privacy-screening/layered-garden-privacy-design.jpg', alt: 'Layered garden privacy design with tall trees in the back, mid-height shrubs in the middle, and low flowering perennials in the foreground', caption: 'The three-layer formula in practice — structural background, middle screening, and foreground softening working together.' },
         {
           type: 'h3',
           text: 'Privacy Design Strategies by Yard Type',

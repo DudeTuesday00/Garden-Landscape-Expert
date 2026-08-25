@@ -41,6 +41,7 @@ export const rainBarrelContent = {
           emoji: '💧',
           text: 'Many water utilities, municipalities, and state agencies offer rebates for installing rain barrels — cash payments per barrel, subsidized barrel programs, or discounts through one-day distribution events. Search your water utility\'s website for "water conservation rebates" or "outdoor water rebates" before purchasing anything.',
         },
+        { type: 'image', src: '/guides/rain-barrel/rain-barrel-downspout-garden-setup.jpg', alt: 'A green plastic rain barrel connected to a house gutter downspout, collecting rainwater in a backyard garden', caption: 'A single rain event can fill a standard 55-gallon barrel from a fraction of an average roof — the math behind rain barrels is more dramatic than it first appears.' },
       ],
     },
 
@@ -275,6 +276,7 @@ export const rainBarrelContent = {
             'Practical limit for linked barrels: Three to four standard barrels linked in series is typically the practical limit before plumbing complexity and the structural challenge of building a level, stable platform for multiple heavy barrels becomes a reason to consider a larger single tank instead.',
           ],
         },
+        { type: 'image', src: '/guides/rain-barrel/linked-barrels-wooden-platform.jpg', alt: 'Two rain barrels linked together on an elevated wooden platform in a garden, connected by a hose', caption: 'Linking barrels roughly doubles capture for any storm larger than a few tenths of an inch — the platform also buys gravity pressure at the spigot.' },
       ],
     },
 
@@ -330,6 +332,7 @@ export const rainBarrelContent = {
             ['Direct downspout cut with barrel inlet positioned below', 'Downspout cut and barrel positioned directly beneath; no overflow management built in', 'Not easily reversible; requires downspout repair if barrel removed', 'Rarely recommended; no overflow management means water overflows from the top of the barrel in large events', 'Not recommended — overflow management is critical'],
           ],
         },
+        { type: 'image', src: '/guides/rain-barrel/downspout-diverter-closeup.jpg', alt: 'Close up of a downspout diverter fitting connected to a house gutter downspout directing water into a rain barrel', caption: 'A commercial T-diverter is fully reversible — the original downspout reconnects cleanly if the barrel is ever removed.' },
       ],
     },
 
@@ -397,6 +400,7 @@ export const rainBarrelContent = {
           emoji: '🦟',
           text: 'Mosquito Prevention: Non-Negotiable. An improperly managed rain barrel is an ideal mosquito breeding site. Aedes aegypti and Aedes albopictus (the primary vectors of dengue, Zika, and chikungunya in the US) can complete a full larva-to-adult life cycle in a rain barrel within 7–14 days in warm weather. The three rules: (1) The lid must be completely sealed or covered with fine-mesh screen (≤1/16 inch mesh) at all times — no exceptions. (2) Every opening — inlet, overflow outlet, and any vent — must be screened or sealed. (3) If a screen is damaged or missing, add a Bti (Bacillus thuringiensis israelensis) mosquito dunk to the barrel immediately. Bti dunks are non-toxic to other wildlife and pets and kill mosquito larvae within 24 hours. One dunk treats up to 100 gallons for 30 days. Inspect the screen and lid at every use — a single 1/4-inch gap is enough for a mosquito to enter and lay eggs.',
         },
+        { type: 'image', src: '/guides/rain-barrel/watering-vegetable-garden-with-can.jpg', alt: 'Watering a raised vegetable garden bed with a watering can filled with rainwater', caption: 'Applied at soil level rather than as a foliar spray, harvested rainwater is well-suited to vegetable garden irrigation.' },
       ],
     },
 
@@ -461,6 +465,7 @@ export const rainBarrelContent = {
             'Bti dunks for larval control: One Bti mosquito dunk treats 100 gallons for 30 days and kills any mosquito larvae present without harming other organisms. Add a dunk as a precaution during summer even when screens appear intact. Break the dunk in half for a 55-gallon barrel.',
           ],
         },
+        { type: 'image', src: '/guides/rain-barrel/soaker-hose-garden-bed-irrigation.jpg', alt: 'A soaker hose laid along rows of vegetable plants in a garden bed for low pressure irrigation', caption: 'Soaker hoses are built for exactly the low pressure a gravity-fed barrel provides — pair the two and the barrel becomes genuinely useful irrigation, not just a novelty.' },
       ],
     },
 

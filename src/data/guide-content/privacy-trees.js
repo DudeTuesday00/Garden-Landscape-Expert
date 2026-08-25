@@ -28,6 +28,7 @@ export const privacyTreeContent = {
           ],
         },
         { type: 'tip', emoji: '🌲', text: 'Pro Tip: The #1 rule of privacy tree success: match the right tree to your zone, soil, and sun — not just your Instagram mood board. A gorgeous Italian Cypress planted in Minnesota is a beautiful disaster waiting to happen.' },
+        { type: 'image', src: '/guides/privacy-trees/evergreen-hedge-property-line.jpg', alt: 'A tall lush green evergreen hedge of arborvitae trees forming a natural privacy wall along a backyard property line', caption: 'This is the living-fence payoff — dense, year-round coverage that keeps getting more beautiful, not less, over time.' },
       ],
     },
     {
@@ -71,6 +72,7 @@ export const privacyTreeContent = {
         },
         { type: 'p', text: 'Space them 5–8 feet apart for a tight hedge, or 8–12 feet for a natural screen. For the fastest results, stagger two rows with 6–8 feet between rows and 10 feet between trees.' },
         { type: 'tip', emoji: '🌲', text: 'Pro Tip: Plant Thuja Green Giants in full sun for maximum growth. In partial shade, they grow slower and can thin out at the bottom over time.' },
+        { type: 'image', src: '/guides/privacy-trees/thuja-green-giant-hedge-row.jpg', alt: 'A row of tall thuja green giant arborvitae trees planted densely as a young privacy screen', caption: 'The most popular privacy tree in North America — disease-resistant, deer-resistant, and adaptable to nearly any soil.' },
         { type: 'h3', text: '🔥 The Speed Demon: Leyland Cypress' },
         { type: 'p', text: 'Want a green wall fast? The Leyland Cypress is America\'s most-planted privacy tree for a reason: it can punch out up to 5 feet of growth in a single year and hits mature heights of 60–70 feet with a beautiful, soft, columnar silhouette.' },
         {
@@ -195,6 +197,7 @@ export const privacyTreeContent = {
           ],
         },
         { type: 'warning', emoji: '⚠️', text: 'Watch Out: Willow roots are aggressive water-seekers. Keep willows away from septic systems, water lines, and foundations. Plant them at least 50–100 feet from any underground utilities.' },
+        { type: 'image', src: '/guides/privacy-trees/young-poplar-trees-temporary-screen.jpg', alt: 'A row of fast growing young poplar trees planted as a temporary privacy screen along a fence line', caption: 'Poplars are sprinters, not marathoners — perfect as a fast temporary screen while slower evergreens establish behind them.' },
         { type: 'h3', text: '🍁 The Best of Both Worlds: Autumn Blaze Maple' },
         { type: 'p', text: 'When you want privacy AND a jaw-dropping fall show, the Autumn Blaze Maple delivers both. This hybrid red maple grows 3–5 feet per year, provides dense summer privacy, and then erupts in brilliant scarlet-orange every fall before dropping its leaves.' },
         {
@@ -392,6 +395,7 @@ export const privacyTreeContent = {
           ],
         },
         { type: 'warning', emoji: '⚠️', text: 'Watch Out: The single most common tree-planting mistake: planting too deep. If the trunk flare is buried, the tree will slowly decline and die — sometimes over years. Always plant at or slightly above grade.' },
+        { type: 'image', src: '/guides/privacy-trees/planting-young-tree-mulch-ring.jpg', alt: 'A person\'s hands planting a young evergreen tree sapling into a freshly dug hole in a garden, mulch ring visible around the base', caption: 'Dig wide, not deep — the trunk flare should sit at or slightly above grade, never buried.' },
       ],
     },
     {
@@ -494,6 +498,7 @@ export const privacyTreeContent = {
             'Shade and cooling: A well-placed privacy screen can reduce summer cooling costs by shading your home from afternoon sun',
           ],
         },
+        { type: 'image', src: '/guides/privacy-trees/mature-privacy-tree-row-backyard.jpg', alt: 'A mature dense row of evergreen privacy trees towering over a backyard lawn, providing complete screening', caption: 'This is the payoff a decade or two down the road — a living fence that only gets more valuable with age.' },
       ],
     },
     {
