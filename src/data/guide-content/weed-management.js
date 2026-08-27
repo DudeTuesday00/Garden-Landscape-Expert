@@ -38,6 +38,7 @@ export const weedManagementContent = {
             ['Chemical control', 'Pre-emergent and post-emergent herbicides, organic contact sprays', 'Low–moderate (application)', 'Moderate–high', 'High when correctly applied and timed; rapidly reduced by resistance development', 'When other methods are insufficient; for specific targeted problems; for large-scale or invasive weed management'],
           ],
         },
+        { type: 'image', src: '/guides/weed-management/mulched-garden-bed-weed-free.jpg', alt: 'A thick layer of dark mulch covering a weed-free garden bed around vegetable plants', caption: 'Prevention beats removal every time — a covered soil surface denies germinating weed seeds the light they need.' },
       ],
     },
     {
@@ -100,6 +101,7 @@ export const weedManagementContent = {
           emoji: '🔍',
           text: 'Free identification resources: Your state\'s cooperative extension service maintains weed identification guides specific to your region and climate. The USDA\'s Plants Database (plants.usda.gov) allows identification by state. iNaturalist is a free smartphone app that identifies plants from photographs. When noting features for identification, look at: leaf shape, arrangement (opposite or alternate), texture (hairy, waxy, smooth), overall plant shape (rosette, upright, trailing), stem shape (round, square, hollow), flower color, and root structure (taproot, fibrous, rhizomes, tubers, stolons).',
         },
+        { type: 'image', src: '/guides/weed-management/dandelion-taproot-hand-pulling.jpg', alt: 'A hand pulling a dandelion weed with its long taproot visible from garden soil', caption: 'The taproot tells you the strategy — leave even a fragment behind and the dandelion regrows from it within weeks.' },
       ],
     },
     {
@@ -164,6 +166,7 @@ export const weedManagementContent = {
             'The importance of healthy, dense plantings: Vigorous, well-spaced, properly fertilized plants that reach their full size outcompete weeds more effectively than stressed, underfed plants. A crowded, nutrient-deficient bed with struggling plants provides more opportunity for weeds than a well-managed bed where plants are thriving.',
           ],
         },
+        { type: 'image', src: '/guides/weed-management/wood-chip-mulch-garden-path.jpg', alt: 'A thick layer of wood chip mulch covering a garden path and bed edges', caption: 'A covered path is a path that never needs weeding — the same principle that makes mulch the backbone of prevention in every bed.' },
       ],
     },
     {
@@ -246,6 +249,7 @@ export const weedManagementContent = {
             'Effectiveness: Reduces weed seed germination by 50 to 90% in the treated zone; kills many soilborne pathogens; reduces nematode populations. Particularly effective in the Southwest, California, and the Deep South where summer temperatures are highest.',
           ],
         },
+        { type: 'image', src: '/guides/weed-management/hoeing-garden-bed-weeds.jpg', alt: 'A gardener using a hoe to remove small weeds from a sunny garden bed', caption: 'Timing beats effort — a hoe pass through young weeds on a dry afternoon kills them in minutes; the same weeds established take an hour.' },
       ],
     },
     {
@@ -307,6 +311,7 @@ export const weedManagementContent = {
             'Resistance management: Herbicide resistance is a serious and growing problem. Rotate between herbicide modes of action; do not rely solely on any single product or active ingredient; use cultural controls alongside chemical controls to reduce selection pressure.',
           ],
         },
+        { type: 'image', src: '/guides/weed-management/garden-sprayer-treating-weeds.jpg', alt: 'A gardener using a hand pump sprayer to treat weeds along a garden bed edge', caption: 'Spot treatment with a calibrated hand sprayer uses far less herbicide than blanket application and keeps non-target plants safe.' },
       ],
     },
     {

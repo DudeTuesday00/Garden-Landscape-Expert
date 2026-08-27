@@ -36,6 +36,7 @@ export const wildflowerMeadowContent = {
             ['Bloom season', 'None (monoculture grass)', 'March/April through November'],
           ],
         },
+        { type: 'image', src: '/guides/wildflower-meadow/colorful-wildflower-meadow-bloom.jpg', alt: 'A colorful wildflower meadow in full bloom with mixed native flowers and tall grasses', caption: 'A quarter-acre meadow like this can support hundreds of native bee species where the same square footage of turf supports almost none.' },
       ],
     },
     {
@@ -141,6 +142,7 @@ export const wildflowerMeadowContent = {
           ],
         },
         { type: 'warning', emoji: '⚠️', text: 'Avoid \'wildflower seed bombs,\' cheap canned mixes, and any product claiming to work without site preparation. These typically fail within 2–3 years even when they germinate initially, because they contain no native perennials and don\'t address the underlying lawn competition problem.' },
+        { type: 'image', src: '/guides/wildflower-meadow/broadcasting-wildflower-seed-hand.jpg', alt: 'A hand broadcasting wildflower seed over freshly prepared soil in a garden', caption: 'Sowing in two perpendicular passes with a sand or vermiculite carrier is the simplest way to get even coverage across the whole bed.' },
       ],
     },
     {
@@ -166,6 +168,7 @@ export const wildflowerMeadowContent = {
           ],
         },
         { type: 'tip', emoji: '🐝', text: 'Purple coneflower (Echinacea purpurea) and black-eyed Susan (Rudbeckia hirta) together provide the most reliable first-year and ongoing impact in any meadow. If you only choose two perennials, choose these. They are long-lived, easy from seed, loved by pollinators and birds, and unfailingly beautiful.' },
+        { type: 'image', src: '/guides/wildflower-meadow/purple-coneflower-black-eyed-susan.jpg', alt: 'Purple coneflowers and yellow black-eyed susans blooming together in a wildflower meadow', caption: 'If a first meadow includes only two perennials, these are the two — long-lived, easy from seed, and loved by pollinators and birds alike.' },
       ],
     },
     {
@@ -217,6 +220,7 @@ export const wildflowerMeadowContent = {
           ],
         },
         { type: 'tip', emoji: '🦋', text: 'Little bluestem (Schizachyrium scoparium) is the single most ecologically important native grass for Eastern and Central North American meadows. It hosts larvae of 35+ species of moths and butterflies (Lepidoptera), provides nesting material for native bees, turns brilliant copper-burgundy in fall, and is architecturally beautiful. Every meadow should include it.' },
+        { type: 'image', src: '/guides/wildflower-meadow/ornamental-grasses-meadow-fall-color.jpg', alt: 'Native ornamental grasses with copper and gold fall color swaying in a meadow', caption: 'Grasses make up 40-60% of every natural meadow — the structural backbone wildflowers alone can\'t provide, not a stand-in for the "real" plants.' },
       ],
     },
     {
@@ -247,6 +251,7 @@ export const wildflowerMeadowContent = {
           ],
         },
         { type: 'tip', emoji: '💡', text: 'The most important regional principle: a plant native to your region has co-evolved with the insects that pollinate it. A bee specialist on echinacea in the Midwest may not benefit at all from a South American zinnia. To maximize wildlife impact, prioritize species native to your specific ecoregion, even within a region. Your local native plant society is the best resource for truly local-ecotype seeds.' },
+        { type: 'image', src: '/guides/wildflower-meadow/cardinal-flower-joe-pye-weed.jpg', alt: 'Bright red cardinal flower and pink joe-pye weed blooming together in a native wildflower meadow', caption: 'Locally native species have co-evolved with the specific pollinators in your region — an ecological match no imported ornamental can replicate.' },
       ],
     },
     {

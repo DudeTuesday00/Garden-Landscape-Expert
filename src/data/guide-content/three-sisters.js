@@ -33,6 +33,7 @@ export const threeSistersContent = {
           emoji: '🌿',
           text: 'The Three Sisters are not merely a traditional planting arrangement with sentimental value. Research consistently confirms what Indigenous farmers discovered millennia ago: beans grown with corn and squash fix more nitrogen than beans grown alone; corn grown with beans and squash produces higher yields than corn in monoculture; squash suppresses weeds more effectively than any mechanical weed control at garden scale. Growing the Three Sisters is simultaneously an act of agricultural efficiency, cultural appreciation, and participation in one of the oldest food-growing traditions in human history.',
         },
+        { type: 'image', src: '/guides/three-sisters/corn-beans-squash-garden-mound.jpg', alt: 'A traditional garden mound with tall corn stalks, climbing bean vines, and sprawling squash leaves growing together', caption: 'Each sister gives something and receives something — the whole grows more productive than any of the three planted alone.' },
       ],
     },
     {
@@ -85,6 +86,7 @@ export const threeSistersContent = {
           emoji: '🌿',
           text: 'Many of the corn, bean, and squash varieties developed by Indigenous farmers over centuries are maintained today by seed libraries and Indigenous-led seed organizations. Growing these varieties — Bloody Butcher flint corn, Hidatsa Shield Figure bean, Hopi Orange squash, Cherokee White Eagle corn — participates in the living continuation of agricultural heritage. Seed Savers Exchange, Native Seeds/SEARCH (Tucson, AZ), and the Cultural Conservancy all maintain collections of Indigenous-developed varieties.',
         },
+        { type: 'image', src: '/guides/three-sisters/heirloom-corn-varieties-colorful.jpg', alt: 'Colorful heirloom corn cobs with red, blue, and white kernels displayed together', caption: 'Heirloom varieties bred for this exact companion system carry the stalk strength and vine vigor that make it work.' },
       ],
     },
     {
@@ -143,6 +145,7 @@ export const threeSistersContent = {
             ['Blue Hubbard', 'Winter squash', '100–105 days', '15–40 lbs; blue-grey', 'Traditional Three Sisters; very long storage', 'The most vigorous squash vine — excellent ground cover for large plantings. Stores over a year in ideal conditions.'],
           ],
         },
+        { type: 'image', src: '/guides/three-sisters/winter-squash-vine-garden.jpg', alt: 'Orange winter squash growing on a sprawling vine with large green leaves in a garden', caption: 'Squash\'s broad leaves shade out weed seeds and cool the soil, keeping moisture in for all three sisters.' },
       ],
     },
     {
@@ -248,6 +251,7 @@ export const threeSistersContent = {
             ['First frost and final harvest (Oct–Nov)', 'Harvest all remaining beans before frost. Harvest all winter squash before hard frost. Cut dry corn when stalks are fully dried.', 'Winter squash must be harvested before hard frost (below 28°F). Skin should resist thumbnail pressure. Stem should be dry and corky.'],
           ],
         },
+        { type: 'image', src: '/guides/three-sisters/bean-vines-climbing-corn-stalks.jpg', alt: 'Green bean vines climbing up tall corn stalks in a summer garden', caption: 'Corn goes in first and beans follow only once it reaches 4-6 inches — planting all three at once lets beans smother the young corn.' },
       ],
     },
     {
@@ -332,6 +336,7 @@ export const threeSistersContent = {
             ['Regular inspection', 'Check stored squash monthly. Remove and use immediately any squash showing soft spots, mold, or stem rot.', 'Squash that begins deteriorating releases ethylene gas and moisture that accelerates spoilage in neighboring fruits.'],
           ],
         },
+        { type: 'image', src: '/guides/three-sisters/harvested-corn-beans-squash-basket.jpg', alt: 'A rustic basket filled with freshly harvested corn cobs, dry beans, and winter squash', caption: 'Three distinct harvests at three different times — beans through midsummer, corn briefly fresh then dried, squash stored through winter.' },
       ],
     },
     {

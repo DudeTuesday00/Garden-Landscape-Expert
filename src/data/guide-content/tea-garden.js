@@ -34,6 +34,7 @@ export const teaGardenContent = {
           type: 'p',
           text: 'This guide walks you through every stage of creating a personal tea garden: choosing plants for your climate, space, and taste preferences; designing a garden that is both functional and beautiful; growing and maintaining your tea herbs through the seasons; harvesting and drying material at peak flavor; and blending teas that are entirely your own. Whether you have a dedicated garden bed, a collection of containers on a balcony, or simply a sunny corner to devote to this project, the principles here apply.',
         },
+        { type: 'image', src: '/guides/tea-garden/herbal-tea-garden-bed-mixed-herbs.jpg', alt: 'A lush herb garden bed with mint, chamomile, and lemon balm growing together in a sunny spot', caption: 'A tea garden emphasizes aroma and the pleasure of the brewing ritual over the flavor intensity a culinary herb bed is built for.' },
       ],
     },
     {
@@ -127,6 +128,7 @@ export const teaGardenContent = {
           emoji: '☕',
           text: 'Brewing Chamomile: Fresh chamomile makes a beautiful, delicate tea — use a generous handful of freshly-picked flowers per cup and steep for only 3–4 minutes to avoid bitterness. Dried chamomile is more concentrated: 1 tablespoon per cup, steeped 4–5 minutes. Chamomile pairs naturally with honey, lavender, and lemon. Classic nighttime blend: equal parts chamomile and lemon balm, a pinch of lavender.',
         },
+        { type: 'image', src: '/guides/tea-garden/chamomile-flowers-blooming-closeup.jpg', alt: 'Small white and yellow chamomile flowers blooming in a garden bed, close up', caption: 'Pick when petals are fully reflexed back from the center — that\'s peak volatile oil content and peak flavor.' },
         {
           type: 'h3',
           text: '🍋 Lemon Balm (Melissa officinalis)',
@@ -332,6 +334,7 @@ export const teaGardenContent = {
           emoji: '🌿',
           text: 'Design Tip: The Fragrant Path — If you have a path to your front or back door, plant creeping or mat-forming tea herbs along its edges: Roman chamomile (releases apple fragrance when walked on), thyme, and low-growing mints in buried pots. Brush against lemon balm positioned at knee height as you pass. A path through fragrant herbs transforms a daily walk into a sensory ritual — and ensures you notice when herbs are ready to harvest.',
         },
+        { type: 'image', src: '/guides/tea-garden/lavender-mint-tea-garden-path.jpg', alt: 'A garden path lined with blooming lavender and green mint growing along the edges', caption: 'Fragrant herbs planted along a path you walk daily become part of the ritual — and a natural reminder of what\'s ready to harvest.' },
       ],
     },
     {
@@ -433,6 +436,7 @@ export const teaGardenContent = {
             ['Tulsi', 'Annual everywhere', 'Collect seeds in fall before frost. Start fresh each spring from saved seed.'],
           ],
         },
+        { type: 'image', src: '/guides/tea-garden/lemon-balm-lush-green-leaves.jpg', alt: 'Lush green lemon balm leaves growing densely in a garden bed', caption: 'Cut back by half before it flowers and lemon balm rewards you with fresh, oil-rich regrowth all season long.' },
       ],
     },
     {
@@ -500,6 +504,7 @@ export const teaGardenContent = {
             'Whole vs. crumbled: Store leaves whole and crumble just before brewing. Crumbling increases surface area and speeds flavor loss. Whole chamomile flowers, in particular, hold their flavor far longer than pre-crumbled material.',
           ],
         },
+        { type: 'image', src: '/guides/tea-garden/dried-herbs-bundles-hanging.jpg', alt: 'Small bundles of dried herbs hanging upside down to dry in a rustic wooden setting', caption: 'Properly dried herbs are completely crisp — leaves shatter rather than bend, and stems snap cleanly.' },
       ],
     },
     {
