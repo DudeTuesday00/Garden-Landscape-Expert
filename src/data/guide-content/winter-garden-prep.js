@@ -65,6 +65,7 @@ export const winterGardenPrepContent = {
           emoji: '🌡️',
           text: "USDA Hardiness Zones (1–13) indicate the average annual minimum winter temperature and are used to determine whether a plant can survive winter in your area long-term. Frost dates indicate when temperatures will first or last drop to 32°F. Both matter for winter prep: the hardiness zone tells you which plants need protection; the frost date tells you when to start protecting them. Find your exact frost dates at the USDA's Plant Hardiness Zone Map (planthardiness.ars.usda.gov) or through your local National Weather Service office — local frost dates can vary by weeks within a single county due to elevation, proximity to water, and urban heat effects.",
         },
+        { type: 'image', src: '/guides/winter-garden-prep/frost-covered-garden-bed-morning.jpg', alt: 'A garden bed covered in frost on a cold winter morning with dormant perennials', caption: 'The work done in a warm October afternoon determines how much of the garden survives to greet spring.' },
       ],
     },
 
@@ -167,6 +168,7 @@ export const winterGardenPrepContent = {
             'Depth: 3–4 inches for most perennials. 4–6 inches for marginally hardy plants. Keep mulch 2–3 inches away from the crown of the plant itself — direct mulch against the crown traps moisture and invites disease and rodent damage.',
           ],
         },
+        { type: 'image', src: '/guides/winter-garden-prep/shredded-leaf-mulch-perennial-bed.jpg', alt: 'Shredded leaf mulch spread thickly around dormant perennial plants in a garden bed', caption: 'Winter mulch does its job by stabilizing soil temperature, not by keeping roots warm — the goal is to lock in the cold, not block it out.' },
       ],
     },
 
@@ -464,6 +466,7 @@ export const winterGardenPrepContent = {
             'Storage check: Inspect stored bulbs monthly. Remove any showing rot immediately — one rotting bulb will rapidly spread to neighbors. If bulbs are shriveling, add a small amount of barely-moist vermiculite to the storage container. If they are soft or moldy, the storage conditions are too warm or humid.',
           ],
         },
+        { type: 'image', src: '/guides/winter-garden-prep/dahlia-tubers-curing-storage.jpg', alt: 'Freshly dug dahlia tubers curing in a single layer in a cool, dry space', caption: 'Curing hardens the outer skin before storage — the single step gardeners skip most often, and the one that prevents the most rot.' },
       ],
     },
 
@@ -720,6 +723,7 @@ export const winterGardenPrepContent = {
             ],
           ],
         },
+        { type: 'image', src: '/guides/winter-garden-prep/cold-frame-kale-winter-harvest.jpg', alt: 'A cold frame protecting rows of kale and greens in a winter vegetable garden', caption: 'A cold frame turns a handful of hardy greens into a productive winter harvest window most gardeners never attempt.' },
       ],
     },
 
@@ -934,6 +938,7 @@ export const winterGardenPrepContent = {
             ['Marigolds, zinnias, cosmos', '4–6 weeks', 'March 20 – April 3', 'Fast-growing annuals that do not benefit from early starting. Direct seeding after LFD is a viable alternative.'],
           ],
         },
+        { type: 'image', src: '/guides/winter-garden-prep/seed-starting-trays-windowsill.jpg', alt: 'Seed starting trays with young seedlings lined up on a bright windowsill', caption: 'Calculating backward from your last frost date, not forward from the calendar, is what keeps seedlings from getting leggy before transplant.' },
         {
           type: 'tip',
           emoji: '📅',

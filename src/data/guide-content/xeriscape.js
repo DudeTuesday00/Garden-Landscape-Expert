@@ -37,6 +37,7 @@ export const xeriscapeContent = {
           emoji: '💧',
           text: 'Many water utilities, municipalities, and state agencies across the US offer rebates for converting turf to xeriscape — cash payments per square foot of lawn removed, free mulch programs, subsidized drip irrigation equipment, or rebates on water-efficient plants. In some areas rebates can offset 30 to 70 percent of project costs. Contact your local water utility before beginning any xeriscape project.',
         },
+        { type: 'image', src: '/guides/xeriscape/drought-tolerant-garden-lavender-sage.jpg', alt: 'A lush drought-tolerant garden bed with blooming lavender, sage, and ornamental grasses', caption: 'Xeriscape does not mean cactus and gravel — a well-designed dry garden can be as full and colorful as any conventional bed.' },
       ],
     },
 
@@ -251,6 +252,7 @@ export const xeriscapeContent = {
             ['Native Wildflower Mix', 'Varies by mix', 'Full sun', 'Low during establishment; very low thereafter', 'A region-appropriate native wildflower seed mix is one of the most cost-effective xeric groundcovers. Contact your state native plant society for regionally appropriate mixes.'],
           ],
         },
+        { type: 'image', src: '/guides/xeriscape/sedum-groundcover-stone-path.jpg', alt: 'Low-growing sedum groundcover spilling over a stone garden path in a dry landscape', caption: 'Deep, infrequent watering during establishment builds the deep root systems that make a xeric planting drought tolerant for good.' },
       ],
     },
 
@@ -301,6 +303,7 @@ export const xeriscapeContent = {
             'Rain garden siting: Position rain gardens downslope from the water source and at least 10 feet from the house foundation. Size to hold the runoff from a 1–2 inch rain event — roughly 20–30% of the area draining into it. Plant the center with moisture-tolerant natives: sedges, rushes, iris, swamp milkweed, Joe-Pye weed, buttonbush.',
           ],
         },
+        { type: 'image', src: '/guides/xeriscape/drip-irrigation-emitter-plant-base.jpg', alt: 'A drip irrigation emitter delivering water directly to the base of a drought-tolerant plant', caption: 'Drip irrigation delivers water precisely where it is needed with no loss to evaporation, runoff, or overspray.' },
       ],
     },
 
@@ -374,6 +377,7 @@ export const xeriscapeContent = {
           type: 'p',
           text: 'Slopes present the most challenging conditions in xeriscape: water runs off rather than infiltrating, mulch washes downhill, and erosion exposes roots. Terracing with retaining walls converts a sloping site into a series of level planting areas, each able to capture and hold rainfall. Dry-stacked stone (no mortar) is the most ecologically valuable retaining wall material — the gaps between stones provide habitat for beneficial insects, lizards, and small mammals. Each terrace level becomes a planting bed: moisture-tolerant plants go at the base of walls where water collects; more drought-tolerant plants go at the top where conditions are drier.',
         },
+        { type: 'image', src: '/guides/xeriscape/decomposed-granite-path-dry-garden.jpg', alt: 'A decomposed granite path winding through a xeriscape garden with drought-tolerant plants', caption: 'Permeable surfaces like decomposed granite let rainwater soak into the soil instead of running off toward a storm drain.' },
       ],
     },
 
@@ -473,6 +477,7 @@ export const xeriscapeContent = {
             ['Water bills not decreasing despite xeriscape conversion', 'Irrigation system programming not adjusted after conversion; oasis zone being over-irrigated; controller not accounting for rain events', 'Audit the irrigation system with a water meter. Check that all irrigation zones correspond to correct hydrozone plant communities. Consider a smart controller with ET adjustment. Check for leaks in the drip system (wet spots in dry weather, or a meter that runs when all zones are off).'],
           ],
         },
+        { type: 'image', src: '/guides/xeriscape/ornamental-grasses-fall-xeriscape.jpg', alt: 'Ornamental grasses with golden fall color in a mature xeriscape garden', caption: 'A xeriscape is different-maintenance, not no-maintenance — the annual mulch refresh alone can cut summer watering needs by half.' },
         {
           type: 'tip',
           emoji: '🌵',

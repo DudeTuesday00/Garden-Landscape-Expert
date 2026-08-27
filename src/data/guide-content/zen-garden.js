@@ -75,6 +75,7 @@ export const zenGardenContent = {
             ],
           ],
         },
+        { type: 'image', src: '/guides/zen-garden/raked-gravel-stone-composition.jpg', alt: 'A meticulously raked gravel garden with a composed arrangement of moss-covered stones', caption: 'A genuine Zen garden begins with a question — what kind of space will help a person be present — not with an aesthetic checklist.' },
       ],
     },
     {
@@ -335,6 +336,7 @@ export const zenGardenContent = {
             ],
           ],
         },
+        { type: 'image', src: '/guides/zen-garden/stone-lantern-tsukubai-water-basin.jpg', alt: 'A traditional stone lantern beside a low water basin surrounded by moss and small stones', caption: 'The yakuishi — the stones surrounding a water basin — carry as much compositional weight as the basin itself.' },
       ],
     },
     {
@@ -423,6 +425,7 @@ export const zenGardenContent = {
           emoji: '🪨',
           text: "In Zen Buddhist temple gardens, the daily raking of the karesansui was understood as a form of meditation practice equivalent to seated zazen. The act of raking — repetitive, precise, demanding complete present attention to the body's movement and the gravel's response — requires the same quality of non-discursive attention that seated meditation cultivates. Approach the raking with this understanding. Begin at the edge and work inward or outward with full attention to the physical sensations of the rake, the resistance of the gravel, the emerging pattern. If the mind wanders to planning or memory or fantasy, notice that and return to the physical act without judgment. The garden does not need a perfect pattern. It needs your complete attention while you make it. After heavy rain or wind, the pattern is gone. This is not a problem; it is the practice. Impermanence is not the obstacle to the garden's beauty. It is the point.",
         },
+        { type: 'image', src: '/guides/zen-garden/karesansui-dry-garden-rake-pattern.jpg', alt: 'Carefully raked concentric gravel patterns around stones in a dry karesansui garden', caption: 'The raking is not decoration for the stones — in temple practice it was itself the meditation, equal in weight to seated zazen.' },
       ],
     },
     {
@@ -538,6 +541,7 @@ export const zenGardenContent = {
             'Clumping bamboo: Fargesia rufa, F. murielae, and F. nitida are the most widely available clumping bamboos in the US. Hardy to Zones 4–6 depending on species. Shade-tolerant. Non-invasive. The fountain-like arching canes are graceful and unmistakably bamboo. Excellent for corner accents, screening, and container specimens.',
           ],
         },
+        { type: 'image', src: '/guides/zen-garden/moss-groundcover-japanese-maple-shade.jpg', alt: 'Lush green moss groundcover beneath a Japanese maple in a shaded garden setting', caption: 'Moss and clumping bamboo do the quiet work of a Zen garden\'s ground layer — no mowing, no fertilizing, just patience.' },
       ],
     },
     {
@@ -1000,6 +1004,7 @@ export const zenGardenContent = {
           type: 'p',
           text: 'The niwaki tree that will be magnificent in twenty years is beginning now. The moss that will cover the stepping stones completely in five years is establishing today. The stone that looks slightly awkward in its first year will look as if it has always been there in its seventh. The karesansui that you rake every week in different weather and light and mood becomes, over time, a meditation practice as much as a garden feature.',
         },
+        { type: 'image', src: '/guides/zen-garden/cloud-pruned-pine-garden-path.jpg', alt: 'A cloud-pruned pine tree beside a stepping stone path in a peaceful garden', caption: 'A niwaki tree shaped today will not reach its intended form for twenty years — the garden asks for patience as much as design.' },
         {
           type: 'p',
           text: 'Begin anywhere. One stone placed with intention. One path of stepping stones through a corner of the yard. A water basin and a lantern and a clump of moss. The principles of Zen garden design do not require a large garden, a large budget, or a complete renovation. They require a different quality of attention — and once that attention is brought to a space, it transforms the space in ways that no amount of planting or purchasing can replicate.',
