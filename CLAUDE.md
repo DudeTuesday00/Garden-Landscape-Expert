@@ -2433,7 +2433,7 @@ Following a coverage audit, `src/data/plants.js` was expanded from **150 → 185
 
 ---
 
-### Plantopedia Guides — Inline Photorealistic Images 🔄 (pilot batch complete, 2026-08-23)
+### Plantopedia Guides — Inline Photorealistic Images ✅ (all 55 guides complete, 2026-08-26)
 
 Following the same treatment already shipped on two sibling sites
 (countrytrailhead.com — 48/48 guides done; sixsigmakaizen.com), the
@@ -2504,11 +2504,26 @@ flare and a bare-soil gap ring fixed it. Confirmed via clean `npm run build`
 and direct inspection of the rendered static HTML (`<figure>`/`<figcaption>`
 count and image `src` paths) that all 10 wired in correctly.
 
-**Remaining 53 guides:** not yet started. Following the countrytrailhead
-precedent ("a long-running batch effort across many sessions") — a handful
-of guides per session, not all-at-once. **Never push to `origin/main`
-without the owner explicitly saying "push it live"** in that turn, regardless
-of how much batch work has accumulated locally.
+**Remaining 53 guides — all shipped across batches 2–16 (2026-08-23 through
+2026-08-26), following the countrytrailhead precedent** ("a long-running
+batch effort across many sessions"), a handful of guides per session:
+mulching-guide, no-dig-gardening, ornamental-trees, pizza-garden,
+plants-for-color, plants-for-fragrance, pollinator-garden, porch-plants,
+privacy-screening, privacy-trees, rabbit-proof-garden, rain-barrel,
+rain-garden, salad-garden, salsa-garden, seed-saving, spring-bulb-garden,
+square-foot-gardening, street-trees, sunroom-plants, tea-garden,
+three-sisters, weed-management, wildflower-meadow, winter-garden-prep,
+xeriscape, zen-garden (batch 16, final 3 — `31292d7`), plus every other full
+guide not already covered by the pilot batch. **All 55 full Plantopedia
+guides now have 5 inline images each (275 images total).** The 32 stub
+guides remain untouched — revisit if/when any are expanded to full content.
+Recurring lesson reconfirmed across every batch: a labeled/tagged object or
+implied text in a prompt reliably invites gibberish, and an ambiguous plant
+name (e.g. "cardinal flower") can get misread as something else entirely
+(cardinal birds) — regenerate with the concept dropped or the prompt made
+unambiguous rather than trusting the negative prompt alone. **Never push to
+`origin/main` without the owner explicitly saying "push it live"** in that
+turn, regardless of how much batch work has accumulated locally.
 
 ---
 
