@@ -6,6 +6,7 @@ import plants from '../../../data/plants.js'
 import { successionCrops } from '../../../data/succession-crops.js'
 import { computeSuccessionPlan, formatDate } from '../../../logic/successionPlanner.js'
 import Timeline, { MONTH_STARTS } from '../shared/Timeline.jsx'
+import { useToolUsageTracking } from '../../../logic/useToolUsageTracking.js'
 
 function monthDayToDay(md) {
   return MONTH_STARTS[md.month - 1] + (md.day - 1)
@@ -54,6 +55,8 @@ export default function SuccessionPlanner() {
     [plantId, wholeZone]
   )
   const plantInfo = plants.find((p) => p.id === plantId)
+
+  useToolUsageTracking('succession-planner', status === 'found' && !!wholeZone, { requireInteraction: false })
 
   return (
     <div className="max-w-4xl mx-auto">

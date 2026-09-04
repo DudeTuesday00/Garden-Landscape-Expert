@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { mulchApplications, mulchTypes, getMulchApplication } from '../../../data/mulch-types.js'
 import { computeMulchVolume, estimateMulchCost } from '../../../logic/mulchCalculator.js'
 import RangeBarChart from '../shared/RangeBarChart.jsx'
+import { useToolUsageTracking } from '../../../logic/useToolUsageTracking.js'
 
 export default function MulchCalculator() {
   const [length, setLength] = useState('20')
@@ -30,8 +31,10 @@ export default function MulchCalculator() {
   const volume = useMemo(() => computeMulchVolume(areaSqFt, parseFloat(depth)), [areaSqFt, depth])
   const cost = useMemo(() => (volume ? estimateMulchCost(volume.cuYd, mulchTypeId) : null), [volume, mulchTypeId])
 
+  const usageTracking = useToolUsageTracking('mulch-calculator', !!volume)
+
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto" {...usageTracking}>
       <Link
         href="/tools/"
         className="inline-flex items-center gap-1 text-sm text-garden-600 dark:text-garden-400 hover:underline mb-4"

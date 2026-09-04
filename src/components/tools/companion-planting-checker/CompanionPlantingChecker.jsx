@@ -6,6 +6,7 @@ import plants from '../../../data/plants.js'
 import { checkCompanionship, companionCheckerPlantIds } from '../../../data/companion-pairings.js'
 import RelationshipLink from '../shared/RelationshipLink.jsx'
 import { STATUS } from '../shared/palette.js'
+import { useToolUsageTracking } from '../../../logic/useToolUsageTracking.js'
 
 const CHECKER_PLANTS = companionCheckerPlantIds
   .map((id) => plants.find((p) => p.id === id))
@@ -31,6 +32,8 @@ export default function CompanionPlantingChecker() {
   const plantAInfo = plants.find((p) => p.id === plantA)
   const plantBInfo = plants.find((p) => p.id === plantB)
 
+  const usageTracking = useToolUsageTracking('companion-planting-checker', !!result)
+
   const compatibilityGrid = useMemo(() => {
     return CHECKER_PLANTS.filter((p) => p.id !== plantA).map((p) => {
       const match = checkCompanionship(plantA, p.id)
@@ -39,7 +42,7 @@ export default function CompanionPlantingChecker() {
   }, [plantA])
 
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-3xl mx-auto" {...usageTracking}>
       <Link
         href="/tools/"
         className="inline-flex items-center gap-1 text-sm text-garden-600 dark:text-garden-400 hover:underline mb-4"

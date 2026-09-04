@@ -11,6 +11,7 @@ import {
   getContainerPresetVolumeCuFt,
 } from '../../../logic/soilCalculator.js'
 import RatioBar from '../shared/RatioBar.jsx'
+import { useToolUsageTracking } from '../../../logic/useToolUsageTracking.js'
 
 const RELATED_GUIDES = [
   { id: 'square-foot-gardening', title: 'Square Foot Gardening', emoji: '📐' },
@@ -44,8 +45,10 @@ export default function SoilCalculator() {
     return computeSoilBreakdown({ volumeCuFt, mixId, quantity: qty })
   }, [volumeCuFt, mixId, quantity])
 
+  const usageTracking = useToolUsageTracking('soil-calculator', !!breakdown)
+
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto" {...usageTracking}>
       <Link
         href="/tools/"
         className="inline-flex items-center gap-1 text-sm text-garden-600 dark:text-garden-400 hover:underline mb-4"

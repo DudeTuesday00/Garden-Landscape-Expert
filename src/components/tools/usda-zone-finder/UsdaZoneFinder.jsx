@@ -4,6 +4,7 @@ import { useState, useRef } from 'react'
 import Link from 'next/link'
 import { getZoneInfo, isWizardSupportedZone } from '../../../data/hardiness-zone-info.js'
 import GaugeStrip from '../shared/GaugeStrip.jsx'
+import { useToolUsageTracking } from '../../../logic/useToolUsageTracking.js'
 
 const RELATED_GUIDES = [
   { id: 'four-season-garden', title: 'Four-Season Garden Design', emoji: '🍂', description: 'Keep your garden interesting every month of the year.' },
@@ -53,6 +54,8 @@ export default function UsdaZoneFinder() {
 
   const wholeZone = result ? parseInt(result.zone, 10) : null
   const wizardHref = wholeZone && isWizardSupportedZone(wholeZone) ? `/wizard/?zone=${wholeZone}` : '/wizard/'
+
+  useToolUsageTracking('usda-zone-finder', status === 'found' && !!result, { requireInteraction: false })
 
   return (
     <div className="max-w-3xl mx-auto">

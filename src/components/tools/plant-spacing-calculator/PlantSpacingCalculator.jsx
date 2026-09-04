@@ -7,6 +7,7 @@ import { plantSpacing } from '../../../data/plant-spacing.js'
 import { plantCountForSquares, buildSpacingGrid } from '../../../logic/spacingPlanner.js'
 import BedGrid from '../shared/BedGrid.jsx'
 import { gridTintAt } from '../shared/palette.js'
+import { useToolUsageTracking } from '../../../logic/useToolUsageTracking.js'
 
 const SPACING_PLANTS = Object.keys(plantSpacing)
   .map((id) => {
@@ -84,8 +85,10 @@ export default function PlantSpacingCalculator() {
     })
   )
 
+  const usageTracking = useToolUsageTracking('plant-spacing-calculator', assignments.length > 0 && assignedSquares > 0)
+
   return (
-    <div className="max-w-5xl mx-auto">
+    <div className="max-w-5xl mx-auto" {...usageTracking}>
       <Link
         href="/tools/"
         className="inline-flex items-center gap-1 text-sm text-garden-600 dark:text-garden-400 hover:underline mb-4"

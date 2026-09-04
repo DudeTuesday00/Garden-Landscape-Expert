@@ -8,6 +8,7 @@ import { typeGuides } from '../../../data/type-guides.js'
 import { getFrostEstimate, formatMonthDay } from '../../../data/frost-date-estimates.js'
 import { computeAnnualCalendar, computeSeasonalBand } from '../../../logic/plantingCalendar.js'
 import Timeline, { mergeMonthCellsToBands } from '../shared/Timeline.jsx'
+import { useToolUsageTracking } from '../../../logic/useToolUsageTracking.js'
 
 const RELATED_GUIDES = [
   { id: 'four-season-garden', title: 'Four-Season Garden Design', emoji: '🍂' },
@@ -98,6 +99,8 @@ export default function GardenCalendar() {
 
   const wholeZone = zoneCode ? parseInt(zoneCode, 10) : null
   const frostEstimate = wholeZone ? getFrostEstimate(wholeZone) : null
+
+  useToolUsageTracking('gardening-calendar', status === 'found' && !!wholeZone, { requireInteraction: false })
 
   const rows = useMemo(() => {
     if (!wholeZone) return []

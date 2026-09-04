@@ -10,6 +10,7 @@ import {
   getFeedingProfile
 } from '../../../data/fertilizer-recommendations'
 import { fertilizerTypes } from '../../../data/fertilizer-types'
+import { useToolUsageTracking } from '../../../logic/useToolUsageTracking.js'
 
 export default function FertilizerCalculator() {
   const [plantType, setPlantType] = useState('vegetable')
@@ -34,8 +35,10 @@ export default function FertilizerCalculator() {
   const alternatives = recommendations.filter(r => r.priority === 'alternative')
   const notes = recommendations.filter(r => r.type === 'note' || r.type === 'important-note')
 
+  const usageTracking = useToolUsageTracking('fertilizer-calculator', coreRecommendations.length > 0)
+
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto" {...usageTracking}>
       <Link
         href="/tools/"
         className="inline-flex items-center gap-1 text-sm text-garden-600 dark:text-garden-400 hover:underline mb-4"

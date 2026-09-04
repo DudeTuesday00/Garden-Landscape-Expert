@@ -6,6 +6,7 @@ import plants from '../../../data/plants.js'
 import { plantYields } from '../../../data/plant-yields.js'
 import { computeYieldForSelection, summarizeYields } from '../../../logic/yieldEstimator.js'
 import RangeBarChart from '../shared/RangeBarChart.jsx'
+import { useToolUsageTracking } from '../../../logic/useToolUsageTracking.js'
 
 const YIELD_PLANTS = Object.keys(plantYields)
   .map((id) => {
@@ -54,8 +55,10 @@ export default function YieldEstimator() {
 
   const { totalLbRange, weightResults, ongoingResults } = useMemo(() => summarizeYields(results), [results])
 
+  const usageTracking = useToolUsageTracking('yield-estimator', results.length > 0)
+
   return (
-    <div className="max-w-5xl mx-auto">
+    <div className="max-w-5xl mx-auto" {...usageTracking}>
       <Link
         href="/tools/"
         className="inline-flex items-center gap-1 text-sm text-garden-600 dark:text-garden-400 hover:underline mb-4"

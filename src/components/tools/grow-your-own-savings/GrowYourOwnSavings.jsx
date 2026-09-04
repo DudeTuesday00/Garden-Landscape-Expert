@@ -6,6 +6,7 @@ import plants from '../../../data/plants.js'
 import { produceEconomics } from '../../../data/produce-economics.js'
 import { computeSavingsForSelection, summarizeSavings } from '../../../logic/growYourOwnSavings.js'
 import RangeBarChart from '../shared/RangeBarChart.jsx'
+import { useToolUsageTracking } from '../../../logic/useToolUsageTracking.js'
 
 const SAVINGS_PLANTS = Object.keys(produceEconomics)
   .map((id) => plants.find((p) => p.id === id))
@@ -68,8 +69,10 @@ export default function GrowYourOwnSavings() {
     }
   }
 
+  const usageTracking = useToolUsageTracking('grow-your-own-savings', results.length > 0)
+
   return (
-    <div className="max-w-5xl mx-auto">
+    <div className="max-w-5xl mx-auto" {...usageTracking}>
       <Link
         href="/tools/"
         className="inline-flex items-center gap-1 text-sm text-garden-600 dark:text-garden-400 hover:underline mb-4"

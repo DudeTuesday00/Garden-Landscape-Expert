@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import questions from '../../data/questions.js'
 import { matchPlants } from '../../logic/matchPlants.js'
+import { trackEvent } from '../../logic/analytics.js'
 import WelcomeScreen from './WelcomeScreen.jsx'
 import QuestionStep from './QuestionStep.jsx'
 import ProgressBar from './ProgressBar.jsx'
@@ -116,6 +117,11 @@ export default function Wizard() {
       setStage(STAGES.RESULTS)
       const encoded = encodeAnswers(answers)
       window.history.replaceState(null, '', encoded ? `?a=${encoded}` : window.location.pathname)
+      trackEvent('wizard_complete', {
+        growing_method: answers.growingMethod || 'unspecified',
+        plant_type: Array.isArray(answers.type) ? answers.type.join(',') : answers.type || 'unspecified',
+        result_count: matched.length,
+      })
     }
   }
 

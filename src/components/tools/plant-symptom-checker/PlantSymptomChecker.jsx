@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { locationOptions, getEntriesForLocations } from '../../../data/symptom-key.js'
 import PlantDiagram from './PlantDiagram.jsx'
+import { useToolUsageTracking } from '../../../logic/useToolUsageTracking.js'
 
 const GUIDE_TITLES = {
   'garden-pests': 'Garden Pests ID & Control',
@@ -21,6 +22,8 @@ export default function PlantSymptomChecker() {
 
   const candidates = useMemo(() => getEntriesForLocations(locations), [locations])
   const selected = candidates.find((e) => e.id === selectedId)
+
+  useToolUsageTracking('plant-symptom-checker', !!selected, { requireInteraction: false })
 
   return (
     <div className="max-w-4xl mx-auto">

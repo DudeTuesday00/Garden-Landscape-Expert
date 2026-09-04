@@ -5,6 +5,7 @@ import Link from 'next/link'
 import plants from '../../../data/plants.js'
 import { computeWateringPlan } from '../../../logic/wateringCalculator.js'
 import GaugeStrip from '../shared/GaugeStrip.jsx'
+import { useToolUsageTracking } from '../../../logic/useToolUsageTracking.js'
 
 const WATER_LEVEL_LABELS = { low: '💧 Low', moderate: '💧💧 Moderate', high: '💧💧💧 High' }
 
@@ -56,8 +57,10 @@ export default function WateringCalculator() {
     [plant, growingMethod, wholeZone]
   )
 
+  const usageTracking = useToolUsageTracking('watering-calculator', !!plan)
+
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto" {...usageTracking}>
       <Link
         href="/tools/"
         className="inline-flex items-center gap-1 text-sm text-garden-600 dark:text-garden-400 hover:underline mb-4"

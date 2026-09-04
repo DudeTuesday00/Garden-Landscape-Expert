@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { compostMaterials } from '../../../data/compost-materials.js'
 import { computeCompostPlan, pilePresets } from '../../../logic/compostCalculator.js'
 import RatioBar from '../shared/RatioBar.jsx'
+import { useToolUsageTracking } from '../../../logic/useToolUsageTracking.js'
 
 const BROWN_MATERIALS = compostMaterials.filter((m) => m.category === 'brown')
 const GREEN_MATERIALS = compostMaterials.filter((m) => m.category === 'green')
@@ -29,8 +30,13 @@ export default function CompostCalculator() {
     [totalCuFt, brownIds, greenIds]
   )
 
+  const usageTracking = useToolUsageTracking(
+    'compost-calculator',
+    !!plan && plan.brownBreakdown.length > 0 && plan.greenBreakdown.length > 0
+  )
+
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto" {...usageTracking}>
       <Link
         href="/tools/"
         className="inline-flex items-center gap-1 text-sm text-garden-600 dark:text-garden-400 hover:underline mb-4"
