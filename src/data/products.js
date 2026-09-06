@@ -16,7 +16,13 @@
  *  - features:    string[] — key feature bullet points
  *  - details:     object   — technical specifications
  *  - inStock:     boolean
+ *  - etsyUrl:     string|null — direct link to this product's Etsy listing;
+ *                 falls back to the shop root (SHOP_ROOT below) when null,
+ *                 since the site has no built-in checkout — every purchase
+ *                 happens on Etsy
  */
+
+export const SHOP_ROOT = 'https://www.etsy.com/shop/PixelsandChisels'
 
 export const productCategories = [
   { id: 'planters',      label: 'Planters & Pots',     emoji: '🪴' },
@@ -61,6 +67,7 @@ export const products = [
       infill: '25% gyroid infill',
     },
     inStock: true,
+    etsyUrl: null,
   },
   {
     id: 'plant-stake-label-set',
@@ -95,6 +102,7 @@ export const products = [
       infill: '30% infill',
     },
     inStock: true,
+    etsyUrl: null,
   },
   {
     id: 'trellis-clip-set',
@@ -129,6 +137,7 @@ export const products = [
       infill: '20% infill',
     },
     inStock: true,
+    etsyUrl: null,
   },
   {
     id: 'seedling-tray-insert',
@@ -163,6 +172,7 @@ export const products = [
       infill: '15% infill',
     },
     inStock: true,
+    etsyUrl: null,
   },
   {
     id: 'garden-tool-caddy',
@@ -198,6 +208,7 @@ export const products = [
       infill: '25% gyroid infill',
     },
     inStock: true,
+    etsyUrl: null,
   },
   {
     id: 'self-watering-reservoir-insert',
@@ -232,6 +243,7 @@ export const products = [
       infill: '35% infill (watertight walls)',
     },
     inStock: false,
+    etsyUrl: null,
   },
 ]
 

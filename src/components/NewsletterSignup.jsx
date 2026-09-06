@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { trackEvent } from '../logic/analytics.js'
 
 // To connect a real email list, replace the fetch URL with your
 // Mailchimp, ConvertKit, or other provider's form endpoint.
@@ -24,6 +25,7 @@ export default function NewsletterSignup() {
     } catch {
       // fail silently
     }
+    trackEvent('newsletter_signup')
     setStatus('success')
   }
 

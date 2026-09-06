@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import { getProduct } from '../../data/products.js'
+import { getProduct, SHOP_ROOT } from '../../data/products.js'
 import ImageGallery from './ImageGallery.jsx'
+import BuyOnEtsyButton from './BuyOnEtsyButton.jsx'
 
 const badgeColors = {
   'Best Seller': 'bg-earth-100 dark:bg-earth-900/30 text-earth-700 dark:text-earth-300 border-earth-300 dark:border-earth-700',
@@ -89,19 +90,16 @@ export default function ProductDetail({ productId }) {
                   <p className="text-xs text-gray-500 dark:text-gray-400">
                     Made to order · Ships in 3–5 business days
                   </p>
-                  <button
-                    disabled
-                    className="w-full bg-garden-600 hover:bg-garden-700 disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold py-3 px-6 rounded-xl transition-colors text-sm"
-                    title="Ordering coming soon"
-                  >
-                    🛒 Add to Cart — Coming Soon
-                  </button>
+                  <BuyOnEtsyButton productId={product.id} href={product.etsyUrl || SHOP_ROOT} />
                   <p className="text-center text-xs text-gray-400 dark:text-gray-500">
-                    Online ordering is coming soon.{' '}
+                    Purchases are handled through our{' '}
+                    <a href={SHOP_ROOT} target="_blank" rel="noopener noreferrer" className="underline hover:text-garden-600">
+                      Etsy shop
+                    </a>
+                    . Need a custom color or size?{' '}
                     <Link href="/contact/" className="underline hover:text-garden-600">
                       Contact us
-                    </Link>{' '}
-                    to place a custom order today.
+                    </Link>.
                   </p>
                 </>
               ) : (
@@ -116,7 +114,11 @@ export default function ProductDetail({ productId }) {
                     <Link href="/contact/" className="underline hover:text-garden-600">
                       Contact us
                     </Link>{' '}
-                    to be notified when this item is back.
+                    to be notified when this item is back, or browse our{' '}
+                    <a href={SHOP_ROOT} target="_blank" rel="noopener noreferrer" className="underline hover:text-garden-600">
+                      Etsy shop
+                    </a>{' '}
+                    for similar items.
                   </p>
                 </>
               )}

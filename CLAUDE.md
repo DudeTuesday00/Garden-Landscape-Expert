@@ -300,7 +300,7 @@ Each question in `questions.js` has:
 ## Planned Sections (Future)
 
 - **Newsletter Generator — Phase 2: automated subscriber email.** The generator itself (discovery → draft → approve → publish) is live — see "Newsletter Generator ✅" under Completed Work. Automated email-to-subscribers was always scoped as a later phase and is not built: no `Subscriber` model, no email service provider integration, nothing scaffolded for it yet.
-- **Planting Guides (ongoing)** — all 87 guides are live and indexable (55 full, 32 active stubs); continue expanding stubs to full guides from source `.docx` files using the established pattern in `guide-content/` as new source documents arrive (see "Notes for AI Assistants": a guide must not be built from scratch without a `.docx` source)
+- **Planting Guides (ongoing)** — all 87 guides are live and indexable (55 full, 32 active stubs); continue expanding stubs to full guides using the established pattern in `guide-content/`, either from a source `.docx` when the owner has one or authored directly from compiled horticultural knowledge when one isn't available (see "Notes for AI Assistants" for the authoring standard)
 - Real product photography for the 3D Printed Garden Shop, then re-enable the Shop nav link (currently hidden — see "Content & Credibility Improvements")
 - Google AdSense re-enablement once the site is approved (currently gated off — see Tech Stack above)
 
@@ -1874,7 +1874,7 @@ All 34 previously `comingSoon: true` guides have been converted to active stub p
 - 32 active stub pages (2 paragraphs + coming-soon notice)
 - 87 total live, indexable guide pages
 
-**Principle going forward:** Do not set any guide to `comingSoon: true`. When a docx source file is not yet available, create a stub page following the structure above. When a full docx is received, expand the stub into the complete guide.
+**Principle going forward:** Do not set any guide to `comingSoon: true`. A new guide subject can launch as a stub page (structure above) and be expanded whenever content is ready — from a docx source when the owner has one, or authored directly from compiled horticultural knowledge per the authoring standard in "Notes for AI Assistants" when one isn't available.
 
 ---
 
@@ -2529,7 +2529,7 @@ turn, regardless of how much batch work has accumulated locally.
 
 ## Notes for AI Assistants
 
-- **A guide must not be built unless a `.docx` source file exists for that subject.** The `.docx` file is the authoritative source of truth for guide content; do not create or populate a guide JS file from scratch without one.
+- **A `.docx` source is no longer required to build a guide.** When the owner has one on hand, it remains the authoritative source of truth. When one isn't available, a guide's content may be authored directly from compiled, well-established horticultural knowledge — the same standard already used for this repo's other compiled-knowledge data files (`plant-care-details.js`, `companion-pairings.js`, `frost-date-estimates.js`, etc.), never scraped or fabricated. When expanding a stub without a docx, target the same structural depth as existing full guides (7–10 sections, multiple `table`/`list`/`tip`/`warning` blocks per section — `mulching-guide.js` and `organic-fertilizing.js` are good depth references), never state a specific numeric claim (yield, timing, dosage) without solid horticultural grounding, and finish with the same 5-image Z-Image inline treatment already standard on every full guide (see "Plantopedia Guides — Inline Photorealistic Images" above).
 - Prefer editing existing files over creating new ones unless strictly necessary
 - **Always use relative imports** (e.g. `../components/Nav.jsx`, `../../data/plants.js`). The project does **not** use the `@/` path alias, even though Next.js can support it. Using `@/` will cause Cloudflare Pages builds to fail.
 - Avoid over-engineering; keep solutions minimal and focused

@@ -1,4 +1,4 @@
-import { products } from '../../data/products.js'
+import { products, SHOP_ROOT } from '../../data/products.js'
 import ShopGrid from './ShopGrid.jsx'
 import shopHeaderImg from './3d-printed-garden-shop-header.png'
 
@@ -36,6 +36,22 @@ export default function ShopHome() {
               </span>
             </div>
           </div>
+        </div>
+
+        {/* Etsy storefront banner */}
+        <div className="bg-earth-50 dark:bg-gray-800 rounded-2xl border border-earth-200 dark:border-earth-700 p-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+          <p className="text-sm text-gray-700 dark:text-gray-300">
+            🛍️ Every item here is made to order and purchased through our Etsy shop —
+            browse the full listing to see current colors and availability.
+          </p>
+          <a
+            href={SHOP_ROOT}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 bg-garden-600 hover:bg-garden-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-colors"
+          >
+            Shop on Etsy →
+          </a>
         </div>
 
         {/* Client island — category filtering + grid */}

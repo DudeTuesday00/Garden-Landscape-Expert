@@ -1,13 +1,25 @@
 {
   "name": "Planting Atlas — Plan it. Plant it. Grow it.",
   "short_name": "Planting Atlas",
-  "description": "Personalized plant recommendations from a 148-plant database and 88 expert growing guides for every USDA hardiness zone.",
+  "description": "Personalized plant recommendations from a 185-plant database and 87 expert growing guides for every USDA hardiness zone.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#F5F5F0",
   "theme_color": "#2F6B3F",
   "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "/favicon.png",
       "sizes": "435x637",

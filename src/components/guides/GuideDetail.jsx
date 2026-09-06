@@ -5,6 +5,10 @@ import { guideCategories } from '../../data/guides.js'
 import { heroImages } from '../../data/hero-images.js'
 import AuthorBox from './AuthorBox.jsx'
 import NewsletterSignup from '../NewsletterSignup.jsx'
+import PrintGuideButton from './PrintGuideButton.jsx'
+import AffiliateLink from './AffiliateLink.jsx'
+import ReadDepthTracker from './ReadDepthTracker.jsx'
+import SaveButton from '../SaveButton.jsx'
 
 export { heroImages }
 
@@ -937,7 +941,7 @@ const themes = {
   },
 }
 
-function Block({ block, theme }) {
+function Block({ block, theme, guideId }) {
   switch (block.type) {
     case 'p':
       return <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{block.text}</p>
@@ -987,14 +991,7 @@ function Block({ block, theme }) {
                 ))}
               </ul>
             )}
-            <a
-              href={block.link}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              className="inline-block text-center bg-garden-600 hover:bg-garden-700 text-white font-semibold text-sm rounded-xl px-5 py-2.5 transition-colors self-start mt-1"
-            >
-              {block.linkText || 'View on Amazon'} →
-            </a>
+            <AffiliateLink guideId={guideId} title={block.title} link={block.link} linkText={block.linkText} />
             <p className="text-xs text-gray-400 dark:text-gray-500 italic">
               Affiliate link — we may earn a small commission at no extra cost to you.
             </p>
@@ -1059,14 +1056,14 @@ function Block({ block, theme }) {
   }
 }
 
-function Section({ section, theme }) {
+function Section({ section, theme, guideId }) {
   return (
     <div id={section.id} className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-6 sm:p-8 flex flex-col gap-4">
       <h2 className={`text-lg font-bold ${theme.sectionTitle} dark:text-gray-100 pb-2 border-b ${theme.sectionBorder} dark:border-gray-600`}>
         {section.title}
       </h2>
       {section.blocks.map((block, i) => (
-        <Block key={i} block={block} theme={theme} />
+        <Block key={i} block={block} theme={theme} guideId={guideId} />
       ))}
     </div>
   )
@@ -1091,7 +1088,7 @@ export default function GuideDetail({ guideId }) {
         {/* Back button */}
         <Link
           href="/guides/"
-          className={`flex items-center gap-1.5 text-sm ${theme.backBtn} dark:text-gray-300 dark:hover:text-white font-medium transition-colors self-start`}
+          className={`print:hidden flex items-center gap-1.5 text-sm ${theme.backBtn} dark:text-gray-300 dark:hover:text-white font-medium transition-colors self-start`}
         >
           <span>←</span>
           <span>Back to Planting Guides</span>
@@ -1113,6 +1110,9 @@ export default function GuideDetail({ guideId }) {
               Written by <span className="font-medium">David Rodgers</span> — Updated March 2026
             </p>
             <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-lg mx-auto">{content.hero.subtitle}</p>
+            <div className="print:hidden mt-3 flex justify-center">
+              <SaveButton type="guide" id={guideId} label="Save to My Garden" />
+            </div>
           </div>
         </div>
 
@@ -1156,7 +1156,7 @@ export default function GuideDetail({ guideId }) {
           const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`
           const btnCls = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border transition-colors hover:opacity-80'
           return (
-            <div className="flex items-center gap-2 flex-wrap">
+            <div className="print:hidden flex items-center gap-2 flex-wrap">
               <span className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wide">Share:</span>
               <a href={pinterestUrl} target="_blank" rel="noopener noreferrer"
                 className={`${btnCls} bg-[#E60023] border-[#E60023] text-white`}>
@@ -1170,37 +1170,51 @@ export default function GuideDetail({ guideId }) {
                 className={`${btnCls} bg-[#1877F2] border-[#1877F2] text-white`}>
                 f Facebook
               </a>
+              <PrintGuideButton />
             </div>
           )
         })()}
 
         {/* Sections — ad placeholders injected after the 2nd, 4th, and 6th sections */}
-        {content.sections.map((section, i) => (
-          <Fragment key={section.id}>
-            <Section section={section} theme={theme} />
-            {(i === 1 || i === 3 || i === 5) && (
-              <div
-                id={`adsense-placeholder-${i === 1 ? 1 : i === 3 ? 2 : 3}`}
-                style={{ minHeight: '280px', margin: '0' }}
-              >
-                {/* AdSense will automatically fill this when approved */}
-              </div>
-            )}
-          </Fragment>
-        ))}
+        {(() => {
+          const total = content.sections.length
+          const fiftyIndex = Math.min(total - 1, Math.floor(total * 0.5))
+          const ninetyIndex = Math.min(total - 1, Math.floor(total * 0.9))
+          return content.sections.map((section, i) => (
+            <Fragment key={section.id}>
+              <Section section={section} theme={theme} guideId={guideId} />
+              {i === fiftyIndex && <div id="read-depth-50" />}
+              {i === ninetyIndex && <div id="read-depth-90" />}
+              {(i === 1 || i === 3 || i === 5) && (
+                <div
+                  id={`adsense-placeholder-${i === 1 ? 1 : i === 3 ? 2 : 3}`}
+                  className="print:hidden"
+                  style={{ minHeight: '280px', margin: '0' }}
+                >
+                  {/* AdSense will automatically fill this when approved */}
+                </div>
+              )}
+            </Fragment>
+          ))
+        })()}
+        <ReadDepthTracker guideId={guideId} fiftyId="read-depth-50" ninetyId="read-depth-90" />
 
         {/* Newsletter signup */}
-        <NewsletterSignup />
+        <div className="print:hidden">
+          <NewsletterSignup />
+        </div>
 
         {/* Author box */}
-        <AuthorBox />
+        <div className="print:hidden">
+          <AuthorBox />
+        </div>
 
         {/* Related guides */}
         {(() => {
           const related = getRelatedGuides(guideId)
           if (related.length === 0) return null
           return (
-            <div className="mt-2">
+            <div className="print:hidden mt-2">
               <h2 className={`text-lg font-bold mb-3 ${theme.sectionTitle} dark:text-garden-300`}>
                 You might also like
               </h2>
@@ -1224,7 +1238,7 @@ export default function GuideDetail({ guideId }) {
         })()}
 
         {/* Footer nav */}
-        <div className="text-center pb-4">
+        <div className="print:hidden text-center pb-4">
           <Link
             href="/guides/"
             className={`text-sm ${theme.backBtn} dark:text-gray-300 dark:hover:text-white font-medium transition-colors`}

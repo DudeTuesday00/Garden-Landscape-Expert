@@ -30,8 +30,11 @@ export const metadata = {
   metadataBase: new URL('https://plantingatlas.com'),
   manifest: '/manifest.json',
   icons: {
-    icon: '/favicon.png',
-    apple: '/favicon.png',
+    icon: [
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
   },
   openGraph: {
     siteName: 'Planting Atlas',
@@ -206,7 +209,21 @@ export default function RootLayout({ children }) {
           gtag('config','G-7S7248T634');
         `}</Script>
 
-        {/* 
+        {/*
+          === GOOGLE ADS CONVERSION TRACKING — INERT UNTIL AN ID IS SUPPLIED ===
+          Reuses the gtag.js already loaded for GA4 above — gtag supports
+          multiple 'config' calls off one script load, no separate tag needed.
+          Set NEXT_PUBLIC_GOOGLE_ADS_ID (e.g. "AW-XXXXXXXXX") once a real
+          Google Ads account/Conversion ID exists; see src/logic/analytics.js's
+          reportConversion() for firing individual conversion events.
+        */}
+        {process.env.NEXT_PUBLIC_GOOGLE_ADS_ID && (
+          <Script id="google-ads-init" strategy="afterInteractive">{`
+            gtag('config','${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}');
+          `}</Script>
+        )}
+
+        {/*
           === GOOGLE ADSENSE — DISABLED UNTIL APPROVED ===
           
           The AdSense script is intentionally disabled while awaiting Google AdSense approval.

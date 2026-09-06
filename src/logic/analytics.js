@@ -13,3 +13,18 @@ export function trackEvent(eventName, params = {}) {
   window.dataLayer = window.dataLayer || []
   window.dataLayer.push({ event: eventName, ...params })
 }
+
+// Fires a Google Ads conversion event. No-ops until NEXT_PUBLIC_GOOGLE_ADS_ID
+// is set (see layout.jsx) — safe to call unconditionally from the moments
+// worth tracking (wizard_complete, newsletter_signup, shop_etsy_click, etc.)
+// even before a real Ads account exists.
+export function reportConversion(conversionLabel, params = {}) {
+  if (typeof window === 'undefined') return
+  const adsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID
+  if (!adsId || typeof window.gtag !== 'function') return
+
+  window.gtag('event', 'conversion', {
+    send_to: `${adsId}/${conversionLabel}`,
+    ...params,
+  })
+}

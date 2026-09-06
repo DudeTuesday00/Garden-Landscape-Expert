@@ -8,6 +8,7 @@ import { companionCheckerPlantIds } from '../../data/companion-pairings.js'
 import { plantingWindows } from '../../data/planting-windows.js'
 import { plantCareDetails } from '../../data/plant-care-details.js'
 import ImageGallery from '../shop/ImageGallery.jsx'
+import SaveButton from '../SaveButton.jsx'
 
 // Every plant in public/plants/<id>/ ships the same 4-file set (verified
 // 1:1 against plants.js before shipping) — no per-plant existence check
@@ -106,6 +107,7 @@ export default function PlantDetail({ plantId }) {
                   💧 Hydroponic-Compatible
                 </span>
               )}
+              <SaveButton type="plant" id={plantId} label="Save to My Garden" />
             </div>
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
               <span className="mr-1.5" aria-hidden="true">{plant.emoji}</span>
