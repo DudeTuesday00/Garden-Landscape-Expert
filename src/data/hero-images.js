@@ -62,5 +62,7 @@ export const heroImages = {
   'privacy-screening': '/guides/privacy-screening.png',
   'medicinal-herb-garden': '/guides/medicinal-herb-garden.png',
   'no-dig-gardening': '/guides/no-dig-gardening-guide.png',
+  'companion-planting': '/guides/companion-planting-guide.jpg',
+  'soil-health': '/guides/soil-health-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }

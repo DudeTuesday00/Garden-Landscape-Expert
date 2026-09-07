@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 185 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 87 guides total. All 87 are live and indexable: 55 have full in-depth content; the remaining 32 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 87 guides total. All 87 are live and indexable: 57 have full in-depth content; the remaining 30 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
@@ -300,13 +300,37 @@ Each question in `questions.js` has:
 ## Planned Sections (Future)
 
 - **Newsletter Generator — Phase 2: automated subscriber email.** The generator itself (discovery → draft → approve → publish) is live — see "Newsletter Generator ✅" under Completed Work. Automated email-to-subscribers was always scoped as a later phase and is not built: no `Subscriber` model, no email service provider integration, nothing scaffolded for it yet.
-- **Planting Guides (ongoing)** — all 87 guides are live and indexable (55 full, 32 active stubs); continue expanding stubs to full guides using the established pattern in `guide-content/`, either from a source `.docx` when the owner has one or authored directly from compiled horticultural knowledge when one isn't available (see "Notes for AI Assistants" for the authoring standard)
+- **Planting Guides (ongoing)** — all 87 guides are live and indexable (57 full, 30 active stubs); continue expanding stubs to full guides using the established pattern in `guide-content/`, either from a source `.docx` when the owner has one or authored directly from compiled horticultural knowledge when one isn't available (see "Notes for AI Assistants" for the authoring standard)
 - Real product photography for the 3D Printed Garden Shop, then re-enable the Shop nav link (currently hidden — see "Content & Credibility Improvements")
 - Google AdSense re-enablement once the site is approved (currently gated off — see Tech Stack above)
 
 ---
 
 ## Completed Work
+
+### Newsletter Subscriber Capture — n8n Workflow (2026-09-06)
+
+Built the n8n side of Newsletter Phase 2 (real subscriber capture, replacing the Formspree interim form) using the n8n instance already running the separate Newsletter Generator's pipeline (`http://192.168.1.123:5678`, confirmed reachable and connected via `mcp__n8n__*` tools this session).
+
+- **Data Table** `planting_atlas_subscribers` (id `kSqVo5TtYOTswAO6`) — columns `email`, `status`, `source_url`, `ip_address`, `user_agent`, `subscribed_at` (all string type). Chosen over spinning up Postgres tables since it's built into n8n with zero extra infra, per the plan.
+- **Workflow** `Planting Atlas Newsletter Signup` (id `5paNlUEpgyTSC2oA`), validated with 0 errors: `Webhook` (POST, path `planting-atlas-newsletter-signup`) → `Code` (normalizes email to lowercase, validates format, checks a `_honey` honeypot field, extracts `source_url`/`ip_address`/`user_agent` from the request) → `IF` (valid?) → on true, `Data Table` `upsert` operation matching on `email` (dedupes repeat signups instead of inserting duplicate rows, an improvement over the SMS Opt-In precedent workflow this was modeled on, which only ever inserts) → `Respond Success` (200 JSON); on false → `Respond Error` (400 JSON with the specific validation message).
+- **Left deactivated and not yet wired into the site.** n8n is LAN-only (`192.168.1.123:5678`) — the production site (Cloudflare Pages, public internet) cannot reach this webhook as-is. Per the plan, the required next step is owner-side: a **Cloudflare Tunnel** (`cloudflared`) exposing just the webhook path publicly (e.g. `hooks.plantingatlas.com`), which needs machine/account access this session doesn't have. Once that exists, swap `NewsletterSignup.jsx`'s `FORM_ENDPOINT` to the public webhook URL and activate the workflow.
+- **Not yet built:** the "Send-to-Subscribers" workflow (queries the Data Table, emails each subscriber) — needs SMTP/transactional-email credentials from the owner, not yet confirmed to exist in this n8n instance.
+
+### Companion Planting & Soil Health Guides Expanded to Full Content ✅ (2026-09-06)
+
+`src/data/guide-content/companion-planting.js` and `src/data/guide-content/soil-health.js` expanded from 2-paragraph stubs to full guides, authored directly from compiled horticultural knowledge (no `.docx` source existed for either) per the authoring standard in "Notes for AI Assistants."
+
+| Guide | Sections | Notes |
+|---|---|---|
+| Companion Planting (`id: 'companion-planting'`) | 8 sections | Mechanisms behind real companion effects (scent masking, trap cropping, nitrogen fixation, allelopathy), Three Sisters + classic polycultures, pest-deterrent pairings/trap crop table, a comprehensive good/avoid pairing table (reusing `companion-pairings.js`'s data as its grounding source), plants to keep apart, rotation-plus-companion planning, designing a companion-planted garden, common mistakes |
+| Soil Health & Amendment (`id: 'soil-health'`) | 7 sections | Soil testing methodology, pH ranges and correction, soil texture types (clay/sandy/silty/loam/chalky) and amendment strategy, building organic matter, soil food web biology, nutrient deficiency diagnosis, a 3-year soil improvement plan |
+
+- New theme entries added to `GuideDetail.jsx`: `companion-planting` (cyan/teal gradient), `soil-health` (amber/stone earthy gradient)
+- 5 inline photorealistic images generated per guide via the standard Z-Image Turbo/ComfyUI pipeline (`public/guides/companion-planting/*.jpg`, `public/guides/soil-health/*.jpg`), plus a wider-aspect hero image each (`public/guides/companion-planting-guide.jpg`, `public/guides/soil-health-guide.jpg` — saved as `.jpg` since Z-Image output is JPEG, not `.png` like the earlier hero image batch). All 12 images manually reviewed before commit — no gibberish text or artifacts.
+- Verified via full `npm run build` (368 static pages) and grep-confirmed exactly 5 `<figure>` elements + correct image paths in both guides' built HTML; also spot-checked live in the dev server (page text, no console errors).
+- Guide counts updated everywhere: 57 full guides / 30 stubs (was 55/32) — `HomePage.jsx`'s stat strip updated to "57 In-depth guides".
+- `.claude/launch.json` added this session (`npm run dev`, port 3000) — didn't previously exist in this repo, needed for the Browser pane's `preview_start` to work.
 
 ### Newsletter Generator ✅
 
