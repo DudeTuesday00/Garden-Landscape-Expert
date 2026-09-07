@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import SiteSearch from './SiteSearch.jsx'
 
 export default function Nav() {
   const pathname = usePathname()
@@ -33,7 +32,7 @@ export default function Nav() {
   }
 
   function navCls(href) {
-    return `px-4 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+    return `px-3 py-1.5 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
       isActive(href)
         ? 'bg-garden-600 text-white'
         : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
@@ -48,6 +47,10 @@ export default function Nav() {
     }`
   }
 
+  // About and Contact are intentionally left out of the nav — both are one
+  // click away in the footer on every page, and dropping them (plus the
+  // search icon, now a full-width bar on the homepage) is what keeps this
+  // list short enough to actually center on one line.
   const navLinks = [
     { href: '/wizard/',                 label: '🌱 Garden Architect' },
     { href: '/plants/',                 label: '🌿 Plant Database' },
@@ -57,15 +60,13 @@ export default function Nav() {
     { href: '/videos/',                 label: '🎬 Videos' },
     { href: '/podcasts/',               label: '🎙️ Podcasts' },
     { href: '/newsletters/',            label: '📬 Newsletter' },
-    { href: '/my-garden/',               label: '❤️ My Garden' },
+    { href: '/my-garden/',              label: '❤️ My Garden' },
     { href: 'https://pixelsandchisels.etsy.com', label: '🖨️ Shop', external: true },
-    { href: '/about/',                  label: '👤 About' },
-    { href: '/contact/',                label: '✉️ Contact' },
   ]
 
   return (
     <header className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-700 shadow-sm sticky top-0 z-10 print:hidden">
-      <div className="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between">
+      <div className="w-full px-4 sm:px-6 h-14 grid grid-cols-[auto_1fr_auto] items-center gap-3">
         {/* Brand */}
         <Link
           href="/"
@@ -76,8 +77,12 @@ export default function Nav() {
           <span className="font-bold text-sm tracking-wide uppercase sm:hidden">PA</span>
         </Link>
 
-        {/* Desktop nav — hidden on mobile */}
-        <nav className="hidden md:flex items-center gap-1">
+        {/* Desktop nav — centered in the remaining space regardless of brand width.
+            The dark-mode toggle lives inside this same flex-wrap group (not a
+            separate grid cell) so if the list ever wraps to a second line on a
+            narrower "md" width, the toggle wraps with it instead of floating
+            off to the side on its own. */}
+        <nav className="hidden md:flex items-center justify-center gap-1 flex-wrap">
           {navLinks.map(({ href, label, external }) =>
             external ? (
               <a key={href} href={href} target="_blank" rel="noopener noreferrer" className={navCls(href)}>
@@ -89,10 +94,9 @@ export default function Nav() {
               </Link>
             )
           )}
-          <SiteSearch />
           <button
             onClick={toggleDark}
-            className="ml-1 p-1.5 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            className="p-1.5 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
             aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
             title={dark ? 'Switch to light mode' : 'Switch to dark mode'}
           >
@@ -100,9 +104,12 @@ export default function Nav() {
           </button>
         </nav>
 
-        {/* Mobile controls — search + dark toggle + hamburger */}
-        <div className="flex items-center gap-1 md:hidden">
-          <SiteSearch />
+        {/* Spacer to balance the brand on mobile's 3-col grid; desktop nav above
+            already accounts for the toggle, so this cell stays empty on md+ */}
+        <div className="hidden md:block" />
+
+        {/* Mobile controls — dark toggle + hamburger */}
+        <div className="flex items-center gap-1 md:hidden col-start-3 justify-self-end">
           <button
             onClick={toggleDark}
             className="p-1.5 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
