@@ -72,5 +72,7 @@ export const heroImages = {
   'window-box': '/guides/window-box-guide.jpg',
   'hanging-baskets': '/guides/hanging-baskets-guide.jpg',
   'container-vegetables': '/guides/container-vegetables-guide.jpg',
+  'cutting-garden': '/guides/cutting-garden-guide.jpg',
+  'fragrant-garden-path': '/guides/fragrant-garden-path-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }
