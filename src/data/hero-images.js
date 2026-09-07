@@ -64,5 +64,7 @@ export const heroImages = {
   'no-dig-gardening': '/guides/no-dig-gardening-guide.png',
   'companion-planting': '/guides/companion-planting-guide.jpg',
   'soil-health': '/guides/soil-health-guide.jpg',
+  'organic-pest-control': '/guides/organic-pest-control-guide.jpg',
+  'slug-control': '/guides/slug-control-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }
