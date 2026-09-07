@@ -70,5 +70,7 @@ export const heroImages = {
   'pest-eliminating-plants': '/guides/pest-eliminating-plants-guide.jpg',
   'balcony-garden': '/guides/balcony-garden-guide.jpg',
   'window-box': '/guides/window-box-guide.jpg',
+  'hanging-baskets': '/guides/hanging-baskets-guide.jpg',
+  'container-vegetables': '/guides/container-vegetables-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }
