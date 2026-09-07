@@ -68,5 +68,7 @@ export const heroImages = {
   'slug-control': '/guides/slug-control-guide.jpg',
   'deer-resistant': '/guides/deer-resistant-guide.jpg',
   'pest-eliminating-plants': '/guides/pest-eliminating-plants-guide.jpg',
+  'balcony-garden': '/guides/balcony-garden-guide.jpg',
+  'window-box': '/guides/window-box-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }
