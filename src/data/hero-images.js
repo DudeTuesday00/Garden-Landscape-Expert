@@ -74,5 +74,7 @@ export const heroImages = {
   'container-vegetables': '/guides/container-vegetables-guide.jpg',
   'cutting-garden': '/guides/cutting-garden-guide.jpg',
   'fragrant-garden-path': '/guides/fragrant-garden-path-guide.jpg',
+  'bird-garden': '/guides/bird-garden-guide.jpg',
+  'water-feature-plants': '/guides/water-feature-plants-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }
