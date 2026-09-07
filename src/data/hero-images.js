@@ -66,5 +66,7 @@ export const heroImages = {
   'soil-health': '/guides/soil-health-guide.jpg',
   'organic-pest-control': '/guides/organic-pest-control-guide.jpg',
   'slug-control': '/guides/slug-control-guide.jpg',
+  'deer-resistant': '/guides/deer-resistant-guide.jpg',
+  'pest-eliminating-plants': '/guides/pest-eliminating-plants-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }

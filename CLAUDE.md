@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 185 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 87 guides total. All 87 are live and indexable: 59 have full in-depth content; the remaining 28 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 87 guides total. All 87 are live and indexable: 61 have full in-depth content; the remaining 26 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
@@ -300,7 +300,7 @@ Each question in `questions.js` has:
 ## Planned Sections (Future)
 
 - **Newsletter Generator — Phase 2: automated subscriber email.** The generator itself (discovery → draft → approve → publish) is live — see "Newsletter Generator ✅" under Completed Work. Automated email-to-subscribers was always scoped as a later phase and is not built: no `Subscriber` model, no email service provider integration, nothing scaffolded for it yet.
-- **Planting Guides (ongoing)** — all 87 guides are live and indexable (59 full, 28 active stubs); continue expanding stubs to full guides using the established pattern in `guide-content/`, either from a source `.docx` when the owner has one or authored directly from compiled horticultural knowledge when one isn't available (see "Notes for AI Assistants" for the authoring standard)
+- **Planting Guides (ongoing)** — all 87 guides are live and indexable (61 full, 26 active stubs); continue expanding stubs to full guides using the established pattern in `guide-content/`, either from a source `.docx` when the owner has one or authored directly from compiled horticultural knowledge when one isn't available (see "Notes for AI Assistants" for the authoring standard)
 - Real product photography for the 3D Printed Garden Shop, then re-enable the Shop nav link (currently hidden — see "Content & Credibility Improvements")
 - Google AdSense re-enablement once the site is approved (currently gated off — see Tech Stack above)
 
@@ -316,6 +316,21 @@ Built the n8n side of Newsletter Phase 2 (real subscriber capture, replacing the
 - **Workflow** `Planting Atlas Newsletter Signup` (id `5paNlUEpgyTSC2oA`), validated with 0 errors: `Webhook` (POST, path `planting-atlas-newsletter-signup`) → `Code` (normalizes email to lowercase, validates format, checks a `_honey` honeypot field, extracts `source_url`/`ip_address`/`user_agent` from the request) → `IF` (valid?) → on true, `Data Table` `upsert` operation matching on `email` (dedupes repeat signups instead of inserting duplicate rows, an improvement over the SMS Opt-In precedent workflow this was modeled on, which only ever inserts) → `Respond Success` (200 JSON); on false → `Respond Error` (400 JSON with the specific validation message).
 - **Left deactivated and not yet wired into the site.** n8n is LAN-only (`192.168.1.123:5678`) — the production site (Cloudflare Pages, public internet) cannot reach this webhook as-is. Per the plan, the required next step is owner-side: a **Cloudflare Tunnel** (`cloudflared`) exposing just the webhook path publicly (e.g. `hooks.plantingatlas.com`), which needs machine/account access this session doesn't have. Once that exists, swap `NewsletterSignup.jsx`'s `FORM_ENDPOINT` to the public webhook URL and activate the workflow.
 - **Not yet built:** the "Send-to-Subscribers" workflow (queries the Data Table, emails each subscriber) — needs SMTP/transactional-email credentials from the owner, not yet confirmed to exist in this n8n instance.
+
+### Deer-Resistant & Pest-Eliminating Plants Guides Expanded to Full Content ✅ (2026-09-06)
+
+`src/data/guide-content/deer-resistant.js` and `src/data/guide-content/pest-eliminating-plants.js` expanded from 2-paragraph stubs to full guides — the third stub-guide batch (Item 1).
+
+| Guide | Sections | Notes |
+|---|---|---|
+| Deer-Resistant Plants (`id: 'deer-resistant'`) | 6 sections | Why resistance isn't proof, reliable perennials/bulbs table, reliable shrubs/trees table, repellent spray comparison, fencing/physical deterrents, landscape strategy |
+| Pest-Eliminating Plants (`id: 'pest-eliminating-plants'`) | 4 sections | Scent-repellent plants, trap crops, border/hedge planting design, an honest evidence-strength table separating well-supported claims from folklore |
+
+- Deliberately differentiated `pest-eliminating-plants` from the already-published `organic-pest-control` (product-focused: Bt, neem, DE) and `companion-planting` (pairing-table-focused) guides by centering it on plant selection and garden-design strategy, with explicit cross-references to both.
+- New theme entries in `GuideDetail.jsx`: `deer-resistant` (amber/orange gradient), `pest-eliminating-plants` (green/teal gradient)
+- 5 inline images + 1 hero image per guide, same Z-Image Turbo/ComfyUI pipeline; all 12 manually reviewed before commit (no artifacts)
+- Verified via full `npm run build` and grep-confirmed 5 `<figure>` elements + correct paths in both guides' built HTML
+- Guide counts updated: 61 full / 26 stubs (was 59/28)
 
 ### Organic Pest Control & Slug Control Guides Expanded to Full Content ✅ (2026-09-06)
 
