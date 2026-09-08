@@ -82,5 +82,7 @@ export const heroImages = {
   'water-wise-gardening': '/guides/water-wise-gardening-guide.jpg',
   'vertical-gardening': '/guides/vertical-gardening-guide.jpg',
   'foundation-planting': '/guides/foundation-planting-guide.jpg',
+  'cottage-landscape': '/guides/cottage-landscape-guide.jpg',
+  'low-maintenance-landscape': '/guides/low-maintenance-landscape-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }
