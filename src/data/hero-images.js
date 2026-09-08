@@ -80,5 +80,7 @@ export const heroImages = {
   'composting-basics': '/guides/composting-basics-guide.jpg',
   'native-plants': '/guides/native-plants-guide.jpg',
   'water-wise-gardening': '/guides/water-wise-gardening-guide.jpg',
+  'vertical-gardening': '/guides/vertical-gardening-guide.jpg',
+  'foundation-planting': '/guides/foundation-planting-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }
