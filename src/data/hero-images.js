@@ -78,5 +78,7 @@ export const heroImages = {
   'water-feature-plants': '/guides/water-feature-plants-guide.jpg',
   'cold-frames': '/guides/cold-frames-guide.jpg',
   'composting-basics': '/guides/composting-basics-guide.jpg',
+  'native-plants': '/guides/native-plants-guide.jpg',
+  'water-wise-gardening': '/guides/water-wise-gardening-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }

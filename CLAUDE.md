@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 185 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 87 guides total. All 87 are live and indexable: 71 have full in-depth content; the remaining 16 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 87 guides total. All 87 are live and indexable: 73 have full in-depth content; the remaining 14 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
@@ -300,7 +300,7 @@ Each question in `questions.js` has:
 ## Planned Sections (Future)
 
 - **Newsletter Generator — Phase 2: automated subscriber email.** The generator itself (discovery → draft → approve → publish) is live — see "Newsletter Generator ✅" under Completed Work. Automated email-to-subscribers was always scoped as a later phase and is not built: no `Subscriber` model, no email service provider integration, nothing scaffolded for it yet.
-- **Planting Guides (ongoing)** — all 87 guides are live and indexable (71 full, 16 active stubs); continue expanding stubs to full guides using the established pattern in `guide-content/`, either from a source `.docx` when the owner has one or authored directly from compiled horticultural knowledge when one isn't available (see "Notes for AI Assistants" for the authoring standard)
+- **Planting Guides (ongoing)** — all 87 guides are live and indexable (73 full, 14 active stubs); continue expanding stubs to full guides using the established pattern in `guide-content/`, either from a source `.docx` when the owner has one or authored directly from compiled horticultural knowledge when one isn't available (see "Notes for AI Assistants" for the authoring standard)
 - Real product photography for the 3D Printed Garden Shop, then re-enable the Shop nav link (currently hidden — see "Content & Credibility Improvements")
 - Google AdSense re-enablement once the site is approved (currently gated off — see Tech Stack above)
 
@@ -316,6 +316,21 @@ Built the n8n side of Newsletter Phase 2 (real subscriber capture, replacing the
 - **Workflow** `Planting Atlas Newsletter Signup` (id `5paNlUEpgyTSC2oA`), validated with 0 errors: `Webhook` (POST, path `planting-atlas-newsletter-signup`) → `Code` (normalizes email to lowercase, validates format, checks a `_honey` honeypot field, extracts `source_url`/`ip_address`/`user_agent` from the request) → `IF` (valid?) → on true, `Data Table` `upsert` operation matching on `email` (dedupes repeat signups instead of inserting duplicate rows, an improvement over the SMS Opt-In precedent workflow this was modeled on, which only ever inserts) → `Respond Success` (200 JSON); on false → `Respond Error` (400 JSON with the specific validation message).
 - **Left deactivated and not yet wired into the site.** n8n is LAN-only (`192.168.1.123:5678`) — the production site (Cloudflare Pages, public internet) cannot reach this webhook as-is. Per the plan, the required next step is owner-side: a **Cloudflare Tunnel** (`cloudflared`) exposing just the webhook path publicly (e.g. `hooks.plantingatlas.com`), which needs machine/account access this session doesn't have. Once that exists, swap `NewsletterSignup.jsx`'s `FORM_ENDPOINT` to the public webhook URL and activate the workflow.
 - **Not yet built:** the "Send-to-Subscribers" workflow (queries the Data Table, emails each subscriber) — needs SMTP/transactional-email credentials from the owner, not yet confirmed to exist in this n8n instance.
+
+### Native Plants & Water-Wise Gardening Guides Expanded to Full Content ✅ (2026-09-08)
+
+`src/data/guide-content/native-plants.js` and `src/data/guide-content/water-wise-gardening.js` expanded from 2-paragraph stubs to full guides — the ninth stub-guide batch (Item 1).
+
+| Guide | Sections | Notes |
+|---|---|---|
+| Native Plants Guide (`id: 'native-plants'`) | 5 sections | Ecological case for natives table, sourcing local ecotypes (with a nativar caution), native plants by US region table, water/maintenance benefits, transitioning a conventional landscape |
+| Water-Wise Gardening (`id: 'water-wise-gardening'`) | 6 sections | Drip irrigation design, mulching strategies table, hydrozoning table, deep vs. shallow watering technique, soil amendment for retention, rainwater harvesting table |
+
+- `water-wise-gardening` deliberately scoped to general water-saving techniques any garden can apply, cross-referencing the existing Xeriscape Design guide (which already covers a full ground-up low-water landscape redesign with detailed regional plant tables) and the Rain Barrel guide, rather than duplicating either.
+- New theme entries in `GuideDetail.jsx`: `native-plants` (emerald/amber gradient), `water-wise-gardening` (sky/emerald gradient)
+- 5 inline images + 1 hero image per guide, same Z-Image Turbo/ComfyUI pipeline; all 12 manually reviewed before commit (no artifacts)
+- Verified via full `npm run build` and grep-confirmed 5 `<figure>` elements + correct paths in both guides' built HTML
+- Guide counts updated: 73 full / 14 stubs (was 71/16)
 
 ### Cold Frames & Composting Basics Guides Expanded to Full Content ✅ (2026-09-07)
 
