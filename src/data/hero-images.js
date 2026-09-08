@@ -84,5 +84,7 @@ export const heroImages = {
   'foundation-planting': '/guides/foundation-planting-guide.jpg',
   'cottage-landscape': '/guides/cottage-landscape-guide.jpg',
   'low-maintenance-landscape': '/guides/low-maintenance-landscape-guide.jpg',
+  'pet-friendly-plants': '/guides/pet-friendly-plants-guide.jpg',
+  'sensory-garden': '/guides/sensory-garden-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }
