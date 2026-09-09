@@ -92,5 +92,7 @@ export const heroImages = {
   'summer-maintenance': '/guides/summer-maintenance-guide.jpg',
   'fall-planting': '/guides/fall-planting-guide.jpg',
   'post-harvest': '/guides/post-harvest-guide.jpg',
+  'overwintering': '/guides/overwintering-guide.jpg',
+  'year-round-calendar': '/guides/year-round-calendar-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }
