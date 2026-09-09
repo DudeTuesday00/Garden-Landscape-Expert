@@ -90,5 +90,7 @@ export const heroImages = {
   'fire-safe-landscaping': '/guides/fire-safe-landscaping-guide.jpg',
   'spring-startup': '/guides/spring-startup-guide.jpg',
   'summer-maintenance': '/guides/summer-maintenance-guide.jpg',
+  'fall-planting': '/guides/fall-planting-guide.jpg',
+  'post-harvest': '/guides/post-harvest-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }
