@@ -88,5 +88,7 @@ export const heroImages = {
   'sensory-garden': '/guides/sensory-garden-guide.jpg',
   'aromatherapy-garden': '/guides/aromatherapy-garden-guide.jpg',
   'fire-safe-landscaping': '/guides/fire-safe-landscaping-guide.jpg',
+  'spring-startup': '/guides/spring-startup-guide.jpg',
+  'summer-maintenance': '/guides/summer-maintenance-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }

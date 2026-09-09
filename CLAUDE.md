@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 185 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 87 guides total. All 87 are live and indexable: 81 have full in-depth content; the remaining 6 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 87 guides total. All 87 are live and indexable: 83 have full in-depth content; the remaining 4 are active stub pages with 2 informational paragraphs + a "full guide in development" notice. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
@@ -300,7 +300,7 @@ Each question in `questions.js` has:
 ## Planned Sections (Future)
 
 - **Newsletter Generator — Phase 2: automated subscriber email.** The generator itself (discovery → draft → approve → publish) is live — see "Newsletter Generator ✅" under Completed Work. Automated email-to-subscribers was always scoped as a later phase and is not built: no `Subscriber` model, no email service provider integration, nothing scaffolded for it yet.
-- **Planting Guides (ongoing)** — all 87 guides are live and indexable (81 full, 6 active stubs); continue expanding stubs to full guides using the established pattern in `guide-content/`, either from a source `.docx` when the owner has one or authored directly from compiled horticultural knowledge when one isn't available (see "Notes for AI Assistants" for the authoring standard)
+- **Planting Guides (ongoing)** — all 87 guides are live and indexable (83 full, 4 active stubs); continue expanding stubs to full guides using the established pattern in `guide-content/`, either from a source `.docx` when the owner has one or authored directly from compiled horticultural knowledge when one isn't available (see "Notes for AI Assistants" for the authoring standard)
 - Real product photography for the 3D Printed Garden Shop, then re-enable the Shop nav link (currently hidden — see "Content & Credibility Improvements")
 - Google AdSense re-enablement once the site is approved (currently gated off — see Tech Stack above)
 
@@ -316,6 +316,22 @@ Built the n8n side of Newsletter Phase 2 (real subscriber capture, replacing the
 - **Workflow** `Planting Atlas Newsletter Signup` (id `5paNlUEpgyTSC2oA`), validated with 0 errors: `Webhook` (POST, path `planting-atlas-newsletter-signup`) → `Code` (normalizes email to lowercase, validates format, checks a `_honey` honeypot field, extracts `source_url`/`ip_address`/`user_agent` from the request) → `IF` (valid?) → on true, `Data Table` `upsert` operation matching on `email` (dedupes repeat signups instead of inserting duplicate rows, an improvement over the SMS Opt-In precedent workflow this was modeled on, which only ever inserts) → `Respond Success` (200 JSON); on false → `Respond Error` (400 JSON with the specific validation message).
 - **Left deactivated and not yet wired into the site.** n8n is LAN-only (`192.168.1.123:5678`) — the production site (Cloudflare Pages, public internet) cannot reach this webhook as-is. Per the plan, the required next step is owner-side: a **Cloudflare Tunnel** (`cloudflared`) exposing just the webhook path publicly (e.g. `hooks.plantingatlas.com`), which needs machine/account access this session doesn't have. Once that exists, swap `NewsletterSignup.jsx`'s `FORM_ENDPOINT` to the public webhook URL and activate the workflow.
 - **Not yet built:** the "Send-to-Subscribers" workflow (queries the Data Table, emails each subscriber) — needs SMTP/transactional-email credentials from the owner, not yet confirmed to exist in this n8n instance.
+
+### Spring Startup & Summer Maintenance Guides Expanded to Full Content ✅ (2026-09-08)
+
+`src/data/guide-content/spring-startup.js` and `src/data/guide-content/summer-maintenance.js` expanded from 2-paragraph stubs to full guides — the fourteenth stub-guide batch (Item 1). These two were deliberately chosen next from the remaining 6 seasonal stubs because they scope cleanly as task-sequencing/timing guides, distinct from the plant-selection-focused Four-Season Garden Design guide and the fall-specific Winter Garden Prep guide.
+
+| Guide | Sections | Notes |
+|---|---|---|
+| Spring Garden Startup (`id: 'spring-startup'`) | 5 sections | Correct task order/sequence, soil temperature benchmarks by crop table, indoor seed starting timing table, hardening off, zone-by-zone startup windows table |
+| Summer Garden Maintenance (`id: 'summer-maintenance'`) | 5 sections | Deep watering technique, deadheading/cutting back by plant table, pest/disease scouting habit, succession planting, heat stress management table |
+
+- Both cross-reference existing guides rather than duplicating them (Water-Wise Gardening for irrigation detail, Organic Pest Control for IPM treatment, Cold Frames for hardening-off environment, Succession Planting Planner tool).
+- New theme entries in `GuideDetail.jsx`: `spring-startup` (green/lime gradient), `summer-maintenance` (yellow/orange gradient)
+- 5 inline images + 1 hero image per guide, same Z-Image Turbo/ComfyUI pipeline. One image (soil thermometer dial face) needed two regenerate attempts — dial gauges with numeric markings reliably produce garbled/gibberish numerals (the same labeled-object lesson noted elsewhere in this file); fixed by reframing the shot so the dial is held at an angle where the numbers are naturally out of focus/illegible rather than a clear flat-on readable face. All 12 final images manually reviewed before commit (no artifacts).
+- Verified via full `npm run build` and grep-confirmed 5 `<figure>` elements + correct paths in both guides' built HTML
+- Guide counts updated: 83 full / 4 stubs (was 81/6)
+- Only 4 stub guides remain: fall-planting, overwintering, post-harvest, year-round-calendar — each carries real overlap risk with existing full guides (Winter Garden Prep, Seed Saving, Spring Bulb Garden, Four-Season Garden Design) and will need the same careful scoping/cross-referencing treatment applied here before expansion.
 
 ### Aromatherapy Garden & Fire-Safe Landscaping Guides Expanded to Full Content ✅ (2026-09-08)
 
