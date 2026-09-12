@@ -68,6 +68,9 @@ import { fallPlantingContent } from './fall-planting.js'
 import { postHarvestContent } from './post-harvest.js'
 import { yearRoundCalendarContent } from './year-round-calendar.js'
 import { overwinteringContent } from './overwintering.js'
+import { growingTomatoesContent } from './growing-tomatoes.js'
+import { raisedBedGardeningContent } from './raised-bed-gardening.js'
+import { growingBerriesContent } from './growing-berries.js'
 import { coldFramesContent } from './cold-frames.js'
 import { pestEliminatingPlantsContent } from './pest-eliminating-plants.js'
 import { organicPestControlContent } from './organic-pest-control.js'
@@ -157,6 +160,9 @@ export const contentMap = {
   'post-harvest': postHarvestContent,
   'year-round-calendar': yearRoundCalendarContent,
   'overwintering': overwinteringContent,
+  'growing-tomatoes': growingTomatoesContent,
+  'raised-bed-gardening': raisedBedGardeningContent,
+  'growing-berries': growingBerriesContent,
   'cold-frames': coldFramesContent,
   'pest-eliminating-plants': pestEliminatingPlantsContent,
   'organic-pest-control': organicPestControlContent,

@@ -20,7 +20,7 @@ const staticPages = [
   { title: 'Succession Planting Planner', emoji: '🔁', description: 'How many rounds of a fast crop fit in your season.', href: '/tools/succession-planner/' },
   { title: 'Value of Growing Your Own', emoji: '💰', description: 'How much a home-grown harvest saves compared to store prices.', href: '/tools/grow-your-own-savings/' },
   { title: 'Watering Schedule Calculator', emoji: '💧', description: 'A concrete watering plan for any of our 185 plants.', href: '/tools/watering-calculator/' },
-  { title: 'Plantopedia', emoji: '📖', description: 'Browse 87 expert growing guides by category.', href: '/guides/' },
+  { title: 'Plantopedia', emoji: '📖', description: 'Browse 90 expert growing guides by category.', href: '/guides/' },
   { title: 'Garden Infographics', emoji: '🗺️', description: 'Visual quick-reference guides for planting and growing.', href: '/infographics/' },
   { title: 'Gardening Videos', emoji: '🎬', description: 'Curated YouTube channels and original Planting Atlas videos.', href: '/videos/' },
   { title: 'Gardening Podcasts', emoji: '🎙️', description: 'Curated podcasts and original Planting Atlas episodes.', href: '/podcasts/' },

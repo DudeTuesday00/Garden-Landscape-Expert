@@ -222,6 +222,27 @@ export const guideCategories = [
         description: 'Everything for fresh salsa: tomatoes, peppers, cilantro, onions, and garlic.',
         comingSoon: false,
       },
+      {
+        id: 'growing-tomatoes',
+        title: 'Growing Tomatoes: The Complete Guide',
+        emoji: '🍅',
+        description: 'Variety selection, staking, feeding, and solving the most common tomato problems.',
+        comingSoon: false,
+      },
+      {
+        id: 'raised-bed-gardening',
+        title: 'Raised Bed Gardening',
+        emoji: '🪵',
+        description: 'Build, size, and fill a raised bed correctly — materials, dimensions, and soil mix.',
+        comingSoon: false,
+      },
+      {
+        id: 'growing-berries',
+        title: 'Growing Berries: Strawberries, Blueberries & Brambles',
+        emoji: '🫐',
+        description: 'The specific soil, pruning, and pollination needs of the three most popular backyard berries.',
+        comingSoon: false,
+      },
     ],
   },
 

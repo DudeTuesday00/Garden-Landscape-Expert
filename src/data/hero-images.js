@@ -94,5 +94,8 @@ export const heroImages = {
   'post-harvest': '/guides/post-harvest-guide.jpg',
   'overwintering': '/guides/overwintering-guide.jpg',
   'year-round-calendar': '/guides/year-round-calendar-guide.jpg',
+  'growing-tomatoes': '/guides/growing-tomatoes-guide.jpg',
+  'raised-bed-gardening': '/guides/raised-bed-gardening-guide.jpg',
+  'growing-berries': '/guides/growing-berries-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }

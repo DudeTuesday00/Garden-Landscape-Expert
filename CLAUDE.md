@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 185 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 87 guides total. All 87 are live, indexable, and now have full in-depth content — no stub pages remain. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 90 guides total. All 90 are live, indexable, and have full in-depth content — no stub pages remain. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
@@ -72,7 +72,7 @@ Garden-Landscape-Expert/
     │   ├── wizard/page.jsx          # /wizard/ — Garden Architect
     │   ├── guides/
     │   │   ├── page.jsx             # /guides/ — Plantopedia landing
-    │   │   └── [guideId]/page.jsx   # /guides/[id]/ — SSG, all 87 guides (generateStaticParams + generateMetadata + Article/Breadcrumb JSON-LD)
+    │   │   └── [guideId]/page.jsx   # /guides/[id]/ — SSG, all 90 guides (generateStaticParams + generateMetadata + Article/Breadcrumb JSON-LD)
     │   ├── plants/
     │   │   ├── page.jsx             # /plants/ — Plant Database browse/search
     │   │   └── [plantId]/page.jsx   # /plants/[id]/ — SSG, all 185 plants
@@ -102,7 +102,7 @@ Garden-Landscape-Expert/
     │   ├── newsletters/
     │   │   ├── page.jsx             # /newsletters/ — archive/index of published issues
     │   │   └── [slug]/page.jsx      # /newsletters/[slug]/ — SSG, one page per issue (generateStaticParams + generateMetadata + Article/Breadcrumb JSON-LD)
-    │   ├── guides-feed.xml/route.js # RSS feed of all 87 live guides — consumed by the separate Newsletter Generator project as Discovery source material
+    │   ├── guides-feed.xml/route.js # RSS feed of all 90 live guides — consumed by the separate Newsletter Generator project as Discovery source material
     │   ├── privacy/page.jsx         # /privacy/
     │   ├── affiliate-disclosure/page.jsx
     │   ├── advertising-disclosure/page.jsx
@@ -163,7 +163,7 @@ Garden-Landscape-Expert/
     │   ├── newsletters.js           # Thin wrapper re-exporting newsletters.json — see Newsletter Generator under Completed Work
     │   ├── newsletters.json         # Issue index — auto-maintained by the newsletter export step, not hand-authored
     │   ├── newsletter-content/      # One JSON file per issue: { bodyHtml, sourceName, sourceUrl, references } — auto-written at export time
-    │   └── guide-content/           # One JS file per live guide + shared index — 87 files total
+    │   └── guide-content/           # One JS file per live guide + shared index — 90 files total
     │       └── index.js             # contentMap export — used by GuideDetail.jsx and app/guides/[guideId]/page.jsx
     └── logic/                       # Pure functions, unit-tested where noted
         ├── matchPlants.js           # Wizard scoring + filtering algorithm (tested — matchPlants.test.js)
@@ -179,7 +179,7 @@ Garden-Landscape-Expert/
 - **Language:** JavaScript (JSX)
 - **Framework:** Next.js 15 (App Router) + React 18 — static export (`output: 'export'`) for Cloudflare Pages
 - **Routing:** File-based App Router (`src/app/`) — real URLs, no hash routing
-- **SSG:** Dynamic routes pre-rendered at build time via `generateStaticParams` — one HTML file each for all 87 guides, 185 plants, and 6 shop products (~315 static pages total from a clean `next build`)
+- **SSG:** Dynamic routes pre-rendered at build time via `generateStaticParams` — one HTML file each for all 90 guides, 185 plants, and 6 shop products (~318 static pages total from a clean `next build`)
 - **Styling:** Tailwind CSS 3 with custom `garden` and `earth` color palettes (see brand colors below)
 - **SEO:** Next.js built-in `metadata` exports and `generateMetadata` — no third-party library needed
 - **Scripts:** GTM/dark-mode inline in layout `<head>`; GA4 + AdSense via `next/script` `afterInteractive`
@@ -317,6 +317,23 @@ Built the n8n side of Newsletter Phase 2 (real subscriber capture, replacing the
 - **Workflow** `Planting Atlas Newsletter Signup` (id `5paNlUEpgyTSC2oA`), validated with 0 errors: `Webhook` (POST, path `planting-atlas-newsletter-signup`) → `Code` (normalizes email to lowercase, validates format, checks a `_honey` honeypot field, extracts `source_url`/`ip_address`/`user_agent` from the request) → `IF` (valid?) → on true, `Data Table` `upsert` operation matching on `email` (dedupes repeat signups instead of inserting duplicate rows, an improvement over the SMS Opt-In precedent workflow this was modeled on, which only ever inserts) → `Respond Success` (200 JSON); on false → `Respond Error` (400 JSON with the specific validation message).
 - **Left deactivated and not yet wired into the site.** n8n is LAN-only (`192.168.1.123:5678`) — the production site (Cloudflare Pages, public internet) cannot reach this webhook as-is. Per the plan, the required next step is owner-side: a **Cloudflare Tunnel** (`cloudflared`) exposing just the webhook path publicly (e.g. `hooks.plantingatlas.com`), which needs machine/account access this session doesn't have. Once that exists, swap `NewsletterSignup.jsx`'s `FORM_ENDPOINT` to the public webhook URL and activate the workflow.
 - **Not yet built:** the "Send-to-Subscribers" workflow (queries the Data Table, emails each subscriber) — needs SMTP/transactional-email credentials from the owner, not yet confirmed to exist in this n8n instance.
+
+### Three New Guides Added — Tomatoes, Raised Beds, Berries ✅ (2026-09-12)
+
+`src/data/guide-content/growing-tomatoes.js`, `raised-bed-gardening.js`, and `growing-berries.js` — three brand-new full guides added to Edible Gardens, selected as genuine content gaps rather than expanding an existing stub (the stub backlog was already fully cleared as of the previous batch). Tomatoes are the single most popular home-garden vegetable and had no dedicated guide (only partial mentions across `salsa-garden`, `pizza-garden`, `container-vegetables`); raised beds and small fruit/berries were both common, high-relevance topics with no coverage at all.
+
+| Guide | Sections | Notes |
+|---|---|---|
+| Growing Tomatoes: The Complete Guide (`id: 'growing-tomatoes'`) | 5 sections | Starting from seed, determinate/indeterminate variety selection table, planting deep + staking methods table, watering/feeding for blossom-end-rot and cracking prevention, common problems table |
+| Raised Bed Gardening (`id: 'raised-bed-gardening'`) | 5 sections | Why raised beds, materials/construction lifespan table, sizing and height rules, filling with a soil mix, placement and first-season care |
+| Growing Berries: Strawberries, Blueberries & Brambles (`id: 'growing-berries'`) | 5 sections | Strawberry fruiting-type planting systems table, blueberry soil-pH requirements, raspberry/blackberry bearing-type pruning table, site/soil prep, harvest and bird-netting care |
+
+- All three cross-reference existing guides/tools rather than duplicating them: `growing-tomatoes` → Vegetables in Containers, Organic Pest Control, Common Garden Diseases, Post-Harvest Garden Care; `raised-bed-gardening` → Square Foot Gardening (explicitly scoped as "this guide covers the bed itself, that one covers what's grown inside it") and the Soil & Raised Bed Calculator tool; `growing-berries` → Fruit Trees (explicitly distinguished as a different plant category), Soil Health, Organic Pest Control.
+- Added to `guides.js` under the Edible Gardens category (9 → 12 guides in that category)
+- New theme entries in `GuideDetail.jsx`: `growing-tomatoes` (red/orange gradient), `raised-bed-gardening` (amber/yellow gradient), `growing-berries` (indigo/purple gradient)
+- 5 inline images + 1 hero image per guide, same Z-Image Turbo/ComfyUI pipeline used throughout the site. One image (`raised-bed-gardening`'s first section image) needed a regenerate — the first attempt showed empty unplanted beds, which mismatched the section's "beds filled with thriving vegetable plants" framing; reprompted for full, planted beds from a different angle than the hero, which fixed it. All 18 final images manually reviewed before commit.
+- Verified via full `npm run build` and grep-confirmed 5 `<figure>` elements + correct paths in all three guides' built HTML
+- Guide counts updated everywhere: **90 full guides, 0 stubs** (was 87/0) — `HomePage.jsx`, `TrustBadges.jsx`, `manifest.json`, and `search-index.js` all updated to "90".
 
 ### Site Improvement Roadmap — Items 0, 3, 4, 5, 6, 7, 8 ✅ (2026-09-06)
 

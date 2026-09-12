@@ -1,7 +1,7 @@
 {
   "name": "Planting Atlas — Plan it. Plant it. Grow it.",
   "short_name": "Planting Atlas",
-  "description": "Personalized plant recommendations from a 185-plant database and 87 expert growing guides for every USDA hardiness zone.",
+  "description": "Personalized plant recommendations from a 185-plant database and 90 expert growing guides for every USDA hardiness zone.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
