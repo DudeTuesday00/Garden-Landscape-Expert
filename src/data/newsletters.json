@@ -1,5 +1,54 @@
 [
   {
+    "id": "how-to-build-your-seed-stockpile-without-breaking-the-bank",
+    "slug": "how-to-build-your-seed-stockpile-without-breaking-the-bank",
+    "title": "How to Build Your Seed Stockpile Without Breaking the Bank",
+    "subtitle": "A guide to saving seeds and finding free supplies before winter hits.",
+    "date": "2026-09-15",
+    "excerpt": "Before the deep cold sets in, let’s talk about how to fill your seed packet stash without opening your wallet. This year, we focus on maximizing every dollar spent—or better yet, spending none at all.",
+    "tags": [
+      "seed-saving",
+      "vegetable gardening",
+      "budgeting",
+      "succession planting"
+    ],
+    "heroImage": "/newsletters/how-to-build-your-seed-stockpile-without-breaking-the-bank.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What's one heirloom variety you plan to save seeds from this fall? Share it below and tell a friend who needs to cut back on gardening costs!",
+    "nextIssuePreview": "",
+    "relatedResources": [
+      {
+        "title": "Seed Saving Guide",
+        "path": "/guides/seed-saving/"
+      }
+    ]
+  },
+  {
+    "id": "killing-gnats-and-whiteflies-the-natural-way",
+    "slug": "killing-gnats-and-whiteflies-the-natural-way",
+    "title": "Killing Gnats and Whiteflies (The Natural Way)",
+    "subtitle": "A simple guide to using butterworts in your houseplant collection.",
+    "date": "2026-09-15",
+    "excerpt": "If you’re tired of yellow-cast fungus gnat larvae and whitefly outbreaks, this issue shows how specific types of indoor plants can handle the job naturally. It requires simple care adjustments but offers peace of mind for your container garden.",
+    "tags": [
+      "pest control",
+      "indoor gardening",
+      "carnivorous plants",
+      "fungus gnats"
+    ],
+    "heroImage": "/newsletters/killing-gnats-and-whiteflies-the-natural-way.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What's the worst pest outbreak you've ever had to deal with? Share your war stories in the comments! If you know a plant that handles pests better than I do, send me an email at [email protected] and let's talk.",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
     "id": "how-to-make-your-christmas-cactus-bloom-when-you-don-t-want-to",
     "slug": "how-to-make-your-christmas-cactus-bloom-when-you-don-t-want-to",
     "title": "How to Make Your Christmas Cactus Bloom When You Don't Want To",
