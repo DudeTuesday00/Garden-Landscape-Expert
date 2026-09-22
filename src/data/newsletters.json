@@ -1,5 +1,27 @@
 [
   {
+    "id": "the-art-of-composting-with-autumn-leaves-and-garden-scraps",
+    "slug": "the-art-of-composting-with-autumn-leaves-and-garden-scraps",
+    "title": "The Art of Composting with Autumn Leaves and Garden Scraps",
+    "subtitle": "How to turn leaves and kitchen scraps into perfect soil amendments for your backyard plot.",
+    "date": "2026-09-22",
+    "excerpt": "Leaves, grass clippings, and kitchen scraps are free resources that shouldn't just be piled up. This guide shows you how to balance your 'browns' and 'greens' properly so you can create rich compost or effective mulch for next season.",
+    "tags": [
+      "Composting",
+      "Mulch",
+      "Autumn Care",
+      "Soil Health"
+    ],
+    "heroImage": "/newsletters/the-art-of-composting-with-autumn-leaves-and-garden-scraps.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What is the biggest pile of yard waste sitting in your yard right now? Share a photo (or just describe it!) with us—we might feature it. Tag a neighbor who always complains about leaf rakes!",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
     "id": "fermenting-tomato-seeds-for-a-germination-boost",
     "slug": "fermenting-tomato-seeds-for-a-germination-boost",
     "title": "Fermenting Tomato Seeds for a Germination Boost",
