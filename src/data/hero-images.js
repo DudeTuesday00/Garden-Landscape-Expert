@@ -97,5 +97,8 @@ export const heroImages = {
   'growing-tomatoes': '/guides/growing-tomatoes-guide.jpg',
   'raised-bed-gardening': '/guides/raised-bed-gardening-guide.jpg',
   'growing-berries': '/guides/growing-berries-guide.jpg',
+  'hydroponics-for-beginners': '/guides/hydroponics-for-beginners-guide.jpg',
+  'kratky-method': '/guides/kratky-method-guide.jpg',
+  'hydroponic-nutrients-ph-ec': '/guides/hydroponic-nutrients-ph-ec-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }

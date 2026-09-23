@@ -108,6 +108,14 @@ export const tools = [
     href: '/tools/watering-calculator/',
     status: 'live',
   },
+  {
+    id: 'hydroponic-system-chooser',
+    name: 'Hydroponic System Chooser',
+    tagline: 'Find the right home hydroponic system for your space, budget, and time.',
+    emoji: '🫙',
+    href: '/tools/hydroponic-system-chooser/',
+    status: 'live',
+  },
 ]
 
 export function getTool(id) {

@@ -12,11 +12,11 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 185 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 90 guides total. All 90 are live, indexable, and have full in-depth content — no stub pages remain. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 93 guides total. All 93 are live, indexable, and have full in-depth content — no stub pages remain. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
-4. **Garden Tools** (`/tools/`) — a hub of 13 free interactive calculators/planners (fertilizer, zone finder, planting calendar, soil, mulch, compost, plant spacing, yield estimator, symptom diagnostic, companion checker, succession planner, grow-your-own savings, watering schedule). See "Garden Tools Hub" and the per-tool sections under Completed Work for details on each.
+4. **Garden Tools** (`/tools/`) — a hub of 14 free interactive calculators/planners (fertilizer, zone finder, planting calendar, soil, mulch, compost, plant spacing, yield estimator, symptom diagnostic, companion checker, succession planner, grow-your-own savings, watering schedule, hydroponic system chooser). See "Garden Tools Hub" and the per-tool sections under Completed Work for details on each.
 
 5. **Plant Database** (`/plants/`) — a searchable, filterable, user-facing browse experience over all 185 plants, with an individual detail page per plant (scientific name, lifecycle, native range, pet toxicity, bloom/harvest characteristics, traditional medicinal use where documented, plus every field already used by the wizard). Its own top-level nav item. See "Plant Database" under Completed Work.
 
@@ -72,7 +72,7 @@ Garden-Landscape-Expert/
     │   ├── wizard/page.jsx          # /wizard/ — Garden Architect
     │   ├── guides/
     │   │   ├── page.jsx             # /guides/ — Plantopedia landing
-    │   │   └── [guideId]/page.jsx   # /guides/[id]/ — SSG, all 90 guides (generateStaticParams + generateMetadata + Article/Breadcrumb JSON-LD)
+    │   │   └── [guideId]/page.jsx   # /guides/[id]/ — SSG, all 93 guides (generateStaticParams + generateMetadata + Article/Breadcrumb JSON-LD)
     │   ├── plants/
     │   │   ├── page.jsx             # /plants/ — Plant Database browse/search
     │   │   └── [plantId]/page.jsx   # /plants/[id]/ — SSG, all 185 plants
@@ -163,7 +163,7 @@ Garden-Landscape-Expert/
     │   ├── newsletters.js           # Thin wrapper re-exporting newsletters.json — see Newsletter Generator under Completed Work
     │   ├── newsletters.json         # Issue index — auto-maintained by the newsletter export step, not hand-authored
     │   ├── newsletter-content/      # One JSON file per issue: { bodyHtml, sourceName, sourceUrl, references } — auto-written at export time
-    │   └── guide-content/           # One JS file per live guide + shared index — 90 files total
+    │   └── guide-content/           # One JS file per live guide + shared index — 93 files total
     │       └── index.js             # contentMap export — used by GuideDetail.jsx and app/guides/[guideId]/page.jsx
     └── logic/                       # Pure functions, unit-tested where noted
         ├── matchPlants.js           # Wizard scoring + filtering algorithm (tested — matchPlants.test.js)
@@ -179,7 +179,7 @@ Garden-Landscape-Expert/
 - **Language:** JavaScript (JSX)
 - **Framework:** Next.js 15 (App Router) + React 18 — static export (`output: 'export'`) for Cloudflare Pages
 - **Routing:** File-based App Router (`src/app/`) — real URLs, no hash routing
-- **SSG:** Dynamic routes pre-rendered at build time via `generateStaticParams` — one HTML file each for all 90 guides, 185 plants, and 6 shop products (~318 static pages total from a clean `next build`)
+- **SSG:** Dynamic routes pre-rendered at build time via `generateStaticParams` — one HTML file each for all 93 guides, 185 plants, and 6 shop products (~322 static pages total from a clean `next build`)
 - **Styling:** Tailwind CSS 3 with custom `garden` and `earth` color palettes (see brand colors below)
 - **SEO:** Next.js built-in `metadata` exports and `generateMetadata` — no third-party library needed
 - **Scripts:** GTM/dark-mode inline in layout `<head>`; GA4 + AdSense via `next/script` `afterInteractive`
@@ -317,6 +317,25 @@ Built the n8n side of Newsletter Phase 2 (real subscriber capture, replacing the
 - **Workflow** `Planting Atlas Newsletter Signup` (id `5paNlUEpgyTSC2oA`), validated with 0 errors: `Webhook` (POST, path `planting-atlas-newsletter-signup`) → `Code` (normalizes email to lowercase, validates format, checks a `_honey` honeypot field, extracts `source_url`/`ip_address`/`user_agent` from the request) → `IF` (valid?) → on true, `Data Table` `upsert` operation matching on `email` (dedupes repeat signups instead of inserting duplicate rows, an improvement over the SMS Opt-In precedent workflow this was modeled on, which only ever inserts) → `Respond Success` (200 JSON); on false → `Respond Error` (400 JSON with the specific validation message).
 - **Left deactivated and not yet wired into the site.** n8n is LAN-only (`192.168.1.123:5678`) — the production site (Cloudflare Pages, public internet) cannot reach this webhook as-is. Per the plan, the required next step is owner-side: a **Cloudflare Tunnel** (`cloudflared`) exposing just the webhook path publicly (e.g. `hooks.plantingatlas.com`), which needs machine/account access this session doesn't have. Once that exists, swap `NewsletterSignup.jsx`'s `FORM_ENDPOINT` to the public webhook URL and activate the workflow.
 - **Not yet built:** the "Send-to-Subscribers" workflow (queries the Data Table, emails each subscriber) — needs SMTP/transactional-email credentials from the owner, not yet confirmed to exist in this n8n instance.
+
+### Hydroponics Push — System Chooser Tool + First Three Guides ✅ (2026-09-23)
+
+First step of a deliberate plan to own the home-hydroponics niche: the newsletter's Discovery pipeline found almost no home-hydroponics RSS sources (see the Planting Atlas Newsletter project's CLAUDE.md), so the site's own structured content is meant to become the reference. Strategy: a hub of hydroponics guides + tools that only this site can offer (they tie into the plant database's `hydroponic` flags and the wizard's hydroponic path). Validate with Search Console impressions before building the rest.
+
+**Hydroponic System Chooser** (`/tools/hydroponic-system-chooser/`) — five questions (goal, electricity comfort, starter budget, space, weekly time) rank 7 home systems and show which plants suit the winner plus a "why the others were ruled out" list.
+
+| File | Role |
+|---|---|
+| `src/data/hydroponic-systems.js` | 7 systems (Kratky, wick, DWC, NFT, ebb & flow, Dutch bucket/drip, vertical tower) with power level, min space, weekly-time level, starter cost range, goal fit, outage-risk note, pros/cons; plus `plantSystemClass` (plant id → leafy/herb/root/berry/heavy) and the `systemPlantFit` matrix (great/ok/no). Compiled from widely published hydroponics practice; costs are approximate starter ranges for ~1–6 plants |
+| `src/logic/hydroponicSystemChooser.js` | Pure logic. Hard filters: goal suitability ≥ 0.5, power tolerance, budget (vs. `costMin`), space. Soft score: goal fit (50) + time fit (25) + simplicity/cost (25). `plantsForSystem(systemId, plants)` takes the plants array as an argument to stay testable |
+| `src/logic/hydroponicSystemChooser.test.js` | 9 Vitest tests (suite now 33) |
+| `src/components/tools/hydroponic-system-chooser/HydroponicSystemChooser.jsx` + `src/app/tools/hydroponic-system-chooser/page.jsx` | UI + route; registered in `tools.js`, `sitemap.js`, `search-index.js`; the wizard's hydroponic-system question now links to it via `subtitleLink` |
+
+**Three new Specialty Gardens guides** (5 sections + 5 images + hero each): `hydroponics-for-beginners` (how it works, 7-system comparison table, shopping list + light-hours table, first-crop steps, common-mistakes table), `kratky-method` (air-gap mechanism, jar build, best crops with harvest times taken from `plants.js`, troubleshooting, when to upgrade), `hydroponic-nutrients-ph-ec` (nutrient groups, pH ranges by crop, EC ranges by stage, reservoir management, symptom diagnosis). pH/EC figures are consistent with `plants.js` `hydroponicsNotes` and the Fertilizer Calculator's hydroponic mode (5.5–6.5). Themes: sky/blue, emerald/cyan, violet/sky.
+
+- Guide count is now **93**; tool count is **14** (HomePage, TrustBadges, manifest, search index, this file updated).
+- **Image lessons:** Z-Image runs at CFG 1.0, so the negative prompt is effectively inert — exclusions must be phrased positively. It also defaults hard to "soil" for any jar/pot scene: hydroponic jars needed explicit "clear water … white roots visible hanging in the water" wording, and "net pots" needed "empty, slotted mesh, clay pebbles" (otherwise it drew black nursery pots full of soil). A "pH pen" prompt produced a ballpoint pen until reworded to "handheld digital pH meter with probe submerged, screen blank." 9 of 18 images were regenerated.
+- **Generator script lost & recreated:** the scratchpad (temp dir) was purged mid-session, taking `generate_zimage.py` with it. It was rebuilt from the documented ComfyUI graph and **backed up outside temp at `D:\ClaudeProjects\plantingatlas\scripts\generate_zimage.py`** (not in this repo). Copy it back to the scratchpad if needed.
 
 ### Three New Guides Added — Tomatoes, Raised Beds, Berries ✅ (2026-09-12)
 

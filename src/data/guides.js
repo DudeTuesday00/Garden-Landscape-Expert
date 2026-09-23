@@ -601,6 +601,27 @@ export const guideCategories = [
         description: 'Grow medicinal herbs and plants at home — from echinacea and elderberry to calendula and valerian — for tinctures, teas, and remedies.',
         comingSoon: false,
       },
+      {
+        id: 'hydroponics-for-beginners',
+        title: 'Hydroponics for Beginners',
+        emoji: '💧',
+        description: 'How hydroponics works, which system to build first, and how to grow a first crop.',
+        comingSoon: false,
+      },
+      {
+        id: 'kratky-method',
+        title: 'The Kratky Method',
+        emoji: '🫙',
+        description: 'Passive hydroponics with no pump or electricity — the easiest way to start.',
+        comingSoon: false,
+      },
+      {
+        id: 'hydroponic-nutrients-ph-ec',
+        title: 'Hydroponic Nutrients, pH & EC',
+        emoji: '🧪',
+        description: 'The three numbers that decide a hydroponic crop: what to feed, pH, and EC.',
+        comingSoon: false,
+      },
     ],
   },
 

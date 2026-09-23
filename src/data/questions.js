@@ -89,6 +89,7 @@ const questions = [
     id: 'hydroSystem',
     title: 'What type of hydroponic system are you using (or planning to use)?',
     subtitle: 'Not sure yet? Kratky is the easiest starting point — no pumps or timers required.',
+    subtitleLink: { text: 'Or let the Hydroponic System Chooser pick for you →', href: '/tools/hydroponic-system-chooser/' },
     multi: false,
     hydroOnly: true,
     options: [

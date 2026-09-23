@@ -71,6 +71,9 @@ import { overwinteringContent } from './overwintering.js'
 import { growingTomatoesContent } from './growing-tomatoes.js'
 import { raisedBedGardeningContent } from './raised-bed-gardening.js'
 import { growingBerriesContent } from './growing-berries.js'
+import { hydroponicsForBeginnersContent } from './hydroponics-for-beginners.js'
+import { kratkyMethodContent } from './kratky-method.js'
+import { hydroponicNutrientsPhEcContent } from './hydroponic-nutrients-ph-ec.js'
 import { coldFramesContent } from './cold-frames.js'
 import { pestEliminatingPlantsContent } from './pest-eliminating-plants.js'
 import { organicPestControlContent } from './organic-pest-control.js'
@@ -163,6 +166,9 @@ export const contentMap = {
   'growing-tomatoes': growingTomatoesContent,
   'raised-bed-gardening': raisedBedGardeningContent,
   'growing-berries': growingBerriesContent,
+  'hydroponics-for-beginners': hydroponicsForBeginnersContent,
+  'kratky-method': kratkyMethodContent,
+  'hydroponic-nutrients-ph-ec': hydroponicNutrientsPhEcContent,
   'cold-frames': coldFramesContent,
   'pest-eliminating-plants': pestEliminatingPlantsContent,
   'organic-pest-control': organicPestControlContent,
