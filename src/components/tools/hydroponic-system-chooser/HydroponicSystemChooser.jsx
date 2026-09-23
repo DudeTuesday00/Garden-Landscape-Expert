@@ -263,12 +263,12 @@ export default function HydroponicSystemChooser() {
 
       <div className="mt-10">
         <h2 className="text-lg font-bold text-garden-800 dark:text-garden-300 mb-4">
-          More garden planning tools
+          More hydroponics tools
         </h2>
         <div className="grid gap-4 sm:grid-cols-3">
-          <RelatedLink href="/tools/fertilizer-calculator/" emoji="🧪" title="Fertilizer Calculator" body="Includes a hydroponic nutrient mode." />
-          <RelatedLink href="/tools/watering-calculator/" emoji="💧" title="Watering Calculator" body="A plan for soil-grown plants." />
-          <RelatedLink href="/wizard/" emoji="🌱" title="Garden Architect" body="Get plant picks for your hydroponic setup." />
+          <RelatedLink href="/tools/hydroponic-nutrient-dosing-calculator/" emoji="🧴" title="Nutrient Dosing Calculator" body="How much of each nutrient part to add." />
+          <RelatedLink href="/tools/hydroponic-ec-ph-calculator/" emoji="🧪" title="EC & pH Assistant" body="Check nutrient strength and pH against targets." />
+          <RelatedLink href="/tools/hydroponic-light-calculator/" emoji="💡" title="Grow Light DLI Calculator" body="Is your light strong enough for your crop?" />
         </div>
       </div>
     </div>

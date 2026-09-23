@@ -16,7 +16,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
-4. **Garden Tools** (`/tools/`) — a hub of 14 free interactive calculators/planners (fertilizer, zone finder, planting calendar, soil, mulch, compost, plant spacing, yield estimator, symptom diagnostic, companion checker, succession planner, grow-your-own savings, watering schedule, hydroponic system chooser). See "Garden Tools Hub" and the per-tool sections under Completed Work for details on each.
+4. **Garden Tools** (`/tools/`) — a hub of 17 free interactive calculators/planners (fertilizer, zone finder, planting calendar, soil, mulch, compost, plant spacing, yield estimator, symptom diagnostic, companion checker, succession planner, grow-your-own savings, watering schedule, hydroponic system chooser, hydroponic EC/pH assistant, hydroponic nutrient dosing, grow light DLI). See "Garden Tools Hub" and the per-tool sections under Completed Work for details on each.
 
 5. **Plant Database** (`/plants/`) — a searchable, filterable, user-facing browse experience over all 185 plants, with an individual detail page per plant (scientific name, lifecycle, native range, pet toxicity, bloom/harvest characteristics, traditional medicinal use where documented, plus every field already used by the wizard). Its own top-level nav item. See "Plant Database" under Completed Work.
 
@@ -317,6 +317,20 @@ Built the n8n side of Newsletter Phase 2 (real subscriber capture, replacing the
 - **Workflow** `Planting Atlas Newsletter Signup` (id `5paNlUEpgyTSC2oA`), validated with 0 errors: `Webhook` (POST, path `planting-atlas-newsletter-signup`) → `Code` (normalizes email to lowercase, validates format, checks a `_honey` honeypot field, extracts `source_url`/`ip_address`/`user_agent` from the request) → `IF` (valid?) → on true, `Data Table` `upsert` operation matching on `email` (dedupes repeat signups instead of inserting duplicate rows, an improvement over the SMS Opt-In precedent workflow this was modeled on, which only ever inserts) → `Respond Success` (200 JSON); on false → `Respond Error` (400 JSON with the specific validation message).
 - **Left deactivated and not yet wired into the site.** n8n is LAN-only (`192.168.1.123:5678`) — the production site (Cloudflare Pages, public internet) cannot reach this webhook as-is. Per the plan, the required next step is owner-side: a **Cloudflare Tunnel** (`cloudflared`) exposing just the webhook path publicly (e.g. `hooks.plantingatlas.com`), which needs machine/account access this session doesn't have. Once that exists, swap `NewsletterSignup.jsx`'s `FORM_ENDPOINT` to the public webhook URL and activate the workflow.
 - **Not yet built:** the "Send-to-Subscribers" workflow (queries the Data Table, emails each subscriber) — needs SMTP/transactional-email credentials from the owner, not yet confirmed to exist in this n8n instance.
+
+### Hydroponics Tools — EC/pH Assistant, Nutrient Dosing, Grow Light DLI ✅ (2026-09-23)
+
+Three more hydroponics tools (second step of the niche plan), completing the tool half of the hydroponics push; all use pure, unit-tested logic and share crop-target data.
+
+| Tool | Route | What it does |
+|---|---|---|
+| Hydroponic EC & pH Assistant | `/tools/hydroponic-ec-ph-calculator/` | Pick a crop + stage, enter nutrient strength (EC mS/cm, or TDS ppm on the 500 or 700 scale) and pH; shows target ranges in the user's own unit, flags low/ok/high, converts between EC and both ppm scales, and computes the exact plain water to add to dilute an over-strong reservoir to mid-range (given reservoir volume). pH advice is method-only ("small steps, wait, re-test") — pH-adjuster amounts depend on water buffering, so no number is invented |
+| Hydroponic Nutrient Dosing Calculator | `/tools/hydroponic-nutrient-dosing-calculator/` | Reservoir volume (gal/L) + label rate per part (ml/gal or ml/L, 1–4 parts) + strength (25–100%) → ml, teaspoons, and tablespoons of each part, with the add-parts-separately warning |
+| Grow Light DLI Calculator | `/tools/hydroponic-light-calculator/` | DLI = PPFD × hours × 3600 ÷ 1e6; compares to a crop's target range; back-solves hours needed at the user's PPFD or PPFD needed for their hours (flags >24 h as "light too dim") |
+
+- Files: `src/data/hydroponic-targets.js` (pH / EC-by-stage / DLI / photoperiod per crop group, plus the TDS scale factors; ranges match the Nutrients, pH & EC guide), `src/logic/hydroponicCalculators.js` + `.test.js` (14 tests; suite now 47), shared UI in `src/components/tools/hydroponics/HydroShared.jsx`, one component + route per tool. Registered in `tools.js` (tool count 17), `sitemap.js`, `search-index.js`; the chooser and the three tools cross-link each other.
+- **DLI target ranges are typical starting points (leafy 12–17, herbs 14–20, fruiting 20–30 mol/m²/day); commercial CEA references vary** — the page says so. If more precision is wanted, source it per crop before tightening.
+- **Testing lesson:** the Browser pane's dev server (`next dev`) repeatedly hot-reloaded the tab, so pages never finished hydrating and scripted input did nothing — that was a dev-server artifact, not a bug (the dosing page worked once it hydrated). Verify interactive tools against the production `out/` build served statically instead.
 
 ### Hydroponics Push — System Chooser Tool + First Three Guides ✅ (2026-09-23)
 

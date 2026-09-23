@@ -116,6 +116,30 @@ export const tools = [
     href: '/tools/hydroponic-system-chooser/',
     status: 'live',
   },
+  {
+    id: 'hydroponic-ec-ph-calculator',
+    name: 'Hydroponic EC & pH Assistant',
+    tagline: 'Check nutrient strength and pH against targets for your crop, and convert EC to ppm.',
+    emoji: '🧪',
+    href: '/tools/hydroponic-ec-ph-calculator/',
+    status: 'live',
+  },
+  {
+    id: 'hydroponic-nutrient-dosing-calculator',
+    name: 'Hydroponic Nutrient Dosing Calculator',
+    tagline: 'Exact amounts of each nutrient part for your reservoir size and strength.',
+    emoji: '🧴',
+    href: '/tools/hydroponic-nutrient-dosing-calculator/',
+    status: 'live',
+  },
+  {
+    id: 'hydroponic-light-calculator',
+    name: 'Grow Light DLI Calculator',
+    tagline: "Turn your grow light's intensity and hours into a DLI and check it against your crop.",
+    emoji: '💡',
+    href: '/tools/hydroponic-light-calculator/',
+    status: 'live',
+  },
 ]
 
 export function getTool(id) {
