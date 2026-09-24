@@ -112,5 +112,8 @@ export const heroImages = {
   'starting-seeds-indoors': '/guides/starting-seeds-indoors-guide.jpg',
   'pruning-basics': '/guides/pruning-basics-guide.jpg',
   'home-greenhouse-guide': '/guides/home-greenhouse-guide-guide.jpg',
+  'growing-peppers': '/guides/growing-peppers-guide.jpg',
+  'growing-squash-zucchini': '/guides/growing-squash-zucchini-guide.jpg',
+  'hydrangeas': '/guides/hydrangeas-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }

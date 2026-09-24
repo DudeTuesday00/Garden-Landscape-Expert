@@ -24,7 +24,7 @@ const staticPages = [
   { title: 'Hydroponic EC & pH Assistant', emoji: '🧪', description: 'Check nutrient strength and pH against targets for your crop, and convert EC to ppm.', href: '/tools/hydroponic-ec-ph-calculator/' },
   { title: 'Hydroponic Nutrient Dosing Calculator', emoji: '🧴', description: 'Exact amounts of each nutrient part for your reservoir size and strength.', href: '/tools/hydroponic-nutrient-dosing-calculator/' },
   { title: 'Grow Light DLI Calculator', emoji: '💡', description: "Turn your grow light's intensity and hours into a DLI and check it against your crop.", href: '/tools/hydroponic-light-calculator/' },
-  { title: 'Plantopedia', emoji: '📖', description: 'Browse 105 expert growing guides by category.', href: '/guides/' },
+  { title: 'Plantopedia', emoji: '📖', description: 'Browse 108 expert growing guides by category.', href: '/guides/' },
   { title: 'Garden Infographics', emoji: '🗺️', description: 'Visual quick-reference guides for planting and growing.', href: '/infographics/' },
   { title: 'Gardening Videos', emoji: '🎬', description: 'Curated YouTube channels and original Planting Atlas videos.', href: '/videos/' },
   { title: 'Gardening Podcasts', emoji: '🎙️', description: 'Curated podcasts and original Planting Atlas episodes.', href: '/podcasts/' },

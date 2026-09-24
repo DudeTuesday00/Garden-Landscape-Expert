@@ -86,6 +86,9 @@ import { bestPlantsForHydroponicsContent } from './best-plants-for-hydroponics.j
 import { startingSeedsIndoorsContent } from './starting-seeds-indoors.js'
 import { pruningBasicsContent } from './pruning-basics.js'
 import { homeGreenhouseGuideContent } from './home-greenhouse-guide.js'
+import { growingPeppersContent } from './growing-peppers.js'
+import { growingSquashZucchiniContent } from './growing-squash-zucchini.js'
+import { hydrangeasContent } from './hydrangeas.js'
 import { coldFramesContent } from './cold-frames.js'
 import { pestEliminatingPlantsContent } from './pest-eliminating-plants.js'
 import { organicPestControlContent } from './organic-pest-control.js'
@@ -193,6 +196,9 @@ export const contentMap = {
   'starting-seeds-indoors': startingSeedsIndoorsContent,
   'pruning-basics': pruningBasicsContent,
   'home-greenhouse-guide': homeGreenhouseGuideContent,
+  'growing-peppers': growingPeppersContent,
+  'growing-squash-zucchini': growingSquashZucchiniContent,
+  'hydrangeas': hydrangeasContent,
   'cold-frames': coldFramesContent,
   'pest-eliminating-plants': pestEliminatingPlantsContent,
   'organic-pest-control': organicPestControlContent,
