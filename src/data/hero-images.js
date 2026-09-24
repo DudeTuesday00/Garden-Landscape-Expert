@@ -115,5 +115,8 @@ export const heroImages = {
   'growing-peppers': '/guides/growing-peppers-guide.jpg',
   'growing-squash-zucchini': '/guides/growing-squash-zucchini-guide.jpg',
   'hydrangeas': '/guides/hydrangeas-guide.jpg',
+  'growing-potatoes': '/guides/growing-potatoes-guide.jpg',
+  'growing-garlic-onions': '/guides/growing-garlic-onions-guide.jpg',
+  'growing-roses': '/guides/growing-roses-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }

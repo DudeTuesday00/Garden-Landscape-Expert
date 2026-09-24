@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 185 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 108 guides total. All 108 are live, indexable, and have full in-depth content — no stub pages remain. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 111 guides total. All 111 are live, indexable, and have full in-depth content — no stub pages remain. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
@@ -72,7 +72,7 @@ Garden-Landscape-Expert/
     │   ├── wizard/page.jsx          # /wizard/ — Garden Architect
     │   ├── guides/
     │   │   ├── page.jsx             # /guides/ — Plantopedia landing
-    │   │   └── [guideId]/page.jsx   # /guides/[id]/ — SSG, all 108 guides (generateStaticParams + generateMetadata + Article/Breadcrumb JSON-LD)
+    │   │   └── [guideId]/page.jsx   # /guides/[id]/ — SSG, all 111 guides (generateStaticParams + generateMetadata + Article/Breadcrumb JSON-LD)
     │   ├── plants/
     │   │   ├── page.jsx             # /plants/ — Plant Database browse/search
     │   │   └── [plantId]/page.jsx   # /plants/[id]/ — SSG, all 185 plants
@@ -163,7 +163,7 @@ Garden-Landscape-Expert/
     │   ├── newsletters.js           # Thin wrapper re-exporting newsletters.json — see Newsletter Generator under Completed Work
     │   ├── newsletters.json         # Issue index — auto-maintained by the newsletter export step, not hand-authored
     │   ├── newsletter-content/      # One JSON file per issue: { bodyHtml, sourceName, sourceUrl, references } — auto-written at export time
-    │   └── guide-content/           # One JS file per live guide + shared index — 108 files total
+    │   └── guide-content/           # One JS file per live guide + shared index — 111 files total
     │       └── index.js             # contentMap export — used by GuideDetail.jsx and app/guides/[guideId]/page.jsx
     └── logic/                       # Pure functions, unit-tested where noted
         ├── matchPlants.js           # Wizard scoring + filtering algorithm (tested — matchPlants.test.js)
@@ -179,7 +179,7 @@ Garden-Landscape-Expert/
 - **Language:** JavaScript (JSX)
 - **Framework:** Next.js 15 (App Router) + React 18 — static export (`output: 'export'`) for Cloudflare Pages
 - **Routing:** File-based App Router (`src/app/`) — real URLs, no hash routing
-- **SSG:** Dynamic routes pre-rendered at build time via `generateStaticParams` — one HTML file each for all 108 guides, 185 plants, and 6 shop products (~322 static pages total from a clean `next build`)
+- **SSG:** Dynamic routes pre-rendered at build time via `generateStaticParams` — one HTML file each for all 111 guides, 185 plants, and 6 shop products (~322 static pages total from a clean `next build`)
 - **Styling:** Tailwind CSS 3 with custom `garden` and `earth` color palettes (see brand colors below)
 - **SEO:** Next.js built-in `metadata` exports and `generateMetadata` — no third-party library needed
 - **Scripts:** GTM/dark-mode inline in layout `<head>`; GA4 + AdSense via `next/script` `afterInteractive`
@@ -317,6 +317,13 @@ Built the n8n side of Newsletter Phase 2 (real subscriber capture, replacing the
 - **Workflow** `Planting Atlas Newsletter Signup` (id `5paNlUEpgyTSC2oA`), validated with 0 errors: `Webhook` (POST, path `planting-atlas-newsletter-signup`) → `Code` (normalizes email to lowercase, validates format, checks a `_honey` honeypot field, extracts `source_url`/`ip_address`/`user_agent` from the request) → `IF` (valid?) → on true, `Data Table` `upsert` operation matching on `email` (dedupes repeat signups instead of inserting duplicate rows, an improvement over the SMS Opt-In precedent workflow this was modeled on, which only ever inserts) → `Respond Success` (200 JSON); on false → `Respond Error` (400 JSON with the specific validation message).
 - **Left deactivated and not yet wired into the site.** n8n is LAN-only (`192.168.1.123:5678`) — the production site (Cloudflare Pages, public internet) cannot reach this webhook as-is. Per the plan, the required next step is owner-side: a **Cloudflare Tunnel** (`cloudflared`) exposing just the webhook path publicly (e.g. `hooks.plantingatlas.com`), which needs machine/account access this session doesn't have. Once that exists, swap `NewsletterSignup.jsx`'s `FORM_ENDPOINT` to the public webhook URL and activate the workflow.
 - **Not yet built:** the "Send-to-Subscribers" workflow (queries the Data Table, emails each subscriber) — needs SMTP/transactional-email credentials from the owner, not yet confirmed to exist in this n8n instance.
+
+### Three More Guides — Potatoes, Garlic & Onions, Roses ✅ (2026-09-25)
+
+Continuing the gap-fill (no dedicated guide existed for any of these): `growing-potatoes` (Edible Gardens — seed potatoes + chitting, planting/hilling with a green-tuber toxin warning, containers/grow bags, problems table, harvest/curing/storage), `growing-garlic-onions` (Edible Gardens — hardneck vs softneck, onion day-length table, care + problems, harvest/curing; defers the fall-garlic timing window to the Fall Planting Guide), `growing-roses` (Flowers & Color — types by care level, site/planting, watering/feeding, pruning by bloom habit, problems table; defers technique to Pruning Basics). Themes: amber/stone, purple/fuchsia, rose/pink. Guide count **111**.
+
+- Numbers are hedged (soil temps, storage 40–45°F potatoes / 50–60°F curing, onion latitude bands ~32° and ~35–36° N, rose pH 6.0–6.5).
+- **Editing lesson:** guides.js/index.js/hero-images.js/GuideDetail.jsx are now edited with the Edit tool, not Python heredocs — Python string handling silently collapsed backslash-escaped apostrophes twice and broke builds. The verification gate scans every guide file with `node --check`, reads BUILD_EXIT and the test count from one log, and only then commits.
 
 ### Three More Guides — Peppers, Squash & Zucchini, Hydrangeas ✅ (2026-09-25)
 

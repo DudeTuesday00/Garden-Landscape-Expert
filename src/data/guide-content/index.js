@@ -89,6 +89,9 @@ import { homeGreenhouseGuideContent } from './home-greenhouse-guide.js'
 import { growingPeppersContent } from './growing-peppers.js'
 import { growingSquashZucchiniContent } from './growing-squash-zucchini.js'
 import { hydrangeasContent } from './hydrangeas.js'
+import { growingPotatoesContent } from './growing-potatoes.js'
+import { growingGarlicOnionsContent } from './growing-garlic-onions.js'
+import { growingRosesContent } from './growing-roses.js'
 import { coldFramesContent } from './cold-frames.js'
 import { pestEliminatingPlantsContent } from './pest-eliminating-plants.js'
 import { organicPestControlContent } from './organic-pest-control.js'
@@ -199,6 +202,9 @@ export const contentMap = {
   'growing-peppers': growingPeppersContent,
   'growing-squash-zucchini': growingSquashZucchiniContent,
   'hydrangeas': hydrangeasContent,
+  'growing-potatoes': growingPotatoesContent,
+  'growing-garlic-onions': growingGarlicOnionsContent,
+  'growing-roses': growingRosesContent,
   'cold-frames': coldFramesContent,
   'pest-eliminating-plants': pestEliminatingPlantsContent,
   'organic-pest-control': organicPestControlContent,
