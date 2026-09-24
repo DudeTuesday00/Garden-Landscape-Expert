@@ -72,6 +72,8 @@ function guideFor(systemId) {
   if (systemId === 'kratky') return { href: '/guides/kratky-method/', label: 'The Kratky Method guide' }
   if (systemId === 'dwc') return { href: '/guides/deep-water-culture/', label: 'the Deep Water Culture guide' }
   if (systemId === 'nft') return { href: '/guides/nft-hydroponics/', label: 'the NFT Hydroponics guide' }
+  if (systemId === 'ebb-flow') return { href: '/guides/ebb-and-flow-hydroponics/', label: 'the Ebb & Flow guide' }
+  if (systemId === 'drip') return { href: '/guides/dutch-bucket-hydroponics/', label: 'the Dutch Bucket guide' }
   return null
 }
 

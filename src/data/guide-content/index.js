@@ -77,6 +77,9 @@ import { hydroponicNutrientsPhEcContent } from './hydroponic-nutrients-ph-ec.js'
 import { deepWaterCultureContent } from './deep-water-culture.js'
 import { nftHydroponicsContent } from './nft-hydroponics.js'
 import { hydroponicGrowLightsContent } from './hydroponic-grow-lights.js'
+import { ebbAndFlowHydroponicsContent } from './ebb-and-flow-hydroponics.js'
+import { dutchBucketHydroponicsContent } from './dutch-bucket-hydroponics.js'
+import { hydroponicTroubleshootingContent } from './hydroponic-troubleshooting.js'
 import { coldFramesContent } from './cold-frames.js'
 import { pestEliminatingPlantsContent } from './pest-eliminating-plants.js'
 import { organicPestControlContent } from './organic-pest-control.js'
@@ -175,6 +178,9 @@ export const contentMap = {
   'deep-water-culture': deepWaterCultureContent,
   'nft-hydroponics': nftHydroponicsContent,
   'hydroponic-grow-lights': hydroponicGrowLightsContent,
+  'ebb-and-flow-hydroponics': ebbAndFlowHydroponicsContent,
+  'dutch-bucket-hydroponics': dutchBucketHydroponicsContent,
+  'hydroponic-troubleshooting': hydroponicTroubleshootingContent,
   'cold-frames': coldFramesContent,
   'pest-eliminating-plants': pestEliminatingPlantsContent,
   'organic-pest-control': organicPestControlContent,

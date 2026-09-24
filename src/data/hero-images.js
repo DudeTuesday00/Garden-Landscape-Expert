@@ -103,5 +103,8 @@ export const heroImages = {
   'deep-water-culture': '/guides/deep-water-culture-guide.jpg',
   'nft-hydroponics': '/guides/nft-hydroponics-guide.jpg',
   'hydroponic-grow-lights': '/guides/hydroponic-grow-lights-guide.jpg',
+  'ebb-and-flow-hydroponics': '/guides/ebb-and-flow-hydroponics-guide.jpg',
+  'dutch-bucket-hydroponics': '/guides/dutch-bucket-hydroponics-guide.jpg',
+  'hydroponic-troubleshooting': '/guides/hydroponic-troubleshooting-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }

@@ -643,6 +643,27 @@ export const guideCategories = [
         description: 'How much light plants need, which light to buy, how high to hang it, and what it costs to run.',
         comingSoon: false,
       },
+      {
+        id: 'ebb-and-flow-hydroponics',
+        title: 'Ebb & Flow Hydroponics',
+        emoji: '⏱️',
+        description: 'The flood-and-drain tray system that handles almost any crop — parts, schedule, and fixes.',
+        comingSoon: false,
+      },
+      {
+        id: 'dutch-bucket-hydroponics',
+        title: 'Dutch Bucket (Drip) Hydroponics',
+        emoji: '💦',
+        description: 'One bucket per plant with drip feeding — the standard setup for tomatoes, peppers, and cucumbers.',
+        comingSoon: false,
+      },
+      {
+        id: 'hydroponic-troubleshooting',
+        title: 'Hydroponic Troubleshooting',
+        emoji: '🩺',
+        description: 'What to check first when a hydroponic plant looks wrong: roots, leaves, water, pests, and equipment.',
+        comingSoon: false,
+      },
     ],
   },
 
