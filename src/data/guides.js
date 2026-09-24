@@ -668,7 +668,7 @@ export const guideCategories = [
         id: 'vertical-hydroponic-towers',
         title: 'Vertical Hydroponic Towers',
         emoji: '🗼',
-        description: 'Stack dozens of plants in a chair's footprint — how towers work, what they suit, and their limits.',
+        description: 'Stack dozens of plants in the floor space of a chair — how towers work, what they suit, and their limits.',
         comingSoon: false,
       },
       {
