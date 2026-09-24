@@ -265,8 +265,8 @@ export default function PlantDetail({ plantId }) {
                 <>
                   <div className="bg-white dark:bg-gray-900 rounded-xl p-4 border border-sky-100 dark:border-gray-700">
                     <p className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">Nutrient strength (EC, established)</p>
-                    <p className="text-sm font-semibold text-gray-800 dark:text-gray-100 mt-0.5">{hydro.target.ecEstablished.join(' – ')} mS/cm</p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Seedlings: {hydro.target.ecSeedling.join(' – ')} mS/cm</p>
+                    <p className="text-sm font-semibold text-gray-800 dark:text-gray-100 mt-0.5">{hydro.target.ecEstablished.map((n) => n.toFixed(1)).join(' – ')} mS/cm</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Seedlings: {hydro.target.ecSeedling.map((n) => n.toFixed(1)).join(' – ')} mS/cm</p>
                   </div>
                   <div className="bg-white dark:bg-gray-900 rounded-xl p-4 border border-sky-100 dark:border-gray-700">
                     <p className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">Light (DLI)</p>
