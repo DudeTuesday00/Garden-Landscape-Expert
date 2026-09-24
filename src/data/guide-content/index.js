@@ -74,6 +74,9 @@ import { growingBerriesContent } from './growing-berries.js'
 import { hydroponicsForBeginnersContent } from './hydroponics-for-beginners.js'
 import { kratkyMethodContent } from './kratky-method.js'
 import { hydroponicNutrientsPhEcContent } from './hydroponic-nutrients-ph-ec.js'
+import { deepWaterCultureContent } from './deep-water-culture.js'
+import { nftHydroponicsContent } from './nft-hydroponics.js'
+import { hydroponicGrowLightsContent } from './hydroponic-grow-lights.js'
 import { coldFramesContent } from './cold-frames.js'
 import { pestEliminatingPlantsContent } from './pest-eliminating-plants.js'
 import { organicPestControlContent } from './organic-pest-control.js'
@@ -169,6 +172,9 @@ export const contentMap = {
   'hydroponics-for-beginners': hydroponicsForBeginnersContent,
   'kratky-method': kratkyMethodContent,
   'hydroponic-nutrients-ph-ec': hydroponicNutrientsPhEcContent,
+  'deep-water-culture': deepWaterCultureContent,
+  'nft-hydroponics': nftHydroponicsContent,
+  'hydroponic-grow-lights': hydroponicGrowLightsContent,
   'cold-frames': coldFramesContent,
   'pest-eliminating-plants': pestEliminatingPlantsContent,
   'organic-pest-control': organicPestControlContent,

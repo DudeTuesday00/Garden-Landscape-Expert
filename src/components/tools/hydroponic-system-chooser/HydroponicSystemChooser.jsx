@@ -70,6 +70,8 @@ function PlantChips({ list, tone }) {
 
 function guideFor(systemId) {
   if (systemId === 'kratky') return { href: '/guides/kratky-method/', label: 'The Kratky Method guide' }
+  if (systemId === 'dwc') return { href: '/guides/deep-water-culture/', label: 'the Deep Water Culture guide' }
+  if (systemId === 'nft') return { href: '/guides/nft-hydroponics/', label: 'the NFT Hydroponics guide' }
   return null
 }
 

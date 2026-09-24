@@ -100,5 +100,8 @@ export const heroImages = {
   'hydroponics-for-beginners': '/guides/hydroponics-for-beginners-guide.jpg',
   'kratky-method': '/guides/kratky-method-guide.jpg',
   'hydroponic-nutrients-ph-ec': '/guides/hydroponic-nutrients-ph-ec-guide.jpg',
+  'deep-water-culture': '/guides/deep-water-culture-guide.jpg',
+  'nft-hydroponics': '/guides/nft-hydroponics-guide.jpg',
+  'hydroponic-grow-lights': '/guides/hydroponic-grow-lights-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }

@@ -134,6 +134,9 @@ export default function HydroponicLightCalculator() {
             <p className="mt-5 text-xs text-gray-500 dark:text-gray-400">
               DLI = PPFD × hours × 3600 ÷ 1,000,000. Target ranges are typical starting points from controlled-environment growing — references vary, and natural light from a window counts toward the total. Plants also need a dark period, so avoid 24-hour lighting.
             </p>
+            <p className="mt-2 text-sm">
+              <Link href="/guides/hydroponic-grow-lights/" className="text-garden-600 dark:text-garden-400 underline">Read the Grow Lights guide — types, height, and running cost →</Link>
+            </p>
           </div>
         </div>
       </div>

@@ -622,6 +622,27 @@ export const guideCategories = [
         description: 'The three numbers that decide a hydroponic crop: what to feed, pH, and EC.',
         comingSoon: false,
       },
+      {
+        id: 'deep-water-culture',
+        title: 'Deep Water Culture (DWC)',
+        emoji: '🪣',
+        description: 'Build, run, and troubleshoot the aerated bucket system that grows everything from lettuce to tomatoes.',
+        comingSoon: false,
+      },
+      {
+        id: 'nft-hydroponics',
+        title: 'NFT Hydroponics',
+        emoji: '🌊',
+        description: 'The thin-film channel system for lettuce, herbs, and strawberries — and how to protect it from pump failure.',
+        comingSoon: false,
+      },
+      {
+        id: 'hydroponic-grow-lights',
+        title: 'Grow Lights for Hydroponics',
+        emoji: '💡',
+        description: 'How much light plants need, which light to buy, how high to hang it, and what it costs to run.',
+        comingSoon: false,
+      },
     ],
   },
 

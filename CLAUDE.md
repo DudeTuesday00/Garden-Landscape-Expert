@@ -12,7 +12,7 @@ The app has a **home page** with two prominent path cards, each leading to one o
 
 1. **Garden Architect** ("The Smartest Way to Plan Your Garden") — a step-by-step questionnaire that recommends plants from a database of 185 plants across 12 types, based on the user's growing method (traditional or hydroponic), climate zone, soil type, sunlight, space, watering habits, and experience level.
 
-2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 93 guides total. All 93 are live, indexable, and have full in-depth content — no stub pages remain. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
+2. **Plantopedia** ("Your Green Thumb Repository") — 10 guide categories, 96 guides total. All 96 are live, indexable, and have full in-depth content — no stub pages remain. Live guides route to a full detail view with sections, tables, tips, callouts, and affiliate product cards.
 
 3. **3D Printed Garden Shop** (`/shop/`) — an Etsy-style product listing page with category filtering and individual product detail pages. Products are defined in `src/data/products.js`; images go in `public/shop/`. **The Shop nav link is currently hidden** until real products and photos are ready; the pages exist in the codebase but are not linked from the nav or footer.
 
@@ -72,7 +72,7 @@ Garden-Landscape-Expert/
     │   ├── wizard/page.jsx          # /wizard/ — Garden Architect
     │   ├── guides/
     │   │   ├── page.jsx             # /guides/ — Plantopedia landing
-    │   │   └── [guideId]/page.jsx   # /guides/[id]/ — SSG, all 93 guides (generateStaticParams + generateMetadata + Article/Breadcrumb JSON-LD)
+    │   │   └── [guideId]/page.jsx   # /guides/[id]/ — SSG, all 96 guides (generateStaticParams + generateMetadata + Article/Breadcrumb JSON-LD)
     │   ├── plants/
     │   │   ├── page.jsx             # /plants/ — Plant Database browse/search
     │   │   └── [plantId]/page.jsx   # /plants/[id]/ — SSG, all 185 plants
@@ -163,7 +163,7 @@ Garden-Landscape-Expert/
     │   ├── newsletters.js           # Thin wrapper re-exporting newsletters.json — see Newsletter Generator under Completed Work
     │   ├── newsletters.json         # Issue index — auto-maintained by the newsletter export step, not hand-authored
     │   ├── newsletter-content/      # One JSON file per issue: { bodyHtml, sourceName, sourceUrl, references } — auto-written at export time
-    │   └── guide-content/           # One JS file per live guide + shared index — 93 files total
+    │   └── guide-content/           # One JS file per live guide + shared index — 96 files total
     │       └── index.js             # contentMap export — used by GuideDetail.jsx and app/guides/[guideId]/page.jsx
     └── logic/                       # Pure functions, unit-tested where noted
         ├── matchPlants.js           # Wizard scoring + filtering algorithm (tested — matchPlants.test.js)
@@ -179,7 +179,7 @@ Garden-Landscape-Expert/
 - **Language:** JavaScript (JSX)
 - **Framework:** Next.js 15 (App Router) + React 18 — static export (`output: 'export'`) for Cloudflare Pages
 - **Routing:** File-based App Router (`src/app/`) — real URLs, no hash routing
-- **SSG:** Dynamic routes pre-rendered at build time via `generateStaticParams` — one HTML file each for all 93 guides, 185 plants, and 6 shop products (~322 static pages total from a clean `next build`)
+- **SSG:** Dynamic routes pre-rendered at build time via `generateStaticParams` — one HTML file each for all 96 guides, 185 plants, and 6 shop products (~322 static pages total from a clean `next build`)
 - **Styling:** Tailwind CSS 3 with custom `garden` and `earth` color palettes (see brand colors below)
 - **SEO:** Next.js built-in `metadata` exports and `generateMetadata` — no third-party library needed
 - **Scripts:** GTM/dark-mode inline in layout `<head>`; GA4 + AdSense via `next/script` `afterInteractive`
@@ -317,6 +317,15 @@ Built the n8n side of Newsletter Phase 2 (real subscriber capture, replacing the
 - **Workflow** `Planting Atlas Newsletter Signup` (id `5paNlUEpgyTSC2oA`), validated with 0 errors: `Webhook` (POST, path `planting-atlas-newsletter-signup`) → `Code` (normalizes email to lowercase, validates format, checks a `_honey` honeypot field, extracts `source_url`/`ip_address`/`user_agent` from the request) → `IF` (valid?) → on true, `Data Table` `upsert` operation matching on `email` (dedupes repeat signups instead of inserting duplicate rows, an improvement over the SMS Opt-In precedent workflow this was modeled on, which only ever inserts) → `Respond Success` (200 JSON); on false → `Respond Error` (400 JSON with the specific validation message).
 - **Left deactivated and not yet wired into the site.** n8n is LAN-only (`192.168.1.123:5678`) — the production site (Cloudflare Pages, public internet) cannot reach this webhook as-is. Per the plan, the required next step is owner-side: a **Cloudflare Tunnel** (`cloudflared`) exposing just the webhook path publicly (e.g. `hooks.plantingatlas.com`), which needs machine/account access this session doesn't have. Once that exists, swap `NewsletterSignup.jsx`'s `FORM_ENDPOINT` to the public webhook URL and activate the workflow.
 - **Not yet built:** the "Send-to-Subscribers" workflow (queries the Data Table, emails each subscriber) — needs SMTP/transactional-email credentials from the owner, not yet confirmed to exist in this n8n instance.
+
+### Hydroponics Guides, Batch 2 — DWC, NFT, Grow Lights ✅ (2026-09-24)
+
+Second hydroponics guide batch (Specialty Gardens): `deep-water-culture` (how it works, building a bucket incl. check valve + GFCI notes, water temperature/reservoir care, crop-to-container table, troubleshooting table), `nft-hydroponics` (thin-film mechanics with slope/flow rules of thumb, small-system parts, crop fit table incl. strawberries, pump-failure protections, flow troubleshooting table), `hydroponic-grow-lights` (lumens vs PPFD vs DLI, light-type comparison, DLI targets by crop matching the DLI calculator, placement/height, running-cost math and electrical safety). Themes: cyan/sky, blue/indigo, yellow/lime. 5 inline images + hero each.
+
+- Cross-links added: the System Chooser now links its top match to the DWC / NFT / Kratky guide, and the DLI Calculator links to the Grow Lights guide; each guide points back to the chooser and the Nutrients, pH & EC guide.
+- Numbers are stated as rules of thumb, not precise specs (NFT slope ~1–3%, ~1 L/min flow per channel, DWC water 65–72°F, DLI ranges match `hydroponic-targets.js`). The electricity example is plain arithmetic (40 W × 16 h = 0.64 kWh/day ≈ $0.10/day at $0.15/kWh).
+- Guide count is now **96** (HomePage, TrustBadges, manifest, search index updated).
+- Remaining hydroponics guides from the plan: ebb & flow, Dutch bucket/drip, vertical towers, wick systems, best plants, and a hydroponic troubleshooting guide.
 
 ### Hydroponics Tools — EC/pH Assistant, Nutrient Dosing, Grow Light DLI ✅ (2026-09-23)
 
