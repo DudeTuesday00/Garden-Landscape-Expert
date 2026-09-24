@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${plant.name}${titleSuffix}`,
-    description: `${plant.description} Sun: ${plant.sunlight.join(', ')}. Water: ${plant.water}. USDA Zones ${Math.min(...plant.zones)}–${Math.max(...plant.zones)}.`,
+    description: `${plant.description} Sun: ${plant.sunlight.join(', ')}. Water: ${plant.water}. USDA Zones ${Math.min(...plant.zones)}–${Math.max(...plant.zones)}.${plant.hydroponic ? ' Also suited to hydroponic growing.' : ''}`,
     keywords: `${plant.name}, ${profile?.scientificName || ''}, ${plant.type}, growing guide, plant care, Planting Atlas`,
     alternates: {
       canonical: `${SITE_URL}/plants/${plantId}/`,

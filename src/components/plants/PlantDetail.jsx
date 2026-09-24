@@ -9,6 +9,7 @@ import { plantingWindows } from '../../data/planting-windows.js'
 import { plantCareDetails } from '../../data/plant-care-details.js'
 import ImageGallery from '../shop/ImageGallery.jsx'
 import SaveButton from '../SaveButton.jsx'
+import { getHydroponicProfile } from '../../logic/hydroponicPlantProfile.js'
 
 // Every plant in public/plants/<id>/ ships the same 4-file set (verified
 // 1:1 against plants.js before shipping) — no per-plant existence check
@@ -69,6 +70,7 @@ export default function PlantDetail({ plantId }) {
   const hasCalendarData = plantId in plantingWindows
   const galleryImages = GALLERY_FILES.map((file) => `/plants/${plantId}/${file}`)
   const care = plantCareDetails[plantId]
+  const hydro = getHydroponicProfile(plant)
 
   return (
     <div className="min-h-screen px-4 py-10">
@@ -229,6 +231,100 @@ export default function PlantDetail({ plantId }) {
                   <p className="text-gray-600 dark:text-gray-400 mt-0.5 leading-relaxed">{t.fix}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        )}
+
+        {/* Hydroponic growing */}
+        {hydro && (
+          <div className="bg-sky-50 dark:bg-gray-800 rounded-2xl border border-sky-200 dark:border-sky-800 shadow-sm p-6 sm:p-8 mb-5">
+            <h2 className="text-lg font-bold text-sky-900 dark:text-sky-300 mb-1">💧 Growing {plant.name} Hydroponically</h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+              {plant.name} is well suited to soil-free growing. Here is what to know before you set up.
+            </p>
+
+            <div className="grid sm:grid-cols-2 gap-4 mb-4">
+              {hydro.daysToHarvest && (
+                <div className="bg-white dark:bg-gray-900 rounded-xl p-4 border border-sky-100 dark:border-gray-700">
+                  <p className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">Time to harvest</p>
+                  <p className="text-sm font-semibold text-gray-800 dark:text-gray-100 mt-0.5">{hydro.daysToHarvest}</p>
+                </div>
+              )}
+              <div className="bg-white dark:bg-gray-900 rounded-xl p-4 border border-sky-100 dark:border-gray-700">
+                <p className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                  Target pH{hydro.target ? ` (${hydro.target.label})` : ''}
+                </p>
+                <p className="text-sm font-semibold text-gray-800 dark:text-gray-100 mt-0.5">
+                  {(hydro.target ? hydro.target.ph : hydro.generalPh).join(' – ')}
+                </p>
+                {!hydro.target && (
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">General hydroponic range — see the notes below for anything specific to this plant.</p>
+                )}
+              </div>
+              {hydro.target && (
+                <>
+                  <div className="bg-white dark:bg-gray-900 rounded-xl p-4 border border-sky-100 dark:border-gray-700">
+                    <p className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">Nutrient strength (EC, established)</p>
+                    <p className="text-sm font-semibold text-gray-800 dark:text-gray-100 mt-0.5">{hydro.target.ecEstablished.join(' – ')} mS/cm</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Seedlings: {hydro.target.ecSeedling.join(' – ')} mS/cm</p>
+                  </div>
+                  <div className="bg-white dark:bg-gray-900 rounded-xl p-4 border border-sky-100 dark:border-gray-700">
+                    <p className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">Light (DLI)</p>
+                    <p className="text-sm font-semibold text-gray-800 dark:text-gray-100 mt-0.5">{hydro.target.dli.join(' – ')} mol/m²/day</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Roughly {hydro.target.lightHours.join(' – ')} hours a day indoors</p>
+                  </div>
+                </>
+              )}
+            </div>
+
+            {hydro.target?.basis === 'group' && (
+              <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">
+                Strength and light figures are typical ranges for {hydro.target.label} as a group, not measurements specific to {plant.name}. Your nutrient&apos;s feeding chart takes priority.
+              </p>
+            )}
+            {!hydro.target && (
+              <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">
+                We don&apos;t list a nutrient-strength or light target for {plant.name}, because we don&apos;t have a reliable range for it. Start with your nutrient&apos;s label and adjust by watching the plants.
+              </p>
+            )}
+
+            {hydro.bestSystems.length > 0 && (
+              <div className="mb-3">
+                <p className="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1.5">Best-suited systems</p>
+                <div className="flex flex-wrap gap-2">
+                  {hydro.bestSystems.map((s) => (
+                    <Link key={s.id} href={s.guideHref} className="px-3 py-1.5 rounded-full text-xs font-medium bg-white dark:bg-gray-900 border border-sky-200 dark:border-sky-800 text-sky-800 dark:text-sky-300 hover:bg-sky-100 dark:hover:bg-gray-700 transition-colors">
+                      {s.emoji} {s.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+            {hydro.workableSystems.length > 0 && (
+              <div className="mb-3">
+                <p className="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1.5">Workable</p>
+                <div className="flex flex-wrap gap-2">
+                  {hydro.workableSystems.map((s) => (
+                    <Link key={s.id} href={s.guideHref} className="px-3 py-1.5 rounded-full text-xs font-medium bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                      {s.emoji} {s.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {hydro.notes && (
+              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mt-4">{hydro.notes}</p>
+            )}
+
+            <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+              <Link href="/tools/hydroponic-system-chooser/" className="text-sky-700 dark:text-sky-400 underline">Choose a system →</Link>
+              <Link href="/tools/hydroponic-ec-ph-calculator/" className="text-sky-700 dark:text-sky-400 underline">Check pH &amp; EC →</Link>
+              {hydro.target && (
+                <Link href="/tools/hydroponic-light-calculator/" className="text-sky-700 dark:text-sky-400 underline">Check your light →</Link>
+              )}
+              <Link href="/guides/hydroponics-for-beginners/" className="text-sky-700 dark:text-sky-400 underline">Hydroponics for beginners →</Link>
+              <Link href="/guides/best-plants-for-hydroponics/" className="text-sky-700 dark:text-sky-400 underline">More hydroponic plants →</Link>
             </div>
           </div>
         )}

@@ -1,6 +1,7 @@
 import { guideCategories } from '../../../data/guides.js'
 import { contentMap } from '../../../data/guide-content/index.js'
 import GuideDetail, { heroImages } from '../../../components/guides/GuideDetail.jsx'
+import { hydroponicGuideIds } from '../../../data/hydroponics-hub.js'
 
 const SITE_URL = 'https://plantingatlas.com'
 
@@ -44,6 +45,9 @@ export async function generateMetadata({ params }) {
     description,
     alternates: {
       canonical: `${SITE_URL}/guides/${guideId}/`,
+      ...(hydroponicGuideIds.has(guideId) && {
+        types: { 'application/rss+xml': `${SITE_URL}/hydroponics-feed.xml` },
+      }),
     },
     openGraph: {
       title: `${seoTitle} | Planting Atlas`,
