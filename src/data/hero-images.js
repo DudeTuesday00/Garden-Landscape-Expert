@@ -106,5 +106,8 @@ export const heroImages = {
   'ebb-and-flow-hydroponics': '/guides/ebb-and-flow-hydroponics-guide.jpg',
   'dutch-bucket-hydroponics': '/guides/dutch-bucket-hydroponics-guide.jpg',
   'hydroponic-troubleshooting': '/guides/hydroponic-troubleshooting-guide.jpg',
+  'vertical-hydroponic-towers': '/guides/vertical-hydroponic-towers-guide.jpg',
+  'wick-system-hydroponics': '/guides/wick-system-hydroponics-guide.jpg',
+  'best-plants-for-hydroponics': '/guides/best-plants-for-hydroponics-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }

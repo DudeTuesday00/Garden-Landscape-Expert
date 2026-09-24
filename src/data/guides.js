@@ -664,6 +664,27 @@ export const guideCategories = [
         description: 'What to check first when a hydroponic plant looks wrong: roots, leaves, water, pests, and equipment.',
         comingSoon: false,
       },
+      {
+        id: 'vertical-hydroponic-towers',
+        title: 'Vertical Hydroponic Towers',
+        emoji: '🗼',
+        description: 'Stack dozens of plants in a chair's footprint — how towers work, what they suit, and their limits.',
+        comingSoon: false,
+      },
+      {
+        id: 'wick-system-hydroponics',
+        title: 'Wick System Hydroponics',
+        emoji: '🕯️',
+        description: 'The simplest passive setup: a wick draws nutrient solution up into the grow medium.',
+        comingSoon: false,
+      },
+      {
+        id: 'best-plants-for-hydroponics',
+        title: 'Best Plants for Hydroponics',
+        emoji: '🥬',
+        description: 'The crops that grow best without soil, with harvest times and the right system for each.',
+        comingSoon: false,
+      },
     ],
   },
 

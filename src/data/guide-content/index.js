@@ -80,6 +80,9 @@ import { hydroponicGrowLightsContent } from './hydroponic-grow-lights.js'
 import { ebbAndFlowHydroponicsContent } from './ebb-and-flow-hydroponics.js'
 import { dutchBucketHydroponicsContent } from './dutch-bucket-hydroponics.js'
 import { hydroponicTroubleshootingContent } from './hydroponic-troubleshooting.js'
+import { verticalHydroponicTowersContent } from './vertical-hydroponic-towers.js'
+import { wickSystemHydroponicsContent } from './wick-system-hydroponics.js'
+import { bestPlantsForHydroponicsContent } from './best-plants-for-hydroponics.js'
 import { coldFramesContent } from './cold-frames.js'
 import { pestEliminatingPlantsContent } from './pest-eliminating-plants.js'
 import { organicPestControlContent } from './organic-pest-control.js'
@@ -181,6 +184,9 @@ export const contentMap = {
   'ebb-and-flow-hydroponics': ebbAndFlowHydroponicsContent,
   'dutch-bucket-hydroponics': dutchBucketHydroponicsContent,
   'hydroponic-troubleshooting': hydroponicTroubleshootingContent,
+  'vertical-hydroponic-towers': verticalHydroponicTowersContent,
+  'wick-system-hydroponics': wickSystemHydroponicsContent,
+  'best-plants-for-hydroponics': bestPlantsForHydroponicsContent,
   'cold-frames': coldFramesContent,
   'pest-eliminating-plants': pestEliminatingPlantsContent,
   'organic-pest-control': organicPestControlContent,

@@ -74,6 +74,8 @@ function guideFor(systemId) {
   if (systemId === 'nft') return { href: '/guides/nft-hydroponics/', label: 'the NFT Hydroponics guide' }
   if (systemId === 'ebb-flow') return { href: '/guides/ebb-and-flow-hydroponics/', label: 'the Ebb & Flow guide' }
   if (systemId === 'drip') return { href: '/guides/dutch-bucket-hydroponics/', label: 'the Dutch Bucket guide' }
+  if (systemId === 'tower') return { href: '/guides/vertical-hydroponic-towers/', label: 'the Vertical Tower guide' }
+  if (systemId === 'wick') return { href: '/guides/wick-system-hydroponics/', label: 'the Wick System guide' }
   return null
 }
 
@@ -218,6 +220,9 @@ export default function HydroponicSystemChooser() {
                 </Link>
                 <Link href="/guides/hydroponic-nutrients-ph-ec/" className="text-garden-600 dark:text-garden-400 underline">
                   Nutrients, pH & EC →
+                </Link>
+                <Link href="/guides/best-plants-for-hydroponics/" className="text-garden-600 dark:text-garden-400 underline">
+                  Best plants for hydroponics →
                 </Link>
               </div>
             </div>
