@@ -83,6 +83,9 @@ import { hydroponicTroubleshootingContent } from './hydroponic-troubleshooting.j
 import { verticalHydroponicTowersContent } from './vertical-hydroponic-towers.js'
 import { wickSystemHydroponicsContent } from './wick-system-hydroponics.js'
 import { bestPlantsForHydroponicsContent } from './best-plants-for-hydroponics.js'
+import { startingSeedsIndoorsContent } from './starting-seeds-indoors.js'
+import { pruningBasicsContent } from './pruning-basics.js'
+import { homeGreenhouseGuideContent } from './home-greenhouse-guide.js'
 import { coldFramesContent } from './cold-frames.js'
 import { pestEliminatingPlantsContent } from './pest-eliminating-plants.js'
 import { organicPestControlContent } from './organic-pest-control.js'
@@ -187,6 +190,9 @@ export const contentMap = {
   'vertical-hydroponic-towers': verticalHydroponicTowersContent,
   'wick-system-hydroponics': wickSystemHydroponicsContent,
   'best-plants-for-hydroponics': bestPlantsForHydroponicsContent,
+  'starting-seeds-indoors': startingSeedsIndoorsContent,
+  'pruning-basics': pruningBasicsContent,
+  'home-greenhouse-guide': homeGreenhouseGuideContent,
   'cold-frames': coldFramesContent,
   'pest-eliminating-plants': pestEliminatingPlantsContent,
   'organic-pest-control': organicPestControlContent,

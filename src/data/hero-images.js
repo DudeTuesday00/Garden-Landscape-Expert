@@ -109,5 +109,8 @@ export const heroImages = {
   'vertical-hydroponic-towers': '/guides/vertical-hydroponic-towers-guide.jpg',
   'wick-system-hydroponics': '/guides/wick-system-hydroponics-guide.jpg',
   'best-plants-for-hydroponics': '/guides/best-plants-for-hydroponics-guide.jpg',
+  'starting-seeds-indoors': '/guides/starting-seeds-indoors-guide.jpg',
+  'pruning-basics': '/guides/pruning-basics-guide.jpg',
+  'home-greenhouse-guide': '/guides/home-greenhouse-guide-guide.jpg',
   'seed-saving': '/guides/seed-saving-guide.png',
 }
