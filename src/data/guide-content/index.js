@@ -90,6 +90,9 @@ import { growingPeppersContent } from './growing-peppers.js'
 import { growingBeansPeasContent } from './growing-beans-peas.js'
 import { growingCarrotsRootVegetablesContent } from './growing-carrots-root-vegetables.js'
 import { coverCropsContent } from './cover-crops.js'
+import { growingFigsContent } from './growing-figs.js'
+import { citrusInContainersContent } from './citrus-in-containers.js'
+import { lawnCareContent } from './lawn-care.js'
 import { growingSquashZucchiniContent } from './growing-squash-zucchini.js'
 import { hydrangeasContent } from './hydrangeas.js'
 import { growingPotatoesContent } from './growing-potatoes.js'
@@ -206,6 +209,9 @@ export const contentMap = {
   'growing-beans-peas': growingBeansPeasContent,
   'growing-carrots-root-vegetables': growingCarrotsRootVegetablesContent,
   'cover-crops': coverCropsContent,
+  'growing-figs': growingFigsContent,
+  'citrus-in-containers': citrusInContainersContent,
+  'lawn-care': lawnCareContent,
   'growing-squash-zucchini': growingSquashZucchiniContent,
   'hydrangeas': hydrangeasContent,
   'growing-potatoes': growingPotatoesContent,

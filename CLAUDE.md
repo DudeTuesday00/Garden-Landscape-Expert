@@ -318,6 +318,14 @@ Built the n8n side of Newsletter Phase 2 (real subscriber capture, replacing the
 - **Left deactivated and not yet wired into the site.** n8n is LAN-only (`192.168.1.123:5678`) — the production site (Cloudflare Pages, public internet) cannot reach this webhook as-is. Per the plan, the required next step is owner-side: a **Cloudflare Tunnel** (`cloudflared`) exposing just the webhook path publicly (e.g. `hooks.plantingatlas.com`), which needs machine/account access this session doesn't have. Once that exists, swap `NewsletterSignup.jsx`'s `FORM_ENDPOINT` to the public webhook URL and activate the workflow.
 - **Not yet built:** the "Send-to-Subscribers" workflow (queries the Data Table, emails each subscriber) — needs SMTP/transactional-email credentials from the owner, not yet confirmed to exist in this n8n instance.
 
+### Guide Batch B — Figs, Citrus in Containers, Lawn Care ✅ (2026-09-25)
+
+Second batch of the nine-guide plan. `growing-figs` (Edible Gardens), `citrus-in-containers` (Container & Small Spaces), `lawn-care` (Landscape Design). Themes: purple/amber, yellow/lime, green/emerald. Guide count **117**. Remaining: Batch C (Compost Tea, Succulents & Cacti, Orchids).
+
+- Hedged figures only (fig hardiness described by climate type, not zone numbers; citrus cold stress "low 40s F and below"; lawn feeding by grass group rather than fixed dates; mowing heights as ranges).
+- Lawn Care leaves specific product timing (pre-emergent, grub control) to local guidance and links Weed Management, Water-Wise Gardening, Organic Fertilizing, Soil Health.
+- Image lessons: a "burlap-wrapped fig" prompt drew leafy evergreen shrubs (bare winter trees had to be requested explicitly); "yellow leaf with green veins" only yields a faint vein contrast, so captions were made to match rather than claim strong veining; "seed spreader" drew a wheelbarrow and a megaphone until described as "small round green plastic hopper on two wheels". The file `citrus-in-containers/yellow-leaves-green-veins.jpg` keeps its original name though the image shows mild vein contrast.
+
 ### Guide Batch A — Beans & Peas, Carrots & Root Vegetables, Cover Crops ✅ (2026-09-25)
 
 First batch of the nine-guide plan. `growing-beans-peas` and `growing-carrots-root-vegetables` (Edible Gardens), `cover-crops` (Eco & Sustainability). Themes: emerald/lime, orange/amber, teal/stone. Guide count **114** (HomePage, TrustBadges, search index updated). Remaining: Batch B (Figs, Citrus in Containers, Lawn Care) and Batch C (Compost Tea, Succulents & Cacti, Orchids).
