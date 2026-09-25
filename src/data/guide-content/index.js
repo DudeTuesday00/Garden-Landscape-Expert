@@ -87,6 +87,9 @@ import { startingSeedsIndoorsContent } from './starting-seeds-indoors.js'
 import { pruningBasicsContent } from './pruning-basics.js'
 import { homeGreenhouseGuideContent } from './home-greenhouse-guide.js'
 import { growingPeppersContent } from './growing-peppers.js'
+import { growingBeansPeasContent } from './growing-beans-peas.js'
+import { growingCarrotsRootVegetablesContent } from './growing-carrots-root-vegetables.js'
+import { coverCropsContent } from './cover-crops.js'
 import { growingSquashZucchiniContent } from './growing-squash-zucchini.js'
 import { hydrangeasContent } from './hydrangeas.js'
 import { growingPotatoesContent } from './growing-potatoes.js'
@@ -200,6 +203,9 @@ export const contentMap = {
   'pruning-basics': pruningBasicsContent,
   'home-greenhouse-guide': homeGreenhouseGuideContent,
   'growing-peppers': growingPeppersContent,
+  'growing-beans-peas': growingBeansPeasContent,
+  'growing-carrots-root-vegetables': growingCarrotsRootVegetablesContent,
+  'cover-crops': coverCropsContent,
   'growing-squash-zucchini': growingSquashZucchiniContent,
   'hydrangeas': hydrangeasContent,
   'growing-potatoes': growingPotatoesContent,

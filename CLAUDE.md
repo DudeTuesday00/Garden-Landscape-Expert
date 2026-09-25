@@ -318,6 +318,15 @@ Built the n8n side of Newsletter Phase 2 (real subscriber capture, replacing the
 - **Left deactivated and not yet wired into the site.** n8n is LAN-only (`192.168.1.123:5678`) — the production site (Cloudflare Pages, public internet) cannot reach this webhook as-is. Per the plan, the required next step is owner-side: a **Cloudflare Tunnel** (`cloudflared`) exposing just the webhook path publicly (e.g. `hooks.plantingatlas.com`), which needs machine/account access this session doesn't have. Once that exists, swap `NewsletterSignup.jsx`'s `FORM_ENDPOINT` to the public webhook URL and activate the workflow.
 - **Not yet built:** the "Send-to-Subscribers" workflow (queries the Data Table, emails each subscriber) — needs SMTP/transactional-email credentials from the owner, not yet confirmed to exist in this n8n instance.
 
+### Guide Batch A — Beans & Peas, Carrots & Root Vegetables, Cover Crops ✅ (2026-09-25)
+
+First batch of the nine-guide plan. `growing-beans-peas` and `growing-carrots-root-vegetables` (Edible Gardens), `cover-crops` (Eco & Sustainability). Themes: emerald/lime, orange/amber, teal/stone. Guide count **114** (HomePage, TrustBadges, search index updated). Remaining: Batch B (Figs, Citrus in Containers, Lawn Care) and Batch C (Compost Tea, Succulents & Cacti, Orchids).
+
+- Numbers are hedged (soil temperatures, days to harvest as approximate ranges, seeding rates deferred to the seed package). Cross-links: Companion Planting, Three Sisters, Post-Harvest, Raised Bed Gardening, No-Dig, Soil Health, Succession Planner.
+- **Image pipeline correction:** earlier Z-Image output was PNG bytes saved under `.jpg` names (13x oversized). All existing images were re-encoded on 2026-09-25 (guide inline images to real JPEG q82; 57 hero PNGs to 1600px JPEG, references now `.jpg`; default `og-image.jpg` is 1200x630). `generate_zimage.py` (backup in `D:\ClaudeProjects\plantingatlas\scripts\`) now converts to a real JPEG on save. Earlier notes in this file that call the pipeline "JPEG" were only true from this date on.
+- **Share images:** pages defining their own `openGraph`/`twitter` metadata replace the layout default, so each page must set `images` itself (done for all pages; plant pages use their own `primary.jpg`; shop product pages and `/my-garden/` have none).
+- Image lessons: "forked carrot" prompted a straight carrot until reworded as "splits into two legs like a pair of trousers"; hand-shears on grass-like cover crop drew scallions until the crop was named as red clover with flowers; root nodules needed "tiny round beige bumps" wording.
+
 ### Hydroponics: Plant-Page Sections, RSS Feed, Newsletter Series ✅ (2026-09-25)
 
 Completes the non-guide items from the hydroponics plan.
