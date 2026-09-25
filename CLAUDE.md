@@ -318,9 +318,17 @@ Built the n8n side of Newsletter Phase 2 (real subscriber capture, replacing the
 - **Left deactivated and not yet wired into the site.** n8n is LAN-only (`192.168.1.123:5678`) — the production site (Cloudflare Pages, public internet) cannot reach this webhook as-is. Per the plan, the required next step is owner-side: a **Cloudflare Tunnel** (`cloudflared`) exposing just the webhook path publicly (e.g. `hooks.plantingatlas.com`), which needs machine/account access this session doesn't have. Once that exists, swap `NewsletterSignup.jsx`'s `FORM_ENDPOINT` to the public webhook URL and activate the workflow.
 - **Not yet built:** the "Send-to-Subscribers" workflow (queries the Data Table, emails each subscriber) — needs SMTP/transactional-email credentials from the owner, not yet confirmed to exist in this n8n instance.
 
+### Guide Batch C — Compost Tea, Succulents & Cacti, Orchids ✅ (2026-09-25)
+
+Final batch of the nine-guide plan (A, B, C now all shipped). `compost-tea` (Eco & Sustainability), `succulents-cacti` and `growing-orchids` (Container & Small Spaces). Themes: amber/stone, lime/teal, fuchsia/pink. Guide count **120**.
+
+- **Compost Tea is deliberately honest:** it is framed as a mild supplement with mixed research evidence, never a cure or a substitute for spreading finished compost; brewing guidance is aerated-only, plant-based compost only, use within hours, with a dedicated food-safety section (soil application, keep off eaten parts, wash produce). It complements the AACT recipe already in `organic-fertilizing.js` rather than repeating it.
+- Orchids focus on moth orchids (Phalaenopsis); other types appear only in a comparison table.
+- **Image lesson:** the words "moth orchid" in a Z-Image prompt drew actual moths on the flowers and roots. Write "Phalaenopsis orchid" and add "no insects". Also: "stretched succulent" produced two compact rosettes until described as "a tall pale Echeveria on a long bare bent stem".
+
 ### Guide Batch B — Figs, Citrus in Containers, Lawn Care ✅ (2026-09-25)
 
-Second batch of the nine-guide plan. `growing-figs` (Edible Gardens), `citrus-in-containers` (Container & Small Spaces), `lawn-care` (Landscape Design). Themes: purple/amber, yellow/lime, green/emerald. Guide count **117**. Remaining: Batch C (Compost Tea, Succulents & Cacti, Orchids).
+Second batch of the nine-guide plan. `growing-figs` (Edible Gardens), `citrus-in-containers` (Container & Small Spaces), `lawn-care` (Landscape Design). Themes: purple/amber, yellow/lime, green/emerald. Guide count **117**. Batch C followed (see above).
 
 - Hedged figures only (fig hardiness described by climate type, not zone numbers; citrus cold stress "low 40s F and below"; lawn feeding by grass group rather than fixed dates; mowing heights as ranges).
 - Lawn Care leaves specific product timing (pre-emergent, grub control) to local guidance and links Weed Management, Water-Wise Gardening, Organic Fertilizing, Soil Health.

@@ -93,6 +93,9 @@ import { coverCropsContent } from './cover-crops.js'
 import { growingFigsContent } from './growing-figs.js'
 import { citrusInContainersContent } from './citrus-in-containers.js'
 import { lawnCareContent } from './lawn-care.js'
+import { compostTeaContent } from './compost-tea.js'
+import { succulentsCactiContent } from './succulents-cacti.js'
+import { growingOrchidsContent } from './growing-orchids.js'
 import { growingSquashZucchiniContent } from './growing-squash-zucchini.js'
 import { hydrangeasContent } from './hydrangeas.js'
 import { growingPotatoesContent } from './growing-potatoes.js'
@@ -212,6 +215,9 @@ export const contentMap = {
   'growing-figs': growingFigsContent,
   'citrus-in-containers': citrusInContainersContent,
   'lawn-care': lawnCareContent,
+  'compost-tea': compostTeaContent,
+  'succulents-cacti': succulentsCactiContent,
+  'growing-orchids': growingOrchidsContent,
   'growing-squash-zucchini': growingSquashZucchiniContent,
   'hydrangeas': hydrangeasContent,
   'growing-potatoes': growingPotatoesContent,
