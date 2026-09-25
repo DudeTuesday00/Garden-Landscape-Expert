@@ -33,7 +33,7 @@ export async function GET() {
       <title>${escapeXml(title)}</title>
       <link>${link}</link>
       <guid isPermaLink="true">${link}</guid>
-      <description>${escapeXml(description)}</description>${heroImage ? `\n      <enclosure url="${SITE_URL}${heroImage}" type="image/png"/>` : ''}
+      <description>${escapeXml(description)}</description>${heroImage ? `\n      <enclosure url="${SITE_URL}${heroImage}" type="image/jpeg"/>` : ''}
     </item>`
     })
     .join('\n')
