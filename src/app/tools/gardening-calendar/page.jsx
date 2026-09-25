@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/gardening-calendar/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/gardening-calendar/',
     title: 'Garden Planting Calendar | Planting Atlas',
     description: 'Your personalized planting calendar by ZIP code — for 185 plants, not just vegetables.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Garden Planting Calendar | Planting Atlas',
     description: 'Your personalized planting calendar by ZIP code — for 185 plants, not just vegetables.',
   },

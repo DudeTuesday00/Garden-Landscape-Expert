@@ -10,12 +10,14 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/wizard/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/wizard/',
     title: 'Garden Architect — Personalized Plant Recommendations | Planting Atlas',
     description:
       'Answer a few questions about your garden conditions and get personalized plant recommendations from 185 plants. Supports traditional and hydroponic growing across all USDA zones.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Garden Architect — Personalized Plant Recommendations | Planting Atlas',
     description:
       'Answer a few questions about your garden conditions and get personalized plant recommendations from 185 plants. Traditional or hydroponic, all USDA zones.',

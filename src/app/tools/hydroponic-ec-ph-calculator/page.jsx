@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/hydroponic-ec-ph-calculator/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/hydroponic-ec-ph-calculator/',
     title: 'Hydroponic EC & pH Assistant | Planting Atlas',
     description: 'Check hydroponic nutrient strength and pH against crop targets, convert EC and TDS ppm, and get the dilution amount.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Hydroponic EC & pH Assistant | Planting Atlas',
     description: 'Check hydroponic nutrient strength and pH against crop targets, convert EC and TDS ppm, and get the dilution amount.',
   },

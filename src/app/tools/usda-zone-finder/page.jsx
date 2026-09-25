@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/usda-zone-finder/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/usda-zone-finder/',
     title: 'Find Your USDA Hardiness Zone | Planting Atlas',
     description: 'Look up your exact USDA Plant Hardiness Zone by ZIP code.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Find Your USDA Hardiness Zone | Planting Atlas',
     description: 'Look up your exact USDA Plant Hardiness Zone by ZIP code.',
   },

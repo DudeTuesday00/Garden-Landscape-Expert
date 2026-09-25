@@ -9,12 +9,14 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/about/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/about/',
     title: 'About Us | Planting Atlas',
     description:
       'Meet David Rodgers, founder of Planting Atlas — 40 years of hands-on gardening experience turned into free, zone-specific plant recommendations and guides for every U.S. climate.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'About Us | Planting Atlas',
     description:
       'Meet David Rodgers, founder of Planting Atlas — 40 years of hands-on gardening experience turned into free, zone-specific plant recommendations and guides for every U.S. climate.',

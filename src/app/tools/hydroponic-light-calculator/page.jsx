@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/hydroponic-light-calculator/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/hydroponic-light-calculator/',
     title: 'Grow Light DLI Calculator | Planting Atlas',
     description: 'Turn grow-light PPFD and hours into DLI and see if it suits your crop.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Grow Light DLI Calculator | Planting Atlas',
     description: 'Turn grow-light PPFD and hours into DLI and see if it suits your crop.',
   },

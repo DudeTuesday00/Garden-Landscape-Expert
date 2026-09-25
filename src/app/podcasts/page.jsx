@@ -10,12 +10,14 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/podcasts/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/podcasts/',
     title: 'Gardening Podcasts — Best Shows for Every Gardener | Planting Atlas',
     description:
       'Discover the best gardening podcasts: curated shows covering organic growing, permaculture, vegetable gardening, native plants, and more.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Gardening Podcasts — Best Shows for Every Gardener | Planting Atlas',
     description:
       'Curated gardening podcasts for every type of grower — from organic vegetable growing to permaculture design.',

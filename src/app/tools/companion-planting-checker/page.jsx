@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/companion-planting-checker/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/companion-planting-checker/',
     title: 'Companion Planting Checker | Planting Atlas',
     description: 'Check whether two plants make good neighbors or should be kept apart.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Companion Planting Checker | Planting Atlas',
     description: 'Check whether two plants make good neighbors or should be kept apart.',
   },

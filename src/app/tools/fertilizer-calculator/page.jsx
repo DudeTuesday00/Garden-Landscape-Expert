@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/fertilizer-calculator/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/fertilizer-calculator/',
     title: 'Fertilizer Calculator | Planting Atlas',
     description: 'Find out exactly what and how much fertilizer to use for your specific plants.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Fertilizer Calculator | Planting Atlas',
     description: 'Find out exactly what and how much fertilizer to use for your specific plants.',
   },

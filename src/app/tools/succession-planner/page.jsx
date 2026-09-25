@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/succession-planner/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/succession-planner/',
     title: 'Succession Planting Planner | Planting Atlas',
     description: 'See how many rounds of a fast crop fit in your growing season.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Succession Planting Planner | Planting Atlas',
     description: 'See how many rounds of a fast crop fit in your growing season.',
   },

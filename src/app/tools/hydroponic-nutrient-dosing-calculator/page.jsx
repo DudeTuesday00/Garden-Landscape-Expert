@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/hydroponic-nutrient-dosing-calculator/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/hydroponic-nutrient-dosing-calculator/',
     title: 'Hydroponic Nutrient Dosing Calculator | Planting Atlas',
     description: 'Exact milliliters and teaspoons of each nutrient part for your reservoir size and strength.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Hydroponic Nutrient Dosing Calculator | Planting Atlas',
     description: 'Exact milliliters and teaspoons of each nutrient part for your reservoir size and strength.',
   },

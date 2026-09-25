@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/watering-calculator/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/watering-calculator/',
     title: 'Watering Schedule Calculator | Planting Atlas',
     description: 'A concrete watering plan tailored to your plant, growing method, and climate.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Watering Schedule Calculator | Planting Atlas',
     description: 'A concrete watering plan tailored to your plant, growing method, and climate.',
   },

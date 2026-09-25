@@ -10,12 +10,14 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/infographics/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/infographics/',
     title: 'Garden Infographics — Visual Planting & Growing Guides | Planting Atlas',
     description:
       'Free gardening infographics: companion planting charts, USDA zone frost dates, vegetable spacing guides, soil pH reference, and watering schedules.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Garden Infographics — Visual Planting & Growing Guides | Planting Atlas',
     description:
       'Free print-ready gardening infographics: companion planting, spacing guides, USDA zones, soil pH, and watering schedules.',

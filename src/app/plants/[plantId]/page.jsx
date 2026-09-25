@@ -29,10 +29,12 @@ export async function generateMetadata({ params }) {
       title: `${plant.name} | Planting Atlas Plant Database`,
       description: plant.description,
       url: `${SITE_URL}/plants/${plantId}/`,
+      images: [{ url: `${SITE_URL}/plants/${plantId}/primary.jpg`, alt: plant.name }],
     },
     twitter: {
       title: `${plant.name} | Planting Atlas Plant Database`,
       description: plant.description,
+      images: [`${SITE_URL}/plants/${plantId}/primary.jpg`],
     },
   }
 }

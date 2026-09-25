@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/plant-symptom-checker/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/plant-symptom-checker/',
     title: 'Garden Symptom Diagnostic | Planting Atlas',
     description: 'Answer a couple of questions to narrow down the likely pest or disease affecting your plant.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Garden Symptom Diagnostic | Planting Atlas',
     description: 'Answer a couple of questions to narrow down the likely pest or disease affecting your plant.',
   },

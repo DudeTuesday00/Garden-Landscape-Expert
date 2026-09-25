@@ -10,12 +10,14 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/shop/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/shop/',
     title: '3D Printed Garden Shop | Planting Atlas',
     description:
       'Shop precision-printed 3D gardening accessories — modular planters, plant markers, trellis clips, and more. Made to order.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: '3D Printed Garden Shop | Planting Atlas',
     description:
       'Shop precision-printed 3D gardening accessories — modular planters, plant markers, trellis clips, and more.',

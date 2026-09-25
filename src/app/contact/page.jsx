@@ -9,11 +9,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/contact/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/contact/',
     title: 'Contact Us | Planting Atlas',
     description: 'Have a question or feedback? Send us a message and the Planting Atlas team will get back to you.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Contact Us | Planting Atlas',
     description: 'Have a question or feedback? Send us a message and the Planting Atlas team will get back to you.',
   },

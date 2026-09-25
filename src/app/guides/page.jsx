@@ -10,12 +10,14 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/guides/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/guides/',
     title: 'Plantopedia — Gardening Guides & Growing Tutorials | Planting Atlas',
     description:
       'Browse 75+ expert gardening guides covering trees, flowers, vegetables, herbs, specialty gardens, and more. In-depth growing tutorials for every climate and experience level.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Plantopedia — Gardening Guides & Growing Tutorials | Planting Atlas',
     description:
       'Browse 75+ expert gardening guides covering trees, flowers, vegetables, herbs, specialty gardens, and more.',

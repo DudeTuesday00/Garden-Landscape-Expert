@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/grow-your-own-savings/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/grow-your-own-savings/',
     title: 'Value of Growing Your Own | Planting Atlas',
     description: 'See how much money a home-grown vegetable garden saves compared to grocery store prices.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Value of Growing Your Own | Planting Atlas',
     description: 'See how much money a home-grown vegetable garden saves compared to grocery store prices.',
   },

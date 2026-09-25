@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/plant-spacing-calculator/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/plant-spacing-calculator/',
     title: 'Plant Spacing & Square Foot Garden Planner | Planting Atlas',
     description: 'See exactly how many plants fit in your raised bed with a visual grid.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Plant Spacing & Square Foot Garden Planner | Planting Atlas',
     description: 'See exactly how many plants fit in your raised bed with a visual grid.',
   },

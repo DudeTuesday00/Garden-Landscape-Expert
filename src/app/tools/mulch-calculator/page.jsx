@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/mulch-calculator/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/mulch-calculator/',
     title: 'Mulch Calculator | Planting Atlas',
     description: 'Calculate exactly how much mulch you need by area and depth.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Mulch Calculator | Planting Atlas',
     description: 'Calculate exactly how much mulch you need by area and depth.',
   },

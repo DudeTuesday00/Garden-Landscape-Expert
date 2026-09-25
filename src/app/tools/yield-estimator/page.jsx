@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/yield-estimator/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/yield-estimator/',
     title: 'Garden Yield Estimator | Planting Atlas',
     description: 'Estimate how much harvest to expect from your vegetable garden.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Garden Yield Estimator | Planting Atlas',
     description: 'Estimate how much harvest to expect from your vegetable garden.',
   },

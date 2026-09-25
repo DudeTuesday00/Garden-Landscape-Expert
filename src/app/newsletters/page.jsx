@@ -8,12 +8,14 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/newsletters/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/newsletters/',
     title: 'Newsletter — Zone-Specific Gardening Advice | Planting Atlas',
     description:
       'Zone-specific, no-fluff gardening advice from 40 years of backyard trial and error.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Newsletter — Zone-Specific Gardening Advice | Planting Atlas',
     description:
       'Zone-specific, no-fluff gardening advice from 40 years of backyard trial and error.',

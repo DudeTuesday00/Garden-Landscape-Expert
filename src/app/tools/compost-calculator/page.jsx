@@ -7,11 +7,13 @@ export const metadata = {
     canonical: 'https://plantingatlas.com/tools/compost-calculator/',
   },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
     url: 'https://plantingatlas.com/tools/compost-calculator/',
     title: 'Compost Calculator | Planting Atlas',
     description: 'Get the right browns-to-greens ratio for a hot compost pile of any size.',
   },
   twitter: {
+    images: ['/og-image.jpg'],
     title: 'Compost Calculator | Planting Atlas',
     description: 'Get the right browns-to-greens ratio for a hot compost pile of any size.',
   },
