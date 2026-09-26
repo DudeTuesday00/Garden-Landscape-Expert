@@ -1,0 +1,526 @@
+{
+ "generatedFrom": "git history — run npm run dates",
+ "siteStats": {
+  "guideCount": 120,
+  "guideCategoryCount": 10
+ },
+ "guides": {
+  "shade-trees": {
+   "published": "2026-02-21",
+   "modified": "2026-08-23"
+  },
+  "fruit-trees": {
+   "published": "2026-02-21",
+   "modified": "2026-08-23"
+  },
+  "ornamental-trees": {
+   "published": "2026-02-21",
+   "modified": "2026-08-24"
+  },
+  "dwarf-trees": {
+   "published": "2026-02-26",
+   "modified": "2026-08-23"
+  },
+  "evergreen-trees": {
+   "published": "2026-02-26",
+   "modified": "2026-08-23"
+  },
+  "privacy-trees": {
+   "published": "2026-02-26",
+   "modified": "2026-08-25"
+  },
+  "street-trees": {
+   "published": "2026-02-26",
+   "modified": "2026-08-25"
+  },
+  "fall-color-trees": {
+   "published": "2026-02-26",
+   "modified": "2026-08-23"
+  },
+  "plants-for-color": {
+   "published": "2026-02-26",
+   "modified": "2026-08-25"
+  },
+  "moon-garden": {
+   "published": "2026-02-26",
+   "modified": "2026-08-24"
+  },
+  "cottage-garden": {
+   "published": "2026-02-27",
+   "modified": "2026-08-23"
+  },
+  "pollinator-garden": {
+   "published": "2026-02-27",
+   "modified": "2026-08-25"
+  },
+  "cut-flower-garden": {
+   "published": "2026-02-27",
+   "modified": "2026-08-23"
+  },
+  "wildflower-meadow": {
+   "published": "2026-02-27",
+   "modified": "2026-08-26"
+  },
+  "spring-bulb-garden": {
+   "published": "2026-02-27",
+   "modified": "2026-08-25"
+  },
+  "long-blooming-perennials": {
+   "published": "2026-02-27",
+   "modified": "2026-08-24"
+  },
+  "annual-flowers": {
+   "published": "2026-02-27",
+   "modified": "2026-08-23"
+  },
+  "pizza-garden": {
+   "published": "2026-02-28",
+   "modified": "2026-08-24"
+  },
+  "salad-garden": {
+   "published": "2026-02-28",
+   "modified": "2026-08-25"
+  },
+  "herb-garden-design": {
+   "published": "2026-02-28",
+   "modified": "2026-08-23"
+  },
+  "tea-garden": {
+   "published": "2026-03-06",
+   "modified": "2026-08-26"
+  },
+  "childrens-garden": {
+   "published": "2026-03-06",
+   "modified": "2026-08-23"
+  },
+  "square-foot-gardening": {
+   "published": "2026-03-06",
+   "modified": "2026-08-25"
+  },
+  "three-sisters": {
+   "published": "2026-03-06",
+   "modified": "2026-08-26"
+  },
+  "edible-flowers": {
+   "published": "2026-03-06",
+   "modified": "2026-08-23"
+  },
+  "salsa-garden": {
+   "published": "2026-03-06",
+   "modified": "2026-08-25"
+  },
+  "medicinal-garden": {
+   "published": "2026-03-08",
+   "modified": "2026-08-24"
+  },
+  "plants-for-smell": {
+   "published": "2026-03-10",
+   "modified": "2026-08-25"
+  },
+  "curb-appeal": {
+   "published": "2026-03-10",
+   "modified": "2026-08-23"
+  },
+  "porch-plants": {
+   "published": "2026-03-10",
+   "modified": "2026-08-25"
+  },
+  "culinary-herb-garden": {
+   "published": "2026-03-14",
+   "modified": "2026-08-23"
+  },
+  "japanese-garden": {
+   "published": "2026-03-15",
+   "modified": "2026-08-24"
+  },
+  "winter-garden-prep": {
+   "published": "2026-03-15",
+   "modified": "2026-08-26"
+  },
+  "xeriscape": {
+   "published": "2026-03-15",
+   "modified": "2026-08-26"
+  },
+  "common-diseases": {
+   "published": "2026-03-15",
+   "modified": "2026-08-23"
+  },
+  "rain-barrel": {
+   "published": "2026-03-20",
+   "modified": "2026-08-25"
+  },
+  "zen-garden": {
+   "published": "2026-03-21",
+   "modified": "2026-08-26"
+  },
+  "modern-minimalist-garden": {
+   "published": "2026-03-21",
+   "modified": "2026-08-24"
+  },
+  "indoor-houseplants": {
+   "published": "2026-03-22",
+   "modified": "2026-08-24"
+  },
+  "weed-management": {
+   "published": "2026-03-22",
+   "modified": "2026-08-26"
+  },
+  "garden-pests": {
+   "published": "2026-03-22",
+   "modified": "2026-08-23"
+  },
+  "beneficial-insects": {
+   "published": "2026-03-23",
+   "modified": "2026-08-23"
+  },
+  "butterfly-garden": {
+   "published": "2026-03-24",
+   "modified": "2026-08-23"
+  },
+  "rabbit-proof": {
+   "published": "2026-03-24",
+   "modified": "2026-08-25"
+  },
+  "four-season-garden": {
+   "published": "2026-03-25",
+   "modified": "2026-08-23"
+  },
+  "organic-fertilizing": {
+   "published": "2026-03-25",
+   "modified": "2026-08-23"
+  },
+  "hummingbird-garden": {
+   "published": "2026-03-27",
+   "modified": "2026-08-23"
+  },
+  "sunroom-plants": {
+   "published": "2026-03-27",
+   "modified": "2026-08-25"
+  },
+  "indoor-herb-garden": {
+   "published": "2026-03-27",
+   "modified": "2026-08-24"
+  },
+  "rain-garden": {
+   "published": "2026-03-28",
+   "modified": "2026-08-25"
+  },
+  "mulching-guide": {
+   "published": "2026-03-29",
+   "modified": "2026-08-24"
+  },
+  "privacy-screening": {
+   "published": "2026-03-30",
+   "modified": "2026-08-25"
+  },
+  "medicinal-herb-garden": {
+   "published": "2026-04-02",
+   "modified": "2026-08-24"
+  },
+  "fragrant-garden-path": {
+   "published": "2026-04-05",
+   "modified": "2026-09-07"
+  },
+  "aromatherapy-garden": {
+   "published": "2026-04-05",
+   "modified": "2026-09-08"
+  },
+  "low-maintenance-landscape": {
+   "published": "2026-04-05",
+   "modified": "2026-09-08"
+  },
+  "cottage-landscape": {
+   "published": "2026-04-05",
+   "modified": "2026-09-08"
+  },
+  "foundation-planting": {
+   "published": "2026-04-05",
+   "modified": "2026-09-08"
+  },
+  "spring-startup": {
+   "published": "2026-04-05",
+   "modified": "2026-09-08"
+  },
+  "summer-maintenance": {
+   "published": "2026-04-05",
+   "modified": "2026-09-08"
+  },
+  "fall-planting": {
+   "published": "2026-04-05",
+   "modified": "2026-09-09"
+  },
+  "post-harvest": {
+   "published": "2026-04-05",
+   "modified": "2026-09-09"
+  },
+  "year-round-calendar": {
+   "published": "2026-04-05",
+   "modified": "2026-09-09"
+  },
+  "overwintering": {
+   "published": "2026-04-05",
+   "modified": "2026-09-09"
+  },
+  "growing-tomatoes": {
+   "published": "2026-09-12",
+   "modified": "2026-09-12"
+  },
+  "raised-bed-gardening": {
+   "published": "2026-09-12",
+   "modified": "2026-09-12"
+  },
+  "growing-berries": {
+   "published": "2026-09-12",
+   "modified": "2026-09-12"
+  },
+  "hydroponics-for-beginners": {
+   "published": "2026-09-23",
+   "modified": "2026-09-23"
+  },
+  "kratky-method": {
+   "published": "2026-09-23",
+   "modified": "2026-09-23"
+  },
+  "hydroponic-nutrients-ph-ec": {
+   "published": "2026-09-23",
+   "modified": "2026-09-23"
+  },
+  "deep-water-culture": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "nft-hydroponics": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "hydroponic-grow-lights": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "ebb-and-flow-hydroponics": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "dutch-bucket-hydroponics": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "hydroponic-troubleshooting": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "vertical-hydroponic-towers": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "wick-system-hydroponics": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "best-plants-for-hydroponics": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "starting-seeds-indoors": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "pruning-basics": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "home-greenhouse-guide": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "growing-peppers": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "growing-beans-peas": {
+   "published": "2026-09-25",
+   "modified": "2026-09-25"
+  },
+  "growing-carrots-root-vegetables": {
+   "published": "2026-09-25",
+   "modified": "2026-09-25"
+  },
+  "cover-crops": {
+   "published": "2026-09-25",
+   "modified": "2026-09-25"
+  },
+  "growing-figs": {
+   "published": "2026-09-25",
+   "modified": "2026-09-25"
+  },
+  "citrus-in-containers": {
+   "published": "2026-09-25",
+   "modified": "2026-09-25"
+  },
+  "lawn-care": {
+   "published": "2026-09-25",
+   "modified": "2026-09-25"
+  },
+  "compost-tea": {
+   "published": "2026-09-25",
+   "modified": "2026-09-25"
+  },
+  "succulents-cacti": {
+   "published": "2026-09-25",
+   "modified": "2026-09-25"
+  },
+  "growing-orchids": {
+   "published": "2026-09-25",
+   "modified": "2026-09-25"
+  },
+  "growing-squash-zucchini": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "hydrangeas": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "growing-potatoes": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "growing-garlic-onions": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "growing-roses": {
+   "published": "2026-09-24",
+   "modified": "2026-09-24"
+  },
+  "cold-frames": {
+   "published": "2026-04-05",
+   "modified": "2026-09-07"
+  },
+  "pest-eliminating-plants": {
+   "published": "2026-04-05",
+   "modified": "2026-09-06"
+  },
+  "organic-pest-control": {
+   "published": "2026-04-05",
+   "modified": "2026-09-06"
+  },
+  "deer-resistant": {
+   "published": "2026-04-05",
+   "modified": "2026-09-06"
+  },
+  "slug-control": {
+   "published": "2026-04-05",
+   "modified": "2026-09-06"
+  },
+  "pet-friendly-plants": {
+   "published": "2026-04-05",
+   "modified": "2026-09-08"
+  },
+  "native-plants": {
+   "published": "2026-04-05",
+   "modified": "2026-09-08"
+  },
+  "sensory-garden": {
+   "published": "2026-04-05",
+   "modified": "2026-09-08"
+  },
+  "water-feature-plants": {
+   "published": "2026-04-05",
+   "modified": "2026-09-07"
+  },
+  "fire-safe-landscaping": {
+   "published": "2026-04-05",
+   "modified": "2026-09-08"
+  },
+  "bird-garden": {
+   "published": "2026-04-05",
+   "modified": "2026-09-07"
+  },
+  "cutting-garden": {
+   "published": "2026-04-05",
+   "modified": "2026-09-07"
+  },
+  "balcony-garden": {
+   "published": "2026-04-05",
+   "modified": "2026-09-07"
+  },
+  "window-box": {
+   "published": "2026-04-05",
+   "modified": "2026-09-07"
+  },
+  "hanging-baskets": {
+   "published": "2026-04-05",
+   "modified": "2026-09-07"
+  },
+  "container-vegetables": {
+   "published": "2026-04-05",
+   "modified": "2026-09-07"
+  },
+  "vertical-gardening": {
+   "published": "2026-04-05",
+   "modified": "2026-09-08"
+  },
+  "composting-basics": {
+   "published": "2026-04-05",
+   "modified": "2026-09-07"
+  },
+  "water-wise-gardening": {
+   "published": "2026-04-05",
+   "modified": "2026-09-08"
+  },
+  "companion-planting": {
+   "published": "2026-04-05",
+   "modified": "2026-09-06"
+  },
+  "soil-health": {
+   "published": "2026-04-05",
+   "modified": "2026-09-06"
+  },
+  "no-dig-gardening": {
+   "published": "2026-04-05",
+   "modified": "2026-08-24"
+  },
+  "seed-saving": {
+   "published": "2026-04-05",
+   "modified": "2026-08-25"
+  }
+ },
+ "tools": {
+  "fertilizer-calculator": "2026-09-03",
+  "gardening-calendar": "2026-09-03",
+  "usda-zone-finder": "2026-09-03",
+  "soil-calculator": "2026-09-03",
+  "mulch-calculator": "2026-09-03",
+  "compost-calculator": "2026-09-03",
+  "plant-spacing-calculator": "2026-09-03",
+  "yield-estimator": "2026-09-03",
+  "plant-symptom-checker": "2026-09-03",
+  "companion-planting-checker": "2026-09-03",
+  "succession-planner": "2026-09-03",
+  "grow-your-own-savings": "2026-09-03",
+  "watering-calculator": "2026-09-03",
+  "hydroponic-system-chooser": "2026-09-24",
+  "hydroponic-ec-ph-calculator": "2026-09-23",
+  "hydroponic-nutrient-dosing-calculator": "2026-09-23",
+  "hydroponic-light-calculator": "2026-09-24"
+ },
+ "staticPages": {
+  "/": "2026-09-25",
+  "/wizard/": "2026-09-03",
+  "/tools/": "2026-09-23",
+  "/guides/": "2026-09-25",
+  "/infographics/": "2026-07-02",
+  "/podcasts/": "2026-05-09",
+  "/videos/": "2026-05-09",
+  "/about/": "2026-05-09",
+  "/contact/": "2026-03-26",
+  "/privacy/": "2026-04-05",
+  "/affiliate-disclosure/": "2026-04-05",
+  "/advertising-disclosure/": "2026-04-05"
+ },
+ "plantDatabase": {
+  "published": "2026-07-02",
+  "modified": "2026-09-24"
+ }
+}

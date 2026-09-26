@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { guideCount, guideCategoryCount } from '../data/site-stats.js'
 import gardenArchitectImg from './wizard/Garden-Architect.png'
 import plantopediaImg from './guides/Plantopedia.png'
 import NewsletterSignup from './NewsletterSignup.jsx'
@@ -85,7 +86,7 @@ export default function HomePage() {
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
           {[
             { value: '185', label: 'Plants in database' },
-            { value: '120',  label: 'In-depth guides' },
+            { value: String(guideCount),  label: 'In-depth guides' },
             { value: '12',  label: 'Plant categories' },
             { value: '100%', label: 'Free, no account' },
           ].map(({ value, label }) => (
@@ -215,7 +216,7 @@ export default function HomePage() {
           </h2>
           <p className="text-base leading-relaxed mb-4">
             The <strong>Plantopedia</strong> is our growing library of expert gardening guides —
-            75+ topics organized into 10 categories that span the full range of what gardeners
+            {guideCount} topics organized into {guideCategoryCount} categories that span the full range of what gardeners
             want to grow and create. From towering shade trees to compact container herb gardens,
             from wildflower meadows to precision square-foot vegetable beds, every guide is
             written with real depth: varieties to consider, planting and spacing details, seasonal

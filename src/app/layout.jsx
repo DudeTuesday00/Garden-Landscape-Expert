@@ -4,6 +4,7 @@ import Script from 'next/script'
 import Link from 'next/link'
 import Nav from '../components/Nav.jsx'
 import CookieBanner from '../components/CookieBanner.jsx'
+import { guideCount } from '../data/site-stats.js'
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -24,7 +25,7 @@ export const metadata = {
     template: '%s | Planting Atlas',
   },
   description:
-    'Your complete planting atlas for gardens and landscapes. Get personalized plant recommendations from 185 plants across 12 types, or browse 75+ expert growing guides by USDA zone.',
+    `Your complete planting atlas for gardens and landscapes. Get personalized plant recommendations from 185 plants across 12 types, or browse ${guideCount} expert growing guides by USDA zone.`,
   keywords:
     'planting guide, landscape design, garden planning, USDA zones, plant database, gardening expert, hydroponic gardening, Plantopedia, Garden Architect',
   metadataBase: new URL('https://plantingatlas.com'),
@@ -42,7 +43,7 @@ export const metadata = {
     locale: 'en_US',
     title: 'Planting Atlas — Plan it. Plant it. Grow it.',
     description:
-      'Your complete planting atlas for gardens and landscapes. Get personalized plant recommendations from 185 plants across 12 types, or browse 75+ expert growing guides by USDA zone.',
+      `Your complete planting atlas for gardens and landscapes. Get personalized plant recommendations from 185 plants across 12 types, or browse ${guideCount} expert growing guides by USDA zone.`,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Planting Atlas' }],
   },
   twitter: {

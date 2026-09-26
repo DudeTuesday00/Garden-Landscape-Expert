@@ -2,6 +2,8 @@ import { guideCategories } from '../../../data/guides.js'
 import { contentMap } from '../../../data/guide-content/index.js'
 import GuideDetail, { heroImages } from '../../../components/guides/GuideDetail.jsx'
 import { hydroponicGuideIds } from '../../../data/hydroponics-hub.js'
+import { getGuideDates } from '../../../data/content-dates.js'
+import { fitTitle, MAX_TEMPLATED_TITLE } from '../../../logic/seoTitle.js'
 
 const SITE_URL = 'https://plantingatlas.com'
 
@@ -19,15 +21,16 @@ function truncateDescription(text) {
   return (lastSpace > 100 ? cut.slice(0, lastSpace) : cut) + '...'
 }
 
-// Combine title + subtitle into a richer SEO title, capped at 58 chars so the
-// full browser title (with ' | Planting Atlas') stays under ~75 chars.
+// Search results show about 60 characters, and the site template adds
+// ' | Planting Atlas', so the page part must fit in MAX_TEMPLATED_TITLE (43).
+// Use "title — subtitle" only when it fits whole; otherwise the title alone,
+// cut at a natural break (see logic/seoTitle.js) — never mid-phrase.
 function buildSeoTitle(title, subtitle) {
-  if (!subtitle) return title
-  const combined = `${title} — ${subtitle}`
-  if (combined.length <= 58) return combined
-  // Trim to word boundary, then strip trailing punctuation/connectors
-  const cut = combined.slice(0, 58).replace(/\s+\S*$/, '').replace(/[,&:\-—\s]+$/, '')
-  return cut.length > title.length ? cut : title
+  if (subtitle) {
+    const combined = `${title} — ${subtitle}`
+    if (combined.length <= MAX_TEMPLATED_TITLE) return combined
+  }
+  return fitTitle(title, MAX_TEMPLATED_TITLE)
 }
 
 // Per-guide <head> metadata (title, description, OG, canonical)
@@ -68,6 +71,7 @@ export default async function GuidePage({ params }) {
   const content = contentMap[guideId]
   const heroImage = heroImages[guideId]
   const seoTitle = content ? buildSeoTitle(content.hero.title, content.hero.subtitle) : ''
+  const dates = getGuideDates(guideId)
 
   const breadcrumbSchema = content ? {
     '@context': 'https://schema.org',
@@ -98,8 +102,8 @@ export default async function GuidePage({ params }) {
         url: `${SITE_URL}/favicon.png`,
       },
     },
-    datePublished: '2026-03-01',
-    dateModified: '2026-04-05',
+    ...(dates?.published && { datePublished: dates.published }),
+    ...(dates?.modified && { dateModified: dates.modified }),
     url: `${SITE_URL}/guides/${guideId}/`,
     ...(heroImage && { image: `${SITE_URL}${heroImage}` }),
   } : null

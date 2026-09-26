@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import { newsletters } from '../../../data/newsletters.js'
 import NewsletterDetail from '../../../components/newsletters/NewsletterDetail.jsx'
+import { fitTitle, MAX_TEMPLATED_TITLE, MAX_ABSOLUTE_TITLE } from '../../../logic/seoTitle.js'
 
 const SITE_URL = 'https://plantingatlas.com'
 const CONTENT_DIR = path.join(process.cwd(), 'src', 'data', 'newsletter-content')
@@ -44,7 +45,11 @@ export async function generateMetadata({ params }) {
   const seoTitle = meta.title
 
   return {
-    title: seoTitle,
+    // Long issue titles skip the template suffix and are shortened to fit search results
+    title:
+      seoTitle.length <= MAX_TEMPLATED_TITLE
+        ? seoTitle
+        : { absolute: fitTitle(seoTitle, MAX_ABSOLUTE_TITLE, { ellipsis: true }) },
     description,
     alternates: {
       canonical: `${SITE_URL}/newsletters/${slug}/`,

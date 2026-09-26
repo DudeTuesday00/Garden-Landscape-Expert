@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { contentMap } from '../../data/guide-content/index.js'
 import { guideCategories } from '../../data/guides.js'
 import { heroImages } from '../../data/hero-images.js'
+import { getGuideDates, formatMonthYear } from '../../data/content-dates.js'
 import AuthorBox from './AuthorBox.jsx'
 import NewsletterSignup from '../NewsletterSignup.jsx'
 import PrintGuideButton from './PrintGuideButton.jsx'
@@ -2147,7 +2148,8 @@ export default function GuideDetail({ guideId }) {
             {!heroImages[guideId] && <div className="text-5xl mb-3">{content.hero.emoji}</div>}
             <h1 className={`text-2xl font-bold ${theme.heroTitle} dark:text-white`}>{content.hero.title}</h1>
             <p className="mt-1.5 text-xs text-gray-400 dark:text-gray-500">
-              Written by <span className="font-medium">David Rodgers</span> — Updated March 2026
+              Written by <span className="font-medium">David Rodgers</span>
+              {getGuideDates(guideId)?.modified && ` — Updated ${formatMonthYear(getGuideDates(guideId).modified)}`}
             </p>
             <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 max-w-lg mx-auto">{content.hero.subtitle}</p>
             <div className="print:hidden mt-3 flex justify-center">
