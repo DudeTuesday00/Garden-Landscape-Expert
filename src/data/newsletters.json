@@ -1,5 +1,32 @@
 [
   {
+    "id": "starting-out-with-hydroponic-growing-systems",
+    "slug": "starting-out-with-hydroponic-growing-systems",
+    "title": "Starting out with hydroponic growing systems",
+    "subtitle": "A guide to demystifying soilless gardening and picking your first setup.",
+    "date": "2026-09-26",
+    "excerpt": "Hydroponics sounds like something only rich, fancy tech people do. It’s not. We break down what soil-free growing actually is and help you pick the right system to start your own small operation on the patio or indoors.",
+    "tags": [
+      "hydroponics",
+      "indoor garden",
+      "soilless",
+      "beginner"
+    ],
+    "heroImage": "/newsletters/starting-out-with-hydroponic-growing-systems.png",
+    "mode": "series",
+    "seriesName": "Hydroponics From Scratch",
+    "partNumber": 1,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "Do you have a specific space in mind for an indoor garden? Let us know which kind of setup (e.g., vertical, deep water) sounds most appealing! Share this with another backyard grower who's been intimidated by fancy gardening tech.",
+    "nextIssuePreview": "Next time, we tackle the easiest system to learn: Kratky jars—the perfect way to get your hands dirty without actually touching soil.",
+    "relatedResources": [
+      {
+        "title": "Hydroponics for Beginners",
+        "path": "/guides/hydroponics-for-beginners/"
+      }
+    ]
+  },
+  {
     "id": "using-fava-beans-to-naturally-build-soil-fertility-for-next-season-s-harvest",
     "slug": "using-fava-beans-to-naturally-build-soil-fertility-for-next-season-s-harvest",
     "title": "Using Fava Beans to Naturally Build Soil Fertility for Next Season’s Harvest",
