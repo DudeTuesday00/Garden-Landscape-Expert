@@ -1,5 +1,36 @@
 [
   {
+    "id": "growing-food-without-dirt-a-jar-of-lettuce-and-basil",
+    "slug": "growing-food-without-dirt-a-jar-of-lettuce-and-basil",
+    "title": "Growing Food Without Dirt? A Jar of Lettuce and Basil.",
+    "subtitle": "A simple walk-through for your first attempt at hydroponics using the Kratky method.",
+    "date": "2026-09-27",
+    "excerpt": "Thinking about growing food without dirt? The Kratky method is the simplest, most forgiving way to dip a toe into hydroponics. This issue walks you through setting up a small batch with lettuce or basil using nothing more than a jar of water and some good plants.",
+    "tags": [
+      "Hydroponics",
+      "Beginners",
+      "Indoor Gardening",
+      "Kratky Method"
+    ],
+    "heroImage": "/newsletters/growing-food-without-dirt-a-jar-of-lettuce-and-basil.png",
+    "mode": "series",
+    "seriesName": "Hydroponics From Scratch",
+    "partNumber": 2,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual climate and what actually works in your yard.",
+    "callToAction": "Do you have any questions before you build your first setup? Tell me what crops you're thinking about growing in the comments, and let’s troubleshoot them together!",
+    "nextIssuePreview": "Next up: We tackle the three numbers that decide if a hydroponic crop succeeds or fails—nutrients, pH, and EC. It sounds complicated, but it’s easier than keeping track of soil acidity.",
+    "relatedResources": [
+      {
+        "title": "What is Hydroponics?",
+        "path": "/guides/hydroponics-for-beginners/"
+      },
+      {
+        "title": "The Kratky Method",
+        "path": "/guides/kratky-method/"
+      }
+    ]
+  },
+  {
     "id": "starting-out-with-hydroponic-growing-systems",
     "slug": "starting-out-with-hydroponic-growing-systems",
     "title": "Starting out with hydroponic growing systems",
