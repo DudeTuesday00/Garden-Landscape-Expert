@@ -1,5 +1,67 @@
 [
   {
+    "id": "stop-guessing-how-much-actual-light-your-hydroponic-crops-really-need",
+    "slug": "stop-guessing-how-much-actual-light-your-hydroponic-crops-really-need",
+    "title": "Stop Guessing: How Much Actual Light Your Hydroponic Crops Really Need",
+    "subtitle": "Understanding DLI and why watts don't tell the whole story.",
+    "date": "2026-09-29",
+    "excerpt": "Understanding grow lights is harder than it looks. This issue cuts through the confusion of watts and lumens to teach you what actually matters: Daily Light Integral (DLI). We'll show why a salad crop needs way less light than your favorite tomato variety does.",
+    "tags": [
+      "Hydroponics",
+      "Grow Lights",
+      "Indoor Gardening",
+      "Lighting Science"
+    ],
+    "heroImage": "/newsletters/stop-guessing-how-much-actual-light-your-hydroponic-crops-really-need.png",
+    "mode": "series",
+    "seriesName": "Hydroponics From Scratch",
+    "partNumber": 4,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual climate and light needs.",
+    "callToAction": "What’s the hardest part about keeping things going in containers? Share your biggest indoor gardening struggle below, or send us an email!",
+    "nextIssuePreview": "Next up, we move from jars to buckets. We'll show you how stepping up to deeper water culture systems allows you to grow those bigger crops like tomatoes and peppers.",
+    "relatedResources": [
+      {
+        "title": "How To Grow Hydroponically For Beginners",
+        "path": "/guides/hydroponics-for-beginners/"
+      },
+      {
+        "title": "The Kratky Method Explained",
+        "path": "/guides/kratky-method/"
+      }
+    ]
+  },
+  {
+    "id": "don-t-panic-over-numbers-nutrients-ph-and-ec-explained",
+    "slug": "don-t-panic-over-numbers-nutrients-ph-and-ec-explained",
+    "title": "Don't Panic Over Numbers: Nutrients, pH, and EC Explained",
+    "subtitle": "A plain-English guide to keeping your soilless crops alive (and not burning).",
+    "date": "2026-09-29",
+    "excerpt": "Hydroponics sounds like it requires a chemistry degree. It doesn't. This issue demystifies the three numbers—Nutrients, pH, and EC—so you know how to keep your plants fed without guessing.",
+    "tags": [
+      "hydroponics",
+      "soilless gardening",
+      "pH balance",
+      "beginner guides"
+    ],
+    "heroImage": "/newsletters/don-t-panic-over-numbers-nutrients-ph-and-ec-explained.png",
+    "mode": "series",
+    "seriesName": "Hydroponics From Scratch",
+    "partNumber": 3,
+    "kicker": "The newsletter for backyard growers tired of overly complicated, textbook gardening advice.",
+    "callToAction": "Do you have any questions about balancing nutrients or adjusting pH in your current setup? Share this guide with another new grower who thinks hydroponics is too complicated!",
+    "nextIssuePreview": "Next time, we'll tackle light: figuring out exactly how much artificial sun your indoor tomatoes and peppers really need.",
+    "relatedResources": [
+      {
+        "title": "The Hydroponics Beginner's Guide: Which System Is Right?",
+        "path": "/guides/hydroponics-for-beginners/"
+      },
+      {
+        "title": "Starting Your First Crop in a Jar (Kratky Method)",
+        "path": "/guides/kratky-method/"
+      }
+    ]
+  },
+  {
     "id": "growing-food-without-dirt-a-jar-of-lettuce-and-basil",
     "slug": "growing-food-without-dirt-a-jar-of-lettuce-and-basil",
     "title": "Growing Food Without Dirt? A Jar of Lettuce and Basil.",
