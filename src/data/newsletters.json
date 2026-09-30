@@ -1,5 +1,36 @@
 [
   {
+    "id": "growing-tomatoes-and-peppers-in-buckets-the-next-level",
+    "slug": "growing-tomatoes-and-peppers-in-buckets-the-next-level",
+    "title": "Growing Tomatoes and Peppers in Buckets (The Next Level)",
+    "subtitle": "Moving past the jars into deeper water culture for serious yields.",
+    "date": "2026-09-30",
+    "excerpt": "You've mastered growing greens in jars, but tomatoes and peppers demand more. This is your guide to scaling up deep water culture safely, focusing on what makes fruiting crops different from leafy ones.",
+    "tags": [
+      "Hydroponics",
+      "Tomatoes",
+      "Deep Water Culture",
+      "Patios"
+    ],
+    "heroImage": "/newsletters/growing-tomatoes-and-peppers-in-buckets-the-next-level.png",
+    "mode": "series",
+    "seriesName": "Hydroponics From Scratch",
+    "partNumber": 5,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual climate and the needs of a real crop.",
+    "callToAction": "Are you ready to trade those small Kratky setups for something bigger? Tell me what kind of container you're planning to use in the comments below! Want more no-fluff guides like this? Share it with a neighbor who loves growing food.",
+    "nextIssuePreview": "Next, we tackle troubleshooting: knowing exactly when and why your hydroponic plants might be struggling—a checklist for keeping everything running smoothly.",
+    "relatedResources": [
+      {
+        "title": "DWC System Basics for Beginners",
+        "path": "/guides/deep-water-culture/"
+      },
+      {
+        "title": "The Dutch Bucket Method Guide",
+        "path": "/guides/dutch-bucket-hydroponics/"
+      }
+    ]
+  },
+  {
     "id": "stop-guessing-how-much-actual-light-your-hydroponic-crops-really-need",
     "slug": "stop-guessing-how-much-actual-light-your-hydroponic-crops-really-need",
     "title": "Stop Guessing: How Much Actual Light Your Hydroponic Crops Really Need",
