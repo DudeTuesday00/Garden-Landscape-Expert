@@ -1,5 +1,58 @@
 [
   {
+    "id": "stop-guessing-how-much-light-your-crops-really-need-to-thrive",
+    "slug": "stop-guessing-how-much-light-your-crops-really-need-to-thrive",
+    "title": "Stop Guessing: How Much Light Your Crops Really Need to Thrive",
+    "subtitle": "Matching light energy (DLI) to the specific demands of leafy greens versus fruiting crops.",
+    "date": "2026-10-03",
+    "excerpt": "You've mastered the pH, nutrients, and water levels. Now it’s time to look past watts and lumens and understand Daily Light Integral (DLI) to dial in perfect light energy for your specific plants.",
+    "tags": [
+      "hydroponics",
+      "indoor gardening",
+      "grow lights",
+      "controlled environment"
+    ],
+    "heroImage": "/newsletters/stop-guessing-how-much-light-your-crops-really-need-to-thrive.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual climate and crop needs.",
+    "callToAction": "Are you using DLI calculations yet? Share what crop combination is giving you the biggest headache right now!",
+    "nextIssuePreview": "",
+    "relatedResources": [
+      {
+        "title": "Hydroponics Grow Lights Guide",
+        "path": "/guides/hydroponic-grow-lights/"
+      },
+      {
+        "title": "Nutrients, pH, and EC in Hydroponics",
+        "path": "/guides/hydroponic-nutrients-ph-ec/"
+      }
+    ]
+  },
+  {
+    "id": "mastering-your-slope-structural-planting-for-challenging-grades",
+    "slug": "mastering-your-slope-structural-planting-for-challenging-grades",
+    "title": "Mastering Your Slope: Structural Planting for Challenging Grades",
+    "subtitle": "How retaining walls, groundcovers, and smart plant selection can stabilize steep terrain year-round.",
+    "date": "2026-10-03",
+    "excerpt": "Dealing with a steep slope can feel like an insurmountable design flaw. This issue shows how professional landscape techniques—from physical walls to tenacious groundcovers—can stabilize the terrain while creating dramatic year-round viewing points.",
+    "tags": [
+      "Sloping Gardens",
+      "Retaining Walls",
+      "Structural Planting",
+      "Groundcover"
+    ],
+    "heroImage": "/newsletters/mastering-your-slope-structural-planting-for-challenging-grades.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for garden owners who want to maximize beauty and function, even when gravity is working against them.",
+    "callToAction": "Does your yard have a tricky incline or decline? Share photos of your toughest gardening spots below and let us know what structural problems you're facing. Which garden feature do you think is most overrated: the fancy retaining wall, or just letting robust vines take over?",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
     "id": "fall-leaves-on-the-lawn-how-to-mulch-without-killing-your-grass",
     "slug": "fall-leaves-on-the-lawn-how-to-mulch-without-killing-your-grass",
     "title": "Fall Leaves on the Lawn: How to Mulch Without Killing Your Grass.",
