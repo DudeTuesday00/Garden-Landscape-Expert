@@ -1,5 +1,32 @@
 [
   {
+    "id": "stop-guessing-about-grow-lights-use-dli-instead-of-watts",
+    "slug": "stop-guessing-about-grow-lights-use-dli-instead-of-watts",
+    "title": "Stop guessing about grow lights: use DLI instead of watts.",
+    "subtitle": "How to calculate the true energy dose for greens versus fruiting plants in a controlled setup.",
+    "date": "2026-10-04",
+    "excerpt": "We're moving past simple lumens and wattages to talk about the Daily Light Integral (DLI)—the true energy budget your plants need. This is critical knowledge for anyone running a small, controlled hydroponic setup at home.",
+    "tags": [
+      "hydroponics",
+      "indoor gardening",
+      "grow lighting",
+      "plant science"
+    ],
+    "heroImage": "/newsletters/stop-guessing-about-grow-lights-use-dli-instead-of-watts.png",
+    "mode": "series",
+    "seriesName": "Hydroponics From Scratch",
+    "partNumber": 4,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual growing needs.",
+    "callToAction": "Does this help you rethink your light fixtures? Share this issue with another grower who keeps buying lights based only on wattage!",
+    "nextIssuePreview": "Next up: Stepping up to growing tomatoes and peppers in buckets—we'll talk about moving from simple jars to more robust, full-sized crops.",
+    "relatedResources": [
+      {
+        "title": "Hydroponic Grow Lights Guide",
+        "path": "/guides/hydroponic-grow-lights/"
+      }
+    ]
+  },
+  {
     "id": "stop-guessing-how-much-light-your-crops-really-need-to-thrive",
     "slug": "stop-guessing-how-much-light-your-crops-really-need-to-thrive",
     "title": "Stop Guessing: How Much Light Your Crops Really Need to Thrive",
