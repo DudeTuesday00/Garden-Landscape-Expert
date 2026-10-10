@@ -1,5 +1,54 @@
 [
   {
+    "id": "keep-blooming-through-autumn-better-alternatives-to-lavender-bloomers",
+    "slug": "keep-blooming-through-autumn-better-alternatives-to-lavender-bloomers",
+    "title": "Keep Blooming Through Autumn: Better Alternatives to Lavender Bloomers",
+    "subtitle": "How continuous color and deep pollinator support can anchor your garden through the fall fade.",
+    "date": "2026-10-10",
+    "excerpt": "As the heat fades in late summer, many gardens hit a predictable slump. This issue shows how three durable perennials can keep your borders vibrant until the first frost hits.",
+    "tags": [
+      "Perennials",
+      "Pollinators",
+      "Fall Gardening",
+      "Landscape Design"
+    ],
+    "heroImage": "/newsletters/keep-blooming-through-autumn-better-alternatives-to-lavender-bloomers.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for gardeners who want to stop guessing and start knowing what actually grows here, even when spring is long gone.",
+    "callToAction": "What's one perennial you swear by every year? Share it with us! And if this helped stop that garden fade feeling, share it with another gardener who needs some autumn inspiration.",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "hydroponics-doesn-t-have-to-be-hard-starting-simple-in-the-backyard",
+    "slug": "hydroponics-doesn-t-have-to-be-hard-starting-simple-in-the-backyard",
+    "title": "Hydroponics Doesn't Have to Be Hard: Starting Simple in the Backyard",
+    "subtitle": "Choosing your first soilless system without breaking the bank or spending all weekend wiring it up.",
+    "date": "2026-10-10",
+    "excerpt": "If the word 'hydroponics' sounds like something out of a sci-fi movie or an expensive greenhouse catalog, don't worry. This issue demystifies soilless growing and shows you how to start with low risk using just buckets and jars.",
+    "tags": [
+      "hydroponics",
+      "beginner gardening",
+      "soil-less growing",
+      "zone specific"
+    ],
+    "heroImage": "/newsletters/hydroponics-doesn-t-have-to-be-hard-starting-simple-in-the-backyard.png",
+    "mode": "series",
+    "seriesName": "Hydroponics From Scratch",
+    "partNumber": 1,
+    "kicker": "The newsletter for backyard growers tired of overly complicated, high-tech gardening advice.",
+    "callToAction": "What’s the biggest fear holding you back from trying new gardening methods? Let me know in the comments below! Got a neighbor who needs this simple guide? Forward it to them.",
+    "nextIssuePreview": "Next time, we'll tackle your first crop: setting up and managing the iconic Kratky jar. It’s easier than boiling an egg—I promise.",
+    "relatedResources": [
+      {
+        "title": "Hydroponics for Beginners",
+        "path": "/guides/hydroponics-for-beginners/"
+      }
+    ]
+  },
+  {
     "id": "building-a-buzzing-backyard-haven-with-native-plants-and-simple-geometry",
     "slug": "building-a-buzzing-backyard-haven-with-native-plants-and-simple-geometry",
     "title": "Building a Buzzing Backyard Haven with Native Plants and Simple Geometry",
