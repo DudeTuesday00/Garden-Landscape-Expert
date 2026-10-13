@@ -1,5 +1,36 @@
 [
   {
+    "id": "kratky-method-growing-plants-in-water-instead-of-dirt",
+    "slug": "kratky-method-growing-plants-in-water-instead-of-dirt",
+    "title": "Kratky Method: Growing Plants in Water Instead of Dirt",
+    "subtitle": "A simple, low-tech way to start soilless gardening today.",
+    "date": "2026-10-13",
+    "excerpt": "If you're interested in growing plants that don't need soil, this is where we start. The Kratky method uses basic jars and gravity to give your seedlings a perfect head start into soilless life.",
+    "tags": [
+      "Hydroponics",
+      "Beginner Gardening",
+      "Container Gardening",
+      "Soilless Systems"
+    ],
+    "heroImage": "/newsletters/kratky-method-growing-plants-in-water-instead-of-dirt.png",
+    "mode": "series",
+    "seriesName": "Hydroponics From Scratch",
+    "partNumber": 2,
+    "kicker": "The newsletter for backyard growers who want successful food without the plumbing nightmare.",
+    "callToAction": "Are you ready to try ditching the dirt? Send us a photo of your first setup!",
+    "nextIssuePreview": "Next up, we'll talk about 'the three numbers': nutrients, pH, and electrical conductivity. This is where most beginners get confused, but it’s actually pretty simple once you know what they mean.",
+    "relatedResources": [
+      {
+        "title": "Hydroponics For Beginners: Which System to Start With?",
+        "path": "/guides/hydroponics-for-beginners/"
+      },
+      {
+        "title": "The Kratky Method Explained",
+        "path": "/guides/kratky-method/"
+      }
+    ]
+  },
+  {
     "id": "keeping-the-yard-colorful-when-everything-else-slows-down",
     "slug": "keeping-the-yard-colorful-when-everything-else-slows-down",
     "title": "Keeping the Yard Colorful When Everything Else Slows Down",
