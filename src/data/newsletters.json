@@ -1,5 +1,32 @@
 [
   {
+    "id": "the-kratky-method-letting-plants-grow-without-soil-or-electricity",
+    "slug": "the-kratky-method-letting-plants-grow-without-soil-or-electricity",
+    "title": "The Kratky Method: Letting Plants Grow Without Soil or Electricity",
+    "subtitle": "A low-tech guide to starting hydroponics with simple containers and nutrient water.",
+    "date": "2026-10-18",
+    "excerpt": "If the idea of complex pumping equipment sounds too much like a plumbing nightmare, this guide shows you how to use one of the simplest hydroponic methods—the Kratky setup. It’s low-tech, passive, and works perfectly in containers for your backyard yard.",
+    "tags": [
+      "hydroponics",
+      "beginner gardening",
+      "soilless culture",
+      "kratky method"
+    ],
+    "heroImage": "/newsletters/the-kratky-method-letting-plants-grow-without-soil-or-electricity.png",
+    "mode": "series",
+    "seriesName": "Hydroponics From Scratch",
+    "partNumber": 2,
+    "kicker": "The newsletter for backyard growers tired of complicated systems that require electricity or constant monitoring.",
+    "callToAction": "Ready to swap dirt for water? Tell me what plants you're most interested in growing without soil! Share this with a friend who keeps complaining about their drainage issues.",
+    "nextIssuePreview": "If the Kratky method is how you get started, next we tackle the three numbers—Nutrients (N), pH, and EC—that will decide if your crops thrive or just struggle along.",
+    "relatedResources": [
+      {
+        "title": "Kratky Method: Growing Plants in Water Instead of Dirt",
+        "path": "/guides/kratky-method/"
+      }
+    ]
+  },
+  {
     "id": "why-lacinato-kale-is-the-underrated-king-of-cool-weather-gardens",
     "slug": "why-lacinato-kale-is-the-underrated-king-of-cool-weather-gardens",
     "title": "Why Lacinato Kale Is the Underrated King of Cool Weather Gardens",
