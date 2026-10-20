@@ -1,5 +1,58 @@
 [
   {
+    "id": "how-to-grow-greens-without-soil-or-electricity",
+    "slug": "how-to-grow-greens-without-soil-or-electricity",
+    "title": "How to Grow Greens Without Soil or Electricity",
+    "subtitle": "A beginner’s guide to keeping plants alive using simple containers (the Kratky method).",
+    "date": "2026-10-20",
+    "excerpt": "If your yard drains poorly or you're wary of heavy soil, hydroponics might sound too complicated. This guide breaks down the simplest system—the Kratky method—so you can start growing greens reliably with almost no equipment.",
+    "tags": [
+      "hydroponics",
+      "soil-less gardening",
+      "backyard growing",
+      "beginners"
+    ],
+    "heroImage": "/newsletters/how-to-grow-greens-without-soil-or-electricity.png",
+    "mode": "series",
+    "seriesName": "Hydroponics From Scratch",
+    "partNumber": 2,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual climate and drainage issues.",
+    "callToAction": "Does this make sense enough to try? What are the first herbs you plan on giving a shot in jars?",
+    "nextIssuePreview": "Next time, we'll talk about the three numbers that decide if your hydroponic crops will thrive: nutrients, pH, and EC. Don’t skip it.",
+    "relatedResources": [
+      {
+        "title": "Hydroponics for Beginners",
+        "path": "/guides/hydroponics-for-beginners/"
+      },
+      {
+        "title": "Deep Water Culture System Overview",
+        "path": "/guides/deep-water-culture/"
+      }
+    ]
+  },
+  {
+    "id": "strawberry-wintering-the-timing-is-everything-or-nothing",
+    "slug": "strawberry-wintering-the-timing-is-everything-or-nothing",
+    "title": "Strawberry Wintering: The Timing is Everything (or Nothing)",
+    "subtitle": "Why doing too much work in the fall can accidentally kill next year's harvest.",
+    "date": "2026-10-20",
+    "excerpt": "Strawberry care isn't just about piling on mulch. This issue dives into the specific seasonal timing—when to start, when to stop, and how much effort you can actually afford while waiting out a Zone 7 winter.",
+    "tags": [
+      "Strawberries",
+      "Perennials",
+      "Cold Weather Gardening",
+      "Zone Specific Care"
+    ],
+    "heroImage": "/newsletters/strawberry-wintering-the-timing-is-everything-or-nothing.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual climate.",
+    "callToAction": "What was your worst gardening mistake this season? Drop it in the comments below so we can all learn from it! Did this piece save your berry patch?",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
     "id": "the-kratky-method-letting-plants-grow-without-soil-or-electricity",
     "slug": "the-kratky-method-letting-plants-grow-without-soil-or-electricity",
     "title": "The Kratky Method: Letting Plants Grow Without Soil or Electricity",
