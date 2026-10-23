@@ -1,5 +1,36 @@
 [
   {
+    "id": "getting-greens-growing-when-your-yard-refuses-to-cooperate",
+    "slug": "getting-greens-growing-when-your-yard-refuses-to-cooperate",
+    "title": "Getting Greens Growing When Your Yard Refuses to Cooperate",
+    "subtitle": "A beginner's guide to the low-tech method for growing crops without soil or electricity.",
+    "date": "2026-10-23",
+    "excerpt": "If your backyard is heavy clay, rock-strewn, or just won’t drain properly, you don't have to quit gardening. We break down the Kratky method—a simple way to grow greens without soil or complex equipment.",
+    "tags": [
+      "hydroponics",
+      "greens",
+      "kratky",
+      "badsoil"
+    ],
+    "heroImage": "/newsletters/getting-greens-growing-when-your-yard-refuses-to-cooperate.png",
+    "mode": "series",
+    "seriesName": "Hydroponics From Scratch",
+    "partNumber": 2,
+    "kicker": "The newsletter for gardeners who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "What poor drainage struggles do you face in your yard? Share a photo of your challenging garden spot and let us know what crops are fighting for survival! What system should we cover next?",
+    "nextIssuePreview": "Next up, we tackle the three numbers that make hydroponics work: nutrients, pH, and EC. Don't worry—it’s easier than it sounds.",
+    "relatedResources": [
+      {
+        "title": "Hydroponics for Beginners",
+        "path": "/guides/hydroponics-for-beginners/"
+      },
+      {
+        "title": "Kratky Method Guide",
+        "path": "/guides/kratky-method/"
+      }
+    ]
+  },
+  {
     "id": "stop-weeds-and-keep-moisture-cardboard-mulch-for-your-veggie-beds",
     "slug": "stop-weeds-and-keep-moisture-cardboard-mulch-for-your-veggie-beds",
     "title": "Stop Weeds and Keep Moisture: Cardboard Mulch for Your Veggie Beds",
