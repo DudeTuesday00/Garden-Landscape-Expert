@@ -1,5 +1,36 @@
 [
   {
+    "id": "the-beginner-s-guide-to-kratky-growing-greens-without-good-soil",
+    "slug": "the-beginner-s-guide-to-kratky-growing-greens-without-good-soil",
+    "title": "The Beginner’s Guide to Kratky: Growing Greens Without Good Soil",
+    "subtitle": "A low-tech way to bypass heavy clay and poorly draining ground.",
+    "date": "2026-10-26",
+    "excerpt": "If your native soil is heavy clay or drains poorly, you might think growing greens outdoors is a lost cause. We’re looking at the Kratky method—a simple, electricity-free system to keep roots healthy and plants thriving where conventional gardening fails.",
+    "tags": [
+      "hydroponics",
+      "containergardening",
+      "soilproblems",
+      "kratky"
+    ],
+    "heroImage": "/newsletters/the-beginner-s-guide-to-kratky-growing-greens-without-good-soil.png",
+    "mode": "series",
+    "seriesName": "Hydroponics From Scratch",
+    "partNumber": 2,
+    "kicker": "The newsletter for backyard growers tired of advice that ignores their actual climate.",
+    "callToAction": "Have you tried setting up passive hydroponics before? Drop your best tips for preventing algae in containers below! Share this issue with a neighbor whose yard always seems too wet.",
+    "nextIssuePreview": "If the greens are working, what about the big stuff? Next time we dive into how to manage nutrients, pH levels, and EC—the three numbers that keep any hydroponic crop alive.",
+    "relatedResources": [
+      {
+        "title": "Hydroponics for Beginners",
+        "path": "/guides/hydroponics-for-beginners/"
+      },
+      {
+        "title": "Kratky Method Guide",
+        "path": "/guides/kratky-method/"
+      }
+    ]
+  },
+  {
     "id": "don-t-burn-your-garden-on-the-way-out-fall-cleanup",
     "slug": "don-t-burn-your-garden-on-the-way-out-fall-cleanup",
     "title": "Don't Burn Your Garden on the Way Out (Fall Cleanup)",
