@@ -1,5 +1,36 @@
 [
   {
+    "id": "when-your-hydroponic-setup-goes-wrong-a-troubleshooting-guide",
+    "slug": "when-your-hydroponic-setup-goes-wrong-a-troubleshooting-guide",
+    "title": "When Your Hydroponic Setup Goes Wrong: A Troubleshooting Guide",
+    "subtitle": "A simple checklist to diagnose yellow leaves and weak roots.",
+    "date": "2026-10-30",
+    "excerpt": "If your indoor hydroponic garden suddenly looks stressed, it's rarely one thing. This checklist walks you through the common culprits—from pH issues to root rot—so you can diagnose the problem quickly and get back to growing.",
+    "tags": [
+      "Hydroponics",
+      "Plant Health",
+      "Troubleshooting",
+      "Indoor Gardening"
+    ],
+    "heroImage": "/newsletters/when-your-hydroponic-setup-goes-wrong-a-troubleshooting-guide.png",
+    "mode": "series",
+    "seriesName": "Hydroponics From Scratch",
+    "partNumber": 6,
+    "kicker": "The newsletter for backyard growers tired of equipment failure and confusing nutrient sheets.",
+    "callToAction": "Is there a specific plant in your yard that just refuses to thrive? Tell me what it is and I might know why. Share this issue with another gardener who needs help keeping their hands dirty!",
+    "nextIssuePreview": "",
+    "relatedResources": [
+      {
+        "title": "Hydroponic Troubleshooting Guide",
+        "path": "/guides/hydroponic-troubleshooting/"
+      },
+      {
+        "title": "Best Plants for Hydroponics at Home",
+        "path": "/guides/best-plants-for-hydroponics/"
+      }
+    ]
+  },
+  {
     "id": "how-to-save-bell-pepper-seeds-and-keep-your-best-lineage-going",
     "slug": "how-to-save-bell-pepper-seeds-and-keep-your-best-lineage-going",
     "title": "How To Save Bell Pepper Seeds and Keep Your Best Lineage Going",
