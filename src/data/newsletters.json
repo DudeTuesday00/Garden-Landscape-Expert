@@ -1,5 +1,49 @@
 [
   {
+    "id": "the-art-of-crevice-gardening-building-alpine-ecosystems-in-your-backyard",
+    "slug": "the-art-of-crevice-gardening-building-alpine-ecosystems-in-your-backyard",
+    "title": "The Art of Crevice Gardening: Building Alpine Ecosystems in Your Backyard",
+    "subtitle": "A guide to specialized planting that requires thinking like a rock formation, not a raised bed.",
+    "date": "2026-11-02",
+    "excerpt": "This is not your standard raised bed advice. We dive into the specialized techniques of creating miniaturized, rock-dwelling ecosystems using specific soil compositions and structural design principles that mimic natural alpine environments.",
+    "tags": [
+      "hardscaping",
+      "alpine plants",
+      "rock gardens",
+      "landscape design"
+    ],
+    "heroImage": "/newsletters/the-art-of-crevice-gardening-building-alpine-ecosystems-in-your-backyard.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for backyard growers who'd rather learn from a mistake made 40 years ago than repeat it themselves.",
+    "callToAction": "Do you have a tricky patch of yard or an unusual feature in your garden? Tell me about it! Share this issue with another gardener who is tired of generic advice.",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
+    "id": "the-best-things-are-dead-why-you-should-leave-snags-in-your-yard",
+    "slug": "the-best-things-are-dead-why-you-should-leave-snags-in-your-yard",
+    "title": "The Best Things Are Dead: Why You Should Leave Snags in Your Yard",
+    "subtitle": "Turning perceived dead space into a thriving habitat for life and healthy soil.",
+    "date": "2026-11-02",
+    "excerpt": "Before you get the chainsaw out, here's why those dead branches and standing snags are some of the most valuable parts of your garden. It’s about accepting decay as a resource, not an obstacle.",
+    "tags": [
+      "Ecology",
+      "Permaculture",
+      "Habitat",
+      "Natural Design"
+    ],
+    "heroImage": "/newsletters/the-best-things-are-dead-why-you-should-leave-snags-in-your-yard.png",
+    "mode": "oneoff",
+    "seriesName": "",
+    "partNumber": 0,
+    "kicker": "The newsletter for backyard growers tired of trying to manicure nature into submission.",
+    "callToAction": "What part of your yard have you been tempted to 'clean up'? Share what natural elements you plan to leave alone this season below!",
+    "nextIssuePreview": "",
+    "relatedResources": []
+  },
+  {
     "id": "how-to-make-your-backyard-a-real-life-hub-not-just-a-garden",
     "slug": "how-to-make-your-backyard-a-real-life-hub-not-just-a-garden",
     "title": "How To Make Your Backyard a Real-Life Hub (Not Just a Garden)",
